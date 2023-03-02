@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+#TEMPLATE for compile script
+#takes two arguments from the start_compile.sh
+
+#$1 = <PATH>/name.c (outfile in run<timestamp>/progID/name)
+#$2 = <INFILE/> (in src file in src/ directory)
+
+#gcc testscript
+temp=$(echo "$1" | cut -d "." -f1)
+
+gcc -o $temp $2
