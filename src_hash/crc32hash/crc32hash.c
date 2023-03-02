@@ -21,10 +21,16 @@ uint32_t crc32(const char* str, unsigned int len) {
     return crc ^ 0xffffffff;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
+    unsigned int hash;
 
-    unsigned int hash = crc32(str, strlen(str));
+    init_program();
+
+    hash = crc32(str, strlen(str));
 
     if (hash == 0xd87f7e0c) {
         printf("You win!\n");

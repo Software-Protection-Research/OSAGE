@@ -1,5 +1,6 @@
 /*!
     \secrets: main DJBHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -18,12 +19,17 @@ unsigned int DJBHash(char* str, unsigned int len) {
 	return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char infile[MAX_PATH];
     FILE* in_file;
     long fsize;
     char* string;
     unsigned int hash;
+
+    init_program();
 
     if(argc != 2) {
         exit(1);
@@ -52,7 +58,7 @@ int main(int argc, char* argv[]) {
 
 	hash = DJBHash(string, strlen(string));
 
-	if(hash == 0x49a54935) {
+	if(hash == 0x106b750f) {
         printf("You win!\n");
     }
 	else {

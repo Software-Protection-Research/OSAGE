@@ -1,5 +1,6 @@
 /*!
     \secrets: main FNVHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -18,11 +19,18 @@ unsigned int FNVHash(char* str, unsigned int len) {
     return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
-    unsigned int hash = FNVHash(str, strlen(str));
+    unsigned int hash;
 
-    if(hash == 0xee3c81d4) {
+    init_program();
+
+    hash = FNVHash(str, strlen(str));
+
+    if(hash == 0x16a4719a) {
         printf("You win!\n");
     }
     else {

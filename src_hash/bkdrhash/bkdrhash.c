@@ -1,5 +1,6 @@
 /*!
     \secrets: main BKDRHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdlib.h>
@@ -17,12 +18,18 @@ unsigned int BKDRHash(char* str, unsigned int len) {
    return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
+    unsigned int hash;
 
-    unsigned int hash = BKDRHash(str, strlen(str));
+    init_program();
 
-    if (hash == 0xbd9282b2){
+    hash = BKDRHash(str, strlen(str));
+
+    if (hash == 0xfa5d816){
         printf("You win!\n");
     }
     else{

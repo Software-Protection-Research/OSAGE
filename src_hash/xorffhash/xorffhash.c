@@ -19,10 +19,16 @@ uint8_t xorff(const char* s, unsigned int len)
     return (((hash ^ 0xff) + 1) & 0xff);
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
+    unsigned int hash;
 
-    unsigned int hash = xorff(str, strlen(str));
+    init_program();
+
+    hash = xorff(str, strlen(str));
 
     if (hash == 0x19){
         printf("You win!\n");

@@ -21,10 +21,16 @@ uint32_t adler32(const char* str, unsigned int len) {
     return (b << 16) | a;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
+    unsigned int hash;
 
-    unsigned int hash = adler32(str, strlen(str));
+    init_program();
+
+    hash = adler32(str, strlen(str));
 
     if (hash == 0x15d00e8){
         printf("You win!\n");

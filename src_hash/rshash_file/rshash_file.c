@@ -1,5 +1,6 @@
 /*!
     \secrets: main RSHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -21,12 +22,17 @@ unsigned int RSHash(char* str, unsigned int len) {
 	return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char infile[MAX_PATH];
     FILE* in_file;
     long fsize;
     char* string;
     unsigned int hash;
+
+    init_program();
 
     if(argc != 2) {
         exit(1);
@@ -55,7 +61,7 @@ int main(int argc, char* argv[]) {
 
 	hash = RSHash(string, strlen(string));
 
-	if(hash == 0x4d248f4a) {
+	if(hash == 0x3218902) {
 		printf("You win!\n");
     }
 	else {

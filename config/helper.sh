@@ -39,6 +39,12 @@ abcdef_fun_parse_secrets () {
 }
 # --------------------------------------------------------------------
 
+# --- Function for parsing the backdoor out of docstrings/comments ---
+abcdef_fun_parse_backdoor () {
+    temp=$(head -n 20 "$1" | grep '\\backdoor' |  cut -d ":" -f2 |  sed -e 's/^ //g' -e 's/ /,/g' | tr -d "\n")
+    echo "$temp"
+}
+# --------------------------------------------------------------------
 
 # --------------------------------------------------------------------
 abcdef_fun_get_latest_out () {

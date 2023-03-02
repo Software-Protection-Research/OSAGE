@@ -180,8 +180,12 @@ export tigress_flags_3_1=""
 # Tigress options
 export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:12.1"
 export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*"
+
 # Flatten
-export tigress_options_flatten_helper="${tigress_options_general} --Transform=Flatten"
+export tigress_options_flatten_helper="${tigress_options_general}\
+    --Transform=Flatten \
+        --Functions=secrets"
+
 export tigress_options_flatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
     ${tigress_options_flatten_helper}"
@@ -194,38 +198,49 @@ export tigress_options_flatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} 
 export tigress_options_flatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
     ${tigress_options_flatten_helper}"
-# Tigress opaque options
-export tigress_options_opaque_helper="${tigress_options_general}\
+
+# Opaque Predicates, Anti Branch Analysis, Encoded Arithmetic
+export tigress_options_opabaea_helper="${tigress_options_general}\
     --Seed=0 \
     --Inputs='+1:int:42,-1:length:1?10' \
     --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
     --Transform=InitOpaque \
-    --Functions=main \
-    --InitOpaqueCount=2 \
-    --InitOpaqueStructs=list,array,input,env \
+        --Functions=secrets \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
     --Transform=AddOpaque \
-    --AddOpaqueKinds=question \
-    --AddOpaqueSplitKinds=inside \
-    --AddOpaqueCount=10"
-    # deleted in line 97: --Transform=InitImplicitFlow \
+        --Functions=secrets \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+    --Transform=AntiBranchAnalysis \
+        --Functions=secrets \
+        --AntiBranchAnalysisKinds=branchFuns \
+        --AntiBranchAnalysisObfuscateBranchFunCall=false \
+        --AntiBranchAnalysisBranchFunFlatten=true \
+    --Transform=EncodeArithmetic \
+        --Functions=secrets"
 
-export tigress_options_opaque_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
+export tigress_options_opabaea_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_opaque_helper}"
-export tigress_options_opaque_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
+    ${tigress_options_opabaea_helper}"
+export tigress_options_opabaea_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_opaque_helper}"
-export tigress_options_opaque_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
+    ${tigress_options_opabaea_helper}"
+export tigress_options_opabaea_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_opaque_helper}"
-export tigress_options_opaque_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
+    ${tigress_options_opabaea_helper}"
+export tigress_options_opabaea_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_opaque_helper}"
+    ${tigress_options_opabaea_helper}"
 
 # Tigress virtualize
 export tigress_options_virtualize_helper="${tigress_options_general} \
     --Transform=Virtualize \
-    --VirtualizeDispatch=direct"
+        --VirtualizeDispatch=direct \
+        --Functions=secrets"
 
 export tigress_options_virtualize_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
@@ -245,15 +260,16 @@ export tigress_options_selfmodify_helper="${tigress_options_general} \
     --Seed=0 \
     --Inputs='+1:int:42,-1:length:1?10' \
     --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
     --Transform=InitOpaque \
-    --Functions=main \
-    --InitOpaqueStructs=list,array,env,input \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
     --Transform=SelfModify \
-    --SelfModifyFraction=%100 \
-    --SelfModifySubExpressions=false \
-    --SelfModifyOperators=\* \
-    --SelfModifyKinds=\* \
-    --SelfModifyBogusInstructions=0"
+        --Functions=secrets \
+        --SelfModifySubExpressions=false \
+        --SelfModifyBogusInstructions=10"
+
 export tigress_options_selfmodify_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
 	${tigress_options_selfmodify_helper}"

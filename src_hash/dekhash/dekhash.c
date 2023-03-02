@@ -1,5 +1,6 @@
 /*!
     \secrets: main DEKHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -16,11 +17,17 @@ unsigned int DEKHash(char* str, unsigned int len) {
     return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
-    unsigned int hash = DEKHash(str, strlen(str));
+    unsigned int hash;
+    init_program();
+
+    hash = DEKHash(str, strlen(str));
   
-    if (hash == 0xde4363b7) {
+    if (hash == 0x7b9a14) {
         printf("You win!\n");
     }
     else {

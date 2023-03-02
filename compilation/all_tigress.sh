@@ -74,14 +74,18 @@ funcs=$(abcdef_fun_parse_secrets "$2")
 temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${tigress_prog:?} ${tigress_flags} ${tigress_options} --Functions=${funcs} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
+# Replace the secrets
+
+tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
+
+INFO "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
 
 # Generate the .s file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     INFO "Generating the .s file"
-    sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options} -S --Functions=${funcs} ${2} --out=${1}.c -o ${temp}.s ${abcdef_var_opts}"
+    sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} -S ${2} --out=${1}.c -o ${temp}.s ${abcdef_var_opts}"
 fi;
 
 # Obfuscate and compile the program
-sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options} --Functions=${funcs} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
+sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
 

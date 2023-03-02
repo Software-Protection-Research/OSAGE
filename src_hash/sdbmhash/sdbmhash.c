@@ -1,5 +1,6 @@
 /*!
     \secrets: main SDBMHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -16,11 +17,18 @@ unsigned int SDBMHash(char* str, unsigned int len) {
     return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
-    unsigned int hash = SDBMHash(str, strlen(str));
+    unsigned int hash;
 
-    if(hash == 0x89dcd66e) {
+    init_program();
+
+    hash = SDBMHash(str, strlen(str));
+
+    if(hash == 0x4745d132) {
         printf("You win!\n");
     }
     else {

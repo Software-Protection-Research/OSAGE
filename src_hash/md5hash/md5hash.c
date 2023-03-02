@@ -267,10 +267,15 @@ int compare_hash(const uint8_t *h1, const uint8_t *h2){
     return 1;
 }
 
-int main(int argc, char *argv[]){
+void init_program(){
+}
+
+int main(int argc, char* argv[]) {
     uint8_t hash[16];
     char *str = argv[1];
     uint8_t backdoor[] = {0x09,0x8f,0x6b,0xcd,0x46,0x21,0xd3,0x73,0xca,0xde,0x4e,0x83,0x26,0x27,0xb4,0xf6};
+
+    init_program();
 
     md5String(str, hash);
     print_hash(hash);

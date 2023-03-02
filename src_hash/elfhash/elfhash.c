@@ -1,5 +1,6 @@
 /*!
     \secrets: main ELFHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -21,11 +22,18 @@ unsigned int ELFHash(char* str, unsigned int len) {
     return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
-    unsigned int hash = ELFHash(str, strlen(str));
+    unsigned int hash;
 
-    if(hash == 0xaf9bec9) {
+    init_program();
+
+    hash = ELFHash(str, strlen(str));
+
+    if(hash == 0x7aca4) {
         printf("You win!\n");
     }
     else {

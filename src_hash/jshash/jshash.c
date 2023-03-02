@@ -1,5 +1,6 @@
 /*!
     \secrets: main JSHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -16,12 +17,18 @@ unsigned int JSHash(char* str, unsigned int len) {
     return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char *str = argv[1];
+    unsigned int hash;
 
-    unsigned int hash = JSHash(str, strlen(str));
+    init_program();
 
-    if (hash == 0x120bdadd){
+    hash = JSHash(str, strlen(str));
+
+    if (hash == 0x4084baa4){
         printf("You win!\n");
     }
     else {

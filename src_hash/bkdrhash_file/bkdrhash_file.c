@@ -1,5 +1,6 @@
 /*!
     \secrets: main BKDRHash
+    \backdoor: test
 */
 #include "../includes.h"
 #include <stdlib.h>
@@ -19,12 +20,17 @@ unsigned int BKDRHash(char* str, unsigned int len) {
 	return hash;
 }
 
+void init_program(){
+}
+
 int main(int argc, char* argv[]) {
     char infile[MAX_PATH];
     FILE* in_file;
     long fsize;
     char* string;
     unsigned int hash;
+
+    init_program();
 
     if(argc != 2){
         exit(1);
@@ -53,7 +59,7 @@ int main(int argc, char* argv[]) {
 
 	hash = BKDRHash(string, strlen(string));
 
-	if (hash == 0xbd9282b2) {
+	if (hash == 0x1dd934c) {
 		printf("You win!\n");
     }
 	else {
