@@ -201,6 +201,7 @@ RUN pacman -S --noconfirm dune parallel ocaml-findlib && \
     sudo -u nobody makepkg -s && \
     ls -lah && \
     pacman -U --noconfirm compcert-*.pkg.tar.zst && \
+    cd .. && \
     rm -r compcert;
 #sudo -u nobody makepkg -clean
 
