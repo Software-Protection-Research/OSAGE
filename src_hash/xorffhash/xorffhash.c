@@ -19,7 +19,7 @@ uint8_t xorff(const char* s, unsigned int len)
     return (((hash ^ 0xff) + 1) & 0xff);
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {

@@ -21,7 +21,7 @@ uint32_t adler32(const char* str, unsigned int len) {
     return (b << 16) | a;
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {

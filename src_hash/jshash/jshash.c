@@ -17,12 +17,13 @@ unsigned int JSHash(char* str, unsigned int len) {
     return hash;
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {
-    char *str = argv[1];
+    char *str;
     unsigned int hash;
+    str = argv[1];
 
     init_program();
 

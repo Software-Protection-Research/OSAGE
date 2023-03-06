@@ -13,12 +13,20 @@ int area_circle(int r) {
 	return result;
 }
 
+void init_program() {
+}
+
 int main(int argc, char* argv[]) {
+    unsigned int number;
+    char *str;
+    float str_to_int;
 
-    char *str = argv[1];
-    float str_to_int = atof(str);
-    unsigned int number = area_circle(str_to_int);
+    str = argv[1];
+    str_to_int = atof(str);
 
+    init_program();
+
+    number = area_circle(str_to_int);
 
     if (number == 452) {
         printf("You win!\n");
@@ -29,5 +37,4 @@ int main(int argc, char* argv[]) {
 
     printf("Hash: 0x%x\n", number);
     return 0;
-
 }

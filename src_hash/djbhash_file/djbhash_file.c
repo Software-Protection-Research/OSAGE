@@ -19,7 +19,7 @@ unsigned int DJBHash(char* str, unsigned int len) {
 	return hash;
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {

@@ -1,7 +1,7 @@
 /*!
     \secrets: main generate_domain get_nextdomain llist_create llist_free llist_append llist_getLast llist_getIndex llist_SetIndex llist_print_direct joinChr
+    \backdoor: 84
 */
-/* The other secrets not used are ... ord chr*/
 #include "../includes.h"
 #include<math.h>
 #include<string.h>
@@ -104,17 +104,36 @@ llist_append(self->domainhistory, (void*)generate_domain(self) );
 return  (char*) llist_getLast(self->domainhistory);}
 
 
-int main() {
-   struct sSelf self;
-   printf("START.\n");
-   init(&self);
-   printf("Init done.\n");
-   printf("%s\n",(char *) get_nextdomain(&self));
-   printf("%s\n",(char *) get_nextdomain(&self));
-   printf("%s\n",(char *) get_nextdomain(&self));
-   /* Free the list */
-   llist_free(self.domainhistory);
-   return 1;
+void init_program() {
+}
+
+int main(int argc, char* argv[]) {
+    struct sSelf self;
+    char *str;
+    float str_to_int;
+    int i;
+
+    init_program();
+
+    str = argv[1];
+    str_to_int = atof(str);
+
+    printf("START.\n");
+    init(&self);
+    printf("Init done.\n");
+    for(i=0;i<str_to_int;i++){
+        str = get_nextdomain(&self);
+        printf("%s\n", str);
+    }
+    if (strcmp(str,"cegkycykggwiekuk.org")==0){
+        printf("You win!\n");
+    }
+    else{
+        printf("You loose!\n");
+    }
+    /* Free the list */
+    llist_free(self.domainhistory);
+    return 0;
 }
 
 int ord(char * string){

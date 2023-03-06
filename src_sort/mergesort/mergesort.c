@@ -1,5 +1,6 @@
 /*!
     \secrets: main merge mergeSort
+    \backdoor: 84
 */
 #include "../includes.h"
 #include <stdio.h>
@@ -73,11 +74,16 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
+void init_program() {
+}
+
 int main(int argc, char* argv[]) {
 	int i;
+    int *arr;
 
+    init_program();
 	/*allocate the array with argc-1 size*/
-	int *arr = malloc(sizeof(int) * argc - 1);
+	arr = malloc(sizeof(int) * argc - 1);
 	if(!arr) {
 		printf("Error Allocating the array\n");
 		exit(1);
@@ -90,6 +96,13 @@ int main(int argc, char* argv[]) {
 
     /*sort algoritmus*/
 	mergeSort(arr,0,argc-2);
+
+    if (arr[0] == 84){
+        printf("You win!\n");
+    }
+    else{
+        printf("You loose!\n");
+    }
 
 	for(i=0; i<argc-1; i++) {
 		printf("%d ",arr[i]);

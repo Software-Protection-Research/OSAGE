@@ -267,7 +267,7 @@ int compare_hash(const uint8_t *h1, const uint8_t *h2){
     return 1;
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {

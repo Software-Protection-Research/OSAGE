@@ -21,7 +21,7 @@ uint32_t crc32(const char* str, unsigned int len) {
     return crc ^ 0xffffffff;
 }
 
-void init_program(){
+void init_program() {
 }
 
 int main(int argc, char* argv[]) {

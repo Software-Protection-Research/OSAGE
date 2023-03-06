@@ -44,25 +44,6 @@ done
 
 SUCCESS "All source code files have secrets in their main C files."
 
-# Check if every src file has a backdoor.
-DEBUG "Checking source files in ${abcdef_dir_src}/ for backdoor."
-for src_dir in "${abcdef_dir_src}"/*/; do
-	src_name=${src_dir%/}
-	src_name=${src_name##*/}
-    abcdef_file_main="${src_dir}${src_name}.c"
-
-	DEBUG "Checking if ${src_name} has a backdoor."
-    abcdef_var_backdoor=$(abcdef_fun_parse_backdoor "${abcdef_file_main}")
-    if [ "${abcdef_var_backdoor}" = "" ]; then
-        ERROR_EXIT "${src_name} has no backdoor in ${abcdef_file_main}!"
-	else
-        DEBUG "${src_name} has a backdoor (${abcdef_var_backdoor})."
-    fi
-done
-
-SUCCESS "All source code files have backdoors in their main C files."
-
-
 # Check if every src file has an init_program function.
 DEBUG "Checking source files in ${abcdef_dir_src}/*/* for init_program."
 for src_dir in "${abcdef_dir_src}"/*/; do
@@ -80,3 +61,21 @@ for src_dir in "${abcdef_dir_src}"/*/; do
 done
 
 SUCCESS "All source code files have init_program functions in their main C files."
+
+# Check if every src file has a backdoor.
+DEBUG "Checking source files in ${abcdef_dir_src}/ for backdoor."
+for src_dir in "${abcdef_dir_src}"/*/; do
+	src_name=${src_dir%/}
+	src_name=${src_name##*/}
+    abcdef_file_main="${src_dir}${src_name}.c"
+
+	DEBUG "Checking if ${src_name} has a backdoor."
+    abcdef_var_backdoor=$(abcdef_fun_parse_backdoor "${abcdef_file_main}")
+    if [ "${abcdef_var_backdoor}" = "" ]; then
+        ERROR_EXIT "${src_name} has no backdoor in ${abcdef_file_main}!"
+	else
+        DEBUG "${src_name} has a backdoor (${abcdef_var_backdoor})."
+    fi
+done
+
+SUCCESS "All source code files have backdoors in their main C files."
