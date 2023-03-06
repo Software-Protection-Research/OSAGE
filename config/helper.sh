@@ -45,6 +45,13 @@ abcdef_fun_parse_backdoor () {
     echo "$temp"
 }
 # --------------------------------------------------------------------
+#
+# --- Function for searchin for the init_program function ------------
+abcdef_fun_has_init_program_function() {
+    temp=$(grep -n "void init_program() {" "$1")
+    echo "$temp"
+}
+# --------------------------------------------------------------------
 
 # --------------------------------------------------------------------
 abcdef_fun_get_latest_out () {
