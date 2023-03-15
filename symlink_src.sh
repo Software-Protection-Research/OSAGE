@@ -3,10 +3,14 @@
 source config/config.sh
 
 # Check if the subdirs exist
-srcdirs="src_dga
+srcdirs="src_converter
+src_crypt
+src_dga
 src_hash
 src_math
-src_sort"
+src_search
+src_sort
+src_strings"
 outdir="src_all"
 rm -r "${outdir:?}"/*
 while read -r subdir_name;do
