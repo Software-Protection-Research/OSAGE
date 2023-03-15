@@ -21,10 +21,10 @@ int main(int argc, char* argv[]) {
     int str_to_int;
     unsigned int number;
 
+    init_program();
+
     str = argv[1];
     str_to_int = atoi(str);
-
-    init_program();
 
     number = area_of_square(str_to_int);
 

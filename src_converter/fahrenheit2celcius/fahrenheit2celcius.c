@@ -1,40 +1,41 @@
 /*!
-    \secrets: main area_circle
-    \backdoor: 12
+    \secrets: main FtoC
+    \backdoor: 67890826
 */
 #include "../includes.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
-int area_circle(int r) { 
-	float a;
-	a = 3.14*r*r;
-	int result = a; 
-	return result;
+int FtoC(float number) {
+    float c;
+    float f;
+    f = number;
+    c = (f-32)*5/9;
+    return c;
 }
 
 void init_program() {
 }
 
 int main(int argc, char* argv[]) {
-    unsigned int number;
     char *str;
     float str_to_int;
+    unsigned int number;
 
     init_program();
 
     str = argv[1];
     str_to_int = atof(str);
 
-    number = area_circle(str_to_int);
+    number = FtoC(str_to_int);
 
-    if (number == 452) {
+    if (number == 0x23f8470) {
         printf("You win!\n");
     }
     else {
         printf("You loose!\n");
     }
 
-    printf("Hash: 0x%x\n", number);
+    printf("Result: 0x%x\n", number);
     return 0;
 }

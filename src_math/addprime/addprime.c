@@ -35,11 +35,14 @@ void init_program() {
 }
 
 int main(int argc, char* argv[]) {
-    char *str = argv[1];
-    float str_to_int = atof(str);
+    char *str;
+    float str_to_int;
     unsigned int number;
 
     init_program();
+
+    str = argv[1];
+    str_to_int = atof(str);
 
     number = add_prime(str_to_int);
 

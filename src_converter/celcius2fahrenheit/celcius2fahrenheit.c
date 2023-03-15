@@ -1,34 +1,35 @@
 /*!
-    \secrets: main area_circle
-    \backdoor: 12
+    \secrets: main convertTemp
+    \backdoor: 3489823402234
 */
 #include "../includes.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
-int area_circle(int r) { 
-	float a;
-	a = 3.14*r*r;
-	int result = a; 
-	return result;
+/* Function that performs the conversion */
+double convertTemp(double initValue) {
+    double finalValue;
+
+    finalValue = (initValue * 9 / 5) + 32;
+
+    return finalValue;
 }
 
 void init_program() {
 }
 
 int main(int argc, char* argv[]) {
-    unsigned int number;
     char *str;
     float str_to_int;
+    unsigned int number;
 
     init_program();
 
     str = argv[1];
     str_to_int = atof(str);
+    number = convertTemp(str_to_int);
 
-    number = area_circle(str_to_int);
-
-    if (number == 452) {
+    if (number == 0x91700020) {
         printf("You win!\n");
     }
     else {

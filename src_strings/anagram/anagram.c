@@ -62,9 +62,9 @@ int main(int argc, char* argv[]) {
     unsigned int number;
     char *str;
 
-    str = argv[1];
-
     init_program();
+
+    str = argv[1];
 
     len = strlen(str); 
     len1 = len/2;
