@@ -24,10 +24,15 @@ int square_array(const int *a, int size) {
 	return sum;
 }
 
+void init_program() {
+}
+
 int main(int argc, char* argv[]) {
 	int i;
 	int *arr;
     unsigned int number;
+
+    init_program();
 
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
