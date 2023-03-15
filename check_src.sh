@@ -11,8 +11,8 @@ fi
 SUCCESS "The config file for the testcases (${abcdef_file_testcases}) exist."
 
 # Check if the testcases ini file has an entry for every src file.
-DEBUG "Checking source files in ${abcdef_dir_base}/src_* for testcases."
-for src_dirs in "${abcdef_dir_base}"/src_*/*/; do
+DEBUG "Checking source files in ${abcdef_dir_src}/*/ for testcases."
+for src_dirs in "${abcdef_dir_src}"/*/; do
 	src_name=${src_dirs%/}
 	src_name=${src_name##*/}
 	DEBUG "Checking if ${src_name} has a testcase."
