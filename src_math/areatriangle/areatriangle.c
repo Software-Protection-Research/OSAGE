@@ -7,11 +7,11 @@
 #include <stdlib.h>
 
 int area_triangle(int b) { 
-
 	float a, h;
+	int result; 
 	h = b/2.0; 
 	a = 0.5*b*h;
-	int result = a; 
+	result = a; 
 	return result;
 }
 
@@ -30,7 +30,6 @@ int main(int argc, char* argv[]) {
 
     number = area_triangle(str_to_int);
 
-
     if (number == 729) {
         printf("You win!\n");
     }
@@ -40,5 +39,4 @@ int main(int argc, char* argv[]) {
 
     printf("Hash: 0x%x\n", number);
     return 0;
-
 }

@@ -13,17 +13,17 @@ int automorphic(int num) {
     int last;
     int n;
 
-    // Calculate square of num
+    /* Calculate square of num */
     sqr = num * num;
     temp = num;
-    // Counting number of digits
+    /* Counting number of digits */
     n = 0;
     while (temp > 0) {
         n++;
         temp = temp / 10;
     }
 
-    // Extracting last n digits
+    /* Extracting last n digits */
     int den = floor(pow(10, n));
     last = sqr % den;
     if (last == num) {

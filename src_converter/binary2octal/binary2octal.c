@@ -15,10 +15,11 @@ int convert_to_octal(long long binary) {
     octal = 0;
     decimal = 0;
     i = 0;
-    //Step 1> convert binary to decimal
-    //Step 2> convert decimal to octal
+    /* Step 1> convert binary to decimal
+       Step 2> convert decimal to octal
+    */
     
-    // converting binary to decimal
+    /* converting binary to decimal */
     while (binary != 0) {
         decimal += (binary % 10) * pow(2, i);
         ++i;
@@ -26,7 +27,7 @@ int convert_to_octal(long long binary) {
     }
     i = 1;
 
-    // converting to decimal to octal
+    /* converting to decimal to octal */
     while (decimal != 0) {
         octal += (decimal % 8) * i;
         decimal /= 8;

@@ -8,8 +8,9 @@
 
 int area_circle(int r) { 
 	float a;
+	int result; 
 	a = 3.14*r*r;
-	int result = a; 
+	result = a; 
 	return result;
 }
 

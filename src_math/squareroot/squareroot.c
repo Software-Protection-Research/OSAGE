@@ -12,7 +12,7 @@ const double MAX_ERROR = 1e-7;
    can be set according to need or even taken in as input 
 */
 
-double squareRoot(int x) {
+double square_root(int x) {
     /* initial guess for the root */
 	double r = 1;
 	while (fabs(r*r - x) > MAX_ERROR) {
@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 
     str = argv[1];
     str_to_int = atof(str);
-    result = squareRoot(str_to_int);
+    result = square_root(str_to_int);
 
     if (result == 0x16f6) {
         printf("You win!\n");

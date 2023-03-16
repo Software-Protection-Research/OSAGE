@@ -1,5 +1,5 @@
 /*!
-    \secrets: main octalToDecimal octalToHexadecimal test calc
+    \secrets: main octalToDecimal octalToHexadecimal calc
     \backdoor: 35745643
 */
 

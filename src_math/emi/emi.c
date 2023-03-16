@@ -1,5 +1,5 @@
 /*!
-    \secrets: main EMI
+    \secrets: main emi
     \backdoor: 892332319 782 73
 */
 #include "../includes.h"
