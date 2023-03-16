@@ -26,7 +26,7 @@ def rz_disassemble(psample: str):
         for fun in functions:
             offset = fun["offset"]
             # print(offset)
-            pdfj = rz.cmdj(f"pdfj @{str(offset)}")
+            pdfj = rz.cmdj(f"pdfj @ {str(offset)}")
             if pdfj:
                 df = pd.DataFrame.from_dict(pdfj["ops"])
             else:
