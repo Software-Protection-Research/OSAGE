@@ -55,7 +55,7 @@ export compcertcc_home_oslatest="/compcert/pkg/compcert"
 compcertcc_prog_oslatest="$(which ccomp 2>&1)"
 export compcertcc_prog_oslatest
 export compcertcc_header_oslatest=""
-export compcertcc_flags_oslatest=""
+export compcertcc_flags_oslatest="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib"
 # CompCertCC options
 export compcertcc_options_default=""
 # --------------------------------------------------------------------
@@ -132,10 +132,11 @@ export ollvm_versions="llvm_4_0"
 export ollvm_prog_llvm_4_0="${abcdef_dir_tools}/ollvm_llvm-4.0/bin/clang"
 export ollvm_header_llvm_4_0=""
 # ollvm flags (=options per version)
+export ollvm_flags="-Xlinker -L/usr/lib/x86_64-linux-gnu -Xlinker -L/usr/local/lib"
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    export ollvm_flags_llvm_4_0="-save-temps -Wl,-Map=%"
+    export ollvm_flags_llvm_4_0="${ollvm_flags} -save-temps -Wl,-Map=%"
 else
-    export ollvm_flags_llvm_4_0=""
+    export ollvm_flags_llvm_4_0="${ollvm_flags}"
 fi;
 # ollvm obfuscation options
 export ollvm_options_bcf="-mllvm -bcf"
@@ -145,6 +146,38 @@ export ollvm_options_bfs="${ollvm_options_bcf} ${ollvm_options_fla} ${ollvm_opti
 export ollvm_options_bs="${ollvm_options_bcf} ${ollvm_options_sub}"
 export ollvm_options_bf="${ollvm_options_bcf} ${ollvm_options_fla}"
 export ollvm_options_fs="${ollvm_options_fla} ${ollvm_options_sub}"
+
+export ollvm_options_bcf_O0="${ollvm_options_bcf} -O0"
+export ollvm_options_fla_O0="${ollvm_options_fla} -O0"
+export ollvm_options_sub_O0="${ollvm_options_sub} -O0"
+export ollvm_options_bfs_O0="${ollvm_options_bfs} -O0"
+export ollvm_options_bs_O0="${ollvm_options_bs} -O0"
+export ollvm_options_bf_O0="${ollvm_options_bf} -O0"
+export ollvm_options_fs_O0="${ollvm_options_fs} -O0"
+
+export ollvm_options_bcf_O1="${ollvm_options_bcf} -O1"
+export ollvm_options_fla_O1="${ollvm_options_fla} -O1"
+export ollvm_options_sub_O1="${ollvm_options_sub} -O1"
+export ollvm_options_bfs_O1="${ollvm_options_bfs} -O1"
+export ollvm_options_bs_O1="${ollvm_options_bs} -O1"
+export ollvm_options_bf_O1="${ollvm_options_bf} -O1"
+export ollvm_options_fs_O1="${ollvm_options_fs} -O1"
+
+export ollvm_options_bcf_O2="${ollvm_options_bcf} -O2"
+export ollvm_options_fla_O2="${ollvm_options_fla} -O2"
+export ollvm_options_sub_O2="${ollvm_options_sub} -O2"
+export ollvm_options_bfs_O2="${ollvm_options_bfs} -O2"
+export ollvm_options_bs_O2="${ollvm_options_bs} -O2"
+export ollvm_options_bf_O2="${ollvm_options_bf} -O2"
+export ollvm_options_fs_O2="${ollvm_options_fs} -O2"
+
+export ollvm_options_bcf_O3="${ollvm_options_bcf} -O3"
+export ollvm_options_fla_O3="${ollvm_options_fla} -O3"
+export ollvm_options_sub_O3="${ollvm_options_sub} -O3"
+export ollvm_options_bfs_O3="${ollvm_options_bfs} -O3"
+export ollvm_options_bs_O3="${ollvm_options_bs} -O3"
+export ollvm_options_bf_O3="${ollvm_options_bf} -O3"
+export ollvm_options_fs_O3="${ollvm_options_fs} -O3"
 # --------------------------------------------------------------------
 
 
@@ -291,19 +324,26 @@ latest"
 # TinyCC 0.9.27 variables
 export tinycc_home_0_9_27="${abcdef_dir_tools}/tinycc_release_0_9_27"
 export tinycc_prog_0_9_27="${tinycc_home_0_9_27}/bin/tcc"
+#export tinycc_flags="-bench -vv -Wall"
+export tinycc_flags=""
 # export tinycc_flags_0_9_27="-mno-mmx -mno-sse"
-export tinycc_flags_0_9_27=""
+if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
+    export tinycc_flags_0_9_27="-Wl,-Map=% ${tinycc_flags}"
+else
+    export tinycc_flags_0_9_27="${tinycc_flags}"
+fi;
 export tinycc_header_0_9_27=""
 # TinyCC latest variables
 export tinycc_home_latest="${abcdef_dir_tools}/tinycc_latest"
 export tinycc_prog_latest="${tinycc_home_latest}/bin/tcc"
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    export tinycc_flags_latest="-Wl,-Map=%"
+    export tinycc_flags_latest="-Wl,-Map=% ${tinycc_flags}"
 else
-    export tinycc_flags_latest=""
+    export tinycc_flags_latest="${tinycc_flags}"
 fi;
 export tinycc_header_latest=""
 # TinyCC options
+#export tinycc_options_default="-L /usr/lib32"
 export tinycc_options_default=""
 # --------------------------------------------------------------------
 
@@ -315,7 +355,7 @@ export tendra_home_latest="${abcdef_dir_tools}/tendra_latest"
 export tendra_prog_latest="${tendra_home_latest}/obj/bin/tcc"
 # export tendra_flags_latest="-dump -not_ansi -nepc -v-verbose -keep_errors -Wl,-Map=%"
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    export tendra_flags_latest="-verbose -show_errors -keep_errors -Wl,-Map=%"
+    export tendra_flags_latest="-verbose -show_errors -keep_errors -tidy -Wl,-Map=%"
 else
     export tendra_flags_latest="-verbose -show_errors -tidy"
 fi;

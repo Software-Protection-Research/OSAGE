@@ -24,9 +24,9 @@ long octalToDecimal(long octalValue) {
     long decimalValue = 0;
     int i = 0;
     while (octalValue) {
-        // Extracts right-most digit, multiplies it with 8^i, and increment i by 1
+        /* Extracts right-most digit, multiplies it with 8^i, and increment i by 1 */
         decimalValue += (long)(octalValue % 10) * pow(8, i++);
-        // Shift right in base 10
+        /* Shift right in base 10 */
         octalValue /= 10;
     }
     return decimalValue;
@@ -39,7 +39,8 @@ long octalToDecimal(long octalValue) {
  * @returns a hexadecimal value as a string after conversion
  */
 char *octalToHexadecimal(long octalValue) {
-    char *hexadecimalValue = malloc(256 * sizeof(char));
+    char *hexadecimalValue;
+    hexadecimalValue = malloc(256 * sizeof(char));
     sprintf(hexadecimalValue, "%lX", octalToDecimal(octalValue));
     return hexadecimalValue;
 }
@@ -50,16 +51,20 @@ char *octalToHexadecimal(long octalValue) {
  * @returns number on exit
  */
 int calc(int number) {
-    // get the value of octal number as input
-    int octalValue = number;
+    char *hexadecimalValue;
+    int octalValue;
+    char *ptr; 
+    long r;
 
-    // call the function octalToHexadecimal and print the hexadecimal value
-    char *hexadecimalValue = octalToHexadecimal(octalValue);
+    /* get the value of octal number as input */
+    octalValue = number;
+
+    /* call the function octalToHexadecimal and print the hexadecimal value */
+    hexadecimalValue = octalToHexadecimal(octalValue);
     printf("Equivalent hexadecimal number is: %s", hexadecimalValue);
 
-    // return
-    char *ptr; 
-    long r = strtol(hexadecimalValue, &ptr, 16);
+    /* return */
+    r = strtol(hexadecimalValue, &ptr, 16);
     free(hexadecimalValue);
     return r; 
 }

@@ -15,10 +15,14 @@
  */
 
 typedef struct{
-    uint64_t size;        // Size of input in bytes
-    uint32_t buffer[4];   // Current accumulation of hash
-    uint8_t input[64];    // Input to be used in the next step
-    uint8_t digest[16];   // Result of algorithm
+    /* Size of input in bytes */
+    uint64_t size;
+    /* Current accumulation of hash */
+    uint32_t buffer[4];
+    /* Input to be used in the next step */
+    uint8_t input[64];
+    /* Result of algorithm */
+    uint8_t digest[16];
 }MD5Context;
 
 void md5Init(MD5Context *ctx);
@@ -113,19 +117,19 @@ void md5Update(MD5Context *ctx, uint8_t *input_buffer, size_t input_len){
     unsigned int offset = ctx->size % 64;
     ctx->size += (uint64_t)input_len;
 
-    // Copy each byte in input_buffer into the next space in our context input
+    /* Copy each byte in input_buffer into the next space in our context input */
     for(unsigned int i = 0; i < input_len; ++i){
         ctx->input[offset++] = (uint8_t)*(input_buffer + i);
 
-        // If we've filled our context input, copy it into our local array input
-        // then reset the offset to 0 and fill in a new buffer.
-        // Every time we fill out a chunk, we run it through the algorithm
-        // to enable some back and forth between cpu and i/o
+        /* If we've filled our context input, copy it into our local array input
+           then reset the offset to 0 and fill in a new buffer.
+           Every time we fill out a chunk, we run it through the algorithm
+           to enable some back and forth between cpu and i/o */
         if(offset % 64 == 0){
             for(unsigned int j = 0; j < 16; ++j){
-                // Convert to little-endian
-                // The local variable `input` our 512-bit chunk separated into 32-bit words
-                // we can use in calculations
+                /* Convert to little-endian
+                   The local variable `input` our 512-bit chunk separated into 32-bit words
+                   we can use in calculations */
                 input[j] = (uint32_t)(ctx->input[(j * 4) + 3]) << 24 |
                            (uint32_t)(ctx->input[(j * 4) + 2]) << 16 |
                            (uint32_t)(ctx->input[(j * 4) + 1]) <<  8 |
@@ -146,12 +150,13 @@ void md5Finalize(MD5Context *ctx){
     unsigned int offset = ctx->size % 64;
     unsigned int padding_length = offset < 56 ? 56 - offset : (56 + 64) - offset;
 
-    // Fill in the padding and undo the changes to size that resulted from the update
+    /* Fill in the padding and undo the changes to size that resulted from the update */
     md5Update(ctx, PADDING, padding_length);
     ctx->size -= (uint64_t)padding_length;
 
-    // Do a final update (internal to this function)
-    // Last two 32-bit words are the two halves of the size (converted from bytes to bits)
+    /* Do a final update (internal to this function)
+       Last two 32-bit words are the two halves of the size (converted from bytes to bits)
+    */
     for(unsigned int j = 0; j < 14; ++j){
         input[j] = (uint32_t)(ctx->input[(j * 4) + 3]) << 24 |
                    (uint32_t)(ctx->input[(j * 4) + 2]) << 16 |
@@ -163,7 +168,7 @@ void md5Finalize(MD5Context *ctx){
 
     md5Step(ctx->buffer, input);
 
-    // Move the result into digest (convert from little-endian)
+    /* Move the result into digest (convert from little-endian) */
     for(unsigned int i = 0; i < 4; ++i){
         ctx->digest[(i * 4) + 0] = (uint8_t)((ctx->buffer[i] & 0x000000FF));
         ctx->digest[(i * 4) + 1] = (uint8_t)((ctx->buffer[i] & 0x0000FF00) >>  8);
@@ -260,7 +265,7 @@ void print_hash(uint8_t *p){
 int compare_hash(const uint8_t *h1, const uint8_t *h2){
     for(unsigned int i = 0; i < 16; ++i){
         if (h1[i] != h2[i]){
-            // printf("%d != %d\n", h1[i], h2[i]);
+            /* printf("%d != %d\n", h1[i], h2[i]); */
             return 0;
         }
     }

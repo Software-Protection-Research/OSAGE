@@ -27,37 +27,37 @@ int reverse(int num) {
 }
  
 int magic_number(int n) {
-        int num, sum, rev;
- 
-        num = n; 
-        
-        /* find sum of digits by calling function */
-        sum = sumOfDigits(num);
- 
-        
-         //if the value is single digit, then
-         //the value and its reverse are same         
-        if (sum < 10) {
-                if ((sum * sum) == num) {
-                        printf("%d is a magic number\n", num);
-                } else {
-                        printf("%d is not a magic number\n", num);
-                }
-                return 0;
+    int num, sum, rev;
+
+    num = n; 
+
+    /* find sum of digits by calling function */
+    sum = sumOfDigits(num);
+
+    /* if the value is single digit, then
+       the value and its reverse are same */
+    if (sum < 10) {
+        if ((sum * sum) == num) {
+            printf("%d is a magic number\n", num);
         }
- 
-        /* reverse of the given number */
-        rev = reverse(sum);//calling reverse function
- 
-        /* printing the outputs */
-        if ((sum * rev) == num) {
-                printf("%d is a magic number\n", num);
-                return num; 
-        } else {
-                printf("%d is not a magic number\n", num);
-                return sum * rev;
+        else {
+            printf("%d is not a magic number\n", num);
         }
- 
+        return 0;
+    }
+
+    /* reverse of the given number */
+    rev = reverse(sum);
+
+    /* printing the outputs */
+    if ((sum * rev) == num) {
+        printf("%d is a magic number\n", num);
+        return num; 
+    }
+    else {
+        printf("%d is not a magic number\n", num);
+        return sum * rev;
+    }
 }
 
 void init_program() {

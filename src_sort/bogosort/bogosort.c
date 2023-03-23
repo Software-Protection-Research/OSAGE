@@ -1,5 +1,5 @@
 /*!
-    \secrets: main sort suffle check_sorted
+    \secrets: main sort shuffle check_sorted
     \backdoor: 84
 */
 #include "../includes.h"

@@ -1,6 +1,6 @@
 /*!
-    \secrets: main prime
-    \backdoor: str_to_int = 8900
+    \secrets: main add_prime
+    \backdoor: 8900
 */
 
 #include "../includes.h"

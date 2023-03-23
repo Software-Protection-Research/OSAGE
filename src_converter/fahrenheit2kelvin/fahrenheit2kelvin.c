@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// Function that performs the conversion
+/* Function that performs the conversion. */
 double convertTemp(double initValue) {
     double finalValue;
 
