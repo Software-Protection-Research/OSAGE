@@ -3,8 +3,17 @@
 source config/config.sh
 
 INFO "--- src ---"
-abcdef_var_num_src=$(find "${abcdef_dir_src}" -maxdepth 1 -mindepth 1 -type d | wc -l)
-printf "Directories: %03d | %s\n" "${abcdef_var_num_src}" "${abcdef_dir_src}"
+sum_dir=0
+sum_all=0
+for progSubdir in "${abcdef_dir_base}"/src_*;
+do
+    num_dir=$(find -L "${progSubdir}" -maxdepth 1 -mindepth 1 -type d | wc -l)
+    sum_dir=$((sum_dir + num_dir))
+    num_all=$(find -L "${progSubdir}" -maxdepth 1 -mindepth 1 -type f | wc -l)
+    sum_all=$((sum_all + num_all))
+    printf "%s\nDirectories: %03d | All files: %04d |\n" "${progSubdir}" "${num_dir}" "${num_all}"
+done
+printf "SUMM\nDirectories: %03d | All files: %04d |\n" "${sum_dir}" "${sum_all}"
 
 INFO "--- out / prog ---"
 
