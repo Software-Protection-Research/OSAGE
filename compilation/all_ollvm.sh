@@ -64,21 +64,24 @@ echo "${ollvm_header}" > "${abcdef_dir_prog_cur:?}/../includes.h"
 temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${ollvm_prog:?} ${ollvm_flags:=} ${ollvm_options:=} -o ${temp} ${abcdef_var_opts} $2"
-# Generate the .s file
-if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    INFO "Generating the .s file"
-    INFO_EXEC "${ollvm_prog:?} ${ollvm_flags:=} ${ollvm_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
-fi;
-
 # Compile the program
 INFO_EXEC "${ollvm_prog:?} ${ollvm_flags:=} ${ollvm_options:=} -o ${temp} ${abcdef_var_opts} $2"
 
-# Generate the cfg from the .bc file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
+    # Generate the .s file
+    INFO "Generating the .s file"
+    INFO_EXEC "${ollvm_prog:?} ${ollvm_flags:=} ${ollvm_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
+    # Generate the marked file
+    # Insert the markers into the .s file and create a marked.s file
+    INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+    # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
+    # --- The calculation is not done here
+    INFO "Compiling marked version with:"
+    INFO_EXEC "${ollvm_prog:?} ${ollvm_flags:=} ${ollvm_options:=} -o ${temp}.s ${abcdef_var_opts} $2"
+    # Generate the cfg from the .bc file
     INFO "Generate the cfg from the .bc file"
     mkdir "${temp}_cfg"
     cd "${temp}_cfg" || exit 1
     INFO_EXEC "${opt_prog:?} ${opt_options:=} -dot-cfg ../${temp}.bc"
 fi;
-

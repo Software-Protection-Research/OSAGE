@@ -78,6 +78,10 @@ abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
 tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
 
+INFO "Compiling with:"
+# Obfuscate and compile the program
+INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
+
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     # Generate the .s file
     INFO "Generating the .s file with:"
@@ -96,10 +100,5 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     # --- The calculation is not done here
     INFO "Compiling marked version with:"
     # -fno-zero-initialized-in-bss -> allows us to put the quad in the bss section
-    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} -Wno-zero-initialized-in-bss -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
+    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
 fi;
-
-INFO "Compiling with:"
-# Obfuscate and compile the program
-INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
-
