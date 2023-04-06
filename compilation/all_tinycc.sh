@@ -68,6 +68,4 @@ temp=$(echo "$1" | cut -d "." -f1)
 
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${tinycc_prog:?} ${tinycc_flags:=} ${tinycc_options:=} -o ${temp} ${abcdef_var_opts} $2"
-sh -c "${tinycc_prog:?} ${tinycc_flags:=} ${tinycc_options:=} -o ${temp} ${abcdef_var_opts} $2"
-
+INFO_EXEC "${tinycc_prog:?} ${tinycc_flags:=} ${tinycc_options:=} -o ${temp} ${abcdef_var_opts} $2"

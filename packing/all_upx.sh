@@ -54,9 +54,6 @@ if [ -z "$upx_prog" ]; then
 	ERROR_EXIT "Could not get the program name for UPX from the config."
 fi
 
-INFO "${upx_prog:?} ${upx_options:=} -o ${1} ${2}"
-
 echo "${upx_header}" > "${abcdef_dir_src:?}/includes.h"
 
-sh -c "${upx_prog:?} ${upx_options:=} -o ${1} ${2}"
-
+INFO_EXEC "${upx_prog:?} ${upx_options:=} -o ${1} ${2}"

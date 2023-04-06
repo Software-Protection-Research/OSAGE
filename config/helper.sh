@@ -30,6 +30,10 @@ function WARNING {
 function INFO {
 	echo -e "${INFO_COLOR}[INFO]${NC}: ${1:-"Unknown info"}"
 }
+function INFO_EXEC {
+	INFO "${1}"
+    sh -c "${1}"
+}
 # --------------------------------------------------------------------
 
 # --- Function for parsing the secrets out of docstrings/comments ----

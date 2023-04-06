@@ -68,17 +68,17 @@ INFO "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_va
 # Generate the .s file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     INFO "Generating the .s file"
-    sh -c "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
+    INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
 fi;
 
 # Compile the program
-sh -c "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_var_opts} $2"
+INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_var_opts} $2"
 
 # Generate the cfg from the .bc file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     INFO "Generate the cfg from the .bc file"
     mkdir "${temp}_cfg"
     cd "${temp}_cfg" || exit 1
-    sh -c "${opt_prog:?} ${opt_options:=} -dot-cfg ../${temp}.bc"
+    INFO_EXEC "${opt_prog:?} ${opt_options:=} -dot-cfg ../${temp}.bc"
 fi;
 

@@ -78,14 +78,28 @@ abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
 tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
 
-INFO "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
-
-# Generate the .s file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    INFO "Generating the .s file"
-    sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} -S ${2} --out=${1}.c -o ${temp}.s ${abcdef_var_opts}"
+    # Generate the .s file
+    INFO "Generating the .s file with:"
+    INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} -S ${2} --out=${1}.c -o ${temp}.s ${abcdef_var_opts}"
+    # Get gcc options from the tigress option
+    # It should have a parameter gcc="XXXX YYYYY" we want the XXXX and YYYYY
+    gcc_flags=${tigress_options#*--gcc=\"}
+    gcc_flags=${gcc_flags%\"*}
+    gcc_prog=${gcc_flags% *}
+    gcc_flags=${gcc_flags#* }
+    DEBUG "PREFIX123888: prog: ${gcc_prog} and flag: ${gcc_flags} FROM -> ${tigress_options}"
+    # Insert the markers into the .s file and create a marked.s file
+    INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+    # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
+    # --- The calculation is not done here
+    INFO "Compiling marked version with:"
+    # -fno-zero-initialized-in-bss -> allows us to put the quad in the bss section
+    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} -Wno-zero-initialized-in-bss -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
 fi;
 
+INFO "Compiling with:"
 # Obfuscate and compile the program
-sh -c "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
+INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
 

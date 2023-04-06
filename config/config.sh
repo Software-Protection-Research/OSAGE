@@ -2,7 +2,7 @@
 
 export _DEBUG="off"
 export _ABCDEF_TIMEOUT="15m"
-export _DUMP_COMPILER_INFO=0
+export _DUMP_COMPILER_INFO=1
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -35,6 +35,10 @@ export abcdef_dir_compilation="${abcdef_dir_base}/compilation"
 export abcdef_dir_packing="${abcdef_dir_base}/packing"
 # Directory with the analysis scripts.
 export abcdef_dir_analysis="${abcdef_dir_base}/analysis"
+# --------------------------------------------------------------------
+
+# --- Helper scripts -------------------------------------------------
+export abcdef_awk_addmarker="${abcdef_dir_base}/add_marker.awk"
 # --------------------------------------------------------------------
 
 # Set to ="" to use all compilers/obfuscators from the abcdef_dir_compilation
