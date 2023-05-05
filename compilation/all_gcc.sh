@@ -67,16 +67,16 @@ abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 # Compile the program
 INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} ${gcc_options:=} -o ${temp} ${abcdef_var_opts} $2"
 
-# Run gcc with -S to create the assembly file
-if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    INFO "Generating the .s file with:"
-    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} ${gcc_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
-    # Insert the markers into the .s file and create a marked.s file
-    INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
-    awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
-    # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
-    # --- The calculation is not done here
-    INFO "Compiling marked version with:"
-    # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
-    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} ${gcc_options:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
-fi;
+# # Run gcc with -S to create the assembly file
+# if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
+#     INFO "Generating the .s file with:"
+#     INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} ${gcc_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
+#     # Insert the markers into the .s file and create a marked.s file
+#     INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+#     awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+#     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
+#     # --- The calculation is not done here
+#     INFO "Compiling marked version with:"
+#     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
+#     INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} ${gcc_options:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
+# fi;
