@@ -80,7 +80,7 @@ export gcc_prog_musl_oslatest
 export gcc_header_musl_oslatest=""
 # options
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    export gcc_options_general="-fverbose-asm -fdump-tree-cfg -fdump-tree-all-graph -Wl,-Map=%"
+    export gcc_options_general="-fverbose-asm -fdump-tree-cfg -fdump-tree-all-graph -Wl,-Map=% -Wa,-alh,-L"
 else
     export gcc_options_general=""
 fi;
@@ -138,7 +138,7 @@ export ollvm_header_llvm_4_0=""
 # ollvm flags (=options per version)
 export ollvm_flags="-Xlinker -L/usr/lib/x86_64-linux-gnu -Xlinker -L/usr/local/lib"
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    export ollvm_flags_llvm_4_0="${ollvm_flags} -save-temps -Wl,-Map=%"
+    export ollvm_flags_llvm_4_0="${ollvm_flags} -save-temps -Wl,-Map=% -Wa,-alh,-L"
 else
     export ollvm_flags_llvm_4_0="${ollvm_flags}"
 fi;
