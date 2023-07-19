@@ -56,7 +56,7 @@ build_image:
     timeout: 1d
     image: docker:latest
     services:
-        - docker:latest-dind
+        - docker:dind
     before_script:
         - docker info
     script:
