@@ -1,0 +1,138 @@
+
+default:
+    tags:
+        - shared
+
+stages:
+    - prepare
+    - check
+    - generate
+    - documentation
+    - release
+
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+#    - venv/
+
+
+# Pre-script
+before_script:
+    - uname -a
+#     - python3 -V || exit_code=$?
+#     - python -V || exit_code=$?
+#     - pytest --version || exit_code=$?
+#     - flake8 --version || exit_code=$?
+#     - mypy --version || exit_code=$?
+#     - shellcheck --version || exit_code=$?
+#     - chktex --version || exit_code=$?
+#     - ls -lah /opt/ || exit_code=$?
+#     - cd /opt/ && ln -s $CI_PROJECT_DIR/code samplegenerator_code || exit_code=$?
+#     - cd $CI_PROJECT_DIR || exit_code=$?
+#     - touch /opt/testfile || exit_code=$?
+#     - find /opt/samplegenerator_code/ -name "*.sh" | xargs -I {} chmod a+x {} || exit_code=$?
+#     - ls -lah /opt/ || exit_code=$?
+
+# Prepare the dockerimage (speedup)
+build_image:
+    stage: prepare
+    timeout: 1d
+    script:
+        - pwd
+        - ls -lah
+        - docker build -f Dockerfile.arch -t "samplegenerator:latest" .
+
+shellcheck:
+    stage: linting
+    image: registry.gitlab.com/pipeline-components/shellcheck:latest
+    allow_failure: true
+    script:
+      - |
+        find . -name .git -type d -prune -o -type f -name \*.sh -print0 |
+        xargs -0 -r -n1 shellcheck
+
+flake8:
+    stage: linting
+    image: python:latest
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.py" |
+          xargs -I {} python -m flake8 {}
+
+mypy:
+    stage: linting
+    image: python:latest
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.py" |
+          xargs -I {} python -m mypy {}
+
+chktex:
+    stage: linting
+    image: "raabf/latex-versions:latest"
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.tex" |
+          xargs -I {} chktex {}
+
+check_dependencies:
+    stage: check
+    image: samplegenerator:latest
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make check_dependencies
+    needs: ["build_image"]
+
+check_src:
+    stage: check
+    image: samplegenerator:latest
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make check_src
+    needs: ["build_image"]
+
+
+compile_samples:
+    stage: generate
+    image: samplegenerator:latest
+    when: manual
+    allow_failure: true
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make start_compile
+        - pwd && ls -lah && ls out/*
+    artifacts:
+        paths:
+            - "code/out/*/*"
+    needs: ["build_image", "check_dependencies", "check_src"]
+
+
+
+build_release_image:
+    stage: release
+    when: manual
+    script:
+        - pwd
+        - ls -lah
+        - export version=$(date +"%Y%m%d_%H")
+        - docker build -f Dockerfile.arch -t "samplegenerator:$version" . --build-arg version=$version
+    tags:
+        - docker_build
+
