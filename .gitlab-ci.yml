@@ -32,6 +32,10 @@ cache:
 # Pre-script
 before_script:
     - uname -a
+    - df
+    - cat /etc/resolv.conf
+    - cat /etc/hosts
+
 #     - python3 -V || exit_code=$?
 #     - python -V || exit_code=$?
 #     - pytest --version || exit_code=$?
