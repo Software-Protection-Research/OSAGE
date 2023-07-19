@@ -2,6 +2,8 @@
 default:
     tags:
         - shared
+    services:
+        - docker:dind
 
 stages:
     - prepare
@@ -58,8 +60,6 @@ build_image:
     stage: prepare
     timeout: 1d
     image: docker:latest
-    services:
-        - docker:dind
     before_script:
         - docker info
     script:
