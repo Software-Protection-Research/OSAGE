@@ -49,6 +49,7 @@ before_script:
 build_image:
     stage: prepare
     timeout: 1d
+    image: docker:latest
     script:
         - pwd
         - ls -lah
