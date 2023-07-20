@@ -61,6 +61,7 @@ tag_dockerimage:
         - changes:
             - arch.Dockerfile
             - build_*.sh
+    needs: ["build_dockerimage"]
 
 shellcheck:
     stage: lint
