@@ -60,6 +60,7 @@ tag_dockerimage:
     rules:
         - changes:
             - arch.Dockerfile
+            - debian.Dockerfile
             - build_*.sh
     needs: ["build_dockerimage"]
 

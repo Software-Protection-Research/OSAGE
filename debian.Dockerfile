@@ -113,14 +113,7 @@ RUN pwd && \
 
 
 # Copy the code directory to /opt
-COPY code /opt/samplegenerator_code
-# Remove the code if the version is not given. If there is no version it is no release!
-RUN if [ -z "$version" ] ; then \
-		rm -rf /opt/samplegenerator_code; \
-	else \
-		# Make all shell scripts executable
-		find /opt/samplegenerator_code/ -name "*.sh" | xargs -I {} chmod a+x {}; \
-	fi
+COPY ./ /opt/samplegenerator_code
 
 ENTRYPOINT ["bash"]
 WORKDIR /opt/samplegenerator_code/
