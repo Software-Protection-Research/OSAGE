@@ -1,27 +1,22 @@
-
 default:
+    image: docker:latest
     tags:
         - shared
     services:
-        - docker:dind
-
-stages:
-    - prepare
-    - linting
-    - check
-    - generate
-    - documentation
-    - release
-
+        - name: docker:dind
+          alias: docker
 
 # Change pip's cache directory to be inside the project directory since we can
 # only cache local items.
 variables:
-  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-  DOCKER_HOST: tcp://docker:2376
-  DOCKER_TLS_CERTDIR: "/certs"
-  DOCKER_TLS_VERIFY: 1
-  DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+    CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+
 
 # Pip's cache doesn't store the python packages
 # https://pip.pypa.io/en/stable/reference/pip_install/#caching
@@ -33,42 +28,42 @@ cache:
     - .cache/pip
 #    - venv/
 
+stages:
+    - prepare
+    - lint
+    - test
+    - generate
+    - deploy
 
-# Pre-script
-before_script:
-    - uname -a
-    - df
-    - cat /etc/resolv.conf
-    - cat /etc/hosts
-
-#     - python3 -V || exit_code=$?
-#     - python -V || exit_code=$?
-#     - pytest --version || exit_code=$?
-#     - flake8 --version || exit_code=$?
-#     - mypy --version || exit_code=$?
-#     - shellcheck --version || exit_code=$?
-#     - chktex --version || exit_code=$?
-#     - ls -lah /opt/ || exit_code=$?
-#     - cd /opt/ && ln -s $CI_PROJECT_DIR/code samplegenerator_code || exit_code=$?
-#     - cd $CI_PROJECT_DIR || exit_code=$?
-#     - touch /opt/testfile || exit_code=$?
-#     - find /opt/samplegenerator_code/ -name "*.sh" | xargs -I {} chmod a+x {} || exit_code=$?
-#     - ls -lah /opt/ || exit_code=$?
-
-# Prepare the dockerimage (speedup)
-build_image:
+# Prepare the dockerimage
+build_dockerimage:
     stage: prepare
     timeout: 1d
-    image: docker:latest
     before_script:
-        - docker info
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     script:
-        - pwd
-        - ls -lah
-        - docker build -f Dockerfile.arch -t "samplegenerator:latest" .
+        - docker build -f arch.Dockerfile --pull -t $CONTAINER_TEST_IMAGE .
+        - docker push $CONTAINER_TEST_IMAGE
+    rules:
+        - changes:
+            - arch.Dockerfile
+            - build_*.sh
+
+tag_dockerimage:
+    stage: prepare
+    before_script:
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    script:
+        - docker pull $CONTAINER_TEST_IMAGE
+        - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+        - docker push $CONTAINER_RELEASE_IMAGE
+    rules:
+        - changes:
+            - arch.Dockerfile
+            - build_*.sh
 
 shellcheck:
-    stage: linting
+    stage: lint
     image: registry.gitlab.com/pipeline-components/shellcheck:latest
     allow_failure: true
     script:
@@ -77,7 +72,7 @@ shellcheck:
         xargs -0 -r -n1 shellcheck
 
 flake8:
-    stage: linting
+    stage: lint
     image: python:latest
     allow_failure: true
     script:
@@ -86,7 +81,7 @@ flake8:
           xargs -I {} python -m flake8 {}
 
 mypy:
-    stage: linting
+    stage: lint
     image: python:latest
     allow_failure: true
     script:
@@ -95,7 +90,7 @@ mypy:
           xargs -I {} python -m mypy {}
 
 chktex:
-    stage: linting
+    stage: lint
     image: "raabf/latex-versions:latest"
     allow_failure: true
     script:
@@ -104,27 +99,25 @@ chktex:
           xargs -I {} chktex {}
 
 check_dependencies:
-    stage: check
-    image: samplegenerator:latest
+    stage: test
+    image: $CONTAINER_RELEASE_IMAGE
     script:
         - ls -lah
         - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
         - make check_dependencies
-    needs: ["build_image"]
 
 check_src:
-    stage: check
-    image: samplegenerator:latest
+    stage: test
+    image: $CONTAINER_RELEASE_IMAGE
     script:
         - ls -lah
         - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
         - make check_src
-    needs: ["build_image"]
 
 
 compile_samples:
     stage: generate
-    image: samplegenerator:latest
+    image: $CONTAINER_RELEASE_IMAGE
     when: manual
     allow_failure: true
     script:
@@ -135,18 +128,4 @@ compile_samples:
     artifacts:
         paths:
             - "code/out/*/*"
-    needs: ["build_image", "check_dependencies", "check_src"]
-
-
-
-build_release_image:
-    stage: release
-    when: manual
-    script:
-        - pwd
-        - ls -lah
-        - export version=$(date +"%Y%m%d_%H")
-        - docker build -f Dockerfile.arch -t "samplegenerator:$version" . --build-arg version=$version
-    tags:
-        - docker_build
 
