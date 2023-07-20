@@ -1,9 +1,5 @@
-FROM --platform=$BUILDPLATFORM archlinux:base-devel
-ARG TARGETPLATFORM
-ARG BUILDPLATFORM
+FROM archlinux:base-devel
 MAINTAINER nobody@fhstp.ac.at
-ARG version
-RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 # Update and install packages
 RUN set -eux; \
