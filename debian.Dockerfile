@@ -1,6 +1,5 @@
 FROM debian:bullseye-slim
 MAINTAINER nobody@fhstp.ac.at
-ARG version
 
 # Update and install packages
 RUN set -eux; \
