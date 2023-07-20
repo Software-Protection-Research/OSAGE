@@ -42,11 +42,11 @@ build_dockerimage:
     before_script:
         - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     script:
-        - docker build -f arch.Dockerfile --pull -t $CONTAINER_TEST_IMAGE .
+        - docker build -f debian.Dockerfile --pull -t $CONTAINER_TEST_IMAGE .
         - docker push $CONTAINER_TEST_IMAGE
     rules:
         - changes:
-            - arch.Dockerfile
+            - debian.Dockerfile
             - build_*.sh
 
 tag_dockerimage:
