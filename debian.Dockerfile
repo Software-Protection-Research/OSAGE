@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 MAINTAINER nobody@fhstp.ac.at
 
 # Update and install packages
