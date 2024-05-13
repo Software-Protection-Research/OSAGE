@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/elfhash_file/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/elfhash_file/elfhash_file.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o elfhash_file  /opt/samplegenerator/src_all/elfhash_file/elfhash_file.c
+sh: 1: /opt/tinycc_latest/bin/tcc: not found
+
+real	0m0.188s
+user	0m0.021s
+sys	0m0.001s

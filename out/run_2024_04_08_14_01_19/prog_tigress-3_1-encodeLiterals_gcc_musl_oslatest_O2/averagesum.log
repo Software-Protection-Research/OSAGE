@@ -1,0 +1,8 @@
+cat: /opt/samplegenerator/src_all/averagesum/averagesum.opts: No such file or directory
+[0;34m[INFO][0m: Compiling with:
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O2"      --Transform=Info --InfoKind=*     --Transform=Flatten         --Functions=init_program     --Transform=Split         --SplitKinds=deep,block,top         --SplitCount=100         --Functions=init_program     --Transform=Split         --SplitKinds=block         --SplitCount=100         --Functions=init_program /opt/samplegenerator/src_all/averagesum/averagesum.c --out=averagesum.c -o averagesum 
+Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
+
+real	0m0.852s
+user	0m0.092s
+sys	0m0.008s

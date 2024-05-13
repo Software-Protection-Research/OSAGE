@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/dekhash/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/dekhash/dekhash.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o dekhash  /opt/samplegenerator/src_all/dekhash/dekhash.c
+sh: 1: /opt/tinycc_latest/bin/tcc: not found
+
+real	0m0.200s
+user	0m0.019s
+sys	0m0.003s

@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/kelvin2celcius/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/kelvin2celcius/kelvin2celcius.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o kelvin2celcius  /opt/samplegenerator/src_all/kelvin2celcius/kelvin2celcius.c
+sh: 1: /opt/tinycc_latest/bin/tcc: not found
+
+real	0m0.187s
+user	0m0.019s
+sys	0m0.003s

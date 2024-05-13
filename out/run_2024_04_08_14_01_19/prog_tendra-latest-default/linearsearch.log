@@ -1,0 +1,7 @@
+cat: /opt/samplegenerator/src_all/linearsearch/linearsearch.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o linearsearch  /opt/samplegenerator/src_all/linearsearch/linearsearch.c
+sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
+
+real	0m0.023s
+user	0m0.014s
+sys	0m0.008s

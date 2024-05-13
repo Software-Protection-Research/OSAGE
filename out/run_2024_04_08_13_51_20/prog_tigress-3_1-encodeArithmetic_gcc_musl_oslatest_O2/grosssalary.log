@@ -1,0 +1,9 @@
+/opt/samplegenerator/compilation/compile-tigress-3_1-encodeArithmetic_gcc_musl_oslatest_O2.sh: line 68: /opt/samplegenerator/src_all/grosssalary/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/grosssalary/grosssalary.opts: No such file or directory
+[0;34m[INFO][0m: Compiling with:
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O2"      --Transform=Info --InfoKind=*     --Transform=EncodeArithmetic     --Functions=init_program /opt/samplegenerator/src_all/grosssalary/grosssalary.c --out=grosssalary.c -o grosssalary 
+Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
+
+real	0m0.794s
+user	0m0.084s
+sys	0m0.015s

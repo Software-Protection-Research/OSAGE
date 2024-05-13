@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/jshash/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/jshash/jshash.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o jshash  /opt/samplegenerator/src_all/jshash/jshash.c
+sh: 1: /opt/tinycc_latest/bin/tcc: not found
+
+real	0m0.177s
+user	0m0.019s
+sys	0m0.004s
