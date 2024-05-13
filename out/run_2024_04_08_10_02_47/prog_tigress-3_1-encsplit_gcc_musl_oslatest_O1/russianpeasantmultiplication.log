@@ -1,0 +1,10 @@
+/opt/samplegenerator/compilation/compile-tigress-3_1-encsplit_gcc_musl_oslatest_O1.sh: line 68: /opt/samplegenerator/src_all/russianpeasantmultiplication/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/russianpeasantmultiplication/russianpeasantmultiplication.opts: No such file or directory
+[0;34m[INFO][0m: Compiling with:
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress   /opt/samplegenerator/src_all/russianpeasantmultiplication/russianpeasantmultiplication.c --out=russianpeasantmultiplication.c -o russianpeasantmultiplication 
+[[Tigress]] Tigress requires that you provide the --Environment=ENV argument where ENV is one of
+[[Tigress]]    x86_64:Linux:Gcc:4.6, x86_64:Darwin:Clang:5.1, armv7:Linux:Gcc:4.6, armv8:Linux:Gcc:4.6.
+
+real	0m0.386s
+user	0m0.043s
+sys	0m0.003s

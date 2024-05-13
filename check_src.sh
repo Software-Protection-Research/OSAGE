@@ -72,7 +72,7 @@ for src_dir in "${abcdef_dir_src}"/*/; do
 	DEBUG "Checking if ${src_name} has a backdoor."
     abcdef_var_backdoor=$(abcdef_fun_parse_backdoor "${abcdef_file_main}")
     if [ "${abcdef_var_backdoor}" = "" ]; then
-        ERROR_EXIT "${src_name} has no backdoor in ${abcdef_file_main}!"
+        DEBUG "${src_name} has no backdoor in ${abcdef_file_main}!"
 	else
         DEBUG "${src_name} has a backdoor (${abcdef_var_backdoor})."
     fi

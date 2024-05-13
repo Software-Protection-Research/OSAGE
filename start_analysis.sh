@@ -18,6 +18,7 @@ INFO "Analyzing samples inside ${abcdef_dir_latest_out}"
 # Every directory in code/out/run.../*
 for directory in "${abcdef_dir_latest_out}"/p*
 do
+    INFO "Entering new dir"
     # Check if exists the directory exists?
     #cd "$directory" || exit
 
@@ -25,7 +26,7 @@ do
     while read -r -d $'\0' abcdef_executable
     do
         # Execute the single measure script.
-        DEBUG "Start the analysis of ${abcdef_executable}"
+        INFO "Start the analysis of ${abcdef_executable}"
         { "${abcdef_dir_base}/start_analysis_scripts.sh" "${abcdef_executable}" & }
         # python3 "${abcdef_dir_analysis}/measure.py" -path "$executable"
 
@@ -36,8 +37,9 @@ do
             wait
             NUM_M_CURR=0
         fi
+    INFO "End the analysis of ${abcdef_executable}"
+    done < <(find "$directory" -maxdepth 1 -mindepth 1 -type f ! -iname "*.log" ! -iname "*.c" ! -iname "*.csv" ! -iname "*.dot" -print0)
 
-    done < <(find "$directory" -maxdepth 1 -mindepth 1 -type f ! -iname "*.log" ! -iname "*.c" ! -iname "*.csv" -print0)
 done
 
 INFO "Waiting for the analysis of the last ${NUM_M_CURR} samples to finish ..."

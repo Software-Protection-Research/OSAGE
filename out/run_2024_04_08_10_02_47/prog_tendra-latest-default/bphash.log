@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tendra-latest-default.sh: line 64: /opt/samplegenerator/src_all/bphash/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/bphash/bphash.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o bphash  /opt/samplegenerator/src_all/bphash/bphash.c
+sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
+
+real	0m0.022s
+user	0m0.015s
+sys	0m0.007s

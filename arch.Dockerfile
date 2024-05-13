@@ -118,11 +118,11 @@ RUN pwd && \
 
 
 # Install ollvm
-COPY build_ollvm.sh /opt/build_scripts/
-RUN pwd && \
-	ls -lah /opt/ && \
-	bash /opt/build_scripts/build_ollvm.sh && \
-	ls -lah /opt/
+#COPY build_ollvm.sh /opt/build_scripts/
+#RUN pwd && \
+#	ls -lah /opt/ && \
+#	bash /opt/build_scripts/build_ollvm.sh && \
+#	ls -lah /opt/
 
 
 
@@ -153,52 +153,52 @@ RUN pwd && \
 #	bash /opt/build_scripts/build_hellscape.sh && \
 #	ls -lah /opt/
 
-COPY build_framac.sh /opt/build_scripts/
-RUN pwd && \
-    pacman -S --noconfirm \
-        cairo \
-        graphviz \
-        gtksourceview3 \
-        libidn \
-        && \
-	ls -lah /opt/ && \
-	bash /opt/build_scripts/build_framac.sh && \
-	ls -lah /opt/
+#COPY build_framac.sh /opt/build_scripts/
+#RUN pwd && \
+#    pacman -S --noconfirm \
+#        cairo \
+#        graphviz \
+#        gtksourceview3 \
+#        libidn \
+#        && \
+#	ls -lah /opt/ && \
+#	bash /opt/build_scripts/build_framac.sh && \
+#	ls -lah /opt/
 
 
 
 # Install compcertcc from AUR
-RUN pacman -S --noconfirm dune parallel ocaml-findlib && \
-    # pacman -Q coq ocaml && \
-    sed -i 's#SigLevel    = Required DatabaseOptional#SigLevel    = TrustAll#' /etc/pacman.conf && \
-    # cat /etc/pacman.conf && \
-    pacman -U --noconfirm https://archive.archlinux.org/packages/c/coq/coq-8.14.1-2-x86_64.pkg.tar.zst && \
-    git clone --depth 1 https://aur.archlinux.org/ocaml-menhir.git && \
-    cd ocaml-menhir && \
-    chgrp nobody . && \
-    chmod g+w . && \
-    # cat PKGBUILD && \
-    sed -i 's#dune install --prefix "${pkgdir}/usr"#DESTDIR="${pkgdir}" dune install --prefix=/usr#g' PKGBUILD && \
-    sed -i 's#--libdir "lib/ocaml"#--libdir="$(ocamlfind printconf destdir)"#g' PKGBUILD && \
-    sed -i 's#package() {#package(){\n  eval $(opam config env)#g' PKGBUILD && \
-    cat PKGBUILD && \
-    eval 'opam config env' && \
-    sudo -u nobody makepkg -s && \
-    ls -lah && \
-    pacman -U --noconfirm ocaml-menhir-*.pkg.tar.zst && \
-    pacman -S --noconfirm ocaml ocaml-menhir; \
-    \
-    cd .. && \
-    rm -r ocaml-menhir && \
-    git clone --depth 1 https://aur.archlinux.org/compcert.git && \
-    cd compcert && \
-    chgrp nobody . && \
-    chmod g+w . && \
-    sudo -u nobody makepkg -s && \
-    ls -lah && \
-    pacman -U --noconfirm compcert-*.pkg.tar.zst && \
-    cd .. && \
-    rm -r compcert;
+# RUN pacman -S --noconfirm dune parallel ocaml-findlib && \
+#     # pacman -Q coq ocaml && \
+#     sed -i 's#SigLevel    = Required DatabaseOptional#SigLevel    = TrustAll#' /etc/pacman.conf && \
+#     # cat /etc/pacman.conf && \
+#     pacman -U --noconfirm https://archive.archlinux.org/packages/c/coq/coq-8.14.1-2-x86_64.pkg.tar.zst && \
+#     git clone --depth 1 https://aur.archlinux.org/ocaml-menhir.git && \
+#     cd ocaml-menhir && \
+#     chgrp nobody . && \
+#     chmod g+w . && \
+#     # cat PKGBUILD && \
+#     sed -i 's#dune install --prefix "${pkgdir}/usr"#DESTDIR="${pkgdir}" dune install --prefix=/usr#g' PKGBUILD && \
+#     sed -i 's#--libdir "lib/ocaml"#--libdir="$(ocamlfind printconf destdir)"#g' PKGBUILD && \
+#     sed -i 's#package() {#package(){\n  eval $(opam config env)#g' PKGBUILD && \
+#     cat PKGBUILD && \
+#     eval 'opam config env' && \
+#     sudo -u nobody makepkg -s && \
+#     ls -lah && \
+#     pacman -U --noconfirm ocaml-menhir-*.pkg.tar.zst && \
+#     pacman -S --noconfirm ocaml ocaml-menhir; \
+#     \
+#     cd .. && \
+#     rm -r ocaml-menhir && \
+#     git clone --depth 1 https://aur.archlinux.org/compcert.git && \
+#     cd compcert && \
+#     chgrp nobody . && \
+#     chmod g+w . && \
+#     sudo -u nobody makepkg -s && \
+#     ls -lah && \
+#     pacman -U --noconfirm compcert-*.pkg.tar.zst && \
+#     cd .. && \
+#     rm -r compcert;
 #sudo -u nobody makepkg -clean
 
 # No need to install compcertcc manually there is an AUR package.

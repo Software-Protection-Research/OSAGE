@@ -39,10 +39,10 @@ RUN set -eux; \
 		zip \
 		; \
     # coq is a build depenency for the compcert C compiler
-	apt-get -y install coq \
-        menhir \
-        libmenhir-ocaml-dev \
-		; \
+#	apt-get -y install coq \
+#        menhir \
+#        libmenhir-ocaml-dev \
+#		; \
 	apt-get -y install shellcheck && \
 	apt-get -y install python3 \
 		python3-flake8 \
@@ -53,11 +53,11 @@ RUN set -eux; \
 		python3-magic \
 		python3-pip \
 		; \
-	python3 -m pip install pandas; \
-	python3 -m pip install psutil; \
-	python3 -m pip install capstone; \
-	python3 -m pip install pyelftools; \
-	python3 -m pip install termcolor; \
+       python3 -m pip install pandas --break-system-packages; \
+	python3 -m pip install psutil --break-system-packages; \
+	python3 -m pip install capstone --break-system-packages; \
+	python3 -m pip install pyelftools --break-system-packages; \
+	python3 -m pip install termcolor --break-system-packages; \
 	apt-get -y clean; \
 	rm -rf /var/lib/apt/lists/*
 
@@ -88,18 +88,18 @@ RUN pwd && \
 	ls -lah /opt/
 
 # Install compcertcc
-COPY build_compcertcc.sh /opt/build_scripts/
-RUN pwd && \
-	ls -lah /opt/ && \
-	bash /opt/build_scripts/build_compcertcc.sh && \
-	ls -lah /opt/
+#COPY build_compcertcc.sh /opt/build_scripts/
+#RUN pwd && \
+#	ls -lah /opt/ && \
+#	bash /opt/build_scripts/build_compcertcc.sh && \
+#	ls -lah /opt/
 
 # Install ollvm
-COPY build_ollvm.sh /opt/build_scripts/
-RUN pwd && \
-	ls -lah /opt/ && \
-	bash /opt/build_scripts/build_ollvm.sh && \
-	ls -lah /opt/
+#COPY build_ollvm.sh /opt/build_scripts/
+#RUN pwd && \
+#	ls -lah /opt/ && \
+#	bash /opt/build_scripts/build_ollvm.sh && \
+#	ls -lah /opt/
 
 
 

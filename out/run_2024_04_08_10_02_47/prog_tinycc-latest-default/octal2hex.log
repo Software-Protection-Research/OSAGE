@@ -1,0 +1,8 @@
+/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/octal2hex/../includes.h: Permission denied
+cat: /opt/samplegenerator/src_all/octal2hex/octal2hex.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o octal2hex  /opt/samplegenerator/src_all/octal2hex/octal2hex.c
+sh: 1: /opt/tinycc_latest/bin/tcc: not found
+
+real	0m0.180s
+user	0m0.015s
+sys	0m0.007s
