@@ -1,8 +1,0 @@
-/opt/samplegenerator/compilation/compile-tendra-latest-default.sh: line 64: /opt/samplegenerator/src_all/areatriangle/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/areatriangle/areatriangle.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o areatriangle  /opt/samplegenerator/src_all/areatriangle/areatriangle.c
-sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
-
-real	0m0.022s
-user	0m0.017s
-sys	0m0.004s

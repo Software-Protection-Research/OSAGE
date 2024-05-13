@@ -1,7 +1,0 @@
-cat: /opt/samplegenerator/src_all/jshash/jshash.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o jshash  /opt/samplegenerator/src_all/jshash/jshash.c
-sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
-
-real	0m0.023s
-user	0m0.020s
-sys	0m0.002s

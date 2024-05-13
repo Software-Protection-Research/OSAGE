@@ -1,8 +1,0 @@
-/opt/samplegenerator/compilation/compile-tinycc-latest-default.sh: line 64: /opt/samplegenerator/src_all/gcd/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/gcd/gcd.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o gcd  /opt/samplegenerator/src_all/gcd/gcd.c
-sh: 1: /opt/tinycc_latest/bin/tcc: not found
-
-real	0m0.136s
-user	0m0.021s
-sys	0m0.002s

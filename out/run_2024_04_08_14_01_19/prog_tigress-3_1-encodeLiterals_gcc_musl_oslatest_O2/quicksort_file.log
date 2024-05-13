@@ -1,8 +1,0 @@
-cat: /opt/samplegenerator/src_all/quicksort_file/quicksort_file.opts: No such file or directory
-[0;34m[INFO][0m: Compiling with:
-[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O2"      --Transform=Info --InfoKind=*     --Transform=Flatten         --Functions=init_program     --Transform=Split         --SplitKinds=deep,block,top         --SplitCount=100         --Functions=init_program     --Transform=Split         --SplitKinds=block         --SplitCount=100         --Functions=init_program /opt/samplegenerator/src_all/quicksort_file/quicksort_file.c --out=quicksort_file.c -o quicksort_file 
-Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
-
-real	0m0.759s
-user	0m0.088s
-sys	0m0.009s

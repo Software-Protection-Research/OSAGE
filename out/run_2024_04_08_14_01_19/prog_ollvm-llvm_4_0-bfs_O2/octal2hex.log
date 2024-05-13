@@ -1,5 +1,0 @@
-[0;31m[ERROR in /opt/samplegenerator/compilation/compile-ollvm-llvm_4_0-bfs_O2.sh][0m: Could not get the program name for OLLVM from the config.
-
-real	0m0.119s
-user	0m0.005s
-sys	0m0.010s

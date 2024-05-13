@@ -1,8 +1,0 @@
-/opt/samplegenerator/compilation/compile-tinycc-0_9_27-default.sh: line 64: /opt/samplegenerator/src_all/volumecylinder/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/volumecylinder/volumecylinder.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o volumecylinder  /opt/samplegenerator/src_all/volumecylinder/volumecylinder.c
-sh: 1: /opt/tinycc_release_0_9_27/bin/tcc: not found
-
-real	0m0.062s
-user	0m0.021s
-sys	0m0.001s

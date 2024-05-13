@@ -1,8 +1,0 @@
-cat: /opt/samplegenerator/src_all/reversenumber/reversenumber.opts: No such file or directory
-[0;34m[INFO][0m: Compiling with:
-[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O1"      --Transform=Info --InfoKind=*     --Transform=Jit         --Functions=init_program /opt/samplegenerator/src_all/reversenumber/reversenumber.c --out=reversenumber.c -o reversenumber 
-Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
-
-real	0m0.704s
-user	0m0.071s
-sys	0m0.026s

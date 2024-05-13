@@ -1,7 +1,0 @@
-cat: /opt/samplegenerator/src_all/pjwhash_file/pjwhash_file.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o pjwhash_file  /opt/samplegenerator/src_all/pjwhash_file/pjwhash_file.c
-sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
-
-real	0m0.022s
-user	0m0.020s
-sys	0m0.002s

@@ -1,9 +1,0 @@
-/opt/samplegenerator/compilation/compile-tigress-3_1-encodeLiterals_gcc_musl_oslatest_O0.sh: line 68: /opt/samplegenerator/src_all/kelvin2fahrenheit/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/kelvin2fahrenheit/kelvin2fahrenheit.opts: No such file or directory
-[0;34m[INFO][0m: Compiling with:
-[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O0"      --Transform=Info --InfoKind=*     --Transform=Flatten         --Functions=init_program     --Transform=Split         --SplitKinds=deep,block,top         --SplitCount=100         --Functions=init_program     --Transform=Split         --SplitKinds=block         --SplitCount=100         --Functions=init_program /opt/samplegenerator/src_all/kelvin2fahrenheit/kelvin2fahrenheit.c --out=kelvin2fahrenheit.c -o kelvin2fahrenheit 
-Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
-
-real	0m0.570s
-user	0m0.089s
-sys	0m0.011s

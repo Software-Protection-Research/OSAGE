@@ -1,8 +1,0 @@
-/opt/samplegenerator/compilation/compile-tendra-latest-default.sh: line 64: /opt/samplegenerator/src_all/selectionsort/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/selectionsort/selectionsort.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o selectionsort  /opt/samplegenerator/src_all/selectionsort/selectionsort.c
-sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
-
-real	0m0.028s
-user	0m0.022s
-sys	0m0.005s

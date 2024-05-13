@@ -1,7 +1,0 @@
-/opt/samplegenerator/compilation/compile-tinycc-0_9_27-default.sh: line 64: /opt/samplegenerator/src_all/dgaramdo/../includes.h: Permission denied
-[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o dgaramdo  /opt/samplegenerator/src_all/dgaramdo/dgaramdo.c
-sh: 1: /opt/tinycc_release_0_9_27/bin/tcc: not found
-
-real	0m0.178s
-user	0m0.022s
-sys	0m0.001s

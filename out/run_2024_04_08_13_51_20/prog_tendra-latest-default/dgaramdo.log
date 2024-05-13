@@ -1,7 +1,0 @@
-/opt/samplegenerator/compilation/compile-tendra-latest-default.sh: line 64: /opt/samplegenerator/src_all/dgaramdo/../includes.h: Permission denied
-[0;34m[INFO][0m: /opt/tendra_latest/obj/bin/tcc -verbose -show_errors -tidy -L /usr/lib32 -o dgaramdo  /opt/samplegenerator/src_all/dgaramdo/dgaramdo.c
-sh: 1: /opt/tendra_latest/obj/bin/tcc: not found
-
-real	0m0.031s
-user	0m0.025s
-sys	0m0.006s

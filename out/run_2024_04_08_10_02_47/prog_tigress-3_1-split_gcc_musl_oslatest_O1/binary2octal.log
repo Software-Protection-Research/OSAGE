@@ -1,9 +1,0 @@
-/opt/samplegenerator/compilation/compile-tigress-3_1-split_gcc_musl_oslatest_O1.sh: line 68: /opt/samplegenerator/src_all/binary2octal/../includes.h: Permission denied
-cat: /opt/samplegenerator/src_all/binary2octal/binary2octal.opts: No such file or directory
-[0;34m[INFO][0m: Compiling with:
-[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1     --gcc=" -O1"      --Transform=Info --InfoKind=*     --Transform=Split         --SplitKinds=deep,block,top         --SplitCount=100         --Functions=init_program /opt/samplegenerator/src_all/binary2octal/binary2octal.c --out=binary2octal.c -o binary2octal 
-Cannot start GNUCC at /opt/tigress/3.1/Linux-x86_64/App/Cilly.pm line 2212.
-
-real	0m0.811s
-user	0m0.078s
-sys	0m0.019s
