@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_core_merged"
+export abcdef_dir_src="${abcdef_dir_base}/src_all"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -215,6 +215,12 @@ setup_tigress_obfuscation() {
 
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
+        # Create a symbolic link for this obfuscation and optimization level if it does not exist
+        link_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
+        if [ ! -L "${link_path}" ]; then
+            ln -s "all_tigress.sh" "${link_path}"
+        fi
+        export link_path
         # Resolve the inner variable first
         local gcc_options_var="gcc_options_${level}"
         eval "local gcc_options_value=\${$gcc_options_var}"
@@ -226,9 +232,6 @@ setup_tigress_obfuscation() {
         tigress_options["$export_var"]="${tigress_environment_gcc} \
             --gcc='${gcc_prog_musl_oslatest} ${gcc_options_value}' \
             ${tigress_options[${obfuscation}_helper]}"
-
-        # Create the file for this obfuscation and optimization level
-        cp "${compile_scripts_folder}/tigress_compile_script.sh" "${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
     done
 }
 
