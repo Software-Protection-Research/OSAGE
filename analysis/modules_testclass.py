@@ -5,7 +5,7 @@ import configparser
 
 from abc import ABC, abstractmethod
 from module_helper import *
-from termcolor import cprint
+# from termcolor import cprint
 
 
 

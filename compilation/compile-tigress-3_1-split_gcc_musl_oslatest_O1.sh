@@ -1,1 +1,1 @@
-all_tigress.sh
+./all_tigress.sh

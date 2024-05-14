@@ -197,6 +197,45 @@ upx_prog_oslatest="$(which upx 2>&1)"
 
 
 # --- Tigress config -------------------------------------------------
+
+# Define the path to the compilation folder
+compilation_folder="compilation"
+compile_scripts_folder="compile_scripts"
+
+# Declare an associative array
+declare -A tigress_options
+
+# Function to set up the environment variables and files for a new obfuscation
+setup_tigress_obfuscation() {
+    local obfuscation=$1
+    local helper_options=$2
+
+    # Export the helper options
+    tigress_options["${obfuscation}_helper"]="${tigress_options_general} ${helper_options}"
+
+    # Export the options and create the files for each optimization level
+    for level in O0 O1 O2 O3; do
+        # Resolve the inner variable first
+        local gcc_options_var="gcc_options_${level}"
+        eval "local gcc_options_value=\${$gcc_options_var}"
+
+        # Construct the variable name for the export command
+        local export_var="tigress_options_${obfuscation}_gcc_musl_oslatest_${level}"
+
+        # Assign the value to the associative array
+        tigress_options["$export_var"]="${tigress_environment_gcc} \
+            --gcc='${gcc_prog_musl_oslatest} ${gcc_options_value}' \
+            ${tigress_options[${obfuscation}_helper]}"
+
+        # Create a symbolic link for this obfuscation and optimization level if it does not exist
+        link_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
+        if [ -L "${link_path}" ]; then
+            rm "${link_path}"
+        fi
+        ln -s "./all_tigress.sh" "${link_path}"
+    done
+}
+
 export tigress_versions="3_0
 3_1"
 # Tigress 3.0 variables
@@ -696,10 +735,10 @@ export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKi
 
 # --------------------------------------------------------------------
 
-# Config for SeCrypt 2024
-
 # Tigress EncodeLiterals
-export tigress_options_encodeLiterals_helper="${tigress_options_general} \
+
+# Set up the environment variables for the EncodeLiterals obfuscation
+setup_tigress_obfuscation "encodeLiterals" "\
     --Transform=Flatten \
         --Functions=init_program \
     --Transform=Split \
@@ -711,116 +750,35 @@ export tigress_options_encodeLiterals_helper="${tigress_options_general} \
         --SplitCount=100 \
         --Functions=init_program"
 
-export tigress_options_encodeLiterals_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_encodeLiterals_helper}"
-export tigress_options_encodeLiterals_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_encodeLiterals_helper}"
-export tigress_options_encodeLiterals_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_encodeLiterals_helper}"
-export tigress_options_encodeLiterals_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_encodeLiterals_helper}"
-
 
 # Tigress EncodeArithmetic
-export tigress_options_encodeArithmetic_helper="${tigress_options_general} \
+setup_tigress_obfuscation "encodeArithmetic" "\
     --Transform=EncodeArithmetic \
     --Functions=init_program"
 
-export tigress_options_encodeArithmetic_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_encodeArithmetic_helper}"
-export tigress_options_encodeArithmetic_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_encodeArithmetic_helper}"
-export tigress_options_encodeArithmetic_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_encodeArithmetic_helper}"
-export tigress_options_encodeArithmetic_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_encodeArithmetic_helper}"
 
 # Tigress Split
-export tigress_options_split_helper="${tigress_options_general} \
+setup_tigress_obfuscation "split" "\
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program"
 
-export tigress_options_split_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_split_helper}"
-export tigress_options_split_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_split_helper}"
-export tigress_options_split_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_split_helper}"
-export tigress_options_split_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_split_helper}"
-
 # Tigress Flatten
-export tigress_options_flatten_helper="${tigress_options_general}\
+setup_tigress_obfuscation "flatten" "\
     --Transform=Flatten \
         --Functions=init_program"
 
-export tigress_options_flatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_flatten_helper}"
-export tigress_options_flatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_flatten_helper}"
-export tigress_options_flatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_flatten_helper}"
-export tigress_options_flatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_flatten_helper}"
-
 # Tigress Virtualize
-export tigress_options_virtualize_helper="${tigress_options_general} \
+setup_tigress_obfuscation "virtualize" "\
     --Transform=Virtualize \
         --VirtualizeDispatch=direct \
         --Functions=init_program"
 
-export tigress_options_virtualize_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_virtualize_helper}"
-export tigress_options_virtualize_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_virtualize_helper}"
-export tigress_options_virtualize_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_virtualize_helper}"
-export tigress_options_virtualize_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_virtualize_helper}"
-
 # JIT
-export tigress_options_jit_helper="${tigress_options_general} \
+setup_tigress_obfuscation "jit" "\
     --Transform=Jit \
         --Functions=init_program"
-
-export tigress_options_jit_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-    ${tigress_options_jit_helper}"
-export tigress_options_jit_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-    ${tigress_options_jit_helper}"
-export tigress_options_jit_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-    ${tigress_options_jit_helper}"
-export tigress_options_jit_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-    ${tigress_options_jit_helper}"
-
-
-
-
 
 # --- TinyCC config --------------------------------------------------
 #export tinycc_versions="0_9_27
