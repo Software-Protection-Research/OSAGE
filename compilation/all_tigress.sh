@@ -65,6 +65,7 @@ if [ -z "$tigress_prog" ]; then
 fi
 
 abcdef_dir_prog_cur=$(dirname "$2")
+chmod u+rx /opt/samplegenerator/src_all/includes.h 
 echo "${tigress_header}" > "${abcdef_dir_prog_cur:?}/../includes.h"
 export TIGRESS_HOME=$tigress_home
 

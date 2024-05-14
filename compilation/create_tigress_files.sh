@@ -4,7 +4,7 @@
 original_file="all_tigress.sh"
 
 # Arrays of parts to construct the symlink names
-declare -a parts=("arithmetic" "encsplit" "split" "flattenSplit" "splitFlatten" "flattenSplitEncode" "virtualizeSplit" "splitVirtualize" "opa" "splitOpa" "opaSplit" "opaFlatten" "flattenOpa")
+declare -a parts=("encodeLiterals")
 declare -a opts=("O0" "O1" "O2" "O3")
 
 # Loop through each part and each optimization level to create the symlinks

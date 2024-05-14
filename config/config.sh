@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_all"
+export abcdef_dir_src="${abcdef_dir_base}/src_hash"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -210,7 +210,6 @@ export tigress_home_3_1="${abcdef_dir_tools}/tigress/3.1"
 export tigress_prog_3_1="${tigress_home_3_1}/tigress"
 export tigress_header_3_1="#include \"${tigress_home_3_1}/tigress.h\"
 #include <time.h>
-
 #include <pthread.h>"
 # tigress flags (=options per version)
 export tigress_flags_3_0=""
@@ -699,30 +698,30 @@ export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKi
 # Config for SeCrypt 2024
 
 # Tigress EncodeLiterals
-export tigress_options_encodeLiterals_helper="${tigress_options_general} \
-    --Transform=Flatten \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=init_program"
+# export tigress_options_encodeLiterals_helper="${tigress_options_general} \
+#     --Transform=Flatten \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=block \
+#         --SplitCount=100 \
+#         --Functions=init_program"
 
- export tigress_options_encodeLiterals_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-     ${tigress_options_encodeLiterals_helper}"
- export tigress_options_encodeLiterals_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-     ${tigress_options_encodeLiterals_helper}"
- export tigress_options_encodeLiterals_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-     ${tigress_options_encodeLiterals_helper}"
- export tigress_options_encodeLiterals_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-     ${tigress_options_encodeLiterals_helper}"
+#  export tigress_options_encodeLiterals_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
+#      --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
+#      ${tigress_options_encodeLiterals_helper}"
+#  export tigress_options_encodeLiterals_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
+#      --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
+#      ${tigress_options_encodeLiterals_helper}"
+#  export tigress_options_encodeLiterals_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
+#      --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
+#      ${tigress_options_encodeLiterals_helper}"
+#  export tigress_options_encodeLiterals_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
+#      --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
+#      ${tigress_options_encodeLiterals_helper}"
 
 
 # # Tigress EncodeArithmetic
@@ -743,7 +742,7 @@ export tigress_options_encodeLiterals_helper="${tigress_options_general} \
 #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
 #     ${tigress_options_encodeArithmetic_helper}"
 
-# # Tigress Split
+# Tigress Split
 # export tigress_options_split_helper="${tigress_options_general} \
 #     --Transform=Split \
 #         --SplitKinds=deep,block,top \
@@ -763,23 +762,23 @@ export tigress_options_encodeLiterals_helper="${tigress_options_general} \
 #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
 #     ${tigress_options_split_helper}"
 
-# # Tigress Flatten
-# export tigress_options_flatten_helper="${tigress_options_general}\
-#     --Transform=Flatten \
-#         --Functions=init_program"
+# Flatten
+export tigress_options_flatten_helper="${tigress_options_general}\
+    --Transform=Flatten \
+        --Functions=secrets"
 
-# export tigress_options_flatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_flatten_helper}"
+export tigress_options_flatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
+    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
+    ${tigress_options_flatten_helper}"
+export tigress_options_flatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
+    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
+    ${tigress_options_flatten_helper}"
+export tigress_options_flatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
+    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
+    ${tigress_options_flatten_helper}"
+export tigress_options_flatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
+    --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
+    ${tigress_options_flatten_helper}"
 
 # # Tigress Virtualize
 # export tigress_options_virtualize_helper="${tigress_options_general} \
