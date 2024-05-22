@@ -237,7 +237,8 @@ setup_tigress_obfuscation() {
         fi
 
         # Create the symbolic link
-        ln -s "all_tigress.sh" "${symlink_path}" && chmod +x "${symlink_path}"
+        # ln -s "all_tigress.sh" "${symlink_path}" && chmod +x "${symlink_path}"
+        ln -s "all_tigress.sh" "${symlink_path}" 2>/dev/null && chmod +x "${symlink_path}"
         # Resolve the inner variable first
         local gcc_options_var="gcc_options_${level}"
         local gcc_options_value=${!gcc_options_var}
@@ -734,50 +735,125 @@ setup_tigress_obfuscation() {
 # --------------------------------------------------------------------
 
 # Tigress EncodeLiterals
-
-# Set up the environment variables for the EncodeLiterals obfuscation
-# setup_tigress_obfuscation "encodeLiterals" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
+setup_tigress_obfuscation "encodeLiterals" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
 
 
-# # Tigress EncodeArithmetic
-# setup_tigress_obfuscation "encodeArithmetic" "\
-#     --Transform=EncodeArithmetic \
-#     --Functions=init_program"
+# Tigress EncodeArithmetic
+setup_tigress_obfuscation "encodeArithmetic" "\
+    --Transform=EncodeArithmetic \
+    --Functions=init_program"
 
 
-# # Tigress Split
-# setup_tigress_obfuscation "split" "\
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program"
+# Tigress Split
+setup_tigress_obfuscation "split" "\
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program"
 
 # # Tigress Flatten
 setup_tigress_obfuscation "flatten" "\
     --Transform=Flatten \
         --Functions=secrets"
 
-# # Tigress Virtualize
-# setup_tigress_obfuscation "virtualize" "\
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
+# Tigress Virtualize
+setup_tigress_obfuscation "virtualize" "\
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
 
 # JIT
 setup_tigress_obfuscation "jit" "\
     --Transform=Jit \
         --Functions=init_program"
 
+#Recipe #1: Opaque Predicates, Branch Functions, and Encoded Arithmetic
+setup_tigress_obfuscation "recipe1" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+     --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+     --Transform=AntiBranchAnalysis \
+       --Functions=init_program \
+       --AntiBranchAnalysisKinds=branchFuns \
+       --AntiBranchAnalysisObfuscateBranchFunCall=false \
+       --AntiBranchAnalysisBranchFunFlatten=true \
+     --Transform=EncodeArithmetic \
+        --Functions=init_program"
+
+#Recipe #2: Virtualization and Self-Modification
+setup_tigress_obfuscation "recipe2" "\
+--Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Virtualize \
+        --Skip=false \
+        --VirtualizeDispatch=ifnest \
+        --Functions=init_program \
+     --Transform=SelfModify \
+       --Skip=false \
+       --Functions=init_program \
+       --SelfModifySubExpressions=false \
+       --SelfModifyBogusInstructions=10"
+
+#Recipe #3: Virtualization and Dynamic Obfuscation
+setup_tigress_obfuscation "recipe3" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Virtualize \
+        --Skip=false \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+     --Transform=JitDynamic \
+        --Skip=false \
+        --Functions=init_program \
+        --JitDynamicCodecs=xtea \
+        --JitDynamicBlockFraction=%100 \
+     --Transform=Measure \
+        --Functions=init_program \
+        --MeasureTimes=100"
+#Recipe #4: Merge, Virtualization, and Encode Literals
+setup_tigress_obfuscation "recipe4" "\
+ --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Merge \
+        --MergeFlatten=false \
+        --MergeName=MERGED \
+        --Functions=init_program \
+     --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+     --Transform=EncodeLiterals \
+        --Functions=init_program"
 # --- TinyCC config --------------------------------------------------
 #export tinycc_versions="0_9_27
 #latest"
