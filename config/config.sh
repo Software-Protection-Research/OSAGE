@@ -257,27 +257,14 @@ setup_tigress_obfuscation() {
 }
 
 
-# #include \"/opt/tigress/3.1/jitter-amd64.c\"
-# Tigress Flatten
-# export tigress_options_flatten_helper="${tigress_options_general}\
+# # #include \"/opt/tigress/3.1/jitter-amd64.c\"
+# # Tigress Flatten
+# setup_tigress_obfuscation "flatten" "\
 #     --Transform=Flatten \
 #         --Functions=init_program"
 
-# export tigress_options_flatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_flatten_helper}"
-# export tigress_options_flatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_flatten_helper}"
-
-# Tigress Opaque Predicates, Anti Branch Analysis, Encoded Arithmetic
-# export tigress_options_opabaea_helper="${tigress_options_general}\
+# # Tigress Opaque Predicates, Anti Branch Analysis, Encoded Arithmetic
+# setup_tigress_obfuscation "opabaea_helper" "\
 #     --Seed=0 \
 #     --Inputs='+1:int:42,-1:length:1?10' \
 #     --Transform=InitEntropy \
@@ -300,40 +287,14 @@ setup_tigress_obfuscation() {
 #     --Transform=EncodeArithmetic \
 #         --Functions=init_program"
 
-# export tigress_options_opabaea_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_opabaea_helper}"
-# export tigress_options_opabaea_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_opabaea_helper}"
-# export tigress_options_opabaea_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_opabaea_helper}"
-# export tigress_options_opabaea_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_opabaea_helper}"
-
-# Tigress Virtualize
-# export tigress_options_virtualize_helper="${tigress_options_general} \
+# # Tigress Virtualize
+# setup_tigress_obfuscation "virtualize_helper" " \
 #     --Transform=Virtualize \
 #         --VirtualizeDispatch=direct \
 #         --Functions=init_program"
 
-# export tigress_options_virtualize_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_virtualize_helper}"
-# export tigress_options_virtualize_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_virtualize_helper}"
-# export tigress_options_virtualize_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_virtualize_helper}"
-# export tigress_options_virtualize_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_virtualize_helper}"
-
-# # Tigress self modify
-# export tigress_options_selfmodify_helper="${tigress_options_general} \
+# # # Tigress self modify
+# setup_tigress_obfuscation "selfmodify_helper" "\
 #     --Seed=0 \
 #     --Inputs='+1:int:42,-1:length:1?10' \
 #     --Transform=InitEntropy \
@@ -347,39 +308,15 @@ setup_tigress_obfuscation() {
 #         --SelfModifySubExpressions=false \
 #         --SelfModifyBogusInstructions=10"
 
-# export tigress_options_selfmodify_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-# 	${tigress_options_selfmodify_helper}"
-# export tigress_options_selfmodify_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-# 	--gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-# 	${tigress_options_selfmodify_helper}"
-# export tigress_options_selfmodify_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-# 	--gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-# 	${tigress_options_selfmodify_helper}"
-# export tigress_options_selfmodify_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-# 	--gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-# 	${tigress_options_selfmodify_helper}"
 
-# Tigress EncodeArithmetic
-# export tigress_options_arithmetic_helper="${tigress_options_general} \
+# # Tigress EncodeArithmetic
+# setup_tigress_obfuscation "arithmetic_helper" " \
 #     --Transform=EncodeArithmetic \
 #         --Functions=init_program"
 
-# export tigress_options_arithmetic_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_arithmetic_helper}"
-# export tigress_options_arithmetic_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_arithmetic_helper}"
-# export tigress_options_arithmetic_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_arithmetic_helper}"
-# export tigress_options_arithmetic_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_arithmetic_helper}"
 
-# Tigress encSplit
-# export tigress_options_encsplit_helper="${tigress_options_general} \
+# # Tigress encSplit
+# setup_tigress_obfuscation "encsplit_helper" " \
 #     --Transform=Split \
 #         --SplitKinds=deep,block,top \
 #         --SplitCount=100 \
@@ -391,21 +328,8 @@ setup_tigress_obfuscation() {
 #     --Transform=EncodeArithmetic \
 #         --Functions=init_program"
 
-# export tigress_options_encsplit_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_encsplit_helper}"
-# export tigress_options_encsplit_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_encsplit_helper}"
-# export tigress_options_encsplit_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_encsplit_helper}"
-# export tigress_options_encsplit_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_encsplit_helper}"
-
-# Tigress Split
-# export tigress_options_split_helper="${tigress_options_general} \
+# # Tigress Split
+# setup_tigress_obfuscation "split_helper" " \
 #     --Transform=Split \
 #         --SplitKinds=deep,block,top \
 #         --SplitCount=100 \
@@ -415,21 +339,8 @@ setup_tigress_obfuscation() {
 #         --SplitCount=100 \
 #         --Functions=init_program"
 
-# export tigress_options_split_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_split_helper}"
-# export tigress_options_split_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_split_helper}"
-# export tigress_options_split_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_split_helper}"
-# export tigress_options_split_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_split_helper}"
-
-# Tigress FlattenSplit
-# export tigress_options_flattenSplit_helper="${tigress_options_general} \
+# # Tigress FlattenSplit
+# setup_tigress_obfuscation "flattenSplit_helper" " \
 #     --Transform=Flatten \
 #         --Functions=init_program \
 #     --Transform=Split \
@@ -441,47 +352,23 @@ setup_tigress_obfuscation() {
 #         --SplitCount=100 \
 #         --Functions=init_program"
 
-# export tigress_options_flattenSplit_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_flattenSplit_helper}"
-# export tigress_options_flattenSplit_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_flattenSplit_helper}"
-# export tigress_options_flattenSplit_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_flattenSplit_helper}"
-# export tigress_options_flattenSplit_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_flattenSplit_helper}"
 
-# # Tigress SplitFlatten
-# # export tigress_options_splitFlatten_helper="${tigress_options_general} \
-# #     --Transform=Split \
-# #         --SplitKinds=deep,block,top \
-# #         --SplitCount=100 \
-# #         --Functions=init_program \
-# #     --Transform=Split \
-# #         --SplitKinds=block \
-# #         --SplitCount=100 \
-# #         --Functions=init_program \
-# #     --Transform=Flatten \
-# #         --Functions=init_program"
+# # # Tigress SplitFlatten
+# setup_tigress_obfuscation "splitFlatten_helper" " \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=block \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Flatten \
+#         --Functions=init_program"
 
-# # export tigress_options_splitFlatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-# #     ${tigress_options_splitFlatten_helper}"
-# # export tigress_options_splitFlatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-# #     ${tigress_options_splitFlatten_helper}"
-# # export tigress_options_splitFlatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-# #     ${tigress_options_splitFlatten_helper}"
-# # export tigress_options_splitFlatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-# #     ${tigress_options_splitFlatten_helper}"
 
-# # Tigress FlattenSplitEncode
-# export tigress_options_flattenSplitEncode_helper="${tigress_options_general} \
+# # # Tigress FlattenSplitEncode
+# setup_tigress_obfuscation "flattenSplitEncode" "\
 #     --Transform=Flatten \
 #         --Functions=init_program \
 #     --Transform=Split \
@@ -495,105 +382,55 @@ setup_tigress_obfuscation() {
 #     --Transform=EncodeArithmetic \
 #         --Functions=init_program"
 
-# export tigress_options_flattenSplitEncode_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_flattenSplitEncode_helper}"
-# export tigress_options_flattenSplitEncode_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_flattenSplitEncode_helper}"
-# export tigress_options_flattenSplitEncode_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_flattenSplitEncode_helper}"
-# export tigress_options_flattenSplitEncode_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_flattenSplitEncode_helper}"
+# # # Tigress VirtualizeSplit
+# setup_tigress_obfuscation "virtualizeSplit_helper" " \
+#     --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=block \
+#         --SplitCount=100 \
+#         --Functions=init_program"
 
-# # Tigress VirtualizeSplit
-# # export tigress_options_virtualizeSplit_helper="${tigress_options_general} \
-# #     --Transform=Virtualize \
-# #         --VirtualizeDispatch=direct \
-# #         --Functions=init_program \
-# #     --Transform=Split \
-# #         --SplitKinds=deep,block,top \
-# #         --SplitCount=100 \
-# #         --Functions=init_program \
-# #     --Transform=Split \
-# #         --SplitKinds=block \
-# #         --SplitCount=100 \
-# #         --Functions=init_program"
+# # # Tigress SplitVirtualize
+# setup_tigress_obfuscation "splitVirtualize" " \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=block \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program"
 
-# # export tigress_options_virtualizeSplit_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-# #     ${tigress_options_virtualizeSplit_helper}"
-# # export tigress_options_virtualizeSplit_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-# #     ${tigress_options_virtualizeSplit_helper}"
-# # export tigress_options_virtualizeSplit_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-# #     ${tigress_options_virtualizeSplit_helper}"
-# # export tigress_options_virtualizeSplit_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-# #     ${tigress_options_virtualizeSplit_helper}"
-
-# # Tigress SplitVirtualize
-# # export tigress_options_splitVirtualize_helper="${tigress_options_general} \
-# #     --Transform=Split \
-# #         --SplitKinds=deep,block,top \
-# #         --SplitCount=100 \
-# #         --Functions=init_program \
-# #     --Transform=Split \
-# #         --SplitKinds=block \
-# #         --SplitCount=100 \
-# #         --Functions=init_program \
-# #     --Transform=Virtualize \
-# #         --VirtualizeDispatch=direct \
-# #         --Functions=init_program"
-
-# # export tigress_options_splitVirtualize_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-# #     ${tigress_options_splitVirtualize_helper}"
-# # export tigress_options_splitVirtualize_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-# #     ${tigress_options_splitVirtualize_helper}"
-# # export tigress_options_splitVirtualize_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-# #     ${tigress_options_splitVirtualize_helper}"
-# # export tigress_options_splitVirtualize_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-# #     ${tigress_options_splitVirtualize_helper}"
 
 # # Tigress Opaque
-# # export tigress_options_opa_helper="${tigress_options_general}\
-# #     --Seed=0 \
-# #     --Inputs='+1:int:42,-1:length:1?10' \
-# #     --Transform=InitEntropy \
-# #         --Functions=init_program \
-# #         --InitEntropyKinds=vars \
-# #     --Transform=InitOpaque \
-# #         --Functions=init_program \
-# #         --InitOpaqueStructs=list,array,input,env \
-# #     --Transform=InitBranchFuns \
-# #         --InitBranchFunsCount=1 \
-# #     --Transform=AddOpaque \
-# #         --Functions=init_program \
-# #         --AddOpaqueStructs=list \
-# #         --AddOpaqueKinds=true"
+# setup_tigress_obfuscation "opa_helper" "\
+#     --Seed=0 \
+#     --Inputs='+1:int:42,-1:length:1?10' \
+#     --Transform=InitEntropy \
+#         --Functions=init_program \
+#         --InitEntropyKinds=vars \
+#     --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,input,env \
+#     --Transform=InitBranchFuns \
+#         --InitBranchFunsCount=1 \
+#     --Transform=AddOpaque \
+#         --Functions=init_program \
+#         --AddOpaqueStructs=list \
+#         --AddOpaqueKinds=true"
 
-# # export tigress_options_opa_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-# #     ${tigress_options_opa_helper}"
-# # export tigress_options_opa_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-# #     ${tigress_options_opa_helper}"
-# # export tigress_options_opa_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-# #     ${tigress_options_opa_helper}"
-# # export tigress_options_opa_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-# #     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-# #     ${tigress_options_opa_helper}"
 
-# # Tigress SplitOpaque
-# export tigress_options_splitOpa_helper="${tigress_options_general}\
+# # # Tigress SplitOpaque
+# setup_tigress_obfuscation "splitOpa_helper" "\
 #     --Transform=Split \
 #         --SplitKinds=deep,block,top \
 #         --SplitCount=100 \
@@ -617,21 +454,8 @@ setup_tigress_obfuscation() {
 #         --AddOpaqueStructs=list \
 #         --AddOpaqueKinds=true"
 
-# export tigress_options_splitOpa_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_splitOpa_helper}"
-# export tigress_options_splitOpa_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_splitOpa_helper}"
-# export tigress_options_splitOpa_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_splitOpa_helper}"
-# export tigress_options_splitOpa_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_splitOpa_helper}"
-
-# # Tigress OpaqueSplit
-# export tigress_options_opaSplit_helper="${tigress_options_general}\
+# # # Tigress OpaqueSplit
+# setup_tigress_obfuscation "opaSplit_helper" "\
 #     --Seed=0 \
 #     --Inputs='+1:int:42,-1:length:1?10' \
 #     --Transform=InitEntropy \
@@ -655,21 +479,8 @@ setup_tigress_obfuscation() {
 #         --SplitCount=100 \
 #         --Functions=init_program"
 
-# export tigress_options_opaSplit_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_opaSplit_helper}"
-# export tigress_options_opaSplit_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_opaSplit_helper}"
-# export tigress_options_opaSplit_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_opaSplit_helper}"
-# export tigress_options_opaSplit_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_opaSplit_helper}"
-
-# # Tigress OpaqueFlatten
-# export tigress_options_opaFlatten_helper="${tigress_options_general}\
+# # # Tigress OpaqueFlatten
+# setup_tigress_obfuscation "opaFlatten_helper" "\
 #     --Seed=0 \
 #     --Inputs='+1:int:42,-1:length:1?10' \
 #     --Transform=InitEntropy \
@@ -687,21 +498,9 @@ setup_tigress_obfuscation() {
 #      --Transform=Flatten \
 #         --Functions=init_program"
 
-# export tigress_options_opaFlatten_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_opaFlatten_helper}"
-# export tigress_options_opaFlatten_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_opaFlatten_helper}"
-# export tigress_options_opaFlatten_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_opaFlatten_helper}"
-# export tigress_options_opaFlatten_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_opaFlatten_helper}"
 
-# # Tigress FlattenOpaque
-# export tigress_options_flattenOpa_helper="${tigress_options_general}\
+# # # Tigress FlattenOpaque
+# setup_tigress_obfuscation "flattenOpa_helper" "\
 #     --Transform=Flatten \
 #         --Functions=init_program \
 #     --Seed=0 \
@@ -718,20 +517,6 @@ setup_tigress_obfuscation() {
 #         --Functions=init_program \
 #         --AddOpaqueStructs=list \
 #         --AddOpaqueKinds=true"
-
-# export tigress_options_flattenOpa_gcc_musl_oslatest_O0="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O0}\" \
-#     ${tigress_options_flattenOpa_helper}"
-# export tigress_options_flattenOpa_gcc_musl_oslatest_O1="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O1}\" \
-#     ${tigress_options_flattenOpa_helper}"
-# export tigress_options_flattenOpa_gcc_musl_oslatest_O2="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O2}\" \
-#     ${tigress_options_flattenOpa_helper}"
-# export tigress_options_flattenOpa_gcc_musl_oslatest_O3="${tigress_environment_gcc} \
-#     --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_O3}\" \
-#     ${tigress_options_flattenOpa_helper}"
-
 # --------------------------------------------------------------------
 
 # Tigress EncodeLiterals
