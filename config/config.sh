@@ -230,12 +230,14 @@ setup_tigress_obfuscation() {
 
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
-        # Check if the symbolic link exists, and if not, create it
-        local symlink_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest-${level}.sh"
-        if [ ! -L "${symlink_path}" ]; then
-            echo "Creating symbolic link for ${symlink_path}"
-            ln -s "${compilation_folder}/all_tigress.sh" "${symlink_path}"
+        # Check if the symbolic link exists, and if so, delete it
+        local symlink_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
+        if [ -L "${symlink_path}" ]; then
+            rm "${symlink_path}"
         fi
+
+        # Create the symbolic link
+        ln -s "all_tigress.sh" "${symlink_path}" && chmod +x "${symlink_path}"
         # Resolve the inner variable first
         local gcc_options_var="gcc_options_${level}"
         local gcc_options_value=${!gcc_options_var}
@@ -772,9 +774,9 @@ setup_tigress_obfuscation "flatten" "\
 #         --Functions=init_program"
 
 # JIT
-# setup_tigress_obfuscation "jit" "\
-#     --Transform=Jit \
-#         --Functions=init_program"
+setup_tigress_obfuscation "jit" "\
+    --Transform=Jit \
+        --Functions=init_program"
 
 # --- TinyCC config --------------------------------------------------
 #export tinycc_versions="0_9_27
