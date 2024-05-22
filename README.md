@@ -1,4 +1,4 @@
-# Obfuscation ABCDEF
+# Obfuscated SAmple Generation and Evaluation
 
 Compile and obfuscate C programs with different compilers and obfuscators.
 
