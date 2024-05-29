@@ -73,12 +73,12 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
     # Generate the marked file
     # Insert the markers into the .s file and create a marked.s file
-    INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
-    awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+    # INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    # awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
     # --- The calculation is not done here
-    INFO "Compiling marked version with:"
-    INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
+    # INFO "Compiling marked version with:"
+    # INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
     # Generate the cfg from the .bc file
     INFO "Generate the cfg from the .bc file"
     mkdir "${temp}_cfg"

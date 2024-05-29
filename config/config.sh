@@ -2,7 +2,7 @@
 
 export _DEBUG="off"
 export _ABCDEF_TIMEOUT="5m"
-export _DUMP_COMPILER_INFO=0
+export _DUMP_COMPILER_INFO=1
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'

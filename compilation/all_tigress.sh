@@ -95,11 +95,11 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     gcc_flags=${gcc_flags#* }
     DEBUG "PREFIX123888: prog: ${gcc_prog} and flag: ${gcc_flags} FROM -> ${tigress_options}"
     # Insert the markers into the .s file and create a marked.s file
-    INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
-    awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+    # INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    # awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
     # --- The calculation is not done here
-    INFO "Compiling marked version with:"
+    # INFO "Compiling marked version with:"
     # -fno-zero-initialized-in-bss -> allows us to put the quad in the bss section
-    INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
+    # INFO_EXEC "${gcc_prog:?} ${gcc_flags:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
 fi;
