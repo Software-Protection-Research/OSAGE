@@ -2,7 +2,7 @@
 
 export _DEBUG="off"
 export _ABCDEF_TIMEOUT="5m"
-export _DUMP_COMPILER_INFO=1
+export _DUMP_COMPILER_INFO=0
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_hash"
+export abcdef_dir_src="${abcdef_dir_base}/src_all"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -720,126 +720,159 @@ setup_tigress_obfuscation() {
 
 # --------------------------------------------------------------------
 
-# Tigress EncodeLiterals
-setup_tigress_obfuscation "encodeLiterals" "\
-    --Transform=Flatten \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=init_program"
+# # Tigress EncodeLiterals
+# setup_tigress_obfuscation "encodeLiterals" "\
+#     --Transform=Flatten \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=block \
+#         --SplitCount=100 \
+#         --Functions=init_program"
 
 
-# Tigress EncodeArithmetic
-setup_tigress_obfuscation "encodeArithmetic" "\
-    --Transform=EncodeArithmetic \
-    --Functions=init_program"
+# # Tigress EncodeArithmetic
+# setup_tigress_obfuscation "encodeArithmetic" "\
+#     --Transform=EncodeArithmetic \
+#     --Functions=init_program"
 
 
-# Tigress Split
-setup_tigress_obfuscation "split" "\
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program"
+# # Tigress Split
+# setup_tigress_obfuscation "split" "\
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program"
 
-# # Tigress Flatten
-setup_tigress_obfuscation "flatten" "\
-    --Transform=Flatten \
-        --Functions=secrets"
+# # # Tigress Flatten
+# setup_tigress_obfuscation "flatten" "\
+#     --Transform=Flatten \
+#         --Functions=secrets"
 
-# Tigress Virtualize
-setup_tigress_obfuscation "virtualize" "\
-    --Transform=Virtualize \
-        --VirtualizeDispatch=direct \
-        --Functions=init_program"
+# # Tigress Virtualize
+# setup_tigress_obfuscation "virtualize" "\
+#     --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program"
 
-# JIT
-setup_tigress_obfuscation "jit" "\
-    --Transform=Jit \
-        --Functions=init_program"
+# # JIT
+# setup_tigress_obfuscation "jit" "\
+#     --Transform=Jit \
+#         --Functions=init_program"
 
-#Recipe #1: Opaque Predicates, Branch Functions, and Encoded Arithmetic
-setup_tigress_obfuscation "recipe1" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-        --InitEntropyKinds=vars \
-     --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env  \
-     --Transform=InitBranchFuns \
-        --InitBranchFunsCount=1 \
-     --Transform=AddOpaque \
-        --Functions=init_program \
-        --AddOpaqueStructs=list \
-        --AddOpaqueKinds=true \
-     --Transform=AntiBranchAnalysis \
-       --Functions=init_program \
-       --AntiBranchAnalysisKinds=branchFuns \
-       --AntiBranchAnalysisObfuscateBranchFunCall=false \
-       --AntiBranchAnalysisBranchFunFlatten=true \
-     --Transform=EncodeArithmetic \
-        --Functions=init_program"
+# #Recipe #1: Opaque Predicates, Branch Functions, and Encoded Arithmetic
+# setup_tigress_obfuscation "recipe1" "\
+#     --Transform=InitEntropy \
+#         --Functions=init_program \
+#         --InitEntropyKinds=vars \
+#      --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env  \
+#      --Transform=InitBranchFuns \
+#         --InitBranchFunsCount=1 \
+#      --Transform=AddOpaque \
+#         --Functions=init_program \
+#         --AddOpaqueStructs=list \
+#         --AddOpaqueKinds=true \
+#      --Transform=AntiBranchAnalysis \
+#        --Functions=init_program \
+#        --AntiBranchAnalysisKinds=branchFuns \
+#        --AntiBranchAnalysisObfuscateBranchFunCall=false \
+#        --AntiBranchAnalysisBranchFunFlatten=true \
+#      --Transform=EncodeArithmetic \
+#         --Functions=init_program"
 
-#Recipe #2: Virtualization and Self-Modification
-setup_tigress_obfuscation "recipe2" "\
---Transform=InitEntropy \
-        --Functions=init_program \
-        --InitEntropyKinds=vars \
-     --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env  \
-     --Transform=Virtualize \
-        --Skip=false \
-        --VirtualizeDispatch=ifnest \
-        --Functions=init_program \
-     --Transform=SelfModify \
-       --Skip=false \
-       --Functions=init_program \
-       --SelfModifySubExpressions=false \
-       --SelfModifyBogusInstructions=10"
+# #Recipe #2: Virtualization and Self-Modification
+# setup_tigress_obfuscation "recipe2" "\
+# --Transform=InitEntropy \
+#         --Functions=init_program \
+#         --InitEntropyKinds=vars \
+#      --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env  \
+#      --Transform=Virtualize \
+#         --Skip=false \
+#         --VirtualizeDispatch=ifnest \
+#         --Functions=init_program \
+#      --Transform=SelfModify \
+#        --Skip=false \
+#        --Functions=init_program \
+#        --SelfModifySubExpressions=false \
+#        --SelfModifyBogusInstructions=10"
 
-#Recipe #3: Virtualization and Dynamic Obfuscation
-setup_tigress_obfuscation "recipe3" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-        --InitEntropyKinds=vars \
-     --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env  \
-     --Transform=Virtualize \
-        --Skip=false \
-        --VirtualizeDispatch=direct \
-        --Functions=init_program \
-     --Transform=JitDynamic \
-        --Skip=false \
-        --Functions=init_program \
-        --JitDynamicCodecs=xtea \
-        --JitDynamicBlockFraction=%100 \
-     --Transform=Measure \
-        --Functions=init_program \
-        --MeasureTimes=100"
-#Recipe #4: Merge, Virtualization, and Encode Literals
-setup_tigress_obfuscation "recipe4" "\
- --Transform=InitEntropy \
-        --Functions=init_program \
-        --InitEntropyKinds=vars \
-     --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env  \
-     --Transform=Merge \
-        --MergeFlatten=false \
-        --MergeName=MERGED \
-        --Functions=init_program \
-     --Transform=Virtualize \
-        --VirtualizeDispatch=direct \
-        --Functions=init_program \
+# #Recipe #3: Virtualization and Dynamic Obfuscation
+# setup_tigress_obfuscation "recipe3" "\
+#     --Transform=InitEntropy \
+#         --Functions=init_program \
+#         --InitEntropyKinds=vars \
+#      --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env  \
+#      --Transform=Virtualize \
+#         --Skip=false \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program \
+#      --Transform=JitDynamic \
+#         --Skip=false \
+#         --Functions=init_program \
+#         --JitDynamicCodecs=xtea \
+#         --JitDynamicBlockFraction=%100 \
+#      --Transform=Measure \
+#         --Functions=init_program \
+#         --MeasureTimes=100"
+# #Recipe #4: Merge, Virtualization, and Encode Literals
+# setup_tigress_obfuscation "recipe4" "\
+#  --Transform=InitEntropy \
+#         --Functions=init_program \
+#         --InitEntropyKinds=vars \
+#      --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env  \
+#      --Transform=Merge \
+#         --MergeFlatten=false \
+#         --MergeName=MERGED \
+#         --Functions=init_program \
+#      --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program \
+#      --Transform=EncodeLiterals \
+#         --Functions=init_program"
+
+# ============ SECRYPT 2024 (camera-ready) ============
+
+setup_tigress_obfuscation "encodeLiterals_helper" " \
      --Transform=EncodeLiterals \
+       --Functions=init_program \
+       --EncodeLiteralsIntegerKinds=split"
+
+setup_tigress_obfuscation "encodeArithmetic_helper" " \
+     --Transform=EncodeArithmetic \
+       --Functions=init_program"
+
+setup_tigress_obfuscation "split_helper" " \
+	  --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
         --Functions=init_program"
+
+setup_tigress_obfuscation "flatten_helper" " \
+      --Transform=Flatten \
+        --Functions=init_program"
+
+setup_tigress_obfuscation "virtualize_helper" " \
+     --Transform=Virtualize \
+       --VirtualizeDispatch=direct \
+       --Functions=init_program"
+
+setup_tigress_obfuscation "jit_helper" " \
+     --Transform=Jit \
+       --Functions=init_program"
+
+# ============ END SECRYPT 2024 (camera-ready) ============
+
 # --- TinyCC config --------------------------------------------------
 #export tinycc_versions="0_9_27
 #latest"
@@ -933,6 +966,9 @@ export framac_options_latest="-metrics-libc -metrics"
 export framac_header_latest=""
 # --------------------------------------------------------------------
 
+# remove all but the last .dot file
+#last_modified_dir=$(ls -td out/*/ | head -n 1)
+#find "$last_modified_dir" -name "*.dot" -type f -print0 | xargs -0 ls -t | head -n -1 | xargs -d '\n' rm
 
 # Inlcude the helpers
 source "${abcdef_dir_config}/helper.sh"
