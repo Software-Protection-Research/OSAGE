@@ -74,6 +74,7 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     # Generate the marked file
     # Insert the markers into the .s file and create a marked.s file
     # INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    awk 'NR>1{print "LABEL" prev_NR ": " prev_line}{prev_NR=NR; prev_line=$0} END{print "LABEL" NR ": " $0}' "${temp}.s" > "${temp}_marked.s"
     # awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
     # --- The calculation is not done here
