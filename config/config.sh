@@ -2,7 +2,7 @@
 
 export _DEBUG="off"
 export _ABCDEF_TIMEOUT="5m"
-export _DUMP_COMPILER_INFO=0
+export _DUMP_COMPILER_INFO=1
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -220,6 +220,8 @@ export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKi
 
 # Define the path to the compilation folder
 compilation_folder="compilation"
+
+#TODO: If Jitter add this command #include \"/opt/tigress/3.1/jitter-amd64.c\"
 
 setup_tigress_obfuscation() {
     local obfuscation=$1
@@ -707,8 +709,7 @@ setup_tigress_obfuscation() {
 # setup_tigress_obfuscation "EncodeLiterals" "\
 #     --Transform=EncodeLiterals \
 #       --Functions=init_programm \
-#       --Regions=obfuscateThis,obfuscateThat \
-#       --EncodeLiteralsIntegerKinds=split"
+#       --Regions=obfuscateThis,obfuscateThat"
 
 # Tigress jitDynamic
 # setup_tigress_obfuscation "jitDynamic " "\
@@ -764,26 +765,26 @@ setup_tigress_obfuscation() {
 #         --Functions=init_program"
 
 # #Recipe #1: Opaque Predicates, Branch Functions, and Encoded Arithmetic
-# setup_tigress_obfuscation "recipe1" "\
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#      --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env  \
-#      --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#      --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true \
-#      --Transform=AntiBranchAnalysis \
-#        --Functions=init_program \
-#        --AntiBranchAnalysisKinds=branchFuns \
-#        --AntiBranchAnalysisObfuscateBranchFunCall=false \
-#        --AntiBranchAnalysisBranchFunFlatten=true \
-#      --Transform=EncodeArithmetic \
-#         --Functions=init_program"
+setup_tigress_obfuscation "recipe1" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+     --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+     --Transform=AntiBranchAnalysis \
+       --Functions=init_program \
+       --AntiBranchAnalysisKinds=branchFuns \
+       --AntiBranchAnalysisObfuscateBranchFunCall=false \
+       --AntiBranchAnalysisBranchFunFlatten=true \
+     --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
 # #Recipe #2: Virtualization and Self-Modification
 # setup_tigress_obfuscation "recipe2" "\
@@ -845,8 +846,7 @@ setup_tigress_obfuscation() {
 
 setup_tigress_obfuscation "encodeLiterals_helper" " \
      --Transform=EncodeLiterals \
-       --Functions=init_program \
-       --EncodeLiteralsIntegerKinds=split"
+       --Functions=init_program"
 
 setup_tigress_obfuscation "encodeArithmetic_helper" " \
      --Transform=EncodeArithmetic \

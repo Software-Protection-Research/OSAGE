@@ -94,7 +94,10 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     gcc_prog=${gcc_flags% *}
     gcc_flags=${gcc_flags#* }
     DEBUG "PREFIX123888: prog: ${gcc_prog} and flag: ${gcc_flags} FROM -> ${tigress_options}"
-    # Insert the markers into the .s file and create a marked.s file
+# TODO: Only add label if it is no empty line, no comment and not starting with a . or a label
+    # Insert a label with the line number and the instruction after each line
+    # Ignore empty lines, add a delimeter(.) between label and instruction, remove incompatible characters(like -, _, :, and whtispaces), replace comments with the word "comment"
+    awk '{if(NF==0 || $0 ~ /^#|^\./ || $1 ~ /LABEL[0-9]+/) {print; next} instruction = $1; gsub(/[-_:]/, "", instruction); if(NR>1) print prev_line; print "LABEL" NR "." instruction ":"; prev_line=$0} END{print prev_line}' "${temp}.s" > "${temp}_marked.s"
     # INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
     # awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
     # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
