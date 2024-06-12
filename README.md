@@ -18,4 +18,3 @@ sudo docker attach "#pid"
 
 * make check #checks the file structure and if the dependencies are resolved.
 * make all   #runs check and compiles all scripts
-

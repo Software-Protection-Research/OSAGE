@@ -222,6 +222,7 @@ export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKi
 compilation_folder="compilation"
 
 #TODO: If Jitter add this command #include \"/opt/tigress/3.1/jitter-amd64.c\"
+# If jit is in obfuscation, add the jitter file
 
 setup_tigress_obfuscation() {
     local obfuscation=$1
