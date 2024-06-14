@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/areasquare/areasquare.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o areasquare  /opt/samplegenerator/src_all/areasquare/areasquare.c
+
+real	0m1.107s
+user	0m0.103s
+sys	0m0.026s

@@ -1,0 +1,7 @@
+cat: /opt/samplegenerator/src_all/roots/roots.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o roots  /opt/samplegenerator/src_all/roots/roots.c
+tcc: error: undefined symbol 'sqrt'
+
+real	0m1.001s
+user	0m0.113s
+sys	0m0.018s

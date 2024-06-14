@@ -1,0 +1,19 @@
+[WARNING] Running as root is not recommended
+[ERROR] Opam has not been initialised, please run `opam init'
+[0;36m[DEBUG][0m: Name of the file is 'framac-latest'.
+[0;36m[DEBUG][0m: The extracted compiler name is 'framac'.
+[0;36m[DEBUG][0m: The extracted version is 'latest'.
+[0;36m[DEBUG][0m: The extracted options are 'latest'.
+[0;36m[DEBUG][0m: Looking for 'framac_prog_latest' in the config.
+[0;36m[DEBUG][0m: Found 'frama-c'.
+[0;36m[DEBUG][0m: Looking for 'framac_header_latest' in the config.
+[0;36m[DEBUG][0m: Found ''.
+[0;36m[DEBUG][0m: Looking for 'framac_options_latest' in the config.
+[0;36m[DEBUG][0m: Found '-metrics-libc -metrics'.
+cat: /opt/samplegenerator/src_all/gcd/gcd.opts: No such file or directory
+[0;34m[INFO][0m: frama-c -metrics-libc -metrics -metrics-output gcd.html  /opt/samplegenerator/src_all/gcd/gcd.c
+sh: line 1: frama-c: command not found
+
+real	0m2.311s
+user	0m0.104s
+sys	0m0.053s

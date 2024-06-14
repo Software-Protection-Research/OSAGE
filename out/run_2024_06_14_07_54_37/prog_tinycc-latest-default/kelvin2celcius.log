@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/kelvin2celcius/kelvin2celcius.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o kelvin2celcius  /opt/samplegenerator/src_all/kelvin2celcius/kelvin2celcius.c
+
+real	0m1.102s
+user	0m0.102s
+sys	0m0.026s

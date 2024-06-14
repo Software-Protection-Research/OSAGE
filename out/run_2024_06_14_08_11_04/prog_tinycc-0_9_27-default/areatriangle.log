@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/areatriangle/areatriangle.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o areatriangle  /opt/samplegenerator/src_all/areatriangle/areatriangle.c
+
+real	0m1.113s
+user	0m0.098s
+sys	0m0.029s

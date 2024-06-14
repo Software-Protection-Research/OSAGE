@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/jshash_file/jshash_file.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o jshash_file  /opt/samplegenerator/src_all/jshash_file/jshash_file.c
+
+real	0m0.982s
+user	0m0.086s
+sys	0m0.043s

@@ -10,3 +10,12 @@ Noch mehr Infos zum Framework:
   - Integration des Analyseframeworks, an dem Caro arbeitet
 - Mittelfristige Ziele
   - wir fügen alle unsere Metriken, die wir im CD-Labor publizieren zum Framework hinzu
+
+*~
+*.swp
+*.swo
+__pycache__
+src_all/*
+src_*/includes.h
+out/
+.idea

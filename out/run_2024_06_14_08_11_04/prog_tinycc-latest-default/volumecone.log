@@ -1,0 +1,7 @@
+cat: /opt/samplegenerator/src_all/volumecone/volumecone.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o volumecone  /opt/samplegenerator/src_all/volumecone/volumecone.c
+tcc: error: undefined symbol 'pow'
+
+real	0m0.313s
+user	0m0.111s
+sys	0m0.019s

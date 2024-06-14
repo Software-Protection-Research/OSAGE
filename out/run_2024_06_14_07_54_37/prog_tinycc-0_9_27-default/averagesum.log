@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/averagesum/averagesum.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o averagesum  /opt/samplegenerator/src_all/averagesum/averagesum.c
+
+real	0m1.115s
+user	0m0.093s
+sys	0m0.036s

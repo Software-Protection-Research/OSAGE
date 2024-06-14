@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/reversenumber/reversenumber.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o reversenumber  /opt/samplegenerator/src_all/reversenumber/reversenumber.c
+
+real	0m1.065s
+user	0m0.105s
+sys	0m0.023s

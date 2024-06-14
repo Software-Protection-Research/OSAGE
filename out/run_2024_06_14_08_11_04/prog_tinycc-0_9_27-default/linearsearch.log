@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/linearsearch/linearsearch.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o linearsearch  /opt/samplegenerator/src_all/linearsearch/linearsearch.c
+
+real	0m0.977s
+user	0m0.093s
+sys	0m0.034s

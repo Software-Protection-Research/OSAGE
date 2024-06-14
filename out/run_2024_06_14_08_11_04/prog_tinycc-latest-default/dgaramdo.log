@@ -1,0 +1,5 @@
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o dgaramdo  /opt/samplegenerator/src_all/dgaramdo/dgaramdo.c
+
+real	0m1.067s
+user	0m0.101s
+sys	0m0.030s

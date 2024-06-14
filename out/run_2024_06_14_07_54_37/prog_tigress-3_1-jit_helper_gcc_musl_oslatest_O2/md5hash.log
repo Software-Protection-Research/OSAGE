@@ -1,0 +1,34 @@
+cat: /opt/samplegenerator/src_all/md5hash/md5hash.opts: No such file or directory
+[0;34m[INFO][0m: Compiling with:
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1             --gcc="/usr/sbin/musl-gcc -O2"              --Transform=Info --InfoKind=*       --Transform=Jit        --Functions=init_program /opt/samplegenerator/src_all/md5hash/md5hash.c --out=md5hash.c -o md5hash 
+digraph G {
+md5String -> externalFun_memcpy
+md5String -> externalFun_strlen
+md5String -> md5Init
+md5String -> md5Update
+md5String -> md5Finalize
+md5File -> externalFun_memcpy
+md5File -> externalFun_free
+md5File -> externalFun_fread
+md5File -> externalFun_malloc
+md5File -> md5Init
+md5File -> md5Update
+md5File -> md5Finalize
+md5Finalize -> md5Update
+md5Finalize -> md5Step
+md5Update -> md5Step
+print_hash -> externalFun_printf
+md5Step -> rotateLeft
+main -> externalFun_printf
+main -> init_program
+main -> md5String
+main -> print_hash
+main -> compare_hash
+
+}
+
+[[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
+
+real	0m2.731s
+user	0m0.271s
+sys	0m0.059s
