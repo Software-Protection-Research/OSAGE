@@ -1,3 +1,6 @@
-src_all/*
-src_*/includes.h
+*~
+*.swp
+*.swo
+__pycache__
+out/
 .idea
