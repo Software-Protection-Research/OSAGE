@@ -1,0 +1,7 @@
+cat: /opt/samplegenerator/src_all/emi/emi.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o emi  /opt/samplegenerator/src_all/emi/emi.c
+tcc: error: undefined symbol 'pow'
+
+real	0m0.986s
+user	0m0.109s
+sys	0m0.024s

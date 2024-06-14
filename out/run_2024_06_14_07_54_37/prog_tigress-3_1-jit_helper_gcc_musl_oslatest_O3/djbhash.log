@@ -1,0 +1,16 @@
+cat: /opt/samplegenerator/src_all/djbhash/djbhash.opts: No such file or directory
+[0;34m[INFO][0m: Compiling with:
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress  --Environment=x86_64:Linux:Gcc:12.1             --gcc="/usr/sbin/musl-gcc -O3"              --Transform=Info --InfoKind=*       --Transform=Jit        --Functions=init_program /opt/samplegenerator/src_all/djbhash/djbhash.c --out=djbhash.c -o djbhash 
+digraph G {
+main -> externalFun_printf
+main -> externalFun_strlen
+main -> init_program
+main -> DJBHash
+
+}
+
+[[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
+
+real	0m2.448s
+user	0m0.290s
+sys	0m0.039s

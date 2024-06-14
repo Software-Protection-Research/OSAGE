@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/insertionsort_file/insertionsort_file.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o insertionsort_file  /opt/samplegenerator/src_all/insertionsort_file/insertionsort_file.c
+
+real	0m1.077s
+user	0m0.096s
+sys	0m0.031s

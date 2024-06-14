@@ -1,0 +1,6 @@
+cat: /opt/samplegenerator/src_all/sdbmhash_file/sdbmhash_file.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o sdbmhash_file  /opt/samplegenerator/src_all/sdbmhash_file/sdbmhash_file.c
+
+real	0m1.105s
+user	0m0.101s
+sys	0m0.027s

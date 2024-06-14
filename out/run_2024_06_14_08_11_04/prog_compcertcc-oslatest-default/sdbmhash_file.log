@@ -1,0 +1,5 @@
+[0;31m[ERROR in /opt/samplegenerator/compilation/compile-compcertcc-oslatest-default.sh][0m: Could not get the program name for compcertcc from the config.
+
+real	0m0.881s
+user	0m0.089s
+sys	0m0.017s
