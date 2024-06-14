@@ -1,6 +1,3 @@
-*~
-*.swp
-*.swo
-__pycache__
-out/
+src_all/*
+src_*/includes.h
 .idea
