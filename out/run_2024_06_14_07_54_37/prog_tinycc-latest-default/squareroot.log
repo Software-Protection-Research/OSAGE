@@ -1,7 +1,0 @@
-cat: /opt/samplegenerator/src_all/squareroot/squareroot.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o squareroot  /opt/samplegenerator/src_all/squareroot/squareroot.c
-tcc: error: undefined symbol 'fabs'
-
-real	0m0.325s
-user	0m0.103s
-sys	0m0.025s

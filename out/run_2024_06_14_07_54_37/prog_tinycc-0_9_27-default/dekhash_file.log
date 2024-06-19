@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/dekhash_file/dekhash_file.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o dekhash_file  /opt/samplegenerator/src_all/dekhash_file/dekhash_file.c
-
-real	0m1.056s
-user	0m0.093s
-sys	0m0.035s

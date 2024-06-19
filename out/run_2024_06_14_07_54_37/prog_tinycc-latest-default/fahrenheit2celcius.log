@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/fahrenheit2celcius/fahrenheit2celcius.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o fahrenheit2celcius  /opt/samplegenerator/src_all/fahrenheit2celcius/fahrenheit2celcius.c
-
-real	0m1.002s
-user	0m0.097s
-sys	0m0.029s

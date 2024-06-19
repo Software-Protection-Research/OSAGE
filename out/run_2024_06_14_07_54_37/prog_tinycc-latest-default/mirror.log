@@ -1,8 +1,0 @@
-cat: /opt/samplegenerator/src_all/mirror/mirror.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o mirror  /opt/samplegenerator/src_all/mirror/mirror.c
-tcc: error: undefined symbol 'pow'
-tcc: error: undefined symbol 'sqrt'
-
-real	0m1.039s
-user	0m0.112s
-sys	0m0.019s

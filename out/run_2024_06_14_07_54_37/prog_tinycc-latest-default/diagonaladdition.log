@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/diagonaladdition/diagonaladdition.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o diagonaladdition  /opt/samplegenerator/src_all/diagonaladdition/diagonaladdition.c
-
-real	0m1.032s
-user	0m0.101s
-sys	0m0.031s

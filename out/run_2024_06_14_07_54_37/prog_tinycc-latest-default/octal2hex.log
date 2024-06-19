@@ -1,7 +1,0 @@
-cat: /opt/samplegenerator/src_all/octal2hex/octal2hex.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o octal2hex  /opt/samplegenerator/src_all/octal2hex/octal2hex.c
-tcc: error: undefined symbol 'pow'
-
-real	0m1.090s
-user	0m0.092s
-sys	0m0.040s
