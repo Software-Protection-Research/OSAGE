@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/armstrongnumber/armstrongnumber.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o armstrongnumber  /opt/samplegenerator/src_all/armstrongnumber/armstrongnumber.c
-
-real	0m1.100s
-user	0m0.100s
-sys	0m0.027s
