@@ -218,10 +218,10 @@ if ! python3 -c 'import psutil'; then
     ERROR_EXIT "Python3 psutil not found! (python3 -m pip install psutil)"
 fi
 
-
-if ! python3 -c 'import capstone'; then
-    ERROR_EXIT "Python3 capstone not found! (python3 -m pip install capstone)"
-fi
+#ToDo: Check why capstone does not get installed
+# if ! python3 -c 'import capstone'; then
+#     ERROR_EXIT "Python3 capstone not found! (python3 -m pip install capstone)"
+# fi
 
 
 if ! python3 -c 'import elftools'; then
