@@ -230,7 +230,10 @@ setup_tigress_obfuscation() {
     declare -A tigress_options
     # Export the helper options
     tigress_options["${obfuscation}_helper"]="${tigress_options_general} ${helper_options}"
-
+    # If obfuscation is jit_helper, add the include command
+    if [[ "${obfuscation}" = *"jit"* ]]; then
+        include "/opt/tigress/3.1/jitter-amd64.c"
+    fi
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it

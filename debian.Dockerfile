@@ -58,6 +58,7 @@ RUN set -eux; \
 	python3 -m pip install capstone --break-system-packages; \
 	python3 -m pip install pyelftools --break-system-packages; \
 	python3 -m pip install termcolor --break-system-packages; \
+	python3 -m pip install setuptools --break-system-packages; \
 	apt-get -y clean; \
 	rm -rf /var/lib/apt/lists/*
 
