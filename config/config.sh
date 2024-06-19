@@ -221,9 +221,7 @@ export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKi
 # Define the path to the compilation folder
 compilation_folder="compilation"
 
-#TODO: If Jitter add this command #include \"/opt/tigress/3.1/jitter-amd64.c\"
-# If jit is in obfuscation, add the jitter file
-
+rm ${compilation_folder}/compile-tigress-3_1-*
 setup_tigress_obfuscation() {
     local obfuscation=$1
     local helper_options=$2
@@ -231,9 +229,9 @@ setup_tigress_obfuscation() {
     # Export the helper options
     tigress_options["${obfuscation}_helper"]="${tigress_options_general} ${helper_options}"
     # If obfuscation is jit_helper, add the include command
-    # if [[ "${obfuscation}" = *"jit"* ]]; then
-        #include "/opt/tigress/3.1/jitter-amd64.c"
-    # fi
+    if [[ "${helper_options}" = *"Jit"* ]] || [[ "${helper_options}" = *"jit"* ]]; then
+        include "/opt/tigress/3.1/jitter-amd64.c"
+    fi
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it
@@ -262,511 +260,506 @@ setup_tigress_obfuscation() {
     done
 }
 
+# Tigress Flatten
+setup_tigress_obfuscation "flatten" "\
+    --Transform=Flatten \
+        --Functions=init_program"
 
-# # #include \"/opt/tigress/3.1/jitter-amd64.c\"
-# # Tigress Flatten
-# setup_tigress_obfuscation "flatten" "\
-#     --Transform=Flatten \
-#         --Functions=init_program"
+# Tigress Opaque Predicates, Anti Branch Analysis, Encoded Arithmetic
+setup_tigress_obfuscation "opabaea_helper" "\
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+    --Transform=AntiBranchAnalysis \
+        --Functions=init_program \
+        --AntiBranchAnalysisKinds=branchFuns \
+        --AntiBranchAnalysisObfuscateBranchFunCall=false \
+        --AntiBranchAnalysisBranchFunFlatten=true \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
-# # Tigress Opaque Predicates, Anti Branch Analysis, Encoded Arithmetic
-# setup_tigress_obfuscation "opabaea_helper" "\
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true \
-#     --Transform=AntiBranchAnalysis \
-#         --Functions=init_program \
-#         --AntiBranchAnalysisKinds=branchFuns \
-#         --AntiBranchAnalysisObfuscateBranchFunCall=false \
-#         --AntiBranchAnalysisBranchFunFlatten=true \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
+# Tigress Virtualize
+setup_tigress_obfuscation "virtualize_helper" " \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
 
-# # Tigress Virtualize
-# setup_tigress_obfuscation "virtualize_helper" " \
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
-
-# # # Tigress self modify
-# setup_tigress_obfuscation "selfmodify_helper" "\
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env  \
-#     --Transform=SelfModify \
-#         --Functions=init_program \
-#         --SelfModifySubExpressions=false \
-#         --SelfModifyBogusInstructions=10"
+# # Tigress self modify
+setup_tigress_obfuscation "selfmodify_helper" "\
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+    --Transform=SelfModify \
+        --Functions=init_program \
+        --SelfModifySubExpressions=false \
+        --SelfModifyBogusInstructions=10"
 
 
-# # Tigress EncodeArithmetic
-# setup_tigress_obfuscation "arithmetic_helper" " \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
+# Tigress EncodeArithmetic
+setup_tigress_obfuscation "arithmetic_helper" " \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
 
-# # Tigress encSplit
-# setup_tigress_obfuscation "encsplit_helper" " \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
+# Tigress encSplit
+setup_tigress_obfuscation "encsplit_helper" " \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
-# # Tigress Split
-# setup_tigress_obfuscation "split_helper" " \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
+# Tigress Split
+setup_tigress_obfuscation "split_helper" " \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
 
-# # Tigress FlattenSplit
-# setup_tigress_obfuscation "flattenSplit_helper" " \
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
-
-
-# # # Tigress SplitFlatten
-# setup_tigress_obfuscation "splitFlatten_helper" " \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Flatten \
-#         --Functions=init_program"
+# Tigress FlattenSplit
+setup_tigress_obfuscation "flattenSplit_helper" " \
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
 
 
-# # # Tigress FlattenSplitEncode
-# setup_tigress_obfuscation "flattenSplitEncode" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
-
-# # # Tigress VirtualizeSplit
-# setup_tigress_obfuscation "virtualizeSplit_helper" " \
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
-
-# # # Tigress SplitVirtualize
-# setup_tigress_obfuscation "splitVirtualize" " \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
+# # Tigress SplitFlatten
+setup_tigress_obfuscation "splitFlatten_helper" " \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Flatten \
+        --Functions=init_program"
 
 
-# # Tigress Opaque
-# setup_tigress_obfuscation "opa_helper" "\
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true"
+# # Tigress FlattenSplitEncode
+setup_tigress_obfuscation "flattenSplitEncode" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
+
+# # Tigress VirtualizeSplit
+setup_tigress_obfuscation "virtualizeSplit_helper" " \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
+
+# # Tigress SplitVirtualize
+setup_tigress_obfuscation "splitVirtualize" " \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
 
 
-# # # Tigress SplitOpaque
-# setup_tigress_obfuscation "splitOpa_helper" "\
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true"
-
-# # # Tigress OpaqueSplit
-# setup_tigress_obfuscation "opaSplit_helper" "\
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
-
-# # # Tigress OpaqueFlatten
-# setup_tigress_obfuscation "opaFlatten_helper" "\
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true \
-#      --Transform=Flatten \
-#         --Functions=init_program"
+# Tigress Opaque
+setup_tigress_obfuscation "opa_helper" "\
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true"
 
 
-# # # Tigress FlattenOpaque
-# setup_tigress_obfuscation "flattenOpa_helper" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Seed=0 \
-#     --Inputs='+1:int:42,-1:length:1?10' \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=InitBranchFuns \
-#         --InitBranchFunsCount=1 \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueStructs=list \
-#         --AddOpaqueKinds=true"
+# # Tigress SplitOpaque
+setup_tigress_obfuscation "splitOpa_helper" "\
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true"
+
+# # Tigress OpaqueSplit
+setup_tigress_obfuscation "opaSplit_helper" "\
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
+
+# Tigress OpaqueFlatten
+setup_tigress_obfuscation "opaFlatten_helper" "\
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true \
+     --Transform=Flatten \
+        --Functions=init_program"
+
+
+# Tigress FlattenOpaque
+setup_tigress_obfuscation "flattenOpa_helper" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Seed=0 \
+    --Inputs='+1:int:42,-1:length:1?10' \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=InitBranchFuns \
+        --InitBranchFunsCount=1 \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueStructs=list \
+        --AddOpaqueKinds=true"
 
 # Tigrss inline
-# setup_tigress_obfuscation "inline" "\
-#         --Transform=InitEntropy --Functions=main --InitEntropyKinds=vars \
-#             --Transform=InitOpaque --Functions=main --InitOpaqueStructs=list \
-#             --Transform=Inline \
-#                 --Functions=foo,bar \
-#                 --InlineKeepFunctions=bar "
+setup_tigress_obfuscation "inline" "\
+        --Transform=InitEntropy --Functions=main --InitEntropyKinds=vars \
+            --Transform=InitOpaque --Functions=main --InitOpaqueStructs=list \
+            --Transform=Inline \
+                --Functions=foo,bar \
+                --InlineKeepFunctions=bar "
 
 # Tigrss plugins
-# setup_tigress_obfuscation "plugins" "\
-#         --Transform=InitPlugins \
-#             --InitPluginsCollectionPrefix=Set \
-#             --InitPluginsDictionaryPrefix=HashMap"
+setup_tigress_obfuscation "plugins" "\
+        --Transform=InitPlugins \
+            --InitPluginsCollectionPrefix=Set \
+            --InitPluginsDictionaryPrefix=HashMap"
 
 # Tigrss softwareMetrics
-# setup_tigress_obfuscation "softwareMetrics" "\
-#        --Transform=SoftwareMetrics \
-#            --Functions=fib \
-#            --SoftwareMetricsFileName=original.txt \
-#            --SoftwareMetricsKind=mccabe \
-#         --Transform=Copy \
-#            --Functions=fib \
-#            --CopyName=fib2 \
-#         --Transform=Flatten \
-#            --Functions=fib \
-#         --Transform=SoftwareMetrics \
-#            --Functions=fib \
-#            --SoftwareMetricsFileName=flatten.txt \
-#            --SoftwareMetricsKind=mccabe \
-#         --Transform=Virtualize \
-#            --Functions=fib2 \
-#         --Transform=SoftwareMetrics \
-#            --Functions=fib2 \
-#            --SoftwareMetricsFileName=virtualize.txt \
-#            --SoftwareMetricsKind=mccabe"
+setup_tigress_obfuscation "softwareMetrics" "\
+       --Transform=SoftwareMetrics \
+           --Functions=fib \
+           --SoftwareMetricsFileName=original.txt \
+           --SoftwareMetricsKind=mccabe \
+        --Transform=Copy \
+           --Functions=fib \
+           --CopyName=fib2 \
+        --Transform=Flatten \
+           --Functions=fib \
+        --Transform=SoftwareMetrics \
+           --Functions=fib \
+           --SoftwareMetricsFileName=flatten.txt \
+           --SoftwareMetricsKind=mccabe \
+        --Transform=Virtualize \
+           --Functions=fib2 \
+        --Transform=SoftwareMetrics \
+           --Functions=fib2 \
+           --SoftwareMetricsFileName=virtualize.txt \
+           --SoftwareMetricsKind=mccabe"
 
 # Tigrss selfModify
-# setup_tigress_obfuscation "selfModify" "\
-#        --Transform=Virtualize\
-#             --Functions=add \
-#             --VirtualizeDispatch=direct \
-#          --Transform=SelfModify \
-#             --Functions=add \
-#             --SelfModifyFraction=%100 \
-#             --SelfModifySubExpressions=false \
-#             --SelfModifyOperators=\* \
-#             --SelfModifyKinds=\* \
-#             --SelfModifyBogusInstructions=0"
+setup_tigress_obfuscation "selfModify" "\
+       --Transform=Virtualize\
+            --Functions=add \
+            --VirtualizeDispatch=direct \
+         --Transform=SelfModify \
+            --Functions=add \
+            --SelfModifyFraction=%100 \
+            --SelfModifySubExpressions=false \
+            --SelfModifyOperators=\* \
+            --SelfModifyKinds=\* \
+            --SelfModifyBogusInstructions=0"
 
 # Tigrss leak
-# setup_tigress_obfuscation "leak" "\
-#        --Transform=Leak \
-#         --LeakKind=dynamic_byte \
-#         --Functions=foo \
-#         --LeakVariable=x \
-#         --LeakValue=42 \
-#         --LeakSecretFunction=main"
+setup_tigress_obfuscation "leak" "\
+       --Transform=Leak \
+        --LeakKind=dynamic_byte \
+        --Functions=foo \
+        --LeakVariable=x \
+        --LeakValue=42 \
+        --LeakSecretFunction=main"
 
 # Tigrss leak
-# setup_tigress_obfuscation "leak" "\
-#        --Transform=Leak \
-#         --LeakKind=dynamic_byte \
-#         --Functions=foo \
-#         --LeakVariable=x \
-#         --LeakValue=42 \
-#         --LeakSecretFunction=main"
+setup_tigress_obfuscation "leak" "\
+       --Transform=Leak \
+        --LeakKind=dynamic_byte \
+        --Functions=foo \
+        --LeakVariable=x \
+        --LeakValue=42 \
+        --LeakSecretFunction=main"
 
 # Tigrss implicitFlow
-# setup_tigress_obfuscation "implicitFlow" "\
-#        --Transform=InitEntropy --Functions=main \
-#         --Transform=InitImplicitFlow --Functions=main \
-#             --InitImplicitFlowKinds=trivial_thread_1,trivial_counter,\
-#                                     mem_cache_time,mem_cache_thread_1,\
-#                                     file_cache_time,file_cache_thread_1,\
-#                                     jit_time \
-#             --InitImplicitFlowHandlerCount=1 \
-#             --InitImplicitFlowJitCount=1 \
-#             --InitImplicitFlowJitFunctionBody="(for (if (bb 50) (bb 50)))" \
-#             --InitImplicitFlowTrace=false \
-#             --InitImplicitFlowTrain=false \
-#             --InitImplicitFlowTime=false \
-#             --InitImplicitFlowTrainingTimesClock=500 \
-#             --InitImplicitFlowTrainingTimesThread=500 \
-#             --InitImplicitFlowTrainingMinGap=90 \
-#             --InitImplicitFlowTrainingConfidenceLevel=0.99 \
-#             --InitImplicitFlowTrainingTargetErrorRate=0.00001 \
-#             --InitImplicitFlowTrainingKind=statistics \
-#         --Transform=AntiTaintAnalysis --Functions=main \
-#             --AntiTaintAnalysisKinds=vars \
-#             --LocalVariables=main:b \
-#             --AntiTaintAnalysisImplicitFlow="(repeat mem_cache_time 3)" \ "
+setup_tigress_obfuscation "implicitFlow" "\
+       --Transform=InitEntropy --Functions=main \
+        --Transform=InitImplicitFlow --Functions=main \
+            --InitImplicitFlowKinds=trivial_thread_1,trivial_counter,\
+                                    mem_cache_time,mem_cache_thread_1,\
+                                    file_cache_time,file_cache_thread_1,\
+                                    jit_time \
+            --InitImplicitFlowHandlerCount=1 \
+            --InitImplicitFlowJitCount=1 \
+            --InitImplicitFlowTrace=false \
+            --InitImplicitFlowTrain=false \
+            --InitImplicitFlowTime=false \
+            --InitImplicitFlowTrainingTimesClock=500 \
+            --InitImplicitFlowTrainingTimesThread=500 \
+            --InitImplicitFlowTrainingMinGap=90 \
+            --InitImplicitFlowTrainingConfidenceLevel=0.99 \
+            --InitImplicitFlowTrainingTargetErrorRate=0.00001 \
+            --InitImplicitFlowTrainingKind=statistics \
+        --Transform=AntiTaintAnalysis --Functions=main \
+            --AntiTaintAnalysisKinds=vars \
+            --LocalVariables=main:b \" \ "
 
 # Tigrss entropy
-# setup_tigress_obfuscation "entropy" "\
-#        --Transform=InitEntropy \
-#        --InitEntropyThreadName=ENTROPYTHREAD \
-#        --InitEntropyThreadSleep=1000000\
-#        --InitEntropyKinds=vars,thread \
-#        --InitEntropyTrace=true \
-#     --Transform=UpdateEntropy \
-#        --Functions=inputData \
-#        --UpdateEntropyKinds=vars \
-#        --UpdateEntropyTrace=true \
-#        --UpdateEntropyVars=x,y,z \
-#     --Transform=UpdateEntropy \
-#        --Functions=acceptNetworkPacket \
-#        --UpdateEntropyKinds=vars \
-#        --UpdateEntropyTrace=true \
-#        --UpdateEntropyVars=packet \
-#     --Transform=UpdateEntropy \
-#        --Functions=random \
-#        --UpdateEntropyKinds=vars \
-#        --UpdateEntropyTrace=true \
-#        --UpdateEntropyVars=p\* \
-#     --Transform=UpdateEntropy \
-#        --Functions=tigress_init \
-#        --UpdateEntropyKinds=thread"
+setup_tigress_obfuscation "entropy" "\
+       --Transform=InitEntropy \
+       --InitEntropyThreadName=ENTROPYTHREAD \
+       --InitEntropyThreadSleep=1000000\
+       --InitEntropyKinds=vars,thread \
+       --InitEntropyTrace=true \
+    --Transform=UpdateEntropy \
+       --Functions=inputData \
+       --UpdateEntropyKinds=vars \
+       --UpdateEntropyTrace=true \
+       --UpdateEntropyVars=x,y,z \
+    --Transform=UpdateEntropy \
+       --Functions=acceptNetworkPacket \
+       --UpdateEntropyKinds=vars \
+       --UpdateEntropyTrace=true \
+       --UpdateEntropyVars=packet \
+    --Transform=UpdateEntropy \
+       --Functions=random \
+       --UpdateEntropyKinds=vars \
+       --UpdateEntropyTrace=true \
+       --UpdateEntropyVars=p\* \
+    --Transform=UpdateEntropy \
+       --Functions=tigress_init \
+       --UpdateEntropyKinds=thread"
 
 # Tigrss encodeBranches
-# setup_tigress_obfuscation "encodeBranches" "\
-#        --Transform=InitOpaque 
-#            --InitOpaqueKind=Input \
-#         --Transform=AntiBranchAnalysis \
-#             --AntiBranchAnalysisKinds=goto2nopSled \
-#             --AntiBranchAnalysisOpaqueStructs=Input"
+setup_tigress_obfuscation "encodeBranches" "\
+       --Transform=InitOpaque 
+           --InitOpaqueKind=Input \
+        --Transform=AntiBranchAnalysis \
+            --AntiBranchAnalysisKinds=goto2nopSled \
+            --AntiBranchAnalysisOpaqueStructs=Input"
 
 # Tigrss encodeExternal
-# setup_tigress_obfuscation "encodeExternal" "\
-#         --Transform=InitEncodeExternal \
-#            --Functions=tigress_init \
-#            --InitEncodeExternalSymbols=getpid,gettimeofday  \
-#         --Transform=EncodeLiterals \
-#            --Functions=tigress_init \
-#            --EncodeLiteralsKinds=string \
-#            --EncodeLiteralsEncoderName=STRINGENCODER \
-#         --Transform=Virtualize \
-#            --Functions=STRINGENCODER \
-#         --Transform=EncodeExternal \
-#            --Functions=main \
-#            --EncodeExternalSymbols=getpid,gettimeofday  1"
+setup_tigress_obfuscation "encodeExternal" "\
+        --Transform=InitEncodeExternal \
+           --Functions=tigress_init \
+           --InitEncodeExternalSymbols=getpid,gettimeofday  \
+        --Transform=EncodeLiterals \
+           --Functions=tigress_init \
+           --EncodeLiteralsKinds=string \
+           --EncodeLiteralsEncoderName=STRINGENCODER \
+        --Transform=Virtualize \
+           --Functions=STRINGENCODER \
+        --Transform=EncodeExternal \
+           --Functions=main \
+           --EncodeExternalSymbols=getpid,gettimeofday  1"
 
 # Tigrss encodeData
-# setup_tigress_obfuscation "encodeData" "\
-#        --Transform=EncodeData \
-#         --GlobalVariables='g1,g2' \
-#         --LocalVariables='fun1:L1,L2;fun2:L3' \
-#         --EncodeDataCodecs=poly1"
+setup_tigress_obfuscation "encodeData" "\
+       --Transform=EncodeData \
+        --GlobalVariables='g1,g2' \
+        --LocalVariables='fun1:L1,L2;fun2:L3' \
+        --EncodeDataCodecs=poly1"
 
 # Tigrss Split
-# setup_tigress_obfuscation "split" "\
-#     --Transform=split \
-#        --SplitKinds=deep,block,top \
-#        --SplitCount=100 \
-#        --Functions=init_programm \
-#    --Transform=Split \
-#        --SplitKinds=block \
-#        --SplitCount=100 \
-#        --Functions=/.\*init_programm.\*/ "
+setup_tigress_obfuscation "split" "\
+    --Transform=split \
+       --SplitKinds=deep,block,top \
+       --SplitCount=100 \
+       --Functions=init_programm \
+   --Transform=Split \
+       --SplitKinds=block \
+       --SplitCount=100 \
+       --Functions=/.\*init_programm.\*/ "
 
 # Tigrss Split
-# setup_tigress_obfuscation "split" "\
-#     --Transform=split \
-#        --SplitKinds=deep,block,top \
-#        --SplitCount=100 \
-#        --Functions=init_programm \
-#    --Transform=Split \
-#        --SplitKinds=block \
-#        --SplitCount=100 \
-#        --Functions=/.\*init_programm.\*/ "
+setup_tigress_obfuscation "split" "\
+    --Transform=split \
+       --SplitKinds=deep,block,top \
+       --SplitCount=100 \
+       --Functions=init_programm \
+   --Transform=Split \
+       --SplitKinds=block \
+       --SplitCount=100 \
+       --Functions=/.\*init_programm.\*/ "
 
 # Tigress addOpaque
-# setup_tigress_obfuscation "addOpaque" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#         --Transform=InitImplicitFlow \
-#         --Transform=InitEntropy \
-#         --Transform=InitOpaque \
-#             --Functions=init_programm \
-#             --InitOpaqueCount=2 \
-#             --InitOpaqueStructs=list,array,input,env \
-#         --Transform=AddOpaque \
-#             --Functions=init_programm \
-#             --AddOpaqueKinds=question \
-#             --AddOpaqueSplitKinds=inside \
-#             --AddOpaqueCount=10"
+setup_tigress_obfuscation "addOpaque" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+        --Transform=InitImplicitFlow \
+        --Transform=InitEntropy \
+        --Transform=InitOpaque \
+            --Functions=init_programm \
+            --InitOpaqueCount=2 \
+            --InitOpaqueStructs=list,array,input,env \
+        --Transform=AddOpaque \
+            --Functions=init_programm \
+            --AddOpaqueKinds=question \
+            --AddOpaqueSplitKinds=inside \
+            --AddOpaqueCount=10"
 
 # Tigress EncodeLiterals
-# setup_tigress_obfuscation "EncodeLiterals" "\
-#     --Transform=EncodeLiterals \
-#       --Functions=init_programm \
-#       --Regions=obfuscateThis,obfuscateThat"
+setup_tigress_obfuscation "EncodeLiterals" "\
+    --Transform=EncodeLiterals \
+      --Functions=init_programm"
 
 # Tigress jitDynamic
-# setup_tigress_obfuscation "jitDynamic " "\
-#     --Transform=JitDynamic \
-#       --Functions=init_programm \
-#       --JitDynamicCodecs=xtea \
-#       --JitDynamicDumpCFG=true \
-#       --JitDynamicBlockFraction=%50"
+setup_tigress_obfuscation "jitDynamic " "\
+    --Transform=JitDynamic \
+      --Functions=init_programm \
+      --JitDynamicCodecs=xtea \
+      --JitDynamicDumpCFG=true \
+      --JitDynamicBlockFraction=%50"
 
 # --------------------------------------------------------------------
 
-# # Tigress EncodeLiterals
-# setup_tigress_obfuscation "encodeLiterals" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=init_program"
+# Tigress EncodeLiterals
+setup_tigress_obfuscation "encodeLiterals" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=init_program"
 
 
-# # Tigress EncodeArithmetic
-# setup_tigress_obfuscation "encodeArithmetic" "\
-#     --Transform=EncodeArithmetic \
-#     --Functions=init_program"
+# Tigress EncodeArithmetic
+setup_tigress_obfuscation "encodeArithmetic" "\
+    --Transform=EncodeArithmetic \
+    --Functions=init_program"
 
 
-# # Tigress Split
-# setup_tigress_obfuscation "split" "\
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program"
+# Tigress Split
+setup_tigress_obfuscation "split" "\
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program"
 
-# # # Tigress Flatten
-# setup_tigress_obfuscation "flatten" "\
-#     --Transform=Flatten \
-#         --Functions=secrets"
+# # Tigress Flatten
+setup_tigress_obfuscation "flatten" "\
+    --Transform=Flatten \
+        --Functions=secrets"
 
-# # Tigress Virtualize
-# setup_tigress_obfuscation "virtualize" "\
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
+# Tigress Virtualize
+setup_tigress_obfuscation "virtualize" "\
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
 
-# # JIT
-# setup_tigress_obfuscation "jit" "\
-#     --Transform=Jit \
-#         --Functions=init_program"
+# JIT
+setup_tigress_obfuscation "jit" "\
+    --Transform=Jit \
+        --Functions=init_program"
 
 # #Recipe #1: Opaque Predicates, Branch Functions, and Encoded Arithmetic
 setup_tigress_obfuscation "recipe1" "\
@@ -790,61 +783,61 @@ setup_tigress_obfuscation "recipe1" "\
      --Transform=EncodeArithmetic \
         --Functions=init_program"
 
-# #Recipe #2: Virtualization and Self-Modification
-# setup_tigress_obfuscation "recipe2" "\
-# --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#      --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env  \
-#      --Transform=Virtualize \
-#         --Skip=false \
-#         --VirtualizeDispatch=ifnest \
-#         --Functions=init_program \
-#      --Transform=SelfModify \
-#        --Skip=false \
-#        --Functions=init_program \
-#        --SelfModifySubExpressions=false \
-#        --SelfModifyBogusInstructions=10"
+#Recipe #2: Virtualization and Self-Modification
+setup_tigress_obfuscation "recipe2" "\
+--Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Virtualize \
+        --Skip=false \
+        --VirtualizeDispatch=ifnest \
+        --Functions=init_program \
+     --Transform=SelfModify \
+       --Skip=false \
+       --Functions=init_program \
+       --SelfModifySubExpressions=false \
+       --SelfModifyBogusInstructions=10"
 
-# #Recipe #3: Virtualization and Dynamic Obfuscation
-# setup_tigress_obfuscation "recipe3" "\
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#      --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env  \
-#      --Transform=Virtualize \
-#         --Skip=false \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program \
-#      --Transform=JitDynamic \
-#         --Skip=false \
-#         --Functions=init_program \
-#         --JitDynamicCodecs=xtea \
-#         --JitDynamicBlockFraction=%100 \
-#      --Transform=Measure \
-#         --Functions=init_program \
-#         --MeasureTimes=100"
-# #Recipe #4: Merge, Virtualization, and Encode Literals
-# setup_tigress_obfuscation "recipe4" "\
-#  --Transform=InitEntropy \
-#         --Functions=init_program \
-#         --InitEntropyKinds=vars \
-#      --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env  \
-#      --Transform=Merge \
-#         --MergeFlatten=false \
-#         --MergeName=MERGED \
-#         --Functions=init_program \
-#      --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program \
-#      --Transform=EncodeLiterals \
-#         --Functions=init_program"
+#Recipe #3: Virtualization and Dynamic Obfuscation
+setup_tigress_obfuscation "recipe3" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Virtualize \
+        --Skip=false \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+     --Transform=JitDynamic \
+        --Skip=false \
+        --Functions=init_program \
+        --JitDynamicCodecs=xtea \
+        --JitDynamicBlockFraction=%100 \
+     --Transform=Measure \
+        --Functions=init_program \
+        --MeasureTimes=100"
+#Recipe #4: Merge, Virtualization, and Encode Literals
+setup_tigress_obfuscation "recipe4" "\
+ --Transform=InitEntropy \
+        --Functions=init_program \
+        --InitEntropyKinds=vars \
+     --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env  \
+     --Transform=Merge \
+        --MergeFlatten=false \
+        --MergeName=MERGED \
+        --Functions=init_program \
+     --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+     --Transform=EncodeLiterals \
+        --Functions=init_program"
 
 # ============ SECRYPT 2024 (camera-ready) ============
 
@@ -871,9 +864,9 @@ setup_tigress_obfuscation "virtualize_helper" " \
        --VirtualizeDispatch=direct \
        --Functions=init_program"
 
-# setup_tigress_obfuscation "jit_helper" " \
-#      --Transform=Jit \
-#        --Functions=init_program"
+setup_tigress_obfuscation "jit_helper" " \
+     --Transform=Jit \
+       --Functions=init_program"
 
 # ============ END SECRYPT 2024 (camera-ready) ============
 

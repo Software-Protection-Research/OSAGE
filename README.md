@@ -21,3 +21,17 @@ sudo docker attach "#pid"
 
 * make check #checks the file structure and if the dependencies are resolved.
 * make all   #runs check and compiles all scripts
+
+## Delete folders in out
+
+* sudo chmod -R 777 out
+
+## Obfuscations that do not work
+
+* -encodeBranches
+* -EncodeLiterals(UpperCase)
+* -implicitFlow
+* -inline
+* -jitDynamic(retest if it is fixed now)
+* -plugins
+* -SoftwareMetrics
