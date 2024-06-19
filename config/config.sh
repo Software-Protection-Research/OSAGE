@@ -528,34 +528,6 @@ setup_tigress_obfuscation "inline" "\
                 --Functions=foo,bar \
                 --InlineKeepFunctions=bar "
 
-# Tigrss plugins
-setup_tigress_obfuscation "plugins" "\
-        --Transform=InitPlugins \
-            --InitPluginsCollectionPrefix=Set \
-            --InitPluginsDictionaryPrefix=HashMap"
-
-# Tigrss softwareMetrics
-setup_tigress_obfuscation "softwareMetrics" "\
-       --Transform=SoftwareMetrics \
-           --Functions=fib \
-           --SoftwareMetricsFileName=original.txt \
-           --SoftwareMetricsKind=mccabe \
-        --Transform=Copy \
-           --Functions=fib \
-           --CopyName=fib2 \
-        --Transform=Flatten \
-           --Functions=fib \
-        --Transform=SoftwareMetrics \
-           --Functions=fib \
-           --SoftwareMetricsFileName=flatten.txt \
-           --SoftwareMetricsKind=mccabe \
-        --Transform=Virtualize \
-           --Functions=fib2 \
-        --Transform=SoftwareMetrics \
-           --Functions=fib2 \
-           --SoftwareMetricsFileName=virtualize.txt \
-           --SoftwareMetricsKind=mccabe"
-
 # Tigrss selfModify
 setup_tigress_obfuscation "selfModify" "\
        --Transform=Virtualize\
@@ -578,37 +550,6 @@ setup_tigress_obfuscation "leak" "\
         --LeakValue=42 \
         --LeakSecretFunction=main"
 
-# Tigrss leak
-setup_tigress_obfuscation "leak" "\
-       --Transform=Leak \
-        --LeakKind=dynamic_byte \
-        --Functions=foo \
-        --LeakVariable=x \
-        --LeakValue=42 \
-        --LeakSecretFunction=main"
-
-# Tigrss implicitFlow
-setup_tigress_obfuscation "implicitFlow" "\
-       --Transform=InitEntropy --Functions=main \
-        --Transform=InitImplicitFlow --Functions=main \
-            --InitImplicitFlowKinds=trivial_thread_1,trivial_counter,\
-                                    mem_cache_time,mem_cache_thread_1,\
-                                    file_cache_time,file_cache_thread_1,\
-                                    jit_time \
-            --InitImplicitFlowHandlerCount=1 \
-            --InitImplicitFlowJitCount=1 \
-            --InitImplicitFlowTrace=false \
-            --InitImplicitFlowTrain=false \
-            --InitImplicitFlowTime=false \
-            --InitImplicitFlowTrainingTimesClock=500 \
-            --InitImplicitFlowTrainingTimesThread=500 \
-            --InitImplicitFlowTrainingMinGap=90 \
-            --InitImplicitFlowTrainingConfidenceLevel=0.99 \
-            --InitImplicitFlowTrainingTargetErrorRate=0.00001 \
-            --InitImplicitFlowTrainingKind=statistics \
-        --Transform=AntiTaintAnalysis --Functions=main \
-            --AntiTaintAnalysisKinds=vars \
-            --LocalVariables=main:b \" \ "
 
 # Tigrss entropy
 setup_tigress_obfuscation "entropy" "\
@@ -639,7 +580,7 @@ setup_tigress_obfuscation "entropy" "\
 # Tigrss encodeBranches
 setup_tigress_obfuscation "encodeBranches" "\
        --Transform=InitOpaque 
-           --InitOpaqueKind=Input \
+           --InitOpaqueKind=goto2call \
         --Transform=AntiBranchAnalysis \
             --AntiBranchAnalysisKinds=goto2nopSled \
             --AntiBranchAnalysisOpaqueStructs=Input"
