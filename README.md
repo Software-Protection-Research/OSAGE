@@ -29,9 +29,4 @@ sudo docker attach "#pid"
 ## Obfuscations that do not work
 
 * -encodeBranches
-* -EncodeLiterals(UpperCase)
-* -implicitFlow
 * -inline
-* -jitDynamic(retest if it is fixed now)
-* -plugins
-* -SoftwareMetrics
