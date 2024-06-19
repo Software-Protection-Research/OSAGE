@@ -10,6 +10,9 @@ sudo docker ps
 
 sudo sh docker_run.sh
 
+find out why i need to run "pip install setuptools --break-system-packages"
+
+
 ## If Container is running, attach to docker container
 
 sudo docker attach "#pid"

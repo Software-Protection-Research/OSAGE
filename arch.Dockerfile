@@ -70,6 +70,7 @@ RUN set -eux; \
         python-pyelftools \
         python-termcolor \
         python-rzpipe \
+        python-setuptools \
 		; \
     # Opam for frama-c
     pacman -S --noconfirm \
