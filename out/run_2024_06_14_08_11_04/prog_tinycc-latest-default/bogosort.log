@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/bogosort/bogosort.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o bogosort  /opt/samplegenerator/src_all/bogosort/bogosort.c
-
-real	0m1.094s
-user	0m0.092s
-sys	0m0.036s

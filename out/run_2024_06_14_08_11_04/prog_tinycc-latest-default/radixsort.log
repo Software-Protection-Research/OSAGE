@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/radixsort/radixsort.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o radixsort  /opt/samplegenerator/src_all/radixsort/radixsort.c
-
-real	0m1.049s
-user	0m0.084s
-sys	0m0.044s

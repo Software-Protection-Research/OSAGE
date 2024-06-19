@@ -1,7 +1,0 @@
-cat: /opt/samplegenerator/src_all/volumesphere/volumesphere.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o volumesphere  /opt/samplegenerator/src_all/volumesphere/volumesphere.c
-tcc: error: undefined symbol 'pow'
-
-real	0m0.345s
-user	0m0.105s
-sys	0m0.026s

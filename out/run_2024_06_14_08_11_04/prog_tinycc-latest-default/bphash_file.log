@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/bphash_file/bphash_file.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o bphash_file  /opt/samplegenerator/src_all/bphash_file/bphash_file.c
-
-real	0m1.065s
-user	0m0.094s
-sys	0m0.034s

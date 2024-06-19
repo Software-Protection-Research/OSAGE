@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/fnvhash/fnvhash.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o fnvhash  /opt/samplegenerator/src_all/fnvhash/fnvhash.c
-
-real	0m1.057s
-user	0m0.099s
-sys	0m0.028s

@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/elfhash/elfhash.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o elfhash  /opt/samplegenerator/src_all/elfhash/elfhash.c
-
-real	0m1.016s
-user	0m0.103s
-sys	0m0.025s

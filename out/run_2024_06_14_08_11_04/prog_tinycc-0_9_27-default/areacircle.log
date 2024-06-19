@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/areacircle/areacircle.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o areacircle  /opt/samplegenerator/src_all/areacircle/areacircle.c
-
-real	0m1.038s
-user	0m0.092s
-sys	0m0.035s
