@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/mergesort_file/mergesort_file.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_release_0_9_27/bin/tcc   -o mergesort_file  /opt/samplegenerator/src_all/mergesort_file/mergesort_file.c
-
-real	0m0.931s
-user	0m0.104s
-sys	0m0.023s

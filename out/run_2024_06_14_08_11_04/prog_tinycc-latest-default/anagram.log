@@ -1,6 +1,0 @@
-cat: /opt/samplegenerator/src_all/anagram/anagram.opts: No such file or directory
-[0;34m[INFO][0m: /opt/tinycc_latest/bin/tcc   -o anagram  /opt/samplegenerator/src_all/anagram/anagram.c
-
-real	0m1.037s
-user	0m0.091s
-sys	0m0.037s
