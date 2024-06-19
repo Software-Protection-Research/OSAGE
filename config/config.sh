@@ -2,7 +2,7 @@
 
 export _DEBUG="off"
 export _ABCDEF_TIMEOUT="5m"
-export _DUMP_COMPILER_INFO=1
+export _DUMP_COMPILER_INFO=0
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -231,20 +231,20 @@ setup_tigress_obfuscation() {
     # Export the helper options
     tigress_options["${obfuscation}_helper"]="${tigress_options_general} ${helper_options}"
     # If obfuscation is jit_helper, add the include command
-    if [[ "${obfuscation}" = *"jit"* ]]; then
-        include "/opt/tigress/3.1/jitter-amd64.c"
-    fi
+    # if [[ "${obfuscation}" = *"jit"* ]]; then
+        #include "/opt/tigress/3.1/jitter-amd64.c"
+    # fi
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it
         local symlink_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
         if [ -L "${symlink_path}" ]; then
-            rm "${symlink_path}"
+            rm "${symlink_path}" 2>/dev/null
         fi
 
         # Create the symbolic link
         # ln -s "all_tigress.sh" "${symlink_path}" && chmod +x "${symlink_path}"
-        ln -s "all_tigress.sh" "${symlink_path}" 2>/dev/null && chmod +x "${symlink_path}"
+        ln -s "all_tigress.sh" "${symlink_path}" 2>/dev/null && chmod +x "${symlink_path}" 2>/dev/null
         # Resolve the inner variable first
         local gcc_options_var="gcc_options_${level}"
         local gcc_options_value=${!gcc_options_var}
@@ -871,9 +871,9 @@ setup_tigress_obfuscation "virtualize_helper" " \
        --VirtualizeDispatch=direct \
        --Functions=init_program"
 
-setup_tigress_obfuscation "jit_helper" " \
-     --Transform=Jit \
-       --Functions=init_program"
+# setup_tigress_obfuscation "jit_helper" " \
+#      --Transform=Jit \
+#        --Functions=init_program"
 
 # ============ END SECRYPT 2024 (camera-ready) ============
 
