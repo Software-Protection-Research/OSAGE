@@ -229,11 +229,11 @@ setup_tigress_obfuscation() {
     # Export the helper options
     tigress_options["${obfuscation}_helper"]="${tigress_options_general} ${helper_options}"
     # If obfuscation contains jit, add the include command
-    if [[ "${helper_options}" = *"Jit"* ]] || [[ "${helper_options}" = *"jit"* ]]; then
+    # if [[ "${helper_options}" = *"Jit"* ]] || [[ "${helper_options}" = *"jit"* ]]; then
         #gcc -o jitter-output /opt/tigress/3.1/jitter-amd64.c
         #include "/opt/tigress/3.1/jitter-amd64.c"
         #include \"/opt/tigress/3.1/jitter-amd64.c\"
-    fi
+    # fi
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it

@@ -27,6 +27,12 @@ for folder in $folders; do
     done
 done
 
+#lighttpd_1_4_59.c
+#bzip2_1_0_6.c
+#nginx_1_21_3.c
+#tmux_3_2_a.c
+
+
 # Loop through each folder and create a symbolic link
 # for folder in $folders; do
 #     ln -s "${base_dir}/${folder}" "${folder}"
