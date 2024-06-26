@@ -65,18 +65,6 @@ setup_tigress_obfuscation "entropy" "\
        --UpdateEntropyKinds=thread"
 
 
-
-[[Tigress]] <<ERROR: Bad request>> Transformation 'Leak': 'x' is not a formal parameter in 'init_program'
-# Tigrss leak
-setup_tigress_obfuscation "leak" "\
-    --Transform=Leak \
-        --LeakKind=dynamic_byte \
-        --Functions=init_program \
-        --LeakVariable=x \
-        --LeakValue=42 \
-        --LeakSecretFunction=main"
-
-
 [[Tigress]] <<ERROR: Transformation not possible>> Transformation 'EncodeData': Global variable(s) 'g1', 'g2' do not exist.
 # Tigrss encodeData TODO:
 setup_tigress_obfuscation "encodeData" "\
