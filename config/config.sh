@@ -210,7 +210,7 @@ export tigress_home_3_1="${abcdef_dir_tools}/tigress/3.1"
 export tigress_prog_3_1="${tigress_home_3_1}/tigress"
 export tigress_header_3_1="# include \"${tigress_home_3_1}/tigress.h\"
 # include <time.h>
-# include <pthread.h>
+# include <pthread.h>"
 #include \"/opt/tigress/3.1/jitter-amd64.c\""
 
 # tigress flags (=options per version)
@@ -697,6 +697,11 @@ setup_tigress_obfuscation "virtualize_helper" " \
 
 # ============ Activate Jit for these obufscations ============
 
+# line 212
+# export tigress_header_3_1="# include \"${tigress_home_3_1}/tigress.h\"
+# # include <time.h>
+# # include <pthread.h>
+# #include \"/opt/tigress/3.1/jitter-amd64.c\""
 
 # # setup_tigress_obfuscation "jit" "\
 # #     --Transform=Jit \
