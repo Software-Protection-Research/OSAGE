@@ -1,0 +1,41 @@
+import numpy as np
+import os
+import sys
+import pickle
+
+def elf_to_pickle(elf_file_path, output_pickle_path):
+    with open(elf_file_path, 'rb') as file:
+        elf_bytes = file.read()
+
+    length = len(elf_bytes)
+    size = int(np.ceil(np.sqrt(length)))
+
+    byte_array = np.frombuffer(elf_bytes, dtype=np.uint8)
+    if length < size * size:
+        byte_array = np.pad(byte_array, (0, size*size - length), 'constant')
+
+    image_array = np.reshape(byte_array, (size, size))
+
+    # Serialize the array to a pickle file
+    with open(output_pickle_path, 'wb') as f:
+        pickle.dump(image_array, f)
+
+def is_elf_file(file_path):
+    try:
+        with open(file_path, 'rb') as file:
+            return file.read(4) == b'\x7fELF'
+    except:
+        return False
+
+def process_directory(directory):
+    for root, dirs, files in os.walk(directory):
+        dir_name = os.path.basename(root)
+        for file in files:
+            file_path = os.path.join(root, file)
+            if is_elf_file(file_path):
+                output_pickle_path = os.path.join(root, f"{dir_name}_{file}.pickle")
+                elf_to_pickle(file_path, output_pickle_path)
+                print(f"Pickle file saved to {output_pickle_path}")
+
+if __name__ == "__main__":
+    process_directory(os.getcwd())
