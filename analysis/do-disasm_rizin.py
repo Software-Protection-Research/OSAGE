@@ -17,8 +17,6 @@ def rz_disassemble(psample: str):
     psample: str
         Path and name of the sample.
     """
-    print("Start rz_disassemble")
-    print(psample)
     sample_name = os.path.basename(psample)
     rz = rzpipe.open(psample, flags=["-e io.cache=true"])
     rz.cmd("aaa")
