@@ -26,6 +26,15 @@ sudo docker attach "#pid"
 
 * sudo chmod -R 777 out
 
+## How to use tmux
+
+* call "tmux" to open session
+* (optional) start sudo sh docker_run.sh
+* Detach from tmux: Strg+B -> D
+* Attach to tmux: "tmux a"
+
+* Kill tmux session: Strg+B -> ":" "kill-session" 
+
 ## Obfuscations that need Jit
 
 * -jit [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
