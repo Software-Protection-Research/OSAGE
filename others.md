@@ -10,3 +10,16 @@ Noch mehr Infos zum Framework:
   - Integration des Analyseframeworks, an dem Caro arbeitet
 - Mittelfristige Ziele
   - wir fügen alle unsere Metriken, die wir im CD-Labor publizieren zum Framework hinzu
+
+EInschalten:
+  gcc
+  llvm
+  tigress
+  tendra
+  CompCert
+
+git clone in opt/samplegenerator
+make compile für out files
+make analysis für csv files
+make compare für großes csv file
+ein make greyscale erstellen, python script create_greyscale.py im analysis folder ausführen
