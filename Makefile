@@ -20,6 +20,8 @@ packing: check start_packing
 
 list: list_run
 
+compare: start_compare_return
+
 # --------------------------------------------------------------------
 
 # --- Targets --------------------------------------------------------

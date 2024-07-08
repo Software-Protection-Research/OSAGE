@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_strings"
+export abcdef_dir_src="${abcdef_dir_base}/src_all"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -48,20 +48,20 @@ export use_only_compilers=""
 export use_only_source=""
 
 # --- CompCert C Compiler config -------------------------------------
-#export compcertcc_versions="oslatest"
-# CompCertCC v3.9 variables
-#export compcertcc_home_v3_9="${abcdef_dir_tools}/compcertcc_v3.9"
-#export compcertcc_prog_v3_9="${compcertcc_home_v3_9}/bin/ccomp"
-#export compcertcc_header_v3_9=""
-#export compcertcc_flags_v3_9=""
-# CompCertCC oslatest variables
-#export compcertcc_home_oslatest="/compcert/pkg/compcert"
-#compcertcc_prog_oslatest="$(which ccomp 2>&1)"
-#export compcertcc_prog_oslatest
-#export compcertcc_header_oslatest=""
-#export compcertcc_flags_oslatest="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib"
-# CompCertCC options
-#export compcertcc_options_default=""
+# export compcertcc_versions="oslatest"
+# # CompCertCC v3.9 variables
+# export compcertcc_home_v3_9="${abcdef_dir_tools}/compcertcc_v3.9"
+# export compcertcc_prog_v3_9="${compcertcc_home_v3_9}/bin/ccomp"
+# export compcertcc_header_v3_9=""
+# export compcertcc_flags_v3_9=""
+# # CompCertCC oslatest variables
+# export compcertcc_home_oslatest="/compcert/pkg/compcert"
+# compcertcc_prog_oslatest="$(which ccomp 2>&1)"
+# export compcertcc_prog_oslatest
+# export compcertcc_header_oslatest=""
+# export compcertcc_flags_oslatest="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib"
+# # CompCertCC options
+# export compcertcc_options_default=""
 # --------------------------------------------------------------------
 
 
@@ -113,7 +113,7 @@ fi;
 
 # --- clang config ---------------------------------------------------
 # clang oslatest - latest version coming from the OS (debian) repo
-#export clang_versions="oslatest"
+export clang_versions="oslatest"
 clang_prog_oslatest="$(which musl-clang 2>&1)"
 export clang_prog_oslatest
 export clang_header_oslatest=""
@@ -125,10 +125,10 @@ if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
 else
     export clang_options=""
 fi;
-# export clang_options_O0="${clang_options} -O0"
-# export clang_options_O1="${clang_options} -O1"
-# export clang_options_O2="${clang_options} -O2"
-# export clang_options_O3="${clang_options} -O3"
+export clang_options_O0="${clang_options} -O0"
+export clang_options_O1="${clang_options} -O1"
+export clang_options_O2="${clang_options} -O2"
+export clang_options_O3="${clang_options} -O3"
 # --------------------------------------------------------------------
 
 # --- ollvm config ---------------------------------------------------
@@ -186,13 +186,13 @@ export ollvm_options_fs_O3="${ollvm_options_fs} -O3"
 
 
 # --- upx config ---------------------------------------------------
-#export upx_versions="oslatest"
+export upx_versions="oslatest"
 upx_prog_oslatest="$(which upx 2>&1)"
-#export upx_prog_oslatest
-#export upx_header_oslatest=""
+export upx_prog_oslatest
+export upx_header_oslatest=""
 # upx obfuscation options
-#export upx_options_default="--best"
-#export upx_options_brute="--best --ultra-brute"
+export upx_options_default="--best"
+export upx_options_brute="--best --ultra-brute"
 # --------------------------------------------------------------------
 
 
@@ -516,12 +516,18 @@ setup_tigress_obfuscation "flattenOpa_helper" "\
         --AddOpaqueStructs=list \
         --AddOpaqueKinds=true"
 
-# Tigrss selfModify
 setup_tigress_obfuscation "selfModify" "\
-       --Transform=Virtualize\
+       --Transform=InitEntropy \
+            --Functions=init_program \
+            --InitEntropyKinds=vars \
+       --Transform=InitOpaque \
+            --InitOpaqueStructs=list,array,env,input \
+            --Functions=init_program \
+            --Inputs='+1:int:42,-1:length:1?10' \
+       --Transform=Virtualize \
             --Functions=init_program \
             --VirtualizeDispatch=direct \
-         --Transform=SelfModify \
+       --Transform=SelfModify \
             --Functions=init_program \
             --SelfModifyFraction=%100 \
             --SelfModifySubExpressions=false \
