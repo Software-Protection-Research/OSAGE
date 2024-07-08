@@ -2,7 +2,7 @@ import os
 import docker
 
 # Define the root directory (will be the mounted directory inside Docker)
-host_root_dir = os.path.abspath('OSAGE/out')
+host_root_dir = os.path.abspath('opt/samplegenerator/out')
 container_root_dir = '/opt/shared'
 docker_image = 'x86_gt:latest'
 
