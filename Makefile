@@ -22,6 +22,8 @@ list: list_run
 
 compare: start_compare_return
 
+greyscale: start_greyscale
+
 # --------------------------------------------------------------------
 
 # --- Targets --------------------------------------------------------
@@ -84,4 +86,9 @@ list_run:
 make_archive:
 	echo "Making archive."
 	./make_archive.sh
+
+.PHONY: start_greyscale
+start_greyscale:
+	echo "Starting greyscale."
+	./start_greyscale.sh
 

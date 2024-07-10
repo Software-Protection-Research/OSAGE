@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_all"
+export abcdef_dir_src="${abcdef_dir_base}/src_strings"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -67,9 +67,9 @@ export use_only_source=""
 
 # --- GCC config -----------------------------------------------------
 # gcc oslatest - latest version coming from the OS (debian) repo
-export gcc_versions="oslatest
-#musl_oslatest
-#aarch64_oslatest"
+export gcc_versions="oslatest"
+# musl_oslatest
+# aarch64_oslatest"
 # gcc oslatest
 gcc_prog_oslatest="$(which gcc 2>&1)"
 export gcc_prog_oslatest
@@ -132,17 +132,17 @@ export clang_options_O3="${clang_options} -O3"
 # --------------------------------------------------------------------
 
 # --- ollvm config ---------------------------------------------------
-#export ollvm_versions="llvm_4_0"
-#export ollvm_prog_llvm_4_0="${abcdef_dir_tools}/ollvm_llvm-4.0/bin/clang"
-#export ollvm_header_llvm_4_0=""
-# ollvm flags (=options per version)
-#export ollvm_flags="-Xlinker -L/usr/lib/x86_64-linux-gnu -Xlinker -L/usr/local/lib"
-#if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
+# export ollvm_versions="llvm_4_0"
+# export ollvm_prog_llvm_4_0="${abcdef_dir_tools}/ollvm_llvm-4.0/bin/clang"
+# export ollvm_header_llvm_4_0=""
+# # ollvm flags (=options per version)
+# export ollvm_flags="-Xlinker -L/usr/lib/x86_64-linux-gnu -Xlinker -L/usr/local/lib"
+# if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
 #    export ollvm_flags_llvm_4_0="${ollvm_flags} -save-temps -Wl,-Map=% -Wa,-alh,-L"
-#else
+# else
 #    export ollvm_flags_llvm_4_0="${ollvm_flags}"
-#fi;
-# ollvm obfuscation options
+# fi;
+# # ollvm obfuscation options
 export ollvm_options_bcf="-mllvm -bcf"
 export ollvm_options_fla="-mllvm -fla"
 export ollvm_options_sub="-mllvm -sub"
@@ -186,13 +186,13 @@ export ollvm_options_fs_O3="${ollvm_options_fs} -O3"
 
 
 # --- upx config ---------------------------------------------------
-export upx_versions="oslatest"
-upx_prog_oslatest="$(which upx 2>&1)"
-export upx_prog_oslatest
-export upx_header_oslatest=""
-# upx obfuscation options
-export upx_options_default="--best"
-export upx_options_brute="--best --ultra-brute"
+# export upx_versions="oslatest"
+# upx_prog_oslatest="$(which upx 2>&1)"
+# export upx_prog_oslatest
+# export upx_header_oslatest=""
+# # upx obfuscation options
+# export upx_options_default="--best"
+# export upx_options_brute="--best --ultra-brute"
 # --------------------------------------------------------------------
 
 
@@ -751,14 +751,13 @@ setup_tigress_obfuscation "virtualize_helper" " \
 # ============ END SECRYPT 2024 (camera-ready) ============
 
 # --- TinyCC config --------------------------------------------------
-#export tinycc_versions="0_9_27
-#latest"
+export tinycc_versions="0_9_27"
 # TinyCC 0.9.27 variables
 export tinycc_home_0_9_27="${abcdef_dir_tools}/tinycc_release_0_9_27"
 export tinycc_prog_0_9_27="${tinycc_home_0_9_27}/bin/tcc"
-#export tinycc_flags="-bench -vv -Wall"
+export tinycc_flags="-bench -vv -Wall"
 export tinycc_flags=""
-# export tinycc_flags_0_9_27="-mno-mmx -mno-sse"
+export tinycc_flags_0_9_27="-mno-mmx -mno-sse"
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     export tinycc_flags_0_9_27="-Wl,-Map=% ${tinycc_flags}"
 else
@@ -775,13 +774,13 @@ else
 fi;
 export tinycc_header_latest=""
 # TinyCC options
-#export tinycc_options_default="-L /usr/lib32"
-export tinycc_options_default=""
+export tinycc_options_default="-L /usr/lib32"
+# export tinycc_options_default=""
 # --------------------------------------------------------------------
 
 
 # --- Tendra config --------------------------------------------------
-#export tendra_versions="latest"
+export tendra_versions="latest"
 # Tendra latest variables
 export tendra_home_latest="${abcdef_dir_tools}/tendra_latest"
 export tendra_prog_latest="${tendra_home_latest}/obj/bin/tcc"
@@ -794,7 +793,7 @@ fi;
 export tendra_header_latest=""
 # Tendra options
 export tendra_options_default="-L /usr/lib32"
-# export tendra_options_default=""
+export tendra_options_default=""
 # --------------------------------------------------------------------
 
 

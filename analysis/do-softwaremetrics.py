@@ -98,6 +98,7 @@ def main():
             "mmyer": Metric_Myer(df_data),
             "minfo": Metric_Information_Theory(df_data),
         })
+        print(f"Metrics for {file_name} calculated, with sr_metrics: {sr_metrics}")
 
         generate_metrics(sr_metrics, file)
         sr_single_function = get_metrics(sr_metrics)

@@ -28,7 +28,6 @@ find "$tempDirectory" -maxdepth 1 -mindepth 1 -type f ! -iname "*.log" ! -iname 
 do
     DEBUG "${abcdef_dir_analysis}/compare_return.py -path $executable"
     python3 "${abcdef_dir_analysis}/compare_return.py" -path "$executable"
-
 done
 SUCCESS "Completed compare_return.py!"
 
