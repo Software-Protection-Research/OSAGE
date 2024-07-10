@@ -7,6 +7,7 @@ import os
 import pandas as pd
 import glob
 import argparse
+import sys
 from metrics.metric_abc import Metric_Abc
 from metrics.metric_halstead import Metric_Halstead
 from metrics.metric_mccabe import Metric_Mccabe
@@ -98,7 +99,7 @@ def main():
             "mmyer": Metric_Myer(df_data),
             "minfo": Metric_Information_Theory(df_data),
         })
-        print(f"Metrics for {file_name} calculated, with sr_metrics: {sr_metrics}")
+        
 
         generate_metrics(sr_metrics, file)
         sr_single_function = get_metrics(sr_metrics)
@@ -117,10 +118,16 @@ def main():
     # Generate the combined metric for the whole file.
     generate_metrics(sr_combi, args.input)
     sr_all = get_metrics(sr_combi)
-    sr_all.to_csv(f"{args.output}/all.csv")
+    new_filename = extract_components_from_path(file)
+    sr_all.to_csv(f"{args.output}/{new_filename}-all.csv")
 
     return 0
 
+def extract_components_from_path(path):
+    path_parts = path.split("/")
+    filename = path_parts[5]
+    method = path_parts[6].split("-")[0]
+    return f"{filename}_{method}"
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,9 @@ samples: check_dependencies check_structure start_compilation start_packing
 
 check: check_dependencies check_structure check_src
 
+compile_grey: start_compilation start_analysis start_compare_return start_grayscale
+compile_gray: start_compilation start_analysis start_compare_return start_grayscale
+
 analyze: start_analysis
 analysis: start_analysis
 
@@ -22,7 +25,8 @@ list: list_run
 
 compare: start_compare_return
 
-greyscale: start_greyscale
+grayscale: start_grayscale
+greyscale: start_grayscale
 
 # --------------------------------------------------------------------
 
@@ -76,7 +80,6 @@ start_packing:
 	echo "Starting packing."
 	./start_packing.sh
 
-
 .PHONY: list_run
 list_run:
 	echo "Listing run."
@@ -87,8 +90,8 @@ make_archive:
 	echo "Making archive."
 	./make_archive.sh
 
-.PHONY: start_greyscale
-start_greyscale:
-	echo "Starting greyscale."
-	./start_greyscale.sh
+.PHONY: start_grayscale
+start_grayscale:
+	echo "Starting grayscale."
+	./start_grayscale.sh
 
