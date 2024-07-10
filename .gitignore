@@ -5,3 +5,4 @@ __pycache__
 out/
 .idea
 compilation/compile-tigress*
+temp_folder
