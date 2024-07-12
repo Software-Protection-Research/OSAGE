@@ -22,4 +22,4 @@ git clone in opt/samplegenerator
 make compile für out files
 make analysis für csv files
 make compare für großes csv file
-ein make greyscale erstellen, python script create_greyscale.py im analysis folder ausführen
+ein make grayscale erstellen, python script create_grayscale.py im analysis folder ausführen

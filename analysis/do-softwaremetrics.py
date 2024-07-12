@@ -119,7 +119,8 @@ def main():
     generate_metrics(sr_combi, args.input)
     sr_all = get_metrics(sr_combi)
     new_filename = extract_components_from_path(file)
-    sr_all.to_csv(f"{args.output}/{new_filename}-all.csv")
+    # sr_all.to_csv(f"{args.output}/{new_filename}-all.csv")
+    sr_all.to_csv(f"{args.output}/all.csv")
 
     return 0
 
