@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_strings"
+export abcdef_dir_src="${abcdef_dir_base}/src_all"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -186,13 +186,13 @@ export ollvm_options_fs_O3="${ollvm_options_fs} -O3"
 
 
 # --- upx config ---------------------------------------------------
-# export upx_versions="oslatest"
-# upx_prog_oslatest="$(which upx 2>&1)"
-# export upx_prog_oslatest
-# export upx_header_oslatest=""
-# # upx obfuscation options
-# export upx_options_default="--best"
-# export upx_options_brute="--best --ultra-brute"
+export upx_versions="oslatest"
+upx_prog_oslatest="$(which upx 2>&1)"
+export upx_prog_oslatest
+export upx_header_oslatest=""
+# upx obfuscation options
+export upx_options_default="--best"
+export upx_options_brute="--best --ultra-brute"
 # --------------------------------------------------------------------
 
 

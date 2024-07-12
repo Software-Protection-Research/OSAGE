@@ -35,7 +35,6 @@ def process_directory(directory):
             if is_elf_file(file_path):
                 output_pickle_path = os.path.join(root, f"{dir_name}_{file}.pickle")
                 elf_to_pickle(file_path, output_pickle_path)
-                print(f"Pickle file saved to {output_pickle_path}")
 
 if __name__ == "__main__":
     process_directory(os.getcwd())
