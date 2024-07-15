@@ -1,1 +1,0 @@
-all_framac.sh
