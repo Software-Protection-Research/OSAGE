@@ -12,7 +12,6 @@ sudo sh docker_run.sh
 
 find out why i need to run "pip install setuptools --break-system-packages"
 
-
 ## If Container is running, attach to docker container
 
 sudo docker attach "#pid"
@@ -33,7 +32,7 @@ sudo docker attach "#pid"
 * Detach from tmux: Strg+B -> D
 * Attach to tmux: "tmux a"
 
-* Kill tmux session: Strg+B -> ":" "kill-session" 
+* Kill tmux session: Strg+B -> ":" "kill-session"
 
 ## Obfuscations that need Jit
 
@@ -41,4 +40,3 @@ sudo docker attach "#pid"
 * -jitHelper [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
 * -jitDynamic [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
 * -recipe3 [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
-
