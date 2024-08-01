@@ -6,3 +6,4 @@ out/
 .idea
 compilation/compile-tigress*
 temp_folder
+src_*/output
