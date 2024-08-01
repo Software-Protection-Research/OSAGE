@@ -31,7 +31,7 @@ class Metric_Myer():
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
         new_metric = Metric_Myer(pasm)
         new_metric.interval = self.interval + other.interval
         return new_metric

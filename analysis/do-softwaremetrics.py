@@ -113,7 +113,7 @@ def main():
             sr_combi = sr_metrics
         else:
             # Merge = Add the metrics
-            sr_combi += sr_metrics
+            sr_combi = sr_combi.add(sr_metrics, fill_value=0)
 
     # Generate the combined metric for the whole file.
     generate_metrics(sr_combi, args.input)

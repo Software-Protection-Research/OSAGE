@@ -33,7 +33,7 @@ class Metric_Information_Theory():
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
         new_metric = Metric_Information_Theory(pasm)
         for key in self.instruction_distribution.keys():
             new_metric.instruction_distribution[key] = self.instruction_distribution[key] + other.instruction_distribution[key]
