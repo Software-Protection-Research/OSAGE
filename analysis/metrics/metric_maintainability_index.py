@@ -42,7 +42,7 @@ class Metric_Maintainability_Index():
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
 
         phalstead = self.mhalstead + other.mhalstead
         pmloc = self.mloc + other.mloc
