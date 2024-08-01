@@ -116,6 +116,17 @@ RUN pwd && \
 	bash /opt/build_scripts/build_tendra.sh && \
 	ls -lah /opt/
 
+# # Install llvm15_obfuscator
+# RUN apt-get update && apt-get install -y \
+#     llvm-15 \
+#     clang-15 \
+#     cmake \
+#     make \
+#     g++ \
+#     vim
+# COPY llvm-obfuscator /usr/src/app/llvm-obfuscator
+# WORKDIR /usr/src/app/llvm-obfuscator/build
+# RUN cmake .. && make
 
 # Install ollvm
 #COPY build_ollvm.sh /opt/build_scripts/
