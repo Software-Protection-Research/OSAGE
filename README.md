@@ -36,13 +36,17 @@ sudo docker attach "#pid"
 
 ## Run llvm15 docker container
 
+### build the docker container, if something has changed
+
+sudo docker build -t obfuscator-cli .
+
 ### run docker container for code_examples
 
 sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/llvm15_obfuscator_cli/code_examples:/usr/src/c_codes obfuscator-cli
 
-### run docker container for src_core_merged
+### run docker container for specified src folder
 
-sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/src_converter:/usr/src/c_codes obfuscator-cli
+sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/src_all:/usr/src/c_codes obfuscator-cli
 
 ### Command to run strobfs, substitution and op obfuscation on hello.c file
 
