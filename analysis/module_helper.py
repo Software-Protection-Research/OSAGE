@@ -18,25 +18,11 @@ class Helper:
 
     #get the output file name (../testcases/int_100.args)
     def getOutputFileName(self, prog_name):
-        print(f"[DEBUG] in getOutputFileName start: prog_name: {prog_name}")
-
         config = configparser.ConfigParser()    
         config.read(self.getIniFile())
-        print(f"[DEBUG] in getOutputFileName start: config: {str(config)}")
-
-        if prog_name not in config:
-            raise KeyError(f"Program name '{prog_name}' not found in the configuration file.")
-
-        if 'testcase' not in config[prog_name]:
-            raise KeyError(f"'testcase' key not found for program name '{prog_name}' in the configuration file.")
-        
-        if 'size' not in config[prog_name]:
-            raise KeyError(f"'size' key not found for program name '{prog_name}' in the configuration file.")
 
         testcase = config[prog_name]['testcase']
         size = config[prog_name]['size']
-
-        print(f"[DEBUG] In getOutputFileName before if/else branch: testcase={testcase}, size={size}")
 
         #if in fileinput type is needed otherwise testcase
         if testcase == 'fileinput':
