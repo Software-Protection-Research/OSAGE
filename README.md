@@ -40,13 +40,17 @@ sudo docker attach "#pid"
 
 sudo docker build -t obfuscator-cli .
 
+#### When in samplegenerator directory, use this command
+
+sudo docker build -t obfuscator-cli llvm-obfuscator/llvm15_obfuscator_cli
+
 ### run docker container for code_examples
 
 sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/llvm15_obfuscator_cli/code_examples:/usr/src/c_codes obfuscator-cli
 
-### run docker container for specified src folder
+### run docker container for all src folders
 
-sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/src_all:/usr/src/c_codes obfuscator-cli
+sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator:/usr/src/c_codes obfuscator-cli
 
 ### Command to run strobfs, substitution and op obfuscation on hello.c file
 

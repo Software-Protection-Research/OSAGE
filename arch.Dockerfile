@@ -1,10 +1,19 @@
 FROM archlinux:base-devel
-MAINTAINER nobody@fhstp.ac.at
+LABEL MAINTAINER="nobody@fhstp.ac.at"
 
 # Update and install packages
 RUN set -eux; \
 	echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \
 	pacman -Syyu --noconfirm;
+
+# Install Docker
+RUN set -eux; \
+    pacman -S --noconfirm \
+    docker \
+    git \
+    gcc \
+    gcc-multilib \
+    base-devel;
 
 RUN set -eux; \
     # GCC
