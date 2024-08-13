@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_test"
+export abcdef_dir_src="${abcdef_dir_base}/src_all"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -122,6 +122,7 @@ run_obfuscator_cli() {
         docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -d --rm \
             -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator \
             -v /home/pfelbauer/opt/samplegenerator:/usr/src/c_codes \
+            --user root \
             obfuscator-cli all
     fi
 }

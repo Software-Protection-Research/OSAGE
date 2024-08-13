@@ -1,6 +1,17 @@
 FROM archlinux:base-devel
 LABEL MAINTAINER="nobody@fhstp.ac.at"
 
+# Update and install packages using pacman
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm \
+    git \
+    gcc \
+    clang \
+    llvm \
+    cmake \
+    bmake \
+    docker
+    
 # Update and install packages
 RUN set -eux; \
 	echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \
@@ -239,16 +250,28 @@ RUN pacman -Scc --noconfirm;
 RUN cd /usr/lib/ && \
     ln -s /usr/lib32 i386-linux-gnu
 
+# Ensure all shell scripts are executable
+RUN find /opt/samplegenerator/ -name "*.sh" -exec chmod +x {} \;
+
+# Set the storage driver to vfs
+RUN echo '{"storage-driver": "vfs"}' > /etc/docker/daemon.json
+
 # Copy the code directory to /opt
 COPY ./ /opt/samplegenerator
-# Remove the code if the version is not given. If there is no version it is no release!
-RUN if [ -z "$version" ] ; then \
-		rm -rf /opt/samplegenerator; \
-	else \
-		# Make all shell scripts executable
-		find /opt/samplegenerator/ -name "*.sh" | xargs -I {} chmod a+x {}; \
-	fi
 
-ENTRYPOINT ["bash"]
+# Remove the code if the version is not given. If there is no version it is no release!
+ARG version
+RUN if [ -z "$version" ] ; then \
+        rm -rf /opt/samplegenerator; \
+    else \
+        # Make all shell scripts executable
+        find /opt/samplegenerator/ -name "*.sh" | xargs -I {} chmod a+x {}; \
+    fi
+
+# Health check to ensure Docker daemon is running
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s CMD docker info || exit 1
+# Set the entrypoint to start the Docker daemon and then run bash
+ENTRYPOINT ["sh", "-c", "dockerd --storage-driver=vfs & while(! docker info > /dev/null 2>&1); do sleep 1; done; bash"]
+
 WORKDIR /opt/samplegenerator/
 #VOLUME /opt/samplegenerator_code/

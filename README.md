@@ -50,7 +50,9 @@ sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:
 
 ### run docker container for all src folders
 
-sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator:/usr/src/c_codes obfuscator-cli
+sudo docker run --privileged -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator:/usr/src/c_codes obfuscator-cli
+
+sudo docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -it obfuscator-cli-image
 
 ### Command to run strobfs, substitution and op obfuscation on hello.c file
 
