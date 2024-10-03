@@ -10,3 +10,7 @@ git clone git://git.sv.gnu.org/coreutils
 https://www.gnu.org/software/coreutils/#download
 
 merge /src jedes file mit 
+
+
+merger:
+https://www.npmjs.com/package/cpp-merge
