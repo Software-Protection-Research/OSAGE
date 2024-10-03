@@ -1,0 +1,110 @@
+[
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DSubstitution_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Substitution.dir/Substitution.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp",
+  "output": "lib/CMakeFiles/Substitution.dir/Substitution.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DSubstitution_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DControlFlowFlattening_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp",
+  "output": "lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBogusFlowOpaquePredicates_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BogusFlowOpaquePredicates.dir/OpaquePredicates.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/OpaquePredicates.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/OpaquePredicates.cpp",
+  "output": "lib/CMakeFiles/BogusFlowOpaquePredicates.dir/OpaquePredicates.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBogusFlowOpaquePredicates_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BogusFlowOpaquePredicates.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/BogusFlowOpaquePredicates.dir/cmd-args/Coverage.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DReachableIntegers_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/ReachableIntegers.dir/ReachableIntegersAnalysis.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ReachableIntegersAnalysis.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ReachableIntegersAnalysis.cpp",
+  "output": "lib/CMakeFiles/ReachableIntegers.dir/ReachableIntegersAnalysis.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBogusFlowJumpIntoLoop_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BogusFlowJumpIntoLoop.dir/JumpIntoLoop.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/JumpIntoLoop.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/JumpIntoLoop.cpp",
+  "output": "lib/CMakeFiles/BogusFlowJumpIntoLoop.dir/JumpIntoLoop.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DStringObfuscation_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp",
+  "output": "lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBogusFlowIntroduceLoop_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BogusFlowIntroduceLoop.dir/BogusFlowIntroduceLoop.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BogusFlowIntroduceLoop.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BogusFlowIntroduceLoop.cpp",
+  "output": "lib/CMakeFiles/BogusFlowIntroduceLoop.dir/BogusFlowIntroduceLoop.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBogusFlowIntroduceLoop_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BogusFlowIntroduceLoop.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/BogusFlowIntroduceLoop.dir/cmd-args/Coverage.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBranchFunction_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp",
+  "output": "lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DConstantObfuscation_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp",
+  "output": "lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DConstantObfuscation_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DCallObfuscation_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp",
+  "output": "lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBlockExtractor_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp",
+  "output": "lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DBlockExtractor_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DMergeFuncs_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp",
+  "output": "lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o"
+},
+{
+  "directory": "/home/pfelbauer/opt/samplegenerator/build/lib",
+  "command": "/usr/bin/clang++-15 -DMergeFuncs_EXPORTS -I/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/../include -isystem /usr/lib/llvm-15/include  -Wall -fdiagnostics-color=always -g -std=gnu++17 -fPIC   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "file": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp",
+  "output": "lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o"
+}
+]

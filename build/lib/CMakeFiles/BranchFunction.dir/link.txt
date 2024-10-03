@@ -1,0 +1,1 @@
+/usr/bin/clang++-15 -fPIC  -Wall -fdiagnostics-color=always -g -shared -Wl,-soname,libBranchFunction.so -o libBranchFunction.so CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o   -L/usr/lib/llvm-15/lib 
