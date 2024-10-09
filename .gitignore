@@ -9,3 +9,5 @@ temp_folder
 src_*/output
 output
 unobfuscated_files
+coreutils-merge/coreutils-8.32
+coreutils-merge/coreutils-9.5
