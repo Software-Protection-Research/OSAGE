@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export _DEBUG="off"
-export _ABCDEF_TIMEOUT="5m"
+export _ABCDEF_TIMEOUT="30m"
 export _DUMP_COMPILER_INFO=0
 # --- Color config ---------------------------------------------------
 export RED='\033[0;31m'

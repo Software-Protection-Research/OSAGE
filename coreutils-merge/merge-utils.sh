@@ -1,5 +1,5 @@
 #! /bin/bash
-coreutils_dir=$(eval echo ~$SUDO_USER)/opt/samplegenerator/coreutils-merge/coreutils-8
+coreutils_dir=$(eval echo ~$SUDO_USER)/opt/samplegenerator/coreutils-merge/coreutils-9.5
 
 function help() {
     echo "Usage: $0 COMMANDS [OPTIONS]...
