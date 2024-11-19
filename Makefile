@@ -28,6 +28,8 @@ compare: start_compare_return
 grayscale: start_grayscale
 greyscale: start_grayscale
 
+testcases: make_testcases
+
 # --------------------------------------------------------------------
 
 # --- Targets --------------------------------------------------------
