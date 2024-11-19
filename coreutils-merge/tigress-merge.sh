@@ -35,11 +35,11 @@ function do_patch_makefile() {
         echo "$1 already patched." && return 0
     fi
     tmpfile=$(mktemp)
-    sed "s/^AR =.*$/AR = tigress --Environment=x86_64:Linux:Gcc:4.6 --mode=AR --out=\$@/" $makefile | 
-        sed "s/^CC =.*$/CC = tigress --Environment=x86_64:Linux:Gcc:4.6 --gcc=\"musl-gcc -std=gnu99\" --save-temps=\/tmp\/coreutils-cil --out=\$@/" |
-        sed "s/^CPP =.*$/CPP = tigress --Environment=x86_64:Linux:Gcc:4.6 --gcc=\"musl-gcc -std=gnu99\" --save-temps=\/tmp\/coreutils-cil -E --out=\$@/" |
-        sed "s/^LDFLAGS =.*$/LDFLAGS = --keepmerged/" |
-        sed "s/^RANLIB =.*$/RANLIB = echo #ranlib/" > $tmpfile
+    tigress_path="/usr/local/bin/tigress"  # Update this path to the correct Tigress binary
+    sed "s|^AR =.*$|AR = $tigress_path --Environment=x86_64:Linux:Gcc:11.4 --mode=AR --out=x.c|" $makefile | 
+        sed "s|^CC =.*$|CC = install -d -m 755 /tmp/coreutils-cil \&\& $tigress_path --Environment=x86_64:Linux:Gcc:11.4 --gcc=\"musl-gcc -std=gnu99\" --save-temps=/tmp/coreutils-cil --out=x.c|" |
+        sed "s|^CPP =.*$|CPP = install -d -m 755 /tmp/coreutils-cil \&\& $tigress_path --Environment=x86_64:Linux:Gcc:11.4 --gcc=\"musl-gcc -std=gnu99\" --save-temps=/tmp/coreutils-cil -E --out=x.c|" |
+        sed "s|^RANLIB =.*$|RANLIB = echo #ranlib|" > $tmpfile
     cp $makefile $makefile.old && mv $tmpfile $makefile
 }
 

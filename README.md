@@ -2,6 +2,10 @@
 
 Compile and obfuscate C programs with different compilers and obfuscators.
 
+## Create Docker Container (Only if something like tigress version changes or so)
+
+sudo sh docker_build.sh
+
 ## Check if Docker Container is running
 
 sudo docker ps

@@ -3,6 +3,7 @@
     "cmake.sourceDirectory": "/home/pfelbauer/opt/samplegenerator/llvm-obfuscator",
     "files.associations": {
         "config.h": "c",
-        "c-ctype.h": "c"
+        "c-ctype.h": "c",
+        "stdlib.h": "c"
     }
 }
