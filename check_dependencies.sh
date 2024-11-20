@@ -108,7 +108,7 @@ if [ -n "${tigress_versions}" ]; then
 		tigress_home="${!tigress_home_name}"
 		DEBUG "Tigress: ${tigress_home_name} is set to ${tigress_home}."
 		if [ -z "$tigress_home" ]; then
-			ERROR_EXIT "Could not get the home for tigress from the config."
+			ERROR_EXIT "Could not get the home $tigress_home_name for tigress version ${tigress_versions} from the config."
 		fi
 
 		tigress_prog_name="tigress_prog_$tigress_version"

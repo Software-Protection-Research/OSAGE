@@ -2,6 +2,16 @@
 
 Compile and obfuscate C programs with different compilers and obfuscators.
 
+## New Way Docker Compose
+
+docker-compose build
+docker-compose up
+
+## Only certain services
+
+docker-compose build tigress
+docker-compose up tigress
+
 ## Create Docker Container (Only if something like tigress version changes or so)
 
 sudo sh docker_build.sh
