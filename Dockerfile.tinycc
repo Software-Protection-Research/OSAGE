@@ -1,0 +1,6 @@
+
+FROM base:latest
+
+# Install TinyCC
+COPY build_tinycc.sh /opt/build_scripts/
+RUN bash /opt/build_scripts/build_tinycc.sh

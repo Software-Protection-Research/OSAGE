@@ -55,10 +55,18 @@ services:
     depends_on:
       - base
 
-  arch:
+  tinycc:
     build:
       context: .
-      dockerfile: arch.Dockerfile
-    container_name: arch_container
+      dockerfile: Dockerfile.tinycc
+    container_name: tinycc_container
+    depends_on:
+      - base
+
+  tendra:
+    build:
+      context: .
+      dockerfile: Dockerfile.tendra
+    container_name: tendra_container
     depends_on:
       - base
