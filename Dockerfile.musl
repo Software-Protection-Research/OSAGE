@@ -1,0 +1,6 @@
+FROM base:latest
+
+# Install musl
+RUN set -eux; \
+    pacman -S --noconfirm \
+        musl

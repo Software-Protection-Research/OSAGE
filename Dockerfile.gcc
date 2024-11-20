@@ -1,0 +1,7 @@
+FROM base:latest
+
+# Install GCC
+RUN set -eux; \
+    pacman -S --noconfirm \
+        gcc \
+        gcc-multilib

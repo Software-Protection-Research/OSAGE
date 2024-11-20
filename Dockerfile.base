@@ -1,0 +1,26 @@
+FROM archlinux:base-devel
+MAINTAINER nobody@fhstp.ac.at
+
+# Update and install base packages
+RUN set -eux; \
+    echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \
+    pacman -Syyu --noconfirm; \
+    pacman -S --noconfirm \
+        base-devel \
+        git \
+        curl \
+        unzip \
+        zip \
+        upx \
+        shellcheck \
+        python3 \
+        python-pip \
+        opam \
+        bmake \
+        lib32-glibc \
+        pcre \
+        zlib \
+        libevent \
+        ncurses \
+        lua53 \
+        libdeflate
