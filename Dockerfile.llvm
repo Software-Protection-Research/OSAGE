@@ -1,0 +1,7 @@
+FROM base:latest
+
+# Install LLVM
+RUN set -eux; \
+    pacman -S --noconfirm \
+        clang \
+        llvm

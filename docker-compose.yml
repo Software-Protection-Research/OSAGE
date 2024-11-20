@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  base:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+    container_name: base_container
+
+  gcc:
+    build:
+      context: .
+      dockerfile: Dockerfile.gcc
+    container_name: gcc_container
+    depends_on:
+      - base
+
+  llvm:
+    build:
+      context: .
+      dockerfile: Dockerfile.llvm
+    container_name: llvm_container
+    depends_on:
+      - base
+
+  musl:
+    build:
+      context: .
+      dockerfile: Dockerfile.musl
+    container_name: musl_container
+    depends_on:
+      - base
+
+  ollvm:
+    build:
+      context: .
+      dockerfile: Dockerfile.ollvm
+    container_name: ollvm_container
+    depends_on:
+      - base
+
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: python_container
+    depends_on:
+      - base
+
+  tigress:
+    build:
+      context: .
+      dockerfile: Dockerfile.tigress
+    container_name: tigress_container
+    depends_on:
+      - base
+
+  arch:
+    build:
+      context: .
+      dockerfile: arch.Dockerfile
+    container_name: arch_container
+    depends_on:
+      - base

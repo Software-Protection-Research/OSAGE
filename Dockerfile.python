@@ -1,0 +1,17 @@
+FROM base:latest
+
+# Install Python packages
+RUN set -eux; \
+    pacman -S --noconfirm \
+        flake8 \
+        python-flake8-docstrings \
+        mypy \
+        python-pytest \
+        python-pytest-cov \
+        python-magic \
+        python-pandas \
+        python-psutil \
+        python-capstone \
+        python-pyelftools \
+        python-termcolor \
+        python-rzpipe

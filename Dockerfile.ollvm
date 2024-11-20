@@ -1,0 +1,6 @@
+FROM base:latest
+
+# Install OLLVM
+RUN set -eux; \
+    pacman -S --noconfirm \
+        cmake

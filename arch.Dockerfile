@@ -97,6 +97,7 @@ RUN set -eux; \
 
 # Install tigress
 COPY build_tigress.sh /opt/build_scripts/
+COPY tigress-versions/tigress-3.3.3-bin.zip /opt/samplegenerator/tigress-versions/
 RUN pwd && \
 	ls -lah /opt/ && \
 	bash /opt/build_scripts/build_tigress.sh && \
