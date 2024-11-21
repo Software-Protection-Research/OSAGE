@@ -10,13 +10,13 @@ RUN set -eux; \
         pcre zlib libevent ncurses lua53 libdeflate curl unzip zip upx shellcheck \
         python3 flake8 python-flake8-docstrings mypy python-pytest python-pytest-cov \
         python-magic python-pip python-pandas python-psutil python-capstone \
-        python-pyelftools python-termcolor python-rzpipe opam coreutils
+        python-pyelftools python-termcolor python-rzpipe opam coreutils bash
 
 # Clear package cache
 RUN pacman -Scc --noconfirm
 
-# Verify the tail command
-RUN which tail && ls -l $(which tail)
+# Verify the bash command
+RUN which bash && ls -l $(which bash)
 
 # Link /usr/lib/i386-linux-gnu/ to /usr/lib32
 RUN cd /usr/lib/ && \
