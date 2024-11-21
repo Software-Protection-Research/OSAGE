@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.base
     container_name: base_container
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   gcc:
     build:
@@ -15,7 +15,7 @@ services:
     container_name: gcc_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   llvm:
     build:
@@ -24,7 +24,7 @@ services:
     container_name: llvm_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   musl:
     build:
@@ -33,7 +33,7 @@ services:
     container_name: musl_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   ollvm:
     build:
@@ -42,7 +42,7 @@ services:
     container_name: ollvm_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   python:
     build:
@@ -51,7 +51,7 @@ services:
     container_name: python_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   tigress:
     build:
@@ -60,7 +60,7 @@ services:
     container_name: tigress_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   tinycc:
     build:
@@ -69,7 +69,7 @@ services:
     container_name: tinycc_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   tendra:
     build:
@@ -78,4 +78,4 @@ services:
     container_name: tendra_container
     depends_on:
       - base
-    command: ["/usr/bin/tail", "-f", "/dev/null"]
+    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
