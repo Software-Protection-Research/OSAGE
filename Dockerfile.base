@@ -6,27 +6,17 @@ RUN set -eux; \
     echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \
     pacman -Syyu --noconfirm; \
     pacman -S --noconfirm \
-        base-devel \
-        git \
-        curl \
-        unzip \
-        zip \
-        upx \
-        shellcheck \
-        python3 \
-        python-pip \
-        opam \
-        bmake \
-        lib32-glibc \
-        pcre \
-        zlib \
-        libevent \
-        ncurses \
-        lua53 \
-        libdeflate
+        base-devel git gcc gcc-multilib clang llvm musl cmake bmake lib32-glibc \
+        pcre zlib libevent ncurses lua53 libdeflate curl unzip zip upx shellcheck \
+        python3 flake8 python-flake8-docstrings mypy python-pytest python-pytest-cov \
+        python-magic python-pip python-pandas python-psutil python-capstone \
+        python-pyelftools python-termcolor python-rzpipe opam coreutils
 
 # Clear package cache
 RUN pacman -Scc --noconfirm
+
+# Verify the tail command
+RUN which tail && ls -l $(which tail)
 
 # Link /usr/lib/i386-linux-gnu/ to /usr/lib32
 RUN cd /usr/lib/ && \
@@ -43,5 +33,4 @@ RUN if [ -z "$version" ] ; then \
         find /opt/samplegenerator/ -name "*.sh" | xargs -I {} chmod a+x {}; \
     fi
 
-ENTRYPOINT ["bash"]
 WORKDIR /opt/samplegenerator/

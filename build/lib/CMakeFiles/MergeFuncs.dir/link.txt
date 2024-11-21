@@ -1,1 +1,1 @@
-/usr/bin/clang++-15 -fPIC  -Wall -fdiagnostics-color=always -g -shared -Wl,-soname,libMergeFuncs.so -o libMergeFuncs.so CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o "CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o"   -L/usr/lib/llvm-15/lib 
+/usr/bin/c++ -fPIC  -Wall -fdiagnostics-color=always -g -shared -Wl,-soname,libMergeFuncs.so -o libMergeFuncs.so CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o "CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o"   -L/usr/lib/llvm-15/lib 

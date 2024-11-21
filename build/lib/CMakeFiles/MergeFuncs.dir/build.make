@@ -73,29 +73,29 @@ lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o: lib/CMakeFiles/MergeFuncs.dir/fl
 lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp
 lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o: lib/CMakeFiles/MergeFuncs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o -MF CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o.d -o CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o -MF CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o.d -o CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp
 
 lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp > CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp > CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.i
 
 lib/CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp -o CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/MergeFuncs.cpp -o CMakeFiles/MergeFuncs.dir/MergeFuncs.cpp.s
 
 lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/MergeFuncs.dir/flags.make
 lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/MergeFuncs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 
 lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.i
 
 lib/CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/MergeFuncs.dir/cmd-args/Coverage.cpp.s
 
 # Object files for target MergeFuncs
 MergeFuncs_OBJECTS = \

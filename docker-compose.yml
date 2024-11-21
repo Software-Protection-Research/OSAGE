@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.base
     container_name: base_container
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   gcc:
     build:
@@ -14,6 +15,7 @@ services:
     container_name: gcc_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   llvm:
     build:
@@ -22,6 +24,7 @@ services:
     container_name: llvm_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   musl:
     build:
@@ -30,6 +33,7 @@ services:
     container_name: musl_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   ollvm:
     build:
@@ -38,6 +42,7 @@ services:
     container_name: ollvm_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   python:
     build:
@@ -46,6 +51,7 @@ services:
     container_name: python_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   tigress:
     build:
@@ -54,6 +60,7 @@ services:
     container_name: tigress_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   tinycc:
     build:
@@ -62,6 +69,7 @@ services:
     container_name: tinycc_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
 
   tendra:
     build:
@@ -70,3 +78,4 @@ services:
     container_name: tendra_container
     depends_on:
       - base
+    command: ["/usr/bin/tail", "-f", "/dev/null"]
