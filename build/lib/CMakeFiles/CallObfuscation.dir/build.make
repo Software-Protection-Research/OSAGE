@@ -73,15 +73,15 @@ lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o: lib/CMakeFiles/CallObf
 lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp
 lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o: lib/CMakeFiles/CallObfuscation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o -MF CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o.d -o CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o -MF CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o.d -o CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp
 
 lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp > CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp > CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.i
 
 lib/CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp -o CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/CallObfuscation.cpp -o CMakeFiles/CallObfuscation.dir/CallObfuscation.cpp.s
 
 # Object files for target CallObfuscation
 CallObfuscation_OBJECTS = \

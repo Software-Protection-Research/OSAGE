@@ -73,29 +73,29 @@ lib/CMakeFiles/Substitution.dir/Substitution.cpp.o: lib/CMakeFiles/Substitution.
 lib/CMakeFiles/Substitution.dir/Substitution.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp
 lib/CMakeFiles/Substitution.dir/Substitution.cpp.o: lib/CMakeFiles/Substitution.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/Substitution.dir/Substitution.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/Substitution.dir/Substitution.cpp.o -MF CMakeFiles/Substitution.dir/Substitution.cpp.o.d -o CMakeFiles/Substitution.dir/Substitution.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/Substitution.dir/Substitution.cpp.o -MF CMakeFiles/Substitution.dir/Substitution.cpp.o.d -o CMakeFiles/Substitution.dir/Substitution.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp
 
 lib/CMakeFiles/Substitution.dir/Substitution.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Substitution.dir/Substitution.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp > CMakeFiles/Substitution.dir/Substitution.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp > CMakeFiles/Substitution.dir/Substitution.cpp.i
 
 lib/CMakeFiles/Substitution.dir/Substitution.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Substitution.dir/Substitution.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp -o CMakeFiles/Substitution.dir/Substitution.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/Substitution.cpp -o CMakeFiles/Substitution.dir/Substitution.cpp.s
 
 lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/Substitution.dir/flags.make
 lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/Substitution.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 
 lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.i
 
 lib/CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/Substitution.dir/cmd-args/Coverage.cpp.s
 
 # Object files for target Substitution
 Substitution_OBJECTS = \

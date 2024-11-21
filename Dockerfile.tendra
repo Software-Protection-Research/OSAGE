@@ -1,5 +1,7 @@
-
 FROM base:latest
+
+# Install coreutils to ensure tail is available
+RUN pacman -S --noconfirm coreutils
 
 # Install Tendra
 COPY build_tendra.sh /opt/build_scripts/
