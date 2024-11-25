@@ -67,6 +67,4 @@ temp=$(echo "$1" | cut -d "." -f1)
 
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${compcertcc_prog:?} ${compcertcc_flags:=} ${compcertcc_options:=} -o ${temp} ${abcdef_var_opts} $2"
-sh -c "${compcertcc_prog:?} ${compcertcc_flags:=} ${compcertcc_options:=} -o ${temp} ${abcdef_var_opts} $2"
-
+INFO_EXEC "${compcertcc_prog:?} ${compcertcc_flags:=} ${compcertcc_options:=} -o ${temp} ${abcdef_var_opts} $2"

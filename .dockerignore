@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules
+
+# Git repository
+.git
+
+# Log files
+*.log
+
+# Temporary files and directories
+tmp
+*.tmp
+*.temp
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Docker files
+Dockerfile*
+docker-compose.yml
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Other large files or directories
+
+
+# Exclude specific directories

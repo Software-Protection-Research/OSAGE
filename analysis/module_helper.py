@@ -18,14 +18,11 @@ class Helper:
 
     #get the output file name (../testcases/int_100.args)
     def getOutputFileName(self, prog_name):
-        #print(f"[DEBUG] in getOutputFileName prog_name: {prog_name}")
-
         config = configparser.ConfigParser()    
         config.read(self.getIniFile())
-        #print(f"[DEBUG] in getOutputFileName start: testcase: {config[prog_name]['testcase']}")
+
         testcase = config[prog_name]['testcase']
         size = config[prog_name]['size']
-        #print("[DEBUG] In getOutputFileName before if/else branch")
 
         #if in fileinput type is needed otherwise testcase
         if testcase == 'fileinput':

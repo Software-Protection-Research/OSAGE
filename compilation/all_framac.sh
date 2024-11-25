@@ -68,6 +68,4 @@ temp=$(echo "$1" | cut -d "." -f1)
 
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${framac_prog:?} ${framac_options:=} -metrics-output ${temp}.html ${abcdef_var_opts} $2"
-sh -c "${framac_prog:?} ${framac_options:=} -metrics-output ${temp}.html ${abcdef_var_opts} $2"
-
+INFO_EXEC "${framac_prog:?} ${framac_options:=} -metrics-output ${temp}.html ${abcdef_var_opts} $2"

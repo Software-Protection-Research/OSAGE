@@ -168,7 +168,7 @@ class Dynamic_Measurer(Metric):
             # Concatenated the two dataframes df_runtime and df_cpu_memory
             df_concatenated = pd.concat([df_runtime, df_cpu_memory], axis=1)
             # Append the dataframe from this run and increase the index by one each time
-            self.df_runstatistics = self.df_runstatistics.append(
+            self.df_runstatistics = pd.concat(self.df_runstatistics,
                 df_concatenated, ignore_index=True)
         # print("################")
         # print(self.df_runstatistics)

@@ -67,6 +67,5 @@ temp=$(echo "$1" | cut -d "." -f1)
 
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${tendra_prog:?} ${tendra_flags:=} ${tendra_options:=} -o ${temp} ${abcdef_var_opts} $2"
-sh -c "${tendra_prog:?} ${tendra_flags:=} ${tendra_options:=} -o ${temp} ${abcdef_var_opts} $2"
-
+INFO_EXEC "${tendra_prog:?} ${tendra_flags:=} ${tendra_options:=} -o ${temp} ${abcdef_var_opts} $2"
+rm -rf /tmp/tcc*

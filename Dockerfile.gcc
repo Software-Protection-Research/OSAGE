@@ -1,0 +1,10 @@
+FROM base:latest
+
+# Install coreutils to ensure tail is available
+RUN pacman -S --noconfirm coreutils
+
+# Install GCC
+RUN set -eux; \
+    pacman -S --noconfirm \
+        gcc \
+        gcc-multilib

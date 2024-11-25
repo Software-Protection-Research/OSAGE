@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Define the base directory where the folders are located
+base_dir=$(dirname "$(pwd)")
+
+echo $base_dir
+
+# Navigate to the src_all directory
+cd ../src_all || exit
+
+# List of folders to link
+folders="src_converter src_core src_core_merged src_crypt src_dga src_hash src_math src_merged src_search src_sort src_strings"
+
+# Loop through each folder
+for folder in $folders; do
+    # Navigate into the folder to list subdirectories
+    cd "${base_dir}/${folder}"
+    
+    # Find all directories (subdirectories) in the current folder
+    for subdir in */ ; do
+        # Remove trailing slash from directory name
+        subdir=${subdir%/}
+        # Create a symbolic link in src_all for each subdirectory if not already exists
+        if [ ! -e "${base_dir}/src_all/${subdir}" ]; then
+            ln -s "${base_dir}/${folder}/${subdir}" "${base_dir}/src_all/${subdir}"
+        fi
+    done
+done
+
+#lighttpd_1_4_59.c
+#bzip2_1_0_6.c
+#nginx_1_21_3.c
+#tmux_3_2_a.c
+
+
+# Loop through each folder and create a symbolic link
+# for folder in $folders; do
+#     ln -s "${base_dir}/${folder}" "${folder}"
+# done
+
+echo "Symbolic links created successfully."

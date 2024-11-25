@@ -30,6 +30,10 @@ function WARNING {
 function INFO {
 	echo -e "${INFO_COLOR}[INFO]${NC}: ${1:-"Unknown info"}"
 }
+function INFO_EXEC {
+	INFO "${1}"
+    sh -c "${1}"
+}
 # --------------------------------------------------------------------
 
 # --- Function for parsing the secrets out of docstrings/comments ----
@@ -39,6 +43,19 @@ abcdef_fun_parse_secrets () {
 }
 # --------------------------------------------------------------------
 
+# --- Function for parsing the backdoor out of docstrings/comments ---
+abcdef_fun_parse_backdoor () {
+    temp=$(head -n 20 "$1" | grep '\\backdoor' |  cut -d ":" -f2 |  sed -e 's/^ //g' -e 's/ /,/g' | tr -d "\n")
+    echo "$temp"
+}
+# --------------------------------------------------------------------
+#
+# --- Function for searchin for the init_program function ------------
+abcdef_fun_has_init_program_function() {
+    temp=$(grep -n "void init_program() {" "$1")
+    echo "$temp"
+}
+# --------------------------------------------------------------------
 
 # --------------------------------------------------------------------
 abcdef_fun_get_latest_out () {

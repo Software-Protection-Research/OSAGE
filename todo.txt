@@ -1,0 +1,16 @@
+Create sample files, check out with SIL
+Tigress-merge auschecken und schauen wie das funktioniert, ob man damit Programme mergen kann
+
+
+change from cilly-merge to tigress --merge
+https://github.com/QinlinChen/coreutils-merge/blob/master/merge-utils.sh
+
+diese files mergen
+git clone git://git.sv.gnu.org/coreutils
+https://www.gnu.org/software/coreutils/#download
+
+merge /src jedes file mit 
+
+
+merger:
+https://www.npmjs.com/package/cpp-merge

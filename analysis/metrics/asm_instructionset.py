@@ -143,7 +143,7 @@ instruction_set_8086 = {
     "interupt_instruction": INTERRUPT_INSTRUCTION,
 }
 
-# A = ARITHMETIC
+# A = ASSIGNMENT
 # B = BRANCH
 # C = CONTITION
 abc = {
@@ -155,6 +155,8 @@ abc = {
         "rol", "ror",
         "shl", "shr",
         "sal", "sar",
+        "mov", "movd", "movq", "movsb", "movsw", "movsd", "movsx", "movzx", "movsxd", "movzxd",
+        "xchg",
     },
     "B": {
         "call",

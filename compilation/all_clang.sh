@@ -64,21 +64,25 @@ echo "${clang_header}" > "${abcdef_dir_prog_cur:?}/../includes.h"
 temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_var_opts} $2"
-# Generate the .s file
-if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
-    INFO "Generating the .s file"
-    sh -c "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
-fi;
-
 # Compile the program
-sh -c "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_var_opts} $2"
+INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp} ${abcdef_var_opts} $2"
 
-# Generate the cfg from the .bc file
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
+    # Generate the .s file
+    INFO "Generating the .s file"
+    INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -S -o ${temp}.s ${abcdef_var_opts} $2"
+    # Generate the marked file
+    # Insert the markers into the .s file and create a marked.s file
+    # INFO "Inserting 0xf0f1f2f3f4f5f6f7 markers..."
+    awk 'NR>1{print "LABEL" prev_NR ": " prev_line}{prev_NR=NR; prev_line=$0} END{print "LABEL" NR ": " $0}' "${temp}.s" > "${temp}_marked.s"
+    # awk -f "${abcdef_awk_addmarker}" "${temp}.s" > "${temp}_marked.s"
+    # Generate the offset file by adding markers (0xf0f1f2f3f4f5f6f7) and calculating the space between two markers
+    # --- The calculation is not done here
+    # INFO "Compiling marked version with:"
+    # INFO_EXEC "${clang_prog:?} ${clang_flags:=} ${clang_options:=} -o ${temp}_marked ${abcdef_var_opts} ${temp}_marked.s"
+    # Generate the cfg from the .bc file
     INFO "Generate the cfg from the .bc file"
     mkdir "${temp}_cfg"
     cd "${temp}_cfg" || exit 1
-    sh -c "${opt_prog:?} ${opt_options:=} -dot-cfg ../${temp}.bc"
+    INFO_EXEC "${opt_prog:?} ${opt_options:=} -dot-cfg ../${temp}.bc"
 fi;
-

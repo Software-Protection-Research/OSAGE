@@ -1,0 +1,133 @@
+default:
+    image: docker:latest
+    tags:
+        - shared
+    services:
+        - name: docker:dind
+          alias: docker
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+    CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+#    - venv/
+
+stages:
+    - prepare
+    - lint
+    - test
+    - generate
+    - deploy
+
+# Prepare the dockerimage
+build_dockerimage:
+    stage: prepare
+    timeout: 1d
+    before_script:
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    script:
+        - docker build -f debian.Dockerfile --pull -t $CONTAINER_TEST_IMAGE .
+        - docker push $CONTAINER_TEST_IMAGE
+    rules:
+        - changes:
+            - debian.Dockerfile
+            - build_*.sh
+
+tag_dockerimage:
+    stage: prepare
+    before_script:
+        - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    script:
+        - docker pull $CONTAINER_TEST_IMAGE
+        - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+        - docker push $CONTAINER_RELEASE_IMAGE
+    rules:
+        - changes:
+            - arch.Dockerfile
+            - debian.Dockerfile
+            - build_*.sh
+    needs: ["build_dockerimage"]
+
+shellcheck:
+    stage: lint
+    image: registry.gitlab.com/pipeline-components/shellcheck:latest
+    allow_failure: true
+    script:
+      - |
+        find . -name .git -type d -prune -o -type f -name \*.sh -print0 |
+        xargs -0 -r -n1 shellcheck
+
+flake8:
+    stage: lint
+    image: python:latest
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.py" |
+          xargs -I {} python -m flake8 {}
+
+mypy:
+    stage: lint
+    image: python:latest
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.py" |
+          xargs -I {} python -m mypy {}
+
+chktex:
+    stage: lint
+    image: "raabf/latex-versions:latest"
+    allow_failure: true
+    script:
+        - |
+          find . -name "*.tex" |
+          xargs -I {} chktex {}
+
+check_dependencies:
+    stage: test
+    image: $CONTAINER_RELEASE_IMAGE
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make check_dependencies
+
+check_src:
+    stage: test
+    image: $CONTAINER_RELEASE_IMAGE
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make check_src
+
+
+compile_samples:
+    stage: generate
+    image: $CONTAINER_RELEASE_IMAGE
+    when: manual
+    allow_failure: true
+    script:
+        - ls -lah
+        - find ./ -name "*.sh" | xargs -I {} chmod a+x {}
+        - make start_compile
+        - pwd && ls -lah && ls out/*
+    artifacts:
+        paths:
+            - "code/out/*/*"
+

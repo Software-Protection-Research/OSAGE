@@ -24,7 +24,7 @@ class Metric_Mccabe:
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
         new_metric = Metric_Mccabe(pasm)
         new_metric.cyclomatic_complexity = self.cyclomatic_complexity + other.cyclomatic_complexity
         return new_metric

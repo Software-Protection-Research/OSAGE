@@ -1,0 +1,10 @@
+FROM base:latest
+
+# Install coreutils to ensure tail is available
+RUN pacman -S --noconfirm coreutils
+
+# Install LLVM
+RUN set -eux; \
+    pacman -S --noconfirm \
+        clang \
+        llvm

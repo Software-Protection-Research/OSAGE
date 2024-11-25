@@ -15,7 +15,7 @@ if [ "${abcdef_dir_latest_out}" == "" ]; then
     ERROR_EXIT "Could not get the latest out directory."
 fi
 
-echo "sampletype;samplename;compiler;packer;function;LOC;ABC;A;B;C;Cyclomatic_Complexity;Halstead_Volume;Halstead_Level;Halstead_Difficulty;Halstead_Effort;Halstead_Time;MIwoc;Single_MI;Myers_Interval;Information_Flow"
+echo "sampletype;samplename;compiler;packer;function;LOC;ABC;A;B;C;Cyclomatic_Complexity;Halstead_Volume;Halstead_Level;Halstead_Difficulty;Halstead_Effort;Halstead_Time;MIwoc;Single_MI;Myers_Interval;Information_Flow" >> results.csv
 for dir_progsubdir in "${abcdef_dir_latest_out}"/p*;
 do
     subdirname="${dir_progsubdir##*/}"
@@ -40,8 +40,9 @@ do
             content="$(sed -z 's/,0\n//g' <<<"${content}")"
             content="$(sed 's/[A-Za-z_]*,//g' <<<"${content}")"
             content=${content//$'\n'/;}
-            printf "%s;%s;%s;%s;%s;%s\n" "${type}" "${sample_name}" "${compiler}" "${packer}" "${function_name}" "${content}"
+            if [[ -n "${content}" ]]; then
+                echo "${type};${sample_name};${compiler};${function_name};${content}" >> results.csv
+            fi
         done
     done
 done
-

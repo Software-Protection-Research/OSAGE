@@ -1,3 +1,16 @@
 *~
 *.swp
 *.swo
+__pycache__
+out/
+.idea
+compilation/compile-tigress*
+temp_folder
+src_*/output
+output
+unobfuscated_files
+coreutils-merge/coreutils-8.32
+coreutils-merge/coreutils-9.5
+build/
+coreutils-merge/
+coreutils-merge

@@ -97,8 +97,8 @@ class Main():
         del static_df['Strings']
 
 
-        dynamic_measureTest = Dynamic_Measurer(args.path, arguments)
-        dynamic_df = dynamic_measureTest.measure_runstatistics()
+        #dynamic_measureTest = Dynamic_Measurer(args.path, arguments)
+        #dynamic_df = dynamic_measureTest.measure_runstatistics()
         #print (dynamic_measureTest.measure_runstatistics())    
 
         for key in static_df:

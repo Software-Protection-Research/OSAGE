@@ -22,7 +22,7 @@ class Metric_Loc():
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
         new_metric = Metric_Loc(pasm)
         new_metric.loc = self.loc + other.loc
         return new_metric

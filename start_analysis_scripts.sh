@@ -9,8 +9,11 @@ fi
 
 _abcdef_sample=$1
 
+#INFO "Before loop ${GREEN}${_abcdef_sample}${NC}"
+
 for _abcdef_script in "${abcdef_dir_analysis}"/analyze-*.sh
 do
+    #INFO "Start loop"
     # Extract the analysis name from the analysis script name
     # Remove the dir until /analyze-
     _abcdef_analysis_name="${_abcdef_script##*/analyze-}"
@@ -23,5 +26,9 @@ do
 
     mkdir -p "${_abcdef_sample}-analysis/${_abcdef_sample_name}-${_abcdef_analysis_name}/"
     INFO "Analyzing ${GREEN}${_abcdef_sample}${NC} with ${GREEN}${_abcdef_script}${NC}"
-    { time timeout "${_ABCDEF_TIMEOUT}" "${_abcdef_script}" "${_abcdef_sample}" ; } > "${_abcdef_sample}-analysis/${_abcdef_sample_name}-${_abcdef_analysis_name}.log" 2>&1
+    { time timeout 60 "${_abcdef_script}" "${_abcdef_sample}" ; } > "${_abcdef_sample}-analysis/${_abcdef_sample_name}-${_abcdef_analysis_name}.log" 2>&1
+    #INFO "end loop"
 done
+
+#INFO "End loop ${GREEN}${_abcdef_sample}${NC}"
+

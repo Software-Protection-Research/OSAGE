@@ -54,6 +54,4 @@ echo "${hellscape_header}" > "${abcdef_dir_prog_cur:?}/../includes.h"
 temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
-INFO "${hellscape_prog:?} ${hellscape_options:=} -o ${temp} ${abcdef_var_opts} $2"
-sh -c "${hellscape_prog:?} ${hellscape_options:=} -o ${temp} ${abcdef_var_opts} $2"
-
+INFO_EXEC "${hellscape_prog:?} ${hellscape_options:=} -o ${temp} ${abcdef_var_opts} $2"

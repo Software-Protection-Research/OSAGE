@@ -24,11 +24,10 @@ first_method=$(ls "${abcdef_dir_latest_out}" | head -n 1)
 #for each executable in <...>/out/run.../$first_method; find executable progs and take them
 tempDirectory="${abcdef_dir_latest_out}/${first_method}"
 
-find "$tempDirectory" -maxdepth 1 -mindepth 1 -type f ! -iname "*.log" ! -iname "*.c" ! -iname "*.csv" -print0 | while read -r -d $'\0' executable
+find "$tempDirectory" -maxdepth 1 -mindepth 1 -type f ! -iname "*.log" ! -iname "*.c" ! -iname "*.pickle" ! -iname "*.csv" -print0 | while read -r -d $'\0' executable
 do
     DEBUG "${abcdef_dir_analysis}/compare_return.py -path $executable"
     python3 "${abcdef_dir_analysis}/compare_return.py" -path "$executable"
-
 done
 SUCCESS "Completed compare_return.py!"
 

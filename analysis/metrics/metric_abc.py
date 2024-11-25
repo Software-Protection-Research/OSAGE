@@ -32,7 +32,7 @@ class Metric_Abc:
 
     def __add__(self, other):
         """Define add operator for the metric."""
-        pasm = self.asm.append(other.asm)
+        pasm = pd.concat([self.asm, other.asm])
         new_metric = Metric_Abc(pasm)
         new_metric.a = self.a + other.a
         new_metric.b = self.b + other.b
