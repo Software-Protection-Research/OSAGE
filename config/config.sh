@@ -253,21 +253,29 @@ fi
 use_tigress=true
 if [ "$use_tigress" = true ]; then
     export tigress_versions="3_3_3"
-    # Tigress 3.3.3 variables
-    export tigress_home_3_3_3="${abcdef_dir_tools}/tigress/3.3.3"
-    export tigress_prog_3_3_3="${tigress_home_3_3_3}/tigress"
-    export tigress_header_3_3_3="#include \"${tigress_home_3_3_3}/tigress.h\"
-    #include <time.h>
-    #include <pthread.h>"
+    # Tigress 3.0 variables
+    # export tigress_home_3_0="${abcdef_dir_tools}/tigress/3.0"
+    # export tigress_prog_3_0="${tigress_home_3_0}/tigress"
+    # export tigress_header_3_0="#include \"${tigress_home_3_0}/tigress.h\"
+    # #include <time.h>
+    # #include <pthread.h>"
+    # Tigress 3.1 variables
+    export tigress_home_3_1="${abcdef_dir_tools}/tigress/3.3.3"
+    export tigress_prog_3_1="${tigress_home_3_1}/tigress"
+    export tigress_header_3_1="# include \"${tigress_home_3_1}/tigress.h\"
+    # include <time.h>
+    # include <pthread.h>"
+    # include \"/opt/tigress/3.1/jitter-amd64.c\""
 
     # tigress flags (=options per version)
-    export tigress_flags_3_3_3=""
+    # export tigress_flags_3_0=""
+    export tigress_flags_3_1=""
     # Tigress options
     export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:12.1"
     export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*"
     # Define the path to the compilation folder
     compilation_folder="compilation"
-    rm ${compilation_folder}/compile-tigress-3_3_3-*
+    rm ${compilation_folder}/compile-tigress-3_1-*
 fi
 
 setup_tigress_obfuscation() {
@@ -282,7 +290,7 @@ setup_tigress_obfuscation() {
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it
-        local symlink_path="${compilation_folder}/compile-tigress-3_3_3-${obfuscation}_gcc_musl_oslatest_${level}.sh"
+        local symlink_path="${compilation_folder}/compile-tigress-3_1-${obfuscation}_gcc_musl_oslatest_${level}.sh"
         if [ -L "${symlink_path}" ]; then
             rm "${symlink_path}" 2>/dev/null
         fi
