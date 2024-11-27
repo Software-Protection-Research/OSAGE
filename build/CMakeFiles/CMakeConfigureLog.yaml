@@ -61,8 +61,13 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy"
       binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy"
+=======
+      source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90"
+      binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90"
+>>>>>>> recovery-branch
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,6 +76,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy'
         
         Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d36f8/fast
@@ -78,6 +84,15 @@ events:
         gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy'
         Building C object CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o
         /usr/bin/clang-15   -v -MD -MT CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+=======
+        Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5619/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f5619.dir/build.make CMakeFiles/cmTC_f5619.dir/build
+        gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90'
+        Building C object CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang-15   -v -MD -MT CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+>>>>>>> recovery-branch
         Ubuntu clang version 15.0.7
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -88,7 +103,11 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
+<<<<<<< HEAD
          "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+=======
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90 -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90 -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+>>>>>>> recovery-branch
         clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -99,9 +118,15 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
+<<<<<<< HEAD
         Linking C executable cmTC_d36f8
         /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d36f8.dir/link.txt --verbose=1
         /usr/bin/clang-15  -v CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -o cmTC_d36f8 
+=======
+        Linking C executable cmTC_f5619
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5619.dir/link.txt --verbose=1
+        /usr/bin/clang-15  -v CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -o cmTC_f5619 
+>>>>>>> recovery-branch
         Ubuntu clang version 15.0.7
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -111,8 +136,13 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
+<<<<<<< HEAD
          "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d36f8 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy'
+=======
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f5619 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90'
+>>>>>>> recovery-branch
         
       exitCode: 0
   -
@@ -146,6 +176,7 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+<<<<<<< HEAD
         ignore line: [Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy']
         ignore line: []
         ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d36f8/fast]
@@ -153,6 +184,15 @@ events:
         ignore line: [gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy']
         ignore line: [Building C object CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o]
         ignore line: [/usr/bin/clang-15   -v -MD -MT CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+=======
+        ignore line: [Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5619/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f5619.dir/build.make CMakeFiles/cmTC_f5619.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90']
+        ignore line: [Building C object CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang-15   -v -MD -MT CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+>>>>>>> recovery-branch
         ignore line: [Ubuntu clang version 15.0.7]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -165,7 +205,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
+<<<<<<< HEAD
         ignore line: [ "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3l8Npy -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+=======
+        ignore line: [ "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90 -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-8hKN90 -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+>>>>>>> recovery-branch
         ignore line: [clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -176,9 +220,15 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
+<<<<<<< HEAD
         ignore line: [Linking C executable cmTC_d36f8]
         ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d36f8.dir/link.txt --verbose=1]
         ignore line: [/usr/bin/clang-15  -v CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -o cmTC_d36f8 ]
+=======
+        ignore line: [Linking C executable cmTC_f5619]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5619.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-15  -v CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -o cmTC_f5619 ]
+>>>>>>> recovery-branch
         ignore line: [Ubuntu clang version 15.0.7]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -190,7 +240,11 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
+<<<<<<< HEAD
         link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d36f8 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+=======
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f5619 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+>>>>>>> recovery-branch
           arg [/usr/bin/ld] ==> ignore
           arg [-pie] ==> ignore
           arg [-zrelro] ==> ignore
@@ -202,7 +256,11 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
+<<<<<<< HEAD
           arg [cmTC_d36f8] ==> ignore
+=======
+          arg [cmTC_f5619] ==> ignore
+>>>>>>> recovery-branch
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
@@ -214,7 +272,11 @@ events:
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
+<<<<<<< HEAD
           arg [CMakeFiles/cmTC_d36f8.dir/CMakeCCompilerABI.c.o] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_f5619.dir/CMakeCCompilerABI.c.o] ==> ignore
+>>>>>>> recovery-branch
           arg [-lgcc] ==> lib [gcc]
           arg [--as-needed] ==> ignore
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -251,8 +313,13 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg"
       binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg"
+=======
+      source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF"
+      binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF"
+>>>>>>> recovery-branch
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -261,6 +328,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg'
         
         Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06d3e/fast
@@ -268,6 +336,15 @@ events:
         gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg'
         Building CXX object CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o
         /usr/bin/clang++-15   -v -MD -MT CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+=======
+        Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6478b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6478b.dir/build.make CMakeFiles/cmTC_6478b.dir/build
+        gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF'
+        Building CXX object CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-15   -v -MD -MT CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+>>>>>>> recovery-branch
         Ubuntu clang version 15.0.7
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -278,7 +355,11 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
+<<<<<<< HEAD
          "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+=======
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+>>>>>>> recovery-branch
         clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -292,9 +373,15 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
+<<<<<<< HEAD
         Linking CXX executable cmTC_06d3e
         /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06d3e.dir/link.txt --verbose=1
         /usr/bin/clang++-15  -v CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_06d3e 
+=======
+        Linking CXX executable cmTC_6478b
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6478b.dir/link.txt --verbose=1
+        /usr/bin/clang++-15  -v CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6478b 
+>>>>>>> recovery-branch
         Ubuntu clang version 15.0.7
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -304,8 +391,13 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
+<<<<<<< HEAD
          "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_06d3e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg'
+=======
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6478b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF'
+>>>>>>> recovery-branch
         
       exitCode: 0
   -
@@ -345,6 +437,7 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+<<<<<<< HEAD
         ignore line: [Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg']
         ignore line: []
         ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06d3e/fast]
@@ -352,6 +445,15 @@ events:
         ignore line: [gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg']
         ignore line: [Building CXX object CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o]
         ignore line: [/usr/bin/clang++-15   -v -MD -MT CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+=======
+        ignore line: [Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6478b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6478b.dir/build.make CMakeFiles/cmTC_6478b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-15   -v -MD -MT CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+>>>>>>> recovery-branch
         ignore line: [Ubuntu clang version 15.0.7]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -364,7 +466,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
+<<<<<<< HEAD
         ignore line: [ "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-GovGTg -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+=======
+        ignore line: [ "/usr/lib/llvm-15/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-hjY4KF -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+>>>>>>> recovery-branch
         ignore line: [clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -378,9 +484,15 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
+<<<<<<< HEAD
         ignore line: [Linking CXX executable cmTC_06d3e]
         ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06d3e.dir/link.txt --verbose=1]
         ignore line: [/usr/bin/clang++-15  -v CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_06d3e ]
+=======
+        ignore line: [Linking CXX executable cmTC_6478b]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6478b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-15  -v CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6478b ]
+>>>>>>> recovery-branch
         ignore line: [Ubuntu clang version 15.0.7]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -392,7 +504,11 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
+<<<<<<< HEAD
         link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_06d3e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+=======
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6478b /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+>>>>>>> recovery-branch
           arg [/usr/bin/ld] ==> ignore
           arg [-pie] ==> ignore
           arg [-zrelro] ==> ignore
@@ -404,7 +520,11 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
+<<<<<<< HEAD
           arg [cmTC_06d3e] ==> ignore
+=======
+          arg [cmTC_6478b] ==> ignore
+>>>>>>> recovery-branch
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
@@ -416,7 +536,11 @@ events:
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
+<<<<<<< HEAD
           arg [CMakeFiles/cmTC_06d3e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+=======
+          arg [CMakeFiles/cmTC_6478b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+>>>>>>> recovery-branch
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -453,8 +577,13 @@ events:
     checks:
       - "Performing Test HAVE_FFI_CALL"
     directories:
+<<<<<<< HEAD
       source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-vjz29E"
       binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-vjz29E"
+=======
+      source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo"
+      binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo"
+>>>>>>> recovery-branch
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -464,6 +593,7 @@ events:
       variable: "HAVE_FFI_CALL"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-vjz29E'
         
         Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0eef9/fast
@@ -475,6 +605,19 @@ events:
         /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0eef9.dir/link.txt --verbose=1
         /usr/bin/clang-15 CMakeFiles/cmTC_0eef9.dir/src.c.o -o cmTC_0eef9  /usr/lib/x86_64-linux-gnu/libffi.so 
         gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-vjz29E'
+=======
+        Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_47f76/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_47f76.dir/build.make CMakeFiles/cmTC_47f76.dir/build
+        gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo'
+        Building C object CMakeFiles/cmTC_47f76.dir/src.c.o
+        /usr/bin/clang-15 -DHAVE_FFI_CALL   -MD -MT CMakeFiles/cmTC_47f76.dir/src.c.o -MF CMakeFiles/cmTC_47f76.dir/src.c.o.d -o CMakeFiles/cmTC_47f76.dir/src.c.o -c /home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo/src.c
+        Linking C executable cmTC_47f76
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47f76.dir/link.txt --verbose=1
+        /usr/bin/clang-15 CMakeFiles/cmTC_47f76.dir/src.c.o -o cmTC_47f76  /usr/lib/x86_64-linux-gnu/libffi.so 
+        gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-3G0OXo'
+>>>>>>> recovery-branch
         
       exitCode: 0
   -
@@ -488,8 +631,13 @@ events:
     checks:
       - "Performing Test Terminfo_LINKABLE"
     directories:
+<<<<<<< HEAD
       source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Z80JHy"
       binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Z80JHy"
+=======
+      source: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb"
+      binary: "/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb"
+>>>>>>> recovery-branch
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -499,6 +647,7 @@ events:
       variable: "Terminfo_LINKABLE"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Z80JHy'
         
         Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f08e9/fast
@@ -1736,6 +1885,19 @@ events:
         /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3465b.dir/link.txt --verbose=1
         /usr/bin/cc CMakeFiles/cmTC_3465b.dir/src.c.o -o cmTC_3465b  /usr/lib/x86_64-linux-gnu/libtinfo.so 
         gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-erYWlC'
+=======
+        Change Dir: '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e7af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3e7af.dir/build.make CMakeFiles/cmTC_3e7af.dir/build
+        gmake[1]: Entering directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb'
+        Building C object CMakeFiles/cmTC_3e7af.dir/src.c.o
+        /usr/bin/clang-15 -DTerminfo_LINKABLE   -MD -MT CMakeFiles/cmTC_3e7af.dir/src.c.o -MF CMakeFiles/cmTC_3e7af.dir/src.c.o.d -o CMakeFiles/cmTC_3e7af.dir/src.c.o -c /home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb/src.c
+        Linking C executable cmTC_3e7af
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e7af.dir/link.txt --verbose=1
+        /usr/bin/clang-15 CMakeFiles/cmTC_3e7af.dir/src.c.o -o cmTC_3e7af  /usr/lib/x86_64-linux-gnu/libtinfo.so 
+        gmake[1]: Leaving directory '/home/pfelbauer/opt/samplegenerator/build/CMakeFiles/CMakeScratch/TryCompile-Le7Nnb'
+>>>>>>> recovery-branch
         
       exitCode: 0
 ...
