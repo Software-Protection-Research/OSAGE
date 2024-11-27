@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /usr/bin/c++ -fPIC  -Wall -fdiagnostics-color=always -g -shared -Wl,-soname,libBlockExtractor.so -o libBlockExtractor.so CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o "CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o"   -L/usr/lib/llvm-15/lib 
+=======
+/usr/bin/clang++-15 -fPIC  -Wall -fdiagnostics-color=always -g -shared -Wl,-soname,libBlockExtractor.so -o libBlockExtractor.so CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o "CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o"   -L/usr/lib/llvm-15/lib 
+>>>>>>> recovery-branch

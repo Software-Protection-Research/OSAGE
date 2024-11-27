@@ -73,6 +73,7 @@ lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o: lib/CMakeFiles
 lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp
 lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o: lib/CMakeFiles/ConstantObfuscation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o"
+<<<<<<< HEAD
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o -MF CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o.d -o CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp
 
 lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.i: cmake_force
@@ -82,11 +83,23 @@ lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.i: cmake_force
 lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s"
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp -o CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s
+=======
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o -MF CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o.d -o CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp
+
+lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.i"
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp > CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.i
+
+lib/CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s"
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ConstantObfuscation.cpp -o CMakeFiles/ConstantObfuscation.dir/ConstantObfuscation.cpp.s
+>>>>>>> recovery-branch
 
 lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/ConstantObfuscation.dir/flags.make
 lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/ConstantObfuscation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o"
+<<<<<<< HEAD
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 
 lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.i: cmake_force
@@ -96,6 +109,17 @@ lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.i: cmake_force
 lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s"
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s
+=======
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
+
+lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.i"
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.i
+
+lib/CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s"
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/ConstantObfuscation.dir/cmd-args/Coverage.cpp.s
+>>>>>>> recovery-branch
 
 # Object files for target ConstantObfuscation
 ConstantObfuscation_OBJECTS = \

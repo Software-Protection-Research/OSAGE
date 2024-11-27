@@ -39,7 +39,11 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
+<<<<<<< HEAD
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
+=======
+  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-15")
+>>>>>>> recovery-branch
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
