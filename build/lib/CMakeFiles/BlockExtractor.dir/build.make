@@ -73,29 +73,29 @@ lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o: lib/CMakeFiles/BlockExtr
 lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp
 lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o: lib/CMakeFiles/BlockExtractor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o -MF CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o.d -o CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o -MF CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o.d -o CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp
 
 lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp > CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp > CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.i
 
 lib/CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp -o CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BlockExtractor.cpp -o CMakeFiles/BlockExtractor.dir/BlockExtractor.cpp.s
 
 lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/BlockExtractor.dir/flags.make
 lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o: lib/CMakeFiles/BlockExtractor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o -MF CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o.d -o CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp
 
 lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp > CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.i
 
 lib/CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/cmd-args/Coverage.cpp -o CMakeFiles/BlockExtractor.dir/cmd-args/Coverage.cpp.s
 
 # Object files for target BlockExtractor
 BlockExtractor_OBJECTS = \

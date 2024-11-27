@@ -73,15 +73,15 @@ lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o: lib/CMakeFiles/Str
 lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp
 lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o: lib/CMakeFiles/StringObfuscation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o -MF CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o.d -o CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o -MF CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o.d -o CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp
 
 lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp > CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.i
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp > CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.i
 
 lib/CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp -o CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.s
+	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/StringObfuscation.cpp -o CMakeFiles/StringObfuscation.dir/StringObfuscation.cpp.s
 
 # Object files for target StringObfuscation
 StringObfuscation_OBJECTS = \
