@@ -79,7 +79,9 @@ tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$fun
 
 INFO "Compiling with:"
 # Obfuscate and compile the program
-INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
+INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp}"
+
+INFO_EXEC "gcc -o ${1} ${1}.c ${abcdef_var_opts}"
 
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     # Generate the .s file

@@ -277,7 +277,7 @@ if [ "$use_tigress" = true ]; then
     # export tigress_flags_3_0=""
     export tigress_flags_4_0_9=""
     # Tigress options
-    export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:12.1"
+    export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:14.2.1"
     export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*"
     # Define the path to the compilation folder
     compilation_folder="compilation"
@@ -311,10 +311,9 @@ setup_tigress_obfuscation() {
         local export_var="tigress_options_${obfuscation}_gcc_musl_oslatest_${level}"
 
         # Assign the value to the associative array
-        tigress_options["$export_var"]="${tigress_environment_gcc} \
-            --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_value}\" \
-            ${tigress_options[${obfuscation}_helper]}"
-
+        tigress_options["$export_var"]="${tigress_environment_gcc}" # \
+#             --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_value}\" \
+#             ${tigress_options[${obfuscation}_helper]}"
         # Export the variable
         export ${export_var}="${tigress_options[$export_var]}"
     done
@@ -378,11 +377,11 @@ setup_tigress_obfuscation "Flatten" "\
 # setup_tigress_obfuscation "AntiTaintAnalysis" "\
 #     --Transform=InitEntropy \
 #         --Functions=init_program \
-#     --Transform=InitImplicitFlow \
+#         --InitEntropyKinds=vars \
+#      --Transform=InitImplicitFlow \
 #         --Functions=init_program \
 #    --Transform=AntiTaintAnalysis \
 #         --Functions=init_program"
-
 # # Tigress OpaquePredicates
 # setup_tigress_obfuscation "OpaquePredicates" "\
 #     --Inputs="+1:int:42,-1:length:1?10" \
@@ -3086,7 +3085,7 @@ setup_tigress_obfuscation "Flatten" "\
 # ============ END SECRYPT 2024 (camera-ready) ============
 
 # --- TinyCC config --------------------------------------------------
-use_tinycc=true
+use_tinycc=false
 if [ "$use_tinycc" = true ]; then
     export tinycc_versions="0_9_27"
     # TinyCC 0.9.27 variables
