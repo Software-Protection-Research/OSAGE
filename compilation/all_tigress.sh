@@ -69,14 +69,12 @@ chmod u+rx /opt/samplegenerator/src_all/includes.h
 echo "${tigress_header}" > "${abcdef_dir_prog_cur:?}/../includes.h"
 export TIGRESS_HOME=$tigress_home
 
-
 funcs=$(abcdef_fun_parse_secrets "$2")
 
 temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
 # Replace the secrets
-
 tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
 
 INFO "Compiling with:"

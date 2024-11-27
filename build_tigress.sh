@@ -2,7 +2,7 @@
 
 set -ex
 
-VERSIONS="tigress-3.3.3-bin.zip"
+VERSIONS="tigress-4.0.9-full.zip"
 LOCAL_DIR=/opt/samplegenerator/tigress-versions
 URL=http://tigress.cs.arizona.edu/cgi-bin/projects/tigress/download.cgi
 OUTPUTDIR=/opt/
