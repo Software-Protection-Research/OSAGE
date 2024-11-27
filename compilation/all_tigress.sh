@@ -72,13 +72,7 @@ export TIGRESS_HOME=$tigress_home
 funcs=$(abcdef_fun_parse_secrets "$2")
 
 temp=$(echo "$1" | cut -d "." -f1)
-opts_file="${abcdef_dir_prog_cur}/${1}.opts"
-
-if [ ! -f "$opts_file" ]; then
-    ERROR_EXIT "Options file '$opts_file' not found."
-fi
-
-abcdef_var_opts=$(cat "$opts_file")
+abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
 # Replace the secrets
 tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
@@ -86,10 +80,6 @@ tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$fun
 INFO "Compiling with:"
 # Obfuscate and compile the program
 INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp} ${abcdef_var_opts}"
-
-# Compile the generated C file into an executable
-INFO "Building the executable:"
-INFO_EXEC "${gcc_prog_musl_oslatest} ${temp}.c -o ${temp}.out"
 
 if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
     # Generate the .s file
