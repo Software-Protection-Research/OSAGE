@@ -46,7 +46,11 @@ RUN set -eux; \
         curl \
 		unzip \
 		zip \
+		perl \
 		; \
+    # Install cpanminus using cpanm
+    curl -L https://cpanmin.us | perl - App::cpanminus \
+    ; \
 	pacman -S --noconfirm \
         upx \
 		; \
@@ -102,6 +106,9 @@ RUN pwd && \
 	bash /opt/build_scripts/build_tigress.sh && \
 	ls -lah /opt/
 
+ENV PATH="/opt/tigress/4.0.9:${PATH}"
+ENV TIGRESS_HOME="/opt/tigress/4.0.9"
+
 # Install tinycc
 COPY build_tinycc.sh /opt/build_scripts/
 RUN pwd && \
@@ -109,12 +116,12 @@ RUN pwd && \
 	bash /opt/build_scripts/build_tinycc.sh && \
 	ls -lah /opt/
 
-# Install tendra
-COPY build_tendra.sh /opt/build_scripts/
-RUN pwd && \
-	ls -lah /opt/ && \
-	bash /opt/build_scripts/build_tendra.sh && \
-	ls -lah /opt/
+# # Install tendra
+# COPY build_tendra.sh /opt/build_scripts/
+# RUN pwd && \
+# 	ls -lah /opt/ && \
+# 	bash /opt/build_scripts/build_tendra.sh && \
+# 	ls -lah /opt/
 
 
 # Install ollvm
