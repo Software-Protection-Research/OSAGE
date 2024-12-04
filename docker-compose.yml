@@ -8,6 +8,8 @@ services:
     image: osage-base
     container_name: base_container
     command: tail -F anything
+    volumes:
+      - ./:/opt/samplegenerator/
 
 
 
@@ -20,7 +22,8 @@ services:
     depends_on:
       - base-serivce
     command: tail -F anything
-
+    volumes:
+      - ./:/opt/samplegenerator/
 
 #  gcc:
 #    build:
