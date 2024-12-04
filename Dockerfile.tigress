@@ -46,7 +46,7 @@
 
 FROM debian:stable-slim
 
-RUN apt update && apt  install gcc curl perl -y
+RUN apt update && apt install gcc curl perl cmake -y
 COPY ./ /opt/samplegenerator
 RUN if [ -z "$version" ] ; then \
         rm -rf /opt/samplegenerator; \
