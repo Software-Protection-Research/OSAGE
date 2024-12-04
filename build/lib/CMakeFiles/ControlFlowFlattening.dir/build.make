@@ -73,17 +73,6 @@ lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o: lib/CMakeF
 lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp
 lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o: lib/CMakeFiles/ControlFlowFlattening.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o"
-<<<<<<< HEAD
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o -MF CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o.d -o CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp
-
-lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp > CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.i
-
-lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp -o CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s
-=======
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o -MF CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o.d -o CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp
 
 lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.i: cmake_force
@@ -93,7 +82,6 @@ lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.i: cmake_forc
 lib/CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s"
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/ControlFlowFlattening.cpp -o CMakeFiles/ControlFlowFlattening.dir/ControlFlowFlattening.cpp.s
->>>>>>> recovery-branch
 
 # Object files for target ControlFlowFlattening
 ControlFlowFlattening_OBJECTS = \
