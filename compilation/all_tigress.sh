@@ -75,7 +75,7 @@ temp=$(echo "$1" | cut -d "." -f1)
 abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 
 # Replace the secrets
-tigress_options_replaced=${tigress_options//--Functions=secrets/--Functions=$funcs}
+tigress_options_replaced=$(echo "${tigress_options}" | sed "s/--Functions=[^ ]*/--Functions=${funcs}/g")
 
 INFO "Compiling with:"
 # Obfuscate and compile the program

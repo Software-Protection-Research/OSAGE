@@ -73,17 +73,6 @@ lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o: lib/CMakeFiles/BranchFun
 lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o: /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp
 lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o: lib/CMakeFiles/BranchFunction.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pfelbauer/opt/samplegenerator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o"
-<<<<<<< HEAD
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o -MF CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o.d -o CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp
-
-lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BranchFunction.dir/BranchFunction.cpp.i"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp > CMakeFiles/BranchFunction.dir/BranchFunction.cpp.i
-
-lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s"
-	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp -o CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s
-=======
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o -MF CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o.d -o CMakeFiles/BranchFunction.dir/BranchFunction.cpp.o -c /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp
 
 lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.i: cmake_force
@@ -93,7 +82,6 @@ lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.i: cmake_force
 lib/CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s"
 	cd /home/pfelbauer/opt/samplegenerator/build/lib && /usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/lib/BranchFunction.cpp -o CMakeFiles/BranchFunction.dir/BranchFunction.cpp.s
->>>>>>> recovery-branch
 
 # Object files for target BranchFunction
 BranchFunction_OBJECTS = \
