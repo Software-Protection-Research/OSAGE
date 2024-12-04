@@ -1,6 +1,5 @@
 FROM archlinux:base-devel
-MAINTAINER nobody@fhstp.ac.at
-
+#MAINTAINER nobody@fhstp.ac.at
 # Update and install base packages
 RUN set -eux; \
     echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \

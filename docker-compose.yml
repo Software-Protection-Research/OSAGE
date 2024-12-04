@@ -1,81 +1,83 @@
 version: '3.8'
 
 services:
-  base:
+  base-serivce:
     build:
       context: .
       dockerfile: Dockerfile.base
+    image: osage-base
     container_name: base_container
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
+    command: tail -F anything
+    volumes:
+      - ./:/opt/samplegenerator/
 
-  gcc:
-    build:
-      context: .
-      dockerfile: Dockerfile.gcc
-    container_name: gcc_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
-  llvm:
-    build:
-      context: .
-      dockerfile: Dockerfile.llvm
-    container_name: llvm_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
-
-  musl:
-    build:
-      context: .
-      dockerfile: Dockerfile.musl
-    container_name: musl_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
-
-  ollvm:
-    build:
-      context: .
-      dockerfile: Dockerfile.ollvm
-    container_name: ollvm_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
-
-  python:
-    build:
-      context: .
-      dockerfile: Dockerfile.python
-    container_name: python_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
 
   tigress:
     build:
       context: .
       dockerfile: Dockerfile.tigress
+    image: osage-tigress
     container_name: tigress_container
     depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
+      - base-serivce
+    command: tail -F anything
+    volumes:
+      - ./:/opt/samplegenerator/
 
-  tinycc:
-    build:
-      context: .
-      dockerfile: Dockerfile.tinycc
-    container_name: tinycc_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
+#  gcc:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.gcc
+#    image: osage-gcc
+#    container_name: gcc_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
 
-  tendra:
-    build:
-      context: .
-      dockerfile: Dockerfile.tendra
-    container_name: tendra_container
-    depends_on:
-      - base
-    command: ["/bin/bash", "-c", "while :; do sleep 2073600; done"]
+#  llvm:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.llvm
+#    container_name: llvm_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
+
+#  musl:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.musl
+#    container_name: musl_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
+
+#  ollvm:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.ollvm
+#    container_name: ollvm_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
+
+
+
+#  tinycc:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.tinycc
+#    container_name: tinycc_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
+#
+#  tendra:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.tendra
+#    container_name: tendra_container
+#    depends_on:
+#      - base
+#    command: tail -F anything
