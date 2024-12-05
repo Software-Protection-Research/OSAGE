@@ -1,31 +1,37 @@
 #!/bin/bash
 
 # Define the path to the out folder
-out_folder="../out"
+script_dir="$(cd "$(dirname "$0")" && pwd)"
+out_folder="$script_dir/../out"
 
 # Find the latest folder based on the most recent timestamp
-latest_folder=$(ls -td "$out_folder"/run_* | head -1)
-latest_folder=$out_folder/run_2024_10_09_09_42_58
-echo "Cleaning up files in the latest folder: $latest_folder"
+latest_folder=$(ls -td "$out_folder"/run_* 2>/dev/null | head -1)
 
-# Function to check and remove files in a subfolder
-cleanup_files_in_subfolder() {
+if [[ -z "$latest_folder" ]]; then
+    echo "No run folders found in $out_folder"
+    exit 1
+fi
+
+echo "Checking missing files in the latest folder: $latest_folder"
+
+# Define the output file for empty .c files
+output_file="$script_dir/empty_c_files.txt"
+> "$output_file"  # Clear the file if it exists
+
+# Function to check and show empty .c files in a subfolder
+check_empty_c_files_in_subfolder() {
     local subfolder=$1
     local base_name
-    for file in "$subfolder"/*; do
-        base_name=$(basename "$file" | sed 's/\.[^.]*$//')
-        
-        # Check if all three corresponding files exist
-        if [[ ! -f "$subfolder/$base_name.log" || ! -f "$subfolder/$base_name.c" || ! -f "$subfolder/$base_name" ]]; then
-            echo "Removing files for: $base_name"
-            rm -f "$subfolder/$base_name.log" "$subfolder/$base_name.c" "$subfolder/$base_name"
+    for file in "$subfolder"/*.c; do
+        if [[ -f "$file" && ! -s "$file" ]]; then
+            echo "$file" >> "$output_file"
         fi
     done
 }
 
-export -f cleanup_files_in_subfolder
+export -f check_empty_c_files_in_subfolder
 
 # Find all subfolders that start with "prog_tigress" and process them
-find "$latest_folder" -mindepth 1 -maxdepth 1 -type d -name 'prog_tigress*' -exec bash -c 'cleanup_files_in_subfolder "$0"' {} \;
+find "$latest_folder" -mindepth 1 -maxdepth 1 -type d -name 'prog_tigress*' -exec bash -c 'check_empty_c_files_in_subfolder "$0"' {} \;
 
-echo "Cleanup complete."
+echo "Check complete. Empty .c files are listed in $output_file."
