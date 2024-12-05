@@ -15,3 +15,5 @@ build/
 build
 coreutils-merge/
 coreutils-merge
+llvm-obfuscator/
+llvm-obfuscator
