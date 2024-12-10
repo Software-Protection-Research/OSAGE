@@ -78,3 +78,7 @@ obfuscate strobfs substitution op hello.c
 * -jitHelper [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
 * -jitDynamic [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
 * -recipe3 [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
+
+## Zipping out folder
+
+zip -r latest.zip out/run_2024_12_10_11_37_16

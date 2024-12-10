@@ -51,3 +51,31 @@ sort "$empty_files" | sed -n 's/^prog_tigress-4_0_9-\(.*\)_gcc_musl_oslatest.*$/
 echo "Check complete. Empty .c files are listed in $empty_files."
 echo "Total empty .c files: $(wc -l < "$empty_files")"
 echo "Unique folder names are listed in $unique_folders."
+
+# Function to remove .c and .log files if the corresponding executable does not exist
+remove_files_without_executable() {
+    local subfolder=$1
+    for c_file in "$subfolder"/*.c; do
+        if [[ -f "$c_file" ]]; then
+            base_name="${c_file%.c}"
+            if [[ ! -x "$base_name" ]]; then
+                log_file="${base_name}.log"
+                echo "Removing $c_file and $log_file"
+                rm -f "$c_file" "$log_file"
+            fi
+        fi
+    done
+}
+
+export -f remove_files_without_executable
+
+# Activate or deactivate the removal of files without executables
+REMOVE_FILES_WITHOUT_EXECUTABLES=false
+
+if [[ "$REMOVE_FILES_WITHOUT_EXECUTABLES" = true ]]; then
+    echo "Removing .c and .log files without corresponding executables..."
+    find "$latest_folder" -mindepth 1 -maxdepth 1 -type d -name 'prog_tigress*' -exec bash -c 'remove_files_without_executable "{}"' \;
+    echo "Removal complete."
+else
+    echo "Removal of .c and .log files without corresponding executables is deactivated."
+fi
