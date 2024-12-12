@@ -100,558 +100,558 @@
 
 # =========================Encode External: ========================== 
 
-# # Tigrss EncodeExternal CHECK for removal
-# setup_tigress_obfuscation "EncodeExternal" "\
-#         --Transform=InitEncodeExternal \
-#            --Functions=init_program \
-#        --Transform=EncodeExternal \
-#           --Functions=init_program"
+# Tigrss EncodeExternal CHECK for removal
+setup_tigress_obfuscation "EncodeExternal" "\
+        --Transform=InitEncodeExternal \
+           --Functions=init_program \
+       --Transform=EncodeExternal \
+          --Functions=init_program"
 
 
-# # Tigress VirtualizeEncodeExternal
-# setup_tigress_obfuscation "VirtualizeEncodeExternal" "\
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress VirtualizeEncodeExternal
+setup_tigress_obfuscation "VirtualizeEncodeExternal" "\
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalVirtualize
-# setup_tigress_obfuscation "EncodeExternalVirtualize" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
-
-
-# # Tigress FlattenEncodeExternal
-# setup_tigress_obfuscation "FlattenEncodeExternal" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
-
-# # Tigress EncodeExternalFlatten
-# setup_tigress_obfuscation "EncodeExternalFlatten" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=Flatten \
-#         --Functions=init_program"
+# Tigress EncodeExternalVirtualize
+setup_tigress_obfuscation "EncodeExternalVirtualize" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
 
 
-# # Tigress SplitEncodeExternal
-# setup_tigress_obfuscation "SplitEncodeExternal" "\
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=/.*init_program.*/ \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress FlattenEncodeExternal
+setup_tigress_obfuscation "FlattenEncodeExternal" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalSplit
-# setup_tigress_obfuscation "EncodeExternalSplit" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=/.*init_program.*/"
+# Tigress EncodeExternalFlatten
+setup_tigress_obfuscation "EncodeExternalFlatten" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=Flatten \
+        --Functions=init_program"
 
 
-# # Tigress EncodeLiteralsEncodeExternal
-# setup_tigress_obfuscation "EncodeLiteralsEncodeExternal" "\
-#     --Transform=EncodeLiterals \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress SplitEncodeExternal
+setup_tigress_obfuscation "SplitEncodeExternal" "\
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=/.*init_program.*/ \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalEncodeLiterals
-# setup_tigress_obfuscation "EncodeExternalEncodeLiterals" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=EncodeLiterals \
-#         --Functions=init_program"
-
-
-# # Tigress EncodeArithmeticEncodeExternal
-# setup_tigress_obfuscation "EncodeArithmeticEncodeExternal" "\
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
-
-# # Tigress EncodeExternalEncodeArithmetic
-# setup_tigress_obfuscation "EncodeExternalEncodeArithmetic" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
+# Tigress EncodeExternalSplit
+setup_tigress_obfuscation "EncodeExternalSplit" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=/.*init_program.*/"
 
 
-# # Tigress EncodeExternalEncodeBranches
-# setup_tigress_obfuscation "EncodeExternalEncodeBranches" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=InitBranchFuns \
-#         --Functions=init_program \
-#     --Transform=AntiBranchAnalysis \
-#         --Functions=init_program"
+# Tigress EncodeLiteralsEncodeExternal
+setup_tigress_obfuscation "EncodeLiteralsEncodeExternal" "\
+    --Transform=EncodeLiterals \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeBranchesEncodeExternal
-# setup_tigress_obfuscation "EncodeBranchesEncodeExternal" "\
-#     --Transform=InitBranchFuns \
-#         --Functions=init_program \
-#     --Transform=AntiBranchAnalysis \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress EncodeExternalEncodeLiterals
+setup_tigress_obfuscation "EncodeExternalEncodeLiterals" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=EncodeLiterals \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalAntiAliasAnalysis
-# setup_tigress_obfuscation "EncodeExternalAntiAliasAnalysis" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=AntiAliasAnalysis \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env,input,plugin"
 
-# # Tigress AntiAliasAnalysisEncodeExternal
-# setup_tigress_obfuscation "AntiAliasAnalysisEncodeExternal" "\
-#     --Transform=AntiAliasAnalysis \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env,input,plugin"
+# Tigress EncodeArithmeticEncodeExternal
+setup_tigress_obfuscation "EncodeArithmeticEncodeExternal" "\
+    --Transform=EncodeArithmetic \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalAntiTaintAnalysis
-# setup_tigress_obfuscation "EncodeExternalAntiTaintAnalysis" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#         --Transform=InitEntropy \
-#         --Functions=init_program \
-#    --Transform=AntiTaintAnalysis \
-#         --Functions=init_program"
+# Tigress EncodeExternalEncodeArithmetic
+setup_tigress_obfuscation "EncodeExternalEncodeArithmetic" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
-# # Tigress AntiTaintAnalysisEncodeExternal
-# setup_tigress_obfuscation "AntiTaintAnalysisEncodeExternal" "\
-#         --Transform=InitEntropy \
-#         --Functions=init_program \
-#    --Transform=AntiTaintAnalysis \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueStructs=list,array,env,input,plugin"
 
-# # Tigress EncodeExternalOpaquePredicates
-# setup_tigress_obfuscation "EncodeExternalOpaquePredicates" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress EncodeExternalEncodeBranches
+setup_tigress_obfuscation "EncodeExternalEncodeBranches" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=InitBranchFuns \
+        --Functions=init_program \
+    --Transform=AntiBranchAnalysis \
+        --Functions=init_program"
 
-# # Tigress OpaquePredicatesEncodeExternal
-# setup_tigress_obfuscation "OpaquePredicatesEncodeExternal" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress EncodeBranchesEncodeExternal
+setup_tigress_obfuscation "EncodeBranchesEncodeExternal" "\
+    --Transform=InitBranchFuns \
+        --Functions=init_program \
+    --Transform=AntiBranchAnalysis \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
-# # Tigress EncodeExternalSelfModify
-# setup_tigress_obfuscation "EncodeExternalSelfModify" "\
-#     --Transform=EncodeExternal \
-#         --Functions=init_program \
-#     --Transform=SelfModify  \
-#         --Functions=init_program"
+# Tigress EncodeExternalAntiAliasAnalysis
+setup_tigress_obfuscation "EncodeExternalAntiAliasAnalysis" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=AntiAliasAnalysis \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env,input,plugin"
 
-# # Tigress SelfModifyEncodeExternal
-# setup_tigress_obfuscation "SelfModifyEncodeExternal" "\
-#     --Transform=SelfModify  \
-#         --Functions=init_program \
-#     --Transform=EncodeExternal \
-#         --Functions=init_program"
+# Tigress AntiAliasAnalysisEncodeExternal
+setup_tigress_obfuscation "AntiAliasAnalysisEncodeExternal" "\
+    --Transform=AntiAliasAnalysis \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env,input,plugin"
+
+# Tigress EncodeExternalAntiTaintAnalysis
+setup_tigress_obfuscation "EncodeExternalAntiTaintAnalysis" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+        --Transform=InitEntropy \
+        --Functions=init_program \
+   --Transform=AntiTaintAnalysis \
+        --Functions=init_program"
+
+# Tigress AntiTaintAnalysisEncodeExternal
+setup_tigress_obfuscation "AntiTaintAnalysisEncodeExternal" "\
+        --Transform=InitEntropy \
+        --Functions=init_program \
+   --Transform=AntiTaintAnalysis \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env,input,plugin"
+
+# Tigress EncodeExternalOpaquePredicates
+setup_tigress_obfuscation "EncodeExternalOpaquePredicates" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
+
+# Tigress OpaquePredicatesEncodeExternal
+setup_tigress_obfuscation "OpaquePredicatesEncodeExternal" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
+
+# Tigress EncodeExternalSelfModify
+setup_tigress_obfuscation "EncodeExternalSelfModify" "\
+    --Transform=EncodeExternal \
+        --Functions=init_program \
+    --Transform=SelfModify  \
+        --Functions=init_program"
+
+# Tigress SelfModifyEncodeExternal
+setup_tigress_obfuscation "SelfModifyEncodeExternal" "\
+    --Transform=SelfModify  \
+        --Functions=init_program \
+    --Transform=EncodeExternal \
+        --Functions=init_program"
 
 
 # =========================Opaque Predicates: ========================== 
 
-# # Tigress OpaquePredicates Check for Error: I'm not able to generate enough opaque question predicates. Please try reducing AddOpaqueCount.
-# setup_tigress_obfuscation "OpaquePredicates" "\
-#         --Transform=InitOpaque \
-#             --Functions=init_program \
-#             --InitOpaqueCount=1 \
-#             --InitOpaqueStructs=list,array,input,env \
-#         --Transform=AddOpaque \
-#             --Functions=init_program \
-#             --AddOpaqueKinds=question \
-#             --AddOpaqueSplitKinds=inside \
-#             --AddOpaqueCount=1"
+# Tigress OpaquePredicates Check for Error: I'm not able to generate enough opaque question predicates. Please try reducing AddOpaqueCount.
+setup_tigress_obfuscation "OpaquePredicates" "\
+        --Transform=InitOpaque \
+            --Functions=init_program \
+            --InitOpaqueCount=1 \
+            --InitOpaqueStructs=list,array,input,env \
+        --Transform=AddOpaque \
+            --Functions=init_program \
+            --AddOpaqueKinds=question \
+            --AddOpaqueSplitKinds=inside \
+            --AddOpaqueCount=1"
 
 
-# # Tigress SplitOpaquePredicates
-# setup_tigress_obfuscation "SplitOpaquePredicates" "\
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=/.*init_program.*/ \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress SplitOpaquePredicates
+setup_tigress_obfuscation "SplitOpaquePredicates" "\
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=/.*init_program.*/ \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
-# # Tigress OpaquePredicatesSplit
-# setup_tigress_obfuscation "OpaquePredicatesSplit" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=Split \
-#         --SplitKinds=deep,block,top \
-#         --SplitCount=100 \
-#         --Functions=init_program \
-#     --Transform=Split \
-#         --SplitKinds=block \
-#         --SplitCount=100 \
-#         --Functions=/.*init_program.*/"
-
-
-# # Tigress EncodeLiteralsOpaquePredicates
-# setup_tigress_obfuscation "EncodeLiteralsOpaquePredicates" "\
-#     --Transform=EncodeLiterals \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
-
-# # Tigress OpaquePredicatesEncodeLiterals
-# setup_tigress_obfuscation "OpaquePredicatesEncodeLiterals" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=EncodeLiterals \
-#         --Functions=init_program"
+# Tigress OpaquePredicatesSplit
+setup_tigress_obfuscation "OpaquePredicatesSplit" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=/.*init_program.*/"
 
 
-# # Tigress EncodeArithmeticOpaquePredicates
-# setup_tigress_obfuscation "EncodeArithmeticOpaquePredicates" "\
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress EncodeLiteralsOpaquePredicates
+setup_tigress_obfuscation "EncodeLiteralsOpaquePredicates" "\
+    --Transform=EncodeLiterals \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
-# # Tigress OpaquePredicatesEncodeArithmetic
-# setup_tigress_obfuscation "OpaquePredicatesEncodeArithmetic" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=EncodeArithmetic \
-#         --Functions=init_program"
-
-
-# # Tigress EncodeBranchesOpaquePredicates
-# setup_tigress_obfuscation "EncodeBranchesOpaquePredicates" "\
-#     --Transform=InitBranchFuns \
-#         --Functions=init_program \
-#     --Transform=AntiBranchAnalysis \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
-
-# # Tigress OpaquePredicatesEncodeBranches
-# setup_tigress_obfuscation "OpaquePredicatesEncodeBranches" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=InitBranchFuns \
-#         --Functions=init_program \
-#     --Transform=AntiBranchAnalysis \
-#         --Functions=init_program"
+# Tigress OpaquePredicatesEncodeLiterals
+setup_tigress_obfuscation "OpaquePredicatesEncodeLiterals" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=EncodeLiterals \
+        --Functions=init_program"
 
 
-# # Tigress AntiAliasAnalysisOpaquePredicates
-# setup_tigress_obfuscation "AntiAliasAnalysisOpaquePredicates" "\
-#     --Transform=AntiAliasAnalysis \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env,plugin \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress EncodeArithmeticOpaquePredicates
+setup_tigress_obfuscation "EncodeArithmeticOpaquePredicates" "\
+    --Transform=EncodeArithmetic \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
-# # Tigress OpaquePredicatesAntiAliasAnalysis
-# setup_tigress_obfuscation "OpaquePredicatesAntiAliasAnalysis" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=AntiAliasAnalysis \
-#         --Functions=init_program"
-
-# # Tigress AntiTaintAnalysisOpaquePredicates
-# setup_tigress_obfuscation "AntiTaintAnalysisOpaquePredicates" "\
-#         --Transform=InitEntropy \
-#         --Functions=init_program \
-#    --Transform=AntiTaintAnalysis \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env,plugin \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
-
-# # Tigress OpaquePredicatesAntiTaintAnalysis
-# setup_tigress_obfuscation "OpaquePredicatesAntiTaintAnalysis" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#         --Transform=InitEntropy \
-#         --Functions=init_program \
-#    --Transform=AntiTaintAnalysis \
-#         --Functions=init_program"
+# Tigress OpaquePredicatesEncodeArithmetic
+setup_tigress_obfuscation "OpaquePredicatesEncodeArithmetic" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=EncodeArithmetic \
+        --Functions=init_program"
 
 
-# # Tigress OpaquePredicatesVirtualize
-# setup_tigress_obfuscation "OpaquePredicatesVirtualize" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program"
+# Tigress EncodeBranchesOpaquePredicates
+setup_tigress_obfuscation "EncodeBranchesOpaquePredicates" "\
+    --Transform=InitBranchFuns \
+        --Functions=init_program \
+    --Transform=AntiBranchAnalysis \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
-# # Tigress VirtualizeOpaquePredicates
-# setup_tigress_obfuscation "VirtualizeOpaquePredicates" "\
-#     --Transform=Virtualize \
-#         --VirtualizeDispatch=direct \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress OpaquePredicatesEncodeBranches
+setup_tigress_obfuscation "OpaquePredicatesEncodeBranches" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=InitBranchFuns \
+        --Functions=init_program \
+    --Transform=AntiBranchAnalysis \
+        --Functions=init_program"
 
-# # Tigress OpaquePredicatesFlatten
-# setup_tigress_obfuscation "OpaquePredicatesFlatten" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=Flatten \
-#         --Functions=init_program"
 
-# # Tigress FlattenOpaquePredicates
-# setup_tigress_obfuscation "FlattenOpaquePredicates" "\
-#     --Transform=Flatten \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress AntiAliasAnalysisOpaquePredicates
+setup_tigress_obfuscation "AntiAliasAnalysisOpaquePredicates" "\
+    --Transform=AntiAliasAnalysis \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env,plugin \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
-# # Tigress OpaquePredicatesSelfModify
-# setup_tigress_obfuscation "OpaquePredicatesSelfModify" "\
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10 \
-#     --Transform=SelfModify  \
-#         --Functions=init_program"
+# Tigress OpaquePredicatesAntiAliasAnalysis
+setup_tigress_obfuscation "OpaquePredicatesAntiAliasAnalysis" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=AntiAliasAnalysis \
+        --Functions=init_program"
 
-# # Tigress SelfModifyOpaquePredicates
-# setup_tigress_obfuscation "SelfModifyOpaquePredicates" "\
-#     --Transform=SelfModify  \
-#         --Functions=init_program \
-#     --Inputs="+1:int:42,-1:length:1?10" \
-#     --Transform=InitEntropy \
-#         --Functions=init_program \
-#     --Transform=InitOpaque \
-#         --Functions=init_program \
-#         --InitOpaqueCount=2 \
-#         --InitOpaqueStructs=list,array,input,env \
-#     --Transform=AddOpaque \
-#         --Functions=init_program \
-#         --AddOpaqueKinds=question \
-#         --AddOpaqueSplitKinds=inside \
-#         --AddOpaqueCount=10"
+# Tigress AntiTaintAnalysisOpaquePredicates
+setup_tigress_obfuscation "AntiTaintAnalysisOpaquePredicates" "\
+        --Transform=InitEntropy \
+        --Functions=init_program \
+   --Transform=AntiTaintAnalysis \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env,plugin \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
+
+# Tigress OpaquePredicatesAntiTaintAnalysis
+setup_tigress_obfuscation "OpaquePredicatesAntiTaintAnalysis" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+        --Transform=InitEntropy \
+        --Functions=init_program \
+   --Transform=AntiTaintAnalysis \
+        --Functions=init_program"
+
+
+# Tigress OpaquePredicatesVirtualize
+setup_tigress_obfuscation "OpaquePredicatesVirtualize" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program"
+
+# Tigress VirtualizeOpaquePredicates
+setup_tigress_obfuscation "VirtualizeOpaquePredicates" "\
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
+
+# Tigress OpaquePredicatesFlatten
+setup_tigress_obfuscation "OpaquePredicatesFlatten" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=Flatten \
+        --Functions=init_program"
+
+# Tigress FlattenOpaquePredicates
+setup_tigress_obfuscation "FlattenOpaquePredicates" "\
+    --Transform=Flatten \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
+
+# Tigress OpaquePredicatesSelfModify
+setup_tigress_obfuscation "OpaquePredicatesSelfModify" "\
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10 \
+    --Transform=SelfModify  \
+        --Functions=init_program"
+
+# Tigress SelfModifyOpaquePredicates
+setup_tigress_obfuscation "SelfModifyOpaquePredicates" "\
+    --Transform=SelfModify  \
+        --Functions=init_program \
+    --Inputs="+1:int:42,-1:length:1?10" \
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueCount=2 \
+        --InitOpaqueStructs=list,array,input,env \
+    --Transform=AddOpaque \
+        --Functions=init_program \
+        --AddOpaqueKinds=question \
+        --AddOpaqueSplitKinds=inside \
+        --AddOpaqueCount=10"
 
 
 # =========================Not working because of restraints: ==========================

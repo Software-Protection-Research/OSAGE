@@ -2,7 +2,7 @@
 
 Compile and obfuscate C programs with different compilers and obfuscators.
 
-## New Way Docker Compose
+## New Way Docker Compose (Not yet working)
 
 docker-compose build
 docker-compose up
@@ -32,6 +32,8 @@ sudo docker attach "#pid"
 
 ## Make
 
+* make compile #Creates obfuscated files and executables
+
 * make check #checks the file structure and if the dependencies are resolved.
 * make all   #runs check and compiles all scripts
 
@@ -41,6 +43,7 @@ sudo docker attach "#pid"
 
 ## How to use tmux
 
+* First check if tmux is running with "tmux a"
 * call "tmux" to open session
 * (optional) start sudo sh docker_run.sh
 * Detach from tmux: Strg+B -> D
