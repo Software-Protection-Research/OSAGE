@@ -1,0 +1,1 @@
+gcc  -I. -I./lib  -Ilib -I./lib -Isrc -I./src -g -O2 -MT src/wc.o -MD -MP  -c -o src/wc.o ./src/wc.obf.c
