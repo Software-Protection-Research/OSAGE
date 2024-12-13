@@ -902,3 +902,56 @@ setup_tigress_obfuscation "AntiTaintAnalysisAntiAliasAnalysis" "\
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program"
+
+
+# <<Tigress.WARNING>> SelfModify: Gcc only allows 30 labels to asm(). We exceeded that limit with the list of labels that can be jumped to (we're not smart at computing that exactly at the moment). We therefore randomly truncated this list. If this causes you problems switch to clang instead.
+# <<Tigress.CIL-BUG>> /opt/samplegenerator/src_strings/anagram/anagram.c:75: Simplify: There should not be a "?:" operator here.
+# <<Tigress>> <<GoblintCil__Errormsg.Error>> Tigress unknown exception raised
+# Tigress AntiAliasAnalysisSelfModify
+setup_tigress_obfuscation "AntiAliasAnalysisSelfModify" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env \
+    --Transform=AntiAliasAnalysis \
+        --Functions=init_program \
+    --Transform=SelfModify  \
+        --Functions=init_program"
+
+
+
+# <<Tigress.WARNING>> SelfModify: Gcc only allows 30 labels to asm(). We exceeded that limit with the list of labels that can be jumped to (we're not smart at computing that exactly at the moment). We therefore randomly truncated this list. If this causes you problems switch to clang instead.
+setup_tigress_obfuscation "SelfModifySplit" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env \
+    --Transform=SelfModify  \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=deep,block,top \
+        --SplitCount=100 \
+        --Functions=init_program \
+    --Transform=Split \
+        --SplitKinds=block \
+        --SplitCount=100 \
+        --Functions=/.*init_program.*/"
+
+
+# <<Tigress.CIL-BUG>> :-1:   Simplify: makeThreeAddress for AddrOf(LV=_TIG_VZ_iCvu_4_checkAnagram_$locals[0], LVT=char )
+# <<Tigress>> <<GoblintCil__Errormsg.Error>> Tigress unknown exception raised
+# Raised at Stdlib__String.index_rec in file "string.ml", line 128, characters 19-34
+# Called from Stdlib__String.index in file "string.ml", line 132, characters 16-42
+setup_tigress_obfuscation "VirtualizeSelfModify" "\
+    --Transform=InitEntropy \
+        --Functions=init_program \
+    --Transform=InitOpaque \
+        --Functions=init_program \
+        --InitOpaqueStructs=list,array,env \
+    --Transform=Virtualize \
+        --VirtualizeDispatch=direct \
+        --Functions=init_program \
+    --Transform=SelfModify  \
+        --Functions=init_program "
