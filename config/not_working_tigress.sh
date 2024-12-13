@@ -687,62 +687,10 @@ setup_tigress_obfuscation "EncodeBranchesSelfModify" "\
     --Transform=SelfModify  \
         --Functions=init_program"
 
-
-# <<Tigress.CIL-WARNING>> :-1: The name entropyThread is used for two distinct globals
-# /opt/samplegenerator/src_strings/anagram/anagram.c:120:6: error: redefinition of ‘entropyThread’
-# Tigress AntiAliasAnalysisAntiTaintAnalysis NotWorking! 
-setup_tigress_obfuscation "AntiAliasAnalysisAntiTaintAnalysis" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-   --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-
-# <<Tigress.WARNING>> SelfModify: Gcc only allows 30 labels to asm(). We exceeded that limit with the list of labels that can be jumped to (we're not smart at computing that exactly at the moment). We therefore randomly truncated this list. If this causes you problems switch to clang instead.
-# <<Tigress.CIL-BUG>> /opt/samplegenerator/src_strings/anagram/anagram.c:75: Simplify: There should not be a "?:" operator here.
-
-# Tigress AntiAliasAnalysisSelfModify NotWorking!
-setup_tigress_obfuscation "AntiAliasAnalysisSelfModify" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program \
-    --Transform=SelfModify  \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-
 # <<Tigress>> Loading definitions of machine dependent types from: /opt/tigress/4.0.9/machdeps_json/x86_64_Linux_Gcc_0.json
 # <<Tigress.CIL-WARNING>> :-1: The name entropyThread is used for two distinct globals
 # Tigress AntiAliasAnalysisEncodeLiterals NotWorking! Retry
-setup_tigress_obfuscation "AntiAliasAnalysisEncodeLiterals" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=EncodeLiterals \
-        --Functions=init_program"
+
 
 # <<Tigress.CIL-WARNING>> :-1: The name entropyThread is used for two distinct globals
 # Tigress AntiTaintAnalysisEncodeLiterals NotWorking! Retry
@@ -750,8 +698,6 @@ setup_tigress_obfuscation "AntiTaintAnalysisEncodeLiterals" "\
     --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
@@ -766,8 +712,6 @@ setup_tigress_obfuscation "AntiTaintAnalysisSelfModify" "\
     --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
