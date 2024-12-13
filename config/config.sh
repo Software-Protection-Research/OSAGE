@@ -340,19 +340,10 @@ setup_tigress_obfuscation "Split" "\
     --Transform=Split \
        --SplitKinds=deep,block,top \
        --SplitCount=100 \
-       --Functions=init_program \
-   --Transform=Split \
-       --SplitKinds=block \
-       --SplitCount=100 \
-       --Functions=/.\*init_program.\*/ "
+       --Functions=init_program"
 
 # Tigrss EncodeLiterals
 setup_tigress_obfuscation "EncodeLiterals" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -364,7 +355,6 @@ setup_tigress_obfuscation "EncodeLiterals" "\
 # Tigrss EncodeArithmetic
 setup_tigress_obfuscation "EncodeArithmetic" "\
     --Transform=EncodeArithmetic \
-        --Functions=init_program"
         --Functions=init_program"
 
 # Tigrss EncodeBranches
@@ -389,21 +379,14 @@ setup_tigress_obfuscation "AntiTaintAnalysis" "\
     --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
-# Tigress SelfModify
-setup_tigress_obfuscation "SelfModify" "\
 # Tigress SelfModify
 setup_tigress_obfuscation "SelfModify" "\
         --Transform=InitEntropy \
             --Functions=init_program \
         --Transform=InitOpaque \
             --Functions=init_program \
-            --InitOpaqueStructs=list,array,env \
             --InitOpaqueStructs=list,array,env \
         --Transform=SelfModify  \
             --Functions=init_program"
@@ -449,7 +432,6 @@ setup_tigress_obfuscation "TigressRecipe2" "\
        --SelfModifyBogusInstructions=10"
 
 # ============ Tigress Pairwise Combination Scripts ============
-# ============ Tigress Pairwise Combination Scripts ============
 # Tigress VirtualizeFlatten
 setup_tigress_obfuscation "VirtualizeFlatten" "\
     --Transform=Virtualize \
@@ -474,18 +456,10 @@ setup_tigress_obfuscation "VirtualizeSplit" "\
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/"
+        --Functions=init_program"
 
 # Tigress SplitVirtualize
 setup_tigress_obfuscation "SplitVirtualize" "\
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
     --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
@@ -504,21 +478,11 @@ setup_tigress_obfuscation "VirtualizeEncodeLiterals" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program"
 
 # Tigress EncodeLiteralsVirtualize
 setup_tigress_obfuscation "EncodeLiteralsVirtualize" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -592,10 +556,7 @@ setup_tigress_obfuscation "AntiAliasAnalysisAntiTaintAnalysis" "\
     --Transform=AntiAliasAnalysis \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 setup_tigress_obfuscation "AntiAliasAnalysisEncodeLiterals" "\
     --Transform=InitEntropy \
@@ -613,20 +574,12 @@ setup_tigress_obfuscation "FlattenSplit" "\
     --Transform=Flatten \
         --Functions=init_program \
     --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
         --Functions=/.*init_program.*/"
 
 # Tigress SplitFlatten
 setup_tigress_obfuscation "SplitFlatten" "\
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
     --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
@@ -643,21 +596,11 @@ setup_tigress_obfuscation "FlattenEncodeLiterals" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program"
 
 # Tigress EncodeLiteralsFlatten
 setup_tigress_obfuscation "EncodeLiteralsFlatten" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -697,63 +640,42 @@ setup_tigress_obfuscation "FlattenAntiAliasAnalysis" "\
     --Transform=Flatten \
         --Functions=init_program \
     --Transform=InitEntropy \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program"
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program"
 
 # Tigress AntiAliasAnalysisFlatten
 setup_tigress_obfuscation "AntiAliasAnalysisFlatten" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program \
     --Transform=Flatten \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress FlattenAntiTaintAnalysis
 setup_tigress_obfuscation "FlattenAntiTaintAnalysis" "\
     --Transform=Flatten \
         --Functions=init_program \
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress AntiTaintAnalysisFlatten
 setup_tigress_obfuscation "AntiTaintAnalysisFlatten" "\
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program \
     --Transform=Flatten \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress SplitEncodeLiterals
 setup_tigress_obfuscation "SplitEncodeLiterals" "\
@@ -761,15 +683,6 @@ setup_tigress_obfuscation "SplitEncodeLiterals" "\
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -785,21 +698,12 @@ setup_tigress_obfuscation "EncodeLiteralsSplit" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program \
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/"
+        --Functions=init_program"
 
 # Tigress SplitEncodeArithmetic
 setup_tigress_obfuscation "SplitEncodeArithmetic" "\
@@ -807,10 +711,6 @@ setup_tigress_obfuscation "SplitEncodeArithmetic" "\
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
     --Transform=EncodeArithmetic \
         --Functions=init_program"
 
@@ -822,10 +722,7 @@ setup_tigress_obfuscation "EncodeArithmeticSplit" "\
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/"
+    --Transform=Split"
 
 
 # Tigress SplitEncodeBranches
@@ -834,10 +731,6 @@ setup_tigress_obfuscation "SplitEncodeBranches" "\
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
     --Transform=InitBranchFuns \
         --Functions=init_program \
     --Transform=AntiBranchAnalysis \
@@ -852,11 +745,7 @@ setup_tigress_obfuscation "EncodeBranchesSplit" "\
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/"
+        --Functions=init_program"
 
 # Tigress SplitAntiAliasAnalysis
 setup_tigress_obfuscation "SplitAntiAliasAnalysis" "\
@@ -864,18 +753,10 @@ setup_tigress_obfuscation "SplitAntiAliasAnalysis" "\
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
         --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
-    --Transform=InitEntropy \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program"
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program"
@@ -887,74 +768,38 @@ setup_tigress_obfuscation "AntiAliasAnalysisSplit" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program \
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
-        --SplitKinds=block \
-        --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress SplitAntiTaintAnalysis
 setup_tigress_obfuscation "SplitAntiTaintAnalysis" "\
     --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
         --Functions=/.*init_program.*/ \
         --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program "
 
 # Tigress AntiTaintAnalysisSplit
 setup_tigress_obfuscation "AntiTaintAnalysisSplit" "\
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program \
     --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
-        --Functions=/.*init_program.*/ \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=/.*init_program.*/"
 
 
 # Tigress SplitSelfModify
 setup_tigress_obfuscation "SplitSelfModify" "\
-
-# Tigress SplitSelfModify
-setup_tigress_obfuscation "SplitSelfModify" "\
-    --Transform=Split \
-        --SplitKinds=deep,block,top \
-        --SplitCount=100 \
-        --Functions=init_program \
     --Transform=Split \
         --SplitKinds=block \
         --SplitCount=100 \
@@ -963,18 +808,12 @@ setup_tigress_obfuscation "SplitSelfModify" "\
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=SelfModify  \
         --Functions=init_program"
 
 # Tigress EncodeLiteralsEncodeArithmetic
 setup_tigress_obfuscation "EncodeLiteralsEncodeArithmetic" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -990,12 +829,9 @@ setup_tigress_obfuscation "EncodeArithmeticEncodeLiterals" "\
     --Transform=EncodeArithmetic \
         --Functions=init_program \
     --Transform=InitEntropy \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
-    --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program"
@@ -1004,11 +840,6 @@ setup_tigress_obfuscation "EncodeArithmeticEncodeLiterals" "\
 
 # Tigress EncodeLiteralsEncodeBranches
 setup_tigress_obfuscation "EncodeLiteralsEncodeBranches" "\
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
@@ -1028,11 +859,9 @@ setup_tigress_obfuscation "EncodeBranchesEncodeLiterals" "\
     --Transform=AntiBranchAnalysis \
         --Functions=init_program \
     --Transform=InitEntropy \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program"
@@ -1040,23 +869,14 @@ setup_tigress_obfuscation "EncodeBranchesEncodeLiterals" "\
 # Tigress EncodeLiteralsAntiAliasAnalysis
 setup_tigress_obfuscation "EncodeLiteralsAntiAliasAnalysis" "\
     --Transform=InitEntropy \
-# Tigress EncodeLiteralsAntiAliasAnalysis
-setup_tigress_obfuscation "EncodeLiteralsAntiAliasAnalysis" "\
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=EncodeLiterals \
         --Functions=init_program \
     --Transform=AntiAliasAnalysis \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress EncodeArithmeticEncodeBranches
 setup_tigress_obfuscation "EncodeArithmeticEncodeBranches" "\
@@ -1081,13 +901,9 @@ setup_tigress_obfuscation "EncodeArithmeticAntiAliasAnalysis" "\
     --Transform=EncodeArithmetic \
         --Functions=init_program \
     --Transform=InitEntropy \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
-    --Transform=AntiAliasAnalysis \
-        --Functions=init_program"
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program"
@@ -1099,45 +915,28 @@ setup_tigress_obfuscation "AntiAliasAnalysisEncodeArithmetic" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-    --Transform=InitEntropy \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program \
     --Transform=EncodeArithmetic \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program "
 
 # Tigress EncodeArithmeticAntiTaintAnalysis
 setup_tigress_obfuscation "EncodeArithmeticAntiTaintAnalysis" "\
     --Transform=EncodeArithmetic \
         --Functions=init_program \
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program"
 
 # Tigress AntiTaintAnalysisEncodeArithmetic
 setup_tigress_obfuscation "AntiTaintAnalysisEncodeArithmetic" "\
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program \
     --Transform=EncodeArithmetic \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
-
-
-# Tigress EncodeArithmeticSelfModify
-setup_tigress_obfuscation "EncodeArithmeticSelfModify" "\
+        --Functions=init_program"
 
 # Tigress EncodeArithmeticSelfModify
 setup_tigress_obfuscation "EncodeArithmeticSelfModify" "\
@@ -1150,12 +949,7 @@ setup_tigress_obfuscation "EncodeArithmeticSelfModify" "\
         --InitOpaqueStructs=list,array,env \
     --Transform=SelfModify  \
         --Functions=init_program"
-        --InitOpaqueStructs=list,array,env \
-    --Transform=SelfModify  \
-        --Functions=init_program"
 
-# Tigress SelfModifyEncodeArithmetic
-setup_tigress_obfuscation "SelfModifyEncodeArithmetic" "\
 # Tigress SelfModifyEncodeArithmetic
 setup_tigress_obfuscation "SelfModifyEncodeArithmetic" "\
     --Transform=InitEntropy \
@@ -1163,15 +957,11 @@ setup_tigress_obfuscation "SelfModifyEncodeArithmetic" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-        --InitOpaqueStructs=list,array,env \
     --Transform=SelfModify  \
         --Functions=init_program \
     --Transform=EncodeArithmetic \
         --Functions=init_program"
 
-
-# Tigress EncodeBranchesAntiAliasAnalysis
-setup_tigress_obfuscation "EncodeBranchesAntiAliasAnalysis" "\
 
 # Tigress EncodeBranchesAntiAliasAnalysis
 setup_tigress_obfuscation "EncodeBranchesAntiAliasAnalysis" "\
@@ -1180,11 +970,9 @@ setup_tigress_obfuscation "EncodeBranchesAntiAliasAnalysis" "\
     --Transform=AntiBranchAnalysis \
         --Functions=init_program \
     --Transform=InitEntropy \
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program"
@@ -1192,13 +980,9 @@ setup_tigress_obfuscation "EncodeBranchesAntiAliasAnalysis" "\
 # Tigress AntiAliasAnalysisEncodeBranches
 setup_tigress_obfuscation "AntiAliasAnalysisEncodeBranches" "\
     --Transform=InitEntropy \
-# Tigress AntiAliasAnalysisEncodeBranches
-setup_tigress_obfuscation "AntiAliasAnalysisEncodeBranches" "\
-    --Transform=InitEntropy \
         --Functions=init_program \
     --Transform=InitOpaque \
         --Functions=init_program \
-        --InitOpaqueStructs=list,array,env \
         --InitOpaqueStructs=list,array,env \
     --Transform=AntiAliasAnalysis \
         --Functions=init_program \
@@ -1213,25 +997,21 @@ setup_tigress_obfuscation "EncodeBranchesAntiTaintAnalysis" "\
         --Functions=init_program \
     --Transform=AntiBranchAnalysis \
         --Functions=init_program \
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program"
 
 # Tigress AntiTaintAnalysisEncodeBranches
 setup_tigress_obfuscation "AntiTaintAnalysisEncodeBranches" "\
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
-   --Transform=AntiTaintAnalysis \
+    --Transform=AntiTaintAnalysis \
         --Functions=init_program \
     --Transform=InitBranchFuns \
         --Functions=init_program \
     --Transform=AntiBranchAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 setup_tigress_obfuscation "EncodeLiteralsAntiTaintAnalysis" "\
     --Transform=InitEntropy \
@@ -1258,34 +1038,24 @@ setup_tigress_obfuscation "SelfModifyAntiAliasAnalysis" "\
 
 # Tigress AntiTaintAnalysisVirtualize
 setup_tigress_obfuscation "AntiTaintAnalysisVirtualize" "\
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
         --Functions=init_program \
     --Transform=Virtualize \
         --VirtualizeDispatch=direct \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
 # Tigress VirtualizeAntiTaintAnalysis
 setup_tigress_obfuscation "VirtualizeAntiTaintAnalysis" "\
     --Transform=Virtualize \
         --VirtualizeDispatch=direct \
         --Functions=init_program \
-        --Transform=InitEntropy \
+    --Transform=InitEntropy \
         --Functions=init_program \
    --Transform=AntiTaintAnalysis \
-        --Functions=init_program \
-    --Transform=InitOpaque \
-        --Functions=init_program \
-        --InitOpaqueStructs=list,array,env"
-        --InitOpaqueStructs=list,array,env"
+        --Functions=init_program"
 
-# Tigress FlattenSelfModify
-setup_tigress_obfuscation "FlattenSelfModify" "\
 # Tigress FlattenSelfModify
 setup_tigress_obfuscation "FlattenSelfModify" "\
     --Transform=Flatten \
@@ -1295,10 +1065,8 @@ setup_tigress_obfuscation "FlattenSelfModify" "\
     --Transform=InitOpaque \
         --Functions=init_program \
         --InitOpaqueStructs=list,array,env \
-        --InitOpaqueStructs=list,array,env \
     --Transform=SelfModify  \
-        --Functions=init_program "
-        --Functions=init_program "
+        --Functions=init_program"
 
 # ============ END SECRYPT 2024 (camera-ready) ============
 
