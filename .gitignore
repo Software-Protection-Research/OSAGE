@@ -1,6 +1,7 @@
 *~
 *.swp
 *.swo
+*.zip
 __pycache__
 out/
 .idea
