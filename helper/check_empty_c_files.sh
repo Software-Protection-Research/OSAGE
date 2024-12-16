@@ -43,3 +43,6 @@ find "$latest_folder" -mindepth 1 -maxdepth 1 -type d -name 'prog_tigress*' -exe
 # Print the total count of .c files with no code
 echo "Check complete. .c files with no code are listed in $no_code_files."
 echo "Total .c files with no code: $(wc -l < "$no_code_files")"
+
+# sort the file for easier comparison
+sort -o "$no_code_files" "$no_code_files"

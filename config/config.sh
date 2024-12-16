@@ -721,8 +721,7 @@ setup_tigress_obfuscation "EncodeArithmeticSplit" "\
     --Transform=Split \
         --SplitKinds=deep,block,top \
         --SplitCount=100 \
-        --Functions=init_program \
-    --Transform=Split"
+        --Functions=init_program"
 
 
 # Tigress SplitEncodeBranches
