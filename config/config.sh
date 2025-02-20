@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_coreutils"
+export abcdef_dir_src="${abcdef_dir_base}/src_all_excl_merged"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -278,7 +278,8 @@ if [ "$use_tigress" = true ]; then
     export tigress_flags_4_0_9=""
     # Tigress options
     export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:14.2.1"
-    export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*"
+    # export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*" ToDo: Change back to this
+    export tigress_options_general=""
     # Define the path to the compilation folder
     compilation_folder="compilation"
     rm ${compilation_folder}/compile-tigress-4_0_9-*

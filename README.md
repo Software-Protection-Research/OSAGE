@@ -85,3 +85,25 @@ obfuscate strobfs substitution op hello.c
 ## Zipping out folder
 
 zip -r latest.zip out/run_2024_12_10_11_37_16
+
+## IR2Vec für SebR
+
+unobfuscated und obfuscated files mit clang -S -emit-llvm test.c -o test.ll
+Dann
+IR2Vec->(example function benutzten um die Vektoren zu erzeugen)Irgendwas File und Functions davon rausbekommen
+/.ll files in tripplets zerlegen
+das sind 3 Instruktionen, dann aus diesen tripplets, für jede sbekommt man ein embedding das ist irgendein vektor(irgendwelche Zaheln). dan weiß man zu jedem Triplet wie es obfuscatet worden ist.
+LL-Files in IR2Vec-> daraus bekommt man Programmvektor
+
+1 csv output für block, function und Programm
+
+dann
+In CSV:
+Vektor
+Filename
+TripletID(vielleicht)
+Obfuscation
+
+1 CSV nur mit ProgVector FileName + Obfuscation + Vektoren mit Überschriftung 0-300
+1 CSV mit FunctionVectors FileName + FunctionName + ObfuscationType + Vektoren
+1 CSV mit Instrction Vectors FileName + ObfuscationType + Vektoren

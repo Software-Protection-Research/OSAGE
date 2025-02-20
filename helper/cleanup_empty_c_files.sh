@@ -60,7 +60,7 @@ remove_files_with_empty_c_files() {
 export -f remove_files_with_empty_c_files
 
 # Activate or deactivate the removal of files with empty .c files
-REMOVE_FILES_WITH_EMPTY_C_FILES=true
+REMOVE_FILES_WITH_EMPTY_C_FILES=false
 
 if [[ "$REMOVE_FILES_WITH_EMPTY_C_FILES" = true ]]; then
     echo "Removing files associated with empty .c files..."
