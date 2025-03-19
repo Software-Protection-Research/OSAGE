@@ -4,6 +4,7 @@
     "files.associations": {
         "config.h": "c",
         "c-ctype.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "includes.h": "c"
     }
 }
