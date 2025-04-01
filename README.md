@@ -107,3 +107,7 @@ Obfuscation
 1 CSV nur mit ProgVector FileName + Obfuscation + Vektoren mit Überschriftung 0-300
 1 CSV mit FunctionVectors FileName + FunctionName + ObfuscationType + Vektoren
 1 CSV mit Instrction Vectors FileName + ObfuscationType + Vektoren
+
+## X86 oracle gt
+
+<https://github.com/junxzm1990/x86-sok/tree/master>

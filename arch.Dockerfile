@@ -6,6 +6,37 @@ RUN set -eux; \
 	echo -e "[multilib] \n Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf; \
 	pacman -Syyu --noconfirm;
 
+# # Install temporary GCC and dependencies
+# RUN set -eux; \
+#     pacman -S --noconfirm \
+#         base-devel \
+#         wget \
+#         tar \
+#         gmp \
+#         mpfr \
+#         libmpc \
+#         zlib \
+#         gcc \
+#         isl \
+#         binutils \
+#         libtool \
+#         gettext \
+#         ;
+
+# # Build GCC 8.1.0 from source
+# RUN set -eux; \
+#     cd /tmp && \
+#     wget http://ftp.gnu.org/gnu/gcc/gcc-8.1.0/gcc-8.1.0.tar.gz && \
+#     tar -xvf gcc-8.1.0.tar.gz && \
+#     cd gcc-8.1.0 && \
+#     ./contrib/download_prerequisites && \
+#     mkdir build && cd build && \
+#     ../configure --enable-languages=c,c++ --disable-multilib --with-system-zlib && \
+#     make -j2 V=1 && \
+#     make install && \
+#     gcc --version && \
+    # cd / && rm -rf /tmp/gcc-8.1.0;
+
 RUN set -eux; \
     # GCC
 	pacman -S --noconfirm \
