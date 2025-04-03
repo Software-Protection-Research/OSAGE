@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat context_free context_new context_range_get context_range_set context_role_get context_role_set context_str context_type_get context_type_set context_user_get context_user_set dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note fgetfilecon fgetfilecon_raw freecon fsetfilecon fsetfilecon_raw gcd getcon getcon_raw getfilecon getfilecon_raw getfscreatecon getfscreatecon_raw initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm lgetfilecon lgetfilecon_raw lsetfilecon lsetfilecon_raw main make_timespec matchpathcon matchpathcon_init_prefix npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot security_check_context security_check_context_raw security_compute_create security_compute_create_raw select_plural setexeccon setexeccon_raw setfilecon setfilecon_raw setfscreatecon setfscreatecon_raw string_to_security_class stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 

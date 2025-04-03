@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __gl_setmode __uint16_identity __uint32_identity __uint64_identity bad_cast base16_decode_ctx base16_decode_ctx_init base16_encode base16_length base2_decode_ctx_init base2_length base2lsbf_decode_ctx base2lsbf_encode base2msbf_decode_ctx base2msbf_encode base32_decode_ctx_init base32_decode_ctx_init_wrapper base32_decode_ctx_wrapper base32_length_wrapper base32_required_padding base32hex_decode_ctx_init_wrapper base32hex_decode_ctx_wrapper base32hex_encode base64_decode_ctx_init base64_decode_ctx_init_wrapper base64_decode_ctx_wrapper base64_length_wrapper base64_required_padding base64url_decode_ctx_init_wrapper base64url_decode_ctx_wrapper base64url_encode c_isalnum c_isalpha c_isascii c_isblank c_iscntrl c_isdigit c_isgraph c_islower c_isprint c_ispunct c_isspace c_isupper c_isxdigit c_tolower c_toupper chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status do_decode do_encode dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note finish_and_exit gcd init_inbuf initialize_exit_failure is_ENOTSUP is_nul isbase32 isbase64 isubase16 isubase2 isubase32 isubase32hex isubase64 isubase64url isuz85 lchmodat lchownat lcm main make_timespec no_required_padding npgettext_aux pgettext_aux prepare_inbuf psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural set_binary_mode stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage wrap_write write_error xnrealloc xset_binary_mode xset_binary_mode_error z85_decode_ctx z85_decode_ctx_init z85_encode z85_length 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_rG8V_envp": "FUN: '_TIG_IZ_rG8V_envp__INIT'",
-          "_TIG_IZ_rG8V_argv": "FUN: '_TIG_IZ_rG8V_argv__INIT'",
-          "_TIG_IZ_rG8V_argc": "FUN: '_TIG_IZ_rG8V_argc__INIT'"
+          "_TIG_IZ_EtA9_envp": "FUN: '_TIG_IZ_EtA9_envp__INIT'",
+          "_TIG_IZ_EtA9_argv": "FUN: '_TIG_IZ_EtA9_argv__INIT'",
+          "_TIG_IZ_EtA9_argc": "FUN: '_TIG_IZ_EtA9_argc__INIT'"
         }
       }
     },
@@ -3446,6 +3446,10 @@ typedef __uint_least8_t uint_least8_t;
 extern char const   *quote(char const   *arg ) ;
 /* END FUNCTION-DECL-EXTERN quote LOC=./lib/quote.h:44 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_EtA9_argc LOC=UNKNOWN */
+int _TIG_IZ_EtA9_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_EtA9_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
 __inline static void emit_update_parameters_note(void) ;
 /* END FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
@@ -3605,10 +3609,6 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) clearerr)(
 /* compiler builtin: 
    _Float128 __builtin_rintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_rG8V_argc LOC=UNKNOWN */
-int _TIG_IZ_rG8V_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_rG8V_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=/usr/include/stdlib.h:257 */
 #line 257 "/usr/include/stdlib.h"
@@ -5641,6 +5641,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
 extern int getchar(void) ;
 /* END FUNCTION-DECL-EXTERN getchar LOC=/usr/include/stdio.h:520 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_EtA9_argv LOC=UNKNOWN */
+char **_TIG_IZ_EtA9_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_EtA9_argv LOC=UNKNOWN */
+
 /* BEGIN ENUM __anonenum_288797321 LOC=src/system.h:86 */
 #line 86 "src/system.h"
 enum __anonenum_288797321 {
@@ -5818,10 +5822,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dgettext)
 extern void quotearg_free(void) ;
 /* END FUNCTION-DECL-EXTERN quotearg_free LOC=./lib/quotearg.h:434 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_rG8V_envp LOC=UNKNOWN */
-char **_TIG_IZ_rG8V_envp ;
-/* END VARIABLE-DECL _TIG_IZ_rG8V_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=/usr/include/string.h:80 */
 #line 80 "/usr/include/string.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) __memcmpeq)(void const   *__s1 ,
@@ -5864,6 +5864,10 @@ extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) 
    unsigned __int128 __builtin_subcll(unsigned long long const    , unsigned long long const    ,
                                       unsigned long long const    , unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_subcll LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_EtA9_envp LOC=UNKNOWN */
+char **_TIG_IZ_EtA9_envp ;
+/* END VARIABLE-DECL _TIG_IZ_EtA9_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -7512,7 +7516,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_rG8V_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_EtA9_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7678,10 +7682,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
 extern int error_one_per_line ;
 /* END VARIABLE-DECL-EXTERN error_one_per_line LOC=/usr/include/error.h:48 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_rG8V_argc LOC=UNKNOWN */
-int _TIG_IZ_rG8V_argc ;
-/* END VARIABLE-DECL _TIG_IZ_rG8V_argc LOC=UNKNOWN */
-
 /* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=/usr/include/stdlib.h:77 */
 #line 77 "/usr/include/stdlib.h"
 struct __anonstruct_lldiv_t_103911545 {
@@ -7806,10 +7806,6 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_rG8V_argv LOC=UNKNOWN */
-char **_TIG_IZ_rG8V_argv ;
-/* END VARIABLE-DECL _TIG_IZ_rG8V_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan2(double  , double  ) ;  */
@@ -7921,6 +7917,10 @@ extern int ( __attribute__((__nonnull__(1,2))) scandir64)(char const   * __restr
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strstr)(char const   *__haystack ,
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN strstr LOC=/usr/include/string.h:350 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_EtA9_argv LOC=UNKNOWN */
+char **_TIG_IZ_EtA9_argv ;
+/* END VARIABLE-DECL _TIG_IZ_EtA9_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN execv LOC=/usr/include/unistd.h:584 */
 #line 584 "/usr/include/unistd.h"
@@ -10695,6 +10695,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setregid)(_
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ferror_unlocked)(FILE *__stream ) ;
 /* END FUNCTION-DECL-EXTERN ferror_unlocked LOC=/usr/include/stdio.h:796 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_EtA9_argc LOC=UNKNOWN */
+int _TIG_IZ_EtA9_argc ;
+/* END VARIABLE-DECL _TIG_IZ_EtA9_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./lib/propername.h:120 */
 #line 120 "./lib/propername.h"
 extern char const   *proper_name_utf8(char const   *name_ascii , char const   *name_utf8 ) ;
@@ -11230,6 +11234,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 /* compiler builtin: 
    _Complex float __builtin_clogf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_EtA9_envp LOC=UNKNOWN */
+char **_TIG_IZ_EtA9_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_EtA9_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 /* compiler builtin: 
@@ -11960,10 +11968,6 @@ extern int ( /* format attribute */  vdprintf)(int __fd , char const   * __restr
                                                __gnuc_va_list __arg ) ;
 /* END FUNCTION-DECL-EXTERN vdprintf LOC=/usr/include/stdio.h:403 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_rG8V_envp LOC=UNKNOWN */
-char **_TIG_IZ_rG8V_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_rG8V_envp LOC=UNKNOWN */
-
 /* BEGIN STRUCT statx LOC=/usr/include/linux/stat.h:99 */
 #line 99 "/usr/include/linux/stat.h"
 struct statx {
@@ -12297,10 +12301,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    char *__builtin_strcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_rG8V_argv LOC=UNKNOWN */
-char **_TIG_IZ_rG8V_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_rG8V_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=/usr/include/stdio.h:378 */
 #line 378 "/usr/include/stdio.h"
@@ -14655,7 +14655,7 @@ __inline _Bool isubase64(unsigned char ch )
 /* END FUNCTION-DEF isubase64 LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_rG8V_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_EtA9_formal_envp ) 
 { 
   int opt ;
   FILE *input_fh ;
@@ -15366,34 +15366,34 @@ int main(int argc , char **argv , char **_TIG_IZ_rG8V_formal_envp )
   }
   {
   {
-  _TIG_IZ_rG8V_envp = (char **)0;
-  goto _TIG_IZ_rG8V_envp__INITINLINE__TIG_IZ_rG8V_envp__INIT;
+  _TIG_IZ_EtA9_envp = (char **)0;
+  goto _TIG_IZ_EtA9_envp__INITINLINE__TIG_IZ_EtA9_envp__INIT;
   }
-  _TIG_IZ_rG8V_envp__INITINLINE__TIG_IZ_rG8V_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_rG8V_argv = (char **)0;
-  goto _TIG_IZ_rG8V_argv__INITINLINE__TIG_IZ_rG8V_argv__INIT;
-  }
-  _TIG_IZ_rG8V_argv__INITINLINE__TIG_IZ_rG8V_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_EtA9_envp__INITINLINE__TIG_IZ_EtA9_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_rG8V_argc = 0;
-  goto _TIG_IZ_rG8V_argc__INITINLINE__TIG_IZ_rG8V_argc__INIT;
+  _TIG_IZ_EtA9_argv = (char **)0;
+  goto _TIG_IZ_EtA9_argv__INITINLINE__TIG_IZ_EtA9_argv__INIT;
   }
-  _TIG_IZ_rG8V_argc__INITINLINE__TIG_IZ_rG8V_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_EtA9_argv__INITINLINE__TIG_IZ_EtA9_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_EtA9_argc = 0;
+  goto _TIG_IZ_EtA9_argc__INITINLINE__TIG_IZ_EtA9_argc__INIT;
+  }
+  _TIG_IZ_EtA9_argc__INITINLINE__TIG_IZ_EtA9_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-rG8V--0":);
-    _TIG_IZ_rG8V_argc = argc;
-    _TIG_IZ_rG8V_argv = argv;
-    _TIG_IZ_rG8V_envp = _TIG_IZ_rG8V_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-EtA9--0":);
+    _TIG_IZ_EtA9_argc = argc;
+    _TIG_IZ_EtA9_argv = argv;
+    _TIG_IZ_EtA9_envp = _TIG_IZ_EtA9_formal_envp;
     break;
   }
 #line 1224 "src/basenc.c"

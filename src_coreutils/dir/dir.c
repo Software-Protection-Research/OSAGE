@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity abformat_init abmon_init add_ignore_pattern align_nstrftime assert_matching_dev_ino attach bad_cast basename_is_dot_or_dotdot btoc32 c32_apply_type_test c32isalnum c32isalpha c32isblank c32iscntrl c32isdigit c32isgraph c32islower c32isprint c32ispunct c32isspace c32isupper c32isxdigit c32tolower c32width c_isalnum c_isalpha c_isascii c_isblank c_iscntrl c_isdigit c_isgraph c_islower c_isprint c_ispunct c_isspace c_isupper c_isxdigit c_tolower c_toupper calc_req_mask calculate_columns chmodat chownat clear_files cmp_atime cmp_btime cmp_ctime cmp_extension cmp_mtime cmp_name cmp_size cmp_version cmp_width dcnpgettext_expr dcpgettext_expr decode_line_length decode_switches dev_ino_compare dev_ino_free dev_ino_hash dev_ino_pop dev_ino_push directory_status dired_dump_obstack dired_indent dired_outbuf dired_outbyte dired_outstring dirfirst_check do_lstat do_stat do_statx dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note errno_unsupported extract_dirs_from_files fgetfilecon file_escape file_escape_init file_failure file_has_acl_cache file_ignored file_or_link_mode fileinfo_name_width first_percent_b format_group format_group_width format_inode format_user format_user_or_group format_user_or_group_width format_user_width free_ent free_pending_ent freecon fsetfilecon fstat_for_ino gcd get_color_indicator get_funky_string get_link_name get_stat_atime get_stat_atime_ns get_stat_birthtime get_stat_birthtime_ns get_stat_btime get_stat_ctime get_stat_ctime_ns get_stat_mtime get_stat_mtime_ns get_type_indicator getcon getenv_quoting_style getfilecon getfilecon_cache gobble_file has_capability has_capability_cache indent init_column_info initialize_exit_failure initialize_ordering_vector is_ENOTSUP is_colored is_directory is_linked_directory is_nul is_smack_enabled known_term_type lchmodat lchownat lcm length_of_file_name_and_frills long_time_expected_width main make_timespec matchpathcon needs_quoting npgettext_aux off_cmp parse_ls_color patterns_match pgettext_aux prep_non_filename_text print_color_indicator print_current_files print_dir print_file_name_and_frills print_horizontal print_long_format print_many_per_line print_name_with_quoting print_type_indicator print_with_separator process_signals psame_inode ptr_align push_current_dired_pos put_indicator queue_directory quote_name quote_name_buf quote_name_width readdir_ignoring_dot_and_dotdot restore_default_color rev_strcmp_atime rev_strcmp_btime rev_strcmp_ctime rev_strcmp_df_atime rev_strcmp_df_btime rev_strcmp_df_ctime rev_strcmp_df_extension rev_strcmp_df_mtime rev_strcmp_df_name rev_strcmp_df_size rev_strcmp_df_width rev_strcmp_extension rev_strcmp_mtime rev_strcmp_name rev_strcmp_size rev_strcmp_width rev_xstrcoll_atime rev_xstrcoll_btime rev_xstrcoll_ctime rev_xstrcoll_df_atime rev_xstrcoll_df_btime rev_xstrcoll_df_ctime rev_xstrcoll_df_extension rev_xstrcoll_df_mtime rev_xstrcoll_df_name rev_xstrcoll_df_size rev_xstrcoll_df_version rev_xstrcoll_df_width rev_xstrcoll_extension rev_xstrcoll_mtime rev_xstrcoll_name rev_xstrcoll_size rev_xstrcoll_version rev_xstrcoll_width security_compute_create select_plural set_exit_status set_normal_color setfilecon setfscreatecon sighandler signal_init signal_restore signal_setup smack_new_label_from_self smack_set_label_for_self sort_files stat_for_ino stat_for_mode stat_time_normalize statx_timestamp_to_timespec statx_to_stat stdout_isatty stophandler strcmp_atime strcmp_btime strcmp_ctime strcmp_df_atime strcmp_df_btime strcmp_df_ctime strcmp_df_extension strcmp_df_mtime strcmp_df_name strcmp_df_size strcmp_df_width strcmp_extension strcmp_mtime strcmp_name strcmp_size strcmp_width string_to_security_class stzncpy time_type_to_statx timespec_cmp timespec_sign timespectod timetostr to_uchar unsigned_file_size update_current_files_info usable_st_size usage visit_dir write_error xnrealloc xstrcoll xstrcoll_atime xstrcoll_btime xstrcoll_ctime xstrcoll_df_atime xstrcoll_df_btime xstrcoll_df_ctime xstrcoll_df_extension xstrcoll_df_mtime xstrcoll_df_name xstrcoll_df_size xstrcoll_df_version xstrcoll_df_width xstrcoll_extension xstrcoll_mtime xstrcoll_name xstrcoll_size xstrcoll_version xstrcoll_width 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -253,9 +253,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_Qsww_envp": "FUN: '_TIG_IZ_Qsww_envp__INIT'",
-          "_TIG_IZ_Qsww_argv": "FUN: '_TIG_IZ_Qsww_argv__INIT'",
-          "_TIG_IZ_Qsww_argc": "FUN: '_TIG_IZ_Qsww_argc__INIT'"
+          "_TIG_IZ_eRea_envp": "FUN: '_TIG_IZ_eRea_envp__INIT'",
+          "_TIG_IZ_eRea_argv": "FUN: '_TIG_IZ_eRea_argv__INIT'",
+          "_TIG_IZ_eRea_argc": "FUN: '_TIG_IZ_eRea_argc__INIT'"
         }
       }
     },
@@ -1075,8 +1075,8 @@ END-UNIVERSE
 */
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-PrGpodT8.i","") */
-/* #pragma merger("0","/tmp/cil-FlFnHCKc.i","") */
+/* #pragma merger("0","/tmp/cil-BkQiy48G.i","") */
+/* #pragma merger("0","/tmp/cil-WfAxR1da.i","") */
 
 /* BEGIN STRUCT-DECL __locale_data LOC=/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:27 */
 struct __locale_data ;
@@ -2971,10 +2971,6 @@ extern void set_quoting_style(struct quoting_options *o , enum quoting_style s )
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) asctime)(struct tm  const  *__tp ) ;
 /* END FUNCTION-DECL-EXTERN asctime LOC=/usr/include/time.h:179 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Qsww_envp LOC=UNKNOWN */
-char **_TIG_IZ_Qsww_envp ;
-/* END VARIABLE-DECL _TIG_IZ_Qsww_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __kernel_gid32_t LOC=/usr/include/asm-generic/posix_types.h:50 */
 typedef unsigned int __kernel_gid32_t;
 /* END TYPEDEF __kernel_gid32_t LOC=/usr/include/asm-generic/posix_types.h:50 */
@@ -3794,10 +3790,6 @@ static _Bool print_with_color  ;
 /* compiler builtin: 
    _Float128 __builtin_nexttowardf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf128 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Qsww_envp LOC=UNKNOWN */
-char **_TIG_IZ_Qsww_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_Qsww_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN c32rtomb LOC=/usr/include/uchar.h:62 */
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c32rtomb)(char * __restrict  __s ,
@@ -4701,6 +4693,10 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) wcstol)(wc
                                                                               wchar_t ** __restrict  __endptr ,
                                                                               int __base ) ;
 /* END FUNCTION-DECL-EXTERN wcstol LOC=/usr/include/wchar.h:429 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_eRea_argc LOC=UNKNOWN */
+int _TIG_IZ_eRea_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_eRea_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL timespec_sign LOC=UNKNOWN */
 __inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
@@ -6055,6 +6051,10 @@ extern long __timezone ;
 /* BEGIN VARIABLE-DECL localtz LOC=UNKNOWN */
 static timezone_t localtz ;
 /* END VARIABLE-DECL localtz LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_eRea_argv LOC=UNKNOWN */
+char **_TIG_IZ_eRea_argv ;
+/* END VARIABLE-DECL _TIG_IZ_eRea_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 /* compiler builtin: 
@@ -8298,6 +8298,10 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) __mbrlen
                                                                                   mbstate_t * __restrict  __ps ) ;
 /* END FUNCTION-DECL-EXTERN __mbrlen LOC=/usr/include/wchar.h:306 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_eRea_envp LOC=UNKNOWN */
+char **_TIG_IZ_eRea_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_eRea_envp LOC=UNKNOWN */
+
 /* BEGIN STRUCT-DECL quoting_options LOC=./lib/quotearg.h:275 */
 struct quoting_options ;
 /* END STRUCT-DECL quoting_options LOC=./lib/quotearg.h:275 */
@@ -9251,6 +9255,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    _Complex float __builtin_ctanhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_eRea_argc LOC=UNKNOWN */
+int _TIG_IZ_eRea_argc ;
+/* END VARIABLE-DECL _TIG_IZ_eRea_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN wcsnlen LOC=/usr/include/wchar.h:241 */
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsnlen)(wchar_t const   *__s ,
@@ -11921,10 +11929,6 @@ extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)
 static void dired_outbuf(char const   *s , size_t s_len ) ;
 /* END FUNCTION-DECL dired_outbuf LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Qsww_argc LOC=UNKNOWN */
-int _TIG_IZ_Qsww_argc ;
-/* END VARIABLE-DECL _TIG_IZ_Qsww_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./lib/quotearg.h:301 */
 extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
 /* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./lib/quotearg.h:301 */
@@ -12288,7 +12292,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Qsww_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_eRea_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -12481,10 +12485,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ferror)(FIL
 /* BEGIN FUNCTION-DECL print_many_per_line LOC=UNKNOWN */
 static void print_many_per_line(void) ;
 /* END FUNCTION-DECL print_many_per_line LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Qsww_argc LOC=UNKNOWN */
-int _TIG_IZ_Qsww_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_Qsww_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 /* compiler builtin: 
@@ -13465,10 +13465,6 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
                                             unsigned long n , int category ) ;
 /* END FUNCTION-DECL npgettext_aux LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Qsww_argv LOC=UNKNOWN */
-char **_TIG_IZ_Qsww_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_Qsww_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF int32_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:26 */
 typedef __int32_t int32_t;
 /* END TYPEDEF int32_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:26 */
@@ -13789,6 +13785,10 @@ struct _fpstate {
    __uint32_t __glibc_reserved1[24] ;
 };
 /* END STRUCT _fpstate LOC=/usr/include/x86_64-linux-gnu/bits/sigcontext.h:123 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_eRea_envp LOC=UNKNOWN */
+char **_TIG_IZ_eRea_envp ;
+/* END VARIABLE-DECL _TIG_IZ_eRea_envp LOC=UNKNOWN */
 
 /* BEGIN STRUCT lconv LOC=/usr/include/locale.h:51 */
 struct lconv {
@@ -14404,10 +14404,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) nl_langin
    long __builtin_expect_with_probability(long  , long  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_expect_with_probability LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Qsww_argv LOC=UNKNOWN */
-char **_TIG_IZ_Qsww_argv ;
-/* END VARIABLE-DECL _TIG_IZ_Qsww_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN hash_do_for_each LOC=./lib/hash.h:130 */
 extern size_t hash_do_for_each(Hash_table const   *table , _Bool (*processor)(void *entry ,
                                                                               void *processor_data ) ,
@@ -14472,6 +14468,10 @@ extern int fwprintf(__FILE * __restrict  __stream , wchar_t const   * __restrict
 /* compiler builtin: 
    char *__builtin_stpncpy(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_stpncpy LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_eRea_argv LOC=UNKNOWN */
+char **_TIG_IZ_eRea_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_eRea_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT file_handle LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:358 */
 struct file_handle {
@@ -25769,7 +25769,7 @@ static void abformat_init(void)
 /* END FUNCTION-DEF abformat_init LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Qsww_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_eRea_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_1 ;
   int i ;
@@ -35701,34 +35701,34 @@ int main(int argc , char **argv , char **_TIG_IZ_Qsww_formal_envp )
   }
   {
   {
-  _TIG_IZ_Qsww_envp = (char **)0;
-  goto _TIG_IZ_Qsww_envp__INITINLINE__TIG_IZ_Qsww_envp__INIT;
+  _TIG_IZ_eRea_envp = (char **)0;
+  goto _TIG_IZ_eRea_envp__INITINLINE__TIG_IZ_eRea_envp__INIT;
   }
-  _TIG_IZ_Qsww_envp__INITINLINE__TIG_IZ_Qsww_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_Qsww_argv = (char **)0;
-  goto _TIG_IZ_Qsww_argv__INITINLINE__TIG_IZ_Qsww_argv__INIT;
-  }
-  _TIG_IZ_Qsww_argv__INITINLINE__TIG_IZ_Qsww_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_eRea_envp__INITINLINE__TIG_IZ_eRea_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_Qsww_argc = 0;
-  goto _TIG_IZ_Qsww_argc__INITINLINE__TIG_IZ_Qsww_argc__INIT;
+  _TIG_IZ_eRea_argv = (char **)0;
+  goto _TIG_IZ_eRea_argv__INITINLINE__TIG_IZ_eRea_argv__INIT;
   }
-  _TIG_IZ_Qsww_argc__INITINLINE__TIG_IZ_Qsww_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_eRea_argv__INITINLINE__TIG_IZ_eRea_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_eRea_argc = 0;
+  goto _TIG_IZ_eRea_argc__INITINLINE__TIG_IZ_eRea_argc__INIT;
+  }
+  _TIG_IZ_eRea_argc__INITINLINE__TIG_IZ_eRea_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Qsww--0":);
-    _TIG_IZ_Qsww_argc = argc;
-    _TIG_IZ_Qsww_argv = argv;
-    _TIG_IZ_Qsww_envp = _TIG_IZ_Qsww_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-eRea--0":);
+    _TIG_IZ_eRea_argc = argc;
+    _TIG_IZ_eRea_argv = argv;
+    _TIG_IZ_eRea_envp = _TIG_IZ_eRea_formal_envp;
     break;
   }
 #line 1661

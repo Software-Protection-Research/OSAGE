@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity abandon_move alignalloc alignfree announce_mkdir bad_cast cached_umask change_attributes change_timestamps chmodat chownat clone_file context_free context_new context_str context_user_set copy_attr copy_debug_sparse_string copy_debug_string copy_dir copy_file copy_internal copy_reg count_leading_zeros count_leading_zeros_l count_leading_zeros_ll cp_option_init create_hard_link create_hole dcnpgettext_expr dcpgettext_expr defaultcon directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_debug emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note emit_verbose errno_unsupported extra_mode fchmod_or_lchmod fchown_or_lchown fgetfilecon follow_fstatat forget_created freecon fsetfilecon gcd get_ids get_labeling_handle get_stat_atime get_stat_atime_ns get_stat_birthtime get_stat_birthtime_ns get_stat_ctime get_stat_ctime_ns get_stat_mtime get_stat_mtime_ns getcon getfilecon handle_clone_fail hash_init have_same_content ignorable_ctx_err infer_scantype initialize_exit_failure install_file_in_dir install_file_in_file install_file_in_file_parents io_blksize is_CLONENOTSUP is_ENOTSUP is_ancestor is_nul is_terminal_error lchmodat lchownat lcm lseek_copy lutimensat main make_ancestor make_timespec matchpathcon mkancesdirs_safe_wd need_copy npgettext_aux overwrite_ok owner_failure_ok pgettext_aux process_dir psame_inode ptr_align punch_hole readdir_ignoring_dot_and_dotdot restore_default_fscreatecon_or_die restorecon same_file_ok samedir_template savewd_errno savewd_init security_compute_create selabel_close selabel_lookup selabel_open select_plural set_author set_owner setdefaultfilecon setfilecon setfscreatecon should_dereference source_is_dst_backup sparse_copy src_to_dest_compare src_to_dest_free src_to_dest_hash src_to_dest_lookup stat_time_normalize string_to_security_class strip stzncpy subst_suffix target_dirfd_valid timespec_cmp timespec_sign timespectod timetostr to_uchar try_link try_symlink usable_st_size usage valid_options writable_destination write_error write_zeros xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -243,9 +243,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_NAYv_envp": "FUN: '_TIG_IZ_NAYv_envp__INIT'",
-          "_TIG_IZ_NAYv_argv": "FUN: '_TIG_IZ_NAYv_argv__INIT'",
-          "_TIG_IZ_NAYv_argc": "FUN: '_TIG_IZ_NAYv_argc__INIT'"
+          "_TIG_IZ_yUyc_envp": "FUN: '_TIG_IZ_yUyc_envp__INIT'",
+          "_TIG_IZ_yUyc_argv": "FUN: '_TIG_IZ_yUyc_argv__INIT'",
+          "_TIG_IZ_yUyc_argc": "FUN: '_TIG_IZ_yUyc_argc__INIT'"
         }
       }
     },
@@ -995,12 +995,12 @@ END-UNIVERSE
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-J_VUJ9BN.i","") */
-/* #pragma merger("0","/tmp/cil-b2rIB1Cm.i","") */
-/* #pragma merger("0","/tmp/cil-7bvtSOyr.i","") */
-/* #pragma merger("0","/tmp/cil-do6CgMxG.i","") */
-/* #pragma merger("0","/tmp/cil-07P2N5Dz.i","") */
-/* #pragma merger("0","/tmp/cil-_zgpPCL2.i","") */
+/* #pragma merger("0","/tmp/cil-JzO5HnEW.i","") */
+/* #pragma merger("0","/tmp/cil-zEI6y2rL.i","") */
+/* #pragma merger("0","/tmp/cil-FuutY48z.i","") */
+/* #pragma merger("0","/tmp/cil-3rSMH6lS.i","") */
+/* #pragma merger("0","/tmp/cil-KKahsaBu.i","") */
+/* #pragma merger("0","/tmp/cil-GlvX5BKZ.i","") */
 
 /* BEGIN STRUCT-DECL savewd LOC=./lib/mkancesdirs.h:25 */
 struct savewd ;
@@ -2620,10 +2620,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __
                                                                                                    char ** __restrict  __save_ptr ) ;
 /* END FUNCTION-DECL-EXTERN strtok_r LOC=/usr/include/string.h:366 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_NAYv_envp LOC=UNKNOWN */
-char **_TIG_IZ_NAYv_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_NAYv_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __u64 LOC=/usr/include/asm-generic/int-ll64.h:31 */
 typedef unsigned long long __u64;
 /* END TYPEDEF __u64 LOC=/usr/include/asm-generic/int-ll64.h:31 */
@@ -2736,10 +2732,6 @@ extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) time)(ti
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int __nochdir ,
                                                                              int __noclose ) ;
 /* END FUNCTION-DECL-EXTERN daemon LOC=/usr/include/unistd.h:970 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_NAYv_argv LOC=UNKNOWN */
-char **_TIG_IZ_NAYv_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_NAYv_argv LOC=UNKNOWN */
 
 /* BEGIN UNION sigval LOC=/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:24 */
 union sigval {
@@ -2949,6 +2941,10 @@ typedef struct _libc_fpstate *fpregset_t;
 /* BEGIN FUNCTION-DECL setfilecon LOC=UNKNOWN */
 __inline int setfilecon(char const   *file  __attribute__((__unused__)) , char const   *con  __attribute__((__unused__)) ) ;
 /* END FUNCTION-DECL setfilecon LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_yUyc_envp LOC=UNKNOWN */
+char **_TIG_IZ_yUyc_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_yUyc_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF FTS LOC=./lib/fts_.h:85 */
 typedef struct __anonstruct_FTS_940993526 FTS;
@@ -3301,6 +3297,10 @@ typedef unsigned int __kernel_gid32_t;
 extern struct mode_change *mode_compile(char const   * )  __attribute__((__malloc__(rpl_free,1),
 __malloc__)) ;
 /* END FUNCTION-DECL-EXTERN mode_compile LOC=./lib/modechange.h:30 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_yUyc_argv LOC=UNKNOWN */
+char **_TIG_IZ_yUyc_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_yUyc_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __kernel_fsid_t LOC=/usr/include/asm-generic/posix_types.h:79 */
 typedef struct __anonstruct___kernel_fsid_t_1036286215 __kernel_fsid_t;
@@ -5013,6 +5013,10 @@ extern char *quotearg_custom(char const   *left_quote , char const   *right_quot
 /* BEGIN FUNCTION-DECL-EXTERN hash_remove LOC=./lib/hash.h:262 */
 extern void *hash_remove(Hash_table *table , void const   *entry ) ;
 /* END FUNCTION-DECL-EXTERN hash_remove LOC=./lib/hash.h:262 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_yUyc_envp LOC=UNKNOWN */
+char **_TIG_IZ_yUyc_envp ;
+/* END VARIABLE-DECL _TIG_IZ_yUyc_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN pread LOC=/usr/include/unistd.h:389 */
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset )  __attribute__((__access__(__write_only__,2,3))) ;
@@ -8912,10 +8916,6 @@ extern FTS *( __attribute__((__warn_unused_result__)) rpl_fts_open)(char ** , in
                                                                             FTSENT const   ** ) )  __attribute__((__malloc__(rpl_fts_close,1))) ;
 /* END FUNCTION-DECL-EXTERN rpl_fts_open LOC=./lib/fts_.h:266 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_NAYv_argv LOC=UNKNOWN */
-char **_TIG_IZ_NAYv_argv ;
-/* END VARIABLE-DECL _TIG_IZ_NAYv_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __s8 LOC=/usr/include/asm-generic/int-ll64.h:20 */
 typedef signed char __s8;
 /* END TYPEDEF __s8 LOC=/usr/include/asm-generic/int-ll64.h:20 */
@@ -9658,6 +9658,10 @@ extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_
                                  char const   *arg , size_t argsize ) ;
 /* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./lib/quotearg.h:429 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_yUyc_argc LOC=UNKNOWN */
+int _TIG_IZ_yUyc_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_yUyc_argc LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF fd_set LOC=/usr/include/x86_64-linux-gnu/sys/select.h:59 */
 typedef struct __anonstruct_fd_set_356711149 fd_set;
 /* END TYPEDEF fd_set LOC=/usr/include/x86_64-linux-gnu/sys/select.h:59 */
@@ -9718,6 +9722,10 @@ extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
 /* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=/usr/include/dirent.h:209 */
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
 /* END FUNCTION-DECL-EXTERN rewinddir LOC=/usr/include/dirent.h:209 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_yUyc_argv LOC=UNKNOWN */
+char **_TIG_IZ_yUyc_argv ;
+/* END VARIABLE-DECL _TIG_IZ_yUyc_argv LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_111643124___0 LOC=/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:193 */
 enum __anonenum_111643124___0 {
@@ -12727,10 +12735,6 @@ struct dir_list {
 };
 /* END STRUCT dir_list LOC=src/copy.c:110 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_NAYv_argc LOC=UNKNOWN */
-int _TIG_IZ_NAYv_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_NAYv_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL copy_internal LOC=UNKNOWN */
 static _Bool copy_internal(char const   *src_name , char const   *dst_name , int dst_dirfd ,
                            char const   *dst_relname , int nonexistent_dst , struct stat  const  *parent ,
@@ -12913,7 +12917,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_NAYv_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_yUyc_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -13677,10 +13681,6 @@ extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char c
 /* BEGIN TYPEDEF id_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:103 */
 typedef __id_t id_t;
 /* END TYPEDEF id_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:103 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_NAYv_argc LOC=UNKNOWN */
-int _TIG_IZ_NAYv_argc ;
-/* END VARIABLE-DECL _TIG_IZ_NAYv_argc LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_180375148___4 LOC=/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:119 */
 enum __anonenum_180375148___4 {
@@ -16227,6 +16227,10 @@ __malloc__, __alloc_size__(1))) ;
    _Complex double __builtin_cacosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosh LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_yUyc_argc LOC=UNKNOWN */
+int _TIG_IZ_yUyc_argc ;
+/* END VARIABLE-DECL _TIG_IZ_yUyc_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_preserve_access_index LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_preserve_access_index(...) ;  */
@@ -16247,10 +16251,6 @@ extern  __attribute__((__nothrow__)) int ( /* format attribute */  snprintf)(cha
                                                                              char const   * __restrict  __format 
                                                                              , ...) ;
 /* END FUNCTION-DECL-EXTERN snprintf LOC=/usr/include/stdio.h:378 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_NAYv_envp LOC=UNKNOWN */
-char **_TIG_IZ_NAYv_envp ;
-/* END VARIABLE-DECL _TIG_IZ_NAYv_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=/usr/include/stdlib.h:304 */
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
@@ -16903,7 +16903,7 @@ __inline _Bool psame_inode(struct stat  const  *a , struct stat  const  *b )
 /* END FUNCTION-DEF psame_inode LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_NAYv_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_yUyc_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_5 ;
   int init_elems1_inline_1_inline_4 ;
@@ -17323,34 +17323,34 @@ int main(int argc , char **argv , char **_TIG_IZ_NAYv_formal_envp )
   }
   {
   {
-  _TIG_IZ_NAYv_envp = (char **)0;
-  goto _TIG_IZ_NAYv_envp__INITINLINE__TIG_IZ_NAYv_envp__INIT;
+  _TIG_IZ_yUyc_envp = (char **)0;
+  goto _TIG_IZ_yUyc_envp__INITINLINE__TIG_IZ_yUyc_envp__INIT;
   }
-  _TIG_IZ_NAYv_envp__INITINLINE__TIG_IZ_NAYv_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_NAYv_argv = (char **)0;
-  goto _TIG_IZ_NAYv_argv__INITINLINE__TIG_IZ_NAYv_argv__INIT;
-  }
-  _TIG_IZ_NAYv_argv__INITINLINE__TIG_IZ_NAYv_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_yUyc_envp__INITINLINE__TIG_IZ_yUyc_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_NAYv_argc = 0;
-  goto _TIG_IZ_NAYv_argc__INITINLINE__TIG_IZ_NAYv_argc__INIT;
+  _TIG_IZ_yUyc_argv = (char **)0;
+  goto _TIG_IZ_yUyc_argv__INITINLINE__TIG_IZ_yUyc_argv__INIT;
   }
-  _TIG_IZ_NAYv_argc__INITINLINE__TIG_IZ_NAYv_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_yUyc_argv__INITINLINE__TIG_IZ_yUyc_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_yUyc_argc = 0;
+  goto _TIG_IZ_yUyc_argc__INITINLINE__TIG_IZ_yUyc_argc__INIT;
+  }
+  _TIG_IZ_yUyc_argc__INITINLINE__TIG_IZ_yUyc_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-NAYv--0":);
-    _TIG_IZ_NAYv_argc = argc;
-    _TIG_IZ_NAYv_argv = argv;
-    _TIG_IZ_NAYv_envp = _TIG_IZ_NAYv_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-yUyc--0":);
+    _TIG_IZ_yUyc_argc = argc;
+    _TIG_IZ_yUyc_argv = argv;
+    _TIG_IZ_yUyc_envp = _TIG_IZ_yUyc_formal_envp;
     break;
   }
 #line 778 "src/install.c"

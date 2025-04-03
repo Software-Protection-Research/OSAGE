@@ -1,0 +1,61 @@
+lib/libcoreutils_a-full-write.o: lib/full-write.c \
+ /usr/include/stdc-predef.h lib/config.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.5.0/include/stdbool.h lib/assert.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h lib/full-write.h lib/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.5.0/include/stddef.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h lib/safe-write.h
+
+/usr/include/stdc-predef.h:
+
+lib/config.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.5.0/include/stdbool.h:
+
+lib/assert.h:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+lib/full-write.h:
+
+lib/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/8.5.0/include/stddef.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/bits/types/error_t.h:
+
+lib/safe-write.h:

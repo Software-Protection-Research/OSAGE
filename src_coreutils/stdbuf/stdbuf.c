@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast c_isalnum c_isalpha c_isascii c_isblank c_iscntrl c_isdigit c_isgraph c_islower c_isprint c_ispunct c_isspace c_isupper c_isxdigit c_tolower c_toupper chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec npgettext_aux optc_to_fileno parse_size pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural set_LD_PRELOAD set_libstdbuf_options set_program_path stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_ABWK_envp": "FUN: '_TIG_IZ_ABWK_envp__INIT'",
-          "_TIG_IZ_ABWK_argv": "FUN: '_TIG_IZ_ABWK_argv__INIT'",
-          "_TIG_IZ_ABWK_argc": "FUN: '_TIG_IZ_ABWK_argc__INIT'"
+          "_TIG_IZ_SEn3_envp": "FUN: '_TIG_IZ_SEn3_envp__INIT'",
+          "_TIG_IZ_SEn3_argv": "FUN: '_TIG_IZ_SEn3_argv__INIT'",
+          "_TIG_IZ_SEn3_argc": "FUN: '_TIG_IZ_SEn3_argc__INIT'"
         }
       }
     },
@@ -1629,10 +1629,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctermid)(
 /* compiler builtin: 
    void __builtin_abort(void) ;  */
 /* END FUNCTION-DECL __builtin_abort LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_ABWK_argc LOC=UNKNOWN */
-int _TIG_IZ_ABWK_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_ABWK_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __uint32_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:42 */
 #line 42 "/usr/include/x86_64-linux-gnu/bits/types.h"
@@ -3427,6 +3423,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) clearerr)(
 extern char *quotearg_colon_mem(char const   *arg , size_t argsize ) ;
 /* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./lib/quotearg.h:405 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_SEn3_argv LOC=UNKNOWN */
+char **_TIG_IZ_SEn3_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_SEn3_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_rintf128(_Float128  ) ;  */
@@ -3557,10 +3557,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    long __builtin_lround(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lround LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_ABWK_envp LOC=UNKNOWN */
-char **_TIG_IZ_ABWK_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_ABWK_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -5494,6 +5490,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                  struct drand48_data *__buffer ) ;
 /* END FUNCTION-DECL-EXTERN seed48_r LOC=/usr/include/stdlib.h:530 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_SEn3_argc LOC=UNKNOWN */
+int _TIG_IZ_SEn3_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_SEn3_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=/usr/include/stdlib.h:917 */
 #line 917
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qecvt_r)(long double __value ,
@@ -5953,10 +5953,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dcgette
 #line 436 "/usr/include/time.h"
 extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
 /* END FUNCTION-DECL-EXTERN getdate_r LOC=/usr/include/time.h:436 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_ABWK_argv LOC=UNKNOWN */
-char **_TIG_IZ_ABWK_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_ABWK_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
 /* compiler builtin: 
@@ -7052,6 +7048,10 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) valloc)(s
 __alloc_size__(1))) ;
 /* END FUNCTION-DECL-EXTERN valloc LOC=/usr/include/stdlib.h:580 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_SEn3_envp LOC=UNKNOWN */
+char **_TIG_IZ_SEn3_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_SEn3_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=/usr/include/signal.h:176 */
 #line 176 "/usr/include/signal.h"
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
@@ -7108,7 +7108,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_ABWK_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_SEn3_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8074,10 +8074,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Bool __builtin_usub_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_usub_overflow LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_ABWK_argv LOC=UNKNOWN */
-char **_TIG_IZ_ABWK_argv ;
-/* END VARIABLE-DECL _TIG_IZ_ABWK_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_annotation LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_annotation(...) ;  */
@@ -8843,6 +8839,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftrylockfil
    _Float128 __builtin_lgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_SEn3_argc LOC=UNKNOWN */
+int _TIG_IZ_SEn3_argc ;
+/* END VARIABLE-DECL _TIG_IZ_SEn3_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_abs LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_abs(int  ) ;  */
@@ -9137,6 +9137,10 @@ extern char *quotearg_n(int n , char const   *arg ) ;
    unsigned short *__builtin_wmemcpy(unsigned short * , unsigned short * const   ,
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_SEn3_argv LOC=UNKNOWN */
+char **_TIG_IZ_SEn3_argv ;
+/* END VARIABLE-DECL _TIG_IZ_SEn3_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=/usr/include/time.h:276 */
 #line 276 "/usr/include/time.h"
@@ -9766,10 +9770,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 /* compiler builtin: 
    double __builtin_exp(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_ABWK_argc LOC=UNKNOWN */
-int _TIG_IZ_ABWK_argc ;
-/* END VARIABLE-DECL _TIG_IZ_ABWK_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=/usr/include/stdlib.h:682 */
 #line 682 "/usr/include/stdlib.h"
@@ -12023,6 +12023,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                  int32_t * __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN random_r LOC=/usr/include/stdlib.h:435 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_SEn3_envp LOC=UNKNOWN */
+char **_TIG_IZ_SEn3_envp ;
+/* END VARIABLE-DECL _TIG_IZ_SEn3_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN select LOC=/usr/include/x86_64-linux-gnu/sys/select.h:102 */
 #line 102 "/usr/include/x86_64-linux-gnu/sys/select.h"
 extern int select(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
@@ -12092,10 +12096,6 @@ extern struct tm *( __attribute__((__nonnull__(2,3))) localtime_rz)(timezone_t _
                                                                     time_t const   * __restrict  __timer ,
                                                                     struct tm * __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN localtime_rz LOC=./lib/time.h:1022 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_ABWK_envp LOC=UNKNOWN */
-char **_TIG_IZ_ABWK_envp ;
-/* END VARIABLE-DECL _TIG_IZ_ABWK_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13521,7 +13521,7 @@ __inline static void emit_mandatory_arg_note(void)
 /* END FUNCTION-DEF emit_mandatory_arg_note LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_ABWK_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_SEn3_formal_envp ) 
 { 
   int c ;
   int opt_fileno ;
@@ -13616,34 +13616,34 @@ int main(int argc , char **argv , char **_TIG_IZ_ABWK_formal_envp )
   }
   {
   {
-  _TIG_IZ_ABWK_envp = (char **)0;
-  goto _TIG_IZ_ABWK_envp__INITINLINE__TIG_IZ_ABWK_envp__INIT;
+  _TIG_IZ_SEn3_envp = (char **)0;
+  goto _TIG_IZ_SEn3_envp__INITINLINE__TIG_IZ_SEn3_envp__INIT;
   }
-  _TIG_IZ_ABWK_envp__INITINLINE__TIG_IZ_ABWK_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_ABWK_argv = (char **)0;
-  goto _TIG_IZ_ABWK_argv__INITINLINE__TIG_IZ_ABWK_argv__INIT;
-  }
-  _TIG_IZ_ABWK_argv__INITINLINE__TIG_IZ_ABWK_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_SEn3_envp__INITINLINE__TIG_IZ_SEn3_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_ABWK_argc = 0;
-  goto _TIG_IZ_ABWK_argc__INITINLINE__TIG_IZ_ABWK_argc__INIT;
+  _TIG_IZ_SEn3_argv = (char **)0;
+  goto _TIG_IZ_SEn3_argv__INITINLINE__TIG_IZ_SEn3_argv__INIT;
   }
-  _TIG_IZ_ABWK_argc__INITINLINE__TIG_IZ_ABWK_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_SEn3_argv__INITINLINE__TIG_IZ_SEn3_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_SEn3_argc = 0;
+  goto _TIG_IZ_SEn3_argc__INITINLINE__TIG_IZ_SEn3_argc__INIT;
+  }
+  _TIG_IZ_SEn3_argc__INITINLINE__TIG_IZ_SEn3_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-ABWK--0":);
-    _TIG_IZ_ABWK_argc = argc;
-    _TIG_IZ_ABWK_argv = argv;
-    _TIG_IZ_ABWK_envp = _TIG_IZ_ABWK_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-SEn3--0":);
+    _TIG_IZ_SEn3_argc = argc;
+    _TIG_IZ_SEn3_argv = argv;
+    _TIG_IZ_SEn3_envp = _TIG_IZ_SEn3_formal_envp;
     break;
   }
 #line 314 "src/stdbuf.c"

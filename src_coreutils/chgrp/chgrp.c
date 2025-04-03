@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast change_file_owner chmodat chopt_free chopt_init chownat dcnpgettext_expr dcpgettext_expr describe_change directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd gid_to_name gid_to_str initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot restricted_chown select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar uid_to_name uid_to_str usable_st_size usage user_group_str write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_eJDI_envp": "FUN: '_TIG_IZ_eJDI_envp__INIT'",
-          "_TIG_IZ_eJDI_argv": "FUN: '_TIG_IZ_eJDI_argv__INIT'",
-          "_TIG_IZ_eJDI_argc": "FUN: '_TIG_IZ_eJDI_argc__INIT'"
+          "_TIG_IZ_tArv_envp": "FUN: '_TIG_IZ_tArv_envp__INIT'",
+          "_TIG_IZ_tArv_argv": "FUN: '_TIG_IZ_tArv_argv__INIT'",
+          "_TIG_IZ_tArv_argc": "FUN: '_TIG_IZ_tArv_argc__INIT'"
         }
       }
     },
@@ -827,9 +827,9 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-3G_hq4yD.i","") */
-/* #pragma merger("0","/tmp/cil-WDiqdr1P.i","") */
-/* #pragma merger("0","/tmp/cil-I5iJ5J8G.i","") */
+/* #pragma merger("0","/tmp/cil-dfNnqCNo.i","") */
+/* #pragma merger("0","/tmp/cil-d0lQGqgw.i","") */
+/* #pragma merger("0","/tmp/cil-IJMMg4dI.i","") */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./lib/time.h:998 */
 struct tm_zone ;
@@ -1635,10 +1635,6 @@ typedef __daddr_t daddr_t;
 /* compiler builtin: 
    _Float128 __builtin_fmodf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodf128 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_eJDI_argv LOC=UNKNOWN */
-char **_TIG_IZ_eJDI_argv ;
-/* END VARIABLE-DECL _TIG_IZ_eJDI_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF DIR LOC=/usr/include/dirent.h:127 */
 typedef struct __dirstream DIR;
@@ -3432,6 +3428,10 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) gettid)
 /* compiler builtin: 
    _Float16 __builtin_cosf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf16 LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_tArv_argv LOC=UNKNOWN */
+char **_TIG_IZ_tArv_argv ;
+/* END VARIABLE-DECL _TIG_IZ_tArv_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=/usr/include/stdio.h:867 */
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) flockfile)(FILE *__stream ) ;
@@ -5527,6 +5527,10 @@ __alloc_size__(2))) ;
 extern int opterr ;
 /* END VARIABLE-DECL-EXTERN opterr LOC=/usr/include/x86_64-linux-gnu/bits/getopt_core.h:55 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_tArv_argc LOC=UNKNOWN */
+int _TIG_IZ_tArv_argc ;
+/* END VARIABLE-DECL _TIG_IZ_tArv_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=/usr/include/stdlib.h:141 */
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32)(char const   * __restrict  __nptr ,
                                                                                                  char ** __restrict  __endptr ) ;
@@ -6598,10 +6602,6 @@ typedef __kernel_long_t __kernel_time_t;
    _Float16 __builtin_floorf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_eJDI_envp LOC=UNKNOWN */
-char **_TIG_IZ_eJDI_envp ;
-/* END VARIABLE-DECL _TIG_IZ_eJDI_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF blkcnt_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:192 */
 typedef __blkcnt_t blkcnt_t;
 /* END TYPEDEF blkcnt_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:192 */
@@ -6835,7 +6835,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL-EXTERN bcopy LOC=/usr/include/strings.h:38 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_eJDI_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_tArv_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -6867,10 +6867,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wctomb)(char *__s ,
                                                                              wchar_t __wchar ) ;
 /* END FUNCTION-DECL-EXTERN wctomb LOC=/usr/include/stdlib.h:937 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_eJDI_argv LOC=UNKNOWN */
-char **_TIG_IZ_eJDI_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_eJDI_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=/usr/include/stdlib.h:504 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) erand48_r)(unsigned short *__xsubi ,
@@ -7792,10 +7788,6 @@ __leaf__)) getdirentries)(int __fd , char * __restrict  __buf , size_t __nbytes 
                           __off_t * __restrict  __basep ) ;
 /* END FUNCTION-DECL-EXTERN getdirentries LOC=/usr/include/dirent.h:353 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_eJDI_argc LOC=UNKNOWN */
-int _TIG_IZ_eJDI_argc ;
-/* END VARIABLE-DECL _TIG_IZ_eJDI_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=/usr/include/string.h:286 */
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchrnul)(char const   *__s ,
                                                                                                   int __c )  __attribute__((__pure__)) ;
@@ -8008,10 +8000,6 @@ extern char *quotearg_n_style_mem(int n , enum quoting_style s , char const   *a
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) abs)(int __x )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN abs LOC=/usr/include/stdlib.h:848 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_eJDI_envp LOC=UNKNOWN */
-char **_TIG_IZ_eJDI_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_eJDI_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./lib/time.h:1008 */
 extern timezone_t tzalloc(char const   *__name ) ;
 /* END FUNCTION-DECL-EXTERN tzalloc LOC=./lib/time.h:1008 */
@@ -8146,6 +8134,10 @@ extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __
 extern int ( __attribute__((__nonnull__(1))) rpl_lchown)(char const   *file , uid_t owner ,
                                                          gid_t group ) ;
 /* END FUNCTION-DECL-EXTERN rpl_lchown LOC=./lib/unistd.h:2166 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_tArv_envp LOC=UNKNOWN */
+char **_TIG_IZ_tArv_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_tArv_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN rpl_fts_set LOC=./lib/fts_.h:273 */
 extern int rpl_fts_set(FTS * , FTSENT * , int  ) ;
@@ -9302,6 +9294,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * ) ;
 /* END FUNCTION-DECL-EXTERN inttostr LOC=./lib/inttostr.h:31 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_tArv_envp LOC=UNKNOWN */
+char **_TIG_IZ_tArv_envp ;
+/* END VARIABLE-DECL _TIG_IZ_tArv_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF uint32_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:26 */
 typedef __uint32_t uint32_t;
 /* END TYPEDEF uint32_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:26 */
@@ -9459,10 +9455,6 @@ static enum RCH_status restricted_chown(int cwd_fd , char const   *file , struct
 /* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=/usr/include/unistd.h:427 */
 extern ssize_t pwrite64(int __fd , void const   *__buf , size_t __n , __off64_t __offset )  __attribute__((__access__(__read_only__,2,3))) ;
 /* END FUNCTION-DECL-EXTERN pwrite64 LOC=/usr/include/unistd.h:427 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_eJDI_argc LOC=UNKNOWN */
-int _TIG_IZ_eJDI_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_eJDI_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexpf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -9740,6 +9732,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(l
 /* BEGIN FUNCTION-DECL-EXTERN strsignal LOC=/usr/include/string.h:478 */
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strsignal)(int __sig ) ;
 /* END FUNCTION-DECL-EXTERN strsignal LOC=/usr/include/string.h:478 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_tArv_argv LOC=UNKNOWN */
+char **_TIG_IZ_tArv_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_tArv_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11411,6 +11407,10 @@ extern int ( __attribute__((__nonnull__(1))) sigsuspend)(sigset_t const   *__set
 /* compiler builtin: 
    _Float16 __builtin_canonicalizef16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalizef16 LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_tArv_argc LOC=UNKNOWN */
+int _TIG_IZ_tArv_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_tArv_argc LOC=UNKNOWN */
 
 /* BEGIN STRUCT flock LOC=/usr/include/x86_64-linux-gnu/bits/fcntl.h:35 */
 struct flock {
@@ -14721,7 +14721,7 @@ __inline int __attribute__((__pure__))  timespec_sign(struct timespec a )
 /* END FUNCTION-DEF timespec_sign LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_eJDI_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_tArv_formal_envp ) 
 { 
   _Bool preserve_root ;
   uid_t uid ;
@@ -14879,34 +14879,34 @@ int main(int argc , char **argv , char **_TIG_IZ_eJDI_formal_envp )
   }
   {
   {
-  _TIG_IZ_eJDI_envp = (char **)0;
-  goto _TIG_IZ_eJDI_envp__INITINLINE__TIG_IZ_eJDI_envp__INIT;
+  _TIG_IZ_tArv_envp = (char **)0;
+  goto _TIG_IZ_tArv_envp__INITINLINE__TIG_IZ_tArv_envp__INIT;
   }
-  _TIG_IZ_eJDI_envp__INITINLINE__TIG_IZ_eJDI_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_eJDI_argv = (char **)0;
-  goto _TIG_IZ_eJDI_argv__INITINLINE__TIG_IZ_eJDI_argv__INIT;
-  }
-  _TIG_IZ_eJDI_argv__INITINLINE__TIG_IZ_eJDI_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_tArv_envp__INITINLINE__TIG_IZ_tArv_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_eJDI_argc = 0;
-  goto _TIG_IZ_eJDI_argc__INITINLINE__TIG_IZ_eJDI_argc__INIT;
+  _TIG_IZ_tArv_argv = (char **)0;
+  goto _TIG_IZ_tArv_argv__INITINLINE__TIG_IZ_tArv_argv__INIT;
   }
-  _TIG_IZ_eJDI_argc__INITINLINE__TIG_IZ_eJDI_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_tArv_argv__INITINLINE__TIG_IZ_tArv_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_tArv_argc = 0;
+  goto _TIG_IZ_tArv_argc__INITINLINE__TIG_IZ_tArv_argc__INIT;
+  }
+  _TIG_IZ_tArv_argc__INITINLINE__TIG_IZ_tArv_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-eJDI--0":);
-    _TIG_IZ_eJDI_argc = argc;
-    _TIG_IZ_eJDI_argv = argv;
-    _TIG_IZ_eJDI_envp = _TIG_IZ_eJDI_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-tArv--0":);
+    _TIG_IZ_tArv_argc = argc;
+    _TIG_IZ_tArv_argv = argv;
+    _TIG_IZ_tArv_envp = _TIG_IZ_tArv_formal_envp;
     break;
   }
 #line 166 "src/chown.c"

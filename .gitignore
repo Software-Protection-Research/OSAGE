@@ -19,3 +19,6 @@ coreutils-merge
 llvm-obfuscator/
 llvm-obfuscator
 filesender
+/helper/gcc-8.1.0
+gcc8
+gcc-8.1.0

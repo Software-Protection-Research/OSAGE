@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm list_entries_users main make_timespec npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage userid_compare users write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_FZuc_envp": "FUN: '_TIG_IZ_FZuc_envp__INIT'",
-          "_TIG_IZ_FZuc_argv": "FUN: '_TIG_IZ_FZuc_argv__INIT'",
-          "_TIG_IZ_FZuc_argc": "FUN: '_TIG_IZ_FZuc_argc__INIT'"
+          "_TIG_IZ_Tbli_envp": "FUN: '_TIG_IZ_Tbli_envp__INIT'",
+          "_TIG_IZ_Tbli_argv": "FUN: '_TIG_IZ_Tbli_argv__INIT'",
+          "_TIG_IZ_Tbli_argc": "FUN: '_TIG_IZ_Tbli_argc__INIT'"
         }
       }
     },
@@ -2080,6 +2080,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    int __builtin_isgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_Tbli_argv LOC=UNKNOWN */
+char **_TIG_IZ_Tbli_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_Tbli_argv LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./lib/signal.h:852 */
 #line 852 "./lib/signal.h"
 typedef void (*_gl_function_taking_int_returning_void_t)(int  );
@@ -2504,6 +2508,10 @@ extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , ch
 #line 38 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h"
 struct _IO_wide_data ;
 /* END STRUCT-DECL _IO_wide_data LOC=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:38 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_Tbli_argv LOC=UNKNOWN */
+char **_TIG_IZ_Tbli_argv ;
+/* END VARIABLE-DECL _TIG_IZ_Tbli_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF lldiv_t LOC=/usr/include/stdlib.h:77 */
 #line 77 "/usr/include/stdlib.h"
@@ -3110,10 +3118,6 @@ extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int
 /* compiler builtin: 
    int __builtin_clrsbll(long long  ) ;  */
 /* END FUNCTION-DECL __builtin_clrsbll LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_FZuc_argc LOC=UNKNOWN */
-int _TIG_IZ_FZuc_argc ;
-/* END VARIABLE-DECL _TIG_IZ_FZuc_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __syscall_slong_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:197 */
 #line 197 "/usr/include/x86_64-linux-gnu/bits/types.h"
@@ -4885,6 +4889,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
 typedef long long __kernel_loff_t;
 /* END TYPEDEF __kernel_loff_t LOC=/usr/include/asm-generic/posix_types.h:88 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_Tbli_envp LOC=UNKNOWN */
+char **_TIG_IZ_Tbli_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_Tbli_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF __fsfilcnt_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:188 */
 #line 188 "/usr/include/x86_64-linux-gnu/bits/types.h"
 typedef unsigned long __fsfilcnt_t;
@@ -5276,10 +5284,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int 
 /* compiler builtin: 
    double __builtin_cosh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_cosh LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_FZuc_envp LOC=UNKNOWN */
-char **_TIG_IZ_FZuc_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_FZuc_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_log10f LOC=BUILTIN */
 /* compiler builtin: 
@@ -5951,10 +5955,6 @@ extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTAR
                                                                                                                                             int __interrupt ) ;
 /* END FUNCTION-DECL-EXTERN siginterrupt LOC=/usr/include/signal.h:324 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_FZuc_argc LOC=UNKNOWN */
-int _TIG_IZ_FZuc_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_FZuc_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL timetostr LOC=UNKNOWN */
 __inline static char *timetostr(time_t t , char *buf ) ;
 /* END FUNCTION-DECL timetostr LOC=UNKNOWN */
@@ -6296,10 +6296,6 @@ extern long timezone ;
 /* compiler builtin: 
    void *__builtin___memmove_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memmove_chk LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_FZuc_argv LOC=UNKNOWN */
-char **_TIG_IZ_FZuc_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_FZuc_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __thrd_t LOC=/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:106 */
 #line 106 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h"
@@ -7324,7 +7320,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_FZuc_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_Tbli_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7797,10 +7793,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,5), __le
 #line 227 "/usr/include/fcntl.h"
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
 /* END FUNCTION-DECL-EXTERN creat LOC=/usr/include/fcntl.h:227 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_FZuc_argv LOC=UNKNOWN */
-char **_TIG_IZ_FZuc_argv ;
-/* END VARIABLE-DECL _TIG_IZ_FZuc_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __fsfilcnt64_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:189 */
 #line 189 "/usr/include/x86_64-linux-gnu/bits/types.h"
@@ -8711,6 +8703,10 @@ extern int ( __attribute__((__nonnull__(1))) rpl_lchown)(char const   *file , ui
                                                          gid_t group ) ;
 /* END FUNCTION-DECL-EXTERN rpl_lchown LOC=./lib/unistd.h:2166 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_Tbli_argc LOC=UNKNOWN */
+int _TIG_IZ_Tbli_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_Tbli_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strtof LOC=/usr/include/stdlib.h:124 */
 #line 124 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof)(char const   * __restrict  __nptr ,
@@ -8969,6 +8965,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_curr
 /* compiler builtin: 
    long double __builtin_sqrtl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtl LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_Tbli_argc LOC=UNKNOWN */
+int _TIG_IZ_Tbli_argc ;
+/* END VARIABLE-DECL _TIG_IZ_Tbli_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=/usr/include/unistd.h:1002 */
 #line 1002 "/usr/include/unistd.h"
@@ -11721,10 +11721,6 @@ __inline static size_t lcm(size_t u , size_t v )  __attribute__((__const__)) ;
    long double __builtin_fdiml(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fdiml LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_FZuc_envp LOC=UNKNOWN */
-char **_TIG_IZ_FZuc_envp ;
-/* END VARIABLE-DECL _TIG_IZ_FZuc_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strtof64 LOC=/usr/include/stdlib.h:147 */
 #line 147 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) strtof64)(char const   * __restrict  __nptr ,
@@ -12160,6 +12156,10 @@ __inline static unsigned long select_plural(uintmax_t n ) ;
 /* compiler builtin: 
    unsigned __int128 __builtin_extend_pointer(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extend_pointer LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_Tbli_envp LOC=UNKNOWN */
+char **_TIG_IZ_Tbli_envp ;
+/* END VARIABLE-DECL _TIG_IZ_Tbli_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN proper_name LOC=./lib/propername.h:114 */
 #line 114 "./lib/propername.h"
@@ -13755,7 +13755,7 @@ __inline static _Bool __attribute__((__pure__))  is_nul(void const   *buf , size
 /* END FUNCTION-DEF is_nul LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_FZuc_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_Tbli_formal_envp ) 
 { 
   char const   *tmp ;
   char const   *tmp___0 ;
@@ -13770,34 +13770,34 @@ int main(int argc , char **argv , char **_TIG_IZ_FZuc_formal_envp )
   {
   {
   {
-  _TIG_IZ_FZuc_envp = (char **)0;
-  goto _TIG_IZ_FZuc_envp__INITINLINE__TIG_IZ_FZuc_envp__INIT;
+  _TIG_IZ_Tbli_envp = (char **)0;
+  goto _TIG_IZ_Tbli_envp__INITINLINE__TIG_IZ_Tbli_envp__INIT;
   }
-  _TIG_IZ_FZuc_envp__INITINLINE__TIG_IZ_FZuc_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_FZuc_argv = (char **)0;
-  goto _TIG_IZ_FZuc_argv__INITINLINE__TIG_IZ_FZuc_argv__INIT;
-  }
-  _TIG_IZ_FZuc_argv__INITINLINE__TIG_IZ_FZuc_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_Tbli_envp__INITINLINE__TIG_IZ_Tbli_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_FZuc_argc = 0;
-  goto _TIG_IZ_FZuc_argc__INITINLINE__TIG_IZ_FZuc_argc__INIT;
+  _TIG_IZ_Tbli_argv = (char **)0;
+  goto _TIG_IZ_Tbli_argv__INITINLINE__TIG_IZ_Tbli_argv__INIT;
   }
-  _TIG_IZ_FZuc_argc__INITINLINE__TIG_IZ_FZuc_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_Tbli_argv__INITINLINE__TIG_IZ_Tbli_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_Tbli_argc = 0;
+  goto _TIG_IZ_Tbli_argc__INITINLINE__TIG_IZ_Tbli_argc__INIT;
+  }
+  _TIG_IZ_Tbli_argc__INITINLINE__TIG_IZ_Tbli_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-FZuc--0":);
-    _TIG_IZ_FZuc_argc = argc;
-    _TIG_IZ_FZuc_argv = argv;
-    _TIG_IZ_FZuc_envp = _TIG_IZ_FZuc_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Tbli--0":);
+    _TIG_IZ_Tbli_argc = argc;
+    _TIG_IZ_Tbli_argv = argv;
+    _TIG_IZ_Tbli_envp = _TIG_IZ_Tbli_formal_envp;
     break;
   }
 #line 121 "src/users.c"

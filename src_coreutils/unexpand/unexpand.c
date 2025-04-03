@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity add_tab_stop bad_cast chmodat chownat cleanup_file_list_stdin dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_tab_list_info emit_update_parameters_note finalize_tab_stops gcd initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec next_file npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural set_extend_size set_file_list set_increment_size stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar unexpand usable_st_size usage validate_tab_stops write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 

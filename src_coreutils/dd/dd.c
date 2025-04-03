@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity abbreviation_lacks_prefix advance_input_after_read_error advance_input_offset alignalloc alignfree alloc_ibuf alloc_obuf apply_translations bad_cast cache_round chmodat chownat cleanup copy_simple copy_with_block copy_with_unblock count_leading_zeros count_leading_zeros_l count_leading_zeros_ll dcnpgettext_expr dcpgettext_expr dd_copy directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note finish_up gcd iclose ifd_reopen ifdatasync ifstat ifsync iftruncate initialize_exit_failure install_signal_handlers interrupt_handler invalidate_cache io_blksize iread iread_fullblock is_ENOTSUP is_nul iwrite lchmodat lchownat lcm main make_timespec maybe_close_stdout multiple_bits_set npgettext_aux operand_is operand_matches parse_integer parse_symbols pgettext_aux print_stats print_xfer_stats process_signals psame_inode ptr_align quit readdir_ignoring_dot_and_dotdot scanargs select_plural set_fd_flags siginfo_handler skip stzncpy swab_buffer synchronize_output timespec_cmp timespec_sign timespectod timetostr to_uchar translate_buffer translate_charset usable_st_size usage write_error write_output xnrealloc xtime_make xtime_nonnegative_nsec xtime_nonnegative_sec xtime_nsec xtime_sec 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -243,9 +243,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_Ovpg_envp": "FUN: '_TIG_IZ_Ovpg_envp__INIT'",
-          "_TIG_IZ_Ovpg_argv": "FUN: '_TIG_IZ_Ovpg_argv__INIT'",
-          "_TIG_IZ_Ovpg_argc": "FUN: '_TIG_IZ_Ovpg_argc__INIT'"
+          "_TIG_IZ_LFOb_envp": "FUN: '_TIG_IZ_LFOb_envp__INIT'",
+          "_TIG_IZ_LFOb_argv": "FUN: '_TIG_IZ_LFOb_argv__INIT'",
+          "_TIG_IZ_LFOb_argc": "FUN: '_TIG_IZ_LFOb_argc__INIT'"
         }
       }
     },
@@ -2352,6 +2352,10 @@ extern void version_etc_arn(FILE *stream , char const   *command_name , char con
                             char const   *version , char const   **authors , size_t n_authors ) ;
 /* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./lib/version-etc.h:53 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_LFOb_envp LOC=UNKNOWN */
+char **_TIG_IZ_LFOb_envp ;
+/* END VARIABLE-DECL _TIG_IZ_LFOb_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF register_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:164 */
 #line 164 "/usr/include/x86_64-linux-gnu/sys/types.h"
 typedef int register_t;
@@ -4339,6 +4343,10 @@ struct __pthread_cond_s {
 };
 /* END STRUCT __pthread_cond_s LOC=/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:94 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_LFOb_argc LOC=UNKNOWN */
+int _TIG_IZ_LFOb_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_LFOb_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=/usr/include/string.h:156 */
 #line 156 "/usr/include/string.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcmp)(char const   *__s1 ,
@@ -4997,10 +5005,6 @@ __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
    _Float128 __builtin_nexttowardf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ovpg_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ovpg_argv ;
-/* END VARIABLE-DECL _TIG_IZ_Ovpg_argv LOC=UNKNOWN */
-
 /* BEGIN VARIABLE-DEF output_flags LOC=UNKNOWN */
 static int output_flags  ;
 /* END VARIABLE-DEF output_flags LOC=UNKNOWN */
@@ -5118,10 +5122,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
                                                                                                   char const   *__format ,
                                                                                                   float __f ) ;
 /* END FUNCTION-DECL-EXTERN strfromf32x LOC=/usr/include/stdlib.h:251 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ovpg_argc LOC=UNKNOWN */
-int _TIG_IZ_Ovpg_argc ;
-/* END VARIABLE-DECL _TIG_IZ_Ovpg_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL timespectod LOC=UNKNOWN */
 __inline double timespectod(struct timespec a ) ;
@@ -5388,6 +5388,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                char const   *__arg 
                                                                                                , ...) ;
 /* END FUNCTION-DECL-EXTERN execle LOC=/usr/include/unistd.h:589 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_LFOb_envp LOC=UNKNOWN */
+char **_TIG_IZ_LFOb_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_LFOb_envp LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL w_full LOC=UNKNOWN */
 static intmax_t w_full ;
@@ -6660,10 +6664,6 @@ extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmti
    long double __builtin_fmodl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ovpg_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ovpg_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_Ovpg_argv LOC=UNKNOWN */
-
 /* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:75 */
 #line 75 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h"
 union __anonunion_pthread_cond_t_951761805 {
@@ -7724,7 +7724,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL-EXTERN bcopy LOC=/usr/include/strings.h:38 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ovpg_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_LFOb_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8310,6 +8310,10 @@ extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t _
 /* BEGIN VARIABLE-DEF start_time LOC=UNKNOWN */
 static xtime_t start_time  ;
 /* END VARIABLE-DEF start_time LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_LFOb_argv LOC=UNKNOWN */
+char **_TIG_IZ_LFOb_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_LFOb_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF nlink_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:74 */
 #line 74 "/usr/include/x86_64-linux-gnu/sys/types.h"
@@ -9301,10 +9305,6 @@ enum __anonenum_365337802 {
     GETOPT_VERSION_CHAR = -131
 } ;
 /* END ENUM __anonenum_365337802 LOC=src/system.h:326 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ovpg_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ovpg_envp ;
-/* END VARIABLE-DECL _TIG_IZ_Ovpg_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 /* compiler builtin: 
@@ -11511,10 +11511,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
                                                                                                  char const   * __restrict  __delim ) ;
 /* END FUNCTION-DECL-EXTERN strsep LOC=/usr/include/string.h:471 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ovpg_argc LOC=UNKNOWN */
-int _TIG_IZ_Ovpg_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_Ovpg_argc LOC=UNKNOWN */
-
 /* BEGIN ENUM __anonenum_852341087 LOC=/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:27 */
 #line 27 "/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h"
 enum __anonenum_852341087 {
@@ -12420,6 +12416,10 @@ static int ifdatasync(int fd ) ;
    double __builtin_ceil(double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceil LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_LFOb_argc LOC=UNKNOWN */
+int _TIG_IZ_LFOb_argc ;
+/* END VARIABLE-DECL _TIG_IZ_LFOb_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN seed48 LOC=/usr/include/stdlib.h:483 */
 #line 483 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) unsigned short *( __attribute__((__nonnull__(1),
@@ -12566,6 +12566,10 @@ extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) useloc
 /* BEGIN FUNCTION-DECL iwrite LOC=UNKNOWN */
 static idx_t iwrite(int fd , char const   *buf , idx_t size ) ;
 /* END FUNCTION-DECL iwrite LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_LFOb_argv LOC=UNKNOWN */
+char **_TIG_IZ_LFOb_argv ;
+/* END VARIABLE-DECL _TIG_IZ_LFOb_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL parse_symbols LOC=UNKNOWN */
 static int parse_symbols(char const   *str , struct symbol_value  const  *table ,
@@ -12994,10 +12998,6 @@ __inline static unsigned long select_plural(uintmax_t n ) ;
 /* compiler builtin: 
    unsigned long long __builtin_dynamic_object_size(void const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_dynamic_object_size LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ovpg_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ovpg_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_Ovpg_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_extend_pointer LOC=BUILTIN */
 /* compiler builtin: 
@@ -17796,7 +17796,7 @@ static void maybe_close_stdout(void)
 /* END FUNCTION-DEF maybe_close_stdout LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ovpg_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_LFOb_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_1 ;
   int i ;
@@ -19402,34 +19402,34 @@ int main(int argc , char **argv , char **_TIG_IZ_Ovpg_formal_envp )
   }
   {
   {
-  _TIG_IZ_Ovpg_envp = (char **)0;
-  goto _TIG_IZ_Ovpg_envp__INITINLINE__TIG_IZ_Ovpg_envp__INIT;
+  _TIG_IZ_LFOb_envp = (char **)0;
+  goto _TIG_IZ_LFOb_envp__INITINLINE__TIG_IZ_LFOb_envp__INIT;
   }
-  _TIG_IZ_Ovpg_envp__INITINLINE__TIG_IZ_Ovpg_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_Ovpg_argv = (char **)0;
-  goto _TIG_IZ_Ovpg_argv__INITINLINE__TIG_IZ_Ovpg_argv__INIT;
-  }
-  _TIG_IZ_Ovpg_argv__INITINLINE__TIG_IZ_Ovpg_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_LFOb_envp__INITINLINE__TIG_IZ_LFOb_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_Ovpg_argc = 0;
-  goto _TIG_IZ_Ovpg_argc__INITINLINE__TIG_IZ_Ovpg_argc__INIT;
+  _TIG_IZ_LFOb_argv = (char **)0;
+  goto _TIG_IZ_LFOb_argv__INITINLINE__TIG_IZ_LFOb_argv__INIT;
   }
-  _TIG_IZ_Ovpg_argc__INITINLINE__TIG_IZ_Ovpg_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_LFOb_argv__INITINLINE__TIG_IZ_LFOb_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_LFOb_argc = 0;
+  goto _TIG_IZ_LFOb_argc__INITINLINE__TIG_IZ_LFOb_argc__INIT;
+  }
+  _TIG_IZ_LFOb_argc__INITINLINE__TIG_IZ_LFOb_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Ovpg--0":);
-    _TIG_IZ_Ovpg_argc = argc;
-    _TIG_IZ_Ovpg_argv = argv;
-    _TIG_IZ_Ovpg_envp = _TIG_IZ_Ovpg_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-LFOb--0":);
+    _TIG_IZ_LFOb_argc = argc;
+    _TIG_IZ_LFOb_argv = argv;
+    _TIG_IZ_LFOb_envp = _TIG_IZ_LFOb_formal_envp;
     break;
   }
 #line 2418

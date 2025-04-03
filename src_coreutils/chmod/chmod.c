@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat dcnpgettext_expr dcpgettext_expr describe_change directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec mode_changed npgettext_aux pgettext_aux process_file process_files psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_I4HD_envp": "FUN: '_TIG_IZ_I4HD_envp__INIT'",
-          "_TIG_IZ_I4HD_argv": "FUN: '_TIG_IZ_I4HD_argv__INIT'",
-          "_TIG_IZ_I4HD_argc": "FUN: '_TIG_IZ_I4HD_argc__INIT'"
+          "_TIG_IZ_BDUz_envp": "FUN: '_TIG_IZ_BDUz_envp__INIT'",
+          "_TIG_IZ_BDUz_argv": "FUN: '_TIG_IZ_BDUz_argv__INIT'",
+          "_TIG_IZ_BDUz_argc": "FUN: '_TIG_IZ_BDUz_argc__INIT'"
         }
       }
     },
@@ -1820,10 +1820,6 @@ extern void set_custom_quoting(struct quoting_options *o , char const   *left_qu
 struct _IO_FILE ;
 /* END STRUCT-DECL _IO_FILE LOC=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:4 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_I4HD_argc LOC=UNKNOWN */
-int _TIG_IZ_I4HD_argc ;
-/* END VARIABLE-DECL _TIG_IZ_I4HD_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=/usr/include/stdlib.h:1013 */
 #line 1013 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getloadavg)(double *__loadavg ,
@@ -2123,10 +2119,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __
                                                                                                    char const   * __restrict  __delim ,
                                                                                                    char ** __restrict  __save_ptr ) ;
 /* END FUNCTION-DECL-EXTERN strtok_r LOC=/usr/include/string.h:366 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_I4HD_envp LOC=UNKNOWN */
-char **_TIG_IZ_I4HD_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_I4HD_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_csqrt LOC=BUILTIN */
 /* compiler builtin: 
@@ -4539,6 +4531,10 @@ extern FILE *tmpfile64(void)  __attribute__((__malloc__(fclose,1), __malloc__)) 
    float __builtin_fminf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_BDUz_envp LOC=UNKNOWN */
+char **_TIG_IZ_BDUz_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_BDUz_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=/usr/include/stdlib.h:300 */
 #line 300 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof_l)(char const   * __restrict  __nptr ,
@@ -4763,10 +4759,6 @@ extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,
 __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
 /* END FUNCTION-DECL-EXTERN strtof64x_l LOC=/usr/include/stdlib.h:345 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_I4HD_argv LOC=UNKNOWN */
-char **_TIG_IZ_I4HD_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_I4HD_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_catanhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -6891,6 +6883,10 @@ extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmti
                                                                                       struct tm * __restrict  __tp ) ;
 /* END FUNCTION-DECL-EXTERN gmtime_r LOC=/usr/include/time.h:154 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_BDUz_argv LOC=UNKNOWN */
+char **_TIG_IZ_BDUz_argv ;
+/* END VARIABLE-DECL _TIG_IZ_BDUz_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./lib/quotearg.h:371 */
 #line 371 "./lib/quotearg.h"
 extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
@@ -7379,7 +7375,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_I4HD_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_BDUz_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7576,10 +7572,6 @@ extern int fflush_unlocked(FILE *__stream ) ;
 #line 881 "/usr/include/unistd.h"
 extern char *getlogin(void) ;
 /* END FUNCTION-DECL-EXTERN getlogin LOC=/usr/include/unistd.h:881 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_I4HD_argv LOC=UNKNOWN */
-char **_TIG_IZ_I4HD_argv ;
-/* END VARIABLE-DECL _TIG_IZ_I4HD_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 /* compiler builtin: 
@@ -10272,6 +10264,10 @@ extern void *xreallocarray(void *p , size_t n , size_t s )  __attribute__((__all
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_uaddl_overflow LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_BDUz_argc LOC=UNKNOWN */
+int _TIG_IZ_BDUz_argc ;
+/* END VARIABLE-DECL _TIG_IZ_BDUz_argc LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF ino64_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:54 */
 #line 54 "/usr/include/x86_64-linux-gnu/sys/types.h"
 typedef __ino64_t ino64_t;
@@ -10518,6 +10514,10 @@ struct mode_change ;
 /* compiler builtin: 
    float __builtin_log2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_BDUz_argc LOC=UNKNOWN */
+int _TIG_IZ_BDUz_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_BDUz_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN putw LOC=/usr/include/stdio.h:584 */
 #line 584 "/usr/include/stdio.h"
@@ -11310,6 +11310,10 @@ extern mode_t mode_adjust(mode_t  , _Bool  , mode_t  , struct mode_change  const
    char *__builtin_strndup(char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strndup LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_BDUz_argv LOC=UNKNOWN */
+char **_TIG_IZ_BDUz_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_BDUz_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=/usr/include/signal.h:202 */
 #line 202 "/usr/include/signal.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigfillset)(sigset_t *__set ) ;
@@ -11615,6 +11619,10 @@ extern void *x2realloc(void *p , size_t *ps )  __attribute__((__returns_nonnull_
    long double __builtin_scalbnl(long double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_BDUz_envp LOC=UNKNOWN */
+char **_TIG_IZ_BDUz_envp ;
+/* END VARIABLE-DECL _TIG_IZ_BDUz_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN freopen LOC=/usr/include/stdio.h:265 */
 #line 265 "/usr/include/stdio.h"
 extern FILE *freopen(char const   * __restrict  __filename , char const   * __restrict  __modes ,
@@ -11822,10 +11830,6 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __l
 #line 437 "/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h"
 extern int fallocate(int __fd , int __mode , __off_t __offset , __off_t __len ) ;
 /* END FUNCTION-DECL-EXTERN fallocate LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:437 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_I4HD_argc LOC=UNKNOWN */
-int _TIG_IZ_I4HD_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_I4HD_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __be16 LOC=/usr/include/linux/types.h:25 */
 #line 25 "/usr/include/linux/types.h"
@@ -12106,10 +12110,6 @@ struct __locale_struct {
    char const   *__names[13] ;
 };
 /* END STRUCT __locale_struct LOC=/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:27 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_I4HD_envp LOC=UNKNOWN */
-char **_TIG_IZ_I4HD_envp ;
-/* END VARIABLE-DECL _TIG_IZ_I4HD_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 /* compiler builtin: 
@@ -13082,7 +13082,7 @@ __inline static size_t gcd(size_t u , size_t v )
 /* END FUNCTION-DEF gcd LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_I4HD_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_BDUz_formal_envp ) 
 { 
   char *mode ;
   idx_t mode_len ;
@@ -13263,34 +13263,34 @@ int main(int argc , char **argv , char **_TIG_IZ_I4HD_formal_envp )
   }
   {
   {
-  _TIG_IZ_I4HD_envp = (char **)0;
-  goto _TIG_IZ_I4HD_envp__INITINLINE__TIG_IZ_I4HD_envp__INIT;
+  _TIG_IZ_BDUz_envp = (char **)0;
+  goto _TIG_IZ_BDUz_envp__INITINLINE__TIG_IZ_BDUz_envp__INIT;
   }
-  _TIG_IZ_I4HD_envp__INITINLINE__TIG_IZ_I4HD_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_I4HD_argv = (char **)0;
-  goto _TIG_IZ_I4HD_argv__INITINLINE__TIG_IZ_I4HD_argv__INIT;
-  }
-  _TIG_IZ_I4HD_argv__INITINLINE__TIG_IZ_I4HD_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_BDUz_envp__INITINLINE__TIG_IZ_BDUz_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_I4HD_argc = 0;
-  goto _TIG_IZ_I4HD_argc__INITINLINE__TIG_IZ_I4HD_argc__INIT;
+  _TIG_IZ_BDUz_argv = (char **)0;
+  goto _TIG_IZ_BDUz_argv__INITINLINE__TIG_IZ_BDUz_argv__INIT;
   }
-  _TIG_IZ_I4HD_argc__INITINLINE__TIG_IZ_I4HD_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_BDUz_argv__INITINLINE__TIG_IZ_BDUz_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_BDUz_argc = 0;
+  goto _TIG_IZ_BDUz_argc__INITINLINE__TIG_IZ_BDUz_argc__INIT;
+  }
+  _TIG_IZ_BDUz_argc__INITINLINE__TIG_IZ_BDUz_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-I4HD--0":);
-    _TIG_IZ_I4HD_argc = argc;
-    _TIG_IZ_I4HD_argv = argv;
-    _TIG_IZ_I4HD_envp = _TIG_IZ_I4HD_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-BDUz--0":);
+    _TIG_IZ_BDUz_argc = argc;
+    _TIG_IZ_BDUz_argv = argv;
+    _TIG_IZ_BDUz_envp = _TIG_IZ_BDUz_formal_envp;
     break;
   }
 #line 463 "src/chmod.c"

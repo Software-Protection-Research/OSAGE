@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity binvert main output_primes print_wide_uint process_prime xalloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 

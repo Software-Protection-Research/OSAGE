@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Source and destination directories
-SRC_DIR="coreutils-merge/coreutils-9.5/src"
-DEST_DIR="src_coreutils"
+SRC_DIR="../coreutils/coreutils-9.5/src"
+DEST_DIR="../src_coreutils_8"
 
 # Find all .merge.c files in the source directory
 find "$SRC_DIR" -name "*.merge.c" | while read -r file; do
@@ -16,7 +16,7 @@ find "$SRC_DIR" -name "*.merge.c" | while read -r file; do
   cp "$file" "$DEST_DIR/$base_name/$base_name.c"
 done
 
-# Function to extract function names from a C file using ctags
+# Function to extract function names from a C file using ctags, if this fails install ctags " sudo pacman -S --noconfirm ctags"
 extract_functions() {
   ctags -x --c-kinds=f "$1" | awk '{print $1}'
 }

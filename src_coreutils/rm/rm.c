@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast cache_fstatat cache_stat_init chmodat chownat dcnpgettext_expr dcpgettext_expr diagnose_leading_hyphen directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note excise fts_skip_tree gcd get_dir_status get_stat_atime get_stat_atime_ns get_stat_birthtime get_stat_birthtime_ns get_stat_ctime get_stat_ctime_ns get_stat_mtime get_stat_mtime_ns ignorable_missing initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec mark_ancestor_dirs nonexistent_file_errno npgettext_aux pgettext_aux priv_set_remove_linkdir prompt psame_inode ptr_align readdir_ignoring_dot_and_dotdot rm rm_fts rm_option_init select_plural stat_time_normalize stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error write_protected_non_symlink xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
