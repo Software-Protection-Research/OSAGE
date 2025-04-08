@@ -12,37 +12,42 @@ if [[ -z "$latest_folder" ]]; then
     exit 1
 fi
 
-echo "Checking .c files with no code in the latest folder: $latest_folder"
+echo "Checking .c files in the latest folder: $latest_folder"
 
 # Define the output file for .c files with no code
 no_code_files="$script_dir/no_code_c_files.txt"
 > "$no_code_files"  # Clear the file if it exists
 
-# Initialize counter for .c files with no code
+# Initialize counters
 no_code_file_count=0
+total_file_count=0
 
 # Function to check and show .c files with no code in a subfolder
 check_no_code_c_files_in_subfolder() {
     local subfolder=$1
     for file in "$subfolder"/*.c; do
-        if [[ -f "$file" && ! -s "$file" ]]; then
-            relative_path="${subfolder##*/}/${file##*/}"
-            echo "$relative_path" >> "$no_code_files"
-            ((no_code_file_count++))
+        if [[ -f "$file" ]]; then
+            ((total_file_count++))
+            if [[ ! -s "$file" ]]; then
+                relative_path="${subfolder##*/}/${file##*/}"
+                echo "$relative_path" >> "$no_code_files"
+                ((no_code_file_count++))
+            fi
         fi
     done
 }
 
-export -f check_no_code_c_files_in_subfolder
-export no_code_files
-export -n no_code_file_count
+# Process all subfolders that start with "prog_tigress"
+for subfolder in "$latest_folder"/prog_tigress*; do
+    if [[ -d "$subfolder" ]]; then
+        check_no_code_c_files_in_subfolder "$subfolder"
+    fi
+done
 
-# Find all subfolders that start with "prog_tigress" and process them
-find "$latest_folder" -mindepth 1 -maxdepth 1 -type d -name 'prog_tigress*' -exec bash -c 'check_no_code_c_files_in_subfolder "{}"' \;
-
-# Print the total count of .c files with no code
+# Print the total count of .c files and .c files with no code
 echo "Check complete. .c files with no code are listed in $no_code_files."
-echo "Total .c files with no code: $(wc -l < "$no_code_files")"
+echo "Total .c files: $total_file_count"
+echo "Total .c files with no code: $no_code_file_count"
 
-# sort the file for easier comparison
+# Sort the file for easier comparison
 sort -o "$no_code_files" "$no_code_files"

@@ -239,9 +239,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_BUUq_envp": "FUN: '_TIG_IZ_BUUq_envp__INIT'",
-          "_TIG_IZ_BUUq_argv": "FUN: '_TIG_IZ_BUUq_argv__INIT'",
-          "_TIG_IZ_BUUq_argc": "FUN: '_TIG_IZ_BUUq_argc__INIT'"
+          "_TIG_IZ_smv4_envp": "FUN: '_TIG_IZ_smv4_envp__INIT'",
+          "_TIG_IZ_smv4_argv": "FUN: '_TIG_IZ_smv4_argv__INIT'",
+          "_TIG_IZ_smv4_argc": "FUN: '_TIG_IZ_smv4_argc__INIT'"
         }
       }
     },
@@ -839,9 +839,9 @@ END-UNIVERSE
 */
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-aXKCbcbp.i","") */
-/* #pragma merger("0","/tmp/cil-rYOanog0.i","") */
-/* #pragma merger("0","/tmp/cil-2Zpql_Vh.i","") */
+/* #pragma merger("0","/tmp/cil-t47giNiS.i","") */
+/* #pragma merger("0","/tmp/cil-M68TZqJH.i","") */
+/* #pragma merger("0","/tmp/cil-tUNFcC1u.i","") */
 
 /* BEGIN STRUCT-DECL __dirstream LOC=/usr/include/dirent.h:127 */
 struct __dirstream ;
@@ -1604,10 +1604,6 @@ struct _xmmreg {
 extern int ( __attribute__((__nonnull__(2))) fputs)(char const   * __restrict  __s ,
                                                     FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fputs LOC=/usr/include/stdio.h:707 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_argv ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=/usr/include/stdio.h:938 */
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) funlockfile)(FILE *__stream ) ;
@@ -4084,10 +4080,6 @@ extern enum quoting_style  const  quoting_style_vals[] ;
 extern char const   *Version ;
 /* END VARIABLE-DECL-EXTERN Version LOC=src/version.h:1 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_fabsl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fabsl(long double  ) ;  */
@@ -4309,10 +4301,6 @@ extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf_
 /* BEGIN STRUCT-DECL _IO_marker LOC=/usr/include/bits/types/struct_FILE.h:37 */
 struct _IO_marker ;
 /* END STRUCT-DECL _IO_marker LOC=/usr/include/bits/types/struct_FILE.h:37 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_envp LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_envp ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./lib/xalloc.h:86 */
 extern void *xireallocarray(void *p , idx_t n , idx_t s )  __attribute__((__returns_nonnull__,
@@ -4707,10 +4695,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __le
 /* compiler builtin: 
    double __builtin_inf(void) ;  */
 /* END FUNCTION-DECL __builtin_inf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-int _TIG_IZ_BUUq_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN atoi LOC=/usr/include/stdlib.h:105 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atoi)(char const   *__nptr )  __attribute__((__pure__)) ;
@@ -5750,11 +5734,19 @@ extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc
 __alloc_size__(1))) ;
 /* END FUNCTION-DECL-EXTERN xcharalloc LOC=./lib/xalloc.h:155 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_argv LOC=UNKNOWN */
+char **_TIG_IZ_smv4_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=/usr/include/unistd.h:803 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ttyname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
 /* END FUNCTION-DECL-EXTERN ttyname_r LOC=/usr/include/unistd.h:803 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_argv LOC=UNKNOWN */
+char **_TIG_IZ_smv4_argv ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 /* compiler builtin: 
@@ -5849,6 +5841,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* BEGIN VARIABLE-DEF digest_delim LOC=UNKNOWN */
 static unsigned char digest_delim  ;
 /* END VARIABLE-DEF digest_delim LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_argc LOC=UNKNOWN */
+int _TIG_IZ_smv4_argc ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 /* compiler builtin: 
@@ -6572,10 +6568,6 @@ typedef __kernel_long_t __kernel_time_t;
    long double __builtin_ceill(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceill LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-int _TIG_IZ_BUUq_argc ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
@@ -6842,7 +6834,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_smv4_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -8077,6 +8069,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __
 extern int blake2xs_update(blake2xs_state *S , void const   *in , size_t inlen ) ;
 /* END FUNCTION-DECL-EXTERN blake2xs_update LOC=src/blake2/blake2.h:173 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_argc LOC=UNKNOWN */
+int _TIG_IZ_smv4_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN rindex LOC=/usr/include/strings.h:96 */
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) rindex)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
@@ -8804,6 +8800,10 @@ extern _Bool strip_trailing_slashes(char *file ) ;
 /* compiler builtin: 
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_envp LOC=UNKNOWN */
+char **_TIG_IZ_smv4_envp ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_envp LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=/usr/include/error.h:44 */
 extern unsigned int error_message_count ;
@@ -10168,6 +10168,10 @@ extern char *mdir_name(char const   *file )  __attribute__((__malloc__)) ;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setuid)(__uid_t __uid ) ;
 /* END FUNCTION-DECL-EXTERN setuid LOC=/usr/include/unistd.h:722 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_envp LOC=UNKNOWN */
+char **_TIG_IZ_smv4_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF __tss_t LOC=/usr/include/bits/thread-shared-types.h:104 */
 typedef unsigned int __tss_t;
 /* END TYPEDEF __tss_t LOC=/usr/include/bits/thread-shared-types.h:104 */
@@ -11486,10 +11490,6 @@ struct sigevent ;
 extern char *quotearg_n_custom(int n , char const   *left_quote , char const   *right_quote ,
                                char const   *arg ) ;
 /* END FUNCTION-DECL-EXTERN quotearg_n_custom LOC=./lib/quotearg.h:414 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_envp LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __kernel_clock_t LOC=/usr/include/asm-generic/posix_types.h:92 */
 typedef __kernel_long_t __kernel_clock_t;
@@ -14659,7 +14659,7 @@ __inline static __uint16_t __uint16_identity(__uint16_t __x )
 /* END FUNCTION-DEF __uint16_identity LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_smv4_formal_envp ) 
 { 
   unsigned char bin_buffer_unaligned[72] ;
   unsigned char *bin_buffer ;
@@ -15138,34 +15138,34 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   }
   {
   {
-  _TIG_IZ_BUUq_envp = (char **)0;
-  goto _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT;
+  _TIG_IZ_smv4_envp = (char **)0;
+  goto _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT;
   }
-  _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_BUUq_argv = (char **)0;
-  goto _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT;
-  }
-  _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_BUUq_argc = 0;
-  goto _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT;
+  _TIG_IZ_smv4_argv = (char **)0;
+  goto _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT;
   }
-  _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_smv4_argc = 0;
+  goto _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT;
+  }
+  _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-BUUq--0":);
-    _TIG_IZ_BUUq_argc = argc;
-    _TIG_IZ_BUUq_argv = argv;
-    _TIG_IZ_BUUq_envp = _TIG_IZ_BUUq_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-smv4--0":);
+    _TIG_IZ_smv4_argc = argc;
+    _TIG_IZ_smv4_argv = argv;
+    _TIG_IZ_smv4_envp = _TIG_IZ_smv4_formal_envp;
     break;
   }
 #line 1348 "src/digest.c"

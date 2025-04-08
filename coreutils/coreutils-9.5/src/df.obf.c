@@ -259,9 +259,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_9N0o_envp": "FUN: '_TIG_IZ_9N0o_envp__INIT'",
-          "_TIG_IZ_9N0o_argv": "FUN: '_TIG_IZ_9N0o_argv__INIT'",
-          "_TIG_IZ_9N0o_argc": "FUN: '_TIG_IZ_9N0o_argc__INIT'"
+          "_TIG_IZ_pmFh_envp": "FUN: '_TIG_IZ_pmFh_envp__INIT'",
+          "_TIG_IZ_pmFh_argv": "FUN: '_TIG_IZ_pmFh_argv__INIT'",
+          "_TIG_IZ_pmFh_argc": "FUN: '_TIG_IZ_pmFh_argc__INIT'"
         }
       }
     },
@@ -312,7 +312,6 @@ BEGIN-UNIVERSE
           "human_output_opts": "FUN: 'human_output_opts__INIT'",
           "show_listed_fs": "FUN: 'show_listed_fs__INIT'",
           "exit_status": "FUN: 'exit_status__INIT'",
-          "_TIG_IZ_c6W0_argv": "FUN: '_TIG_IZ_c6W0_argv__INIT'",
           "fs_exclude_list": "FUN: 'fs_exclude_list__INIT'",
           "header_mode": "FUN: 'header_mode__INIT'",
           "long_options": "FUN: 'long_options__INIT'",
@@ -322,15 +321,16 @@ BEGIN-UNIVERSE
           "print_type": "FUN: 'print_type__INIT'",
           "table": "FUN: 'table__INIT'",
           "nrows": "FUN: 'nrows__INIT'",
-          "_TIG_IZ_c6W0_argc": "FUN: '_TIG_IZ_c6W0_argc__INIT'",
           "grand_fsu": "FUN: 'grand_fsu__INIT'",
           "show_local_fs": "FUN: 'show_local_fs__INIT'",
           "all_args_string": "FUN: 'all_args_string__INIT'",
+          "_TIG_IZ_AEJ4_argc": "FUN: '_TIG_IZ_AEJ4_argc__INIT'",
           "devlist_table": "FUN: 'devlist_table__INIT'",
           "print_grand_total": "FUN: 'print_grand_total__INIT'",
           "tty_out": "FUN: 'tty_out__INIT'",
           "ncolumns": "FUN: 'ncolumns__INIT'",
-          "_TIG_IZ_c6W0_envp": "FUN: '_TIG_IZ_c6W0_envp__INIT'",
+          "_TIG_IZ_AEJ4_envp": "FUN: '_TIG_IZ_AEJ4_envp__INIT'",
+          "_TIG_IZ_AEJ4_argv": "FUN: '_TIG_IZ_AEJ4_argv__INIT'",
           "fs_select_list": "FUN: 'fs_select_list__INIT'",
           "field_data": "FUN: 'field_data__INIT'"
         },
@@ -3473,40 +3473,44 @@ struct ucontext_t {
 extern wint_t fgetwc(__FILE *__stream ) ;
 /* END FUNCTION-DECL-EXTERN fgetwc LOC=./src/df.merge.c:2895 */
 
-/* BEGIN STRUCT __pthread_internal_slist LOC=./src/df.merge.c:2899 */
-#line 2899 "./src/df.merge.c"
+/* BEGIN VARIABLE-DEF _TIG_IZ_AEJ4_argv LOC=UNKNOWN */
+char **_TIG_IZ_AEJ4_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_AEJ4_argv LOC=UNKNOWN */
+
+/* BEGIN STRUCT __pthread_internal_slist LOC=./src/df.merge.c:2903 */
+#line 2903 "./src/df.merge.c"
 struct __pthread_internal_slist {
    struct __pthread_internal_slist *__next ;
 };
-/* END STRUCT __pthread_internal_slist LOC=./src/df.merge.c:2899 */
+/* END STRUCT __pthread_internal_slist LOC=./src/df.merge.c:2903 */
 
-/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/df.merge.c:2905 */
-#line 2905
+/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/df.merge.c:2909 */
+#line 2909
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) crypt)(char const   *__key ,
                                                                                                 char const   *__salt ) ;
-/* END FUNCTION-DECL-EXTERN crypt LOC=./src/df.merge.c:2905 */
+/* END FUNCTION-DECL-EXTERN crypt LOC=./src/df.merge.c:2909 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_c6W0_envp LOC=UNKNOWN */
-char **_TIG_IZ_c6W0_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_c6W0_envp LOC=UNKNOWN */
+/* BEGIN VARIABLE-DECL _TIG_IZ_AEJ4_envp LOC=UNKNOWN */
+char **_TIG_IZ_AEJ4_envp ;
+/* END VARIABLE-DECL _TIG_IZ_AEJ4_envp LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/df.merge.c:2914 */
-#line 2914
+/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/df.merge.c:2918 */
+#line 2918
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoull)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                      int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/df.merge.c:2914 */
+/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/df.merge.c:2918 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/df.merge.c:2920 */
-#line 2920
-extern int ( __attribute__((__nonnull__(1))) mkstemps64)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/df.merge.c:2920 */
-
-/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/df.merge.c:2924 */
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/df.merge.c:2924 */
 #line 2924
+extern int ( __attribute__((__nonnull__(1))) mkstemps64)(char *__template , int __suffixlen ) ;
+/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/df.merge.c:2924 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/df.merge.c:2928 */
+#line 2928
 extern  __attribute__((__nothrow__, __deprecated__)) char *( __attribute__((__nonnull__(1),
 __leaf__)) getwd)(char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN getwd LOC=./src/df.merge.c:2924 */
+/* END FUNCTION-DECL-EXTERN getwd LOC=./src/df.merge.c:2928 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf LOC=BUILTIN */
 /* compiler builtin: 
@@ -3527,29 +3531,29 @@ static struct fs_type_list *fs_select_list  ;
 union __anonunion__bounds_785314544 ;
 /* END UNION-DECL __anonunion__bounds_785314544 LOC=./src/df.merge.c:1050 */
 
-/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/df.merge.c:2943 */
-#line 2943 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/df.merge.c:2947 */
+#line 2947 "./src/df.merge.c"
 struct __anonstruct___value32_118117645 {
    unsigned int __low ;
    unsigned int __high ;
 };
-/* END STRUCT __anonstruct___value32_118117645 LOC=./src/df.merge.c:2943 */
+/* END STRUCT __anonstruct___value32_118117645 LOC=./src/df.merge.c:2947 */
 
-/* BEGIN UNION __anonunion___atomic_wide_counter_370409828 LOC=./src/df.merge.c:2950 */
-#line 2950 "./src/df.merge.c"
+/* BEGIN UNION __anonunion___atomic_wide_counter_370409828 LOC=./src/df.merge.c:2954 */
+#line 2954 "./src/df.merge.c"
 union __anonunion___atomic_wide_counter_370409828 {
    unsigned long long __value64 ;
    struct __anonstruct___value32_118117645 __value32 ;
 };
-/* END UNION __anonunion___atomic_wide_counter_370409828 LOC=./src/df.merge.c:2950 */
+/* END UNION __anonunion___atomic_wide_counter_370409828 LOC=./src/df.merge.c:2954 */
 
-/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/df.merge.c:2957 */
-#line 2957 "./src/df.merge.c"
-typedef union __anonunion___atomic_wide_counter_370409828 __atomic_wide_counter;
-/* END TYPEDEF __atomic_wide_counter LOC=./src/df.merge.c:2957 */
-
-/* BEGIN STRUCT __pthread_cond_s LOC=./src/df.merge.c:2961 */
+/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/df.merge.c:2961 */
 #line 2961 "./src/df.merge.c"
+typedef union __anonunion___atomic_wide_counter_370409828 __atomic_wide_counter;
+/* END TYPEDEF __atomic_wide_counter LOC=./src/df.merge.c:2961 */
+
+/* BEGIN STRUCT __pthread_cond_s LOC=./src/df.merge.c:2965 */
+#line 2965 "./src/df.merge.c"
 struct __pthread_cond_s {
    __atomic_wide_counter __wseq ;
    __atomic_wide_counter __g1_start ;
@@ -3558,55 +3562,55 @@ struct __pthread_cond_s {
    unsigned int __wrefs ;
    unsigned int __g_signals[2] ;
 };
-/* END STRUCT __pthread_cond_s LOC=./src/df.merge.c:2961 */
+/* END STRUCT __pthread_cond_s LOC=./src/df.merge.c:2965 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstold_l LOC=./src/df.merge.c:2981 */
-#line 2981
+/* BEGIN FUNCTION-DECL-EXTERN wcstold_l LOC=./src/df.merge.c:2985 */
+#line 2985
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__leaf__)) wcstold_l)(wchar_t const   * __restrict  __nptr ,
                                                                                         wchar_t ** __restrict  __endptr ,
                                                                                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcstold_l LOC=./src/df.merge.c:2981 */
+/* END FUNCTION-DECL-EXTERN wcstold_l LOC=./src/df.merge.c:2985 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/df.merge.c:2976 */
-#line 2976
+/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/df.merge.c:2980 */
+#line 2980
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcmp)(char const   *__s1 ,
                                                                                                char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/df.merge.c:2976 */
+/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/df.merge.c:2980 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/df.merge.c:2972 */
-#line 2972
+/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/df.merge.c:2976 */
+#line 2976
 extern  __attribute__((__nothrow__)) struct lconv *( __attribute__((__leaf__)) localeconv)(void) ;
-/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/df.merge.c:2972 */
+/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/df.merge.c:2976 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/df.merge.c:2987 */
-#line 2987
+/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/df.merge.c:2991 */
+#line 2991
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoull_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                        int __base , locale_t __loc )  __asm__("__isoc23_strtoull_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/df.merge.c:2987 */
+/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/df.merge.c:2991 */
 
-/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/df.merge.c:2993 */
-#line 2993
+/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/df.merge.c:2997 */
+#line 2997
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) index)(char const   *__s ,
                                                                                               int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN index LOC=./src/df.merge.c:2993 */
+/* END FUNCTION-DECL-EXTERN index LOC=./src/df.merge.c:2997 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/df.merge.c:2998 */
-#line 2998
+/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/df.merge.c:3002 */
+#line 3002
 extern int ( __attribute__((__nonnull__(2))) fputs_unlocked)(char const   * __restrict  __s ,
                                                              FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/df.merge.c:2998 */
+/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/df.merge.c:3002 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_scalbnf128(_Float128  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN towlower_l LOC=./src/df.merge.c:3009 */
-#line 3009
+/* BEGIN FUNCTION-DECL-EXTERN towlower_l LOC=./src/df.merge.c:3013 */
+#line 3013
 extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) towlower_l)(wint_t __wc ,
                                                                                     locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN towlower_l LOC=./src/df.merge.c:3009 */
+/* END FUNCTION-DECL-EXTERN towlower_l LOC=./src/df.merge.c:3013 */
 
 /* BEGIN FUNCTION-DECL __builtin___strlcat_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -3624,53 +3628,53 @@ struct timeval ;
    void *__builtin_launder(void * ) ;  */
 /* END FUNCTION-DECL __builtin_launder LOC=BUILTIN */
 
-/* BEGIN STRUCT sigevent LOC=./src/df.merge.c:3024 */
-#line 3024 "./src/df.merge.c"
+/* BEGIN STRUCT sigevent LOC=./src/df.merge.c:3028 */
+#line 3028 "./src/df.merge.c"
 struct sigevent {
    __sigval_t sigev_value ;
    int sigev_signo ;
    int sigev_notify ;
    union __anonunion__sigev_un_37211729 _sigev_un ;
 };
-/* END STRUCT sigevent LOC=./src/df.merge.c:3024 */
+/* END STRUCT sigevent LOC=./src/df.merge.c:3028 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/df.merge.c:3037 */
-#line 3037
+/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/df.merge.c:3041 */
+#line 3041
 extern struct dirent *( __attribute__((__nonnull__(1))) readdir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir LOC=./src/df.merge.c:3037 */
+/* END FUNCTION-DECL-EXTERN readdir LOC=./src/df.merge.c:3041 */
 
 /* BEGIN FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strrchr(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/df.merge.c:3033 */
-#line 3033
+/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/df.merge.c:3037 */
+#line 3037
 extern void *xizalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/df.merge.c:3033 */
+/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/df.merge.c:3037 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsftime LOC=./src/df.merge.c:3046 */
-#line 3046
+/* BEGIN FUNCTION-DECL-EXTERN wcsftime LOC=./src/df.merge.c:3050 */
+#line 3050
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsftime)(wchar_t * __restrict  __s ,
                                                                                   size_t __maxsize ,
                                                                                   wchar_t const   * __restrict  __format ,
                                                                                   struct tm  const  * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN wcsftime LOC=./src/df.merge.c:3046 */
+/* END FUNCTION-DECL-EXTERN wcsftime LOC=./src/df.merge.c:3050 */
 
 /* BEGIN FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_sadd_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/df.merge.c:3058 */
-#line 3058
-extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigdescr_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/df.merge.c:3058 */
-
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/df.merge.c:3062 */
+/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/df.merge.c:3062 */
 #line 3062
+extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigdescr_np)(int __sig ) ;
+/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/df.merge.c:3062 */
+
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/df.merge.c:3066 */
+#line 3066
 extern enum quoting_style  const  quoting_style_vals[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/df.merge.c:3062 */
+/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/df.merge.c:3066 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsl LOC=BUILTIN */
 /* compiler builtin: 
@@ -3686,17 +3690,17 @@ __inline extern void ( __attribute__((__gnu_inline__, __always_inline__)) error_
                                                                                          , ...)  __attribute__((__cold__)) ;
 /* END FUNCTION-DECL-EXTERN error_at_line LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/df.merge.c:3080 */
-#line 3080
+/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/df.merge.c:3084 */
+#line 3084
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir64_r)(DIR * __restrict  __dirp ,
                                                                                                struct dirent64 * __restrict  __entry ,
                                                                                                struct dirent64 ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/df.merge.c:3080 */
+/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/df.merge.c:3084 */
 
-/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/df.merge.c:3086 */
-#line 3086
+/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/df.merge.c:3090 */
+#line 3090
 extern int optopt ;
-/* END VARIABLE-DECL-EXTERN optopt LOC=./src/df.merge.c:3086 */
+/* END VARIABLE-DECL-EXTERN optopt LOC=./src/df.merge.c:3090 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinh LOC=BUILTIN */
 /* compiler builtin: 
@@ -3713,8 +3717,8 @@ enum __anonenum_230064777___0 ;
    _Complex long double __builtin_ctanhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_1036286214 LOC=./src/df.merge.c:3100 */
-#line 3100
+/* BEGIN ENUM __anonenum_1036286214 LOC=./src/df.merge.c:3104 */
+#line 3104
 enum __anonenum_1036286214 {
     BUS_ADRALN = 1,
     BUS_ADRERR = 2,
@@ -3722,67 +3726,67 @@ enum __anonenum_1036286214 {
     BUS_MCEERR_AR = 4,
     BUS_MCEERR_AO = 5
 } ;
-/* END ENUM __anonenum_1036286214 LOC=./src/df.merge.c:3100 */
+/* END ENUM __anonenum_1036286214 LOC=./src/df.merge.c:3104 */
 
-/* BEGIN TYPEDEF div_t LOC=./src/df.merge.c:3110 */
-#line 3110 "./src/df.merge.c"
-typedef struct __anonstruct_div_t_773697287 div_t;
-/* END TYPEDEF div_t LOC=./src/df.merge.c:3110 */
-
-/* BEGIN TYPEDEF __ssize_t LOC=./src/df.merge.c:3114 */
+/* BEGIN TYPEDEF div_t LOC=./src/df.merge.c:3114 */
 #line 3114 "./src/df.merge.c"
-typedef long __ssize_t;
-/* END TYPEDEF __ssize_t LOC=./src/df.merge.c:3114 */
+typedef struct __anonstruct_div_t_773697287 div_t;
+/* END TYPEDEF div_t LOC=./src/df.merge.c:3114 */
 
-/* BEGIN TYPEDEF ssize_t LOC=./src/df.merge.c:3118 */
+/* BEGIN TYPEDEF __ssize_t LOC=./src/df.merge.c:3118 */
 #line 3118 "./src/df.merge.c"
-typedef __ssize_t ssize_t;
-/* END TYPEDEF ssize_t LOC=./src/df.merge.c:3118 */
+typedef long __ssize_t;
+/* END TYPEDEF __ssize_t LOC=./src/df.merge.c:3118 */
 
-/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/df.merge.c:3122 */
-#line 3122
+/* BEGIN TYPEDEF ssize_t LOC=./src/df.merge.c:3122 */
+#line 3122 "./src/df.merge.c"
+typedef __ssize_t ssize_t;
+/* END TYPEDEF ssize_t LOC=./src/df.merge.c:3122 */
+
+/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/df.merge.c:3126 */
+#line 3126
 extern ssize_t copy_file_range(int __infd , __off64_t *__pinoff , int __outfd , __off64_t *__poutoff ,
                                size_t __length , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/df.merge.c:3122 */
+/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/df.merge.c:3126 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_lgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/df.merge.c:3132 */
-#line 3132 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/df.merge.c:3136 */
+#line 3136 "./src/df.merge.c"
 union __anonunion_pthread_rwlockattr_t_145707745 {
    char __size[8] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/df.merge.c:3132 */
+/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/df.merge.c:3136 */
 
-/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/df.merge.c:3139 */
-#line 3139
+/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/df.merge.c:3143 */
+#line 3143
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) eaccess)(char const   *__name ,
                                                                                               int __type ) ;
-/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/df.merge.c:3139 */
+/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/df.merge.c:3143 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getwc LOC=./src/df.merge.c:3148 */
-#line 3148
+/* BEGIN FUNCTION-DECL-EXTERN getwc LOC=./src/df.merge.c:3152 */
+#line 3152
 extern wint_t getwc(__FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getwc LOC=./src/df.merge.c:3148 */
+/* END FUNCTION-DECL-EXTERN getwc LOC=./src/df.merge.c:3152 */
 
-/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/df.merge.c:3144 */
-#line 3144
+/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/df.merge.c:3148 */
+#line 3148
 extern int printf(char const   * __restrict  __format  , ...) ;
-/* END FUNCTION-DECL-EXTERN printf LOC=./src/df.merge.c:3144 */
+/* END FUNCTION-DECL-EXTERN printf LOC=./src/df.merge.c:3148 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:1398 */
 #line 1398
 union __anonunion_pthread_mutexattr_t_488594144 ;
 /* END UNION-DECL __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:1398 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/df.merge.c:3152 */
-#line 3152
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/df.merge.c:3156 */
+#line 3156
 extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/df.merge.c:3152 */
+/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/df.merge.c:3156 */
 
 /* BEGIN FUNCTION-DECL __builtin_operator_new LOC=BUILTIN */
 /* compiler builtin: 
@@ -3799,17 +3803,17 @@ extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
 struct _IO_marker ;
 /* END STRUCT-DECL _IO_marker LOC=./src/df.merge.c:946 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/df.merge.c:3170 */
-#line 3170
+/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/df.merge.c:3174 */
+#line 3174
 extern void *xireallocarray(void *p , idx_t n , idx_t s )  __attribute__((__returns_nonnull__,
 __alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/df.merge.c:3170 */
+/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/df.merge.c:3174 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstof64 LOC=./src/df.merge.c:3175 */
-#line 3175
+/* BEGIN FUNCTION-DECL-EXTERN wcstof64 LOC=./src/df.merge.c:3179 */
+#line 3179
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) wcstof64)(wchar_t const   * __restrict  __nptr ,
                                                                                   wchar_t ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN wcstof64 LOC=./src/df.merge.c:3175 */
+/* END FUNCTION-DECL-EXTERN wcstof64 LOC=./src/df.merge.c:3179 */
 
 /* BEGIN FUNCTION-DECL __builtin_clzll LOC=BUILTIN */
 /* compiler builtin: 
@@ -3821,26 +3825,26 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) wcstof64
    long __builtin_bswap64(long  ) ;  */
 /* END FUNCTION-DECL __builtin_bswap64 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __suseconds_t LOC=./src/df.merge.c:3190 */
-#line 3190 "./src/df.merge.c"
-typedef long __suseconds_t;
-/* END TYPEDEF __suseconds_t LOC=./src/df.merge.c:3190 */
-
-/* BEGIN STRUCT timeval LOC=./src/df.merge.c:3194 */
+/* BEGIN TYPEDEF __suseconds_t LOC=./src/df.merge.c:3194 */
 #line 3194 "./src/df.merge.c"
+typedef long __suseconds_t;
+/* END TYPEDEF __suseconds_t LOC=./src/df.merge.c:3194 */
+
+/* BEGIN STRUCT timeval LOC=./src/df.merge.c:3198 */
+#line 3198 "./src/df.merge.c"
 struct timeval {
    __time_t tv_sec ;
    __suseconds_t tv_usec ;
 };
-/* END STRUCT timeval LOC=./src/df.merge.c:3194 */
+/* END STRUCT timeval LOC=./src/df.merge.c:3198 */
 
-/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/df.merge.c:3201 */
-#line 3201 "./src/df.merge.c"
-typedef long __syscall_slong_t;
-/* END TYPEDEF __syscall_slong_t LOC=./src/df.merge.c:3201 */
-
-/* BEGIN STRUCT timex LOC=./src/df.merge.c:3205 */
+/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/df.merge.c:3205 */
 #line 3205 "./src/df.merge.c"
+typedef long __syscall_slong_t;
+/* END TYPEDEF __syscall_slong_t LOC=./src/df.merge.c:3205 */
+
+/* BEGIN STRUCT timex LOC=./src/df.merge.c:3209 */
+#line 3209 "./src/df.merge.c"
 struct timex {
    unsigned int modes ;
    __syscall_slong_t offset ;
@@ -3874,81 +3878,81 @@ struct timex {
    int  : 32 ;
    int  : 32 ;
 };
-/* END STRUCT timex LOC=./src/df.merge.c:3205 */
+/* END STRUCT timex LOC=./src/df.merge.c:3209 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/df.merge.c:3241 */
-#line 3241
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setgid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setgid LOC=./src/df.merge.c:3241 */
-
-/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/df.merge.c:3249 */
-#line 3249
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dysize)(int __year )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dysize LOC=./src/df.merge.c:3249 */
-
-/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/df.merge.c:3245 */
+/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/df.merge.c:3245 */
 #line 3245
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setgid)(__gid_t __gid ) ;
+/* END FUNCTION-DECL-EXTERN setgid LOC=./src/df.merge.c:3245 */
+
+/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/df.merge.c:3253 */
+#line 3253
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dysize)(int __year )  __attribute__((__const__)) ;
+/* END FUNCTION-DECL-EXTERN dysize LOC=./src/df.merge.c:3253 */
+
+/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/df.merge.c:3249 */
+#line 3249
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chroot)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chroot LOC=./src/df.merge.c:3245 */
+/* END FUNCTION-DECL-EXTERN chroot LOC=./src/df.merge.c:3249 */
 
 /* BEGIN VARIABLE-DECL ncolumns LOC=UNKNOWN */
 static size_t ncolumns ;
 /* END VARIABLE-DECL ncolumns LOC=UNKNOWN */
 
-/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/df.merge.c:3257 */
-#line 3257 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/df.merge.c:3261 */
+#line 3261 "./src/df.merge.c"
 struct __anonstruct__kill_244518854 {
    __pid_t si_pid ;
    __uid_t si_uid ;
 };
-/* END STRUCT __anonstruct__kill_244518854 LOC=./src/df.merge.c:3257 */
+/* END STRUCT __anonstruct__kill_244518854 LOC=./src/df.merge.c:3261 */
 
-/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/df.merge.c:3264 */
-#line 3264 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/df.merge.c:3268 */
+#line 3268 "./src/df.merge.c"
 struct __anonstruct__rt_619254530 {
    __pid_t si_pid ;
    __uid_t si_uid ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__rt_619254530 LOC=./src/df.merge.c:3264 */
+/* END STRUCT __anonstruct__rt_619254530 LOC=./src/df.merge.c:3268 */
 
-/* BEGIN UNION __anonunion__bounds_785314544 LOC=./src/df.merge.c:3272 */
-#line 3272 "./src/df.merge.c"
+/* BEGIN UNION __anonunion__bounds_785314544 LOC=./src/df.merge.c:3276 */
+#line 3276 "./src/df.merge.c"
 union __anonunion__bounds_785314544 {
    struct __anonstruct__addr_bnd_5259977 _addr_bnd ;
    __uint32_t _pkey ;
 };
-/* END UNION __anonunion__bounds_785314544 LOC=./src/df.merge.c:3272 */
+/* END UNION __anonunion__bounds_785314544 LOC=./src/df.merge.c:3276 */
 
-/* BEGIN STRUCT __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:3279 */
-#line 3279 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:3283 */
+#line 3283 "./src/df.merge.c"
 struct __anonstruct__sigfault_506237305 {
    void *si_addr ;
    short si_addr_lsb ;
    union __anonunion__bounds_785314544 _bounds ;
 };
-/* END STRUCT __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:3279 */
+/* END STRUCT __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:3283 */
 
-/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:3287 */
-#line 3287 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:3291 */
+#line 3291 "./src/df.merge.c"
 struct __anonstruct__sigsys_1029881407 {
    void *_call_addr ;
    int _syscall ;
    unsigned int _arch ;
 };
-/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:3287 */
+/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:3291 */
 
-/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/df.merge.c:3295 */
-#line 3295 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/df.merge.c:3299 */
+#line 3299 "./src/df.merge.c"
 struct __anonstruct__timer_490064738 {
    int si_tid ;
    int si_overrun ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__timer_490064738 LOC=./src/df.merge.c:3295 */
+/* END STRUCT __anonstruct__timer_490064738 LOC=./src/df.merge.c:3299 */
 
-/* BEGIN UNION __anonunion__sifields_717391825 LOC=./src/df.merge.c:3303 */
-#line 3303 "./src/df.merge.c"
+/* BEGIN UNION __anonunion__sifields_717391825 LOC=./src/df.merge.c:3307 */
+#line 3307 "./src/df.merge.c"
 union __anonunion__sifields_717391825 {
    int _pad[128ULL / sizeof(int ) - 4ULL] ;
    struct __anonstruct__kill_244518854 _kill ;
@@ -3959,7 +3963,7 @@ union __anonunion__sifields_717391825 {
    struct __anonstruct__sigpoll_386613454 _sigpoll ;
    struct __anonstruct__sigsys_1029881407 _sigsys ;
 };
-/* END UNION __anonunion__sifields_717391825 LOC=./src/df.merge.c:3303 */
+/* END UNION __anonunion__sifields_717391825 LOC=./src/df.merge.c:3307 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_end LOC=BUILTIN */
 /* compiler builtin: 
@@ -3975,8 +3979,8 @@ struct statx_timestamp ;
 static int tty_out  ;
 /* END VARIABLE-DEF tty_out LOC=UNKNOWN */
 
-/* BEGIN ENUM __anonenum_264572385 LOC=./src/df.merge.c:3325 */
-#line 3325
+/* BEGIN ENUM __anonenum_264572385 LOC=./src/df.merge.c:3329 */
+#line 3329
 enum __anonenum_264572385 {
     __ISwupper = 0,
     __ISwlower = 1,
@@ -4003,13 +4007,13 @@ enum __anonenum_264572385 {
     _ISwpunct = 262144,
     _ISwalnum = 524288
 } ;
-/* END ENUM __anonenum_264572385 LOC=./src/df.merge.c:3325 */
+/* END ENUM __anonenum_264572385 LOC=./src/df.merge.c:3329 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/df.merge.c:3354 */
-#line 3354
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/df.merge.c:3358 */
+#line 3358
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32x)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/df.merge.c:3354 */
+/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/df.merge.c:3358 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4026,25 +4030,25 @@ struct field_data_t ;
    _Float128 __builtin_nexttowardf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN c32rtomb LOC=./src/df.merge.c:3369 */
-#line 3369
+/* BEGIN FUNCTION-DECL-EXTERN c32rtomb LOC=./src/df.merge.c:3373 */
+#line 3373
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c32rtomb)(char * __restrict  __s ,
                                                                                   char32_t __c32 ,
                                                                                   mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN c32rtomb LOC=./src/df.merge.c:3369 */
+/* END FUNCTION-DECL-EXTERN c32rtomb LOC=./src/df.merge.c:3373 */
 
 /* BEGIN UNION-DECL __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:982 */
 #line 982
 union __anonunion___sigaction_handler_363639592 ;
 /* END UNION-DECL __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:982 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_delete LOC=./src/df.merge.c:3375 */
-#line 3375
-extern  __attribute__((__deprecated__)) void *hash_delete(Hash_table *table , void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_delete LOC=./src/df.merge.c:3375 */
-
-/* BEGIN ENUM __anonenum_451154152 LOC=./src/df.merge.c:3379 */
+/* BEGIN FUNCTION-DECL-EXTERN hash_delete LOC=./src/df.merge.c:3379 */
 #line 3379
+extern  __attribute__((__deprecated__)) void *hash_delete(Hash_table *table , void const   *entry ) ;
+/* END FUNCTION-DECL-EXTERN hash_delete LOC=./src/df.merge.c:3379 */
+
+/* BEGIN ENUM __anonenum_451154152 LOC=./src/df.merge.c:3383 */
+#line 3383
 enum __anonenum_451154152 {
     REG_R8 = 0,
     REG_R9 = 1,
@@ -4070,68 +4074,68 @@ enum __anonenum_451154152 {
     REG_OLDMASK = 21,
     REG_CR2 = 22
 } ;
-/* END ENUM __anonenum_451154152 LOC=./src/df.merge.c:3379 */
+/* END ENUM __anonenum_451154152 LOC=./src/df.merge.c:3383 */
 
-/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/df.merge.c:3407 */
-#line 3407 "./src/df.merge.c"
+/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/df.merge.c:3411 */
+#line 3411 "./src/df.merge.c"
 typedef struct __pthread_internal_slist __pthread_slist_t;
-/* END TYPEDEF __pthread_slist_t LOC=./src/df.merge.c:3407 */
+/* END TYPEDEF __pthread_slist_t LOC=./src/df.merge.c:3411 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_expf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL directory_status LOC=./src/df.merge.c:3416 */
-#line 3416
-__inline static int directory_status(int fd_cwd , char const   *dir ) ;
-/* END FUNCTION-DECL directory_status LOC=./src/df.merge.c:3416 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/df.merge.c:3420 */
+/* BEGIN FUNCTION-DECL directory_status LOC=./src/df.merge.c:3420 */
 #line 3420
+__inline static int directory_status(int fd_cwd , char const   *dir ) ;
+/* END FUNCTION-DECL directory_status LOC=./src/df.merge.c:3420 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/df.merge.c:3424 */
+#line 3424
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strspn)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strspn LOC=./src/df.merge.c:3420 */
+/* END FUNCTION-DECL-EXTERN strspn LOC=./src/df.merge.c:3424 */
 
-/* BEGIN TYPEDEF __u_short LOC=./src/df.merge.c:3425 */
-#line 3425 "./src/df.merge.c"
-typedef unsigned short __u_short;
-/* END TYPEDEF __u_short LOC=./src/df.merge.c:3425 */
-
-/* BEGIN TYPEDEF u_short LOC=./src/df.merge.c:3429 */
+/* BEGIN TYPEDEF __u_short LOC=./src/df.merge.c:3429 */
 #line 3429 "./src/df.merge.c"
-typedef __u_short u_short;
-/* END TYPEDEF u_short LOC=./src/df.merge.c:3429 */
+typedef unsigned short __u_short;
+/* END TYPEDEF __u_short LOC=./src/df.merge.c:3429 */
 
-/* BEGIN STRUCT timespec LOC=./src/df.merge.c:3433 */
+/* BEGIN TYPEDEF u_short LOC=./src/df.merge.c:3433 */
 #line 3433 "./src/df.merge.c"
+typedef __u_short u_short;
+/* END TYPEDEF u_short LOC=./src/df.merge.c:3433 */
+
+/* BEGIN STRUCT timespec LOC=./src/df.merge.c:3437 */
+#line 3437 "./src/df.merge.c"
 struct timespec {
    __time_t tv_sec ;
    __syscall_slong_t tv_nsec ;
 };
-/* END STRUCT timespec LOC=./src/df.merge.c:3433 */
+/* END STRUCT timespec LOC=./src/df.merge.c:3437 */
 
-/* BEGIN FUNCTION-DECL timespectod LOC=./src/df.merge.c:3440 */
-#line 3440
+/* BEGIN FUNCTION-DECL timespectod LOC=./src/df.merge.c:3444 */
+#line 3444
 __inline double timespectod(struct timespec a ) ;
-/* END FUNCTION-DECL timespectod LOC=./src/df.merge.c:3440 */
+/* END FUNCTION-DECL timespectod LOC=./src/df.merge.c:3444 */
 
-/* BEGIN TYPEDEF __uint_least16_t LOC=./src/df.merge.c:3444 */
-#line 3444 "./src/df.merge.c"
-typedef __uint16_t __uint_least16_t;
-/* END TYPEDEF __uint_least16_t LOC=./src/df.merge.c:3444 */
-
-/* BEGIN TYPEDEF char16_t LOC=./src/df.merge.c:3448 */
+/* BEGIN TYPEDEF __uint_least16_t LOC=./src/df.merge.c:3448 */
 #line 3448 "./src/df.merge.c"
-typedef __uint_least16_t char16_t;
-/* END TYPEDEF char16_t LOC=./src/df.merge.c:3448 */
+typedef __uint16_t __uint_least16_t;
+/* END TYPEDEF __uint_least16_t LOC=./src/df.merge.c:3448 */
 
-/* BEGIN FUNCTION-DECL-EXTERN c16rtomb LOC=./src/df.merge.c:3452 */
-#line 3452
+/* BEGIN TYPEDEF char16_t LOC=./src/df.merge.c:3452 */
+#line 3452 "./src/df.merge.c"
+typedef __uint_least16_t char16_t;
+/* END TYPEDEF char16_t LOC=./src/df.merge.c:3452 */
+
+/* BEGIN FUNCTION-DECL-EXTERN c16rtomb LOC=./src/df.merge.c:3456 */
+#line 3456
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c16rtomb)(char * __restrict  __s ,
                                                                                   char16_t __c16 ,
                                                                                   mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN c16rtomb LOC=./src/df.merge.c:3452 */
+/* END FUNCTION-DECL-EXTERN c16rtomb LOC=./src/df.merge.c:3456 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccos LOC=BUILTIN */
 /* compiler builtin: 
@@ -4148,96 +4152,96 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c16rtomb
    float __builtin_logf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/df.merge.c:3473 */
-#line 3473
+/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/df.merge.c:3477 */
+#line 3477
 extern __off_t ( __attribute__((__nonnull__(1))) ftello)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello LOC=./src/df.merge.c:3473 */
+/* END FUNCTION-DECL-EXTERN ftello LOC=./src/df.merge.c:3477 */
 
-/* BEGIN TYPEDEF ushort LOC=./src/df.merge.c:3477 */
-#line 3477 "./src/df.merge.c"
+/* BEGIN TYPEDEF ushort LOC=./src/df.merge.c:3481 */
+#line 3481 "./src/df.merge.c"
 typedef unsigned short ushort;
-/* END TYPEDEF ushort LOC=./src/df.merge.c:3477 */
+/* END TYPEDEF ushort LOC=./src/df.merge.c:3481 */
 
 /* BEGIN FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_nan(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __intmax_t LOC=./src/df.merge.c:3486 */
-#line 3486 "./src/df.merge.c"
-typedef long __intmax_t;
-/* END TYPEDEF __intmax_t LOC=./src/df.merge.c:3486 */
-
-/* BEGIN TYPEDEF imaxdiv_t LOC=./src/df.merge.c:3490 */
+/* BEGIN TYPEDEF __intmax_t LOC=./src/df.merge.c:3490 */
 #line 3490 "./src/df.merge.c"
-typedef struct __anonstruct_imaxdiv_t_825626742 imaxdiv_t;
-/* END TYPEDEF imaxdiv_t LOC=./src/df.merge.c:3490 */
+typedef long __intmax_t;
+/* END TYPEDEF __intmax_t LOC=./src/df.merge.c:3490 */
 
-/* BEGIN TYPEDEF intmax_t LOC=./src/df.merge.c:3494 */
+/* BEGIN TYPEDEF imaxdiv_t LOC=./src/df.merge.c:3494 */
 #line 3494 "./src/df.merge.c"
-typedef __intmax_t intmax_t;
-/* END TYPEDEF intmax_t LOC=./src/df.merge.c:3494 */
+typedef struct __anonstruct_imaxdiv_t_825626742 imaxdiv_t;
+/* END TYPEDEF imaxdiv_t LOC=./src/df.merge.c:3494 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/df.merge.c:3498 */
-#line 3498
+/* BEGIN TYPEDEF intmax_t LOC=./src/df.merge.c:3498 */
+#line 3498 "./src/df.merge.c"
+typedef __intmax_t intmax_t;
+/* END TYPEDEF intmax_t LOC=./src/df.merge.c:3498 */
+
+/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/df.merge.c:3502 */
+#line 3502
 extern  __attribute__((__nothrow__)) imaxdiv_t ( __attribute__((__leaf__)) imaxdiv)(intmax_t __numer ,
                                                                                     intmax_t __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/df.merge.c:3498 */
+/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/df.merge.c:3502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/df.merge.c:3503 */
-#line 3503
+/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/df.merge.c:3507 */
+#line 3507
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atoi)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoi LOC=./src/df.merge.c:3503 */
+/* END FUNCTION-DECL-EXTERN atoi LOC=./src/df.merge.c:3507 */
 
 /* BEGIN STRUCT-DECL __time_t_must_be_integral LOC=./src/df.merge.c:1338 */
 #line 1338
 struct __time_t_must_be_integral ;
 /* END STRUCT-DECL __time_t_must_be_integral LOC=./src/df.merge.c:1338 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/df.merge.c:3526 */
-#line 3526
+/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/df.merge.c:3530 */
+#line 3530
 extern int ( __attribute__((__nonnull__(1))) fscanf)(FILE * __restrict  __stream ,
                                                      char const   * __restrict  __format 
                                                      , ...)  __asm__("__isoc23_fscanf")  ;
-/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/df.merge.c:3526 */
+/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/df.merge.c:3530 */
 
-/* BEGIN TYPEDEF __dev_t LOC=./src/df.merge.c:3511 */
-#line 3511 "./src/df.merge.c"
-typedef unsigned long __dev_t;
-/* END TYPEDEF __dev_t LOC=./src/df.merge.c:3511 */
-
-/* BEGIN TYPEDEF __mode_t LOC=./src/df.merge.c:3515 */
+/* BEGIN TYPEDEF __dev_t LOC=./src/df.merge.c:3515 */
 #line 3515 "./src/df.merge.c"
-typedef unsigned int __mode_t;
-/* END TYPEDEF __mode_t LOC=./src/df.merge.c:3515 */
+typedef unsigned long __dev_t;
+/* END TYPEDEF __dev_t LOC=./src/df.merge.c:3515 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/df.merge.c:3519 */
-#line 3519
+/* BEGIN TYPEDEF __mode_t LOC=./src/df.merge.c:3519 */
+#line 3519 "./src/df.merge.c"
+typedef unsigned int __mode_t;
+/* END TYPEDEF __mode_t LOC=./src/df.merge.c:3519 */
+
+/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/df.merge.c:3523 */
+#line 3523
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mknodat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ,
                                                                                               __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/df.merge.c:3519 */
+/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/df.merge.c:3523 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/df.merge.c:3532 */
-#line 3532
+/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/df.merge.c:3536 */
+#line 3536
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execl)(char const   *__path ,
                                                                                               char const   *__arg 
                                                                                               , ...) ;
-/* END FUNCTION-DECL-EXTERN execl LOC=./src/df.merge.c:3532 */
+/* END FUNCTION-DECL-EXTERN execl LOC=./src/df.merge.c:3536 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/df.merge.c:3507 */
-#line 3507
+/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/df.merge.c:3511 */
+#line 3511
 extern struct timespec timespec_sub(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/df.merge.c:3507 */
+/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/df.merge.c:3511 */
 
-/* BEGIN STRUCT sigstack LOC=./src/df.merge.c:3538 */
-#line 3538 "./src/df.merge.c"
+/* BEGIN STRUCT sigstack LOC=./src/df.merge.c:3542 */
+#line 3542 "./src/df.merge.c"
 struct sigstack {
    void *ss_sp ;
    int ss_onstack ;
 };
-/* END STRUCT sigstack LOC=./src/df.merge.c:3538 */
+/* END STRUCT sigstack LOC=./src/df.merge.c:3542 */
 
 /* BEGIN FUNCTION-DECL __builtin_objc_memmove_collectable LOC=BUILTIN */
 /* compiler builtin: 
@@ -4254,17 +4258,17 @@ struct file_handle ;
 enum __anonenum_448173130 ;
 /* END ENUM-DECL __anonenum_448173130 LOC=./src/df.merge.c:1518 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/df.merge.c:3550 */
-#line 3550
+/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/df.merge.c:3554 */
+#line 3554
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvpe)(char const   *__file ,
                                                                                                 char **__argv ,
                                                                                                 char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/df.merge.c:3550 */
+/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/df.merge.c:3554 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/df.merge.c:3556 */
-#line 3556
+/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/df.merge.c:3560 */
+#line 3560
 extern int __overflow(FILE * , int  ) ;
-/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/df.merge.c:3556 */
+/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/df.merge.c:3560 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4276,20 +4280,20 @@ extern int __overflow(FILE * , int  ) ;
 struct __anonstruct___mbstate_t_406964895 ;
 /* END STRUCT-DECL __anonstruct___mbstate_t_406964895 LOC=./src/df.merge.c:1182 */
 
-/* BEGIN TYPEDEF __suseconds64_t LOC=./src/df.merge.c:3565 */
-#line 3565 "./src/df.merge.c"
+/* BEGIN TYPEDEF __suseconds64_t LOC=./src/df.merge.c:3569 */
+#line 3569 "./src/df.merge.c"
 typedef long __suseconds64_t;
-/* END TYPEDEF __suseconds64_t LOC=./src/df.merge.c:3565 */
+/* END TYPEDEF __suseconds64_t LOC=./src/df.merge.c:3569 */
 
-/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/df.merge.c:3569 */
-#line 3569
-__inline static __uint64_t __uint64_identity(__uint64_t __x ) ;
-/* END FUNCTION-DECL __uint64_identity LOC=./src/df.merge.c:3569 */
-
-/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/df.merge.c:3573 */
+/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/df.merge.c:3573 */
 #line 3573
+__inline static __uint64_t __uint64_identity(__uint64_t __x ) ;
+/* END FUNCTION-DECL __uint64_identity LOC=./src/df.merge.c:3573 */
+
+/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/df.merge.c:3577 */
+#line 3577
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN raise LOC=./src/df.merge.c:3573 */
+/* END FUNCTION-DECL-EXTERN raise LOC=./src/df.merge.c:3577 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -4297,68 +4301,68 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int 
                                  unsigned long const    , unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_subcl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/df.merge.c:3588 */
-#line 3588
+/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/df.merge.c:3592 */
+#line 3592
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qecvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/df.merge.c:3588 */
+/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/df.merge.c:3592 */
 
 /* BEGIN FUNCTION-DECL __builtin___vprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin___vprintf_chk(int  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vprintf_chk LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_606700034___0 LOC=./src/df.merge.c:3595 */
-#line 3595
+/* BEGIN ENUM __anonenum_606700034___0 LOC=./src/df.merge.c:3599 */
+#line 3599
 enum __anonenum_606700034___0 {
     DS_UNKNOWN___0 = -2,
     DS_EMPTY___0 = -1,
     DS_NONEMPTY___0 = 0
 } ;
-/* END ENUM __anonenum_606700034___0 LOC=./src/df.merge.c:3595 */
+/* END ENUM __anonenum_606700034___0 LOC=./src/df.merge.c:3599 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/df.merge.c:3603 */
-#line 3603
+/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/df.merge.c:3607 */
+#line 3607
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkdirat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/df.merge.c:3603 */
+/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/df.merge.c:3607 */
 
 /* BEGIN ENUM-DECL canonicalize_mode_t LOC=./src/df.merge.c:1566 */
 #line 1566
 enum canonicalize_mode_t ;
 /* END ENUM-DECL canonicalize_mode_t LOC=./src/df.merge.c:1566 */
 
-/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/df.merge.c:3609 */
-#line 3609
+/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/df.merge.c:3613 */
+#line 3613
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) a64l)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN a64l LOC=./src/df.merge.c:3609 */
+/* END FUNCTION-DECL-EXTERN a64l LOC=./src/df.merge.c:3613 */
 
-/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/df.merge.c:3613 */
-#line 3613 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/df.merge.c:3617 */
+#line 3617 "./src/df.merge.c"
 typedef int __kernel_daddr_t;
-/* END TYPEDEF __kernel_daddr_t LOC=./src/df.merge.c:3613 */
+/* END TYPEDEF __kernel_daddr_t LOC=./src/df.merge.c:3617 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/df.merge.c:3617 */
-#line 3617
+/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/df.merge.c:3621 */
+#line 3621
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat64)(char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/df.merge.c:3617 */
+/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/df.merge.c:3621 */
 
-/* BEGIN TYPEDEF timezone_t LOC=./src/df.merge.c:3622 */
-#line 3622 "./src/df.merge.c"
+/* BEGIN TYPEDEF timezone_t LOC=./src/df.merge.c:3626 */
+#line 3626 "./src/df.merge.c"
 typedef struct tm_zone *timezone_t;
-/* END TYPEDEF timezone_t LOC=./src/df.merge.c:3622 */
+/* END TYPEDEF timezone_t LOC=./src/df.merge.c:3626 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/df.merge.c:3626 */
-#line 3626
-extern void tzfree(timezone_t __tz ) ;
-/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/df.merge.c:3626 */
-
-/* BEGIN ENUM __anonenum_91015150 LOC=./src/df.merge.c:3630 */
+/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/df.merge.c:3630 */
 #line 3630
+extern void tzfree(timezone_t __tz ) ;
+/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/df.merge.c:3630 */
+
+/* BEGIN ENUM __anonenum_91015150 LOC=./src/df.merge.c:3634 */
+#line 3634
 enum __anonenum_91015150 {
     TRAP_BRKPT = 1,
     TRAP_TRACE = 2,
@@ -4366,32 +4370,32 @@ enum __anonenum_91015150 {
     TRAP_HWBKPT = 4,
     TRAP_UNK = 5
 } ;
-/* END ENUM __anonenum_91015150 LOC=./src/df.merge.c:3630 */
+/* END ENUM __anonenum_91015150 LOC=./src/df.merge.c:3634 */
 
-/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/df.merge.c:3640 */
-#line 3640
+/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/df.merge.c:3644 */
+#line 3644
 __inline static void emit_blocksize_note(char const   *program ) ;
-/* END FUNCTION-DECL emit_blocksize_note LOC=./src/df.merge.c:3640 */
+/* END FUNCTION-DECL emit_blocksize_note LOC=./src/df.merge.c:3644 */
 
-/* BEGIN TYPEDEF int_fast8_t LOC=./src/df.merge.c:3644 */
-#line 3644 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_fast8_t LOC=./src/df.merge.c:3648 */
+#line 3648 "./src/df.merge.c"
 typedef signed char int_fast8_t;
-/* END TYPEDEF int_fast8_t LOC=./src/df.merge.c:3644 */
+/* END TYPEDEF int_fast8_t LOC=./src/df.merge.c:3648 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetwc_unlocked LOC=./src/df.merge.c:3648 */
-#line 3648
-extern wint_t fgetwc_unlocked(__FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetwc_unlocked LOC=./src/df.merge.c:3648 */
-
-/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/df.merge.c:3652 */
+/* BEGIN FUNCTION-DECL-EXTERN fgetwc_unlocked LOC=./src/df.merge.c:3652 */
 #line 3652
-extern char *__tzname[2] ;
-/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/df.merge.c:3652 */
+extern wint_t fgetwc_unlocked(__FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fgetwc_unlocked LOC=./src/df.merge.c:3652 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/df.merge.c:3656 */
+/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/df.merge.c:3656 */
 #line 3656
+extern char *__tzname[2] ;
+/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/df.merge.c:3656 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/df.merge.c:3660 */
+#line 3660
 extern char const   *quote_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/df.merge.c:3656 */
+/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/df.merge.c:3660 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4399,62 +4403,62 @@ extern char const   *quote_mem(char const   *arg , size_t argsize ) ;
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/df.merge.c:3660 */
-#line 3660
+/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/df.merge.c:3664 */
+#line 3664
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) setenv)(char const   *__name ,
                                                                                              char const   *__value ,
                                                                                              int __replace ) ;
-/* END FUNCTION-DECL-EXTERN setenv LOC=./src/df.merge.c:3660 */
+/* END FUNCTION-DECL-EXTERN setenv LOC=./src/df.merge.c:3664 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/df.merge.c:3672 */
-#line 3672
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/df.merge.c:3676 */
+#line 3676
 extern int ( __attribute__((__nonnull__(1))) rpl_fclose)(FILE *stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/df.merge.c:3672 */
+/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/df.merge.c:3676 */
 
 /* BEGIN FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_rint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/df.merge.c:3681 */
-#line 3681 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/df.merge.c:3685 */
+#line 3685 "./src/df.merge.c"
 typedef unsigned long __kernel_ulong_t;
-/* END TYPEDEF __kernel_ulong_t LOC=./src/df.merge.c:3681 */
+/* END TYPEDEF __kernel_ulong_t LOC=./src/df.merge.c:3685 */
 
-/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/df.merge.c:3685 */
-#line 3685
+/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/df.merge.c:3689 */
+#line 3689
 enum __anonenum_57186863___0 {
     SS_ONSTACK___0 = 1,
     SS_DISABLE___0 = 2
 } ;
-/* END ENUM __anonenum_57186863___0 LOC=./src/df.merge.c:3685 */
+/* END ENUM __anonenum_57186863___0 LOC=./src/df.merge.c:3689 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/df.merge.c:3692 */
-#line 3692
+/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/df.merge.c:3696 */
+#line 3696
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sscanf)(char const   * __restrict  __s ,
                                                                              char const   * __restrict  __format 
                                                                              , ...)  __asm__("__isoc23_sscanf")  ;
-/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/df.merge.c:3692 */
+/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/df.merge.c:3696 */
 
-/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/df.merge.c:3698 */
-#line 3698
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
-/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/df.merge.c:3698 */
-
-/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/df.merge.c:3706 */
-#line 3706
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN basename LOC=./src/df.merge.c:3706 */
-
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/df.merge.c:3702 */
+/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/df.merge.c:3702 */
 #line 3702
-extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/df.merge.c:3702 */
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
+/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/df.merge.c:3702 */
 
-/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/df.merge.c:3710 */
-#line 3710 "./src/df.merge.c"
+/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/df.merge.c:3710 */
+#line 3710
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
+/* END FUNCTION-DECL-EXTERN basename LOC=./src/df.merge.c:3710 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/df.merge.c:3706 */
+#line 3706
+extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/df.merge.c:3706 */
+
+/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/df.merge.c:3714 */
+#line 3714 "./src/df.merge.c"
 typedef unsigned short __kernel_uid16_t;
-/* END TYPEDEF __kernel_uid16_t LOC=./src/df.merge.c:3710 */
+/* END TYPEDEF __kernel_uid16_t LOC=./src/df.merge.c:3714 */
 
 /* BEGIN STRUCT-DECL _fpreg LOC=./src/df.merge.c:1038 */
 #line 1038
@@ -4466,18 +4470,18 @@ struct _fpreg ;
    float __builtin_truncf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __ino64_t LOC=./src/df.merge.c:3719 */
-#line 3719 "./src/df.merge.c"
+/* BEGIN TYPEDEF __ino64_t LOC=./src/df.merge.c:3723 */
+#line 3723 "./src/df.merge.c"
 typedef unsigned long __ino64_t;
-/* END TYPEDEF __ino64_t LOC=./src/df.merge.c:3719 */
+/* END TYPEDEF __ino64_t LOC=./src/df.merge.c:3723 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/df.merge.c:3751 */
-#line 3751
+/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/df.merge.c:3755 */
+#line 3755
 extern int ( __attribute__((__nonnull__(1))) fpurge)(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/df.merge.c:3751 */
+/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/df.merge.c:3755 */
 
-/* BEGIN ENUM strtol_error LOC=./src/df.merge.c:3723 */
-#line 3723
+/* BEGIN ENUM strtol_error LOC=./src/df.merge.c:3727 */
+#line 3727
 enum strtol_error {
     LONGINT_OK = 0,
     LONGINT_OVERFLOW = 1,
@@ -4485,159 +4489,163 @@ enum strtol_error {
     LONGINT_INVALID_SUFFIX_CHAR_WITH_OVERFLOW = 3,
     LONGINT_INVALID = 4
 } ;
-/* END ENUM strtol_error LOC=./src/df.merge.c:3723 */
+/* END ENUM strtol_error LOC=./src/df.merge.c:3727 */
 
-/* BEGIN TYPEDEF __uintmax_t LOC=./src/df.merge.c:3733 */
-#line 3733 "./src/df.merge.c"
-typedef unsigned long __uintmax_t;
-/* END TYPEDEF __uintmax_t LOC=./src/df.merge.c:3733 */
-
-/* BEGIN TYPEDEF uintmax_t LOC=./src/df.merge.c:3737 */
+/* BEGIN TYPEDEF __uintmax_t LOC=./src/df.merge.c:3737 */
 #line 3737 "./src/df.merge.c"
+typedef unsigned long __uintmax_t;
+/* END TYPEDEF __uintmax_t LOC=./src/df.merge.c:3737 */
+
+/* BEGIN TYPEDEF uintmax_t LOC=./src/df.merge.c:3741 */
+#line 3741 "./src/df.merge.c"
 typedef __uintmax_t uintmax_t;
-/* END TYPEDEF uintmax_t LOC=./src/df.merge.c:3737 */
+/* END TYPEDEF uintmax_t LOC=./src/df.merge.c:3741 */
 
-/* BEGIN FUNCTION-DECL-EXTERN human_options LOC=./src/df.merge.c:3741 */
-#line 3741
-extern enum strtol_error human_options(char const   * , int * , uintmax_t * ) ;
-/* END FUNCTION-DECL-EXTERN human_options LOC=./src/df.merge.c:3741 */
-
-/* BEGIN FUNCTION-DECL-EXTERN wcstof128_l LOC=./src/df.merge.c:3745 */
+/* BEGIN FUNCTION-DECL-EXTERN human_options LOC=./src/df.merge.c:3745 */
 #line 3745
+extern enum strtol_error human_options(char const   * , int * , uintmax_t * ) ;
+/* END FUNCTION-DECL-EXTERN human_options LOC=./src/df.merge.c:3745 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wcstof128_l LOC=./src/df.merge.c:3749 */
+#line 3749
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__leaf__)) wcstof128_l)(wchar_t const   * __restrict  __nptr ,
                                                                                         wchar_t ** __restrict  __endptr ,
                                                                                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcstof128_l LOC=./src/df.merge.c:3745 */
+/* END FUNCTION-DECL-EXTERN wcstof128_l LOC=./src/df.merge.c:3749 */
 
-/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/df.merge.c:3755 */
-#line 3755
+/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/df.merge.c:3759 */
+#line 3759
 enum __anonenum_463020052___0 {
     TIMESPEC_HZ___0 = 1000000000
 } ;
-/* END ENUM __anonenum_463020052___0 LOC=./src/df.merge.c:3755 */
+/* END ENUM __anonenum_463020052___0 LOC=./src/df.merge.c:3759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstof64x_l LOC=./src/df.merge.c:3761 */
-#line 3761
+/* BEGIN FUNCTION-DECL-EXTERN wcstof64x_l LOC=./src/df.merge.c:3765 */
+#line 3765
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__leaf__)) wcstof64x_l)(wchar_t const   * __restrict  __nptr ,
                                                                                           wchar_t ** __restrict  __endptr ,
                                                                                           locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcstof64x_l LOC=./src/df.merge.c:3761 */
+/* END FUNCTION-DECL-EXTERN wcstof64x_l LOC=./src/df.merge.c:3765 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/df.merge.c:3767 */
-#line 3767
+/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/df.merge.c:3771 */
+#line 3771
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror_l)(int __errnum ,
                                                                                    locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/df.merge.c:3767 */
+/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/df.merge.c:3771 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fminf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/df.merge.c:3777 */
-#line 3777
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/df.merge.c:3781 */
+#line 3781
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32x_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/df.merge.c:3777 */
+/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/df.merge.c:3781 */
 
 /* BEGIN FUNCTION-DECL alloc_field LOC=UNKNOWN */
 static void alloc_field(int f , char const   *c ) ;
 /* END FUNCTION-DECL alloc_field LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/df.merge.c:3787 */
-#line 3787 "./src/df.merge.c"
-typedef unsigned long __kernel_old_dev_t;
-/* END TYPEDEF __kernel_old_dev_t LOC=./src/df.merge.c:3787 */
-
-/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/df.merge.c:3795 */
-#line 3795 "./src/df.merge.c"
-typedef union __anonunion_pthread_condattr_t_488594145 pthread_condattr_t;
-/* END TYPEDEF pthread_condattr_t LOC=./src/df.merge.c:3795 */
-
-/* BEGIN TYPEDEF __kernel_size_t LOC=./src/df.merge.c:3791 */
+/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/df.merge.c:3791 */
 #line 3791 "./src/df.merge.c"
-typedef __kernel_ulong_t __kernel_size_t;
-/* END TYPEDEF __kernel_size_t LOC=./src/df.merge.c:3791 */
+typedef unsigned long __kernel_old_dev_t;
+/* END TYPEDEF __kernel_old_dev_t LOC=./src/df.merge.c:3791 */
 
-/* BEGIN TYPEDEF ulong LOC=./src/df.merge.c:3799 */
+/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/df.merge.c:3799 */
 #line 3799 "./src/df.merge.c"
+typedef union __anonunion_pthread_condattr_t_488594145 pthread_condattr_t;
+/* END TYPEDEF pthread_condattr_t LOC=./src/df.merge.c:3799 */
+
+/* BEGIN TYPEDEF __kernel_size_t LOC=./src/df.merge.c:3795 */
+#line 3795 "./src/df.merge.c"
+typedef __kernel_ulong_t __kernel_size_t;
+/* END TYPEDEF __kernel_size_t LOC=./src/df.merge.c:3795 */
+
+/* BEGIN TYPEDEF ulong LOC=./src/df.merge.c:3803 */
+#line 3803 "./src/df.merge.c"
 typedef unsigned long ulong;
-/* END TYPEDEF ulong LOC=./src/df.merge.c:3799 */
+/* END TYPEDEF ulong LOC=./src/df.merge.c:3803 */
 
 /* BEGIN FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_bcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/df.merge.c:3818 */
-#line 3818
+/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/df.merge.c:3822 */
+#line 3822
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/df.merge.c:3818 */
+/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/df.merge.c:3822 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cpowf(_Complex float  , _Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/df.merge.c:3808 */
-#line 3808
+/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/df.merge.c:3812 */
+#line 3812
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1), __leaf__)) strtof128)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/df.merge.c:3808 */
+/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/df.merge.c:3812 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/df.merge.c:3824 */
-#line 3824
+/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/df.merge.c:3828 */
+#line 3828
 extern int ( __attribute__((__nonnull__(2))) openat64)(int __fd , char const   *__file ,
                                                        int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/df.merge.c:3824 */
+/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/df.merge.c:3828 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863 LOC=./src/df.merge.c:1178 */
 #line 1178
 enum __anonenum_57186863 ;
 /* END ENUM-DECL __anonenum_57186863 LOC=./src/df.merge.c:1178 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/df.merge.c:3829 */
-#line 3829
+/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/df.merge.c:3833 */
+#line 3833
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qecvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/df.merge.c:3829 */
+/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/df.merge.c:3833 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/df.merge.c:3838 */
-#line 3838
-extern void close_stdout_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/df.merge.c:3838 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/df.merge.c:3842 */
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/df.merge.c:3842 */
 #line 3842
+extern void close_stdout_set_file_name(char const   *file ) ;
+/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/df.merge.c:3842 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/df.merge.c:3846 */
+#line 3846
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate)(int __fd ,
                                                                                 __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/df.merge.c:3842 */
+/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/df.merge.c:3846 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_buckets LOC=./src/df.merge.c:3851 */
-#line 3851
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_buckets LOC=./src/df.merge.c:3855 */
+#line 3855
 extern size_t hash_get_n_buckets(Hash_table const   *table )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN hash_get_n_buckets LOC=./src/df.merge.c:3851 */
+/* END FUNCTION-DECL-EXTERN hash_get_n_buckets LOC=./src/df.merge.c:3855 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/df.merge.c:3847 */
-#line 3847
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/df.merge.c:3851 */
+#line 3851
 extern void quotearg_free(void) ;
-/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/df.merge.c:3847 */
+/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/df.merge.c:3851 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_pmFh_envp LOC=UNKNOWN */
+char **_TIG_IZ_pmFh_envp ;
+/* END VARIABLE-DECL _TIG_IZ_pmFh_envp LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL print_grand_total LOC=UNKNOWN */
 static _Bool print_grand_total ;
 /* END VARIABLE-DECL print_grand_total LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/df.merge.c:3859 */
-#line 3859
+/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/df.merge.c:3863 */
+#line 3863
 extern int volatile   exit_failure ;
-/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/df.merge.c:3859 */
+/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/df.merge.c:3863 */
 
 /* BEGIN FUNCTION-DECL __builtin_realloc LOC=BUILTIN */
 /* compiler builtin: 
@@ -4650,50 +4658,50 @@ extern int volatile   exit_failure ;
                                       unsigned long long const    , unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_subcll LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/df.merge.c:3863 */
-#line 3863
+/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/df.merge.c:3867 */
+#line 3867
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/df.merge.c:3863 */
+/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/df.merge.c:3867 */
 
 /* BEGIN FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_acosh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF dev_t LOC=./src/df.merge.c:3883 */
-#line 3883 "./src/df.merge.c"
+/* BEGIN TYPEDEF dev_t LOC=./src/df.merge.c:3887 */
+#line 3887 "./src/df.merge.c"
 typedef __dev_t dev_t;
-/* END TYPEDEF dev_t LOC=./src/df.merge.c:3883 */
+/* END TYPEDEF dev_t LOC=./src/df.merge.c:3887 */
 
-/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/df.merge.c:3887 */
-#line 3887
-__inline static __uint32_t __bswap_32(__uint32_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_32 LOC=./src/df.merge.c:3887 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/df.merge.c:3891 */
+/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/df.merge.c:3891 */
 #line 3891
+__inline static __uint32_t __bswap_32(__uint32_t __bsx ) ;
+/* END FUNCTION-DECL __bswap_32 LOC=./src/df.merge.c:3891 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/df.merge.c:3895 */
+#line 3895
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcat)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/df.merge.c:3891 */
+/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/df.merge.c:3895 */
 
-/* BEGIN FUNCTION-DECL __uint16_identity LOC=./src/df.merge.c:3897 */
-#line 3897
-__inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
-/* END FUNCTION-DECL __uint16_identity LOC=./src/df.merge.c:3897 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/df.merge.c:3901 */
+/* BEGIN FUNCTION-DECL __uint16_identity LOC=./src/df.merge.c:3901 */
 #line 3901
+__inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
+/* END FUNCTION-DECL __uint16_identity LOC=./src/df.merge.c:3901 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/df.merge.c:3905 */
+#line 3905
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf128)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   _Float128 __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/df.merge.c:3901 */
+/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/df.merge.c:3905 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/df.merge.c:3908 */
-#line 3908
+/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/df.merge.c:3912 */
+#line 3912
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void) ;
-/* END FUNCTION-DECL-EXTERN sync LOC=./src/df.merge.c:3908 */
+/* END FUNCTION-DECL-EXTERN sync LOC=./src/df.merge.c:3912 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 /* compiler builtin: 
@@ -4701,169 +4709,173 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_fs_usage LOC=./src/df.merge.c:3918 */
-#line 3918
+/* BEGIN FUNCTION-DECL-EXTERN get_fs_usage LOC=./src/df.merge.c:3922 */
+#line 3922
 extern int get_fs_usage(char const   *file , char const   *disk , struct fs_usage *fsp ) ;
-/* END FUNCTION-DECL-EXTERN get_fs_usage LOC=./src/df.merge.c:3918 */
+/* END FUNCTION-DECL-EXTERN get_fs_usage LOC=./src/df.merge.c:3922 */
 
 /* BEGIN STRUCT-DECL lconv LOC=./src/df.merge.c:1362 */
 #line 1362
 struct lconv ;
 /* END STRUCT-DECL lconv LOC=./src/df.merge.c:1362 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/df.merge.c:3922 */
-#line 3922
+/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/df.merge.c:3926 */
+#line 3926
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) realloc)(void *__ptr , size_t __size )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN realloc LOC=./src/df.merge.c:3922 */
+/* END FUNCTION-DECL-EXTERN realloc LOC=./src/df.merge.c:3926 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/df.merge.c:3927 */
-#line 3927
+/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/df.merge.c:3931 */
+#line 3931
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32)(char const   * __restrict  __nptr ,
                                                                                                  char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/df.merge.c:3927 */
+/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/df.merge.c:3931 */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./src/df.merge.c:938 */
 #line 938
 struct tm_zone ;
 /* END STRUCT-DECL tm_zone LOC=./src/df.merge.c:938 */
 
-/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/df.merge.c:3936 */
-#line 3936
+/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/df.merge.c:3940 */
+#line 3940
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) endusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/df.merge.c:3936 */
+/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/df.merge.c:3940 */
 
 /* BEGIN FUNCTION-DECL stzncpy LOC=UNKNOWN */
 __inline static char *stzncpy(char * __restrict  dest , char const   * __restrict  src ,
                               size_t len ) ;
 /* END FUNCTION-DECL stzncpy LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/df.merge.c:3945 */
-#line 3945
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/df.merge.c:3949 */
+#line 3949
 extern char *quotearg_custom(char const   *left_quote , char const   *right_quote ,
                              char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/df.merge.c:3945 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/df.merge.c:3949 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_remove LOC=./src/df.merge.c:3950 */
-#line 3950
-extern void *hash_remove(Hash_table *table , void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_remove LOC=./src/df.merge.c:3950 */
-
-/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/df.merge.c:3954 */
+/* BEGIN FUNCTION-DECL-EXTERN hash_remove LOC=./src/df.merge.c:3954 */
 #line 3954
+extern void *hash_remove(Hash_table *table , void const   *entry ) ;
+/* END FUNCTION-DECL-EXTERN hash_remove LOC=./src/df.merge.c:3954 */
+
+/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/df.merge.c:3958 */
+#line 3958
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread LOC=./src/df.merge.c:3954 */
+/* END FUNCTION-DECL-EXTERN pread LOC=./src/df.merge.c:3958 */
 
-/* BEGIN TYPEDEF ucontext_t LOC=./src/df.merge.c:3958 */
-#line 3958 "./src/df.merge.c"
-typedef struct ucontext_t ucontext_t;
-/* END TYPEDEF ucontext_t LOC=./src/df.merge.c:3958 */
-
-/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/df.merge.c:3962 */
+/* BEGIN TYPEDEF ucontext_t LOC=./src/df.merge.c:3962 */
 #line 3962 "./src/df.merge.c"
-typedef int cookie_close_function_t(void *__cookie );
-/* END TYPEDEF cookie_close_function_t LOC=./src/df.merge.c:3962 */
+typedef struct ucontext_t ucontext_t;
+/* END TYPEDEF ucontext_t LOC=./src/df.merge.c:3962 */
 
-/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/df.merge.c:3966 */
+/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/df.merge.c:3966 */
 #line 3966 "./src/df.merge.c"
-typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_read_function_t LOC=./src/df.merge.c:3966 */
+typedef int cookie_close_function_t(void *__cookie );
+/* END TYPEDEF cookie_close_function_t LOC=./src/df.merge.c:3966 */
 
-/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/df.merge.c:3970 */
+/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/df.merge.c:3970 */
 #line 3970 "./src/df.merge.c"
-typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
-/* END TYPEDEF cookie_seek_function_t LOC=./src/df.merge.c:3970 */
+typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
+/* END TYPEDEF cookie_read_function_t LOC=./src/df.merge.c:3970 */
 
-/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/df.merge.c:3974 */
+/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/df.merge.c:3974 */
 #line 3974 "./src/df.merge.c"
-typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_write_function_t LOC=./src/df.merge.c:3974 */
+typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
+/* END TYPEDEF cookie_seek_function_t LOC=./src/df.merge.c:3974 */
 
-/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/df.merge.c:3978 */
+/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/df.merge.c:3978 */
 #line 3978 "./src/df.merge.c"
+typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
+/* END TYPEDEF cookie_write_function_t LOC=./src/df.merge.c:3978 */
+
+/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/df.merge.c:3982 */
+#line 3982 "./src/df.merge.c"
 struct _IO_cookie_io_functions_t {
    cookie_read_function_t *read ;
    cookie_write_function_t *write ;
    cookie_seek_function_t *seek ;
    cookie_close_function_t *close ;
 };
-/* END STRUCT _IO_cookie_io_functions_t LOC=./src/df.merge.c:3978 */
+/* END STRUCT _IO_cookie_io_functions_t LOC=./src/df.merge.c:3982 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/df.merge.c:3993 */
-#line 3993
+/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/df.merge.c:3997 */
+#line 3997
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt_long_only)(int ___argc ,
                                                                                                          char **___argv ,
                                                                                                          char const   *__shortopts ,
                                                                                                          struct option  const  *__longopts ,
                                                                                                          int *__longind ) ;
-/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/df.merge.c:3993 */
+/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/df.merge.c:3997 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcscasecmp_l LOC=./src/df.merge.c:3987 */
-#line 3987
+/* BEGIN FUNCTION-DECL-EXTERN wcscasecmp_l LOC=./src/df.merge.c:3991 */
+#line 3991
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcscasecmp_l)(wchar_t const   *__s1 ,
                                                                                    wchar_t const   *__s2 ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcscasecmp_l LOC=./src/df.merge.c:3987 */
+/* END FUNCTION-DECL-EXTERN wcscasecmp_l LOC=./src/df.merge.c:3991 */
 
-/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/df.merge.c:4001 */
-#line 4001 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/df.merge.c:4005 */
+#line 4005 "./src/df.merge.c"
 struct __anonstruct_max_align_t_247203726 {
    long long __max_align_ll  __attribute__((__aligned__(__alignof__(long long )))) ;
    long double __max_align_ld  __attribute__((__aligned__(__alignof__(long double )))) ;
 };
-/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/df.merge.c:4001 */
+/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/df.merge.c:4005 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/df.merge.c:4008 */
-#line 4008
+/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/df.merge.c:4012 */
+#line 4012
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimes)(int __fd ,
                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimes LOC=./src/df.merge.c:4008 */
+/* END FUNCTION-DECL-EXTERN futimes LOC=./src/df.merge.c:4012 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/df.merge.c:4013 */
-#line 4013
-extern char const   *getprogname(void)  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/df.merge.c:4013 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/df.merge.c:4017 */
+/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/df.merge.c:4017 */
 #line 4017
+extern char const   *getprogname(void)  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/df.merge.c:4017 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/df.merge.c:4021 */
+#line 4021
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) fcvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/df.merge.c:4017 */
+/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/df.merge.c:4021 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wcscmp(unsigned short * const   , unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/df.merge.c:4031 */
-#line 4031
+/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/df.merge.c:4035 */
+#line 4035
 extern int ( __attribute__((__nonnull__(1,2))) mbscasecmp)(char const   *s1 , char const   *s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/df.merge.c:4031 */
+/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/df.merge.c:4035 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_insert_if_absent LOC=./src/df.merge.c:4040 */
-#line 4040
+/* BEGIN FUNCTION-DECL-EXTERN hash_insert_if_absent LOC=./src/df.merge.c:4044 */
+#line 4044
 extern int hash_insert_if_absent(Hash_table *table , void const   *entry , void const   **matched_ent ) ;
-/* END FUNCTION-DECL-EXTERN hash_insert_if_absent LOC=./src/df.merge.c:4040 */
+/* END FUNCTION-DECL-EXTERN hash_insert_if_absent LOC=./src/df.merge.c:4044 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/df.merge.c:4048 */
-#line 4048
+/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/df.merge.c:4052 */
+#line 4052
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) timespec_get)(struct timespec *__ts ,
                                                                                                    int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/df.merge.c:4048 */
+/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/df.merge.c:4052 */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/df.merge.c:4044 */
-#line 4044
+/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/df.merge.c:4048 */
+#line 4048
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) get_current_dir_name)(void) ;
-/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/df.merge.c:4044 */
+/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/df.merge.c:4048 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_pmFh_argv LOC=UNKNOWN */
+char **_TIG_IZ_pmFh_argv ;
+/* END VARIABLE-DECL _TIG_IZ_pmFh_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_acosf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4875,21 +4887,21 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) get_curre
    float __builtin_fdimf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/df.merge.c:4063 */
-#line 4063
+/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/df.merge.c:4067 */
+#line 4067
 extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/df.merge.c:4063 */
+/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/df.merge.c:4067 */
 
-/* BEGIN ENUM canonicalize_mode_t LOC=./src/df.merge.c:4068 */
-#line 4068
+/* BEGIN ENUM canonicalize_mode_t LOC=./src/df.merge.c:4072 */
+#line 4072
 enum canonicalize_mode_t {
     CAN_EXISTING = 0,
     CAN_ALL_BUT_LAST = 1,
     CAN_MISSING = 2,
     CAN_NOLINKS = 4
 } ;
-/* END ENUM canonicalize_mode_t LOC=./src/df.merge.c:4068 */
+/* END ENUM canonicalize_mode_t LOC=./src/df.merge.c:4072 */
 
 /* BEGIN STRUCT-DECL __anonstruct_mcontext_t_787213989 LOC=./src/df.merge.c:1198 */
 #line 1198
@@ -4901,29 +4913,29 @@ struct __anonstruct_mcontext_t_787213989 ;
    float __builtin_nexttowardf(float  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/df.merge.c:4082 */
-#line 4082
+/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/df.merge.c:4086 */
+#line 4086
 extern  __attribute__((__nothrow__)) __off64_t ( __attribute__((__leaf__)) lseek64)(int __fd ,
                                                                                     __off64_t __offset ,
                                                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/df.merge.c:4082 */
+/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/df.merge.c:4086 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/df.merge.c:4088 */
-#line 4088
+/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/df.merge.c:4092 */
+#line 4092
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) bcmp)(void const   *__s1 ,
                                                                                              void const   *__s2 ,
                                                                                              size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/df.merge.c:4088 */
+/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/df.merge.c:4092 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncat(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/df.merge.c:4094 */
-#line 4094
+/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/df.merge.c:4098 */
+#line 4098
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) gettext)(char const   *__msgid )  __attribute__((__format_arg__(1))) ;
-/* END FUNCTION-DECL-EXTERN gettext LOC=./src/df.merge.c:4094 */
+/* END FUNCTION-DECL-EXTERN gettext LOC=./src/df.merge.c:4098 */
 
 /* BEGIN VARIABLE-DECL devlist_table LOC=UNKNOWN */
 static Hash_table *devlist_table ;
@@ -4934,242 +4946,242 @@ static Hash_table *devlist_table ;
    double __builtin_fabs(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/df.merge.c:4107 */
-#line 4107
+/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/df.merge.c:4111 */
+#line 4111
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mknod)(char const   *__path ,
                                                                                             __mode_t __mode ,
                                                                                             __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknod LOC=./src/df.merge.c:4107 */
+/* END FUNCTION-DECL-EXTERN mknod LOC=./src/df.merge.c:4111 */
 
-/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/df.merge.c:4118 */
-#line 4118
+/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/df.merge.c:4122 */
+#line 4122
 extern long timezone ;
-/* END VARIABLE-DECL-EXTERN timezone LOC=./src/df.merge.c:4118 */
+/* END VARIABLE-DECL-EXTERN timezone LOC=./src/df.merge.c:4122 */
 
 /* BEGIN STRUCT-DECL __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:1066 */
 #line 1066
 struct __anonstruct___once_flag_783464055 ;
 /* END STRUCT-DECL __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:1066 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstol LOC=./src/df.merge.c:4122 */
-#line 4122
+/* BEGIN FUNCTION-DECL-EXTERN wcstol LOC=./src/df.merge.c:4126 */
+#line 4126
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) wcstol)(wchar_t const   * __restrict  __nptr ,
                                                                               wchar_t ** __restrict  __endptr ,
                                                                               int __base )  __asm__("__isoc23_wcstol")  ;
-/* END FUNCTION-DECL-EXTERN wcstol LOC=./src/df.merge.c:4122 */
+/* END FUNCTION-DECL-EXTERN wcstol LOC=./src/df.merge.c:4126 */
 
-/* BEGIN FUNCTION-DECL timespec_sign LOC=./src/df.merge.c:4128 */
-#line 4128
-__inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
-/* END FUNCTION-DECL timespec_sign LOC=./src/df.merge.c:4128 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gnu_mbswidth LOC=./src/df.merge.c:4137 */
-#line 4137
-extern int gnu_mbswidth(char const   *string , int flags ) ;
-/* END FUNCTION-DECL-EXTERN gnu_mbswidth LOC=./src/df.merge.c:4137 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/df.merge.c:4132 */
+/* BEGIN FUNCTION-DECL timespec_sign LOC=./src/df.merge.c:4132 */
 #line 4132
+__inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
+/* END FUNCTION-DECL timespec_sign LOC=./src/df.merge.c:4132 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gnu_mbswidth LOC=./src/df.merge.c:4141 */
+#line 4141
+extern int gnu_mbswidth(char const   *string , int flags ) ;
+/* END FUNCTION-DECL-EXTERN gnu_mbswidth LOC=./src/df.merge.c:4141 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/df.merge.c:4136 */
+#line 4136
 extern int ( __attribute__((__nonnull__(1))) fseek)(FILE *__stream , long __off ,
                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseek LOC=./src/df.merge.c:4132 */
+/* END FUNCTION-DECL-EXTERN fseek LOC=./src/df.merge.c:4136 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswgraph_l LOC=./src/df.merge.c:4141 */
-#line 4141
+/* BEGIN FUNCTION-DECL-EXTERN iswgraph_l LOC=./src/df.merge.c:4145 */
+#line 4145
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswgraph_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswgraph_l LOC=./src/df.merge.c:4141 */
+/* END FUNCTION-DECL-EXTERN iswgraph_l LOC=./src/df.merge.c:4145 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/df.merge.c:4146 */
-#line 4146
+/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/df.merge.c:4150 */
+#line 4150
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)(void) ;
-/* END FUNCTION-DECL-EXTERN setsid LOC=./src/df.merge.c:4146 */
+/* END FUNCTION-DECL-EXTERN setsid LOC=./src/df.merge.c:4150 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/df.merge.c:4160 */
-#line 4160
+/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/df.merge.c:4164 */
+#line 4164
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/df.merge.c:4160 */
+/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/df.merge.c:4164 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/df.merge.c:4169 */
-#line 4169 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/df.merge.c:4173 */
+#line 4173 "./src/df.merge.c"
 union __anonunion_pthread_cond_t_951761805 {
    struct __pthread_cond_s __data ;
    char __size[48] ;
    long long __align ;
 };
-/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/df.merge.c:4169 */
+/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/df.merge.c:4173 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ccosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/df.merge.c:4182 */
-#line 4182
+/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/df.merge.c:4186 */
+#line 4186
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime)(char const   * __restrict  __s ,
                                                                                  char const   * __restrict  __fmt ,
                                                                                  struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN strptime LOC=./src/df.merge.c:4182 */
+/* END FUNCTION-DECL-EXTERN strptime LOC=./src/df.merge.c:4186 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/df.merge.c:4188 */
-#line 4188
-extern int getchar_unlocked(void) ;
-/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/df.merge.c:4188 */
-
-/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/df.merge.c:4192 */
+/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/df.merge.c:4192 */
 #line 4192
-extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setlinebuf)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/df.merge.c:4192 */
+extern int getchar_unlocked(void) ;
+/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/df.merge.c:4192 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/df.merge.c:4196 */
+/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/df.merge.c:4196 */
 #line 4196
+extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setlinebuf)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/df.merge.c:4196 */
+
+/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/df.merge.c:4200 */
+#line 4200
 extern int ( __attribute__((__nonnull__(2))) openat)(int __fd , char const   *__file ,
                                                      int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat LOC=./src/df.merge.c:4196 */
+/* END FUNCTION-DECL-EXTERN openat LOC=./src/df.merge.c:4200 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/df.merge.c:4201 */
-#line 4201
+/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/df.merge.c:4205 */
+#line 4205
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigabbrev_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/df.merge.c:4201 */
+/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/df.merge.c:4205 */
 
-/* BEGIN TYPEDEF siginfo_t LOC=./src/df.merge.c:4205 */
-#line 4205 "./src/df.merge.c"
+/* BEGIN TYPEDEF siginfo_t LOC=./src/df.merge.c:4209 */
+#line 4209 "./src/df.merge.c"
 typedef struct __anonstruct_siginfo_t_57027376 siginfo_t;
-/* END TYPEDEF siginfo_t LOC=./src/df.merge.c:4205 */
+/* END TYPEDEF siginfo_t LOC=./src/df.merge.c:4209 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswalnum_l LOC=./src/df.merge.c:4209 */
-#line 4209
+/* BEGIN FUNCTION-DECL-EXTERN iswalnum_l LOC=./src/df.merge.c:4213 */
+#line 4213
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswalnum_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswalnum_l LOC=./src/df.merge.c:4209 */
+/* END FUNCTION-DECL-EXTERN iswalnum_l LOC=./src/df.merge.c:4213 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/df.merge.c:4214 */
-#line 4214
+/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/df.merge.c:4218 */
+#line 4218
 extern void unused__emit_bug_reporting_address(void) ;
-/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/df.merge.c:4214 */
+/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/df.merge.c:4218 */
 
 /* BEGIN FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smull_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/df.merge.c:4223 */
-#line 4223
-extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/df.merge.c:4223 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/df.merge.c:4227 */
+/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/df.merge.c:4227 */
 #line 4227
+extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
+/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/df.merge.c:4227 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/df.merge.c:4231 */
+#line 4231
 extern int ( __attribute__((__nonnull__(1,2))) sigwait)(sigset_t const   * __restrict  __set ,
                                                         int * __restrict  __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/df.merge.c:4227 */
+/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/df.merge.c:4231 */
 
 /* BEGIN FUNCTION-DECL __builtin_ceilf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_ceilf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_ceilf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/df.merge.c:4237 */
-#line 4237
+/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/df.merge.c:4241 */
+#line 4241
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) reallocarray)(void *__ptr , size_t __nmemb , size_t __size )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/df.merge.c:4237 */
+/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/df.merge.c:4241 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/df.merge.c:4247 */
-#line 4247
-extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timegm)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timegm LOC=./src/df.merge.c:4247 */
-
-/* BEGIN FUNCTION-DECL-EXTERN wscanf LOC=./src/df.merge.c:4256 */
-#line 4256
-extern int wscanf(wchar_t const   * __restrict  __format  , ...)  __asm__("__isoc23_wscanf")  ;
-/* END FUNCTION-DECL-EXTERN wscanf LOC=./src/df.merge.c:4256 */
-
-/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/df.merge.c:4251 */
+/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/df.merge.c:4251 */
 #line 4251
+extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timegm)(struct tm *__tp ) ;
+/* END FUNCTION-DECL-EXTERN timegm LOC=./src/df.merge.c:4251 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wscanf LOC=./src/df.merge.c:4260 */
+#line 4260
+extern int wscanf(wchar_t const   * __restrict  __format  , ...)  __asm__("__isoc23_wscanf")  ;
+/* END FUNCTION-DECL-EXTERN wscanf LOC=./src/df.merge.c:4260 */
+
+/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/df.merge.c:4255 */
+#line 4255
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bindtextdomain)(char const   *__domainname ,
                                                                                        char const   *__dirname ) ;
-/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/df.merge.c:4251 */
+/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/df.merge.c:4255 */
 
 /* BEGIN FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_classify_type(...) ;  */
 /* END FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int32_t LOC=./src/df.merge.c:4260 */
-#line 4260 "./src/df.merge.c"
-typedef int __int32_t;
-/* END TYPEDEF __int32_t LOC=./src/df.merge.c:4260 */
-
-/* BEGIN TYPEDEF wctrans_t LOC=./src/df.merge.c:4264 */
+/* BEGIN TYPEDEF __int32_t LOC=./src/df.merge.c:4264 */
 #line 4264 "./src/df.merge.c"
-typedef __int32_t const   *wctrans_t;
-/* END TYPEDEF wctrans_t LOC=./src/df.merge.c:4264 */
+typedef int __int32_t;
+/* END TYPEDEF __int32_t LOC=./src/df.merge.c:4264 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctrans_l LOC=./src/df.merge.c:4268 */
-#line 4268
+/* BEGIN TYPEDEF wctrans_t LOC=./src/df.merge.c:4268 */
+#line 4268 "./src/df.merge.c"
+typedef __int32_t const   *wctrans_t;
+/* END TYPEDEF wctrans_t LOC=./src/df.merge.c:4268 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wctrans_l LOC=./src/df.merge.c:4272 */
+#line 4272
 extern  __attribute__((__nothrow__)) wctrans_t ( __attribute__((__leaf__)) wctrans_l)(char const   *__property ,
                                                                                       locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN wctrans_l LOC=./src/df.merge.c:4268 */
+/* END FUNCTION-DECL-EXTERN wctrans_l LOC=./src/df.merge.c:4272 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152 LOC=./src/df.merge.c:1494 */
 #line 1494
 enum __anonenum_451154152 ;
 /* END ENUM-DECL __anonenum_451154152 LOC=./src/df.merge.c:1494 */
 
-/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:4273 */
-#line 4273 "./src/df.merge.c"
+/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:4277 */
+#line 4277 "./src/df.merge.c"
 union __anonunion___sigaction_handler_363639592 {
    void (*sa_handler)(int  ) ;
    void (*sa_sigaction)(int  , siginfo_t * , void * ) ;
 };
-/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:4273 */
+/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/df.merge.c:4277 */
 
-/* BEGIN STRUCT sigaction LOC=./src/df.merge.c:4280 */
-#line 4280 "./src/df.merge.c"
+/* BEGIN STRUCT sigaction LOC=./src/df.merge.c:4284 */
+#line 4284 "./src/df.merge.c"
 struct sigaction {
    union __anonunion___sigaction_handler_363639592 __sigaction_handler ;
    __sigset_t sa_mask ;
    int sa_flags ;
    void (*sa_restorer)(void) ;
 };
-/* END STRUCT sigaction LOC=./src/df.merge.c:4280 */
+/* END STRUCT sigaction LOC=./src/df.merge.c:4284 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/df.merge.c:4296 */
-#line 4296
+/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/df.merge.c:4300 */
+#line 4300
 extern int ( __attribute__((__nonnull__(2))) ungetc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/df.merge.c:4296 */
+/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/df.merge.c:4300 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/df.merge.c:4289 */
-#line 4289
+/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/df.merge.c:4293 */
+#line 4293
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfroml)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/df.merge.c:4289 */
+/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/df.merge.c:4293 */
 
 /* BEGIN STRUCT-DECL _IO_codecvt LOC=./src/df.merge.c:918 */
 #line 918
 struct _IO_codecvt ;
 /* END STRUCT-DECL _IO_codecvt LOC=./src/df.merge.c:918 */
 
-/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/df.merge.c:4304 */
-#line 4304 "./src/df.merge.c"
+/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/df.merge.c:4308 */
+#line 4308 "./src/df.merge.c"
 struct __pthread_rwlock_arch_t {
    unsigned int __readers ;
    unsigned int __writers ;
@@ -5184,80 +5196,80 @@ struct __pthread_rwlock_arch_t {
    unsigned long __pad2 ;
    unsigned int __flags ;
 };
-/* END STRUCT __pthread_rwlock_arch_t LOC=./src/df.merge.c:4304 */
+/* END STRUCT __pthread_rwlock_arch_t LOC=./src/df.merge.c:4308 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sqrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcspbrk LOC=./src/df.merge.c:4326 */
-#line 4326
+/* BEGIN FUNCTION-DECL-EXTERN wcspbrk LOC=./src/df.merge.c:4330 */
+#line 4330
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcspbrk)(wchar_t const   *__wcs ,
                                                                                    wchar_t const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcspbrk LOC=./src/df.merge.c:4326 */
+/* END FUNCTION-DECL-EXTERN wcspbrk LOC=./src/df.merge.c:4330 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoll_l LOC=./src/df.merge.c:4331 */
-#line 4331
+/* BEGIN FUNCTION-DECL-EXTERN wcstoll_l LOC=./src/df.merge.c:4335 */
+#line 4335
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) wcstoll_l)(wchar_t const   * __restrict  __nptr ,
                                                                                       wchar_t ** __restrict  __endptr ,
                                                                                       int __base ,
                                                                                       locale_t __loc )  __asm__("__isoc23_wcstoll_l")  ;
-/* END FUNCTION-DECL-EXTERN wcstoll_l LOC=./src/df.merge.c:4331 */
+/* END FUNCTION-DECL-EXTERN wcstoll_l LOC=./src/df.merge.c:4335 */
 
 /* BEGIN ENUM-DECL __anonenum_1036286214 LOC=./src/df.merge.c:1294 */
 #line 1294
 enum __anonenum_1036286214 ;
 /* END ENUM-DECL __anonenum_1036286214 LOC=./src/df.merge.c:1294 */
 
-/* BEGIN TYPEDEF uint_least16_t LOC=./src/df.merge.c:4338 */
-#line 4338 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint_least16_t LOC=./src/df.merge.c:4342 */
+#line 4342 "./src/df.merge.c"
 typedef __uint_least16_t uint_least16_t;
-/* END TYPEDEF uint_least16_t LOC=./src/df.merge.c:4338 */
+/* END TYPEDEF uint_least16_t LOC=./src/df.merge.c:4342 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/df.merge.c:4348 */
-#line 4348
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/df.merge.c:4352 */
+#line 4352
 extern int ( __attribute__((__nonnull__(1))) fsetpos64)(FILE *__stream , fpos64_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/df.merge.c:4348 */
+/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/df.merge.c:4352 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/df.merge.c:4342 */
-#line 4342
+/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/df.merge.c:4346 */
+#line 4346
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpncpy)(char * __restrict  __dest ,
                                                                                                     char const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/df.merge.c:4342 */
+/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/df.merge.c:4346 */
 
 /* BEGIN FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_uadd_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/df.merge.c:4357 */
-#line 4357
+/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/df.merge.c:4361 */
+#line 4361
 enum __anonenum_424050557___0 {
     TIMESPEC_RESOLUTION___0 = 1000000000
 } ;
-/* END ENUM __anonenum_424050557___0 LOC=./src/df.merge.c:4357 */
+/* END ENUM __anonenum_424050557___0 LOC=./src/df.merge.c:4361 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remainderf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/df.merge.c:4363 */
-#line 4363
+/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/df.merge.c:4367 */
+#line 4367
 extern int fsync(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fsync LOC=./src/df.merge.c:4363 */
+/* END FUNCTION-DECL-EXTERN fsync LOC=./src/df.merge.c:4367 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmod(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blkcnt64_t LOC=./src/df.merge.c:4377 */
-#line 4377 "./src/df.merge.c"
+/* BEGIN TYPEDEF blkcnt64_t LOC=./src/df.merge.c:4381 */
+#line 4381 "./src/df.merge.c"
 typedef __blkcnt64_t blkcnt64_t;
-/* END TYPEDEF blkcnt64_t LOC=./src/df.merge.c:4377 */
+/* END TYPEDEF blkcnt64_t LOC=./src/df.merge.c:4381 */
 
 /* BEGIN FUNCTION-DECL c32isspace LOC=UNKNOWN */
 __inline int c32isspace(wint_t wc ) ;
@@ -5268,29 +5280,29 @@ __inline int c32isspace(wint_t wc ) ;
    double __builtin_log1p(double  ) ;  */
 /* END FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN swprintf LOC=./src/df.merge.c:4389 */
-#line 4389
+/* BEGIN FUNCTION-DECL-EXTERN swprintf LOC=./src/df.merge.c:4393 */
+#line 4393
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) swprintf)(wchar_t * __restrict  __s ,
                                                                                size_t __n ,
                                                                                wchar_t const   * __restrict  __format 
                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN swprintf LOC=./src/df.merge.c:4389 */
+/* END FUNCTION-DECL-EXTERN swprintf LOC=./src/df.merge.c:4393 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/df.merge.c:4385 */
-#line 4385
+/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/df.merge.c:4389 */
+#line 4389
 extern int fcntl(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/df.merge.c:4385 */
+/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/df.merge.c:4389 */
 
 /* BEGIN FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_return_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/df.merge.c:4406 */
-#line 4406
+/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/df.merge.c:4410 */
+#line 4410
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strtok)(char * __restrict  __s ,
                                                                                                char const   * __restrict  __delim ) ;
-/* END FUNCTION-DECL-EXTERN strtok LOC=./src/df.merge.c:4406 */
+/* END FUNCTION-DECL-EXTERN strtok LOC=./src/df.merge.c:4410 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -5307,22 +5319,26 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
    double __builtin_atanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/df.merge.c:4426 */
-#line 4426
+/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/df.merge.c:4430 */
+#line 4430
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) remove)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN remove LOC=./src/df.merge.c:4426 */
+/* END FUNCTION-DECL-EXTERN remove LOC=./src/df.merge.c:4430 */
 
-/* BEGIN TYPEDEF __uint_least64_t LOC=./src/df.merge.c:4430 */
-#line 4430 "./src/df.merge.c"
+/* BEGIN VARIABLE-DECL _TIG_IZ_AEJ4_argc LOC=UNKNOWN */
+int _TIG_IZ_AEJ4_argc ;
+/* END VARIABLE-DECL _TIG_IZ_AEJ4_argc LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF __uint_least64_t LOC=./src/df.merge.c:4438 */
+#line 4438 "./src/df.merge.c"
 typedef __uint64_t __uint_least64_t;
-/* END TYPEDEF __uint_least64_t LOC=./src/df.merge.c:4430 */
+/* END TYPEDEF __uint_least64_t LOC=./src/df.merge.c:4438 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/df.merge.c:4434 */
-#line 4434
+/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/df.merge.c:4442 */
+#line 4442
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) gcvt)(double __value ,
                                                                                              int __ndigit ,
                                                                                              char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/df.merge.c:4434 */
+/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/df.merge.c:4442 */
 
 /* BEGIN FUNCTION-DECL __builtin_char_memchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -5339,24 +5355,24 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
 struct fs_usage ;
 /* END STRUCT-DECL fs_usage LOC=./src/df.merge.c:1278 */
 
-/* BEGIN TYPEDEF uint16_t LOC=./src/df.merge.c:4450 */
-#line 4450 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint16_t LOC=./src/df.merge.c:4458 */
+#line 4458 "./src/df.merge.c"
 typedef __uint16_t uint16_t;
-/* END TYPEDEF uint16_t LOC=./src/df.merge.c:4450 */
+/* END TYPEDEF uint16_t LOC=./src/df.merge.c:4458 */
 
-/* BEGIN STRUCT iovec LOC=./src/df.merge.c:4454 */
-#line 4454 "./src/df.merge.c"
+/* BEGIN STRUCT iovec LOC=./src/df.merge.c:4462 */
+#line 4462 "./src/df.merge.c"
 struct iovec {
    void *iov_base ;
    size_t iov_len ;
 };
-/* END STRUCT iovec LOC=./src/df.merge.c:4454 */
+/* END STRUCT iovec LOC=./src/df.merge.c:4462 */
 
-/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/df.merge.c:4466 */
-#line 4466
+/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/df.merge.c:4474 */
+#line 4474
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__pid_t __pgrp ,
                                                                              int __sig ) ;
-/* END FUNCTION-DECL-EXTERN killpg LOC=./src/df.merge.c:4466 */
+/* END FUNCTION-DECL-EXTERN killpg LOC=./src/df.merge.c:4474 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpow LOC=BUILTIN */
 /* compiler builtin: 
@@ -5368,132 +5384,132 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__p
    int __builtin_constant_p(int  ) ;  */
 /* END FUNCTION-DECL __builtin_constant_p LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int64_t LOC=./src/df.merge.c:4476 */
-#line 4476 "./src/df.merge.c"
-typedef long __int64_t;
-/* END TYPEDEF __int64_t LOC=./src/df.merge.c:4476 */
-
-/* BEGIN TYPEDEF __int_least64_t LOC=./src/df.merge.c:4480 */
-#line 4480 "./src/df.merge.c"
-typedef __int64_t __int_least64_t;
-/* END TYPEDEF __int_least64_t LOC=./src/df.merge.c:4480 */
-
-/* BEGIN TYPEDEF __int8_t LOC=./src/df.merge.c:4484 */
+/* BEGIN TYPEDEF __int64_t LOC=./src/df.merge.c:4484 */
 #line 4484 "./src/df.merge.c"
-typedef signed char __int8_t;
-/* END TYPEDEF __int8_t LOC=./src/df.merge.c:4484 */
+typedef long __int64_t;
+/* END TYPEDEF __int64_t LOC=./src/df.merge.c:4484 */
 
-/* BEGIN TYPEDEF int8_t LOC=./src/df.merge.c:4488 */
+/* BEGIN TYPEDEF __int_least64_t LOC=./src/df.merge.c:4488 */
 #line 4488 "./src/df.merge.c"
+typedef __int64_t __int_least64_t;
+/* END TYPEDEF __int_least64_t LOC=./src/df.merge.c:4488 */
+
+/* BEGIN TYPEDEF __int8_t LOC=./src/df.merge.c:4492 */
+#line 4492 "./src/df.merge.c"
+typedef signed char __int8_t;
+/* END TYPEDEF __int8_t LOC=./src/df.merge.c:4492 */
+
+/* BEGIN TYPEDEF int8_t LOC=./src/df.merge.c:4496 */
+#line 4496 "./src/df.merge.c"
 typedef __int8_t int8_t;
-/* END TYPEDEF int8_t LOC=./src/df.merge.c:4488 */
+/* END TYPEDEF int8_t LOC=./src/df.merge.c:4496 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___stpncpy_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN towupper LOC=./src/df.merge.c:4492 */
-#line 4492
+/* BEGIN FUNCTION-DECL-EXTERN towupper LOC=./src/df.merge.c:4500 */
+#line 4500
 extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) towupper)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN towupper LOC=./src/df.merge.c:4492 */
+/* END FUNCTION-DECL-EXTERN towupper LOC=./src/df.merge.c:4500 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsftime_l LOC=./src/df.merge.c:4501 */
-#line 4501
+/* BEGIN FUNCTION-DECL-EXTERN wcsftime_l LOC=./src/df.merge.c:4509 */
+#line 4509
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsftime_l)(wchar_t * __restrict  __s ,
                                                                                     size_t __maxsize ,
                                                                                     wchar_t const   * __restrict  __format ,
                                                                                     struct tm  const  * __restrict  __tp ,
                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcsftime_l LOC=./src/df.merge.c:4501 */
+/* END FUNCTION-DECL-EXTERN wcsftime_l LOC=./src/df.merge.c:4509 */
 
-/* BEGIN TYPEDEF __u128 LOC=./src/df.merge.c:4509 */
-#line 4509 "./src/df.merge.c"
+/* BEGIN TYPEDEF __u128 LOC=./src/df.merge.c:4517 */
+#line 4517 "./src/df.merge.c"
 typedef unsigned __int128 __attribute__((__aligned__(16)))  __u128;
-/* END TYPEDEF __u128 LOC=./src/df.merge.c:4509 */
+/* END TYPEDEF __u128 LOC=./src/df.merge.c:4517 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928 LOC=./src/df.merge.c:962 */
 #line 962
 enum __anonenum_850350928 ;
 /* END ENUM-DECL __anonenum_850350928 LOC=./src/df.merge.c:962 */
 
-/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/df.merge.c:4525 */
-#line 4525
+/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/df.merge.c:4533 */
+#line 4533
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) canonicalize_file_name)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/df.merge.c:4525 */
+/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/df.merge.c:4533 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/df.merge.c:4518 */
-#line 4518
+/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/df.merge.c:4526 */
+#line 4526
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setvbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ,
                                                                                               int __modes ,
                                                                                               size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/df.merge.c:4518 */
+/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/df.merge.c:4526 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwscanf LOC=./src/df.merge.c:4513 */
-#line 4513
+/* BEGIN FUNCTION-DECL-EXTERN fwscanf LOC=./src/df.merge.c:4521 */
+#line 4521
 extern int fwscanf(__FILE * __restrict  __stream , wchar_t const   * __restrict  __format 
                    , ...)  __asm__("__isoc23_fwscanf")  ;
-/* END FUNCTION-DECL-EXTERN fwscanf LOC=./src/df.merge.c:4513 */
+/* END FUNCTION-DECL-EXTERN fwscanf LOC=./src/df.merge.c:4521 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoull LOC=./src/df.merge.c:4529 */
-#line 4529
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoull LOC=./src/df.merge.c:4537 */
+#line 4537
 extern strtol_error xstrtoull(char const   * , char ** , int  , unsigned long long * ,
                               char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoull LOC=./src/df.merge.c:4529 */
+/* END FUNCTION-DECL-EXTERN xstrtoull LOC=./src/df.merge.c:4537 */
 
-/* BEGIN TYPEDEF char8_t LOC=./src/df.merge.c:4534 */
-#line 4534 "./src/df.merge.c"
+/* BEGIN TYPEDEF char8_t LOC=./src/df.merge.c:4542 */
+#line 4542 "./src/df.merge.c"
 typedef unsigned char char8_t;
-/* END TYPEDEF char8_t LOC=./src/df.merge.c:4534 */
+/* END TYPEDEF char8_t LOC=./src/df.merge.c:4542 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbrtoc8 LOC=./src/df.merge.c:4538 */
-#line 4538
+/* BEGIN FUNCTION-DECL-EXTERN mbrtoc8 LOC=./src/df.merge.c:4546 */
+#line 4546
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbrtoc8)(char8_t * __restrict  __pc8 ,
                                                                                  char const   * __restrict  __s ,
                                                                                  size_t __n ,
                                                                                  mbstate_t * __restrict  __p ) ;
-/* END FUNCTION-DECL-EXTERN mbrtoc8 LOC=./src/df.merge.c:4538 */
+/* END FUNCTION-DECL-EXTERN mbrtoc8 LOC=./src/df.merge.c:4546 */
 
-/* BEGIN TYPEDEF __kernel_time_t LOC=./src/df.merge.c:4545 */
-#line 4545 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_time_t LOC=./src/df.merge.c:4553 */
+#line 4553 "./src/df.merge.c"
 typedef __kernel_long_t __kernel_time_t;
-/* END TYPEDEF __kernel_time_t LOC=./src/df.merge.c:4545 */
+/* END TYPEDEF __kernel_time_t LOC=./src/df.merge.c:4553 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt_t LOC=./src/df.merge.c:4554 */
-#line 4554 "./src/df.merge.c"
+/* BEGIN TYPEDEF __blkcnt_t LOC=./src/df.merge.c:4562 */
+#line 4562 "./src/df.merge.c"
 typedef long __blkcnt_t;
-/* END TYPEDEF __blkcnt_t LOC=./src/df.merge.c:4554 */
+/* END TYPEDEF __blkcnt_t LOC=./src/df.merge.c:4562 */
 
-/* BEGIN TYPEDEF blkcnt_t LOC=./src/df.merge.c:4558 */
-#line 4558 "./src/df.merge.c"
+/* BEGIN TYPEDEF blkcnt_t LOC=./src/df.merge.c:4566 */
+#line 4566 "./src/df.merge.c"
 typedef __blkcnt_t blkcnt_t;
-/* END TYPEDEF blkcnt_t LOC=./src/df.merge.c:4558 */
+/* END TYPEDEF blkcnt_t LOC=./src/df.merge.c:4566 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstouq LOC=./src/df.merge.c:4567 */
-#line 4567
+/* BEGIN FUNCTION-DECL-EXTERN wcstouq LOC=./src/df.merge.c:4575 */
+#line 4575
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__leaf__)) wcstouq)(wchar_t const   * __restrict  __nptr ,
                                                                                              wchar_t ** __restrict  __endptr ,
                                                                                              int __base )  __asm__("__isoc23_wcstoull")  ;
-/* END FUNCTION-DECL-EXTERN wcstouq LOC=./src/df.merge.c:4567 */
+/* END FUNCTION-DECL-EXTERN wcstouq LOC=./src/df.merge.c:4575 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/df.merge.c:4573 */
-#line 4573
+/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/df.merge.c:4581 */
+#line 4581
 extern unsigned int sleep(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN sleep LOC=./src/df.merge.c:4573 */
+/* END FUNCTION-DECL-EXTERN sleep LOC=./src/df.merge.c:4581 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_remquof128(_Float128  , _Float128  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:4577 */
-#line 4577 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:4585 */
+#line 4585 "./src/df.merge.c"
 struct __anonstruct_siginfo_t_57027376 {
    int si_signo ;
    int si_errno ;
@@ -5501,7 +5517,7 @@ struct __anonstruct_siginfo_t_57027376 {
    int __pad0 ;
    union __anonunion__sifields_717391825 _sifields ;
 };
-/* END STRUCT __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:4577 */
+/* END STRUCT __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:4585 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5513,18 +5529,18 @@ struct __anonstruct_siginfo_t_57027376 {
 union __anonunion_pthread_rwlock_t_656928968 ;
 /* END UNION-DECL __anonunion_pthread_rwlock_t_656928968 LOC=./src/df.merge.c:1558 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xgetcwd LOC=./src/df.merge.c:4592 */
-#line 4592
+/* BEGIN FUNCTION-DECL-EXTERN xgetcwd LOC=./src/df.merge.c:4600 */
+#line 4600
 extern char *xgetcwd(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN xgetcwd LOC=./src/df.merge.c:4592 */
+/* END FUNCTION-DECL-EXTERN xgetcwd LOC=./src/df.merge.c:4600 */
 
 /* BEGIN STRUCT-DECL __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:1314 */
 #line 1314
 struct __anonstruct_fd_set_356711149 ;
 /* END STRUCT-DECL __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:1314 */
 
-/* BEGIN ENUM __anonenum_457704180 LOC=./src/df.merge.c:4596 */
-#line 4596
+/* BEGIN ENUM __anonenum_457704180 LOC=./src/df.merge.c:4604 */
+#line 4604
 enum __anonenum_457704180 {
     FPE_INTDIV = 1,
     FPE_INTOVF = 2,
@@ -5537,13 +5553,13 @@ enum __anonenum_457704180 {
     FPE_FLTUNK = 14,
     FPE_CONDTRAP = 15
 } ;
-/* END ENUM __anonenum_457704180 LOC=./src/df.merge.c:4596 */
+/* END ENUM __anonenum_457704180 LOC=./src/df.merge.c:4604 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsstr LOC=./src/df.merge.c:4611 */
-#line 4611
+/* BEGIN FUNCTION-DECL-EXTERN wcsstr LOC=./src/df.merge.c:4619 */
+#line 4619
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcsstr)(wchar_t const   *__haystack ,
                                                                                   wchar_t const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcsstr LOC=./src/df.merge.c:4611 */
+/* END FUNCTION-DECL-EXTERN wcsstr LOC=./src/df.merge.c:4619 */
 
 /* BEGIN STRUCT-DECL iovec LOC=./src/df.merge.c:1410 */
 #line 1410
@@ -5560,36 +5576,36 @@ struct iovec ;
    char *__builtin___strcat_chk(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strcat_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/df.merge.c:4626 */
-#line 4626
+/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/df.merge.c:4634 */
+#line 4634
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rpmatch)(char const   *__response ) ;
-/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/df.merge.c:4626 */
+/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/df.merge.c:4634 */
 
 /* BEGIN FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_dump_struct(void const   * , void * ) ;  */
 /* END FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/df.merge.c:4635 */
-#line 4635 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/df.merge.c:4643 */
+#line 4643 "./src/df.merge.c"
 struct __anonstruct___kernel_fd_set_990674701 {
    unsigned long fds_bits[1024ULL / (8ULL * sizeof(long ))] ;
 };
-/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/df.merge.c:4635 */
+/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/df.merge.c:4643 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/df.merge.c:4646 */
-#line 4646
+/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/df.merge.c:4654 */
+#line 4654
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/df.merge.c:4646 */
+/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/df.merge.c:4654 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswcntrl_l LOC=./src/df.merge.c:4641 */
-#line 4641
+/* BEGIN FUNCTION-DECL-EXTERN iswcntrl_l LOC=./src/df.merge.c:4649 */
+#line 4649
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswcntrl_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswcntrl_l LOC=./src/df.merge.c:4641 */
+/* END FUNCTION-DECL-EXTERN iswcntrl_l LOC=./src/df.merge.c:4649 */
 
-/* BEGIN ENUM __anonenum_23175539 LOC=./src/df.merge.c:4650 */
-#line 4650
+/* BEGIN ENUM __anonenum_23175539 LOC=./src/df.merge.c:4658 */
+#line 4658
 enum __anonenum_23175539 {
     CLD_EXITED = 1,
     CLD_KILLED = 2,
@@ -5598,31 +5614,31 @@ enum __anonenum_23175539 {
     CLD_STOPPED = 5,
     CLD_CONTINUED = 6
 } ;
-/* END ENUM __anonenum_23175539 LOC=./src/df.merge.c:4650 */
+/* END ENUM __anonenum_23175539 LOC=./src/df.merge.c:4658 */
 
-/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/df.merge.c:4661 */
-#line 4661 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/df.merge.c:4669 */
+#line 4669 "./src/df.merge.c"
 union __anonunion_pthread_barrier_t_145707746 {
    char __size[32] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/df.merge.c:4661 */
+/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/df.merge.c:4669 */
 
 /* BEGIN STRUCT-DECL __anonstruct_stack_t_648343364 LOC=./src/df.merge.c:1330 */
 #line 1330
 struct __anonstruct_stack_t_648343364 ;
 /* END STRUCT-DECL __anonstruct_stack_t_648343364 LOC=./src/df.merge.c:1330 */
 
-/* BEGIN TYPEDEF va_list LOC=./src/df.merge.c:4673 */
-#line 4673 "./src/df.merge.c"
+/* BEGIN TYPEDEF va_list LOC=./src/df.merge.c:4681 */
+#line 4681 "./src/df.merge.c"
 typedef __gnuc_va_list va_list;
-/* END TYPEDEF va_list LOC=./src/df.merge.c:4673 */
+/* END TYPEDEF va_list LOC=./src/df.merge.c:4681 */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/df.merge.c:4677 */
-#line 4677
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/df.merge.c:4685 */
+#line 4685
 extern void version_etc_va(FILE *stream , char const   *command_name , char const   *package ,
                            char const   *version , va_list authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/df.merge.c:4677 */
+/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/df.merge.c:4685 */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalize LOC=BUILTIN */
 /* compiler builtin: 
@@ -5634,156 +5650,152 @@ extern void version_etc_va(FILE *stream , char const   *command_name , char cons
    long double __builtin_copysignl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/df.merge.c:4682 */
-#line 4682
+/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/df.merge.c:4690 */
+#line 4690
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) calloc)(size_t __nmemb ,
                                                                                size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN calloc LOC=./src/df.merge.c:4682 */
+/* END FUNCTION-DECL-EXTERN calloc LOC=./src/df.merge.c:4690 */
 
-/* BEGIN TYPEDEF __gwchar_t LOC=./src/df.merge.c:4693 */
-#line 4693 "./src/df.merge.c"
+/* BEGIN TYPEDEF __gwchar_t LOC=./src/df.merge.c:4701 */
+#line 4701 "./src/df.merge.c"
 typedef int __gwchar_t;
-/* END TYPEDEF __gwchar_t LOC=./src/df.merge.c:4693 */
+/* END TYPEDEF __gwchar_t LOC=./src/df.merge.c:4701 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/df.merge.c:4697 */
-#line 4697
+/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/df.merge.c:4705 */
+#line 4705
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) wcstoumax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                       __gwchar_t ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_wcstoumax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/df.merge.c:4697 */
+/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/df.merge.c:4705 */
 
 /* BEGIN FUNCTION-DECL-EXTERN find_mount_point LOC=UNKNOWN */
 extern char *( __attribute__((__nonnull__)) find_mount_point)(char const   *file ,
                                                               struct stat  const  *file_stat )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN find_mount_point LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/df.merge.c:4712 */
-#line 4712
+/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/df.merge.c:4720 */
+#line 4720
 __inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
-/* END FUNCTION-DECL timespec_cmp LOC=./src/df.merge.c:4712 */
+/* END FUNCTION-DECL timespec_cmp LOC=./src/df.merge.c:4720 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/df.merge.c:4708 */
-#line 4708
-extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN unlink LOC=./src/df.merge.c:4708 */
-
-/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/df.merge.c:4716 */
+/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/df.merge.c:4716 */
 #line 4716
+extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
+/* END FUNCTION-DECL-EXTERN unlink LOC=./src/df.merge.c:4716 */
+
+/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/df.merge.c:4724 */
+#line 4724
 extern int ( __attribute__((__nonnull__(1))) vfprintf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                        __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/df.merge.c:4716 */
+/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/df.merge.c:4724 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/df.merge.c:4721 */
-#line 4721
+/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/df.merge.c:4729 */
+#line 4729
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_settime)(timer_t __timerid ,
                                                                                     int __flags ,
                                                                                     struct itimerspec  const  * __restrict  __value ,
                                                                                     struct itimerspec * __restrict  __ovalue ) ;
-/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/df.merge.c:4721 */
+/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/df.merge.c:4729 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/df.merge.c:4728 */
-#line 4728
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/df.merge.c:4736 */
+#line 4736
 extern char const   *setlocale_null(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/df.merge.c:4728 */
+/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/df.merge.c:4736 */
 
-/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/df.merge.c:4732 */
-#line 4732
+/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/df.merge.c:4740 */
+#line 4740
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void *__ptr ) ;
-/* END FUNCTION-DECL-EXTERN free LOC=./src/df.merge.c:4732 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_c6W0_envp LOC=UNKNOWN */
-char **_TIG_IZ_c6W0_envp ;
-/* END VARIABLE-DECL _TIG_IZ_c6W0_envp LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN free LOC=./src/df.merge.c:4740 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_va_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/df.merge.c:4745 */
-#line 4745
+/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/df.merge.c:4749 */
+#line 4749
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/df.merge.c:4745 */
+/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/df.merge.c:4749 */
 
 /* BEGIN STRUCT-DECL statx LOC=./src/df.merge.c:1342 */
 #line 1342
 struct statx ;
 /* END STRUCT-DECL statx LOC=./src/df.merge.c:1342 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/df.merge.c:4750 */
-#line 4750
+/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/df.merge.c:4754 */
+#line 4754
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wctomb)(char *__s ,
                                                                              wchar_t __wchar ) ;
-/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/df.merge.c:4750 */
+/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/df.merge.c:4754 */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/df.merge.c:4760 */
-#line 4760
+/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/df.merge.c:4764 */
+#line 4764
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) erand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/df.merge.c:4760 */
+/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/df.merge.c:4764 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcpcpy LOC=./src/df.merge.c:4755 */
-#line 4755
+/* BEGIN FUNCTION-DECL-EXTERN wcpcpy LOC=./src/df.merge.c:4759 */
+#line 4759
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcpcpy)(wchar_t * __restrict  __dest ,
                                                                                   wchar_t const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN wcpcpy LOC=./src/df.merge.c:4755 */
+/* END FUNCTION-DECL-EXTERN wcpcpy LOC=./src/df.merge.c:4759 */
 
-/* BEGIN TYPEDEF __intptr_t LOC=./src/df.merge.c:4766 */
-#line 4766 "./src/df.merge.c"
+/* BEGIN TYPEDEF __intptr_t LOC=./src/df.merge.c:4770 */
+#line 4770 "./src/df.merge.c"
 typedef long __intptr_t;
-/* END TYPEDEF __intptr_t LOC=./src/df.merge.c:4766 */
+/* END TYPEDEF __intptr_t LOC=./src/df.merge.c:4770 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/df.merge.c:4770 */
-#line 4770
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/df.merge.c:4774 */
+#line 4774
 extern FILE *( __attribute__((__nonnull__(1,2))) rpl_fopen)(char const   * __restrict  filename ,
                                                             char const   * __restrict  mode )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/df.merge.c:4770 */
+/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/df.merge.c:4774 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/df.merge.c:1250 */
 #line 1250
 union __anonunion_pthread_barrierattr_t_951761806 ;
 /* END UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/df.merge.c:1250 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/df.merge.c:4775 */
-#line 4775
+/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/df.merge.c:4779 */
+#line 4779
 extern void *xinmalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/df.merge.c:4775 */
+/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/df.merge.c:4779 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/df.merge.c:4780 */
-#line 4780
+/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/df.merge.c:4784 */
+#line 4784
 extern  __attribute__((__nothrow__)) int __asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                     , ...) ;
-/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/df.merge.c:4780 */
+/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/df.merge.c:4784 */
 
-/* BEGIN FUNCTION-DECL-EXTERN btowc LOC=./src/df.merge.c:4786 */
-#line 4786
-extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) btowc)(int __c ) ;
-/* END FUNCTION-DECL-EXTERN btowc LOC=./src/df.merge.c:4786 */
-
-/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/df.merge.c:4790 */
+/* BEGIN FUNCTION-DECL-EXTERN btowc LOC=./src/df.merge.c:4790 */
 #line 4790
+extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) btowc)(int __c ) ;
+/* END FUNCTION-DECL-EXTERN btowc LOC=./src/df.merge.c:4790 */
+
+/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/df.merge.c:4794 */
+#line 4794
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
                                                                size_t * __restrict  __n ,
                                                                int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/df.merge.c:4790 */
+/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/df.merge.c:4794 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/df.merge.c:4802 */
-#line 4802
+/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/df.merge.c:4806 */
+#line 4806
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vsscanf)(char const   * __restrict  __s ,
                                                                               char const   * __restrict  __format ,
                                                                               __gnuc_va_list __arg )  __asm__("__isoc23_vsscanf")  ;
-/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/df.merge.c:4802 */
+/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/df.merge.c:4806 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/df.merge.c:4796 */
-#line 4796
+/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/df.merge.c:4800 */
+#line 4800
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strerror_r)(int __errnum ,
                                                                                                    char *__buf ,
                                                                                                    size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/df.merge.c:4796 */
+/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/df.merge.c:4800 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -5795,8 +5807,8 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
    long double __builtin_huge_vall(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/df.merge.c:4818 */
-#line 4818
+/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/df.merge.c:4822 */
+#line 4822
 enum __anonenum_513775621___0 {
     DT_UNKNOWN___0 = 0,
     DT_FIFO___0 = 1,
@@ -5808,140 +5820,140 @@ enum __anonenum_513775621___0 {
     DT_SOCK___0 = 12,
     DT_WHT___0 = 14
 } ;
-/* END ENUM __anonenum_513775621___0 LOC=./src/df.merge.c:4818 */
+/* END ENUM __anonenum_513775621___0 LOC=./src/df.merge.c:4822 */
 
-/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/df.merge.c:4832 */
-#line 4832 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/df.merge.c:4836 */
+#line 4836 "./src/df.merge.c"
 struct __anonstruct_lldiv_t_103911545 {
    long long quot ;
    long long rem ;
 };
-/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/df.merge.c:4832 */
+/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/df.merge.c:4836 */
 
-/* BEGIN FUNCTION-DECL c_isprint LOC=./src/df.merge.c:4845 */
-#line 4845
+/* BEGIN FUNCTION-DECL c_isprint LOC=./src/df.merge.c:4849 */
+#line 4849
 __inline _Bool c_isprint(int c ) ;
-/* END FUNCTION-DECL c_isprint LOC=./src/df.merge.c:4845 */
+/* END FUNCTION-DECL c_isprint LOC=./src/df.merge.c:4849 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmemcpy LOC=./src/df.merge.c:4839 */
-#line 4839
+/* BEGIN FUNCTION-DECL-EXTERN wmemcpy LOC=./src/df.merge.c:4843 */
+#line 4843
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wmemcpy)(wchar_t * __restrict  __s1 ,
                                                                                    wchar_t const   * __restrict  __s2 ,
                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wmemcpy LOC=./src/df.merge.c:4839 */
+/* END FUNCTION-DECL-EXTERN wmemcpy LOC=./src/df.merge.c:4843 */
 
-/* BEGIN ENUM __anonenum_606700034 LOC=./src/df.merge.c:4849 */
-#line 4849
+/* BEGIN ENUM __anonenum_606700034 LOC=./src/df.merge.c:4853 */
+#line 4853
 enum __anonenum_606700034 {
     DS_UNKNOWN = -2,
     DS_EMPTY = -1,
     DS_NONEMPTY = 0
 } ;
-/* END ENUM __anonenum_606700034 LOC=./src/df.merge.c:4849 */
+/* END ENUM __anonenum_606700034 LOC=./src/df.merge.c:4853 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/df.merge.c:4857 */
-#line 4857
-extern char *quotearg(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/df.merge.c:4857 */
-
-/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/df.merge.c:4861 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/df.merge.c:4861 */
 #line 4861
+extern char *quotearg(char const   *arg ) ;
+/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/df.merge.c:4861 */
+
+/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/df.merge.c:4865 */
+#line 4865
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dngettext)(char const   *__domainname ,
                                                                                   char const   *__msgid1 ,
                                                                                   char const   *__msgid2 ,
                                                                                   unsigned long __n )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/df.merge.c:4861 */
+/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/df.merge.c:4865 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/df.merge.c:4869 */
-#line 4869
+/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/df.merge.c:4873 */
+#line 4873
 extern char *getlogin(void) ;
-/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/df.merge.c:4869 */
+/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/df.merge.c:4873 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_csinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u16 LOC=./src/df.merge.c:4878 */
-#line 4878 "./src/df.merge.c"
-typedef unsigned short __u16;
-/* END TYPEDEF __u16 LOC=./src/df.merge.c:4878 */
-
-/* BEGIN TYPEDEF __sum16 LOC=./src/df.merge.c:4882 */
+/* BEGIN TYPEDEF __u16 LOC=./src/df.merge.c:4882 */
 #line 4882 "./src/df.merge.c"
-typedef __u16 __sum16;
-/* END TYPEDEF __sum16 LOC=./src/df.merge.c:4882 */
+typedef unsigned short __u16;
+/* END TYPEDEF __u16 LOC=./src/df.merge.c:4882 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoull_l LOC=./src/df.merge.c:4890 */
-#line 4890
+/* BEGIN TYPEDEF __sum16 LOC=./src/df.merge.c:4886 */
+#line 4886 "./src/df.merge.c"
+typedef __u16 __sum16;
+/* END TYPEDEF __sum16 LOC=./src/df.merge.c:4886 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wcstoull_l LOC=./src/df.merge.c:4894 */
+#line 4894
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__leaf__)) wcstoull_l)(wchar_t const   * __restrict  __nptr ,
                                                                                                 wchar_t ** __restrict  __endptr ,
                                                                                                 int __base ,
                                                                                                 locale_t __loc )  __asm__("__isoc23_wcstoull_l")  ;
-/* END FUNCTION-DECL-EXTERN wcstoull_l LOC=./src/df.merge.c:4890 */
+/* END FUNCTION-DECL-EXTERN wcstoull_l LOC=./src/df.merge.c:4894 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/df.merge.c:4886 */
-#line 4886
+/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/df.merge.c:4890 */
+#line 4890
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) siggetmask)(void) ;
-/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/df.merge.c:4886 */
+/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/df.merge.c:4890 */
 
-/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/df.merge.c:4897 */
-#line 4897
-extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
-/* END FUNCTION-DECL-EXTERN read LOC=./src/df.merge.c:4897 */
-
-/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/df.merge.c:4901 */
+/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/df.merge.c:4901 */
 #line 4901
+extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
+/* END FUNCTION-DECL-EXTERN read LOC=./src/df.merge.c:4901 */
+
+/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/df.merge.c:4905 */
+#line 4905
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_perror_fail)(int __errnum ,
                                                                                                           char const   *__file ,
                                                                                                           unsigned int __line ,
                                                                                                           char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/df.merge.c:4901 */
+/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/df.merge.c:4905 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswprint LOC=./src/df.merge.c:4908 */
-#line 4908
+/* BEGIN FUNCTION-DECL-EXTERN iswprint LOC=./src/df.merge.c:4912 */
+#line 4912
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswprint)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN iswprint LOC=./src/df.merge.c:4908 */
+/* END FUNCTION-DECL-EXTERN iswprint LOC=./src/df.merge.c:4912 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fminf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/df.merge.c:4921 */
-#line 4921
+/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/df.merge.c:4925 */
+#line 4925
 extern int lockf(int __fd , int __cmd , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf LOC=./src/df.merge.c:4921 */
+/* END FUNCTION-DECL-EXTERN lockf LOC=./src/df.merge.c:4925 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/df.merge.c:4912 */
-#line 4912
+/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/df.merge.c:4916 */
+#line 4916
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)(void) ;
-/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/df.merge.c:4912 */
+/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/df.merge.c:4916 */
 
-/* BEGIN TYPEDEF Hash_tuning LOC=./src/df.merge.c:4925 */
-#line 4925 "./src/df.merge.c"
+/* BEGIN TYPEDEF Hash_tuning LOC=./src/df.merge.c:4929 */
+#line 4929 "./src/df.merge.c"
 typedef struct hash_tuning Hash_tuning;
-/* END TYPEDEF Hash_tuning LOC=./src/df.merge.c:4925 */
+/* END TYPEDEF Hash_tuning LOC=./src/df.merge.c:4929 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_reset_tuning LOC=./src/df.merge.c:4929 */
-#line 4929
-extern void hash_reset_tuning(Hash_tuning *tuning ) ;
-/* END FUNCTION-DECL-EXTERN hash_reset_tuning LOC=./src/df.merge.c:4929 */
-
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mbsrtowcs LOC=./src/df.merge.c:4933 */
+/* BEGIN FUNCTION-DECL-EXTERN hash_reset_tuning LOC=./src/df.merge.c:4933 */
 #line 4933
+extern void hash_reset_tuning(Hash_tuning *tuning ) ;
+/* END FUNCTION-DECL-EXTERN hash_reset_tuning LOC=./src/df.merge.c:4933 */
+
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mbsrtowcs LOC=./src/df.merge.c:4937 */
+#line 4937
 extern size_t ( __attribute__((__nonnull__(2))) rpl_mbsrtowcs)(wchar_t * __restrict  dest ,
                                                                char const   ** __restrict  srcp ,
                                                                size_t len , mbstate_t * __restrict  ps ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mbsrtowcs LOC=./src/df.merge.c:4933 */
+/* END FUNCTION-DECL-EXTERN rpl_mbsrtowcs LOC=./src/df.merge.c:4937 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/df.merge.c:4939 */
-#line 4939
+/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/df.merge.c:4943 */
+#line 4943
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtouq)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/df.merge.c:4939 */
+/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/df.merge.c:4943 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5952,38 +5964,38 @@ __leaf__)) strtouq)(char const   * __restrict  __nptr , char ** __restrict  __en
 static char *all_args_string ;
 /* END VARIABLE-DECL all_args_string LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/df.merge.c:4954 */
-#line 4954 "./src/df.merge.c"
-typedef int (*_gl_qsort_r_compar_fn)(void const   * , void const   * , void * );
-/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/df.merge.c:4954 */
-
-/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/df.merge.c:4958 */
+/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/df.merge.c:4958 */
 #line 4958 "./src/df.merge.c"
+typedef int (*_gl_qsort_r_compar_fn)(void const   * , void const   * , void * );
+/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/df.merge.c:4958 */
+
+/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/df.merge.c:4962 */
+#line 4962 "./src/df.merge.c"
 typedef __kernel_long_t __kernel_suseconds_t;
-/* END TYPEDEF __kernel_suseconds_t LOC=./src/df.merge.c:4958 */
+/* END TYPEDEF __kernel_suseconds_t LOC=./src/df.merge.c:4962 */
 
-/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/df.merge.c:4966 */
-#line 4966
+/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/df.merge.c:4970 */
+#line 4970
 extern int ( __attribute__((__nonnull__(1))) settime)(struct timespec  const  * ) ;
-/* END FUNCTION-DECL-EXTERN settime LOC=./src/df.merge.c:4966 */
+/* END FUNCTION-DECL-EXTERN settime LOC=./src/df.merge.c:4970 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ungetwc LOC=./src/df.merge.c:4962 */
-#line 4962
+/* BEGIN FUNCTION-DECL-EXTERN ungetwc LOC=./src/df.merge.c:4966 */
+#line 4966
 extern wint_t ungetwc(wint_t __wc , __FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ungetwc LOC=./src/df.merge.c:4962 */
+/* END FUNCTION-DECL-EXTERN ungetwc LOC=./src/df.merge.c:4966 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/df.merge.c:4975 */
-#line 4975
+/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/df.merge.c:4979 */
+#line 4979
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuffer)(FILE * __restrict  __stream ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/df.merge.c:4975 */
+/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/df.merge.c:4979 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/df.merge.c:4970 */
-#line 4970
+/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/df.merge.c:4974 */
+#line 4974
 extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  ,
                                                                   char * ) ;
-/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/df.merge.c:4970 */
+/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/df.merge.c:4974 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6000,26 +6012,26 @@ extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  
 enum __anonenum_1036286214___0 ;
 /* END ENUM-DECL __anonenum_1036286214___0 LOC=./src/df.merge.c:1498 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/df.merge.c:4991 */
-#line 4991
+/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/df.merge.c:4995 */
+#line 4995
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strstr)(char const   *__haystack ,
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strstr LOC=./src/df.merge.c:4991 */
+/* END FUNCTION-DECL-EXTERN strstr LOC=./src/df.merge.c:4995 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/df.merge.c:4996 */
-#line 4996
-extern int putchar_unlocked(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/df.merge.c:4996 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/df.merge.c:5000 */
+/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/df.merge.c:5000 */
 #line 5000
-extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/df.merge.c:5000 */
+extern int putchar_unlocked(int __c ) ;
+/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/df.merge.c:5000 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/df.merge.c:5004 */
+/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/df.merge.c:5004 */
 #line 5004
+extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
+/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/df.merge.c:5004 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/df.merge.c:5008 */
+#line 5008
 extern char *quotearg_char(char const   *arg , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/df.merge.c:5004 */
+/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/df.merge.c:5008 */
 
 /* BEGIN FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 /* compiler builtin: 
@@ -6031,109 +6043,109 @@ extern char *quotearg_char(char const   *arg , char ch ) ;
    double __builtin_sinh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/df.merge.c:5008 */
-#line 5008
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/df.merge.c:5012 */
+#line 5012
 extern int rpl_fflush(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/df.merge.c:5008 */
+/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/df.merge.c:5012 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wcsncmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 
-/* BEGIN TYPEDEF mode_t LOC=./src/df.merge.c:5027 */
-#line 5027 "./src/df.merge.c"
+/* BEGIN TYPEDEF mode_t LOC=./src/df.merge.c:5031 */
+#line 5031 "./src/df.merge.c"
 typedef __mode_t mode_t;
-/* END TYPEDEF mode_t LOC=./src/df.merge.c:5027 */
+/* END TYPEDEF mode_t LOC=./src/df.merge.c:5031 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/df.merge.c:5031 */
-#line 5031
+/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/df.merge.c:5035 */
+#line 5035
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat LOC=./src/df.merge.c:5031 */
+/* END FUNCTION-DECL-EXTERN creat LOC=./src/df.merge.c:5035 */
 
-/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/df.merge.c:5035 */
-#line 5035 "./src/df.merge.c"
-typedef unsigned long __fsfilcnt64_t;
-/* END TYPEDEF __fsfilcnt64_t LOC=./src/df.merge.c:5035 */
-
-/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/df.merge.c:5039 */
+/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/df.merge.c:5039 */
 #line 5039 "./src/df.merge.c"
-typedef __fsfilcnt64_t fsfilcnt64_t;
-/* END TYPEDEF fsfilcnt64_t LOC=./src/df.merge.c:5039 */
+typedef unsigned long __fsfilcnt64_t;
+/* END TYPEDEF __fsfilcnt64_t LOC=./src/df.merge.c:5039 */
 
-/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/df.merge.c:5043 */
+/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/df.merge.c:5043 */
 #line 5043 "./src/df.merge.c"
-typedef unsigned long __fsfilcnt_t;
-/* END TYPEDEF __fsfilcnt_t LOC=./src/df.merge.c:5043 */
+typedef __fsfilcnt64_t fsfilcnt64_t;
+/* END TYPEDEF fsfilcnt64_t LOC=./src/df.merge.c:5043 */
 
-/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/df.merge.c:5047 */
+/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/df.merge.c:5047 */
 #line 5047 "./src/df.merge.c"
-typedef __fsfilcnt_t fsfilcnt_t;
-/* END TYPEDEF fsfilcnt_t LOC=./src/df.merge.c:5047 */
+typedef unsigned long __fsfilcnt_t;
+/* END TYPEDEF __fsfilcnt_t LOC=./src/df.merge.c:5047 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/df.merge.c:5051 */
-#line 5051
+/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/df.merge.c:5051 */
+#line 5051 "./src/df.merge.c"
+typedef __fsfilcnt_t fsfilcnt_t;
+/* END TYPEDEF fsfilcnt_t LOC=./src/df.merge.c:5051 */
+
+/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/df.merge.c:5055 */
+#line 5055
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/df.merge.c:5051 */
+/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/df.merge.c:5055 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/df.merge.c:5056 */
-#line 5056
-extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN mktime LOC=./src/df.merge.c:5056 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/df.merge.c:5060 */
+/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/df.merge.c:5060 */
 #line 5060
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
-/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/df.merge.c:5060 */
+extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
+/* END FUNCTION-DECL-EXTERN mktime LOC=./src/df.merge.c:5060 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/df.merge.c:5072 */
-#line 5072
-extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t __name_len ) ;
-/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/df.merge.c:5072 */
-
-/* BEGIN FUNCTION-DECL-EXTERN hash_xinsert LOC=./src/df.merge.c:5068 */
-#line 5068
-extern void *hash_xinsert(Hash_table *table , void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_xinsert LOC=./src/df.merge.c:5068 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fgetws LOC=./src/df.merge.c:5064 */
+/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/df.merge.c:5064 */
 #line 5064
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
+/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/df.merge.c:5064 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/df.merge.c:5076 */
+#line 5076
+extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t __name_len ) ;
+/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/df.merge.c:5076 */
+
+/* BEGIN FUNCTION-DECL-EXTERN hash_xinsert LOC=./src/df.merge.c:5072 */
+#line 5072
+extern void *hash_xinsert(Hash_table *table , void const   *entry ) ;
+/* END FUNCTION-DECL-EXTERN hash_xinsert LOC=./src/df.merge.c:5072 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fgetws LOC=./src/df.merge.c:5068 */
+#line 5068
 extern wchar_t *fgetws(wchar_t * __restrict  __ws , int __n , __FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetws LOC=./src/df.merge.c:5064 */
+/* END FUNCTION-DECL-EXTERN fgetws LOC=./src/df.merge.c:5068 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/df.merge.c:1478 */
 #line 1478
 struct __anonstruct__sigpoll_386613454 ;
 /* END STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/df.merge.c:1478 */
 
-/* BEGIN TYPEDEF __nlink_t LOC=./src/df.merge.c:5076 */
-#line 5076 "./src/df.merge.c"
-typedef unsigned long __nlink_t;
-/* END TYPEDEF __nlink_t LOC=./src/df.merge.c:5076 */
-
-/* BEGIN TYPEDEF nlink_t LOC=./src/df.merge.c:5080 */
+/* BEGIN TYPEDEF __nlink_t LOC=./src/df.merge.c:5080 */
 #line 5080 "./src/df.merge.c"
+typedef unsigned long __nlink_t;
+/* END TYPEDEF __nlink_t LOC=./src/df.merge.c:5080 */
+
+/* BEGIN TYPEDEF nlink_t LOC=./src/df.merge.c:5084 */
+#line 5084 "./src/df.merge.c"
 typedef __nlink_t nlink_t;
-/* END TYPEDEF nlink_t LOC=./src/df.merge.c:5080 */
+/* END TYPEDEF nlink_t LOC=./src/df.merge.c:5084 */
 
 /* BEGIN STRUCT-DECL __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:1438 */
 #line 1438
 struct __anonstruct___kernel_fsid_t_990674702 ;
 /* END STRUCT-DECL __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:1438 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctype_l LOC=./src/df.merge.c:5090 */
-#line 5090
+/* BEGIN FUNCTION-DECL-EXTERN wctype_l LOC=./src/df.merge.c:5094 */
+#line 5094
 extern  __attribute__((__nothrow__)) wctype_t ( __attribute__((__leaf__)) wctype_l)(char const   *__property ,
                                                                                     locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN wctype_l LOC=./src/df.merge.c:5090 */
+/* END FUNCTION-DECL-EXTERN wctype_l LOC=./src/df.merge.c:5094 */
 
-/* BEGIN FUNCTION-DECL-EXTERN c8rtomb LOC=./src/df.merge.c:5084 */
-#line 5084
+/* BEGIN FUNCTION-DECL-EXTERN c8rtomb LOC=./src/df.merge.c:5088 */
+#line 5088
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c8rtomb)(char * __restrict  __s ,
                                                                                  char8_t __c8 ,
                                                                                  mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN c8rtomb LOC=./src/df.merge.c:5084 */
+/* END FUNCTION-DECL-EXTERN c8rtomb LOC=./src/df.merge.c:5088 */
 
 /* BEGIN FUNCTION-DECL __builtin_shufflevector LOC=BUILTIN */
 /* compiler builtin: 
@@ -6144,20 +6156,20 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c8rtomb)
 static _Bool get_device(char const   *device ) ;
 /* END FUNCTION-DECL get_device LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __fd_mask LOC=./src/df.merge.c:5104 */
-#line 5104 "./src/df.merge.c"
+/* BEGIN TYPEDEF __fd_mask LOC=./src/df.merge.c:5108 */
+#line 5108 "./src/df.merge.c"
 typedef long __fd_mask;
-/* END TYPEDEF __fd_mask LOC=./src/df.merge.c:5104 */
+/* END TYPEDEF __fd_mask LOC=./src/df.merge.c:5108 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/df.merge.c:5108 */
-#line 5108
+/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/df.merge.c:5112 */
+#line 5112
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) strtoimax)(char const   * __restrict  __nptr ,
                                                                                      char ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_strtoimax")  ;
-/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/df.merge.c:5108 */
+/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/df.merge.c:5112 */
 
-/* BEGIN STRUCT dirent64 LOC=./src/df.merge.c:5114 */
-#line 5114 "./src/df.merge.c"
+/* BEGIN STRUCT dirent64 LOC=./src/df.merge.c:5118 */
+#line 5118 "./src/df.merge.c"
 struct dirent64 {
    __ino64_t d_ino ;
    __off64_t d_off ;
@@ -6165,79 +6177,79 @@ struct dirent64 {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent64 LOC=./src/df.merge.c:5114 */
+/* END STRUCT dirent64 LOC=./src/df.merge.c:5118 */
 
 /* BEGIN FUNCTION-DECL emit_stdin_note LOC=UNKNOWN */
 __inline static void emit_stdin_note(void) ;
 /* END FUNCTION-DECL emit_stdin_note LOC=UNKNOWN */
 
-/* BEGIN STRUCT __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:5128 */
-#line 5128 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:5132 */
+#line 5132 "./src/df.merge.c"
 struct __anonstruct___once_flag_783464055 {
    int __data ;
 };
-/* END STRUCT __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:5128 */
+/* END STRUCT __anonstruct___once_flag_783464055 LOC=./src/df.merge.c:5132 */
 
 /* BEGIN FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_dwarf_cfa(void) ;  */
 /* END FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswdigit_l LOC=./src/df.merge.c:5139 */
-#line 5139
+/* BEGIN FUNCTION-DECL-EXTERN iswdigit_l LOC=./src/df.merge.c:5143 */
+#line 5143
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswdigit_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswdigit_l LOC=./src/df.merge.c:5139 */
+/* END FUNCTION-DECL-EXTERN iswdigit_l LOC=./src/df.merge.c:5143 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/df.merge.c:5144 */
-#line 5144
+/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/df.merge.c:5148 */
+#line 5148
 extern __ssize_t ( __attribute__((__nonnull__(3))) getline)(char ** __restrict  __lineptr ,
                                                             size_t * __restrict  __n ,
                                                             FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getline LOC=./src/df.merge.c:5144 */
+/* END FUNCTION-DECL-EXTERN getline LOC=./src/df.merge.c:5148 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_modff128(_Float128  , _Float128 * ) ;  */
 /* END FUNCTION-DECL __builtin_modff128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF canonicalize_mode_t LOC=./src/df.merge.c:5155 */
-#line 5155 "./src/df.merge.c"
+/* BEGIN TYPEDEF canonicalize_mode_t LOC=./src/df.merge.c:5159 */
+#line 5159 "./src/df.merge.c"
 typedef enum canonicalize_mode_t canonicalize_mode_t;
-/* END TYPEDEF canonicalize_mode_t LOC=./src/df.merge.c:5155 */
+/* END TYPEDEF canonicalize_mode_t LOC=./src/df.merge.c:5159 */
 
 /* BEGIN FUNCTION-DECL __builtin_stpcpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_stpcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_stpcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcscoll LOC=./src/df.merge.c:5159 */
-#line 5159
+/* BEGIN FUNCTION-DECL-EXTERN wcscoll LOC=./src/df.merge.c:5163 */
+#line 5163
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcscoll)(wchar_t const   *__s1 ,
                                                                               wchar_t const   *__s2 ) ;
-/* END FUNCTION-DECL-EXTERN wcscoll LOC=./src/df.merge.c:5159 */
+/* END FUNCTION-DECL-EXTERN wcscoll LOC=./src/df.merge.c:5163 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/df.merge.c:5169 */
-#line 5169
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/df.merge.c:5173 */
+#line 5173
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigmask)(int __how ,
                                                                                       __sigset_t const   * __restrict  __newmask ,
                                                                                       __sigset_t * __restrict  __oldmask ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/df.merge.c:5169 */
+/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/df.merge.c:5173 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/df.merge.c:5175 */
-#line 5175
+/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/df.merge.c:5179 */
+#line 5179
 extern char *dir_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/df.merge.c:5175 */
+/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/df.merge.c:5179 */
 
 /* BEGIN FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_matrix_transpose(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/df.merge.c:5184 */
-#line 5184
+/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/df.merge.c:5188 */
+#line 5188
 extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/df.merge.c:5184 */
+/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/df.merge.c:5188 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -6255,26 +6267,26 @@ extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_subps LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/df.merge.c:5204 */
-#line 5204 "./src/df.merge.c"
-typedef unsigned long __fsblkcnt_t;
-/* END TYPEDEF __fsblkcnt_t LOC=./src/df.merge.c:5204 */
-
-/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/df.merge.c:5208 */
+/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/df.merge.c:5208 */
 #line 5208 "./src/df.merge.c"
+typedef unsigned long __fsblkcnt_t;
+/* END TYPEDEF __fsblkcnt_t LOC=./src/df.merge.c:5208 */
+
+/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/df.merge.c:5212 */
+#line 5212 "./src/df.merge.c"
 typedef __fsblkcnt_t fsblkcnt_t;
-/* END TYPEDEF fsblkcnt_t LOC=./src/df.merge.c:5208 */
+/* END TYPEDEF fsblkcnt_t LOC=./src/df.merge.c:5212 */
 
-/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/df.merge.c:5212 */
-#line 5212
-extern int ( __attribute__((__nonnull__(1))) closedir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN closedir LOC=./src/df.merge.c:5212 */
-
-/* BEGIN FUNCTION-DECL-EXTERN iswblank_l LOC=./src/df.merge.c:5216 */
+/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/df.merge.c:5216 */
 #line 5216
+extern int ( __attribute__((__nonnull__(1))) closedir)(DIR *__dirp ) ;
+/* END FUNCTION-DECL-EXTERN closedir LOC=./src/df.merge.c:5216 */
+
+/* BEGIN FUNCTION-DECL-EXTERN iswblank_l LOC=./src/df.merge.c:5220 */
+#line 5220
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswblank_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswblank_l LOC=./src/df.merge.c:5216 */
+/* END FUNCTION-DECL-EXTERN iswblank_l LOC=./src/df.merge.c:5220 */
 
 /* BEGIN ENUM-DECL __anonenum_230064777 LOC=./src/df.merge.c:1322 */
 #line 1322
@@ -6301,42 +6313,42 @@ enum __anonenum_230064777 ;
    void *__builtin___get_unsafe_stack_start(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/df.merge.c:5241 */
-#line 5241
+/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/df.merge.c:5245 */
+#line 5245
 extern char *xstrdup(char const   *str )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/df.merge.c:5241 */
+/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/df.merge.c:5245 */
 
 /* BEGIN ENUM-DECL __anonenum_513775621___0 LOC=./src/df.merge.c:966 */
 #line 966
 enum __anonenum_513775621___0 ;
 /* END ENUM-DECL __anonenum_513775621___0 LOC=./src/df.merge.c:966 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/df.merge.c:5245 */
-#line 5245
+/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/df.merge.c:5249 */
+#line 5249
 extern long __timezone ;
-/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/df.merge.c:5245 */
+/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/df.merge.c:5249 */
 
 /* BEGIN FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tan(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/df.merge.c:5254 */
-#line 5254
-extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) atoll)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoll LOC=./src/df.merge.c:5254 */
-
-/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/df.merge.c:5258 */
+/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/df.merge.c:5258 */
 #line 5258
+extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) atoll)(char const   *__nptr )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN atoll LOC=./src/df.merge.c:5258 */
+
+/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/df.merge.c:5262 */
+#line 5262
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(__gid_t __rgid ,
                                                                                 __gid_t __egid ,
                                                                                 __gid_t __sgid ) ;
-/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/df.merge.c:5258 */
+/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/df.merge.c:5262 */
 
-/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/df.merge.c:5264 */
-#line 5264 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/df.merge.c:5268 */
+#line 5268 "./src/df.merge.c"
 typedef unsigned short __kernel_old_uid_t;
-/* END TYPEDEF __kernel_old_uid_t LOC=./src/df.merge.c:5264 */
+/* END TYPEDEF __kernel_old_uid_t LOC=./src/df.merge.c:5268 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -6348,12 +6360,12 @@ typedef unsigned short __kernel_old_uid_t;
    _Bool __builtin_usub_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_usub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/df.merge.c:5278 */
-#line 5278
+/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/df.merge.c:5282 */
+#line 5282
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range)(unsigned int __fd ,
                                                                                   unsigned int __max_fd ,
                                                                                   int __flags ) ;
-/* END FUNCTION-DECL-EXTERN close_range LOC=./src/df.merge.c:5278 */
+/* END FUNCTION-DECL-EXTERN close_range LOC=./src/df.merge.c:5282 */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalizef LOC=BUILTIN */
 /* compiler builtin: 
@@ -6365,10 +6377,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range
 struct hash_table ;
 /* END STRUCT-DECL hash_table LOC=./src/df.merge.c:926 */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/df.merge.c:5293 */
-#line 5293
+/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/df.merge.c:5297 */
+#line 5297
 extern void (*error_print_progname)(void) ;
-/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/df.merge.c:5293 */
+/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/df.merge.c:5297 */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap32 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6380,25 +6392,25 @@ extern void (*error_print_progname)(void) ;
 enum __anonenum_463020052 ;
 /* END ENUM-DECL __anonenum_463020052 LOC=./src/df.merge.c:1122 */
 
-/* BEGIN TYPEDEF max_align_t LOC=./src/df.merge.c:5302 */
-#line 5302 "./src/df.merge.c"
+/* BEGIN TYPEDEF max_align_t LOC=./src/df.merge.c:5306 */
+#line 5306 "./src/df.merge.c"
 typedef struct __anonstruct_max_align_t_247203726 max_align_t;
-/* END TYPEDEF max_align_t LOC=./src/df.merge.c:5302 */
+/* END TYPEDEF max_align_t LOC=./src/df.merge.c:5306 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fmaxf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaxf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/df.merge.c:5311 */
-#line 5311
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) getenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN getenv LOC=./src/df.merge.c:5311 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/df.merge.c:5315 */
+/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/df.merge.c:5315 */
 #line 5315
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) getenv)(char const   *__name ) ;
+/* END FUNCTION-DECL-EXTERN getenv LOC=./src/df.merge.c:5315 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/df.merge.c:5319 */
+#line 5319
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strlen)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strlen LOC=./src/df.merge.c:5315 */
+/* END FUNCTION-DECL-EXTERN strlen LOC=./src/df.merge.c:5319 */
 
 /* BEGIN FUNCTION-DECL add_uint_with_neg_flag LOC=UNKNOWN */
 static void add_uint_with_neg_flag(uintmax_t *dest , _Bool *dest_neg , uintmax_t src ,
@@ -6410,37 +6422,41 @@ static void add_uint_with_neg_flag(uintmax_t *dest , _Bool *dest_neg , uintmax_t
    void __builtin_debugtrap(void) ;  */
 /* END FUNCTION-DECL __builtin_debugtrap LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:5329 */
-#line 5329 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:5333 */
+#line 5333 "./src/df.merge.c"
 struct __anonstruct_fd_set_356711149 {
    __fd_mask fds_bits[1024 / (8 * (int )sizeof(__fd_mask ))] ;
 };
-/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:5329 */
+/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/df.merge.c:5333 */
 
 /* BEGIN FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log10f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_least32_t LOC=./src/df.merge.c:5340 */
-#line 5340 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint_least32_t LOC=./src/df.merge.c:5344 */
+#line 5344 "./src/df.merge.c"
 typedef __uint_least32_t uint_least32_t;
-/* END TYPEDEF uint_least32_t LOC=./src/df.merge.c:5340 */
+/* END TYPEDEF uint_least32_t LOC=./src/df.merge.c:5344 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_catanh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int16_t LOC=./src/df.merge.c:5349 */
-#line 5349 "./src/df.merge.c"
+/* BEGIN TYPEDEF int16_t LOC=./src/df.merge.c:5353 */
+#line 5353 "./src/df.merge.c"
 typedef __int16_t int16_t;
-/* END TYPEDEF int16_t LOC=./src/df.merge.c:5349 */
+/* END TYPEDEF int16_t LOC=./src/df.merge.c:5353 */
 
-/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/df.merge.c:5353 */
-#line 5353
+/* BEGIN VARIABLE-DECL _TIG_IZ_pmFh_argc LOC=UNKNOWN */
+int _TIG_IZ_pmFh_argc ;
+/* END VARIABLE-DECL _TIG_IZ_pmFh_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/df.merge.c:5357 */
+#line 5357
 extern double difftime(time_t __time1 , time_t __time0 ) ;
-/* END FUNCTION-DECL-EXTERN difftime LOC=./src/df.merge.c:5353 */
+/* END FUNCTION-DECL-EXTERN difftime LOC=./src/df.merge.c:5357 */
 
 /* BEGIN FUNCTION-DECL __builtin_init_dwarf_reg_size_table LOC=BUILTIN */
 /* compiler builtin: 
@@ -6452,23 +6468,23 @@ extern double difftime(time_t __time1 , time_t __time0 ) ;
 struct __pthread_internal_slist ;
 /* END STRUCT-DECL __pthread_internal_slist LOC=./src/df.merge.c:1458 */
 
-/* BEGIN TYPEDEF __clockid_t LOC=./src/df.merge.c:5362 */
-#line 5362 "./src/df.merge.c"
-typedef int __clockid_t;
-/* END TYPEDEF __clockid_t LOC=./src/df.merge.c:5362 */
-
-/* BEGIN TYPEDEF clockid_t LOC=./src/df.merge.c:5366 */
+/* BEGIN TYPEDEF __clockid_t LOC=./src/df.merge.c:5366 */
 #line 5366 "./src/df.merge.c"
+typedef int __clockid_t;
+/* END TYPEDEF __clockid_t LOC=./src/df.merge.c:5366 */
+
+/* BEGIN TYPEDEF clockid_t LOC=./src/df.merge.c:5370 */
+#line 5370 "./src/df.merge.c"
 typedef __clockid_t clockid_t;
-/* END TYPEDEF clockid_t LOC=./src/df.merge.c:5366 */
+/* END TYPEDEF clockid_t LOC=./src/df.merge.c:5370 */
 
 /* BEGIN STRUCT-DECL mount_entry LOC=./src/df.merge.c:1154 */
 #line 1154
 struct mount_entry ;
 /* END STRUCT-DECL mount_entry LOC=./src/df.merge.c:1154 */
 
-/* BEGIN STRUCT mount_entry LOC=./src/df.merge.c:5370 */
-#line 5370 "./src/df.merge.c"
+/* BEGIN STRUCT mount_entry LOC=./src/df.merge.c:5374 */
+#line 5374 "./src/df.merge.c"
 struct mount_entry {
    char *me_devname ;
    char *me_mountdir ;
@@ -6480,7 +6496,7 @@ struct mount_entry {
    unsigned int me_type_malloced : 1 ;
    struct mount_entry *me_next ;
 };
-/* END STRUCT mount_entry LOC=./src/df.merge.c:5370 */
+/* END STRUCT mount_entry LOC=./src/df.merge.c:5374 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6492,79 +6508,79 @@ struct mount_entry {
 enum __anonenum_457704180___0 ;
 /* END ENUM-DECL __anonenum_457704180___0 LOC=./src/df.merge.c:1462 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/df.merge.c:5389 */
-#line 5389
+/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/df.merge.c:5393 */
+#line 5393
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcoll_l)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     locale_t __l )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/df.merge.c:5389 */
+/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/df.merge.c:5393 */
 
 /* BEGIN ENUM-DECL __anonenum_264572385 LOC=./src/df.merge.c:1574 */
 #line 1574
 enum __anonenum_264572385 ;
 /* END ENUM-DECL __anonenum_264572385 LOC=./src/df.merge.c:1574 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/df.merge.c:5401 */
-#line 5401
+/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/df.merge.c:5405 */
+#line 5405
 extern char const   *quote_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/df.merge.c:5401 */
+/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/df.merge.c:5405 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/df.merge.c:5395 */
-#line 5395
+/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/df.merge.c:5399 */
+#line 5399
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup3)(int __fd ,
                                                                            int __fd2 ,
                                                                            int __flags ) ;
-/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/df.merge.c:5395 */
+/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/df.merge.c:5399 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffs(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/df.merge.c:5419 */
-#line 5419
+/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/df.merge.c:5423 */
+#line 5423
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) abs)(int __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN abs LOC=./src/df.merge.c:5419 */
+/* END FUNCTION-DECL-EXTERN abs LOC=./src/df.merge.c:5423 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/df.merge.c:5414 */
-#line 5414
+/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/df.merge.c:5418 */
+#line 5418
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getcwd)(char *__buf ,
                                                                                size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/df.merge.c:5414 */
+/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/df.merge.c:5418 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/df.merge.c:5410 */
-#line 5410
+/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/df.merge.c:5414 */
+#line 5414
 extern char *( __attribute__((__warn_unused_result__)) umaxtostr)(uintmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/df.merge.c:5410 */
+/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/df.merge.c:5414 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcswcs LOC=./src/df.merge.c:5423 */
-#line 5423
+/* BEGIN FUNCTION-DECL-EXTERN wcswcs LOC=./src/df.merge.c:5427 */
+#line 5427
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcswcs)(wchar_t const   *__haystack ,
                                                                                   wchar_t const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcswcs LOC=./src/df.merge.c:5423 */
+/* END FUNCTION-DECL-EXTERN wcswcs LOC=./src/df.merge.c:5427 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/df.merge.c:5428 */
-#line 5428
-extern timezone_t tzalloc(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/df.merge.c:5428 */
-
-/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/df.merge.c:5432 */
+/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/df.merge.c:5432 */
 #line 5432
-extern void *xirealloc(void *p , idx_t s )  __attribute__((__returns_nonnull__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/df.merge.c:5432 */
+extern timezone_t tzalloc(char const   *__name ) ;
+/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/df.merge.c:5432 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/df.merge.c:5441 */
-#line 5441
+/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/df.merge.c:5436 */
+#line 5436
+extern void *xirealloc(void *p , idx_t s )  __attribute__((__returns_nonnull__, __alloc_size__(2))) ;
+/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/df.merge.c:5436 */
+
+/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/df.merge.c:5445 */
+#line 5445
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) nrand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/df.merge.c:5441 */
+/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/df.merge.c:5445 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_insert LOC=./src/df.merge.c:5436 */
-#line 5436
+/* BEGIN FUNCTION-DECL-EXTERN hash_insert LOC=./src/df.merge.c:5440 */
+#line 5440
 extern void *( __attribute__((__warn_unused_result__)) hash_insert)(Hash_table *table ,
                                                                     void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_insert LOC=./src/df.merge.c:5436 */
+/* END FUNCTION-DECL-EXTERN hash_insert LOC=./src/df.merge.c:5440 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6575,11 +6591,11 @@ extern void *( __attribute__((__warn_unused_result__)) hash_insert)(Hash_table *
 __inline _Bool c_isascii(int c ) ;
 /* END FUNCTION-DECL c_isascii LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/df.merge.c:5461 */
-#line 5461
+/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/df.merge.c:5465 */
+#line 5465
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lutimes)(char const   *__file ,
                                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/df.merge.c:5461 */
+/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/df.merge.c:5465 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
 /* compiler builtin: 
@@ -6590,241 +6606,241 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 static void get_field_list(void) ;
 /* END FUNCTION-DECL get_field_list LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/df.merge.c:5466 */
-#line 5466
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/df.merge.c:5470 */
+#line 5470
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qfcvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/df.merge.c:5466 */
+/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/df.merge.c:5470 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/df.merge.c:5490 */
-#line 5490
+/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/df.merge.c:5494 */
+#line 5494
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) rindex)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN rindex LOC=./src/df.merge.c:5490 */
+/* END FUNCTION-DECL-EXTERN rindex LOC=./src/df.merge.c:5494 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/df.merge.c:5486 */
-#line 5486
+/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/df.merge.c:5490 */
+#line 5490
 extern struct timespec timespec_add(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/df.merge.c:5486 */
+/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/df.merge.c:5490 */
 
-/* BEGIN TYPEDEF off_t LOC=./src/df.merge.c:5477 */
-#line 5477 "./src/df.merge.c"
+/* BEGIN TYPEDEF off_t LOC=./src/df.merge.c:5481 */
+#line 5481 "./src/df.merge.c"
 typedef __off_t off_t;
-/* END TYPEDEF off_t LOC=./src/df.merge.c:5477 */
+/* END TYPEDEF off_t LOC=./src/df.merge.c:5481 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/df.merge.c:5481 */
-#line 5481
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/df.merge.c:5485 */
+#line 5485
 extern int ( __attribute__((__nonnull__(1))) rpl_fseeko)(FILE *fp , off_t offset ,
                                                          int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/df.merge.c:5481 */
+/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/df.merge.c:5485 */
 
-/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/df.merge.c:5495 */
-#line 5495
+/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/df.merge.c:5499 */
+#line 5499
 extern int system(char const   *__command ) ;
-/* END FUNCTION-DECL-EXTERN system LOC=./src/df.merge.c:5495 */
+/* END FUNCTION-DECL-EXTERN system LOC=./src/df.merge.c:5499 */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/df.merge.c:5504 */
-#line 5504
+/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/df.merge.c:5508 */
+#line 5508
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/df.merge.c:5504 */
+/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/df.merge.c:5508 */
 
 /* BEGIN FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strdup(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u32 LOC=./src/df.merge.c:5508 */
-#line 5508 "./src/df.merge.c"
-typedef unsigned int __u32;
-/* END TYPEDEF __u32 LOC=./src/df.merge.c:5508 */
-
-/* BEGIN TYPEDEF __be32 LOC=./src/df.merge.c:5512 */
+/* BEGIN TYPEDEF __u32 LOC=./src/df.merge.c:5512 */
 #line 5512 "./src/df.merge.c"
-typedef __u32 __be32;
-/* END TYPEDEF __be32 LOC=./src/df.merge.c:5512 */
+typedef unsigned int __u32;
+/* END TYPEDEF __u32 LOC=./src/df.merge.c:5512 */
 
-/* BEGIN FUNCTION-DECL c_isalnum LOC=./src/df.merge.c:5516 */
-#line 5516
+/* BEGIN TYPEDEF __be32 LOC=./src/df.merge.c:5516 */
+#line 5516 "./src/df.merge.c"
+typedef __u32 __be32;
+/* END TYPEDEF __be32 LOC=./src/df.merge.c:5516 */
+
+/* BEGIN FUNCTION-DECL c_isalnum LOC=./src/df.merge.c:5520 */
+#line 5520
 __inline _Bool c_isalnum(int c ) ;
-/* END FUNCTION-DECL c_isalnum LOC=./src/df.merge.c:5516 */
+/* END FUNCTION-DECL c_isalnum LOC=./src/df.merge.c:5520 */
 
 /* BEGIN ENUM-DECL __anonenum_852341087___0 LOC=./src/df.merge.c:1550 */
 #line 1550
 enum __anonenum_852341087___0 ;
 /* END ENUM-DECL __anonenum_852341087___0 LOC=./src/df.merge.c:1550 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/df.merge.c:5525 */
-#line 5525
+/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/df.merge.c:5529 */
+#line 5529
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof)(char const   * __restrict  __nptr ,
                                                                                                char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof LOC=./src/df.merge.c:5525 */
+/* END FUNCTION-DECL-EXTERN strtof LOC=./src/df.merge.c:5529 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/df.merge.c:5520 */
-#line 5520
+/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/df.merge.c:5524 */
+#line 5524
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) utimes)(char const   *__file ,
                                                                                              struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN utimes LOC=./src/df.merge.c:5520 */
+/* END FUNCTION-DECL-EXTERN utimes LOC=./src/df.merge.c:5524 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_rehash LOC=./src/df.merge.c:5530 */
-#line 5530
+/* BEGIN FUNCTION-DECL-EXTERN hash_rehash LOC=./src/df.merge.c:5534 */
+#line 5534
 extern _Bool ( __attribute__((__warn_unused_result__)) hash_rehash)(Hash_table *table ,
                                                                     size_t candidate ) ;
-/* END FUNCTION-DECL-EXTERN hash_rehash LOC=./src/df.merge.c:5530 */
+/* END FUNCTION-DECL-EXTERN hash_rehash LOC=./src/df.merge.c:5534 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_floorf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/df.merge.c:5551 */
-#line 5551
+/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/df.merge.c:5555 */
+#line 5555
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) faccessat)(int __fd ,
                                                                                                 char const   *__file ,
                                                                                                 int __type ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/df.merge.c:5551 */
+/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/df.merge.c:5555 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/df.merge.c:5545 */
-#line 5545
+/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/df.merge.c:5549 */
+#line 5549
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchown)(int __fd ,
                                                                              __uid_t __owner ,
                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN fchown LOC=./src/df.merge.c:5545 */
+/* END FUNCTION-DECL-EXTERN fchown LOC=./src/df.merge.c:5549 */
 
 /* BEGIN FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin___clear_cache(void * ) ;  */
 /* END FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 
-/* BEGIN STRUCT _fpreg LOC=./src/df.merge.c:5558 */
-#line 5558 "./src/df.merge.c"
+/* BEGIN STRUCT _fpreg LOC=./src/df.merge.c:5562 */
+#line 5562 "./src/df.merge.c"
 struct _fpreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
 };
-/* END STRUCT _fpreg LOC=./src/df.merge.c:5558 */
+/* END STRUCT _fpreg LOC=./src/df.merge.c:5562 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wmemcmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/df.merge.c:5570 */
-#line 5570
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/df.merge.c:5574 */
+#line 5574
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise)(int __fd ,
                                                                                     off_t __offset ,
                                                                                     off_t __len ,
                                                                                     int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/df.merge.c:5570 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/df.merge.c:5574 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/df.merge.c:5577 */
-#line 5577
+/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/df.merge.c:5581 */
+#line 5581
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) utimensat)(int __fd ,
                                                                                 char const   *__path ,
                                                                                 struct timespec  const  *__times ,
                                                                                 int __flags ) ;
-/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/df.merge.c:5577 */
+/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/df.merge.c:5581 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/df.merge.c:5584 */
-#line 5584
-extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/df.merge.c:5584 */
-
-/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/df.merge.c:5588 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/df.merge.c:5588 */
 #line 5588
+extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   *arg ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/df.merge.c:5588 */
+
+/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/df.merge.c:5592 */
+#line 5592
 extern void psignal(int __sig , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psignal LOC=./src/df.merge.c:5588 */
+/* END FUNCTION-DECL-EXTERN psignal LOC=./src/df.merge.c:5592 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/df.merge.c:5597 */
-#line 5597
+/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/df.merge.c:5601 */
+#line 5601
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigemptyset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/df.merge.c:5597 */
+/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/df.merge.c:5601 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/df.merge.c:5606 */
-#line 5606
-extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/df.merge.c:5606 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/df.merge.c:5610 */
+/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/df.merge.c:5610 */
 #line 5610
-extern long gettime_res(void) ;
-/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/df.merge.c:5610 */
+extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/df.merge.c:5610 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmemchr LOC=./src/df.merge.c:5614 */
+/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/df.merge.c:5614 */
 #line 5614
+extern long gettime_res(void) ;
+/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/df.merge.c:5614 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wmemchr LOC=./src/df.merge.c:5618 */
+#line 5618
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wmemchr)(wchar_t const   *__s ,
                                                                                    wchar_t __c ,
                                                                                    size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wmemchr LOC=./src/df.merge.c:5614 */
+/* END FUNCTION-DECL-EXTERN wmemchr LOC=./src/df.merge.c:5618 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802___0 LOC=./src/df.merge.c:1406 */
 #line 1406
 enum __anonenum_365337802___0 ;
 /* END ENUM-DECL __anonenum_365337802___0 LOC=./src/df.merge.c:1406 */
 
-/* BEGIN TYPEDEF __u_char LOC=./src/df.merge.c:5620 */
-#line 5620 "./src/df.merge.c"
-typedef unsigned char __u_char;
-/* END TYPEDEF __u_char LOC=./src/df.merge.c:5620 */
-
-/* BEGIN TYPEDEF u_char LOC=./src/df.merge.c:5624 */
+/* BEGIN TYPEDEF __u_char LOC=./src/df.merge.c:5624 */
 #line 5624 "./src/df.merge.c"
+typedef unsigned char __u_char;
+/* END TYPEDEF __u_char LOC=./src/df.merge.c:5624 */
+
+/* BEGIN TYPEDEF u_char LOC=./src/df.merge.c:5628 */
+#line 5628 "./src/df.merge.c"
 typedef __u_char u_char;
-/* END TYPEDEF u_char LOC=./src/df.merge.c:5624 */
+/* END TYPEDEF u_char LOC=./src/df.merge.c:5628 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cacosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __wsum LOC=./src/df.merge.c:5633 */
-#line 5633 "./src/df.merge.c"
+/* BEGIN TYPEDEF __wsum LOC=./src/df.merge.c:5637 */
+#line 5637 "./src/df.merge.c"
 typedef __u32 __wsum;
-/* END TYPEDEF __wsum LOC=./src/df.merge.c:5633 */
+/* END TYPEDEF __wsum LOC=./src/df.merge.c:5637 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/df.merge.c:5637 */
-#line 5637
+/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/df.merge.c:5641 */
+#line 5641
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof128_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/df.merge.c:5637 */
+/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/df.merge.c:5641 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/df.merge.c:5643 */
-#line 5643
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/df.merge.c:5647 */
+#line 5647
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmax)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/df.merge.c:5643 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/df.merge.c:5647 */
 
-/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/df.merge.c:5651 */
-#line 5651
+/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/df.merge.c:5655 */
+#line 5655
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) access)(char const   *__name ,
                                                                                              int __type ) ;
-/* END FUNCTION-DECL-EXTERN access LOC=./src/df.merge.c:5651 */
+/* END FUNCTION-DECL-EXTERN access LOC=./src/df.merge.c:5655 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/df.merge.c:5647 */
-#line 5647
+/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/df.merge.c:5651 */
+#line 5651
 extern long gethostid(void) ;
-/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/df.merge.c:5647 */
+/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/df.merge.c:5651 */
 
 /* BEGIN VARIABLE-DECL show_local_fs LOC=UNKNOWN */
 static _Bool show_local_fs ;
 /* END VARIABLE-DECL show_local_fs LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/df.merge.c:5660 */
-#line 5660
+/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/df.merge.c:5664 */
+#line 5664
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ftrylockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/df.merge.c:5660 */
+/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/df.merge.c:5664 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6836,16 +6852,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_atanhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/df.merge.c:5674 */
-#line 5674
-extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/df.merge.c:5674 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/df.merge.c:5678 */
+/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/df.merge.c:5678 */
 #line 5678
+extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
+/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/df.merge.c:5678 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/df.merge.c:5682 */
+#line 5682
 extern char *( __attribute__((__nonnull__(3))) fgets_unlocked)(char * __restrict  __s ,
                                                                int __n , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/df.merge.c:5678 */
+/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/df.merge.c:5682 */
 
 /* BEGIN STRUCT-DECL ucontext_t LOC=./src/df.merge.c:1370 */
 #line 1370
@@ -6857,22 +6873,22 @@ struct ucontext_t ;
    int __builtin_ctzl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/df.merge.c:5692 */
-#line 5692
+/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/df.merge.c:5696 */
+#line 5696
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32_l)(char const   * __restrict  __nptr ,
                                                                                                      char ** __restrict  __endptr ,
                                                                                                      locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/df.merge.c:5692 */
+/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/df.merge.c:5696 */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/df.merge.c:5688 */
-#line 5688
+/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/df.merge.c:5692 */
+#line 5692
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof LOC=./src/df.merge.c:5688 */
+/* END FUNCTION-DECL-EXTERN feof LOC=./src/df.merge.c:5692 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/df.merge.c:5698 */
-#line 5698
+/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/df.merge.c:5702 */
+#line 5702
 extern int putchar(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar LOC=./src/df.merge.c:5698 */
+/* END FUNCTION-DECL-EXTERN putchar LOC=./src/df.merge.c:5702 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -6884,23 +6900,23 @@ extern int putchar(int __c ) ;
    _Complex float __builtin_catanf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_catanf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_entries LOC=./src/df.merge.c:5712 */
-#line 5712
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_entries LOC=./src/df.merge.c:5716 */
+#line 5716
 extern size_t hash_get_entries(Hash_table const   *table , void **buffer , size_t buffer_size ) ;
-/* END FUNCTION-DECL-EXTERN hash_get_entries LOC=./src/df.merge.c:5712 */
+/* END FUNCTION-DECL-EXTERN hash_get_entries LOC=./src/df.merge.c:5716 */
 
-/* BEGIN TYPEDEF __rlim_t LOC=./src/df.merge.c:5716 */
-#line 5716 "./src/df.merge.c"
+/* BEGIN TYPEDEF __rlim_t LOC=./src/df.merge.c:5720 */
+#line 5720 "./src/df.merge.c"
 typedef unsigned long __rlim_t;
-/* END TYPEDEF __rlim_t LOC=./src/df.merge.c:5716 */
+/* END TYPEDEF __rlim_t LOC=./src/df.merge.c:5720 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmin(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/df.merge.c:5725 */
-#line 5725
+/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/df.merge.c:5729 */
+#line 5729
 enum __anonenum_91015150___0 {
     TRAP_BRKPT___0 = 1,
     TRAP_TRACE___0 = 2,
@@ -6908,10 +6924,10 @@ enum __anonenum_91015150___0 {
     TRAP_HWBKPT___0 = 4,
     TRAP_UNK___0 = 5
 } ;
-/* END ENUM __anonenum_91015150___0 LOC=./src/df.merge.c:5725 */
+/* END ENUM __anonenum_91015150___0 LOC=./src/df.merge.c:5729 */
 
-/* BEGIN STRUCT fs_usage LOC=./src/df.merge.c:5735 */
-#line 5735 "./src/df.merge.c"
+/* BEGIN STRUCT fs_usage LOC=./src/df.merge.c:5739 */
+#line 5739 "./src/df.merge.c"
 struct fs_usage {
    uintmax_t fsu_blocksize ;
    uintmax_t fsu_blocks ;
@@ -6921,7 +6937,7 @@ struct fs_usage {
    uintmax_t fsu_files ;
    uintmax_t fsu_ffree ;
 };
-/* END STRUCT fs_usage LOC=./src/df.merge.c:5735 */
+/* END STRUCT fs_usage LOC=./src/df.merge.c:5739 */
 
 /* BEGIN VARIABLE-DEF grand_fsu LOC=UNKNOWN */
 static struct fs_usage grand_fsu  ;
@@ -6931,66 +6947,66 @@ static struct fs_usage grand_fsu  ;
 __inline static _Bool usable_st_size(struct stat  const  *sb ) ;
 /* END FUNCTION-DECL usable_st_size LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL c32iscntrl LOC=./src/df.merge.c:5755 */
-#line 5755
+/* BEGIN FUNCTION-DECL c32iscntrl LOC=./src/df.merge.c:5759 */
+#line 5759
 __inline int c32iscntrl(wint_t wc ) ;
-/* END FUNCTION-DECL c32iscntrl LOC=./src/df.merge.c:5755 */
+/* END FUNCTION-DECL c32iscntrl LOC=./src/df.merge.c:5759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/df.merge.c:5763 */
-#line 5763
-extern int fflush(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush LOC=./src/df.merge.c:5763 */
-
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/df.merge.c:5751 */
-#line 5751
-extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/df.merge.c:5751 */
-
-/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/df.merge.c:5767 */
+/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/df.merge.c:5767 */
 #line 5767
+extern int fflush(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fflush LOC=./src/df.merge.c:5767 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/df.merge.c:5755 */
+#line 5755
+extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/df.merge.c:5755 */
+
+/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/df.merge.c:5771 */
+#line 5771
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memcpy)(void * __restrict  __dest ,
                                                                                                  void const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/df.merge.c:5767 */
+/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/df.merge.c:5771 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/df.merge.c:5773 */
-#line 5773
+/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/df.merge.c:5777 */
+#line 5777
 extern int ( __attribute__((__nonnull__(1))) sigwaitinfo)(sigset_t const   * __restrict  __set ,
                                                           siginfo_t * __restrict  __info ) ;
-/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/df.merge.c:5773 */
+/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/df.merge.c:5777 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539___0 LOC=./src/df.merge.c:1570 */
 #line 1570
 enum __anonenum_23175539___0 ;
 /* END ENUM-DECL __anonenum_23175539___0 LOC=./src/df.merge.c:1570 */
 
-/* BEGIN TYPEDEF intptr_t LOC=./src/df.merge.c:5778 */
-#line 5778 "./src/df.merge.c"
+/* BEGIN TYPEDEF intptr_t LOC=./src/df.merge.c:5782 */
+#line 5782 "./src/df.merge.c"
 typedef long intptr_t;
-/* END TYPEDEF intptr_t LOC=./src/df.merge.c:5778 */
+/* END TYPEDEF intptr_t LOC=./src/df.merge.c:5782 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/df.merge.c:5782 */
-#line 5782
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/df.merge.c:5786 */
+#line 5786
 extern char *quotearg_alloc_mem(char const   *arg , size_t argsize , size_t *size ,
                                 struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/df.merge.c:5782 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/df.merge.c:5786 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/df.merge.c:5793 */
-#line 5793
+/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/df.merge.c:5797 */
+#line 5797
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(long __sysno 
                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN syscall LOC=./src/df.merge.c:5793 */
+/* END FUNCTION-DECL-EXTERN syscall LOC=./src/df.merge.c:5797 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getwchar LOC=./src/df.merge.c:5798 */
-#line 5798
+/* BEGIN FUNCTION-DECL-EXTERN getwchar LOC=./src/df.merge.c:5802 */
+#line 5802
 extern wint_t getwchar(void) ;
-/* END FUNCTION-DECL-EXTERN getwchar LOC=./src/df.merge.c:5798 */
+/* END FUNCTION-DECL-EXTERN getwchar LOC=./src/df.merge.c:5802 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -6998,26 +7014,26 @@ extern wint_t getwchar(void) ;
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/df.merge.c:5802 */
-#line 5802
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/df.merge.c:5806 */
+#line 5806
 extern char *quotearg_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/df.merge.c:5802 */
+/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/df.merge.c:5806 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/df.merge.c:5812 */
-#line 5812
+/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/df.merge.c:5816 */
+#line 5816
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getres)(clockid_t __clock_id ,
                                                                                    struct timespec *__res ) ;
-/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/df.merge.c:5812 */
+/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/df.merge.c:5816 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_entries LOC=./src/df.merge.c:5817 */
-#line 5817
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_entries LOC=./src/df.merge.c:5821 */
+#line 5821
 extern size_t hash_get_n_entries(Hash_table const   *table )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN hash_get_n_entries LOC=./src/df.merge.c:5817 */
+/* END FUNCTION-DECL-EXTERN hash_get_n_entries LOC=./src/df.merge.c:5821 */
 
-/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/df.merge.c:5821 */
-#line 5821 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/df.merge.c:5825 */
+#line 5825 "./src/df.merge.c"
 typedef char *__kernel_caddr_t;
-/* END TYPEDEF __kernel_caddr_t LOC=./src/df.merge.c:5821 */
+/* END TYPEDEF __kernel_caddr_t LOC=./src/df.merge.c:5825 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 /* compiler builtin: 
@@ -7028,8 +7044,8 @@ typedef char *__kernel_caddr_t;
 static void decode_output_arg(char const   *arg ) ;
 /* END FUNCTION-DECL decode_output_arg LOC=UNKNOWN */
 
-/* BEGIN ENUM __anonenum_437032235 LOC=./src/df.merge.c:5834 */
-#line 5834
+/* BEGIN ENUM __anonenum_437032235 LOC=./src/df.merge.c:5838 */
+#line 5838
 enum __anonenum_437032235 {
     _PC_LINK_MAX = 0,
     _PC_MAX_CANON = 1,
@@ -7053,20 +7069,20 @@ enum __anonenum_437032235 {
     _PC_SYMLINK_MAX = 19,
     _PC_2_SYMLINKS = 20
 } ;
-/* END ENUM __anonenum_437032235 LOC=./src/df.merge.c:5834 */
+/* END ENUM __anonenum_437032235 LOC=./src/df.merge.c:5838 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsncpy LOC=./src/df.merge.c:5865 */
-#line 5865
+/* BEGIN FUNCTION-DECL-EXTERN wcsncpy LOC=./src/df.merge.c:5869 */
+#line 5869
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__nonnull__(1,2), __leaf__)) wcsncpy)(wchar_t * __restrict  __dest ,
                                                                                                      wchar_t const   * __restrict  __src ,
                                                                                                      size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wcsncpy LOC=./src/df.merge.c:5865 */
+/* END FUNCTION-DECL-EXTERN wcsncpy LOC=./src/df.merge.c:5869 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/df.merge.c:5860 */
-#line 5860
+/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/df.merge.c:5864 */
+#line 5864
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_gettime)(clockid_t __clock_id ,
                                                                                                     struct timespec *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/df.merge.c:5860 */
+/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/df.merge.c:5864 */
 
 /* BEGIN STRUCT-DECL __anonstruct__timer_490064738 LOC=./src/df.merge.c:1546 */
 #line 1546
@@ -7083,10 +7099,10 @@ struct __anonstruct__timer_490064738 ;
    void *__builtin_memmove(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memmove LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uid_t LOC=./src/df.merge.c:5881 */
-#line 5881 "./src/df.merge.c"
+/* BEGIN TYPEDEF uid_t LOC=./src/df.merge.c:5885 */
+#line 5885 "./src/df.merge.c"
 typedef __uid_t uid_t;
-/* END TYPEDEF uid_t LOC=./src/df.merge.c:5881 */
+/* END TYPEDEF uid_t LOC=./src/df.merge.c:5885 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -7098,65 +7114,65 @@ typedef __uid_t uid_t;
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/df.merge.c:5895 */
-#line 5895
-extern _Bool strip_trailing_slashes(char *file ) ;
-/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/df.merge.c:5895 */
-
-/* BEGIN FUNCTION-DECL-EXTERN hash_lookup LOC=./src/df.merge.c:5899 */
+/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/df.merge.c:5899 */
 #line 5899
-extern void *hash_lookup(Hash_table const   *table , void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_lookup LOC=./src/df.merge.c:5899 */
+extern _Bool strip_trailing_slashes(char *file ) ;
+/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/df.merge.c:5899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswalpha LOC=./src/df.merge.c:5903 */
+/* BEGIN FUNCTION-DECL-EXTERN hash_lookup LOC=./src/df.merge.c:5903 */
 #line 5903
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswalpha)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN iswalpha LOC=./src/df.merge.c:5903 */
+extern void *hash_lookup(Hash_table const   *table , void const   *entry ) ;
+/* END FUNCTION-DECL-EXTERN hash_lookup LOC=./src/df.merge.c:5903 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/df.merge.c:5907 */
+/* BEGIN FUNCTION-DECL-EXTERN iswalpha LOC=./src/df.merge.c:5907 */
 #line 5907
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswalpha)(wint_t __wc ) ;
+/* END FUNCTION-DECL-EXTERN iswalpha LOC=./src/df.merge.c:5907 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/df.merge.c:5911 */
+#line 5911
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncat)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncat LOC=./src/df.merge.c:5907 */
+/* END FUNCTION-DECL-EXTERN strncat LOC=./src/df.merge.c:5911 */
 
-/* BEGIN STRUCT _fpxreg LOC=./src/df.merge.c:5913 */
-#line 5913 "./src/df.merge.c"
+/* BEGIN STRUCT _fpxreg LOC=./src/df.merge.c:5917 */
+#line 5917 "./src/df.merge.c"
 struct _fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _fpxreg LOC=./src/df.merge.c:5913 */
+/* END STRUCT _fpxreg LOC=./src/df.merge.c:5917 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/df.merge.c:5921 */
-#line 5921
+/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/df.merge.c:5925 */
+#line 5925
 extern  __attribute__((__deprecated__("Use the sigsuspend function instead"))) int sigpause(int __sig )  __asm__("__xpg_sigpause")  ;
-/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/df.merge.c:5921 */
+/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/df.merge.c:5925 */
 
 /* BEGIN ENUM-DECL quoting_flags LOC=./src/df.merge.c:958 */
 #line 958
 enum quoting_flags ;
 /* END ENUM-DECL quoting_flags LOC=./src/df.merge.c:958 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/df.merge.c:5934 */
-#line 5934
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/df.merge.c:5938 */
+#line 5938
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2,4), __leaf__)) strxfrm_l)(char *__dest ,
                                                                                                      char const   *__src ,
                                                                                                      size_t __n ,
                                                                                                      locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/df.merge.c:5934 */
+/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/df.merge.c:5938 */
 
-/* BEGIN TYPEDEF lldiv_t LOC=./src/df.merge.c:5925 */
-#line 5925 "./src/df.merge.c"
+/* BEGIN TYPEDEF lldiv_t LOC=./src/df.merge.c:5929 */
+#line 5929 "./src/df.merge.c"
 typedef struct __anonstruct_lldiv_t_103911545 lldiv_t;
-/* END TYPEDEF lldiv_t LOC=./src/df.merge.c:5925 */
+/* END TYPEDEF lldiv_t LOC=./src/df.merge.c:5929 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/df.merge.c:5929 */
-#line 5929
+/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/df.merge.c:5933 */
+#line 5933
 extern  __attribute__((__nothrow__)) lldiv_t ( __attribute__((__leaf__)) lldiv)(long long __numer ,
                                                                                 long long __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/df.merge.c:5929 */
+/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/df.merge.c:5933 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 /* compiler builtin: 
@@ -7168,21 +7184,21 @@ static void get_field_values(struct field_values_t *bv , struct field_values_t *
                              struct fs_usage  const  *fsu ) ;
 /* END FUNCTION-DECL get_field_values LOC=UNKNOWN */
 
-/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/df.merge.c:5951 */
-#line 5951
+/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/df.merge.c:5955 */
+#line 5955
 enum __anonenum_288797321___0 {
     EXIT_TIMEDOUT___0 = 124,
     EXIT_CANCELED___0 = 125,
     EXIT_CANNOT_INVOKE___0 = 126,
     EXIT_ENOENT___0 = 127
 } ;
-/* END ENUM __anonenum_288797321___0 LOC=./src/df.merge.c:5951 */
+/* END ENUM __anonenum_288797321___0 LOC=./src/df.merge.c:5955 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/df.merge.c:5965 */
-#line 5965
+/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/df.merge.c:5969 */
+#line 5969
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) setlocale)(int __category ,
                                                                                   char const   *__locale ) ;
-/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/df.merge.c:5965 */
+/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/df.merge.c:5969 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 /* compiler builtin: 
@@ -7199,13 +7215,13 @@ struct __anonstruct__sigchld_284671705 ;
    int __builtin_setjmp(void ** ) ;  */
 /* END FUNCTION-DECL __builtin_setjmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbrtowc LOC=./src/df.merge.c:5981 */
-#line 5981
+/* BEGIN FUNCTION-DECL-EXTERN mbrtowc LOC=./src/df.merge.c:5985 */
+#line 5985
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbrtowc)(wchar_t * __restrict  __pwc ,
                                                                                  char const   * __restrict  __s ,
                                                                                  size_t __n ,
                                                                                  mbstate_t * __restrict  __p ) ;
-/* END FUNCTION-DECL-EXTERN mbrtowc LOC=./src/df.merge.c:5981 */
+/* END FUNCTION-DECL-EXTERN mbrtowc LOC=./src/df.merge.c:5985 */
 
 /* BEGIN FUNCTION-DECL __builtin___memccpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -7213,68 +7229,68 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbrtowc)
                                  unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memccpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/df.merge.c:5988 */
-#line 5988
+/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/df.merge.c:5992 */
+#line 5992
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,3), __leaf__)) symlinkat)(char const   *__from ,
                                                                                                   int __tofd ,
                                                                                                   char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/df.merge.c:5988 */
+/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/df.merge.c:5992 */
 
-/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/df.merge.c:5994 */
-#line 5994 "./src/df.merge.c"
-typedef int __kernel_ipc_pid_t;
-/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/df.merge.c:5994 */
-
-/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:5998 */
+/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/df.merge.c:5998 */
 #line 5998 "./src/df.merge.c"
+typedef int __kernel_ipc_pid_t;
+/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/df.merge.c:5998 */
+
+/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:6002 */
+#line 6002 "./src/df.merge.c"
 struct __anonstruct___fsid_t_109580352 {
    int __val[2] ;
 };
-/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:5998 */
+/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:6002 */
 
-/* BEGIN TYPEDEF __fsid_t LOC=./src/df.merge.c:6004 */
-#line 6004 "./src/df.merge.c"
-typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
-/* END TYPEDEF __fsid_t LOC=./src/df.merge.c:6004 */
-
-/* BEGIN TYPEDEF fsid_t LOC=./src/df.merge.c:6008 */
+/* BEGIN TYPEDEF __fsid_t LOC=./src/df.merge.c:6008 */
 #line 6008 "./src/df.merge.c"
-typedef __fsid_t fsid_t;
-/* END TYPEDEF fsid_t LOC=./src/df.merge.c:6008 */
+typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
+/* END TYPEDEF __fsid_t LOC=./src/df.merge.c:6008 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/df.merge.c:6012 */
-#line 6012
+/* BEGIN TYPEDEF fsid_t LOC=./src/df.merge.c:6012 */
+#line 6012 "./src/df.merge.c"
+typedef __fsid_t fsid_t;
+/* END TYPEDEF fsid_t LOC=./src/df.merge.c:6012 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/df.merge.c:6016 */
+#line 6016
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gettimeofday)(struct timeval * __restrict  __tv ,
                                                                                                    void * __restrict  __tz ) ;
-/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/df.merge.c:6012 */
+/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/df.merge.c:6016 */
 
-/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/df.merge.c:6017 */
-#line 6017
+/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/df.merge.c:6021 */
+#line 6021
 extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * ) ;
-/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/df.merge.c:6017 */
+/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/df.merge.c:6021 */
 
-/* BEGIN TYPEDEF uint32_t LOC=./src/df.merge.c:6021 */
-#line 6021 "./src/df.merge.c"
-typedef __uint32_t uint32_t;
-/* END TYPEDEF uint32_t LOC=./src/df.merge.c:6021 */
-
-/* BEGIN TYPEDEF comparison_fn_t LOC=./src/df.merge.c:6025 */
+/* BEGIN TYPEDEF uint32_t LOC=./src/df.merge.c:6025 */
 #line 6025 "./src/df.merge.c"
+typedef __uint32_t uint32_t;
+/* END TYPEDEF uint32_t LOC=./src/df.merge.c:6025 */
+
+/* BEGIN TYPEDEF comparison_fn_t LOC=./src/df.merge.c:6029 */
+#line 6029 "./src/df.merge.c"
 typedef int (*comparison_fn_t)(void const   * , void const   * );
-/* END TYPEDEF comparison_fn_t LOC=./src/df.merge.c:6025 */
+/* END TYPEDEF comparison_fn_t LOC=./src/df.merge.c:6029 */
 
 /* BEGIN FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_hypot(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/df.merge.c:6034 */
-#line 6034
+/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/df.merge.c:6038 */
+#line 6038
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,3,4), __leaf__)) strftime)(char * __restrict  __s ,
                                                                                                       size_t __maxsize ,
                                                                                                       char const   * __restrict  __format ,
                                                                                                       struct tm  const  * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN strftime LOC=./src/df.merge.c:6034 */
+/* END FUNCTION-DECL-EXTERN strftime LOC=./src/df.merge.c:6038 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802 LOC=./src/df.merge.c:1578 */
 #line 1578
@@ -7285,10 +7301,10 @@ enum __anonenum_365337802 ;
 static int tty_out ;
 /* END VARIABLE-DECL tty_out LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putwc_unlocked LOC=./src/df.merge.c:6045 */
-#line 6045
+/* BEGIN FUNCTION-DECL-EXTERN putwc_unlocked LOC=./src/df.merge.c:6049 */
+#line 6049
 extern wint_t putwc_unlocked(wchar_t __wc , __FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putwc_unlocked LOC=./src/df.merge.c:6045 */
+/* END FUNCTION-DECL-EXTERN putwc_unlocked LOC=./src/df.merge.c:6049 */
 
 /* BEGIN ENUM-DECL __anonenum_111643124 LOC=./src/df.merge.c:1430 */
 #line 1430
@@ -7305,77 +7321,77 @@ enum __anonenum_111643124 ;
    short __builtin_bitreverse16(short  ) ;  */
 /* END FUNCTION-DECL __builtin_bitreverse16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/df.merge.c:6063 */
-#line 6063
+/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/df.merge.c:6067 */
+#line 6067
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) gsignal)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/df.merge.c:6063 */
+/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/df.merge.c:6067 */
 
-/* BEGIN FUNCTION-DECL-EXTERN free_cwd LOC=./src/df.merge.c:6059 */
-#line 6059
+/* BEGIN FUNCTION-DECL-EXTERN free_cwd LOC=./src/df.merge.c:6063 */
+#line 6063
 extern void free_cwd(struct saved_cwd *cwd ) ;
-/* END FUNCTION-DECL-EXTERN free_cwd LOC=./src/df.merge.c:6059 */
+/* END FUNCTION-DECL-EXTERN free_cwd LOC=./src/df.merge.c:6063 */
 
-/* BEGIN TYPEDEF Hash_data_freer LOC=./src/df.merge.c:6067 */
-#line 6067 "./src/df.merge.c"
+/* BEGIN TYPEDEF Hash_data_freer LOC=./src/df.merge.c:6071 */
+#line 6071 "./src/df.merge.c"
 typedef void (*Hash_data_freer)(void *entry );
-/* END TYPEDEF Hash_data_freer LOC=./src/df.merge.c:6067 */
+/* END TYPEDEF Hash_data_freer LOC=./src/df.merge.c:6071 */
 
 /* BEGIN FUNCTION-DECL __builtin_rindex LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_rindex(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_rindex LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswxdigit_l LOC=./src/df.merge.c:6076 */
-#line 6076
+/* BEGIN FUNCTION-DECL-EXTERN iswxdigit_l LOC=./src/df.merge.c:6080 */
+#line 6080
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswxdigit_l)(wint_t __wc ,
                                                                                   locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswxdigit_l LOC=./src/df.merge.c:6076 */
+/* END FUNCTION-DECL-EXTERN iswxdigit_l LOC=./src/df.merge.c:6080 */
 
-/* BEGIN STRUCT fs_type_list LOC=./src/df.merge.c:6089 */
-#line 6089 "./src/df.merge.c"
+/* BEGIN STRUCT fs_type_list LOC=./src/df.merge.c:6093 */
+#line 6093 "./src/df.merge.c"
 struct fs_type_list {
    char *fs_name ;
    struct fs_type_list *fs_next ;
 };
-/* END STRUCT fs_type_list LOC=./src/df.merge.c:6089 */
+/* END STRUCT fs_type_list LOC=./src/df.merge.c:6093 */
 
-/* BEGIN ENUM quoting_flags LOC=./src/df.merge.c:6081 */
-#line 6081
+/* BEGIN ENUM quoting_flags LOC=./src/df.merge.c:6085 */
+#line 6085
 enum quoting_flags {
     QA_ELIDE_NULL_BYTES = 1,
     QA_ELIDE_OUTER_QUOTES = 2,
     QA_SPLIT_TRIGRAPHS = 4
 } ;
-/* END ENUM quoting_flags LOC=./src/df.merge.c:6081 */
+/* END ENUM quoting_flags LOC=./src/df.merge.c:6085 */
 
-/* BEGIN FUNCTION-DECL c32ispunct LOC=./src/df.merge.c:6101 */
-#line 6101
+/* BEGIN FUNCTION-DECL c32ispunct LOC=./src/df.merge.c:6105 */
+#line 6105
 __inline int c32ispunct(wint_t wc ) ;
-/* END FUNCTION-DECL c32ispunct LOC=./src/df.merge.c:6101 */
+/* END FUNCTION-DECL c32ispunct LOC=./src/df.merge.c:6105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN towctrans LOC=./src/df.merge.c:6096 */
-#line 6096
+/* BEGIN FUNCTION-DECL-EXTERN towctrans LOC=./src/df.merge.c:6100 */
+#line 6100
 extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) towctrans)(wint_t __wc ,
                                                                                    wctrans_t __desc ) ;
-/* END FUNCTION-DECL-EXTERN towctrans LOC=./src/df.merge.c:6096 */
+/* END FUNCTION-DECL-EXTERN towctrans LOC=./src/df.merge.c:6100 */
 
-/* BEGIN TYPEDEF __u_long LOC=./src/df.merge.c:6105 */
-#line 6105 "./src/df.merge.c"
+/* BEGIN TYPEDEF __u_long LOC=./src/df.merge.c:6109 */
+#line 6109 "./src/df.merge.c"
 typedef unsigned long __u_long;
-/* END TYPEDEF __u_long LOC=./src/df.merge.c:6105 */
+/* END TYPEDEF __u_long LOC=./src/df.merge.c:6109 */
 
 /* BEGIN FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cprojl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN canonicalize_filename_mode LOC=./src/df.merge.c:6109 */
-#line 6109
+/* BEGIN FUNCTION-DECL-EXTERN canonicalize_filename_mode LOC=./src/df.merge.c:6113 */
+#line 6113
 extern char *canonicalize_filename_mode(char const   * , canonicalize_mode_t  )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN canonicalize_filename_mode LOC=./src/df.merge.c:6109 */
+/* END FUNCTION-DECL-EXTERN canonicalize_filename_mode LOC=./src/df.merge.c:6113 */
 
-/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/df.merge.c:6118 */
-#line 6118
+/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/df.merge.c:6122 */
+#line 6122
 enum __anonenum_451154152___0 {
     REG_R8___0 = 0,
     REG_R9___0 = 1,
@@ -7401,57 +7417,57 @@ enum __anonenum_451154152___0 {
     REG_OLDMASK___0 = 21,
     REG_CR2___0 = 22
 } ;
-/* END ENUM __anonenum_451154152___0 LOC=./src/df.merge.c:6118 */
+/* END ENUM __anonenum_451154152___0 LOC=./src/df.merge.c:6122 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/df.merge.c:6146 */
-#line 6146
+/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/df.merge.c:6150 */
+#line 6150
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) strtoumax)(char const   * __restrict  __nptr ,
                                                                                       char ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_strtoumax")  ;
-/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/df.merge.c:6146 */
+/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/df.merge.c:6150 */
 
-/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/df.merge.c:6152 */
-#line 6152
+/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/df.merge.c:6156 */
+#line 6156
 extern FILE *popen(char const   *__command , char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN popen LOC=./src/df.merge.c:6152 */
+/* END FUNCTION-DECL-EXTERN popen LOC=./src/df.merge.c:6156 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_exp(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/df.merge.c:6161 */
-#line 6161
+/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/df.merge.c:6165 */
+#line 6165
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mktemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/df.merge.c:6161 */
+/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/df.merge.c:6165 */
 
-/* BEGIN TYPEDEF sighandler_t LOC=./src/df.merge.c:6165 */
-#line 6165 "./src/df.merge.c"
+/* BEGIN TYPEDEF sighandler_t LOC=./src/df.merge.c:6169 */
+#line 6169 "./src/df.merge.c"
 typedef void (*sighandler_t)(int  );
-/* END TYPEDEF sighandler_t LOC=./src/df.merge.c:6165 */
+/* END TYPEDEF sighandler_t LOC=./src/df.merge.c:6169 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/df.merge.c:6169 */
-#line 6169
-extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) nrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/df.merge.c:6169 */
-
-/* BEGIN FUNCTION-DECL mbszero LOC=./src/df.merge.c:6173 */
+/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/df.merge.c:6173 */
 #line 6173
-__inline void ( __attribute__((__nonnull__(1))) mbszero)(mbstate_t *ps ) ;
-/* END FUNCTION-DECL mbszero LOC=./src/df.merge.c:6173 */
+extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) nrand48)(unsigned short *__xsubi ) ;
+/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/df.merge.c:6173 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/df.merge.c:6177 */
+/* BEGIN FUNCTION-DECL mbszero LOC=./src/df.merge.c:6177 */
 #line 6177
-extern FILE *fopen64(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/df.merge.c:6177 */
+__inline void ( __attribute__((__nonnull__(1))) mbszero)(mbstate_t *ps ) ;
+/* END FUNCTION-DECL mbszero LOC=./src/df.merge.c:6177 */
 
-/* BEGIN FUNCTION-DECL c_islower LOC=./src/df.merge.c:6181 */
+/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/df.merge.c:6181 */
 #line 6181
-__inline _Bool c_islower(int c ) ;
-/* END FUNCTION-DECL c_islower LOC=./src/df.merge.c:6181 */
+extern FILE *fopen64(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
+/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/df.merge.c:6181 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_initialize LOC=./src/df.merge.c:6185 */
+/* BEGIN FUNCTION-DECL c_islower LOC=./src/df.merge.c:6185 */
 #line 6185
+__inline _Bool c_islower(int c ) ;
+/* END FUNCTION-DECL c_islower LOC=./src/df.merge.c:6185 */
+
+/* BEGIN FUNCTION-DECL-EXTERN hash_initialize LOC=./src/df.merge.c:6189 */
+#line 6189
 extern Hash_table *( __attribute__((__warn_unused_result__)) hash_initialize)(size_t candidate ,
                                                                               Hash_tuning const   *tuning ,
                                                                               size_t (*hasher)(void const   *entry ,
@@ -7459,19 +7475,19 @@ extern Hash_table *( __attribute__((__warn_unused_result__)) hash_initialize)(si
                                                                               _Bool (*comparator)(void const   *entry1 ,
                                                                                                   void const   *entry2 ) ,
                                                                               void (*data_freer)(void *entry ) )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN hash_initialize LOC=./src/df.merge.c:6185 */
+/* END FUNCTION-DECL-EXTERN hash_initialize LOC=./src/df.merge.c:6189 */
 
 /* BEGIN ENUM-DECL __anonenum_header_mode_288362005 LOC=./src/df.merge.c:1090 */
 #line 1090
 enum __anonenum_header_mode_288362005 ;
 /* END ENUM-DECL __anonenum_header_mode_288362005 LOC=./src/df.merge.c:1090 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoll LOC=./src/df.merge.c:6205 */
-#line 6205
+/* BEGIN FUNCTION-DECL-EXTERN wcstoll LOC=./src/df.merge.c:6209 */
+#line 6209
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) wcstoll)(wchar_t const   * __restrict  __nptr ,
                                                                                     wchar_t ** __restrict  __endptr ,
                                                                                     int __base )  __asm__("__isoc23_wcstoll")  ;
-/* END FUNCTION-DECL-EXTERN wcstoll LOC=./src/df.merge.c:6205 */
+/* END FUNCTION-DECL-EXTERN wcstoll LOC=./src/df.merge.c:6209 */
 
 /* BEGIN FUNCTION-DECL __builtin_malloc LOC=BUILTIN */
 /* compiler builtin: 
@@ -7487,10 +7503,6 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) wcsto
 #line 1114
 union sigval ;
 /* END UNION-DECL sigval LOC=./src/df.merge.c:1114 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_c6W0_argc LOC=UNKNOWN */
-int _TIG_IZ_c6W0_argc ;
-/* END VARIABLE-DECL _TIG_IZ_c6W0_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __sig_atomic_t LOC=./src/df.merge.c:6215 */
 #line 6215 "./src/df.merge.c"
@@ -8132,10 +8144,6 @@ extern char *mdir_name(char const   *file )  __attribute__((__malloc__)) ;
 #line 6737
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setuid)(__uid_t __uid ) ;
 /* END FUNCTION-DECL-EXTERN setuid LOC=./src/df.merge.c:6737 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_9N0o_envp LOC=UNKNOWN */
-char **_TIG_IZ_9N0o_envp ;
-/* END VARIABLE-DECL _TIG_IZ_9N0o_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __le16 LOC=./src/df.merge.c:6746 */
 #line 6746 "./src/df.merge.c"
@@ -9286,32 +9294,36 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    int __builtin_strcmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ctermid LOC=./src/df.merge.c:7703 */
-#line 7703
+/* BEGIN VARIABLE-DECL _TIG_IZ_AEJ4_argv LOC=UNKNOWN */
+char **_TIG_IZ_AEJ4_argv ;
+/* END VARIABLE-DECL _TIG_IZ_AEJ4_argv LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN ctermid LOC=./src/df.merge.c:7707 */
+#line 7707
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctermid)(char *__s ) ;
-/* END FUNCTION-DECL-EXTERN ctermid LOC=./src/df.merge.c:7703 */
+/* END FUNCTION-DECL-EXTERN ctermid LOC=./src/df.merge.c:7707 */
 
 /* BEGIN STRUCT-DECL _ymmh_state LOC=./src/df.merge.c:1502 */
 #line 1502
 struct _ymmh_state ;
 /* END STRUCT-DECL _ymmh_state LOC=./src/df.merge.c:1502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/df.merge.c:7707 */
-#line 7707
+/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/df.merge.c:7711 */
+#line 7711
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval  const  * __restrict  __new ,
                                                                                 struct itimerval * __restrict  __old ) ;
-/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/df.merge.c:7707 */
+/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/df.merge.c:7711 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/df.merge.c:7713 */
-#line 7713
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/df.merge.c:7717 */
+#line 7717
 extern  __attribute__((__noreturn__)) void __error_at_line_noreturn(int __status ,
                                                                     int __errnum ,
                                                                     char const   *__fname ,
                                                                     unsigned int __line ,
                                                                     char const   *__format 
                                                                     , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/df.merge.c:7713 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/df.merge.c:7717 */
 
 /* BEGIN UNION-DECL __anonunion__sifields_717391825 LOC=./src/df.merge.c:1262 */
 #line 1262
@@ -9323,13 +9335,13 @@ union __anonunion__sifields_717391825 ;
    double __builtin_acos(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acos LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/df.merge.c:7727 */
-#line 7727
-extern  __attribute__((__nothrow__, __deprecated__("Use the signal function instead"))) int ( __attribute__((__leaf__)) sigignore)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/df.merge.c:7727 */
-
-/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/df.merge.c:7731 */
+/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/df.merge.c:7731 */
 #line 7731
+extern  __attribute__((__nothrow__, __deprecated__("Use the signal function instead"))) int ( __attribute__((__leaf__)) sigignore)(int __sig ) ;
+/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/df.merge.c:7731 */
+
+/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/df.merge.c:7735 */
+#line 7735
 enum __anonenum_1036286214___0 {
     BUS_ADRALN___0 = 1,
     BUS_ADRERR___0 = 2,
@@ -9337,41 +9349,41 @@ enum __anonenum_1036286214___0 {
     BUS_MCEERR_AR___0 = 4,
     BUS_MCEERR_AO___0 = 5
 } ;
-/* END ENUM __anonenum_1036286214___0 LOC=./src/df.merge.c:7731 */
+/* END ENUM __anonenum_1036286214___0 LOC=./src/df.merge.c:7735 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/df.merge.c:7741 */
-#line 7741
+/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/df.merge.c:7745 */
+#line 7745
 extern void set_custom_quoting(struct quoting_options *o , char const   *left_quote ,
                                char const   *right_quote ) ;
-/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/df.merge.c:7741 */
+/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/df.merge.c:7745 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ctanhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/df.merge.c:7751 */
-#line 7751
+/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/df.merge.c:7755 */
+#line 7755
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getloadavg)(double *__loadavg ,
                                                                                                  int __nelem ) ;
-/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/df.merge.c:7751 */
+/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/df.merge.c:7755 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966___0 LOC=./src/df.merge.c:1110 */
 #line 1110
 enum __anonenum_819735966___0 ;
 /* END ENUM-DECL __anonenum_819735966___0 LOC=./src/df.merge.c:1110 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsnlen LOC=./src/df.merge.c:7761 */
-#line 7761
+/* BEGIN FUNCTION-DECL-EXTERN wcsnlen LOC=./src/df.merge.c:7765 */
+#line 7765
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsnlen)(wchar_t const   *__s ,
                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcsnlen LOC=./src/df.merge.c:7761 */
+/* END FUNCTION-DECL-EXTERN wcsnlen LOC=./src/df.merge.c:7765 */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/df.merge.c:7756 */
-#line 7756
+/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/df.merge.c:7760 */
+#line 7760
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate64)(char const   *__file ,
                                                                                                  __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/df.merge.c:7756 */
+/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/df.merge.c:7760 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_arg_pack LOC=BUILTIN */
 /* compiler builtin: 
@@ -9383,17 +9395,17 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Complex double __builtin_casinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/df.merge.c:7771 */
-#line 7771
+/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/df.merge.c:7775 */
+#line 7775
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_adjtime)(__clockid_t __clock_id ,
                                                                                                     struct timex *__utx ) ;
-/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/df.merge.c:7771 */
+/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/df.merge.c:7775 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/df.merge.c:7781 */
-#line 7781
+/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/df.merge.c:7785 */
+#line 7785
 extern void *xmemdup(void const   *p , size_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/df.merge.c:7781 */
+/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/df.merge.c:7785 */
 
 /* BEGIN FUNCTION-DECL __builtin_rintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9405,17 +9417,13 @@ __malloc__, __alloc_size__(2))) ;
    int __builtin_isfinite(...) ;  */
 /* END FUNCTION-DECL __builtin_isfinite LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsrtombs LOC=./src/df.merge.c:7796 */
-#line 7796
+/* BEGIN FUNCTION-DECL-EXTERN wcsrtombs LOC=./src/df.merge.c:7800 */
+#line 7800
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsrtombs)(char * __restrict  __dst ,
                                                                                    wchar_t const   ** __restrict  __src ,
                                                                                    size_t __len ,
                                                                                    mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN wcsrtombs LOC=./src/df.merge.c:7796 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_c6W0_argv LOC=UNKNOWN */
-char **_TIG_IZ_c6W0_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_c6W0_argv LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN wcsrtombs LOC=./src/df.merge.c:7800 */
 
 /* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/df.merge.c:7813 */
 #line 7813 "./src/df.merge.c"
@@ -9524,31 +9532,35 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) rand_r)(uns
 extern char *( __attribute__((__warn_unused_result__)) imaxtostr)(intmax_t  , char * ) ;
 /* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/df.merge.c:7882 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_AEJ4_argc LOC=UNKNOWN */
+int _TIG_IZ_AEJ4_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_AEJ4_argc LOC=UNKNOWN */
+
 /* BEGIN VARIABLE-DEF human_output_opts LOC=UNKNOWN */
 static int human_output_opts  ;
 /* END VARIABLE-DEF human_output_opts LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/df.merge.c:7890 */
-#line 7890
+/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/df.merge.c:7894 */
+#line 7894
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt)(int ___argc ,
                                                                                                char **___argv ,
                                                                                                char const   *__shortopts ) ;
-/* END FUNCTION-DECL-EXTERN getopt LOC=./src/df.merge.c:7890 */
+/* END FUNCTION-DECL-EXTERN getopt LOC=./src/df.merge.c:7894 */
 
-/* BEGIN TYPEDEF fd_mask LOC=./src/df.merge.c:7896 */
-#line 7896 "./src/df.merge.c"
+/* BEGIN TYPEDEF fd_mask LOC=./src/df.merge.c:7900 */
+#line 7900 "./src/df.merge.c"
 typedef __fd_mask fd_mask;
-/* END TYPEDEF fd_mask LOC=./src/df.merge.c:7896 */
+/* END TYPEDEF fd_mask LOC=./src/df.merge.c:7900 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/df.merge.c:7909 */
-#line 7909
-extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/df.merge.c:7909 */
-
-/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/df.merge.c:7913 */
+/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/df.merge.c:7913 */
 #line 7913
+extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
+/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/df.merge.c:7913 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/df.merge.c:7917 */
+#line 7917
 extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/df.merge.c:7913 */
+/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/df.merge.c:7917 */
 
 /* BEGIN FUNCTION-DECL c_isalpha LOC=UNKNOWN */
 __inline _Bool c_isalpha(int c ) ;
@@ -9559,8 +9571,8 @@ __inline _Bool c_isalpha(int c ) ;
    _Float128 __builtin_fmaf128(_Float128  , _Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/df.merge.c:7917 */
-#line 7917
+/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/df.merge.c:7921 */
+#line 7921
 enum __anonenum_111643124___0 {
     POLL_IN___0 = 1,
     POLL_OUT___0 = 2,
@@ -9569,25 +9581,25 @@ enum __anonenum_111643124___0 {
     POLL_PRI___0 = 5,
     POLL_HUP___0 = 6
 } ;
-/* END ENUM __anonenum_111643124___0 LOC=./src/df.merge.c:7917 */
+/* END ENUM __anonenum_111643124___0 LOC=./src/df.merge.c:7921 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/df.merge.c:7937 */
-#line 7937
+/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/df.merge.c:7941 */
+#line 7941
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat)(int __fd ,
                                                                                               char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ,
                                                                                               int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/df.merge.c:7937 */
+/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/df.merge.c:7941 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_coshl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/df.merge.c:7933 */
-#line 7933
+/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/df.merge.c:7937 */
+#line 7937
 extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _exit LOC=./src/df.merge.c:7933 */
+/* END FUNCTION-DECL-EXTERN _exit LOC=./src/df.merge.c:7937 */
 
 /* BEGIN FUNCTION-DECL __builtin_llrintf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -9599,54 +9611,54 @@ extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
    _Float128 __builtin_atan2f128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/df.merge.c:7954 */
-#line 7954
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/df.merge.c:7958 */
+#line 7958
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/df.merge.c:7954 */
+/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/df.merge.c:7958 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152___0 LOC=./src/df.merge.c:1538 */
 #line 1538
 enum __anonenum_451154152___0 ;
 /* END ENUM-DECL __anonenum_451154152___0 LOC=./src/df.merge.c:1538 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/df.merge.c:7959 */
-#line 7959
-extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/df.merge.c:7959 */
-
-/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/df.merge.c:7963 */
+/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/df.merge.c:7963 */
 #line 7963
+extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
+/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/df.merge.c:7963 */
+
+/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/df.merge.c:7967 */
+#line 7967
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(struct timeval  const  *__delta ,
                                                                               struct timeval *__olddelta ) ;
-/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/df.merge.c:7963 */
+/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/df.merge.c:7967 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/df.merge.c:7968 */
-#line 7968
+/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/df.merge.c:7972 */
+#line 7972
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chown)(char const   *__file ,
                                                                                             __uid_t __owner ,
                                                                                             __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN chown LOC=./src/df.merge.c:7968 */
+/* END FUNCTION-DECL-EXTERN chown LOC=./src/df.merge.c:7972 */
 
-/* BEGIN STRUCT _xsave_hdr LOC=./src/df.merge.c:7974 */
-#line 7974 "./src/df.merge.c"
+/* BEGIN STRUCT _xsave_hdr LOC=./src/df.merge.c:7978 */
+#line 7978 "./src/df.merge.c"
 struct _xsave_hdr {
    __uint64_t xstate_bv ;
    __uint64_t __glibc_reserved1[2] ;
    __uint64_t __glibc_reserved2[5] ;
 };
-/* END STRUCT _xsave_hdr LOC=./src/df.merge.c:7974 */
+/* END STRUCT _xsave_hdr LOC=./src/df.merge.c:7978 */
 
-/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/df.merge.c:7982 */
-#line 7982
-__inline static void emit_size_note(void) ;
-/* END FUNCTION-DECL emit_size_note LOC=./src/df.merge.c:7982 */
-
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/df.merge.c:7986 */
+/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/df.merge.c:7986 */
 #line 7986
+__inline static void emit_size_note(void) ;
+/* END FUNCTION-DECL emit_size_note LOC=./src/df.merge.c:7986 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/df.merge.c:7990 */
+#line 7990
 extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , char const   *arg ,
                               size_t argsize , struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/df.merge.c:7986 */
+/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/df.merge.c:7990 */
 
 /* BEGIN STRUCT-DECL _IO_wide_data LOC=./src/df.merge.c:930 */
 #line 930
@@ -9673,8 +9685,8 @@ struct _IO_wide_data ;
    _Float128 __builtin_copysignf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338 LOC=./src/df.merge.c:8015 */
-#line 8015
+/* BEGIN ENUM __anonenum_315186338 LOC=./src/df.merge.c:8019 */
+#line 8019
 enum __anonenum_315186338 {
     _SC_ARG_MAX = 0,
     _SC_CHILD_MAX = 1,
@@ -9894,7 +9906,7 @@ enum __anonenum_315186338 {
     _SC_MINSIGSTKSZ = 249,
     _SC_SIGSTKSZ = 250
 } ;
-/* END ENUM __anonenum_315186338 LOC=./src/df.merge.c:8015 */
+/* END ENUM __anonenum_315186338 LOC=./src/df.merge.c:8019 */
 
 /* BEGIN FUNCTION-DECL __builtin_lroundf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -9910,67 +9922,67 @@ enum __anonenum_315186338 {
 static _Bool __attribute__((__pure__))  excluded_fstype(char const   *fstype ) ;
 /* END FUNCTION-DECL excluded_fstype LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/df.merge.c:8247 */
-#line 8247
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/df.merge.c:8251 */
+#line 8251
 extern char *quotearg_style(enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/df.merge.c:8247 */
+/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/df.merge.c:8251 */
 
 /* BEGIN ENUM-DECL __anonenum_display_field_t_890852632 LOC=./src/df.merge.c:1210 */
 #line 1210
 enum __anonenum_display_field_t_890852632 ;
 /* END ENUM-DECL __anonenum_display_field_t_890852632 LOC=./src/df.merge.c:1210 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/df.merge.c:8255 */
-#line 8255
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/df.merge.c:8259 */
+#line 8259
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r_unlocked)(int category ,
                                                                         char *buf ,
                                                                         size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/df.merge.c:8255 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/df.merge.c:8259 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fminl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswctype_l LOC=./src/df.merge.c:8266 */
-#line 8266
+/* BEGIN FUNCTION-DECL-EXTERN iswctype_l LOC=./src/df.merge.c:8270 */
+#line 8270
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswctype_l)(wint_t __wc ,
                                                                                  wctype_t __desc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswctype_l LOC=./src/df.merge.c:8266 */
+/* END FUNCTION-DECL-EXTERN iswctype_l LOC=./src/df.merge.c:8270 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/df.merge.c:8272 */
-#line 8272
-extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_major)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/df.merge.c:8272 */
-
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/df.merge.c:8276 */
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/df.merge.c:8276 */
 #line 8276
+extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_major)(__dev_t __dev )  __attribute__((__const__)) ;
+/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/df.merge.c:8276 */
+
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/df.merge.c:8280 */
+#line 8280
 extern int ( __attribute__((__nonnull__(1))) rpl_mknod)(char const   *file , mode_t mode ,
                                                         dev_t dev ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/df.merge.c:8276 */
+/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/df.merge.c:8280 */
 
-/* BEGIN ENUM __anonenum_448173130 LOC=./src/df.merge.c:8281 */
-#line 8281
+/* BEGIN ENUM __anonenum_448173130 LOC=./src/df.merge.c:8285 */
+#line 8285
 enum __anonenum_448173130 {
     NO_SYNC_OPTION = 128,
     SYNC_OPTION = 129,
     TOTAL_OPTION = 130,
     OUTPUT_OPTION = 131
 } ;
-/* END ENUM __anonenum_448173130 LOC=./src/df.merge.c:8281 */
+/* END ENUM __anonenum_448173130 LOC=./src/df.merge.c:8285 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/df.merge.c:8290 */
-#line 8290
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clearenv)(void) ;
-/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/df.merge.c:8290 */
-
-/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/df.merge.c:8294 */
+/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/df.merge.c:8294 */
 #line 8294
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clearenv)(void) ;
+/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/df.merge.c:8294 */
+
+/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/df.merge.c:8298 */
+#line 8298
 extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size_t __maxlen ,
                                                    char const   * __restrict  __format ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/df.merge.c:8294 */
+/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/df.merge.c:8298 */
 
 /* BEGIN FUNCTION-DECL __builtin_floor LOC=BUILTIN */
 /* compiler builtin: 
@@ -9982,22 +9994,22 @@ extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size
    long double __builtin_infl(void) ;  */
 /* END FUNCTION-DECL __builtin_infl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/df.merge.c:8311 */
-#line 8311
-extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/df.merge.c:8311 */
-
-/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/df.merge.c:8315 */
+/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/df.merge.c:8315 */
 #line 8315
+extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
+/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/df.merge.c:8315 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/df.merge.c:8319 */
+#line 8319
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoimax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                      __gwchar_t ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_wcstoimax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/df.merge.c:8315 */
+/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/df.merge.c:8319 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswlower LOC=./src/df.merge.c:8321 */
-#line 8321
+/* BEGIN FUNCTION-DECL-EXTERN iswlower LOC=./src/df.merge.c:8325 */
+#line 8325
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswlower)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN iswlower LOC=./src/df.merge.c:8321 */
+/* END FUNCTION-DECL-EXTERN iswlower LOC=./src/df.merge.c:8325 */
 
 /* BEGIN FUNCTION-DECL __builtin_fprintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10009,66 +10021,66 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswlower)(w
    long __builtin_labs(long  ) ;  */
 /* END FUNCTION-DECL __builtin_labs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/df.merge.c:8340 */
-#line 8340
+/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/df.merge.c:8344 */
+#line 8344
 extern int ( __attribute__((__nonnull__(2))) putc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/df.merge.c:8340 */
+/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/df.merge.c:8344 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_strncmp(char const   * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/df.merge.c:8344 */
-#line 8344
+/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/df.merge.c:8348 */
+#line 8348
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
-/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/df.merge.c:8344 */
+/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/df.merge.c:8348 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nanf128(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/df.merge.c:8353 */
-#line 8353
+/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/df.merge.c:8357 */
+#line 8357
 extern int vscanf(char const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vscanf")  ;
-/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/df.merge.c:8353 */
+/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/df.merge.c:8357 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/df.merge.c:8358 */
-#line 8358
+/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/df.merge.c:8362 */
+#line 8362
 extern char **__environ ;
-/* END VARIABLE-DECL-EXTERN __environ LOC=./src/df.merge.c:8358 */
+/* END VARIABLE-DECL-EXTERN __environ LOC=./src/df.merge.c:8362 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcrtomb LOC=./src/df.merge.c:8367 */
-#line 8367
+/* BEGIN FUNCTION-DECL-EXTERN wcrtomb LOC=./src/df.merge.c:8371 */
+#line 8371
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcrtomb)(char * __restrict  __s ,
                                                                                  wchar_t __wc ,
                                                                                  mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN wcrtomb LOC=./src/df.merge.c:8367 */
+/* END FUNCTION-DECL-EXTERN wcrtomb LOC=./src/df.merge.c:8371 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/df.merge.c:8362 */
-#line 8362
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/df.merge.c:8366 */
+#line 8366
 extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int __suffixlen ,
                                                           int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/df.merge.c:8362 */
+/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/df.merge.c:8366 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_ldexp(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/df.merge.c:8373 */
-#line 8373
+/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/df.merge.c:8377 */
+#line 8377
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getdtablesize)(void) ;
-/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/df.merge.c:8373 */
+/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/df.merge.c:8377 */
 
 /* BEGIN ENUM-DECL __anonenum_25645747 LOC=./src/df.merge.c:970 */
 #line 970
 enum __anonenum_25645747 ;
 /* END ENUM-DECL __anonenum_25645747 LOC=./src/df.merge.c:970 */
 
-/* BEGIN STRUCT stat LOC=./src/df.merge.c:8382 */
-#line 8382 "./src/df.merge.c"
+/* BEGIN STRUCT stat LOC=./src/df.merge.c:8386 */
+#line 8386 "./src/df.merge.c"
 struct stat {
    __dev_t st_dev ;
    __ino_t st_ino ;
@@ -10086,25 +10098,25 @@ struct stat {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat LOC=./src/df.merge.c:8382 */
+/* END STRUCT stat LOC=./src/df.merge.c:8386 */
 
-/* BEGIN TYPEDEF __rlim64_t LOC=./src/df.merge.c:8402 */
-#line 8402 "./src/df.merge.c"
+/* BEGIN TYPEDEF __rlim64_t LOC=./src/df.merge.c:8406 */
+#line 8406 "./src/df.merge.c"
 typedef unsigned long __rlim64_t;
-/* END TYPEDEF __rlim64_t LOC=./src/df.merge.c:8402 */
+/* END TYPEDEF __rlim64_t LOC=./src/df.merge.c:8406 */
 
-/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/df.merge.c:8406 */
-#line 8406
+/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/df.merge.c:8410 */
+#line 8410
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) swab)(void const   * __restrict  __from ,
                                                                                               void * __restrict  __to ,
                                                                                               ssize_t __n ) ;
-/* END FUNCTION-DECL-EXTERN swab LOC=./src/df.merge.c:8406 */
+/* END FUNCTION-DECL-EXTERN swab LOC=./src/df.merge.c:8410 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/df.merge.c:8412 */
-#line 8412
+/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/df.merge.c:8416 */
+#line 8416
 extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , int __c ,
                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/df.merge.c:8412 */
+/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/df.merge.c:8416 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -10117,8 +10129,8 @@ extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , i
    double __builtin_cimag(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimag LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/df.merge.c:8428 */
-#line 8428
+/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/df.merge.c:8432 */
+#line 8432
 enum __anonenum_640648963___0 {
     ILL_ILLOPC___0 = 1,
     ILL_ILLOPN___0 = 2,
@@ -10130,7 +10142,7 @@ enum __anonenum_640648963___0 {
     ILL_BADSTK___0 = 8,
     ILL_BADIADDR___0 = 9
 } ;
-/* END ENUM __anonenum_640648963___0 LOC=./src/df.merge.c:8428 */
+/* END ENUM __anonenum_640648963___0 LOC=./src/df.merge.c:8432 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10141,22 +10153,22 @@ enum __anonenum_640648963___0 {
 static struct mount_entry  const __attribute__((__pure__)) *me_for_dev(dev_t dev ) ;
 /* END FUNCTION-DECL me_for_dev LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __socklen_t LOC=./src/df.merge.c:8451 */
-#line 8451 "./src/df.merge.c"
-typedef unsigned int __socklen_t;
-/* END TYPEDEF __socklen_t LOC=./src/df.merge.c:8451 */
-
-/* BEGIN TYPEDEF socklen_t LOC=./src/df.merge.c:8455 */
+/* BEGIN TYPEDEF __socklen_t LOC=./src/df.merge.c:8455 */
 #line 8455 "./src/df.merge.c"
-typedef __socklen_t socklen_t;
-/* END TYPEDEF socklen_t LOC=./src/df.merge.c:8455 */
+typedef unsigned int __socklen_t;
+/* END TYPEDEF __socklen_t LOC=./src/df.merge.c:8455 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/df.merge.c:8459 */
-#line 8459
+/* BEGIN TYPEDEF socklen_t LOC=./src/df.merge.c:8459 */
+#line 8459 "./src/df.merge.c"
+typedef __socklen_t socklen_t;
+/* END TYPEDEF socklen_t LOC=./src/df.merge.c:8459 */
+
+/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/df.merge.c:8463 */
+#line 8463
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memmove)(void *__dest ,
                                                                                                   void const   *__src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memmove LOC=./src/df.merge.c:8459 */
+/* END FUNCTION-DECL-EXTERN memmove LOC=./src/df.merge.c:8463 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10177,92 +10189,96 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
 static void filter_mount_list(_Bool devices_only ) ;
 /* END FUNCTION-DECL filter_mount_list LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __uint_least8_t LOC=./src/df.merge.c:8484 */
-#line 8484 "./src/df.merge.c"
-typedef __uint8_t __uint_least8_t;
-/* END TYPEDEF __uint_least8_t LOC=./src/df.merge.c:8484 */
-
-/* BEGIN TYPEDEF uint_least8_t LOC=./src/df.merge.c:8488 */
+/* BEGIN TYPEDEF __uint_least8_t LOC=./src/df.merge.c:8488 */
 #line 8488 "./src/df.merge.c"
+typedef __uint8_t __uint_least8_t;
+/* END TYPEDEF __uint_least8_t LOC=./src/df.merge.c:8488 */
+
+/* BEGIN TYPEDEF uint_least8_t LOC=./src/df.merge.c:8492 */
+#line 8492 "./src/df.merge.c"
 typedef __uint_least8_t uint_least8_t;
-/* END TYPEDEF uint_least8_t LOC=./src/df.merge.c:8488 */
+/* END TYPEDEF uint_least8_t LOC=./src/df.merge.c:8492 */
 
 /* BEGIN FUNCTION-DECL c32width LOC=UNKNOWN */
 __inline int c32width(char32_t wc ) ;
 /* END FUNCTION-DECL c32width LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/df.merge.c:8502 */
-#line 8502
+/* BEGIN VARIABLE-DEF _TIG_IZ_pmFh_argc LOC=UNKNOWN */
+int _TIG_IZ_pmFh_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_pmFh_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/df.merge.c:8506 */
+#line 8506
 extern size_t ( __attribute__((__nonnull__(4))) fwrite)(void const   * __restrict  __ptr ,
                                                         size_t __size , size_t __n ,
                                                         FILE * __restrict  __s ) ;
-/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/df.merge.c:8502 */
+/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/df.merge.c:8506 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstok LOC=./src/df.merge.c:8496 */
-#line 8496
+/* BEGIN FUNCTION-DECL-EXTERN wcstok LOC=./src/df.merge.c:8500 */
+#line 8500
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcstok)(wchar_t * __restrict  __s ,
                                                                                   wchar_t const   * __restrict  __delim ,
                                                                                   wchar_t ** __restrict  __ptr ) ;
-/* END FUNCTION-DECL-EXTERN wcstok LOC=./src/df.merge.c:8496 */
+/* END FUNCTION-DECL-EXTERN wcstok LOC=./src/df.merge.c:8500 */
 
 /* BEGIN VARIABLE-DECL mount_list LOC=UNKNOWN */
 static struct mount_entry *mount_list ;
 /* END VARIABLE-DECL mount_list LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/df.merge.c:8512 */
-#line 8512
+/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/df.merge.c:8516 */
+#line 8516
 extern int pselect(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
                    fd_set * __restrict  __exceptfds , struct timespec  const  * __restrict  __timeout ,
                    __sigset_t const   * __restrict  __sigmask ) ;
-/* END FUNCTION-DECL-EXTERN pselect LOC=./src/df.merge.c:8512 */
+/* END FUNCTION-DECL-EXTERN pselect LOC=./src/df.merge.c:8516 */
 
 /* BEGIN ENUM-DECL __anonenum_111643124___0 LOC=./src/df.merge.c:1522 */
 #line 1522
 enum __anonenum_111643124___0 ;
 /* END ENUM-DECL __anonenum_111643124___0 LOC=./src/df.merge.c:1522 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctrans LOC=./src/df.merge.c:8518 */
-#line 8518
+/* BEGIN FUNCTION-DECL-EXTERN wctrans LOC=./src/df.merge.c:8522 */
+#line 8522
 extern  __attribute__((__nothrow__)) wctrans_t ( __attribute__((__leaf__)) wctrans)(char const   *__property ) ;
-/* END FUNCTION-DECL-EXTERN wctrans LOC=./src/df.merge.c:8518 */
+/* END FUNCTION-DECL-EXTERN wctrans LOC=./src/df.merge.c:8522 */
 
-/* BEGIN TYPEDEF __le32 LOC=./src/df.merge.c:8522 */
-#line 8522 "./src/df.merge.c"
+/* BEGIN TYPEDEF __le32 LOC=./src/df.merge.c:8526 */
+#line 8526 "./src/df.merge.c"
 typedef __u32 __le32;
-/* END TYPEDEF __le32 LOC=./src/df.merge.c:8522 */
+/* END TYPEDEF __le32 LOC=./src/df.merge.c:8526 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/df.merge.c:8535 */
-#line 8535
+/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/df.merge.c:8539 */
+#line 8539
 extern int nanosleep(struct timespec  const  *__requested_time , struct timespec *__remaining ) ;
-/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/df.merge.c:8535 */
+/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/df.merge.c:8539 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/df.merge.c:8530 */
-#line 8530
+/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/df.merge.c:8534 */
+#line 8534
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) bzero)(void *__s ,
                                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bzero LOC=./src/df.merge.c:8530 */
+/* END FUNCTION-DECL-EXTERN bzero LOC=./src/df.merge.c:8534 */
 
-/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/df.merge.c:8526 */
-#line 8526
+/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/df.merge.c:8530 */
+#line 8530
 extern int usleep(__useconds_t __useconds ) ;
-/* END FUNCTION-DECL-EXTERN usleep LOC=./src/df.merge.c:8526 */
+/* END FUNCTION-DECL-EXTERN usleep LOC=./src/df.merge.c:8530 */
 
-/* BEGIN TYPEDEF pthread_once_t LOC=./src/df.merge.c:8539 */
-#line 8539 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_once_t LOC=./src/df.merge.c:8543 */
+#line 8543 "./src/df.merge.c"
 typedef int pthread_once_t;
-/* END TYPEDEF pthread_once_t LOC=./src/df.merge.c:8539 */
+/* END TYPEDEF pthread_once_t LOC=./src/df.merge.c:8543 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/df.merge.c:8543 */
-#line 8543
-extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/df.merge.c:8543 */
-
-/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/df.merge.c:8547 */
+/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/df.merge.c:8547 */
 #line 8547
+extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/df.merge.c:8547 */
+
+/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/df.merge.c:8551 */
+#line 8551
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) readahead)(int __fd ,
                                                                                       __off64_t __offset ,
                                                                                       size_t __count ) ;
-/* END FUNCTION-DECL-EXTERN readahead LOC=./src/df.merge.c:8547 */
+/* END FUNCTION-DECL-EXTERN readahead LOC=./src/df.merge.c:8551 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10279,60 +10295,60 @@ extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) reada
    float __builtin_huge_valf(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsncasecmp_l LOC=./src/df.merge.c:8563 */
-#line 8563
+/* BEGIN FUNCTION-DECL-EXTERN wcsncasecmp_l LOC=./src/df.merge.c:8567 */
+#line 8567
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcsncasecmp_l)(wchar_t const   *__s1 ,
                                                                                     wchar_t const   *__s2 ,
                                                                                     size_t __n ,
                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcsncasecmp_l LOC=./src/df.merge.c:8563 */
+/* END FUNCTION-DECL-EXTERN wcsncasecmp_l LOC=./src/df.merge.c:8567 */
 
 /* BEGIN STRUCT-DECL _xsave_hdr LOC=./src/df.merge.c:1442 */
 #line 1442
 struct _xsave_hdr ;
 /* END STRUCT-DECL _xsave_hdr LOC=./src/df.merge.c:1442 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/df.merge.c:8575 */
-#line 8575
+/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/df.merge.c:8579 */
+#line 8579
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) posix_memalign)(void **__memptr ,
                                                                                                      size_t __alignment ,
                                                                                                      size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/df.merge.c:8575 */
+/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/df.merge.c:8579 */
 
 /* BEGIN FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_mul_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/df.merge.c:8586 */
-#line 8586 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/df.merge.c:8590 */
+#line 8590 "./src/df.merge.c"
 typedef union __anonunion_pthread_rwlockattr_t_145707745 pthread_rwlockattr_t;
-/* END TYPEDEF pthread_rwlockattr_t LOC=./src/df.merge.c:8586 */
+/* END TYPEDEF pthread_rwlockattr_t LOC=./src/df.merge.c:8590 */
 
-/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/df.merge.c:8590 */
-#line 8590
-extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) random)(void) ;
-/* END FUNCTION-DECL-EXTERN random LOC=./src/df.merge.c:8590 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/df.merge.c:8594 */
+/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/df.merge.c:8594 */
 #line 8594
+extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) random)(void) ;
+/* END FUNCTION-DECL-EXTERN random LOC=./src/df.merge.c:8594 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/df.merge.c:8598 */
+#line 8598
 extern int fcloseall(void) ;
-/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/df.merge.c:8594 */
+/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/df.merge.c:8598 */
 
-/* BEGIN TYPEDEF u_int16_t LOC=./src/df.merge.c:8598 */
-#line 8598 "./src/df.merge.c"
+/* BEGIN TYPEDEF u_int16_t LOC=./src/df.merge.c:8602 */
+#line 8602 "./src/df.merge.c"
 typedef __uint16_t u_int16_t;
-/* END TYPEDEF u_int16_t LOC=./src/df.merge.c:8598 */
+/* END TYPEDEF u_int16_t LOC=./src/df.merge.c:8602 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/df.merge.c:8606 */
-#line 8606
+/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/df.merge.c:8610 */
+#line 8610
 extern void __error_alias(int __status , int __errnum , char const   *__format  , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/df.merge.c:8606 */
+/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/df.merge.c:8610 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/df.merge.c:8602 */
-#line 8602
+/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/df.merge.c:8606 */
+#line 8606
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) gettid)(void) ;
-/* END FUNCTION-DECL-EXTERN gettid LOC=./src/df.merge.c:8602 */
+/* END FUNCTION-DECL-EXTERN gettid LOC=./src/df.merge.c:8606 */
 
 /* BEGIN STRUCT-DECL sigaction LOC=./src/df.merge.c:1046 */
 #line 1046
@@ -10344,22 +10360,22 @@ struct sigaction ;
    void __builtin_memcpy_inline(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/df.merge.c:8620 */
-#line 8620
+/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/df.merge.c:8624 */
+#line 8624
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) memcmp)(void const   *__s1 ,
                                                                                                void const   *__s2 ,
                                                                                                size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/df.merge.c:8620 */
+/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/df.merge.c:8624 */
 
-/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/df.merge.c:8611 */
-#line 8611
+/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/df.merge.c:8615 */
+#line 8615
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) flockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/df.merge.c:8611 */
+/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/df.merge.c:8615 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/df.merge.c:8626 */
-#line 8626
+/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/df.merge.c:8630 */
+#line 8630
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) putenv)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN putenv LOC=./src/df.merge.c:8626 */
+/* END FUNCTION-DECL-EXTERN putenv LOC=./src/df.merge.c:8630 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10382,57 +10398,53 @@ union pthread_attr_t ;
    _Complex long double __builtin_cacoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/df.merge.c:8641 */
-#line 8641
+/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/df.merge.c:8645 */
+#line 8645
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __leaf__)) strtol_l)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ,
                                                                                                   int __base ,
                                                                                                   locale_t __loc )  __asm__("__isoc23_strtol_l")  ;
-/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/df.merge.c:8641 */
+/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/df.merge.c:8645 */
 
 /* BEGIN FUNCTION-DECL __builtin_alloca_with_align LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_alloca_with_align(unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca_with_align LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfwscanf LOC=./src/df.merge.c:8663 */
-#line 8663
+/* BEGIN FUNCTION-DECL-EXTERN vfwscanf LOC=./src/df.merge.c:8667 */
+#line 8667
 extern int vfwscanf(__FILE * __restrict  __s , wchar_t const   * __restrict  __format ,
                     __gnuc_va_list __arg )  __asm__("__isoc23_vfwscanf")  ;
-/* END FUNCTION-DECL-EXTERN vfwscanf LOC=./src/df.merge.c:8663 */
+/* END FUNCTION-DECL-EXTERN vfwscanf LOC=./src/df.merge.c:8667 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_val LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_huge_val(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_val LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/df.merge.c:8668 */
-#line 8668
+/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/df.merge.c:8672 */
+#line 8672
 extern void version_etc(FILE *stream , char const   *command_name , char const   *package ,
                         char const   *version  , ...)  __attribute__((__sentinel__(0))) ;
-/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/df.merge.c:8668 */
+/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/df.merge.c:8672 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/df.merge.c:8673 */
-#line 8673
+/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/df.merge.c:8677 */
+#line 8677
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) __mempcpy)(void * __restrict  __dest ,
                                                                                                     void const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/df.merge.c:8673 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_9N0o_argc LOC=UNKNOWN */
-int _TIG_IZ_9N0o_argc ;
-/* END VARIABLE-DECL _TIG_IZ_9N0o_argc LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/df.merge.c:8677 */
 
 /* BEGIN FUNCTION-DECL __builtin_hypotl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_hypotl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypotl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/df.merge.c:8679 */
-#line 8679
+/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/df.merge.c:8683 */
+#line 8683
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strpbrk)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/df.merge.c:8679 */
+/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/df.merge.c:8683 */
 
 /* BEGIN FUNCTION-DECL __builtin_csin LOC=BUILTIN */
 /* compiler builtin: 
@@ -10444,35 +10456,35 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
    int __builtin_ilogbl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ilogbl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/df.merge.c:8704 */
-#line 8704
+/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/df.merge.c:8708 */
+#line 8708
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) syncfs)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/df.merge.c:8704 */
+/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/df.merge.c:8708 */
 
 /* BEGIN FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erff(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/df.merge.c:8708 */
-#line 8708 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/df.merge.c:8712 */
+#line 8712 "./src/df.merge.c"
 typedef union __anonunion_pthread_barrierattr_t_951761806 pthread_barrierattr_t;
-/* END TYPEDEF pthread_barrierattr_t LOC=./src/df.merge.c:8708 */
+/* END TYPEDEF pthread_barrierattr_t LOC=./src/df.merge.c:8712 */
 
 /* BEGIN VARIABLE-DECL header_mode LOC=UNKNOWN */
 static enum __anonenum_header_mode_288362005 header_mode ;
 /* END VARIABLE-DECL header_mode LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/df.merge.c:8716 */
-#line 8716
+/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/df.merge.c:8720 */
+#line 8720
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) signal)(int __sig ,
                                                                                         void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN signal LOC=./src/df.merge.c:8716 */
+/* END FUNCTION-DECL-EXTERN signal LOC=./src/df.merge.c:8720 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/df.merge.c:8721 */
-#line 8721
+/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/df.merge.c:8725 */
+#line 8725
 extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN base_name LOC=./src/df.merge.c:8721 */
+/* END FUNCTION-DECL-EXTERN base_name LOC=./src/df.merge.c:8725 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmax LOC=BUILTIN */
 /* compiler builtin: 
@@ -10484,18 +10496,18 @@ extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__,
 struct dirent64 ;
 /* END STRUCT-DECL dirent64 LOC=./src/df.merge.c:1274 */
 
-/* BEGIN TYPEDEF __le64 LOC=./src/df.merge.c:8730 */
-#line 8730 "./src/df.merge.c"
+/* BEGIN TYPEDEF __le64 LOC=./src/df.merge.c:8734 */
+#line 8734 "./src/df.merge.c"
 typedef __u64 __le64;
-/* END TYPEDEF __le64 LOC=./src/df.merge.c:8730 */
+/* END TYPEDEF __le64 LOC=./src/df.merge.c:8734 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/df.merge.c:8734 */
-#line 8734
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/df.merge.c:8738 */
+#line 8738
 extern char const   *quoting_style_args[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/df.merge.c:8734 */
+/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/df.merge.c:8738 */
 
-/* BEGIN STRUCT dirent LOC=./src/df.merge.c:8738 */
-#line 8738 "./src/df.merge.c"
+/* BEGIN STRUCT dirent LOC=./src/df.merge.c:8742 */
+#line 8742 "./src/df.merge.c"
 struct dirent {
    __ino_t d_ino ;
    __off_t d_off ;
@@ -10503,152 +10515,148 @@ struct dirent {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent LOC=./src/df.merge.c:8738 */
+/* END STRUCT dirent LOC=./src/df.merge.c:8742 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/df.merge.c:8748 */
-#line 8748
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/df.merge.c:8752 */
+#line 8752
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/df.merge.c:8748 */
+/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/df.merge.c:8752 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_atanf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/df.merge.c:8755 */
-#line 8755
+/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/df.merge.c:8759 */
+#line 8759
 extern void ( __attribute__((__nonnull__(1))) rewind)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN rewind LOC=./src/df.merge.c:8755 */
+/* END FUNCTION-DECL-EXTERN rewind LOC=./src/df.merge.c:8759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/df.merge.c:8764 */
-#line 8764
-extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN localtime LOC=./src/df.merge.c:8764 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/df.merge.c:8768 */
+/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/df.merge.c:8768 */
 #line 8768
+extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime)(time_t const   *__timer ) ;
+/* END FUNCTION-DECL-EXTERN localtime LOC=./src/df.merge.c:8768 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/df.merge.c:8772 */
+#line 8772
 extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __stream ,
                                                         fpos64_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/df.merge.c:8768 */
+/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/df.merge.c:8772 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/df.merge.c:8773 */
-#line 8773
+/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/df.merge.c:8777 */
+#line 8777
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchmod)(int __fd ,
                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/df.merge.c:8773 */
+/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/df.merge.c:8777 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/df.merge.c:8778 */
-#line 8778
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/df.merge.c:8782 */
+#line 8782
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2), __leaf__)) strxfrm)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/df.merge.c:8778 */
+/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/df.merge.c:8782 */
 
-/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/df.merge.c:8784 */
-#line 8784 "./src/df.merge.c"
+/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/df.merge.c:8788 */
+#line 8788 "./src/df.merge.c"
 typedef struct _IO_cookie_io_functions_t cookie_io_functions_t;
-/* END TYPEDEF cookie_io_functions_t LOC=./src/df.merge.c:8784 */
+/* END TYPEDEF cookie_io_functions_t LOC=./src/df.merge.c:8788 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/df.merge.c:8788 */
-#line 8788
+/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/df.merge.c:8792 */
+#line 8792
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaltstack)(stack_t const   * __restrict  __ss ,
                                                                                   stack_t * __restrict  __oss ) ;
-/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/df.merge.c:8788 */
+/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/df.merge.c:8792 */
 
 /* BEGIN FUNCTION-DECL dcpgettext_expr LOC=UNKNOWN */
 __inline static char const   *dcpgettext_expr(char const   *domain , char const   *msgctxt ,
                                               char const   *msgid , int category ) ;
 /* END FUNCTION-DECL dcpgettext_expr LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/df.merge.c:8798 */
-#line 8798
+/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/df.merge.c:8802 */
+#line 8802
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) kill)(__pid_t __pid ,
                                                                            int __sig ) ;
-/* END FUNCTION-DECL-EXTERN kill LOC=./src/df.merge.c:8798 */
+/* END FUNCTION-DECL-EXTERN kill LOC=./src/df.merge.c:8802 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:1386 */
 #line 1386
 struct __anonstruct__sigfault_506237305 ;
 /* END STRUCT-DECL __anonstruct__sigfault_506237305 LOC=./src/df.merge.c:1386 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_9N0o_argv LOC=UNKNOWN */
-char **_TIG_IZ_9N0o_argv ;
-/* END VARIABLE-DECL _TIG_IZ_9N0o_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/df.merge.c:8803 */
-#line 8803
+/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/df.merge.c:8807 */
+#line 8807
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execve)(char const   *__path ,
                                                                                                char **__argv ,
                                                                                                char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execve LOC=./src/df.merge.c:8803 */
+/* END FUNCTION-DECL-EXTERN execve LOC=./src/df.merge.c:8807 */
 
 /* BEGIN FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_cabs(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s16 LOC=./src/df.merge.c:8814 */
-#line 8814 "./src/df.merge.c"
-typedef short __s16;
-/* END TYPEDEF __s16 LOC=./src/df.merge.c:8814 */
-
-/* BEGIN TYPEDEF pthread_cond_t LOC=./src/df.merge.c:8818 */
+/* BEGIN TYPEDEF __s16 LOC=./src/df.merge.c:8818 */
 #line 8818 "./src/df.merge.c"
-typedef union __anonunion_pthread_cond_t_951761805 pthread_cond_t;
-/* END TYPEDEF pthread_cond_t LOC=./src/df.merge.c:8818 */
+typedef short __s16;
+/* END TYPEDEF __s16 LOC=./src/df.merge.c:8818 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/df.merge.c:8822 */
-#line 8822
+/* BEGIN TYPEDEF pthread_cond_t LOC=./src/df.merge.c:8822 */
+#line 8822 "./src/df.merge.c"
+typedef union __anonunion_pthread_cond_t_951761805 pthread_cond_t;
+/* END TYPEDEF pthread_cond_t LOC=./src/df.merge.c:8822 */
+
+/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/df.merge.c:8826 */
+#line 8826
 extern FILE *stderr ;
-/* END VARIABLE-DECL-EXTERN stderr LOC=./src/df.merge.c:8822 */
+/* END VARIABLE-DECL-EXTERN stderr LOC=./src/df.merge.c:8826 */
 
 /* BEGIN FUNCTION-DECL to_uchar LOC=UNKNOWN */
 __inline static unsigned char to_uchar(char ch ) ;
 /* END FUNCTION-DECL to_uchar LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF suseconds_t LOC=./src/df.merge.c:8830 */
-#line 8830 "./src/df.merge.c"
+/* BEGIN TYPEDEF suseconds_t LOC=./src/df.merge.c:8834 */
+#line 8834 "./src/df.merge.c"
 typedef __suseconds_t suseconds_t;
-/* END TYPEDEF suseconds_t LOC=./src/df.merge.c:8830 */
+/* END TYPEDEF suseconds_t LOC=./src/df.merge.c:8834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/df.merge.c:8834 */
-#line 8834
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/df.merge.c:8838 */
+#line 8838
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries64)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                             __off64_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/df.merge.c:8834 */
+/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/df.merge.c:8838 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/df.merge.c:8845 */
-#line 8845
+/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/df.merge.c:8849 */
+#line 8849
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srandom_r)(unsigned int __seed ,
                                                                                                 struct random_data *__buf ) ;
-/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/df.merge.c:8845 */
+/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/df.merge.c:8849 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmemcmp LOC=./src/df.merge.c:8850 */
-#line 8850
+/* BEGIN FUNCTION-DECL-EXTERN wmemcmp LOC=./src/df.merge.c:8854 */
+#line 8854
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wmemcmp)(wchar_t const   *__s1 ,
                                                                               wchar_t const   *__s2 ,
                                                                               size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wmemcmp LOC=./src/df.merge.c:8850 */
+/* END FUNCTION-DECL-EXTERN wmemcmp LOC=./src/df.merge.c:8854 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/df.merge.c:8840 */
-#line 8840
+/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/df.merge.c:8844 */
+#line 8844
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strcspn)(char const   *__s ,
                                                                                                    char const   *__reject )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/df.merge.c:8840 */
+/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/df.merge.c:8844 */
 
 /* BEGIN ENUM-DECL strtol_error LOC=./src/df.merge.c:986 */
 #line 986
 enum strtol_error ;
 /* END ENUM-DECL strtol_error LOC=./src/df.merge.c:986 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wprintf LOC=./src/df.merge.c:8856 */
-#line 8856
+/* BEGIN FUNCTION-DECL-EXTERN wprintf LOC=./src/df.merge.c:8860 */
+#line 8860
 extern int wprintf(wchar_t const   * __restrict  __format  , ...) ;
-/* END FUNCTION-DECL-EXTERN wprintf LOC=./src/df.merge.c:8856 */
+/* END FUNCTION-DECL-EXTERN wprintf LOC=./src/df.merge.c:8860 */
 
 /* BEGIN VARIABLE-DECL grand_fsu LOC=UNKNOWN */
 static struct fs_usage grand_fsu ;
@@ -10659,32 +10667,32 @@ static struct fs_usage grand_fsu ;
    long long __builtin_llroundf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/df.merge.c:8869 */
-#line 8869
+/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/df.merge.c:8873 */
+#line 8873
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcgettext)(char const   *__domainname ,
                                                                                   char const   *__msgid ,
                                                                                   int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/df.merge.c:8869 */
+/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/df.merge.c:8873 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/df.merge.c:8875 */
-#line 8875
+/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/df.merge.c:8879 */
+#line 8879
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_create)(clockid_t __clock_id ,
                                                                                    struct sigevent * __restrict  __evp ,
                                                                                    timer_t * __restrict  __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/df.merge.c:8875 */
+/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/df.merge.c:8879 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/df.merge.c:8881 */
-#line 8881
+/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/df.merge.c:8885 */
+#line 8885
 extern int posix_openpt(int __oflag ) ;
-/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/df.merge.c:8881 */
+/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/df.merge.c:8885 */
 
-/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/df.merge.c:8885 */
-#line 8885 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/df.merge.c:8889 */
+#line 8889 "./src/df.merge.c"
 typedef union __anonunion_pthread_rwlock_t_656928968 pthread_rwlock_t;
-/* END TYPEDEF pthread_rwlock_t LOC=./src/df.merge.c:8885 */
+/* END TYPEDEF pthread_rwlock_t LOC=./src/df.merge.c:8889 */
 
-/* BEGIN ENUM __anonenum_111643124 LOC=./src/df.merge.c:8889 */
-#line 8889
+/* BEGIN ENUM __anonenum_111643124 LOC=./src/df.merge.c:8893 */
+#line 8893
 enum __anonenum_111643124 {
     POLL_IN = 1,
     POLL_OUT = 2,
@@ -10693,20 +10701,20 @@ enum __anonenum_111643124 {
     POLL_PRI = 5,
     POLL_HUP = 6
 } ;
-/* END ENUM __anonenum_111643124 LOC=./src/df.merge.c:8889 */
+/* END ENUM __anonenum_111643124 LOC=./src/df.merge.c:8893 */
 
-/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/df.merge.c:8900 */
-#line 8900
-extern char const   *Version ;
-/* END VARIABLE-DECL-EXTERN Version LOC=./src/df.merge.c:8900 */
-
-/* BEGIN FUNCTION-DECL-EXTERN vwscanf LOC=./src/df.merge.c:8904 */
+/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/df.merge.c:8904 */
 #line 8904
-extern int vwscanf(wchar_t const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vwscanf")  ;
-/* END FUNCTION-DECL-EXTERN vwscanf LOC=./src/df.merge.c:8904 */
+extern char const   *Version ;
+/* END VARIABLE-DECL-EXTERN Version LOC=./src/df.merge.c:8904 */
 
-/* BEGIN ENUM __anonenum_23175539___0 LOC=./src/df.merge.c:8908 */
+/* BEGIN FUNCTION-DECL-EXTERN vwscanf LOC=./src/df.merge.c:8908 */
 #line 8908
+extern int vwscanf(wchar_t const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vwscanf")  ;
+/* END FUNCTION-DECL-EXTERN vwscanf LOC=./src/df.merge.c:8908 */
+
+/* BEGIN ENUM __anonenum_23175539___0 LOC=./src/df.merge.c:8912 */
+#line 8912
 enum __anonenum_23175539___0 {
     CLD_EXITED___0 = 1,
     CLD_KILLED___0 = 2,
@@ -10715,13 +10723,13 @@ enum __anonenum_23175539___0 {
     CLD_STOPPED___0 = 5,
     CLD_CONTINUED___0 = 6
 } ;
-/* END ENUM __anonenum_23175539___0 LOC=./src/df.merge.c:8908 */
+/* END ENUM __anonenum_23175539___0 LOC=./src/df.merge.c:8912 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/df.merge.c:8919 */
-#line 8919
+/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/df.merge.c:8923 */
+#line 8923
 extern __ssize_t vmsplice(int __fdout , struct iovec  const  *__iov , size_t __count ,
                           unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/df.merge.c:8919 */
+/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/df.merge.c:8923 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10738,51 +10746,51 @@ extern __ssize_t vmsplice(int __fdout , struct iovec  const  *__iov , size_t __c
    void *__builtin_assume_aligned(void const   * , unsigned long long   , ...) ;  */
 /* END FUNCTION-DECL __builtin_assume_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/df.merge.c:8939 */
-#line 8939
+/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/df.merge.c:8943 */
+#line 8943
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/df.merge.c:8939 */
+/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/df.merge.c:8943 */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/df.merge.c:8945 */
-#line 8945
+/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/df.merge.c:8949 */
+#line 8949
 extern char const   *program_name ;
-/* END VARIABLE-DECL-EXTERN program_name LOC=./src/df.merge.c:8945 */
+/* END VARIABLE-DECL-EXTERN program_name LOC=./src/df.merge.c:8949 */
 
-/* BEGIN TYPEDEF __caddr_t LOC=./src/df.merge.c:8949 */
-#line 8949 "./src/df.merge.c"
+/* BEGIN TYPEDEF __caddr_t LOC=./src/df.merge.c:8953 */
+#line 8953 "./src/df.merge.c"
 typedef char *__caddr_t;
-/* END TYPEDEF __caddr_t LOC=./src/df.merge.c:8949 */
+/* END TYPEDEF __caddr_t LOC=./src/df.merge.c:8953 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/df.merge.c:8953 */
-#line 8953
+/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/df.merge.c:8957 */
+#line 8957
 extern int ( __attribute__((__nonnull__(1))) open)(char const   *__file , int __oflag 
                                                    , ...) ;
-/* END FUNCTION-DECL-EXTERN open LOC=./src/df.merge.c:8953 */
+/* END FUNCTION-DECL-EXTERN open LOC=./src/df.merge.c:8957 */
 
-/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/df.merge.c:8958 */
-#line 8958
+/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/df.merge.c:8962 */
+#line 8962
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) profil)(unsigned short *__sample_buffer ,
                                                                                              size_t __size ,
                                                                                              size_t __offset ,
                                                                                              unsigned int __scale ) ;
-/* END FUNCTION-DECL-EXTERN profil LOC=./src/df.merge.c:8958 */
+/* END FUNCTION-DECL-EXTERN profil LOC=./src/df.merge.c:8962 */
 
-/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/df.merge.c:8974 */
-#line 8974
+/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/df.merge.c:8978 */
+#line 8978
 extern char *( __attribute__((__warn_unused_result__)) offtostr)(off_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/df.merge.c:8974 */
+/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/df.merge.c:8978 */
 
 /* BEGIN FUNCTION-DECL __builtin_conj LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_conj(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_conj LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL c_isgraph LOC=./src/df.merge.c:8970 */
-#line 8970
+/* BEGIN FUNCTION-DECL c_isgraph LOC=./src/df.merge.c:8974 */
+#line 8974
 __inline _Bool c_isgraph(int c ) ;
-/* END FUNCTION-DECL c_isgraph LOC=./src/df.merge.c:8970 */
+/* END FUNCTION-DECL c_isgraph LOC=./src/df.merge.c:8974 */
 
 /* BEGIN STRUCT-DECL __anonstruct__kill_244518854 LOC=./src/df.merge.c:1242 */
 #line 1242
@@ -10794,17 +10802,17 @@ struct __anonstruct__kill_244518854 ;
    float __builtin_fminf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/df.merge.c:8983 */
-#line 8983
+/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/df.merge.c:8987 */
+#line 8987
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof_l)(char const   * __restrict  __nptr ,
                                                                                                    char ** __restrict  __endptr ,
                                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/df.merge.c:8983 */
+/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/df.merge.c:8987 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/df.merge.c:8989 */
-#line 8989
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/df.merge.c:8993 */
+#line 8993
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmin)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/df.merge.c:8989 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/df.merge.c:8993 */
 
 /* BEGIN FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -10812,44 +10820,44 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_curr
                                 __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/df.merge.c:8999 */
-#line 8999
-extern int daylight ;
-/* END VARIABLE-DECL-EXTERN daylight LOC=./src/df.merge.c:8999 */
-
-/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/df.merge.c:9003 */
+/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/df.merge.c:9003 */
 #line 9003
+extern int daylight ;
+/* END VARIABLE-DECL-EXTERN daylight LOC=./src/df.merge.c:9003 */
+
+/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/df.merge.c:9007 */
+#line 9007
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) lrand48)(void) ;
-/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/df.merge.c:9003 */
+/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/df.merge.c:9007 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_atan2f(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstof LOC=./src/df.merge.c:9022 */
-#line 9022
+/* BEGIN FUNCTION-DECL-EXTERN wcstof LOC=./src/df.merge.c:9026 */
+#line 9026
 extern  __attribute__((__nothrow__)) float ( __attribute__((__leaf__)) wcstof)(wchar_t const   * __restrict  __nptr ,
                                                                                wchar_t ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN wcstof LOC=./src/df.merge.c:9022 */
+/* END FUNCTION-DECL-EXTERN wcstof LOC=./src/df.merge.c:9026 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/df.merge.c:9012 */
-#line 9012
+/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/df.merge.c:9016 */
+#line 9016
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert)(char const   *__assertion ,
                                                                                               char const   *__file ,
                                                                                               int __line )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert LOC=./src/df.merge.c:9012 */
+/* END FUNCTION-DECL-EXTERN __assert LOC=./src/df.merge.c:9016 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/df.merge.c:9018 */
-#line 9018
+/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/df.merge.c:9022 */
+#line 9022
 extern int sync_file_range(int __fd , __off64_t __offset , __off64_t __count , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/df.merge.c:9018 */
+/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/df.merge.c:9022 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/df.merge.c:9027 */
-#line 9027
+/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/df.merge.c:9031 */
+#line 9031
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) alphasort64)(struct dirent64  const  **__e1 ,
                                                                                                     struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/df.merge.c:9027 */
+/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/df.merge.c:9031 */
 
 /* BEGIN STRUCT-DECL itimerval LOC=./src/df.merge.c:1402 */
 #line 1402
@@ -10865,46 +10873,46 @@ union __anonunion__sigev_un_37211729 ;
 static _Bool print_type ;
 /* END VARIABLE-DECL print_type LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/df.merge.c:9036 */
-#line 9036
+/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/df.merge.c:9040 */
+#line 9040
 extern __ssize_t tee(int __fdin , int __fdout , size_t __len , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN tee LOC=./src/df.merge.c:9036 */
+/* END FUNCTION-DECL-EXTERN tee LOC=./src/df.merge.c:9040 */
 
 /* BEGIN VARIABLE-DECL long_options LOC=UNKNOWN */
 static struct option long_options[17] ;
 /* END VARIABLE-DECL long_options LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int_least32_t LOC=./src/df.merge.c:9044 */
-#line 9044 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_least32_t LOC=./src/df.merge.c:9048 */
+#line 9048 "./src/df.merge.c"
 typedef __int_least32_t int_least32_t;
-/* END TYPEDEF int_least32_t LOC=./src/df.merge.c:9044 */
+/* END TYPEDEF int_least32_t LOC=./src/df.merge.c:9048 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_truncf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast64_t LOC=./src/df.merge.c:9053 */
-#line 9053 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint_fast64_t LOC=./src/df.merge.c:9057 */
+#line 9057 "./src/df.merge.c"
 typedef unsigned long uint_fast64_t;
-/* END TYPEDEF uint_fast64_t LOC=./src/df.merge.c:9053 */
+/* END TYPEDEF uint_fast64_t LOC=./src/df.merge.c:9057 */
 
 /* BEGIN FUNCTION-DECL __builtin_index LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_index(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_index LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/df.merge.c:9062 */
-#line 9062
-extern int lockf64(int __fd , int __cmd , __off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/df.merge.c:9062 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/df.merge.c:9066 */
+/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/df.merge.c:9066 */
 #line 9066
+extern int lockf64(int __fd , int __cmd , __off64_t __len ) ;
+/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/df.merge.c:9066 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/df.merge.c:9070 */
+#line 9070
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/df.merge.c:9066 */
+/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/df.merge.c:9070 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10924,17 +10932,17 @@ static _Bool file_systems_processed  ;
 static size_t ncolumns  ;
 /* END VARIABLE-DEF ncolumns LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/df.merge.c:9090 */
-#line 9090
+/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/df.merge.c:9094 */
+#line 9094
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) initstate)(unsigned int __seed ,
                                                                                                   char *__statebuf ,
                                                                                                   size_t __statelen ) ;
-/* END FUNCTION-DECL-EXTERN initstate LOC=./src/df.merge.c:9090 */
+/* END FUNCTION-DECL-EXTERN initstate LOC=./src/df.merge.c:9094 */
 
-/* BEGIN TYPEDEF gid_t LOC=./src/df.merge.c:9096 */
-#line 9096 "./src/df.merge.c"
+/* BEGIN TYPEDEF gid_t LOC=./src/df.merge.c:9100 */
+#line 9100 "./src/df.merge.c"
 typedef __gid_t gid_t;
-/* END TYPEDEF gid_t LOC=./src/df.merge.c:9096 */
+/* END TYPEDEF gid_t LOC=./src/df.merge.c:9100 */
 
 /* BEGIN FUNCTION-DECL chownat LOC=UNKNOWN */
 __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
@@ -10945,160 +10953,160 @@ __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
 enum __anonenum_513775621 ;
 /* END ENUM-DECL __anonenum_513775621 LOC=./src/df.merge.c:1230 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/df.merge.c:9109 */
-#line 9109
+/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/df.merge.c:9113 */
+#line 9113
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat)(int __fd ,
                                                                                             struct stat *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat LOC=./src/df.merge.c:9109 */
+/* END FUNCTION-DECL-EXTERN fstat LOC=./src/df.merge.c:9113 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssub_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_ssub_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_ssub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/df.merge.c:9114 */
-#line 9114
+/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/df.merge.c:9118 */
+#line 9118
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresuid)(__uid_t *__ruid ,
                                                                                 __uid_t *__euid ,
                                                                                 __uid_t *__suid ) ;
-/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/df.merge.c:9114 */
+/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/df.merge.c:9118 */
 
-/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/df.merge.c:9120 */
-#line 9120 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/df.merge.c:9124 */
+#line 9124 "./src/df.merge.c"
 typedef long long __kernel_loff_t;
-/* END TYPEDEF __kernel_loff_t LOC=./src/df.merge.c:9120 */
+/* END TYPEDEF __kernel_loff_t LOC=./src/df.merge.c:9124 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/df.merge.c:9124 */
-#line 9124
+/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/df.merge.c:9128 */
+#line 9128
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random)(void) ;
-/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/df.merge.c:9124 */
+/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/df.merge.c:9128 */
 
 /* BEGIN FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lrint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/df.merge.c:9133 */
-#line 9133
+/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/df.merge.c:9137 */
+#line 9137
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) quick_exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/df.merge.c:9133 */
+/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/df.merge.c:9137 */
 
-/* BEGIN TYPEDEF u_int8_t LOC=./src/df.merge.c:9137 */
-#line 9137 "./src/df.merge.c"
+/* BEGIN TYPEDEF u_int8_t LOC=./src/df.merge.c:9141 */
+#line 9141 "./src/df.merge.c"
 typedef __uint8_t u_int8_t;
-/* END TYPEDEF u_int8_t LOC=./src/df.merge.c:9137 */
+/* END TYPEDEF u_int8_t LOC=./src/df.merge.c:9141 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/df.merge.c:9141 */
-#line 9141
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/df.merge.c:9145 */
+#line 9145
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/df.merge.c:9141 */
+/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/df.merge.c:9145 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/df.merge.c:9148 */
-#line 9148
+/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/df.merge.c:9152 */
+#line 9152
 extern int ( __attribute__((__nonnull__(2,3))) scandirat64)(int __dfd , char const   * __restrict  __dir ,
                                                             struct dirent64 *** __restrict  __namelist ,
                                                             int (*__selector)(struct dirent64  const  * ) ,
                                                             int (*__cmp)(struct dirent64  const  ** ,
                                                                          struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/df.merge.c:9148 */
+/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/df.merge.c:9152 */
 
 /* BEGIN VARIABLE-DEF columns LOC=UNKNOWN */
 static struct field_data_t **columns  ;
 /* END VARIABLE-DEF columns LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __quad_t LOC=./src/df.merge.c:9160 */
-#line 9160 "./src/df.merge.c"
-typedef long __quad_t;
-/* END TYPEDEF __quad_t LOC=./src/df.merge.c:9160 */
-
-/* BEGIN TYPEDEF quad_t LOC=./src/df.merge.c:9164 */
+/* BEGIN TYPEDEF __quad_t LOC=./src/df.merge.c:9164 */
 #line 9164 "./src/df.merge.c"
+typedef long __quad_t;
+/* END TYPEDEF __quad_t LOC=./src/df.merge.c:9164 */
+
+/* BEGIN TYPEDEF quad_t LOC=./src/df.merge.c:9168 */
+#line 9168 "./src/df.merge.c"
 typedef __quad_t quad_t;
-/* END TYPEDEF quad_t LOC=./src/df.merge.c:9164 */
+/* END TYPEDEF quad_t LOC=./src/df.merge.c:9168 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_casinf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_casinf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/df.merge.c:9173 */
-#line 9173
-extern int set_quoting_flags(struct quoting_options *o , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/df.merge.c:9173 */
-
-/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/df.merge.c:9177 */
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/df.merge.c:9177 */
 #line 9177
+extern int set_quoting_flags(struct quoting_options *o , int i ) ;
+/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/df.merge.c:9177 */
+
+/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/df.merge.c:9181 */
+#line 9181
 extern time_t rpl_time(time_t *__tp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/df.merge.c:9177 */
+/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/df.merge.c:9181 */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cexpl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/df.merge.c:9186 */
-#line 9186 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/df.merge.c:9190 */
+#line 9190 "./src/df.merge.c"
 typedef int __kernel_mqd_t;
-/* END TYPEDEF __kernel_mqd_t LOC=./src/df.merge.c:9186 */
+/* END TYPEDEF __kernel_mqd_t LOC=./src/df.merge.c:9190 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fmaf16(_Float16  , _Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:9195 */
-#line 9195 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:9199 */
+#line 9199 "./src/df.merge.c"
 union __anonunion_pthread_mutexattr_t_488594144 {
    char __size[4] ;
    int __align ;
 };
-/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:9195 */
+/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/df.merge.c:9199 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/df.merge.c:9202 */
-#line 9202
+/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/df.merge.c:9206 */
+#line 9206
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgid)(__pid_t __pid ,
                                                                               __pid_t __pgid ) ;
-/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/df.merge.c:9202 */
+/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/df.merge.c:9206 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/df.merge.c:9214 */
-#line 9214
+/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/df.merge.c:9218 */
+#line 9218
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pipe)(int *__pipedes ) ;
-/* END FUNCTION-DECL-EXTERN pipe LOC=./src/df.merge.c:9214 */
+/* END FUNCTION-DECL-EXTERN pipe LOC=./src/df.merge.c:9218 */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/df.merge.c:9207 */
-#line 9207
+/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/df.merge.c:9211 */
+#line 9211
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __leaf__)) initstate_r)(unsigned int __seed ,
                                                                                                     char * __restrict  __statebuf ,
                                                                                                     size_t __statelen ,
                                                                                                     struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/df.merge.c:9207 */
+/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/df.merge.c:9211 */
 
 /* BEGIN FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_inf(void) ;  */
 /* END FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/df.merge.c:9223 */
-#line 9223
+/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/df.merge.c:9227 */
+#line 9227
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/df.merge.c:9223 */
+/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/df.merge.c:9227 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_modff(float  , float * ) ;  */
 /* END FUNCTION-DECL __builtin_modff LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswspace_l LOC=./src/df.merge.c:9235 */
-#line 9235
+/* BEGIN FUNCTION-DECL-EXTERN iswspace_l LOC=./src/df.merge.c:9239 */
+#line 9239
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswspace_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswspace_l LOC=./src/df.merge.c:9235 */
+/* END FUNCTION-DECL-EXTERN iswspace_l LOC=./src/df.merge.c:9239 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11120,10 +11128,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswspace_l)
 enum __anonenum_875524036___0 ;
 /* END ENUM-DECL __anonenum_875524036___0 LOC=./src/df.merge.c:1290 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/df.merge.c:9255 */
-#line 9255
+/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/df.merge.c:9259 */
+#line 9259
 extern void close_stdin_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/df.merge.c:9255 */
+/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/df.merge.c:9259 */
 
 /* BEGIN FUNCTION-DECL c32isalpha LOC=UNKNOWN */
 __inline int c32isalpha(wint_t wc ) ;
@@ -11134,59 +11142,59 @@ __inline int c32isalpha(wint_t wc ) ;
    void __builtin_convertvector(...) ;  */
 /* END FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoul LOC=./src/df.merge.c:9268 */
-#line 9268
+/* BEGIN FUNCTION-DECL-EXTERN wcstoul LOC=./src/df.merge.c:9272 */
+#line 9272
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__leaf__)) wcstoul)(wchar_t const   * __restrict  __nptr ,
                                                                                         wchar_t ** __restrict  __endptr ,
                                                                                         int __base )  __asm__("__isoc23_wcstoul")  ;
-/* END FUNCTION-DECL-EXTERN wcstoul LOC=./src/df.merge.c:9268 */
+/* END FUNCTION-DECL-EXTERN wcstoul LOC=./src/df.merge.c:9272 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/df.merge.c:9274 */
-#line 9274
+/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/df.merge.c:9278 */
+#line 9278
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execle)(char const   *__path ,
                                                                                                char const   *__arg 
                                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN execle LOC=./src/df.merge.c:9274 */
+/* END FUNCTION-DECL-EXTERN execle LOC=./src/df.merge.c:9278 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/df.merge.c:9280 */
-#line 9280
+/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/df.merge.c:9284 */
+#line 9284
 extern void *xicalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/df.merge.c:9280 */
+/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/df.merge.c:9284 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/df.merge.c:9285 */
-#line 9285
-extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) lcong48)(unsigned short *__param ) ;
-/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/df.merge.c:9285 */
-
-/* BEGIN FUNCTION-DECL-EXTERN rpl_btowc LOC=./src/df.merge.c:9289 */
+/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/df.merge.c:9289 */
 #line 9289
-extern wint_t rpl_btowc(int c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN rpl_btowc LOC=./src/df.merge.c:9289 */
+extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) lcong48)(unsigned short *__param ) ;
+/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/df.merge.c:9289 */
 
-/* BEGIN FUNCTION-DECL c32isdigit LOC=./src/df.merge.c:9293 */
+/* BEGIN FUNCTION-DECL-EXTERN rpl_btowc LOC=./src/df.merge.c:9293 */
 #line 9293
-__inline int c32isdigit(wint_t wc ) ;
-/* END FUNCTION-DECL c32isdigit LOC=./src/df.merge.c:9293 */
+extern wint_t rpl_btowc(int c )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN rpl_btowc LOC=./src/df.merge.c:9293 */
 
-/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/df.merge.c:9297 */
+/* BEGIN FUNCTION-DECL c32isdigit LOC=./src/df.merge.c:9297 */
 #line 9297
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) acct)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN acct LOC=./src/df.merge.c:9297 */
+__inline int c32isdigit(wint_t wc ) ;
+/* END FUNCTION-DECL c32isdigit LOC=./src/df.merge.c:9297 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/df.merge.c:9301 */
+/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/df.merge.c:9301 */
 #line 9301
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) acct)(char const   *__name ) ;
+/* END FUNCTION-DECL-EXTERN acct LOC=./src/df.merge.c:9301 */
+
+/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/df.merge.c:9305 */
+#line 9305
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresuid)(__uid_t __ruid ,
                                                                                 __uid_t __euid ,
                                                                                 __uid_t __suid ) ;
-/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/df.merge.c:9301 */
+/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/df.merge.c:9305 */
 
-/* BEGIN STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:9307 */
-#line 9307 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:9311 */
+#line 9311 "./src/df.merge.c"
 struct __anonstruct___kernel_fsid_t_990674702 {
    int val[2] ;
 };
-/* END STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:9307 */
+/* END STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/df.merge.c:9311 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -11207,22 +11215,22 @@ struct __anonstruct___kernel_fsid_t_990674702 {
 static struct fs_type_list *fs_exclude_list  ;
 /* END VARIABLE-DEF fs_exclude_list LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/df.merge.c:9336 */
-#line 9336
-extern int ( __attribute__((__nonnull__(1))) mkstemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/df.merge.c:9336 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/df.merge.c:9340 */
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/df.merge.c:9340 */
 #line 9340
+extern int ( __attribute__((__nonnull__(1))) mkstemp)(char *__template ) ;
+/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/df.merge.c:9340 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/df.merge.c:9344 */
+#line 9344
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaction)(int __sig ,
                                                                                 struct sigaction  const  * __restrict  __act ,
                                                                                 struct sigaction * __restrict  __oact ) ;
-/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/df.merge.c:9340 */
+/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/df.merge.c:9344 */
 
-/* BEGIN FUNCTION-DECL c32isalnum LOC=./src/df.merge.c:9332 */
-#line 9332
+/* BEGIN FUNCTION-DECL c32isalnum LOC=./src/df.merge.c:9336 */
+#line 9336
 __inline int c32isalnum(wint_t wc ) ;
-/* END FUNCTION-DECL c32isalnum LOC=./src/df.merge.c:9332 */
+/* END FUNCTION-DECL c32isalnum LOC=./src/df.merge.c:9336 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcb LOC=BUILTIN */
 /* compiler builtin: 
@@ -11235,20 +11243,20 @@ __inline int c32isalnum(wint_t wc ) ;
 enum __anonenum_783849514___0 ;
 /* END ENUM-DECL __anonenum_783849514___0 LOC=./src/df.merge.c:1582 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmempcpy LOC=./src/df.merge.c:9352 */
-#line 9352
+/* BEGIN FUNCTION-DECL-EXTERN wmempcpy LOC=./src/df.merge.c:9356 */
+#line 9356
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wmempcpy)(wchar_t * __restrict  __s1 ,
                                                                                     wchar_t const   * __restrict  __s2 ,
                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wmempcpy LOC=./src/df.merge.c:9352 */
+/* END FUNCTION-DECL-EXTERN wmempcpy LOC=./src/df.merge.c:9356 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/df.merge.c:9358 */
-#line 9358
-extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
-/* END FUNCTION-DECL-EXTERN getumask LOC=./src/df.merge.c:9358 */
-
-/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/df.merge.c:9362 */
+/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/df.merge.c:9362 */
 #line 9362
+extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
+/* END FUNCTION-DECL-EXTERN getumask LOC=./src/df.merge.c:9362 */
+
+/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/df.merge.c:9366 */
+#line 9366
 enum __anonenum_457704180___0 {
     FPE_INTDIV___0 = 1,
     FPE_INTOVF___0 = 2,
@@ -11261,7 +11269,7 @@ enum __anonenum_457704180___0 {
     FPE_FLTUNK___0 = 14,
     FPE_CONDTRAP___0 = 15
 } ;
-/* END ENUM __anonenum_457704180___0 LOC=./src/df.merge.c:9362 */
+/* END ENUM __anonenum_457704180___0 LOC=./src/df.merge.c:9366 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemmove LOC=BUILTIN */
 /* compiler builtin: 
@@ -11274,46 +11282,46 @@ enum __anonenum_457704180___0 {
    _Float128 __builtin_log10f128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/df.merge.c:9388 */
-#line 9388
+/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/df.merge.c:9392 */
+#line 9392
 extern int __uflow(FILE * ) ;
-/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/df.merge.c:9388 */
+/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/df.merge.c:9392 */
 
-/* BEGIN TYPEDEF uint_fast16_t LOC=./src/df.merge.c:9392 */
-#line 9392 "./src/df.merge.c"
-typedef unsigned long uint_fast16_t;
-/* END TYPEDEF uint_fast16_t LOC=./src/df.merge.c:9392 */
-
-/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/df.merge.c:9396 */
+/* BEGIN TYPEDEF uint_fast16_t LOC=./src/df.merge.c:9396 */
 #line 9396 "./src/df.merge.c"
-typedef __kernel_long_t __kernel_ssize_t;
-/* END TYPEDEF __kernel_ssize_t LOC=./src/df.merge.c:9396 */
+typedef unsigned long uint_fast16_t;
+/* END TYPEDEF uint_fast16_t LOC=./src/df.merge.c:9396 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/df.merge.c:9400 */
-#line 9400
+/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/df.merge.c:9400 */
+#line 9400 "./src/df.merge.c"
+typedef __kernel_long_t __kernel_ssize_t;
+/* END TYPEDEF __kernel_ssize_t LOC=./src/df.merge.c:9400 */
+
+/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/df.merge.c:9404 */
+#line 9404
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) execveat)(int __fd ,
                                                                                                  char const   *__path ,
                                                                                                  char **__argv ,
                                                                                                  char **__envp ,
                                                                                                  int __flags ) ;
-/* END FUNCTION-DECL-EXTERN execveat LOC=./src/df.merge.c:9400 */
+/* END FUNCTION-DECL-EXTERN execveat LOC=./src/df.merge.c:9404 */
 
 /* BEGIN FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_umul_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/df.merge.c:9418 */
-#line 9418
+/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/df.merge.c:9422 */
+#line 9422
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) explicit_bzero)(void *__s ,
                                                                                                       size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/df.merge.c:9418 */
+/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/df.merge.c:9422 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/df.merge.c:9413 */
-#line 9413
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/df.merge.c:9417 */
+#line 9417
 extern char *quotearg_alloc(char const   *arg , size_t argsize , struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/df.merge.c:9413 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/df.merge.c:9417 */
 
 /* BEGIN UNION-DECL __anonunion___atomic_wide_counter_370409828 LOC=./src/df.merge.c:1366 */
 #line 1366
@@ -11329,182 +11337,182 @@ static _Bool require_sync ;
    void __builtin_prefetch(void const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN read_file_system_list LOC=./src/df.merge.c:9444 */
-#line 9444
+/* BEGIN FUNCTION-DECL-EXTERN read_file_system_list LOC=./src/df.merge.c:9448 */
+#line 9448
 extern struct mount_entry *read_file_system_list(_Bool need_fs_type )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN read_file_system_list LOC=./src/df.merge.c:9444 */
+/* END FUNCTION-DECL-EXTERN read_file_system_list LOC=./src/df.merge.c:9448 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/df.merge.c:9439 */
-#line 9439
+/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/df.merge.c:9443 */
+#line 9443
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkfifo)(char const   *__path ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/df.merge.c:9439 */
+/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/df.merge.c:9443 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/df.merge.c:9427 */
-#line 9427
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/df.merge.c:9431 */
+#line 9431
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/df.merge.c:9427 */
+/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/df.merge.c:9431 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsxfrm_l LOC=./src/df.merge.c:9453 */
-#line 9453
+/* BEGIN FUNCTION-DECL-EXTERN wcsxfrm_l LOC=./src/df.merge.c:9457 */
+#line 9457
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsxfrm_l)(wchar_t *__s1 ,
                                                                                    wchar_t const   *__s2 ,
                                                                                    size_t __n ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcsxfrm_l LOC=./src/df.merge.c:9453 */
+/* END FUNCTION-DECL-EXTERN wcsxfrm_l LOC=./src/df.merge.c:9457 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcscat LOC=./src/df.merge.c:9448 */
-#line 9448
+/* BEGIN FUNCTION-DECL-EXTERN wcscat LOC=./src/df.merge.c:9452 */
+#line 9452
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__nonnull__(1,2), __leaf__)) wcscat)(wchar_t * __restrict  __dest ,
                                                                                                     wchar_t const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN wcscat LOC=./src/df.merge.c:9448 */
+/* END FUNCTION-DECL-EXTERN wcscat LOC=./src/df.merge.c:9452 */
 
 /* BEGIN VARIABLE-DEF devlist_table LOC=UNKNOWN */
 static Hash_table *devlist_table  ;
 /* END VARIABLE-DEF devlist_table LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF uint64_t LOC=./src/df.merge.c:9464 */
-#line 9464 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint64_t LOC=./src/df.merge.c:9468 */
+#line 9468 "./src/df.merge.c"
 typedef __uint64_t uint64_t;
-/* END TYPEDEF uint64_t LOC=./src/df.merge.c:9464 */
+/* END TYPEDEF uint64_t LOC=./src/df.merge.c:9468 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/df.merge.c:9468 */
-#line 9468
+/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/df.merge.c:9472 */
+#line 9472
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcasestr)(char const   *__haystack ,
                                                                                                      char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/df.merge.c:9468 */
+/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/df.merge.c:9472 */
 
 /* BEGIN FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_mempcpy(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/df.merge.c:9478 */
-#line 9478
+/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/df.merge.c:9482 */
+#line 9482
 extern int getchar(void) ;
-/* END FUNCTION-DECL-EXTERN getchar LOC=./src/df.merge.c:9478 */
+/* END FUNCTION-DECL-EXTERN getchar LOC=./src/df.merge.c:9482 */
 
 /* BEGIN FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clrsbl(long  ) ;  */
 /* END FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_288797321 LOC=./src/df.merge.c:9487 */
-#line 9487
+/* BEGIN ENUM __anonenum_288797321 LOC=./src/df.merge.c:9491 */
+#line 9491
 enum __anonenum_288797321 {
     EXIT_TIMEDOUT = 124,
     EXIT_CANCELED = 125,
     EXIT_CANNOT_INVOKE = 126,
     EXIT_ENOENT = 127
 } ;
-/* END ENUM __anonenum_288797321 LOC=./src/df.merge.c:9487 */
+/* END ENUM __anonenum_288797321 LOC=./src/df.merge.c:9491 */
 
-/* BEGIN FUNCTION-DECL lchownat LOC=./src/df.merge.c:9496 */
-#line 9496
+/* BEGIN FUNCTION-DECL lchownat LOC=./src/df.merge.c:9500 */
+#line 9500
 __inline int lchownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
-/* END FUNCTION-DECL lchownat LOC=./src/df.merge.c:9496 */
+/* END FUNCTION-DECL lchownat LOC=./src/df.merge.c:9500 */
 
-/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/df.merge.c:9504 */
-#line 9504
+/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/df.merge.c:9508 */
+#line 9508
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isatty)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN isatty LOC=./src/df.merge.c:9504 */
+/* END FUNCTION-DECL-EXTERN isatty LOC=./src/df.merge.c:9508 */
 
 /* BEGIN FUNCTION-DECL known_value LOC=UNKNOWN */
 static _Bool known_value(uintmax_t n ) ;
 /* END FUNCTION-DECL known_value LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/df.merge.c:9508 */
-#line 9508
-extern size_t dir_len(char const   *file )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/df.merge.c:9508 */
-
-/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/df.merge.c:9512 */
+/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/df.merge.c:9512 */
 #line 9512
+extern size_t dir_len(char const   *file )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/df.merge.c:9512 */
+
+/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/df.merge.c:9516 */
+#line 9516
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) seekdir)(DIR *__dirp ,
                                                                                                long __pos ) ;
-/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/df.merge.c:9512 */
+/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/df.merge.c:9516 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/df.merge.c:9517 */
-#line 9517
+/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/df.merge.c:9521 */
+#line 9521
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2), __leaf__)) getdents64)(int __fd ,
                                                                                                        void *__buffer ,
                                                                                                        size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/df.merge.c:9517 */
+/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/df.merge.c:9521 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/df.merge.c:9523 */
-#line 9523
-extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) atol)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atol LOC=./src/df.merge.c:9523 */
-
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/df.merge.c:9527 */
+/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/df.merge.c:9527 */
 #line 9527
+extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) atol)(char const   *__nptr )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN atol LOC=./src/df.merge.c:9527 */
+
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/df.merge.c:9531 */
+#line 9531
 extern int ( __attribute__((__nonnull__(1))) mkstemps)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/df.merge.c:9527 */
+/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/df.merge.c:9531 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_saddll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/df.merge.c:9531 */
-#line 9531
+/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/df.merge.c:9535 */
+#line 9535
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) seed48_r)(unsigned short *__seed16v ,
                                                                                                  struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/df.merge.c:9531 */
+/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/df.merge.c:9535 */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/df.merge.c:9541 */
-#line 9541
+/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/df.merge.c:9545 */
+#line 9545
 extern FILE *( __attribute__((__nonnull__(3))) freopen64)(char const   * __restrict  __filename ,
                                                           char const   * __restrict  __modes ,
                                                           FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/df.merge.c:9541 */
+/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/df.merge.c:9545 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539 LOC=./src/df.merge.c:1058 */
 #line 1058
 enum __anonenum_23175539 ;
 /* END ENUM-DECL __anonenum_23175539 LOC=./src/df.merge.c:1058 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/df.merge.c:9547 */
-#line 9547
+/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/df.merge.c:9551 */
+#line 9551
 extern int ( __attribute__((__nonnull__(1))) fseeko)(FILE *__stream , __off_t __off ,
                                                      int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/df.merge.c:9547 */
+/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/df.merge.c:9551 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/df.merge.c:9552 */
-#line 9552
+/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/df.merge.c:9556 */
+#line 9556
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcat)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcat LOC=./src/df.merge.c:9552 */
+/* END FUNCTION-DECL-EXTERN strcat LOC=./src/df.merge.c:9556 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/df.merge.c:9557 */
-#line 9557
+/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/df.merge.c:9561 */
+#line 9561
 extern size_t ( __attribute__((__nonnull__(4))) fwrite_unlocked)(void const   * __restrict  __ptr ,
                                                                  size_t __size , size_t __n ,
                                                                  FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/df.merge.c:9557 */
+/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/df.merge.c:9561 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/df.merge.c:9563 */
-#line 9563
+/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/df.merge.c:9567 */
+#line 9567
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dgettext)(char const   *__domainname ,
                                                                                  char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/df.merge.c:9563 */
+/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/df.merge.c:9567 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_string LOC=./src/df.merge.c:9573 */
-#line 9573
+/* BEGIN FUNCTION-DECL-EXTERN hash_string LOC=./src/df.merge.c:9577 */
+#line 9577
 extern size_t hash_string(char const   *string , size_t n_buckets )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN hash_string LOC=./src/df.merge.c:9573 */
+/* END FUNCTION-DECL-EXTERN hash_string LOC=./src/df.merge.c:9577 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open_wmemstream LOC=./src/df.merge.c:9568 */
-#line 9568
+/* BEGIN FUNCTION-DECL-EXTERN open_wmemstream LOC=./src/df.merge.c:9572 */
+#line 9572
 extern  __attribute__((__nothrow__)) __FILE *( __attribute__((__leaf__)) open_wmemstream)(wchar_t **__bufloc ,
                                                                                           size_t *__sizeloc )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN open_wmemstream LOC=./src/df.merge.c:9568 */
+/* END FUNCTION-DECL-EXTERN open_wmemstream LOC=./src/df.merge.c:9572 */
 
-/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/df.merge.c:9577 */
-#line 9577
+/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/df.merge.c:9581 */
+#line 9581
 enum __anonenum_437032235___0 {
     _PC_LINK_MAX___0 = 0,
     _PC_MAX_CANON___0 = 1,
@@ -11528,14 +11536,14 @@ enum __anonenum_437032235___0 {
     _PC_SYMLINK_MAX___0 = 19,
     _PC_2_SYMLINKS___0 = 20
 } ;
-/* END ENUM __anonenum_437032235___0 LOC=./src/df.merge.c:9577 */
+/* END ENUM __anonenum_437032235___0 LOC=./src/df.merge.c:9581 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/df.merge.c:9603 */
-#line 9603
+/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/df.merge.c:9607 */
+#line 9607
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) __memcmpeq)(void const   *__s1 ,
                                                                                                    void const   *__s2 ,
                                                                                                    size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/df.merge.c:9603 */
+/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/df.merge.c:9607 */
 
 /* BEGIN FUNCTION-DECL chmodat LOC=UNKNOWN */
 __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
@@ -11545,24 +11553,24 @@ __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
 static uintmax_t output_block_size ;
 /* END VARIABLE-DECL output_block_size LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/df.merge.c:9617 */
-#line 9617 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/df.merge.c:9621 */
+#line 9621 "./src/df.merge.c"
 typedef void (*__kernel_sighandler_t)(int  );
-/* END TYPEDEF __kernel_sighandler_t LOC=./src/df.merge.c:9617 */
+/* END TYPEDEF __kernel_sighandler_t LOC=./src/df.merge.c:9621 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/df.merge.c:9621 */
-#line 9621
+/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/df.merge.c:9625 */
+#line 9625
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) ssignal)(int __sig ,
                                                                                          void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/df.merge.c:9621 */
+/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/df.merge.c:9625 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remquof(float  , float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 
-/* BEGIN STRUCT flock64 LOC=./src/df.merge.c:9631 */
-#line 9631 "./src/df.merge.c"
+/* BEGIN STRUCT flock64 LOC=./src/df.merge.c:9635 */
+#line 9635 "./src/df.merge.c"
 struct flock64 {
    short l_type ;
    short l_whence ;
@@ -11570,7 +11578,7 @@ struct flock64 {
    __off64_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock64 LOC=./src/df.merge.c:9631 */
+/* END STRUCT flock64 LOC=./src/df.merge.c:9635 */
 
 /* BEGIN ENUM-DECL __anonenum_606700034___0 LOC=./src/df.merge.c:1254 */
 #line 1254
@@ -11587,15 +11595,15 @@ enum __anonenum_606700034___0 ;
    float __builtin_nextafterf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_nextafterf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/df.merge.c:9651 */
-#line 9651
-extern int optind ;
-/* END VARIABLE-DECL-EXTERN optind LOC=./src/df.merge.c:9651 */
-
-/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/df.merge.c:9655 */
+/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/df.merge.c:9655 */
 #line 9655
+extern int optind ;
+/* END VARIABLE-DECL-EXTERN optind LOC=./src/df.merge.c:9655 */
+
+/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/df.merge.c:9659 */
+#line 9659
 extern char *program_invocation_name ;
-/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/df.merge.c:9655 */
+/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/df.merge.c:9659 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11607,73 +11615,73 @@ extern char *program_invocation_name ;
    long double __builtin_roundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/df.merge.c:9669 */
-#line 9669
+/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/df.merge.c:9673 */
+#line 9673
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncmp)(char const   *__s1 ,
                                                                                                 char const   *__s2 ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/df.merge.c:9669 */
+/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/df.merge.c:9673 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_casinhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/df.merge.c:9680 */
-#line 9680
+/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/df.merge.c:9684 */
+#line 9684
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) ecvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/df.merge.c:9680 */
+/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/df.merge.c:9684 */
 
-/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/df.merge.c:9687 */
-#line 9687
-extern int opterr ;
-/* END VARIABLE-DECL-EXTERN opterr LOC=./src/df.merge.c:9687 */
-
-/* BEGIN FUNCTION-DECL c_iscntrl LOC=./src/df.merge.c:9691 */
+/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/df.merge.c:9691 */
 #line 9691
-__inline _Bool c_iscntrl(int c ) ;
-/* END FUNCTION-DECL c_iscntrl LOC=./src/df.merge.c:9691 */
+extern int opterr ;
+/* END VARIABLE-DECL-EXTERN opterr LOC=./src/df.merge.c:9691 */
 
-/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/df.merge.c:9695 */
+/* BEGIN FUNCTION-DECL c_iscntrl LOC=./src/df.merge.c:9695 */
 #line 9695
+__inline _Bool c_iscntrl(int c ) ;
+/* END FUNCTION-DECL c_iscntrl LOC=./src/df.merge.c:9695 */
+
+/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/df.merge.c:9699 */
+#line 9699
 enum __anonenum_230064777___0 {
     LOG10_TIMESPEC_RESOLUTION___0 = 9
 } ;
-/* END ENUM __anonenum_230064777___0 LOC=./src/df.merge.c:9695 */
+/* END ENUM __anonenum_230064777___0 LOC=./src/df.merge.c:9699 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/df.merge.c:9701 */
-#line 9701
+/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/df.merge.c:9705 */
+#line 9705
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/df.merge.c:9701 */
+/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/df.merge.c:9705 */
 
 /* BEGIN STRUCT-DECL dirent LOC=./src/df.merge.c:1350 */
 #line 1350
 struct dirent ;
 /* END STRUCT-DECL dirent LOC=./src/df.merge.c:1350 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_clear LOC=./src/df.merge.c:9710 */
-#line 9710
+/* BEGIN FUNCTION-DECL-EXTERN hash_clear LOC=./src/df.merge.c:9714 */
+#line 9714
 extern void hash_clear(Hash_table *table ) ;
-/* END FUNCTION-DECL-EXTERN hash_clear LOC=./src/df.merge.c:9710 */
+/* END FUNCTION-DECL-EXTERN hash_clear LOC=./src/df.merge.c:9714 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/df.merge.c:9705 */
-#line 9705
+/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/df.merge.c:9709 */
+#line 9709
 extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTART instead"))) int ( __attribute__((__leaf__)) siginterrupt)(int __sig ,
                                                                                                                                             int __interrupt ) ;
-/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/df.merge.c:9705 */
+/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/df.merge.c:9709 */
 
 /* BEGIN ENUM-DECL __anonenum_825626741 LOC=./src/df.merge.c:1126 */
 #line 1126
 enum __anonenum_825626741 ;
 /* END ENUM-DECL __anonenum_825626741 LOC=./src/df.merge.c:1126 */
 
-/* BEGIN FUNCTION-DECL timetostr LOC=./src/df.merge.c:9714 */
-#line 9714
+/* BEGIN FUNCTION-DECL timetostr LOC=./src/df.merge.c:9718 */
+#line 9718
 __inline static char *timetostr(time_t t , char *buf ) ;
-/* END FUNCTION-DECL timetostr LOC=./src/df.merge.c:9714 */
+/* END FUNCTION-DECL timetostr LOC=./src/df.merge.c:9718 */
 
 /* BEGIN FUNCTION-DECL __builtin_strspn LOC=BUILTIN */
 /* compiler builtin: 
@@ -11685,21 +11693,21 @@ __inline static char *timetostr(time_t t , char *buf ) ;
 enum __anonenum_852341087 ;
 /* END ENUM-DECL __anonenum_852341087 LOC=./src/df.merge.c:1470 */
 
-/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/df.merge.c:9723 */
-#line 9723
+/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/df.merge.c:9727 */
+#line 9727
 extern char *tzname[2] ;
-/* END VARIABLE-DECL-EXTERN tzname LOC=./src/df.merge.c:9723 */
+/* END VARIABLE-DECL-EXTERN tzname LOC=./src/df.merge.c:9727 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/df.merge.c:1466 */
 #line 1466
 union __anonunion_pthread_condattr_t_488594145 ;
 /* END UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/df.merge.c:1466 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/df.merge.c:9727 */
-#line 9727
+/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/df.merge.c:9731 */
+#line 9731
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvp)(char const   *__file ,
                                                                                                char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execvp LOC=./src/df.merge.c:9727 */
+/* END FUNCTION-DECL-EXTERN execvp LOC=./src/df.merge.c:9731 */
 
 /* BEGIN FUNCTION-DECL __builtin_carg LOC=BUILTIN */
 /* compiler builtin: 
@@ -11721,119 +11729,119 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    _Float128 __builtin_hypotf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_hypotf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/df.merge.c:9752 */
-#line 9752 "./src/df.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/df.merge.c:9756 */
+#line 9756 "./src/df.merge.c"
 union __anonunion____missing_field_name_501150464 {
    struct _fpstate *fpstate ;
    __uint64_t __fpstate_word ;
 };
-/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/df.merge.c:9752 */
+/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/df.merge.c:9756 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:1174 */
 #line 1174
 union __anonunion_pthread_mutex_t_335460617 ;
 /* END UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:1174 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/df.merge.c:9759 */
-#line 9759
+/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/df.merge.c:9763 */
+#line 9763
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atexit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN atexit LOC=./src/df.merge.c:9759 */
+/* END FUNCTION-DECL-EXTERN atexit LOC=./src/df.merge.c:9763 */
 
-/* BEGIN TYPEDEF __u_quad_t LOC=./src/df.merge.c:9763 */
-#line 9763 "./src/df.merge.c"
-typedef unsigned long __u_quad_t;
-/* END TYPEDEF __u_quad_t LOC=./src/df.merge.c:9763 */
-
-/* BEGIN TYPEDEF u_quad_t LOC=./src/df.merge.c:9767 */
+/* BEGIN TYPEDEF __u_quad_t LOC=./src/df.merge.c:9767 */
 #line 9767 "./src/df.merge.c"
+typedef unsigned long __u_quad_t;
+/* END TYPEDEF __u_quad_t LOC=./src/df.merge.c:9767 */
+
+/* BEGIN TYPEDEF u_quad_t LOC=./src/df.merge.c:9771 */
+#line 9771 "./src/df.merge.c"
 typedef __u_quad_t u_quad_t;
-/* END TYPEDEF u_quad_t LOC=./src/df.merge.c:9767 */
+/* END TYPEDEF u_quad_t LOC=./src/df.merge.c:9771 */
 
-/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/df.merge.c:9771 */
-#line 9771
+/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/df.merge.c:9775 */
+#line 9775
 __inline static void emit_ancillary_info(char const   *program ) ;
-/* END FUNCTION-DECL emit_ancillary_info LOC=./src/df.merge.c:9771 */
+/* END FUNCTION-DECL emit_ancillary_info LOC=./src/df.merge.c:9775 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/df.merge.c:9780 */
-#line 9780
+/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/df.merge.c:9784 */
+#line 9784
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dcgettext)(char const   *__domainname ,
                                                                                     char const   *__msgid ,
                                                                                     int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/df.merge.c:9780 */
+/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/df.merge.c:9784 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cpowl(_Complex long double  , _Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/df.merge.c:9786 */
-#line 9786
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/df.merge.c:9790 */
+#line 9790
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncasecmp)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/df.merge.c:9786 */
+/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/df.merge.c:9790 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/df.merge.c:9792 */
-#line 9792
-extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
-/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/df.merge.c:9792 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/df.merge.c:9796 */
+/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/df.merge.c:9796 */
 #line 9796
+extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
+/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/df.merge.c:9796 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/df.merge.c:9800 */
+#line 9800
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ttyname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/df.merge.c:9796 */
+/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/df.merge.c:9800 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/df.merge.c:9807 */
-#line 9807
+/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/df.merge.c:9811 */
+#line 9811
 extern void *xnmalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/df.merge.c:9807 */
+/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/df.merge.c:9811 */
 
 /* BEGIN FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_islessgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 
-/* BEGIN UNION pthread_attr_t LOC=./src/df.merge.c:9812 */
-#line 9812 "./src/df.merge.c"
+/* BEGIN UNION pthread_attr_t LOC=./src/df.merge.c:9816 */
+#line 9816 "./src/df.merge.c"
 union pthread_attr_t {
    char __size[56] ;
    long __align ;
 };
-/* END UNION pthread_attr_t LOC=./src/df.merge.c:9812 */
+/* END UNION pthread_attr_t LOC=./src/df.merge.c:9816 */
 
 /* BEGIN FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_clog(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/df.merge.c:9824 */
-#line 9824
+/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/df.merge.c:9828 */
+#line 9828
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strnlen)(char const   *__string ,
                                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/df.merge.c:9824 */
+/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/df.merge.c:9828 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoul LOC=./src/df.merge.c:9829 */
-#line 9829
-extern strtol_error xstrtoul(char const   * , char ** , int  , unsigned long * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoul LOC=./src/df.merge.c:9829 */
-
-/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/df.merge.c:9833 */
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoul LOC=./src/df.merge.c:9833 */
 #line 9833
+extern strtol_error xstrtoul(char const   * , char ** , int  , unsigned long * , char const   * ) ;
+/* END FUNCTION-DECL-EXTERN xstrtoul LOC=./src/df.merge.c:9833 */
+
+/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/df.merge.c:9837 */
+#line 9837
 extern  __attribute__((__noreturn__)) void openat_save_fail(int  ) ;
-/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/df.merge.c:9833 */
+/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/df.merge.c:9837 */
 
-/* BEGIN TYPEDEF u_int32_t LOC=./src/df.merge.c:9837 */
-#line 9837 "./src/df.merge.c"
+/* BEGIN TYPEDEF u_int32_t LOC=./src/df.merge.c:9841 */
+#line 9841 "./src/df.merge.c"
 typedef __uint32_t u_int32_t;
-/* END TYPEDEF u_int32_t LOC=./src/df.merge.c:9837 */
+/* END TYPEDEF u_int32_t LOC=./src/df.merge.c:9841 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/df.merge.c:9852 */
-#line 9852
+/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/df.merge.c:9856 */
+#line 9856
 extern FILE *fopen(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen LOC=./src/df.merge.c:9852 */
+/* END FUNCTION-DECL-EXTERN fopen LOC=./src/df.merge.c:9856 */
 
 /* BEGIN FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11846,26 +11854,26 @@ extern FILE *fopen(char const   * __restrict  __filename , char const   * __rest
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/df.merge.c:9856 */
-#line 9856
+/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/df.merge.c:9860 */
+#line 9860
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate)(char const   *__file ,
                                                                                                __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate LOC=./src/df.merge.c:9856 */
+/* END FUNCTION-DECL-EXTERN truncate LOC=./src/df.merge.c:9860 */
 
-/* BEGIN STRUCT devlist LOC=./src/df.merge.c:9861 */
-#line 9861 "./src/df.merge.c"
+/* BEGIN STRUCT devlist LOC=./src/df.merge.c:9865 */
+#line 9865 "./src/df.merge.c"
 struct devlist {
    dev_t dev_num ;
    struct mount_entry *me ;
    struct devlist *next ;
    struct devlist *seen_last ;
 };
-/* END STRUCT devlist LOC=./src/df.merge.c:9861 */
+/* END STRUCT devlist LOC=./src/df.merge.c:9865 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/df.merge.c:9870 */
-#line 9870
+/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/df.merge.c:9874 */
+#line 9874
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mkdtemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/df.merge.c:9870 */
+/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/df.merge.c:9874 */
 
 /* BEGIN FUNCTION-DECL __builtin___memmove_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -11877,10 +11885,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
    long double __builtin_acoshl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __thrd_t LOC=./src/df.merge.c:9884 */
-#line 9884 "./src/df.merge.c"
+/* BEGIN TYPEDEF __thrd_t LOC=./src/df.merge.c:9888 */
+#line 9888 "./src/df.merge.c"
 typedef unsigned long __thrd_t;
-/* END TYPEDEF __thrd_t LOC=./src/df.merge.c:9884 */
+/* END TYPEDEF __thrd_t LOC=./src/df.merge.c:9888 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfc LOC=BUILTIN */
 /* compiler builtin: 
@@ -11892,29 +11900,29 @@ typedef unsigned long __thrd_t;
 enum __anonenum_556971655 ;
 /* END ENUM-DECL __anonenum_556971655 LOC=./src/df.merge.c:1378 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/df.merge.c:9893 */
-#line 9893
+/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/df.merge.c:9897 */
+#line 9897
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) atof)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atof LOC=./src/df.merge.c:9893 */
+/* END FUNCTION-DECL-EXTERN atof LOC=./src/df.merge.c:9897 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863___0 LOC=./src/df.merge.c:1202 */
 #line 1202
 enum __anonenum_57186863___0 ;
 /* END ENUM-DECL __anonenum_57186863___0 LOC=./src/df.merge.c:1202 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/df.merge.c:9902 */
-#line 9902
+/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/df.merge.c:9906 */
+#line 9906
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bind_textdomain_codeset)(char const   *__domainname ,
                                                                                                 char const   *__codeset ) ;
-/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/df.merge.c:9902 */
+/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/df.merge.c:9906 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_sinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 
-/* BEGIN STRUCT stat64 LOC=./src/df.merge.c:9907 */
-#line 9907 "./src/df.merge.c"
+/* BEGIN STRUCT stat64 LOC=./src/df.merge.c:9911 */
+#line 9911 "./src/df.merge.c"
 struct stat64 {
    __dev_t st_dev ;
    __ino64_t st_ino ;
@@ -11932,32 +11940,32 @@ struct stat64 {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat64 LOC=./src/df.merge.c:9907 */
+/* END STRUCT stat64 LOC=./src/df.merge.c:9911 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mbrtowc LOC=./src/df.merge.c:9932 */
-#line 9932
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mbrtowc LOC=./src/df.merge.c:9936 */
+#line 9936
 extern size_t rpl_mbrtowc(wchar_t * __restrict  pwc , char const   * __restrict  s ,
                           size_t n , mbstate_t * __restrict  ps ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mbrtowc LOC=./src/df.merge.c:9932 */
+/* END FUNCTION-DECL-EXTERN rpl_mbrtowc LOC=./src/df.merge.c:9936 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalbnf(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/df.merge.c:9937 */
-#line 9937
+/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/df.merge.c:9941 */
+#line 9941
 extern void set_program_name(char const   *argv0 ) ;
-/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/df.merge.c:9937 */
+/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/df.merge.c:9941 */
 
 /* BEGIN FUNCTION-DECL bad_cast LOC=UNKNOWN */
 __inline static char *bad_cast(char const   *s ) ;
 /* END FUNCTION-DECL bad_cast LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int_fast64_t LOC=./src/df.merge.c:9945 */
-#line 9945 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_fast64_t LOC=./src/df.merge.c:9949 */
+#line 9949 "./src/df.merge.c"
 typedef long int_fast64_t;
-/* END TYPEDEF int_fast64_t LOC=./src/df.merge.c:9945 */
+/* END TYPEDEF int_fast64_t LOC=./src/df.merge.c:9949 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 /* compiler builtin: 
@@ -11965,27 +11973,27 @@ typedef long int_fast64_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/df.merge.c:9955 */
-#line 9955
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/df.merge.c:9959 */
+#line 9959
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64)(int __fd ,
                                                                                   __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/df.merge.c:9955 */
+/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/df.merge.c:9959 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/df.merge.c:9960 */
-#line 9960
+/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/df.merge.c:9964 */
+#line 9964
 extern  __attribute__((__nothrow__)) int vasprintf(char ** __restrict  __ptr , char const   * __restrict  __f ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/df.merge.c:9960 */
+/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/df.merge.c:9964 */
 
 /* BEGIN STRUCT-DECL __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:1010 */
 #line 1010
 struct __anonstruct_siginfo_t_57027376 ;
 /* END STRUCT-DECL __anonstruct_siginfo_t_57027376 LOC=./src/df.merge.c:1010 */
 
-/* BEGIN TYPEDEF Hash_hasher LOC=./src/df.merge.c:9966 */
-#line 9966 "./src/df.merge.c"
+/* BEGIN TYPEDEF Hash_hasher LOC=./src/df.merge.c:9970 */
+#line 9970 "./src/df.merge.c"
 typedef size_t (*Hash_hasher)(void const   *entry , size_t table_size );
-/* END TYPEDEF Hash_hasher LOC=./src/df.merge.c:9966 */
+/* END TYPEDEF Hash_hasher LOC=./src/df.merge.c:9970 */
 
 /* BEGIN FUNCTION-DECL __builtin_nansl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11997,21 +12005,21 @@ typedef size_t (*Hash_hasher)(void const   *entry , size_t table_size );
    _Complex long double __builtin_csqrtl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrtl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/df.merge.c:9985 */
-#line 9985
+/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/df.merge.c:9989 */
+#line 9989
 extern int ( __attribute__((__nonnull__(1))) getc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc LOC=./src/df.merge.c:9985 */
+/* END FUNCTION-DECL-EXTERN getc LOC=./src/df.merge.c:9989 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parityl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/df.merge.c:9989 */
-#line 9989
+/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/df.merge.c:9993 */
+#line 9993
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(int __fd ,
                                                                                char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/df.merge.c:9989 */
+/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/df.merge.c:9993 */
 
 /* BEGIN FUNCTION-DECL __builtin_strlen LOC=BUILTIN */
 /* compiler builtin: 
@@ -12023,28 +12031,28 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(i
    float __builtin_log1pf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/df.merge.c:10004 */
-#line 10004
+/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/df.merge.c:10008 */
+#line 10008
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime_l)(char const   * __restrict  __s ,
                                                                                    char const   * __restrict  __fmt ,
                                                                                    struct tm *__tp ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/df.merge.c:10004 */
+/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/df.merge.c:10008 */
 
 /* BEGIN STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:1158 */
 #line 1158
 struct __anonstruct___fsid_t_109580352 ;
 /* END STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/df.merge.c:1158 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/df.merge.c:10011 */
-#line 10011
+/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/df.merge.c:10015 */
+#line 10015
 extern  __attribute__((__nothrow__)) __off_t ( __attribute__((__leaf__)) lseek)(int __fd ,
                                                                                 __off_t __offset ,
                                                                                 int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek LOC=./src/df.merge.c:10011 */
+/* END FUNCTION-DECL-EXTERN lseek LOC=./src/df.merge.c:10015 */
 
-/* BEGIN ENUM __anonenum_556971655 LOC=./src/df.merge.c:10017 */
-#line 10017
+/* BEGIN ENUM __anonenum_556971655 LOC=./src/df.merge.c:10021 */
+#line 10021
 enum __anonenum_556971655 {
     SI_ASYNCNL = -60,
     SI_DETHREAD = -7,
@@ -12057,7 +12065,7 @@ enum __anonenum_556971655 {
     SI_USER = 0,
     SI_KERNEL = 128
 } ;
-/* END ENUM __anonenum_556971655 LOC=./src/df.merge.c:10017 */
+/* END ENUM __anonenum_556971655 LOC=./src/df.merge.c:10021 */
 
 /* BEGIN FUNCTION-DECL __builtin_uaddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -12070,40 +12078,40 @@ enum __anonenum_556971655 {
    _Float128 __builtin_scalblnf128(_Float128  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/df.merge.c:10047 */
-#line 10047
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strfry)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN strfry LOC=./src/df.merge.c:10047 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/df.merge.c:10051 */
+/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/df.merge.c:10051 */
 #line 10051
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strfry)(char *__string ) ;
+/* END FUNCTION-DECL-EXTERN strfry LOC=./src/df.merge.c:10051 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/df.merge.c:10055 */
+#line 10055
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/df.merge.c:10051 */
+/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/df.merge.c:10055 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/df.merge.c:10043 */
-#line 10043
+/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/df.merge.c:10047 */
+#line 10047
 extern int getpt(void) ;
-/* END FUNCTION-DECL-EXTERN getpt LOC=./src/df.merge.c:10043 */
+/* END FUNCTION-DECL-EXTERN getpt LOC=./src/df.merge.c:10047 */
 
-/* BEGIN FUNCTION-DECL-EXTERN restore_cwd LOC=./src/df.merge.c:10056 */
-#line 10056
-extern int restore_cwd(struct saved_cwd  const  *cwd ) ;
-/* END FUNCTION-DECL-EXTERN restore_cwd LOC=./src/df.merge.c:10056 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/df.merge.c:10060 */
+/* BEGIN FUNCTION-DECL-EXTERN restore_cwd LOC=./src/df.merge.c:10060 */
 #line 10060
+extern int restore_cwd(struct saved_cwd  const  *cwd ) ;
+/* END FUNCTION-DECL-EXTERN restore_cwd LOC=./src/df.merge.c:10060 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/df.merge.c:10064 */
+#line 10064
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) fpathconf)(int __fd ,
                                                                                  int __name ) ;
-/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/df.merge.c:10060 */
+/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/df.merge.c:10064 */
 
-/* BEGIN STRUCT itimerval LOC=./src/df.merge.c:10065 */
-#line 10065 "./src/df.merge.c"
+/* BEGIN STRUCT itimerval LOC=./src/df.merge.c:10069 */
+#line 10069 "./src/df.merge.c"
 struct itimerval {
    struct timeval it_interval ;
    struct timeval it_value ;
 };
-/* END STRUCT itimerval LOC=./src/df.merge.c:10065 */
+/* END STRUCT itimerval LOC=./src/df.merge.c:10069 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctzs LOC=BUILTIN */
 /* compiler builtin: 
@@ -12115,48 +12123,48 @@ struct itimerval {
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/df.merge.c:10082 */
-#line 10082
+/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/df.merge.c:10086 */
+#line 10086
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)(void) ;
-/* END FUNCTION-DECL-EXTERN getuid LOC=./src/df.merge.c:10082 */
+/* END FUNCTION-DECL-EXTERN getuid LOC=./src/df.merge.c:10086 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_log1pf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/df.merge.c:10091 */
-#line 10091
+/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/df.merge.c:10095 */
+#line 10095
 extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/df.merge.c:10091 */
+/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/df.merge.c:10095 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_truncl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/df.merge.c:10095 */
-#line 10095
-extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/df.merge.c:10095 */
-
-/* BEGIN FUNCTION-DECL-EXTERN wcscasecmp LOC=./src/df.merge.c:10099 */
+/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/df.merge.c:10099 */
 #line 10099
+extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
+/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/df.merge.c:10099 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wcscasecmp LOC=./src/df.merge.c:10103 */
+#line 10103
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcscasecmp)(wchar_t const   *__s1 ,
                                                                                  wchar_t const   *__s2 ) ;
-/* END FUNCTION-DECL-EXTERN wcscasecmp LOC=./src/df.merge.c:10099 */
+/* END FUNCTION-DECL-EXTERN wcscasecmp LOC=./src/df.merge.c:10103 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/df.merge.c:10109 */
-#line 10109
+/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/df.merge.c:10113 */
+#line 10113
 extern  __attribute__((__nothrow__)) int obstack_printf(struct obstack * __restrict  __obstack ,
                                                         char const   * __restrict  __format 
                                                         , ...) ;
-/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/df.merge.c:10109 */
+/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/df.merge.c:10113 */
 
-/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/df.merge.c:10131 */
-#line 10131
+/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/df.merge.c:10135 */
+#line 10135
 extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/df.merge.c:10131 */
+/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/df.merge.c:10135 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 /* compiler builtin: 
@@ -12168,33 +12176,33 @@ extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
    long double __builtin_lgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/df.merge.c:10125 */
-#line 10125
+/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/df.merge.c:10129 */
+#line 10129
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencookie)(void * __restrict  __magic_cookie ,
                                                                                     char const   * __restrict  __modes ,
                                                                                     cookie_io_functions_t __io_funcs )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/df.merge.c:10125 */
+/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/df.merge.c:10129 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/df.merge.c:10135 */
-#line 10135
+/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/df.merge.c:10139 */
+#line 10139
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime_r)(time_t const   * __restrict  __timer ,
                                                                                       struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/df.merge.c:10135 */
+/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/df.merge.c:10139 */
 
 /* BEGIN STRUCT-DECL _libc_fpstate LOC=./src/df.merge.c:1318 */
 #line 1318
 struct _libc_fpstate ;
 /* END STRUCT-DECL _libc_fpstate LOC=./src/df.merge.c:1318 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/df.merge.c:10144 */
-#line 10144
+/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/df.merge.c:10148 */
+#line 10148
 extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/df.merge.c:10144 */
+/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/df.merge.c:10148 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/df.merge.c:10140 */
-#line 10140
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/df.merge.c:10144 */
+#line 10144
 extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/df.merge.c:10140 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/df.merge.c:10144 */
 
 /* BEGIN FUNCTION-DECL __builtin_smul_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -12221,15 +12229,15 @@ extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
    double __builtin_copysign(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysign LOC=BUILTIN */
 
-/* BEGIN TYPEDEF clock_t LOC=./src/df.merge.c:10173 */
-#line 10173 "./src/df.merge.c"
+/* BEGIN TYPEDEF clock_t LOC=./src/df.merge.c:10177 */
+#line 10177 "./src/df.merge.c"
 typedef __clock_t clock_t;
-/* END TYPEDEF clock_t LOC=./src/df.merge.c:10173 */
+/* END TYPEDEF clock_t LOC=./src/df.merge.c:10177 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/df.merge.c:10177 */
-#line 10177
+/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/df.merge.c:10181 */
+#line 10181
 extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(void) ;
-/* END FUNCTION-DECL-EXTERN clock LOC=./src/df.merge.c:10177 */
+/* END FUNCTION-DECL-EXTERN clock LOC=./src/df.merge.c:10181 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12241,42 +12249,42 @@ extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(
    double __builtin_nans(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nans LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vwprintf LOC=./src/df.merge.c:10191 */
-#line 10191
+/* BEGIN FUNCTION-DECL-EXTERN vwprintf LOC=./src/df.merge.c:10195 */
+#line 10195
 extern int vwprintf(wchar_t const   * __restrict  __format , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vwprintf LOC=./src/df.merge.c:10191 */
+/* END FUNCTION-DECL-EXTERN vwprintf LOC=./src/df.merge.c:10195 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputwc_unlocked LOC=./src/df.merge.c:10200 */
-#line 10200
+/* BEGIN FUNCTION-DECL-EXTERN fputwc_unlocked LOC=./src/df.merge.c:10204 */
+#line 10204
 extern wint_t fputwc_unlocked(wchar_t __wc , __FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputwc_unlocked LOC=./src/df.merge.c:10200 */
+/* END FUNCTION-DECL-EXTERN fputwc_unlocked LOC=./src/df.merge.c:10204 */
 
 /* BEGIN FUNCTION-DECL __builtin_complex LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_complex(...) ;  */
 /* END FUNCTION-DECL __builtin_complex LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/df.merge.c:10209 */
-#line 10209
+/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/df.merge.c:10213 */
+#line 10213
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mblen)(char const   *__s ,
                                                                             size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mblen LOC=./src/df.merge.c:10209 */
+/* END FUNCTION-DECL-EXTERN mblen LOC=./src/df.merge.c:10213 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf_sign(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsrchr LOC=./src/df.merge.c:10214 */
-#line 10214
+/* BEGIN FUNCTION-DECL-EXTERN wcsrchr LOC=./src/df.merge.c:10218 */
+#line 10218
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcsrchr)(wchar_t const   *__wcs ,
                                                                                    wchar_t __wc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcsrchr LOC=./src/df.merge.c:10214 */
+/* END FUNCTION-DECL-EXTERN wcsrchr LOC=./src/df.merge.c:10218 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/df.merge.c:10219 */
-#line 10219
+/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/df.merge.c:10223 */
+#line 10223
 extern void *xrealloc(void *p , size_t s )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/df.merge.c:10219 */
+/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/df.merge.c:10223 */
 
 /* BEGIN ENUM-DECL __itimer_which LOC=./src/df.merge.c:1526 */
 #line 1526
@@ -12297,8 +12305,8 @@ enum __itimer_which ;
 __inline int c32isgraph(wint_t wc ) ;
 /* END FUNCTION-DECL c32isgraph LOC=UNKNOWN */
 
-/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/df.merge.c:10237 */
-#line 10237 "./src/df.merge.c"
+/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/df.merge.c:10241 */
+#line 10241 "./src/df.merge.c"
 struct _fpx_sw_bytes {
    __uint32_t magic1 ;
    __uint32_t extended_size ;
@@ -12306,39 +12314,39 @@ struct _fpx_sw_bytes {
    __uint32_t xstate_size ;
    __uint32_t __glibc_reserved1[7] ;
 };
-/* END STRUCT _fpx_sw_bytes LOC=./src/df.merge.c:10237 */
+/* END STRUCT _fpx_sw_bytes LOC=./src/df.merge.c:10241 */
 
-/* BEGIN TYPEDEF __s128 LOC=./src/df.merge.c:10247 */
-#line 10247 "./src/df.merge.c"
+/* BEGIN TYPEDEF __s128 LOC=./src/df.merge.c:10251 */
+#line 10251 "./src/df.merge.c"
 typedef __int128 __attribute__((__aligned__(16)))  __s128;
-/* END TYPEDEF __s128 LOC=./src/df.merge.c:10247 */
+/* END TYPEDEF __s128 LOC=./src/df.merge.c:10251 */
 
 /* BEGIN STRUCT-DECL _xmmreg LOC=./src/df.merge.c:990 */
 #line 990
 struct _xmmreg ;
 /* END STRUCT-DECL _xmmreg LOC=./src/df.merge.c:990 */
 
-/* BEGIN TYPEDEF sig_t LOC=./src/df.merge.c:10251 */
-#line 10251 "./src/df.merge.c"
+/* BEGIN TYPEDEF sig_t LOC=./src/df.merge.c:10255 */
+#line 10255 "./src/df.merge.c"
 typedef void (*sig_t)(int  );
-/* END TYPEDEF sig_t LOC=./src/df.merge.c:10251 */
+/* END TYPEDEF sig_t LOC=./src/df.merge.c:10255 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/df.merge.c:10259 */
-#line 10259
+/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/df.merge.c:10263 */
+#line 10263
 extern  __attribute__((__nothrow__)) int obstack_vprintf(struct obstack * __restrict  __obstack ,
                                                          char const   * __restrict  __format ,
                                                          __gnuc_va_list __args ) ;
-/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/df.merge.c:10259 */
+/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/df.merge.c:10263 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/df.merge.c:10255 */
-#line 10255
+/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/df.merge.c:10259 */
+#line 10259
 extern int getentropy(void *__buffer , size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/df.merge.c:10255 */
+/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/df.merge.c:10259 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/df.merge.c:10265 */
-#line 10265
+/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/df.merge.c:10269 */
+#line 10269
 extern size_t base_len(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN base_len LOC=./src/df.merge.c:10265 */
+/* END FUNCTION-DECL-EXTERN base_len LOC=./src/df.merge.c:10269 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928___0 LOC=./src/df.merge.c:1286 */
 #line 1286
@@ -12355,77 +12363,77 @@ enum __anonenum_850350928___0 ;
 struct __anonstruct_div_t_773697287 ;
 /* END STRUCT-DECL __anonstruct_div_t_773697287 LOC=./src/df.merge.c:1086 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/df.merge.c:10274 */
-#line 10274
+/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/df.merge.c:10278 */
+#line 10278
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setdomainname)(char const   *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/df.merge.c:10274 */
+/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/df.merge.c:10278 */
 
 /* BEGIN STRUCT-DECL drand48_data LOC=./src/df.merge.c:1042 */
 #line 1042
 struct drand48_data ;
 /* END STRUCT-DECL drand48_data LOC=./src/df.merge.c:1042 */
 
-/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/df.merge.c:10279 */
-#line 10279 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/df.merge.c:10283 */
+#line 10283 "./src/df.merge.c"
 typedef unsigned int __kernel_uid_t;
-/* END TYPEDEF __kernel_uid_t LOC=./src/df.merge.c:10279 */
+/* END TYPEDEF __kernel_uid_t LOC=./src/df.merge.c:10283 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/df.merge.c:10283 */
-#line 10283
-extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) umask)(__mode_t __mask ) ;
-/* END FUNCTION-DECL-EXTERN umask LOC=./src/df.merge.c:10283 */
-
-/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/df.merge.c:10287 */
+/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/df.merge.c:10287 */
 #line 10287
+extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) umask)(__mode_t __mask ) ;
+/* END FUNCTION-DECL-EXTERN umask LOC=./src/df.merge.c:10287 */
+
+/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/df.merge.c:10291 */
+#line 10291
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) drand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/df.merge.c:10287 */
+/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/df.merge.c:10291 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswctype LOC=./src/df.merge.c:10297 */
-#line 10297
+/* BEGIN FUNCTION-DECL-EXTERN iswctype LOC=./src/df.merge.c:10301 */
+#line 10301
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswctype)(wint_t __wc ,
                                                                                wctype_t __desc ) ;
-/* END FUNCTION-DECL-EXTERN iswctype LOC=./src/df.merge.c:10297 */
+/* END FUNCTION-DECL-EXTERN iswctype LOC=./src/df.merge.c:10301 */
 
-/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/df.merge.c:10292 */
-#line 10292
+/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/df.merge.c:10296 */
+#line 10296
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) valloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN valloc LOC=./src/df.merge.c:10292 */
+/* END FUNCTION-DECL-EXTERN valloc LOC=./src/df.merge.c:10296 */
 
 /* BEGIN FUNCTION-DECL replace_control_chars LOC=UNKNOWN */
 static void replace_control_chars(char *cell ) ;
 /* END FUNCTION-DECL replace_control_chars LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/df.merge.c:10312 */
-#line 10312
-extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/df.merge.c:10312 */
-
-/* BEGIN FUNCTION-DECL-EXTERN wcsncat LOC=./src/df.merge.c:10316 */
+/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/df.merge.c:10316 */
 #line 10316
+extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
+/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/df.merge.c:10316 */
+
+/* BEGIN FUNCTION-DECL-EXTERN wcsncat LOC=./src/df.merge.c:10320 */
+#line 10320
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__nonnull__(1,2), __leaf__)) wcsncat)(wchar_t * __restrict  __dest ,
                                                                                                      wchar_t const   * __restrict  __src ,
                                                                                                      size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wcsncat LOC=./src/df.merge.c:10316 */
+/* END FUNCTION-DECL-EXTERN wcsncat LOC=./src/df.merge.c:10320 */
 
-/* BEGIN FUNCTION-DECL-EXTERN swscanf LOC=./src/df.merge.c:10306 */
-#line 10306
+/* BEGIN FUNCTION-DECL-EXTERN swscanf LOC=./src/df.merge.c:10310 */
+#line 10310
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) swscanf)(wchar_t const   * __restrict  __s ,
                                                                               wchar_t const   * __restrict  __format 
                                                                               , ...)  __asm__("__isoc23_swscanf")  ;
-/* END FUNCTION-DECL-EXTERN swscanf LOC=./src/df.merge.c:10306 */
+/* END FUNCTION-DECL-EXTERN swscanf LOC=./src/df.merge.c:10310 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/df.merge.c:10322 */
-#line 10322
+/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/df.merge.c:10326 */
+#line 10326
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) ecvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/df.merge.c:10322 */
+/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/df.merge.c:10326 */
 
 /* BEGIN FUNCTION-DECL __builtin_log LOC=BUILTIN */
 /* compiler builtin: 
@@ -12442,20 +12450,20 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __
 enum __anonenum_424050557 ;
 /* END ENUM-DECL __anonenum_424050557 LOC=./src/df.merge.c:1234 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/df.merge.c:10347 */
-#line 10347
+/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/df.merge.c:10351 */
+#line 10351
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rmdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/df.merge.c:10347 */
+/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/df.merge.c:10351 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/df.merge.c:10341 */
-#line 10341
+/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/df.merge.c:10345 */
+#line 10345
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) bcopy)(void const   *__src ,
                                                                                                void *__dest ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/df.merge.c:10341 */
+/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/df.merge.c:10345 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_AEJ4_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -12463,75 +12471,75 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp ) ;
    double __builtin_sqrt(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/df.merge.c:10360 */
-#line 10360
+/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/df.merge.c:10364 */
+#line 10364
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(int __fd ,
                                                                                 char const   *__file ,
                                                                                 struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/df.merge.c:10360 */
+/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/df.merge.c:10364 */
 
 /* BEGIN FUNCTION-DECL print_table LOC=UNKNOWN */
 static void print_table(void) ;
 /* END FUNCTION-DECL print_table LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/df.merge.c:10370 */
-#line 10370
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/df.merge.c:10374 */
+#line 10374
 extern int ( __attribute__((__nonnull__(1))) mkstemp64)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/df.merge.c:10370 */
+/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/df.merge.c:10374 */
 
 /* BEGIN STRUCT-DECL _G_fpos64_t LOC=./src/df.merge.c:1002 */
 #line 1002
 struct _G_fpos64_t ;
 /* END STRUCT-DECL _G_fpos64_t LOC=./src/df.merge.c:1002 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/df.merge.c:10374 */
-#line 10374
+/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/df.merge.c:10378 */
+#line 10378
 extern FILE *stdin ;
-/* END VARIABLE-DECL-EXTERN stdin LOC=./src/df.merge.c:10374 */
+/* END VARIABLE-DECL-EXTERN stdin LOC=./src/df.merge.c:10378 */
 
-/* BEGIN TYPEDEF __kernel_key_t LOC=./src/df.merge.c:10378 */
-#line 10378 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_key_t LOC=./src/df.merge.c:10382 */
+#line 10382 "./src/df.merge.c"
 typedef int __kernel_key_t;
-/* END TYPEDEF __kernel_key_t LOC=./src/df.merge.c:10378 */
+/* END TYPEDEF __kernel_key_t LOC=./src/df.merge.c:10382 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/df.merge.c:10382 */
-#line 10382
+/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/df.merge.c:10386 */
+#line 10386
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dgettext)(char const   *__domainname ,
                                                                                    char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/df.merge.c:10382 */
+/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/df.merge.c:10386 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmemset LOC=./src/df.merge.c:10387 */
-#line 10387
+/* BEGIN FUNCTION-DECL-EXTERN wmemset LOC=./src/df.merge.c:10391 */
+#line 10391
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wmemset)(wchar_t *__s ,
                                                                                    wchar_t __c ,
                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wmemset LOC=./src/df.merge.c:10387 */
+/* END FUNCTION-DECL-EXTERN wmemset LOC=./src/df.merge.c:10391 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_tgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/df.merge.c:10398 */
-#line 10398
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/df.merge.c:10398 */
-
-/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/df.merge.c:10402 */
+/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/df.merge.c:10402 */
 #line 10402
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(int __fd ) ;
+/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/df.merge.c:10402 */
+
+/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/df.merge.c:10406 */
+#line 10406
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_kill)(pthread_t __threadid ,
                                                                                    int __signo ) ;
-/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/df.merge.c:10402 */
+/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/df.merge.c:10406 */
 
 /* BEGIN FUNCTION-DECL __builtin_strstr LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strstr(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strstr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/df.merge.c:10407 */
-#line 10407
+/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/df.merge.c:10411 */
+#line 10411
 extern int fcntl64(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/df.merge.c:10407 */
+/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/df.merge.c:10411 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -12549,20 +12557,20 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
    float __builtin_cosf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/df.merge.c:10432 */
-#line 10432
+/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/df.merge.c:10436 */
+#line 10436
 extern int error_one_per_line ;
-/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/df.merge.c:10432 */
+/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/df.merge.c:10436 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:1222 */
 #line 1222
 struct __anonstruct__sigsys_1029881407 ;
 /* END STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/df.merge.c:1222 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/df.merge.c:10436 */
-#line 10436
+/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/df.merge.c:10440 */
+#line 10440
 extern int fflush_unlocked(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/df.merge.c:10436 */
+/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/df.merge.c:10440 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12573,32 +12581,28 @@ extern int fflush_unlocked(FILE *__stream ) ;
 static size_t nrows  ;
 /* END VARIABLE-DEF nrows LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/df.merge.c:10449 */
-#line 10449
+/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/df.merge.c:10453 */
+#line 10453
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srandom)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srandom LOC=./src/df.merge.c:10449 */
+/* END FUNCTION-DECL-EXTERN srandom LOC=./src/df.merge.c:10453 */
 
 /* BEGIN FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cargl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_9N0o_argv LOC=UNKNOWN */
-char **_TIG_IZ_9N0o_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_9N0o_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN iswspace LOC=./src/df.merge.c:10458 */
-#line 10458
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswspace)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN iswspace LOC=./src/df.merge.c:10458 */
-
-/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/df.merge.c:10462 */
+/* BEGIN FUNCTION-DECL-EXTERN iswspace LOC=./src/df.merge.c:10462 */
 #line 10462
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswspace)(wint_t __wc ) ;
+/* END FUNCTION-DECL-EXTERN iswspace LOC=./src/df.merge.c:10462 */
+
+/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/df.merge.c:10466 */
+#line 10466
 enum __anonenum_365337802___0 {
     GETOPT_HELP_CHAR___0 = -130,
     GETOPT_VERSION_CHAR___0 = -131
 } ;
-/* END ENUM __anonenum_365337802___0 LOC=./src/df.merge.c:10462 */
+/* END ENUM __anonenum_365337802___0 LOC=./src/df.merge.c:10466 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12615,128 +12619,128 @@ enum __anonenum_365337802___0 {
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/df.merge.c:10484 */
-#line 10484
+/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/df.merge.c:10488 */
+#line 10488
 extern ssize_t pwrite(int __fd , void const   *__buf , size_t __n , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/df.merge.c:10484 */
+/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/df.merge.c:10488 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/df.merge.c:10498 */
-#line 10498
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/df.merge.c:10502 */
+#line 10502
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtof64x)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/df.merge.c:10498 */
+/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/df.merge.c:10502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/df.merge.c:10492 */
-#line 10492
+/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/df.merge.c:10496 */
+#line 10496
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memset)(void *__s ,
                                                                                                int __c ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset LOC=./src/df.merge.c:10492 */
+/* END FUNCTION-DECL-EXTERN memset LOC=./src/df.merge.c:10496 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbsinit LOC=./src/df.merge.c:10488 */
-#line 10488
+/* BEGIN FUNCTION-DECL-EXTERN mbsinit LOC=./src/df.merge.c:10492 */
+#line 10492
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mbsinit)(mbstate_t const   *__ps )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbsinit LOC=./src/df.merge.c:10488 */
+/* END FUNCTION-DECL-EXTERN mbsinit LOC=./src/df.merge.c:10492 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/df.merge.c:10503 */
-#line 10503
+/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/df.merge.c:10507 */
+#line 10507
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror LOC=./src/df.merge.c:10503 */
+/* END FUNCTION-DECL-EXTERN ferror LOC=./src/df.merge.c:10507 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csinf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __once_flag LOC=./src/df.merge.c:10512 */
-#line 10512 "./src/df.merge.c"
+/* BEGIN TYPEDEF __once_flag LOC=./src/df.merge.c:10516 */
+#line 10516 "./src/df.merge.c"
 typedef struct __anonstruct___once_flag_783464055 __once_flag;
-/* END TYPEDEF __once_flag LOC=./src/df.merge.c:10512 */
+/* END TYPEDEF __once_flag LOC=./src/df.merge.c:10516 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/df.merge.c:10516 */
-#line 10516
+/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/df.merge.c:10520 */
+#line 10520
 extern int ( __attribute__((__nonnull__(1,2))) scandir64)(char const   * __restrict  __dir ,
                                                           struct dirent64 *** __restrict  __namelist ,
                                                           int (*__selector)(struct dirent64  const  * ) ,
                                                           int (*__cmp)(struct dirent64  const  ** ,
                                                                        struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/df.merge.c:10516 */
+/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/df.merge.c:10520 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmal(long double  , long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/df.merge.c:10529 */
-#line 10529
+/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/df.merge.c:10533 */
+#line 10533
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execv)(char const   *__path ,
                                                                                               char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execv LOC=./src/df.merge.c:10529 */
+/* END FUNCTION-DECL-EXTERN execv LOC=./src/df.merge.c:10533 */
 
-/* BEGIN TYPEDEF int_fast16_t LOC=./src/df.merge.c:10534 */
-#line 10534 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_fast16_t LOC=./src/df.merge.c:10538 */
+#line 10538 "./src/df.merge.c"
 typedef long int_fast16_t;
-/* END TYPEDEF int_fast16_t LOC=./src/df.merge.c:10534 */
+/* END TYPEDEF int_fast16_t LOC=./src/df.merge.c:10538 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/df.merge.c:10538 */
-#line 10538
+/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/df.merge.c:10542 */
+#line 10542
 extern size_t ( __attribute__((__nonnull__(4))) fread_unlocked)(void * __restrict  __ptr ,
                                                                 size_t __size , size_t __n ,
                                                                 FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/df.merge.c:10538 */
+/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/df.merge.c:10542 */
 
-/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/df.merge.c:10544 */
-#line 10544 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/df.merge.c:10548 */
+#line 10548 "./src/df.merge.c"
 typedef unsigned short __kernel_gid16_t;
-/* END TYPEDEF __kernel_gid16_t LOC=./src/df.merge.c:10544 */
+/* END TYPEDEF __kernel_gid16_t LOC=./src/df.merge.c:10548 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fabsf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/df.merge.c:10553 */
-#line 10553
+/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/df.merge.c:10557 */
+#line 10557
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(5), __leaf__)) statx)(int __dirfd ,
                                                                                             char const   * __restrict  __path ,
                                                                                             int __flags ,
                                                                                             unsigned int __mask ,
                                                                                             struct statx * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN statx LOC=./src/df.merge.c:10553 */
+/* END FUNCTION-DECL-EXTERN statx LOC=./src/df.merge.c:10557 */
 
 /* BEGIN FUNCTION-DECL add_fs_type LOC=UNKNOWN */
 static void add_fs_type(char const   *fstype ) ;
 /* END FUNCTION-DECL add_fs_type LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/df.merge.c:10565 */
-#line 10565
+/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/df.merge.c:10569 */
+#line 10569
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) vfork)(void) ;
-/* END FUNCTION-DECL-EXTERN vfork LOC=./src/df.merge.c:10565 */
+/* END FUNCTION-DECL-EXTERN vfork LOC=./src/df.merge.c:10569 */
 
-/* BEGIN TYPEDEF int_least8_t LOC=./src/df.merge.c:10569 */
-#line 10569 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_least8_t LOC=./src/df.merge.c:10573 */
+#line 10573 "./src/df.merge.c"
 typedef __int_least8_t int_least8_t;
-/* END TYPEDEF int_least8_t LOC=./src/df.merge.c:10569 */
+/* END TYPEDEF int_least8_t LOC=./src/df.merge.c:10573 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/df.merge.c:10573 */
-#line 10573
+/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/df.merge.c:10577 */
+#line 10577
 extern size_t ( __attribute__((__nonnull__(4))) fread)(void * __restrict  __ptr ,
                                                        size_t __size , size_t __n ,
                                                        FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread LOC=./src/df.merge.c:10573 */
+/* END FUNCTION-DECL-EXTERN fread LOC=./src/df.merge.c:10577 */
 
-/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/df.merge.c:10579 */
-#line 10579
+/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/df.merge.c:10583 */
+#line 10583
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) abort)(void)  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN abort LOC=./src/df.merge.c:10579 */
+/* END FUNCTION-DECL-EXTERN abort LOC=./src/df.merge.c:10583 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_roundf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 
-/* BEGIN STRUCT sigcontext LOC=./src/df.merge.c:10588 */
-#line 10588 "./src/df.merge.c"
+/* BEGIN STRUCT sigcontext LOC=./src/df.merge.c:10592 */
+#line 10592 "./src/df.merge.c"
 struct sigcontext {
    __uint64_t r8 ;
    __uint64_t r9 ;
@@ -12767,17 +12771,17 @@ struct sigcontext {
    union __anonunion____missing_field_name_501150464 __annonCompField1 ;
    __uint64_t __reserved1[8] ;
 };
-/* END STRUCT sigcontext LOC=./src/df.merge.c:10588 */
+/* END STRUCT sigcontext LOC=./src/df.merge.c:10592 */
 
-/* BEGIN TYPEDEF off64_t LOC=./src/df.merge.c:10621 */
-#line 10621 "./src/df.merge.c"
+/* BEGIN TYPEDEF off64_t LOC=./src/df.merge.c:10625 */
+#line 10625 "./src/df.merge.c"
 typedef __off64_t off64_t;
-/* END TYPEDEF off64_t LOC=./src/df.merge.c:10621 */
+/* END TYPEDEF off64_t LOC=./src/df.merge.c:10625 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/df.merge.c:10625 */
-#line 10625
+/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/df.merge.c:10629 */
+#line 10629
 extern int posix_fallocate64(int __fd , off64_t __offset , off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/df.merge.c:10625 */
+/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/df.merge.c:10629 */
 
 /* BEGIN STRUCT-DECL fs_type_list LOC=./src/df.merge.c:1506 */
 #line 1506
@@ -12789,19 +12793,19 @@ struct fs_type_list ;
    _Float128 __builtin_asinf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/df.merge.c:10638 */
-#line 10638
+/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/df.merge.c:10642 */
+#line 10642
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tempnam)(char const   *__dir ,
                                                                                 char const   *__pfx )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/df.merge.c:10638 */
+/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/df.merge.c:10642 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/df.merge.c:10629 */
-#line 10629
+/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/df.merge.c:10633 */
+#line 10633
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigblock)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/df.merge.c:10629 */
+/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/df.merge.c:10633 */
 
-/* BEGIN STRUCT tm LOC=./src/df.merge.c:10643 */
-#line 10643 "./src/df.merge.c"
+/* BEGIN STRUCT tm LOC=./src/df.merge.c:10647 */
+#line 10647 "./src/df.merge.c"
 struct tm {
    int tm_sec ;
    int tm_min ;
@@ -12815,172 +12819,172 @@ struct tm {
    long tm_gmtoff ;
    char const   *tm_zone ;
 };
-/* END STRUCT tm LOC=./src/df.merge.c:10643 */
+/* END STRUCT tm LOC=./src/df.merge.c:10647 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/df.merge.c:10659 */
-#line 10659
+/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/df.merge.c:10663 */
+#line 10663
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memrchr)(void const   *__s ,
                                                                                                 int __c ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/df.merge.c:10659 */
+/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/df.merge.c:10663 */
 
-/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/df.merge.c:10665 */
-#line 10665 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/df.merge.c:10669 */
+#line 10669 "./src/df.merge.c"
 typedef long long __kernel_time64_t;
-/* END TYPEDEF __kernel_time64_t LOC=./src/df.merge.c:10665 */
+/* END TYPEDEF __kernel_time64_t LOC=./src/df.merge.c:10669 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/df.merge.c:10669 */
-#line 10669
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/df.merge.c:10673 */
+#line 10673
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r)(int category , char *buf ,
                                                                size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/df.merge.c:10669 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/df.merge.c:10673 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/df.merge.c:10674 */
-#line 10674
+/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/df.merge.c:10678 */
+#line 10678
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat64)(int __fd ,
                                                                                                 char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/df.merge.c:10674 */
+/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/df.merge.c:10678 */
 
 /* BEGIN FUNCTION-DECL c32tolower LOC=UNKNOWN */
 __inline wint_t c32tolower(wint_t wc ) ;
 /* END FUNCTION-DECL c32tolower LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/df.merge.c:10685 */
-#line 10685
+/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/df.merge.c:10689 */
+#line 10689
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoll_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoll_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/df.merge.c:10685 */
+/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/df.merge.c:10689 */
 
-/* BEGIN TYPEDEF __poll_t LOC=./src/df.merge.c:10691 */
-#line 10691 "./src/df.merge.c"
+/* BEGIN TYPEDEF __poll_t LOC=./src/df.merge.c:10695 */
+#line 10695 "./src/df.merge.c"
 typedef unsigned int __poll_t;
-/* END TYPEDEF __poll_t LOC=./src/df.merge.c:10691 */
+/* END TYPEDEF __poll_t LOC=./src/df.merge.c:10695 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/df.merge.c:10695 */
-#line 10695
-extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) tzset)(void) ;
-/* END FUNCTION-DECL-EXTERN tzset LOC=./src/df.merge.c:10695 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/df.merge.c:10699 */
+/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/df.merge.c:10699 */
 #line 10699
+extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) tzset)(void) ;
+/* END FUNCTION-DECL-EXTERN tzset LOC=./src/df.merge.c:10699 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/df.merge.c:10703 */
+#line 10703
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_minor)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/df.merge.c:10699 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/df.merge.c:10703 */
 
-/* BEGIN TYPEDEF __key_t LOC=./src/df.merge.c:10703 */
-#line 10703 "./src/df.merge.c"
-typedef int __key_t;
-/* END TYPEDEF __key_t LOC=./src/df.merge.c:10703 */
-
-/* BEGIN TYPEDEF key_t LOC=./src/df.merge.c:10707 */
+/* BEGIN TYPEDEF __key_t LOC=./src/df.merge.c:10707 */
 #line 10707 "./src/df.merge.c"
+typedef int __key_t;
+/* END TYPEDEF __key_t LOC=./src/df.merge.c:10707 */
+
+/* BEGIN TYPEDEF key_t LOC=./src/df.merge.c:10711 */
+#line 10711 "./src/df.merge.c"
 typedef __key_t key_t;
-/* END TYPEDEF key_t LOC=./src/df.merge.c:10707 */
+/* END TYPEDEF key_t LOC=./src/df.merge.c:10711 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_frexpl(long double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF Hash_comparator LOC=./src/df.merge.c:10716 */
-#line 10716 "./src/df.merge.c"
+/* BEGIN TYPEDEF Hash_comparator LOC=./src/df.merge.c:10720 */
+#line 10720 "./src/df.merge.c"
 typedef _Bool (*Hash_comparator)(void const   *entry1 , void const   *entry2 );
-/* END TYPEDEF Hash_comparator LOC=./src/df.merge.c:10716 */
+/* END TYPEDEF Hash_comparator LOC=./src/df.merge.c:10720 */
 
 /* BEGIN STRUCT-DECL saved_cwd LOC=./src/df.merge.c:1098 */
 #line 1098
 struct saved_cwd ;
 /* END STRUCT-DECL saved_cwd LOC=./src/df.merge.c:1098 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbsnwidth LOC=./src/df.merge.c:10720 */
-#line 10720
+/* BEGIN FUNCTION-DECL-EXTERN mbsnwidth LOC=./src/df.merge.c:10724 */
+#line 10724
 extern int mbsnwidth(char const   *buf , size_t nbytes , int flags ) ;
-/* END FUNCTION-DECL-EXTERN mbsnwidth LOC=./src/df.merge.c:10720 */
+/* END FUNCTION-DECL-EXTERN mbsnwidth LOC=./src/df.merge.c:10724 */
 
-/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/df.merge.c:10724 */
-#line 10724 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/df.merge.c:10728 */
+#line 10728 "./src/df.merge.c"
 struct __anonstruct_ldiv_t_790849867 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/df.merge.c:10724 */
+/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/df.merge.c:10728 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_huge_valf128(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF sigval_t LOC=./src/df.merge.c:10736 */
-#line 10736 "./src/df.merge.c"
+/* BEGIN TYPEDEF sigval_t LOC=./src/df.merge.c:10740 */
+#line 10740 "./src/df.merge.c"
 typedef __sigval_t sigval_t;
-/* END TYPEDEF sigval_t LOC=./src/df.merge.c:10736 */
+/* END TYPEDEF sigval_t LOC=./src/df.merge.c:10740 */
 
 /* BEGIN VARIABLE-DECL exit_status LOC=UNKNOWN */
 static int exit_status ;
 /* END VARIABLE-DECL exit_status LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/df.merge.c:10744 */
-#line 10744
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setegid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setegid LOC=./src/df.merge.c:10744 */
-
-/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/df.merge.c:10748 */
+/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/df.merge.c:10748 */
 #line 10748
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setegid)(__gid_t __gid ) ;
+/* END FUNCTION-DECL-EXTERN setegid LOC=./src/df.merge.c:10748 */
+
+/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/df.merge.c:10752 */
+#line 10752
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) duplocale)(locale_t __dataset ) ;
-/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/df.merge.c:10748 */
+/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/df.merge.c:10752 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_casinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_57186863 LOC=./src/df.merge.c:10757 */
-#line 10757
+/* BEGIN ENUM __anonenum_57186863 LOC=./src/df.merge.c:10761 */
+#line 10761
 enum __anonenum_57186863 {
     SS_ONSTACK = 1,
     SS_DISABLE = 2
 } ;
-/* END ENUM __anonenum_57186863 LOC=./src/df.merge.c:10757 */
+/* END ENUM __anonenum_57186863 LOC=./src/df.merge.c:10761 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/df.merge.c:10764 */
-#line 10764
+/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/df.merge.c:10768 */
+#line 10768
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) unlinkat)(int __fd ,
                                                                                                char const   *__name ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/df.merge.c:10764 */
+/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/df.merge.c:10768 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbsrtowcs LOC=./src/df.merge.c:10770 */
-#line 10770
+/* BEGIN FUNCTION-DECL-EXTERN mbsrtowcs LOC=./src/df.merge.c:10774 */
+#line 10774
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbsrtowcs)(wchar_t * __restrict  __dst ,
                                                                                    char const   ** __restrict  __src ,
                                                                                    size_t __len ,
                                                                                    mbstate_t * __restrict  __ps ) ;
-/* END FUNCTION-DECL-EXTERN mbsrtowcs LOC=./src/df.merge.c:10770 */
+/* END FUNCTION-DECL-EXTERN mbsrtowcs LOC=./src/df.merge.c:10774 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbrtoc32 LOC=./src/df.merge.c:10777 */
-#line 10777
+/* BEGIN FUNCTION-DECL-EXTERN mbrtoc32 LOC=./src/df.merge.c:10781 */
+#line 10781
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbrtoc32)(char32_t * __restrict  __pc32 ,
                                                                                   char const   * __restrict  __s ,
                                                                                   size_t __n ,
                                                                                   mbstate_t * __restrict  __p ) ;
-/* END FUNCTION-DECL-EXTERN mbrtoc32 LOC=./src/df.merge.c:10777 */
+/* END FUNCTION-DECL-EXTERN mbrtoc32 LOC=./src/df.merge.c:10781 */
 
-/* BEGIN TYPEDEF ldiv_t LOC=./src/df.merge.c:10784 */
-#line 10784 "./src/df.merge.c"
+/* BEGIN TYPEDEF ldiv_t LOC=./src/df.merge.c:10788 */
+#line 10788 "./src/df.merge.c"
 typedef struct __anonstruct_ldiv_t_790849867 ldiv_t;
-/* END TYPEDEF ldiv_t LOC=./src/df.merge.c:10784 */
+/* END TYPEDEF ldiv_t LOC=./src/df.merge.c:10788 */
 
 /* BEGIN FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fdimf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/df.merge.c:10793 */
-#line 10793
+/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/df.merge.c:10797 */
+#line 10797
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigisemptyset)(sigset_t const   *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/df.merge.c:10793 */
+/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/df.merge.c:10797 */
 
 /* BEGIN FUNCTION-DECL __builtin_os_log_format_buffer_size LOC=BUILTIN */
 /* compiler builtin: 
@@ -13007,8 +13011,8 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    long double __builtin_cabsl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cabsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_xinitialize LOC=./src/df.merge.c:10822 */
-#line 10822
+/* BEGIN FUNCTION-DECL-EXTERN hash_xinitialize LOC=./src/df.merge.c:10826 */
+#line 10826
 extern Hash_table *( __attribute__((__warn_unused_result__)) hash_xinitialize)(size_t candidate ,
                                                                                Hash_tuning const   *tuning ,
                                                                                size_t (*hasher)(void const   *entry ,
@@ -13017,10 +13021,10 @@ extern Hash_table *( __attribute__((__warn_unused_result__)) hash_xinitialize)(s
                                                                                                    void const   *entry2 ) ,
                                                                                void (*data_freer)(void *entry ) )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN hash_xinitialize LOC=./src/df.merge.c:10822 */
+/* END FUNCTION-DECL-EXTERN hash_xinitialize LOC=./src/df.merge.c:10826 */
 
-/* BEGIN STRUCT drand48_data LOC=./src/df.merge.c:10833 */
-#line 10833 "./src/df.merge.c"
+/* BEGIN STRUCT drand48_data LOC=./src/df.merge.c:10837 */
+#line 10837 "./src/df.merge.c"
 struct drand48_data {
    unsigned short __x[3] ;
    unsigned short __old_x[3] ;
@@ -13028,7 +13032,7 @@ struct drand48_data {
    unsigned short __init ;
    unsigned long long __a ;
 };
-/* END STRUCT drand48_data LOC=./src/df.merge.c:10833 */
+/* END STRUCT drand48_data LOC=./src/df.merge.c:10837 */
 
 /* BEGIN FUNCTION-DECL get_header LOC=UNKNOWN */
 static void get_header(void) ;
@@ -13044,83 +13048,87 @@ struct __pthread_mutex_s ;
    _Float128 __builtin_logf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_logf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN towctrans_l LOC=./src/df.merge.c:10847 */
-#line 10847
+/* BEGIN FUNCTION-DECL-EXTERN towctrans_l LOC=./src/df.merge.c:10851 */
+#line 10851
 extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) towctrans_l)(wint_t __wc ,
                                                                                      wctrans_t __desc ,
                                                                                      locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN towctrans_l LOC=./src/df.merge.c:10847 */
+/* END FUNCTION-DECL-EXTERN towctrans_l LOC=./src/df.merge.c:10851 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/df.merge.c:10858 */
-#line 10858
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/df.merge.c:10862 */
+#line 10862
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                           __off_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/df.merge.c:10858 */
+/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/df.merge.c:10862 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/df.merge.c:10864 */
-#line 10864
+/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/df.merge.c:10868 */
+#line 10868
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchrnul)(char const   *__s ,
                                                                                                   int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/df.merge.c:10864 */
+/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/df.merge.c:10868 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_nearbyintf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_nearbyintf LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_pmFh_envp LOC=UNKNOWN */
+char **_TIG_IZ_pmFh_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_pmFh_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_stdarg_start LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_stdarg_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_stdarg_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/df.merge.c:10879 */
-#line 10879
+/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/df.merge.c:10883 */
+#line 10883
 extern int ( __attribute__((__nonnull__(1))) rpl_nanosleep)(struct timespec  const  *__rqtp ,
                                                             struct timespec *__rmtp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/df.merge.c:10879 */
+/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/df.merge.c:10883 */
 
 /* BEGIN FUNCTION-DECL __builtin_acoshf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_acoshf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL dcnpgettext_expr LOC=./src/df.merge.c:10884 */
-#line 10884
+/* BEGIN FUNCTION-DECL dcnpgettext_expr LOC=./src/df.merge.c:10888 */
+#line 10888
 __inline static char const   *dcnpgettext_expr(char const   *domain , char const   *msgctxt ,
                                                char const   *msgid , char const   *msgid_plural ,
                                                unsigned long n , int category ) ;
-/* END FUNCTION-DECL dcnpgettext_expr LOC=./src/df.merge.c:10884 */
+/* END FUNCTION-DECL dcnpgettext_expr LOC=./src/df.merge.c:10888 */
 
 /* BEGIN FUNCTION-DECL __builtin___get_unsafe_stack_top LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin___get_unsafe_stack_top(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_top LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_424050557 LOC=./src/df.merge.c:10904 */
-#line 10904
+/* BEGIN ENUM __anonenum_424050557 LOC=./src/df.merge.c:10908 */
+#line 10908
 enum __anonenum_424050557 {
     TIMESPEC_RESOLUTION = 1000000000
 } ;
-/* END ENUM __anonenum_424050557 LOC=./src/df.merge.c:10904 */
+/* END ENUM __anonenum_424050557 LOC=./src/df.merge.c:10908 */
 
-/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/df.merge.c:10900 */
-#line 10900 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/df.merge.c:10904 */
+#line 10904 "./src/df.merge.c"
 typedef union __anonunion_pthread_mutexattr_t_488594144 pthread_mutexattr_t;
-/* END TYPEDEF pthread_mutexattr_t LOC=./src/df.merge.c:10900 */
+/* END TYPEDEF pthread_mutexattr_t LOC=./src/df.merge.c:10904 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/df.merge.c:10910 */
-#line 10910
+/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/df.merge.c:10914 */
+#line 10914
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fchmodat)(int __fd ,
                                                                                                char const   *__file ,
                                                                                                __mode_t __mode ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/df.merge.c:10910 */
+/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/df.merge.c:10914 */
 
 /* BEGIN FUNCTION-DECL __builtin_bitreverse64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13147,141 +13155,141 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    float __builtin_nanf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/df.merge.c:10947 */
-#line 10947
+/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/df.merge.c:10951 */
+#line 10951
 extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char const   * __restrict  __format 
                                                  , ...) ;
-/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/df.merge.c:10947 */
+/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/df.merge.c:10951 */
 
 /* BEGIN FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_modfl(long double  , long double * ) ;  */
 /* END FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctype LOC=./src/df.merge.c:10957 */
-#line 10957
+/* BEGIN FUNCTION-DECL-EXTERN wctype LOC=./src/df.merge.c:10961 */
+#line 10961
 extern  __attribute__((__nothrow__)) wctype_t ( __attribute__((__leaf__)) wctype)(char const   *__property ) ;
-/* END FUNCTION-DECL-EXTERN wctype LOC=./src/df.merge.c:10957 */
+/* END FUNCTION-DECL-EXTERN wctype LOC=./src/df.merge.c:10961 */
 
-/* BEGIN TYPEDEF id_t LOC=./src/df.merge.c:10961 */
-#line 10961 "./src/df.merge.c"
+/* BEGIN TYPEDEF id_t LOC=./src/df.merge.c:10965 */
+#line 10965 "./src/df.merge.c"
 typedef __id_t id_t;
-/* END TYPEDEF id_t LOC=./src/df.merge.c:10961 */
+/* END TYPEDEF id_t LOC=./src/df.merge.c:10965 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_exp2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vswscanf LOC=./src/df.merge.c:10970 */
-#line 10970
+/* BEGIN FUNCTION-DECL-EXTERN vswscanf LOC=./src/df.merge.c:10974 */
+#line 10974
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vswscanf)(wchar_t const   * __restrict  __s ,
                                                                                wchar_t const   * __restrict  __format ,
                                                                                __gnuc_va_list __arg )  __asm__("__isoc23_vswscanf")  ;
-/* END FUNCTION-DECL-EXTERN vswscanf LOC=./src/df.merge.c:10970 */
+/* END FUNCTION-DECL-EXTERN vswscanf LOC=./src/df.merge.c:10974 */
 
-/* BEGIN TYPEDEF __compar_fn_t LOC=./src/df.merge.c:10976 */
-#line 10976 "./src/df.merge.c"
+/* BEGIN TYPEDEF __compar_fn_t LOC=./src/df.merge.c:10980 */
+#line 10980 "./src/df.merge.c"
 typedef int (*__compar_fn_t)(void const   * , void const   * );
-/* END TYPEDEF __compar_fn_t LOC=./src/df.merge.c:10976 */
+/* END TYPEDEF __compar_fn_t LOC=./src/df.merge.c:10980 */
 
-/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/df.merge.c:10980 */
-#line 10980
+/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/df.merge.c:10984 */
+#line 10984
 extern char **environ ;
-/* END VARIABLE-DECL-EXTERN environ LOC=./src/df.merge.c:10980 */
+/* END VARIABLE-DECL-EXTERN environ LOC=./src/df.merge.c:10984 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_expf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/df.merge.c:10989 */
-#line 10989 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/df.merge.c:10993 */
+#line 10993 "./src/df.merge.c"
 typedef __kernel_ulong_t __kernel_ino_t;
-/* END TYPEDEF __kernel_ino_t LOC=./src/df.merge.c:10989 */
+/* END TYPEDEF __kernel_ino_t LOC=./src/df.merge.c:10993 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstol_l LOC=./src/df.merge.c:10993 */
-#line 10993
+/* BEGIN FUNCTION-DECL-EXTERN wcstol_l LOC=./src/df.merge.c:10997 */
+#line 10997
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) wcstol_l)(wchar_t const   * __restrict  __nptr ,
                                                                                 wchar_t ** __restrict  __endptr ,
                                                                                 int __base ,
                                                                                 locale_t __loc )  __asm__("__isoc23_wcstol_l")  ;
-/* END FUNCTION-DECL-EXTERN wcstol_l LOC=./src/df.merge.c:10993 */
+/* END FUNCTION-DECL-EXTERN wcstol_l LOC=./src/df.merge.c:10997 */
 
 /* BEGIN VARIABLE-DECL file_systems_processed LOC=UNKNOWN */
 static _Bool file_systems_processed ;
 /* END VARIABLE-DECL file_systems_processed LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/df.merge.c:11010 */
-#line 11010
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/df.merge.c:11014 */
+#line 11014
 extern char *quotearg_n_style_mem(int n , enum quoting_style s , char const   *arg ,
                                   size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/df.merge.c:11010 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/df.merge.c:11014 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/df.merge.c:11004 */
-#line 11004
+/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/df.merge.c:11008 */
+#line 11008
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mbtowc)(wchar_t * __restrict  __pwc ,
                                                                              char const   * __restrict  __s ,
                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/df.merge.c:11004 */
+/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/df.merge.c:11008 */
 
-/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/df.merge.c:11015 */
-#line 11015
+/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/df.merge.c:11019 */
+#line 11019
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) labs)(long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN labs LOC=./src/df.merge.c:11015 */
+/* END FUNCTION-DECL-EXTERN labs LOC=./src/df.merge.c:11019 */
 
 /* BEGIN STRUCT-DECL tm LOC=./src/df.merge.c:942 */
 #line 942
 struct tm ;
 /* END STRUCT-DECL tm LOC=./src/df.merge.c:942 */
 
-/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:11023 */
-#line 11023 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:11027 */
+#line 11027 "./src/df.merge.c"
 union __anonunion_pthread_mutex_t_335460617 {
    struct __pthread_mutex_s __data ;
    char __size[40] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:11023 */
+/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/df.merge.c:11027 */
 
-/* BEGIN TYPEDEF int_least64_t LOC=./src/df.merge.c:11031 */
-#line 11031 "./src/df.merge.c"
+/* BEGIN TYPEDEF int_least64_t LOC=./src/df.merge.c:11035 */
+#line 11035 "./src/df.merge.c"
 typedef __int_least64_t int_least64_t;
-/* END TYPEDEF int_least64_t LOC=./src/df.merge.c:11031 */
+/* END TYPEDEF int_least64_t LOC=./src/df.merge.c:11035 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstod LOC=./src/df.merge.c:11035 */
-#line 11035
+/* BEGIN FUNCTION-DECL-EXTERN wcstod LOC=./src/df.merge.c:11039 */
+#line 11039
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) wcstod)(wchar_t const   * __restrict  __nptr ,
                                                                                 wchar_t ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN wcstod LOC=./src/df.merge.c:11035 */
+/* END FUNCTION-DECL-EXTERN wcstod LOC=./src/df.merge.c:11039 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/df.merge.c:11040 */
-#line 11040
+/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/df.merge.c:11044 */
+#line 11044
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chmod)(char const   *__file ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN chmod LOC=./src/df.merge.c:11040 */
+/* END FUNCTION-DECL-EXTERN chmod LOC=./src/df.merge.c:11044 */
 
-/* BEGIN STRUCT _ymmh_state LOC=./src/df.merge.c:11045 */
-#line 11045 "./src/df.merge.c"
+/* BEGIN STRUCT _ymmh_state LOC=./src/df.merge.c:11049 */
+#line 11049 "./src/df.merge.c"
 struct _ymmh_state {
    __uint32_t ymmh_space[64] ;
 };
-/* END STRUCT _ymmh_state LOC=./src/df.merge.c:11045 */
+/* END STRUCT _ymmh_state LOC=./src/df.merge.c:11049 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/df.merge.c:11051 */
-#line 11051
+/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/df.merge.c:11055 */
+#line 11055
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) qgcvt)(long double __value ,
                                                                                               int __ndigit ,
                                                                                               char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/df.merge.c:11051 */
+/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/df.merge.c:11055 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/df.merge.c:11057 */
-#line 11057
+/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/df.merge.c:11061 */
+#line 11061
 extern void *x2nrealloc(void *p , size_t *pn , size_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/df.merge.c:11057 */
+/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/df.merge.c:11061 */
 
-/* BEGIN STRUCT hash_tuning LOC=./src/df.merge.c:11061 */
-#line 11061 "./src/df.merge.c"
+/* BEGIN STRUCT hash_tuning LOC=./src/df.merge.c:11065 */
+#line 11065 "./src/df.merge.c"
 struct hash_tuning {
    float shrink_threshold ;
    float shrink_factor ;
@@ -13289,57 +13297,57 @@ struct hash_tuning {
    float growth_factor ;
    _Bool is_n_buckets ;
 };
-/* END STRUCT hash_tuning LOC=./src/df.merge.c:11061 */
+/* END STRUCT hash_tuning LOC=./src/df.merge.c:11065 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned int __builtin_rotateleft32(unsigned int  , unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/df.merge.c:11076 */
-#line 11076 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/df.merge.c:11080 */
+#line 11080 "./src/df.merge.c"
 typedef unsigned int __kernel_uid32_t;
-/* END TYPEDEF __kernel_uid32_t LOC=./src/df.merge.c:11076 */
+/* END TYPEDEF __kernel_uid32_t LOC=./src/df.merge.c:11080 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sinhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/df.merge.c:11085 */
-#line 11085
-extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/df.merge.c:11085 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/df.merge.c:11089 */
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/df.merge.c:11089 */
 #line 11089
+extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
+/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/df.merge.c:11089 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/df.merge.c:11093 */
+#line 11093
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigorset)(sigset_t *__set ,
                                                                                                    sigset_t const   *__left ,
                                                                                                    sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/df.merge.c:11089 */
+/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/df.merge.c:11093 */
 
-/* BEGIN ENUM __anonenum_365337802 LOC=./src/df.merge.c:11095 */
-#line 11095
+/* BEGIN ENUM __anonenum_365337802 LOC=./src/df.merge.c:11099 */
+#line 11099
 enum __anonenum_365337802 {
     GETOPT_HELP_CHAR = -130,
     GETOPT_VERSION_CHAR = -131
 } ;
-/* END ENUM __anonenum_365337802 LOC=./src/df.merge.c:11095 */
+/* END ENUM __anonenum_365337802 LOC=./src/df.merge.c:11099 */
 
-/* BEGIN TYPEDEF int64_t LOC=./src/df.merge.c:11102 */
-#line 11102 "./src/df.merge.c"
+/* BEGIN TYPEDEF int64_t LOC=./src/df.merge.c:11106 */
+#line 11106 "./src/df.merge.c"
 typedef __int64_t int64_t;
-/* END TYPEDEF int64_t LOC=./src/df.merge.c:11102 */
+/* END TYPEDEF int64_t LOC=./src/df.merge.c:11106 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/df.merge.c:11106 */
-#line 11106
-extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN pclose LOC=./src/df.merge.c:11106 */
-
-/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/df.merge.c:11110 */
+/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/df.merge.c:11110 */
 #line 11110
+extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN pclose LOC=./src/df.merge.c:11110 */
+
+/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/df.merge.c:11114 */
+#line 11114
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) alarm)(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN alarm LOC=./src/df.merge.c:11110 */
+/* END FUNCTION-DECL-EXTERN alarm LOC=./src/df.merge.c:11114 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 /* compiler builtin: 
@@ -13347,25 +13355,25 @@ extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) al
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/df.merge.c:11120 */
-#line 11120
+/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/df.merge.c:11124 */
+#line 11124
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigstack)(struct sigstack *__ss ,
                                                                                                struct sigstack *__oss ) ;
-/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/df.merge.c:11120 */
+/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/df.merge.c:11124 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/df.merge.c:11125 */
-#line 11125
-extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/df.merge.c:11125 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/df.merge.c:11129 */
+/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/df.merge.c:11129 */
 #line 11129
+extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
+/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/df.merge.c:11129 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/df.merge.c:11133 */
+#line 11133
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime_r)(time_t const   * __restrict  __timer ,
                                                                                 char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/df.merge.c:11129 */
+/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/df.merge.c:11133 */
 
-/* BEGIN ENUM __anonenum_513775621 LOC=./src/df.merge.c:11138 */
-#line 11138
+/* BEGIN ENUM __anonenum_513775621 LOC=./src/df.merge.c:11142 */
+#line 11142
 enum __anonenum_513775621 {
     DT_UNKNOWN = 0,
     DT_FIFO = 1,
@@ -13377,34 +13385,34 @@ enum __anonenum_513775621 {
     DT_SOCK = 12,
     DT_WHT = 14
 } ;
-/* END ENUM __anonenum_513775621 LOC=./src/df.merge.c:11138 */
+/* END ENUM __anonenum_513775621 LOC=./src/df.merge.c:11142 */
 
-/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/df.merge.c:11134 */
-#line 11134 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/df.merge.c:11138 */
+#line 11138 "./src/df.merge.c"
 typedef struct __anonstruct___kernel_fd_set_990674701 __kernel_fd_set;
-/* END TYPEDEF __kernel_fd_set LOC=./src/df.merge.c:11134 */
+/* END TYPEDEF __kernel_fd_set LOC=./src/df.merge.c:11138 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_least64_t LOC=./src/df.merge.c:11157 */
-#line 11157 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint_least64_t LOC=./src/df.merge.c:11161 */
+#line 11161 "./src/df.merge.c"
 typedef __uint_least64_t uint_least64_t;
-/* END TYPEDEF uint_least64_t LOC=./src/df.merge.c:11157 */
+/* END TYPEDEF uint_least64_t LOC=./src/df.merge.c:11161 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/df.merge.c:11169 */
-#line 11169
+/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/df.merge.c:11173 */
+#line 11173
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat64)(int __fd ,
                                                                                               struct stat64 *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/df.merge.c:11169 */
+/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/df.merge.c:11173 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/df.merge.c:11161 */
-#line 11161
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/df.merge.c:11165 */
+#line 11165
 extern void __error_at_line_alias(int __status , int __errnum , char const   *__fname ,
                                   unsigned int __line , char const   *__format  , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/df.merge.c:11161 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/df.merge.c:11165 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjl LOC=BUILTIN */
 /* compiler builtin: 
@@ -13421,12 +13429,12 @@ extern void __error_at_line_alias(int __status , int __errnum , char const   *__
    long double __builtin_sqrtl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/df.merge.c:11189 */
-#line 11189
+/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/df.merge.c:11193 */
+#line 11193
 extern __ssize_t ( __attribute__((__nonnull__(4))) getdelim)(char ** __restrict  __lineptr ,
                                                              size_t * __restrict  __n ,
                                                              int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/df.merge.c:11189 */
+/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/df.merge.c:11193 */
 
 /* BEGIN VARIABLE-DEF all_args_string LOC=UNKNOWN */
 static char *all_args_string  ;
@@ -13441,8 +13449,8 @@ static void get_all_entries(void) ;
    _Float128 __builtin_lgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/df.merge.c:11208 */
-#line 11208
+/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/df.merge.c:11212 */
+#line 11212
 enum __anonenum_315186338___0 {
     _SC_ARG_MAX___0 = 0,
     _SC_CHILD_MAX___0 = 1,
@@ -13662,7 +13670,7 @@ enum __anonenum_315186338___0 {
     _SC_MINSIGSTKSZ___0 = 249,
     _SC_SIGSTKSZ___0 = 250
 } ;
-/* END ENUM __anonenum_315186338___0 LOC=./src/df.merge.c:11208 */
+/* END ENUM __anonenum_315186338___0 LOC=./src/df.merge.c:11212 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13679,49 +13687,49 @@ enum __anonenum_315186338___0 {
    float __builtin_nansf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nansf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/df.merge.c:11445 */
-#line 11445
+/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/df.merge.c:11449 */
+#line 11449
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtod_l)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/df.merge.c:11445 */
+/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/df.merge.c:11449 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erfcf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/df.merge.c:11456 */
-#line 11456
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/df.merge.c:11460 */
+#line 11460
 extern int ( __attribute__((__nonnull__(1))) fgetpos)(FILE * __restrict  __stream ,
                                                       fpos_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/df.merge.c:11456 */
+/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/df.merge.c:11460 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/df.merge.c:11461 */
-#line 11461
-extern int ( __attribute__((__nonnull__(1))) fgetc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/df.merge.c:11461 */
-
-/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/df.merge.c:11465 */
+/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/df.merge.c:11465 */
 #line 11465
+extern int ( __attribute__((__nonnull__(1))) fgetc)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/df.merge.c:11465 */
+
+/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/df.merge.c:11469 */
+#line 11469
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memfrob)(void *__s ,
                                                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/df.merge.c:11465 */
+/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/df.merge.c:11469 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/df.merge.c:11470 */
-#line 11470
+/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/df.merge.c:11474 */
+#line 11474
 extern time_t ( __attribute__((__nonnull__(2))) mktime_z)(timezone_t __tz , struct tm * __restrict  __tm ) ;
-/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/df.merge.c:11470 */
+/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/df.merge.c:11474 */
 
-/* BEGIN TYPEDEF Hash_processor LOC=./src/df.merge.c:11474 */
-#line 11474 "./src/df.merge.c"
+/* BEGIN TYPEDEF Hash_processor LOC=./src/df.merge.c:11478 */
+#line 11478 "./src/df.merge.c"
 typedef _Bool (*Hash_processor)(void *entry , void *processor_data );
-/* END TYPEDEF Hash_processor LOC=./src/df.merge.c:11474 */
+/* END TYPEDEF Hash_processor LOC=./src/df.merge.c:11478 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/df.merge.c:11478 */
-#line 11478
+/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/df.merge.c:11482 */
+#line 11482
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) imaxabs)(intmax_t __n )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/df.merge.c:11478 */
+/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/df.merge.c:11482 */
 
 /* BEGIN FUNCTION-DECL npgettext_aux LOC=UNKNOWN */
 __inline static char const   *npgettext_aux(char const   *domain , char const   *msg_ctxt_id ,
@@ -13735,13 +13743,13 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
                                , ...) ;  */
 /* END FUNCTION-DECL __builtin___sprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int32_t LOC=./src/df.merge.c:11494 */
-#line 11494 "./src/df.merge.c"
-typedef __int32_t int32_t;
-/* END TYPEDEF int32_t LOC=./src/df.merge.c:11494 */
-
-/* BEGIN STRUCT random_data LOC=./src/df.merge.c:11498 */
+/* BEGIN TYPEDEF int32_t LOC=./src/df.merge.c:11498 */
 #line 11498 "./src/df.merge.c"
+typedef __int32_t int32_t;
+/* END TYPEDEF int32_t LOC=./src/df.merge.c:11498 */
+
+/* BEGIN STRUCT random_data LOC=./src/df.merge.c:11502 */
+#line 11502 "./src/df.merge.c"
 struct random_data {
    int32_t *fptr ;
    int32_t *rptr ;
@@ -13751,20 +13759,20 @@ struct random_data {
    int rand_sep ;
    int32_t *end_ptr ;
 };
-/* END STRUCT random_data LOC=./src/df.merge.c:11498 */
+/* END STRUCT random_data LOC=./src/df.merge.c:11502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/df.merge.c:11510 */
-#line 11510
+/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/df.merge.c:11514 */
+#line 11514
 extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_scanf")  ;
-/* END FUNCTION-DECL-EXTERN scanf LOC=./src/df.merge.c:11510 */
+/* END FUNCTION-DECL-EXTERN scanf LOC=./src/df.merge.c:11514 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinhl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_591253365 LOC=./src/df.merge.c:11519 */
-#line 11519
+/* BEGIN ENUM __anonenum_591253365 LOC=./src/df.merge.c:11523 */
+#line 11523
 enum __anonenum_591253365 {
     human_ceiling = 0,
     human_round_to_nearest = 1,
@@ -13777,7 +13785,7 @@ enum __anonenum_591253365 {
     human_SI = 128,
     human_B = 256
 } ;
-/* END ENUM __anonenum_591253365 LOC=./src/df.merge.c:11519 */
+/* END ENUM __anonenum_591253365 LOC=./src/df.merge.c:11523 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -13794,10 +13802,10 @@ enum __anonenum_591253365 {
    _Float16 __builtin_powf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_powf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/df.merge.c:11549 */
-#line 11549
+/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/df.merge.c:11553 */
+#line 11553
 extern int puts(char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN puts LOC=./src/df.merge.c:11549 */
+/* END FUNCTION-DECL-EXTERN puts LOC=./src/df.merge.c:11553 */
 
 /* BEGIN FUNCTION-DECL __builtin_addc LOC=BUILTIN */
 /* compiler builtin: 
@@ -13816,68 +13824,68 @@ extern int puts(char const   *__s ) ;
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/df.merge.c:11570 */
-#line 11570
-extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chdir LOC=./src/df.merge.c:11570 */
-
-/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/df.merge.c:11580 */
-#line 11580
-extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
-/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/df.merge.c:11580 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/df.merge.c:11574 */
+/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/df.merge.c:11574 */
 #line 11574
+extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chdir)(char const   *__path ) ;
+/* END FUNCTION-DECL-EXTERN chdir LOC=./src/df.merge.c:11574 */
+
+/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/df.merge.c:11584 */
+#line 11584
+extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
+/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/df.merge.c:11584 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/df.merge.c:11578 */
+#line 11578
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fmemopen)(void *__s ,
                                                                                  size_t __len ,
                                                                                  char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/df.merge.c:11574 */
+/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/df.merge.c:11578 */
 
-/* BEGIN ENUM __anonenum_819735966 LOC=./src/df.merge.c:11584 */
-#line 11584
+/* BEGIN ENUM __anonenum_819735966 LOC=./src/df.merge.c:11588 */
+#line 11588
 enum __anonenum_819735966 {
     LOG10_TIMESPEC_HZ = 9
 } ;
-/* END ENUM __anonenum_819735966 LOC=./src/df.merge.c:11584 */
+/* END ENUM __anonenum_819735966 LOC=./src/df.merge.c:11588 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_powf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/df.merge.c:11595 */
-#line 11595 "./src/df.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/df.merge.c:11599 */
+#line 11599 "./src/df.merge.c"
 union __anonunion_pthread_rwlock_t_656928968 {
    struct __pthread_rwlock_arch_t __data ;
    char __size[56] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/df.merge.c:11595 */
+/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/df.merge.c:11599 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/df.merge.c:11607 */
-#line 11607
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/df.merge.c:11611 */
+#line 11611
 extern char *quotearg_n_custom_mem(int n , char const   *left_quote , char const   *right_quote ,
                                    char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/df.merge.c:11607 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/df.merge.c:11611 */
 
 /* BEGIN FUNCTION-DECL add_to_grand_total LOC=UNKNOWN */
 static void add_to_grand_total(struct field_values_t *bv , struct field_values_t *iv ) ;
 /* END FUNCTION-DECL add_to_grand_total LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/df.merge.c:11618 */
-#line 11618
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/df.merge.c:11622 */
+#line 11622
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,4), __leaf__)) strncasecmp_l)(char const   *__s1 ,
                                                                                                         char const   *__s2 ,
                                                                                                         size_t __n ,
                                                                                                         locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/df.merge.c:11618 */
+/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/df.merge.c:11622 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/df.merge.c:11612 */
-#line 11612
+/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/df.merge.c:11616 */
+#line 11616
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkfifoat)(int __fd ,
                                                                                                char const   *__path ,
                                                                                                __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/df.merge.c:11612 */
+/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/df.merge.c:11616 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -13890,25 +13898,25 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
 struct __anonstruct__sigev_thread_746770901 ;
 /* END STRUCT-DECL __anonstruct__sigev_thread_746770901 LOC=./src/df.merge.c:1542 */
 
-/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/df.merge.c:11640 */
-#line 11640
+/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/df.merge.c:11644 */
+#line 11644
 extern DIR *( __attribute__((__nonnull__(1))) opendir)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN opendir LOC=./src/df.merge.c:11640 */
+/* END FUNCTION-DECL-EXTERN opendir LOC=./src/df.merge.c:11644 */
 
 /* BEGIN FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_is_aligned(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/df.merge.c:11636 */
-#line 11636
+/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/df.merge.c:11640 */
+#line 11640
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) llabs)(long long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN llabs LOC=./src/df.merge.c:11636 */
+/* END FUNCTION-DECL-EXTERN llabs LOC=./src/df.merge.c:11640 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/df.merge.c:11644 */
-#line 11644
+/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/df.merge.c:11648 */
+#line 11648
 extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
-/* END FUNCTION-DECL-EXTERN gettime LOC=./src/df.merge.c:11644 */
+/* END FUNCTION-DECL-EXTERN gettime LOC=./src/df.merge.c:11648 */
 
 /* BEGIN FUNCTION-DECL __builtin_nextafter LOC=BUILTIN */
 /* compiler builtin: 
@@ -13920,10 +13928,10 @@ extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
 struct __locale_data ;
 /* END STRUCT-DECL __locale_data LOC=./src/df.merge.c:906 */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/df.merge.c:11657 */
-#line 11657
+/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/df.merge.c:11661 */
+#line 11661
 extern unsigned int error_message_count ;
-/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/df.merge.c:11657 */
+/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/df.merge.c:11661 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorl LOC=BUILTIN */
 /* compiler builtin: 
@@ -13945,17 +13953,17 @@ struct infomap ;
    void __builtin_varargs_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_varargs_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstold LOC=./src/df.merge.c:11681 */
-#line 11681
+/* BEGIN FUNCTION-DECL-EXTERN wcstold LOC=./src/df.merge.c:11685 */
+#line 11685
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__leaf__)) wcstold)(wchar_t const   * __restrict  __nptr ,
                                                                                       wchar_t ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN wcstold LOC=./src/df.merge.c:11681 */
+/* END FUNCTION-DECL-EXTERN wcstold LOC=./src/df.merge.c:11685 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswlower_l LOC=./src/df.merge.c:11671 */
-#line 11671
+/* BEGIN FUNCTION-DECL-EXTERN iswlower_l LOC=./src/df.merge.c:11675 */
+#line 11675
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswlower_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswlower_l LOC=./src/df.merge.c:11671 */
+/* END FUNCTION-DECL-EXTERN iswlower_l LOC=./src/df.merge.c:11675 */
 
 /* BEGIN ENUM-DECL __anonenum_437032235___0 LOC=./src/df.merge.c:1326 */
 #line 1326
@@ -13967,17 +13975,17 @@ enum __anonenum_437032235___0 ;
    _Complex long double __builtin_catanl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/df.merge.c:11686 */
-#line 11686
+/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/df.merge.c:11690 */
+#line 11690
 __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_64 LOC=./src/df.merge.c:11686 */
+/* END FUNCTION-DECL __bswap_64 LOC=./src/df.merge.c:11690 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoq LOC=./src/df.merge.c:11695 */
-#line 11695
+/* BEGIN FUNCTION-DECL-EXTERN wcstoq LOC=./src/df.merge.c:11699 */
+#line 11699
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) wcstoq)(wchar_t const   * __restrict  __nptr ,
                                                                                    wchar_t ** __restrict  __endptr ,
                                                                                    int __base )  __asm__("__isoc23_wcstoll")  ;
-/* END FUNCTION-DECL-EXTERN wcstoq LOC=./src/df.merge.c:11695 */
+/* END FUNCTION-DECL-EXTERN wcstoq LOC=./src/df.merge.c:11699 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -14013,13 +14021,17 @@ enum __anonenum_91015150___0 ;
    _Complex long double __builtin_casinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/df.merge.c:11730 */
-#line 11730
+/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/df.merge.c:11734 */
+#line 11734
 extern int ( __attribute__((__nonnull__(2))) fputc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/df.merge.c:11730 */
+/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/df.merge.c:11734 */
 
-/* BEGIN STRUCT _fpstate LOC=./src/df.merge.c:11734 */
-#line 11734 "./src/df.merge.c"
+/* BEGIN VARIABLE-DEF _TIG_IZ_pmFh_argv LOC=UNKNOWN */
+char **_TIG_IZ_pmFh_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_pmFh_argv LOC=UNKNOWN */
+
+/* BEGIN STRUCT _fpstate LOC=./src/df.merge.c:11738 */
+#line 11738 "./src/df.merge.c"
 struct _fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -14033,10 +14045,10 @@ struct _fpstate {
    struct _xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _fpstate LOC=./src/df.merge.c:11734 */
+/* END STRUCT _fpstate LOC=./src/df.merge.c:11738 */
 
-/* BEGIN STRUCT lconv LOC=./src/df.merge.c:11750 */
-#line 11750 "./src/df.merge.c"
+/* BEGIN STRUCT lconv LOC=./src/df.merge.c:11754 */
+#line 11754 "./src/df.merge.c"
 struct lconv {
    char *decimal_point ;
    char *thousands_sep ;
@@ -14063,11 +14075,7 @@ struct lconv {
    char int_p_sign_posn ;
    char int_n_sign_posn ;
 };
-/* END STRUCT lconv LOC=./src/df.merge.c:11750 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_c6W0_argc LOC=UNKNOWN */
-int _TIG_IZ_c6W0_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_c6W0_argc LOC=UNKNOWN */
+/* END STRUCT lconv LOC=./src/df.merge.c:11754 */
 
 /* BEGIN FUNCTION-DECL automount_stat_err LOC=UNKNOWN */
 static int automount_stat_err(char const   *file , struct stat *st ) ;
@@ -14148,42 +14156,38 @@ __inline int c_tolower(int c ) ;
 struct obstack ;
 /* END STRUCT-DECL obstack LOC=./src/df.merge.c:934 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_c6W0_argv LOC=UNKNOWN */
-char **_TIG_IZ_c6W0_argv ;
-/* END VARIABLE-DECL _TIG_IZ_c6W0_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_longjmp(void ** , int  ) ;  */
 /* END FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/df.merge.c:11857 */
-#line 11857
+/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/df.merge.c:11853 */
+#line 11853
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) __sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/df.merge.c:11857 */
+/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/df.merge.c:11853 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/df.merge.c:11866 */
-#line 11866
+/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/df.merge.c:11862 */
+#line 11862
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/df.merge.c:11866 */
+/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/df.merge.c:11862 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/df.merge.c:11881 */
-#line 11881
+/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/df.merge.c:11877 */
+#line 11877
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid)(void) ;
-/* END FUNCTION-DECL-EXTERN getppid LOC=./src/df.merge.c:11881 */
+/* END FUNCTION-DECL-EXTERN getppid LOC=./src/df.merge.c:11877 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/df.merge.c:11870 */
-#line 11870
+/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/df.merge.c:11866 */
+#line 11866
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_delete)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/df.merge.c:11870 */
+/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/df.merge.c:11866 */
 
-/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/df.merge.c:11874 */
-#line 11874
+/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/df.merge.c:11870 */
+#line 11870
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat)(int __oldfd ,
                                                                                char const   *__old ,
                                                                                int __newfd ,
                                                                                char const   *__new ) ;
-/* END FUNCTION-DECL-EXTERN renameat LOC=./src/df.merge.c:11874 */
+/* END FUNCTION-DECL-EXTERN renameat LOC=./src/df.merge.c:11870 */
 
 /* BEGIN FUNCTION-DECL __builtin_subc LOC=BUILTIN */
 /* compiler builtin: 
@@ -14195,15 +14199,15 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat)(i
 static _Bool show_all_fs ;
 /* END VARIABLE-DECL show_all_fs LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/df.merge.c:11895 */
-#line 11895
+/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/df.merge.c:11891 */
+#line 11891
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcngettext)(char const   *__domainname ,
                                                                                    char const   *__msgid1 ,
                                                                                    char const   *__msgid2 ,
                                                                                    unsigned long __n ,
                                                                                    int __category )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/df.merge.c:11895 */
+/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/df.merge.c:11891 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -14215,10 +14219,10 @@ __format_arg__(3))) ;
    double __builtin_exp2(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/df.merge.c:11909 */
-#line 11909
+/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/df.merge.c:11905 */
+#line 11905
 extern ssize_t pwrite64(int __fd , void const   *__buf , size_t __n , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/df.merge.c:11909 */
+/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/df.merge.c:11905 */
 
 /* BEGIN FUNCTION-DECL emit_symlink_recurse_options LOC=UNKNOWN */
 __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
@@ -14234,50 +14238,50 @@ __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
    _Float128 __builtin_erff128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_erff128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/df.merge.c:11932 */
-#line 11932 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/df.merge.c:11928 */
+#line 11928 "./src/df.merge.c"
 typedef int __kernel_clockid_t;
-/* END TYPEDEF __kernel_clockid_t LOC=./src/df.merge.c:11932 */
+/* END TYPEDEF __kernel_clockid_t LOC=./src/df.merge.c:11928 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/df.merge.c:11936 */
-#line 11936
+/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/df.merge.c:11932 */
+#line 11932
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoul)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoul")  ;
-/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/df.merge.c:11936 */
+/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/df.merge.c:11932 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/df.merge.c:11942 */
-#line 11942
+/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/df.merge.c:11938 */
+#line 11938
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcoll)(char const   *__s1 ,
                                                                                                 char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/df.merge.c:11942 */
+/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/df.merge.c:11938 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/df.merge.c:11947 */
-#line 11947
+/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/df.merge.c:11943 */
+#line 11943
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strverscmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/df.merge.c:11947 */
+/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/df.merge.c:11943 */
 
 /* BEGIN STRUCT-DECL timespec LOC=./src/df.merge.c:1142 */
 #line 1142
 struct timespec ;
 /* END STRUCT-DECL timespec LOC=./src/df.merge.c:1142 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/df.merge.c:11952 */
-#line 11952
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/df.merge.c:11948 */
+#line 11948
 extern int rpl_fcntl(int fd , int action  , ...) ;
-/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/df.merge.c:11952 */
+/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/df.merge.c:11948 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cimagl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/df.merge.c:11961 */
-#line 11961
+/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/df.merge.c:11957 */
+#line 11957
 extern void *xcalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/df.merge.c:11961 */
+/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/df.merge.c:11957 */
 
 /* BEGIN FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -14285,83 +14289,83 @@ __alloc_size__(1,2))) ;
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/df.merge.c:11972 */
-#line 11972
+/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/df.merge.c:11968 */
+#line 11968
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigdelset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/df.merge.c:11972 */
+/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/df.merge.c:11968 */
 
 /* BEGIN FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_signbitl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/df.merge.c:11982 */
-#line 11982
+/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/df.merge.c:11978 */
+#line 11978
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timespec_getres)(struct timespec *__ts ,
                                                                                       int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/df.merge.c:11982 */
+/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/df.merge.c:11978 */
 
-/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:11987 */
-#line 11987 "./src/df.merge.c"
+/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:11983 */
+#line 11983 "./src/df.merge.c"
 struct __anonstruct_imaxdiv_t_825626742 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:11987 */
+/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:11983 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mbrlen LOC=./src/df.merge.c:11999 */
-#line 11999
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mbrlen LOC=./src/df.merge.c:11995 */
+#line 11995
 extern size_t rpl_mbrlen(char const   * __restrict  s , size_t n , mbstate_t * __restrict  ps ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mbrlen LOC=./src/df.merge.c:11999 */
+/* END FUNCTION-DECL-EXTERN rpl_mbrlen LOC=./src/df.merge.c:11995 */
 
 /* BEGIN FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin___fprintf_chk(void * , int  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s32 LOC=./src/df.merge.c:12003 */
-#line 12003 "./src/df.merge.c"
+/* BEGIN TYPEDEF __s32 LOC=./src/df.merge.c:11999 */
+#line 11999 "./src/df.merge.c"
 typedef int __s32;
-/* END TYPEDEF __s32 LOC=./src/df.merge.c:12003 */
+/* END TYPEDEF __s32 LOC=./src/df.merge.c:11999 */
 
-/* BEGIN STRUCT statx_timestamp LOC=./src/df.merge.c:12007 */
-#line 12007 "./src/df.merge.c"
+/* BEGIN STRUCT statx_timestamp LOC=./src/df.merge.c:12003 */
+#line 12003 "./src/df.merge.c"
 struct statx_timestamp {
    __s64 tv_sec ;
    __u32 tv_nsec ;
    __s32 __reserved ;
 };
-/* END STRUCT statx_timestamp LOC=./src/df.merge.c:12007 */
+/* END STRUCT statx_timestamp LOC=./src/df.merge.c:12003 */
 
 /* BEGIN FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isnormal(...) ;  */
 /* END FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/df.merge.c:12015 */
-#line 12015
+/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/df.merge.c:12011 */
+#line 12011
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) mrand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/df.merge.c:12015 */
+/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/df.merge.c:12011 */
 
-/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/df.merge.c:12025 */
-#line 12025
+/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/df.merge.c:12021 */
+#line 12021
 enum __anonenum_852341087___0 {
     SIGEV_SIGNAL___0 = 0,
     SIGEV_NONE___0 = 1,
     SIGEV_THREAD___0 = 2,
     SIGEV_THREAD_ID___0 = 4
 } ;
-/* END ENUM __anonenum_852341087___0 LOC=./src/df.merge.c:12025 */
+/* END ENUM __anonenum_852341087___0 LOC=./src/df.merge.c:12021 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/df.merge.c:12034 */
-#line 12034
+/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/df.merge.c:12030 */
+#line 12030
 extern int ( __attribute__((__nonnull__(1))) fgetc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/df.merge.c:12034 */
+/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/df.merge.c:12030 */
 
-/* BEGIN ENUM __anonenum_850350928 LOC=./src/df.merge.c:12038 */
-#line 12038
+/* BEGIN ENUM __anonenum_850350928 LOC=./src/df.merge.c:12034 */
+#line 12034
 enum __anonenum_850350928 {
     SEGV_MAPERR = 1,
     SEGV_ACCERR = 2,
@@ -14374,12 +14378,12 @@ enum __anonenum_850350928 {
     SEGV_MTESERR = 9,
     SEGV_CPERR = 10
 } ;
-/* END ENUM __anonenum_850350928 LOC=./src/df.merge.c:12038 */
+/* END ENUM __anonenum_850350928 LOC=./src/df.merge.c:12034 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/df.merge.c:12058 */
-#line 12058
+/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/df.merge.c:12054 */
+#line 12054
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(long __seedval ) ;
-/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/df.merge.c:12058 */
+/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/df.merge.c:12054 */
 
 /* BEGIN FUNCTION-DECL __builtin_sub_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -14391,10 +14395,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(l
    double __builtin_powi(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_powi LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/df.merge.c:12067 */
-#line 12067 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/df.merge.c:12063 */
+#line 12063 "./src/df.merge.c"
 typedef unsigned int __kernel_mode_t;
-/* END TYPEDEF __kernel_mode_t LOC=./src/df.merge.c:12067 */
+/* END TYPEDEF __kernel_mode_t LOC=./src/df.merge.c:12063 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -14406,13 +14410,13 @@ typedef unsigned int __kernel_mode_t;
    long __builtin_expect(long  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_expect LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/df.merge.c:12081 */
-#line 12081
+/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/df.merge.c:12077 */
+#line 12077
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromd)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/df.merge.c:12081 */
+/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/df.merge.c:12077 */
 
 /* BEGIN ENUM-DECL __anonenum_591253365 LOC=./src/df.merge.c:1062 */
 #line 1062
@@ -14429,45 +14433,45 @@ enum __anonenum_591253365 ;
    int __builtin_va_arg_pack_len(void) ;  */
 /* END FUNCTION-DECL __builtin_va_arg_pack_len LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/df.merge.c:12107 */
-#line 12107
-extern int ( __attribute__((__nonnull__(2))) fputc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc LOC=./src/df.merge.c:12107 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/df.merge.c:12103 */
+/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/df.merge.c:12103 */
 #line 12103
-extern int fdatasync(int __fildes ) ;
-/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/df.merge.c:12103 */
+extern int ( __attribute__((__nonnull__(2))) fputc)(int __c , FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fputc LOC=./src/df.merge.c:12103 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/df.merge.c:12098 */
-#line 12098
+/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/df.merge.c:12099 */
+#line 12099
+extern int fdatasync(int __fildes ) ;
+/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/df.merge.c:12099 */
+
+/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/df.merge.c:12094 */
+#line 12094
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/df.merge.c:12098 */
+/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/df.merge.c:12094 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcscoll_l LOC=./src/df.merge.c:12116 */
-#line 12116
+/* BEGIN FUNCTION-DECL-EXTERN wcscoll_l LOC=./src/df.merge.c:12112 */
+#line 12112
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcscoll_l)(wchar_t const   *__s1 ,
                                                                                 wchar_t const   *__s2 ,
                                                                                 locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcscoll_l LOC=./src/df.merge.c:12116 */
+/* END FUNCTION-DECL-EXTERN wcscoll_l LOC=./src/df.merge.c:12112 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/df.merge.c:12111 */
-#line 12111
+/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/df.merge.c:12107 */
+#line 12107
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigismember)(sigset_t const   *__set ,
                                                                                                   int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/df.merge.c:12111 */
+/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/df.merge.c:12107 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_cosf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/df.merge.c:12127 */
-#line 12127
+/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/df.merge.c:12123 */
+#line 12123
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) symlink)(char const   *__from ,
                                                                                                 char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlink LOC=./src/df.merge.c:12127 */
+/* END FUNCTION-DECL-EXTERN symlink LOC=./src/df.merge.c:12123 */
 
 /* BEGIN STRUCT-DECL random_data LOC=./src/df.merge.c:950 */
 #line 950
@@ -14479,12 +14483,12 @@ struct random_data ;
    long double __builtin_acosl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_acosl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64_l LOC=./src/df.merge.c:12137 */
-#line 12137
+/* BEGIN FUNCTION-DECL-EXTERN strtof64_l LOC=./src/df.merge.c:12133 */
+#line 12133
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtof64_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof64_l LOC=./src/df.merge.c:12137 */
+/* END FUNCTION-DECL-EXTERN strtof64_l LOC=./src/df.merge.c:12133 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinhf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -14505,36 +14509,36 @@ enum __anonenum_315186338___0 ;
 static struct field_data_t field_data[12]  ;
 /* END VARIABLE-DEF field_data LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dprintf LOC=./src/df.merge.c:12157 */
-#line 12157
+/* BEGIN FUNCTION-DECL-EXTERN dprintf LOC=./src/df.merge.c:12153 */
+#line 12153
 extern int dprintf(int __fd , char const   * __restrict  __fmt  , ...) ;
-/* END FUNCTION-DECL-EXTERN dprintf LOC=./src/df.merge.c:12157 */
+/* END FUNCTION-DECL-EXTERN dprintf LOC=./src/df.merge.c:12153 */
 
-/* BEGIN FUNCTION-DECL-EXTERN newlocale LOC=./src/df.merge.c:12162 */
-#line 12162
+/* BEGIN FUNCTION-DECL-EXTERN newlocale LOC=./src/df.merge.c:12158 */
+#line 12158
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) newlocale)(int __category_mask ,
                                                                                      char const   *__locale ,
                                                                                      locale_t __base ) ;
-/* END FUNCTION-DECL-EXTERN newlocale LOC=./src/df.merge.c:12162 */
+/* END FUNCTION-DECL-EXTERN newlocale LOC=./src/df.merge.c:12158 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstod_l LOC=./src/df.merge.c:12168 */
-#line 12168
+/* BEGIN FUNCTION-DECL-EXTERN wcstod_l LOC=./src/df.merge.c:12164 */
+#line 12164
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) wcstod_l)(wchar_t const   * __restrict  __nptr ,
                                                                                   wchar_t ** __restrict  __endptr ,
                                                                                   locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN wcstod_l LOC=./src/df.merge.c:12168 */
+/* END FUNCTION-DECL-EXTERN wcstod_l LOC=./src/df.merge.c:12164 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximemdup LOC=./src/df.merge.c:12185 */
-#line 12185
+/* BEGIN FUNCTION-DECL-EXTERN ximemdup LOC=./src/df.merge.c:12181 */
+#line 12181
 extern void *ximemdup(void const   *p , idx_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN ximemdup LOC=./src/df.merge.c:12185 */
+/* END FUNCTION-DECL-EXTERN ximemdup LOC=./src/df.merge.c:12181 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswalpha_l LOC=./src/df.merge.c:12180 */
-#line 12180
+/* BEGIN FUNCTION-DECL-EXTERN iswalpha_l LOC=./src/df.merge.c:12176 */
+#line 12176
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswalpha_l)(wint_t __wc ,
                                                                                  locale_t __locale ) ;
-/* END FUNCTION-DECL-EXTERN iswalpha_l LOC=./src/df.merge.c:12180 */
+/* END FUNCTION-DECL-EXTERN iswalpha_l LOC=./src/df.merge.c:12176 */
 
 /* BEGIN FUNCTION-DECL __builtin___strlcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -14547,104 +14551,104 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswalpha_l)
    _Float128 __builtin_logbf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_logbf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigandset LOC=./src/df.merge.c:12195 */
-#line 12195
+/* BEGIN FUNCTION-DECL-EXTERN sigandset LOC=./src/df.merge.c:12191 */
+#line 12191
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigandset)(sigset_t *__set ,
                                                                                                     sigset_t const   *__left ,
                                                                                                     sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigandset LOC=./src/df.merge.c:12195 */
+/* END FUNCTION-DECL-EXTERN sigandset LOC=./src/df.merge.c:12191 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/df.merge.c:12201 */
-#line 12201
+/* BEGIN FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/df.merge.c:12197 */
+#line 12197
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/df.merge.c:12201 */
+/* END FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/df.merge.c:12197 */
 
 /* BEGIN STRUCT-DECL __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:1358 */
 #line 1358
 struct __anonstruct_imaxdiv_t_825626742 ;
 /* END STRUCT-DECL __anonstruct_imaxdiv_t_825626742 LOC=./src/df.merge.c:1358 */
 
-/* BEGIN FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/df.merge.c:12209 */
-#line 12209
-extern char const   *proper_name_utf8(char const   *name_ascii , char const   *name_utf8 ) ;
-/* END FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/df.merge.c:12209 */
-
-/* BEGIN FUNCTION-DECL c32_get_type_test LOC=./src/df.merge.c:12205 */
+/* BEGIN FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/df.merge.c:12205 */
 #line 12205
+extern char const   *proper_name_utf8(char const   *name_ascii , char const   *name_utf8 ) ;
+/* END FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/df.merge.c:12205 */
+
+/* BEGIN FUNCTION-DECL c32_get_type_test LOC=./src/df.merge.c:12201 */
+#line 12201
 __inline c32_type_test_t ( __attribute__((__nonnull__(1))) c32_get_type_test)(char const   *name ) ;
-/* END FUNCTION-DECL c32_get_type_test LOC=./src/df.merge.c:12205 */
+/* END FUNCTION-DECL c32_get_type_test LOC=./src/df.merge.c:12201 */
 
 /* BEGIN FUNCTION-DECL __builtin___strcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___strcpy_chk(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strcpy_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast8_t LOC=./src/df.merge.c:12218 */
-#line 12218 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint_fast8_t LOC=./src/df.merge.c:12214 */
+#line 12214 "./src/df.merge.c"
 typedef unsigned char uint_fast8_t;
-/* END TYPEDEF uint_fast8_t LOC=./src/df.merge.c:12218 */
+/* END TYPEDEF uint_fast8_t LOC=./src/df.merge.c:12214 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_buckets_used LOC=./src/df.merge.c:12222 */
-#line 12222
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_n_buckets_used LOC=./src/df.merge.c:12218 */
+#line 12218
 extern size_t hash_get_n_buckets_used(Hash_table const   *table )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN hash_get_n_buckets_used LOC=./src/df.merge.c:12222 */
+/* END FUNCTION-DECL-EXTERN hash_get_n_buckets_used LOC=./src/df.merge.c:12218 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_sqrtf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout LOC=./src/df.merge.c:12231 */
-#line 12231
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout LOC=./src/df.merge.c:12227 */
+#line 12227
 extern void close_stdout(void) ;
-/* END FUNCTION-DECL-EXTERN close_stdout LOC=./src/df.merge.c:12231 */
+/* END FUNCTION-DECL-EXTERN close_stdout LOC=./src/df.merge.c:12227 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_log2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putw LOC=./src/df.merge.c:12240 */
-#line 12240
+/* BEGIN FUNCTION-DECL-EXTERN putw LOC=./src/df.merge.c:12236 */
+#line 12236
 extern int ( __attribute__((__nonnull__(2))) putw)(int __w , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putw LOC=./src/df.merge.c:12240 */
+/* END FUNCTION-DECL-EXTERN putw LOC=./src/df.merge.c:12236 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lchmod LOC=./src/df.merge.c:12244 */
-#line 12244
+/* BEGIN FUNCTION-DECL-EXTERN lchmod LOC=./src/df.merge.c:12240 */
+#line 12240
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lchmod)(char const   *__file ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN lchmod LOC=./src/df.merge.c:12244 */
+/* END FUNCTION-DECL-EXTERN lchmod LOC=./src/df.merge.c:12240 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alphasort LOC=./src/df.merge.c:12254 */
-#line 12254
+/* BEGIN FUNCTION-DECL-EXTERN alphasort LOC=./src/df.merge.c:12250 */
+#line 12250
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) alphasort)(struct dirent  const  **__e1 ,
                                                                                                   struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN alphasort LOC=./src/df.merge.c:12254 */
+/* END FUNCTION-DECL-EXTERN alphasort LOC=./src/df.merge.c:12250 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps LOC=./src/df.merge.c:12249 */
-#line 12249
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps LOC=./src/df.merge.c:12245 */
+#line 12245
 extern int ( __attribute__((__nonnull__(1))) mkostemps)(char *__template , int __suffixlen ,
                                                         int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps LOC=./src/df.merge.c:12249 */
+/* END FUNCTION-DECL-EXTERN mkostemps LOC=./src/df.merge.c:12245 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsncasecmp LOC=./src/df.merge.c:12263 */
-#line 12263
+/* BEGIN FUNCTION-DECL-EXTERN wcsncasecmp LOC=./src/df.merge.c:12259 */
+#line 12259
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcsncasecmp)(wchar_t const   *__s1 ,
                                                                                   wchar_t const   *__s2 ,
                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wcsncasecmp LOC=./src/df.merge.c:12263 */
+/* END FUNCTION-DECL-EXTERN wcsncasecmp LOC=./src/df.merge.c:12259 */
 
-/* BEGIN FUNCTION-DECL-EXTERN towlower LOC=./src/df.merge.c:12259 */
-#line 12259
+/* BEGIN FUNCTION-DECL-EXTERN towlower LOC=./src/df.merge.c:12255 */
+#line 12255
 extern  __attribute__((__nothrow__)) wint_t ( __attribute__((__leaf__)) towlower)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN towlower LOC=./src/df.merge.c:12259 */
+/* END FUNCTION-DECL-EXTERN towlower LOC=./src/df.merge.c:12255 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fprintf LOC=./src/df.merge.c:12269 */
-#line 12269
+/* BEGIN FUNCTION-DECL-EXTERN fprintf LOC=./src/df.merge.c:12265 */
+#line 12265
 extern int ( __attribute__((__nonnull__(1))) fprintf)(FILE * __restrict  __stream ,
                                                       char const   * __restrict  __format 
                                                       , ...) ;
-/* END FUNCTION-DECL-EXTERN fprintf LOC=./src/df.merge.c:12269 */
+/* END FUNCTION-DECL-EXTERN fprintf LOC=./src/df.merge.c:12265 */
 
 /* BEGIN FUNCTION-DECL __builtin_matrix_column_major_store LOC=BUILTIN */
 /* compiler builtin: 
@@ -14687,75 +14691,75 @@ struct devlist ;
 struct _fpstate ;
 /* END STRUCT-DECL _fpstate LOC=./src/df.merge.c:1238 */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_do_for_each LOC=./src/df.merge.c:12306 */
-#line 12306
+/* BEGIN FUNCTION-DECL-EXTERN hash_do_for_each LOC=./src/df.merge.c:12302 */
+#line 12302
 extern size_t hash_do_for_each(Hash_table const   *table , _Bool (*processor)(void *entry ,
                                                                               void *processor_data ) ,
                                void *processor_data ) ;
-/* END FUNCTION-DECL-EXTERN hash_do_for_each LOC=./src/df.merge.c:12306 */
+/* END FUNCTION-DECL-EXTERN hash_do_for_each LOC=./src/df.merge.c:12302 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lstat LOC=./src/df.merge.c:12312 */
-#line 12312
+/* BEGIN FUNCTION-DECL-EXTERN lstat LOC=./src/df.merge.c:12308 */
+#line 12308
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat)(char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN lstat LOC=./src/df.merge.c:12312 */
+/* END FUNCTION-DECL-EXTERN lstat LOC=./src/df.merge.c:12308 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/df.merge.c:12317 */
-#line 12317
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/df.merge.c:12313 */
+#line 12313
 extern char *quotearg_char_mem(char const   *arg , size_t argsize , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/df.merge.c:12317 */
+/* END FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/df.merge.c:12313 */
 
-/* BEGIN FUNCTION-DECL-EXTERN revoke LOC=./src/df.merge.c:12321 */
-#line 12321
+/* BEGIN FUNCTION-DECL-EXTERN revoke LOC=./src/df.merge.c:12317 */
+#line 12317
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) revoke)(char const   *__file ) ;
-/* END FUNCTION-DECL-EXTERN revoke LOC=./src/df.merge.c:12321 */
+/* END FUNCTION-DECL-EXTERN revoke LOC=./src/df.merge.c:12317 */
 
-/* BEGIN FUNCTION-DECL-EXTERN link LOC=./src/df.merge.c:12325 */
-#line 12325
+/* BEGIN FUNCTION-DECL-EXTERN link LOC=./src/df.merge.c:12321 */
+#line 12321
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) link)(char const   *__from ,
                                                                                              char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN link LOC=./src/df.merge.c:12325 */
+/* END FUNCTION-DECL-EXTERN link LOC=./src/df.merge.c:12321 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lchown LOC=./src/df.merge.c:12330 */
-#line 12330
+/* BEGIN FUNCTION-DECL-EXTERN lchown LOC=./src/df.merge.c:12326 */
+#line 12326
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lchown)(char const   *__file ,
                                                                                              __uid_t __owner ,
                                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN lchown LOC=./src/df.merge.c:12330 */
+/* END FUNCTION-DECL-EXTERN lchown LOC=./src/df.merge.c:12326 */
 
-/* BEGIN FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/df.merge.c:12336 */
-#line 12336
+/* BEGIN FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/df.merge.c:12332 */
+#line 12332
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) name_to_handle_at)(int __dfd ,
                                                                                         char const   *__name ,
                                                                                         struct file_handle *__handle ,
                                                                                         int *__mnt_id ,
                                                                                         int __flags ) ;
-/* END FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/df.merge.c:12336 */
+/* END FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/df.merge.c:12332 */
 
-/* BEGIN FUNCTION-DECL-EXTERN iswcntrl LOC=./src/df.merge.c:12344 */
-#line 12344
+/* BEGIN FUNCTION-DECL-EXTERN iswcntrl LOC=./src/df.merge.c:12340 */
+#line 12340
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) iswcntrl)(wint_t __wc ) ;
-/* END FUNCTION-DECL-EXTERN iswcntrl LOC=./src/df.merge.c:12344 */
+/* END FUNCTION-DECL-EXTERN iswcntrl LOC=./src/df.merge.c:12340 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwprintf LOC=./src/df.merge.c:12348 */
-#line 12348
+/* BEGIN FUNCTION-DECL-EXTERN fwprintf LOC=./src/df.merge.c:12344 */
+#line 12344
 extern int fwprintf(__FILE * __restrict  __stream , wchar_t const   * __restrict  __format 
                     , ...) ;
-/* END FUNCTION-DECL-EXTERN fwprintf LOC=./src/df.merge.c:12348 */
+/* END FUNCTION-DECL-EXTERN fwprintf LOC=./src/df.merge.c:12344 */
 
 /* BEGIN FUNCTION-DECL __builtin_stpncpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_stpncpy(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_stpncpy LOC=BUILTIN */
 
-/* BEGIN STRUCT file_handle LOC=./src/df.merge.c:12358 */
-#line 12358 "./src/df.merge.c"
+/* BEGIN STRUCT file_handle LOC=./src/df.merge.c:12354 */
+#line 12354 "./src/df.merge.c"
 struct file_handle {
    unsigned int handle_bytes ;
    int handle_type ;
    unsigned char f_handle[0] ;
 };
-/* END STRUCT file_handle LOC=./src/df.merge.c:12358 */
+/* END STRUCT file_handle LOC=./src/df.merge.c:12354 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -14767,22 +14771,22 @@ struct file_handle {
 __inline int c32isxdigit(wint_t wc ) ;
 /* END FUNCTION-DECL c32isxdigit LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbstowcs LOC=./src/df.merge.c:12380 */
-#line 12380
+/* BEGIN FUNCTION-DECL-EXTERN mbstowcs LOC=./src/df.merge.c:12376 */
+#line 12376
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbstowcs)(wchar_t * __restrict  __pwcs ,
                                                                                   char const   * __restrict  __s ,
                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mbstowcs LOC=./src/df.merge.c:12380 */
+/* END FUNCTION-DECL-EXTERN mbstowcs LOC=./src/df.merge.c:12376 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_copysignf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigrelse LOC=./src/df.merge.c:12376 */
-#line 12376
+/* BEGIN FUNCTION-DECL-EXTERN sigrelse LOC=./src/df.merge.c:12372 */
+#line 12372
 extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function instead"))) int ( __attribute__((__leaf__)) sigrelse)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigrelse LOC=./src/df.merge.c:12376 */
+/* END FUNCTION-DECL-EXTERN sigrelse LOC=./src/df.merge.c:12372 */
 
 /* BEGIN VARIABLE-DEF output_block_size LOC=UNKNOWN */
 static uintmax_t output_block_size  ;
@@ -14793,171 +14797,171 @@ static uintmax_t output_block_size  ;
    _Complex float __builtin_csinhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir LOC=./src/df.merge.c:12400 */
-#line 12400
+/* BEGIN FUNCTION-DECL-EXTERN scandir LOC=./src/df.merge.c:12396 */
+#line 12396
 extern int ( __attribute__((__nonnull__(1,2))) scandir)(char const   * __restrict  __dir ,
                                                         struct dirent *** __restrict  __namelist ,
                                                         int (*__selector)(struct dirent  const  * ) ,
                                                         int (*__cmp)(struct dirent  const  ** ,
                                                                      struct dirent  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir LOC=./src/df.merge.c:12400 */
+/* END FUNCTION-DECL-EXTERN scandir LOC=./src/df.merge.c:12396 */
 
-/* BEGIN FUNCTION-DECL-EXTERN last_component LOC=./src/df.merge.c:12408 */
-#line 12408
+/* BEGIN FUNCTION-DECL-EXTERN last_component LOC=./src/df.merge.c:12404 */
+#line 12404
 extern char *last_component(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN last_component LOC=./src/df.merge.c:12408 */
+/* END FUNCTION-DECL-EXTERN last_component LOC=./src/df.merge.c:12404 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fork LOC=./src/df.merge.c:12412 */
-#line 12412
+/* BEGIN FUNCTION-DECL-EXTERN fork LOC=./src/df.merge.c:12408 */
+#line 12408
 extern  __attribute__((__nothrow__)) __pid_t fork(void) ;
-/* END FUNCTION-DECL-EXTERN fork LOC=./src/df.merge.c:12412 */
+/* END FUNCTION-DECL-EXTERN fork LOC=./src/df.merge.c:12408 */
 
-/* BEGIN TYPEDEF __kernel_pid_t LOC=./src/df.merge.c:12416 */
-#line 12416 "./src/df.merge.c"
+/* BEGIN TYPEDEF __kernel_pid_t LOC=./src/df.merge.c:12412 */
+#line 12412 "./src/df.merge.c"
 typedef int __kernel_pid_t;
-/* END TYPEDEF __kernel_pid_t LOC=./src/df.merge.c:12416 */
+/* END TYPEDEF __kernel_pid_t LOC=./src/df.merge.c:12412 */
 
-/* BEGIN TYPEDEF __tss_t LOC=./src/df.merge.c:12420 */
-#line 12420 "./src/df.merge.c"
+/* BEGIN TYPEDEF __tss_t LOC=./src/df.merge.c:12416 */
+#line 12416 "./src/df.merge.c"
 typedef unsigned int __tss_t;
-/* END TYPEDEF __tss_t LOC=./src/df.merge.c:12420 */
+/* END TYPEDEF __tss_t LOC=./src/df.merge.c:12416 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint LOC=./src/df.merge.c:12429 */
-#line 12429 "./src/df.merge.c"
+/* BEGIN TYPEDEF uint LOC=./src/df.merge.c:12425 */
+#line 12425 "./src/df.merge.c"
 typedef unsigned int uint;
-/* END TYPEDEF uint LOC=./src/df.merge.c:12429 */
+/* END TYPEDEF uint LOC=./src/df.merge.c:12425 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/df.merge.c:12433 */
-#line 12433
+/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/df.merge.c:12429 */
+#line 12429
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ttyslot)(void) ;
-/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/df.merge.c:12433 */
+/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/df.merge.c:12429 */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/df.merge.c:12442 */
-#line 12442
+/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/df.merge.c:12438 */
+#line 12438
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort)(struct dirent  const  **__e1 ,
                                                                                                     struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/df.merge.c:12442 */
+/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/df.merge.c:12438 */
 
 /* BEGIN FUNCTION-DECL __builtin_round LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_round(double  ) ;  */
 /* END FUNCTION-DECL __builtin_round LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL c_isblank LOC=./src/df.merge.c:12452 */
-#line 12452
+/* BEGIN FUNCTION-DECL c_isblank LOC=./src/df.merge.c:12448 */
+#line 12448
 __inline _Bool c_isblank(int c ) ;
-/* END FUNCTION-DECL c_isblank LOC=./src/df.merge.c:12452 */
+/* END FUNCTION-DECL c_isblank LOC=./src/df.merge.c:12448 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_tgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/df.merge.c:12456 */
-#line 12456
+/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/df.merge.c:12452 */
+#line 12452
 extern __off64_t ( __attribute__((__nonnull__(1))) ftello64)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/df.merge.c:12456 */
+/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/df.merge.c:12452 */
 
 /* BEGIN FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_clogl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/df.merge.c:12465 */
-#line 12465
+/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/df.merge.c:12461 */
+#line 12461
 extern int getdate_err ;
-/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/df.merge.c:12465 */
+/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/df.merge.c:12461 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/df.merge.c:12469 */
-#line 12469
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/df.merge.c:12465 */
+#line 12465
 extern  __attribute__((__nothrow__)) __dev_t ( __attribute__((__leaf__)) gnu_dev_makedev)(unsigned int __major ,
                                                                                           unsigned int __minor )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/df.merge.c:12469 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/df.merge.c:12465 */
 
 /* BEGIN FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csqrtf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_max_bucket_length LOC=./src/df.merge.c:12484 */
-#line 12484
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_max_bucket_length LOC=./src/df.merge.c:12480 */
+#line 12480
 extern size_t hash_get_max_bucket_length(Hash_table const   *table )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN hash_get_max_bucket_length LOC=./src/df.merge.c:12484 */
+/* END FUNCTION-DECL-EXTERN hash_get_max_bucket_length LOC=./src/df.merge.c:12480 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/df.merge.c:12479 */
-#line 12479
+/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/df.merge.c:12475 */
+#line 12475
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkdir)(char const   *__path ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/df.merge.c:12479 */
+/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/df.merge.c:12475 */
 
 /* BEGIN FUNCTION-DECL __builtin_isunordered LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isunordered(...) ;  */
 /* END FUNCTION-DECL __builtin_isunordered LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/df.merge.c:12493 */
-#line 12493
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/df.merge.c:12489 */
+#line 12489
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise64)(int __fd ,
                                                                                       off64_t __offset ,
                                                                                       off64_t __len ,
                                                                                       int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/df.merge.c:12493 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/df.merge.c:12489 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcsspn LOC=./src/df.merge.c:12500 */
-#line 12500
+/* BEGIN FUNCTION-DECL-EXTERN wcsspn LOC=./src/df.merge.c:12496 */
+#line 12496
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsspn)(wchar_t const   *__wcs ,
                                                                                 wchar_t const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN wcsspn LOC=./src/df.merge.c:12500 */
+/* END FUNCTION-DECL-EXTERN wcsspn LOC=./src/df.merge.c:12496 */
 
 /* BEGIN FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_vsnprintf(char * , unsigned long long  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 
-/* BEGIN STRUCT f_owner_ex LOC=./src/df.merge.c:12510 */
-#line 12510 "./src/df.merge.c"
+/* BEGIN STRUCT f_owner_ex LOC=./src/df.merge.c:12506 */
+#line 12506 "./src/df.merge.c"
 struct f_owner_ex {
    enum __pid_type type ;
    __pid_t pid ;
 };
-/* END STRUCT f_owner_ex LOC=./src/df.merge.c:12510 */
+/* END STRUCT f_owner_ex LOC=./src/df.merge.c:12506 */
 
 /* BEGIN FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nexttowardl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wmemmove LOC=./src/df.merge.c:12522 */
-#line 12522
+/* BEGIN FUNCTION-DECL-EXTERN wmemmove LOC=./src/df.merge.c:12518 */
+#line 12518
 extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wmemmove)(wchar_t *__s1 ,
                                                                                     wchar_t const   *__s2 ,
                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wmemmove LOC=./src/df.merge.c:12522 */
+/* END FUNCTION-DECL-EXTERN wmemmove LOC=./src/df.merge.c:12518 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/df.merge.c:12528 */
-#line 12528
+/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/df.merge.c:12524 */
+#line 12524
 extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function instead"))) int ( __attribute__((__leaf__)) sighold)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sighold LOC=./src/df.merge.c:12528 */
+/* END FUNCTION-DECL-EXTERN sighold LOC=./src/df.merge.c:12524 */
 
-/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/df.merge.c:12532 */
-#line 12532 "./src/df.merge.c"
+/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/df.merge.c:12528 */
+#line 12528 "./src/df.merge.c"
 typedef union __anonunion_pthread_barrier_t_145707746 pthread_barrier_t;
-/* END TYPEDEF pthread_barrier_t LOC=./src/df.merge.c:12532 */
+/* END TYPEDEF pthread_barrier_t LOC=./src/df.merge.c:12528 */
 
 /* BEGIN STRUCT-DECL __pthread_internal_list LOC=./src/df.merge.c:1390 */
 #line 1390
 struct __pthread_internal_list ;
 /* END STRUCT-DECL __pthread_internal_list LOC=./src/df.merge.c:1390 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/df.merge.c:12536 */
-#line 12536
+/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/df.merge.c:12532 */
+#line 12532
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setlogin)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/df.merge.c:12536 */
+/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/df.merge.c:12532 */
 
 /* BEGIN FUNCTION-DECL __builtin_expm1f LOC=BUILTIN */
 /* compiler builtin: 
@@ -14969,27 +14973,27 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 union __anonunion___value_751190509 ;
 /* END UNION-DECL __anonunion___value_751190509 LOC=./src/df.merge.c:1306 */
 
-/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/df.merge.c:12545 */
-#line 12545
+/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/df.merge.c:12541 */
+#line 12541
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) jrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/df.merge.c:12545 */
+/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/df.merge.c:12541 */
 
 /* BEGIN FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cproj(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/df.merge.c:12554 */
-#line 12554
+/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/df.merge.c:12550 */
+#line 12550
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir_r)(DIR * __restrict  __dirp ,
                                                                                              struct dirent * __restrict  __entry ,
                                                                                              struct dirent ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/df.merge.c:12554 */
+/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/df.merge.c:12550 */
 
-/* BEGIN TYPEDEF loff_t LOC=./src/df.merge.c:12560 */
-#line 12560 "./src/df.merge.c"
+/* BEGIN TYPEDEF loff_t LOC=./src/df.merge.c:12556 */
+#line 12556 "./src/df.merge.c"
 typedef __loff_t loff_t;
-/* END TYPEDEF loff_t LOC=./src/df.merge.c:12560 */
+/* END TYPEDEF loff_t LOC=./src/df.merge.c:12556 */
 
 /* BEGIN FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -14997,21 +15001,21 @@ typedef __loff_t loff_t;
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcswidth LOC=./src/df.merge.c:12570 */
-#line 12570
+/* BEGIN FUNCTION-DECL-EXTERN wcswidth LOC=./src/df.merge.c:12566 */
+#line 12566
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wcswidth)(wchar_t const   *__s ,
                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wcswidth LOC=./src/df.merge.c:12570 */
+/* END FUNCTION-DECL-EXTERN wcswidth LOC=./src/df.merge.c:12566 */
 
-/* BEGIN TYPEDEF __u8 LOC=./src/df.merge.c:12575 */
-#line 12575 "./src/df.merge.c"
+/* BEGIN TYPEDEF __u8 LOC=./src/df.merge.c:12571 */
+#line 12571 "./src/df.merge.c"
 typedef unsigned char __u8;
-/* END TYPEDEF __u8 LOC=./src/df.merge.c:12575 */
+/* END TYPEDEF __u8 LOC=./src/df.merge.c:12571 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/df.merge.c:12579 */
-#line 12579
+/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/df.merge.c:12575 */
+#line 12575
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srand LOC=./src/df.merge.c:12579 */
+/* END FUNCTION-DECL-EXTERN srand LOC=./src/df.merge.c:12575 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -15038,21 +15042,21 @@ struct sigstack ;
    char *__builtin_strndup(char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strndup LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/df.merge.c:12598 */
-#line 12598
+/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/df.merge.c:12594 */
+#line 12594
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchr)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchr LOC=./src/df.merge.c:12598 */
+/* END FUNCTION-DECL-EXTERN strchr LOC=./src/df.merge.c:12594 */
 
 /* BEGIN ENUM-DECL __anonenum_825626741___0 LOC=./src/df.merge.c:1482 */
 #line 1482
 enum __anonenum_825626741___0 ;
 /* END ENUM-DECL __anonenum_825626741___0 LOC=./src/df.merge.c:1482 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/df.merge.c:12608 */
-#line 12608
+/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/df.merge.c:12604 */
+#line 12604
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigfillset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/df.merge.c:12608 */
+/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/df.merge.c:12604 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -15063,10 +15067,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 static _Bool __attribute__((__pure__))  selected_fstype(char const   *fstype ) ;
 /* END FUNCTION-DECL selected_fstype LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN hash_get_next LOC=./src/df.merge.c:12621 */
-#line 12621
+/* BEGIN FUNCTION-DECL-EXTERN hash_get_next LOC=./src/df.merge.c:12617 */
+#line 12617
 extern void *hash_get_next(Hash_table const   *table , void const   *entry ) ;
-/* END FUNCTION-DECL-EXTERN hash_get_next LOC=./src/df.merge.c:12621 */
+/* END FUNCTION-DECL-EXTERN hash_get_next LOC=./src/df.merge.c:12617 */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -15078,72 +15082,68 @@ extern void *hash_get_next(Hash_table const   *table , void const   *entry ) ;
    void *__builtin___mempcpy_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___mempcpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/df.merge.c:12630 */
-#line 12630
+/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/df.merge.c:12626 */
+#line 12626
 extern void ( __attribute__((__nonnull__(1,4))) qsort)(void *__base , size_t __nmemb ,
                                                        size_t __size , int (*__compar)(void const   * ,
                                                                                        void const   * ) ) ;
-/* END FUNCTION-DECL-EXTERN qsort LOC=./src/df.merge.c:12630 */
+/* END FUNCTION-DECL-EXTERN qsort LOC=./src/df.merge.c:12626 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/df.merge.c:12641 */
-#line 12641
+/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/df.merge.c:12637 */
+#line 12637
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN dup LOC=./src/df.merge.c:12641 */
+/* END FUNCTION-DECL-EXTERN dup LOC=./src/df.merge.c:12637 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/df.merge.c:12645 */
-#line 12645
+/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/df.merge.c:12641 */
+#line 12641
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrordesc_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/df.merge.c:12645 */
+/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/df.merge.c:12641 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966 LOC=./src/df.merge.c:1510 */
 #line 1510
 enum __anonenum_819735966 ;
 /* END ENUM-DECL __anonenum_819735966 LOC=./src/df.merge.c:1510 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/df.merge.c:12654 */
-#line 12654
+/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/df.merge.c:12650 */
+#line 12650
 extern ssize_t rpl_copy_file_range(int ifd , off_t *ipos , int ofd , off_t *opos ,
                                    size_t len , unsigned int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/df.merge.c:12654 */
+/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/df.merge.c:12650 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacoshf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/df.merge.c:12659 */
-#line 12659 "./src/df.merge.c"
+/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/df.merge.c:12655 */
+#line 12655 "./src/df.merge.c"
 typedef int (*__compar_d_fn_t)(void const   * , void const   * , void * );
-/* END TYPEDEF __compar_d_fn_t LOC=./src/df.merge.c:12659 */
+/* END TYPEDEF __compar_d_fn_t LOC=./src/df.merge.c:12655 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/df.merge.c:12673 */
-#line 12673
+/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/df.merge.c:12669 */
+#line 12669
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ngettext)(char const   *__msgid1 ,
                                                                                  char const   *__msgid2 ,
                                                                                  unsigned long __n )  __attribute__((__format_arg__(1),
 __format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/df.merge.c:12673 */
+/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/df.merge.c:12669 */
 
-/* BEGIN FUNCTION-DECL write_error LOC=./src/df.merge.c:12663 */
-#line 12663
+/* BEGIN FUNCTION-DECL write_error LOC=./src/df.merge.c:12659 */
+#line 12659
 __inline static void write_error(void) ;
-/* END FUNCTION-DECL write_error LOC=./src/df.merge.c:12663 */
+/* END FUNCTION-DECL write_error LOC=./src/df.merge.c:12659 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/df.merge.c:12667 */
-#line 12667
+/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/df.merge.c:12663 */
+#line 12663
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) strtol)(char const   * __restrict  __nptr ,
                                                                                               char ** __restrict  __endptr ,
                                                                                               int __base )  __asm__("__isoc23_strtol")  ;
-/* END FUNCTION-DECL-EXTERN strtol LOC=./src/df.merge.c:12667 */
+/* END FUNCTION-DECL-EXTERN strtol LOC=./src/df.merge.c:12663 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_9N0o_argc LOC=UNKNOWN */
-int _TIG_IZ_9N0o_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_9N0o_argc LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/df.merge.c:12680 */
-#line 12680
+/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/df.merge.c:12676 */
+#line 12676
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)(int __lowfd ) ;
-/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/df.merge.c:12680 */
+/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/df.merge.c:12676 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -15155,10 +15155,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)
    _Float128 __builtin_acoshf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/df.merge.c:12699 */
-#line 12699
+/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/df.merge.c:12695 */
+#line 12695
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)(int __errnum ) ;
-/* END FUNCTION-DECL-EXTERN strerror LOC=./src/df.merge.c:12699 */
+/* END FUNCTION-DECL-EXTERN strerror LOC=./src/df.merge.c:12695 */
 
 /* BEGIN FUNCTION-DECL __builtin_unpredictable LOC=BUILTIN */
 /* compiler builtin: 
@@ -15169,6 +15169,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)
 /* compiler builtin: 
    int __builtin_islessequal(...) ;  */
 /* END FUNCTION-DECL __builtin_islessequal LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_AEJ4_envp LOC=UNKNOWN */
+char **_TIG_IZ_AEJ4_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_AEJ4_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN xstrtol_fatal LOC=./src/df.merge.c:12708 */
 #line 12708
@@ -15511,10 +15515,6 @@ extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 #line 12997
 extern wint_t fputwc(wchar_t __wc , __FILE *__stream ) ;
 /* END FUNCTION-DECL-EXTERN fputwc LOC=./src/df.merge.c:12997 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_9N0o_envp LOC=UNKNOWN */
-char **_TIG_IZ_9N0o_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_9N0o_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/df.merge.c:13001 */
 #line 13001
@@ -16209,7 +16209,7 @@ __inline extern void ( __attribute__((__gnu_inline__, __always_inline__)) error)
 /* END FUNCTION-DEF error LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_AEJ4_formal_envp ) 
 { 
   struct stat *stats ;
   _Bool posix_format ;
@@ -16308,13 +16308,6 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   goto exit_status__INITINLINE_exit_status__INIT___0;
   }
   exit_status__INITINLINE_exit_status__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_c6W0_argv = (char **)0;
-  goto _TIG_IZ_c6W0_argv__INITINLINE__TIG_IZ_c6W0_argv__INIT___0;
-  }
-  _TIG_IZ_c6W0_argv__INITINLINE__TIG_IZ_c6W0_argv__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -16448,13 +16441,6 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   }
   {
   {
-  _TIG_IZ_c6W0_argc = 0;
-  goto _TIG_IZ_c6W0_argc__INITINLINE__TIG_IZ_c6W0_argc__INIT___0;
-  }
-  _TIG_IZ_c6W0_argc__INITINLINE__TIG_IZ_c6W0_argc__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
   grand_fsu.fsu_blocksize = 0UL;
   grand_fsu.fsu_blocks = 0UL;
   grand_fsu.fsu_bfree = 0UL;
@@ -16479,6 +16465,13 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   goto all_args_string__INITINLINE_all_args_string__INIT___0;
   }
   all_args_string__INITINLINE_all_args_string__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_AEJ4_argc = 0;
+  goto _TIG_IZ_AEJ4_argc__INITINLINE__TIG_IZ_AEJ4_argc__INIT___0;
+  }
+  _TIG_IZ_AEJ4_argc__INITINLINE__TIG_IZ_AEJ4_argc__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -16510,10 +16503,17 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   }
   {
   {
-  _TIG_IZ_c6W0_envp = (char **)0;
-  goto _TIG_IZ_c6W0_envp__INITINLINE__TIG_IZ_c6W0_envp__INIT___0;
+  _TIG_IZ_AEJ4_envp = (char **)0;
+  goto _TIG_IZ_AEJ4_envp__INITINLINE__TIG_IZ_AEJ4_envp__INIT___0;
   }
-  _TIG_IZ_c6W0_envp__INITINLINE__TIG_IZ_c6W0_envp__INIT___0: /* CIL Label */ ;
+  _TIG_IZ_AEJ4_envp__INITINLINE__TIG_IZ_AEJ4_envp__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_AEJ4_argv = (char **)0;
+  goto _TIG_IZ_AEJ4_argv__INITINLINE__TIG_IZ_AEJ4_argv__INIT___0;
+  }
+  _TIG_IZ_AEJ4_argv__INITINLINE__TIG_IZ_AEJ4_argv__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -16614,34 +16614,34 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   }
   {
   {
-  _TIG_IZ_9N0o_envp = (char **)0;
-  goto _TIG_IZ_9N0o_envp__INITINLINE__TIG_IZ_9N0o_envp__INIT;
+  _TIG_IZ_pmFh_envp = (char **)0;
+  goto _TIG_IZ_pmFh_envp__INITINLINE__TIG_IZ_pmFh_envp__INIT;
   }
-  _TIG_IZ_9N0o_envp__INITINLINE__TIG_IZ_9N0o_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_9N0o_argv = (char **)0;
-  goto _TIG_IZ_9N0o_argv__INITINLINE__TIG_IZ_9N0o_argv__INIT;
-  }
-  _TIG_IZ_9N0o_argv__INITINLINE__TIG_IZ_9N0o_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_pmFh_envp__INITINLINE__TIG_IZ_pmFh_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_9N0o_argc = 0;
-  goto _TIG_IZ_9N0o_argc__INITINLINE__TIG_IZ_9N0o_argc__INIT;
+  _TIG_IZ_pmFh_argv = (char **)0;
+  goto _TIG_IZ_pmFh_argv__INITINLINE__TIG_IZ_pmFh_argv__INIT;
   }
-  _TIG_IZ_9N0o_argc__INITINLINE__TIG_IZ_9N0o_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_pmFh_argv__INITINLINE__TIG_IZ_pmFh_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_pmFh_argc = 0;
+  goto _TIG_IZ_pmFh_argc__INITINLINE__TIG_IZ_pmFh_argc__INIT;
+  }
+  _TIG_IZ_pmFh_argc__INITINLINE__TIG_IZ_pmFh_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit___0;
   }
   megaInitINLINE_megaInit___0: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-9N0o--0":);
-    _TIG_IZ_9N0o_argc = argc;
-    _TIG_IZ_9N0o_argv = argv;
-    _TIG_IZ_9N0o_envp = _TIG_IZ_c6W0_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-pmFh--0":);
+    _TIG_IZ_pmFh_argc = argc;
+    _TIG_IZ_pmFh_argv = argv;
+    _TIG_IZ_pmFh_envp = _TIG_IZ_AEJ4_formal_envp;
     break;
   }
 #line 224 "./lib/gettext.h"
@@ -17077,33 +17077,33 @@ int main(int argc , char **argv , char **_TIG_IZ_c6W0_formal_envp )
   goto devlist_table__INITINLINE_devlist_table__INIT;
   devlist_table__INITINLINE_devlist_table__INIT: 
 #line 548
-  _TIG_IZ_c6W0_envp = (char **)0;
+  _TIG_IZ_AEJ4_envp = (char **)0;
 #line 549
-  goto _TIG_IZ_c6W0_envp__INITINLINE__TIG_IZ_c6W0_envp__INIT;
-  _TIG_IZ_c6W0_envp__INITINLINE__TIG_IZ_c6W0_envp__INIT: 
+  goto _TIG_IZ_AEJ4_envp__INITINLINE__TIG_IZ_AEJ4_envp__INIT;
+  _TIG_IZ_AEJ4_envp__INITINLINE__TIG_IZ_AEJ4_envp__INIT: 
 #line 555
-  _TIG_IZ_c6W0_argv = (char **)0;
+  _TIG_IZ_AEJ4_argv = (char **)0;
 #line 556
-  goto _TIG_IZ_c6W0_argv__INITINLINE__TIG_IZ_c6W0_argv__INIT;
-  _TIG_IZ_c6W0_argv__INITINLINE__TIG_IZ_c6W0_argv__INIT: 
+  goto _TIG_IZ_AEJ4_argv__INITINLINE__TIG_IZ_AEJ4_argv__INIT;
+  _TIG_IZ_AEJ4_argv__INITINLINE__TIG_IZ_AEJ4_argv__INIT: 
 #line 562
-  _TIG_IZ_c6W0_argc = 0;
+  _TIG_IZ_AEJ4_argc = 0;
 #line 563
-  goto _TIG_IZ_c6W0_argc__INITINLINE__TIG_IZ_c6W0_argc__INIT;
-  _TIG_IZ_c6W0_argc__INITINLINE__TIG_IZ_c6W0_argc__INIT: ;
+  goto _TIG_IZ_AEJ4_argc__INITINLINE__TIG_IZ_AEJ4_argc__INIT;
+  _TIG_IZ_AEJ4_argc__INITINLINE__TIG_IZ_AEJ4_argc__INIT: ;
 #line 567
   goto megaInitINLINE_megaInit;
   megaInitINLINE_megaInit: ;
 #line 571
   while (1) {
 #line 572
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-c6W0--0":);
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-AEJ4--0":);
 #line 573
-    _TIG_IZ_c6W0_argc = argc;
+    _TIG_IZ_AEJ4_argc = argc;
 #line 574
-    _TIG_IZ_c6W0_argv = argv;
+    _TIG_IZ_AEJ4_argv = argv;
 #line 575
-    _TIG_IZ_c6W0_envp = _TIG_IZ_c6W0_formal_envp;
+    _TIG_IZ_AEJ4_envp = _TIG_IZ_AEJ4_formal_envp;
 #line 576
     break;
   }

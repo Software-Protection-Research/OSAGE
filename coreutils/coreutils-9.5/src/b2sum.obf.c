@@ -256,9 +256,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_14tm_envp": "FUN: '_TIG_IZ_14tm_envp__INIT'",
-          "_TIG_IZ_14tm_argv": "FUN: '_TIG_IZ_14tm_argv__INIT'",
-          "_TIG_IZ_14tm_argc": "FUN: '_TIG_IZ_14tm_argc__INIT'"
+          "_TIG_IZ_dMKm_envp": "FUN: '_TIG_IZ_dMKm_envp__INIT'",
+          "_TIG_IZ_dMKm_argv": "FUN: '_TIG_IZ_dMKm_argv__INIT'",
+          "_TIG_IZ_dMKm_argc": "FUN: '_TIG_IZ_dMKm_argc__INIT'"
         }
       }
     },
@@ -300,14 +300,15 @@ BEGIN-UNIVERSE
         "New Global Variables": {
           "status_only": "FUN: 'status_only__INIT'",
           "warn": "FUN: 'warn__INIT'",
+          "_TIG_IZ_smv4_envp": "FUN: '_TIG_IZ_smv4_envp__INIT'",
           "strict": "FUN: 'strict__INIT'",
+          "_TIG_IZ_smv4_argc": "FUN: '_TIG_IZ_smv4_argc__INIT'",
           "digest_delim": "FUN: 'digest_delim__INIT'",
+          "_TIG_IZ_smv4_argv": "FUN: '_TIG_IZ_smv4_argv__INIT'",
           "memset_v": "FUN: 'memset_v__INIT'",
           "blake2b_IV": "FUN: 'blake2b_IV__INIT'",
-          "_TIG_IZ_BUUq_argc": "FUN: '_TIG_IZ_BUUq_argc__INIT'",
           "digest_length": "FUN: 'digest_length__INIT'",
           "long_options": "FUN: 'long_options__INIT'",
-          "_TIG_IZ_BUUq_envp": "FUN: '_TIG_IZ_BUUq_envp__INIT'",
           "buffer_length": "FUN: 'buffer_length__INIT'",
           "min_digest_line_length": "FUN: 'min_digest_line_length__INIT'",
           "have_read_stdin": "FUN: 'have_read_stdin__INIT'",
@@ -317,8 +318,7 @@ BEGIN-UNIVERSE
           "bin2hex": "FUN: 'bin2hex__INIT'",
           "digest_hex_bytes": "FUN: 'digest_hex_bytes__INIT'",
           "bsd_reversed": "FUN: 'bsd_reversed__INIT'",
-          "raw_digest": "FUN: 'raw_digest__INIT'",
-          "_TIG_IZ_BUUq_argv": "FUN: '_TIG_IZ_BUUq_argv__INIT'"
+          "raw_digest": "FUN: 'raw_digest__INIT'"
         },
         "New Externs": [
           "__builtin_catanhf", "__builtin_rotateright8",
@@ -1831,30 +1831,30 @@ extern int ( __attribute__((__nonnull__(2))) fputs)(char const   * __restrict  _
                                                     FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fputs LOC=./src/b2sum.merge.c:1604 */
 
-/* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=./src/b2sum.merge.c:1613 */
-#line 1613
+/* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=./src/b2sum.merge.c:1609 */
+#line 1609
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) funlockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN funlockfile LOC=./src/b2sum.merge.c:1613 */
+/* END FUNCTION-DECL-EXTERN funlockfile LOC=./src/b2sum.merge.c:1609 */
 
 /* BEGIN TYPEDEF size_t LOC=./src/b2sum.merge.c:1484 */
 #line 1484 "./src/b2sum.merge.c"
 typedef unsigned long size_t;
 /* END TYPEDEF size_t LOC=./src/b2sum.merge.c:1484 */
 
-/* BEGIN FUNCTION-DECL gcd LOC=./src/b2sum.merge.c:1617 */
-#line 1617
+/* BEGIN FUNCTION-DECL gcd LOC=./src/b2sum.merge.c:1613 */
+#line 1613
 __inline static size_t gcd(size_t u , size_t v )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL gcd LOC=./src/b2sum.merge.c:1617 */
+/* END FUNCTION-DECL gcd LOC=./src/b2sum.merge.c:1613 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/b2sum.merge.c:1621 */
-#line 1621
+/* BEGIN FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/b2sum.merge.c:1617 */
+#line 1617
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) __ctype_get_mb_cur_max)(void) ;
-/* END FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/b2sum.merge.c:1621 */
+/* END FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/b2sum.merge.c:1617 */
 
-/* BEGIN FUNCTION-DECL-EXTERN brk LOC=./src/b2sum.merge.c:1643 */
-#line 1643
+/* BEGIN FUNCTION-DECL-EXTERN brk LOC=./src/b2sum.merge.c:1639 */
+#line 1639
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) brk)(void *__addr ) ;
-/* END FUNCTION-DECL-EXTERN brk LOC=./src/b2sum.merge.c:1643 */
+/* END FUNCTION-DECL-EXTERN brk LOC=./src/b2sum.merge.c:1639 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrier_t_145707746 LOC=./src/b2sum.merge.c:923 */
 #line 923
@@ -1875,96 +1875,96 @@ static _Bool raw_digest ;
 enum __anonenum_91015150 ;
 /* END ENUM-DECL __anonenum_91015150 LOC=./src/b2sum.merge.c:1131 */
 
-/* BEGIN TYPEDEF __uint64_t LOC=./src/b2sum.merge.c:1674 */
-#line 1674 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint64_t LOC=./src/b2sum.merge.c:1670 */
+#line 1670 "./src/b2sum.merge.c"
 typedef unsigned long __uint64_t;
-/* END TYPEDEF __uint64_t LOC=./src/b2sum.merge.c:1674 */
+/* END TYPEDEF __uint64_t LOC=./src/b2sum.merge.c:1670 */
 
-/* BEGIN TYPEDEF u_int64_t LOC=./src/b2sum.merge.c:1678 */
-#line 1678 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_int64_t LOC=./src/b2sum.merge.c:1674 */
+#line 1674 "./src/b2sum.merge.c"
 typedef __uint64_t u_int64_t;
-/* END TYPEDEF u_int64_t LOC=./src/b2sum.merge.c:1678 */
+/* END TYPEDEF u_int64_t LOC=./src/b2sum.merge.c:1674 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/b2sum.merge.c:1687 */
-#line 1687
+/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/b2sum.merge.c:1683 */
+#line 1683
 extern struct dirent64 *( __attribute__((__nonnull__(1))) readdir64)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/b2sum.merge.c:1687 */
+/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/b2sum.merge.c:1683 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/b2sum.merge.c:1691 */
-#line 1691
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/b2sum.merge.c:1687 */
+#line 1687
 extern FILE *tmpfile(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/b2sum.merge.c:1691 */
+/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/b2sum.merge.c:1687 */
 
 /* BEGIN STRUCT-DECL _IO_FILE LOC=./src/b2sum.merge.c:859 */
 #line 859
 struct _IO_FILE ;
 /* END STRUCT-DECL _IO_FILE LOC=./src/b2sum.merge.c:859 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/b2sum.merge.c:1704 */
-#line 1704
+/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/b2sum.merge.c:1700 */
+#line 1700
 extern char *( __attribute__((__nonnull__(1))) getpass)(char const   *__prompt ) ;
-/* END FUNCTION-DECL-EXTERN getpass LOC=./src/b2sum.merge.c:1704 */
+/* END FUNCTION-DECL-EXTERN getpass LOC=./src/b2sum.merge.c:1700 */
 
-/* BEGIN TYPEDEF __off64_t LOC=./src/b2sum.merge.c:1713 */
-#line 1713 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __off64_t LOC=./src/b2sum.merge.c:1709 */
+#line 1709 "./src/b2sum.merge.c"
 typedef long __off64_t;
-/* END TYPEDEF __off64_t LOC=./src/b2sum.merge.c:1713 */
+/* END TYPEDEF __off64_t LOC=./src/b2sum.merge.c:1709 */
 
-/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/b2sum.merge.c:1722 */
-#line 1722
+/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/b2sum.merge.c:1718 */
+#line 1718
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) at_quick_exit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/b2sum.merge.c:1722 */
+/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/b2sum.merge.c:1718 */
 
-/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/b2sum.merge.c:1749 */
-#line 1749 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/b2sum.merge.c:1745 */
+#line 1745 "./src/b2sum.merge.c"
 struct __anonstruct___sigset_t_783464054 {
    unsigned long __val[1024ULL / (8ULL * sizeof(unsigned long ))] ;
 };
-/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/b2sum.merge.c:1749 */
+/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/b2sum.merge.c:1745 */
 
-/* BEGIN TYPEDEF __sigset_t LOC=./src/b2sum.merge.c:1755 */
-#line 1755 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __sigset_t LOC=./src/b2sum.merge.c:1751 */
+#line 1751 "./src/b2sum.merge.c"
 typedef struct __anonstruct___sigset_t_783464054 __sigset_t;
-/* END TYPEDEF __sigset_t LOC=./src/b2sum.merge.c:1755 */
+/* END TYPEDEF __sigset_t LOC=./src/b2sum.merge.c:1751 */
 
-/* BEGIN TYPEDEF sigset_t LOC=./src/b2sum.merge.c:1759 */
-#line 1759 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF sigset_t LOC=./src/b2sum.merge.c:1755 */
+#line 1755 "./src/b2sum.merge.c"
 typedef __sigset_t sigset_t;
-/* END TYPEDEF sigset_t LOC=./src/b2sum.merge.c:1759 */
+/* END TYPEDEF sigset_t LOC=./src/b2sum.merge.c:1755 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/b2sum.merge.c:1763 */
-#line 1763
+/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/b2sum.merge.c:1759 */
+#line 1759
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigpending)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/b2sum.merge.c:1763 */
+/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/b2sum.merge.c:1759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/b2sum.merge.c:1776 */
-#line 1776
+/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/b2sum.merge.c:1772 */
+#line 1772
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort64)(struct dirent64  const  **__e1 ,
                                                                                                       struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/b2sum.merge.c:1776 */
+/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/b2sum.merge.c:1772 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint8_t LOC=./src/b2sum.merge.c:1731 */
-#line 1731 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint8_t LOC=./src/b2sum.merge.c:1727 */
+#line 1727 "./src/b2sum.merge.c"
 typedef unsigned char __uint8_t;
-/* END TYPEDEF __uint8_t LOC=./src/b2sum.merge.c:1731 */
+/* END TYPEDEF __uint8_t LOC=./src/b2sum.merge.c:1727 */
 
-/* BEGIN TYPEDEF uint32_t LOC=./src/b2sum.merge.c:1800 */
-#line 1800 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint32_t LOC=./src/b2sum.merge.c:1796 */
+#line 1796 "./src/b2sum.merge.c"
 typedef __uint32_t uint32_t;
-/* END TYPEDEF uint32_t LOC=./src/b2sum.merge.c:1800 */
+/* END TYPEDEF uint32_t LOC=./src/b2sum.merge.c:1796 */
 
-/* BEGIN TYPEDEF uint8_t LOC=./src/b2sum.merge.c:1804 */
-#line 1804 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint8_t LOC=./src/b2sum.merge.c:1800 */
+#line 1800 "./src/b2sum.merge.c"
 typedef __uint8_t uint8_t;
-/* END TYPEDEF uint8_t LOC=./src/b2sum.merge.c:1804 */
+/* END TYPEDEF uint8_t LOC=./src/b2sum.merge.c:1800 */
 
-/* BEGIN STRUCT blake2s_state__ LOC=./src/b2sum.merge.c:1808 */
-#line 1808 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2s_state__ LOC=./src/b2sum.merge.c:1804 */
+#line 1804 "./src/b2sum.merge.c"
 struct blake2s_state__ {
    uint32_t h[8] ;
    uint32_t t[2] ;
@@ -1974,15 +1974,15 @@ struct blake2s_state__ {
    size_t outlen ;
    uint8_t last_node ;
 };
-/* END STRUCT blake2s_state__ LOC=./src/b2sum.merge.c:1808 */
+/* END STRUCT blake2s_state__ LOC=./src/b2sum.merge.c:1804 */
 
-/* BEGIN TYPEDEF blake2s_state LOC=./src/b2sum.merge.c:1820 */
-#line 1820 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2s_state LOC=./src/b2sum.merge.c:1816 */
+#line 1816 "./src/b2sum.merge.c"
 typedef struct blake2s_state__ blake2s_state;
-/* END TYPEDEF blake2s_state LOC=./src/b2sum.merge.c:1820 */
+/* END TYPEDEF blake2s_state LOC=./src/b2sum.merge.c:1816 */
 
-/* BEGIN STRUCT blake2sp_state__ LOC=./src/b2sum.merge.c:1824 */
-#line 1824 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2sp_state__ LOC=./src/b2sum.merge.c:1820 */
+#line 1820 "./src/b2sum.merge.c"
 struct blake2sp_state__ {
    blake2s_state S[8][1] ;
    blake2s_state R[1] ;
@@ -1990,59 +1990,59 @@ struct blake2sp_state__ {
    size_t buflen ;
    size_t outlen ;
 };
-/* END STRUCT blake2sp_state__ LOC=./src/b2sum.merge.c:1824 */
+/* END STRUCT blake2sp_state__ LOC=./src/b2sum.merge.c:1820 */
 
 /* BEGIN UNION-DECL __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:1019 */
 #line 1019
 union __anonunion__sifields_530746668 ;
 /* END UNION-DECL __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:1019 */
 
-/* BEGIN TYPEDEF __gid_t LOC=./src/b2sum.merge.c:1851 */
-#line 1851 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __gid_t LOC=./src/b2sum.merge.c:1847 */
+#line 1847 "./src/b2sum.merge.c"
 typedef unsigned int __gid_t;
-/* END TYPEDEF __gid_t LOC=./src/b2sum.merge.c:1851 */
+/* END TYPEDEF __gid_t LOC=./src/b2sum.merge.c:1847 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/b2sum.merge.c:1861 */
-#line 1861
+/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/b2sum.merge.c:1857 */
+#line 1857
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getgroups)(int __size ,
                                                                                 __gid_t *__list ) ;
-/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/b2sum.merge.c:1861 */
+/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/b2sum.merge.c:1857 */
 
-/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/b2sum.merge.c:1838 */
-#line 1838 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/b2sum.merge.c:1834 */
+#line 1834 "./src/b2sum.merge.c"
 typedef __builtin_va_list __gnuc_va_list;
-/* END TYPEDEF __gnuc_va_list LOC=./src/b2sum.merge.c:1838 */
+/* END TYPEDEF __gnuc_va_list LOC=./src/b2sum.merge.c:1834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/b2sum.merge.c:1847 */
-#line 1847
+/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/b2sum.merge.c:1843 */
+#line 1843
 extern int vprintf(char const   * __restrict  __format , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/b2sum.merge.c:1847 */
+/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/b2sum.merge.c:1843 */
 
 /* BEGIN FUNCTION-DECL __builtin_expm1l LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_expm1l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_expm1l LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blake2b_param LOC=./src/b2sum.merge.c:1873 */
-#line 1873 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2b_param LOC=./src/b2sum.merge.c:1869 */
+#line 1869 "./src/b2sum.merge.c"
 typedef struct blake2b_param__ blake2b_param;
-/* END TYPEDEF blake2b_param LOC=./src/b2sum.merge.c:1873 */
+/* END TYPEDEF blake2b_param LOC=./src/b2sum.merge.c:1869 */
 
-/* BEGIN TYPEDEF blake2b_state LOC=./src/b2sum.merge.c:1877 */
-#line 1877 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2b_state LOC=./src/b2sum.merge.c:1873 */
+#line 1873 "./src/b2sum.merge.c"
 typedef struct blake2b_state__ blake2b_state;
-/* END TYPEDEF blake2b_state LOC=./src/b2sum.merge.c:1877 */
+/* END TYPEDEF blake2b_state LOC=./src/b2sum.merge.c:1873 */
 
 /* BEGIN FUNCTION-DECL blake2b_init_param LOC=UNKNOWN */
 int ( __attribute__((__nonnull__)) blake2b_init_param)(blake2b_state *S , blake2b_param const   *P ) ;
 /* END FUNCTION-DECL blake2b_init_param LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/b2sum.merge.c:1885 */
-#line 1885
+/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/b2sum.merge.c:1881 */
+#line 1881
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __leaf__)) strtok_r)(char * __restrict  __s ,
                                                                                                    char const   * __restrict  __delim ,
                                                                                                    char ** __restrict  __save_ptr ) ;
-/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/b2sum.merge.c:1885 */
+/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/b2sum.merge.c:1881 */
 
 /* BEGIN STRUCT-DECL flock LOC=./src/b2sum.merge.c:1235 */
 #line 1235
@@ -2054,27 +2054,27 @@ struct flock ;
    _Complex double __builtin_csqrt(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrt LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/b2sum.merge.c:1905 */
-#line 1905
+/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/b2sum.merge.c:1901 */
+#line 1901
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcasecmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/b2sum.merge.c:1905 */
+/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/b2sum.merge.c:1901 */
 
-/* BEGIN TYPEDEF __sighandler_t LOC=./src/b2sum.merge.c:1910 */
-#line 1910 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __sighandler_t LOC=./src/b2sum.merge.c:1906 */
+#line 1906 "./src/b2sum.merge.c"
 typedef void (*__sighandler_t)(int  );
-/* END TYPEDEF __sighandler_t LOC=./src/b2sum.merge.c:1910 */
+/* END TYPEDEF __sighandler_t LOC=./src/b2sum.merge.c:1906 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/b2sum.merge.c:1914 */
-#line 1914
+/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/b2sum.merge.c:1910 */
+#line 1910
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) sysv_signal)(int __sig ,
                                                                                              void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/b2sum.merge.c:1914 */
+/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/b2sum.merge.c:1910 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/b2sum.merge.c:1919 */
-#line 1919
+/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/b2sum.merge.c:1915 */
+#line 1915
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(void) ;
-/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/b2sum.merge.c:1919 */
+/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/b2sum.merge.c:1915 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2091,187 +2091,187 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(vo
    void *__builtin___get_unsafe_stack_bottom(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_bottom LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/b2sum.merge.c:1956 */
-#line 1956
+/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/b2sum.merge.c:1952 */
+#line 1952
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ptsname)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/b2sum.merge.c:1956 */
+/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/b2sum.merge.c:1952 */
 
-/* BEGIN TYPEDEF int_fast32_t LOC=./src/b2sum.merge.c:1969 */
-#line 1969 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_fast32_t LOC=./src/b2sum.merge.c:1965 */
+#line 1965 "./src/b2sum.merge.c"
 typedef long int_fast32_t;
-/* END TYPEDEF int_fast32_t LOC=./src/b2sum.merge.c:1969 */
+/* END TYPEDEF int_fast32_t LOC=./src/b2sum.merge.c:1965 */
 
-/* BEGIN UNION __anonunion___value_751190509 LOC=./src/b2sum.merge.c:1985 */
-#line 1985 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion___value_751190509 LOC=./src/b2sum.merge.c:1981 */
+#line 1981 "./src/b2sum.merge.c"
 union __anonunion___value_751190509 {
    unsigned int __wch ;
    char __wchb[4] ;
 };
-/* END UNION __anonunion___value_751190509 LOC=./src/b2sum.merge.c:1985 */
+/* END UNION __anonunion___value_751190509 LOC=./src/b2sum.merge.c:1981 */
 
-/* BEGIN STRUCT __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1992 */
-#line 1992 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1988 */
+#line 1988 "./src/b2sum.merge.c"
 struct __anonstruct___mbstate_t_843781537 {
    int __count ;
    union __anonunion___value_751190509 __value ;
 };
-/* END STRUCT __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1992 */
+/* END STRUCT __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1988 */
 
-/* BEGIN TYPEDEF __mbstate_t LOC=./src/b2sum.merge.c:1999 */
-#line 1999 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __mbstate_t LOC=./src/b2sum.merge.c:1995 */
+#line 1995 "./src/b2sum.merge.c"
 typedef struct __anonstruct___mbstate_t_843781537 __mbstate_t;
-/* END TYPEDEF __mbstate_t LOC=./src/b2sum.merge.c:1999 */
+/* END TYPEDEF __mbstate_t LOC=./src/b2sum.merge.c:1995 */
 
-/* BEGIN TYPEDEF __off_t LOC=./src/b2sum.merge.c:2003 */
-#line 2003 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __off_t LOC=./src/b2sum.merge.c:1999 */
+#line 1999 "./src/b2sum.merge.c"
 typedef long __off_t;
-/* END TYPEDEF __off_t LOC=./src/b2sum.merge.c:2003 */
+/* END TYPEDEF __off_t LOC=./src/b2sum.merge.c:1999 */
 
-/* BEGIN STRUCT _G_fpos_t LOC=./src/b2sum.merge.c:2007 */
-#line 2007 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _G_fpos_t LOC=./src/b2sum.merge.c:2003 */
+#line 2003 "./src/b2sum.merge.c"
 struct _G_fpos_t {
    __off_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos_t LOC=./src/b2sum.merge.c:2007 */
+/* END STRUCT _G_fpos_t LOC=./src/b2sum.merge.c:2003 */
 
-/* BEGIN TYPEDEF __fpos_t LOC=./src/b2sum.merge.c:2014 */
-#line 2014 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fpos_t LOC=./src/b2sum.merge.c:2010 */
+#line 2010 "./src/b2sum.merge.c"
 typedef struct _G_fpos_t __fpos_t;
-/* END TYPEDEF __fpos_t LOC=./src/b2sum.merge.c:2014 */
+/* END TYPEDEF __fpos_t LOC=./src/b2sum.merge.c:2010 */
 
-/* BEGIN TYPEDEF fpos_t LOC=./src/b2sum.merge.c:2018 */
-#line 2018 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fpos_t LOC=./src/b2sum.merge.c:2014 */
+#line 2014 "./src/b2sum.merge.c"
 typedef __fpos_t fpos_t;
-/* END TYPEDEF fpos_t LOC=./src/b2sum.merge.c:2018 */
+/* END TYPEDEF fpos_t LOC=./src/b2sum.merge.c:2014 */
 
-/* BEGIN TYPEDEF __time_t LOC=./src/b2sum.merge.c:2022 */
-#line 2022 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __time_t LOC=./src/b2sum.merge.c:2018 */
+#line 2018 "./src/b2sum.merge.c"
 typedef long __time_t;
-/* END TYPEDEF __time_t LOC=./src/b2sum.merge.c:2022 */
+/* END TYPEDEF __time_t LOC=./src/b2sum.merge.c:2018 */
 
-/* BEGIN TYPEDEF time_t LOC=./src/b2sum.merge.c:2026 */
-#line 2026 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF time_t LOC=./src/b2sum.merge.c:2022 */
+#line 2022 "./src/b2sum.merge.c"
 typedef __time_t time_t;
-/* END TYPEDEF time_t LOC=./src/b2sum.merge.c:2026 */
+/* END TYPEDEF time_t LOC=./src/b2sum.merge.c:2022 */
 
-/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/b2sum.merge.c:2030 */
-#line 2030
+/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/b2sum.merge.c:2026 */
+#line 2026
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) time)(time_t *__timer ) ;
-/* END FUNCTION-DECL-EXTERN time LOC=./src/b2sum.merge.c:2030 */
+/* END FUNCTION-DECL-EXTERN time LOC=./src/b2sum.merge.c:2026 */
 
-/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/b2sum.merge.c:2034 */
-#line 2034
+/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/b2sum.merge.c:2030 */
+#line 2030
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int __nochdir ,
                                                                              int __noclose ) ;
-/* END FUNCTION-DECL-EXTERN daemon LOC=./src/b2sum.merge.c:2034 */
+/* END FUNCTION-DECL-EXTERN daemon LOC=./src/b2sum.merge.c:2030 */
 
-/* BEGIN UNION sigval LOC=./src/b2sum.merge.c:2052 */
-#line 2052 "./src/b2sum.merge.c"
+/* BEGIN UNION sigval LOC=./src/b2sum.merge.c:2048 */
+#line 2048 "./src/b2sum.merge.c"
 union sigval {
    int sival_int ;
    void *sival_ptr ;
 };
-/* END UNION sigval LOC=./src/b2sum.merge.c:2052 */
+/* END UNION sigval LOC=./src/b2sum.merge.c:2048 */
 
-/* BEGIN TYPEDEF pthread_t LOC=./src/b2sum.merge.c:2059 */
-#line 2059 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_t LOC=./src/b2sum.merge.c:2055 */
+#line 2055 "./src/b2sum.merge.c"
 typedef unsigned long pthread_t;
-/* END TYPEDEF pthread_t LOC=./src/b2sum.merge.c:2059 */
+/* END TYPEDEF pthread_t LOC=./src/b2sum.merge.c:2055 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/b2sum.merge.c:2063 */
-#line 2063
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/b2sum.merge.c:2059 */
+#line 2059
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigqueue)(pthread_t __threadid ,
                                                                                        int __signo ,
                                                                                        union sigval  const  __value ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/b2sum.merge.c:2063 */
+/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/b2sum.merge.c:2059 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_asinf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/b2sum.merge.c:2069 */
-#line 2069
+/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/b2sum.merge.c:2065 */
+#line 2065
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srand48_r)(long __seedval ,
                                                                                                 struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/b2sum.merge.c:2069 */
+/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/b2sum.merge.c:2065 */
 
-/* BEGIN TYPEDEF __pid_t LOC=./src/b2sum.merge.c:2109 */
-#line 2109 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __pid_t LOC=./src/b2sum.merge.c:2105 */
+#line 2105 "./src/b2sum.merge.c"
 typedef int __pid_t;
-/* END TYPEDEF __pid_t LOC=./src/b2sum.merge.c:2109 */
+/* END TYPEDEF __pid_t LOC=./src/b2sum.merge.c:2105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/b2sum.merge.c:2113 */
-#line 2113
+/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/b2sum.merge.c:2109 */
+#line 2109
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getsid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN getsid LOC=./src/b2sum.merge.c:2113 */
+/* END FUNCTION-DECL-EXTERN getsid LOC=./src/b2sum.merge.c:2109 */
 
-/* BEGIN TYPEDEF sigevent_t LOC=./src/b2sum.merge.c:2117 */
-#line 2117 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF sigevent_t LOC=./src/b2sum.merge.c:2113 */
+#line 2113 "./src/b2sum.merge.c"
 typedef struct sigevent sigevent_t;
-/* END TYPEDEF sigevent_t LOC=./src/b2sum.merge.c:2117 */
+/* END TYPEDEF sigevent_t LOC=./src/b2sum.merge.c:2113 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/b2sum.merge.c:2142 */
-#line 2142
+/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/b2sum.merge.c:2138 */
+#line 2138
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchdir)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/b2sum.merge.c:2142 */
+/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/b2sum.merge.c:2138 */
 
-/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/b2sum.merge.c:2125 */
-#line 2125
+/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/b2sum.merge.c:2121 */
+#line 2121
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) malloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN malloc LOC=./src/b2sum.merge.c:2125 */
+/* END FUNCTION-DECL-EXTERN malloc LOC=./src/b2sum.merge.c:2121 */
 
-/* BEGIN TYPEDEF strtol_error LOC=./src/b2sum.merge.c:2151 */
-#line 2151 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF strtol_error LOC=./src/b2sum.merge.c:2147 */
+#line 2147 "./src/b2sum.merge.c"
 typedef enum strtol_error strtol_error;
-/* END TYPEDEF strtol_error LOC=./src/b2sum.merge.c:2151 */
+/* END TYPEDEF strtol_error LOC=./src/b2sum.merge.c:2147 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtol LOC=./src/b2sum.merge.c:2155 */
-#line 2155
+/* BEGIN FUNCTION-DECL-EXTERN xstrtol LOC=./src/b2sum.merge.c:2151 */
+#line 2151
 extern strtol_error xstrtol(char const   * , char ** , int  , long * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtol LOC=./src/b2sum.merge.c:2155 */
+/* END FUNCTION-DECL-EXTERN xstrtol LOC=./src/b2sum.merge.c:2151 */
 
-/* BEGIN TYPEDEF register_t LOC=./src/b2sum.merge.c:2169 */
-#line 2169 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF register_t LOC=./src/b2sum.merge.c:2165 */
+#line 2165 "./src/b2sum.merge.c"
 typedef int register_t;
-/* END TYPEDEF register_t LOC=./src/b2sum.merge.c:2169 */
+/* END TYPEDEF register_t LOC=./src/b2sum.merge.c:2165 */
 
-/* BEGIN TYPEDEF __intmax_t LOC=./src/b2sum.merge.c:1973 */
-#line 1973 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __intmax_t LOC=./src/b2sum.merge.c:1969 */
+#line 1969 "./src/b2sum.merge.c"
 typedef long __intmax_t;
-/* END TYPEDEF __intmax_t LOC=./src/b2sum.merge.c:1973 */
+/* END TYPEDEF __intmax_t LOC=./src/b2sum.merge.c:1969 */
 
-/* BEGIN TYPEDEF intmax_t LOC=./src/b2sum.merge.c:1977 */
-#line 1977 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF intmax_t LOC=./src/b2sum.merge.c:1973 */
+#line 1973 "./src/b2sum.merge.c"
 typedef __intmax_t intmax_t;
-/* END TYPEDEF intmax_t LOC=./src/b2sum.merge.c:1977 */
+/* END TYPEDEF intmax_t LOC=./src/b2sum.merge.c:1973 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xdectoimax LOC=./src/b2sum.merge.c:2178 */
-#line 2178
+/* BEGIN FUNCTION-DECL-EXTERN xdectoimax LOC=./src/b2sum.merge.c:2174 */
+#line 2174
 extern intmax_t ( __attribute__((__nonnull__(1,5))) xdectoimax)(char const   *n_str ,
                                                                 intmax_t min , intmax_t max ,
                                                                 char const   *suffixes ,
                                                                 char const   *err ,
                                                                 int err_exit ) ;
-/* END FUNCTION-DECL-EXTERN xdectoimax LOC=./src/b2sum.merge.c:2178 */
+/* END FUNCTION-DECL-EXTERN xdectoimax LOC=./src/b2sum.merge.c:2174 */
 
 /* BEGIN FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strpbrk(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/b2sum.merge.c:2195 */
-#line 2195
+/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/b2sum.merge.c:2191 */
+#line 2191
 extern int ( __attribute__((__nonnull__(1))) getw)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getw LOC=./src/b2sum.merge.c:2195 */
+/* END FUNCTION-DECL-EXTERN getw LOC=./src/b2sum.merge.c:2191 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/b2sum.merge.c:2209 */
-#line 2209
+/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/b2sum.merge.c:2205 */
+#line 2205
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) realpath)(char const   * __restrict  __name ,
                                                                                  char * __restrict  __resolved ) ;
-/* END FUNCTION-DECL-EXTERN realpath LOC=./src/b2sum.merge.c:2209 */
+/* END FUNCTION-DECL-EXTERN realpath LOC=./src/b2sum.merge.c:2205 */
 
 /* BEGIN FUNCTION-DECL xnrealloc LOC=UNKNOWN */
 __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc_size__(2,3))) ;
@@ -2297,15 +2297,15 @@ __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc
    long __builtin_lroundf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoll LOC=./src/b2sum.merge.c:2258 */
-#line 2258
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoll LOC=./src/b2sum.merge.c:2254 */
+#line 2254
 extern strtol_error xstrtoll(char const   * , char ** , int  , long long * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoll LOC=./src/b2sum.merge.c:2258 */
+/* END FUNCTION-DECL-EXTERN xstrtoll LOC=./src/b2sum.merge.c:2254 */
 
-/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/b2sum.merge.c:2290 */
-#line 2290
+/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/b2sum.merge.c:2286 */
+#line 2286
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) telldir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN telldir LOC=./src/b2sum.merge.c:2290 */
+/* END FUNCTION-DECL-EXTERN telldir LOC=./src/b2sum.merge.c:2286 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2327,34 +2327,34 @@ union __anonunion___atomic_wide_counter_267073716 ;
    int __builtin_isless(...) ;  */
 /* END FUNCTION-DECL __builtin_isless LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __useconds_t LOC=./src/b2sum.merge.c:2550 */
-#line 2550 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __useconds_t LOC=./src/b2sum.merge.c:2546 */
+#line 2546 "./src/b2sum.merge.c"
 typedef unsigned int __useconds_t;
-/* END TYPEDEF __useconds_t LOC=./src/b2sum.merge.c:2550 */
+/* END TYPEDEF __useconds_t LOC=./src/b2sum.merge.c:2546 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/b2sum.merge.c:2554 */
-#line 2554
+/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/b2sum.merge.c:2550 */
+#line 2550
 extern  __attribute__((__nothrow__)) __useconds_t ( __attribute__((__leaf__)) ualarm)(__useconds_t __value ,
                                                                                       __useconds_t __interval ) ;
-/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/b2sum.merge.c:2554 */
+/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/b2sum.merge.c:2550 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/b2sum.merge.c:2546 */
-#line 2546
+/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/b2sum.merge.c:2542 */
+#line 2542
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffs)(int __i )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffs LOC=./src/b2sum.merge.c:2546 */
+/* END FUNCTION-DECL-EXTERN ffs LOC=./src/b2sum.merge.c:2542 */
 
-/* BEGIN TYPEDEF __clock_t LOC=./src/b2sum.merge.c:2585 */
-#line 2585 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __clock_t LOC=./src/b2sum.merge.c:2581 */
+#line 2581 "./src/b2sum.merge.c"
 typedef long __clock_t;
-/* END TYPEDEF __clock_t LOC=./src/b2sum.merge.c:2585 */
+/* END TYPEDEF __clock_t LOC=./src/b2sum.merge.c:2581 */
 
-/* BEGIN TYPEDEF __uid_t LOC=./src/b2sum.merge.c:2199 */
-#line 2199 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uid_t LOC=./src/b2sum.merge.c:2195 */
+#line 2195 "./src/b2sum.merge.c"
 typedef unsigned int __uid_t;
-/* END TYPEDEF __uid_t LOC=./src/b2sum.merge.c:2199 */
+/* END TYPEDEF __uid_t LOC=./src/b2sum.merge.c:2195 */
 
-/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/b2sum.merge.c:2589 */
-#line 2589 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/b2sum.merge.c:2585 */
+#line 2585 "./src/b2sum.merge.c"
 struct __anonstruct__sigchld_284671705 {
    __pid_t si_pid ;
    __uid_t si_uid ;
@@ -2362,7 +2362,7 @@ struct __anonstruct__sigchld_284671705 {
    __clock_t si_utime ;
    __clock_t si_stime ;
 };
-/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/b2sum.merge.c:2589 */
+/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/b2sum.merge.c:2585 */
 
 /* BEGIN FUNCTION-DECL __builtin___memset_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -2373,27 +2373,27 @@ struct __anonstruct__sigchld_284671705 {
 static void blake2b_set_lastblock(blake2b_state *S ) ;
 /* END FUNCTION-DECL blake2b_set_lastblock LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __id_t LOC=./src/b2sum.merge.c:2617 */
-#line 2617 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __id_t LOC=./src/b2sum.merge.c:2613 */
+#line 2613 "./src/b2sum.merge.c"
 typedef unsigned int __id_t;
-/* END TYPEDEF __id_t LOC=./src/b2sum.merge.c:2617 */
+/* END TYPEDEF __id_t LOC=./src/b2sum.merge.c:2613 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/b2sum.merge.c:2621 */
-#line 2621
+/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/b2sum.merge.c:2617 */
+#line 2617
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpid)(void) ;
-/* END FUNCTION-DECL-EXTERN getpid LOC=./src/b2sum.merge.c:2621 */
+/* END FUNCTION-DECL-EXTERN getpid LOC=./src/b2sum.merge.c:2617 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/b2sum.merge.c:2625 */
-#line 2625
+/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/b2sum.merge.c:2621 */
+#line 2621
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigprocmask)(int __how ,
                                                                                   sigset_t const   * __restrict  __set ,
                                                                                   sigset_t * __restrict  __oset ) ;
-/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/b2sum.merge.c:2625 */
+/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/b2sum.merge.c:2621 */
 
-/* BEGIN TYPEDEF fpregset_t LOC=./src/b2sum.merge.c:2631 */
-#line 2631 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fpregset_t LOC=./src/b2sum.merge.c:2627 */
+#line 2627 "./src/b2sum.merge.c"
 typedef struct _libc_fpstate *fpregset_t;
-/* END TYPEDEF fpregset_t LOC=./src/b2sum.merge.c:2631 */
+/* END TYPEDEF fpregset_t LOC=./src/b2sum.merge.c:2627 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/b2sum.merge.c:1303 */
 #line 1303
@@ -2414,104 +2414,104 @@ static char bin2hex[16] ;
    float __builtin_cbrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_cbrtf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/b2sum.merge.c:2698 */
-#line 2698
+/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/b2sum.merge.c:2694 */
+#line 2694
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) nice)(int __inc ) ;
-/* END FUNCTION-DECL-EXTERN nice LOC=./src/b2sum.merge.c:2698 */
+/* END FUNCTION-DECL-EXTERN nice LOC=./src/b2sum.merge.c:2694 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/b2sum.merge.c:2717 */
-#line 2717
+/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/b2sum.merge.c:2713 */
+#line 2713
 extern FILE *stdout ;
-/* END VARIABLE-DECL-EXTERN stdout LOC=./src/b2sum.merge.c:2717 */
+/* END VARIABLE-DECL-EXTERN stdout LOC=./src/b2sum.merge.c:2713 */
 
-/* BEGIN FUNCTION-DECL c_toupper LOC=./src/b2sum.merge.c:2721 */
-#line 2721
+/* BEGIN FUNCTION-DECL c_toupper LOC=./src/b2sum.merge.c:2717 */
+#line 2717
 __inline int c_toupper(int c ) ;
-/* END FUNCTION-DECL c_toupper LOC=./src/b2sum.merge.c:2721 */
+/* END FUNCTION-DECL c_toupper LOC=./src/b2sum.merge.c:2717 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/b2sum.merge.c:2725 */
-#line 2725
+/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/b2sum.merge.c:2721 */
+#line 2721
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gethostname)(char *__name ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/b2sum.merge.c:2725 */
+/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/b2sum.merge.c:2721 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/b2sum.merge.c:2730 */
-#line 2730
+/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/b2sum.merge.c:2726 */
+#line 2726
 extern struct tm *getdate(char const   *__string ) ;
-/* END FUNCTION-DECL-EXTERN getdate LOC=./src/b2sum.merge.c:2730 */
+/* END FUNCTION-DECL-EXTERN getdate LOC=./src/b2sum.merge.c:2726 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/b2sum.merge.c:2744 */
-#line 2744
+/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/b2sum.merge.c:2740 */
+#line 2740
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setreuid)(__uid_t __ruid ,
                                                                                __uid_t __euid ) ;
-/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/b2sum.merge.c:2744 */
+/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/b2sum.merge.c:2740 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/b2sum.merge.c:2749 */
-#line 2749
+/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/b2sum.merge.c:2745 */
+#line 2745
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,3), __leaf__)) memmem)(void const   *__haystack ,
                                                                                                  size_t __haystacklen ,
                                                                                                  void const   *__needle ,
                                                                                                  size_t __needlelen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memmem LOC=./src/b2sum.merge.c:2749 */
+/* END FUNCTION-DECL-EXTERN memmem LOC=./src/b2sum.merge.c:2745 */
 
-/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:2756 */
-#line 2756 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:2752 */
+#line 2752 "./src/b2sum.merge.c"
 struct __anonstruct__sigpoll_386613454 {
    long si_band ;
    int si_fd ;
 };
-/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:2756 */
+/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:2752 */
 
-/* BEGIN TYPEDEF __kernel_long_t LOC=./src/b2sum.merge.c:2763 */
-#line 2763 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_long_t LOC=./src/b2sum.merge.c:2759 */
+#line 2759 "./src/b2sum.merge.c"
 typedef long __kernel_long_t;
-/* END TYPEDEF __kernel_long_t LOC=./src/b2sum.merge.c:2763 */
+/* END TYPEDEF __kernel_long_t LOC=./src/b2sum.merge.c:2759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/b2sum.merge.c:2767 */
-#line 2767
+/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/b2sum.merge.c:2763 */
+#line 2763
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN exit LOC=./src/b2sum.merge.c:2767 */
+/* END FUNCTION-DECL-EXTERN exit LOC=./src/b2sum.merge.c:2763 */
 
-/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/b2sum.merge.c:2780 */
-#line 2780
+/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/b2sum.merge.c:2776 */
+#line 2776
 extern int _gl_cxxalias_dummy ;
-/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/b2sum.merge.c:2780 */
+/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/b2sum.merge.c:2776 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_scalbn(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 
-/* BEGIN TYPEDEF ptrdiff_t LOC=./src/b2sum.merge.c:2793 */
-#line 2793 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ptrdiff_t LOC=./src/b2sum.merge.c:2789 */
+#line 2789 "./src/b2sum.merge.c"
 typedef long ptrdiff_t;
-/* END TYPEDEF ptrdiff_t LOC=./src/b2sum.merge.c:2793 */
+/* END TYPEDEF ptrdiff_t LOC=./src/b2sum.merge.c:2789 */
 
-/* BEGIN TYPEDEF idx_t LOC=./src/b2sum.merge.c:2797 */
-#line 2797 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF idx_t LOC=./src/b2sum.merge.c:2793 */
+#line 2793 "./src/b2sum.merge.c"
 typedef ptrdiff_t idx_t;
-/* END TYPEDEF idx_t LOC=./src/b2sum.merge.c:2797 */
+/* END TYPEDEF idx_t LOC=./src/b2sum.merge.c:2793 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/b2sum.merge.c:2801 */
-#line 2801
+/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/b2sum.merge.c:2797 */
+#line 2797
 extern char *ximemdup0(void const   *p , idx_t s )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/b2sum.merge.c:2801 */
+/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/b2sum.merge.c:2797 */
 
 /* BEGIN STRUCT-DECL stat64 LOC=./src/b2sum.merge.c:1047 */
 #line 1047
 struct stat64 ;
 /* END STRUCT-DECL stat64 LOC=./src/b2sum.merge.c:1047 */
 
-/* BEGIN TYPEDEF __int16_t LOC=./src/b2sum.merge.c:2816 */
-#line 2816 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int16_t LOC=./src/b2sum.merge.c:2812 */
+#line 2812 "./src/b2sum.merge.c"
 typedef short __int16_t;
-/* END TYPEDEF __int16_t LOC=./src/b2sum.merge.c:2816 */
+/* END TYPEDEF __int16_t LOC=./src/b2sum.merge.c:2812 */
 
-/* BEGIN TYPEDEF __int_least16_t LOC=./src/b2sum.merge.c:2820 */
-#line 2820 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int_least16_t LOC=./src/b2sum.merge.c:2816 */
+#line 2816 "./src/b2sum.merge.c"
 typedef __int16_t __int_least16_t;
-/* END TYPEDEF __int_least16_t LOC=./src/b2sum.merge.c:2820 */
+/* END TYPEDEF __int_least16_t LOC=./src/b2sum.merge.c:2816 */
 
 /* BEGIN FUNCTION-DECL __builtin_clrsbll LOC=BUILTIN */
 /* compiler builtin: 
@@ -2523,27 +2523,27 @@ typedef __int16_t __int_least16_t;
 struct __pthread_rwlock_arch_t ;
 /* END STRUCT-DECL __pthread_rwlock_arch_t LOC=./src/b2sum.merge.c:1311 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/b2sum.merge.c:2882 */
-#line 2882
+/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/b2sum.merge.c:2878 */
+#line 2878
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigaddset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/b2sum.merge.c:2882 */
+/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/b2sum.merge.c:2878 */
 
 /* BEGIN STRUCT-DECL timex LOC=./src/b2sum.merge.c:1363 */
 #line 1363
 struct timex ;
 /* END STRUCT-DECL timex LOC=./src/b2sum.merge.c:1363 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/b2sum.merge.c:2887 */
-#line 2887
+/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/b2sum.merge.c:2883 */
+#line 2883
 extern int __daylight ;
-/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/b2sum.merge.c:2887 */
+/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/b2sum.merge.c:2883 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/b2sum.merge.c:2909 */
-#line 2909
+/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/b2sum.merge.c:2905 */
+#line 2905
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) stat64)(char const   * __restrict  __file ,
                                                                                                struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/b2sum.merge.c:2909 */
+/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/b2sum.merge.c:2905 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbln LOC=BUILTIN */
 /* compiler builtin: 
@@ -2556,43 +2556,43 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                  char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsnprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/b2sum.merge.c:2930 */
-#line 2930 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/b2sum.merge.c:2926 */
+#line 2926 "./src/b2sum.merge.c"
 typedef long __blkcnt64_t;
-/* END TYPEDEF __blkcnt64_t LOC=./src/b2sum.merge.c:2930 */
+/* END TYPEDEF __blkcnt64_t LOC=./src/b2sum.merge.c:2926 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/b2sum.merge.c:2945 */
-#line 2945
+/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/b2sum.merge.c:2941 */
+#line 2941
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) setstate_r)(char * __restrict  __statebuf ,
                                                                                                    struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/b2sum.merge.c:2945 */
+/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/b2sum.merge.c:2941 */
 
-/* BEGIN TYPEDEF __locale_t LOC=./src/b2sum.merge.c:2980 */
-#line 2980 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __locale_t LOC=./src/b2sum.merge.c:2976 */
+#line 2976 "./src/b2sum.merge.c"
 typedef struct __locale_struct *__locale_t;
-/* END TYPEDEF __locale_t LOC=./src/b2sum.merge.c:2980 */
+/* END TYPEDEF __locale_t LOC=./src/b2sum.merge.c:2976 */
 
-/* BEGIN TYPEDEF locale_t LOC=./src/b2sum.merge.c:2984 */
-#line 2984 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF locale_t LOC=./src/b2sum.merge.c:2980 */
+#line 2980 "./src/b2sum.merge.c"
 typedef __locale_t locale_t;
-/* END TYPEDEF locale_t LOC=./src/b2sum.merge.c:2984 */
+/* END TYPEDEF locale_t LOC=./src/b2sum.merge.c:2980 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/b2sum.merge.c:2988 */
-#line 2988
+/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/b2sum.merge.c:2984 */
+#line 2984
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoul_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoul_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/b2sum.merge.c:2988 */
+/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/b2sum.merge.c:2984 */
 
 /* BEGIN STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:1299 */
 #line 1299
 struct __anonstruct_lldiv_t_103911545 ;
 /* END STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:1299 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/b2sum.merge.c:3005 */
-#line 3005
+/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/b2sum.merge.c:3001 */
+#line 3001
 extern DIR *fdopendir(int __fd )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/b2sum.merge.c:3005 */
+/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/b2sum.merge.c:3001 */
 
 /* BEGIN STRUCT-DECL __anonstruct___sigset_t_783464054 LOC=./src/b2sum.merge.c:1195 */
 #line 1195
@@ -2604,8 +2604,8 @@ struct __anonstruct___sigset_t_783464054 ;
    long double __builtin_powl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_powl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_875524036 LOC=./src/b2sum.merge.c:3024 */
-#line 3024
+/* BEGIN ENUM __anonenum_875524036 LOC=./src/b2sum.merge.c:3020 */
+#line 3020
 enum __anonenum_875524036 {
     _CS_PATH = 0,
     _CS_V6_WIDTH_RESTRICTED_ENVS = 1,
@@ -2672,51 +2672,51 @@ enum __anonenum_875524036 {
     _CS_V6_ENV = 1148,
     _CS_V7_ENV = 1149
 } ;
-/* END ENUM __anonenum_875524036 LOC=./src/b2sum.merge.c:3024 */
+/* END ENUM __anonenum_875524036 LOC=./src/b2sum.merge.c:3020 */
 
 /* BEGIN ENUM-DECL __anonenum_288797321 LOC=./src/b2sum.merge.c:927 */
 #line 927
 enum __anonenum_288797321 ;
 /* END ENUM-DECL __anonenum_288797321 LOC=./src/b2sum.merge.c:927 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/b2sum.merge.c:3101 */
-#line 3101
+/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/b2sum.merge.c:3097 */
+#line 3097
 extern char const   *quote(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote LOC=./src/b2sum.merge.c:3101 */
+/* END FUNCTION-DECL-EXTERN quote LOC=./src/b2sum.merge.c:3097 */
 
-/* BEGIN FUNCTION-DECL emit_update_parameters_note LOC=./src/b2sum.merge.c:3105 */
-#line 3105
+/* BEGIN FUNCTION-DECL emit_update_parameters_note LOC=./src/b2sum.merge.c:3101 */
+#line 3101
 __inline static void emit_update_parameters_note(void) ;
-/* END FUNCTION-DECL emit_update_parameters_note LOC=./src/b2sum.merge.c:3105 */
+/* END FUNCTION-DECL emit_update_parameters_note LOC=./src/b2sum.merge.c:3101 */
 
-/* BEGIN TYPEDEF uint64_t LOC=./src/b2sum.merge.c:2230 */
-#line 2230 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint64_t LOC=./src/b2sum.merge.c:2226 */
+#line 2226 "./src/b2sum.merge.c"
 typedef __uint64_t uint64_t;
-/* END TYPEDEF uint64_t LOC=./src/b2sum.merge.c:2230 */
+/* END TYPEDEF uint64_t LOC=./src/b2sum.merge.c:2226 */
 
 /* BEGIN FUNCTION-DECL rotr64 LOC=UNKNOWN */
 __inline static uint64_t rotr64(uint64_t const   w , unsigned int const   c ) ;
 /* END FUNCTION-DECL rotr64 LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/b2sum.merge.c:3124 */
-#line 3124
+/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/b2sum.merge.c:3120 */
+#line 3120
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) fcvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/b2sum.merge.c:3124 */
+/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/b2sum.merge.c:3120 */
 
 /* BEGIN VARIABLE-DEF raw_digest LOC=UNKNOWN */
 static _Bool raw_digest  ;
 /* END VARIABLE-DEF raw_digest LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF _IO_lock_t LOC=./src/b2sum.merge.c:3151 */
-#line 3151 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF _IO_lock_t LOC=./src/b2sum.merge.c:3147 */
+#line 3147 "./src/b2sum.merge.c"
 typedef void _IO_lock_t;
-/* END TYPEDEF _IO_lock_t LOC=./src/b2sum.merge.c:3151 */
+/* END TYPEDEF _IO_lock_t LOC=./src/b2sum.merge.c:3147 */
 
-/* BEGIN STRUCT _IO_FILE LOC=./src/b2sum.merge.c:3155 */
-#line 3155 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _IO_FILE LOC=./src/b2sum.merge.c:3151 */
+#line 3151 "./src/b2sum.merge.c"
 struct _IO_FILE {
    int _flags ;
    char *_IO_read_ptr ;
@@ -2749,15 +2749,15 @@ struct _IO_FILE {
    int _mode ;
    char _unused2[15ULL * sizeof(int ) - 5ULL * sizeof(void *)] ;
 };
-/* END STRUCT _IO_FILE LOC=./src/b2sum.merge.c:3155 */
+/* END STRUCT _IO_FILE LOC=./src/b2sum.merge.c:3151 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/b2sum.merge.c:3190 */
-#line 3190
+/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/b2sum.merge.c:3186 */
+#line 3186
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random_uniform)(__uint32_t __upper_bound ) ;
-/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/b2sum.merge.c:3190 */
+/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/b2sum.merge.c:3186 */
 
-/* BEGIN ENUM quoting_style LOC=./src/b2sum.merge.c:2559 */
-#line 2559
+/* BEGIN ENUM quoting_style LOC=./src/b2sum.merge.c:2555 */
+#line 2555
 enum quoting_style {
     literal_quoting_style = 0,
     shell_quoting_style = 1,
@@ -2771,37 +2771,37 @@ enum quoting_style {
     clocale_quoting_style = 9,
     custom_quoting_style = 10
 } ;
-/* END ENUM quoting_style LOC=./src/b2sum.merge.c:2559 */
+/* END ENUM quoting_style LOC=./src/b2sum.merge.c:2555 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/b2sum.merge.c:3202 */
-#line 3202
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/b2sum.merge.c:3198 */
+#line 3198
 extern void set_quoting_style(struct quoting_options *o , enum quoting_style s ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/b2sum.merge.c:3202 */
+/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/b2sum.merge.c:3198 */
 
 /* BEGIN STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:1067 */
 #line 1067
 struct __anonstruct___value32_118117645 ;
 /* END STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:1067 */
 
-/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/b2sum.merge.c:3206 */
-#line 3206
+/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/b2sum.merge.c:3202 */
+#line 3202
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) asctime)(struct tm  const  *__tp ) ;
-/* END FUNCTION-DECL-EXTERN asctime LOC=./src/b2sum.merge.c:3206 */
+/* END FUNCTION-DECL-EXTERN asctime LOC=./src/b2sum.merge.c:3202 */
 
-/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/b2sum.merge.c:3223 */
-#line 3223 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/b2sum.merge.c:3219 */
+#line 3219 "./src/b2sum.merge.c"
 typedef unsigned int __kernel_gid32_t;
-/* END TYPEDEF __kernel_gid32_t LOC=./src/b2sum.merge.c:3223 */
+/* END TYPEDEF __kernel_gid32_t LOC=./src/b2sum.merge.c:3219 */
 
-/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/b2sum.merge.c:3231 */
-#line 3231 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/b2sum.merge.c:3227 */
+#line 3227 "./src/b2sum.merge.c"
 typedef struct __anonstruct___kernel_fsid_t_990674702 __kernel_fsid_t;
-/* END TYPEDEF __kernel_fsid_t LOC=./src/b2sum.merge.c:3231 */
+/* END TYPEDEF __kernel_fsid_t LOC=./src/b2sum.merge.c:3227 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/b2sum.merge.c:3235 */
-#line 3235
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/b2sum.merge.c:3231 */
+#line 3231
 extern char *quotearg_colon_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/b2sum.merge.c:3235 */
+/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/b2sum.merge.c:3231 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcb LOC=BUILTIN */
 /* compiler builtin: 
@@ -2819,48 +2819,48 @@ extern char *quotearg_colon_mem(char const   *arg , size_t argsize ) ;
    _Float128 __builtin_rintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/b2sum.merge.c:3265 */
-#line 3265
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/b2sum.merge.c:3261 */
+#line 3261
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/b2sum.merge.c:3265 */
+/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/b2sum.merge.c:3261 */
 
 /* BEGIN ENUM-DECL quoting_style LOC=./src/b2sum.merge.c:1251 */
 #line 1251
 enum quoting_style ;
 /* END ENUM-DECL quoting_style LOC=./src/b2sum.merge.c:1251 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/b2sum.merge.c:3272 */
-#line 3272
+/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/b2sum.merge.c:3268 */
+#line 3268
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) strtoll)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     int __base )  __asm__("__isoc23_strtoll")  ;
-/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/b2sum.merge.c:3272 */
+/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/b2sum.merge.c:3268 */
 
-/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/b2sum.merge.c:3278 */
-#line 3278 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/b2sum.merge.c:3274 */
+#line 3274 "./src/b2sum.merge.c"
 struct __anonstruct__addr_bnd_5259977 {
    void *_lower ;
    void *_upper ;
 };
-/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/b2sum.merge.c:3278 */
+/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/b2sum.merge.c:3274 */
 
-/* BEGIN TYPEDEF blake2xb_state LOC=./src/b2sum.merge.c:3290 */
-#line 3290 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2xb_state LOC=./src/b2sum.merge.c:3286 */
+#line 3286 "./src/b2sum.merge.c"
 typedef struct blake2xb_state__ blake2xb_state;
-/* END TYPEDEF blake2xb_state LOC=./src/b2sum.merge.c:3290 */
+/* END TYPEDEF blake2xb_state LOC=./src/b2sum.merge.c:3286 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xb_init LOC=./src/b2sum.merge.c:3294 */
-#line 3294
+/* BEGIN FUNCTION-DECL-EXTERN blake2xb_init LOC=./src/b2sum.merge.c:3290 */
+#line 3290
 extern int blake2xb_init(blake2xb_state *S , size_t const   outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xb_init LOC=./src/b2sum.merge.c:3294 */
+/* END FUNCTION-DECL-EXTERN blake2xb_init LOC=./src/b2sum.merge.c:3290 */
 
-/* BEGIN FUNCTION-DECL __uint32_identity LOC=./src/b2sum.merge.c:3308 */
-#line 3308
+/* BEGIN FUNCTION-DECL __uint32_identity LOC=./src/b2sum.merge.c:3304 */
+#line 3304
 __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
-/* END FUNCTION-DECL __uint32_identity LOC=./src/b2sum.merge.c:3308 */
+/* END FUNCTION-DECL __uint32_identity LOC=./src/b2sum.merge.c:3304 */
 
 /* BEGIN VARIABLE-DEF blake2b_sigma LOC=UNKNOWN */
 static uint8_t blake2b_sigma[12][16]  ;
@@ -2890,98 +2890,98 @@ static _Bool quiet  ;
    float __builtin_exp2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/b2sum.merge.c:3430 */
-#line 3430
+/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/b2sum.merge.c:3426 */
+#line 3426
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) getsubopt)(char ** __restrict  __optionp ,
                                                                                                     char ** __restrict  __tokens ,
                                                                                                     char ** __restrict  __valuep ) ;
-/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/b2sum.merge.c:3430 */
+/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/b2sum.merge.c:3426 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/b2sum.merge.c:3436 */
-#line 3436
+/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/b2sum.merge.c:3432 */
+#line 3432
 extern  __attribute__((__noreturn__)) void __error_noreturn(int __status , int __errnum ,
                                                             char const   *__format 
                                                             , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/b2sum.merge.c:3436 */
+/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/b2sum.merge.c:3432 */
 
-/* BEGIN TYPEDEF __timer_t LOC=./src/b2sum.merge.c:3464 */
-#line 3464 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __timer_t LOC=./src/b2sum.merge.c:3460 */
+#line 3460 "./src/b2sum.merge.c"
 typedef void *__timer_t;
-/* END TYPEDEF __timer_t LOC=./src/b2sum.merge.c:3464 */
+/* END TYPEDEF __timer_t LOC=./src/b2sum.merge.c:3460 */
 
-/* BEGIN TYPEDEF timer_t LOC=./src/b2sum.merge.c:3468 */
-#line 3468 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF timer_t LOC=./src/b2sum.merge.c:3464 */
+#line 3464 "./src/b2sum.merge.c"
 typedef __timer_t timer_t;
-/* END TYPEDEF timer_t LOC=./src/b2sum.merge.c:3468 */
+/* END TYPEDEF timer_t LOC=./src/b2sum.merge.c:3464 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/b2sum.merge.c:3472 */
-#line 3472
+/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/b2sum.merge.c:3468 */
+#line 3468
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_getoverrun)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/b2sum.merge.c:3472 */
+/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/b2sum.merge.c:3468 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/b2sum.merge.c:3476 */
-#line 3476
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/b2sum.merge.c:3472 */
+#line 3472
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qfcvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/b2sum.merge.c:3476 */
+/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/b2sum.merge.c:3472 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xb LOC=./src/b2sum.merge.c:3485 */
-#line 3485
+/* BEGIN FUNCTION-DECL-EXTERN blake2xb LOC=./src/b2sum.merge.c:3481 */
+#line 3481
 extern int blake2xb(void *out , size_t outlen , void const   *in , size_t inlen ,
                     void const   *key , size_t keylen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xb LOC=./src/b2sum.merge.c:3485 */
+/* END FUNCTION-DECL-EXTERN blake2xb LOC=./src/b2sum.merge.c:3481 */
 
-/* BEGIN STRUCT _G_fpos64_t LOC=./src/b2sum.merge.c:3505 */
-#line 3505 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _G_fpos64_t LOC=./src/b2sum.merge.c:3501 */
+#line 3501 "./src/b2sum.merge.c"
 struct _G_fpos64_t {
    __off64_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos64_t LOC=./src/b2sum.merge.c:3505 */
+/* END STRUCT _G_fpos64_t LOC=./src/b2sum.merge.c:3501 */
 
-/* BEGIN TYPEDEF __fpos64_t LOC=./src/b2sum.merge.c:3512 */
-#line 3512 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fpos64_t LOC=./src/b2sum.merge.c:3508 */
+#line 3508 "./src/b2sum.merge.c"
 typedef struct _G_fpos64_t __fpos64_t;
-/* END TYPEDEF __fpos64_t LOC=./src/b2sum.merge.c:3512 */
+/* END TYPEDEF __fpos64_t LOC=./src/b2sum.merge.c:3508 */
 
-/* BEGIN TYPEDEF fpos64_t LOC=./src/b2sum.merge.c:3516 */
-#line 3516 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fpos64_t LOC=./src/b2sum.merge.c:3512 */
+#line 3512 "./src/b2sum.merge.c"
 typedef __fpos64_t fpos64_t;
-/* END TYPEDEF fpos64_t LOC=./src/b2sum.merge.c:3516 */
+/* END TYPEDEF fpos64_t LOC=./src/b2sum.merge.c:3512 */
 
 /* BEGIN FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_extract_return_addr(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u64 LOC=./src/b2sum.merge.c:3530 */
-#line 3530 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u64 LOC=./src/b2sum.merge.c:3526 */
+#line 3526 "./src/b2sum.merge.c"
 typedef unsigned long long __u64;
-/* END TYPEDEF __u64 LOC=./src/b2sum.merge.c:3530 */
+/* END TYPEDEF __u64 LOC=./src/b2sum.merge.c:3526 */
 
-/* BEGIN TYPEDEF __be64 LOC=./src/b2sum.merge.c:3534 */
-#line 3534 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __be64 LOC=./src/b2sum.merge.c:3530 */
+#line 3530 "./src/b2sum.merge.c"
 typedef __u64 __be64;
-/* END TYPEDEF __be64 LOC=./src/b2sum.merge.c:3534 */
+/* END TYPEDEF __be64 LOC=./src/b2sum.merge.c:3530 */
 
 /* BEGIN FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smulll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/b2sum.merge.c:3565 */
-#line 3565
+/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/b2sum.merge.c:3561 */
+#line 3561
 extern void *xpalloc(void *pa , idx_t *pn , idx_t n_incr_min , ptrdiff_t n_max , idx_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/b2sum.merge.c:3565 */
+/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/b2sum.merge.c:3561 */
 
-/* BEGIN TYPEDEF uintptr_t LOC=./src/b2sum.merge.c:3569 */
-#line 3569 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uintptr_t LOC=./src/b2sum.merge.c:3565 */
+#line 3565 "./src/b2sum.merge.c"
 typedef unsigned long uintptr_t;
-/* END TYPEDEF uintptr_t LOC=./src/b2sum.merge.c:3569 */
+/* END TYPEDEF uintptr_t LOC=./src/b2sum.merge.c:3565 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -2993,15 +2993,15 @@ typedef unsigned long uintptr_t;
 enum __anonenum_437032235 ;
 /* END ENUM-DECL __anonenum_437032235 LOC=./src/b2sum.merge.c:1307 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/b2sum.merge.c:3591 */
-#line 3591
-extern  __attribute__((__noreturn__)) void xalloc_die(void) ;
-/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/b2sum.merge.c:3591 */
-
-/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/b2sum.merge.c:3587 */
+/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/b2sum.merge.c:3587 */
 #line 3587
+extern  __attribute__((__noreturn__)) void xalloc_die(void) ;
+/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/b2sum.merge.c:3587 */
+
+/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/b2sum.merge.c:3583 */
+#line 3583
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) setstate)(char *__statebuf ) ;
-/* END FUNCTION-DECL-EXTERN setstate LOC=./src/b2sum.merge.c:3587 */
+/* END FUNCTION-DECL-EXTERN setstate LOC=./src/b2sum.merge.c:3583 */
 
 /* BEGIN VARIABLE-DECL ignore_missing LOC=UNKNOWN */
 static _Bool ignore_missing ;
@@ -3017,8 +3017,8 @@ struct __pthread_cond_s ;
    int __builtin_ctzll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963 LOC=./src/b2sum.merge.c:3608 */
-#line 3608
+/* BEGIN ENUM __anonenum_640648963 LOC=./src/b2sum.merge.c:3604 */
+#line 3604
 enum __anonenum_640648963 {
     ILL_ILLOPC = 1,
     ILL_ILLOPN = 2,
@@ -3030,28 +3030,28 @@ enum __anonenum_640648963 {
     ILL_BADSTK = 8,
     ILL_BADIADDR = 9
 } ;
-/* END ENUM __anonenum_640648963 LOC=./src/b2sum.merge.c:3608 */
+/* END ENUM __anonenum_640648963 LOC=./src/b2sum.merge.c:3604 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 
-/* BEGIN STRUCT __pthread_internal_list LOC=./src/b2sum.merge.c:3648 */
-#line 3648 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __pthread_internal_list LOC=./src/b2sum.merge.c:3644 */
+#line 3644 "./src/b2sum.merge.c"
 struct __pthread_internal_list {
    struct __pthread_internal_list *__prev ;
    struct __pthread_internal_list *__next ;
 };
-/* END STRUCT __pthread_internal_list LOC=./src/b2sum.merge.c:3648 */
+/* END STRUCT __pthread_internal_list LOC=./src/b2sum.merge.c:3644 */
 
-/* BEGIN TYPEDEF __pthread_list_t LOC=./src/b2sum.merge.c:3147 */
-#line 3147 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __pthread_list_t LOC=./src/b2sum.merge.c:3143 */
+#line 3143 "./src/b2sum.merge.c"
 typedef struct __pthread_internal_list __pthread_list_t;
-/* END TYPEDEF __pthread_list_t LOC=./src/b2sum.merge.c:3147 */
+/* END TYPEDEF __pthread_list_t LOC=./src/b2sum.merge.c:3143 */
 
-/* BEGIN STRUCT __pthread_mutex_s LOC=./src/b2sum.merge.c:3655 */
-#line 3655 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __pthread_mutex_s LOC=./src/b2sum.merge.c:3651 */
+#line 3651 "./src/b2sum.merge.c"
 struct __pthread_mutex_s {
    int __lock ;
    unsigned int __count ;
@@ -3062,59 +3062,59 @@ struct __pthread_mutex_s {
    short __elision ;
    __pthread_list_t __list ;
 };
-/* END STRUCT __pthread_mutex_s LOC=./src/b2sum.merge.c:3655 */
+/* END STRUCT __pthread_mutex_s LOC=./src/b2sum.merge.c:3651 */
 
-/* BEGIN TYPEDEF greg_t LOC=./src/b2sum.merge.c:3668 */
-#line 3668 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF greg_t LOC=./src/b2sum.merge.c:3664 */
+#line 3664 "./src/b2sum.merge.c"
 typedef long long greg_t;
-/* END TYPEDEF greg_t LOC=./src/b2sum.merge.c:3668 */
+/* END TYPEDEF greg_t LOC=./src/b2sum.merge.c:3664 */
 
-/* BEGIN TYPEDEF gregset_t LOC=./src/b2sum.merge.c:3672 */
-#line 3672 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF gregset_t LOC=./src/b2sum.merge.c:3668 */
+#line 3668 "./src/b2sum.merge.c"
 typedef greg_t gregset_t[23];
-/* END TYPEDEF gregset_t LOC=./src/b2sum.merge.c:3672 */
+/* END TYPEDEF gregset_t LOC=./src/b2sum.merge.c:3668 */
 
-/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/b2sum.merge.c:3676 */
-#line 3676 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/b2sum.merge.c:3672 */
+#line 3672 "./src/b2sum.merge.c"
 struct __anonstruct_mcontext_t_787213989 {
    gregset_t gregs ;
    fpregset_t fpregs ;
    unsigned long long __reserved1[8] ;
 };
-/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/b2sum.merge.c:3676 */
+/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/b2sum.merge.c:3672 */
 
-/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/b2sum.merge.c:3684 */
-#line 3684 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/b2sum.merge.c:3680 */
+#line 3680 "./src/b2sum.merge.c"
 struct __anonstruct_stack_t_648343364 {
    void *ss_sp ;
    int ss_flags ;
    size_t ss_size ;
 };
-/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/b2sum.merge.c:3684 */
+/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/b2sum.merge.c:3680 */
 
-/* BEGIN STRUCT _libc_fpxreg LOC=./src/b2sum.merge.c:3692 */
-#line 3692 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _libc_fpxreg LOC=./src/b2sum.merge.c:3688 */
+#line 3688 "./src/b2sum.merge.c"
 struct _libc_fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _libc_fpxreg LOC=./src/b2sum.merge.c:3692 */
+/* END STRUCT _libc_fpxreg LOC=./src/b2sum.merge.c:3688 */
 
-/* BEGIN STRUCT _libc_xmmreg LOC=./src/b2sum.merge.c:3700 */
-#line 3700 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _libc_xmmreg LOC=./src/b2sum.merge.c:3696 */
+#line 3696 "./src/b2sum.merge.c"
 struct _libc_xmmreg {
    __uint32_t element[4] ;
 };
-/* END STRUCT _libc_xmmreg LOC=./src/b2sum.merge.c:3700 */
+/* END STRUCT _libc_xmmreg LOC=./src/b2sum.merge.c:3696 */
 
-/* BEGIN TYPEDEF __uint16_t LOC=./src/b2sum.merge.c:3344 */
-#line 3344 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint16_t LOC=./src/b2sum.merge.c:3340 */
+#line 3340 "./src/b2sum.merge.c"
 typedef unsigned short __uint16_t;
-/* END TYPEDEF __uint16_t LOC=./src/b2sum.merge.c:3344 */
+/* END TYPEDEF __uint16_t LOC=./src/b2sum.merge.c:3340 */
 
-/* BEGIN STRUCT _libc_fpstate LOC=./src/b2sum.merge.c:3706 */
-#line 3706 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _libc_fpstate LOC=./src/b2sum.merge.c:3702 */
+#line 3702 "./src/b2sum.merge.c"
 struct _libc_fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -3128,20 +3128,20 @@ struct _libc_fpstate {
    struct _libc_xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _libc_fpstate LOC=./src/b2sum.merge.c:3706 */
+/* END STRUCT _libc_fpstate LOC=./src/b2sum.merge.c:3702 */
 
-/* BEGIN TYPEDEF mcontext_t LOC=./src/b2sum.merge.c:3722 */
-#line 3722 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF mcontext_t LOC=./src/b2sum.merge.c:3718 */
+#line 3718 "./src/b2sum.merge.c"
 typedef struct __anonstruct_mcontext_t_787213989 mcontext_t;
-/* END TYPEDEF mcontext_t LOC=./src/b2sum.merge.c:3722 */
+/* END TYPEDEF mcontext_t LOC=./src/b2sum.merge.c:3718 */
 
-/* BEGIN TYPEDEF stack_t LOC=./src/b2sum.merge.c:3726 */
-#line 3726 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF stack_t LOC=./src/b2sum.merge.c:3722 */
+#line 3722 "./src/b2sum.merge.c"
 typedef struct __anonstruct_stack_t_648343364 stack_t;
-/* END TYPEDEF stack_t LOC=./src/b2sum.merge.c:3726 */
+/* END TYPEDEF stack_t LOC=./src/b2sum.merge.c:3722 */
 
-/* BEGIN STRUCT ucontext_t LOC=./src/b2sum.merge.c:3730 */
-#line 3730 "./src/b2sum.merge.c"
+/* BEGIN STRUCT ucontext_t LOC=./src/b2sum.merge.c:3726 */
+#line 3726 "./src/b2sum.merge.c"
 struct ucontext_t {
    unsigned long uc_flags ;
    struct ucontext_t *uc_link ;
@@ -3151,7 +3151,7 @@ struct ucontext_t {
    struct _libc_fpstate __fpregs_mem ;
    unsigned long long __ssp[4] ;
 };
-/* END STRUCT ucontext_t LOC=./src/b2sum.merge.c:3730 */
+/* END STRUCT ucontext_t LOC=./src/b2sum.merge.c:3726 */
 
 /* BEGIN VARIABLE-DEF min_digest_line_length LOC=UNKNOWN */
 static size_t min_digest_line_length  ;
@@ -3162,36 +3162,36 @@ static size_t min_digest_line_length  ;
 enum __anonenum_552717108___0 ;
 /* END ENUM-DECL __anonenum_552717108___0 LOC=./src/b2sum.merge.c:1331 */
 
-/* BEGIN STRUCT __pthread_internal_slist LOC=./src/b2sum.merge.c:3769 */
-#line 3769 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __pthread_internal_slist LOC=./src/b2sum.merge.c:3765 */
+#line 3765 "./src/b2sum.merge.c"
 struct __pthread_internal_slist {
    struct __pthread_internal_slist *__next ;
 };
-/* END STRUCT __pthread_internal_slist LOC=./src/b2sum.merge.c:3769 */
+/* END STRUCT __pthread_internal_slist LOC=./src/b2sum.merge.c:3765 */
 
-/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/b2sum.merge.c:3781 */
-#line 3781
+/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/b2sum.merge.c:3777 */
+#line 3777
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) crypt)(char const   *__key ,
                                                                                                 char const   *__salt ) ;
-/* END FUNCTION-DECL-EXTERN crypt LOC=./src/b2sum.merge.c:3781 */
+/* END FUNCTION-DECL-EXTERN crypt LOC=./src/b2sum.merge.c:3777 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/b2sum.merge.c:3798 */
-#line 3798
+/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/b2sum.merge.c:3794 */
+#line 3794
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoull)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                      int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/b2sum.merge.c:3798 */
+/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/b2sum.merge.c:3794 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/b2sum.merge.c:3809 */
-#line 3809
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/b2sum.merge.c:3805 */
+#line 3805
 extern int ( __attribute__((__nonnull__(1))) mkstemps64)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/b2sum.merge.c:3809 */
+/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/b2sum.merge.c:3805 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/b2sum.merge.c:3823 */
-#line 3823
+/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/b2sum.merge.c:3819 */
+#line 3819
 extern  __attribute__((__nothrow__, __deprecated__)) char *( __attribute__((__nonnull__(1),
 __leaf__)) getwd)(char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN getwd LOC=./src/b2sum.merge.c:3823 */
+/* END FUNCTION-DECL-EXTERN getwd LOC=./src/b2sum.merge.c:3819 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf LOC=BUILTIN */
 /* compiler builtin: 
@@ -3203,29 +3203,29 @@ __leaf__)) getwd)(char *__buf ) ;
    double __builtin_fdim(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fdim LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:3865 */
-#line 3865 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:3861 */
+#line 3861 "./src/b2sum.merge.c"
 struct __anonstruct___value32_118117645 {
    unsigned int __low ;
    unsigned int __high ;
 };
-/* END STRUCT __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:3865 */
+/* END STRUCT __anonstruct___value32_118117645 LOC=./src/b2sum.merge.c:3861 */
 
-/* BEGIN UNION __anonunion___atomic_wide_counter_267073716 LOC=./src/b2sum.merge.c:3872 */
-#line 3872 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion___atomic_wide_counter_267073716 LOC=./src/b2sum.merge.c:3868 */
+#line 3868 "./src/b2sum.merge.c"
 union __anonunion___atomic_wide_counter_267073716 {
    unsigned long long __value64 ;
    struct __anonstruct___value32_118117645 __value32 ;
 };
-/* END UNION __anonunion___atomic_wide_counter_267073716 LOC=./src/b2sum.merge.c:3872 */
+/* END UNION __anonunion___atomic_wide_counter_267073716 LOC=./src/b2sum.merge.c:3868 */
 
-/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/b2sum.merge.c:3879 */
-#line 3879 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/b2sum.merge.c:3875 */
+#line 3875 "./src/b2sum.merge.c"
 typedef union __anonunion___atomic_wide_counter_267073716 __atomic_wide_counter;
-/* END TYPEDEF __atomic_wide_counter LOC=./src/b2sum.merge.c:3879 */
+/* END TYPEDEF __atomic_wide_counter LOC=./src/b2sum.merge.c:3875 */
 
-/* BEGIN STRUCT __pthread_cond_s LOC=./src/b2sum.merge.c:3883 */
-#line 3883 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __pthread_cond_s LOC=./src/b2sum.merge.c:3879 */
+#line 3879 "./src/b2sum.merge.c"
 struct __pthread_cond_s {
    __atomic_wide_counter __wseq ;
    __atomic_wide_counter __g1_start ;
@@ -3234,37 +3234,37 @@ struct __pthread_cond_s {
    unsigned int __wrefs ;
    unsigned int __g_signals[2] ;
 };
-/* END STRUCT __pthread_cond_s LOC=./src/b2sum.merge.c:3883 */
+/* END STRUCT __pthread_cond_s LOC=./src/b2sum.merge.c:3879 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/b2sum.merge.c:3903 */
-#line 3903
+/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/b2sum.merge.c:3899 */
+#line 3899
 extern  __attribute__((__nothrow__)) struct lconv *( __attribute__((__leaf__)) localeconv)(void) ;
-/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/b2sum.merge.c:3903 */
+/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/b2sum.merge.c:3899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/b2sum.merge.c:3894 */
-#line 3894
+/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/b2sum.merge.c:3890 */
+#line 3890
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcmp)(char const   *__s1 ,
                                                                                                char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/b2sum.merge.c:3894 */
+/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/b2sum.merge.c:3890 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/b2sum.merge.c:3907 */
-#line 3907
+/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/b2sum.merge.c:3903 */
+#line 3903
 extern int ( __attribute__((__nonnull__(2))) fputs_unlocked)(char const   * __restrict  __s ,
                                                              FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/b2sum.merge.c:3907 */
+/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/b2sum.merge.c:3903 */
 
-/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/b2sum.merge.c:3918 */
-#line 3918
+/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/b2sum.merge.c:3914 */
+#line 3914
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) index)(char const   *__s ,
                                                                                               int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN index LOC=./src/b2sum.merge.c:3918 */
+/* END FUNCTION-DECL-EXTERN index LOC=./src/b2sum.merge.c:3914 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/b2sum.merge.c:3912 */
-#line 3912
+/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/b2sum.merge.c:3908 */
+#line 3908
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoull_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                        int __base , locale_t __loc )  __asm__("__isoc23_strtoull_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/b2sum.merge.c:3912 */
+/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/b2sum.merge.c:3908 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3287,65 +3287,65 @@ struct timeval ;
    void *__builtin_launder(void * ) ;  */
 /* END FUNCTION-DECL __builtin_launder LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __sigval_t LOC=./src/b2sum.merge.c:3959 */
-#line 3959 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __sigval_t LOC=./src/b2sum.merge.c:3955 */
+#line 3955 "./src/b2sum.merge.c"
 typedef union sigval __sigval_t;
-/* END TYPEDEF __sigval_t LOC=./src/b2sum.merge.c:3959 */
+/* END TYPEDEF __sigval_t LOC=./src/b2sum.merge.c:3955 */
 
-/* BEGIN TYPEDEF pthread_attr_t LOC=./src/b2sum.merge.c:3963 */
-#line 3963 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_attr_t LOC=./src/b2sum.merge.c:3959 */
+#line 3959 "./src/b2sum.merge.c"
 typedef union pthread_attr_t pthread_attr_t;
-/* END TYPEDEF pthread_attr_t LOC=./src/b2sum.merge.c:3963 */
+/* END TYPEDEF pthread_attr_t LOC=./src/b2sum.merge.c:3959 */
 
-/* BEGIN STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/b2sum.merge.c:3967 */
-#line 3967 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/b2sum.merge.c:3963 */
+#line 3963 "./src/b2sum.merge.c"
 struct __anonstruct__sigev_thread_746770901 {
    void (*_function)(__sigval_t  ) ;
    pthread_attr_t *_attribute ;
 };
-/* END STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/b2sum.merge.c:3967 */
+/* END STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/b2sum.merge.c:3963 */
 
-/* BEGIN UNION __anonunion__sigev_un_199402602 LOC=./src/b2sum.merge.c:3974 */
-#line 3974 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion__sigev_un_199402602 LOC=./src/b2sum.merge.c:3970 */
+#line 3970 "./src/b2sum.merge.c"
 union __anonunion__sigev_un_199402602 {
    int _pad[64ULL / sizeof(int ) - 4ULL] ;
    __pid_t _tid ;
    struct __anonstruct__sigev_thread_746770901 _sigev_thread ;
 };
-/* END UNION __anonunion__sigev_un_199402602 LOC=./src/b2sum.merge.c:3974 */
+/* END UNION __anonunion__sigev_un_199402602 LOC=./src/b2sum.merge.c:3970 */
 
-/* BEGIN STRUCT sigevent LOC=./src/b2sum.merge.c:3982 */
-#line 3982 "./src/b2sum.merge.c"
+/* BEGIN STRUCT sigevent LOC=./src/b2sum.merge.c:3978 */
+#line 3978 "./src/b2sum.merge.c"
 struct sigevent {
    __sigval_t sigev_value ;
    int sigev_signo ;
    int sigev_notify ;
    union __anonunion__sigev_un_199402602 _sigev_un ;
 };
-/* END STRUCT sigevent LOC=./src/b2sum.merge.c:3982 */
+/* END STRUCT sigevent LOC=./src/b2sum.merge.c:3978 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/b2sum.merge.c:4000 */
-#line 4000
+/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/b2sum.merge.c:3996 */
+#line 3996
 extern void *xizalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/b2sum.merge.c:4000 */
+/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/b2sum.merge.c:3996 */
 
 /* BEGIN FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strrchr(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/b2sum.merge.c:3996 */
-#line 3996
+/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/b2sum.merge.c:3992 */
+#line 3992
 extern struct dirent *( __attribute__((__nonnull__(1))) readdir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir LOC=./src/b2sum.merge.c:3996 */
+/* END FUNCTION-DECL-EXTERN readdir LOC=./src/b2sum.merge.c:3992 */
 
 /* BEGIN FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_sadd_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 
-/* BEGIN STRUCT blake2b_state__ LOC=./src/b2sum.merge.c:4009 */
-#line 4009 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2b_state__ LOC=./src/b2sum.merge.c:4005 */
+#line 4005 "./src/b2sum.merge.c"
 struct blake2b_state__ {
    uint64_t h[8] ;
    uint64_t t[2] ;
@@ -3355,10 +3355,10 @@ struct blake2b_state__ {
    size_t outlen ;
    uint8_t last_node ;
 };
-/* END STRUCT blake2b_state__ LOC=./src/b2sum.merge.c:4009 */
+/* END STRUCT blake2b_state__ LOC=./src/b2sum.merge.c:4005 */
 
-/* BEGIN STRUCT blake2bp_state__ LOC=./src/b2sum.merge.c:4021 */
-#line 4021 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2bp_state__ LOC=./src/b2sum.merge.c:4017 */
+#line 4017 "./src/b2sum.merge.c"
 struct blake2bp_state__ {
    blake2b_state S[4][1] ;
    blake2b_state R[1] ;
@@ -3366,70 +3366,70 @@ struct blake2bp_state__ {
    size_t buflen ;
    size_t outlen ;
 };
-/* END STRUCT blake2bp_state__ LOC=./src/b2sum.merge.c:4021 */
+/* END STRUCT blake2bp_state__ LOC=./src/b2sum.merge.c:4017 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/b2sum.merge.c:4042 */
-#line 4042
+/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/b2sum.merge.c:4038 */
+#line 4038
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigdescr_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/b2sum.merge.c:4042 */
+/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/b2sum.merge.c:4038 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/b2sum.merge.c:4080 */
-#line 4080
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/b2sum.merge.c:4076 */
+#line 4076
 extern enum quoting_style  const  quoting_style_vals[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/b2sum.merge.c:4080 */
+/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/b2sum.merge.c:4076 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fabsl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN error_at_line LOC=./src/b2sum.merge.c:4101 */
-#line 4101
+/* BEGIN FUNCTION-DECL-EXTERN error_at_line LOC=./src/b2sum.merge.c:4093 */
+#line 4093
 __inline extern void ( __attribute__((__gnu_inline__, __always_inline__)) error_at_line)(int __status ,
                                                                                          int __errnum ,
                                                                                          char const   *__fname ,
                                                                                          unsigned int __line ,
                                                                                          char const   *__format 
                                                                                          , ...)  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN error_at_line LOC=./src/b2sum.merge.c:4101 */
+/* END FUNCTION-DECL-EXTERN error_at_line LOC=./src/b2sum.merge.c:4093 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/b2sum.merge.c:4110 */
-#line 4110
+/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/b2sum.merge.c:4102 */
+#line 4102
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir64_r)(DIR * __restrict  __dirp ,
                                                                                                struct dirent64 * __restrict  __entry ,
                                                                                                struct dirent64 ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/b2sum.merge.c:4110 */
+/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/b2sum.merge.c:4102 */
 
-/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/b2sum.merge.c:4116 */
-#line 4116
+/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/b2sum.merge.c:4108 */
+#line 4108
 extern int optopt ;
-/* END VARIABLE-DECL-EXTERN optopt LOC=./src/b2sum.merge.c:4116 */
+/* END VARIABLE-DECL-EXTERN optopt LOC=./src/b2sum.merge.c:4108 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_csinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinh LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_552717108___0 LOC=./src/b2sum.merge.c:4145 */
-#line 4145
+/* BEGIN ENUM __anonenum_552717108___0 LOC=./src/b2sum.merge.c:4137 */
+#line 4137
 enum __anonenum_552717108___0 {
     BLAKE2_DUMMY_1___0 = 1,
     BLAKE2_DUMMY_2___0 = 1
 } ;
-/* END ENUM __anonenum_552717108___0 LOC=./src/b2sum.merge.c:4145 */
+/* END ENUM __anonenum_552717108___0 LOC=./src/b2sum.merge.c:4137 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanhl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ctanhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF div_t LOC=./src/b2sum.merge.c:4173 */
-#line 4173 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF div_t LOC=./src/b2sum.merge.c:4165 */
+#line 4165 "./src/b2sum.merge.c"
 typedef struct __anonstruct_div_t_773697287 div_t;
-/* END TYPEDEF div_t LOC=./src/b2sum.merge.c:4173 */
+/* END TYPEDEF div_t LOC=./src/b2sum.merge.c:4165 */
 
-/* BEGIN ENUM __anonenum_1036286214 LOC=./src/b2sum.merge.c:4163 */
-#line 4163
+/* BEGIN ENUM __anonenum_1036286214 LOC=./src/b2sum.merge.c:4155 */
+#line 4155
 enum __anonenum_1036286214 {
     BUS_ADRALN = 1,
     BUS_ADRERR = 2,
@@ -3437,62 +3437,62 @@ enum __anonenum_1036286214 {
     BUS_MCEERR_AR = 4,
     BUS_MCEERR_AO = 5
 } ;
-/* END ENUM __anonenum_1036286214 LOC=./src/b2sum.merge.c:4163 */
+/* END ENUM __anonenum_1036286214 LOC=./src/b2sum.merge.c:4155 */
 
-/* BEGIN TYPEDEF __ssize_t LOC=./src/b2sum.merge.c:2895 */
-#line 2895 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __ssize_t LOC=./src/b2sum.merge.c:2891 */
+#line 2891 "./src/b2sum.merge.c"
 typedef long __ssize_t;
-/* END TYPEDEF __ssize_t LOC=./src/b2sum.merge.c:2895 */
+/* END TYPEDEF __ssize_t LOC=./src/b2sum.merge.c:2891 */
 
-/* BEGIN TYPEDEF ssize_t LOC=./src/b2sum.merge.c:2899 */
-#line 2899 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ssize_t LOC=./src/b2sum.merge.c:2895 */
+#line 2895 "./src/b2sum.merge.c"
 typedef __ssize_t ssize_t;
-/* END TYPEDEF ssize_t LOC=./src/b2sum.merge.c:2899 */
+/* END TYPEDEF ssize_t LOC=./src/b2sum.merge.c:2895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/b2sum.merge.c:4182 */
-#line 4182
+/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/b2sum.merge.c:4174 */
+#line 4174
 extern ssize_t copy_file_range(int __infd , __off64_t *__pinoff , int __outfd , __off64_t *__poutoff ,
                                size_t __length , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/b2sum.merge.c:4182 */
+/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/b2sum.merge.c:4174 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_lgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/b2sum.merge.c:4195 */
-#line 4195 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/b2sum.merge.c:4187 */
+#line 4187 "./src/b2sum.merge.c"
 union __anonunion_pthread_rwlockattr_t_145707745 {
    char __size[8] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/b2sum.merge.c:4195 */
+/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/b2sum.merge.c:4187 */
 
 /* BEGIN STRUCT-DECL blake2s_param__ LOC=./src/b2sum.merge.c:1399 */
 #line 1399
 struct blake2s_param__  __attribute__((__packed__)) ;
 /* END STRUCT-DECL blake2s_param__ LOC=./src/b2sum.merge.c:1399 */
 
-/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/b2sum.merge.c:4218 */
-#line 4218
+/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/b2sum.merge.c:4210 */
+#line 4210
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) eaccess)(char const   *__name ,
                                                                                               int __type ) ;
-/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/b2sum.merge.c:4218 */
+/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/b2sum.merge.c:4210 */
 
-/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/b2sum.merge.c:4240 */
-#line 4240
+/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/b2sum.merge.c:4232 */
+#line 4232
 extern int printf(char const   * __restrict  __format  , ...) ;
-/* END FUNCTION-DECL-EXTERN printf LOC=./src/b2sum.merge.c:4240 */
+/* END FUNCTION-DECL-EXTERN printf LOC=./src/b2sum.merge.c:4232 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:1343 */
 #line 1343
 union __anonunion_pthread_mutexattr_t_488594144 ;
 /* END UNION-DECL __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:1343 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/b2sum.merge.c:4249 */
-#line 4249
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/b2sum.merge.c:4241 */
+#line 4241
 extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/b2sum.merge.c:4249 */
+/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/b2sum.merge.c:4241 */
 
 /* BEGIN FUNCTION-DECL __builtin_operator_new LOC=BUILTIN */
 /* compiler builtin: 
@@ -3509,15 +3509,11 @@ extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
 struct _IO_marker ;
 /* END STRUCT-DECL _IO_marker LOC=./src/b2sum.merge.c:883 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_envp LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_envp ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_envp LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/b2sum.merge.c:4318 */
-#line 4318
+/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/b2sum.merge.c:4306 */
+#line 4306
 extern void *xireallocarray(void *p , idx_t n , idx_t s )  __attribute__((__returns_nonnull__,
 __alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/b2sum.merge.c:4318 */
+/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/b2sum.merge.c:4306 */
 
 /* BEGIN FUNCTION-DECL __builtin_clzll LOC=BUILTIN */
 /* compiler builtin: 
@@ -3529,26 +3525,26 @@ __alloc_size__(2,3))) ;
    long __builtin_bswap64(long  ) ;  */
 /* END FUNCTION-DECL __builtin_bswap64 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __suseconds_t LOC=./src/b2sum.merge.c:3109 */
-#line 3109 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __suseconds_t LOC=./src/b2sum.merge.c:3105 */
+#line 3105 "./src/b2sum.merge.c"
 typedef long __suseconds_t;
-/* END TYPEDEF __suseconds_t LOC=./src/b2sum.merge.c:3109 */
+/* END TYPEDEF __suseconds_t LOC=./src/b2sum.merge.c:3105 */
 
-/* BEGIN STRUCT timeval LOC=./src/b2sum.merge.c:3113 */
-#line 3113 "./src/b2sum.merge.c"
+/* BEGIN STRUCT timeval LOC=./src/b2sum.merge.c:3109 */
+#line 3109 "./src/b2sum.merge.c"
 struct timeval {
    __time_t tv_sec ;
    __suseconds_t tv_usec ;
 };
-/* END STRUCT timeval LOC=./src/b2sum.merge.c:3113 */
+/* END STRUCT timeval LOC=./src/b2sum.merge.c:3109 */
 
-/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/b2sum.merge.c:2847 */
-#line 2847 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/b2sum.merge.c:2843 */
+#line 2843 "./src/b2sum.merge.c"
 typedef long __syscall_slong_t;
-/* END TYPEDEF __syscall_slong_t LOC=./src/b2sum.merge.c:2847 */
+/* END TYPEDEF __syscall_slong_t LOC=./src/b2sum.merge.c:2843 */
 
-/* BEGIN STRUCT timex LOC=./src/b2sum.merge.c:4338 */
-#line 4338 "./src/b2sum.merge.c"
+/* BEGIN STRUCT timex LOC=./src/b2sum.merge.c:4326 */
+#line 4326 "./src/b2sum.merge.c"
 struct timex {
    unsigned int modes ;
    __syscall_slong_t offset ;
@@ -3582,22 +3578,22 @@ struct timex {
    int  : 32 ;
    int  : 32 ;
 };
-/* END STRUCT timex LOC=./src/b2sum.merge.c:4338 */
+/* END STRUCT timex LOC=./src/b2sum.merge.c:4326 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/b2sum.merge.c:4374 */
-#line 4374
+/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/b2sum.merge.c:4362 */
+#line 4362
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setgid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setgid LOC=./src/b2sum.merge.c:4374 */
+/* END FUNCTION-DECL-EXTERN setgid LOC=./src/b2sum.merge.c:4362 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/b2sum.merge.c:4378 */
-#line 4378
+/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/b2sum.merge.c:4366 */
+#line 4366
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dysize)(int __year )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dysize LOC=./src/b2sum.merge.c:4378 */
+/* END FUNCTION-DECL-EXTERN dysize LOC=./src/b2sum.merge.c:4366 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/b2sum.merge.c:4382 */
-#line 4382
+/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/b2sum.merge.c:4370 */
+#line 4370
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chroot)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chroot LOC=./src/b2sum.merge.c:4382 */
+/* END FUNCTION-DECL-EXTERN chroot LOC=./src/b2sum.merge.c:4370 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_end LOC=BUILTIN */
 /* compiler builtin: 
@@ -3609,11 +3605,11 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 struct statx_timestamp ;
 /* END STRUCT-DECL statx_timestamp LOC=./src/b2sum.merge.c:1167 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/b2sum.merge.c:4434 */
-#line 4434
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/b2sum.merge.c:4422 */
+#line 4422
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32x)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/b2sum.merge.c:4434 */
+/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/b2sum.merge.c:4422 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3630,8 +3626,8 @@ extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __le
 union __anonunion___sigaction_handler_363639592 ;
 /* END UNION-DECL __anonunion___sigaction_handler_363639592 LOC=./src/b2sum.merge.c:975 */
 
-/* BEGIN ENUM __anonenum_451154152 LOC=./src/b2sum.merge.c:4523 */
-#line 4523
+/* BEGIN ENUM __anonenum_451154152 LOC=./src/b2sum.merge.c:4511 */
+#line 4511
 enum __anonenum_451154152 {
     REG_R8 = 0,
     REG_R9 = 1,
@@ -3657,46 +3653,46 @@ enum __anonenum_451154152 {
     REG_OLDMASK = 21,
     REG_CR2 = 22
 } ;
-/* END ENUM __anonenum_451154152 LOC=./src/b2sum.merge.c:4523 */
+/* END ENUM __anonenum_451154152 LOC=./src/b2sum.merge.c:4511 */
 
-/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/b2sum.merge.c:4551 */
-#line 4551 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/b2sum.merge.c:4539 */
+#line 4539 "./src/b2sum.merge.c"
 typedef struct __pthread_internal_slist __pthread_slist_t;
-/* END TYPEDEF __pthread_slist_t LOC=./src/b2sum.merge.c:4551 */
+/* END TYPEDEF __pthread_slist_t LOC=./src/b2sum.merge.c:4539 */
 
-/* BEGIN FUNCTION-DECL directory_status LOC=./src/b2sum.merge.c:4564 */
-#line 4564
+/* BEGIN FUNCTION-DECL directory_status LOC=./src/b2sum.merge.c:4552 */
+#line 4552
 __inline static int directory_status(int fd_cwd , char const   *dir ) ;
-/* END FUNCTION-DECL directory_status LOC=./src/b2sum.merge.c:4564 */
+/* END FUNCTION-DECL directory_status LOC=./src/b2sum.merge.c:4552 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_expf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/b2sum.merge.c:4573 */
-#line 4573
+/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/b2sum.merge.c:4561 */
+#line 4561
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strspn)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strspn LOC=./src/b2sum.merge.c:4573 */
+/* END FUNCTION-DECL-EXTERN strspn LOC=./src/b2sum.merge.c:4561 */
 
-/* BEGIN TYPEDEF __u_short LOC=./src/b2sum.merge.c:4582 */
-#line 4582 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u_short LOC=./src/b2sum.merge.c:4570 */
+#line 4570 "./src/b2sum.merge.c"
 typedef unsigned short __u_short;
-/* END TYPEDEF __u_short LOC=./src/b2sum.merge.c:4582 */
+/* END TYPEDEF __u_short LOC=./src/b2sum.merge.c:4570 */
 
-/* BEGIN TYPEDEF u_short LOC=./src/b2sum.merge.c:4586 */
-#line 4586 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_short LOC=./src/b2sum.merge.c:4574 */
+#line 4574 "./src/b2sum.merge.c"
 typedef __u_short u_short;
-/* END TYPEDEF u_short LOC=./src/b2sum.merge.c:4586 */
+/* END TYPEDEF u_short LOC=./src/b2sum.merge.c:4574 */
 
-/* BEGIN STRUCT timespec LOC=./src/b2sum.merge.c:2851 */
-#line 2851 "./src/b2sum.merge.c"
+/* BEGIN STRUCT timespec LOC=./src/b2sum.merge.c:2847 */
+#line 2847 "./src/b2sum.merge.c"
 struct timespec {
    __time_t tv_sec ;
    __syscall_slong_t tv_nsec ;
 };
-/* END STRUCT timespec LOC=./src/b2sum.merge.c:2851 */
+/* END STRUCT timespec LOC=./src/b2sum.merge.c:2847 */
 
 /* BEGIN FUNCTION-DECL timespectod LOC=UNKNOWN */
 __inline double timespectod(struct timespec a ) ;
@@ -3707,10 +3703,10 @@ __inline double timespectod(struct timespec a ) ;
    _Complex double __builtin_ccos(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccos LOC=BUILTIN */
 
-/* BEGIN TYPEDEF wchar_t LOC=./src/b2sum.merge.c:4626 */
-#line 4626 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF wchar_t LOC=./src/b2sum.merge.c:4614 */
+#line 4614 "./src/b2sum.merge.c"
 typedef int wchar_t;
-/* END TYPEDEF wchar_t LOC=./src/b2sum.merge.c:4626 */
+/* END TYPEDEF wchar_t LOC=./src/b2sum.merge.c:4614 */
 
 /* BEGIN FUNCTION-DECL __builtin_isnan LOC=BUILTIN */
 /* compiler builtin: 
@@ -3722,90 +3718,86 @@ typedef int wchar_t;
    float __builtin_logf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/b2sum.merge.c:4662 */
-#line 4662
+/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/b2sum.merge.c:4650 */
+#line 4650
 extern __off_t ( __attribute__((__nonnull__(1))) ftello)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello LOC=./src/b2sum.merge.c:4662 */
+/* END FUNCTION-DECL-EXTERN ftello LOC=./src/b2sum.merge.c:4650 */
 
-/* BEGIN TYPEDEF ushort LOC=./src/b2sum.merge.c:4675 */
-#line 4675 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ushort LOC=./src/b2sum.merge.c:4663 */
+#line 4663 "./src/b2sum.merge.c"
 typedef unsigned short ushort;
-/* END TYPEDEF ushort LOC=./src/b2sum.merge.c:4675 */
+/* END TYPEDEF ushort LOC=./src/b2sum.merge.c:4663 */
 
 /* BEGIN FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_nan(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-int _TIG_IZ_BUUq_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/b2sum.merge.c:4716 */
-#line 4716
+/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/b2sum.merge.c:4700 */
+#line 4700
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atoi)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoi LOC=./src/b2sum.merge.c:4716 */
+/* END FUNCTION-DECL-EXTERN atoi LOC=./src/b2sum.merge.c:4700 */
 
-/* BEGIN TYPEDEF imaxdiv_t LOC=./src/b2sum.merge.c:4720 */
-#line 4720 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF imaxdiv_t LOC=./src/b2sum.merge.c:4704 */
+#line 4704 "./src/b2sum.merge.c"
 typedef struct __anonstruct_imaxdiv_t_825626742 imaxdiv_t;
-/* END TYPEDEF imaxdiv_t LOC=./src/b2sum.merge.c:4720 */
+/* END TYPEDEF imaxdiv_t LOC=./src/b2sum.merge.c:4704 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/b2sum.merge.c:4724 */
-#line 4724
+/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/b2sum.merge.c:4708 */
+#line 4708
 extern  __attribute__((__nothrow__)) imaxdiv_t ( __attribute__((__leaf__)) imaxdiv)(intmax_t __numer ,
                                                                                     intmax_t __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/b2sum.merge.c:4724 */
+/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/b2sum.merge.c:4708 */
 
 /* BEGIN STRUCT-DECL __time_t_must_be_integral LOC=./src/b2sum.merge.c:1027 */
 #line 1027
 struct __time_t_must_be_integral ;
 /* END STRUCT-DECL __time_t_must_be_integral LOC=./src/b2sum.merge.c:1027 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/b2sum.merge.c:4755 */
-#line 4755
+/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/b2sum.merge.c:4739 */
+#line 4739
 extern struct timespec timespec_sub(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/b2sum.merge.c:4755 */
+/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/b2sum.merge.c:4739 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/b2sum.merge.c:4749 */
-#line 4749
+/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/b2sum.merge.c:4733 */
+#line 4733
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execl)(char const   *__path ,
                                                                                               char const   *__arg 
                                                                                               , ...) ;
-/* END FUNCTION-DECL-EXTERN execl LOC=./src/b2sum.merge.c:4749 */
+/* END FUNCTION-DECL-EXTERN execl LOC=./src/b2sum.merge.c:4733 */
 
-/* BEGIN TYPEDEF __dev_t LOC=./src/b2sum.merge.c:2639 */
-#line 2639 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __dev_t LOC=./src/b2sum.merge.c:2635 */
+#line 2635 "./src/b2sum.merge.c"
 typedef unsigned long __dev_t;
-/* END TYPEDEF __dev_t LOC=./src/b2sum.merge.c:2639 */
+/* END TYPEDEF __dev_t LOC=./src/b2sum.merge.c:2635 */
 
-/* BEGIN TYPEDEF __mode_t LOC=./src/b2sum.merge.c:2647 */
-#line 2647 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __mode_t LOC=./src/b2sum.merge.c:2643 */
+#line 2643 "./src/b2sum.merge.c"
 typedef unsigned int __mode_t;
-/* END TYPEDEF __mode_t LOC=./src/b2sum.merge.c:2647 */
+/* END TYPEDEF __mode_t LOC=./src/b2sum.merge.c:2643 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/b2sum.merge.c:4736 */
-#line 4736
+/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/b2sum.merge.c:4720 */
+#line 4720
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mknodat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ,
                                                                                               __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/b2sum.merge.c:4736 */
+/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/b2sum.merge.c:4720 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/b2sum.merge.c:4743 */
-#line 4743
+/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/b2sum.merge.c:4727 */
+#line 4727
 extern int ( __attribute__((__nonnull__(1))) fscanf)(FILE * __restrict  __stream ,
                                                      char const   * __restrict  __format 
                                                      , ...)  __asm__("__isoc23_fscanf")  ;
-/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/b2sum.merge.c:4743 */
+/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/b2sum.merge.c:4727 */
 
-/* BEGIN STRUCT sigstack LOC=./src/b2sum.merge.c:4759 */
-#line 4759 "./src/b2sum.merge.c"
+/* BEGIN STRUCT sigstack LOC=./src/b2sum.merge.c:4743 */
+#line 4743 "./src/b2sum.merge.c"
 struct sigstack {
    void *ss_sp ;
    int ss_onstack ;
 };
-/* END STRUCT sigstack LOC=./src/b2sum.merge.c:4759 */
+/* END STRUCT sigstack LOC=./src/b2sum.merge.c:4743 */
 
 /* BEGIN FUNCTION-DECL __builtin_objc_memmove_collectable LOC=BUILTIN */
 /* compiler builtin: 
@@ -3817,37 +3809,37 @@ struct sigstack {
 struct file_handle ;
 /* END STRUCT-DECL file_handle LOC=./src/b2sum.merge.c:935 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/b2sum.merge.c:4812 */
-#line 4812
+/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/b2sum.merge.c:4796 */
+#line 4796
 extern int __overflow(FILE * , int  ) ;
-/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/b2sum.merge.c:4812 */
+/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/b2sum.merge.c:4796 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/b2sum.merge.c:4806 */
-#line 4806
+/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/b2sum.merge.c:4790 */
+#line 4790
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvpe)(char const   *__file ,
                                                                                                 char **__argv ,
                                                                                                 char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/b2sum.merge.c:4806 */
+/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/b2sum.merge.c:4790 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_remainderf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __suseconds64_t LOC=./src/b2sum.merge.c:4834 */
-#line 4834 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __suseconds64_t LOC=./src/b2sum.merge.c:4818 */
+#line 4818 "./src/b2sum.merge.c"
 typedef long __suseconds64_t;
-/* END TYPEDEF __suseconds64_t LOC=./src/b2sum.merge.c:4834 */
+/* END TYPEDEF __suseconds64_t LOC=./src/b2sum.merge.c:4818 */
 
-/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/b2sum.merge.c:4838 */
-#line 4838
+/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/b2sum.merge.c:4822 */
+#line 4822
 __inline static __uint64_t __uint64_identity(__uint64_t __x ) ;
-/* END FUNCTION-DECL __uint64_identity LOC=./src/b2sum.merge.c:4838 */
+/* END FUNCTION-DECL __uint64_identity LOC=./src/b2sum.merge.c:4822 */
 
-/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/b2sum.merge.c:4863 */
-#line 4863
+/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/b2sum.merge.c:4847 */
+#line 4847
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN raise LOC=./src/b2sum.merge.c:4863 */
+/* END FUNCTION-DECL-EXTERN raise LOC=./src/b2sum.merge.c:4847 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -3860,49 +3852,49 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int 
    int __builtin___vprintf_chk(int  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vprintf_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/b2sum.merge.c:4893 */
-#line 4893
+/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/b2sum.merge.c:4877 */
+#line 4877
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qecvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/b2sum.merge.c:4893 */
+/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/b2sum.merge.c:4877 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/b2sum.merge.c:4911 */
-#line 4911
+/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/b2sum.merge.c:4895 */
+#line 4895
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkdirat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/b2sum.merge.c:4911 */
+/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/b2sum.merge.c:4895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/b2sum.merge.c:4917 */
-#line 4917
+/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/b2sum.merge.c:4901 */
+#line 4901
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) a64l)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN a64l LOC=./src/b2sum.merge.c:4917 */
+/* END FUNCTION-DECL-EXTERN a64l LOC=./src/b2sum.merge.c:4901 */
 
-/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/b2sum.merge.c:4921 */
-#line 4921 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/b2sum.merge.c:4905 */
+#line 4905 "./src/b2sum.merge.c"
 typedef int __kernel_daddr_t;
-/* END TYPEDEF __kernel_daddr_t LOC=./src/b2sum.merge.c:4921 */
+/* END TYPEDEF __kernel_daddr_t LOC=./src/b2sum.merge.c:4905 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/b2sum.merge.c:4925 */
-#line 4925
+/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/b2sum.merge.c:4909 */
+#line 4909
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat64)(char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/b2sum.merge.c:4925 */
+/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/b2sum.merge.c:4909 */
 
-/* BEGIN TYPEDEF timezone_t LOC=./src/b2sum.merge.c:4938 */
-#line 4938 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF timezone_t LOC=./src/b2sum.merge.c:4922 */
+#line 4922 "./src/b2sum.merge.c"
 typedef struct tm_zone *timezone_t;
-/* END TYPEDEF timezone_t LOC=./src/b2sum.merge.c:4938 */
+/* END TYPEDEF timezone_t LOC=./src/b2sum.merge.c:4922 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/b2sum.merge.c:4942 */
-#line 4942
+/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/b2sum.merge.c:4926 */
+#line 4926
 extern void tzfree(timezone_t __tz ) ;
-/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/b2sum.merge.c:4942 */
+/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/b2sum.merge.c:4926 */
 
-/* BEGIN ENUM __anonenum_91015150 LOC=./src/b2sum.merge.c:4946 */
-#line 4946
+/* BEGIN ENUM __anonenum_91015150 LOC=./src/b2sum.merge.c:4930 */
+#line 4930
 enum __anonenum_91015150 {
     TRAP_BRKPT = 1,
     TRAP_TRACE = 2,
@@ -3910,77 +3902,77 @@ enum __anonenum_91015150 {
     TRAP_HWBKPT = 4,
     TRAP_UNK = 5
 } ;
-/* END ENUM __anonenum_91015150 LOC=./src/b2sum.merge.c:4946 */
+/* END ENUM __anonenum_91015150 LOC=./src/b2sum.merge.c:4930 */
 
-/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/b2sum.merge.c:4960 */
-#line 4960
+/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/b2sum.merge.c:4944 */
+#line 4944
 __inline static void emit_blocksize_note(char const   *program ) ;
-/* END FUNCTION-DECL emit_blocksize_note LOC=./src/b2sum.merge.c:4960 */
+/* END FUNCTION-DECL emit_blocksize_note LOC=./src/b2sum.merge.c:4944 */
 
-/* BEGIN TYPEDEF int_fast8_t LOC=./src/b2sum.merge.c:4964 */
-#line 4964 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_fast8_t LOC=./src/b2sum.merge.c:4948 */
+#line 4948 "./src/b2sum.merge.c"
 typedef signed char int_fast8_t;
-/* END TYPEDEF int_fast8_t LOC=./src/b2sum.merge.c:4964 */
+/* END TYPEDEF int_fast8_t LOC=./src/b2sum.merge.c:4948 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/b2sum.merge.c:4979 */
-#line 4979
+/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/b2sum.merge.c:4963 */
+#line 4963
 extern char *__tzname[2] ;
-/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/b2sum.merge.c:4979 */
+/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/b2sum.merge.c:4963 */
 
-/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/b2sum.merge.c:4987 */
-#line 4987 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/b2sum.merge.c:4971 */
+#line 4971 "./src/b2sum.merge.c"
 struct __anonstruct__kill_244518854 {
    __pid_t si_pid ;
    __uid_t si_uid ;
 };
-/* END STRUCT __anonstruct__kill_244518854 LOC=./src/b2sum.merge.c:4987 */
+/* END STRUCT __anonstruct__kill_244518854 LOC=./src/b2sum.merge.c:4971 */
 
-/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/b2sum.merge.c:4287 */
-#line 4287 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/b2sum.merge.c:4279 */
+#line 4279 "./src/b2sum.merge.c"
 struct __anonstruct__rt_619254530 {
    __pid_t si_pid ;
    __uid_t si_uid ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__rt_619254530 LOC=./src/b2sum.merge.c:4287 */
+/* END STRUCT __anonstruct__rt_619254530 LOC=./src/b2sum.merge.c:4279 */
 
-/* BEGIN UNION __anonunion__bounds_973039562 LOC=./src/b2sum.merge.c:4994 */
-#line 4994 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion__bounds_973039562 LOC=./src/b2sum.merge.c:4978 */
+#line 4978 "./src/b2sum.merge.c"
 union __anonunion__bounds_973039562 {
    struct __anonstruct__addr_bnd_5259977 _addr_bnd ;
    __uint32_t _pkey ;
 };
-/* END UNION __anonunion__bounds_973039562 LOC=./src/b2sum.merge.c:4994 */
+/* END UNION __anonunion__bounds_973039562 LOC=./src/b2sum.merge.c:4978 */
 
-/* BEGIN STRUCT __anonstruct__sigfault_833626481 LOC=./src/b2sum.merge.c:5001 */
-#line 5001 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__sigfault_833626481 LOC=./src/b2sum.merge.c:4985 */
+#line 4985 "./src/b2sum.merge.c"
 struct __anonstruct__sigfault_833626481 {
    void *si_addr ;
    short si_addr_lsb ;
    union __anonunion__bounds_973039562 _bounds ;
 };
-/* END STRUCT __anonstruct__sigfault_833626481 LOC=./src/b2sum.merge.c:5001 */
+/* END STRUCT __anonstruct__sigfault_833626481 LOC=./src/b2sum.merge.c:4985 */
 
-/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/b2sum.merge.c:5009 */
-#line 5009 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/b2sum.merge.c:4993 */
+#line 4993 "./src/b2sum.merge.c"
 struct __anonstruct__sigsys_1029881407 {
    void *_call_addr ;
    int _syscall ;
    unsigned int _arch ;
 };
-/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/b2sum.merge.c:5009 */
+/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/b2sum.merge.c:4993 */
 
-/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/b2sum.merge.c:5017 */
-#line 5017 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/b2sum.merge.c:5001 */
+#line 5001 "./src/b2sum.merge.c"
 struct __anonstruct__timer_490064738 {
    int si_tid ;
    int si_overrun ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__timer_490064738 LOC=./src/b2sum.merge.c:5017 */
+/* END STRUCT __anonstruct__timer_490064738 LOC=./src/b2sum.merge.c:5001 */
 
-/* BEGIN UNION __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:5025 */
-#line 5025 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:5009 */
+#line 5009 "./src/b2sum.merge.c"
 union __anonunion__sifields_530746668 {
    int _pad[128ULL / sizeof(int ) - 4ULL] ;
    struct __anonstruct__kill_244518854 _kill ;
@@ -3991,19 +3983,19 @@ union __anonunion__sifields_530746668 {
    struct __anonstruct__sigpoll_386613454 _sigpoll ;
    struct __anonstruct__sigsys_1029881407 _sigsys ;
 };
-/* END UNION __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:5025 */
+/* END UNION __anonunion__sifields_530746668 LOC=./src/b2sum.merge.c:5009 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/b2sum.merge.c:5042 */
-#line 5042
+/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/b2sum.merge.c:5026 */
+#line 5026
 extern char const   *quote_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/b2sum.merge.c:5042 */
+/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/b2sum.merge.c:5026 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/b2sum.merge.c:5050 */
-#line 5050
+/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/b2sum.merge.c:5034 */
+#line 5034
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) setenv)(char const   *__name ,
                                                                                              char const   *__value ,
                                                                                              int __replace ) ;
-/* END FUNCTION-DECL-EXTERN setenv LOC=./src/b2sum.merge.c:5050 */
+/* END FUNCTION-DECL-EXTERN setenv LOC=./src/b2sum.merge.c:5034 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4016,87 +4008,87 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    double __builtin_rint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/b2sum.merge.c:5075 */
-#line 5075
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/b2sum.merge.c:5059 */
+#line 5059
 extern int ( __attribute__((__nonnull__(1))) rpl_fclose)(FILE *stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/b2sum.merge.c:5075 */
+/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/b2sum.merge.c:5059 */
 
-/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/b2sum.merge.c:5079 */
-#line 5079 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/b2sum.merge.c:5063 */
+#line 5063 "./src/b2sum.merge.c"
 typedef unsigned long __kernel_ulong_t;
-/* END TYPEDEF __kernel_ulong_t LOC=./src/b2sum.merge.c:5079 */
+/* END TYPEDEF __kernel_ulong_t LOC=./src/b2sum.merge.c:5063 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/b2sum.merge.c:5106 */
-#line 5106
+/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/b2sum.merge.c:5090 */
+#line 5090
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sscanf)(char const   * __restrict  __s ,
                                                                              char const   * __restrict  __format 
                                                                              , ...)  __asm__("__isoc23_sscanf")  ;
-/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/b2sum.merge.c:5106 */
+/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/b2sum.merge.c:5090 */
 
 /* BEGIN ENUM-DECL __anonenum_fadvice_t_152371362 LOC=./src/b2sum.merge.c:1211 */
 #line 1211
 enum __anonenum_fadvice_t_152371362 ;
 /* END ENUM-DECL __anonenum_fadvice_t_152371362 LOC=./src/b2sum.merge.c:1211 */
 
-/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/b2sum.merge.c:5116 */
-#line 5116
+/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/b2sum.merge.c:5100 */
+#line 5100
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
-/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/b2sum.merge.c:5116 */
+/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/b2sum.merge.c:5100 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/b2sum.merge.c:5120 */
-#line 5120
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/b2sum.merge.c:5104 */
+#line 5104
 extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/b2sum.merge.c:5120 */
+/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/b2sum.merge.c:5104 */
 
-/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/b2sum.merge.c:5124 */
-#line 5124
+/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/b2sum.merge.c:5108 */
+#line 5108
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN basename LOC=./src/b2sum.merge.c:5124 */
+/* END FUNCTION-DECL-EXTERN basename LOC=./src/b2sum.merge.c:5108 */
 
 /* BEGIN FUNCTION-DECL hex_equal LOC=UNKNOWN */
 static _Bool hex_equal(unsigned char const   *hex_digest , unsigned char const   *bin_buffer ) ;
 /* END FUNCTION-DECL hex_equal LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/b2sum.merge.c:5128 */
-#line 5128 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/b2sum.merge.c:5112 */
+#line 5112 "./src/b2sum.merge.c"
 typedef unsigned short __kernel_uid16_t;
-/* END TYPEDEF __kernel_uid16_t LOC=./src/b2sum.merge.c:5128 */
+/* END TYPEDEF __kernel_uid16_t LOC=./src/b2sum.merge.c:5112 */
 
 /* BEGIN STRUCT-DECL _fpreg LOC=./src/b2sum.merge.c:1379 */
 #line 1379
 struct _fpreg ;
 /* END STRUCT-DECL _fpreg LOC=./src/b2sum.merge.c:1379 */
 
-/* BEGIN TYPEDEF blake2xs_state LOC=./src/b2sum.merge.c:4930 */
-#line 4930 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2xs_state LOC=./src/b2sum.merge.c:4914 */
+#line 4914 "./src/b2sum.merge.c"
 typedef struct blake2xs_state__ blake2xs_state;
-/* END TYPEDEF blake2xs_state LOC=./src/b2sum.merge.c:4930 */
+/* END TYPEDEF blake2xs_state LOC=./src/b2sum.merge.c:4914 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xs_init LOC=./src/b2sum.merge.c:5149 */
-#line 5149
+/* BEGIN FUNCTION-DECL-EXTERN blake2xs_init LOC=./src/b2sum.merge.c:5133 */
+#line 5133
 extern int blake2xs_init(blake2xs_state *S , size_t const   outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xs_init LOC=./src/b2sum.merge.c:5149 */
+/* END FUNCTION-DECL-EXTERN blake2xs_init LOC=./src/b2sum.merge.c:5133 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_truncf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __ino64_t LOC=./src/b2sum.merge.c:5158 */
-#line 5158 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __ino64_t LOC=./src/b2sum.merge.c:5142 */
+#line 5142 "./src/b2sum.merge.c"
 typedef unsigned long __ino64_t;
-/* END TYPEDEF __ino64_t LOC=./src/b2sum.merge.c:5158 */
+/* END TYPEDEF __ino64_t LOC=./src/b2sum.merge.c:5142 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/b2sum.merge.c:5162 */
-#line 5162
+/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/b2sum.merge.c:5146 */
+#line 5146
 extern int ( __attribute__((__nonnull__(1))) fpurge)(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/b2sum.merge.c:5162 */
+/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/b2sum.merge.c:5146 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/b2sum.merge.c:5194 */
-#line 5194
+/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/b2sum.merge.c:5178 */
+#line 5178
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror_l)(int __errnum ,
                                                                                    locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/b2sum.merge.c:5194 */
+/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/b2sum.merge.c:5178 */
 
 /* BEGIN STRUCT-DECL blake2b_state__ LOC=./src/b2sum.merge.c:1035 */
 #line 1035
@@ -4112,106 +4104,102 @@ static size_t digest_hex_bytes  ;
    _Float128 __builtin_fminf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/b2sum.merge.c:5216 */
-#line 5216
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/b2sum.merge.c:5200 */
+#line 5200
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32x_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/b2sum.merge.c:5216 */
+/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/b2sum.merge.c:5200 */
 
-/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/b2sum.merge.c:5226 */
-#line 5226 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/b2sum.merge.c:5210 */
+#line 5210 "./src/b2sum.merge.c"
 typedef unsigned long __kernel_old_dev_t;
-/* END TYPEDEF __kernel_old_dev_t LOC=./src/b2sum.merge.c:5226 */
+/* END TYPEDEF __kernel_old_dev_t LOC=./src/b2sum.merge.c:5210 */
 
-/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/b2sum.merge.c:5253 */
-#line 5253 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/b2sum.merge.c:5237 */
+#line 5237 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_condattr_t_488594145 pthread_condattr_t;
-/* END TYPEDEF pthread_condattr_t LOC=./src/b2sum.merge.c:5253 */
+/* END TYPEDEF pthread_condattr_t LOC=./src/b2sum.merge.c:5237 */
 
-/* BEGIN TYPEDEF ulong LOC=./src/b2sum.merge.c:5257 */
-#line 5257 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ulong LOC=./src/b2sum.merge.c:5241 */
+#line 5241 "./src/b2sum.merge.c"
 typedef unsigned long ulong;
-/* END TYPEDEF ulong LOC=./src/b2sum.merge.c:5257 */
+/* END TYPEDEF ulong LOC=./src/b2sum.merge.c:5241 */
 
-/* BEGIN TYPEDEF __kernel_size_t LOC=./src/b2sum.merge.c:5249 */
-#line 5249 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_size_t LOC=./src/b2sum.merge.c:5233 */
+#line 5233 "./src/b2sum.merge.c"
 typedef __kernel_ulong_t __kernel_size_t;
-/* END TYPEDEF __kernel_size_t LOC=./src/b2sum.merge.c:5249 */
+/* END TYPEDEF __kernel_size_t LOC=./src/b2sum.merge.c:5233 */
 
 /* BEGIN FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_bcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/b2sum.merge.c:5279 */
-#line 5279
+/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/b2sum.merge.c:5263 */
+#line 5263
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1), __leaf__)) strtof128)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/b2sum.merge.c:5279 */
+/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/b2sum.merge.c:5263 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cpowf(_Complex float  , _Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/b2sum.merge.c:5284 */
-#line 5284
+/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/b2sum.merge.c:5268 */
+#line 5268
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/b2sum.merge.c:5284 */
+/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/b2sum.merge.c:5268 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/b2sum.merge.c:5290 */
-#line 5290
+/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/b2sum.merge.c:5274 */
+#line 5274
 extern int ( __attribute__((__nonnull__(2))) openat64)(int __fd , char const   *__file ,
                                                        int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/b2sum.merge.c:5290 */
+/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/b2sum.merge.c:5274 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863 LOC=./src/b2sum.merge.c:1283 */
 #line 1283
 enum __anonenum_57186863 ;
 /* END ENUM-DECL __anonenum_57186863 LOC=./src/b2sum.merge.c:1283 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/b2sum.merge.c:5313 */
-#line 5313
+/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/b2sum.merge.c:5297 */
+#line 5297
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qecvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/b2sum.merge.c:5313 */
+/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/b2sum.merge.c:5297 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/b2sum.merge.c:5337 */
-#line 5337
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/b2sum.merge.c:5321 */
+#line 5321
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate)(int __fd ,
                                                                                 __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/b2sum.merge.c:5337 */
+/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/b2sum.merge.c:5321 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/b2sum.merge.c:5328 */
-#line 5328
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/b2sum.merge.c:5312 */
+#line 5312
 extern void close_stdout_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/b2sum.merge.c:5328 */
+/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/b2sum.merge.c:5312 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/b2sum.merge.c:5358 */
-#line 5358
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/b2sum.merge.c:5342 */
+#line 5342
 extern void quotearg_free(void) ;
-/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/b2sum.merge.c:5358 */
+/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/b2sum.merge.c:5342 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_14tm_argc LOC=UNKNOWN */
-int _TIG_IZ_14tm_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_14tm_argc LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/b2sum.merge.c:5372 */
-#line 5372
+/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/b2sum.merge.c:5356 */
+#line 5356
 extern int volatile   exit_failure ;
-/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/b2sum.merge.c:5372 */
+/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/b2sum.merge.c:5356 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/b2sum.merge.c:5385 */
-#line 5385
+/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/b2sum.merge.c:5369 */
+#line 5369
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/b2sum.merge.c:5385 */
+/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/b2sum.merge.c:5369 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -4229,13 +4217,13 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershe
    double __builtin_acosh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF dev_t LOC=./src/b2sum.merge.c:2651 */
-#line 2651 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF dev_t LOC=./src/b2sum.merge.c:2647 */
+#line 2647 "./src/b2sum.merge.c"
 typedef __dev_t dev_t;
-/* END TYPEDEF dev_t LOC=./src/b2sum.merge.c:2651 */
+/* END TYPEDEF dev_t LOC=./src/b2sum.merge.c:2647 */
 
-/* BEGIN STRUCT __anonstruct_siginfo_t_342254926 LOC=./src/b2sum.merge.c:5438 */
-#line 5438 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_siginfo_t_342254926 LOC=./src/b2sum.merge.c:5422 */
+#line 5422 "./src/b2sum.merge.c"
 struct __anonstruct_siginfo_t_342254926 {
    int si_signo ;
    int si_errno ;
@@ -4243,36 +4231,36 @@ struct __anonstruct_siginfo_t_342254926 {
    int __pad0 ;
    union __anonunion__sifields_530746668 _sifields ;
 };
-/* END STRUCT __anonstruct_siginfo_t_342254926 LOC=./src/b2sum.merge.c:5438 */
+/* END STRUCT __anonstruct_siginfo_t_342254926 LOC=./src/b2sum.merge.c:5422 */
 
 /* BEGIN FUNCTION-DECL __bswap_32 LOC=UNKNOWN */
 __inline static __uint32_t __bswap_32(__uint32_t __bsx ) ;
 /* END FUNCTION-DECL __bswap_32 LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/b2sum.merge.c:5453 */
-#line 5453
+/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/b2sum.merge.c:5437 */
+#line 5437
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcat)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/b2sum.merge.c:5453 */
+/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/b2sum.merge.c:5437 */
 
-/* BEGIN FUNCTION-DECL __uint16_identity LOC=./src/b2sum.merge.c:5468 */
-#line 5468
+/* BEGIN FUNCTION-DECL __uint16_identity LOC=./src/b2sum.merge.c:5452 */
+#line 5452
 __inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
-/* END FUNCTION-DECL __uint16_identity LOC=./src/b2sum.merge.c:5468 */
+/* END FUNCTION-DECL __uint16_identity LOC=./src/b2sum.merge.c:5452 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/b2sum.merge.c:5486 */
-#line 5486
+/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/b2sum.merge.c:5470 */
+#line 5470
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf128)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   _Float128 __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/b2sum.merge.c:5486 */
+/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/b2sum.merge.c:5470 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/b2sum.merge.c:5482 */
-#line 5482
+/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/b2sum.merge.c:5466 */
+#line 5466
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void) ;
-/* END FUNCTION-DECL-EXTERN sync LOC=./src/b2sum.merge.c:5482 */
+/* END FUNCTION-DECL-EXTERN sync LOC=./src/b2sum.merge.c:5466 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 /* compiler builtin: 
@@ -4285,143 +4273,143 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void
 struct lconv ;
 /* END STRUCT-DECL lconv LOC=./src/b2sum.merge.c:1391 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/b2sum.merge.c:5515 */
-#line 5515
+/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/b2sum.merge.c:5499 */
+#line 5499
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) realloc)(void *__ptr , size_t __size )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN realloc LOC=./src/b2sum.merge.c:5515 */
+/* END FUNCTION-DECL-EXTERN realloc LOC=./src/b2sum.merge.c:5499 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/b2sum.merge.c:5528 */
-#line 5528
+/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/b2sum.merge.c:5512 */
+#line 5512
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32)(char const   * __restrict  __nptr ,
                                                                                                  char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/b2sum.merge.c:5528 */
+/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/b2sum.merge.c:5512 */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./src/b2sum.merge.c:855 */
 #line 855
 struct tm_zone ;
 /* END STRUCT-DECL tm_zone LOC=./src/b2sum.merge.c:855 */
 
-/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/b2sum.merge.c:5537 */
-#line 5537
+/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/b2sum.merge.c:5521 */
+#line 5521
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) endusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/b2sum.merge.c:5537 */
+/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/b2sum.merge.c:5521 */
 
-/* BEGIN FUNCTION-DECL stzncpy LOC=./src/b2sum.merge.c:5550 */
-#line 5550
+/* BEGIN FUNCTION-DECL stzncpy LOC=./src/b2sum.merge.c:5534 */
+#line 5534
 __inline static char *stzncpy(char * __restrict  dest , char const   * __restrict  src ,
                               size_t len ) ;
-/* END FUNCTION-DECL stzncpy LOC=./src/b2sum.merge.c:5550 */
+/* END FUNCTION-DECL stzncpy LOC=./src/b2sum.merge.c:5534 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/b2sum.merge.c:5545 */
-#line 5545
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/b2sum.merge.c:5529 */
+#line 5529
 extern char *quotearg_custom(char const   *left_quote , char const   *right_quote ,
                              char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/b2sum.merge.c:5545 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/b2sum.merge.c:5529 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/b2sum.merge.c:5560 */
-#line 5560
+/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/b2sum.merge.c:5544 */
+#line 5544
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread LOC=./src/b2sum.merge.c:5560 */
+/* END FUNCTION-DECL-EXTERN pread LOC=./src/b2sum.merge.c:5544 */
 
-/* BEGIN TYPEDEF ucontext_t LOC=./src/b2sum.merge.c:5573 */
-#line 5573 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ucontext_t LOC=./src/b2sum.merge.c:5557 */
+#line 5557 "./src/b2sum.merge.c"
 typedef struct ucontext_t ucontext_t;
-/* END TYPEDEF ucontext_t LOC=./src/b2sum.merge.c:5573 */
+/* END TYPEDEF ucontext_t LOC=./src/b2sum.merge.c:5557 */
 
-/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/b2sum.merge.c:5577 */
-#line 5577 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/b2sum.merge.c:5561 */
+#line 5561 "./src/b2sum.merge.c"
 typedef int cookie_close_function_t(void *__cookie );
-/* END TYPEDEF cookie_close_function_t LOC=./src/b2sum.merge.c:5577 */
+/* END TYPEDEF cookie_close_function_t LOC=./src/b2sum.merge.c:5561 */
 
-/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/b2sum.merge.c:5581 */
-#line 5581 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/b2sum.merge.c:5565 */
+#line 5565 "./src/b2sum.merge.c"
 typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_read_function_t LOC=./src/b2sum.merge.c:5581 */
+/* END TYPEDEF cookie_read_function_t LOC=./src/b2sum.merge.c:5565 */
 
-/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/b2sum.merge.c:5585 */
-#line 5585 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/b2sum.merge.c:5569 */
+#line 5569 "./src/b2sum.merge.c"
 typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
-/* END TYPEDEF cookie_seek_function_t LOC=./src/b2sum.merge.c:5585 */
+/* END TYPEDEF cookie_seek_function_t LOC=./src/b2sum.merge.c:5569 */
 
-/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/b2sum.merge.c:5589 */
-#line 5589 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/b2sum.merge.c:5573 */
+#line 5573 "./src/b2sum.merge.c"
 typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_write_function_t LOC=./src/b2sum.merge.c:5589 */
+/* END TYPEDEF cookie_write_function_t LOC=./src/b2sum.merge.c:5573 */
 
-/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/b2sum.merge.c:5593 */
-#line 5593 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/b2sum.merge.c:5577 */
+#line 5577 "./src/b2sum.merge.c"
 struct _IO_cookie_io_functions_t {
    cookie_read_function_t *read ;
    cookie_write_function_t *write ;
    cookie_seek_function_t *seek ;
    cookie_close_function_t *close ;
 };
-/* END STRUCT _IO_cookie_io_functions_t LOC=./src/b2sum.merge.c:5593 */
+/* END STRUCT _IO_cookie_io_functions_t LOC=./src/b2sum.merge.c:5577 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/b2sum.merge.c:5602 */
-#line 5602
+/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/b2sum.merge.c:5586 */
+#line 5586
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt_long_only)(int ___argc ,
                                                                                                          char **___argv ,
                                                                                                          char const   *__shortopts ,
                                                                                                          struct option  const  *__longopts ,
                                                                                                          int *__longind ) ;
-/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/b2sum.merge.c:5602 */
+/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/b2sum.merge.c:5586 */
 
-/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/b2sum.merge.c:5614 */
-#line 5614 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/b2sum.merge.c:5598 */
+#line 5598 "./src/b2sum.merge.c"
 struct __anonstruct_max_align_t_247203726 {
    long long __max_align_ll  __attribute__((__aligned__(__alignof__(long long )))) ;
    long double __max_align_ld  __attribute__((__aligned__(__alignof__(long double )))) ;
 };
-/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/b2sum.merge.c:5614 */
+/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/b2sum.merge.c:5598 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/b2sum.merge.c:5621 */
-#line 5621
+/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/b2sum.merge.c:5605 */
+#line 5605
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimes)(int __fd ,
                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimes LOC=./src/b2sum.merge.c:5621 */
+/* END FUNCTION-DECL-EXTERN futimes LOC=./src/b2sum.merge.c:5605 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/b2sum.merge.c:5635 */
-#line 5635
+/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/b2sum.merge.c:5619 */
+#line 5619
 extern char const   *getprogname(void)  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/b2sum.merge.c:5635 */
+/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/b2sum.merge.c:5619 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/b2sum.merge.c:5626 */
-#line 5626
+/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/b2sum.merge.c:5610 */
+#line 5610
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) fcvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/b2sum.merge.c:5626 */
+/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/b2sum.merge.c:5610 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wcscmp(unsigned short * const   , unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/b2sum.merge.c:5684 */
-#line 5684
+/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/b2sum.merge.c:5668 */
+#line 5668
 extern int ( __attribute__((__nonnull__(1,2))) mbscasecmp)(char const   *s1 , char const   *s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/b2sum.merge.c:5684 */
+/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/b2sum.merge.c:5668 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/b2sum.merge.c:5731 */
-#line 5731
+/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/b2sum.merge.c:5715 */
+#line 5715
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) get_current_dir_name)(void) ;
-/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/b2sum.merge.c:5731 */
+/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/b2sum.merge.c:5715 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/b2sum.merge.c:5726 */
-#line 5726
+/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/b2sum.merge.c:5710 */
+#line 5710
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) timespec_get)(struct timespec *__ts ,
                                                                                                    int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/b2sum.merge.c:5726 */
+/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/b2sum.merge.c:5710 */
 
 /* BEGIN FUNCTION-DECL __builtin_acosf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4433,11 +4421,11 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_fdimf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/b2sum.merge.c:5749 */
-#line 5749
+/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/b2sum.merge.c:5733 */
+#line 5733
 extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/b2sum.merge.c:5749 */
+/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/b2sum.merge.c:5733 */
 
 /* BEGIN STRUCT-DECL __anonstruct_mcontext_t_787213989 LOC=./src/b2sum.merge.c:1419 */
 #line 1419
@@ -4449,24 +4437,24 @@ struct __anonstruct_mcontext_t_787213989 ;
    float __builtin_nexttowardf(float  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/b2sum.merge.c:5787 */
-#line 5787
+/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/b2sum.merge.c:5779 */
+#line 5779
 extern  __attribute__((__nothrow__)) __off64_t ( __attribute__((__leaf__)) lseek64)(int __fd ,
                                                                                     __off64_t __offset ,
                                                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/b2sum.merge.c:5787 */
+/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/b2sum.merge.c:5779 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/b2sum.merge.c:5818 */
-#line 5818
+/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/b2sum.merge.c:5810 */
+#line 5810
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) gettext)(char const   *__msgid )  __attribute__((__format_arg__(1))) ;
-/* END FUNCTION-DECL-EXTERN gettext LOC=./src/b2sum.merge.c:5818 */
+/* END FUNCTION-DECL-EXTERN gettext LOC=./src/b2sum.merge.c:5810 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/b2sum.merge.c:5807 */
-#line 5807
+/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/b2sum.merge.c:5799 */
+#line 5799
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) bcmp)(void const   *__s1 ,
                                                                                              void const   *__s2 ,
                                                                                              size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/b2sum.merge.c:5807 */
+/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/b2sum.merge.c:5799 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 /* compiler builtin: 
@@ -4482,17 +4470,17 @@ static unsigned char digest_delim  ;
    double __builtin_fabs(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/b2sum.merge.c:5863 */
-#line 5863
+/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/b2sum.merge.c:5859 */
+#line 5859
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mknod)(char const   *__path ,
                                                                                             __mode_t __mode ,
                                                                                             __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknod LOC=./src/b2sum.merge.c:5863 */
+/* END FUNCTION-DECL-EXTERN mknod LOC=./src/b2sum.merge.c:5859 */
 
-/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/b2sum.merge.c:5869 */
-#line 5869
+/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/b2sum.merge.c:5865 */
+#line 5865
 extern long timezone ;
-/* END VARIABLE-DECL-EXTERN timezone LOC=./src/b2sum.merge.c:5869 */
+/* END VARIABLE-DECL-EXTERN timezone LOC=./src/b2sum.merge.c:5865 */
 
 /* BEGIN STRUCT-DECL __anonstruct___once_flag_783464055 LOC=./src/b2sum.merge.c:1059 */
 #line 1059
@@ -4503,129 +4491,129 @@ struct __anonstruct___once_flag_783464055 ;
 __inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
 /* END FUNCTION-DECL timespec_sign LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/b2sum.merge.c:5896 */
-#line 5896
+/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/b2sum.merge.c:5892 */
+#line 5892
 extern int ( __attribute__((__nonnull__(1))) fseek)(FILE *__stream , long __off ,
                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseek LOC=./src/b2sum.merge.c:5896 */
+/* END FUNCTION-DECL-EXTERN fseek LOC=./src/b2sum.merge.c:5892 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/b2sum.merge.c:5905 */
-#line 5905
+/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/b2sum.merge.c:5901 */
+#line 5901
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)(void) ;
-/* END FUNCTION-DECL-EXTERN setsid LOC=./src/b2sum.merge.c:5905 */
+/* END FUNCTION-DECL-EXTERN setsid LOC=./src/b2sum.merge.c:5901 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/b2sum.merge.c:5919 */
-#line 5919
+/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/b2sum.merge.c:5915 */
+#line 5915
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/b2sum.merge.c:5919 */
+/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/b2sum.merge.c:5915 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/b2sum.merge.c:5928 */
-#line 5928 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/b2sum.merge.c:5924 */
+#line 5924 "./src/b2sum.merge.c"
 union __anonunion_pthread_cond_t_951761805 {
    struct __pthread_cond_s __data ;
    char __size[48] ;
    long long __align ;
 };
-/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/b2sum.merge.c:5928 */
+/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/b2sum.merge.c:5924 */
 
-/* BEGIN TYPEDEF __uintmax_t LOC=./src/b2sum.merge.c:3404 */
-#line 3404 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uintmax_t LOC=./src/b2sum.merge.c:3400 */
+#line 3400 "./src/b2sum.merge.c"
 typedef unsigned long __uintmax_t;
-/* END TYPEDEF __uintmax_t LOC=./src/b2sum.merge.c:3404 */
+/* END TYPEDEF __uintmax_t LOC=./src/b2sum.merge.c:3400 */
 
-/* BEGIN TYPEDEF uintmax_t LOC=./src/b2sum.merge.c:4487 */
-#line 4487 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uintmax_t LOC=./src/b2sum.merge.c:4475 */
+#line 4475 "./src/b2sum.merge.c"
 typedef __uintmax_t uintmax_t;
-/* END TYPEDEF uintmax_t LOC=./src/b2sum.merge.c:4487 */
+/* END TYPEDEF uintmax_t LOC=./src/b2sum.merge.c:4475 */
 
-/* BEGIN TYPEDEF digest_output_fn LOC=./src/b2sum.merge.c:5936 */
-#line 5936 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF digest_output_fn LOC=./src/b2sum.merge.c:5932 */
+#line 5932 "./src/b2sum.merge.c"
 typedef void (*digest_output_fn)(char const   * , int  , void const   * , _Bool  ,
                                  _Bool  , unsigned char  , _Bool  , uintmax_t  );
-/* END TYPEDEF digest_output_fn LOC=./src/b2sum.merge.c:5936 */
+/* END TYPEDEF digest_output_fn LOC=./src/b2sum.merge.c:5932 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ccosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/b2sum.merge.c:5981 */
-#line 5981
+/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/b2sum.merge.c:5977 */
+#line 5977
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime)(char const   * __restrict  __s ,
                                                                                  char const   * __restrict  __fmt ,
                                                                                  struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN strptime LOC=./src/b2sum.merge.c:5981 */
+/* END FUNCTION-DECL-EXTERN strptime LOC=./src/b2sum.merge.c:5977 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/b2sum.merge.c:5987 */
-#line 5987
+/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/b2sum.merge.c:5983 */
+#line 5983
 extern int getchar_unlocked(void) ;
-/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/b2sum.merge.c:5987 */
+/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/b2sum.merge.c:5983 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/b2sum.merge.c:5999 */
-#line 5999
+/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/b2sum.merge.c:5995 */
+#line 5995
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setlinebuf)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/b2sum.merge.c:5999 */
+/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/b2sum.merge.c:5995 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/b2sum.merge.c:6003 */
-#line 6003
+/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/b2sum.merge.c:5999 */
+#line 5999
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigabbrev_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/b2sum.merge.c:6003 */
+/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/b2sum.merge.c:5999 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/b2sum.merge.c:6007 */
-#line 6007
+/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/b2sum.merge.c:6003 */
+#line 6003
 extern int ( __attribute__((__nonnull__(2))) openat)(int __fd , char const   *__file ,
                                                      int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat LOC=./src/b2sum.merge.c:6007 */
+/* END FUNCTION-DECL-EXTERN openat LOC=./src/b2sum.merge.c:6003 */
 
-/* BEGIN TYPEDEF siginfo_t LOC=./src/b2sum.merge.c:6012 */
-#line 6012 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF siginfo_t LOC=./src/b2sum.merge.c:6008 */
+#line 6008 "./src/b2sum.merge.c"
 typedef struct __anonstruct_siginfo_t_342254926 siginfo_t;
-/* END TYPEDEF siginfo_t LOC=./src/b2sum.merge.c:6012 */
+/* END TYPEDEF siginfo_t LOC=./src/b2sum.merge.c:6008 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/b2sum.merge.c:6031 */
-#line 6031
+/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/b2sum.merge.c:6027 */
+#line 6027
 extern void unused__emit_bug_reporting_address(void) ;
-/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/b2sum.merge.c:6031 */
+/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/b2sum.merge.c:6027 */
 
 /* BEGIN FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smull_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blake2sp_state LOC=./src/b2sum.merge.c:2039 */
-#line 2039 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2sp_state LOC=./src/b2sum.merge.c:2035 */
+#line 2035 "./src/b2sum.merge.c"
 typedef struct blake2sp_state__ blake2sp_state;
-/* END TYPEDEF blake2sp_state LOC=./src/b2sum.merge.c:2039 */
+/* END TYPEDEF blake2sp_state LOC=./src/b2sum.merge.c:2035 */
 
 /* BEGIN FUNCTION-DECL blake2b_final LOC=UNKNOWN */
 int blake2b_final(blake2b_state *S , void *out , size_t outlen ) ;
 /* END FUNCTION-DECL blake2b_final LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/b2sum.merge.c:6050 */
-#line 6050
+/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/b2sum.merge.c:6046 */
+#line 6046
 extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/b2sum.merge.c:6050 */
+/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/b2sum.merge.c:6046 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/b2sum.merge.c:6054 */
-#line 6054
+/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/b2sum.merge.c:6050 */
+#line 6050
 extern int ( __attribute__((__nonnull__(1,2))) sigwait)(sigset_t const   * __restrict  __set ,
                                                         int * __restrict  __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/b2sum.merge.c:6054 */
+/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/b2sum.merge.c:6050 */
 
 /* BEGIN VARIABLE-DEF ignore_missing LOC=UNKNOWN */
 static _Bool ignore_missing  ;
@@ -4641,70 +4629,66 @@ static _Bool ignore_missing  ;
    int __builtin_classify_type(...) ;  */
 /* END FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/b2sum.merge.c:6102 */
-#line 6102
+/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/b2sum.merge.c:6098 */
+#line 6098
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timegm)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timegm LOC=./src/b2sum.merge.c:6102 */
+/* END FUNCTION-DECL-EXTERN timegm LOC=./src/b2sum.merge.c:6098 */
 
-/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/b2sum.merge.c:6093 */
-#line 6093
+/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/b2sum.merge.c:6089 */
+#line 6089
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) reallocarray)(void *__ptr , size_t __nmemb , size_t __size )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/b2sum.merge.c:6093 */
+/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/b2sum.merge.c:6089 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/b2sum.merge.c:6078 */
-#line 6078
+/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/b2sum.merge.c:6074 */
+#line 6074
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bindtextdomain)(char const   *__domainname ,
                                                                                        char const   *__dirname ) ;
-/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/b2sum.merge.c:6078 */
+/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/b2sum.merge.c:6074 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152 LOC=./src/b2sum.merge.c:1411 */
 #line 1411
 enum __anonenum_451154152 ;
 /* END ENUM-DECL __anonenum_451154152 LOC=./src/b2sum.merge.c:1411 */
 
-/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/b2sum.merge.c:6132 */
-#line 6132 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/b2sum.merge.c:6128 */
+#line 6128 "./src/b2sum.merge.c"
 union __anonunion___sigaction_handler_363639592 {
    void (*sa_handler)(int  ) ;
    void (*sa_sigaction)(int  , siginfo_t * , void * ) ;
 };
-/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/b2sum.merge.c:6132 */
+/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/b2sum.merge.c:6128 */
 
-/* BEGIN STRUCT sigaction LOC=./src/b2sum.merge.c:6139 */
-#line 6139 "./src/b2sum.merge.c"
+/* BEGIN STRUCT sigaction LOC=./src/b2sum.merge.c:6135 */
+#line 6135 "./src/b2sum.merge.c"
 struct sigaction {
    union __anonunion___sigaction_handler_363639592 __sigaction_handler ;
    __sigset_t sa_mask ;
    int sa_flags ;
    void (*sa_restorer)(void) ;
 };
-/* END STRUCT sigaction LOC=./src/b2sum.merge.c:6139 */
+/* END STRUCT sigaction LOC=./src/b2sum.merge.c:6135 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/b2sum.merge.c:6148 */
-#line 6148
+/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/b2sum.merge.c:6144 */
+#line 6144
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfroml)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/b2sum.merge.c:6148 */
+/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/b2sum.merge.c:6144 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/b2sum.merge.c:6161 */
-#line 6161
+/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/b2sum.merge.c:6157 */
+#line 6157
 extern int ( __attribute__((__nonnull__(2))) ungetc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/b2sum.merge.c:6161 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_14tm_argc LOC=UNKNOWN */
-int _TIG_IZ_14tm_argc ;
-/* END VARIABLE-DECL _TIG_IZ_14tm_argc LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/b2sum.merge.c:6157 */
 
 /* BEGIN STRUCT-DECL _IO_codecvt LOC=./src/b2sum.merge.c:879 */
 #line 879
 struct _IO_codecvt ;
 /* END STRUCT-DECL _IO_codecvt LOC=./src/b2sum.merge.c:879 */
 
-/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/b2sum.merge.c:6208 */
-#line 6208 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/b2sum.merge.c:6204 */
+#line 6204 "./src/b2sum.merge.c"
 struct __pthread_rwlock_arch_t {
    unsigned int __readers ;
    unsigned int __writers ;
@@ -4719,7 +4703,7 @@ struct __pthread_rwlock_arch_t {
    unsigned long __pad2 ;
    unsigned int __flags ;
 };
-/* END STRUCT __pthread_rwlock_arch_t LOC=./src/b2sum.merge.c:6208 */
+/* END STRUCT __pthread_rwlock_arch_t LOC=./src/b2sum.merge.c:6204 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 /* compiler builtin: 
@@ -4731,37 +4715,37 @@ struct __pthread_rwlock_arch_t {
 enum __anonenum_1036286214 ;
 /* END ENUM-DECL __anonenum_1036286214 LOC=./src/b2sum.merge.c:911 */
 
-/* BEGIN TYPEDEF __uint_least16_t LOC=./src/b2sum.merge.c:6256 */
-#line 6256 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint_least16_t LOC=./src/b2sum.merge.c:6252 */
+#line 6252 "./src/b2sum.merge.c"
 typedef __uint16_t __uint_least16_t;
-/* END TYPEDEF __uint_least16_t LOC=./src/b2sum.merge.c:6256 */
+/* END TYPEDEF __uint_least16_t LOC=./src/b2sum.merge.c:6252 */
 
-/* BEGIN TYPEDEF uint_least16_t LOC=./src/b2sum.merge.c:6260 */
-#line 6260 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_least16_t LOC=./src/b2sum.merge.c:6256 */
+#line 6256 "./src/b2sum.merge.c"
 typedef __uint_least16_t uint_least16_t;
-/* END TYPEDEF uint_least16_t LOC=./src/b2sum.merge.c:6260 */
+/* END TYPEDEF uint_least16_t LOC=./src/b2sum.merge.c:6256 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/b2sum.merge.c:6279 */
-#line 6279
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/b2sum.merge.c:6275 */
+#line 6275
 extern int ( __attribute__((__nonnull__(1))) fsetpos64)(FILE *__stream , fpos64_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/b2sum.merge.c:6279 */
+/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/b2sum.merge.c:6275 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/b2sum.merge.c:6273 */
-#line 6273
+/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/b2sum.merge.c:6269 */
+#line 6269
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpncpy)(char * __restrict  __dest ,
                                                                                                     char const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/b2sum.merge.c:6273 */
+/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/b2sum.merge.c:6269 */
 
 /* BEGIN FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_uadd_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/b2sum.merge.c:6293 */
-#line 6293
+/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/b2sum.merge.c:6289 */
+#line 6289
 extern int fsync(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fsync LOC=./src/b2sum.merge.c:6293 */
+/* END FUNCTION-DECL-EXTERN fsync LOC=./src/b2sum.merge.c:6289 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 /* compiler builtin: 
@@ -4773,31 +4757,31 @@ extern int fsync(int __fd ) ;
    double __builtin_fmod(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blkcnt64_t LOC=./src/b2sum.merge.c:6302 */
-#line 6302 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blkcnt64_t LOC=./src/b2sum.merge.c:6298 */
+#line 6298 "./src/b2sum.merge.c"
 typedef __blkcnt64_t blkcnt64_t;
-/* END TYPEDEF blkcnt64_t LOC=./src/b2sum.merge.c:6302 */
+/* END TYPEDEF blkcnt64_t LOC=./src/b2sum.merge.c:6298 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_log1p(double  ) ;  */
 /* END FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/b2sum.merge.c:6325 */
-#line 6325
+/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/b2sum.merge.c:6321 */
+#line 6321
 extern int fcntl(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/b2sum.merge.c:6325 */
+/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/b2sum.merge.c:6321 */
 
 /* BEGIN FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_return_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/b2sum.merge.c:6359 */
-#line 6359
+/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/b2sum.merge.c:6355 */
+#line 6355
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strtok)(char * __restrict  __s ,
                                                                                                char const   * __restrict  __delim ) ;
-/* END FUNCTION-DECL-EXTERN strtok LOC=./src/b2sum.merge.c:6359 */
+/* END FUNCTION-DECL-EXTERN strtok LOC=./src/b2sum.merge.c:6355 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -4813,27 +4797,27 @@ static _Bool strict  ;
    _Float128 __builtin_inff128(void) ;  */
 /* END FUNCTION-DECL __builtin_inff128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/b2sum.merge.c:6416 */
-#line 6416
+/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/b2sum.merge.c:6412 */
+#line 6412
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) remove)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN remove LOC=./src/b2sum.merge.c:6416 */
+/* END FUNCTION-DECL-EXTERN remove LOC=./src/b2sum.merge.c:6412 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least64_t LOC=./src/b2sum.merge.c:6425 */
-#line 6425 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint_least64_t LOC=./src/b2sum.merge.c:6421 */
+#line 6421 "./src/b2sum.merge.c"
 typedef __uint64_t __uint_least64_t;
-/* END TYPEDEF __uint_least64_t LOC=./src/b2sum.merge.c:6425 */
+/* END TYPEDEF __uint_least64_t LOC=./src/b2sum.merge.c:6421 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/b2sum.merge.c:6429 */
-#line 6429
+/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/b2sum.merge.c:6425 */
+#line 6425
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) gcvt)(double __value ,
                                                                                              int __ndigit ,
                                                                                              char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/b2sum.merge.c:6429 */
+/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/b2sum.merge.c:6425 */
 
 /* BEGIN FUNCTION-DECL __builtin_expl LOC=BUILTIN */
 /* compiler builtin: 
@@ -4849,54 +4833,54 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
 static char *filename_unescape(char *s , size_t s_len ) ;
 /* END FUNCTION-DECL filename_unescape LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF uint16_t LOC=./src/b2sum.merge.c:6457 */
-#line 6457 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint16_t LOC=./src/b2sum.merge.c:6453 */
+#line 6453 "./src/b2sum.merge.c"
 typedef __uint16_t uint16_t;
-/* END TYPEDEF uint16_t LOC=./src/b2sum.merge.c:6457 */
+/* END TYPEDEF uint16_t LOC=./src/b2sum.merge.c:6453 */
 
-/* BEGIN STRUCT iovec LOC=./src/b2sum.merge.c:6461 */
-#line 6461 "./src/b2sum.merge.c"
+/* BEGIN STRUCT iovec LOC=./src/b2sum.merge.c:6457 */
+#line 6457 "./src/b2sum.merge.c"
 struct iovec {
    void *iov_base ;
    size_t iov_len ;
 };
-/* END STRUCT iovec LOC=./src/b2sum.merge.c:6461 */
+/* END STRUCT iovec LOC=./src/b2sum.merge.c:6457 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpow LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cpow(_Complex double  , _Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cpow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/b2sum.merge.c:6468 */
-#line 6468
+/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/b2sum.merge.c:6464 */
+#line 6464
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__pid_t __pgrp ,
                                                                              int __sig ) ;
-/* END FUNCTION-DECL-EXTERN killpg LOC=./src/b2sum.merge.c:6468 */
+/* END FUNCTION-DECL-EXTERN killpg LOC=./src/b2sum.merge.c:6464 */
 
 /* BEGIN FUNCTION-DECL __builtin_constant_p LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_constant_p(int  ) ;  */
 /* END FUNCTION-DECL __builtin_constant_p LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int64_t LOC=./src/b2sum.merge.c:6483 */
-#line 6483 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int64_t LOC=./src/b2sum.merge.c:6479 */
+#line 6479 "./src/b2sum.merge.c"
 typedef long __int64_t;
-/* END TYPEDEF __int64_t LOC=./src/b2sum.merge.c:6483 */
+/* END TYPEDEF __int64_t LOC=./src/b2sum.merge.c:6479 */
 
-/* BEGIN TYPEDEF __int_least64_t LOC=./src/b2sum.merge.c:6487 */
-#line 6487 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int_least64_t LOC=./src/b2sum.merge.c:6483 */
+#line 6483 "./src/b2sum.merge.c"
 typedef __int64_t __int_least64_t;
-/* END TYPEDEF __int_least64_t LOC=./src/b2sum.merge.c:6487 */
+/* END TYPEDEF __int_least64_t LOC=./src/b2sum.merge.c:6483 */
 
-/* BEGIN TYPEDEF __int8_t LOC=./src/b2sum.merge.c:2664 */
-#line 2664 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int8_t LOC=./src/b2sum.merge.c:2660 */
+#line 2660 "./src/b2sum.merge.c"
 typedef signed char __int8_t;
-/* END TYPEDEF __int8_t LOC=./src/b2sum.merge.c:2664 */
+/* END TYPEDEF __int8_t LOC=./src/b2sum.merge.c:2660 */
 
-/* BEGIN TYPEDEF int8_t LOC=./src/b2sum.merge.c:6491 */
-#line 6491 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int8_t LOC=./src/b2sum.merge.c:6487 */
+#line 6487 "./src/b2sum.merge.c"
 typedef __int8_t int8_t;
-/* END TYPEDEF int8_t LOC=./src/b2sum.merge.c:6491 */
+/* END TYPEDEF int8_t LOC=./src/b2sum.merge.c:6487 */
 
 /* BEGIN FUNCTION-DECL blake2b_is_lastblock LOC=UNKNOWN */
 static int blake2b_is_lastblock(blake2b_state const   *S ) ;
@@ -4907,69 +4891,69 @@ static int blake2b_is_lastblock(blake2b_state const   *S ) ;
    char *__builtin___stpncpy_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u128 LOC=./src/b2sum.merge.c:6519 */
-#line 6519 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u128 LOC=./src/b2sum.merge.c:6515 */
+#line 6515 "./src/b2sum.merge.c"
 typedef unsigned __int128 __attribute__((__aligned__(16)))  __u128;
-/* END TYPEDEF __u128 LOC=./src/b2sum.merge.c:6519 */
+/* END TYPEDEF __u128 LOC=./src/b2sum.merge.c:6515 */
 
-/* BEGIN TYPEDEF off_t LOC=./src/b2sum.merge.c:4223 */
-#line 4223 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF off_t LOC=./src/b2sum.merge.c:4215 */
+#line 4215 "./src/b2sum.merge.c"
 typedef __off_t off_t;
-/* END TYPEDEF off_t LOC=./src/b2sum.merge.c:4223 */
+/* END TYPEDEF off_t LOC=./src/b2sum.merge.c:4215 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdadvise LOC=./src/b2sum.merge.c:6538 */
-#line 6538
+/* BEGIN FUNCTION-DECL-EXTERN fdadvise LOC=./src/b2sum.merge.c:6534 */
+#line 6534
 extern void fdadvise(int fd , off_t offset , off_t len , fadvice_t advice ) ;
-/* END FUNCTION-DECL-EXTERN fdadvise LOC=./src/b2sum.merge.c:6538 */
+/* END FUNCTION-DECL-EXTERN fdadvise LOC=./src/b2sum.merge.c:6534 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928 LOC=./src/b2sum.merge.c:939 */
 #line 939
 enum __anonenum_850350928 ;
 /* END ENUM-DECL __anonenum_850350928 LOC=./src/b2sum.merge.c:939 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/b2sum.merge.c:6546 */
-#line 6546
+/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/b2sum.merge.c:6542 */
+#line 6542
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setvbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ,
                                                                                               int __modes ,
                                                                                               size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/b2sum.merge.c:6546 */
+/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/b2sum.merge.c:6542 */
 
-/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/b2sum.merge.c:6553 */
-#line 6553
+/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/b2sum.merge.c:6549 */
+#line 6549
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) canonicalize_file_name)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/b2sum.merge.c:6553 */
+/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/b2sum.merge.c:6549 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoull LOC=./src/b2sum.merge.c:6557 */
-#line 6557
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoull LOC=./src/b2sum.merge.c:6553 */
+#line 6553
 extern strtol_error xstrtoull(char const   * , char ** , int  , unsigned long long * ,
                               char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoull LOC=./src/b2sum.merge.c:6557 */
+/* END FUNCTION-DECL-EXTERN xstrtoull LOC=./src/b2sum.merge.c:6553 */
 
-/* BEGIN TYPEDEF __kernel_time_t LOC=./src/b2sum.merge.c:6567 */
-#line 6567 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_time_t LOC=./src/b2sum.merge.c:6563 */
+#line 6563 "./src/b2sum.merge.c"
 typedef __kernel_long_t __kernel_time_t;
-/* END TYPEDEF __kernel_time_t LOC=./src/b2sum.merge.c:6567 */
+/* END TYPEDEF __kernel_time_t LOC=./src/b2sum.merge.c:6563 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt_t LOC=./src/b2sum.merge.c:2858 */
-#line 2858 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __blkcnt_t LOC=./src/b2sum.merge.c:2854 */
+#line 2854 "./src/b2sum.merge.c"
 typedef long __blkcnt_t;
-/* END TYPEDEF __blkcnt_t LOC=./src/b2sum.merge.c:2858 */
+/* END TYPEDEF __blkcnt_t LOC=./src/b2sum.merge.c:2854 */
 
-/* BEGIN TYPEDEF blkcnt_t LOC=./src/b2sum.merge.c:6585 */
-#line 6585 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blkcnt_t LOC=./src/b2sum.merge.c:6577 */
+#line 6577 "./src/b2sum.merge.c"
 typedef __blkcnt_t blkcnt_t;
-/* END TYPEDEF blkcnt_t LOC=./src/b2sum.merge.c:6585 */
+/* END TYPEDEF blkcnt_t LOC=./src/b2sum.merge.c:6577 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/b2sum.merge.c:6589 */
-#line 6589
+/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/b2sum.merge.c:6581 */
+#line 6581
 extern unsigned int sleep(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN sleep LOC=./src/b2sum.merge.c:6589 */
+/* END FUNCTION-DECL-EXTERN sleep LOC=./src/b2sum.merge.c:6581 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4991,8 +4975,8 @@ union __anonunion_pthread_rwlock_t_656928968 ;
 struct __anonstruct_fd_set_356711149 ;
 /* END STRUCT-DECL __anonstruct_fd_set_356711149 LOC=./src/b2sum.merge.c:1271 */
 
-/* BEGIN ENUM __anonenum_457704180 LOC=./src/b2sum.merge.c:6617 */
-#line 6617
+/* BEGIN ENUM __anonenum_457704180 LOC=./src/b2sum.merge.c:6609 */
+#line 6609
 enum __anonenum_457704180 {
     FPE_INTDIV = 1,
     FPE_INTOVF = 2,
@@ -5005,7 +4989,7 @@ enum __anonenum_457704180 {
     FPE_FLTUNK = 14,
     FPE_CONDTRAP = 15
 } ;
-/* END ENUM __anonenum_457704180 LOC=./src/b2sum.merge.c:6617 */
+/* END ENUM __anonenum_457704180 LOC=./src/b2sum.merge.c:6609 */
 
 /* BEGIN STRUCT-DECL iovec LOC=./src/b2sum.merge.c:995 */
 #line 995
@@ -5027,41 +5011,41 @@ struct iovec ;
    int __builtin_dump_struct(void const   * , void * ) ;  */
 /* END FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/b2sum.merge.c:6665 */
-#line 6665
+/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/b2sum.merge.c:6657 */
+#line 6657
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rpmatch)(char const   *__response ) ;
-/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/b2sum.merge.c:6665 */
+/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/b2sum.merge.c:6657 */
 
-/* BEGIN ENUM __anonenum_552717108 LOC=./src/b2sum.merge.c:6675 */
-#line 6675
+/* BEGIN ENUM __anonenum_552717108 LOC=./src/b2sum.merge.c:6667 */
+#line 6667
 enum __anonenum_552717108 {
     BLAKE2_DUMMY_1 = 1,
     BLAKE2_DUMMY_2 = 1
 } ;
-/* END ENUM __anonenum_552717108 LOC=./src/b2sum.merge.c:6675 */
+/* END ENUM __anonenum_552717108 LOC=./src/b2sum.merge.c:6667 */
 
-/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/b2sum.merge.c:6669 */
-#line 6669 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/b2sum.merge.c:6661 */
+#line 6661 "./src/b2sum.merge.c"
 struct __anonstruct___kernel_fd_set_990674701 {
    unsigned long fds_bits[1024ULL / (8ULL * sizeof(long ))] ;
 };
-/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/b2sum.merge.c:6669 */
+/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/b2sum.merge.c:6661 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/b2sum.merge.c:6682 */
-#line 6682
+/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/b2sum.merge.c:6674 */
+#line 6674
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/b2sum.merge.c:6682 */
+/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/b2sum.merge.c:6674 */
 
-/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/b2sum.merge.c:6691 */
-#line 6691 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/b2sum.merge.c:6683 */
+#line 6683 "./src/b2sum.merge.c"
 union __anonunion_pthread_barrier_t_145707746 {
    char __size[32] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/b2sum.merge.c:6691 */
+/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/b2sum.merge.c:6683 */
 
-/* BEGIN ENUM __anonenum_23175539 LOC=./src/b2sum.merge.c:6698 */
-#line 6698
+/* BEGIN ENUM __anonenum_23175539 LOC=./src/b2sum.merge.c:6690 */
+#line 6690
 enum __anonenum_23175539 {
     CLD_EXITED = 1,
     CLD_KILLED = 2,
@@ -5070,7 +5054,7 @@ enum __anonenum_23175539 {
     CLD_STOPPED = 5,
     CLD_CONTINUED = 6
 } ;
-/* END ENUM __anonenum_23175539 LOC=./src/b2sum.merge.c:6698 */
+/* END ENUM __anonenum_23175539 LOC=./src/b2sum.merge.c:6690 */
 
 /* BEGIN STRUCT-DECL __anonstruct_stack_t_648343364 LOC=./src/b2sum.merge.c:979 */
 #line 979
@@ -5082,154 +5066,154 @@ struct __anonstruct_stack_t_648343364 ;
    double __builtin_canonicalize(double  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalize LOC=BUILTIN */
 
-/* BEGIN TYPEDEF va_list LOC=./src/b2sum.merge.c:6714 */
-#line 6714 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF va_list LOC=./src/b2sum.merge.c:6706 */
+#line 6706 "./src/b2sum.merge.c"
 typedef __gnuc_va_list va_list;
-/* END TYPEDEF va_list LOC=./src/b2sum.merge.c:6714 */
+/* END TYPEDEF va_list LOC=./src/b2sum.merge.c:6706 */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/b2sum.merge.c:6718 */
-#line 6718
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/b2sum.merge.c:6710 */
+#line 6710
 extern void version_etc_va(FILE *stream , char const   *command_name , char const   *package ,
                            char const   *version , va_list authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/b2sum.merge.c:6718 */
+/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/b2sum.merge.c:6710 */
 
-/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/b2sum.merge.c:6732 */
-#line 6732
+/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/b2sum.merge.c:6724 */
+#line 6724
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) calloc)(size_t __nmemb ,
                                                                                size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN calloc LOC=./src/b2sum.merge.c:6732 */
+/* END FUNCTION-DECL-EXTERN calloc LOC=./src/b2sum.merge.c:6724 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_copysignl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __gwchar_t LOC=./src/b2sum.merge.c:2707 */
-#line 2707 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __gwchar_t LOC=./src/b2sum.merge.c:2703 */
+#line 2703 "./src/b2sum.merge.c"
 typedef int __gwchar_t;
-/* END TYPEDEF __gwchar_t LOC=./src/b2sum.merge.c:2707 */
+/* END TYPEDEF __gwchar_t LOC=./src/b2sum.merge.c:2703 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/b2sum.merge.c:6760 */
-#line 6760
+/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/b2sum.merge.c:6752 */
+#line 6752
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) wcstoumax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                       __gwchar_t ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_wcstoumax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/b2sum.merge.c:6760 */
+/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/b2sum.merge.c:6752 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen_safer LOC=./src/b2sum.merge.c:6747 */
-#line 6747
+/* BEGIN FUNCTION-DECL-EXTERN fopen_safer LOC=./src/b2sum.merge.c:6739 */
+#line 6739
 extern FILE *( __attribute__((__nonnull__(1,2))) fopen_safer)(char const   * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN fopen_safer LOC=./src/b2sum.merge.c:6747 */
+/* END FUNCTION-DECL-EXTERN fopen_safer LOC=./src/b2sum.merge.c:6739 */
 
-/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/b2sum.merge.c:6774 */
-#line 6774
+/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/b2sum.merge.c:6766 */
+#line 6766
 __inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
-/* END FUNCTION-DECL timespec_cmp LOC=./src/b2sum.merge.c:6774 */
+/* END FUNCTION-DECL timespec_cmp LOC=./src/b2sum.merge.c:6766 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/b2sum.merge.c:6770 */
-#line 6770
+/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/b2sum.merge.c:6762 */
+#line 6762
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN unlink LOC=./src/b2sum.merge.c:6770 */
+/* END FUNCTION-DECL-EXTERN unlink LOC=./src/b2sum.merge.c:6762 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/b2sum.merge.c:6783 */
-#line 6783
+/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/b2sum.merge.c:6775 */
+#line 6775
 extern int ( __attribute__((__nonnull__(1))) vfprintf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                        __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/b2sum.merge.c:6783 */
+/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/b2sum.merge.c:6775 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/b2sum.merge.c:6792 */
-#line 6792
+/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/b2sum.merge.c:6784 */
+#line 6784
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_settime)(timer_t __timerid ,
                                                                                     int __flags ,
                                                                                     struct itimerspec  const  * __restrict  __value ,
                                                                                     struct itimerspec * __restrict  __ovalue ) ;
-/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/b2sum.merge.c:6792 */
+/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/b2sum.merge.c:6784 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/b2sum.merge.c:6799 */
-#line 6799
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/b2sum.merge.c:6791 */
+#line 6791
 extern char const   *setlocale_null(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/b2sum.merge.c:6799 */
+/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/b2sum.merge.c:6791 */
 
 /* BEGIN FUNCTION-DECL secure_zero_memory LOC=UNKNOWN */
 __inline static void secure_zero_memory(void *v , size_t n ) ;
 /* END FUNCTION-DECL secure_zero_memory LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/b2sum.merge.c:6836 */
-#line 6836
+/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/b2sum.merge.c:6828 */
+#line 6828
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void *__ptr ) ;
-/* END FUNCTION-DECL-EXTERN free LOC=./src/b2sum.merge.c:6836 */
+/* END FUNCTION-DECL-EXTERN free LOC=./src/b2sum.merge.c:6828 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_va_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/b2sum.merge.c:6860 */
-#line 6860
+/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/b2sum.merge.c:6852 */
+#line 6852
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/b2sum.merge.c:6860 */
+/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/b2sum.merge.c:6852 */
 
 /* BEGIN STRUCT-DECL statx LOC=./src/b2sum.merge.c:1351 */
 #line 1351
 struct statx ;
 /* END STRUCT-DECL statx LOC=./src/b2sum.merge.c:1351 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/b2sum.merge.c:6865 */
-#line 6865
+/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/b2sum.merge.c:6857 */
+#line 6857
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wctomb)(char *__s ,
                                                                              wchar_t __wchar ) ;
-/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/b2sum.merge.c:6865 */
+/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/b2sum.merge.c:6857 */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/b2sum.merge.c:6870 */
-#line 6870
+/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/b2sum.merge.c:6862 */
+#line 6862
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) erand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/b2sum.merge.c:6870 */
+/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/b2sum.merge.c:6862 */
 
-/* BEGIN TYPEDEF __intptr_t LOC=./src/b2sum.merge.c:6888 */
-#line 6888 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __intptr_t LOC=./src/b2sum.merge.c:6880 */
+#line 6880 "./src/b2sum.merge.c"
 typedef long __intptr_t;
-/* END TYPEDEF __intptr_t LOC=./src/b2sum.merge.c:6888 */
+/* END TYPEDEF __intptr_t LOC=./src/b2sum.merge.c:6880 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/b2sum.merge.c:6897 */
-#line 6897
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/b2sum.merge.c:6889 */
+#line 6889
 extern FILE *( __attribute__((__nonnull__(1,2))) rpl_fopen)(char const   * __restrict  filename ,
                                                             char const   * __restrict  mode )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/b2sum.merge.c:6897 */
+/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/b2sum.merge.c:6889 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/b2sum.merge.c:1179 */
 #line 1179
 union __anonunion_pthread_barrierattr_t_951761806 ;
 /* END UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/b2sum.merge.c:1179 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/b2sum.merge.c:6907 */
-#line 6907
+/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/b2sum.merge.c:6899 */
+#line 6899
 extern void *xinmalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/b2sum.merge.c:6907 */
+/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/b2sum.merge.c:6899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/b2sum.merge.c:6916 */
-#line 6916
+/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/b2sum.merge.c:6908 */
+#line 6908
 extern  __attribute__((__nothrow__)) int __asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                     , ...) ;
-/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/b2sum.merge.c:6916 */
+/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/b2sum.merge.c:6908 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/b2sum.merge.c:6942 */
-#line 6942
+/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/b2sum.merge.c:6934 */
+#line 6934
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
                                                                size_t * __restrict  __n ,
                                                                int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/b2sum.merge.c:6942 */
+/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/b2sum.merge.c:6934 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/b2sum.merge.c:6958 */
-#line 6958
+/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/b2sum.merge.c:6950 */
+#line 6950
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strerror_r)(int __errnum ,
                                                                                                    char *__buf ,
                                                                                                    size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/b2sum.merge.c:6958 */
+/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/b2sum.merge.c:6950 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -5241,141 +5225,141 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
    long double __builtin_huge_vall(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/b2sum.merge.c:6964 */
-#line 6964
+/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/b2sum.merge.c:6956 */
+#line 6956
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vsscanf)(char const   * __restrict  __s ,
                                                                               char const   * __restrict  __format ,
                                                                               __gnuc_va_list __arg )  __asm__("__isoc23_vsscanf")  ;
-/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/b2sum.merge.c:6964 */
+/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/b2sum.merge.c:6956 */
 
-/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:6988 */
-#line 6988 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:6980 */
+#line 6980 "./src/b2sum.merge.c"
 struct __anonstruct_lldiv_t_103911545 {
    long long quot ;
    long long rem ;
 };
-/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:6988 */
+/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/b2sum.merge.c:6980 */
 
-/* BEGIN FUNCTION-DECL c_isprint LOC=./src/b2sum.merge.c:6995 */
-#line 6995
+/* BEGIN FUNCTION-DECL c_isprint LOC=./src/b2sum.merge.c:6987 */
+#line 6987
 __inline _Bool c_isprint(int c ) ;
-/* END FUNCTION-DECL c_isprint LOC=./src/b2sum.merge.c:6995 */
+/* END FUNCTION-DECL c_isprint LOC=./src/b2sum.merge.c:6987 */
 
-/* BEGIN ENUM __anonenum_606700034 LOC=./src/b2sum.merge.c:6999 */
-#line 6999
+/* BEGIN ENUM __anonenum_606700034 LOC=./src/b2sum.merge.c:6991 */
+#line 6991
 enum __anonenum_606700034 {
     DS_UNKNOWN = -2,
     DS_EMPTY = -1,
     DS_NONEMPTY = 0
 } ;
-/* END ENUM __anonenum_606700034 LOC=./src/b2sum.merge.c:6999 */
+/* END ENUM __anonenum_606700034 LOC=./src/b2sum.merge.c:6991 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/b2sum.merge.c:7023 */
-#line 7023
+/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/b2sum.merge.c:7015 */
+#line 7015
 extern char *getlogin(void) ;
-/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/b2sum.merge.c:7023 */
+/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/b2sum.merge.c:7015 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/b2sum.merge.c:7007 */
-#line 7007
+/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/b2sum.merge.c:6999 */
+#line 6999
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dngettext)(char const   *__domainname ,
                                                                                   char const   *__msgid1 ,
                                                                                   char const   *__msgid2 ,
                                                                                   unsigned long __n )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/b2sum.merge.c:7007 */
+/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/b2sum.merge.c:6999 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/b2sum.merge.c:7019 */
-#line 7019
+/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/b2sum.merge.c:7011 */
+#line 7011
 extern char *quotearg(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/b2sum.merge.c:7019 */
+/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/b2sum.merge.c:7011 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_csinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u16 LOC=./src/b2sum.merge.c:4214 */
-#line 4214 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u16 LOC=./src/b2sum.merge.c:4206 */
+#line 4206 "./src/b2sum.merge.c"
 typedef unsigned short __u16;
-/* END TYPEDEF __u16 LOC=./src/b2sum.merge.c:4214 */
+/* END TYPEDEF __u16 LOC=./src/b2sum.merge.c:4206 */
 
-/* BEGIN TYPEDEF __sum16 LOC=./src/b2sum.merge.c:7046 */
-#line 7046 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __sum16 LOC=./src/b2sum.merge.c:7038 */
+#line 7038 "./src/b2sum.merge.c"
 typedef __u16 __sum16;
-/* END TYPEDEF __sum16 LOC=./src/b2sum.merge.c:7046 */
+/* END TYPEDEF __sum16 LOC=./src/b2sum.merge.c:7038 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/b2sum.merge.c:7050 */
-#line 7050
+/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/b2sum.merge.c:7042 */
+#line 7042
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) siggetmask)(void) ;
-/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/b2sum.merge.c:7050 */
+/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/b2sum.merge.c:7042 */
 
-/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/b2sum.merge.c:7054 */
-#line 7054
+/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/b2sum.merge.c:7046 */
+#line 7046
 extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
-/* END FUNCTION-DECL-EXTERN read LOC=./src/b2sum.merge.c:7054 */
+/* END FUNCTION-DECL-EXTERN read LOC=./src/b2sum.merge.c:7046 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/b2sum.merge.c:7058 */
-#line 7058
+/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/b2sum.merge.c:7050 */
+#line 7050
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_perror_fail)(int __errnum ,
                                                                                                           char const   *__file ,
                                                                                                           unsigned int __line ,
                                                                                                           char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/b2sum.merge.c:7058 */
+/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/b2sum.merge.c:7050 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fminf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/b2sum.merge.c:7079 */
-#line 7079
+/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/b2sum.merge.c:7071 */
+#line 7071
 extern int lockf(int __fd , int __cmd , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf LOC=./src/b2sum.merge.c:7079 */
+/* END FUNCTION-DECL-EXTERN lockf LOC=./src/b2sum.merge.c:7071 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/b2sum.merge.c:7075 */
-#line 7075
+/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/b2sum.merge.c:7067 */
+#line 7067
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)(void) ;
-/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/b2sum.merge.c:7075 */
+/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/b2sum.merge.c:7067 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan2(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/b2sum.merge.c:7098 */
-#line 7098
+/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/b2sum.merge.c:7090 */
+#line 7090
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtouq)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/b2sum.merge.c:7098 */
+/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/b2sum.merge.c:7090 */
 
-/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/b2sum.merge.c:7134 */
-#line 7134 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/b2sum.merge.c:7126 */
+#line 7126 "./src/b2sum.merge.c"
 typedef int (*_gl_qsort_r_compar_fn)(void const   * , void const   * , void * );
-/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/b2sum.merge.c:7134 */
+/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/b2sum.merge.c:7126 */
 
-/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/b2sum.merge.c:7130 */
-#line 7130 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/b2sum.merge.c:7122 */
+#line 7122 "./src/b2sum.merge.c"
 typedef __kernel_long_t __kernel_suseconds_t;
-/* END TYPEDEF __kernel_suseconds_t LOC=./src/b2sum.merge.c:7130 */
+/* END TYPEDEF __kernel_suseconds_t LOC=./src/b2sum.merge.c:7122 */
 
-/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/b2sum.merge.c:7142 */
-#line 7142
+/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/b2sum.merge.c:7134 */
+#line 7134
 extern int ( __attribute__((__nonnull__(1))) settime)(struct timespec  const  * ) ;
-/* END FUNCTION-DECL-EXTERN settime LOC=./src/b2sum.merge.c:7142 */
+/* END FUNCTION-DECL-EXTERN settime LOC=./src/b2sum.merge.c:7134 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/b2sum.merge.c:7151 */
-#line 7151
+/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/b2sum.merge.c:7143 */
+#line 7143
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuffer)(FILE * __restrict  __stream ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/b2sum.merge.c:7151 */
+/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/b2sum.merge.c:7143 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/b2sum.merge.c:7146 */
-#line 7146
+/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/b2sum.merge.c:7138 */
+#line 7138
 extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  ,
                                                                   char * ) ;
-/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/b2sum.merge.c:7146 */
+/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/b2sum.merge.c:7138 */
 
 /* BEGIN FUNCTION-DECL __builtin_trunc LOC=BUILTIN */
 /* compiler builtin: 
@@ -5387,40 +5371,40 @@ extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  
    _Float128 __builtin_tanhf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_tanhf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/b2sum.merge.c:7193 */
-#line 7193
+/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/b2sum.merge.c:7185 */
+#line 7185
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strstr)(char const   *__haystack ,
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strstr LOC=./src/b2sum.merge.c:7193 */
+/* END FUNCTION-DECL-EXTERN strstr LOC=./src/b2sum.merge.c:7185 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/b2sum.merge.c:7198 */
-#line 7198
+/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/b2sum.merge.c:7190 */
+#line 7190
 extern int putchar_unlocked(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/b2sum.merge.c:7198 */
+/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/b2sum.merge.c:7190 */
 
 /* BEGIN VARIABLE-DECL digest_length LOC=UNKNOWN */
 static uintmax_t digest_length ;
 /* END VARIABLE-DECL digest_length LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/b2sum.merge.c:7215 */
-#line 7215
+/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/b2sum.merge.c:7207 */
+#line 7207
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/b2sum.merge.c:7215 */
+/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/b2sum.merge.c:7207 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/b2sum.merge.c:7223 */
-#line 7223
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/b2sum.merge.c:7215 */
+#line 7215
 extern char *quotearg_char(char const   *arg , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/b2sum.merge.c:7223 */
+/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/b2sum.merge.c:7215 */
 
 /* BEGIN FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llabs(long long  ) ;  */
 /* END FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/b2sum.merge.c:7219 */
-#line 7219
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/b2sum.merge.c:7211 */
+#line 7211
 extern int rpl_fflush(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/b2sum.merge.c:7219 */
+/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/b2sum.merge.c:7211 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinh LOC=BUILTIN */
 /* compiler builtin: 
@@ -5432,105 +5416,105 @@ extern int rpl_fflush(FILE *gl_stream ) ;
    int __builtin_wcsncmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 
-/* BEGIN TYPEDEF mode_t LOC=./src/b2sum.merge.c:2655 */
-#line 2655 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF mode_t LOC=./src/b2sum.merge.c:2651 */
+#line 2651 "./src/b2sum.merge.c"
 typedef __mode_t mode_t;
-/* END TYPEDEF mode_t LOC=./src/b2sum.merge.c:2655 */
+/* END TYPEDEF mode_t LOC=./src/b2sum.merge.c:2651 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/b2sum.merge.c:7260 */
-#line 7260
+/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/b2sum.merge.c:7252 */
+#line 7252
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat LOC=./src/b2sum.merge.c:7260 */
+/* END FUNCTION-DECL-EXTERN creat LOC=./src/b2sum.merge.c:7252 */
 
-/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/b2sum.merge.c:7269 */
-#line 7269 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/b2sum.merge.c:7261 */
+#line 7261 "./src/b2sum.merge.c"
 typedef unsigned long __fsfilcnt64_t;
-/* END TYPEDEF __fsfilcnt64_t LOC=./src/b2sum.merge.c:7269 */
+/* END TYPEDEF __fsfilcnt64_t LOC=./src/b2sum.merge.c:7261 */
 
-/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/b2sum.merge.c:7273 */
-#line 7273 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/b2sum.merge.c:7265 */
+#line 7265 "./src/b2sum.merge.c"
 typedef __fsfilcnt64_t fsfilcnt64_t;
-/* END TYPEDEF fsfilcnt64_t LOC=./src/b2sum.merge.c:7273 */
+/* END TYPEDEF fsfilcnt64_t LOC=./src/b2sum.merge.c:7265 */
 
-/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/b2sum.merge.c:4519 */
-#line 4519 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/b2sum.merge.c:4507 */
+#line 4507 "./src/b2sum.merge.c"
 typedef unsigned long __fsfilcnt_t;
-/* END TYPEDEF __fsfilcnt_t LOC=./src/b2sum.merge.c:4519 */
+/* END TYPEDEF __fsfilcnt_t LOC=./src/b2sum.merge.c:4507 */
 
-/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/b2sum.merge.c:7277 */
-#line 7277 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/b2sum.merge.c:7269 */
+#line 7269 "./src/b2sum.merge.c"
 typedef __fsfilcnt_t fsfilcnt_t;
-/* END TYPEDEF fsfilcnt_t LOC=./src/b2sum.merge.c:7277 */
+/* END TYPEDEF fsfilcnt_t LOC=./src/b2sum.merge.c:7269 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/b2sum.merge.c:7281 */
-#line 7281
+/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/b2sum.merge.c:7273 */
+#line 7273
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/b2sum.merge.c:7281 */
+/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/b2sum.merge.c:7273 */
 
 /* BEGIN FUNCTION-DECL blake2b_update LOC=UNKNOWN */
 int blake2b_update(blake2b_state *S , void const   *pin , size_t inlen ) ;
 /* END FUNCTION-DECL blake2b_update LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/b2sum.merge.c:7294 */
-#line 7294
+/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/b2sum.merge.c:7286 */
+#line 7286
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN mktime LOC=./src/b2sum.merge.c:7294 */
+/* END FUNCTION-DECL-EXTERN mktime LOC=./src/b2sum.merge.c:7286 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/b2sum.merge.c:7302 */
-#line 7302
+/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/b2sum.merge.c:7294 */
+#line 7294
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
-/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/b2sum.merge.c:7302 */
+/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/b2sum.merge.c:7294 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/b2sum.merge.c:7306 */
-#line 7306
+/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/b2sum.merge.c:7298 */
+#line 7298
 extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t __name_len ) ;
-/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/b2sum.merge.c:7306 */
+/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/b2sum.merge.c:7298 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:1187 */
 #line 1187
 struct __anonstruct__sigpoll_386613454 ;
 /* END STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/b2sum.merge.c:1187 */
 
-/* BEGIN TYPEDEF __nlink_t LOC=./src/b2sum.merge.c:2599 */
-#line 2599 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __nlink_t LOC=./src/b2sum.merge.c:2595 */
+#line 2595 "./src/b2sum.merge.c"
 typedef unsigned long __nlink_t;
-/* END TYPEDEF __nlink_t LOC=./src/b2sum.merge.c:2599 */
+/* END TYPEDEF __nlink_t LOC=./src/b2sum.merge.c:2595 */
 
-/* BEGIN TYPEDEF nlink_t LOC=./src/b2sum.merge.c:7310 */
-#line 7310 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF nlink_t LOC=./src/b2sum.merge.c:7302 */
+#line 7302 "./src/b2sum.merge.c"
 typedef __nlink_t nlink_t;
-/* END TYPEDEF nlink_t LOC=./src/b2sum.merge.c:7310 */
+/* END TYPEDEF nlink_t LOC=./src/b2sum.merge.c:7302 */
 
 /* BEGIN STRUCT-DECL __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:999 */
 #line 999
 struct __anonstruct___kernel_fsid_t_990674702 ;
 /* END STRUCT-DECL __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:999 */
 
-/* BEGIN TYPEDEF blake2fn LOC=./src/b2sum.merge.c:7328 */
-#line 7328 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2fn LOC=./src/b2sum.merge.c:7320 */
+#line 7320 "./src/b2sum.merge.c"
 typedef int (*blake2fn)(FILE * , void * , size_t  );
-/* END TYPEDEF blake2fn LOC=./src/b2sum.merge.c:7328 */
+/* END TYPEDEF blake2fn LOC=./src/b2sum.merge.c:7320 */
 
 /* BEGIN FUNCTION-DECL __builtin_shufflevector LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_shufflevector(...) ;  */
 /* END FUNCTION-DECL __builtin_shufflevector LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fd_mask LOC=./src/b2sum.merge.c:2084 */
-#line 2084 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fd_mask LOC=./src/b2sum.merge.c:2080 */
+#line 2080 "./src/b2sum.merge.c"
 typedef long __fd_mask;
-/* END TYPEDEF __fd_mask LOC=./src/b2sum.merge.c:2084 */
+/* END TYPEDEF __fd_mask LOC=./src/b2sum.merge.c:2080 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/b2sum.merge.c:7392 */
-#line 7392
+/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/b2sum.merge.c:7384 */
+#line 7384
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) strtoimax)(char const   * __restrict  __nptr ,
                                                                                      char ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_strtoimax")  ;
-/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/b2sum.merge.c:7392 */
+/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/b2sum.merge.c:7384 */
 
-/* BEGIN STRUCT dirent64 LOC=./src/b2sum.merge.c:7398 */
-#line 7398 "./src/b2sum.merge.c"
+/* BEGIN STRUCT dirent64 LOC=./src/b2sum.merge.c:7390 */
+#line 7390 "./src/b2sum.merge.c"
 struct dirent64 {
    __ino64_t d_ino ;
    __off64_t d_off ;
@@ -5538,30 +5522,30 @@ struct dirent64 {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent64 LOC=./src/b2sum.merge.c:7398 */
+/* END STRUCT dirent64 LOC=./src/b2sum.merge.c:7390 */
 
 /* BEGIN FUNCTION-DECL emit_stdin_note LOC=UNKNOWN */
 __inline static void emit_stdin_note(void) ;
 /* END FUNCTION-DECL emit_stdin_note LOC=UNKNOWN */
 
-/* BEGIN STRUCT __anonstruct___once_flag_783464055 LOC=./src/b2sum.merge.c:7412 */
-#line 7412 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___once_flag_783464055 LOC=./src/b2sum.merge.c:7404 */
+#line 7404 "./src/b2sum.merge.c"
 struct __anonstruct___once_flag_783464055 {
    int __data ;
 };
-/* END STRUCT __anonstruct___once_flag_783464055 LOC=./src/b2sum.merge.c:7412 */
+/* END STRUCT __anonstruct___once_flag_783464055 LOC=./src/b2sum.merge.c:7404 */
 
 /* BEGIN FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_dwarf_cfa(void) ;  */
 /* END FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/b2sum.merge.c:7459 */
-#line 7459
+/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/b2sum.merge.c:7451 */
+#line 7451
 extern __ssize_t ( __attribute__((__nonnull__(3))) getline)(char ** __restrict  __lineptr ,
                                                             size_t * __restrict  __n ,
                                                             FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getline LOC=./src/b2sum.merge.c:7459 */
+/* END FUNCTION-DECL-EXTERN getline LOC=./src/b2sum.merge.c:7451 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5573,27 +5557,27 @@ extern __ssize_t ( __attribute__((__nonnull__(3))) getline)(char ** __restrict  
    char *__builtin_stpcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_stpcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/b2sum.merge.c:7491 */
-#line 7491
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/b2sum.merge.c:7483 */
+#line 7483
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigmask)(int __how ,
                                                                                       __sigset_t const   * __restrict  __newmask ,
                                                                                       __sigset_t * __restrict  __oldmask ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/b2sum.merge.c:7491 */
+/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/b2sum.merge.c:7483 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/b2sum.merge.c:7503 */
-#line 7503
+/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/b2sum.merge.c:7495 */
+#line 7495
 extern char *dir_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/b2sum.merge.c:7503 */
+/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/b2sum.merge.c:7495 */
 
 /* BEGIN FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_matrix_transpose(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/b2sum.merge.c:7516 */
-#line 7516
+/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/b2sum.merge.c:7508 */
+#line 7508
 extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/b2sum.merge.c:7516 */
+/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/b2sum.merge.c:7508 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -5611,20 +5595,20 @@ extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
    _Float128 __builtin_roundf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_roundf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/b2sum.merge.c:5472 */
-#line 5472 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/b2sum.merge.c:5456 */
+#line 5456 "./src/b2sum.merge.c"
 typedef unsigned long __fsblkcnt_t;
-/* END TYPEDEF __fsblkcnt_t LOC=./src/b2sum.merge.c:5472 */
+/* END TYPEDEF __fsblkcnt_t LOC=./src/b2sum.merge.c:5456 */
 
-/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/b2sum.merge.c:7562 */
-#line 7562 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/b2sum.merge.c:7554 */
+#line 7554 "./src/b2sum.merge.c"
 typedef __fsblkcnt_t fsblkcnt_t;
-/* END TYPEDEF fsblkcnt_t LOC=./src/b2sum.merge.c:7562 */
+/* END TYPEDEF fsblkcnt_t LOC=./src/b2sum.merge.c:7554 */
 
-/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/b2sum.merge.c:7566 */
-#line 7566
+/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/b2sum.merge.c:7558 */
+#line 7558
 extern int ( __attribute__((__nonnull__(1))) closedir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN closedir LOC=./src/b2sum.merge.c:7566 */
+/* END FUNCTION-DECL-EXTERN closedir LOC=./src/b2sum.merge.c:7558 */
 
 /* BEGIN ENUM-DECL __anonenum_230064777 LOC=./src/b2sum.merge.c:1099 */
 #line 1099
@@ -5651,43 +5635,43 @@ enum __anonenum_230064777 ;
    void *__builtin___get_unsafe_stack_start(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/b2sum.merge.c:7614 */
-#line 7614
+/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/b2sum.merge.c:7606 */
+#line 7606
 extern char *xstrdup(char const   *str )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/b2sum.merge.c:7614 */
+/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/b2sum.merge.c:7606 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/b2sum.merge.c:7618 */
-#line 7618
+/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/b2sum.merge.c:7610 */
+#line 7610
 extern long __timezone ;
-/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/b2sum.merge.c:7618 */
+/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/b2sum.merge.c:7610 */
 
 /* BEGIN FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tan(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/b2sum.merge.c:7636 */
-#line 7636
+/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/b2sum.merge.c:7628 */
+#line 7628
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) atoll)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoll LOC=./src/b2sum.merge.c:7636 */
+/* END FUNCTION-DECL-EXTERN atoll LOC=./src/b2sum.merge.c:7628 */
 
-/* BEGIN FUNCTION-DECL-EXTERN argmatch LOC=./src/b2sum.merge.c:7653 */
-#line 7653
+/* BEGIN FUNCTION-DECL-EXTERN argmatch LOC=./src/b2sum.merge.c:7645 */
+#line 7645
 extern ptrdiff_t argmatch(char const   *arg , char const   **arglist , void const   *vallist ,
                           size_t valsize )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN argmatch LOC=./src/b2sum.merge.c:7653 */
+/* END FUNCTION-DECL-EXTERN argmatch LOC=./src/b2sum.merge.c:7645 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/b2sum.merge.c:7658 */
-#line 7658
+/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/b2sum.merge.c:7650 */
+#line 7650
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(__gid_t __rgid ,
                                                                                 __gid_t __egid ,
                                                                                 __gid_t __sgid ) ;
-/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/b2sum.merge.c:7658 */
+/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/b2sum.merge.c:7650 */
 
-/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/b2sum.merge.c:7668 */
-#line 7668 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/b2sum.merge.c:7660 */
+#line 7660 "./src/b2sum.merge.c"
 typedef unsigned short __kernel_old_uid_t;
-/* END TYPEDEF __kernel_old_uid_t LOC=./src/b2sum.merge.c:7668 */
+/* END TYPEDEF __kernel_old_uid_t LOC=./src/b2sum.merge.c:7660 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -5699,8 +5683,8 @@ typedef unsigned short __kernel_old_uid_t;
    _Bool __builtin_usub_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_usub_overflow LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_227563530 LOC=./src/b2sum.merge.c:7701 */
-#line 7701
+/* BEGIN ENUM __anonenum_227563530 LOC=./src/b2sum.merge.c:7693 */
+#line 7693
 enum __anonenum_227563530 {
     IGNORE_MISSING_OPTION = 128,
     STATUS_OPTION = 129,
@@ -5712,24 +5696,24 @@ enum __anonenum_227563530 {
     RAW_OPTION = 135,
     BASE64_OPTION = 136
 } ;
-/* END ENUM __anonenum_227563530 LOC=./src/b2sum.merge.c:7701 */
+/* END ENUM __anonenum_227563530 LOC=./src/b2sum.merge.c:7693 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/b2sum.merge.c:7730 */
-#line 7730
+/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/b2sum.merge.c:7722 */
+#line 7722
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range)(unsigned int __fd ,
                                                                                   unsigned int __max_fd ,
                                                                                   int __flags ) ;
-/* END FUNCTION-DECL-EXTERN close_range LOC=./src/b2sum.merge.c:7730 */
+/* END FUNCTION-DECL-EXTERN close_range LOC=./src/b2sum.merge.c:7722 */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalizef LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_canonicalizef(float  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalizef LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/b2sum.merge.c:7751 */
-#line 7751
+/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/b2sum.merge.c:7743 */
+#line 7743
 extern void (*error_print_progname)(void) ;
-/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/b2sum.merge.c:7751 */
+/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/b2sum.merge.c:7743 */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap32 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5741,10 +5725,10 @@ extern void (*error_print_progname)(void) ;
 enum __anonenum_463020052 ;
 /* END ENUM-DECL __anonenum_463020052 LOC=./src/b2sum.merge.c:1031 */
 
-/* BEGIN TYPEDEF max_align_t LOC=./src/b2sum.merge.c:7760 */
-#line 7760 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF max_align_t LOC=./src/b2sum.merge.c:7752 */
+#line 7752 "./src/b2sum.merge.c"
 typedef struct __anonstruct_max_align_t_247203726 max_align_t;
-/* END TYPEDEF max_align_t LOC=./src/b2sum.merge.c:7760 */
+/* END TYPEDEF max_align_t LOC=./src/b2sum.merge.c:7752 */
 
 /* BEGIN FUNCTION-DECL store32 LOC=UNKNOWN */
 __inline static void store32(void *dst , uint32_t w ) ;
@@ -5755,15 +5739,15 @@ __inline static void store32(void *dst , uint32_t w ) ;
    float __builtin_fmaxf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaxf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/b2sum.merge.c:7778 */
-#line 7778
+/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/b2sum.merge.c:7770 */
+#line 7770
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) getenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN getenv LOC=./src/b2sum.merge.c:7778 */
+/* END FUNCTION-DECL-EXTERN getenv LOC=./src/b2sum.merge.c:7770 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/b2sum.merge.c:7803 */
-#line 7803
+/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/b2sum.merge.c:7795 */
+#line 7795
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strlen)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strlen LOC=./src/b2sum.merge.c:7803 */
+/* END FUNCTION-DECL-EXTERN strlen LOC=./src/b2sum.merge.c:7795 */
 
 /* BEGIN FUNCTION-DECL __builtin_debugtrap LOC=BUILTIN */
 /* compiler builtin: 
@@ -5775,86 +5759,86 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __l
 struct blake2xs_state__ ;
 /* END STRUCT-DECL blake2xs_state__ LOC=./src/b2sum.merge.c:1075 */
 
-/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/b2sum.merge.c:7812 */
-#line 7812 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/b2sum.merge.c:7804 */
+#line 7804 "./src/b2sum.merge.c"
 struct __anonstruct_fd_set_356711149 {
    __fd_mask fds_bits[1024 / (8 * (int )sizeof(__fd_mask ))] ;
 };
-/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/b2sum.merge.c:7812 */
+/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/b2sum.merge.c:7804 */
 
 /* BEGIN FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log10f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least32_t LOC=./src/b2sum.merge.c:4097 */
-#line 4097 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint_least32_t LOC=./src/b2sum.merge.c:4089 */
+#line 4089 "./src/b2sum.merge.c"
 typedef __uint32_t __uint_least32_t;
-/* END TYPEDEF __uint_least32_t LOC=./src/b2sum.merge.c:4097 */
+/* END TYPEDEF __uint_least32_t LOC=./src/b2sum.merge.c:4089 */
 
-/* BEGIN TYPEDEF uint_least32_t LOC=./src/b2sum.merge.c:7823 */
-#line 7823 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_least32_t LOC=./src/b2sum.merge.c:7815 */
+#line 7815 "./src/b2sum.merge.c"
 typedef __uint_least32_t uint_least32_t;
-/* END TYPEDEF uint_least32_t LOC=./src/b2sum.merge.c:7823 */
+/* END TYPEDEF uint_least32_t LOC=./src/b2sum.merge.c:7815 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_catanh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int16_t LOC=./src/b2sum.merge.c:7863 */
-#line 7863 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int16_t LOC=./src/b2sum.merge.c:7855 */
+#line 7855 "./src/b2sum.merge.c"
 typedef __int16_t int16_t;
-/* END TYPEDEF int16_t LOC=./src/b2sum.merge.c:7863 */
+/* END TYPEDEF int16_t LOC=./src/b2sum.merge.c:7855 */
 
 /* BEGIN FUNCTION-DECL __builtin_init_dwarf_reg_size_table LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_init_dwarf_reg_size_table(void * ) ;  */
 /* END FUNCTION-DECL __builtin_init_dwarf_reg_size_table LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/b2sum.merge.c:7917 */
-#line 7917
+/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/b2sum.merge.c:7909 */
+#line 7909
 extern double difftime(time_t __time1 , time_t __time0 ) ;
-/* END FUNCTION-DECL-EXTERN difftime LOC=./src/b2sum.merge.c:7917 */
+/* END FUNCTION-DECL-EXTERN difftime LOC=./src/b2sum.merge.c:7909 */
 
 /* BEGIN STRUCT-DECL __pthread_internal_slist LOC=./src/b2sum.merge.c:1119 */
 #line 1119
 struct __pthread_internal_slist ;
 /* END STRUCT-DECL __pthread_internal_slist LOC=./src/b2sum.merge.c:1119 */
 
-/* BEGIN TYPEDEF __clockid_t LOC=./src/b2sum.merge.c:1740 */
-#line 1740 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __clockid_t LOC=./src/b2sum.merge.c:1736 */
+#line 1736 "./src/b2sum.merge.c"
 typedef int __clockid_t;
-/* END TYPEDEF __clockid_t LOC=./src/b2sum.merge.c:1740 */
+/* END TYPEDEF __clockid_t LOC=./src/b2sum.merge.c:1736 */
 
-/* BEGIN TYPEDEF clockid_t LOC=./src/b2sum.merge.c:4051 */
-#line 4051 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF clockid_t LOC=./src/b2sum.merge.c:4047 */
+#line 4047 "./src/b2sum.merge.c"
 typedef __clockid_t clockid_t;
-/* END TYPEDEF clockid_t LOC=./src/b2sum.merge.c:4051 */
+/* END TYPEDEF clockid_t LOC=./src/b2sum.merge.c:4047 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_frexpf128(_Float128  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/b2sum.merge.c:7936 */
-#line 7936
+/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/b2sum.merge.c:7928 */
+#line 7928
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcoll_l)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     locale_t __l )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/b2sum.merge.c:7936 */
+/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/b2sum.merge.c:7928 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/b2sum.merge.c:7952 */
-#line 7952
+/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/b2sum.merge.c:7944 */
+#line 7944
 extern char const   *quote_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/b2sum.merge.c:7952 */
+/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/b2sum.merge.c:7944 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/b2sum.merge.c:7946 */
-#line 7946
+/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/b2sum.merge.c:7938 */
+#line 7938
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup3)(int __fd ,
                                                                            int __fd2 ,
                                                                            int __flags ) ;
-/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/b2sum.merge.c:7946 */
+/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/b2sum.merge.c:7938 */
 
 /* BEGIN FUNCTION-DECL load48 LOC=UNKNOWN */
 __inline static uint64_t load48(void const   *src ) ;
@@ -5865,29 +5849,33 @@ __inline static uint64_t load48(void const   *src ) ;
    int __builtin_ffs(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/b2sum.merge.c:7987 */
-#line 7987
+/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/b2sum.merge.c:7979 */
+#line 7979
 extern char *( __attribute__((__warn_unused_result__)) umaxtostr)(uintmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/b2sum.merge.c:7987 */
+/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/b2sum.merge.c:7979 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/b2sum.merge.c:8006 */
-#line 8006
+/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/b2sum.merge.c:7998 */
+#line 7998
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getcwd)(char *__buf ,
                                                                                size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/b2sum.merge.c:8006 */
+/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/b2sum.merge.c:7998 */
 
-/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/b2sum.merge.c:7996 */
-#line 7996
+/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/b2sum.merge.c:7988 */
+#line 7988
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) abs)(int __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN abs LOC=./src/b2sum.merge.c:7996 */
+/* END FUNCTION-DECL-EXTERN abs LOC=./src/b2sum.merge.c:7988 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/b2sum.merge.c:8011 */
-#line 8011
+/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/b2sum.merge.c:8003 */
+#line 8003
 extern timezone_t tzalloc(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/b2sum.merge.c:8011 */
+/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/b2sum.merge.c:8003 */
 
-/* BEGIN ENUM strtol_error LOC=./src/b2sum.merge.c:8015 */
-#line 8015
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMKm_argc LOC=UNKNOWN */
+int _TIG_IZ_dMKm_argc ;
+/* END VARIABLE-DECL _TIG_IZ_dMKm_argc LOC=UNKNOWN */
+
+/* BEGIN ENUM strtol_error LOC=./src/b2sum.merge.c:8007 */
+#line 8007
 enum strtol_error {
     LONGINT_OK = 0,
     LONGINT_OVERFLOW = 1,
@@ -5895,253 +5883,253 @@ enum strtol_error {
     LONGINT_INVALID_SUFFIX_CHAR_WITH_OVERFLOW = 3,
     LONGINT_INVALID = 4
 } ;
-/* END ENUM strtol_error LOC=./src/b2sum.merge.c:8015 */
+/* END ENUM strtol_error LOC=./src/b2sum.merge.c:8007 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/b2sum.merge.c:8025 */
-#line 8025
+/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/b2sum.merge.c:8017 */
+#line 8017
 extern void *xirealloc(void *p , idx_t s )  __attribute__((__returns_nonnull__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/b2sum.merge.c:8025 */
+/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/b2sum.merge.c:8017 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_copysignf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/b2sum.merge.c:8038 */
-#line 8038
+/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/b2sum.merge.c:8030 */
+#line 8030
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) nrand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/b2sum.merge.c:8038 */
+/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/b2sum.merge.c:8030 */
 
-/* BEGIN FUNCTION-DECL c_isascii LOC=./src/b2sum.merge.c:8044 */
-#line 8044
+/* BEGIN FUNCTION-DECL c_isascii LOC=./src/b2sum.merge.c:8036 */
+#line 8036
 __inline _Bool c_isascii(int c ) ;
-/* END FUNCTION-DECL c_isascii LOC=./src/b2sum.merge.c:8044 */
+/* END FUNCTION-DECL c_isascii LOC=./src/b2sum.merge.c:8036 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/b2sum.merge.c:8061 */
-#line 8061
+/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/b2sum.merge.c:8053 */
+#line 8053
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lutimes)(char const   *__file ,
                                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/b2sum.merge.c:8061 */
+/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/b2sum.merge.c:8053 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/b2sum.merge.c:8070 */
-#line 8070
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/b2sum.merge.c:8062 */
+#line 8062
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qfcvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/b2sum.merge.c:8070 */
+/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/b2sum.merge.c:8062 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/b2sum.merge.c:8091 */
-#line 8091
+/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/b2sum.merge.c:8087 */
+#line 8087
 extern struct timespec timespec_add(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/b2sum.merge.c:8091 */
+/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/b2sum.merge.c:8087 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/b2sum.merge.c:8081 */
-#line 8081
+/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/b2sum.merge.c:8077 */
+#line 8077
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) rindex)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN rindex LOC=./src/b2sum.merge.c:8081 */
+/* END FUNCTION-DECL-EXTERN rindex LOC=./src/b2sum.merge.c:8077 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/b2sum.merge.c:8086 */
-#line 8086
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/b2sum.merge.c:8082 */
+#line 8082
 extern int ( __attribute__((__nonnull__(1))) rpl_fseeko)(FILE *fp , off_t offset ,
                                                          int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/b2sum.merge.c:8086 */
+/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/b2sum.merge.c:8082 */
 
-/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/b2sum.merge.c:8112 */
-#line 8112
+/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/b2sum.merge.c:8108 */
+#line 8108
 extern int system(char const   *__command ) ;
-/* END FUNCTION-DECL-EXTERN system LOC=./src/b2sum.merge.c:8112 */
+/* END FUNCTION-DECL-EXTERN system LOC=./src/b2sum.merge.c:8108 */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/b2sum.merge.c:8130 */
-#line 8130
+/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/b2sum.merge.c:8126 */
+#line 8126
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/b2sum.merge.c:8130 */
+/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/b2sum.merge.c:8126 */
 
 /* BEGIN FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strdup(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u32 LOC=./src/b2sum.merge.c:3194 */
-#line 3194 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u32 LOC=./src/b2sum.merge.c:3190 */
+#line 3190 "./src/b2sum.merge.c"
 typedef unsigned int __u32;
-/* END TYPEDEF __u32 LOC=./src/b2sum.merge.c:3194 */
+/* END TYPEDEF __u32 LOC=./src/b2sum.merge.c:3190 */
 
-/* BEGIN TYPEDEF __be32 LOC=./src/b2sum.merge.c:8138 */
-#line 8138 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __be32 LOC=./src/b2sum.merge.c:8134 */
+#line 8134 "./src/b2sum.merge.c"
 typedef __u32 __be32;
-/* END TYPEDEF __be32 LOC=./src/b2sum.merge.c:8138 */
+/* END TYPEDEF __be32 LOC=./src/b2sum.merge.c:8134 */
 
-/* BEGIN FUNCTION-DECL c_isalnum LOC=./src/b2sum.merge.c:8151 */
-#line 8151
+/* BEGIN FUNCTION-DECL c_isalnum LOC=./src/b2sum.merge.c:8147 */
+#line 8147
 __inline _Bool c_isalnum(int c ) ;
-/* END FUNCTION-DECL c_isalnum LOC=./src/b2sum.merge.c:8151 */
+/* END FUNCTION-DECL c_isalnum LOC=./src/b2sum.merge.c:8147 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/b2sum.merge.c:8155 */
-#line 8155
+/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/b2sum.merge.c:8151 */
+#line 8151
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof)(char const   * __restrict  __nptr ,
                                                                                                char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof LOC=./src/b2sum.merge.c:8155 */
+/* END FUNCTION-DECL-EXTERN strtof LOC=./src/b2sum.merge.c:8151 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/b2sum.merge.c:8166 */
-#line 8166
+/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/b2sum.merge.c:8162 */
+#line 8162
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) utimes)(char const   *__file ,
                                                                                              struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN utimes LOC=./src/b2sum.merge.c:8166 */
+/* END FUNCTION-DECL-EXTERN utimes LOC=./src/b2sum.merge.c:8162 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_floorf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/b2sum.merge.c:8178 */
-#line 8178
+/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/b2sum.merge.c:8174 */
+#line 8174
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) faccessat)(int __fd ,
                                                                                                 char const   *__file ,
                                                                                                 int __type ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/b2sum.merge.c:8178 */
+/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/b2sum.merge.c:8174 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/b2sum.merge.c:8190 */
-#line 8190
+/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/b2sum.merge.c:8186 */
+#line 8186
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchown)(int __fd ,
                                                                              __uid_t __owner ,
                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN fchown LOC=./src/b2sum.merge.c:8190 */
+/* END FUNCTION-DECL-EXTERN fchown LOC=./src/b2sum.merge.c:8186 */
 
 /* BEGIN FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin___clear_cache(void * ) ;  */
 /* END FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 
-/* BEGIN STRUCT _fpreg LOC=./src/b2sum.merge.c:8205 */
-#line 8205 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _fpreg LOC=./src/b2sum.merge.c:8201 */
+#line 8201 "./src/b2sum.merge.c"
 struct _fpreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
 };
-/* END STRUCT _fpreg LOC=./src/b2sum.merge.c:8205 */
+/* END STRUCT _fpreg LOC=./src/b2sum.merge.c:8201 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/b2sum.merge.c:8212 */
-#line 8212
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/b2sum.merge.c:8208 */
+#line 8208
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise)(int __fd ,
                                                                                     off_t __offset ,
                                                                                     off_t __len ,
                                                                                     int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/b2sum.merge.c:8212 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/b2sum.merge.c:8208 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wmemcmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/b2sum.merge.c:8228 */
-#line 8228
+/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/b2sum.merge.c:8224 */
+#line 8224
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) utimensat)(int __fd ,
                                                                                 char const   *__path ,
                                                                                 struct timespec  const  *__times ,
                                                                                 int __flags ) ;
-/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/b2sum.merge.c:8228 */
+/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/b2sum.merge.c:8224 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/b2sum.merge.c:8245 */
-#line 8245
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/b2sum.merge.c:8241 */
+#line 8241
 extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/b2sum.merge.c:8245 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/b2sum.merge.c:8241 */
 
 /* BEGIN FUNCTION-DECL load16 LOC=UNKNOWN */
 __inline static uint16_t load16(void const   *src ) ;
 /* END FUNCTION-DECL load16 LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/b2sum.merge.c:8249 */
-#line 8249
+/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/b2sum.merge.c:8245 */
+#line 8245
 extern void psignal(int __sig , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psignal LOC=./src/b2sum.merge.c:8249 */
+/* END FUNCTION-DECL-EXTERN psignal LOC=./src/b2sum.merge.c:8245 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/b2sum.merge.c:8280 */
-#line 8280
+/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/b2sum.merge.c:8276 */
+#line 8276
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigemptyset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/b2sum.merge.c:8280 */
+/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/b2sum.merge.c:8276 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/b2sum.merge.c:8316 */
-#line 8316
-extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/b2sum.merge.c:8316 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/b2sum.merge.c:8312 */
+/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/b2sum.merge.c:8312 */
 #line 8312
+extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
+/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/b2sum.merge.c:8312 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/b2sum.merge.c:8308 */
+#line 8308
 extern long gettime_res(void) ;
-/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/b2sum.merge.c:8312 */
+/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/b2sum.merge.c:8308 */
 
-/* BEGIN TYPEDEF __u_char LOC=./src/b2sum.merge.c:8337 */
-#line 8337 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u_char LOC=./src/b2sum.merge.c:8333 */
+#line 8333 "./src/b2sum.merge.c"
 typedef unsigned char __u_char;
-/* END TYPEDEF __u_char LOC=./src/b2sum.merge.c:8337 */
+/* END TYPEDEF __u_char LOC=./src/b2sum.merge.c:8333 */
 
-/* BEGIN TYPEDEF u_char LOC=./src/b2sum.merge.c:8341 */
-#line 8341 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_char LOC=./src/b2sum.merge.c:8337 */
+#line 8337 "./src/b2sum.merge.c"
 typedef __u_char u_char;
-/* END TYPEDEF u_char LOC=./src/b2sum.merge.c:8341 */
+/* END TYPEDEF u_char LOC=./src/b2sum.merge.c:8337 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cacosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __wsum LOC=./src/b2sum.merge.c:8350 */
-#line 8350 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __wsum LOC=./src/b2sum.merge.c:8346 */
+#line 8346 "./src/b2sum.merge.c"
 typedef __u32 __wsum;
-/* END TYPEDEF __wsum LOC=./src/b2sum.merge.c:8350 */
+/* END TYPEDEF __wsum LOC=./src/b2sum.merge.c:8346 */
 
-/* BEGIN TYPEDEF blake2s_param LOC=./src/b2sum.merge.c:8354 */
-#line 8354 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2s_param LOC=./src/b2sum.merge.c:8350 */
+#line 8350 "./src/b2sum.merge.c"
 typedef struct blake2s_param__ blake2s_param;
-/* END TYPEDEF blake2s_param LOC=./src/b2sum.merge.c:8354 */
+/* END TYPEDEF blake2s_param LOC=./src/b2sum.merge.c:8350 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/b2sum.merge.c:8363 */
-#line 8363
+/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/b2sum.merge.c:8359 */
+#line 8359
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof128_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/b2sum.merge.c:8363 */
+/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/b2sum.merge.c:8359 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/b2sum.merge.c:8379 */
-#line 8379
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/b2sum.merge.c:8375 */
+#line 8375
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmax)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/b2sum.merge.c:8379 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/b2sum.merge.c:8375 */
 
-/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/b2sum.merge.c:8383 */
-#line 8383
+/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/b2sum.merge.c:8379 */
+#line 8379
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) access)(char const   *__name ,
                                                                                              int __type ) ;
-/* END FUNCTION-DECL-EXTERN access LOC=./src/b2sum.merge.c:8383 */
+/* END FUNCTION-DECL-EXTERN access LOC=./src/b2sum.merge.c:8379 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/b2sum.merge.c:8388 */
-#line 8388
+/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/b2sum.merge.c:8384 */
+#line 8384
 extern long gethostid(void) ;
-/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/b2sum.merge.c:8388 */
+/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/b2sum.merge.c:8384 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/b2sum.merge.c:8403 */
-#line 8403
+/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/b2sum.merge.c:8399 */
+#line 8399
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ftrylockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/b2sum.merge.c:8403 */
+/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/b2sum.merge.c:8399 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6153,16 +6141,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_atanhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/b2sum.merge.c:8432 */
-#line 8432
+/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/b2sum.merge.c:8428 */
+#line 8428
 extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/b2sum.merge.c:8432 */
+/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/b2sum.merge.c:8428 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/b2sum.merge.c:8436 */
-#line 8436
+/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/b2sum.merge.c:8432 */
+#line 8432
 extern char *( __attribute__((__nonnull__(3))) fgets_unlocked)(char * __restrict  __s ,
                                                                int __n , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/b2sum.merge.c:8436 */
+/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/b2sum.merge.c:8432 */
 
 /* BEGIN STRUCT-DECL ucontext_t LOC=./src/b2sum.merge.c:1159 */
 #line 1159
@@ -6174,22 +6162,22 @@ struct ucontext_t ;
    int __builtin_ctzl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/b2sum.merge.c:8475 */
-#line 8475
+/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/b2sum.merge.c:8471 */
+#line 8471
 extern int putchar(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar LOC=./src/b2sum.merge.c:8475 */
+/* END FUNCTION-DECL-EXTERN putchar LOC=./src/b2sum.merge.c:8471 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/b2sum.merge.c:8484 */
-#line 8484
+/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/b2sum.merge.c:8480 */
+#line 8480
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32_l)(char const   * __restrict  __nptr ,
                                                                                                      char ** __restrict  __endptr ,
                                                                                                      locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/b2sum.merge.c:8484 */
+/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/b2sum.merge.c:8480 */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/b2sum.merge.c:8490 */
-#line 8490
+/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/b2sum.merge.c:8486 */
+#line 8486
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof LOC=./src/b2sum.merge.c:8490 */
+/* END FUNCTION-DECL-EXTERN feof LOC=./src/b2sum.merge.c:8486 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanf LOC=BUILTIN */
 /* compiler builtin: 
@@ -6201,66 +6189,66 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    long double __builtin_exp2l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2l LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __rlim_t LOC=./src/b2sum.merge.c:8545 */
-#line 8545 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __rlim_t LOC=./src/b2sum.merge.c:8541 */
+#line 8541 "./src/b2sum.merge.c"
 typedef unsigned long __rlim_t;
-/* END TYPEDEF __rlim_t LOC=./src/b2sum.merge.c:8545 */
+/* END TYPEDEF __rlim_t LOC=./src/b2sum.merge.c:8541 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmin(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL usable_st_size LOC=./src/b2sum.merge.c:8569 */
-#line 8569
+/* BEGIN FUNCTION-DECL usable_st_size LOC=./src/b2sum.merge.c:8565 */
+#line 8565
 __inline static _Bool usable_st_size(struct stat  const  *sb ) ;
-/* END FUNCTION-DECL usable_st_size LOC=./src/b2sum.merge.c:8569 */
+/* END FUNCTION-DECL usable_st_size LOC=./src/b2sum.merge.c:8565 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/b2sum.merge.c:8573 */
-#line 8573
+/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/b2sum.merge.c:8569 */
+#line 8569
 extern int fflush(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush LOC=./src/b2sum.merge.c:8573 */
+/* END FUNCTION-DECL-EXTERN fflush LOC=./src/b2sum.merge.c:8569 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/b2sum.merge.c:8581 */
-#line 8581
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/b2sum.merge.c:8577 */
+#line 8577
 extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/b2sum.merge.c:8581 */
+/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/b2sum.merge.c:8577 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/b2sum.merge.c:8585 */
-#line 8585
+/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/b2sum.merge.c:8581 */
+#line 8581
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memcpy)(void * __restrict  __dest ,
                                                                                                  void const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/b2sum.merge.c:8585 */
+/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/b2sum.merge.c:8581 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/b2sum.merge.c:8602 */
-#line 8602
+/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/b2sum.merge.c:8598 */
+#line 8598
 extern int ( __attribute__((__nonnull__(1))) sigwaitinfo)(sigset_t const   * __restrict  __set ,
                                                           siginfo_t * __restrict  __info ) ;
-/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/b2sum.merge.c:8602 */
+/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/b2sum.merge.c:8598 */
 
-/* BEGIN TYPEDEF intptr_t LOC=./src/b2sum.merge.c:8607 */
-#line 8607 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF intptr_t LOC=./src/b2sum.merge.c:8603 */
+#line 8603 "./src/b2sum.merge.c"
 typedef __intptr_t intptr_t;
-/* END TYPEDEF intptr_t LOC=./src/b2sum.merge.c:8607 */
+/* END TYPEDEF intptr_t LOC=./src/b2sum.merge.c:8603 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/b2sum.merge.c:8611 */
-#line 8611
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/b2sum.merge.c:8607 */
+#line 8607
 extern char *quotearg_alloc_mem(char const   *arg , size_t argsize , size_t *size ,
                                 struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/b2sum.merge.c:8611 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/b2sum.merge.c:8607 */
 
-/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/b2sum.merge.c:8646 */
-#line 8646
+/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/b2sum.merge.c:8642 */
+#line 8642
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(long __sysno 
                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN syscall LOC=./src/b2sum.merge.c:8646 */
+/* END FUNCTION-DECL-EXTERN syscall LOC=./src/b2sum.merge.c:8642 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -6268,29 +6256,29 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(l
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/b2sum.merge.c:8657 */
-#line 8657
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/b2sum.merge.c:8653 */
+#line 8653
 extern char *quotearg_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/b2sum.merge.c:8657 */
+/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/b2sum.merge.c:8653 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/b2sum.merge.c:8661 */
-#line 8661
+/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/b2sum.merge.c:8657 */
+#line 8657
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getres)(clockid_t __clock_id ,
                                                                                    struct timespec *__res ) ;
-/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/b2sum.merge.c:8661 */
+/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/b2sum.merge.c:8657 */
 
-/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/b2sum.merge.c:8672 */
-#line 8672 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/b2sum.merge.c:8668 */
+#line 8668 "./src/b2sum.merge.c"
 typedef char *__kernel_caddr_t;
-/* END TYPEDEF __kernel_caddr_t LOC=./src/b2sum.merge.c:8672 */
+/* END TYPEDEF __kernel_caddr_t LOC=./src/b2sum.merge.c:8668 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parityll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_437032235 LOC=./src/b2sum.merge.c:8699 */
-#line 8699
+/* BEGIN ENUM __anonenum_437032235 LOC=./src/b2sum.merge.c:8695 */
+#line 8695
 enum __anonenum_437032235 {
     _PC_LINK_MAX = 0,
     _PC_MAX_CANON = 1,
@@ -6314,13 +6302,13 @@ enum __anonenum_437032235 {
     _PC_SYMLINK_MAX = 19,
     _PC_2_SYMLINKS = 20
 } ;
-/* END ENUM __anonenum_437032235 LOC=./src/b2sum.merge.c:8699 */
+/* END ENUM __anonenum_437032235 LOC=./src/b2sum.merge.c:8695 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/b2sum.merge.c:8725 */
-#line 8725
+/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/b2sum.merge.c:8721 */
+#line 8721
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_gettime)(clockid_t __clock_id ,
                                                                                                     struct timespec *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/b2sum.merge.c:8725 */
+/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/b2sum.merge.c:8721 */
 
 /* BEGIN STRUCT-DECL __anonstruct__timer_490064738 LOC=./src/b2sum.merge.c:1139 */
 #line 1139
@@ -6337,8 +6325,8 @@ struct __anonstruct__timer_490064738 ;
    void *__builtin_memmove(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memmove LOC=BUILTIN */
 
-/* BEGIN ENUM blake2s_constant LOC=./src/b2sum.merge.c:8772 */
-#line 8772
+/* BEGIN ENUM blake2s_constant LOC=./src/b2sum.merge.c:8768 */
+#line 8768
 enum blake2s_constant {
     BLAKE2S_BLOCKBYTES = 64,
     BLAKE2S_OUTBYTES = 32,
@@ -6346,12 +6334,12 @@ enum blake2s_constant {
     BLAKE2S_SALTBYTES = 8,
     BLAKE2S_PERSONALBYTES = 8
 } ;
-/* END ENUM blake2s_constant LOC=./src/b2sum.merge.c:8772 */
+/* END ENUM blake2s_constant LOC=./src/b2sum.merge.c:8768 */
 
-/* BEGIN TYPEDEF uid_t LOC=./src/b2sum.merge.c:4479 */
-#line 4479 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uid_t LOC=./src/b2sum.merge.c:4467 */
+#line 4467 "./src/b2sum.merge.c"
 typedef __uid_t uid_t;
-/* END TYPEDEF uid_t LOC=./src/b2sum.merge.c:4479 */
+/* END TYPEDEF uid_t LOC=./src/b2sum.merge.c:4467 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6363,10 +6351,14 @@ typedef __uid_t uid_t;
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/b2sum.merge.c:8800 */
-#line 8800
+/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/b2sum.merge.c:8796 */
+#line 8796
 extern _Bool strip_trailing_slashes(char *file ) ;
-/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/b2sum.merge.c:8800 */
+/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/b2sum.merge.c:8796 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_envp LOC=UNKNOWN */
+char **_TIG_IZ_smv4_envp ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_envp LOC=UNKNOWN */
 
 /* BEGIN STRUCT-DECL blake2xb_state__ LOC=./src/b2sum.merge.c:1095 */
 #line 1095
@@ -6399,10 +6391,10 @@ extern  __attribute__((__deprecated__("Use the sigsuspend function instead"))) i
 enum quoting_flags ;
 /* END ENUM-DECL quoting_flags LOC=./src/b2sum.merge.c:1011 */
 
-/* BEGIN TYPEDEF lldiv_t LOC=./src/b2sum.merge.c:2271 */
-#line 2271 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF lldiv_t LOC=./src/b2sum.merge.c:2267 */
+#line 2267 "./src/b2sum.merge.c"
 typedef struct __anonstruct_lldiv_t_103911545 lldiv_t;
-/* END TYPEDEF lldiv_t LOC=./src/b2sum.merge.c:2271 */
+/* END TYPEDEF lldiv_t LOC=./src/b2sum.merge.c:2267 */
 
 /* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/b2sum.merge.c:8848 */
 #line 8848
@@ -6423,10 +6415,6 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2,4), _
    float __builtin_powf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_14tm_argv LOC=UNKNOWN */
-char **_TIG_IZ_14tm_argv ;
-/* END VARIABLE-DECL _TIG_IZ_14tm_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/b2sum.merge.c:8905 */
 #line 8905
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) setlocale)(int __category ,
@@ -6443,10 +6431,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) setlocale
 struct __anonstruct__sigchld_284671705 ;
 /* END STRUCT-DECL __anonstruct__sigchld_284671705 LOC=./src/b2sum.merge.c:891 */
 
-/* BEGIN TYPEDEF blake2bp_state LOC=./src/b2sum.merge.c:3790 */
-#line 3790 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF blake2bp_state LOC=./src/b2sum.merge.c:3786 */
+#line 3786 "./src/b2sum.merge.c"
 typedef struct blake2bp_state__ blake2bp_state;
-/* END TYPEDEF blake2bp_state LOC=./src/b2sum.merge.c:3790 */
+/* END TYPEDEF blake2bp_state LOC=./src/b2sum.merge.c:3786 */
 
 /* BEGIN FUNCTION-DECL-EXTERN blake2bp_init_key LOC=./src/b2sum.merge.c:8919 */
 #line 8919
@@ -6484,10 +6472,10 @@ struct __anonstruct___fsid_t_109580352 {
 };
 /* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/b2sum.merge.c:8990 */
 
-/* BEGIN TYPEDEF __fsid_t LOC=./src/b2sum.merge.c:4816 */
-#line 4816 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __fsid_t LOC=./src/b2sum.merge.c:4800 */
+#line 4800 "./src/b2sum.merge.c"
 typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
-/* END TYPEDEF __fsid_t LOC=./src/b2sum.merge.c:4816 */
+/* END TYPEDEF __fsid_t LOC=./src/b2sum.merge.c:4800 */
 
 /* BEGIN TYPEDEF fsid_t LOC=./src/b2sum.merge.c:8996 */
 #line 8996 "./src/b2sum.merge.c"
@@ -7153,10 +7141,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigqueue)(_
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) l64a)(long __n ) ;
 /* END FUNCTION-DECL-EXTERN l64a LOC=./src/b2sum.merge.c:10133 */
 
-/* BEGIN TYPEDEF __int32_t LOC=./src/b2sum.merge.c:4408 */
-#line 4408 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int32_t LOC=./src/b2sum.merge.c:4396 */
+#line 4396 "./src/b2sum.merge.c"
 typedef int __int32_t;
-/* END TYPEDEF __int32_t LOC=./src/b2sum.merge.c:4408 */
+/* END TYPEDEF __int32_t LOC=./src/b2sum.merge.c:4396 */
 
 /* BEGIN FUNCTION-DECL-EXTERN blake2xs LOC=./src/b2sum.merge.c:10141 */
 #line 10141
@@ -7189,53 +7177,53 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setuid)(__u
    void __builtin_nontemporal_load(...) ;  */
 /* END FUNCTION-DECL __builtin_nontemporal_load LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __le16 LOC=./src/b2sum.merge.c:10176 */
-#line 10176 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __le16 LOC=./src/b2sum.merge.c:10180 */
+#line 10180 "./src/b2sum.merge.c"
 typedef __u16 __le16;
-/* END TYPEDEF __le16 LOC=./src/b2sum.merge.c:10176 */
+/* END TYPEDEF __le16 LOC=./src/b2sum.merge.c:10180 */
 
-/* BEGIN ENUM __anonenum_463020052 LOC=./src/b2sum.merge.c:10189 */
-#line 10189
+/* BEGIN ENUM __anonenum_463020052 LOC=./src/b2sum.merge.c:10193 */
+#line 10193
 enum __anonenum_463020052 {
     TIMESPEC_HZ = 1000000000
 } ;
-/* END ENUM __anonenum_463020052 LOC=./src/b2sum.merge.c:10189 */
+/* END ENUM __anonenum_463020052 LOC=./src/b2sum.merge.c:10193 */
 
 /* BEGIN FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_clogf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN asprintf LOC=./src/b2sum.merge.c:10236 */
-#line 10236
+/* BEGIN FUNCTION-DECL-EXTERN asprintf LOC=./src/b2sum.merge.c:10240 */
+#line 10240
 extern  __attribute__((__nothrow__)) int asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                   , ...) ;
-/* END FUNCTION-DECL-EXTERN asprintf LOC=./src/b2sum.merge.c:10236 */
+/* END FUNCTION-DECL-EXTERN asprintf LOC=./src/b2sum.merge.c:10240 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getegid LOC=./src/b2sum.merge.c:10247 */
-#line 10247
+/* BEGIN FUNCTION-DECL-EXTERN getegid LOC=./src/b2sum.merge.c:10251 */
+#line 10251
 extern  __attribute__((__nothrow__)) __gid_t ( __attribute__((__leaf__)) getegid)(void) ;
-/* END FUNCTION-DECL-EXTERN getegid LOC=./src/b2sum.merge.c:10247 */
+/* END FUNCTION-DECL-EXTERN getegid LOC=./src/b2sum.merge.c:10251 */
 
-/* BEGIN STRUCT option LOC=./src/b2sum.merge.c:4395 */
-#line 4395 "./src/b2sum.merge.c"
+/* BEGIN STRUCT option LOC=./src/b2sum.merge.c:4383 */
+#line 4383 "./src/b2sum.merge.c"
 struct option {
    char *name ;
    int has_arg ;
    int *flag ;
    int val ;
 };
-/* END STRUCT option LOC=./src/b2sum.merge.c:4395 */
+/* END STRUCT option LOC=./src/b2sum.merge.c:4383 */
 
 /* BEGIN VARIABLE-DEF long_options LOC=UNKNOWN */
 static struct option long_options[14]  ;
 /* END VARIABLE-DEF long_options LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime_r LOC=./src/b2sum.merge.c:10255 */
-#line 10255
+/* BEGIN FUNCTION-DECL-EXTERN localtime_r LOC=./src/b2sum.merge.c:10259 */
+#line 10259
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime_r)(time_t const   * __restrict  __timer ,
                                                                                          struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN localtime_r LOC=./src/b2sum.merge.c:10255 */
+/* END FUNCTION-DECL-EXTERN localtime_r LOC=./src/b2sum.merge.c:10259 */
 
 /* BEGIN FUNCTION-DECL __builtin_crealf LOC=BUILTIN */
 /* compiler builtin: 
@@ -7252,125 +7240,125 @@ extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) loca
    char *__builtin___strncat_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strncat_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pause LOC=./src/b2sum.merge.c:10305 */
-#line 10305
+/* BEGIN FUNCTION-DECL-EXTERN pause LOC=./src/b2sum.merge.c:10309 */
+#line 10309
 extern int pause(void) ;
-/* END FUNCTION-DECL-EXTERN pause LOC=./src/b2sum.merge.c:10305 */
+/* END FUNCTION-DECL-EXTERN pause LOC=./src/b2sum.merge.c:10309 */
 
 /* BEGIN STRUCT-DECL sigcontext LOC=./src/b2sum.merge.c:1395 */
 #line 1395
 struct sigcontext ;
 /* END STRUCT-DECL sigcontext LOC=./src/b2sum.merge.c:1395 */
 
-/* BEGIN TYPEDEF pthread_key_t LOC=./src/b2sum.merge.c:10309 */
-#line 10309 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_key_t LOC=./src/b2sum.merge.c:10313 */
+#line 10313 "./src/b2sum.merge.c"
 typedef unsigned int pthread_key_t;
-/* END TYPEDEF pthread_key_t LOC=./src/b2sum.merge.c:10309 */
+/* END TYPEDEF pthread_key_t LOC=./src/b2sum.merge.c:10313 */
 
-/* BEGIN FUNCTION-DECL-EXTERN grantpt LOC=./src/b2sum.merge.c:10324 */
-#line 10324
+/* BEGIN FUNCTION-DECL-EXTERN grantpt LOC=./src/b2sum.merge.c:10328 */
+#line 10328
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) grantpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN grantpt LOC=./src/b2sum.merge.c:10324 */
+/* END FUNCTION-DECL-EXTERN grantpt LOC=./src/b2sum.merge.c:10328 */
 
-/* BEGIN FUNCTION-DECL-EXTERN confstr LOC=./src/b2sum.merge.c:10313 */
-#line 10313
+/* BEGIN FUNCTION-DECL-EXTERN confstr LOC=./src/b2sum.merge.c:10317 */
+#line 10317
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) confstr)(int __name ,
                                                                                  char *__buf ,
                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN confstr LOC=./src/b2sum.merge.c:10313 */
+/* END FUNCTION-DECL-EXTERN confstr LOC=./src/b2sum.merge.c:10317 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2s_final LOC=./src/b2sum.merge.c:10344 */
-#line 10344
+/* BEGIN FUNCTION-DECL-EXTERN blake2s_final LOC=./src/b2sum.merge.c:10348 */
+#line 10348
 extern int blake2s_final(blake2s_state *S , void *out , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2s_final LOC=./src/b2sum.merge.c:10344 */
+/* END FUNCTION-DECL-EXTERN blake2s_final LOC=./src/b2sum.merge.c:10348 */
 
-/* BEGIN STRUCT __time_t_must_be_integral LOC=./src/b2sum.merge.c:10361 */
-#line 10361 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __time_t_must_be_integral LOC=./src/b2sum.merge.c:10365 */
+#line 10365 "./src/b2sum.merge.c"
 struct __time_t_must_be_integral {
    unsigned int __floating_time_t_unsupported : 1 ;
 };
-/* END STRUCT __time_t_must_be_integral LOC=./src/b2sum.merge.c:10361 */
+/* END STRUCT __time_t_must_be_integral LOC=./src/b2sum.merge.c:10365 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xb_update LOC=./src/b2sum.merge.c:10376 */
-#line 10376
+/* BEGIN FUNCTION-DECL-EXTERN blake2xb_update LOC=./src/b2sum.merge.c:10380 */
+#line 10380
 extern int blake2xb_update(blake2xb_state *S , void const   *in , size_t inlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xb_update LOC=./src/b2sum.merge.c:10376 */
+/* END FUNCTION-DECL-EXTERN blake2xb_update LOC=./src/b2sum.merge.c:10380 */
 
-/* BEGIN FUNCTION-DECL ptr_align LOC=./src/b2sum.merge.c:10394 */
-#line 10394
+/* BEGIN FUNCTION-DECL ptr_align LOC=./src/b2sum.merge.c:10398 */
+#line 10398
 __inline static void *ptr_align(void const   *ptr , size_t alignment ) ;
-/* END FUNCTION-DECL ptr_align LOC=./src/b2sum.merge.c:10394 */
+/* END FUNCTION-DECL ptr_align LOC=./src/b2sum.merge.c:10398 */
 
-/* BEGIN TYPEDEF __kernel_old_time_t LOC=./src/b2sum.merge.c:10404 */
-#line 10404 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_old_time_t LOC=./src/b2sum.merge.c:10408 */
+#line 10408 "./src/b2sum.merge.c"
 typedef __kernel_long_t __kernel_old_time_t;
-/* END TYPEDEF __kernel_old_time_t LOC=./src/b2sum.merge.c:10404 */
+/* END TYPEDEF __kernel_old_time_t LOC=./src/b2sum.merge.c:10408 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nanl(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __errno_location LOC=./src/b2sum.merge.c:10412 */
-#line 10412
+/* BEGIN FUNCTION-DECL-EXTERN __errno_location LOC=./src/b2sum.merge.c:10416 */
+#line 10416
 extern  __attribute__((__nothrow__)) int *( __attribute__((__leaf__)) __errno_location)(void)  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN __errno_location LOC=./src/b2sum.merge.c:10412 */
+/* END FUNCTION-DECL-EXTERN __errno_location LOC=./src/b2sum.merge.c:10416 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfscanf LOC=./src/b2sum.merge.c:10431 */
-#line 10431
+/* BEGIN FUNCTION-DECL-EXTERN vfscanf LOC=./src/b2sum.merge.c:10435 */
+#line 10435
 extern int ( __attribute__((__nonnull__(1))) vfscanf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                       __gnuc_va_list __arg )  __asm__("__isoc23_vfscanf")  ;
-/* END FUNCTION-DECL-EXTERN vfscanf LOC=./src/b2sum.merge.c:10431 */
+/* END FUNCTION-DECL-EXTERN vfscanf LOC=./src/b2sum.merge.c:10435 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/b2sum.merge.c:10427 */
-#line 10427
+/* BEGIN FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/b2sum.merge.c:10431 */
+#line 10431
 extern int ( __attribute__((__nonnull__(1))) rpl_pipe2)(int *fd , int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/b2sum.merge.c:10427 */
+/* END FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/b2sum.merge.c:10431 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_ctanh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanh LOC=BUILTIN */
 
-/* BEGIN ENUM __itimer_which LOC=./src/b2sum.merge.c:1625 */
-#line 1625
+/* BEGIN ENUM __itimer_which LOC=./src/b2sum.merge.c:1621 */
+#line 1621
 enum __itimer_which {
     ITIMER_REAL = 0,
     ITIMER_VIRTUAL = 1,
     ITIMER_PROF = 2
 } ;
-/* END ENUM __itimer_which LOC=./src/b2sum.merge.c:1625 */
+/* END ENUM __itimer_which LOC=./src/b2sum.merge.c:1621 */
 
-/* BEGIN TYPEDEF __itimer_which_t LOC=./src/b2sum.merge.c:1633 */
-#line 1633 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __itimer_which_t LOC=./src/b2sum.merge.c:1629 */
+#line 1629 "./src/b2sum.merge.c"
 typedef enum __itimer_which __itimer_which_t;
-/* END TYPEDEF __itimer_which_t LOC=./src/b2sum.merge.c:1633 */
+/* END TYPEDEF __itimer_which_t LOC=./src/b2sum.merge.c:1629 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getitimer LOC=./src/b2sum.merge.c:10442 */
-#line 10442
+/* BEGIN FUNCTION-DECL-EXTERN getitimer LOC=./src/b2sum.merge.c:10446 */
+#line 10446
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval *__value ) ;
-/* END FUNCTION-DECL-EXTERN getitimer LOC=./src/b2sum.merge.c:10442 */
+/* END FUNCTION-DECL-EXTERN getitimer LOC=./src/b2sum.merge.c:10446 */
 
 /* BEGIN STRUCT-DECL quoting_options LOC=./src/b2sum.merge.c:867 */
 #line 867
 struct quoting_options ;
 /* END STRUCT-DECL quoting_options LOC=./src/b2sum.merge.c:867 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/b2sum.merge.c:10455 */
-#line 10455
+/* BEGIN VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/b2sum.merge.c:10459 */
+#line 10459
 extern struct quoting_options quote_quoting_options ;
-/* END VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/b2sum.merge.c:10455 */
+/* END VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/b2sum.merge.c:10459 */
 
 /* BEGIN FUNCTION-DECL __builtin_catan LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_catan(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_catan LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int_least32_t LOC=./src/b2sum.merge.c:4412 */
-#line 4412 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int_least32_t LOC=./src/b2sum.merge.c:4400 */
+#line 4400 "./src/b2sum.merge.c"
 typedef __int32_t __int_least32_t;
-/* END TYPEDEF __int_least32_t LOC=./src/b2sum.merge.c:4412 */
+/* END TYPEDEF __int_least32_t LOC=./src/b2sum.merge.c:4400 */
 
 /* BEGIN FUNCTION-DECL __builtin_casin LOC=BUILTIN */
 /* compiler builtin: 
@@ -7382,10 +7370,10 @@ typedef __int32_t __int_least32_t;
    long long __builtin_llrint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_llrint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fclose LOC=./src/b2sum.merge.c:10489 */
-#line 10489
+/* BEGIN FUNCTION-DECL-EXTERN fclose LOC=./src/b2sum.merge.c:10493 */
+#line 10493
 extern int ( __attribute__((__nonnull__(1))) fclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fclose LOC=./src/b2sum.merge.c:10489 */
+/* END FUNCTION-DECL-EXTERN fclose LOC=./src/b2sum.merge.c:10493 */
 
 /* BEGIN ENUM-DECL __anonenum_457704180 LOC=./src/b2sum.merge.c:1231 */
 #line 1231
@@ -7402,11 +7390,11 @@ enum __anonenum_457704180 ;
    int __builtin_strcasecmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcasecmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=./src/b2sum.merge.c:10522 */
-#line 10522
+/* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=./src/b2sum.merge.c:10526 */
+#line 10526
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_memstream)(char **__bufloc ,
                                                                                        size_t *__sizeloc )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN open_memstream LOC=./src/b2sum.merge.c:10522 */
+/* END FUNCTION-DECL-EXTERN open_memstream LOC=./src/b2sum.merge.c:10526 */
 
 /* BEGIN VARIABLE-DECL min_digest_line_length LOC=UNKNOWN */
 static size_t min_digest_line_length ;
@@ -7421,10 +7409,10 @@ __inline static void emit_mandatory_arg_note(void) ;
    void *__builtin___memcpy_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memcpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpgrp LOC=./src/b2sum.merge.c:10588 */
-#line 10588
+/* BEGIN FUNCTION-DECL-EXTERN getpgrp LOC=./src/b2sum.merge.c:10592 */
+#line 10592
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpgrp)(void) ;
-/* END FUNCTION-DECL-EXTERN getpgrp LOC=./src/b2sum.merge.c:10588 */
+/* END FUNCTION-DECL-EXTERN getpgrp LOC=./src/b2sum.merge.c:10592 */
 
 /* BEGIN ENUM-DECL __anonenum_783849514 LOC=./src/b2sum.merge.c:1199 */
 #line 1199
@@ -7441,28 +7429,28 @@ struct _libc_xmmreg ;
    float __builtin_tanf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_tanf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_old_gid_t LOC=./src/b2sum.merge.c:10617 */
-#line 10617 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_old_gid_t LOC=./src/b2sum.merge.c:10621 */
+#line 10621 "./src/b2sum.merge.c"
 typedef unsigned short __kernel_old_gid_t;
-/* END TYPEDEF __kernel_old_gid_t LOC=./src/b2sum.merge.c:10617 */
+/* END TYPEDEF __kernel_old_gid_t LOC=./src/b2sum.merge.c:10621 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fallocate64 LOC=./src/b2sum.merge.c:10621 */
-#line 10621
+/* BEGIN FUNCTION-DECL-EXTERN fallocate64 LOC=./src/b2sum.merge.c:10625 */
+#line 10625
 extern int fallocate64(int __fd , int __mode , __off64_t __offset , __off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fallocate64 LOC=./src/b2sum.merge.c:10621 */
+/* END FUNCTION-DECL-EXTERN fallocate64 LOC=./src/b2sum.merge.c:10625 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft8 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned char __builtin_rotateleft8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft8 LOC=BUILTIN */
 
-/* BEGIN STRUCT infomap LOC=./src/b2sum.merge.c:10649 */
-#line 10649 "./src/b2sum.merge.c"
+/* BEGIN STRUCT infomap LOC=./src/b2sum.merge.c:10653 */
+#line 10653 "./src/b2sum.merge.c"
 struct infomap {
    char const   *program ;
    char const   *node ;
 };
-/* END STRUCT infomap LOC=./src/b2sum.merge.c:10649 */
+/* END STRUCT infomap LOC=./src/b2sum.merge.c:10653 */
 
 /* BEGIN FUNCTION-DECL __builtin_llrintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -7480,76 +7468,76 @@ static void output_file(char const   *file , int binary_file , void const   *dig
                         uintmax_t length  __attribute__((__unused__)) ) ;
 /* END FUNCTION-DECL output_file LOC=UNKNOWN */
 
-/* BEGIN ENUM __anonenum_25645747 LOC=./src/b2sum.merge.c:10681 */
-#line 10681
+/* BEGIN ENUM __anonenum_25645747 LOC=./src/b2sum.merge.c:10685 */
+#line 10685
 enum __anonenum_25645747 {
     O_PATHSEARCH = 2097152
 } ;
-/* END ENUM __anonenum_25645747 LOC=./src/b2sum.merge.c:10681 */
+/* END ENUM __anonenum_25645747 LOC=./src/b2sum.merge.c:10685 */
 
-/* BEGIN FUNCTION-DECL-EXTERN cuserid LOC=./src/b2sum.merge.c:10687 */
-#line 10687
+/* BEGIN FUNCTION-DECL-EXTERN cuserid LOC=./src/b2sum.merge.c:10691 */
+#line 10691
 extern char *cuserid(char *__s ) ;
-/* END FUNCTION-DECL-EXTERN cuserid LOC=./src/b2sum.merge.c:10687 */
+/* END FUNCTION-DECL-EXTERN cuserid LOC=./src/b2sum.merge.c:10691 */
 
 /* BEGIN FUNCTION-DECL __builtin_align_up LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_align_up(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_align_up LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/b2sum.merge.c:10717 */
-#line 10717
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/b2sum.merge.c:10721 */
+#line 10721
 extern char *quotearg_colon(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/b2sum.merge.c:10717 */
+/* END FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/b2sum.merge.c:10721 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftell LOC=./src/b2sum.merge.c:10730 */
-#line 10730
+/* BEGIN FUNCTION-DECL-EXTERN ftell LOC=./src/b2sum.merge.c:10734 */
+#line 10734
 extern long ( __attribute__((__nonnull__(1))) ftell)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftell LOC=./src/b2sum.merge.c:10730 */
+/* END FUNCTION-DECL-EXTERN ftell LOC=./src/b2sum.merge.c:10734 */
 
 /* BEGIN FUNCTION-DECL __builtin_calloc LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_calloc(unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_calloc LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pid_t LOC=./src/b2sum.merge.c:10752 */
-#line 10752 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pid_t LOC=./src/b2sum.merge.c:10756 */
+#line 10756 "./src/b2sum.merge.c"
 typedef __pid_t pid_t;
-/* END TYPEDEF pid_t LOC=./src/b2sum.merge.c:10752 */
+/* END TYPEDEF pid_t LOC=./src/b2sum.merge.c:10756 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/b2sum.merge.c:10756 */
-#line 10756
+/* BEGIN FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/b2sum.merge.c:10760 */
+#line 10760
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getcpuclockid)(pid_t __pid ,
                                                                                           clockid_t *__clock_id ) ;
-/* END FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/b2sum.merge.c:10756 */
+/* END FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/b2sum.merge.c:10760 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strrchr LOC=./src/b2sum.merge.c:10739 */
-#line 10739
+/* BEGIN FUNCTION-DECL-EXTERN strrchr LOC=./src/b2sum.merge.c:10743 */
+#line 10743
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strrchr)(char const   *__s ,
                                                                                                 int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strrchr LOC=./src/b2sum.merge.c:10739 */
+/* END FUNCTION-DECL-EXTERN strrchr LOC=./src/b2sum.merge.c:10743 */
 
 /* BEGIN FUNCTION-DECL __builtin_lroundl LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffsl LOC=./src/b2sum.merge.c:10793 */
-#line 10793
+/* BEGIN FUNCTION-DECL-EXTERN ffsl LOC=./src/b2sum.merge.c:10797 */
+#line 10797
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffsl)(long __l )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffsl LOC=./src/b2sum.merge.c:10793 */
+/* END FUNCTION-DECL-EXTERN ffsl LOC=./src/b2sum.merge.c:10797 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pipe2 LOC=./src/b2sum.merge.c:10802 */
-#line 10802
+/* BEGIN FUNCTION-DECL-EXTERN pipe2 LOC=./src/b2sum.merge.c:10806 */
+#line 10806
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pipe2)(int *__pipedes ,
                                                                             int __flags ) ;
-/* END FUNCTION-DECL-EXTERN pipe2 LOC=./src/b2sum.merge.c:10802 */
+/* END FUNCTION-DECL-EXTERN pipe2 LOC=./src/b2sum.merge.c:10806 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/b2sum.merge.c:10807 */
-#line 10807
+/* BEGIN FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/b2sum.merge.c:10811 */
+#line 10811
 extern int clock_nanosleep(clockid_t __clock_id , int __flags , struct timespec  const  *__req ,
                            struct timespec *__rem ) ;
-/* END FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/b2sum.merge.c:10807 */
+/* END FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/b2sum.merge.c:10811 */
 
 /* BEGIN STRUCT-DECL _IO_cookie_io_functions_t LOC=./src/b2sum.merge.c:895 */
 #line 895
@@ -7571,28 +7559,28 @@ struct _IO_cookie_io_functions_t ;
    double __builtin_ceil(double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceil LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seed48 LOC=./src/b2sum.merge.c:10840 */
-#line 10840
+/* BEGIN FUNCTION-DECL-EXTERN seed48 LOC=./src/b2sum.merge.c:10844 */
+#line 10844
 extern  __attribute__((__nothrow__)) unsigned short *( __attribute__((__nonnull__(1),
 __leaf__)) seed48)(unsigned short *__seed16v ) ;
-/* END FUNCTION-DECL-EXTERN seed48 LOC=./src/b2sum.merge.c:10840 */
+/* END FUNCTION-DECL-EXTERN seed48 LOC=./src/b2sum.merge.c:10844 */
 
 /* BEGIN STRUCT-DECL flock64 LOC=./src/b2sum.merge.c:1371 */
 #line 1371
 struct flock64 ;
 /* END STRUCT-DECL flock64 LOC=./src/b2sum.merge.c:1371 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fexecve LOC=./src/b2sum.merge.c:10893 */
-#line 10893
+/* BEGIN FUNCTION-DECL-EXTERN fexecve LOC=./src/b2sum.merge.c:10897 */
+#line 10897
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fexecve)(int __fd ,
                                                                                               char **__argv ,
                                                                                               char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN fexecve LOC=./src/b2sum.merge.c:10893 */
+/* END FUNCTION-DECL-EXTERN fexecve LOC=./src/b2sum.merge.c:10897 */
 
-/* BEGIN FUNCTION-DECL c_isxdigit LOC=./src/b2sum.merge.c:10899 */
-#line 10899
+/* BEGIN FUNCTION-DECL c_isxdigit LOC=./src/b2sum.merge.c:10903 */
+#line 10903
 __inline _Bool c_isxdigit(int c ) ;
-/* END FUNCTION-DECL c_isxdigit LOC=./src/b2sum.merge.c:10899 */
+/* END FUNCTION-DECL c_isxdigit LOC=./src/b2sum.merge.c:10903 */
 
 /* BEGIN FUNCTION-DECL __builtin_call_with_static_chain LOC=BUILTIN */
 /* compiler builtin: 
@@ -7604,16 +7592,16 @@ __inline _Bool c_isxdigit(int c ) ;
    long double __builtin_nextafterl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nextafterl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_gettime LOC=./src/b2sum.merge.c:10926 */
-#line 10926
+/* BEGIN FUNCTION-DECL-EXTERN timer_gettime LOC=./src/b2sum.merge.c:10930 */
+#line 10930
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_gettime)(timer_t __timerid ,
                                                                                     struct itimerspec *__value ) ;
-/* END FUNCTION-DECL-EXTERN timer_gettime LOC=./src/b2sum.merge.c:10926 */
+/* END FUNCTION-DECL-EXTERN timer_gettime LOC=./src/b2sum.merge.c:10930 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strdup LOC=./src/b2sum.merge.c:10922 */
-#line 10922
+/* BEGIN FUNCTION-DECL-EXTERN strdup LOC=./src/b2sum.merge.c:10926 */
+#line 10926
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strdup)(char const   *__s )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN strdup LOC=./src/b2sum.merge.c:10922 */
+/* END FUNCTION-DECL-EXTERN strdup LOC=./src/b2sum.merge.c:10926 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -7645,131 +7633,131 @@ struct __dirstream ;
    _Float16 __builtin_truncf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fallocate LOC=./src/b2sum.merge.c:10968 */
-#line 10968
+/* BEGIN FUNCTION-DECL-EXTERN fallocate LOC=./src/b2sum.merge.c:10972 */
+#line 10972
 extern int fallocate(int __fd , int __mode , __off_t __offset , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fallocate LOC=./src/b2sum.merge.c:10968 */
+/* END FUNCTION-DECL-EXTERN fallocate LOC=./src/b2sum.merge.c:10972 */
 
-/* BEGIN TYPEDEF __be16 LOC=./src/b2sum.merge.c:10977 */
-#line 10977 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __be16 LOC=./src/b2sum.merge.c:10981 */
+#line 10981 "./src/b2sum.merge.c"
 typedef __u16 __be16;
-/* END TYPEDEF __be16 LOC=./src/b2sum.merge.c:10977 */
+/* END TYPEDEF __be16 LOC=./src/b2sum.merge.c:10981 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtold LOC=./src/b2sum.merge.c:10985 */
-#line 10985
+/* BEGIN FUNCTION-DECL-EXTERN strtold LOC=./src/b2sum.merge.c:10989 */
+#line 10989
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtold)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtold LOC=./src/b2sum.merge.c:10985 */
+/* END FUNCTION-DECL-EXTERN strtold LOC=./src/b2sum.merge.c:10989 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnumtoumax LOC=./src/b2sum.merge.c:11000 */
-#line 11000
+/* BEGIN FUNCTION-DECL-EXTERN xnumtoumax LOC=./src/b2sum.merge.c:11004 */
+#line 11004
 extern uintmax_t ( __attribute__((__nonnull__(1,6))) xnumtoumax)(char const   *n_str ,
                                                                  int base , uintmax_t min ,
                                                                  uintmax_t max , char const   *suffixes ,
                                                                  char const   *err ,
                                                                  int err_exit ) ;
-/* END FUNCTION-DECL-EXTERN xnumtoumax LOC=./src/b2sum.merge.c:11000 */
+/* END FUNCTION-DECL-EXTERN xnumtoumax LOC=./src/b2sum.merge.c:11004 */
 
-/* BEGIN FUNCTION-DECL-EXTERN div LOC=./src/b2sum.merge.c:10995 */
-#line 10995
+/* BEGIN FUNCTION-DECL-EXTERN div LOC=./src/b2sum.merge.c:10999 */
+#line 10999
 extern  __attribute__((__nothrow__)) div_t ( __attribute__((__leaf__)) div)(int __numer ,
                                                                             int __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN div LOC=./src/b2sum.merge.c:10995 */
+/* END FUNCTION-DECL-EXTERN div LOC=./src/b2sum.merge.c:10999 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open64 LOC=./src/b2sum.merge.c:11021 */
-#line 11021
+/* BEGIN FUNCTION-DECL-EXTERN open64 LOC=./src/b2sum.merge.c:11025 */
+#line 11025
 extern int ( __attribute__((__nonnull__(1))) open64)(char const   *__file , int __oflag 
                                                      , ...) ;
-/* END FUNCTION-DECL-EXTERN open64 LOC=./src/b2sum.merge.c:11021 */
+/* END FUNCTION-DECL-EXTERN open64 LOC=./src/b2sum.merge.c:11025 */
 
 /* BEGIN FUNCTION-DECL __builtin_cabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_cabsf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cabsf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigset LOC=./src/b2sum.merge.c:11026 */
-#line 11026
+/* BEGIN FUNCTION-DECL-EXTERN sigset LOC=./src/b2sum.merge.c:11030 */
+#line 11030
 extern  __attribute__((__nothrow__, __deprecated__("Use the signal and sigprocmask functions instead"))) __sighandler_t ( __attribute__((__leaf__)) sigset)(int __sig ,
                                                                                                                                                             void (*__disp)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN sigset LOC=./src/b2sum.merge.c:11026 */
+/* END FUNCTION-DECL-EXTERN sigset LOC=./src/b2sum.merge.c:11030 */
 
-/* BEGIN TYPEDEF __s8 LOC=./src/b2sum.merge.c:11031 */
-#line 11031 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __s8 LOC=./src/b2sum.merge.c:11035 */
+#line 11035 "./src/b2sum.merge.c"
 typedef signed char __s8;
-/* END TYPEDEF __s8 LOC=./src/b2sum.merge.c:11031 */
+/* END TYPEDEF __s8 LOC=./src/b2sum.merge.c:11035 */
 
 /* BEGIN FUNCTION-DECL __builtin_nansf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nansf128(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nansf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN group_member LOC=./src/b2sum.merge.c:11063 */
-#line 11063
+/* BEGIN FUNCTION-DECL-EXTERN group_member LOC=./src/b2sum.merge.c:11067 */
+#line 11067
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) group_member)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN group_member LOC=./src/b2sum.merge.c:11063 */
+/* END FUNCTION-DECL-EXTERN group_member LOC=./src/b2sum.merge.c:11067 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigreturn LOC=./src/b2sum.merge.c:11054 */
-#line 11054
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigreturn)(struct sigcontext *__scp ) ;
-/* END FUNCTION-DECL-EXTERN sigreturn LOC=./src/b2sum.merge.c:11054 */
-
-/* BEGIN FUNCTION-DECL-EXTERN clock_settime LOC=./src/b2sum.merge.c:11058 */
+/* BEGIN FUNCTION-DECL-EXTERN sigreturn LOC=./src/b2sum.merge.c:11058 */
 #line 11058
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigreturn)(struct sigcontext *__scp ) ;
+/* END FUNCTION-DECL-EXTERN sigreturn LOC=./src/b2sum.merge.c:11058 */
+
+/* BEGIN FUNCTION-DECL-EXTERN clock_settime LOC=./src/b2sum.merge.c:11062 */
+#line 11062
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_settime)(clockid_t __clock_id ,
                                                                                                     struct timespec  const  *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_settime LOC=./src/b2sum.merge.c:11058 */
+/* END FUNCTION-DECL-EXTERN clock_settime LOC=./src/b2sum.merge.c:11062 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsuspend LOC=./src/b2sum.merge.c:11067 */
-#line 11067
+/* BEGIN FUNCTION-DECL-EXTERN sigsuspend LOC=./src/b2sum.merge.c:11071 */
+#line 11071
 extern int ( __attribute__((__nonnull__(1))) sigsuspend)(sigset_t const   *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigsuspend LOC=./src/b2sum.merge.c:11067 */
+/* END FUNCTION-DECL-EXTERN sigsuspend LOC=./src/b2sum.merge.c:11071 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/b2sum.merge.c:11107 */
-#line 11107
+/* BEGIN FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/b2sum.merge.c:11111 */
+#line 11111
 extern int ( __attribute__((__nonnull__(1))) sigtimedwait)(sigset_t const   * __restrict  __set ,
                                                            siginfo_t * __restrict  __info ,
                                                            struct timespec  const  * __restrict  __timeout ) ;
-/* END FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/b2sum.merge.c:11107 */
+/* END FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/b2sum.merge.c:11111 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _Fork LOC=./src/b2sum.merge.c:11117 */
-#line 11117
-extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) _Fork)(void) ;
-/* END FUNCTION-DECL-EXTERN _Fork LOC=./src/b2sum.merge.c:11117 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ctime LOC=./src/b2sum.merge.c:11121 */
+/* BEGIN FUNCTION-DECL-EXTERN _Fork LOC=./src/b2sum.merge.c:11121 */
 #line 11121
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN ctime LOC=./src/b2sum.merge.c:11121 */
+extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) _Fork)(void) ;
+/* END FUNCTION-DECL-EXTERN _Fork LOC=./src/b2sum.merge.c:11121 */
 
-/* BEGIN ENUM __pid_type LOC=./src/b2sum.merge.c:10328 */
-#line 10328
+/* BEGIN FUNCTION-DECL-EXTERN ctime LOC=./src/b2sum.merge.c:11125 */
+#line 11125
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(time_t const   *__timer ) ;
+/* END FUNCTION-DECL-EXTERN ctime LOC=./src/b2sum.merge.c:11125 */
+
+/* BEGIN ENUM __pid_type LOC=./src/b2sum.merge.c:10332 */
+#line 10332
 enum __pid_type {
     F_OWNER_TID = 0,
     F_OWNER_PID = 1,
     F_OWNER_PGRP = 2,
     F_OWNER_GID = 2
 } ;
-/* END ENUM __pid_type LOC=./src/b2sum.merge.c:10328 */
+/* END ENUM __pid_type LOC=./src/b2sum.merge.c:10332 */
 
 /* BEGIN FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_log10l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=./src/b2sum.merge.c:11139 */
-#line 11139
+/* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=./src/b2sum.merge.c:11143 */
+#line 11143
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN dirfd LOC=./src/b2sum.merge.c:11139 */
+/* END FUNCTION-DECL-EXTERN dirfd LOC=./src/b2sum.merge.c:11143 */
 
 /* BEGIN FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/b2sum.merge.c:11155 */
-#line 11155
+/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/b2sum.merge.c:11159 */
+#line 11159
 __inline static void emit_exec_status(char const   *program ) ;
-/* END FUNCTION-DECL emit_exec_status LOC=./src/b2sum.merge.c:11155 */
+/* END FUNCTION-DECL emit_exec_status LOC=./src/b2sum.merge.c:11159 */
 
 /* BEGIN FUNCTION-DECL __builtin_strcspn LOC=BUILTIN */
 /* compiler builtin: 
@@ -7786,49 +7774,49 @@ __inline static void emit_exec_status(char const   *program ) ;
    _Bool __builtin_ssubll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_ssubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/b2sum.merge.c:11209 */
-#line 11209
+/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/b2sum.merge.c:11213 */
+#line 11213
 extern char *( __attribute__((__nonnull__(1))) mbschr)(char const   *string , int c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/b2sum.merge.c:11209 */
+/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/b2sum.merge.c:11213 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2s LOC=./src/b2sum.merge.c:11223 */
-#line 11223
+/* BEGIN FUNCTION-DECL-EXTERN blake2s LOC=./src/b2sum.merge.c:11227 */
+#line 11227
 extern int blake2s(void *out , size_t outlen , void const   *in , size_t inlen , void const   *key ,
                    size_t keylen ) ;
-/* END FUNCTION-DECL-EXTERN blake2s LOC=./src/b2sum.merge.c:11223 */
+/* END FUNCTION-DECL-EXTERN blake2s LOC=./src/b2sum.merge.c:11227 */
 
 /* BEGIN STRUCT-DECL __locale_struct LOC=./src/b2sum.merge.c:1359 */
 #line 1359
 struct __locale_struct ;
 /* END STRUCT-DECL __locale_struct LOC=./src/b2sum.merge.c:1359 */
 
-/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/b2sum.merge.c:11255 */
-#line 11255
+/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/b2sum.merge.c:11259 */
+#line 11259
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) aligned_alloc)(size_t __alignment ,
                                                                                       size_t __size )  __attribute__((__malloc__,
 __alloc_size__(2), __alloc_align__(1))) ;
-/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/b2sum.merge.c:11255 */
+/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/b2sum.merge.c:11259 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/b2sum.merge.c:11261 */
-#line 11261
-extern void close_stdout_set_ignore_EPIPE(_Bool ignore ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/b2sum.merge.c:11261 */
-
-/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/b2sum.merge.c:11265 */
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/b2sum.merge.c:11265 */
 #line 11265
+extern void close_stdout_set_ignore_EPIPE(_Bool ignore ) ;
+/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/b2sum.merge.c:11265 */
+
+/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/b2sum.merge.c:11269 */
+#line 11269
 extern enum quoting_style get_quoting_style(struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/b2sum.merge.c:11265 */
+/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/b2sum.merge.c:11269 */
 
 /* BEGIN FUNCTION-DECL __builtin_return LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_return(void const   * ) ;  */
 /* END FUNCTION-DECL __builtin_return LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/b2sum.merge.c:11296 */
-#line 11296
+/* BEGIN FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/b2sum.merge.c:11300 */
+#line 11300
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) arc4random_buf)(void *__buf ,
                                                                                                       size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/b2sum.merge.c:11296 */
+/* END FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/b2sum.merge.c:11300 */
 
 /* BEGIN STRUCT-DECL _fpx_sw_bytes LOC=./src/b2sum.merge.c:1023 */
 #line 1023
@@ -7839,10 +7827,10 @@ struct _fpx_sw_bytes ;
 static _Bool warn  ;
 /* END VARIABLE-DEF warn LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF u_long LOC=./src/b2sum.merge.c:11305 */
-#line 11305 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_long LOC=./src/b2sum.merge.c:11309 */
+#line 11309 "./src/b2sum.merge.c"
 typedef __u_long u_long;
-/* END TYPEDEF u_long LOC=./src/b2sum.merge.c:11305 */
+/* END TYPEDEF u_long LOC=./src/b2sum.merge.c:11309 */
 
 /* BEGIN FUNCTION-DECL __builtin_signbit LOC=BUILTIN */
 /* compiler builtin: 
@@ -7854,55 +7842,55 @@ typedef __u_long u_long;
    unsigned __int128 __builtin_extend_pointer(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extend_pointer LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN proper_name LOC=./src/b2sum.merge.c:11354 */
-#line 11354
+/* BEGIN FUNCTION-DECL-EXTERN proper_name LOC=./src/b2sum.merge.c:11358 */
+#line 11358
 extern char const   *proper_name(char const   *name ) ;
-/* END FUNCTION-DECL-EXTERN proper_name LOC=./src/b2sum.merge.c:11354 */
+/* END FUNCTION-DECL-EXTERN proper_name LOC=./src/b2sum.merge.c:11358 */
 
-/* BEGIN FUNCTION-DECL-EXTERN settimeofday LOC=./src/b2sum.merge.c:11408 */
-#line 11408
+/* BEGIN FUNCTION-DECL-EXTERN settimeofday LOC=./src/b2sum.merge.c:11412 */
+#line 11412
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) settimeofday)(struct timeval  const  *__tv ,
                                                                                    struct timezone  const  *__tz ) ;
-/* END FUNCTION-DECL-EXTERN settimeofday LOC=./src/b2sum.merge.c:11408 */
+/* END FUNCTION-DECL-EXTERN settimeofday LOC=./src/b2sum.merge.c:11412 */
 
-/* BEGIN FUNCTION-DECL is_nul LOC=./src/b2sum.merge.c:11413 */
-#line 11413
+/* BEGIN FUNCTION-DECL is_nul LOC=./src/b2sum.merge.c:11417 */
+#line 11417
 __inline static _Bool __attribute__((__pure__))  is_nul(void const   *buf , size_t length ) ;
-/* END FUNCTION-DECL is_nul LOC=./src/b2sum.merge.c:11413 */
+/* END FUNCTION-DECL is_nul LOC=./src/b2sum.merge.c:11417 */
 
 /* BEGIN STRUCT-DECL _libc_fpxreg LOC=./src/b2sum.merge.c:931 */
 #line 931
 struct _libc_fpxreg ;
 /* END STRUCT-DECL _libc_fpxreg LOC=./src/b2sum.merge.c:931 */
 
-/* BEGIN TYPEDEF __int_least8_t LOC=./src/b2sum.merge.c:7314 */
-#line 7314 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __int_least8_t LOC=./src/b2sum.merge.c:7306 */
+#line 7306 "./src/b2sum.merge.c"
 typedef __int8_t __int_least8_t;
-/* END TYPEDEF __int_least8_t LOC=./src/b2sum.merge.c:7314 */
+/* END TYPEDEF __int_least8_t LOC=./src/b2sum.merge.c:7306 */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_ar LOC=./src/b2sum.merge.c:11417 */
-#line 11417
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_ar LOC=./src/b2sum.merge.c:11421 */
+#line 11421
 extern void version_etc_ar(FILE *stream , char const   *command_name , char const   *package ,
                            char const   *version , char const   **authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_ar LOC=./src/b2sum.merge.c:11417 */
+/* END FUNCTION-DECL-EXTERN version_etc_ar LOC=./src/b2sum.merge.c:11421 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lrand48_r LOC=./src/b2sum.merge.c:11422 */
-#line 11422
+/* BEGIN FUNCTION-DECL-EXTERN lrand48_r LOC=./src/b2sum.merge.c:11426 */
+#line 11426
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lrand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN lrand48_r LOC=./src/b2sum.merge.c:11422 */
+/* END FUNCTION-DECL-EXTERN lrand48_r LOC=./src/b2sum.merge.c:11426 */
 
-/* BEGIN TYPEDEF error_t LOC=./src/b2sum.merge.c:11427 */
-#line 11427 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF error_t LOC=./src/b2sum.merge.c:11431 */
+#line 11431 "./src/b2sum.merge.c"
 typedef int error_t;
-/* END TYPEDEF error_t LOC=./src/b2sum.merge.c:11427 */
+/* END TYPEDEF error_t LOC=./src/b2sum.merge.c:11431 */
 
-/* BEGIN FUNCTION-DECL-EXTERN jrand48_r LOC=./src/b2sum.merge.c:11431 */
-#line 11431
+/* BEGIN FUNCTION-DECL-EXTERN jrand48_r LOC=./src/b2sum.merge.c:11435 */
+#line 11435
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) jrand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN jrand48_r LOC=./src/b2sum.merge.c:11431 */
+/* END FUNCTION-DECL-EXTERN jrand48_r LOC=./src/b2sum.merge.c:11435 */
 
 /* BEGIN STRUCT-DECL __anonstruct_siginfo_t_342254926 LOC=./src/b2sum.merge.c:1063 */
 #line 1063
@@ -7914,12 +7902,12 @@ struct __anonstruct_siginfo_t_342254926 ;
 union __anonunion____missing_field_name_501150464 ;
 /* END UNION-DECL __anonunion____missing_field_name_501150464 LOC=./src/b2sum.merge.c:1151 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime_rz LOC=./src/b2sum.merge.c:11445 */
-#line 11445
+/* BEGIN FUNCTION-DECL-EXTERN localtime_rz LOC=./src/b2sum.merge.c:11449 */
+#line 11449
 extern struct tm *( __attribute__((__nonnull__(2,3))) localtime_rz)(timezone_t __tz ,
                                                                     time_t const   * __restrict  __timer ,
                                                                     struct tm * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN localtime_rz LOC=./src/b2sum.merge.c:11445 */
+/* END FUNCTION-DECL-EXTERN localtime_rz LOC=./src/b2sum.merge.c:11449 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -7930,10 +7918,6 @@ extern struct tm *( __attribute__((__nonnull__(2,3))) localtime_rz)(timezone_t _
 /* compiler builtin: 
    _Bool __builtin_add_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_add_overflow LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_envp LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __kernel_clock_t LOC=./src/b2sum.merge.c:11495 */
 #line 11495 "./src/b2sum.merge.c"
@@ -8012,6 +7996,10 @@ struct timezone ;
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strndup)(char const   *__string ,
                                                                                                 size_t __n )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN strndup LOC=./src/b2sum.merge.c:11599 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMKm_argv LOC=UNKNOWN */
+char **_TIG_IZ_dMKm_argv ;
+/* END VARIABLE-DECL _TIG_IZ_dMKm_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_remainder LOC=BUILTIN */
 /* compiler builtin: 
@@ -8111,59 +8099,55 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctermid)(
 struct _ymmh_state ;
 /* END STRUCT-DECL _ymmh_state LOC=./src/b2sum.merge.c:1291 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_argv ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/b2sum.merge.c:1637 */
-#line 1637
+/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/b2sum.merge.c:1633 */
+#line 1633
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval  const  * __restrict  __new ,
                                                                                 struct itimerval * __restrict  __old ) ;
-/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/b2sum.merge.c:1637 */
+/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/b2sum.merge.c:1633 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/b2sum.merge.c:1647 */
-#line 1647
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/b2sum.merge.c:1643 */
+#line 1643
 extern  __attribute__((__noreturn__)) void __error_at_line_noreturn(int __status ,
                                                                     int __errnum ,
                                                                     char const   *__fname ,
                                                                     unsigned int __line ,
                                                                     char const   *__format 
                                                                     , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/b2sum.merge.c:1647 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/b2sum.merge.c:1643 */
 
 /* BEGIN FUNCTION-DECL __builtin_acos LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_acos(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acos LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/b2sum.merge.c:1661 */
-#line 1661
+/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/b2sum.merge.c:1657 */
+#line 1657
 extern  __attribute__((__nothrow__, __deprecated__("Use the signal function instead"))) int ( __attribute__((__leaf__)) sigignore)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/b2sum.merge.c:1661 */
+/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/b2sum.merge.c:1657 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/b2sum.merge.c:1682 */
-#line 1682
+/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/b2sum.merge.c:1678 */
+#line 1678
 extern void set_custom_quoting(struct quoting_options *o , char const   *left_quote ,
                                char const   *right_quote ) ;
-/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/b2sum.merge.c:1682 */
+/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/b2sum.merge.c:1678 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ctanhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/b2sum.merge.c:1699 */
-#line 1699
+/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/b2sum.merge.c:1695 */
+#line 1695
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getloadavg)(double *__loadavg ,
                                                                                                  int __nelem ) ;
-/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/b2sum.merge.c:1699 */
+/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/b2sum.merge.c:1695 */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/b2sum.merge.c:1717 */
-#line 1717
+/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/b2sum.merge.c:1713 */
+#line 1713
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate64)(char const   *__file ,
                                                                                                  __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/b2sum.merge.c:1717 */
+/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/b2sum.merge.c:1713 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_arg_pack LOC=BUILTIN */
 /* compiler builtin: 
@@ -8175,17 +8159,17 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Complex double __builtin_casinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/b2sum.merge.c:1744 */
-#line 1744
+/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/b2sum.merge.c:1740 */
+#line 1740
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_adjtime)(__clockid_t __clock_id ,
                                                                                                     struct timex *__utx ) ;
-/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/b2sum.merge.c:1744 */
+/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/b2sum.merge.c:1740 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/b2sum.merge.c:1767 */
-#line 1767
+/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/b2sum.merge.c:1763 */
+#line 1763
 extern void *xmemdup(void const   *p , size_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/b2sum.merge.c:1767 */
+/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/b2sum.merge.c:1763 */
 
 /* BEGIN VARIABLE-DECL bsd_reversed LOC=UNKNOWN */
 static int bsd_reversed ;
@@ -8201,146 +8185,146 @@ static int bsd_reversed ;
    int __builtin_isfinite(...) ;  */
 /* END FUNCTION-DECL __builtin_isfinite LOC=BUILTIN */
 
-/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/b2sum.merge.c:1796 */
-#line 1796 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/b2sum.merge.c:1792 */
+#line 1792 "./src/b2sum.merge.c"
 typedef void (*_gl_function_taking_int_returning_void_t)(int  );
-/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/b2sum.merge.c:1796 */
+/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/b2sum.merge.c:1792 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/b2sum.merge.c:1842 */
-#line 1842
+/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/b2sum.merge.c:1838 */
+#line 1838
 extern  __attribute__((__nothrow__)) int vsprintf(char * __restrict  __s , char const   * __restrict  __format ,
                                                   __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/b2sum.merge.c:1842 */
+/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/b2sum.merge.c:1838 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/b2sum.merge.c:1834 */
-#line 1834
+/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/b2sum.merge.c:1830 */
+#line 1830
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno LOC=./src/b2sum.merge.c:1834 */
+/* END FUNCTION-DECL-EXTERN fileno LOC=./src/b2sum.merge.c:1830 */
 
 /* BEGIN ENUM-DECL __anonenum_640648963 LOC=./src/b2sum.merge.c:951 */
 #line 951
 enum __anonenum_640648963 ;
 /* END ENUM-DECL __anonenum_640648963 LOC=./src/b2sum.merge.c:951 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/b2sum.merge.c:1855 */
-#line 1855
+/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/b2sum.merge.c:1851 */
+#line 1851
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresgid)(__gid_t *__rgid ,
                                                                                 __gid_t *__egid ,
                                                                                 __gid_t *__sgid ) ;
-/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/b2sum.merge.c:1855 */
+/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/b2sum.merge.c:1851 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/b2sum.merge.c:1866 */
-#line 1866
+/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/b2sum.merge.c:1862 */
+#line 1862
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_fail)(char const   *__assertion ,
                                                                                                    char const   *__file ,
                                                                                                    unsigned int __line ,
                                                                                                    char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/b2sum.merge.c:1866 */
+/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/b2sum.merge.c:1862 */
 
 /* BEGIN STRUCT-DECL _xstate LOC=./src/b2sum.merge.c:1267 */
 #line 1267
 struct _xstate ;
 /* END STRUCT-DECL _xstate LOC=./src/b2sum.merge.c:1267 */
 
-/* BEGIN FUNCTION-DECL c_isspace LOC=./src/b2sum.merge.c:1901 */
-#line 1901
+/* BEGIN FUNCTION-DECL c_isspace LOC=./src/b2sum.merge.c:1897 */
+#line 1897
 __inline _Bool c_isspace(int c ) ;
-/* END FUNCTION-DECL c_isspace LOC=./src/b2sum.merge.c:1901 */
+/* END FUNCTION-DECL c_isspace LOC=./src/b2sum.merge.c:1897 */
 
 /* BEGIN FUNCTION-DECL __builtin_clzs LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clzs(short  ) ;  */
 /* END FUNCTION-DECL __builtin_clzs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/b2sum.merge.c:1928 */
-#line 1928
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/b2sum.merge.c:1924 */
+#line 1924
 extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_quote ,
                                  char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/b2sum.merge.c:1928 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/b2sum.merge.c:1924 */
 
 /* BEGIN STRUCT-DECL stat LOC=./src/b2sum.merge.c:943 */
 #line 943
 struct stat ;
 /* END STRUCT-DECL stat LOC=./src/b2sum.merge.c:943 */
 
-/* BEGIN TYPEDEF fd_set LOC=./src/b2sum.merge.c:1952 */
-#line 1952 "./src/b2sum.merge.c"
-typedef struct __anonstruct_fd_set_356711149 fd_set;
-/* END TYPEDEF fd_set LOC=./src/b2sum.merge.c:1952 */
-
-/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/b2sum.merge.c:1948 */
+/* BEGIN TYPEDEF fd_set LOC=./src/b2sum.merge.c:1948 */
 #line 1948 "./src/b2sum.merge.c"
+typedef struct __anonstruct_fd_set_356711149 fd_set;
+/* END TYPEDEF fd_set LOC=./src/b2sum.merge.c:1948 */
+
+/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/b2sum.merge.c:1944 */
+#line 1944 "./src/b2sum.merge.c"
 typedef int volatile   pthread_spinlock_t;
-/* END TYPEDEF pthread_spinlock_t LOC=./src/b2sum.merge.c:1948 */
+/* END TYPEDEF pthread_spinlock_t LOC=./src/b2sum.merge.c:1944 */
 
 /* BEGIN FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_asin(double  ) ;  */
 /* END FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/b2sum.merge.c:1965 */
-#line 1965
+/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/b2sum.merge.c:1961 */
+#line 1961
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) rand_r)(unsigned int *__seed ) ;
-/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/b2sum.merge.c:1965 */
+/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/b2sum.merge.c:1961 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/b2sum.merge.c:1981 */
-#line 1981
+/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/b2sum.merge.c:1977 */
+#line 1977
 extern char *( __attribute__((__warn_unused_result__)) imaxtostr)(intmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/b2sum.merge.c:1981 */
+/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/b2sum.merge.c:1977 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2sp_final LOC=./src/b2sum.merge.c:2043 */
-#line 2043
+/* BEGIN FUNCTION-DECL-EXTERN blake2sp_final LOC=./src/b2sum.merge.c:2039 */
+#line 2039
 extern int blake2sp_final(blake2sp_state *S , void *out , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2sp_final LOC=./src/b2sum.merge.c:2043 */
+/* END FUNCTION-DECL-EXTERN blake2sp_final LOC=./src/b2sum.merge.c:2039 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/b2sum.merge.c:2074 */
-#line 2074
+/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/b2sum.merge.c:2070 */
+#line 2070
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt)(int ___argc ,
                                                                                                char **___argv ,
                                                                                                char const   *__shortopts ) ;
-/* END FUNCTION-DECL-EXTERN getopt LOC=./src/b2sum.merge.c:2074 */
+/* END FUNCTION-DECL-EXTERN getopt LOC=./src/b2sum.merge.c:2070 */
 
 /* BEGIN VARIABLE-DECL digest_hex_bytes LOC=UNKNOWN */
 static size_t digest_hex_bytes ;
 /* END VARIABLE-DECL digest_hex_bytes LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF fd_mask LOC=./src/b2sum.merge.c:2088 */
-#line 2088 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF fd_mask LOC=./src/b2sum.merge.c:2084 */
+#line 2084 "./src/b2sum.merge.c"
 typedef __fd_mask fd_mask;
-/* END TYPEDEF fd_mask LOC=./src/b2sum.merge.c:2088 */
+/* END TYPEDEF fd_mask LOC=./src/b2sum.merge.c:2084 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/b2sum.merge.c:2105 */
-#line 2105
+/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/b2sum.merge.c:2101 */
+#line 2101
 extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/b2sum.merge.c:2105 */
+/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/b2sum.merge.c:2101 */
 
-/* BEGIN FUNCTION-DECL c_isalpha LOC=./src/b2sum.merge.c:2092 */
-#line 2092
+/* BEGIN FUNCTION-DECL c_isalpha LOC=./src/b2sum.merge.c:2088 */
+#line 2088
 __inline _Bool c_isalpha(int c ) ;
-/* END FUNCTION-DECL c_isalpha LOC=./src/b2sum.merge.c:2092 */
+/* END FUNCTION-DECL c_isalpha LOC=./src/b2sum.merge.c:2088 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fmaf128(_Float128  , _Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/b2sum.merge.c:2101 */
-#line 2101
+/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/b2sum.merge.c:2097 */
+#line 2097
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/b2sum.merge.c:2101 */
+/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/b2sum.merge.c:2097 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/b2sum.merge.c:2130 */
-#line 2130
+/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/b2sum.merge.c:2126 */
+#line 2126
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat)(int __fd ,
                                                                                               char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ,
                                                                                               int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/b2sum.merge.c:2130 */
+/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/b2sum.merge.c:2126 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/b2sum.merge.c:2121 */
-#line 2121
+/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/b2sum.merge.c:2117 */
+#line 2117
 extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _exit LOC=./src/b2sum.merge.c:2121 */
+/* END FUNCTION-DECL-EXTERN _exit LOC=./src/b2sum.merge.c:2117 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -8357,53 +8341,53 @@ extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
    _Float128 __builtin_atan2f128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/b2sum.merge.c:2164 */
-#line 2164
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/b2sum.merge.c:2160 */
+#line 2160
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/b2sum.merge.c:2164 */
+/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/b2sum.merge.c:2160 */
 
-/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/b2sum.merge.c:2173 */
-#line 2173
+/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/b2sum.merge.c:2169 */
+#line 2169
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(struct timeval  const  *__delta ,
                                                                               struct timeval *__olddelta ) ;
-/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/b2sum.merge.c:2173 */
+/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/b2sum.merge.c:2169 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/b2sum.merge.c:2186 */
-#line 2186
+/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/b2sum.merge.c:2182 */
+#line 2182
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/b2sum.merge.c:2186 */
+/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/b2sum.merge.c:2182 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/b2sum.merge.c:2203 */
-#line 2203
+/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/b2sum.merge.c:2199 */
+#line 2199
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chown)(char const   *__file ,
                                                                                             __uid_t __owner ,
                                                                                             __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN chown LOC=./src/b2sum.merge.c:2203 */
+/* END FUNCTION-DECL-EXTERN chown LOC=./src/b2sum.merge.c:2199 */
 
-/* BEGIN STRUCT _xsave_hdr LOC=./src/b2sum.merge.c:2214 */
-#line 2214 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _xsave_hdr LOC=./src/b2sum.merge.c:2210 */
+#line 2210 "./src/b2sum.merge.c"
 struct _xsave_hdr {
    __uint64_t xstate_bv ;
    __uint64_t __glibc_reserved1[2] ;
    __uint64_t __glibc_reserved2[5] ;
 };
-/* END STRUCT _xsave_hdr LOC=./src/b2sum.merge.c:2214 */
+/* END STRUCT _xsave_hdr LOC=./src/b2sum.merge.c:2210 */
 
 /* BEGIN FUNCTION-DECL store48 LOC=UNKNOWN */
 __inline static void store48(void *dst , uint64_t w ) ;
 /* END FUNCTION-DECL store48 LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/b2sum.merge.c:2226 */
-#line 2226
+/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/b2sum.merge.c:2222 */
+#line 2222
 __inline static void emit_size_note(void) ;
-/* END FUNCTION-DECL emit_size_note LOC=./src/b2sum.merge.c:2226 */
+/* END FUNCTION-DECL emit_size_note LOC=./src/b2sum.merge.c:2222 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/b2sum.merge.c:2243 */
-#line 2243
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/b2sum.merge.c:2239 */
+#line 2239
 extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , char const   *arg ,
                               size_t argsize , struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/b2sum.merge.c:2243 */
+/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/b2sum.merge.c:2239 */
 
 /* BEGIN STRUCT-DECL _IO_wide_data LOC=./src/b2sum.merge.c:851 */
 #line 851
@@ -8430,8 +8414,8 @@ struct _IO_wide_data ;
    _Float128 __builtin_copysignf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338 LOC=./src/b2sum.merge.c:2314 */
-#line 2314
+/* BEGIN ENUM __anonenum_315186338 LOC=./src/b2sum.merge.c:2310 */
+#line 2310
 enum __anonenum_315186338 {
     _SC_ARG_MAX = 0,
     _SC_CHILD_MAX = 1,
@@ -8651,7 +8635,7 @@ enum __anonenum_315186338 {
     _SC_MINSIGSTKSZ = 249,
     _SC_SIGSTKSZ = 250
 } ;
-/* END ENUM __anonenum_315186338 LOC=./src/b2sum.merge.c:2314 */
+/* END ENUM __anonenum_315186338 LOC=./src/b2sum.merge.c:2310 */
 
 /* BEGIN FUNCTION-DECL __builtin_unreachable LOC=BUILTIN */
 /* compiler builtin: 
@@ -8663,67 +8647,67 @@ enum __anonenum_315186338 {
    long __builtin_lroundf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/b2sum.merge.c:2575 */
-#line 2575
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/b2sum.merge.c:2571 */
+#line 2571
 extern char *quotearg_style(enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/b2sum.merge.c:2575 */
+/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/b2sum.merge.c:2571 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/b2sum.merge.c:2579 */
-#line 2579
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/b2sum.merge.c:2575 */
+#line 2575
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r_unlocked)(int category ,
                                                                         char *buf ,
                                                                         size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/b2sum.merge.c:2579 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/b2sum.merge.c:2575 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fminl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/b2sum.merge.c:2643 */
-#line 2643
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/b2sum.merge.c:2639 */
+#line 2639
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_major)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/b2sum.merge.c:2643 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/b2sum.merge.c:2639 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/b2sum.merge.c:2659 */
-#line 2659
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/b2sum.merge.c:2655 */
+#line 2655
 extern int ( __attribute__((__nonnull__(1))) rpl_mknod)(char const   *file , mode_t mode ,
                                                         dev_t dev ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/b2sum.merge.c:2659 */
+/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/b2sum.merge.c:2655 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/b2sum.merge.c:2668 */
-#line 2668
+/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/b2sum.merge.c:2664 */
+#line 2664
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clearenv)(void) ;
-/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/b2sum.merge.c:2668 */
+/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/b2sum.merge.c:2664 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/b2sum.merge.c:2677 */
-#line 2677
+/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/b2sum.merge.c:2673 */
+#line 2673
 extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size_t __maxlen ,
                                                    char const   * __restrict  __format ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/b2sum.merge.c:2677 */
+/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/b2sum.merge.c:2673 */
 
 /* BEGIN FUNCTION-DECL __builtin_floor LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_floor(double  ) ;  */
 /* END FUNCTION-DECL __builtin_floor LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/b2sum.merge.c:2689 */
-#line 2689
+/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/b2sum.merge.c:2685 */
+#line 2685
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/b2sum.merge.c:2689 */
+/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/b2sum.merge.c:2685 */
 
 /* BEGIN FUNCTION-DECL __builtin_infl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_infl(void) ;  */
 /* END FUNCTION-DECL __builtin_infl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/b2sum.merge.c:2711 */
-#line 2711
+/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/b2sum.merge.c:2707 */
+#line 2707
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoimax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                      __gwchar_t ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_wcstoimax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/b2sum.merge.c:2711 */
+/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/b2sum.merge.c:2707 */
 
 /* BEGIN FUNCTION-DECL __builtin_fprintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -8740,41 +8724,41 @@ extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoi
    int __builtin_strncmp(char const   * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/b2sum.merge.c:2771 */
-#line 2771
+/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/b2sum.merge.c:2767 */
+#line 2767
 extern int ( __attribute__((__nonnull__(2))) putc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/b2sum.merge.c:2771 */
+/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/b2sum.merge.c:2767 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/b2sum.merge.c:2784 */
-#line 2784
+/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/b2sum.merge.c:2780 */
+#line 2780
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
-/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/b2sum.merge.c:2784 */
+/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/b2sum.merge.c:2780 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/b2sum.merge.c:2811 */
-#line 2811
+/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/b2sum.merge.c:2807 */
+#line 2807
 extern int vscanf(char const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vscanf")  ;
-/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/b2sum.merge.c:2811 */
+/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/b2sum.merge.c:2807 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nanf128(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/b2sum.merge.c:2824 */
-#line 2824
+/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/b2sum.merge.c:2820 */
+#line 2820
 extern char **__environ ;
-/* END VARIABLE-DECL-EXTERN __environ LOC=./src/b2sum.merge.c:2824 */
+/* END VARIABLE-DECL-EXTERN __environ LOC=./src/b2sum.merge.c:2820 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/b2sum.merge.c:2828 */
-#line 2828
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/b2sum.merge.c:2824 */
+#line 2824
 extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int __suffixlen ,
                                                           int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/b2sum.merge.c:2828 */
+/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/b2sum.merge.c:2824 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/b2sum.merge.c:2833 */
-#line 2833
+/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/b2sum.merge.c:2829 */
+#line 2829
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getdtablesize)(void) ;
-/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/b2sum.merge.c:2833 */
+/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/b2sum.merge.c:2829 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 /* compiler builtin: 
@@ -8786,8 +8770,8 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getdtablesi
 enum __anonenum_25645747 ;
 /* END ENUM-DECL __anonenum_25645747 LOC=./src/b2sum.merge.c:887 */
 
-/* BEGIN STRUCT stat LOC=./src/b2sum.merge.c:2862 */
-#line 2862 "./src/b2sum.merge.c"
+/* BEGIN STRUCT stat LOC=./src/b2sum.merge.c:2858 */
+#line 2858 "./src/b2sum.merge.c"
 struct stat {
    __dev_t st_dev ;
    __ino_t st_ino ;
@@ -8805,25 +8789,25 @@ struct stat {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat LOC=./src/b2sum.merge.c:2862 */
+/* END STRUCT stat LOC=./src/b2sum.merge.c:2858 */
 
-/* BEGIN TYPEDEF __rlim64_t LOC=./src/b2sum.merge.c:2891 */
-#line 2891 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __rlim64_t LOC=./src/b2sum.merge.c:2887 */
+#line 2887 "./src/b2sum.merge.c"
 typedef unsigned long __rlim64_t;
-/* END TYPEDEF __rlim64_t LOC=./src/b2sum.merge.c:2891 */
+/* END TYPEDEF __rlim64_t LOC=./src/b2sum.merge.c:2887 */
 
-/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/b2sum.merge.c:2903 */
-#line 2903
+/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/b2sum.merge.c:2899 */
+#line 2899
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) swab)(void const   * __restrict  __from ,
                                                                                               void * __restrict  __to ,
                                                                                               ssize_t __n ) ;
-/* END FUNCTION-DECL-EXTERN swab LOC=./src/b2sum.merge.c:2903 */
+/* END FUNCTION-DECL-EXTERN swab LOC=./src/b2sum.merge.c:2899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/b2sum.merge.c:2920 */
-#line 2920
+/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/b2sum.merge.c:2916 */
+#line 2916
 extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , int __c ,
                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/b2sum.merge.c:2920 */
+/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/b2sum.merge.c:2916 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -8841,8 +8825,8 @@ extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , i
    _Complex long double __builtin_csinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 
-/* BEGIN STRUCT blake2b_param__ LOC=./src/b2sum.merge.c:2955 */
-#line 2955 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2b_param__ LOC=./src/b2sum.merge.c:2951 */
+#line 2951 "./src/b2sum.merge.c"
 struct blake2b_param__ {
    uint8_t digest_length ;
    uint8_t key_length ;
@@ -8857,24 +8841,24 @@ struct blake2b_param__ {
    uint8_t salt[16] ;
    uint8_t personal[16] ;
 } __attribute__((__packed__)) ;
-/* END STRUCT blake2b_param__ LOC=./src/b2sum.merge.c:2955 */
+/* END STRUCT blake2b_param__ LOC=./src/b2sum.merge.c:2951 */
 
-/* BEGIN TYPEDEF __socklen_t LOC=./src/b2sum.merge.c:2972 */
-#line 2972 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __socklen_t LOC=./src/b2sum.merge.c:2968 */
+#line 2968 "./src/b2sum.merge.c"
 typedef unsigned int __socklen_t;
-/* END TYPEDEF __socklen_t LOC=./src/b2sum.merge.c:2972 */
+/* END TYPEDEF __socklen_t LOC=./src/b2sum.merge.c:2968 */
 
-/* BEGIN TYPEDEF socklen_t LOC=./src/b2sum.merge.c:2976 */
-#line 2976 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF socklen_t LOC=./src/b2sum.merge.c:2972 */
+#line 2972 "./src/b2sum.merge.c"
 typedef __socklen_t socklen_t;
-/* END TYPEDEF socklen_t LOC=./src/b2sum.merge.c:2976 */
+/* END TYPEDEF socklen_t LOC=./src/b2sum.merge.c:2972 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/b2sum.merge.c:2994 */
-#line 2994
+/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/b2sum.merge.c:2990 */
+#line 2990
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memmove)(void *__dest ,
                                                                                                   void const   *__src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memmove LOC=./src/b2sum.merge.c:2994 */
+/* END FUNCTION-DECL-EXTERN memmove LOC=./src/b2sum.merge.c:2990 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -8891,67 +8875,71 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    int __builtin_flt_rounds(void) ;  */
 /* END FUNCTION-DECL __builtin_flt_rounds LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least8_t LOC=./src/b2sum.merge.c:3093 */
-#line 3093 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __uint_least8_t LOC=./src/b2sum.merge.c:3089 */
+#line 3089 "./src/b2sum.merge.c"
 typedef __uint8_t __uint_least8_t;
-/* END TYPEDEF __uint_least8_t LOC=./src/b2sum.merge.c:3093 */
+/* END TYPEDEF __uint_least8_t LOC=./src/b2sum.merge.c:3089 */
 
-/* BEGIN TYPEDEF uint_least8_t LOC=./src/b2sum.merge.c:3097 */
-#line 3097 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_least8_t LOC=./src/b2sum.merge.c:3093 */
+#line 3093 "./src/b2sum.merge.c"
 typedef __uint_least8_t uint_least8_t;
-/* END TYPEDEF uint_least8_t LOC=./src/b2sum.merge.c:3097 */
+/* END TYPEDEF uint_least8_t LOC=./src/b2sum.merge.c:3093 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/b2sum.merge.c:3131 */
-#line 3131
+/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/b2sum.merge.c:3127 */
+#line 3127
 extern size_t ( __attribute__((__nonnull__(4))) fwrite)(void const   * __restrict  __ptr ,
                                                         size_t __size , size_t __n ,
                                                         FILE * __restrict  __s ) ;
-/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/b2sum.merge.c:3131 */
+/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/b2sum.merge.c:3127 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/b2sum.merge.c:3137 */
-#line 3137
+/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/b2sum.merge.c:3133 */
+#line 3133
 extern int pselect(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
                    fd_set * __restrict  __exceptfds , struct timespec  const  * __restrict  __timeout ,
                    __sigset_t const   * __restrict  __sigmask ) ;
-/* END FUNCTION-DECL-EXTERN pselect LOC=./src/b2sum.merge.c:3137 */
+/* END FUNCTION-DECL-EXTERN pselect LOC=./src/b2sum.merge.c:3133 */
 
-/* BEGIN TYPEDEF __le32 LOC=./src/b2sum.merge.c:3198 */
-#line 3198 "./src/b2sum.merge.c"
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMKm_envp LOC=UNKNOWN */
+char **_TIG_IZ_dMKm_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_dMKm_envp LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF __le32 LOC=./src/b2sum.merge.c:3194 */
+#line 3194 "./src/b2sum.merge.c"
 typedef __u32 __le32;
-/* END TYPEDEF __le32 LOC=./src/b2sum.merge.c:3198 */
+/* END TYPEDEF __le32 LOC=./src/b2sum.merge.c:3194 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/b2sum.merge.c:3219 */
-#line 3219
+/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/b2sum.merge.c:3215 */
+#line 3215
 extern int nanosleep(struct timespec  const  *__requested_time , struct timespec *__remaining ) ;
-/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/b2sum.merge.c:3219 */
+/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/b2sum.merge.c:3215 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/b2sum.merge.c:3214 */
-#line 3214
+/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/b2sum.merge.c:3210 */
+#line 3210
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) bzero)(void *__s ,
                                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bzero LOC=./src/b2sum.merge.c:3214 */
+/* END FUNCTION-DECL-EXTERN bzero LOC=./src/b2sum.merge.c:3210 */
 
-/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/b2sum.merge.c:3210 */
-#line 3210
+/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/b2sum.merge.c:3206 */
+#line 3206
 extern int usleep(__useconds_t __useconds ) ;
-/* END FUNCTION-DECL-EXTERN usleep LOC=./src/b2sum.merge.c:3210 */
+/* END FUNCTION-DECL-EXTERN usleep LOC=./src/b2sum.merge.c:3206 */
 
-/* BEGIN TYPEDEF pthread_once_t LOC=./src/b2sum.merge.c:3227 */
-#line 3227 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_once_t LOC=./src/b2sum.merge.c:3223 */
+#line 3223 "./src/b2sum.merge.c"
 typedef int pthread_once_t;
-/* END TYPEDEF pthread_once_t LOC=./src/b2sum.merge.c:3227 */
+/* END TYPEDEF pthread_once_t LOC=./src/b2sum.merge.c:3223 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/b2sum.merge.c:3244 */
-#line 3244
+/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/b2sum.merge.c:3240 */
+#line 3240
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/b2sum.merge.c:3244 */
+/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/b2sum.merge.c:3240 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/b2sum.merge.c:3259 */
-#line 3259
+/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/b2sum.merge.c:3255 */
+#line 3255
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) readahead)(int __fd ,
                                                                                       __off64_t __offset ,
                                                                                       size_t __count ) ;
-/* END FUNCTION-DECL-EXTERN readahead LOC=./src/b2sum.merge.c:3259 */
+/* END FUNCTION-DECL-EXTERN readahead LOC=./src/b2sum.merge.c:3255 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundf LOC=BUILTIN */
 /* compiler builtin: 
@@ -8978,79 +8966,79 @@ enum blake2b_constant ;
 struct _xsave_hdr ;
 /* END STRUCT-DECL _xsave_hdr LOC=./src/b2sum.merge.c:971 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/b2sum.merge.c:3316 */
-#line 3316
+/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/b2sum.merge.c:3312 */
+#line 3312
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) posix_memalign)(void **__memptr ,
                                                                                                      size_t __alignment ,
                                                                                                      size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/b2sum.merge.c:3316 */
+/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/b2sum.merge.c:3312 */
 
 /* BEGIN FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_mul_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/b2sum.merge.c:3327 */
-#line 3327 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/b2sum.merge.c:3323 */
+#line 3323 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_rwlockattr_t_145707745 pthread_rwlockattr_t;
-/* END TYPEDEF pthread_rwlockattr_t LOC=./src/b2sum.merge.c:3327 */
+/* END TYPEDEF pthread_rwlockattr_t LOC=./src/b2sum.merge.c:3323 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/b2sum.merge.c:3340 */
-#line 3340
+/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/b2sum.merge.c:3336 */
+#line 3336
 extern int fcloseall(void) ;
-/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/b2sum.merge.c:3340 */
+/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/b2sum.merge.c:3336 */
 
-/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/b2sum.merge.c:3331 */
-#line 3331
+/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/b2sum.merge.c:3327 */
+#line 3327
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) random)(void) ;
-/* END FUNCTION-DECL-EXTERN random LOC=./src/b2sum.merge.c:3331 */
+/* END FUNCTION-DECL-EXTERN random LOC=./src/b2sum.merge.c:3327 */
 
-/* BEGIN TYPEDEF u_int16_t LOC=./src/b2sum.merge.c:3348 */
-#line 3348 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_int16_t LOC=./src/b2sum.merge.c:3344 */
+#line 3344 "./src/b2sum.merge.c"
 typedef __uint16_t u_int16_t;
-/* END TYPEDEF u_int16_t LOC=./src/b2sum.merge.c:3348 */
+/* END TYPEDEF u_int16_t LOC=./src/b2sum.merge.c:3344 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/b2sum.merge.c:3352 */
-#line 3352
+/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/b2sum.merge.c:3348 */
+#line 3348
 extern void __error_alias(int __status , int __errnum , char const   *__format  , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/b2sum.merge.c:3352 */
+/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/b2sum.merge.c:3348 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/b2sum.merge.c:3357 */
-#line 3357
+/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/b2sum.merge.c:3353 */
+#line 3353
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) gettid)(void) ;
-/* END FUNCTION-DECL-EXTERN gettid LOC=./src/b2sum.merge.c:3357 */
+/* END FUNCTION-DECL-EXTERN gettid LOC=./src/b2sum.merge.c:3353 */
 
 /* BEGIN STRUCT-DECL sigaction LOC=./src/b2sum.merge.c:1107 */
 #line 1107
 struct sigaction ;
 /* END STRUCT-DECL sigaction LOC=./src/b2sum.merge.c:1107 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/b2sum.merge.c:3366 */
-#line 3366
+/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/b2sum.merge.c:3362 */
+#line 3362
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) memcmp)(void const   *__s1 ,
                                                                                                void const   *__s2 ,
                                                                                                size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/b2sum.merge.c:3366 */
+/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/b2sum.merge.c:3362 */
 
-/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/b2sum.merge.c:3372 */
-#line 3372
+/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/b2sum.merge.c:3368 */
+#line 3368
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) flockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/b2sum.merge.c:3372 */
+/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/b2sum.merge.c:3368 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_memcpy_inline(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xb_final LOC=./src/b2sum.merge.c:3385 */
-#line 3385
+/* BEGIN FUNCTION-DECL-EXTERN blake2xb_final LOC=./src/b2sum.merge.c:3381 */
+#line 3381
 extern int blake2xb_final(blake2xb_state *S , void *out , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xb_final LOC=./src/b2sum.merge.c:3385 */
+/* END FUNCTION-DECL-EXTERN blake2xb_final LOC=./src/b2sum.merge.c:3381 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/b2sum.merge.c:3389 */
-#line 3389
+/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/b2sum.merge.c:3385 */
+#line 3385
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) putenv)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN putenv LOC=./src/b2sum.merge.c:3389 */
+/* END FUNCTION-DECL-EXTERN putenv LOC=./src/b2sum.merge.c:3385 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9063,13 +9051,13 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 union pthread_attr_t ;
 /* END UNION-DECL pthread_attr_t LOC=./src/b2sum.merge.c:907 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/b2sum.merge.c:3413 */
-#line 3413
+/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/b2sum.merge.c:3409 */
+#line 3409
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __leaf__)) strtol_l)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ,
                                                                                                   int __base ,
                                                                                                   locale_t __loc )  __asm__("__isoc23_strtol_l")  ;
-/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/b2sum.merge.c:3413 */
+/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/b2sum.merge.c:3409 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacoshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9091,29 +9079,29 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __l
    void *__builtin_alloca_with_align(unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca_with_align LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/b2sum.merge.c:3453 */
-#line 3453
+/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/b2sum.merge.c:3449 */
+#line 3449
 extern void version_etc(FILE *stream , char const   *command_name , char const   *package ,
                         char const   *version  , ...)  __attribute__((__sentinel__(0))) ;
-/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/b2sum.merge.c:3453 */
+/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/b2sum.merge.c:3449 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/b2sum.merge.c:3458 */
-#line 3458
+/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/b2sum.merge.c:3454 */
+#line 3454
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) __mempcpy)(void * __restrict  __dest ,
                                                                                                     void const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/b2sum.merge.c:3458 */
+/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/b2sum.merge.c:3454 */
 
 /* BEGIN FUNCTION-DECL __builtin_csin LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_csin(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_csin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/b2sum.merge.c:3500 */
-#line 3500
+/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/b2sum.merge.c:3496 */
+#line 3496
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strpbrk)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/b2sum.merge.c:3500 */
+/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/b2sum.merge.c:3496 */
 
 /* BEGIN FUNCTION-DECL __builtin_hypotl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9125,31 +9113,31 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
    int __builtin_ilogbl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ilogbl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/b2sum.merge.c:3543 */
-#line 3543
+/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/b2sum.merge.c:3539 */
+#line 3539
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) syncfs)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/b2sum.merge.c:3543 */
+/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/b2sum.merge.c:3539 */
 
 /* BEGIN FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erff(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/b2sum.merge.c:3552 */
-#line 3552 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/b2sum.merge.c:3548 */
+#line 3548 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_barrierattr_t_951761806 pthread_barrierattr_t;
-/* END TYPEDEF pthread_barrierattr_t LOC=./src/b2sum.merge.c:3552 */
+/* END TYPEDEF pthread_barrierattr_t LOC=./src/b2sum.merge.c:3548 */
 
-/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/b2sum.merge.c:3556 */
-#line 3556
+/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/b2sum.merge.c:3552 */
+#line 3552
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) signal)(int __sig ,
                                                                                         void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN signal LOC=./src/b2sum.merge.c:3556 */
+/* END FUNCTION-DECL-EXTERN signal LOC=./src/b2sum.merge.c:3552 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/b2sum.merge.c:3561 */
-#line 3561
+/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/b2sum.merge.c:3557 */
+#line 3557
 extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN base_name LOC=./src/b2sum.merge.c:3561 */
+/* END FUNCTION-DECL-EXTERN base_name LOC=./src/b2sum.merge.c:3557 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmax LOC=BUILTIN */
 /* compiler builtin: 
@@ -9161,18 +9149,18 @@ extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__,
 struct dirent64 ;
 /* END STRUCT-DECL dirent64 LOC=./src/b2sum.merge.c:955 */
 
-/* BEGIN TYPEDEF __le64 LOC=./src/b2sum.merge.c:3583 */
-#line 3583 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __le64 LOC=./src/b2sum.merge.c:3579 */
+#line 3579 "./src/b2sum.merge.c"
 typedef __u64 __le64;
-/* END TYPEDEF __le64 LOC=./src/b2sum.merge.c:3583 */
+/* END TYPEDEF __le64 LOC=./src/b2sum.merge.c:3579 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/b2sum.merge.c:3599 */
-#line 3599
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/b2sum.merge.c:3595 */
+#line 3595
 extern char const   *quoting_style_args[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/b2sum.merge.c:3599 */
+/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/b2sum.merge.c:3595 */
 
-/* BEGIN STRUCT dirent LOC=./src/b2sum.merge.c:3622 */
-#line 3622 "./src/b2sum.merge.c"
+/* BEGIN STRUCT dirent LOC=./src/b2sum.merge.c:3618 */
+#line 3618 "./src/b2sum.merge.c"
 struct dirent {
    __ino_t d_ino ;
    __off_t d_off ;
@@ -9180,87 +9168,87 @@ struct dirent {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent LOC=./src/b2sum.merge.c:3622 */
+/* END STRUCT dirent LOC=./src/b2sum.merge.c:3618 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/b2sum.merge.c:3637 */
-#line 3637
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/b2sum.merge.c:3633 */
+#line 3633
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/b2sum.merge.c:3637 */
+/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/b2sum.merge.c:3633 */
 
 /* BEGIN VARIABLE-DEF have_read_stdin LOC=UNKNOWN */
 static _Bool have_read_stdin  ;
 /* END VARIABLE-DEF have_read_stdin LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/b2sum.merge.c:3742 */
-#line 3742
+/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/b2sum.merge.c:3738 */
+#line 3738
 extern void ( __attribute__((__nonnull__(1))) rewind)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN rewind LOC=./src/b2sum.merge.c:3742 */
+/* END FUNCTION-DECL-EXTERN rewind LOC=./src/b2sum.merge.c:3738 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_atanf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/b2sum.merge.c:3755 */
-#line 3755
+/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/b2sum.merge.c:3751 */
+#line 3751
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN localtime LOC=./src/b2sum.merge.c:3755 */
+/* END FUNCTION-DECL-EXTERN localtime LOC=./src/b2sum.merge.c:3751 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/b2sum.merge.c:3759 */
-#line 3759
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/b2sum.merge.c:3755 */
+#line 3755
 extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __stream ,
                                                         fpos64_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/b2sum.merge.c:3759 */
+/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/b2sum.merge.c:3755 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/b2sum.merge.c:3764 */
-#line 3764
+/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/b2sum.merge.c:3760 */
+#line 3760
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchmod)(int __fd ,
                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/b2sum.merge.c:3764 */
+/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/b2sum.merge.c:3760 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/b2sum.merge.c:3775 */
-#line 3775
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/b2sum.merge.c:3771 */
+#line 3771
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2), __leaf__)) strxfrm)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/b2sum.merge.c:3775 */
+/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/b2sum.merge.c:3771 */
 
-/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/b2sum.merge.c:3786 */
-#line 3786 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/b2sum.merge.c:3782 */
+#line 3782 "./src/b2sum.merge.c"
 typedef struct _IO_cookie_io_functions_t cookie_io_functions_t;
-/* END TYPEDEF cookie_io_functions_t LOC=./src/b2sum.merge.c:3786 */
+/* END TYPEDEF cookie_io_functions_t LOC=./src/b2sum.merge.c:3782 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2bp_final LOC=./src/b2sum.merge.c:3794 */
-#line 3794
+/* BEGIN FUNCTION-DECL-EXTERN blake2bp_final LOC=./src/b2sum.merge.c:3790 */
+#line 3790
 extern int blake2bp_final(blake2bp_state *S , void *out , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2bp_final LOC=./src/b2sum.merge.c:3794 */
+/* END FUNCTION-DECL-EXTERN blake2bp_final LOC=./src/b2sum.merge.c:3790 */
 
 /* BEGIN FUNCTION-DECL dcpgettext_expr LOC=UNKNOWN */
 __inline static char const   *dcpgettext_expr(char const   *domain , char const   *msgctxt ,
                                               char const   *msgid , int category ) ;
 /* END FUNCTION-DECL dcpgettext_expr LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/b2sum.merge.c:3813 */
-#line 3813
+/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/b2sum.merge.c:3809 */
+#line 3809
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaltstack)(stack_t const   * __restrict  __ss ,
                                                                                   stack_t * __restrict  __oss ) ;
-/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/b2sum.merge.c:3813 */
+/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/b2sum.merge.c:3809 */
 
-/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/b2sum.merge.c:3818 */
-#line 3818
+/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/b2sum.merge.c:3814 */
+#line 3814
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) kill)(__pid_t __pid ,
                                                                            int __sig ) ;
-/* END FUNCTION-DECL-EXTERN kill LOC=./src/b2sum.merge.c:3818 */
+/* END FUNCTION-DECL-EXTERN kill LOC=./src/b2sum.merge.c:3814 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/b2sum.merge.c:3833 */
-#line 3833
+/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/b2sum.merge.c:3829 */
+#line 3829
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execve)(char const   *__path ,
                                                                                                char **__argv ,
                                                                                                char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execve LOC=./src/b2sum.merge.c:3833 */
+/* END FUNCTION-DECL-EXTERN execve LOC=./src/b2sum.merge.c:3829 */
 
 /* BEGIN VARIABLE-DEF buffer_length LOC=UNKNOWN */
 static unsigned long buffer_length  ;
@@ -9271,91 +9259,95 @@ static unsigned long buffer_length  ;
    double __builtin_cabs(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s16 LOC=./src/b2sum.merge.c:3848 */
-#line 3848 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __s16 LOC=./src/b2sum.merge.c:3844 */
+#line 3844 "./src/b2sum.merge.c"
 typedef short __s16;
-/* END TYPEDEF __s16 LOC=./src/b2sum.merge.c:3848 */
+/* END TYPEDEF __s16 LOC=./src/b2sum.merge.c:3844 */
 
-/* BEGIN TYPEDEF pthread_cond_t LOC=./src/b2sum.merge.c:3852 */
-#line 3852 "./src/b2sum.merge.c"
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMKm_argc LOC=UNKNOWN */
+int _TIG_IZ_dMKm_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_dMKm_argc LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF pthread_cond_t LOC=./src/b2sum.merge.c:3848 */
+#line 3848 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_cond_t_951761805 pthread_cond_t;
-/* END TYPEDEF pthread_cond_t LOC=./src/b2sum.merge.c:3852 */
+/* END TYPEDEF pthread_cond_t LOC=./src/b2sum.merge.c:3848 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/b2sum.merge.c:3861 */
-#line 3861
+/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/b2sum.merge.c:3857 */
+#line 3857
 extern FILE *stderr ;
-/* END VARIABLE-DECL-EXTERN stderr LOC=./src/b2sum.merge.c:3861 */
+/* END VARIABLE-DECL-EXTERN stderr LOC=./src/b2sum.merge.c:3857 */
 
 /* BEGIN FUNCTION-DECL to_uchar LOC=UNKNOWN */
 __inline static unsigned char to_uchar(char ch ) ;
 /* END FUNCTION-DECL to_uchar LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF suseconds_t LOC=./src/b2sum.merge.c:3923 */
-#line 3923 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF suseconds_t LOC=./src/b2sum.merge.c:3919 */
+#line 3919 "./src/b2sum.merge.c"
 typedef __suseconds_t suseconds_t;
-/* END TYPEDEF suseconds_t LOC=./src/b2sum.merge.c:3923 */
+/* END TYPEDEF suseconds_t LOC=./src/b2sum.merge.c:3919 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/b2sum.merge.c:3938 */
-#line 3938
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/b2sum.merge.c:3934 */
+#line 3934
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries64)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                             __off64_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/b2sum.merge.c:3938 */
+/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/b2sum.merge.c:3934 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/b2sum.merge.c:3949 */
-#line 3949
+/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/b2sum.merge.c:3945 */
+#line 3945
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srandom_r)(unsigned int __seed ,
                                                                                                 struct random_data *__buf ) ;
-/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/b2sum.merge.c:3949 */
+/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/b2sum.merge.c:3945 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/b2sum.merge.c:3954 */
-#line 3954
+/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/b2sum.merge.c:3950 */
+#line 3950
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strcspn)(char const   *__s ,
                                                                                                    char const   *__reject )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/b2sum.merge.c:3954 */
+/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/b2sum.merge.c:3950 */
 
 /* BEGIN ENUM-DECL strtol_error LOC=./src/b2sum.merge.c:1071 */
 #line 1071
 enum strtol_error ;
 /* END ENUM-DECL strtol_error LOC=./src/b2sum.merge.c:1071 */
 
-/* BEGIN FUNCTION-DECL-EXTERN argmatch_to_argument LOC=./src/b2sum.merge.c:4031 */
-#line 4031
+/* BEGIN FUNCTION-DECL-EXTERN argmatch_to_argument LOC=./src/b2sum.merge.c:4027 */
+#line 4027
 extern char const   *argmatch_to_argument(void const   *value , char const   **arglist ,
                                           void const   *vallist , size_t valsize )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN argmatch_to_argument LOC=./src/b2sum.merge.c:4031 */
+/* END FUNCTION-DECL-EXTERN argmatch_to_argument LOC=./src/b2sum.merge.c:4027 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundf LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/b2sum.merge.c:4036 */
-#line 4036
+/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/b2sum.merge.c:4032 */
+#line 4032
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcgettext)(char const   *__domainname ,
                                                                                   char const   *__msgid ,
                                                                                   int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/b2sum.merge.c:4036 */
+/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/b2sum.merge.c:4032 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/b2sum.merge.c:4055 */
-#line 4055
+/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/b2sum.merge.c:4051 */
+#line 4051
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_create)(clockid_t __clock_id ,
                                                                                    struct sigevent * __restrict  __evp ,
                                                                                    timer_t * __restrict  __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/b2sum.merge.c:4055 */
+/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/b2sum.merge.c:4051 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/b2sum.merge.c:4061 */
-#line 4061
+/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/b2sum.merge.c:4057 */
+#line 4057
 extern int posix_openpt(int __oflag ) ;
-/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/b2sum.merge.c:4061 */
+/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/b2sum.merge.c:4057 */
 
-/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/b2sum.merge.c:4065 */
-#line 4065 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/b2sum.merge.c:4061 */
+#line 4061 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_rwlock_t_656928968 pthread_rwlock_t;
-/* END TYPEDEF pthread_rwlock_t LOC=./src/b2sum.merge.c:4065 */
+/* END TYPEDEF pthread_rwlock_t LOC=./src/b2sum.merge.c:4061 */
 
-/* BEGIN ENUM __anonenum_111643124 LOC=./src/b2sum.merge.c:4069 */
-#line 4069
+/* BEGIN ENUM __anonenum_111643124 LOC=./src/b2sum.merge.c:4065 */
+#line 4065
 enum __anonenum_111643124 {
     POLL_IN = 1,
     POLL_OUT = 2,
@@ -9364,16 +9356,12 @@ enum __anonenum_111643124 {
     POLL_PRI = 5,
     POLL_HUP = 6
 } ;
-/* END ENUM __anonenum_111643124 LOC=./src/b2sum.merge.c:4069 */
+/* END ENUM __anonenum_111643124 LOC=./src/b2sum.merge.c:4065 */
 
-/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/b2sum.merge.c:4084 */
-#line 4084
+/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/b2sum.merge.c:4080 */
+#line 4080
 extern char const   *Version ;
-/* END VARIABLE-DECL-EXTERN Version LOC=./src/b2sum.merge.c:4084 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_BUUq_argv LOC=UNKNOWN */
-char **_TIG_IZ_BUUq_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_BUUq_argv LOC=UNKNOWN */
+/* END VARIABLE-DECL-EXTERN Version LOC=./src/b2sum.merge.c:4080 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf LOC=BUILTIN */
 /* compiler builtin: 
@@ -9385,11 +9373,11 @@ char **_TIG_IZ_BUUq_argv  ;
    long __builtin_lrintl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lrintl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/b2sum.merge.c:4125 */
-#line 4125
+/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/b2sum.merge.c:4117 */
+#line 4117
 extern __ssize_t vmsplice(int __fdout , struct iovec  const  *__iov , size_t __count ,
                           unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/b2sum.merge.c:4125 */
+/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/b2sum.merge.c:4117 */
 
 /* BEGIN FUNCTION-DECL __builtin_assume_aligned LOC=BUILTIN */
 /* compiler builtin: 
@@ -9401,36 +9389,36 @@ extern __ssize_t vmsplice(int __fdout , struct iovec  const  *__iov , size_t __c
 union __anonunion__bounds_973039562 ;
 /* END UNION-DECL __anonunion__bounds_973039562 LOC=./src/b2sum.merge.c:899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/b2sum.merge.c:4152 */
-#line 4152
+/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/b2sum.merge.c:4144 */
+#line 4144
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/b2sum.merge.c:4152 */
+/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/b2sum.merge.c:4144 */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/b2sum.merge.c:4187 */
-#line 4187
+/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/b2sum.merge.c:4179 */
+#line 4179
 extern char const   *program_name ;
-/* END VARIABLE-DECL-EXTERN program_name LOC=./src/b2sum.merge.c:4187 */
+/* END VARIABLE-DECL-EXTERN program_name LOC=./src/b2sum.merge.c:4179 */
 
-/* BEGIN TYPEDEF __caddr_t LOC=./src/b2sum.merge.c:4191 */
-#line 4191 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __caddr_t LOC=./src/b2sum.merge.c:4183 */
+#line 4183 "./src/b2sum.merge.c"
 typedef char *__caddr_t;
-/* END TYPEDEF __caddr_t LOC=./src/b2sum.merge.c:4191 */
+/* END TYPEDEF __caddr_t LOC=./src/b2sum.merge.c:4183 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/b2sum.merge.c:4202 */
-#line 4202
+/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/b2sum.merge.c:4194 */
+#line 4194
 extern int ( __attribute__((__nonnull__(1))) open)(char const   *__file , int __oflag 
                                                    , ...) ;
-/* END FUNCTION-DECL-EXTERN open LOC=./src/b2sum.merge.c:4202 */
+/* END FUNCTION-DECL-EXTERN open LOC=./src/b2sum.merge.c:4194 */
 
-/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/b2sum.merge.c:4207 */
-#line 4207
+/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/b2sum.merge.c:4199 */
+#line 4199
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) profil)(unsigned short *__sample_buffer ,
                                                                                              size_t __size ,
                                                                                              size_t __offset ,
                                                                                              unsigned int __scale ) ;
-/* END FUNCTION-DECL-EXTERN profil LOC=./src/b2sum.merge.c:4207 */
+/* END FUNCTION-DECL-EXTERN profil LOC=./src/b2sum.merge.c:4199 */
 
 /* BEGIN FUNCTION-DECL c_isgraph LOC=UNKNOWN */
 __inline _Bool c_isgraph(int c ) ;
@@ -9441,10 +9429,10 @@ __inline _Bool c_isgraph(int c ) ;
    _Complex double __builtin_conj(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_conj LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/b2sum.merge.c:4227 */
-#line 4227
+/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/b2sum.merge.c:4219 */
+#line 4219
 extern char *( __attribute__((__warn_unused_result__)) offtostr)(off_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/b2sum.merge.c:4227 */
+/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/b2sum.merge.c:4219 */
 
 /* BEGIN STRUCT-DECL __anonstruct__kill_244518854 LOC=./src/b2sum.merge.c:1315 */
 #line 1315
@@ -9456,17 +9444,17 @@ struct __anonstruct__kill_244518854 ;
    float __builtin_fminf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/b2sum.merge.c:4253 */
-#line 4253
+/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/b2sum.merge.c:4245 */
+#line 4245
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof_l)(char const   * __restrict  __nptr ,
                                                                                                    char ** __restrict  __endptr ,
                                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/b2sum.merge.c:4253 */
+/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/b2sum.merge.c:4245 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/b2sum.merge.c:4264 */
-#line 4264
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/b2sum.merge.c:4256 */
+#line 4256
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmin)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/b2sum.merge.c:4264 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/b2sum.merge.c:4256 */
 
 /* BEGIN FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -9474,88 +9462,84 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_curr
                                 __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/b2sum.merge.c:4274 */
-#line 4274
+/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/b2sum.merge.c:4266 */
+#line 4266
 extern int daylight ;
-/* END VARIABLE-DECL-EXTERN daylight LOC=./src/b2sum.merge.c:4274 */
+/* END VARIABLE-DECL-EXTERN daylight LOC=./src/b2sum.merge.c:4266 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/b2sum.merge.c:4283 */
-#line 4283
+/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/b2sum.merge.c:4275 */
+#line 4275
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) lrand48)(void) ;
-/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/b2sum.merge.c:4283 */
+/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/b2sum.merge.c:4275 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_atan2f(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/b2sum.merge.c:4304 */
-#line 4304
+/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/b2sum.merge.c:4296 */
+#line 4296
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert)(char const   *__assertion ,
                                                                                               char const   *__file ,
                                                                                               int __line )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert LOC=./src/b2sum.merge.c:4304 */
+/* END FUNCTION-DECL-EXTERN __assert LOC=./src/b2sum.merge.c:4296 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/b2sum.merge.c:4295 */
-#line 4295
+/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/b2sum.merge.c:4287 */
+#line 4287
 extern int sync_file_range(int __fd , __off64_t __offset , __off64_t __count , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/b2sum.merge.c:4295 */
+/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/b2sum.merge.c:4287 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/b2sum.merge.c:4333 */
-#line 4333
+/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/b2sum.merge.c:4321 */
+#line 4321
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) alphasort64)(struct dirent64  const  **__e1 ,
                                                                                                     struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/b2sum.merge.c:4333 */
+/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/b2sum.merge.c:4321 */
 
 /* BEGIN STRUCT-DECL itimerval LOC=./src/b2sum.merge.c:1327 */
 #line 1327
 struct itimerval ;
 /* END STRUCT-DECL itimerval LOC=./src/b2sum.merge.c:1327 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_14tm_envp LOC=UNKNOWN */
-char **_TIG_IZ_14tm_envp ;
-/* END VARIABLE-DECL _TIG_IZ_14tm_envp LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/b2sum.merge.c:4391 */
-#line 4391
+/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/b2sum.merge.c:4379 */
+#line 4379
 extern __ssize_t tee(int __fdin , int __fdout , size_t __len , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN tee LOC=./src/b2sum.merge.c:4391 */
+/* END FUNCTION-DECL-EXTERN tee LOC=./src/b2sum.merge.c:4379 */
 
 /* BEGIN VARIABLE-DECL long_options LOC=UNKNOWN */
 static struct option long_options[14] ;
 /* END VARIABLE-DECL long_options LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int_least32_t LOC=./src/b2sum.merge.c:4416 */
-#line 4416 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_least32_t LOC=./src/b2sum.merge.c:4404 */
+#line 4404 "./src/b2sum.merge.c"
 typedef __int_least32_t int_least32_t;
-/* END TYPEDEF int_least32_t LOC=./src/b2sum.merge.c:4416 */
+/* END TYPEDEF int_least32_t LOC=./src/b2sum.merge.c:4404 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_truncf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast64_t LOC=./src/b2sum.merge.c:4425 */
-#line 4425 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_fast64_t LOC=./src/b2sum.merge.c:4413 */
+#line 4413 "./src/b2sum.merge.c"
 typedef unsigned long uint_fast64_t;
-/* END TYPEDEF uint_fast64_t LOC=./src/b2sum.merge.c:4425 */
+/* END TYPEDEF uint_fast64_t LOC=./src/b2sum.merge.c:4413 */
 
 /* BEGIN FUNCTION-DECL __builtin_index LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_index(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_index LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/b2sum.merge.c:4439 */
-#line 4439
+/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/b2sum.merge.c:4427 */
+#line 4427
 extern int lockf64(int __fd , int __cmd , __off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/b2sum.merge.c:4439 */
+/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/b2sum.merge.c:4427 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/b2sum.merge.c:4443 */
-#line 4443
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/b2sum.merge.c:4431 */
+#line 4431
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/b2sum.merge.c:4443 */
+/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/b2sum.merge.c:4431 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -9567,17 +9551,17 @@ __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  
    float __builtin_frexpf(float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/b2sum.merge.c:4464 */
-#line 4464
+/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/b2sum.merge.c:4452 */
+#line 4452
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) initstate)(unsigned int __seed ,
                                                                                                   char *__statebuf ,
                                                                                                   size_t __statelen ) ;
-/* END FUNCTION-DECL-EXTERN initstate LOC=./src/b2sum.merge.c:4464 */
+/* END FUNCTION-DECL-EXTERN initstate LOC=./src/b2sum.merge.c:4452 */
 
-/* BEGIN TYPEDEF gid_t LOC=./src/b2sum.merge.c:4475 */
-#line 4475 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF gid_t LOC=./src/b2sum.merge.c:4463 */
+#line 4463 "./src/b2sum.merge.c"
 typedef __gid_t gid_t;
-/* END TYPEDEF gid_t LOC=./src/b2sum.merge.c:4475 */
+/* END TYPEDEF gid_t LOC=./src/b2sum.merge.c:4463 */
 
 /* BEGIN FUNCTION-DECL chownat LOC=UNKNOWN */
 __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
@@ -9592,84 +9576,80 @@ enum __anonenum_513775621 ;
 static uintmax_t digest_length  ;
 /* END VARIABLE-DEF digest_length LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/b2sum.merge.c:4500 */
-#line 4500
+/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/b2sum.merge.c:4488 */
+#line 4488
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresuid)(__uid_t *__ruid ,
                                                                                 __uid_t *__euid ,
                                                                                 __uid_t *__suid ) ;
-/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/b2sum.merge.c:4500 */
+/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/b2sum.merge.c:4488 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/b2sum.merge.c:4506 */
-#line 4506
+/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/b2sum.merge.c:4494 */
+#line 4494
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat)(int __fd ,
                                                                                             struct stat *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat LOC=./src/b2sum.merge.c:4506 */
+/* END FUNCTION-DECL-EXTERN fstat LOC=./src/b2sum.merge.c:4494 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssub_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_ssub_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_ssub_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/b2sum.merge.c:4511 */
-#line 4511 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/b2sum.merge.c:4499 */
+#line 4499 "./src/b2sum.merge.c"
 typedef long long __kernel_loff_t;
-/* END TYPEDEF __kernel_loff_t LOC=./src/b2sum.merge.c:4511 */
+/* END TYPEDEF __kernel_loff_t LOC=./src/b2sum.merge.c:4499 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/b2sum.merge.c:4515 */
-#line 4515
+/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/b2sum.merge.c:4503 */
+#line 4503
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random)(void) ;
-/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/b2sum.merge.c:4515 */
+/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/b2sum.merge.c:4503 */
 
 /* BEGIN FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lrint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/b2sum.merge.c:4560 */
-#line 4560
+/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/b2sum.merge.c:4548 */
+#line 4548
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) quick_exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/b2sum.merge.c:4560 */
+/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/b2sum.merge.c:4548 */
 
-/* BEGIN TYPEDEF u_int8_t LOC=./src/b2sum.merge.c:4578 */
-#line 4578 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_int8_t LOC=./src/b2sum.merge.c:4566 */
+#line 4566 "./src/b2sum.merge.c"
 typedef __uint8_t u_int8_t;
-/* END TYPEDEF u_int8_t LOC=./src/b2sum.merge.c:4578 */
+/* END TYPEDEF u_int8_t LOC=./src/b2sum.merge.c:4566 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/b2sum.merge.c:4590 */
-#line 4590
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/b2sum.merge.c:4578 */
+#line 4578
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/b2sum.merge.c:4590 */
+/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/b2sum.merge.c:4578 */
 
-/* BEGIN VARIABLE-DECL-EXTERN argmatch_die LOC=./src/b2sum.merge.c:4597 */
-#line 4597
+/* BEGIN VARIABLE-DECL-EXTERN argmatch_die LOC=./src/b2sum.merge.c:4585 */
+#line 4585
 extern void (*argmatch_die)(void) ;
-/* END VARIABLE-DECL-EXTERN argmatch_die LOC=./src/b2sum.merge.c:4597 */
+/* END VARIABLE-DECL-EXTERN argmatch_die LOC=./src/b2sum.merge.c:4585 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/b2sum.merge.c:4605 */
-#line 4605
+/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/b2sum.merge.c:4593 */
+#line 4593
 extern int ( __attribute__((__nonnull__(2,3))) scandirat64)(int __dfd , char const   * __restrict  __dir ,
                                                             struct dirent64 *** __restrict  __namelist ,
                                                             int (*__selector)(struct dirent64  const  * ) ,
                                                             int (*__cmp)(struct dirent64  const  ** ,
                                                                          struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/b2sum.merge.c:4605 */
+/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/b2sum.merge.c:4593 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_14tm_envp LOC=UNKNOWN */
-char **_TIG_IZ_14tm_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_14tm_envp LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF __quad_t LOC=./src/b2sum.merge.c:4613 */
-#line 4613 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __quad_t LOC=./src/b2sum.merge.c:4601 */
+#line 4601 "./src/b2sum.merge.c"
 typedef long __quad_t;
-/* END TYPEDEF __quad_t LOC=./src/b2sum.merge.c:4613 */
+/* END TYPEDEF __quad_t LOC=./src/b2sum.merge.c:4601 */
 
-/* BEGIN TYPEDEF quad_t LOC=./src/b2sum.merge.c:4617 */
-#line 4617 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF quad_t LOC=./src/b2sum.merge.c:4605 */
+#line 4605 "./src/b2sum.merge.c"
 typedef __quad_t quad_t;
-/* END TYPEDEF quad_t LOC=./src/b2sum.merge.c:4617 */
+/* END TYPEDEF quad_t LOC=./src/b2sum.merge.c:4605 */
 
 /* BEGIN FUNCTION-DECL blake2b_increment_counter LOC=UNKNOWN */
 static void blake2b_increment_counter(blake2b_state *S , uint64_t const   inc ) ;
@@ -9680,70 +9660,70 @@ static void blake2b_increment_counter(blake2b_state *S , uint64_t const   inc ) 
    _Complex float __builtin_casinf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_casinf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/b2sum.merge.c:4649 */
-#line 4649
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/b2sum.merge.c:4637 */
+#line 4637
 extern int set_quoting_flags(struct quoting_options *o , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/b2sum.merge.c:4649 */
+/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/b2sum.merge.c:4637 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/b2sum.merge.c:4658 */
-#line 4658
+/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/b2sum.merge.c:4646 */
+#line 4646
 extern time_t rpl_time(time_t *__tp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/b2sum.merge.c:4658 */
+/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/b2sum.merge.c:4646 */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cexpl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/b2sum.merge.c:4666 */
-#line 4666 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/b2sum.merge.c:4654 */
+#line 4654 "./src/b2sum.merge.c"
 typedef int __kernel_mqd_t;
-/* END TYPEDEF __kernel_mqd_t LOC=./src/b2sum.merge.c:4666 */
+/* END TYPEDEF __kernel_mqd_t LOC=./src/b2sum.merge.c:4654 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fmaf16(_Float16  , _Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:4679 */
-#line 4679 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:4667 */
+#line 4667 "./src/b2sum.merge.c"
 union __anonunion_pthread_mutexattr_t_488594144 {
    char __size[4] ;
    int __align ;
 };
-/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:4679 */
+/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/b2sum.merge.c:4667 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/b2sum.merge.c:4686 */
-#line 4686
+/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/b2sum.merge.c:4674 */
+#line 4674
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgid)(__pid_t __pid ,
                                                                               __pid_t __pgid ) ;
-/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/b2sum.merge.c:4686 */
+/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/b2sum.merge.c:4674 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/b2sum.merge.c:4691 */
-#line 4691
+/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/b2sum.merge.c:4679 */
+#line 4679
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pipe)(int *__pipedes ) ;
-/* END FUNCTION-DECL-EXTERN pipe LOC=./src/b2sum.merge.c:4691 */
+/* END FUNCTION-DECL-EXTERN pipe LOC=./src/b2sum.merge.c:4679 */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/b2sum.merge.c:4695 */
-#line 4695
+/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/b2sum.merge.c:4683 */
+#line 4683
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __leaf__)) initstate_r)(unsigned int __seed ,
                                                                                                     char * __restrict  __statebuf ,
                                                                                                     size_t __statelen ,
                                                                                                     struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/b2sum.merge.c:4695 */
+/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/b2sum.merge.c:4683 */
 
 /* BEGIN FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_inf(void) ;  */
 /* END FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/b2sum.merge.c:4729 */
-#line 4729
+/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/b2sum.merge.c:4713 */
+#line 4713
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/b2sum.merge.c:4729 */
+/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/b2sum.merge.c:4713 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff LOC=BUILTIN */
 /* compiler builtin: 
@@ -9765,52 +9745,52 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
    void __builtin_free(void * ) ;  */
 /* END FUNCTION-DECL __builtin_free LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/b2sum.merge.c:4791 */
-#line 4791
+/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/b2sum.merge.c:4775 */
+#line 4775
 extern void close_stdin_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/b2sum.merge.c:4791 */
+/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/b2sum.merge.c:4775 */
 
 /* BEGIN FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_convertvector(...) ;  */
 /* END FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/b2sum.merge.c:4800 */
-#line 4800
+/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/b2sum.merge.c:4784 */
+#line 4784
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execle)(char const   *__path ,
                                                                                                char const   *__arg 
                                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN execle LOC=./src/b2sum.merge.c:4800 */
+/* END FUNCTION-DECL-EXTERN execle LOC=./src/b2sum.merge.c:4784 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/b2sum.merge.c:4820 */
-#line 4820
+/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/b2sum.merge.c:4804 */
+#line 4804
 extern void *xicalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/b2sum.merge.c:4820 */
+/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/b2sum.merge.c:4804 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/b2sum.merge.c:4825 */
-#line 4825
+/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/b2sum.merge.c:4809 */
+#line 4809
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) lcong48)(unsigned short *__param ) ;
-/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/b2sum.merge.c:4825 */
+/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/b2sum.merge.c:4809 */
 
-/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/b2sum.merge.c:4848 */
-#line 4848
+/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/b2sum.merge.c:4832 */
+#line 4832
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) acct)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN acct LOC=./src/b2sum.merge.c:4848 */
+/* END FUNCTION-DECL-EXTERN acct LOC=./src/b2sum.merge.c:4832 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/b2sum.merge.c:4842 */
-#line 4842
+/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/b2sum.merge.c:4826 */
+#line 4826
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresuid)(__uid_t __ruid ,
                                                                                 __uid_t __euid ,
                                                                                 __uid_t __suid ) ;
-/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/b2sum.merge.c:4842 */
+/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/b2sum.merge.c:4826 */
 
-/* BEGIN STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:4852 */
-#line 4852 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:4836 */
+#line 4836 "./src/b2sum.merge.c"
 struct __anonstruct___kernel_fsid_t_990674702 {
    int val[2] ;
 };
-/* END STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:4852 */
+/* END STRUCT __anonstruct___kernel_fsid_t_990674702 LOC=./src/b2sum.merge.c:4836 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -9827,17 +9807,17 @@ struct __anonstruct___kernel_fsid_t_990674702 {
    long double __builtin_sinhl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/b2sum.merge.c:4883 */
-#line 4883
+/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/b2sum.merge.c:4867 */
+#line 4867
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaction)(int __sig ,
                                                                                 struct sigaction  const  * __restrict  __act ,
                                                                                 struct sigaction * __restrict  __oact ) ;
-/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/b2sum.merge.c:4883 */
+/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/b2sum.merge.c:4867 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/b2sum.merge.c:4889 */
-#line 4889
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/b2sum.merge.c:4873 */
+#line 4873
 extern int ( __attribute__((__nonnull__(1))) mkstemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/b2sum.merge.c:4889 */
+/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/b2sum.merge.c:4873 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcb LOC=BUILTIN */
 /* compiler builtin: 
@@ -9845,15 +9825,15 @@ extern int ( __attribute__((__nonnull__(1))) mkstemp)(char *__template ) ;
                                  unsigned char const    , unsigned char * ) ;  */
 /* END FUNCTION-DECL __builtin_addcb LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xs_final LOC=./src/b2sum.merge.c:4934 */
-#line 4934
+/* BEGIN FUNCTION-DECL-EXTERN blake2xs_final LOC=./src/b2sum.merge.c:4918 */
+#line 4918
 extern int blake2xs_final(blake2xs_state *S , void *out , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xs_final LOC=./src/b2sum.merge.c:4934 */
+/* END FUNCTION-DECL-EXTERN blake2xs_final LOC=./src/b2sum.merge.c:4918 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/b2sum.merge.c:4956 */
-#line 4956
+/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/b2sum.merge.c:4940 */
+#line 4940
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
-/* END FUNCTION-DECL-EXTERN getumask LOC=./src/b2sum.merge.c:4956 */
+/* END FUNCTION-DECL-EXTERN getumask LOC=./src/b2sum.merge.c:4940 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemmove LOC=BUILTIN */
 /* compiler builtin: 
@@ -9866,85 +9846,85 @@ extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getuma
    _Float128 __builtin_log10f128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/b2sum.merge.c:4983 */
-#line 4983
+/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/b2sum.merge.c:4967 */
+#line 4967
 extern int __uflow(FILE * ) ;
-/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/b2sum.merge.c:4983 */
+/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/b2sum.merge.c:4967 */
 
-/* BEGIN TYPEDEF uint_fast16_t LOC=./src/b2sum.merge.c:5038 */
-#line 5038 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_fast16_t LOC=./src/b2sum.merge.c:5022 */
+#line 5022 "./src/b2sum.merge.c"
 typedef unsigned long uint_fast16_t;
-/* END TYPEDEF uint_fast16_t LOC=./src/b2sum.merge.c:5038 */
+/* END TYPEDEF uint_fast16_t LOC=./src/b2sum.merge.c:5022 */
 
-/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/b2sum.merge.c:5046 */
-#line 5046 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/b2sum.merge.c:5030 */
+#line 5030 "./src/b2sum.merge.c"
 typedef __kernel_long_t __kernel_ssize_t;
-/* END TYPEDEF __kernel_ssize_t LOC=./src/b2sum.merge.c:5046 */
+/* END TYPEDEF __kernel_ssize_t LOC=./src/b2sum.merge.c:5030 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/b2sum.merge.c:5056 */
-#line 5056
+/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/b2sum.merge.c:5040 */
+#line 5040
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) execveat)(int __fd ,
                                                                                                  char const   *__path ,
                                                                                                  char **__argv ,
                                                                                                  char **__envp ,
                                                                                                  int __flags ) ;
-/* END FUNCTION-DECL-EXTERN execveat LOC=./src/b2sum.merge.c:5056 */
+/* END FUNCTION-DECL-EXTERN execveat LOC=./src/b2sum.merge.c:5040 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xdectoumax LOC=./src/b2sum.merge.c:5088 */
-#line 5088
+/* BEGIN FUNCTION-DECL-EXTERN xdectoumax LOC=./src/b2sum.merge.c:5072 */
+#line 5072
 extern uintmax_t ( __attribute__((__nonnull__(1,5))) xdectoumax)(char const   *n_str ,
                                                                  uintmax_t min , uintmax_t max ,
                                                                  char const   *suffixes ,
                                                                  char const   *err ,
                                                                  int err_exit ) ;
-/* END FUNCTION-DECL-EXTERN xdectoumax LOC=./src/b2sum.merge.c:5088 */
+/* END FUNCTION-DECL-EXTERN xdectoumax LOC=./src/b2sum.merge.c:5072 */
 
 /* BEGIN FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_umul_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/b2sum.merge.c:5101 */
-#line 5101
+/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/b2sum.merge.c:5085 */
+#line 5085
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) explicit_bzero)(void *__s ,
                                                                                                       size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/b2sum.merge.c:5101 */
+/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/b2sum.merge.c:5085 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/b2sum.merge.c:5096 */
-#line 5096
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/b2sum.merge.c:5080 */
+#line 5080
 extern char *quotearg_alloc(char const   *arg , size_t argsize , struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/b2sum.merge.c:5096 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/b2sum.merge.c:5080 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/b2sum.merge.c:5142 */
-#line 5142
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/b2sum.merge.c:5126 */
+#line 5126
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/b2sum.merge.c:5142 */
+/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/b2sum.merge.c:5126 */
 
 /* BEGIN FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_prefetch(void const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/b2sum.merge.c:5137 */
-#line 5137
+/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/b2sum.merge.c:5121 */
+#line 5121
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkfifo)(char const   *__path ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/b2sum.merge.c:5137 */
+/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/b2sum.merge.c:5121 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/b2sum.merge.c:5166 */
-#line 5166
+/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/b2sum.merge.c:5150 */
+#line 5150
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcasestr)(char const   *__haystack ,
                                                                                                      char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/b2sum.merge.c:5166 */
+/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/b2sum.merge.c:5150 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/b2sum.merge.c:5171 */
-#line 5171
+/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/b2sum.merge.c:5155 */
+#line 5155
 extern int getchar(void) ;
-/* END FUNCTION-DECL-EXTERN getchar LOC=./src/b2sum.merge.c:5171 */
+/* END FUNCTION-DECL-EXTERN getchar LOC=./src/b2sum.merge.c:5155 */
 
 /* BEGIN FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -9956,149 +9936,149 @@ extern int getchar(void) ;
    int __builtin_clrsbl(long  ) ;  */
 /* END FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_288797321 LOC=./src/b2sum.merge.c:5185 */
-#line 5185
+/* BEGIN ENUM __anonenum_288797321 LOC=./src/b2sum.merge.c:5169 */
+#line 5169
 enum __anonenum_288797321 {
     EXIT_TIMEDOUT = 124,
     EXIT_CANCELED = 125,
     EXIT_CANNOT_INVOKE = 126,
     EXIT_ENOENT = 127
 } ;
-/* END ENUM __anonenum_288797321 LOC=./src/b2sum.merge.c:5185 */
+/* END ENUM __anonenum_288797321 LOC=./src/b2sum.merge.c:5169 */
 
-/* BEGIN FUNCTION-DECL lchownat LOC=./src/b2sum.merge.c:5199 */
-#line 5199
+/* BEGIN FUNCTION-DECL lchownat LOC=./src/b2sum.merge.c:5183 */
+#line 5183
 __inline int lchownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
-/* END FUNCTION-DECL lchownat LOC=./src/b2sum.merge.c:5199 */
+/* END FUNCTION-DECL lchownat LOC=./src/b2sum.merge.c:5183 */
 
-/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/b2sum.merge.c:5212 */
-#line 5212
+/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/b2sum.merge.c:5196 */
+#line 5196
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isatty)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN isatty LOC=./src/b2sum.merge.c:5212 */
+/* END FUNCTION-DECL-EXTERN isatty LOC=./src/b2sum.merge.c:5196 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/b2sum.merge.c:5222 */
-#line 5222
+/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/b2sum.merge.c:5206 */
+#line 5206
 extern size_t dir_len(char const   *file )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/b2sum.merge.c:5222 */
+/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/b2sum.merge.c:5206 */
 
 /* BEGIN FUNCTION-DECL print_filename LOC=UNKNOWN */
 static void print_filename(char const   *file , _Bool escape ) ;
 /* END FUNCTION-DECL print_filename LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/b2sum.merge.c:5234 */
-#line 5234
+/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/b2sum.merge.c:5218 */
+#line 5218
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) seekdir)(DIR *__dirp ,
                                                                                                long __pos ) ;
-/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/b2sum.merge.c:5234 */
+/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/b2sum.merge.c:5218 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/b2sum.merge.c:5239 */
-#line 5239
+/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/b2sum.merge.c:5223 */
+#line 5223
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2), __leaf__)) getdents64)(int __fd ,
                                                                                                        void *__buffer ,
                                                                                                        size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/b2sum.merge.c:5239 */
+/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/b2sum.merge.c:5223 */
 
 /* BEGIN VARIABLE-DEF blake2b_IV LOC=UNKNOWN */
 static uint64_t blake2b_IV[8]  ;
 /* END VARIABLE-DEF blake2b_IV LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/b2sum.merge.c:5261 */
-#line 5261
+/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/b2sum.merge.c:5245 */
+#line 5245
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) atol)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atol LOC=./src/b2sum.merge.c:5261 */
+/* END FUNCTION-DECL-EXTERN atol LOC=./src/b2sum.merge.c:5245 */
 
 /* BEGIN FUNCTION-DECL valid_digits LOC=UNKNOWN */
 static _Bool __attribute__((__pure__))  valid_digits(unsigned char const   *s , size_t len ) ;
 /* END FUNCTION-DECL valid_digits LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/b2sum.merge.c:5295 */
-#line 5295
+/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/b2sum.merge.c:5279 */
+#line 5279
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) seed48_r)(unsigned short *__seed16v ,
                                                                                                  struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/b2sum.merge.c:5295 */
+/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/b2sum.merge.c:5279 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/b2sum.merge.c:5305 */
-#line 5305
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/b2sum.merge.c:5289 */
+#line 5289
 extern int ( __attribute__((__nonnull__(1))) mkstemps)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/b2sum.merge.c:5305 */
+/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/b2sum.merge.c:5289 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_saddll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF argmatch_exit_fn LOC=./src/b2sum.merge.c:5309 */
-#line 5309 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF argmatch_exit_fn LOC=./src/b2sum.merge.c:5293 */
+#line 5293 "./src/b2sum.merge.c"
 typedef void (*argmatch_exit_fn)(void);
-/* END TYPEDEF argmatch_exit_fn LOC=./src/b2sum.merge.c:5309 */
+/* END TYPEDEF argmatch_exit_fn LOC=./src/b2sum.merge.c:5293 */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/b2sum.merge.c:5322 */
-#line 5322
+/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/b2sum.merge.c:5306 */
+#line 5306
 extern FILE *( __attribute__((__nonnull__(3))) freopen64)(char const   * __restrict  __filename ,
                                                           char const   * __restrict  __modes ,
                                                           FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/b2sum.merge.c:5322 */
+/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/b2sum.merge.c:5306 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539 LOC=./src/b2sum.merge.c:959 */
 #line 959
 enum __anonenum_23175539 ;
 /* END ENUM-DECL __anonenum_23175539 LOC=./src/b2sum.merge.c:959 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/b2sum.merge.c:5332 */
-#line 5332
+/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/b2sum.merge.c:5316 */
+#line 5316
 extern int ( __attribute__((__nonnull__(1))) fseeko)(FILE *__stream , __off_t __off ,
                                                      int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/b2sum.merge.c:5332 */
+/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/b2sum.merge.c:5316 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/b2sum.merge.c:5348 */
-#line 5348
+/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/b2sum.merge.c:5332 */
+#line 5332
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcat)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcat LOC=./src/b2sum.merge.c:5348 */
+/* END FUNCTION-DECL-EXTERN strcat LOC=./src/b2sum.merge.c:5332 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/b2sum.merge.c:5342 */
-#line 5342
+/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/b2sum.merge.c:5326 */
+#line 5326
 extern size_t ( __attribute__((__nonnull__(4))) fwrite_unlocked)(void const   * __restrict  __ptr ,
                                                                  size_t __size , size_t __n ,
                                                                  FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/b2sum.merge.c:5342 */
+/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/b2sum.merge.c:5326 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/b2sum.merge.c:5353 */
-#line 5353
+/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/b2sum.merge.c:5337 */
+#line 5337
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dgettext)(char const   *__domainname ,
                                                                                  char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/b2sum.merge.c:5353 */
+/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/b2sum.merge.c:5337 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/b2sum.merge.c:5362 */
-#line 5362
+/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/b2sum.merge.c:5346 */
+#line 5346
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) __memcmpeq)(void const   *__s1 ,
                                                                                                    void const   *__s2 ,
                                                                                                    size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/b2sum.merge.c:5362 */
+/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/b2sum.merge.c:5346 */
 
-/* BEGIN FUNCTION-DECL chmodat LOC=./src/b2sum.merge.c:5368 */
-#line 5368
+/* BEGIN FUNCTION-DECL chmodat LOC=./src/b2sum.merge.c:5352 */
+#line 5352
 __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
-/* END FUNCTION-DECL chmodat LOC=./src/b2sum.merge.c:5368 */
+/* END FUNCTION-DECL chmodat LOC=./src/b2sum.merge.c:5352 */
 
-/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/b2sum.merge.c:5376 */
-#line 5376 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/b2sum.merge.c:5360 */
+#line 5360 "./src/b2sum.merge.c"
 typedef void (*__kernel_sighandler_t)(int  );
-/* END TYPEDEF __kernel_sighandler_t LOC=./src/b2sum.merge.c:5376 */
+/* END TYPEDEF __kernel_sighandler_t LOC=./src/b2sum.merge.c:5360 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/b2sum.merge.c:5380 */
-#line 5380
+/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/b2sum.merge.c:5364 */
+#line 5364
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) ssignal)(int __sig ,
                                                                                          void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/b2sum.merge.c:5380 */
+/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/b2sum.merge.c:5364 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remquof(float  , float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 
-/* BEGIN STRUCT flock64 LOC=./src/b2sum.merge.c:5410 */
-#line 5410 "./src/b2sum.merge.c"
+/* BEGIN STRUCT flock64 LOC=./src/b2sum.merge.c:5394 */
+#line 5394 "./src/b2sum.merge.c"
 struct flock64 {
    short l_type ;
    short l_whence ;
@@ -10106,7 +10086,7 @@ struct flock64 {
    __off64_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock64 LOC=./src/b2sum.merge.c:5410 */
+/* END STRUCT flock64 LOC=./src/b2sum.merge.c:5394 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrtl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10118,15 +10098,15 @@ struct flock64 {
    float __builtin_nextafterf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_nextafterf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/b2sum.merge.c:5434 */
-#line 5434
+/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/b2sum.merge.c:5418 */
+#line 5418
 extern int optind ;
-/* END VARIABLE-DECL-EXTERN optind LOC=./src/b2sum.merge.c:5434 */
+/* END VARIABLE-DECL-EXTERN optind LOC=./src/b2sum.merge.c:5418 */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/b2sum.merge.c:5430 */
-#line 5430
+/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/b2sum.merge.c:5414 */
+#line 5414
 extern char *program_invocation_name ;
-/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/b2sum.merge.c:5430 */
+/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/b2sum.merge.c:5414 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10138,12 +10118,12 @@ extern char *program_invocation_name ;
    long double __builtin_roundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/b2sum.merge.c:5476 */
-#line 5476
+/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/b2sum.merge.c:5460 */
+#line 5460
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncmp)(char const   *__s1 ,
                                                                                                 char const   *__s2 ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/b2sum.merge.c:5476 */
+/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/b2sum.merge.c:5460 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10154,52 +10134,48 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 static _Bool __attribute__((__pure__))  problematic_chars(char const   *s ) ;
 /* END FUNCTION-DECL problematic_chars LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/b2sum.merge.c:5508 */
-#line 5508
+/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/b2sum.merge.c:5492 */
+#line 5492
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) ecvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/b2sum.merge.c:5508 */
+/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/b2sum.merge.c:5492 */
 
-/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/b2sum.merge.c:5520 */
-#line 5520
+/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/b2sum.merge.c:5504 */
+#line 5504
 extern int opterr ;
-/* END VARIABLE-DECL-EXTERN opterr LOC=./src/b2sum.merge.c:5520 */
+/* END VARIABLE-DECL-EXTERN opterr LOC=./src/b2sum.merge.c:5504 */
 
 /* BEGIN FUNCTION-DECL c_iscntrl LOC=UNKNOWN */
 __inline _Bool c_iscntrl(int c ) ;
 /* END FUNCTION-DECL c_iscntrl LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_14tm_argv LOC=UNKNOWN */
-char **_TIG_IZ_14tm_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_14tm_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/b2sum.merge.c:5541 */
-#line 5541
+/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/b2sum.merge.c:5525 */
+#line 5525
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/b2sum.merge.c:5541 */
+/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/b2sum.merge.c:5525 */
 
 /* BEGIN STRUCT-DECL dirent LOC=./src/b2sum.merge.c:1207 */
 #line 1207
 struct dirent ;
 /* END STRUCT-DECL dirent LOC=./src/b2sum.merge.c:1207 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/b2sum.merge.c:5555 */
-#line 5555
+/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/b2sum.merge.c:5539 */
+#line 5539
 extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTART instead"))) int ( __attribute__((__leaf__)) siginterrupt)(int __sig ,
                                                                                                                                             int __interrupt ) ;
-/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/b2sum.merge.c:5555 */
+/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/b2sum.merge.c:5539 */
 
 /* BEGIN ENUM-DECL __anonenum_825626741 LOC=./src/b2sum.merge.c:1171 */
 #line 1171
 enum __anonenum_825626741 ;
 /* END ENUM-DECL __anonenum_825626741 LOC=./src/b2sum.merge.c:1171 */
 
-/* BEGIN FUNCTION-DECL timetostr LOC=./src/b2sum.merge.c:5564 */
-#line 5564
+/* BEGIN FUNCTION-DECL timetostr LOC=./src/b2sum.merge.c:5548 */
+#line 5548
 __inline static char *timetostr(time_t t , char *buf ) ;
-/* END FUNCTION-DECL timetostr LOC=./src/b2sum.merge.c:5564 */
+/* END FUNCTION-DECL timetostr LOC=./src/b2sum.merge.c:5548 */
 
 /* BEGIN FUNCTION-DECL __builtin_strspn LOC=BUILTIN */
 /* compiler builtin: 
@@ -10220,21 +10196,21 @@ static void *(* volatile  memset_v)(void * , int  , size_t  ) ;
 struct blake2b_param__  __attribute__((__packed__)) ;
 /* END STRUCT-DECL blake2b_param__ LOC=./src/b2sum.merge.c:1191 */
 
-/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/b2sum.merge.c:5643 */
-#line 5643
+/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/b2sum.merge.c:5627 */
+#line 5627
 extern char *tzname[2] ;
-/* END VARIABLE-DECL-EXTERN tzname LOC=./src/b2sum.merge.c:5643 */
+/* END VARIABLE-DECL-EXTERN tzname LOC=./src/b2sum.merge.c:5627 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/b2sum.merge.c:1215 */
 #line 1215
 union __anonunion_pthread_condattr_t_488594145 ;
 /* END UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/b2sum.merge.c:1215 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/b2sum.merge.c:5647 */
-#line 5647
+/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/b2sum.merge.c:5631 */
+#line 5631
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvp)(char const   *__file ,
                                                                                                char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execvp LOC=./src/b2sum.merge.c:5647 */
+/* END FUNCTION-DECL-EXTERN execvp LOC=./src/b2sum.merge.c:5631 */
 
 /* BEGIN FUNCTION-DECL __builtin_sin LOC=BUILTIN */
 /* compiler builtin: 
@@ -10256,134 +10232,142 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    _Float128 __builtin_hypotf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_hypotf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/b2sum.merge.c:5677 */
-#line 5677 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/b2sum.merge.c:5661 */
+#line 5661 "./src/b2sum.merge.c"
 union __anonunion____missing_field_name_501150464 {
    struct _fpstate *fpstate ;
    __uint64_t __fpstate_word ;
 };
-/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/b2sum.merge.c:5677 */
+/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/b2sum.merge.c:5661 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:1255 */
 #line 1255
 union __anonunion_pthread_mutex_t_335460617 ;
 /* END UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:1255 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/b2sum.merge.c:5693 */
-#line 5693
+/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/b2sum.merge.c:5677 */
+#line 5677
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atexit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN atexit LOC=./src/b2sum.merge.c:5693 */
+/* END FUNCTION-DECL-EXTERN atexit LOC=./src/b2sum.merge.c:5677 */
 
-/* BEGIN TYPEDEF __u_quad_t LOC=./src/b2sum.merge.c:5697 */
-#line 5697 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u_quad_t LOC=./src/b2sum.merge.c:5681 */
+#line 5681 "./src/b2sum.merge.c"
 typedef unsigned long __u_quad_t;
-/* END TYPEDEF __u_quad_t LOC=./src/b2sum.merge.c:5697 */
+/* END TYPEDEF __u_quad_t LOC=./src/b2sum.merge.c:5681 */
 
-/* BEGIN TYPEDEF u_quad_t LOC=./src/b2sum.merge.c:5701 */
-#line 5701 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_quad_t LOC=./src/b2sum.merge.c:5685 */
+#line 5685 "./src/b2sum.merge.c"
 typedef __u_quad_t u_quad_t;
-/* END TYPEDEF u_quad_t LOC=./src/b2sum.merge.c:5701 */
+/* END TYPEDEF u_quad_t LOC=./src/b2sum.merge.c:5685 */
 
-/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/b2sum.merge.c:5705 */
-#line 5705
+/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/b2sum.merge.c:5689 */
+#line 5689
 __inline static void emit_ancillary_info(char const   *program ) ;
-/* END FUNCTION-DECL emit_ancillary_info LOC=./src/b2sum.merge.c:5705 */
+/* END FUNCTION-DECL emit_ancillary_info LOC=./src/b2sum.merge.c:5689 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/b2sum.merge.c:5720 */
-#line 5720
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/b2sum.merge.c:5704 */
+#line 5704
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncasecmp)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/b2sum.merge.c:5720 */
+/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/b2sum.merge.c:5704 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cpowl(_Complex long double  , _Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/b2sum.merge.c:5714 */
-#line 5714
+/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/b2sum.merge.c:5698 */
+#line 5698
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dcgettext)(char const   *__domainname ,
                                                                                     char const   *__msgid ,
                                                                                     int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/b2sum.merge.c:5714 */
+/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/b2sum.merge.c:5698 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/b2sum.merge.c:5740 */
-#line 5740
+/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/b2sum.merge.c:5724 */
+#line 5724
 extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
-/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/b2sum.merge.c:5740 */
+/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/b2sum.merge.c:5724 */
 
 /* BEGIN ENUM-DECL __anonenum_552717108 LOC=./src/b2sum.merge.c:1111 */
 #line 1111
 enum __anonenum_552717108 ;
 /* END ENUM-DECL __anonenum_552717108 LOC=./src/b2sum.merge.c:1111 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/b2sum.merge.c:5754 */
-#line 5754
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_argv LOC=UNKNOWN */
+char **_TIG_IZ_smv4_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_argv LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/b2sum.merge.c:5742 */
+#line 5742
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ttyname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/b2sum.merge.c:5754 */
+/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/b2sum.merge.c:5742 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_argv LOC=UNKNOWN */
+char **_TIG_IZ_smv4_argv ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_islessgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/b2sum.merge.c:5765 */
-#line 5765
+/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/b2sum.merge.c:5757 */
+#line 5757
 extern void *xnmalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/b2sum.merge.c:5765 */
+/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/b2sum.merge.c:5757 */
 
-/* BEGIN UNION pthread_attr_t LOC=./src/b2sum.merge.c:5775 */
-#line 5775 "./src/b2sum.merge.c"
+/* BEGIN UNION pthread_attr_t LOC=./src/b2sum.merge.c:5767 */
+#line 5767 "./src/b2sum.merge.c"
 union pthread_attr_t {
    char __size[56] ;
    long __align ;
 };
-/* END UNION pthread_attr_t LOC=./src/b2sum.merge.c:5775 */
+/* END UNION pthread_attr_t LOC=./src/b2sum.merge.c:5767 */
 
 /* BEGIN FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_clog(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/b2sum.merge.c:5793 */
-#line 5793
+/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/b2sum.merge.c:5785 */
+#line 5785
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strnlen)(char const   *__string ,
                                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/b2sum.merge.c:5793 */
+/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/b2sum.merge.c:5785 */
 
 /* BEGIN FUNCTION-DECL blake2 LOC=UNKNOWN */
 int blake2(void *out , size_t outlen , void const   *in , size_t inlen , void const   *key ,
            size_t keylen ) ;
 /* END FUNCTION-DECL blake2 LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoul LOC=./src/b2sum.merge.c:5803 */
-#line 5803
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoul LOC=./src/b2sum.merge.c:5795 */
+#line 5795
 extern strtol_error xstrtoul(char const   * , char ** , int  , unsigned long * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoul LOC=./src/b2sum.merge.c:5803 */
+/* END FUNCTION-DECL-EXTERN xstrtoul LOC=./src/b2sum.merge.c:5795 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/b2sum.merge.c:5822 */
-#line 5822
+/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/b2sum.merge.c:5814 */
+#line 5814
 extern  __attribute__((__noreturn__)) void openat_save_fail(int  ) ;
-/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/b2sum.merge.c:5822 */
+/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/b2sum.merge.c:5814 */
 
-/* BEGIN TYPEDEF u_int32_t LOC=./src/b2sum.merge.c:5826 */
-#line 5826 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF u_int32_t LOC=./src/b2sum.merge.c:5818 */
+#line 5818 "./src/b2sum.merge.c"
 typedef __uint32_t u_int32_t;
-/* END TYPEDEF u_int32_t LOC=./src/b2sum.merge.c:5826 */
+/* END TYPEDEF u_int32_t LOC=./src/b2sum.merge.c:5818 */
 
 /* BEGIN FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_snprintf(char * , unsigned long long  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/b2sum.merge.c:5835 */
-#line 5835
+/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/b2sum.merge.c:5827 */
+#line 5827
 extern FILE *fopen(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen LOC=./src/b2sum.merge.c:5835 */
+/* END FUNCTION-DECL-EXTERN fopen LOC=./src/b2sum.merge.c:5827 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10391,16 +10375,20 @@ extern FILE *fopen(char const   * __restrict  __filename , char const   * __rest
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/b2sum.merge.c:5845 */
-#line 5845
+/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/b2sum.merge.c:5837 */
+#line 5837
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate)(char const   *__file ,
                                                                                                __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate LOC=./src/b2sum.merge.c:5845 */
+/* END FUNCTION-DECL-EXTERN truncate LOC=./src/b2sum.merge.c:5837 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/b2sum.merge.c:5859 */
-#line 5859
+/* BEGIN VARIABLE-DECL _TIG_IZ_smv4_argc LOC=UNKNOWN */
+int _TIG_IZ_smv4_argc ;
+/* END VARIABLE-DECL _TIG_IZ_smv4_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/b2sum.merge.c:5855 */
+#line 5855
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mkdtemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/b2sum.merge.c:5859 */
+/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/b2sum.merge.c:5855 */
 
 /* BEGIN FUNCTION-DECL __builtin_acoshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10412,10 +10400,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
    void *__builtin___memmove_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memmove_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __thrd_t LOC=./src/b2sum.merge.c:5883 */
-#line 5883 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __thrd_t LOC=./src/b2sum.merge.c:5879 */
+#line 5879 "./src/b2sum.merge.c"
 typedef unsigned long __thrd_t;
-/* END TYPEDEF __thrd_t LOC=./src/b2sum.merge.c:5883 */
+/* END TYPEDEF __thrd_t LOC=./src/b2sum.merge.c:5879 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfc LOC=BUILTIN */
 /* compiler builtin: 
@@ -10427,24 +10415,24 @@ typedef unsigned long __thrd_t;
 enum __anonenum_556971655 ;
 /* END ENUM-DECL __anonenum_556971655 LOC=./src/b2sum.merge.c:1383 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/b2sum.merge.c:5901 */
-#line 5901
+/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/b2sum.merge.c:5897 */
+#line 5897
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) atof)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atof LOC=./src/b2sum.merge.c:5901 */
+/* END FUNCTION-DECL-EXTERN atof LOC=./src/b2sum.merge.c:5897 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_sinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/b2sum.merge.c:5941 */
-#line 5941
+/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/b2sum.merge.c:5937 */
+#line 5937
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bind_textdomain_codeset)(char const   *__domainname ,
                                                                                                 char const   *__codeset ) ;
-/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/b2sum.merge.c:5941 */
+/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/b2sum.merge.c:5937 */
 
-/* BEGIN STRUCT stat64 LOC=./src/b2sum.merge.c:5956 */
-#line 5956 "./src/b2sum.merge.c"
+/* BEGIN STRUCT stat64 LOC=./src/b2sum.merge.c:5952 */
+#line 5952 "./src/b2sum.merge.c"
 struct stat64 {
    __dev_t st_dev ;
    __ino64_t st_ino ;
@@ -10462,27 +10450,27 @@ struct stat64 {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat64 LOC=./src/b2sum.merge.c:5956 */
+/* END STRUCT stat64 LOC=./src/b2sum.merge.c:5952 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalbnf(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/b2sum.merge.c:5991 */
-#line 5991
+/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/b2sum.merge.c:5987 */
+#line 5987
 extern void set_program_name(char const   *argv0 ) ;
-/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/b2sum.merge.c:5991 */
+/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/b2sum.merge.c:5987 */
 
-/* BEGIN FUNCTION-DECL bad_cast LOC=./src/b2sum.merge.c:5995 */
-#line 5995
+/* BEGIN FUNCTION-DECL bad_cast LOC=./src/b2sum.merge.c:5991 */
+#line 5991
 __inline static char *bad_cast(char const   *s ) ;
-/* END FUNCTION-DECL bad_cast LOC=./src/b2sum.merge.c:5995 */
+/* END FUNCTION-DECL bad_cast LOC=./src/b2sum.merge.c:5991 */
 
-/* BEGIN TYPEDEF int_fast64_t LOC=./src/b2sum.merge.c:6016 */
-#line 6016 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_fast64_t LOC=./src/b2sum.merge.c:6012 */
+#line 6012 "./src/b2sum.merge.c"
 typedef long int_fast64_t;
-/* END TYPEDEF int_fast64_t LOC=./src/b2sum.merge.c:6016 */
+/* END TYPEDEF int_fast64_t LOC=./src/b2sum.merge.c:6012 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10490,17 +10478,17 @@ typedef long int_fast64_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/b2sum.merge.c:6040 */
-#line 6040
+/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/b2sum.merge.c:6036 */
+#line 6036
 extern  __attribute__((__nothrow__)) int vasprintf(char ** __restrict  __ptr , char const   * __restrict  __f ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/b2sum.merge.c:6040 */
+/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/b2sum.merge.c:6036 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/b2sum.merge.c:6035 */
-#line 6035
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/b2sum.merge.c:6031 */
+#line 6031
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64)(int __fd ,
                                                                                   __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/b2sum.merge.c:6035 */
+/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/b2sum.merge.c:6031 */
 
 /* BEGIN FUNCTION-DECL __builtin_nansl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10512,26 +10500,26 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64
    _Complex long double __builtin_csqrtl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrtl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/b2sum.merge.c:6098 */
-#line 6098
+/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/b2sum.merge.c:6094 */
+#line 6094
 extern int ( __attribute__((__nonnull__(1))) getc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc LOC=./src/b2sum.merge.c:6098 */
+/* END FUNCTION-DECL-EXTERN getc LOC=./src/b2sum.merge.c:6094 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parityl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/b2sum.merge.c:6106 */
-#line 6106
+/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/b2sum.merge.c:6102 */
+#line 6102
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(int __fd ,
                                                                                char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/b2sum.merge.c:6106 */
+/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/b2sum.merge.c:6102 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2bp_init LOC=./src/b2sum.merge.c:6111 */
-#line 6111
+/* BEGIN FUNCTION-DECL-EXTERN blake2bp_init LOC=./src/b2sum.merge.c:6107 */
+#line 6107
 extern int blake2bp_init(blake2bp_state *S , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2bp_init LOC=./src/b2sum.merge.c:6111 */
+/* END FUNCTION-DECL-EXTERN blake2bp_init LOC=./src/b2sum.merge.c:6107 */
 
 /* BEGIN FUNCTION-DECL __builtin_strlen LOC=BUILTIN */
 /* compiler builtin: 
@@ -10543,28 +10531,28 @@ extern int blake2bp_init(blake2bp_state *S , size_t outlen ) ;
    float __builtin_log1pf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/b2sum.merge.c:6125 */
-#line 6125
+/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/b2sum.merge.c:6121 */
+#line 6121
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime_l)(char const   * __restrict  __s ,
                                                                                    char const   * __restrict  __fmt ,
                                                                                    struct tm *__tp ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/b2sum.merge.c:6125 */
+/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/b2sum.merge.c:6121 */
 
 /* BEGIN STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/b2sum.merge.c:1323 */
 #line 1323
 struct __anonstruct___fsid_t_109580352 ;
 /* END STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/b2sum.merge.c:1323 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/b2sum.merge.c:6155 */
-#line 6155
+/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/b2sum.merge.c:6151 */
+#line 6151
 extern  __attribute__((__nothrow__)) __off_t ( __attribute__((__leaf__)) lseek)(int __fd ,
                                                                                 __off_t __offset ,
                                                                                 int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek LOC=./src/b2sum.merge.c:6155 */
+/* END FUNCTION-DECL-EXTERN lseek LOC=./src/b2sum.merge.c:6151 */
 
-/* BEGIN ENUM __anonenum_556971655 LOC=./src/b2sum.merge.c:6165 */
-#line 6165
+/* BEGIN ENUM __anonenum_556971655 LOC=./src/b2sum.merge.c:6161 */
+#line 6161
 enum __anonenum_556971655 {
     SI_ASYNCNL = -60,
     SI_DETHREAD = -7,
@@ -10577,7 +10565,7 @@ enum __anonenum_556971655 {
     SI_USER = 0,
     SI_KERNEL = 128
 } ;
-/* END ENUM __anonenum_556971655 LOC=./src/b2sum.merge.c:6165 */
+/* END ENUM __anonenum_556971655 LOC=./src/b2sum.merge.c:6161 */
 
 /* BEGIN FUNCTION-DECL __builtin_uaddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -10590,39 +10578,39 @@ enum __anonenum_556971655 {
    _Float128 __builtin_scalblnf128(_Float128  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/b2sum.merge.c:6199 */
-#line 6199
+/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/b2sum.merge.c:6195 */
+#line 6195
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/b2sum.merge.c:6199 */
+/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/b2sum.merge.c:6195 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/b2sum.merge.c:6191 */
-#line 6191
+/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/b2sum.merge.c:6187 */
+#line 6187
 extern int getpt(void) ;
-/* END FUNCTION-DECL-EXTERN getpt LOC=./src/b2sum.merge.c:6191 */
+/* END FUNCTION-DECL-EXTERN getpt LOC=./src/b2sum.merge.c:6187 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/b2sum.merge.c:6195 */
-#line 6195
+/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/b2sum.merge.c:6191 */
+#line 6191
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strfry)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN strfry LOC=./src/b2sum.merge.c:6195 */
+/* END FUNCTION-DECL-EXTERN strfry LOC=./src/b2sum.merge.c:6191 */
 
 /* BEGIN VARIABLE-DEF bsd_reversed LOC=UNKNOWN */
 static int bsd_reversed  ;
 /* END VARIABLE-DEF bsd_reversed LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/b2sum.merge.c:6234 */
-#line 6234
+/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/b2sum.merge.c:6230 */
+#line 6230
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) fpathconf)(int __fd ,
                                                                                  int __name ) ;
-/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/b2sum.merge.c:6234 */
+/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/b2sum.merge.c:6230 */
 
-/* BEGIN STRUCT itimerval LOC=./src/b2sum.merge.c:6239 */
-#line 6239 "./src/b2sum.merge.c"
+/* BEGIN STRUCT itimerval LOC=./src/b2sum.merge.c:6235 */
+#line 6235 "./src/b2sum.merge.c"
 struct itimerval {
    struct timeval it_interval ;
    struct timeval it_value ;
 };
-/* END STRUCT itimerval LOC=./src/b2sum.merge.c:6239 */
+/* END STRUCT itimerval LOC=./src/b2sum.merge.c:6235 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctzs LOC=BUILTIN */
 /* compiler builtin: 
@@ -10634,44 +10622,44 @@ struct itimerval {
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/b2sum.merge.c:6264 */
-#line 6264
+/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/b2sum.merge.c:6260 */
+#line 6260
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)(void) ;
-/* END FUNCTION-DECL-EXTERN getuid LOC=./src/b2sum.merge.c:6264 */
+/* END FUNCTION-DECL-EXTERN getuid LOC=./src/b2sum.merge.c:6260 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_log1pf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/b2sum.merge.c:6310 */
-#line 6310
+/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/b2sum.merge.c:6306 */
+#line 6306
 extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/b2sum.merge.c:6310 */
+/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/b2sum.merge.c:6306 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_truncl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/b2sum.merge.c:6306 */
-#line 6306
+/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/b2sum.merge.c:6302 */
+#line 6302
 extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/b2sum.merge.c:6306 */
+/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/b2sum.merge.c:6302 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/b2sum.merge.c:6319 */
-#line 6319
+/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/b2sum.merge.c:6315 */
+#line 6315
 extern  __attribute__((__nothrow__)) int obstack_printf(struct obstack * __restrict  __obstack ,
                                                         char const   * __restrict  __format 
                                                         , ...) ;
-/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/b2sum.merge.c:6319 */
+/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/b2sum.merge.c:6315 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/b2sum.merge.c:6339 */
-#line 6339
+/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/b2sum.merge.c:6335 */
+#line 6335
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencookie)(void * __restrict  __magic_cookie ,
                                                                                     char const   * __restrict  __modes ,
                                                                                     cookie_io_functions_t __io_funcs )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/b2sum.merge.c:6339 */
+/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/b2sum.merge.c:6335 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 /* compiler builtin: 
@@ -10683,31 +10671,31 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencook
    int __builtin_isgreaterequal(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/b2sum.merge.c:6345 */
-#line 6345
+/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/b2sum.merge.c:6341 */
+#line 6341
 extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/b2sum.merge.c:6345 */
+/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/b2sum.merge.c:6341 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/b2sum.merge.c:6364 */
-#line 6364
+/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/b2sum.merge.c:6360 */
+#line 6360
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime_r)(time_t const   * __restrict  __timer ,
                                                                                       struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/b2sum.merge.c:6364 */
+/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/b2sum.merge.c:6360 */
 
 /* BEGIN STRUCT-DECL _libc_fpstate LOC=./src/b2sum.merge.c:1339 */
 #line 1339
 struct _libc_fpstate ;
 /* END STRUCT-DECL _libc_fpstate LOC=./src/b2sum.merge.c:1339 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/b2sum.merge.c:6374 */
-#line 6374
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/b2sum.merge.c:6370 */
+#line 6370
 extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/b2sum.merge.c:6374 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/b2sum.merge.c:6370 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/b2sum.merge.c:6378 */
-#line 6378
+/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/b2sum.merge.c:6374 */
+#line 6374
 extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/b2sum.merge.c:6378 */
+/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/b2sum.merge.c:6374 */
 
 /* BEGIN FUNCTION-DECL __builtin_smul_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -10734,26 +10722,26 @@ extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
    double __builtin_copysign(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysign LOC=BUILTIN */
 
-/* BEGIN TYPEDEF clock_t LOC=./src/b2sum.merge.c:6449 */
-#line 6449 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF clock_t LOC=./src/b2sum.merge.c:6445 */
+#line 6445 "./src/b2sum.merge.c"
 typedef __clock_t clock_t;
-/* END TYPEDEF clock_t LOC=./src/b2sum.merge.c:6449 */
+/* END TYPEDEF clock_t LOC=./src/b2sum.merge.c:6445 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/b2sum.merge.c:6453 */
-#line 6453
+/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/b2sum.merge.c:6449 */
+#line 6449
 extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(void) ;
-/* END FUNCTION-DECL-EXTERN clock LOC=./src/b2sum.merge.c:6453 */
+/* END FUNCTION-DECL-EXTERN clock LOC=./src/b2sum.merge.c:6449 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_erfl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_erfl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xb_init_key LOC=./src/b2sum.merge.c:6504 */
-#line 6504
+/* BEGIN FUNCTION-DECL-EXTERN blake2xb_init_key LOC=./src/b2sum.merge.c:6500 */
+#line 6500
 extern int blake2xb_init_key(blake2xb_state *S , size_t const   outlen , void const   *key ,
                              size_t keylen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xb_init_key LOC=./src/b2sum.merge.c:6504 */
+/* END FUNCTION-DECL-EXTERN blake2xb_init_key LOC=./src/b2sum.merge.c:6500 */
 
 /* BEGIN FUNCTION-DECL __builtin_nans LOC=BUILTIN */
 /* compiler builtin: 
@@ -10770,16 +10758,16 @@ extern int blake2xb_init_key(blake2xb_state *S , size_t const   outlen , void co
    int __builtin_isinf_sign(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/b2sum.merge.c:6533 */
-#line 6533
+/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/b2sum.merge.c:6529 */
+#line 6529
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mblen)(char const   *__s ,
                                                                             size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mblen LOC=./src/b2sum.merge.c:6533 */
+/* END FUNCTION-DECL-EXTERN mblen LOC=./src/b2sum.merge.c:6529 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/b2sum.merge.c:6542 */
-#line 6542
+/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/b2sum.merge.c:6538 */
+#line 6538
 extern void *xrealloc(void *p , size_t s )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/b2sum.merge.c:6542 */
+/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/b2sum.merge.c:6538 */
 
 /* BEGIN ENUM-DECL __itimer_which LOC=./src/b2sum.merge.c:987 */
 #line 987
@@ -10796,12 +10784,8 @@ enum __itimer_which ;
    long double __builtin_ceill(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceill LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-int _TIG_IZ_BUUq_argc ;
-/* END VARIABLE-DECL _TIG_IZ_BUUq_argc LOC=UNKNOWN */
-
-/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/b2sum.merge.c:6598 */
-#line 6598 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/b2sum.merge.c:6590 */
+#line 6590 "./src/b2sum.merge.c"
 struct _fpx_sw_bytes {
    __uint32_t magic1 ;
    __uint32_t extended_size ;
@@ -10809,39 +10793,39 @@ struct _fpx_sw_bytes {
    __uint32_t xstate_size ;
    __uint32_t __glibc_reserved1[7] ;
 };
-/* END STRUCT _fpx_sw_bytes LOC=./src/b2sum.merge.c:6598 */
+/* END STRUCT _fpx_sw_bytes LOC=./src/b2sum.merge.c:6590 */
 
-/* BEGIN TYPEDEF __s128 LOC=./src/b2sum.merge.c:6613 */
-#line 6613 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __s128 LOC=./src/b2sum.merge.c:6605 */
+#line 6605 "./src/b2sum.merge.c"
 typedef __int128 __attribute__((__aligned__(16)))  __s128;
-/* END TYPEDEF __s128 LOC=./src/b2sum.merge.c:6613 */
+/* END TYPEDEF __s128 LOC=./src/b2sum.merge.c:6605 */
 
 /* BEGIN STRUCT-DECL _xmmreg LOC=./src/b2sum.merge.c:919 */
 #line 919
 struct _xmmreg ;
 /* END STRUCT-DECL _xmmreg LOC=./src/b2sum.merge.c:919 */
 
-/* BEGIN TYPEDEF sig_t LOC=./src/b2sum.merge.c:6632 */
-#line 6632 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF sig_t LOC=./src/b2sum.merge.c:6624 */
+#line 6624 "./src/b2sum.merge.c"
 typedef void (*sig_t)(int  );
-/* END TYPEDEF sig_t LOC=./src/b2sum.merge.c:6632 */
+/* END TYPEDEF sig_t LOC=./src/b2sum.merge.c:6624 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/b2sum.merge.c:6641 */
-#line 6641
+/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/b2sum.merge.c:6633 */
+#line 6633
 extern size_t base_len(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN base_len LOC=./src/b2sum.merge.c:6641 */
+/* END FUNCTION-DECL-EXTERN base_len LOC=./src/b2sum.merge.c:6633 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/b2sum.merge.c:6650 */
-#line 6650
+/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/b2sum.merge.c:6642 */
+#line 6642
 extern int getentropy(void *__buffer , size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/b2sum.merge.c:6650 */
+/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/b2sum.merge.c:6642 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/b2sum.merge.c:6654 */
-#line 6654
+/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/b2sum.merge.c:6646 */
+#line 6646
 extern  __attribute__((__nothrow__)) int obstack_vprintf(struct obstack * __restrict  __obstack ,
                                                          char const   * __restrict  __format ,
                                                          __gnuc_va_list __args ) ;
-/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/b2sum.merge.c:6654 */
+/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/b2sum.merge.c:6646 */
 
 /* BEGIN FUNCTION-DECL __builtin_fma LOC=BUILTIN */
 /* compiler builtin: 
@@ -10858,63 +10842,63 @@ enum blake2s_constant ;
 struct __anonstruct_div_t_773697287 ;
 /* END STRUCT-DECL __anonstruct_div_t_773697287 LOC=./src/b2sum.merge.c:1007 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/b2sum.merge.c:6709 */
-#line 6709
+/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/b2sum.merge.c:6701 */
+#line 6701
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setdomainname)(char const   *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/b2sum.merge.c:6709 */
+/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/b2sum.merge.c:6701 */
 
 /* BEGIN STRUCT-DECL drand48_data LOC=./src/b2sum.merge.c:1055 */
 #line 1055
 struct drand48_data ;
 /* END STRUCT-DECL drand48_data LOC=./src/b2sum.merge.c:1055 */
 
-/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/b2sum.merge.c:6728 */
-#line 6728 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/b2sum.merge.c:6720 */
+#line 6720 "./src/b2sum.merge.c"
 typedef unsigned int __kernel_uid_t;
-/* END TYPEDEF __kernel_uid_t LOC=./src/b2sum.merge.c:6728 */
+/* END TYPEDEF __kernel_uid_t LOC=./src/b2sum.merge.c:6720 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/b2sum.merge.c:6743 */
-#line 6743
+/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/b2sum.merge.c:6735 */
+#line 6735
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) umask)(__mode_t __mask ) ;
-/* END FUNCTION-DECL-EXTERN umask LOC=./src/b2sum.merge.c:6743 */
+/* END FUNCTION-DECL-EXTERN umask LOC=./src/b2sum.merge.c:6735 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/b2sum.merge.c:6755 */
-#line 6755
+/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/b2sum.merge.c:6747 */
+#line 6747
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) drand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/b2sum.merge.c:6755 */
+/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/b2sum.merge.c:6747 */
 
-/* BEGIN FUNCTION-DECL store64 LOC=./src/b2sum.merge.c:6751 */
-#line 6751
+/* BEGIN FUNCTION-DECL store64 LOC=./src/b2sum.merge.c:6743 */
+#line 6743
 __inline static void store64(void *dst , uint64_t w ) ;
-/* END FUNCTION-DECL store64 LOC=./src/b2sum.merge.c:6751 */
+/* END FUNCTION-DECL store64 LOC=./src/b2sum.merge.c:6743 */
 
-/* BEGIN FUNCTION-DECL-EXTERN argmatch_exact LOC=./src/b2sum.merge.c:6766 */
-#line 6766
+/* BEGIN FUNCTION-DECL-EXTERN argmatch_exact LOC=./src/b2sum.merge.c:6758 */
+#line 6758
 extern ptrdiff_t argmatch_exact(char const   *arg , char const   **arglist )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN argmatch_exact LOC=./src/b2sum.merge.c:6766 */
+/* END FUNCTION-DECL-EXTERN argmatch_exact LOC=./src/b2sum.merge.c:6758 */
 
-/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/b2sum.merge.c:6778 */
-#line 6778
+/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/b2sum.merge.c:6770 */
+#line 6770
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) valloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN valloc LOC=./src/b2sum.merge.c:6778 */
+/* END FUNCTION-DECL-EXTERN valloc LOC=./src/b2sum.merge.c:6770 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/b2sum.merge.c:6788 */
-#line 6788
+/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/b2sum.merge.c:6780 */
+#line 6780
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/b2sum.merge.c:6788 */
+/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/b2sum.merge.c:6780 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/b2sum.merge.c:6803 */
-#line 6803
+/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/b2sum.merge.c:6795 */
+#line 6795
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) ecvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/b2sum.merge.c:6803 */
+/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/b2sum.merge.c:6795 */
 
 /* BEGIN FUNCTION-DECL __builtin_cos LOC=BUILTIN */
 /* compiler builtin: 
@@ -10931,20 +10915,20 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __
 enum __anonenum_424050557 ;
 /* END ENUM-DECL __anonenum_424050557 LOC=./src/b2sum.merge.c:963 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/b2sum.merge.c:6830 */
-#line 6830
+/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/b2sum.merge.c:6822 */
+#line 6822
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) bcopy)(void const   *__src ,
                                                                                                void *__dest ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/b2sum.merge.c:6830 */
+/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/b2sum.merge.c:6822 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/b2sum.merge.c:6826 */
-#line 6826
+/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/b2sum.merge.c:6818 */
+#line 6818
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rmdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/b2sum.merge.c:6826 */
+/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/b2sum.merge.c:6818 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_smv4_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -10952,43 +10936,43 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp ) ;
    double __builtin_sqrt(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/b2sum.merge.c:6854 */
-#line 6854
+/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/b2sum.merge.c:6846 */
+#line 6846
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(int __fd ,
                                                                                 char const   *__file ,
                                                                                 struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/b2sum.merge.c:6854 */
+/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/b2sum.merge.c:6846 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/b2sum.merge.c:6876 */
-#line 6876
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/b2sum.merge.c:6868 */
+#line 6868
 extern int ( __attribute__((__nonnull__(1))) mkstemp64)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/b2sum.merge.c:6876 */
+/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/b2sum.merge.c:6868 */
 
 /* BEGIN STRUCT-DECL _G_fpos64_t LOC=./src/b2sum.merge.c:1127 */
 #line 1127
 struct _G_fpos64_t ;
 /* END STRUCT-DECL _G_fpos64_t LOC=./src/b2sum.merge.c:1127 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/b2sum.merge.c:6880 */
-#line 6880
+/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/b2sum.merge.c:6872 */
+#line 6872
 extern FILE *stdin ;
-/* END VARIABLE-DECL-EXTERN stdin LOC=./src/b2sum.merge.c:6880 */
+/* END VARIABLE-DECL-EXTERN stdin LOC=./src/b2sum.merge.c:6872 */
 
-/* BEGIN TYPEDEF __kernel_key_t LOC=./src/b2sum.merge.c:6884 */
-#line 6884 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_key_t LOC=./src/b2sum.merge.c:6876 */
+#line 6876 "./src/b2sum.merge.c"
 typedef int __kernel_key_t;
-/* END TYPEDEF __kernel_key_t LOC=./src/b2sum.merge.c:6884 */
+/* END TYPEDEF __kernel_key_t LOC=./src/b2sum.merge.c:6876 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/b2sum.merge.c:6892 */
-#line 6892
+/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/b2sum.merge.c:6884 */
+#line 6884
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dgettext)(char const   *__domainname ,
                                                                                    char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/b2sum.merge.c:6892 */
+/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/b2sum.merge.c:6884 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/b2sum.merge.c:6912 */
-#line 6912
+/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/b2sum.merge.c:6904 */
+#line 6904
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/b2sum.merge.c:6912 */
+/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/b2sum.merge.c:6904 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11000,16 +10984,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(i
    char *__builtin_strstr(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strstr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/b2sum.merge.c:6927 */
-#line 6927
+/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/b2sum.merge.c:6919 */
+#line 6919
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_kill)(pthread_t __threadid ,
                                                                                    int __signo ) ;
-/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/b2sum.merge.c:6927 */
+/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/b2sum.merge.c:6919 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/b2sum.merge.c:6932 */
-#line 6932
+/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/b2sum.merge.c:6924 */
+#line 6924
 extern int fcntl64(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/b2sum.merge.c:6932 */
+/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/b2sum.merge.c:6924 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -11027,10 +11011,10 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
    _Float128 __builtin_atanhf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/b2sum.merge.c:6980 */
-#line 6980
+/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/b2sum.merge.c:6972 */
+#line 6972
 extern int error_one_per_line ;
-/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/b2sum.merge.c:6980 */
+/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/b2sum.merge.c:6972 */
 
 /* BEGIN VARIABLE-DEF memset_v LOC=UNKNOWN */
 static void *(* volatile  memset_v)(void * , int  , size_t  )  ;
@@ -11041,20 +11025,20 @@ static void *(* volatile  memset_v)(void * , int  , size_t  )  ;
 struct __anonstruct__sigsys_1029881407 ;
 /* END STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/b2sum.merge.c:1219 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/b2sum.merge.c:7015 */
-#line 7015
+/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/b2sum.merge.c:7007 */
+#line 7007
 extern int fflush_unlocked(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/b2sum.merge.c:7015 */
+/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/b2sum.merge.c:7007 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned char __builtin_rotateright8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/b2sum.merge.c:7032 */
-#line 7032
+/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/b2sum.merge.c:7024 */
+#line 7024
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srandom)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srandom LOC=./src/b2sum.merge.c:7032 */
+/* END FUNCTION-DECL-EXTERN srandom LOC=./src/b2sum.merge.c:7024 */
 
 /* BEGIN FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11081,54 +11065,54 @@ int ( __attribute__((__nonnull__(1))) blake2b_stream)(FILE *stream , void *resst
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __xargmatch_internal LOC=./src/b2sum.merge.c:7108 */
-#line 7108
+/* BEGIN FUNCTION-DECL-EXTERN __xargmatch_internal LOC=./src/b2sum.merge.c:7100 */
+#line 7100
 extern ptrdiff_t __xargmatch_internal(char const   *context , char const   *arg ,
                                       char const   **arglist , void const   *vallist ,
                                       size_t valsize , void (*exit_fn)(void) , _Bool allow_abbreviation ) ;
-/* END FUNCTION-DECL-EXTERN __xargmatch_internal LOC=./src/b2sum.merge.c:7108 */
+/* END FUNCTION-DECL-EXTERN __xargmatch_internal LOC=./src/b2sum.merge.c:7100 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/b2sum.merge.c:7104 */
-#line 7104
+/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/b2sum.merge.c:7096 */
+#line 7096
 extern ssize_t pwrite(int __fd , void const   *__buf , size_t __n , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/b2sum.merge.c:7104 */
+/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/b2sum.merge.c:7096 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/b2sum.merge.c:7119 */
-#line 7119
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/b2sum.merge.c:7111 */
+#line 7111
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtof64x)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/b2sum.merge.c:7119 */
+/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/b2sum.merge.c:7111 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/b2sum.merge.c:7124 */
-#line 7124
+/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/b2sum.merge.c:7116 */
+#line 7116
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memset)(void *__s ,
                                                                                                int __c ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset LOC=./src/b2sum.merge.c:7124 */
+/* END FUNCTION-DECL-EXTERN memset LOC=./src/b2sum.merge.c:7116 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/b2sum.merge.c:7138 */
-#line 7138
+/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/b2sum.merge.c:7130 */
+#line 7130
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror LOC=./src/b2sum.merge.c:7138 */
+/* END FUNCTION-DECL-EXTERN ferror LOC=./src/b2sum.merge.c:7130 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csinf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __once_flag LOC=./src/b2sum.merge.c:7172 */
-#line 7172 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __once_flag LOC=./src/b2sum.merge.c:7164 */
+#line 7164 "./src/b2sum.merge.c"
 typedef struct __anonstruct___once_flag_783464055 __once_flag;
-/* END TYPEDEF __once_flag LOC=./src/b2sum.merge.c:7172 */
+/* END TYPEDEF __once_flag LOC=./src/b2sum.merge.c:7164 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/b2sum.merge.c:7176 */
-#line 7176
+/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/b2sum.merge.c:7168 */
+#line 7168
 extern int ( __attribute__((__nonnull__(1,2))) scandir64)(char const   * __restrict  __dir ,
                                                           struct dirent64 *** __restrict  __namelist ,
                                                           int (*__selector)(struct dirent64  const  * ) ,
                                                           int (*__cmp)(struct dirent64  const  ** ,
                                                                        struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/b2sum.merge.c:7176 */
+/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/b2sum.merge.c:7168 */
 
 /* BEGIN VARIABLE-DECL digest_delim LOC=UNKNOWN */
 static unsigned char digest_delim ;
@@ -11139,88 +11123,88 @@ static unsigned char digest_delim ;
    long double __builtin_fmal(long double  , long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/b2sum.merge.c:7202 */
-#line 7202
+/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/b2sum.merge.c:7194 */
+#line 7194
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execv)(char const   *__path ,
                                                                                               char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execv LOC=./src/b2sum.merge.c:7202 */
+/* END FUNCTION-DECL-EXTERN execv LOC=./src/b2sum.merge.c:7194 */
 
-/* BEGIN TYPEDEF int_fast16_t LOC=./src/b2sum.merge.c:7211 */
-#line 7211 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_fast16_t LOC=./src/b2sum.merge.c:7203 */
+#line 7203 "./src/b2sum.merge.c"
 typedef long int_fast16_t;
-/* END TYPEDEF int_fast16_t LOC=./src/b2sum.merge.c:7211 */
+/* END TYPEDEF int_fast16_t LOC=./src/b2sum.merge.c:7203 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/b2sum.merge.c:7242 */
-#line 7242
+/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/b2sum.merge.c:7234 */
+#line 7234
 extern size_t ( __attribute__((__nonnull__(4))) fread_unlocked)(void * __restrict  __ptr ,
                                                                 size_t __size , size_t __n ,
                                                                 FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/b2sum.merge.c:7242 */
+/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/b2sum.merge.c:7234 */
 
-/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/b2sum.merge.c:7248 */
-#line 7248 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/b2sum.merge.c:7240 */
+#line 7240 "./src/b2sum.merge.c"
 typedef unsigned short __kernel_gid16_t;
-/* END TYPEDEF __kernel_gid16_t LOC=./src/b2sum.merge.c:7248 */
+/* END TYPEDEF __kernel_gid16_t LOC=./src/b2sum.merge.c:7240 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fabsf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/b2sum.merge.c:7252 */
-#line 7252
+/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/b2sum.merge.c:7244 */
+#line 7244
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(5), __leaf__)) statx)(int __dirfd ,
                                                                                             char const   * __restrict  __path ,
                                                                                             int __flags ,
                                                                                             unsigned int __mask ,
                                                                                             struct statx * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN statx LOC=./src/b2sum.merge.c:7252 */
+/* END FUNCTION-DECL-EXTERN statx LOC=./src/b2sum.merge.c:7244 */
 
 /* BEGIN STRUCT-DECL __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1263 */
 #line 1263
 struct __anonstruct___mbstate_t_843781537 ;
 /* END STRUCT-DECL __anonstruct___mbstate_t_843781537 LOC=./src/b2sum.merge.c:1263 */
 
-/* BEGIN FUNCTION-DECL-EXTERN argmatch_invalid LOC=./src/b2sum.merge.c:7290 */
-#line 7290
+/* BEGIN FUNCTION-DECL-EXTERN argmatch_invalid LOC=./src/b2sum.merge.c:7282 */
+#line 7282
 extern void argmatch_invalid(char const   *context , char const   *value , ptrdiff_t problem ) ;
-/* END FUNCTION-DECL-EXTERN argmatch_invalid LOC=./src/b2sum.merge.c:7290 */
+/* END FUNCTION-DECL-EXTERN argmatch_invalid LOC=./src/b2sum.merge.c:7282 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/b2sum.merge.c:7298 */
-#line 7298
+/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/b2sum.merge.c:7290 */
+#line 7290
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) vfork)(void) ;
-/* END FUNCTION-DECL-EXTERN vfork LOC=./src/b2sum.merge.c:7298 */
+/* END FUNCTION-DECL-EXTERN vfork LOC=./src/b2sum.merge.c:7290 */
 
-/* BEGIN TYPEDEF int_least8_t LOC=./src/b2sum.merge.c:7318 */
-#line 7318 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_least8_t LOC=./src/b2sum.merge.c:7310 */
+#line 7310 "./src/b2sum.merge.c"
 typedef __int_least8_t int_least8_t;
-/* END TYPEDEF int_least8_t LOC=./src/b2sum.merge.c:7318 */
+/* END TYPEDEF int_least8_t LOC=./src/b2sum.merge.c:7310 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/b2sum.merge.c:7322 */
-#line 7322
+/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/b2sum.merge.c:7314 */
+#line 7314
 extern size_t ( __attribute__((__nonnull__(4))) fread)(void * __restrict  __ptr ,
                                                        size_t __size , size_t __n ,
                                                        FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread LOC=./src/b2sum.merge.c:7322 */
+/* END FUNCTION-DECL-EXTERN fread LOC=./src/b2sum.merge.c:7314 */
 
-/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/b2sum.merge.c:7337 */
-#line 7337
+/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/b2sum.merge.c:7329 */
+#line 7329
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) abort)(void)  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN abort LOC=./src/b2sum.merge.c:7337 */
+/* END FUNCTION-DECL-EXTERN abort LOC=./src/b2sum.merge.c:7329 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_roundf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen_safer LOC=./src/b2sum.merge.c:7346 */
-#line 7346
+/* BEGIN FUNCTION-DECL-EXTERN freopen_safer LOC=./src/b2sum.merge.c:7338 */
+#line 7338
 extern FILE *( __attribute__((__nonnull__(2,3))) freopen_safer)(char const   * , char const   * ,
                                                                 FILE * ) ;
-/* END FUNCTION-DECL-EXTERN freopen_safer LOC=./src/b2sum.merge.c:7346 */
+/* END FUNCTION-DECL-EXTERN freopen_safer LOC=./src/b2sum.merge.c:7338 */
 
-/* BEGIN STRUCT sigcontext LOC=./src/b2sum.merge.c:7351 */
-#line 7351 "./src/b2sum.merge.c"
+/* BEGIN STRUCT sigcontext LOC=./src/b2sum.merge.c:7343 */
+#line 7343 "./src/b2sum.merge.c"
 struct sigcontext {
    __uint64_t r8 ;
    __uint64_t r9 ;
@@ -11251,36 +11235,36 @@ struct sigcontext {
    union __anonunion____missing_field_name_501150464 __annonCompField1 ;
    __uint64_t __reserved1[8] ;
 };
-/* END STRUCT sigcontext LOC=./src/b2sum.merge.c:7351 */
+/* END STRUCT sigcontext LOC=./src/b2sum.merge.c:7343 */
 
-/* BEGIN TYPEDEF off64_t LOC=./src/b2sum.merge.c:7384 */
-#line 7384 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF off64_t LOC=./src/b2sum.merge.c:7376 */
+#line 7376 "./src/b2sum.merge.c"
 typedef __off64_t off64_t;
-/* END TYPEDEF off64_t LOC=./src/b2sum.merge.c:7384 */
+/* END TYPEDEF off64_t LOC=./src/b2sum.merge.c:7376 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/b2sum.merge.c:7388 */
-#line 7388
+/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/b2sum.merge.c:7380 */
+#line 7380
 extern int posix_fallocate64(int __fd , off64_t __offset , off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/b2sum.merge.c:7388 */
+/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/b2sum.merge.c:7380 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/b2sum.merge.c:7432 */
-#line 7432
+/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/b2sum.merge.c:7424 */
+#line 7424
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tempnam)(char const   *__dir ,
                                                                                 char const   *__pfx )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/b2sum.merge.c:7432 */
+/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/b2sum.merge.c:7424 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/b2sum.merge.c:7418 */
-#line 7418
+/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/b2sum.merge.c:7410 */
+#line 7410
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigblock)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/b2sum.merge.c:7418 */
+/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/b2sum.merge.c:7410 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_asinf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
 
-/* BEGIN STRUCT tm LOC=./src/b2sum.merge.c:7437 */
-#line 7437 "./src/b2sum.merge.c"
+/* BEGIN STRUCT tm LOC=./src/b2sum.merge.c:7429 */
+#line 7429 "./src/b2sum.merge.c"
 struct tm {
    int tm_sec ;
    int tm_min ;
@@ -11294,144 +11278,144 @@ struct tm {
    long tm_gmtoff ;
    char const   *tm_zone ;
 };
-/* END STRUCT tm LOC=./src/b2sum.merge.c:7437 */
+/* END STRUCT tm LOC=./src/b2sum.merge.c:7429 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/b2sum.merge.c:7453 */
-#line 7453
+/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/b2sum.merge.c:7445 */
+#line 7445
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memrchr)(void const   *__s ,
                                                                                                 int __c ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/b2sum.merge.c:7453 */
+/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/b2sum.merge.c:7445 */
 
-/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/b2sum.merge.c:7465 */
-#line 7465 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/b2sum.merge.c:7457 */
+#line 7457 "./src/b2sum.merge.c"
 typedef long long __kernel_time64_t;
-/* END TYPEDEF __kernel_time64_t LOC=./src/b2sum.merge.c:7465 */
+/* END TYPEDEF __kernel_time64_t LOC=./src/b2sum.merge.c:7457 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/b2sum.merge.c:7474 */
-#line 7474
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/b2sum.merge.c:7466 */
+#line 7466
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r)(int category , char *buf ,
                                                                size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/b2sum.merge.c:7474 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/b2sum.merge.c:7466 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/b2sum.merge.c:7484 */
-#line 7484
+/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/b2sum.merge.c:7476 */
+#line 7476
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat64)(int __fd ,
                                                                                                 char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/b2sum.merge.c:7484 */
+/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/b2sum.merge.c:7476 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/b2sum.merge.c:7497 */
-#line 7497
+/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/b2sum.merge.c:7489 */
+#line 7489
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoll_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoll_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/b2sum.merge.c:7497 */
+/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/b2sum.merge.c:7489 */
 
-/* BEGIN TYPEDEF __poll_t LOC=./src/b2sum.merge.c:7512 */
-#line 7512 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __poll_t LOC=./src/b2sum.merge.c:7504 */
+#line 7504 "./src/b2sum.merge.c"
 typedef unsigned int __poll_t;
-/* END TYPEDEF __poll_t LOC=./src/b2sum.merge.c:7512 */
+/* END TYPEDEF __poll_t LOC=./src/b2sum.merge.c:7504 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/b2sum.merge.c:7520 */
-#line 7520
+/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/b2sum.merge.c:7512 */
+#line 7512
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) tzset)(void) ;
-/* END FUNCTION-DECL-EXTERN tzset LOC=./src/b2sum.merge.c:7520 */
+/* END FUNCTION-DECL-EXTERN tzset LOC=./src/b2sum.merge.c:7512 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/b2sum.merge.c:7529 */
-#line 7529
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/b2sum.merge.c:7521 */
+#line 7521
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_minor)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/b2sum.merge.c:7529 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/b2sum.merge.c:7521 */
 
-/* BEGIN TYPEDEF __key_t LOC=./src/b2sum.merge.c:7533 */
-#line 7533 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __key_t LOC=./src/b2sum.merge.c:7525 */
+#line 7525 "./src/b2sum.merge.c"
 typedef int __key_t;
-/* END TYPEDEF __key_t LOC=./src/b2sum.merge.c:7533 */
+/* END TYPEDEF __key_t LOC=./src/b2sum.merge.c:7525 */
 
-/* BEGIN TYPEDEF key_t LOC=./src/b2sum.merge.c:7537 */
-#line 7537 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF key_t LOC=./src/b2sum.merge.c:7529 */
+#line 7529 "./src/b2sum.merge.c"
 typedef __key_t key_t;
-/* END TYPEDEF key_t LOC=./src/b2sum.merge.c:7537 */
+/* END TYPEDEF key_t LOC=./src/b2sum.merge.c:7529 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_frexpl(long double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2s_init_key LOC=./src/b2sum.merge.c:7557 */
-#line 7557
+/* BEGIN FUNCTION-DECL-EXTERN blake2s_init_key LOC=./src/b2sum.merge.c:7549 */
+#line 7549
 extern int blake2s_init_key(blake2s_state *S , size_t outlen , void const   *key ,
                             size_t keylen ) ;
-/* END FUNCTION-DECL-EXTERN blake2s_init_key LOC=./src/b2sum.merge.c:7557 */
+/* END FUNCTION-DECL-EXTERN blake2s_init_key LOC=./src/b2sum.merge.c:7549 */
 
-/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:7570 */
-#line 7570 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:7562 */
+#line 7562 "./src/b2sum.merge.c"
 struct __anonstruct_ldiv_t_790849867 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:7570 */
+/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:7562 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_huge_valf128(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF sigval_t LOC=./src/b2sum.merge.c:7597 */
-#line 7597 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF sigval_t LOC=./src/b2sum.merge.c:7589 */
+#line 7589 "./src/b2sum.merge.c"
 typedef __sigval_t sigval_t;
-/* END TYPEDEF sigval_t LOC=./src/b2sum.merge.c:7597 */
+/* END TYPEDEF sigval_t LOC=./src/b2sum.merge.c:7589 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2s_init LOC=./src/b2sum.merge.c:7606 */
-#line 7606
+/* BEGIN FUNCTION-DECL-EXTERN blake2s_init LOC=./src/b2sum.merge.c:7598 */
+#line 7598
 extern int blake2s_init(blake2s_state *S , size_t outlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2s_init LOC=./src/b2sum.merge.c:7606 */
+/* END FUNCTION-DECL-EXTERN blake2s_init LOC=./src/b2sum.merge.c:7598 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/b2sum.merge.c:7610 */
-#line 7610
+/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/b2sum.merge.c:7602 */
+#line 7602
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setegid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setegid LOC=./src/b2sum.merge.c:7610 */
+/* END FUNCTION-DECL-EXTERN setegid LOC=./src/b2sum.merge.c:7602 */
 
-/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/b2sum.merge.c:7622 */
-#line 7622
+/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/b2sum.merge.c:7614 */
+#line 7614
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) duplocale)(locale_t __dataset ) ;
-/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/b2sum.merge.c:7622 */
+/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/b2sum.merge.c:7614 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_casinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_57186863 LOC=./src/b2sum.merge.c:7640 */
-#line 7640
+/* BEGIN ENUM __anonenum_57186863 LOC=./src/b2sum.merge.c:7632 */
+#line 7632
 enum __anonenum_57186863 {
     SS_ONSTACK = 1,
     SS_DISABLE = 2
 } ;
-/* END ENUM __anonenum_57186863 LOC=./src/b2sum.merge.c:7640 */
+/* END ENUM __anonenum_57186863 LOC=./src/b2sum.merge.c:7632 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/b2sum.merge.c:7647 */
-#line 7647
+/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/b2sum.merge.c:7639 */
+#line 7639
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) unlinkat)(int __fd ,
                                                                                                char const   *__name ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/b2sum.merge.c:7647 */
+/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/b2sum.merge.c:7639 */
 
-/* BEGIN TYPEDEF ldiv_t LOC=./src/b2sum.merge.c:7664 */
-#line 7664 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF ldiv_t LOC=./src/b2sum.merge.c:7656 */
+#line 7656 "./src/b2sum.merge.c"
 typedef struct __anonstruct_ldiv_t_790849867 ldiv_t;
-/* END TYPEDEF ldiv_t LOC=./src/b2sum.merge.c:7664 */
+/* END TYPEDEF ldiv_t LOC=./src/b2sum.merge.c:7656 */
 
 /* BEGIN FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fdimf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/b2sum.merge.c:7677 */
-#line 7677
+/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/b2sum.merge.c:7669 */
+#line 7669
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigisemptyset)(sigset_t const   *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/b2sum.merge.c:7677 */
+/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/b2sum.merge.c:7669 */
 
 /* BEGIN FUNCTION-DECL __builtin_os_log_format_buffer_size LOC=BUILTIN */
 /* compiler builtin: 
@@ -11458,8 +11442,8 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    void __builtin_annotation(...) ;  */
 /* END FUNCTION-DECL __builtin_annotation LOC=BUILTIN */
 
-/* BEGIN STRUCT drand48_data LOC=./src/b2sum.merge.c:7741 */
-#line 7741 "./src/b2sum.merge.c"
+/* BEGIN STRUCT drand48_data LOC=./src/b2sum.merge.c:7733 */
+#line 7733 "./src/b2sum.merge.c"
 struct drand48_data {
    unsigned short __x[3] ;
    unsigned short __old_x[3] ;
@@ -11467,7 +11451,7 @@ struct drand48_data {
    unsigned short __init ;
    unsigned long long __a ;
 };
-/* END STRUCT drand48_data LOC=./src/b2sum.merge.c:7741 */
+/* END STRUCT drand48_data LOC=./src/b2sum.merge.c:7733 */
 
 /* BEGIN STRUCT-DECL __pthread_mutex_s LOC=./src/b2sum.merge.c:1051 */
 #line 1051
@@ -11479,18 +11463,18 @@ struct __pthread_mutex_s ;
    _Float128 __builtin_logf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_logf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/b2sum.merge.c:7782 */
-#line 7782
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/b2sum.merge.c:7774 */
+#line 7774
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                           __off_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/b2sum.merge.c:7782 */
+/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/b2sum.merge.c:7774 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/b2sum.merge.c:7788 */
-#line 7788
+/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/b2sum.merge.c:7780 */
+#line 7780
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchrnul)(char const   *__s ,
                                                                                                   int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/b2sum.merge.c:7788 */
+/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/b2sum.merge.c:7780 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11502,11 +11486,11 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
    void __builtin_stdarg_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_stdarg_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/b2sum.merge.c:7827 */
-#line 7827
+/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/b2sum.merge.c:7819 */
+#line 7819
 extern int ( __attribute__((__nonnull__(1))) rpl_nanosleep)(struct timespec  const  *__rqtp ,
                                                             struct timespec *__rmtp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/b2sum.merge.c:7827 */
+/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/b2sum.merge.c:7819 */
 
 /* BEGIN FUNCTION-DECL dcnpgettext_expr LOC=UNKNOWN */
 __inline static char const   *dcnpgettext_expr(char const   *domain , char const   *msgctxt ,
@@ -11524,30 +11508,30 @@ __inline static char const   *dcnpgettext_expr(char const   *domain , char const
    float __builtin_acoshf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/b2sum.merge.c:7853 */
-#line 7853 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/b2sum.merge.c:7845 */
+#line 7845 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_mutexattr_t_488594144 pthread_mutexattr_t;
-/* END TYPEDEF pthread_mutexattr_t LOC=./src/b2sum.merge.c:7853 */
+/* END TYPEDEF pthread_mutexattr_t LOC=./src/b2sum.merge.c:7845 */
 
-/* BEGIN ENUM __anonenum_424050557 LOC=./src/b2sum.merge.c:7857 */
-#line 7857
+/* BEGIN ENUM __anonenum_424050557 LOC=./src/b2sum.merge.c:7849 */
+#line 7849
 enum __anonenum_424050557 {
     TIMESPEC_RESOLUTION = 1000000000
 } ;
-/* END ENUM __anonenum_424050557 LOC=./src/b2sum.merge.c:7857 */
+/* END ENUM __anonenum_424050557 LOC=./src/b2sum.merge.c:7849 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/b2sum.merge.c:7872 */
-#line 7872
+/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/b2sum.merge.c:7864 */
+#line 7864
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fchmodat)(int __fd ,
                                                                                                char const   *__file ,
                                                                                                __mode_t __mode ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/b2sum.merge.c:7872 */
+/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/b2sum.merge.c:7864 */
 
 /* BEGIN FUNCTION-DECL __builtin_eh_return_data_regno LOC=BUILTIN */
 /* compiler builtin: 
@@ -11559,14 +11543,14 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    unsigned long __builtin_bitreverse64(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_bitreverse64 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnumtoimax LOC=./src/b2sum.merge.c:7889 */
-#line 7889
+/* BEGIN FUNCTION-DECL-EXTERN xnumtoimax LOC=./src/b2sum.merge.c:7881 */
+#line 7881
 extern intmax_t ( __attribute__((__nonnull__(1,6))) xnumtoimax)(char const   *n_str ,
                                                                 int base , intmax_t min ,
                                                                 intmax_t max , char const   *suffixes ,
                                                                 char const   *err ,
                                                                 int err_exit ) ;
-/* END FUNCTION-DECL-EXTERN xnumtoimax LOC=./src/b2sum.merge.c:7889 */
+/* END FUNCTION-DECL-EXTERN xnumtoimax LOC=./src/b2sum.merge.c:7881 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11583,64 +11567,64 @@ extern intmax_t ( __attribute__((__nonnull__(1,6))) xnumtoimax)(char const   *n_
    float __builtin_nanf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/b2sum.merge.c:7921 */
-#line 7921
+/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/b2sum.merge.c:7913 */
+#line 7913
 extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char const   * __restrict  __format 
                                                  , ...) ;
-/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/b2sum.merge.c:7921 */
+/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/b2sum.merge.c:7913 */
 
 /* BEGIN FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_modfl(long double  , long double * ) ;  */
 /* END FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF id_t LOC=./src/b2sum.merge.c:7942 */
-#line 7942 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF id_t LOC=./src/b2sum.merge.c:7934 */
+#line 7934 "./src/b2sum.merge.c"
 typedef __id_t id_t;
-/* END TYPEDEF id_t LOC=./src/b2sum.merge.c:7942 */
+/* END TYPEDEF id_t LOC=./src/b2sum.merge.c:7934 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_exp2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __compar_fn_t LOC=./src/b2sum.merge.c:7961 */
-#line 7961 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __compar_fn_t LOC=./src/b2sum.merge.c:7953 */
+#line 7953 "./src/b2sum.merge.c"
 typedef int (*__compar_fn_t)(void const   * , void const   * );
-/* END TYPEDEF __compar_fn_t LOC=./src/b2sum.merge.c:7961 */
+/* END TYPEDEF __compar_fn_t LOC=./src/b2sum.merge.c:7953 */
 
-/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/b2sum.merge.c:7969 */
-#line 7969
+/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/b2sum.merge.c:7961 */
+#line 7961
 extern char **environ ;
-/* END VARIABLE-DECL-EXTERN environ LOC=./src/b2sum.merge.c:7969 */
+/* END VARIABLE-DECL-EXTERN environ LOC=./src/b2sum.merge.c:7961 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_expf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/b2sum.merge.c:7983 */
-#line 7983 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/b2sum.merge.c:7975 */
+#line 7975 "./src/b2sum.merge.c"
 typedef __kernel_ulong_t __kernel_ino_t;
-/* END TYPEDEF __kernel_ino_t LOC=./src/b2sum.merge.c:7983 */
+/* END TYPEDEF __kernel_ino_t LOC=./src/b2sum.merge.c:7975 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/b2sum.merge.c:8000 */
-#line 8000
+/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/b2sum.merge.c:7992 */
+#line 7992
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mbtowc)(wchar_t * __restrict  __pwc ,
                                                                              char const   * __restrict  __s ,
                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/b2sum.merge.c:8000 */
+/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/b2sum.merge.c:7992 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/b2sum.merge.c:7991 */
-#line 7991
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/b2sum.merge.c:7983 */
+#line 7983
 extern char *quotearg_n_style_mem(int n , enum quoting_style s , char const   *arg ,
                                   size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/b2sum.merge.c:7991 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/b2sum.merge.c:7983 */
 
-/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/b2sum.merge.c:8029 */
-#line 8029
+/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/b2sum.merge.c:8021 */
+#line 8021
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) labs)(long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN labs LOC=./src/b2sum.merge.c:8029 */
+/* END FUNCTION-DECL-EXTERN labs LOC=./src/b2sum.merge.c:8021 */
 
 /* BEGIN STRUCT-DECL tm LOC=./src/b2sum.merge.c:1375 */
 #line 1375
@@ -11652,94 +11636,98 @@ struct tm ;
 union __anonunion__sigev_un_199402602 ;
 /* END UNION-DECL __anonunion__sigev_un_199402602 LOC=./src/b2sum.merge.c:1415 */
 
-/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:8048 */
-#line 8048 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:8040 */
+#line 8040 "./src/b2sum.merge.c"
 union __anonunion_pthread_mutex_t_335460617 {
    struct __pthread_mutex_s __data ;
    char __size[40] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:8048 */
+/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/b2sum.merge.c:8040 */
 
-/* BEGIN TYPEDEF int_least64_t LOC=./src/b2sum.merge.c:8066 */
-#line 8066 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_least64_t LOC=./src/b2sum.merge.c:8058 */
+#line 8058 "./src/b2sum.merge.c"
 typedef __int_least64_t int_least64_t;
-/* END TYPEDEF int_least64_t LOC=./src/b2sum.merge.c:8066 */
+/* END TYPEDEF int_least64_t LOC=./src/b2sum.merge.c:8058 */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2xs_update LOC=./src/b2sum.merge.c:8077 */
-#line 8077
+/* BEGIN FUNCTION-DECL-EXTERN blake2xs_update LOC=./src/b2sum.merge.c:8069 */
+#line 8069
 extern int blake2xs_update(blake2xs_state *S , void const   *in , size_t inlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2xs_update LOC=./src/b2sum.merge.c:8077 */
+/* END FUNCTION-DECL-EXTERN blake2xs_update LOC=./src/b2sum.merge.c:8069 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/b2sum.merge.c:8095 */
-#line 8095
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_argc LOC=UNKNOWN */
+int _TIG_IZ_smv4_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/b2sum.merge.c:8091 */
+#line 8091
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chmod)(char const   *__file ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN chmod LOC=./src/b2sum.merge.c:8095 */
+/* END FUNCTION-DECL-EXTERN chmod LOC=./src/b2sum.merge.c:8091 */
 
-/* BEGIN STRUCT _ymmh_state LOC=./src/b2sum.merge.c:8100 */
-#line 8100 "./src/b2sum.merge.c"
+/* BEGIN STRUCT _ymmh_state LOC=./src/b2sum.merge.c:8096 */
+#line 8096 "./src/b2sum.merge.c"
 struct _ymmh_state {
    __uint32_t ymmh_space[64] ;
 };
-/* END STRUCT _ymmh_state LOC=./src/b2sum.merge.c:8100 */
+/* END STRUCT _ymmh_state LOC=./src/b2sum.merge.c:8096 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/b2sum.merge.c:8106 */
-#line 8106
+/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/b2sum.merge.c:8102 */
+#line 8102
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) qgcvt)(long double __value ,
                                                                                               int __ndigit ,
                                                                                               char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/b2sum.merge.c:8106 */
+/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/b2sum.merge.c:8102 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/b2sum.merge.c:8116 */
-#line 8116
+/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/b2sum.merge.c:8112 */
+#line 8112
 extern void *x2nrealloc(void *p , size_t *pn , size_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/b2sum.merge.c:8116 */
+/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/b2sum.merge.c:8112 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned int __builtin_rotateleft32(unsigned int  , unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/b2sum.merge.c:8134 */
-#line 8134 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/b2sum.merge.c:8130 */
+#line 8130 "./src/b2sum.merge.c"
 typedef unsigned int __kernel_uid32_t;
-/* END TYPEDEF __kernel_uid32_t LOC=./src/b2sum.merge.c:8134 */
+/* END TYPEDEF __kernel_uid32_t LOC=./src/b2sum.merge.c:8130 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sinhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/b2sum.merge.c:8147 */
-#line 8147
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/b2sum.merge.c:8143 */
+#line 8143
 extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/b2sum.merge.c:8147 */
+/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/b2sum.merge.c:8143 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/b2sum.merge.c:8160 */
-#line 8160
+/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/b2sum.merge.c:8156 */
+#line 8156
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigorset)(sigset_t *__set ,
                                                                                                    sigset_t const   *__left ,
                                                                                                    sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/b2sum.merge.c:8160 */
+/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/b2sum.merge.c:8156 */
 
-/* BEGIN ENUM __anonenum_365337802 LOC=./src/b2sum.merge.c:8171 */
-#line 8171
+/* BEGIN ENUM __anonenum_365337802 LOC=./src/b2sum.merge.c:8167 */
+#line 8167
 enum __anonenum_365337802 {
     GETOPT_HELP_CHAR = -130,
     GETOPT_VERSION_CHAR = -131
 } ;
-/* END ENUM __anonenum_365337802 LOC=./src/b2sum.merge.c:8171 */
+/* END ENUM __anonenum_365337802 LOC=./src/b2sum.merge.c:8167 */
 
-/* BEGIN TYPEDEF int64_t LOC=./src/b2sum.merge.c:8201 */
-#line 8201 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int64_t LOC=./src/b2sum.merge.c:8197 */
+#line 8197 "./src/b2sum.merge.c"
 typedef __int64_t int64_t;
-/* END TYPEDEF int64_t LOC=./src/b2sum.merge.c:8201 */
+/* END TYPEDEF int64_t LOC=./src/b2sum.merge.c:8197 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/b2sum.merge.c:8219 */
-#line 8219
+/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/b2sum.merge.c:8215 */
+#line 8215
 extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN pclose LOC=./src/b2sum.merge.c:8219 */
+/* END FUNCTION-DECL-EXTERN pclose LOC=./src/b2sum.merge.c:8215 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 /* compiler builtin: 
@@ -11747,45 +11735,45 @@ extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/b2sum.merge.c:8241 */
-#line 8241
+/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/b2sum.merge.c:8237 */
+#line 8237
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) alarm)(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN alarm LOC=./src/b2sum.merge.c:8241 */
+/* END FUNCTION-DECL-EXTERN alarm LOC=./src/b2sum.merge.c:8237 */
 
 /* BEGIN STRUCT-DECL blake2sp_state__ LOC=./src/b2sum.merge.c:1015 */
 #line 1015
 struct blake2sp_state__ ;
 /* END STRUCT-DECL blake2sp_state__ LOC=./src/b2sum.merge.c:1015 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/b2sum.merge.c:8262 */
-#line 8262
+/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/b2sum.merge.c:8258 */
+#line 8258
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigstack)(struct sigstack *__ss ,
                                                                                                struct sigstack *__oss ) ;
-/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/b2sum.merge.c:8262 */
+/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/b2sum.merge.c:8258 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/b2sum.merge.c:8267 */
-#line 8267
+/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/b2sum.merge.c:8263 */
+#line 8263
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/b2sum.merge.c:8267 */
+/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/b2sum.merge.c:8263 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/b2sum.merge.c:8271 */
-#line 8271
+/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/b2sum.merge.c:8267 */
+#line 8267
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime_r)(time_t const   * __restrict  __timer ,
                                                                                 char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/b2sum.merge.c:8271 */
+/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/b2sum.merge.c:8267 */
 
-/* BEGIN FUNCTION-DECL-EXTERN argmatch_valid LOC=./src/b2sum.merge.c:8276 */
-#line 8276
+/* BEGIN FUNCTION-DECL-EXTERN argmatch_valid LOC=./src/b2sum.merge.c:8272 */
+#line 8272
 extern void argmatch_valid(char const   **arglist , void const   *vallist , size_t valsize ) ;
-/* END FUNCTION-DECL-EXTERN argmatch_valid LOC=./src/b2sum.merge.c:8276 */
+/* END FUNCTION-DECL-EXTERN argmatch_valid LOC=./src/b2sum.merge.c:8272 */
 
-/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/b2sum.merge.c:8303 */
-#line 8303 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/b2sum.merge.c:8299 */
+#line 8299 "./src/b2sum.merge.c"
 typedef struct __anonstruct___kernel_fd_set_990674701 __kernel_fd_set;
-/* END TYPEDEF __kernel_fd_set LOC=./src/b2sum.merge.c:8303 */
+/* END TYPEDEF __kernel_fd_set LOC=./src/b2sum.merge.c:8299 */
 
-/* BEGIN ENUM __anonenum_513775621 LOC=./src/b2sum.merge.c:8289 */
-#line 8289
+/* BEGIN ENUM __anonenum_513775621 LOC=./src/b2sum.merge.c:8285 */
+#line 8285
 enum __anonenum_513775621 {
     DT_UNKNOWN = 0,
     DT_FIFO = 1,
@@ -11797,29 +11785,29 @@ enum __anonenum_513775621 {
     DT_SOCK = 12,
     DT_WHT = 14
 } ;
-/* END ENUM __anonenum_513775621 LOC=./src/b2sum.merge.c:8289 */
+/* END ENUM __anonenum_513775621 LOC=./src/b2sum.merge.c:8285 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_least64_t LOC=./src/b2sum.merge.c:8320 */
-#line 8320 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_least64_t LOC=./src/b2sum.merge.c:8316 */
+#line 8316 "./src/b2sum.merge.c"
 typedef __uint_least64_t uint_least64_t;
-/* END TYPEDEF uint_least64_t LOC=./src/b2sum.merge.c:8320 */
+/* END TYPEDEF uint_least64_t LOC=./src/b2sum.merge.c:8316 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/b2sum.merge.c:8329 */
-#line 8329
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/b2sum.merge.c:8325 */
+#line 8325
 extern void __error_at_line_alias(int __status , int __errnum , char const   *__fname ,
                                   unsigned int __line , char const   *__format  , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/b2sum.merge.c:8329 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/b2sum.merge.c:8325 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/b2sum.merge.c:8324 */
-#line 8324
+/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/b2sum.merge.c:8320 */
+#line 8320
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat64)(int __fd ,
                                                                                               struct stat64 *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/b2sum.merge.c:8324 */
+/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/b2sum.merge.c:8320 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11836,12 +11824,12 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    long double __builtin_sqrtl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/b2sum.merge.c:8392 */
-#line 8392
+/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/b2sum.merge.c:8388 */
+#line 8388
 extern __ssize_t ( __attribute__((__nonnull__(4))) getdelim)(char ** __restrict  __lineptr ,
                                                              size_t * __restrict  __n ,
                                                              int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/b2sum.merge.c:8392 */
+/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/b2sum.merge.c:8388 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11863,49 +11851,49 @@ extern __ssize_t ( __attribute__((__nonnull__(4))) getdelim)(char ** __restrict 
    float __builtin_nansf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nansf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/b2sum.merge.c:8441 */
-#line 8441
+/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/b2sum.merge.c:8437 */
+#line 8437
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtod_l)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/b2sum.merge.c:8441 */
+/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/b2sum.merge.c:8437 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erfcf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/b2sum.merge.c:8447 */
-#line 8447
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/b2sum.merge.c:8443 */
+#line 8443
 extern int ( __attribute__((__nonnull__(1))) fgetpos)(FILE * __restrict  __stream ,
                                                       fpos_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/b2sum.merge.c:8447 */
+/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/b2sum.merge.c:8443 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/b2sum.merge.c:8457 */
-#line 8457
+/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/b2sum.merge.c:8453 */
+#line 8453
 extern int ( __attribute__((__nonnull__(1))) fgetc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/b2sum.merge.c:8457 */
+/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/b2sum.merge.c:8453 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/b2sum.merge.c:8470 */
-#line 8470
+/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/b2sum.merge.c:8466 */
+#line 8466
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memfrob)(void *__s ,
                                                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/b2sum.merge.c:8470 */
+/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/b2sum.merge.c:8466 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/b2sum.merge.c:8466 */
-#line 8466
+/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/b2sum.merge.c:8462 */
+#line 8462
 extern time_t ( __attribute__((__nonnull__(2))) mktime_z)(timezone_t __tz , struct tm * __restrict  __tm ) ;
-/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/b2sum.merge.c:8466 */
+/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/b2sum.merge.c:8462 */
 
 /* BEGIN FUNCTION-DECL blake2b LOC=UNKNOWN */
 int blake2b(void *out , size_t outlen , void const   *in , size_t inlen , void const   *key ,
             size_t keylen ) ;
 /* END FUNCTION-DECL blake2b LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/b2sum.merge.c:8494 */
-#line 8494
+/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/b2sum.merge.c:8490 */
+#line 8490
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) imaxabs)(intmax_t __n )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/b2sum.merge.c:8494 */
+/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/b2sum.merge.c:8490 */
 
 /* BEGIN FUNCTION-DECL __builtin___sprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -11919,13 +11907,13 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
                                             unsigned long n , int category ) ;
 /* END FUNCTION-DECL npgettext_aux LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int32_t LOC=./src/b2sum.merge.c:8520 */
-#line 8520 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int32_t LOC=./src/b2sum.merge.c:8516 */
+#line 8516 "./src/b2sum.merge.c"
 typedef __int32_t int32_t;
-/* END TYPEDEF int32_t LOC=./src/b2sum.merge.c:8520 */
+/* END TYPEDEF int32_t LOC=./src/b2sum.merge.c:8516 */
 
-/* BEGIN STRUCT random_data LOC=./src/b2sum.merge.c:8524 */
-#line 8524 "./src/b2sum.merge.c"
+/* BEGIN STRUCT random_data LOC=./src/b2sum.merge.c:8520 */
+#line 8520 "./src/b2sum.merge.c"
 struct random_data {
    int32_t *fptr ;
    int32_t *rptr ;
@@ -11935,17 +11923,17 @@ struct random_data {
    int rand_sep ;
    int32_t *end_ptr ;
 };
-/* END STRUCT random_data LOC=./src/b2sum.merge.c:8524 */
+/* END STRUCT random_data LOC=./src/b2sum.merge.c:8520 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinhl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/b2sum.merge.c:8536 */
-#line 8536
+/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/b2sum.merge.c:8532 */
+#line 8532
 extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_scanf")  ;
-/* END FUNCTION-DECL-EXTERN scanf LOC=./src/b2sum.merge.c:8536 */
+/* END FUNCTION-DECL-EXTERN scanf LOC=./src/b2sum.merge.c:8532 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11962,10 +11950,10 @@ extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_
    _Float16 __builtin_powf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_powf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/b2sum.merge.c:8577 */
-#line 8577
+/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/b2sum.merge.c:8573 */
+#line 8573
 extern int puts(char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN puts LOC=./src/b2sum.merge.c:8577 */
+/* END FUNCTION-DECL-EXTERN puts LOC=./src/b2sum.merge.c:8573 */
 
 /* BEGIN FUNCTION-DECL __builtin_addc LOC=BUILTIN */
 /* compiler builtin: 
@@ -11978,10 +11966,10 @@ extern int puts(char const   *__s ) ;
    _Complex long double __builtin_catanhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2bp_update LOC=./src/b2sum.merge.c:8628 */
-#line 8628
+/* BEGIN FUNCTION-DECL-EXTERN blake2bp_update LOC=./src/b2sum.merge.c:8624 */
+#line 8624
 extern int blake2bp_update(blake2bp_state *S , void const   *in , size_t inlen ) ;
-/* END FUNCTION-DECL-EXTERN blake2bp_update LOC=./src/b2sum.merge.c:8628 */
+/* END FUNCTION-DECL-EXTERN blake2bp_update LOC=./src/b2sum.merge.c:8624 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -11989,64 +11977,64 @@ extern int blake2bp_update(blake2bp_state *S , void const   *in , size_t inlen )
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/b2sum.merge.c:8632 */
-#line 8632
+/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/b2sum.merge.c:8628 */
+#line 8628
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chdir LOC=./src/b2sum.merge.c:8632 */
+/* END FUNCTION-DECL-EXTERN chdir LOC=./src/b2sum.merge.c:8628 */
 
-/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/b2sum.merge.c:8636 */
-#line 8636
+/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/b2sum.merge.c:8632 */
+#line 8632
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
-/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/b2sum.merge.c:8636 */
+/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/b2sum.merge.c:8632 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/b2sum.merge.c:8640 */
-#line 8640
+/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/b2sum.merge.c:8636 */
+#line 8636
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fmemopen)(void *__s ,
                                                                                  size_t __len ,
                                                                                  char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/b2sum.merge.c:8640 */
+/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/b2sum.merge.c:8636 */
 
-/* BEGIN ENUM __anonenum_819735966 LOC=./src/b2sum.merge.c:8666 */
-#line 8666
+/* BEGIN ENUM __anonenum_819735966 LOC=./src/b2sum.merge.c:8662 */
+#line 8662
 enum __anonenum_819735966 {
     LOG10_TIMESPEC_HZ = 9
 } ;
-/* END ENUM __anonenum_819735966 LOC=./src/b2sum.merge.c:8666 */
+/* END ENUM __anonenum_819735966 LOC=./src/b2sum.merge.c:8662 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_powf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/b2sum.merge.c:8681 */
-#line 8681 "./src/b2sum.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/b2sum.merge.c:8677 */
+#line 8677 "./src/b2sum.merge.c"
 union __anonunion_pthread_rwlock_t_656928968 {
    struct __pthread_rwlock_arch_t __data ;
    char __size[56] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/b2sum.merge.c:8681 */
+/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/b2sum.merge.c:8677 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/b2sum.merge.c:8694 */
-#line 8694
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/b2sum.merge.c:8690 */
+#line 8690
 extern char *quotearg_n_custom_mem(int n , char const   *left_quote , char const   *right_quote ,
                                    char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/b2sum.merge.c:8694 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/b2sum.merge.c:8690 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/b2sum.merge.c:8742 */
-#line 8742
+/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/b2sum.merge.c:8738 */
+#line 8738
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkfifoat)(int __fd ,
                                                                                                char const   *__path ,
                                                                                                __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/b2sum.merge.c:8742 */
+/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/b2sum.merge.c:8738 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/b2sum.merge.c:8730 */
-#line 8730
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/b2sum.merge.c:8726 */
+#line 8726
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,4), __leaf__)) strncasecmp_l)(char const   *__s1 ,
                                                                                                         char const   *__s2 ,
                                                                                                         size_t __n ,
                                                                                                         locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/b2sum.merge.c:8730 */
+/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/b2sum.merge.c:8726 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -12059,25 +12047,25 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,4), __
 struct __anonstruct__sigev_thread_746770901 ;
 /* END STRUCT-DECL __anonstruct__sigev_thread_746770901 LOC=./src/b2sum.merge.c:1275 */
 
-/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/b2sum.merge.c:8764 */
-#line 8764
+/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/b2sum.merge.c:8760 */
+#line 8760
 extern DIR *( __attribute__((__nonnull__(1))) opendir)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN opendir LOC=./src/b2sum.merge.c:8764 */
+/* END FUNCTION-DECL-EXTERN opendir LOC=./src/b2sum.merge.c:8760 */
 
 /* BEGIN FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_is_aligned(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/b2sum.merge.c:8768 */
-#line 8768
+/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/b2sum.merge.c:8764 */
+#line 8764
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) llabs)(long long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN llabs LOC=./src/b2sum.merge.c:8768 */
+/* END FUNCTION-DECL-EXTERN llabs LOC=./src/b2sum.merge.c:8764 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/b2sum.merge.c:8782 */
-#line 8782
+/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/b2sum.merge.c:8778 */
+#line 8778
 extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
-/* END FUNCTION-DECL-EXTERN gettime LOC=./src/b2sum.merge.c:8782 */
+/* END FUNCTION-DECL-EXTERN gettime LOC=./src/b2sum.merge.c:8778 */
 
 /* BEGIN FUNCTION-DECL __builtin_nextafter LOC=BUILTIN */
 /* compiler builtin: 
@@ -12915,36 +12903,40 @@ extern  __attribute__((__nothrow__)) __pid_t fork(void) ;
 typedef int __kernel_pid_t;
 /* END TYPEDEF __kernel_pid_t LOC=./src/b2sum.merge.c:10150 */
 
-/* BEGIN TYPEDEF __tss_t LOC=./src/b2sum.merge.c:10172 */
-#line 10172 "./src/b2sum.merge.c"
+/* BEGIN VARIABLE-DEF _TIG_IZ_smv4_envp LOC=UNKNOWN */
+char **_TIG_IZ_smv4_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_smv4_envp LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF __tss_t LOC=./src/b2sum.merge.c:10176 */
+#line 10176 "./src/b2sum.merge.c"
 typedef unsigned int __tss_t;
-/* END TYPEDEF __tss_t LOC=./src/b2sum.merge.c:10172 */
+/* END TYPEDEF __tss_t LOC=./src/b2sum.merge.c:10176 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint LOC=./src/b2sum.merge.c:10185 */
-#line 10185 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint LOC=./src/b2sum.merge.c:10189 */
+#line 10189 "./src/b2sum.merge.c"
 typedef unsigned int uint;
-/* END TYPEDEF uint LOC=./src/b2sum.merge.c:10185 */
+/* END TYPEDEF uint LOC=./src/b2sum.merge.c:10189 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/b2sum.merge.c:10195 */
-#line 10195
+/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/b2sum.merge.c:10199 */
+#line 10199
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ttyslot)(void) ;
-/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/b2sum.merge.c:10195 */
+/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/b2sum.merge.c:10199 */
 
 /* BEGIN FUNCTION-DECL __builtin_round LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_round(double  ) ;  */
 /* END FUNCTION-DECL __builtin_round LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/b2sum.merge.c:10209 */
-#line 10209
+/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/b2sum.merge.c:10213 */
+#line 10213
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort)(struct dirent  const  **__e1 ,
                                                                                                     struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/b2sum.merge.c:10209 */
+/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/b2sum.merge.c:10213 */
 
 /* BEGIN FUNCTION-DECL c_isblank LOC=UNKNOWN */
 __inline _Bool c_isblank(int c ) ;
@@ -12955,42 +12947,42 @@ __inline _Bool c_isblank(int c ) ;
    long double __builtin_tgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/b2sum.merge.c:10223 */
-#line 10223
+/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/b2sum.merge.c:10227 */
+#line 10227
 extern __off64_t ( __attribute__((__nonnull__(1))) ftello64)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/b2sum.merge.c:10223 */
+/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/b2sum.merge.c:10227 */
 
 /* BEGIN FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_clogl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/b2sum.merge.c:10232 */
-#line 10232
+/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/b2sum.merge.c:10236 */
+#line 10236
 extern int getdate_err ;
-/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/b2sum.merge.c:10232 */
+/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/b2sum.merge.c:10236 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/b2sum.merge.c:10242 */
-#line 10242
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/b2sum.merge.c:10246 */
+#line 10246
 extern  __attribute__((__nothrow__)) __dev_t ( __attribute__((__leaf__)) gnu_dev_makedev)(unsigned int __major ,
                                                                                           unsigned int __minor )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/b2sum.merge.c:10242 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/b2sum.merge.c:10246 */
 
 /* BEGIN FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csqrtf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/b2sum.merge.c:10279 */
-#line 10279
+/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/b2sum.merge.c:10283 */
+#line 10283
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkdir)(char const   *__path ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/b2sum.merge.c:10279 */
+/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/b2sum.merge.c:10283 */
 
-/* BEGIN FUNCTION-DECL xset_binary_mode_error LOC=./src/b2sum.merge.c:10275 */
-#line 10275
+/* BEGIN FUNCTION-DECL xset_binary_mode_error LOC=./src/b2sum.merge.c:10279 */
+#line 10279
 __inline void xset_binary_mode_error(void) ;
-/* END FUNCTION-DECL xset_binary_mode_error LOC=./src/b2sum.merge.c:10275 */
+/* END FUNCTION-DECL xset_binary_mode_error LOC=./src/b2sum.merge.c:10279 */
 
 /* BEGIN FUNCTION-DECL __builtin_isunordered LOC=BUILTIN */
 /* compiler builtin: 
@@ -13001,51 +12993,51 @@ __inline void xset_binary_mode_error(void) ;
 static void blake2b_set_lastnode(blake2b_state *S ) ;
 /* END FUNCTION-DECL blake2b_set_lastnode LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/b2sum.merge.c:10298 */
-#line 10298
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/b2sum.merge.c:10302 */
+#line 10302
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise64)(int __fd ,
                                                                                       off64_t __offset ,
                                                                                       off64_t __len ,
                                                                                       int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/b2sum.merge.c:10298 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/b2sum.merge.c:10302 */
 
 /* BEGIN FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_vsnprintf(char * , unsigned long long  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 
-/* BEGIN STRUCT f_owner_ex LOC=./src/b2sum.merge.c:10337 */
-#line 10337 "./src/b2sum.merge.c"
+/* BEGIN STRUCT f_owner_ex LOC=./src/b2sum.merge.c:10341 */
+#line 10341 "./src/b2sum.merge.c"
 struct f_owner_ex {
    enum __pid_type type ;
    __pid_t pid ;
 };
-/* END STRUCT f_owner_ex LOC=./src/b2sum.merge.c:10337 */
+/* END STRUCT f_owner_ex LOC=./src/b2sum.merge.c:10341 */
 
 /* BEGIN FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nexttowardl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/b2sum.merge.c:10353 */
-#line 10353
+/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/b2sum.merge.c:10357 */
+#line 10357
 extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function instead"))) int ( __attribute__((__leaf__)) sighold)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sighold LOC=./src/b2sum.merge.c:10353 */
+/* END FUNCTION-DECL-EXTERN sighold LOC=./src/b2sum.merge.c:10357 */
 
-/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/b2sum.merge.c:10357 */
-#line 10357 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/b2sum.merge.c:10361 */
+#line 10361 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_barrier_t_145707746 pthread_barrier_t;
-/* END TYPEDEF pthread_barrier_t LOC=./src/b2sum.merge.c:10357 */
+/* END TYPEDEF pthread_barrier_t LOC=./src/b2sum.merge.c:10361 */
 
 /* BEGIN STRUCT-DECL __pthread_internal_list LOC=./src/b2sum.merge.c:967 */
 #line 967
 struct __pthread_internal_list ;
 /* END STRUCT-DECL __pthread_internal_list LOC=./src/b2sum.merge.c:967 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/b2sum.merge.c:10372 */
-#line 10372
+/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/b2sum.merge.c:10376 */
+#line 10376
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setlogin)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/b2sum.merge.c:10372 */
+/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/b2sum.merge.c:10376 */
 
 /* BEGIN FUNCTION-DECL __builtin_expm1f LOC=BUILTIN */
 /* compiler builtin: 
@@ -13057,33 +13049,33 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 union __anonunion___value_751190509 ;
 /* END UNION-DECL __anonunion___value_751190509 LOC=./src/b2sum.merge.c:1247 */
 
-/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/b2sum.merge.c:10390 */
-#line 10390
+/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/b2sum.merge.c:10394 */
+#line 10394
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) jrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/b2sum.merge.c:10390 */
+/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/b2sum.merge.c:10394 */
 
 /* BEGIN FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cproj(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN blake2sp_init_key LOC=./src/b2sum.merge.c:10380 */
-#line 10380
+/* BEGIN FUNCTION-DECL-EXTERN blake2sp_init_key LOC=./src/b2sum.merge.c:10384 */
+#line 10384
 extern int blake2sp_init_key(blake2sp_state *S , size_t outlen , void const   *key ,
                              size_t keylen ) ;
-/* END FUNCTION-DECL-EXTERN blake2sp_init_key LOC=./src/b2sum.merge.c:10380 */
+/* END FUNCTION-DECL-EXTERN blake2sp_init_key LOC=./src/b2sum.merge.c:10384 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/b2sum.merge.c:10398 */
-#line 10398
+/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/b2sum.merge.c:10402 */
+#line 10402
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir_r)(DIR * __restrict  __dirp ,
                                                                                              struct dirent * __restrict  __entry ,
                                                                                              struct dirent ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/b2sum.merge.c:10398 */
+/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/b2sum.merge.c:10402 */
 
-/* BEGIN TYPEDEF loff_t LOC=./src/b2sum.merge.c:10408 */
-#line 10408 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF loff_t LOC=./src/b2sum.merge.c:10412 */
+#line 10412 "./src/b2sum.merge.c"
 typedef __loff_t loff_t;
-/* END TYPEDEF loff_t LOC=./src/b2sum.merge.c:10408 */
+/* END TYPEDEF loff_t LOC=./src/b2sum.merge.c:10412 */
 
 /* BEGIN FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -13091,15 +13083,15 @@ typedef __loff_t loff_t;
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u8 LOC=./src/b2sum.merge.c:10447 */
-#line 10447 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __u8 LOC=./src/b2sum.merge.c:10451 */
+#line 10451 "./src/b2sum.merge.c"
 typedef unsigned char __u8;
-/* END TYPEDEF __u8 LOC=./src/b2sum.merge.c:10447 */
+/* END TYPEDEF __u8 LOC=./src/b2sum.merge.c:10451 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/b2sum.merge.c:10451 */
-#line 10451
+/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/b2sum.merge.c:10455 */
+#line 10455
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srand LOC=./src/b2sum.merge.c:10451 */
+/* END FUNCTION-DECL-EXTERN srand LOC=./src/b2sum.merge.c:10455 */
 
 /* BEGIN STRUCT-DECL blake2bp_state__ LOC=./src/b2sum.merge.c:1407 */
 #line 1407
@@ -13126,21 +13118,21 @@ struct blake2bp_state__ ;
 struct sigstack ;
 /* END STRUCT-DECL sigstack LOC=./src/b2sum.merge.c:915 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/b2sum.merge.c:10503 */
-#line 10503
+/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/b2sum.merge.c:10507 */
+#line 10507
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchr)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchr LOC=./src/b2sum.merge.c:10503 */
+/* END FUNCTION-DECL-EXTERN strchr LOC=./src/b2sum.merge.c:10507 */
 
 /* BEGIN FUNCTION-DECL __builtin_strndup LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strndup(char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strndup LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/b2sum.merge.c:10508 */
-#line 10508
+/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/b2sum.merge.c:10512 */
+#line 10512
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigfillset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/b2sum.merge.c:10508 */
+/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/b2sum.merge.c:10512 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -13157,73 +13149,73 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    void *__builtin___mempcpy_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___mempcpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/b2sum.merge.c:10531 */
-#line 10531
+/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/b2sum.merge.c:10535 */
+#line 10535
 extern void ( __attribute__((__nonnull__(1,4))) qsort)(void *__base , size_t __nmemb ,
                                                        size_t __size , int (*__compar)(void const   * ,
                                                                                        void const   * ) ) ;
-/* END FUNCTION-DECL-EXTERN qsort LOC=./src/b2sum.merge.c:10531 */
+/* END FUNCTION-DECL-EXTERN qsort LOC=./src/b2sum.merge.c:10535 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/b2sum.merge.c:10551 */
-#line 10551
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN dup LOC=./src/b2sum.merge.c:10551 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/b2sum.merge.c:10555 */
+/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/b2sum.merge.c:10555 */
 #line 10555
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
+/* END FUNCTION-DECL-EXTERN dup LOC=./src/b2sum.merge.c:10555 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/b2sum.merge.c:10559 */
+#line 10559
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrordesc_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/b2sum.merge.c:10555 */
+/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/b2sum.merge.c:10559 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966 LOC=./src/b2sum.merge.c:1039 */
 #line 1039
 enum __anonenum_819735966 ;
 /* END ENUM-DECL __anonenum_819735966 LOC=./src/b2sum.merge.c:1039 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/b2sum.merge.c:10569 */
-#line 10569
+/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/b2sum.merge.c:10573 */
+#line 10573
 extern ssize_t rpl_copy_file_range(int ifd , off_t *ipos , int ofd , off_t *opos ,
                                    size_t len , unsigned int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/b2sum.merge.c:10569 */
+/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/b2sum.merge.c:10573 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacoshf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/b2sum.merge.c:10574 */
-#line 10574 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/b2sum.merge.c:10578 */
+#line 10578 "./src/b2sum.merge.c"
 typedef int (*__compar_d_fn_t)(void const   * , void const   * , void * );
-/* END TYPEDEF __compar_d_fn_t LOC=./src/b2sum.merge.c:10574 */
+/* END TYPEDEF __compar_d_fn_t LOC=./src/b2sum.merge.c:10578 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/b2sum.merge.c:10578 */
-#line 10578
+/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/b2sum.merge.c:10582 */
+#line 10582
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) strtol)(char const   * __restrict  __nptr ,
                                                                                               char ** __restrict  __endptr ,
                                                                                               int __base )  __asm__("__isoc23_strtol")  ;
-/* END FUNCTION-DECL-EXTERN strtol LOC=./src/b2sum.merge.c:10578 */
+/* END FUNCTION-DECL-EXTERN strtol LOC=./src/b2sum.merge.c:10582 */
 
-/* BEGIN FUNCTION-DECL set_binary_mode LOC=./src/b2sum.merge.c:10584 */
-#line 10584
+/* BEGIN FUNCTION-DECL set_binary_mode LOC=./src/b2sum.merge.c:10588 */
+#line 10588
 __inline int set_binary_mode(int fd , int mode ) ;
-/* END FUNCTION-DECL set_binary_mode LOC=./src/b2sum.merge.c:10584 */
+/* END FUNCTION-DECL set_binary_mode LOC=./src/b2sum.merge.c:10588 */
 
-/* BEGIN FUNCTION-DECL write_error LOC=./src/b2sum.merge.c:10599 */
-#line 10599
+/* BEGIN FUNCTION-DECL write_error LOC=./src/b2sum.merge.c:10603 */
+#line 10603
 __inline static void write_error(void) ;
-/* END FUNCTION-DECL write_error LOC=./src/b2sum.merge.c:10599 */
+/* END FUNCTION-DECL write_error LOC=./src/b2sum.merge.c:10603 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/b2sum.merge.c:10592 */
-#line 10592
+/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/b2sum.merge.c:10596 */
+#line 10596
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ngettext)(char const   *__msgid1 ,
                                                                                  char const   *__msgid2 ,
                                                                                  unsigned long __n )  __attribute__((__format_arg__(1),
 __format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/b2sum.merge.c:10592 */
+/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/b2sum.merge.c:10596 */
 
-/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/b2sum.merge.c:10603 */
-#line 10603
+/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/b2sum.merge.c:10607 */
+#line 10607
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)(int __lowfd ) ;
-/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/b2sum.merge.c:10603 */
+/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/b2sum.merge.c:10607 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13235,10 +13227,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)
    _Float128 __builtin_acoshf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/b2sum.merge.c:10635 */
-#line 10635
+/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/b2sum.merge.c:10639 */
+#line 10639
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)(int __errnum ) ;
-/* END FUNCTION-DECL-EXTERN strerror LOC=./src/b2sum.merge.c:10635 */
+/* END FUNCTION-DECL-EXTERN strerror LOC=./src/b2sum.merge.c:10639 */
 
 /* BEGIN FUNCTION-DECL __builtin_unpredictable LOC=BUILTIN */
 /* compiler builtin: 
@@ -13255,24 +13247,24 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)
    double __builtin_creal(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_creal LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int_least16_t LOC=./src/b2sum.merge.c:10677 */
-#line 10677 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF int_least16_t LOC=./src/b2sum.merge.c:10681 */
+#line 10681 "./src/b2sum.merge.c"
 typedef __int_least16_t int_least16_t;
-/* END TYPEDEF int_least16_t LOC=./src/b2sum.merge.c:10677 */
+/* END TYPEDEF int_least16_t LOC=./src/b2sum.merge.c:10681 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readlink LOC=./src/b2sum.merge.c:10691 */
-#line 10691
+/* BEGIN FUNCTION-DECL-EXTERN readlink LOC=./src/b2sum.merge.c:10695 */
+#line 10695
 extern  __attribute__((__nothrow__)) ssize_t ( __attribute__((__nonnull__(1,2), __leaf__)) readlink)(char const   * __restrict  __path ,
                                                                                                      char * __restrict  __buf ,
                                                                                                      size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN readlink LOC=./src/b2sum.merge.c:10691 */
+/* END FUNCTION-DECL-EXTERN readlink LOC=./src/b2sum.merge.c:10695 */
 
-/* BEGIN ENUM __anonenum_783849514 LOC=./src/b2sum.merge.c:10697 */
-#line 10697
+/* BEGIN ENUM __anonenum_783849514 LOC=./src/b2sum.merge.c:10701 */
+#line 10701
 enum __anonenum_783849514 {
     PLURAL_REDUCER = 1000000
 } ;
-/* END ENUM __anonenum_783849514 LOC=./src/b2sum.merge.c:10697 */
+/* END ENUM __anonenum_783849514 LOC=./src/b2sum.merge.c:10701 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13284,20 +13276,20 @@ enum __anonenum_783849514 {
 enum __pid_type ;
 /* END ENUM-DECL __pid_type LOC=./src/b2sum.merge.c:1387 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffsll LOC=./src/b2sum.merge.c:10708 */
-#line 10708
+/* BEGIN FUNCTION-DECL-EXTERN ffsll LOC=./src/b2sum.merge.c:10712 */
+#line 10712
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffsll)(long long __ll )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffsll LOC=./src/b2sum.merge.c:10708 */
+/* END FUNCTION-DECL-EXTERN ffsll LOC=./src/b2sum.merge.c:10712 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_atanf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ptrdiff_t LOC=./src/b2sum.merge.c:10726 */
-#line 10726 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_ptrdiff_t LOC=./src/b2sum.merge.c:10730 */
+#line 10730 "./src/b2sum.merge.c"
 typedef __kernel_long_t __kernel_ptrdiff_t;
-/* END TYPEDEF __kernel_ptrdiff_t LOC=./src/b2sum.merge.c:10726 */
+/* END TYPEDEF __kernel_ptrdiff_t LOC=./src/b2sum.merge.c:10730 */
 
 /* BEGIN FUNCTION-DECL __bswap_16 LOC=UNKNOWN */
 __inline static __uint16_t __bswap_16(__uint16_t __bsx ) ;
@@ -13307,66 +13299,70 @@ __inline static __uint16_t __bswap_16(__uint16_t __bsx ) ;
 __inline struct timespec make_timespec(time_t s , long ns ) ;
 /* END FUNCTION-DECL make_timespec LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_gid_t LOC=./src/b2sum.merge.c:10761 */
-#line 10761 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __kernel_gid_t LOC=./src/b2sum.merge.c:10765 */
+#line 10765 "./src/b2sum.merge.c"
 typedef unsigned int __kernel_gid_t;
-/* END TYPEDEF __kernel_gid_t LOC=./src/b2sum.merge.c:10761 */
+/* END TYPEDEF __kernel_gid_t LOC=./src/b2sum.merge.c:10765 */
 
-/* BEGIN FUNCTION-DECL load64 LOC=./src/b2sum.merge.c:10765 */
-#line 10765
+/* BEGIN FUNCTION-DECL load64 LOC=./src/b2sum.merge.c:10769 */
+#line 10769
 __inline static uint64_t load64(void const   *src ) ;
-/* END FUNCTION-DECL load64 LOC=./src/b2sum.merge.c:10765 */
+/* END FUNCTION-DECL load64 LOC=./src/b2sum.merge.c:10769 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2realloc LOC=./src/b2sum.merge.c:10779 */
-#line 10779
+/* BEGIN FUNCTION-DECL-EXTERN x2realloc LOC=./src/b2sum.merge.c:10783 */
+#line 10783
 extern void *x2realloc(void *p , size_t *ps )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2realloc LOC=./src/b2sum.merge.c:10779 */
+/* END FUNCTION-DECL-EXTERN x2realloc LOC=./src/b2sum.merge.c:10783 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_scalbnl(long double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN secure_getenv LOC=./src/b2sum.merge.c:10789 */
-#line 10789
+/* BEGIN FUNCTION-DECL-EXTERN secure_getenv LOC=./src/b2sum.merge.c:10793 */
+#line 10793
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) secure_getenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN secure_getenv LOC=./src/b2sum.merge.c:10789 */
+/* END FUNCTION-DECL-EXTERN secure_getenv LOC=./src/b2sum.merge.c:10793 */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen LOC=./src/b2sum.merge.c:10783 */
-#line 10783
+/* BEGIN FUNCTION-DECL-EXTERN freopen LOC=./src/b2sum.merge.c:10787 */
+#line 10787
 extern FILE *( __attribute__((__nonnull__(3))) freopen)(char const   * __restrict  __filename ,
                                                         char const   * __restrict  __modes ,
                                                         FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen LOC=./src/b2sum.merge.c:10783 */
+/* END FUNCTION-DECL-EXTERN freopen LOC=./src/b2sum.merge.c:10787 */
 
 /* BEGIN FUNCTION-DECL __builtin_ceilf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_ceilf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_ceilf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN splice LOC=./src/b2sum.merge.c:10812 */
-#line 10812
+/* BEGIN FUNCTION-DECL-EXTERN splice LOC=./src/b2sum.merge.c:10816 */
+#line 10816
 extern __ssize_t splice(int __fdin , __off64_t *__offin , int __fdout , __off64_t *__offout ,
                         size_t __len , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN splice LOC=./src/b2sum.merge.c:10812 */
+/* END FUNCTION-DECL-EXTERN splice LOC=./src/b2sum.merge.c:10816 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __getpgid LOC=./src/b2sum.merge.c:10822 */
-#line 10822
-extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) __getpgid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN __getpgid LOC=./src/b2sum.merge.c:10822 */
-
-/* BEGIN FUNCTION-DECL-EXTERN current_timespec LOC=./src/b2sum.merge.c:10826 */
+/* BEGIN FUNCTION-DECL-EXTERN __getpgid LOC=./src/b2sum.merge.c:10826 */
 #line 10826
+extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) __getpgid)(__pid_t __pid ) ;
+/* END FUNCTION-DECL-EXTERN __getpgid LOC=./src/b2sum.merge.c:10826 */
+
+/* BEGIN FUNCTION-DECL-EXTERN current_timespec LOC=./src/b2sum.merge.c:10830 */
+#line 10830
 extern struct timespec current_timespec(void) ;
-/* END FUNCTION-DECL-EXTERN current_timespec LOC=./src/b2sum.merge.c:10826 */
+/* END FUNCTION-DECL-EXTERN current_timespec LOC=./src/b2sum.merge.c:10830 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vdprintf LOC=./src/b2sum.merge.c:10845 */
-#line 10845
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMKm_envp LOC=UNKNOWN */
+char **_TIG_IZ_dMKm_envp ;
+/* END VARIABLE-DECL _TIG_IZ_dMKm_envp LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN vdprintf LOC=./src/b2sum.merge.c:10849 */
+#line 10849
 extern int vdprintf(int __fd , char const   * __restrict  __fmt , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vdprintf LOC=./src/b2sum.merge.c:10845 */
+/* END FUNCTION-DECL-EXTERN vdprintf LOC=./src/b2sum.merge.c:10849 */
 
-/* BEGIN STRUCT statx LOC=./src/b2sum.merge.c:10850 */
-#line 10850 "./src/b2sum.merge.c"
+/* BEGIN STRUCT statx LOC=./src/b2sum.merge.c:10854 */
+#line 10854 "./src/b2sum.merge.c"
 struct statx {
    __u32 stx_mask ;
    __u32 stx_blksize ;
@@ -13398,44 +13394,48 @@ struct statx {
    __u32 __spare1[1] ;
    __u64 __spare3[9] ;
 };
-/* END STRUCT statx LOC=./src/b2sum.merge.c:10850 */
+/* END STRUCT statx LOC=./src/b2sum.merge.c:10854 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgets LOC=./src/b2sum.merge.c:10884 */
-#line 10884
+/* BEGIN FUNCTION-DECL-EXTERN fgets LOC=./src/b2sum.merge.c:10888 */
+#line 10888
 extern char *( __attribute__((__nonnull__(3))) fgets)(char * __restrict  __s , int __n ,
                                                       FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets LOC=./src/b2sum.merge.c:10884 */
+/* END FUNCTION-DECL-EXTERN fgets LOC=./src/b2sum.merge.c:10888 */
 
-/* BEGIN TYPEDEF pthread_mutex_t LOC=./src/b2sum.merge.c:10889 */
-#line 10889 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF pthread_mutex_t LOC=./src/b2sum.merge.c:10893 */
+#line 10893 "./src/b2sum.merge.c"
 typedef union __anonunion_pthread_mutex_t_335460617 pthread_mutex_t;
-/* END TYPEDEF pthread_mutex_t LOC=./src/b2sum.merge.c:10889 */
+/* END TYPEDEF pthread_mutex_t LOC=./src/b2sum.merge.c:10893 */
 
 /* BEGIN FUNCTION-DECL __builtin_frame_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_frame_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_frame_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seteuid LOC=./src/b2sum.merge.c:10918 */
-#line 10918
+/* BEGIN FUNCTION-DECL-EXTERN seteuid LOC=./src/b2sum.merge.c:10922 */
+#line 10922
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) seteuid)(__uid_t __uid ) ;
-/* END FUNCTION-DECL-EXTERN seteuid LOC=./src/b2sum.merge.c:10918 */
+/* END FUNCTION-DECL-EXTERN seteuid LOC=./src/b2sum.merge.c:10922 */
 
-/* BEGIN FUNCTION-DECL lcm LOC=./src/b2sum.merge.c:10945 */
-#line 10945
+/* BEGIN FUNCTION-DECL lcm LOC=./src/b2sum.merge.c:10949 */
+#line 10949
 __inline static size_t lcm(size_t u , size_t v )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL lcm LOC=./src/b2sum.merge.c:10945 */
+/* END FUNCTION-DECL lcm LOC=./src/b2sum.merge.c:10949 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uselocale LOC=./src/b2sum.merge.c:10959 */
-#line 10959
+/* BEGIN FUNCTION-DECL-EXTERN uselocale LOC=./src/b2sum.merge.c:10963 */
+#line 10963
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) uselocale)(locale_t __dataset ) ;
-/* END FUNCTION-DECL-EXTERN uselocale LOC=./src/b2sum.merge.c:10959 */
+/* END FUNCTION-DECL-EXTERN uselocale LOC=./src/b2sum.merge.c:10963 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64 LOC=./src/b2sum.merge.c:10954 */
-#line 10954
+/* BEGIN FUNCTION-DECL-EXTERN strtof64 LOC=./src/b2sum.merge.c:10958 */
+#line 10958
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) strtof64)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64 LOC=./src/b2sum.merge.c:10954 */
+/* END FUNCTION-DECL-EXTERN strtof64 LOC=./src/b2sum.merge.c:10958 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMKm_argv LOC=UNKNOWN */
+char **_TIG_IZ_dMKm_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_dMKm_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT-DECL itimerspec LOC=./src/b2sum.merge.c:1135 */
 #line 1135
@@ -13451,25 +13451,25 @@ __inline _Bool psame_inode(struct stat  const  *a , struct stat  const  *b ) ;
    short __builtin_rotateleft16(short  , short  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN bsearch LOC=./src/b2sum.merge.c:11008 */
-#line 11008
+/* BEGIN FUNCTION-DECL-EXTERN bsearch LOC=./src/b2sum.merge.c:11012 */
+#line 11012
 extern void *( __attribute__((__nonnull__(1,2,5))) bsearch)(void const   *__key ,
                                                             void const   *__base ,
                                                             size_t __nmemb , size_t __size ,
                                                             int (*__compar)(void const   * ,
                                                                             void const   * ) ) ;
-/* END FUNCTION-DECL-EXTERN bsearch LOC=./src/b2sum.merge.c:11008 */
+/* END FUNCTION-DECL-EXTERN bsearch LOC=./src/b2sum.merge.c:11012 */
 
-/* BEGIN FUNCTION-DECL-EXTERN euidaccess LOC=./src/b2sum.merge.c:11035 */
-#line 11035
+/* BEGIN FUNCTION-DECL-EXTERN euidaccess LOC=./src/b2sum.merge.c:11039 */
+#line 11039
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) euidaccess)(char const   *__name ,
                                                                                                  int __type ) ;
-/* END FUNCTION-DECL-EXTERN euidaccess LOC=./src/b2sum.merge.c:11035 */
+/* END FUNCTION-DECL-EXTERN euidaccess LOC=./src/b2sum.merge.c:11039 */
 
-/* BEGIN FUNCTION-DECL initialize_exit_failure LOC=./src/b2sum.merge.c:11045 */
-#line 11045
+/* BEGIN FUNCTION-DECL initialize_exit_failure LOC=./src/b2sum.merge.c:11049 */
+#line 11049
 __inline static void initialize_exit_failure(int status ) ;
-/* END FUNCTION-DECL initialize_exit_failure LOC=./src/b2sum.merge.c:11045 */
+/* END FUNCTION-DECL initialize_exit_failure LOC=./src/b2sum.merge.c:11049 */
 
 /* BEGIN FUNCTION-DECL __builtin_apply_args LOC=BUILTIN */
 /* compiler builtin: 
@@ -13481,8 +13481,8 @@ __inline static void initialize_exit_failure(int status ) ;
    _Float16 __builtin_canonicalizef16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalizef16 LOC=BUILTIN */
 
-/* BEGIN STRUCT flock LOC=./src/b2sum.merge.c:11076 */
-#line 11076 "./src/b2sum.merge.c"
+/* BEGIN STRUCT flock LOC=./src/b2sum.merge.c:11080 */
+#line 11080 "./src/b2sum.merge.c"
 struct flock {
    short l_type ;
    short l_whence ;
@@ -13490,37 +13490,37 @@ struct flock {
    __off_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock LOC=./src/b2sum.merge.c:11076 */
+/* END STRUCT flock LOC=./src/b2sum.merge.c:11080 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sbrk LOC=./src/b2sum.merge.c:11094 */
-#line 11094
-extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) sbrk)(intptr_t __delta ) ;
-/* END FUNCTION-DECL-EXTERN sbrk LOC=./src/b2sum.merge.c:11094 */
-
-/* BEGIN FUNCTION-DECL-EXTERN xstrtoimax LOC=./src/b2sum.merge.c:11090 */
-#line 11090
-extern strtol_error xstrtoimax(char const   * , char ** , int  , intmax_t * , char const   * ) ;
-/* END FUNCTION-DECL-EXTERN xstrtoimax LOC=./src/b2sum.merge.c:11090 */
-
-/* BEGIN FUNCTION-DECL-EXTERN getusershell LOC=./src/b2sum.merge.c:11086 */
-#line 11086
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN getusershell LOC=./src/b2sum.merge.c:11086 */
-
-/* BEGIN VARIABLE-DECL-EXTERN optarg LOC=./src/b2sum.merge.c:11098 */
+/* BEGIN FUNCTION-DECL-EXTERN sbrk LOC=./src/b2sum.merge.c:11098 */
 #line 11098
+extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) sbrk)(intptr_t __delta ) ;
+/* END FUNCTION-DECL-EXTERN sbrk LOC=./src/b2sum.merge.c:11098 */
+
+/* BEGIN FUNCTION-DECL-EXTERN xstrtoimax LOC=./src/b2sum.merge.c:11094 */
+#line 11094
+extern strtol_error xstrtoimax(char const   * , char ** , int  , intmax_t * , char const   * ) ;
+/* END FUNCTION-DECL-EXTERN xstrtoimax LOC=./src/b2sum.merge.c:11094 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getusershell LOC=./src/b2sum.merge.c:11090 */
+#line 11090
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getusershell)(void) ;
+/* END FUNCTION-DECL-EXTERN getusershell LOC=./src/b2sum.merge.c:11090 */
+
+/* BEGIN VARIABLE-DECL-EXTERN optarg LOC=./src/b2sum.merge.c:11102 */
+#line 11102
 extern char *optarg ;
-/* END VARIABLE-DECL-EXTERN optarg LOC=./src/b2sum.merge.c:11098 */
+/* END VARIABLE-DECL-EXTERN optarg LOC=./src/b2sum.merge.c:11102 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cacosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmalloc LOC=./src/b2sum.merge.c:11113 */
-#line 11113
+/* BEGIN FUNCTION-DECL-EXTERN xmalloc LOC=./src/b2sum.merge.c:11117 */
+#line 11117
 extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xmalloc LOC=./src/b2sum.merge.c:11113 */
+/* END FUNCTION-DECL-EXTERN xmalloc LOC=./src/b2sum.merge.c:11117 */
 
 /* BEGIN FUNCTION-DECL __builtin_preserve_access_index LOC=BUILTIN */
 /* compiler builtin: 
@@ -13531,55 +13531,55 @@ extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 static uint8_t blake2b_sigma[12][16] ;
 /* END VARIABLE-DECL blake2b_sigma LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/b2sum.merge.c:11148 */
-#line 11148
+/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/b2sum.merge.c:11152 */
+#line 11152
 extern  __attribute__((__nothrow__)) int snprintf(char * __restrict  __s , size_t __maxlen ,
                                                   char const   * __restrict  __format 
                                                   , ...) ;
-/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/b2sum.merge.c:11148 */
+/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/b2sum.merge.c:11152 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/b2sum.merge.c:11174 */
-#line 11174
+/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/b2sum.merge.c:11178 */
+#line 11178
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtold_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/b2sum.merge.c:11174 */
+/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/b2sum.merge.c:11178 */
 
 /* BEGIN FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clz(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/b2sum.merge.c:11185 */
-#line 11185
+/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/b2sum.merge.c:11189 */
+#line 11189
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lcong48_r)(unsigned short *__param ,
                                                                                                   struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/b2sum.merge.c:11185 */
+/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/b2sum.merge.c:11189 */
 
 /* BEGIN FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_bzero(void * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/b2sum.merge.c:11190 */
-#line 11190
-extern int ( __attribute__((__nonnull__(1))) fsetpos)(FILE *__stream , fpos_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/b2sum.merge.c:11190 */
-
-/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/b2sum.merge.c:11194 */
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/b2sum.merge.c:11194 */
 #line 11194
-extern char const   version_etc_copyright[] ;
-/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/b2sum.merge.c:11194 */
+extern int ( __attribute__((__nonnull__(1))) fsetpos)(FILE *__stream , fpos_t const   *__pos ) ;
+/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/b2sum.merge.c:11194 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/b2sum.merge.c:11203 */
-#line 11203
+/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/b2sum.merge.c:11198 */
+#line 11198
+extern char const   version_etc_copyright[] ;
+/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/b2sum.merge.c:11198 */
+
+/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/b2sum.merge.c:11207 */
+#line 11207
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/b2sum.merge.c:11203 */
+/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/b2sum.merge.c:11207 */
 
-/* BEGIN STRUCT __locale_struct LOC=./src/b2sum.merge.c:11213 */
-#line 11213 "./src/b2sum.merge.c"
+/* BEGIN STRUCT __locale_struct LOC=./src/b2sum.merge.c:11217 */
+#line 11217 "./src/b2sum.merge.c"
 struct __locale_struct {
    struct __locale_data *__locales[13] ;
    unsigned short const   *__ctype_b ;
@@ -13587,81 +13587,81 @@ struct __locale_struct {
    int const   *__ctype_toupper ;
    char const   *__names[13] ;
 };
-/* END STRUCT __locale_struct LOC=./src/b2sum.merge.c:11213 */
+/* END STRUCT __locale_struct LOC=./src/b2sum.merge.c:11217 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/b2sum.merge.c:11233 */
-#line 11233
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/b2sum.merge.c:11237 */
+#line 11237
 extern char *quotearg_n_style(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/b2sum.merge.c:11233 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/b2sum.merge.c:11237 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_memcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/b2sum.merge.c:11242 */
-#line 11242
+/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/b2sum.merge.c:11246 */
+#line 11246
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam)(char * ) ;
-/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/b2sum.merge.c:11242 */
+/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/b2sum.merge.c:11246 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgmath LOC=BUILTIN */
 /* compiler builtin: 
    void __attribute__((__overloaded__))  __builtin_tgmath(...) ;  */
 /* END FUNCTION-DECL __builtin_tgmath LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/b2sum.merge.c:11237 */
-#line 11237
+/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/b2sum.merge.c:11241 */
+#line 11241
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getdomainname)(char *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/b2sum.merge.c:11237 */
+/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/b2sum.merge.c:11241 */
 
 /* BEGIN FUNCTION-DECL blake2b_init_key LOC=UNKNOWN */
 int blake2b_init_key(blake2b_state *S , size_t outlen , void const   *key , size_t keylen ) ;
 /* END FUNCTION-DECL blake2b_init_key LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/b2sum.merge.c:11269 */
-#line 11269
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/b2sum.merge.c:11273 */
+#line 11273
 extern int ( __attribute__((__nonnull__(1))) rpl_fseek)(FILE *fp , long offset , int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/b2sum.merge.c:11269 */
+/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/b2sum.merge.c:11273 */
 
 /* BEGIN FUNCTION-DECL __builtin_sprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_sprintf(char * , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_sprintf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast32_t LOC=./src/b2sum.merge.c:11283 */
-#line 11283 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF uint_fast32_t LOC=./src/b2sum.merge.c:11287 */
+#line 11287 "./src/b2sum.merge.c"
 typedef unsigned long uint_fast32_t;
-/* END TYPEDEF uint_fast32_t LOC=./src/b2sum.merge.c:11283 */
+/* END TYPEDEF uint_fast32_t LOC=./src/b2sum.merge.c:11287 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/b2sum.merge.c:11287 */
-#line 11287
-extern char const   *setlocale_null_unlocked(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/b2sum.merge.c:11287 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=./src/b2sum.merge.c:11291 */
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/b2sum.merge.c:11291 */
 #line 11291
+extern char const   *setlocale_null_unlocked(int category ) ;
+/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/b2sum.merge.c:11291 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=./src/b2sum.merge.c:11295 */
+#line 11295
 extern  __attribute__((__nothrow__)) ldiv_t ( __attribute__((__leaf__)) ldiv)(long __numer ,
                                                                               long __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ldiv LOC=./src/b2sum.merge.c:11291 */
+/* END FUNCTION-DECL-EXTERN ldiv LOC=./src/b2sum.merge.c:11295 */
 
 /* BEGIN STRUCT-DECL __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:1087 */
 #line 1087
 struct __anonstruct_ldiv_t_790849867 ;
 /* END STRUCT-DECL __anonstruct_ldiv_t_790849867 LOC=./src/b2sum.merge.c:1087 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimens LOC=./src/b2sum.merge.c:11309 */
-#line 11309
+/* BEGIN FUNCTION-DECL-EXTERN futimens LOC=./src/b2sum.merge.c:11313 */
+#line 11313
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimens)(int __fd ,
                                                                                struct timespec  const  *__times ) ;
-/* END FUNCTION-DECL-EXTERN futimens LOC=./src/b2sum.merge.c:11309 */
+/* END FUNCTION-DECL-EXTERN futimens LOC=./src/b2sum.merge.c:11313 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __strtok_r LOC=./src/b2sum.merge.c:11319 */
-#line 11319
+/* BEGIN FUNCTION-DECL-EXTERN __strtok_r LOC=./src/b2sum.merge.c:11323 */
+#line 11323
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __leaf__)) __strtok_r)(char * __restrict  __s ,
                                                                                                      char const   * __restrict  __delim ,
                                                                                                      char ** __restrict  __save_ptr ) ;
-/* END FUNCTION-DECL-EXTERN __strtok_r LOC=./src/b2sum.merge.c:11319 */
+/* END FUNCTION-DECL-EXTERN __strtok_r LOC=./src/b2sum.merge.c:11323 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcschr LOC=BUILTIN */
 /* compiler builtin: 
@@ -13678,10 +13678,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __
    _Complex float __builtin_ctanf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL select_plural LOC=./src/b2sum.merge.c:11340 */
-#line 11340
+/* BEGIN FUNCTION-DECL select_plural LOC=./src/b2sum.merge.c:11344 */
+#line 11344
 __inline static unsigned long select_plural(uintmax_t n ) ;
-/* END FUNCTION-DECL select_plural LOC=./src/b2sum.merge.c:11340 */
+/* END FUNCTION-DECL select_plural LOC=./src/b2sum.merge.c:11344 */
 
 /* BEGIN FUNCTION-DECL __builtin_dynamic_object_size LOC=BUILTIN */
 /* compiler builtin: 
@@ -13703,14 +13703,14 @@ __inline static unsigned long select_plural(uintmax_t n ) ;
    void __builtin_bcopy(void const   * , void * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bcopy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN random_r LOC=./src/b2sum.merge.c:11373 */
-#line 11373
+/* BEGIN FUNCTION-DECL-EXTERN random_r LOC=./src/b2sum.merge.c:11377 */
+#line 11377
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) random_r)(struct random_data * __restrict  __buf ,
                                                                                                  int32_t * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN random_r LOC=./src/b2sum.merge.c:11373 */
+/* END FUNCTION-DECL-EXTERN random_r LOC=./src/b2sum.merge.c:11377 */
 
-/* BEGIN STRUCT blake2s_param__ LOC=./src/b2sum.merge.c:11378 */
-#line 11378 "./src/b2sum.merge.c"
+/* BEGIN STRUCT blake2s_param__ LOC=./src/b2sum.merge.c:11382 */
+#line 11382 "./src/b2sum.merge.c"
 struct blake2s_param__ {
    uint8_t digest_length ;
    uint8_t key_length ;
@@ -13724,18 +13724,18 @@ struct blake2s_param__ {
    uint8_t salt[8] ;
    uint8_t personal[8] ;
 } __attribute__((__packed__)) ;
-/* END STRUCT blake2s_param__ LOC=./src/b2sum.merge.c:11378 */
+/* END STRUCT blake2s_param__ LOC=./src/b2sum.merge.c:11382 */
 
-/* BEGIN FUNCTION-DECL-EXTERN select LOC=./src/b2sum.merge.c:11394 */
-#line 11394
+/* BEGIN FUNCTION-DECL-EXTERN select LOC=./src/b2sum.merge.c:11398 */
+#line 11398
 extern int select(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
                   fd_set * __restrict  __exceptfds , struct timeval * __restrict  __timeout ) ;
-/* END FUNCTION-DECL-EXTERN select LOC=./src/b2sum.merge.c:11394 */
+/* END FUNCTION-DECL-EXTERN select LOC=./src/b2sum.merge.c:11398 */
 
-/* BEGIN TYPEDEF __syscall_ulong_t LOC=./src/b2sum.merge.c:11399 */
-#line 11399 "./src/b2sum.merge.c"
+/* BEGIN TYPEDEF __syscall_ulong_t LOC=./src/b2sum.merge.c:11403 */
+#line 11403 "./src/b2sum.merge.c"
 typedef unsigned long __syscall_ulong_t;
-/* END TYPEDEF __syscall_ulong_t LOC=./src/b2sum.merge.c:11399 */
+/* END TYPEDEF __syscall_ulong_t LOC=./src/b2sum.merge.c:11403 */
 
 /* BEGIN FUNCTION-DECL __builtin_logl LOC=BUILTIN */
 /* compiler builtin: 
@@ -13747,14 +13747,14 @@ typedef unsigned long __syscall_ulong_t;
 union __anonunion_pthread_cond_t_951761805 ;
 /* END UNION-DECL __anonunion_pthread_cond_t_951761805 LOC=./src/b2sum.merge.c:1347 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchownat LOC=./src/b2sum.merge.c:11437 */
-#line 11437
+/* BEGIN FUNCTION-DECL-EXTERN fchownat LOC=./src/b2sum.merge.c:11441 */
+#line 11441
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fchownat)(int __fd ,
                                                                                                char const   *__file ,
                                                                                                __uid_t __owner ,
                                                                                                __gid_t __group ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fchownat LOC=./src/b2sum.merge.c:11437 */
+/* END FUNCTION-DECL-EXTERN fchownat LOC=./src/b2sum.merge.c:11441 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -13766,29 +13766,29 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    _Complex double __builtin_ctan(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN memccpy LOC=./src/b2sum.merge.c:11466 */
-#line 11466
+/* BEGIN FUNCTION-DECL-EXTERN memccpy LOC=./src/b2sum.merge.c:11470 */
+#line 11470
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memccpy)(void * __restrict  __dest ,
                                                                                                   void const   * __restrict  __src ,
                                                                                                   int __c ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memccpy LOC=./src/b2sum.merge.c:11466 */
+/* END FUNCTION-DECL-EXTERN memccpy LOC=./src/b2sum.merge.c:11470 */
 
-/* BEGIN FUNCTION-DECL-EXTERN proper_name_lite LOC=./src/b2sum.merge.c:11473 */
-#line 11473
+/* BEGIN FUNCTION-DECL-EXTERN proper_name_lite LOC=./src/b2sum.merge.c:11477 */
+#line 11477
 extern char const   *proper_name_lite(char const   *name_ascii , char const   *name_utf8 ) ;
-/* END FUNCTION-DECL-EXTERN proper_name_lite LOC=./src/b2sum.merge.c:11473 */
+/* END FUNCTION-DECL-EXTERN proper_name_lite LOC=./src/b2sum.merge.c:11477 */
 
 /* BEGIN STRUCT-DECL sigevent LOC=./src/b2sum.merge.c:871 */
 #line 871
 struct sigevent ;
 /* END STRUCT-DECL sigevent LOC=./src/b2sum.merge.c:871 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom LOC=./src/b2sum.merge.c:11486 */
-#line 11486
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom LOC=./src/b2sum.merge.c:11490 */
+#line 11490
 extern char *quotearg_n_custom(int n , char const   *left_quote , char const   *right_quote ,
                                char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_custom LOC=./src/b2sum.merge.c:11486 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_custom LOC=./src/b2sum.merge.c:11490 */
 
 /* BEGIN FUNCTION-DECL-EXTERN memchr LOC=./src/b2sum.merge.c:11499 */
 #line 11499
@@ -17394,7 +17394,7 @@ __inline static char const   *dcpgettext_expr(char const   *domain , char const 
 /* END FUNCTION-DEF dcpgettext_expr LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_smv4_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_3 ;
   int init_elems1_inline_1_inline_2 ;
@@ -17495,6 +17495,13 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   }
   {
   {
+  _TIG_IZ_smv4_envp = (char **)0;
+  goto _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT___0;
+  }
+  _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
   strict = (_Bool)0;
   goto strict__INITINLINE_strict__INIT___0;
   }
@@ -17502,10 +17509,24 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   }
   {
   {
+  _TIG_IZ_smv4_argc = 0;
+  goto _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT___0;
+  }
+  _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
   digest_delim = (unsigned char)0;
   goto digest_delim__INITINLINE_digest_delim__INIT___0;
   }
   digest_delim__INITINLINE_digest_delim__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_smv4_argv = (char **)0;
+  goto _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT___0;
+  }
+  _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -17524,13 +17545,6 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   goto blake2b_IV__INITINLINE_blake2b_IV__INIT___0;
   }
   blake2b_IV__INITINLINE_blake2b_IV__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_BUUq_argc = 0;
-  goto _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT___0;
-  }
-  _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -17600,13 +17614,6 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   goto long_options__INITINLINE_long_options__INIT___0;
   }
   long_options__INITINLINE_long_options__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_BUUq_envp = (char **)0;
-  goto _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT___0;
-  }
-  _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -17875,41 +17882,34 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   }
   {
   {
-  _TIG_IZ_BUUq_argv = (char **)0;
-  goto _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT___0;
+  _TIG_IZ_dMKm_envp = (char **)0;
+  goto _TIG_IZ_dMKm_envp__INITINLINE__TIG_IZ_dMKm_envp__INIT;
   }
-  _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_14tm_envp = (char **)0;
-  goto _TIG_IZ_14tm_envp__INITINLINE__TIG_IZ_14tm_envp__INIT;
-  }
-  _TIG_IZ_14tm_envp__INITINLINE__TIG_IZ_14tm_envp__INIT: /* CIL Label */ ;
+  _TIG_IZ_dMKm_envp__INITINLINE__TIG_IZ_dMKm_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_14tm_argv = (char **)0;
-  goto _TIG_IZ_14tm_argv__INITINLINE__TIG_IZ_14tm_argv__INIT;
+  _TIG_IZ_dMKm_argv = (char **)0;
+  goto _TIG_IZ_dMKm_argv__INITINLINE__TIG_IZ_dMKm_argv__INIT;
   }
-  _TIG_IZ_14tm_argv__INITINLINE__TIG_IZ_14tm_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_dMKm_argv__INITINLINE__TIG_IZ_dMKm_argv__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_14tm_argc = 0;
-  goto _TIG_IZ_14tm_argc__INITINLINE__TIG_IZ_14tm_argc__INIT;
+  _TIG_IZ_dMKm_argc = 0;
+  goto _TIG_IZ_dMKm_argc__INITINLINE__TIG_IZ_dMKm_argc__INIT;
   }
-  _TIG_IZ_14tm_argc__INITINLINE__TIG_IZ_14tm_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_dMKm_argc__INITINLINE__TIG_IZ_dMKm_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit___0;
   }
   megaInitINLINE_megaInit___0: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-14tm--0":);
-    _TIG_IZ_14tm_argc = argc;
-    _TIG_IZ_14tm_argv = argv;
-    _TIG_IZ_14tm_envp = _TIG_IZ_BUUq_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-dMKm--0":);
+    _TIG_IZ_dMKm_argc = argc;
+    _TIG_IZ_dMKm_argv = argv;
+    _TIG_IZ_dMKm_envp = _TIG_IZ_smv4_formal_envp;
     break;
   }
 #line 126 "/usr/include/bits/uintn-identity.h"
@@ -18541,33 +18541,33 @@ int main(int argc , char **argv , char **_TIG_IZ_BUUq_formal_envp )
   goto have_read_stdin__INITINLINE_have_read_stdin__INIT;
   have_read_stdin__INITINLINE_have_read_stdin__INIT: 
 #line 520
-  _TIG_IZ_BUUq_envp = (char **)0;
+  _TIG_IZ_smv4_envp = (char **)0;
 #line 521
-  goto _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT;
-  _TIG_IZ_BUUq_envp__INITINLINE__TIG_IZ_BUUq_envp__INIT: 
+  goto _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT;
+  _TIG_IZ_smv4_envp__INITINLINE__TIG_IZ_smv4_envp__INIT: 
 #line 527
-  _TIG_IZ_BUUq_argv = (char **)0;
+  _TIG_IZ_smv4_argv = (char **)0;
 #line 528
-  goto _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT;
-  _TIG_IZ_BUUq_argv__INITINLINE__TIG_IZ_BUUq_argv__INIT: 
+  goto _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT;
+  _TIG_IZ_smv4_argv__INITINLINE__TIG_IZ_smv4_argv__INIT: 
 #line 534
-  _TIG_IZ_BUUq_argc = 0;
+  _TIG_IZ_smv4_argc = 0;
 #line 535
-  goto _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT;
-  _TIG_IZ_BUUq_argc__INITINLINE__TIG_IZ_BUUq_argc__INIT: ;
+  goto _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT;
+  _TIG_IZ_smv4_argc__INITINLINE__TIG_IZ_smv4_argc__INIT: ;
 #line 539
   goto megaInitINLINE_megaInit;
   megaInitINLINE_megaInit: ;
 #line 543
   while (1) {
 #line 544
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-BUUq--0":);
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-smv4--0":);
 #line 545
-    _TIG_IZ_BUUq_argc = argc;
+    _TIG_IZ_smv4_argc = argc;
 #line 546
-    _TIG_IZ_BUUq_argv = argv;
+    _TIG_IZ_smv4_argv = argv;
 #line 547
-    _TIG_IZ_BUUq_envp = _TIG_IZ_BUUq_formal_envp;
+    _TIG_IZ_smv4_envp = _TIG_IZ_smv4_formal_envp;
 #line 548
     break;
   }

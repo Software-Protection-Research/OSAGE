@@ -252,9 +252,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_lWnh_envp": "FUN: '_TIG_IZ_lWnh_envp__INIT'",
-          "_TIG_IZ_lWnh_argv": "FUN: '_TIG_IZ_lWnh_argv__INIT'",
-          "_TIG_IZ_lWnh_argc": "FUN: '_TIG_IZ_lWnh_argc__INIT'"
+          "_TIG_IZ_t3fn_envp": "FUN: '_TIG_IZ_t3fn_envp__INIT'",
+          "_TIG_IZ_t3fn_argv": "FUN: '_TIG_IZ_t3fn_argv__INIT'",
+          "_TIG_IZ_t3fn_argc": "FUN: '_TIG_IZ_t3fn_argc__INIT'"
         }
       }
     },
@@ -283,18 +283,18 @@ BEGIN-UNIVERSE
           "__uint32_identity", "psame_inode"
         ],
         "New Global Variables": {
-          "_TIG_IZ_5pQc_argv": "FUN: '_TIG_IZ_5pQc_argv__INIT'",
           "preserve_status": "FUN: 'preserve_status__INIT'",
           "verbose": "FUN: 'verbose__INIT'",
+          "_TIG_IZ_rYHN_argv": "FUN: '_TIG_IZ_rYHN_argv__INIT'",
           "term_signal": "FUN: 'term_signal__INIT'",
           "monitored_pid": "FUN: 'monitored_pid__INIT'",
+          "_TIG_IZ_rYHN_argc": "FUN: '_TIG_IZ_rYHN_argc__INIT'",
           "timed_out": "FUN: 'timed_out__INIT'",
+          "_TIG_IZ_rYHN_envp": "FUN: '_TIG_IZ_rYHN_envp__INIT'",
           "long_options": "FUN: 'long_options__INIT'",
           "command": "FUN: 'command__INIT'",
           "foreground": "FUN: 'foreground__INIT'",
-          "_TIG_IZ_5pQc_argc": "FUN: '_TIG_IZ_5pQc_argc__INIT'",
-          "kill_after": "FUN: 'kill_after__INIT'",
-          "_TIG_IZ_5pQc_envp": "FUN: '_TIG_IZ_5pQc_envp__INIT'"
+          "kill_after": "FUN: 'kill_after__INIT'"
         },
         "New Externs": [
           "__builtin_catanhf", "__builtin_rotateright8",
@@ -1926,14 +1926,10 @@ typedef __daddr_t daddr_t;
    _Float128 __builtin_fmodf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF DIR LOC=./src/timeout.merge.c:1654 */
-#line 1654 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF DIR LOC=./src/timeout.merge.c:1650 */
+#line 1650 "./src/timeout.merge.c"
 typedef struct __dirstream DIR;
-/* END TYPEDEF DIR LOC=./src/timeout.merge.c:1654 */
+/* END TYPEDEF DIR LOC=./src/timeout.merge.c:1650 */
 
 /* BEGIN FUNCTION-DECL __builtin_clrsb LOC=BUILTIN */
 /* compiler builtin: 
@@ -1950,17 +1946,17 @@ typedef struct __dirstream DIR;
 enum __anonenum_315186338 ;
 /* END ENUM-DECL __anonenum_315186338 LOC=./src/timeout.merge.c:1156 */
 
-/* BEGIN TYPEDEF __uint32_t LOC=./src/timeout.merge.c:1672 */
-#line 1672 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint32_t LOC=./src/timeout.merge.c:1668 */
+#line 1668 "./src/timeout.merge.c"
 typedef unsigned int __uint32_t;
-/* END TYPEDEF __uint32_t LOC=./src/timeout.merge.c:1672 */
+/* END TYPEDEF __uint32_t LOC=./src/timeout.merge.c:1668 */
 
-/* BEGIN STRUCT _xmmreg LOC=./src/timeout.merge.c:1676 */
-#line 1676 "./src/timeout.merge.c"
+/* BEGIN STRUCT _xmmreg LOC=./src/timeout.merge.c:1672 */
+#line 1672 "./src/timeout.merge.c"
 struct _xmmreg {
    __uint32_t element[4] ;
 };
-/* END STRUCT _xmmreg LOC=./src/timeout.merge.c:1676 */
+/* END STRUCT _xmmreg LOC=./src/timeout.merge.c:1672 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmodf LOC=BUILTIN */
 /* compiler builtin: 
@@ -1977,35 +1973,35 @@ struct _xmmreg {
    _Float16 __builtin_fmodf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputs LOC=./src/timeout.merge.c:1697 */
-#line 1697
+/* BEGIN FUNCTION-DECL-EXTERN fputs LOC=./src/timeout.merge.c:1693 */
+#line 1693
 extern int ( __attribute__((__nonnull__(2))) fputs)(char const   * __restrict  __s ,
                                                     FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fputs LOC=./src/timeout.merge.c:1697 */
+/* END FUNCTION-DECL-EXTERN fputs LOC=./src/timeout.merge.c:1693 */
 
-/* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=./src/timeout.merge.c:1840 */
-#line 1840
+/* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=./src/timeout.merge.c:1836 */
+#line 1836
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) funlockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN funlockfile LOC=./src/timeout.merge.c:1840 */
+/* END FUNCTION-DECL-EXTERN funlockfile LOC=./src/timeout.merge.c:1836 */
 
 /* BEGIN TYPEDEF size_t LOC=./src/timeout.merge.c:1596 */
 #line 1596 "./src/timeout.merge.c"
 typedef unsigned long size_t;
 /* END TYPEDEF size_t LOC=./src/timeout.merge.c:1596 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/timeout.merge.c:1844 */
-#line 1844
+/* BEGIN FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/timeout.merge.c:1840 */
+#line 1840
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) __ctype_get_mb_cur_max)(void) ;
-/* END FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/timeout.merge.c:1844 */
+/* END FUNCTION-DECL-EXTERN __ctype_get_mb_cur_max LOC=./src/timeout.merge.c:1840 */
 
 /* BEGIN FUNCTION-DECL gcd LOC=UNKNOWN */
 __inline static size_t gcd(size_t u , size_t v )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL gcd LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN brk LOC=./src/timeout.merge.c:1852 */
-#line 1852
+/* BEGIN FUNCTION-DECL-EXTERN brk LOC=./src/timeout.merge.c:1848 */
+#line 1848
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) brk)(void *__addr ) ;
-/* END FUNCTION-DECL-EXTERN brk LOC=./src/timeout.merge.c:1852 */
+/* END FUNCTION-DECL-EXTERN brk LOC=./src/timeout.merge.c:1848 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrier_t_145707746 LOC=./src/timeout.merge.c:1500 */
 #line 1500
@@ -2022,73 +2018,73 @@ union __anonunion_pthread_barrier_t_145707746 ;
 enum __anonenum_91015150 ;
 /* END ENUM-DECL __anonenum_91015150 LOC=./src/timeout.merge.c:1092 */
 
-/* BEGIN TYPEDEF __uint64_t LOC=./src/timeout.merge.c:1897 */
-#line 1897 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint64_t LOC=./src/timeout.merge.c:1893 */
+#line 1893 "./src/timeout.merge.c"
 typedef unsigned long __uint64_t;
-/* END TYPEDEF __uint64_t LOC=./src/timeout.merge.c:1897 */
+/* END TYPEDEF __uint64_t LOC=./src/timeout.merge.c:1893 */
 
-/* BEGIN TYPEDEF u_int64_t LOC=./src/timeout.merge.c:1901 */
-#line 1901 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_int64_t LOC=./src/timeout.merge.c:1897 */
+#line 1897 "./src/timeout.merge.c"
 typedef __uint64_t u_int64_t;
-/* END TYPEDEF u_int64_t LOC=./src/timeout.merge.c:1901 */
+/* END TYPEDEF u_int64_t LOC=./src/timeout.merge.c:1897 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/timeout.merge.c:1915 */
-#line 1915
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/timeout.merge.c:1911 */
+#line 1911
 extern FILE *tmpfile(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/timeout.merge.c:1915 */
+/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/timeout.merge.c:1911 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/timeout.merge.c:1919 */
-#line 1919
+/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/timeout.merge.c:1915 */
+#line 1915
 extern struct dirent64 *( __attribute__((__nonnull__(1))) readdir64)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/timeout.merge.c:1919 */
+/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/timeout.merge.c:1915 */
 
 /* BEGIN STRUCT-DECL _IO_FILE LOC=./src/timeout.merge.c:860 */
 #line 860
 struct _IO_FILE ;
 /* END STRUCT-DECL _IO_FILE LOC=./src/timeout.merge.c:860 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/timeout.merge.c:1937 */
-#line 1937
+/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/timeout.merge.c:1933 */
+#line 1933
 extern char *( __attribute__((__nonnull__(1))) getpass)(char const   *__prompt ) ;
-/* END FUNCTION-DECL-EXTERN getpass LOC=./src/timeout.merge.c:1937 */
+/* END FUNCTION-DECL-EXTERN getpass LOC=./src/timeout.merge.c:1933 */
 
-/* BEGIN TYPEDEF __off64_t LOC=./src/timeout.merge.c:1946 */
-#line 1946 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __off64_t LOC=./src/timeout.merge.c:1942 */
+#line 1942 "./src/timeout.merge.c"
 typedef long __off64_t;
-/* END TYPEDEF __off64_t LOC=./src/timeout.merge.c:1946 */
+/* END TYPEDEF __off64_t LOC=./src/timeout.merge.c:1942 */
 
-/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/timeout.merge.c:1960 */
-#line 1960
+/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/timeout.merge.c:1956 */
+#line 1956
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) at_quick_exit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/timeout.merge.c:1960 */
+/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/timeout.merge.c:1956 */
 
-/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/timeout.merge.c:1977 */
-#line 1977 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/timeout.merge.c:1973 */
+#line 1973 "./src/timeout.merge.c"
 struct __anonstruct___sigset_t_783464054 {
    unsigned long __val[1024ULL / (8ULL * sizeof(unsigned long ))] ;
 };
-/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/timeout.merge.c:1977 */
+/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/timeout.merge.c:1973 */
 
-/* BEGIN TYPEDEF __sigset_t LOC=./src/timeout.merge.c:1983 */
-#line 1983 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __sigset_t LOC=./src/timeout.merge.c:1979 */
+#line 1979 "./src/timeout.merge.c"
 typedef struct __anonstruct___sigset_t_783464054 __sigset_t;
-/* END TYPEDEF __sigset_t LOC=./src/timeout.merge.c:1983 */
+/* END TYPEDEF __sigset_t LOC=./src/timeout.merge.c:1979 */
 
-/* BEGIN TYPEDEF sigset_t LOC=./src/timeout.merge.c:1987 */
-#line 1987 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF sigset_t LOC=./src/timeout.merge.c:1983 */
+#line 1983 "./src/timeout.merge.c"
 typedef __sigset_t sigset_t;
-/* END TYPEDEF sigset_t LOC=./src/timeout.merge.c:1987 */
+/* END TYPEDEF sigset_t LOC=./src/timeout.merge.c:1983 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/timeout.merge.c:1991 */
-#line 1991
+/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/timeout.merge.c:1987 */
+#line 1987
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigpending)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/timeout.merge.c:1991 */
+/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/timeout.merge.c:1987 */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/timeout.merge.c:2005 */
-#line 2005
+/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/timeout.merge.c:2001 */
+#line 2001
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort64)(struct dirent64  const  **__e1 ,
                                                                                                       struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/timeout.merge.c:2005 */
+/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/timeout.merge.c:2001 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 /* compiler builtin: 
@@ -2099,26 +2095,26 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 static _Bool disable_core_dumps(void) ;
 /* END FUNCTION-DECL disable_core_dumps LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __gid_t LOC=./src/timeout.merge.c:2056 */
-#line 2056 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __gid_t LOC=./src/timeout.merge.c:2052 */
+#line 2052 "./src/timeout.merge.c"
 typedef unsigned int __gid_t;
-/* END TYPEDEF __gid_t LOC=./src/timeout.merge.c:2056 */
+/* END TYPEDEF __gid_t LOC=./src/timeout.merge.c:2052 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/timeout.merge.c:2066 */
-#line 2066
+/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/timeout.merge.c:2062 */
+#line 2062
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getgroups)(int __size ,
                                                                                 __gid_t *__list ) ;
-/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/timeout.merge.c:2066 */
+/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/timeout.merge.c:2062 */
 
-/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/timeout.merge.c:2039 */
-#line 2039 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/timeout.merge.c:2035 */
+#line 2035 "./src/timeout.merge.c"
 typedef __builtin_va_list __gnuc_va_list;
-/* END TYPEDEF __gnuc_va_list LOC=./src/timeout.merge.c:2039 */
+/* END TYPEDEF __gnuc_va_list LOC=./src/timeout.merge.c:2035 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/timeout.merge.c:2052 */
-#line 2052
+/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/timeout.merge.c:2048 */
+#line 2048
 extern int vprintf(char const   * __restrict  __format , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/timeout.merge.c:2052 */
+/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/timeout.merge.c:2048 */
 
 /* BEGIN ENUM-DECL __priority_which LOC=./src/timeout.merge.c:1492 */
 #line 1492
@@ -2130,12 +2126,12 @@ enum __priority_which ;
    long double __builtin_expm1l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_expm1l LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/timeout.merge.c:2078 */
-#line 2078
+/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/timeout.merge.c:2074 */
+#line 2074
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __leaf__)) strtok_r)(char * __restrict  __s ,
                                                                                                    char const   * __restrict  __delim ,
                                                                                                    char ** __restrict  __save_ptr ) ;
-/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/timeout.merge.c:2078 */
+/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/timeout.merge.c:2074 */
 
 /* BEGIN STRUCT-DECL flock LOC=./src/timeout.merge.c:1264 */
 #line 1264
@@ -2152,27 +2148,27 @@ struct flock ;
 enum __anonenum_463020052___0 ;
 /* END ENUM-DECL __anonenum_463020052___0 LOC=./src/timeout.merge.c:1524 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/timeout.merge.c:2094 */
-#line 2094
+/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/timeout.merge.c:2090 */
+#line 2090
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcasecmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/timeout.merge.c:2094 */
+/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/timeout.merge.c:2090 */
 
-/* BEGIN TYPEDEF __sighandler_t LOC=./src/timeout.merge.c:2099 */
-#line 2099 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __sighandler_t LOC=./src/timeout.merge.c:2095 */
+#line 2095 "./src/timeout.merge.c"
 typedef void (*__sighandler_t)(int  );
-/* END TYPEDEF __sighandler_t LOC=./src/timeout.merge.c:2099 */
+/* END TYPEDEF __sighandler_t LOC=./src/timeout.merge.c:2095 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/timeout.merge.c:2103 */
-#line 2103
+/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/timeout.merge.c:2099 */
+#line 2099
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) sysv_signal)(int __sig ,
                                                                                              void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/timeout.merge.c:2103 */
+/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/timeout.merge.c:2099 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/timeout.merge.c:2113 */
-#line 2113
+/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/timeout.merge.c:2109 */
+#line 2109
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(void) ;
-/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/timeout.merge.c:2113 */
+/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/timeout.merge.c:2109 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2189,176 +2185,176 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(vo
    long long __builtin_llrintf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_llrintf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/timeout.merge.c:2188 */
-#line 2188
+/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/timeout.merge.c:2184 */
+#line 2184
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ptsname)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/timeout.merge.c:2188 */
+/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/timeout.merge.c:2184 */
 
-/* BEGIN TYPEDEF int_fast32_t LOC=./src/timeout.merge.c:2205 */
-#line 2205 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int_fast32_t LOC=./src/timeout.merge.c:2201 */
+#line 2201 "./src/timeout.merge.c"
 typedef long int_fast32_t;
-/* END TYPEDEF int_fast32_t LOC=./src/timeout.merge.c:2205 */
+/* END TYPEDEF int_fast32_t LOC=./src/timeout.merge.c:2201 */
 
-/* BEGIN UNION __anonunion___value_751190509 LOC=./src/timeout.merge.c:2221 */
-#line 2221 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion___value_751190509 LOC=./src/timeout.merge.c:2217 */
+#line 2217 "./src/timeout.merge.c"
 union __anonunion___value_751190509 {
    unsigned int __wch ;
    char __wchb[4] ;
 };
-/* END UNION __anonunion___value_751190509 LOC=./src/timeout.merge.c:2221 */
+/* END UNION __anonunion___value_751190509 LOC=./src/timeout.merge.c:2217 */
 
-/* BEGIN STRUCT __anonstruct___mbstate_t_136527298 LOC=./src/timeout.merge.c:2228 */
-#line 2228 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___mbstate_t_136527298 LOC=./src/timeout.merge.c:2224 */
+#line 2224 "./src/timeout.merge.c"
 struct __anonstruct___mbstate_t_136527298 {
    int __count ;
    union __anonunion___value_751190509 __value ;
 };
-/* END STRUCT __anonstruct___mbstate_t_136527298 LOC=./src/timeout.merge.c:2228 */
+/* END STRUCT __anonstruct___mbstate_t_136527298 LOC=./src/timeout.merge.c:2224 */
 
-/* BEGIN TYPEDEF __mbstate_t LOC=./src/timeout.merge.c:2235 */
-#line 2235 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __mbstate_t LOC=./src/timeout.merge.c:2231 */
+#line 2231 "./src/timeout.merge.c"
 typedef struct __anonstruct___mbstate_t_136527298 __mbstate_t;
-/* END TYPEDEF __mbstate_t LOC=./src/timeout.merge.c:2235 */
+/* END TYPEDEF __mbstate_t LOC=./src/timeout.merge.c:2231 */
 
-/* BEGIN TYPEDEF __off_t LOC=./src/timeout.merge.c:2239 */
-#line 2239 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __off_t LOC=./src/timeout.merge.c:2235 */
+#line 2235 "./src/timeout.merge.c"
 typedef long __off_t;
-/* END TYPEDEF __off_t LOC=./src/timeout.merge.c:2239 */
+/* END TYPEDEF __off_t LOC=./src/timeout.merge.c:2235 */
 
-/* BEGIN STRUCT _G_fpos_t LOC=./src/timeout.merge.c:2243 */
-#line 2243 "./src/timeout.merge.c"
+/* BEGIN STRUCT _G_fpos_t LOC=./src/timeout.merge.c:2239 */
+#line 2239 "./src/timeout.merge.c"
 struct _G_fpos_t {
    __off_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos_t LOC=./src/timeout.merge.c:2243 */
+/* END STRUCT _G_fpos_t LOC=./src/timeout.merge.c:2239 */
 
-/* BEGIN TYPEDEF __fpos_t LOC=./src/timeout.merge.c:2250 */
-#line 2250 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fpos_t LOC=./src/timeout.merge.c:2246 */
+#line 2246 "./src/timeout.merge.c"
 typedef struct _G_fpos_t __fpos_t;
-/* END TYPEDEF __fpos_t LOC=./src/timeout.merge.c:2250 */
+/* END TYPEDEF __fpos_t LOC=./src/timeout.merge.c:2246 */
 
-/* BEGIN TYPEDEF fpos_t LOC=./src/timeout.merge.c:2254 */
-#line 2254 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fpos_t LOC=./src/timeout.merge.c:2250 */
+#line 2250 "./src/timeout.merge.c"
 typedef __fpos_t fpos_t;
-/* END TYPEDEF fpos_t LOC=./src/timeout.merge.c:2254 */
+/* END TYPEDEF fpos_t LOC=./src/timeout.merge.c:2250 */
 
-/* BEGIN TYPEDEF __time_t LOC=./src/timeout.merge.c:1808 */
-#line 1808 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __time_t LOC=./src/timeout.merge.c:1804 */
+#line 1804 "./src/timeout.merge.c"
 typedef long __time_t;
-/* END TYPEDEF __time_t LOC=./src/timeout.merge.c:1808 */
+/* END TYPEDEF __time_t LOC=./src/timeout.merge.c:1804 */
 
-/* BEGIN TYPEDEF time_t LOC=./src/timeout.merge.c:2258 */
-#line 2258 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF time_t LOC=./src/timeout.merge.c:2254 */
+#line 2254 "./src/timeout.merge.c"
 typedef __time_t time_t;
-/* END TYPEDEF time_t LOC=./src/timeout.merge.c:2258 */
+/* END TYPEDEF time_t LOC=./src/timeout.merge.c:2254 */
 
-/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/timeout.merge.c:2262 */
-#line 2262
+/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/timeout.merge.c:2258 */
+#line 2258
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) time)(time_t *__timer ) ;
-/* END FUNCTION-DECL-EXTERN time LOC=./src/timeout.merge.c:2262 */
+/* END FUNCTION-DECL-EXTERN time LOC=./src/timeout.merge.c:2258 */
 
-/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/timeout.merge.c:2266 */
-#line 2266
+/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/timeout.merge.c:2262 */
+#line 2262
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int __nochdir ,
                                                                              int __noclose ) ;
-/* END FUNCTION-DECL-EXTERN daemon LOC=./src/timeout.merge.c:2266 */
+/* END FUNCTION-DECL-EXTERN daemon LOC=./src/timeout.merge.c:2262 */
 
-/* BEGIN UNION sigval LOC=./src/timeout.merge.c:2276 */
-#line 2276 "./src/timeout.merge.c"
+/* BEGIN UNION sigval LOC=./src/timeout.merge.c:2272 */
+#line 2272 "./src/timeout.merge.c"
 union sigval {
    int sival_int ;
    void *sival_ptr ;
 };
-/* END UNION sigval LOC=./src/timeout.merge.c:2276 */
+/* END UNION sigval LOC=./src/timeout.merge.c:2272 */
 
-/* BEGIN TYPEDEF pthread_t LOC=./src/timeout.merge.c:2283 */
-#line 2283 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_t LOC=./src/timeout.merge.c:2279 */
+#line 2279 "./src/timeout.merge.c"
 typedef unsigned long pthread_t;
-/* END TYPEDEF pthread_t LOC=./src/timeout.merge.c:2283 */
+/* END TYPEDEF pthread_t LOC=./src/timeout.merge.c:2279 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/timeout.merge.c:2287 */
-#line 2287
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/timeout.merge.c:2283 */
+#line 2283
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigqueue)(pthread_t __threadid ,
                                                                                        int __signo ,
                                                                                        union sigval  const  __value ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/timeout.merge.c:2287 */
+/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/timeout.merge.c:2283 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_asinf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/timeout.merge.c:2299 */
-#line 2299
+/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/timeout.merge.c:2295 */
+#line 2295
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srand48_r)(long __seedval ,
                                                                                                 struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/timeout.merge.c:2299 */
+/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/timeout.merge.c:2295 */
 
-/* BEGIN TYPEDEF __pid_t LOC=./src/timeout.merge.c:2169 */
-#line 2169 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __pid_t LOC=./src/timeout.merge.c:2165 */
+#line 2165 "./src/timeout.merge.c"
 typedef int __pid_t;
-/* END TYPEDEF __pid_t LOC=./src/timeout.merge.c:2169 */
+/* END TYPEDEF __pid_t LOC=./src/timeout.merge.c:2165 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/timeout.merge.c:2325 */
-#line 2325
+/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/timeout.merge.c:2321 */
+#line 2321
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getsid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN getsid LOC=./src/timeout.merge.c:2325 */
+/* END FUNCTION-DECL-EXTERN getsid LOC=./src/timeout.merge.c:2321 */
 
-/* BEGIN TYPEDEF sigevent_t LOC=./src/timeout.merge.c:2340 */
-#line 2340 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF sigevent_t LOC=./src/timeout.merge.c:2336 */
+#line 2336 "./src/timeout.merge.c"
 typedef struct sigevent sigevent_t;
-/* END TYPEDEF sigevent_t LOC=./src/timeout.merge.c:2340 */
+/* END TYPEDEF sigevent_t LOC=./src/timeout.merge.c:2336 */
 
-/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/timeout.merge.c:2356 */
-#line 2356
+/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/timeout.merge.c:2352 */
+#line 2352
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) malloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN malloc LOC=./src/timeout.merge.c:2356 */
+/* END FUNCTION-DECL-EXTERN malloc LOC=./src/timeout.merge.c:2352 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/timeout.merge.c:2365 */
-#line 2365
+/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/timeout.merge.c:2361 */
+#line 2361
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchdir)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/timeout.merge.c:2365 */
+/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/timeout.merge.c:2361 */
 
-/* BEGIN TYPEDEF register_t LOC=./src/timeout.merge.c:2384 */
-#line 2384 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF register_t LOC=./src/timeout.merge.c:2380 */
+#line 2380 "./src/timeout.merge.c"
 typedef int register_t;
-/* END TYPEDEF register_t LOC=./src/timeout.merge.c:2384 */
+/* END TYPEDEF register_t LOC=./src/timeout.merge.c:2380 */
 
 /* BEGIN FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strpbrk(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/timeout.merge.c:2402 */
-#line 2402
+/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/timeout.merge.c:2398 */
+#line 2398
 extern int ( __attribute__((__nonnull__(1))) getw)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getw LOC=./src/timeout.merge.c:2402 */
+/* END FUNCTION-DECL-EXTERN getw LOC=./src/timeout.merge.c:2398 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/timeout.merge.c:2416 */
-#line 2416
+/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/timeout.merge.c:2412 */
+#line 2412
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) realpath)(char const   * __restrict  __name ,
                                                                                  char * __restrict  __resolved ) ;
-/* END FUNCTION-DECL-EXTERN realpath LOC=./src/timeout.merge.c:2416 */
+/* END FUNCTION-DECL-EXTERN realpath LOC=./src/timeout.merge.c:2412 */
 
-/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/timeout.merge.c:1702 */
-#line 1702 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/timeout.merge.c:1698 */
+#line 1698 "./src/timeout.merge.c"
 typedef long __syscall_slong_t;
-/* END TYPEDEF __syscall_slong_t LOC=./src/timeout.merge.c:1702 */
+/* END TYPEDEF __syscall_slong_t LOC=./src/timeout.merge.c:1698 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1762 */
-#line 1762 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1758 */
+#line 1758 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346504 {
    long ru_oublock ;
    __syscall_slong_t __ru_oublock_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1762 */
+/* END UNION __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1758 */
 
-/* BEGIN FUNCTION-DECL xnrealloc LOC=./src/timeout.merge.c:2429 */
-#line 2429
+/* BEGIN FUNCTION-DECL xnrealloc LOC=./src/timeout.merge.c:2425 */
+#line 2425
 __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL xnrealloc LOC=./src/timeout.merge.c:2429 */
+/* END FUNCTION-DECL xnrealloc LOC=./src/timeout.merge.c:2425 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrt LOC=BUILTIN */
 /* compiler builtin: 
@@ -2380,10 +2376,10 @@ __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc
    long __builtin_lroundf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/timeout.merge.c:2475 */
-#line 2475
+/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/timeout.merge.c:2471 */
+#line 2471
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) telldir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN telldir LOC=./src/timeout.merge.c:2475 */
+/* END FUNCTION-DECL-EXTERN telldir LOC=./src/timeout.merge.c:2471 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2405,42 +2401,42 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __lea
 struct rusage ;
 /* END STRUCT-DECL rusage LOC=./src/timeout.merge.c:836 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/timeout.merge.c:2754 */
-#line 2754
+/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/timeout.merge.c:2750 */
+#line 2750
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffs)(int __i )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffs LOC=./src/timeout.merge.c:2754 */
+/* END FUNCTION-DECL-EXTERN ffs LOC=./src/timeout.merge.c:2750 */
 
-/* BEGIN TYPEDEF __useconds_t LOC=./src/timeout.merge.c:2745 */
-#line 2745 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __useconds_t LOC=./src/timeout.merge.c:2741 */
+#line 2741 "./src/timeout.merge.c"
 typedef unsigned int __useconds_t;
-/* END TYPEDEF __useconds_t LOC=./src/timeout.merge.c:2745 */
+/* END TYPEDEF __useconds_t LOC=./src/timeout.merge.c:2741 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/timeout.merge.c:2749 */
-#line 2749
+/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/timeout.merge.c:2745 */
+#line 2745
 extern  __attribute__((__nothrow__)) __useconds_t ( __attribute__((__leaf__)) ualarm)(__useconds_t __value ,
                                                                                       __useconds_t __interval ) ;
-/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/timeout.merge.c:2749 */
+/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/timeout.merge.c:2745 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346506 LOC=./src/timeout.merge.c:1776 */
-#line 1776 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346506 LOC=./src/timeout.merge.c:1772 */
+#line 1772 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346506 {
    long ru_msgrcv ;
    __syscall_slong_t __ru_msgrcv_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346506 LOC=./src/timeout.merge.c:1776 */
+/* END UNION __anonunion____missing_field_name_1036346506 LOC=./src/timeout.merge.c:1772 */
 
-/* BEGIN TYPEDEF __clock_t LOC=./src/timeout.merge.c:2784 */
-#line 2784 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __clock_t LOC=./src/timeout.merge.c:2780 */
+#line 2780 "./src/timeout.merge.c"
 typedef long __clock_t;
-/* END TYPEDEF __clock_t LOC=./src/timeout.merge.c:2784 */
+/* END TYPEDEF __clock_t LOC=./src/timeout.merge.c:2780 */
 
-/* BEGIN TYPEDEF __uid_t LOC=./src/timeout.merge.c:2406 */
-#line 2406 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uid_t LOC=./src/timeout.merge.c:2402 */
+#line 2402 "./src/timeout.merge.c"
 typedef unsigned int __uid_t;
-/* END TYPEDEF __uid_t LOC=./src/timeout.merge.c:2406 */
+/* END TYPEDEF __uid_t LOC=./src/timeout.merge.c:2402 */
 
-/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/timeout.merge.c:2788 */
-#line 2788 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/timeout.merge.c:2784 */
+#line 2784 "./src/timeout.merge.c"
 struct __anonstruct__sigchld_284671705 {
    __pid_t si_pid ;
    __uid_t si_uid ;
@@ -2448,34 +2444,34 @@ struct __anonstruct__sigchld_284671705 {
    __clock_t si_utime ;
    __clock_t si_stime ;
 };
-/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/timeout.merge.c:2788 */
+/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/timeout.merge.c:2784 */
 
 /* BEGIN FUNCTION-DECL __builtin___memset_chk LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin___memset_chk(void * , int  , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memset_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __id_t LOC=./src/timeout.merge.c:2812 */
-#line 2812 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __id_t LOC=./src/timeout.merge.c:2808 */
+#line 2808 "./src/timeout.merge.c"
 typedef unsigned int __id_t;
-/* END TYPEDEF __id_t LOC=./src/timeout.merge.c:2812 */
+/* END TYPEDEF __id_t LOC=./src/timeout.merge.c:2808 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/timeout.merge.c:2820 */
-#line 2820
+/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/timeout.merge.c:2816 */
+#line 2816
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigprocmask)(int __how ,
                                                                                   sigset_t const   * __restrict  __set ,
                                                                                   sigset_t * __restrict  __oset ) ;
-/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/timeout.merge.c:2820 */
+/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/timeout.merge.c:2816 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/timeout.merge.c:2816 */
-#line 2816
+/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/timeout.merge.c:2812 */
+#line 2812
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpid)(void) ;
-/* END FUNCTION-DECL-EXTERN getpid LOC=./src/timeout.merge.c:2816 */
+/* END FUNCTION-DECL-EXTERN getpid LOC=./src/timeout.merge.c:2812 */
 
-/* BEGIN TYPEDEF fpregset_t LOC=./src/timeout.merge.c:2826 */
-#line 2826 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fpregset_t LOC=./src/timeout.merge.c:2822 */
+#line 2822 "./src/timeout.merge.c"
 typedef struct _libc_fpstate *fpregset_t;
-/* END TYPEDEF fpregset_t LOC=./src/timeout.merge.c:2826 */
+/* END TYPEDEF fpregset_t LOC=./src/timeout.merge.c:2822 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/timeout.merge.c:916 */
 #line 916
@@ -2487,110 +2483,110 @@ union __anonunion_pthread_rwlockattr_t_145707745 ;
    float __builtin_coshf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_coshf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN cl_strtold LOC=./src/timeout.merge.c:2880 */
-#line 2880
+/* BEGIN FUNCTION-DECL-EXTERN cl_strtold LOC=./src/timeout.merge.c:2876 */
+#line 2876
 extern long double ( __attribute__((__nonnull__(1))) cl_strtold)(char const   * ,
                                                                  char ** __restrict   ) ;
-/* END FUNCTION-DECL-EXTERN cl_strtold LOC=./src/timeout.merge.c:2880 */
+/* END FUNCTION-DECL-EXTERN cl_strtold LOC=./src/timeout.merge.c:2876 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/timeout.merge.c:2899 */
-#line 2899
+/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/timeout.merge.c:2895 */
+#line 2895
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) nice)(int __inc ) ;
-/* END FUNCTION-DECL-EXTERN nice LOC=./src/timeout.merge.c:2899 */
+/* END FUNCTION-DECL-EXTERN nice LOC=./src/timeout.merge.c:2895 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrtf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_cbrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_cbrtf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/timeout.merge.c:2913 */
-#line 2913
+/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/timeout.merge.c:2909 */
+#line 2909
 extern FILE *stdout ;
-/* END VARIABLE-DECL-EXTERN stdout LOC=./src/timeout.merge.c:2913 */
+/* END VARIABLE-DECL-EXTERN stdout LOC=./src/timeout.merge.c:2909 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/timeout.merge.c:2917 */
-#line 2917
+/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/timeout.merge.c:2913 */
+#line 2913
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gethostname)(char *__name ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/timeout.merge.c:2917 */
+/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/timeout.merge.c:2913 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/timeout.merge.c:2948 */
-#line 2948
+/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/timeout.merge.c:2944 */
+#line 2944
 extern struct tm *getdate(char const   *__string ) ;
-/* END FUNCTION-DECL-EXTERN getdate LOC=./src/timeout.merge.c:2948 */
+/* END FUNCTION-DECL-EXTERN getdate LOC=./src/timeout.merge.c:2944 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/timeout.merge.c:2952 */
-#line 2952
+/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/timeout.merge.c:2948 */
+#line 2948
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,3), __leaf__)) memmem)(void const   *__haystack ,
                                                                                                  size_t __haystacklen ,
                                                                                                  void const   *__needle ,
                                                                                                  size_t __needlelen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memmem LOC=./src/timeout.merge.c:2952 */
+/* END FUNCTION-DECL-EXTERN memmem LOC=./src/timeout.merge.c:2948 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/timeout.merge.c:2959 */
-#line 2959
+/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/timeout.merge.c:2955 */
+#line 2955
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setreuid)(__uid_t __ruid ,
                                                                                __uid_t __euid ) ;
-/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/timeout.merge.c:2959 */
+/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/timeout.merge.c:2955 */
 
-/* BEGIN TYPEDEF __kernel_long_t LOC=./src/timeout.merge.c:2976 */
-#line 2976 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_long_t LOC=./src/timeout.merge.c:2972 */
+#line 2972 "./src/timeout.merge.c"
 typedef long __kernel_long_t;
-/* END TYPEDEF __kernel_long_t LOC=./src/timeout.merge.c:2976 */
+/* END TYPEDEF __kernel_long_t LOC=./src/timeout.merge.c:2972 */
 
-/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/timeout.merge.c:2969 */
-#line 2969 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/timeout.merge.c:2965 */
+#line 2965 "./src/timeout.merge.c"
 struct __anonstruct__sigpoll_386613454 {
    long si_band ;
    int si_fd ;
 };
-/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/timeout.merge.c:2969 */
+/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/timeout.merge.c:2965 */
 
-/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/timeout.merge.c:2980 */
-#line 2980
+/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/timeout.merge.c:2976 */
+#line 2976
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN exit LOC=./src/timeout.merge.c:2980 */
+/* END FUNCTION-DECL-EXTERN exit LOC=./src/timeout.merge.c:2976 */
 
-/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/timeout.merge.c:2993 */
-#line 2993
+/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/timeout.merge.c:2989 */
+#line 2989
 extern int _gl_cxxalias_dummy ;
-/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/timeout.merge.c:2993 */
+/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/timeout.merge.c:2989 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_scalbn(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 
-/* BEGIN TYPEDEF ptrdiff_t LOC=./src/timeout.merge.c:3011 */
-#line 3011 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ptrdiff_t LOC=./src/timeout.merge.c:3007 */
+#line 3007 "./src/timeout.merge.c"
 typedef long ptrdiff_t;
-/* END TYPEDEF ptrdiff_t LOC=./src/timeout.merge.c:3011 */
+/* END TYPEDEF ptrdiff_t LOC=./src/timeout.merge.c:3007 */
 
-/* BEGIN TYPEDEF idx_t LOC=./src/timeout.merge.c:3015 */
-#line 3015 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF idx_t LOC=./src/timeout.merge.c:3011 */
+#line 3011 "./src/timeout.merge.c"
 typedef ptrdiff_t idx_t;
-/* END TYPEDEF idx_t LOC=./src/timeout.merge.c:3015 */
+/* END TYPEDEF idx_t LOC=./src/timeout.merge.c:3011 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/timeout.merge.c:3019 */
-#line 3019
+/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/timeout.merge.c:3015 */
+#line 3015
 extern char *ximemdup0(void const   *p , idx_t s )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/timeout.merge.c:3019 */
+/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/timeout.merge.c:3015 */
 
 /* BEGIN STRUCT-DECL stat64 LOC=./src/timeout.merge.c:1388 */
 #line 1388
 struct stat64 ;
 /* END STRUCT-DECL stat64 LOC=./src/timeout.merge.c:1388 */
 
-/* BEGIN TYPEDEF __int16_t LOC=./src/timeout.merge.c:3029 */
-#line 3029 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int16_t LOC=./src/timeout.merge.c:3025 */
+#line 3025 "./src/timeout.merge.c"
 typedef short __int16_t;
-/* END TYPEDEF __int16_t LOC=./src/timeout.merge.c:3029 */
+/* END TYPEDEF __int16_t LOC=./src/timeout.merge.c:3025 */
 
-/* BEGIN TYPEDEF __int_least16_t LOC=./src/timeout.merge.c:3033 */
-#line 3033 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int_least16_t LOC=./src/timeout.merge.c:3029 */
+#line 3029 "./src/timeout.merge.c"
 typedef __int16_t __int_least16_t;
-/* END TYPEDEF __int_least16_t LOC=./src/timeout.merge.c:3033 */
+/* END TYPEDEF __int_least16_t LOC=./src/timeout.merge.c:3029 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346497 LOC=./src/timeout.merge.c:1416 */
 #line 1416
@@ -2607,32 +2603,32 @@ union __anonunion____missing_field_name_1036346497 ;
 struct __pthread_rwlock_arch_t ;
 /* END STRUCT-DECL __pthread_rwlock_arch_t LOC=./src/timeout.merge.c:908 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/timeout.merge.c:3091 */
-#line 3091
+/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/timeout.merge.c:3087 */
+#line 3087
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigaddset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/timeout.merge.c:3091 */
+/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/timeout.merge.c:3087 */
 
 /* BEGIN STRUCT-DECL timex LOC=./src/timeout.merge.c:1212 */
 #line 1212
 struct timex ;
 /* END STRUCT-DECL timex LOC=./src/timeout.merge.c:1212 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/timeout.merge.c:3096 */
-#line 3096
+/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/timeout.merge.c:3092 */
+#line 3092
 extern int __daylight ;
-/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/timeout.merge.c:3096 */
+/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/timeout.merge.c:3092 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbln LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_scalbln(double  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbln LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/timeout.merge.c:3114 */
-#line 3114
+/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/timeout.merge.c:3110 */
+#line 3110
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) stat64)(char const   * __restrict  __file ,
                                                                                                struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/timeout.merge.c:3114 */
+/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/timeout.merge.c:3110 */
 
 /* BEGIN FUNCTION-DECL __builtin___vsnprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -2640,48 +2636,48 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                  char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsnprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/timeout.merge.c:3139 */
-#line 3139 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/timeout.merge.c:3135 */
+#line 3135 "./src/timeout.merge.c"
 typedef long __blkcnt64_t;
-/* END TYPEDEF __blkcnt64_t LOC=./src/timeout.merge.c:3139 */
+/* END TYPEDEF __blkcnt64_t LOC=./src/timeout.merge.c:3135 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/timeout.merge.c:3154 */
-#line 3154
+/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/timeout.merge.c:3150 */
+#line 3150
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) setstate_r)(char * __restrict  __statebuf ,
                                                                                                    struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/timeout.merge.c:3154 */
+/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/timeout.merge.c:3150 */
 
 /* BEGIN ENUM-DECL __anonenum_288797321___0 LOC=./src/timeout.merge.c:1436 */
 #line 1436
 enum __anonenum_288797321___0 ;
 /* END ENUM-DECL __anonenum_288797321___0 LOC=./src/timeout.merge.c:1436 */
 
-/* BEGIN TYPEDEF __locale_t LOC=./src/timeout.merge.c:3192 */
-#line 3192 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __locale_t LOC=./src/timeout.merge.c:3188 */
+#line 3188 "./src/timeout.merge.c"
 typedef struct __locale_struct *__locale_t;
-/* END TYPEDEF __locale_t LOC=./src/timeout.merge.c:3192 */
+/* END TYPEDEF __locale_t LOC=./src/timeout.merge.c:3188 */
 
-/* BEGIN TYPEDEF locale_t LOC=./src/timeout.merge.c:3196 */
-#line 3196 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF locale_t LOC=./src/timeout.merge.c:3192 */
+#line 3192 "./src/timeout.merge.c"
 typedef __locale_t locale_t;
-/* END TYPEDEF locale_t LOC=./src/timeout.merge.c:3196 */
+/* END TYPEDEF locale_t LOC=./src/timeout.merge.c:3192 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/timeout.merge.c:3200 */
-#line 3200
+/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/timeout.merge.c:3196 */
+#line 3196
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoul_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoul_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/timeout.merge.c:3200 */
+/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/timeout.merge.c:3196 */
 
 /* BEGIN STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:1064 */
 #line 1064
 struct __anonstruct_lldiv_t_103911545 ;
 /* END STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:1064 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/timeout.merge.c:3211 */
-#line 3211
+/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/timeout.merge.c:3207 */
+#line 3207
 extern DIR *fdopendir(int __fd )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/timeout.merge.c:3211 */
+/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/timeout.merge.c:3207 */
 
 /* BEGIN STRUCT-DECL __anonstruct___sigset_t_783464054 LOC=./src/timeout.merge.c:1284 */
 #line 1284
@@ -2693,8 +2689,8 @@ struct __anonstruct___sigset_t_783464054 ;
    long double __builtin_powl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_powl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_875524036 LOC=./src/timeout.merge.c:3230 */
-#line 3230
+/* BEGIN ENUM __anonenum_875524036 LOC=./src/timeout.merge.c:3226 */
+#line 3226
 enum __anonenum_875524036 {
     _CS_PATH = 0,
     _CS_V6_WIDTH_RESTRICTED_ENVS = 1,
@@ -2761,37 +2757,37 @@ enum __anonenum_875524036 {
     _CS_V6_ENV = 1148,
     _CS_V7_ENV = 1149
 } ;
-/* END ENUM __anonenum_875524036 LOC=./src/timeout.merge.c:3230 */
+/* END ENUM __anonenum_875524036 LOC=./src/timeout.merge.c:3226 */
 
 /* BEGIN ENUM-DECL __anonenum_288797321 LOC=./src/timeout.merge.c:1048 */
 #line 1048
 enum __anonenum_288797321 ;
 /* END ENUM-DECL __anonenum_288797321 LOC=./src/timeout.merge.c:1048 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/timeout.merge.c:3311 */
-#line 3311
+/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/timeout.merge.c:3307 */
+#line 3307
 extern char const   *quote(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote LOC=./src/timeout.merge.c:3311 */
+/* END FUNCTION-DECL-EXTERN quote LOC=./src/timeout.merge.c:3307 */
 
 /* BEGIN FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
 __inline static void emit_update_parameters_note(void) ;
 /* END FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/timeout.merge.c:3319 */
-#line 3319
+/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/timeout.merge.c:3315 */
+#line 3315
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) fcvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/timeout.merge.c:3319 */
+/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/timeout.merge.c:3315 */
 
-/* BEGIN TYPEDEF _IO_lock_t LOC=./src/timeout.merge.c:3346 */
-#line 3346 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF _IO_lock_t LOC=./src/timeout.merge.c:3338 */
+#line 3338 "./src/timeout.merge.c"
 typedef void _IO_lock_t;
-/* END TYPEDEF _IO_lock_t LOC=./src/timeout.merge.c:3346 */
+/* END TYPEDEF _IO_lock_t LOC=./src/timeout.merge.c:3338 */
 
-/* BEGIN STRUCT _IO_FILE LOC=./src/timeout.merge.c:3350 */
-#line 3350 "./src/timeout.merge.c"
+/* BEGIN STRUCT _IO_FILE LOC=./src/timeout.merge.c:3342 */
+#line 3342 "./src/timeout.merge.c"
 struct _IO_FILE {
    int _flags ;
    char *_IO_read_ptr ;
@@ -2824,15 +2820,15 @@ struct _IO_FILE {
    int _mode ;
    char _unused2[15ULL * sizeof(int ) - 5ULL * sizeof(void *)] ;
 };
-/* END STRUCT _IO_FILE LOC=./src/timeout.merge.c:3350 */
+/* END STRUCT _IO_FILE LOC=./src/timeout.merge.c:3342 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/timeout.merge.c:3385 */
-#line 3385
+/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/timeout.merge.c:3377 */
+#line 3377
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random_uniform)(__uint32_t __upper_bound ) ;
-/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/timeout.merge.c:3385 */
+/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/timeout.merge.c:3377 */
 
-/* BEGIN ENUM quoting_style LOC=./src/timeout.merge.c:2758 */
-#line 2758
+/* BEGIN ENUM quoting_style LOC=./src/timeout.merge.c:2754 */
+#line 2754
 enum quoting_style {
     literal_quoting_style = 0,
     shell_quoting_style = 1,
@@ -2846,32 +2842,32 @@ enum quoting_style {
     clocale_quoting_style = 9,
     custom_quoting_style = 10
 } ;
-/* END ENUM quoting_style LOC=./src/timeout.merge.c:2758 */
+/* END ENUM quoting_style LOC=./src/timeout.merge.c:2754 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/timeout.merge.c:3397 */
-#line 3397
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/timeout.merge.c:3389 */
+#line 3389
 extern void set_quoting_style(struct quoting_options *o , enum quoting_style s ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/timeout.merge.c:3397 */
+/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/timeout.merge.c:3389 */
 
 /* BEGIN STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:932 */
 #line 932
 struct __anonstruct___value32_118117645 ;
 /* END STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:932 */
 
-/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/timeout.merge.c:3401 */
-#line 3401
+/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/timeout.merge.c:3393 */
+#line 3393
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) asctime)(struct tm  const  *__tp ) ;
-/* END FUNCTION-DECL-EXTERN asctime LOC=./src/timeout.merge.c:3401 */
+/* END FUNCTION-DECL-EXTERN asctime LOC=./src/timeout.merge.c:3393 */
 
-/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/timeout.merge.c:3422 */
-#line 3422 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/timeout.merge.c:3414 */
+#line 3414 "./src/timeout.merge.c"
 typedef unsigned int __kernel_gid32_t;
-/* END TYPEDEF __kernel_gid32_t LOC=./src/timeout.merge.c:3422 */
+/* END TYPEDEF __kernel_gid32_t LOC=./src/timeout.merge.c:3414 */
 
-/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/timeout.merge.c:3430 */
-#line 3430 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/timeout.merge.c:3422 */
+#line 3422 "./src/timeout.merge.c"
 typedef struct __anonstruct___kernel_fsid_t_1045545135 __kernel_fsid_t;
-/* END TYPEDEF __kernel_fsid_t LOC=./src/timeout.merge.c:3430 */
+/* END TYPEDEF __kernel_fsid_t LOC=./src/timeout.merge.c:3422 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrtf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -2884,47 +2880,43 @@ typedef struct __anonstruct___kernel_fsid_t_1045545135 __kernel_fsid_t;
                                  unsigned char const    , unsigned char * ) ;  */
 /* END FUNCTION-DECL __builtin_subcb LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/timeout.merge.c:3439 */
-#line 3439
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/timeout.merge.c:3431 */
+#line 3431
 extern char *quotearg_colon_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/timeout.merge.c:3439 */
+/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/timeout.merge.c:3431 */
 
 /* BEGIN FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_rintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/timeout.merge.c:3458 */
-#line 3458
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/timeout.merge.c:3450 */
+#line 3450
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/timeout.merge.c:3458 */
+/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/timeout.merge.c:3450 */
 
 /* BEGIN ENUM-DECL quoting_style LOC=./src/timeout.merge.c:1252 */
 #line 1252
 enum quoting_style ;
 /* END ENUM-DECL quoting_style LOC=./src/timeout.merge.c:1252 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/timeout.merge.c:3471 */
-#line 3471
+/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/timeout.merge.c:3463 */
+#line 3463
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) strtoll)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     int __base )  __asm__("__isoc23_strtoll")  ;
-/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/timeout.merge.c:3471 */
+/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/timeout.merge.c:3463 */
 
-/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/timeout.merge.c:3477 */
-#line 3477 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/timeout.merge.c:3469 */
+#line 3469 "./src/timeout.merge.c"
 struct __anonstruct__addr_bnd_5259977 {
    void *_lower ;
    void *_upper ;
 };
-/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/timeout.merge.c:3477 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-int _TIG_IZ_5pQc_argc ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_argc LOC=UNKNOWN */
+/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/timeout.merge.c:3469 */
 
 /* BEGIN FUNCTION-DECL __uint32_identity LOC=UNKNOWN */
 __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
@@ -2954,106 +2946,102 @@ static _Bool foreground ;
    long __builtin_lround(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lround LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/timeout.merge.c:3632 */
-#line 3632
+/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/timeout.merge.c:3620 */
+#line 3620
 extern  __attribute__((__noreturn__)) void __error_noreturn(int __status , int __errnum ,
                                                             char const   *__format 
                                                             , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/timeout.merge.c:3632 */
+/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/timeout.merge.c:3620 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/timeout.merge.c:3621 */
-#line 3621
+/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/timeout.merge.c:3609 */
+#line 3609
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) getsubopt)(char ** __restrict  __optionp ,
                                                                                                     char ** __restrict  __tokens ,
                                                                                                     char ** __restrict  __valuep ) ;
-/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/timeout.merge.c:3621 */
+/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/timeout.merge.c:3609 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_exp2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __timer_t LOC=./src/timeout.merge.c:3655 */
-#line 3655 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __timer_t LOC=./src/timeout.merge.c:3643 */
+#line 3643 "./src/timeout.merge.c"
 typedef void *__timer_t;
-/* END TYPEDEF __timer_t LOC=./src/timeout.merge.c:3655 */
+/* END TYPEDEF __timer_t LOC=./src/timeout.merge.c:3643 */
 
-/* BEGIN TYPEDEF timer_t LOC=./src/timeout.merge.c:3659 */
-#line 3659 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF timer_t LOC=./src/timeout.merge.c:3647 */
+#line 3647 "./src/timeout.merge.c"
 typedef __timer_t timer_t;
-/* END TYPEDEF timer_t LOC=./src/timeout.merge.c:3659 */
+/* END TYPEDEF timer_t LOC=./src/timeout.merge.c:3647 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/timeout.merge.c:3663 */
-#line 3663
+/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/timeout.merge.c:3651 */
+#line 3651
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_getoverrun)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/timeout.merge.c:3663 */
+/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/timeout.merge.c:3651 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_lWnh_argv LOC=UNKNOWN */
-char **_TIG_IZ_lWnh_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_lWnh_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/timeout.merge.c:3667 */
-#line 3667
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/timeout.merge.c:3655 */
+#line 3655
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qfcvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/timeout.merge.c:3667 */
+/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/timeout.merge.c:3655 */
 
-/* BEGIN FUNCTION-DECL-EXTERN waitpid LOC=./src/timeout.merge.c:3691 */
-#line 3691
+/* BEGIN FUNCTION-DECL-EXTERN waitpid LOC=./src/timeout.merge.c:3679 */
+#line 3679
 extern __pid_t waitpid(__pid_t __pid , int *__stat_loc , int __options ) ;
-/* END FUNCTION-DECL-EXTERN waitpid LOC=./src/timeout.merge.c:3691 */
+/* END FUNCTION-DECL-EXTERN waitpid LOC=./src/timeout.merge.c:3679 */
 
-/* BEGIN STRUCT _G_fpos64_t LOC=./src/timeout.merge.c:3695 */
-#line 3695 "./src/timeout.merge.c"
+/* BEGIN STRUCT _G_fpos64_t LOC=./src/timeout.merge.c:3683 */
+#line 3683 "./src/timeout.merge.c"
 struct _G_fpos64_t {
    __off64_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos64_t LOC=./src/timeout.merge.c:3695 */
+/* END STRUCT _G_fpos64_t LOC=./src/timeout.merge.c:3683 */
 
-/* BEGIN TYPEDEF __fpos64_t LOC=./src/timeout.merge.c:3702 */
-#line 3702 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fpos64_t LOC=./src/timeout.merge.c:3690 */
+#line 3690 "./src/timeout.merge.c"
 typedef struct _G_fpos64_t __fpos64_t;
-/* END TYPEDEF __fpos64_t LOC=./src/timeout.merge.c:3702 */
+/* END TYPEDEF __fpos64_t LOC=./src/timeout.merge.c:3690 */
 
-/* BEGIN TYPEDEF fpos64_t LOC=./src/timeout.merge.c:3706 */
-#line 3706 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fpos64_t LOC=./src/timeout.merge.c:3694 */
+#line 3694 "./src/timeout.merge.c"
 typedef __fpos64_t fpos64_t;
-/* END TYPEDEF fpos64_t LOC=./src/timeout.merge.c:3706 */
+/* END TYPEDEF fpos64_t LOC=./src/timeout.merge.c:3694 */
 
 /* BEGIN FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_extract_return_addr(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u64 LOC=./src/timeout.merge.c:3720 */
-#line 3720 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u64 LOC=./src/timeout.merge.c:3708 */
+#line 3708 "./src/timeout.merge.c"
 typedef unsigned long long __u64;
-/* END TYPEDEF __u64 LOC=./src/timeout.merge.c:3720 */
+/* END TYPEDEF __u64 LOC=./src/timeout.merge.c:3708 */
 
-/* BEGIN TYPEDEF __be64 LOC=./src/timeout.merge.c:3724 */
-#line 3724 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __be64 LOC=./src/timeout.merge.c:3712 */
+#line 3712 "./src/timeout.merge.c"
 typedef __u64 __be64;
-/* END TYPEDEF __be64 LOC=./src/timeout.merge.c:3724 */
+/* END TYPEDEF __be64 LOC=./src/timeout.merge.c:3712 */
 
 /* BEGIN FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smulll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/timeout.merge.c:3755 */
-#line 3755
+/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/timeout.merge.c:3743 */
+#line 3743
 extern void *xpalloc(void *pa , idx_t *pn , idx_t n_incr_min , ptrdiff_t n_max , idx_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/timeout.merge.c:3755 */
+/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/timeout.merge.c:3743 */
 
-/* BEGIN TYPEDEF uintptr_t LOC=./src/timeout.merge.c:3759 */
-#line 3759 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uintptr_t LOC=./src/timeout.merge.c:3747 */
+#line 3747 "./src/timeout.merge.c"
 typedef unsigned long uintptr_t;
-/* END TYPEDEF uintptr_t LOC=./src/timeout.merge.c:3759 */
+/* END TYPEDEF uintptr_t LOC=./src/timeout.merge.c:3747 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3065,20 +3053,20 @@ typedef unsigned long uintptr_t;
 enum __anonenum_437032235 ;
 /* END ENUM-DECL __anonenum_437032235 LOC=./src/timeout.merge.c:1012 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/timeout.merge.c:3777 */
-#line 3777
+/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/timeout.merge.c:3765 */
+#line 3765
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) setstate)(char *__statebuf ) ;
-/* END FUNCTION-DECL-EXTERN setstate LOC=./src/timeout.merge.c:3777 */
+/* END FUNCTION-DECL-EXTERN setstate LOC=./src/timeout.merge.c:3765 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/timeout.merge.c:3781 */
-#line 3781
+/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/timeout.merge.c:3769 */
+#line 3769
 extern  __attribute__((__noreturn__)) void xalloc_die(void) ;
-/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/timeout.merge.c:3781 */
+/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/timeout.merge.c:3769 */
 
-/* BEGIN TYPEDEF __rusage_who_t LOC=./src/timeout.merge.c:3789 */
-#line 3789 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __rusage_who_t LOC=./src/timeout.merge.c:3777 */
+#line 3777 "./src/timeout.merge.c"
 typedef enum __rusage_who __rusage_who_t;
-/* END TYPEDEF __rusage_who_t LOC=./src/timeout.merge.c:3789 */
+/* END TYPEDEF __rusage_who_t LOC=./src/timeout.merge.c:3777 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346503 LOC=./src/timeout.merge.c:1088 */
 #line 1088
@@ -3095,8 +3083,8 @@ struct __pthread_cond_s ;
    int __builtin_ctzll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963 LOC=./src/timeout.merge.c:3798 */
-#line 3798
+/* BEGIN ENUM __anonenum_640648963 LOC=./src/timeout.merge.c:3786 */
+#line 3786
 enum __anonenum_640648963 {
     ILL_ILLOPC = 1,
     ILL_ILLOPN = 2,
@@ -3108,64 +3096,64 @@ enum __anonenum_640648963 {
     ILL_BADSTK = 8,
     ILL_BADIADDR = 9
 } ;
-/* END ENUM __anonenum_640648963 LOC=./src/timeout.merge.c:3798 */
+/* END ENUM __anonenum_640648963 LOC=./src/timeout.merge.c:3786 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF greg_t LOC=./src/timeout.merge.c:3854 */
-#line 3854 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF greg_t LOC=./src/timeout.merge.c:3842 */
+#line 3842 "./src/timeout.merge.c"
 typedef long long greg_t;
-/* END TYPEDEF greg_t LOC=./src/timeout.merge.c:3854 */
+/* END TYPEDEF greg_t LOC=./src/timeout.merge.c:3842 */
 
-/* BEGIN TYPEDEF gregset_t LOC=./src/timeout.merge.c:3858 */
-#line 3858 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF gregset_t LOC=./src/timeout.merge.c:3846 */
+#line 3846 "./src/timeout.merge.c"
 typedef greg_t gregset_t[23];
-/* END TYPEDEF gregset_t LOC=./src/timeout.merge.c:3858 */
+/* END TYPEDEF gregset_t LOC=./src/timeout.merge.c:3846 */
 
-/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/timeout.merge.c:3862 */
-#line 3862 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/timeout.merge.c:3850 */
+#line 3850 "./src/timeout.merge.c"
 struct __anonstruct_mcontext_t_787213989 {
    gregset_t gregs ;
    fpregset_t fpregs ;
    unsigned long long __reserved1[8] ;
 };
-/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/timeout.merge.c:3862 */
+/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/timeout.merge.c:3850 */
 
-/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/timeout.merge.c:3870 */
-#line 3870 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/timeout.merge.c:3858 */
+#line 3858 "./src/timeout.merge.c"
 struct __anonstruct_stack_t_648343364 {
    void *ss_sp ;
    int ss_flags ;
    size_t ss_size ;
 };
-/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/timeout.merge.c:3870 */
+/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/timeout.merge.c:3858 */
 
-/* BEGIN STRUCT _libc_fpxreg LOC=./src/timeout.merge.c:3878 */
-#line 3878 "./src/timeout.merge.c"
+/* BEGIN STRUCT _libc_fpxreg LOC=./src/timeout.merge.c:3866 */
+#line 3866 "./src/timeout.merge.c"
 struct _libc_fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _libc_fpxreg LOC=./src/timeout.merge.c:3878 */
+/* END STRUCT _libc_fpxreg LOC=./src/timeout.merge.c:3866 */
 
-/* BEGIN STRUCT _libc_xmmreg LOC=./src/timeout.merge.c:3886 */
-#line 3886 "./src/timeout.merge.c"
+/* BEGIN STRUCT _libc_xmmreg LOC=./src/timeout.merge.c:3874 */
+#line 3874 "./src/timeout.merge.c"
 struct _libc_xmmreg {
    __uint32_t element[4] ;
 };
-/* END STRUCT _libc_xmmreg LOC=./src/timeout.merge.c:3886 */
+/* END STRUCT _libc_xmmreg LOC=./src/timeout.merge.c:3874 */
 
-/* BEGIN TYPEDEF __uint16_t LOC=./src/timeout.merge.c:3535 */
-#line 3535 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint16_t LOC=./src/timeout.merge.c:3523 */
+#line 3523 "./src/timeout.merge.c"
 typedef unsigned short __uint16_t;
-/* END TYPEDEF __uint16_t LOC=./src/timeout.merge.c:3535 */
+/* END TYPEDEF __uint16_t LOC=./src/timeout.merge.c:3523 */
 
-/* BEGIN STRUCT _libc_fpstate LOC=./src/timeout.merge.c:3892 */
-#line 3892 "./src/timeout.merge.c"
+/* BEGIN STRUCT _libc_fpstate LOC=./src/timeout.merge.c:3880 */
+#line 3880 "./src/timeout.merge.c"
 struct _libc_fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -3179,20 +3167,20 @@ struct _libc_fpstate {
    struct _libc_xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _libc_fpstate LOC=./src/timeout.merge.c:3892 */
+/* END STRUCT _libc_fpstate LOC=./src/timeout.merge.c:3880 */
 
-/* BEGIN TYPEDEF mcontext_t LOC=./src/timeout.merge.c:3908 */
-#line 3908 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF mcontext_t LOC=./src/timeout.merge.c:3896 */
+#line 3896 "./src/timeout.merge.c"
 typedef struct __anonstruct_mcontext_t_787213989 mcontext_t;
-/* END TYPEDEF mcontext_t LOC=./src/timeout.merge.c:3908 */
+/* END TYPEDEF mcontext_t LOC=./src/timeout.merge.c:3896 */
 
-/* BEGIN TYPEDEF stack_t LOC=./src/timeout.merge.c:3912 */
-#line 3912 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF stack_t LOC=./src/timeout.merge.c:3900 */
+#line 3900 "./src/timeout.merge.c"
 typedef struct __anonstruct_stack_t_648343364 stack_t;
-/* END TYPEDEF stack_t LOC=./src/timeout.merge.c:3912 */
+/* END TYPEDEF stack_t LOC=./src/timeout.merge.c:3900 */
 
-/* BEGIN STRUCT ucontext_t LOC=./src/timeout.merge.c:3916 */
-#line 3916 "./src/timeout.merge.c"
+/* BEGIN STRUCT ucontext_t LOC=./src/timeout.merge.c:3904 */
+#line 3904 "./src/timeout.merge.c"
 struct ucontext_t {
    unsigned long uc_flags ;
    struct ucontext_t *uc_link ;
@@ -3202,23 +3190,23 @@ struct ucontext_t {
    struct _libc_fpstate __fpregs_mem ;
    unsigned long long __ssp[4] ;
 };
-/* END STRUCT ucontext_t LOC=./src/timeout.merge.c:3916 */
+/* END STRUCT ucontext_t LOC=./src/timeout.merge.c:3904 */
 
-/* BEGIN STRUCT __pthread_internal_list LOC=./src/timeout.merge.c:3834 */
-#line 3834 "./src/timeout.merge.c"
+/* BEGIN STRUCT __pthread_internal_list LOC=./src/timeout.merge.c:3822 */
+#line 3822 "./src/timeout.merge.c"
 struct __pthread_internal_list {
    struct __pthread_internal_list *__prev ;
    struct __pthread_internal_list *__next ;
 };
-/* END STRUCT __pthread_internal_list LOC=./src/timeout.merge.c:3834 */
+/* END STRUCT __pthread_internal_list LOC=./src/timeout.merge.c:3822 */
 
-/* BEGIN TYPEDEF __pthread_list_t LOC=./src/timeout.merge.c:3342 */
-#line 3342 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __pthread_list_t LOC=./src/timeout.merge.c:3334 */
+#line 3334 "./src/timeout.merge.c"
 typedef struct __pthread_internal_list __pthread_list_t;
-/* END TYPEDEF __pthread_list_t LOC=./src/timeout.merge.c:3342 */
+/* END TYPEDEF __pthread_list_t LOC=./src/timeout.merge.c:3334 */
 
-/* BEGIN STRUCT __pthread_mutex_s LOC=./src/timeout.merge.c:3841 */
-#line 3841 "./src/timeout.merge.c"
+/* BEGIN STRUCT __pthread_mutex_s LOC=./src/timeout.merge.c:3829 */
+#line 3829 "./src/timeout.merge.c"
 struct __pthread_mutex_s {
    int __lock ;
    unsigned int __count ;
@@ -3229,51 +3217,51 @@ struct __pthread_mutex_s {
    short __elision ;
    __pthread_list_t __list ;
 };
-/* END STRUCT __pthread_mutex_s LOC=./src/timeout.merge.c:3841 */
+/* END STRUCT __pthread_mutex_s LOC=./src/timeout.merge.c:3829 */
 
-/* BEGIN STRUCT __pthread_internal_slist LOC=./src/timeout.merge.c:3951 */
-#line 3951 "./src/timeout.merge.c"
+/* BEGIN STRUCT __pthread_internal_slist LOC=./src/timeout.merge.c:3939 */
+#line 3939 "./src/timeout.merge.c"
 struct __pthread_internal_slist {
    struct __pthread_internal_slist *__next ;
 };
-/* END STRUCT __pthread_internal_slist LOC=./src/timeout.merge.c:3951 */
+/* END STRUCT __pthread_internal_slist LOC=./src/timeout.merge.c:3939 */
 
-/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/timeout.merge.c:3957 */
-#line 3957
+/* BEGIN FUNCTION-DECL-EXTERN crypt LOC=./src/timeout.merge.c:3945 */
+#line 3945
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) crypt)(char const   *__key ,
                                                                                                 char const   *__salt ) ;
-/* END FUNCTION-DECL-EXTERN crypt LOC=./src/timeout.merge.c:3957 */
+/* END FUNCTION-DECL-EXTERN crypt LOC=./src/timeout.merge.c:3945 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/timeout.merge.c:3972 */
-#line 3972
+/* BEGIN FUNCTION-DECL-EXTERN strtoull LOC=./src/timeout.merge.c:3960 */
+#line 3960
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoull)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                      int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/timeout.merge.c:3972 */
+/* END FUNCTION-DECL-EXTERN strtoull LOC=./src/timeout.merge.c:3960 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/timeout.merge.c:3988 */
-#line 3988
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/timeout.merge.c:3976 */
+#line 3976
 extern int ( __attribute__((__nonnull__(1))) mkstemps64)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/timeout.merge.c:3988 */
+/* END FUNCTION-DECL-EXTERN mkstemps64 LOC=./src/timeout.merge.c:3976 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_lgammaf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammaf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/timeout.merge.c:4003 */
-#line 4003
+/* BEGIN FUNCTION-DECL-EXTERN getwd LOC=./src/timeout.merge.c:3991 */
+#line 3991
 extern  __attribute__((__nothrow__, __deprecated__)) char *( __attribute__((__nonnull__(1),
 __leaf__)) getwd)(char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN getwd LOC=./src/timeout.merge.c:4003 */
+/* END FUNCTION-DECL-EXTERN getwd LOC=./src/timeout.merge.c:3991 */
 
 /* BEGIN FUNCTION-DECL __builtin_fdim LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fdim(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fdim LOC=BUILTIN */
 
-/* BEGIN ENUM __rlimit_resource LOC=./src/timeout.merge.c:2145 */
-#line 2145
+/* BEGIN ENUM __rlimit_resource LOC=./src/timeout.merge.c:2141 */
+#line 2141
 enum __rlimit_resource {
     RLIMIT_CPU = 0,
     RLIMIT_FSIZE = 1,
@@ -3295,42 +3283,42 @@ enum __rlimit_resource {
     __RLIMIT_NLIMITS = 16,
     __RLIM_NLIMITS = 16
 } ;
-/* END ENUM __rlimit_resource LOC=./src/timeout.merge.c:2145 */
+/* END ENUM __rlimit_resource LOC=./src/timeout.merge.c:2141 */
 
-/* BEGIN TYPEDEF __rlimit_resource_t LOC=./src/timeout.merge.c:4026 */
-#line 4026 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __rlimit_resource_t LOC=./src/timeout.merge.c:4014 */
+#line 4014 "./src/timeout.merge.c"
 typedef enum __rlimit_resource __rlimit_resource_t;
-/* END TYPEDEF __rlimit_resource_t LOC=./src/timeout.merge.c:4026 */
+/* END TYPEDEF __rlimit_resource_t LOC=./src/timeout.merge.c:4014 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setrlimit64 LOC=./src/timeout.merge.c:4030 */
-#line 4030
+/* BEGIN FUNCTION-DECL-EXTERN setrlimit64 LOC=./src/timeout.merge.c:4018 */
+#line 4018
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) setrlimit64)(__rlimit_resource_t __resource ,
                                                                                                   struct rlimit64  const  *__rlimits ) ;
-/* END FUNCTION-DECL-EXTERN setrlimit64 LOC=./src/timeout.merge.c:4030 */
+/* END FUNCTION-DECL-EXTERN setrlimit64 LOC=./src/timeout.merge.c:4018 */
 
-/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:4044 */
-#line 4044 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:4032 */
+#line 4032 "./src/timeout.merge.c"
 struct __anonstruct___value32_118117645 {
    unsigned int __low ;
    unsigned int __high ;
 };
-/* END STRUCT __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:4044 */
+/* END STRUCT __anonstruct___value32_118117645 LOC=./src/timeout.merge.c:4032 */
 
-/* BEGIN UNION __anonunion___atomic_wide_counter_347906929 LOC=./src/timeout.merge.c:4051 */
-#line 4051 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion___atomic_wide_counter_347906929 LOC=./src/timeout.merge.c:4039 */
+#line 4039 "./src/timeout.merge.c"
 union __anonunion___atomic_wide_counter_347906929 {
    unsigned long long __value64 ;
    struct __anonstruct___value32_118117645 __value32 ;
 };
-/* END UNION __anonunion___atomic_wide_counter_347906929 LOC=./src/timeout.merge.c:4051 */
+/* END UNION __anonunion___atomic_wide_counter_347906929 LOC=./src/timeout.merge.c:4039 */
 
-/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/timeout.merge.c:4058 */
-#line 4058 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __atomic_wide_counter LOC=./src/timeout.merge.c:4046 */
+#line 4046 "./src/timeout.merge.c"
 typedef union __anonunion___atomic_wide_counter_347906929 __atomic_wide_counter;
-/* END TYPEDEF __atomic_wide_counter LOC=./src/timeout.merge.c:4058 */
+/* END TYPEDEF __atomic_wide_counter LOC=./src/timeout.merge.c:4046 */
 
-/* BEGIN STRUCT __pthread_cond_s LOC=./src/timeout.merge.c:4062 */
-#line 4062 "./src/timeout.merge.c"
+/* BEGIN STRUCT __pthread_cond_s LOC=./src/timeout.merge.c:4050 */
+#line 4050 "./src/timeout.merge.c"
 struct __pthread_cond_s {
    __atomic_wide_counter __wseq ;
    __atomic_wide_counter __g1_start ;
@@ -3339,37 +3327,37 @@ struct __pthread_cond_s {
    unsigned int __wrefs ;
    unsigned int __g_signals[2] ;
 };
-/* END STRUCT __pthread_cond_s LOC=./src/timeout.merge.c:4062 */
+/* END STRUCT __pthread_cond_s LOC=./src/timeout.merge.c:4050 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/timeout.merge.c:4077 */
-#line 4077
+/* BEGIN FUNCTION-DECL-EXTERN strcmp LOC=./src/timeout.merge.c:4065 */
+#line 4065
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcmp)(char const   *__s1 ,
                                                                                                char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/timeout.merge.c:4077 */
+/* END FUNCTION-DECL-EXTERN strcmp LOC=./src/timeout.merge.c:4065 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/timeout.merge.c:4082 */
-#line 4082
+/* BEGIN FUNCTION-DECL-EXTERN localeconv LOC=./src/timeout.merge.c:4070 */
+#line 4070
 extern  __attribute__((__nothrow__)) struct lconv *( __attribute__((__leaf__)) localeconv)(void) ;
-/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/timeout.merge.c:4082 */
+/* END FUNCTION-DECL-EXTERN localeconv LOC=./src/timeout.merge.c:4070 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/timeout.merge.c:4086 */
-#line 4086
+/* BEGIN FUNCTION-DECL-EXTERN strtoull_l LOC=./src/timeout.merge.c:4074 */
+#line 4074
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoull_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                        int __base , locale_t __loc )  __asm__("__isoc23_strtoull_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/timeout.merge.c:4086 */
+/* END FUNCTION-DECL-EXTERN strtoull_l LOC=./src/timeout.merge.c:4074 */
 
-/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/timeout.merge.c:4092 */
-#line 4092
+/* BEGIN FUNCTION-DECL-EXTERN index LOC=./src/timeout.merge.c:4080 */
+#line 4080
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) index)(char const   *__s ,
                                                                                               int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN index LOC=./src/timeout.merge.c:4092 */
+/* END FUNCTION-DECL-EXTERN index LOC=./src/timeout.merge.c:4080 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/timeout.merge.c:4097 */
-#line 4097
+/* BEGIN FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/timeout.merge.c:4085 */
+#line 4085
 extern int ( __attribute__((__nonnull__(2))) fputs_unlocked)(char const   * __restrict  __s ,
                                                              FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/timeout.merge.c:4097 */
+/* END FUNCTION-DECL-EXTERN fputs_unlocked LOC=./src/timeout.merge.c:4085 */
 
 /* BEGIN FUNCTION-DECL __builtin___strlcat_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -3392,61 +3380,61 @@ struct timeval ;
    void *__builtin_launder(void * ) ;  */
 /* END FUNCTION-DECL __builtin_launder LOC=BUILTIN */
 
-/* BEGIN ENUM __priority_which LOC=./src/timeout.merge.c:4128 */
-#line 4128
+/* BEGIN ENUM __priority_which LOC=./src/timeout.merge.c:4116 */
+#line 4116
 enum __priority_which {
     PRIO_PROCESS = 0,
     PRIO_PGRP = 1,
     PRIO_USER = 2
 } ;
-/* END ENUM __priority_which LOC=./src/timeout.merge.c:4128 */
+/* END ENUM __priority_which LOC=./src/timeout.merge.c:4116 */
 
-/* BEGIN TYPEDEF __sigval_t LOC=./src/timeout.merge.c:4146 */
-#line 4146 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __sigval_t LOC=./src/timeout.merge.c:4134 */
+#line 4134 "./src/timeout.merge.c"
 typedef union sigval __sigval_t;
-/* END TYPEDEF __sigval_t LOC=./src/timeout.merge.c:4146 */
+/* END TYPEDEF __sigval_t LOC=./src/timeout.merge.c:4134 */
 
-/* BEGIN TYPEDEF pthread_attr_t LOC=./src/timeout.merge.c:4150 */
-#line 4150 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_attr_t LOC=./src/timeout.merge.c:4138 */
+#line 4138 "./src/timeout.merge.c"
 typedef union pthread_attr_t pthread_attr_t;
-/* END TYPEDEF pthread_attr_t LOC=./src/timeout.merge.c:4150 */
+/* END TYPEDEF pthread_attr_t LOC=./src/timeout.merge.c:4138 */
 
-/* BEGIN STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/timeout.merge.c:4154 */
-#line 4154 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/timeout.merge.c:4142 */
+#line 4142 "./src/timeout.merge.c"
 struct __anonstruct__sigev_thread_746770901 {
    void (*_function)(__sigval_t  ) ;
    pthread_attr_t *_attribute ;
 };
-/* END STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/timeout.merge.c:4154 */
+/* END STRUCT __anonstruct__sigev_thread_746770901 LOC=./src/timeout.merge.c:4142 */
 
-/* BEGIN UNION __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:4161 */
-#line 4161 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:4149 */
+#line 4149 "./src/timeout.merge.c"
 union __anonunion__sigev_un_849737051 {
    int _pad[64ULL / sizeof(int ) - 4ULL] ;
    __pid_t _tid ;
    struct __anonstruct__sigev_thread_746770901 _sigev_thread ;
 };
-/* END UNION __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:4161 */
+/* END UNION __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:4149 */
 
-/* BEGIN STRUCT sigevent LOC=./src/timeout.merge.c:4169 */
-#line 4169 "./src/timeout.merge.c"
+/* BEGIN STRUCT sigevent LOC=./src/timeout.merge.c:4157 */
+#line 4157 "./src/timeout.merge.c"
 struct sigevent {
    __sigval_t sigev_value ;
    int sigev_signo ;
    int sigev_notify ;
    union __anonunion__sigev_un_849737051 _sigev_un ;
 };
-/* END STRUCT sigevent LOC=./src/timeout.merge.c:4169 */
+/* END STRUCT sigevent LOC=./src/timeout.merge.c:4157 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/timeout.merge.c:4187 */
-#line 4187
+/* BEGIN FUNCTION-DECL-EXTERN xizalloc LOC=./src/timeout.merge.c:4175 */
+#line 4175
 extern void *xizalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/timeout.merge.c:4187 */
+/* END FUNCTION-DECL-EXTERN xizalloc LOC=./src/timeout.merge.c:4175 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/timeout.merge.c:4183 */
-#line 4183
+/* BEGIN FUNCTION-DECL-EXTERN readdir LOC=./src/timeout.merge.c:4171 */
+#line 4171
 extern struct dirent *( __attribute__((__nonnull__(1))) readdir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir LOC=./src/timeout.merge.c:4183 */
+/* END FUNCTION-DECL-EXTERN readdir LOC=./src/timeout.merge.c:4171 */
 
 /* BEGIN FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -3458,15 +3446,19 @@ extern struct dirent *( __attribute__((__nonnull__(1))) readdir)(DIR *__dirp ) ;
    _Bool __builtin_sadd_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/timeout.merge.c:4196 */
-#line 4196
+/* BEGIN FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/timeout.merge.c:4184 */
+#line 4184
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigdescr_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/timeout.merge.c:4196 */
+/* END FUNCTION-DECL-EXTERN sigdescr_np LOC=./src/timeout.merge.c:4184 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/timeout.merge.c:4240 */
-#line 4240
+/* BEGIN VARIABLE-DECL _TIG_IZ_t3fn_argc LOC=UNKNOWN */
+int _TIG_IZ_t3fn_argc ;
+/* END VARIABLE-DECL _TIG_IZ_t3fn_argc LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/timeout.merge.c:4228 */
+#line 4228
 extern enum quoting_style  const  quoting_style_vals[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/timeout.merge.c:4240 */
+/* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./src/timeout.merge.c:4228 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsl LOC=BUILTIN */
 /* compiler builtin: 
@@ -3482,17 +3474,17 @@ __inline extern void ( __attribute__((__gnu_inline__, __always_inline__)) error_
                                                                                          , ...)  __attribute__((__cold__)) ;
 /* END FUNCTION-DECL-EXTERN error_at_line LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/timeout.merge.c:4266 */
-#line 4266
+/* BEGIN FUNCTION-DECL-EXTERN readdir64_r LOC=./src/timeout.merge.c:4254 */
+#line 4254
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir64_r)(DIR * __restrict  __dirp ,
                                                                                                struct dirent64 * __restrict  __entry ,
                                                                                                struct dirent64 ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/timeout.merge.c:4266 */
+/* END FUNCTION-DECL-EXTERN readdir64_r LOC=./src/timeout.merge.c:4254 */
 
-/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/timeout.merge.c:4272 */
-#line 4272
+/* BEGIN VARIABLE-DECL-EXTERN optopt LOC=./src/timeout.merge.c:4260 */
+#line 4260
 extern int optopt ;
-/* END VARIABLE-DECL-EXTERN optopt LOC=./src/timeout.merge.c:4272 */
+/* END VARIABLE-DECL-EXTERN optopt LOC=./src/timeout.merge.c:4260 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinh LOC=BUILTIN */
 /* compiler builtin: 
@@ -3509,8 +3501,8 @@ enum __anonenum_230064777___0 ;
    _Complex long double __builtin_ctanhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_1036286214 LOC=./src/timeout.merge.c:4327 */
-#line 4327
+/* BEGIN ENUM __anonenum_1036286214 LOC=./src/timeout.merge.c:4315 */
+#line 4315
 enum __anonenum_1036286214 {
     BUS_ADRALN = 1,
     BUS_ADRERR = 2,
@@ -3518,52 +3510,52 @@ enum __anonenum_1036286214 {
     BUS_MCEERR_AR = 4,
     BUS_MCEERR_AO = 5
 } ;
-/* END ENUM __anonenum_1036286214 LOC=./src/timeout.merge.c:4327 */
+/* END ENUM __anonenum_1036286214 LOC=./src/timeout.merge.c:4315 */
 
-/* BEGIN TYPEDEF div_t LOC=./src/timeout.merge.c:4323 */
-#line 4323 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF div_t LOC=./src/timeout.merge.c:4311 */
+#line 4311 "./src/timeout.merge.c"
 typedef struct __anonstruct_div_t_773697287 div_t;
-/* END TYPEDEF div_t LOC=./src/timeout.merge.c:4323 */
+/* END TYPEDEF div_t LOC=./src/timeout.merge.c:4311 */
 
-/* BEGIN TYPEDEF __ssize_t LOC=./src/timeout.merge.c:3119 */
-#line 3119 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __ssize_t LOC=./src/timeout.merge.c:3115 */
+#line 3115 "./src/timeout.merge.c"
 typedef long __ssize_t;
-/* END TYPEDEF __ssize_t LOC=./src/timeout.merge.c:3119 */
+/* END TYPEDEF __ssize_t LOC=./src/timeout.merge.c:3115 */
 
-/* BEGIN TYPEDEF ssize_t LOC=./src/timeout.merge.c:3123 */
-#line 3123 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ssize_t LOC=./src/timeout.merge.c:3119 */
+#line 3119 "./src/timeout.merge.c"
 typedef __ssize_t ssize_t;
-/* END TYPEDEF ssize_t LOC=./src/timeout.merge.c:3123 */
+/* END TYPEDEF ssize_t LOC=./src/timeout.merge.c:3119 */
 
-/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/timeout.merge.c:4337 */
-#line 4337
+/* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/timeout.merge.c:4325 */
+#line 4325
 extern ssize_t copy_file_range(int __infd , __off64_t *__pinoff , int __outfd , __off64_t *__poutoff ,
                                size_t __length , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/timeout.merge.c:4337 */
+/* END FUNCTION-DECL-EXTERN copy_file_range LOC=./src/timeout.merge.c:4325 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_lgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgamma LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/timeout.merge.c:4351 */
-#line 4351 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/timeout.merge.c:4339 */
+#line 4339 "./src/timeout.merge.c"
 union __anonunion_pthread_rwlockattr_t_145707745 {
    char __size[8] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/timeout.merge.c:4351 */
+/* END UNION __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/timeout.merge.c:4339 */
 
-/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/timeout.merge.c:4378 */
-#line 4378
+/* BEGIN FUNCTION-DECL-EXTERN eaccess LOC=./src/timeout.merge.c:4366 */
+#line 4366
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) eaccess)(char const   *__name ,
                                                                                               int __type ) ;
-/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/timeout.merge.c:4378 */
+/* END FUNCTION-DECL-EXTERN eaccess LOC=./src/timeout.merge.c:4366 */
 
-/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/timeout.merge.c:4396 */
-#line 4396
+/* BEGIN FUNCTION-DECL-EXTERN printf LOC=./src/timeout.merge.c:4384 */
+#line 4384
 extern int printf(char const   * __restrict  __format  , ...) ;
-/* END FUNCTION-DECL-EXTERN printf LOC=./src/timeout.merge.c:4396 */
+/* END FUNCTION-DECL-EXTERN printf LOC=./src/timeout.merge.c:4384 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutexattr_t_488594144 LOC=./src/timeout.merge.c:1180 */
 #line 1180
@@ -3574,19 +3566,19 @@ union __anonunion_pthread_mutexattr_t_488594144 ;
 static double kill_after  ;
 /* END VARIABLE-DEF kill_after LOC=UNKNOWN */
 
-/* BEGIN ENUM __rusage_who LOC=./src/timeout.merge.c:4404 */
-#line 4404
+/* BEGIN ENUM __rusage_who LOC=./src/timeout.merge.c:4392 */
+#line 4392
 enum __rusage_who {
     RUSAGE_SELF = 0,
     RUSAGE_CHILDREN = -1,
     RUSAGE_THREAD = 1
 } ;
-/* END ENUM __rusage_who LOC=./src/timeout.merge.c:4404 */
+/* END ENUM __rusage_who LOC=./src/timeout.merge.c:4392 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/timeout.merge.c:4412 */
-#line 4412
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/timeout.merge.c:4400 */
+#line 4400
 extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/timeout.merge.c:4412 */
+/* END FUNCTION-DECL-EXTERN tmpfile64 LOC=./src/timeout.merge.c:4400 */
 
 /* BEGIN FUNCTION-DECL cleanup LOC=UNKNOWN */
 static void cleanup(int sig ) ;
@@ -3607,11 +3599,11 @@ static void cleanup(int sig ) ;
 struct _IO_marker ;
 /* END STRUCT-DECL _IO_marker LOC=./src/timeout.merge.c:852 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/timeout.merge.c:4486 */
-#line 4486
+/* BEGIN FUNCTION-DECL-EXTERN xireallocarray LOC=./src/timeout.merge.c:4474 */
+#line 4474
 extern void *xireallocarray(void *p , idx_t n , idx_t s )  __attribute__((__returns_nonnull__,
 __alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/timeout.merge.c:4486 */
+/* END FUNCTION-DECL-EXTERN xireallocarray LOC=./src/timeout.merge.c:4474 */
 
 /* BEGIN FUNCTION-DECL __builtin_clzll LOC=BUILTIN */
 /* compiler builtin: 
@@ -3623,21 +3615,21 @@ __alloc_size__(2,3))) ;
    long __builtin_bswap64(long  ) ;  */
 /* END FUNCTION-DECL __builtin_bswap64 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __suseconds_t LOC=./src/timeout.merge.c:1804 */
-#line 1804 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __suseconds_t LOC=./src/timeout.merge.c:1800 */
+#line 1800 "./src/timeout.merge.c"
 typedef long __suseconds_t;
-/* END TYPEDEF __suseconds_t LOC=./src/timeout.merge.c:1804 */
+/* END TYPEDEF __suseconds_t LOC=./src/timeout.merge.c:1800 */
 
-/* BEGIN STRUCT timeval LOC=./src/timeout.merge.c:1812 */
-#line 1812 "./src/timeout.merge.c"
+/* BEGIN STRUCT timeval LOC=./src/timeout.merge.c:1808 */
+#line 1808 "./src/timeout.merge.c"
 struct timeval {
    __time_t tv_sec ;
    __suseconds_t tv_usec ;
 };
-/* END STRUCT timeval LOC=./src/timeout.merge.c:1812 */
+/* END STRUCT timeval LOC=./src/timeout.merge.c:1808 */
 
-/* BEGIN STRUCT timex LOC=./src/timeout.merge.c:4506 */
-#line 4506 "./src/timeout.merge.c"
+/* BEGIN STRUCT timex LOC=./src/timeout.merge.c:4494 */
+#line 4494 "./src/timeout.merge.c"
 struct timex {
    unsigned int modes ;
    __syscall_slong_t offset ;
@@ -3671,22 +3663,22 @@ struct timex {
    int  : 32 ;
    int  : 32 ;
 };
-/* END STRUCT timex LOC=./src/timeout.merge.c:4506 */
+/* END STRUCT timex LOC=./src/timeout.merge.c:4494 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/timeout.merge.c:4542 */
-#line 4542
+/* BEGIN FUNCTION-DECL-EXTERN setgid LOC=./src/timeout.merge.c:4530 */
+#line 4530
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setgid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setgid LOC=./src/timeout.merge.c:4542 */
+/* END FUNCTION-DECL-EXTERN setgid LOC=./src/timeout.merge.c:4530 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/timeout.merge.c:4550 */
-#line 4550
+/* BEGIN FUNCTION-DECL-EXTERN chroot LOC=./src/timeout.merge.c:4538 */
+#line 4538
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chroot)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chroot LOC=./src/timeout.merge.c:4550 */
+/* END FUNCTION-DECL-EXTERN chroot LOC=./src/timeout.merge.c:4538 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/timeout.merge.c:4546 */
-#line 4546
+/* BEGIN FUNCTION-DECL-EXTERN dysize LOC=./src/timeout.merge.c:4534 */
+#line 4534
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dysize)(int __year )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dysize LOC=./src/timeout.merge.c:4546 */
+/* END FUNCTION-DECL-EXTERN dysize LOC=./src/timeout.merge.c:4534 */
 
 /* BEGIN UNION-DECL __anonunion__bounds_115767557 LOC=./src/timeout.merge.c:1400 */
 #line 1400
@@ -3703,20 +3695,20 @@ union __anonunion__bounds_115767557 ;
 struct statx_timestamp ;
 /* END STRUCT-DECL statx_timestamp LOC=./src/timeout.merge.c:1328 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/timeout.merge.c:4606 */
-#line 4606
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x LOC=./src/timeout.merge.c:4594 */
+#line 4594
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32x)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/timeout.merge.c:4606 */
+/* END FUNCTION-DECL-EXTERN strtof32x LOC=./src/timeout.merge.c:4594 */
 
 /* BEGIN FUNCTION-DECL parse_duration LOC=UNKNOWN */
 static double parse_duration(char const   *str ) ;
 /* END FUNCTION-DECL parse_duration LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN wait LOC=./src/timeout.merge.c:4631 */
-#line 4631
+/* BEGIN FUNCTION-DECL-EXTERN wait LOC=./src/timeout.merge.c:4619 */
+#line 4619
 extern __pid_t wait(int *__stat_loc ) ;
-/* END FUNCTION-DECL-EXTERN wait LOC=./src/timeout.merge.c:4631 */
+/* END FUNCTION-DECL-EXTERN wait LOC=./src/timeout.merge.c:4619 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3737,8 +3729,8 @@ static _Bool apply_time_suffix(double *x , char suffix_char ) ;
 union __anonunion___sigaction_handler_363639592 ;
 /* END UNION-DECL __anonunion___sigaction_handler_363639592 LOC=./src/timeout.merge.c:1516 */
 
-/* BEGIN ENUM __anonenum_451154152 LOC=./src/timeout.merge.c:4695 */
-#line 4695
+/* BEGIN ENUM __anonenum_451154152 LOC=./src/timeout.merge.c:4683 */
+#line 4683
 enum __anonenum_451154152 {
     REG_R8 = 0,
     REG_R9 = 1,
@@ -3764,67 +3756,71 @@ enum __anonenum_451154152 {
     REG_OLDMASK = 21,
     REG_CR2 = 22
 } ;
-/* END ENUM __anonenum_451154152 LOC=./src/timeout.merge.c:4695 */
+/* END ENUM __anonenum_451154152 LOC=./src/timeout.merge.c:4683 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wait3 LOC=./src/timeout.merge.c:4723 */
-#line 4723
+/* BEGIN FUNCTION-DECL-EXTERN wait3 LOC=./src/timeout.merge.c:4711 */
+#line 4711
 extern  __attribute__((__nothrow__)) __pid_t wait3(int *__stat_loc , int __options ,
                                                    struct rusage *__usage ) ;
-/* END FUNCTION-DECL-EXTERN wait3 LOC=./src/timeout.merge.c:4723 */
+/* END FUNCTION-DECL-EXTERN wait3 LOC=./src/timeout.merge.c:4711 */
 
-/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/timeout.merge.c:4728 */
-#line 4728 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __pthread_slist_t LOC=./src/timeout.merge.c:4716 */
+#line 4716 "./src/timeout.merge.c"
 typedef struct __pthread_internal_slist __pthread_slist_t;
-/* END TYPEDEF __pthread_slist_t LOC=./src/timeout.merge.c:4728 */
+/* END TYPEDEF __pthread_slist_t LOC=./src/timeout.merge.c:4716 */
 
-/* BEGIN FUNCTION-DECL directory_status LOC=./src/timeout.merge.c:4741 */
-#line 4741
+/* BEGIN FUNCTION-DECL directory_status LOC=./src/timeout.merge.c:4729 */
+#line 4729
 __inline static int directory_status(int fd_cwd , char const   *dir ) ;
-/* END FUNCTION-DECL directory_status LOC=./src/timeout.merge.c:4741 */
+/* END FUNCTION-DECL directory_status LOC=./src/timeout.merge.c:4729 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_expf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/timeout.merge.c:4750 */
-#line 4750
+/* BEGIN FUNCTION-DECL-EXTERN strspn LOC=./src/timeout.merge.c:4738 */
+#line 4738
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strspn)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strspn LOC=./src/timeout.merge.c:4750 */
+/* END FUNCTION-DECL-EXTERN strspn LOC=./src/timeout.merge.c:4738 */
 
-/* BEGIN TYPEDEF __u_short LOC=./src/timeout.merge.c:4755 */
-#line 4755 "./src/timeout.merge.c"
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_envp LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_envp ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_envp LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF __u_short LOC=./src/timeout.merge.c:4747 */
+#line 4747 "./src/timeout.merge.c"
 typedef unsigned short __u_short;
-/* END TYPEDEF __u_short LOC=./src/timeout.merge.c:4755 */
+/* END TYPEDEF __u_short LOC=./src/timeout.merge.c:4747 */
 
-/* BEGIN TYPEDEF u_short LOC=./src/timeout.merge.c:4759 */
-#line 4759 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_short LOC=./src/timeout.merge.c:4751 */
+#line 4751 "./src/timeout.merge.c"
 typedef __u_short u_short;
-/* END TYPEDEF u_short LOC=./src/timeout.merge.c:4759 */
+/* END TYPEDEF u_short LOC=./src/timeout.merge.c:4751 */
 
-/* BEGIN STRUCT timespec LOC=./src/timeout.merge.c:3060 */
-#line 3060 "./src/timeout.merge.c"
+/* BEGIN STRUCT timespec LOC=./src/timeout.merge.c:3056 */
+#line 3056 "./src/timeout.merge.c"
 struct timespec {
    __time_t tv_sec ;
    __syscall_slong_t tv_nsec ;
 };
-/* END STRUCT timespec LOC=./src/timeout.merge.c:3060 */
+/* END STRUCT timespec LOC=./src/timeout.merge.c:3056 */
 
-/* BEGIN FUNCTION-DECL timespectod LOC=./src/timeout.merge.c:4774 */
-#line 4774
+/* BEGIN FUNCTION-DECL timespectod LOC=./src/timeout.merge.c:4766 */
+#line 4766
 __inline double timespectod(struct timespec a ) ;
-/* END FUNCTION-DECL timespectod LOC=./src/timeout.merge.c:4774 */
+/* END FUNCTION-DECL timespectod LOC=./src/timeout.merge.c:4766 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccos LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_ccos(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccos LOC=BUILTIN */
 
-/* BEGIN TYPEDEF wchar_t LOC=./src/timeout.merge.c:4812 */
-#line 4812 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF wchar_t LOC=./src/timeout.merge.c:4804 */
+#line 4804 "./src/timeout.merge.c"
 typedef int wchar_t;
-/* END TYPEDEF wchar_t LOC=./src/timeout.merge.c:4812 */
+/* END TYPEDEF wchar_t LOC=./src/timeout.merge.c:4804 */
 
 /* BEGIN FUNCTION-DECL __builtin_isnan LOC=BUILTIN */
 /* compiler builtin: 
@@ -3836,96 +3832,96 @@ typedef int wchar_t;
    float __builtin_logf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/timeout.merge.c:4844 */
-#line 4844
+/* BEGIN FUNCTION-DECL-EXTERN ftello LOC=./src/timeout.merge.c:4836 */
+#line 4836
 extern __off_t ( __attribute__((__nonnull__(1))) ftello)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello LOC=./src/timeout.merge.c:4844 */
+/* END FUNCTION-DECL-EXTERN ftello LOC=./src/timeout.merge.c:4836 */
 
-/* BEGIN TYPEDEF ushort LOC=./src/timeout.merge.c:4857 */
-#line 4857 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ushort LOC=./src/timeout.merge.c:4849 */
+#line 4849 "./src/timeout.merge.c"
 typedef unsigned short ushort;
-/* END TYPEDEF ushort LOC=./src/timeout.merge.c:4857 */
+/* END TYPEDEF ushort LOC=./src/timeout.merge.c:4849 */
 
 /* BEGIN FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_nan(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/timeout.merge.c:4903 */
-#line 4903
+/* BEGIN FUNCTION-DECL-EXTERN atoi LOC=./src/timeout.merge.c:4895 */
+#line 4895
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atoi)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoi LOC=./src/timeout.merge.c:4903 */
+/* END FUNCTION-DECL-EXTERN atoi LOC=./src/timeout.merge.c:4895 */
 
-/* BEGIN TYPEDEF __intmax_t LOC=./src/timeout.merge.c:2209 */
-#line 2209 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __intmax_t LOC=./src/timeout.merge.c:2205 */
+#line 2205 "./src/timeout.merge.c"
 typedef long __intmax_t;
-/* END TYPEDEF __intmax_t LOC=./src/timeout.merge.c:2209 */
+/* END TYPEDEF __intmax_t LOC=./src/timeout.merge.c:2205 */
 
-/* BEGIN TYPEDEF imaxdiv_t LOC=./src/timeout.merge.c:4894 */
-#line 4894 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF imaxdiv_t LOC=./src/timeout.merge.c:4886 */
+#line 4886 "./src/timeout.merge.c"
 typedef struct __anonstruct_imaxdiv_t_825626742 imaxdiv_t;
-/* END TYPEDEF imaxdiv_t LOC=./src/timeout.merge.c:4894 */
+/* END TYPEDEF imaxdiv_t LOC=./src/timeout.merge.c:4886 */
 
-/* BEGIN TYPEDEF intmax_t LOC=./src/timeout.merge.c:2213 */
-#line 2213 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF intmax_t LOC=./src/timeout.merge.c:2209 */
+#line 2209 "./src/timeout.merge.c"
 typedef __intmax_t intmax_t;
-/* END TYPEDEF intmax_t LOC=./src/timeout.merge.c:2213 */
+/* END TYPEDEF intmax_t LOC=./src/timeout.merge.c:2209 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/timeout.merge.c:4898 */
-#line 4898
+/* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/timeout.merge.c:4890 */
+#line 4890
 extern  __attribute__((__nothrow__)) imaxdiv_t ( __attribute__((__leaf__)) imaxdiv)(intmax_t __numer ,
                                                                                     intmax_t __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/timeout.merge.c:4898 */
+/* END FUNCTION-DECL-EXTERN imaxdiv LOC=./src/timeout.merge.c:4890 */
 
 /* BEGIN STRUCT-DECL __time_t_must_be_integral LOC=./src/timeout.merge.c:1376 */
 #line 1376
 struct __time_t_must_be_integral ;
 /* END STRUCT-DECL __time_t_must_be_integral LOC=./src/timeout.merge.c:1376 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/timeout.merge.c:4925 */
-#line 4925
+/* BEGIN FUNCTION-DECL-EXTERN execl LOC=./src/timeout.merge.c:4917 */
+#line 4917
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execl)(char const   *__path ,
                                                                                               char const   *__arg 
                                                                                               , ...) ;
-/* END FUNCTION-DECL-EXTERN execl LOC=./src/timeout.merge.c:4925 */
+/* END FUNCTION-DECL-EXTERN execl LOC=./src/timeout.merge.c:4917 */
 
-/* BEGIN TYPEDEF __dev_t LOC=./src/timeout.merge.c:2830 */
-#line 2830 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __dev_t LOC=./src/timeout.merge.c:2826 */
+#line 2826 "./src/timeout.merge.c"
 typedef unsigned long __dev_t;
-/* END TYPEDEF __dev_t LOC=./src/timeout.merge.c:2830 */
+/* END TYPEDEF __dev_t LOC=./src/timeout.merge.c:2826 */
 
-/* BEGIN TYPEDEF __mode_t LOC=./src/timeout.merge.c:2838 */
-#line 2838 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __mode_t LOC=./src/timeout.merge.c:2834 */
+#line 2834 "./src/timeout.merge.c"
 typedef unsigned int __mode_t;
-/* END TYPEDEF __mode_t LOC=./src/timeout.merge.c:2838 */
+/* END TYPEDEF __mode_t LOC=./src/timeout.merge.c:2834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/timeout.merge.c:4914 */
-#line 4914
+/* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/timeout.merge.c:4906 */
+#line 4906
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mknodat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ,
                                                                                               __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/timeout.merge.c:4914 */
+/* END FUNCTION-DECL-EXTERN mknodat LOC=./src/timeout.merge.c:4906 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/timeout.merge.c:4931 */
-#line 4931
+/* BEGIN FUNCTION-DECL-EXTERN fscanf LOC=./src/timeout.merge.c:4923 */
+#line 4923
 extern int ( __attribute__((__nonnull__(1))) fscanf)(FILE * __restrict  __stream ,
                                                      char const   * __restrict  __format 
                                                      , ...)  __asm__("__isoc23_fscanf")  ;
-/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/timeout.merge.c:4931 */
+/* END FUNCTION-DECL-EXTERN fscanf LOC=./src/timeout.merge.c:4923 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/timeout.merge.c:4921 */
-#line 4921
+/* BEGIN FUNCTION-DECL-EXTERN timespec_sub LOC=./src/timeout.merge.c:4913 */
+#line 4913
 extern struct timespec timespec_sub(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/timeout.merge.c:4921 */
+/* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/timeout.merge.c:4913 */
 
-/* BEGIN STRUCT sigstack LOC=./src/timeout.merge.c:4937 */
-#line 4937 "./src/timeout.merge.c"
+/* BEGIN STRUCT sigstack LOC=./src/timeout.merge.c:4929 */
+#line 4929 "./src/timeout.merge.c"
 struct sigstack {
    void *ss_sp ;
    int ss_onstack ;
 };
-/* END STRUCT sigstack LOC=./src/timeout.merge.c:4937 */
+/* END STRUCT sigstack LOC=./src/timeout.merge.c:4929 */
 
 /* BEGIN FUNCTION-DECL __builtin_objc_memmove_collectable LOC=BUILTIN */
 /* compiler builtin: 
@@ -3937,17 +3933,17 @@ struct sigstack {
 struct file_handle ;
 /* END STRUCT-DECL file_handle LOC=./src/timeout.merge.c:1268 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/timeout.merge.c:4988 */
-#line 4988
+/* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=./src/timeout.merge.c:4980 */
+#line 4980
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvpe)(char const   *__file ,
                                                                                                 char **__argv ,
                                                                                                 char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/timeout.merge.c:4988 */
+/* END FUNCTION-DECL-EXTERN execvpe LOC=./src/timeout.merge.c:4980 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/timeout.merge.c:4984 */
-#line 4984
+/* BEGIN FUNCTION-DECL-EXTERN __overflow LOC=./src/timeout.merge.c:4976 */
+#line 4976
 extern int __overflow(FILE * , int  ) ;
-/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/timeout.merge.c:4984 */
+/* END FUNCTION-DECL-EXTERN __overflow LOC=./src/timeout.merge.c:4976 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3958,20 +3954,20 @@ extern int __overflow(FILE * , int  ) ;
 static void unblock_signal(int sig ) ;
 /* END FUNCTION-DECL unblock_signal LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __suseconds64_t LOC=./src/timeout.merge.c:5016 */
-#line 5016 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __suseconds64_t LOC=./src/timeout.merge.c:5008 */
+#line 5008 "./src/timeout.merge.c"
 typedef long __suseconds64_t;
-/* END TYPEDEF __suseconds64_t LOC=./src/timeout.merge.c:5016 */
+/* END TYPEDEF __suseconds64_t LOC=./src/timeout.merge.c:5008 */
 
-/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/timeout.merge.c:5020 */
-#line 5020
+/* BEGIN FUNCTION-DECL __uint64_identity LOC=./src/timeout.merge.c:5012 */
+#line 5012
 __inline static __uint64_t __uint64_identity(__uint64_t __x ) ;
-/* END FUNCTION-DECL __uint64_identity LOC=./src/timeout.merge.c:5020 */
+/* END FUNCTION-DECL __uint64_identity LOC=./src/timeout.merge.c:5012 */
 
-/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/timeout.merge.c:5039 */
-#line 5039
+/* BEGIN FUNCTION-DECL-EXTERN raise LOC=./src/timeout.merge.c:5031 */
+#line 5031
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN raise LOC=./src/timeout.merge.c:5039 */
+/* END FUNCTION-DECL-EXTERN raise LOC=./src/timeout.merge.c:5031 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -3984,58 +3980,58 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) raise)(int 
    int __builtin___vprintf_chk(int  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vprintf_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/timeout.merge.c:5069 */
-#line 5069
+/* BEGIN FUNCTION-DECL-EXTERN qecvt LOC=./src/timeout.merge.c:5061 */
+#line 5061
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qecvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/timeout.merge.c:5069 */
+/* END FUNCTION-DECL-EXTERN qecvt LOC=./src/timeout.merge.c:5061 */
 
-/* BEGIN ENUM __anonenum_606700034___0 LOC=./src/timeout.merge.c:5081 */
-#line 5081
+/* BEGIN ENUM __anonenum_606700034___0 LOC=./src/timeout.merge.c:5073 */
+#line 5073
 enum __anonenum_606700034___0 {
     DS_UNKNOWN___0 = -2,
     DS_EMPTY___0 = -1,
     DS_NONEMPTY___0 = 0
 } ;
-/* END ENUM __anonenum_606700034___0 LOC=./src/timeout.merge.c:5081 */
+/* END ENUM __anonenum_606700034___0 LOC=./src/timeout.merge.c:5073 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/timeout.merge.c:5089 */
-#line 5089
+/* BEGIN FUNCTION-DECL-EXTERN mkdirat LOC=./src/timeout.merge.c:5081 */
+#line 5081
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkdirat)(int __fd ,
                                                                                               char const   *__path ,
                                                                                               __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/timeout.merge.c:5089 */
+/* END FUNCTION-DECL-EXTERN mkdirat LOC=./src/timeout.merge.c:5081 */
 
-/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/timeout.merge.c:5101 */
-#line 5101
+/* BEGIN FUNCTION-DECL-EXTERN a64l LOC=./src/timeout.merge.c:5093 */
+#line 5093
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) a64l)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN a64l LOC=./src/timeout.merge.c:5101 */
+/* END FUNCTION-DECL-EXTERN a64l LOC=./src/timeout.merge.c:5093 */
 
-/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/timeout.merge.c:5105 */
-#line 5105 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_daddr_t LOC=./src/timeout.merge.c:5097 */
+#line 5097 "./src/timeout.merge.c"
 typedef int __kernel_daddr_t;
-/* END TYPEDEF __kernel_daddr_t LOC=./src/timeout.merge.c:5105 */
+/* END TYPEDEF __kernel_daddr_t LOC=./src/timeout.merge.c:5097 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/timeout.merge.c:5109 */
-#line 5109
+/* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=./src/timeout.merge.c:5101 */
+#line 5101
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat64)(char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/timeout.merge.c:5109 */
+/* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/timeout.merge.c:5101 */
 
-/* BEGIN TYPEDEF timezone_t LOC=./src/timeout.merge.c:5114 */
-#line 5114 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF timezone_t LOC=./src/timeout.merge.c:5106 */
+#line 5106 "./src/timeout.merge.c"
 typedef struct tm_zone *timezone_t;
-/* END TYPEDEF timezone_t LOC=./src/timeout.merge.c:5114 */
+/* END TYPEDEF timezone_t LOC=./src/timeout.merge.c:5106 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/timeout.merge.c:5118 */
-#line 5118
+/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/timeout.merge.c:5110 */
+#line 5110
 extern void tzfree(timezone_t __tz ) ;
-/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/timeout.merge.c:5118 */
+/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/timeout.merge.c:5110 */
 
-/* BEGIN ENUM __anonenum_91015150 LOC=./src/timeout.merge.c:5122 */
-#line 5122
+/* BEGIN ENUM __anonenum_91015150 LOC=./src/timeout.merge.c:5114 */
+#line 5114
 enum __anonenum_91015150 {
     TRAP_BRKPT = 1,
     TRAP_TRACE = 2,
@@ -4043,33 +4039,33 @@ enum __anonenum_91015150 {
     TRAP_HWBKPT = 4,
     TRAP_UNK = 5
 } ;
-/* END ENUM __anonenum_91015150 LOC=./src/timeout.merge.c:5122 */
+/* END ENUM __anonenum_91015150 LOC=./src/timeout.merge.c:5114 */
 
 /* BEGIN FUNCTION-DECL emit_blocksize_note LOC=UNKNOWN */
 __inline static void emit_blocksize_note(char const   *program ) ;
 /* END FUNCTION-DECL emit_blocksize_note LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int_fast8_t LOC=./src/timeout.merge.c:5140 */
-#line 5140 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int_fast8_t LOC=./src/timeout.merge.c:5132 */
+#line 5132 "./src/timeout.merge.c"
 typedef signed char int_fast8_t;
-/* END TYPEDEF int_fast8_t LOC=./src/timeout.merge.c:5140 */
+/* END TYPEDEF int_fast8_t LOC=./src/timeout.merge.c:5132 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/timeout.merge.c:5170 */
-#line 5170
+/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/timeout.merge.c:5162 */
+#line 5162
 extern char *__tzname[2] ;
-/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/timeout.merge.c:5170 */
+/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/timeout.merge.c:5162 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/timeout.merge.c:5182 */
-#line 5182
+/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/timeout.merge.c:5174 */
+#line 5174
 extern char const   *quote_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/timeout.merge.c:5182 */
+/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/timeout.merge.c:5174 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/timeout.merge.c:5204 */
-#line 5204
+/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/timeout.merge.c:5196 */
+#line 5196
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) setenv)(char const   *__name ,
                                                                                              char const   *__value ,
                                                                                              int __replace ) ;
-/* END FUNCTION-DECL-EXTERN setenv LOC=./src/timeout.merge.c:5204 */
+/* END FUNCTION-DECL-EXTERN setenv LOC=./src/timeout.merge.c:5196 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4082,50 +4078,50 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    double __builtin_rint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/timeout.merge.c:5215 */
-#line 5215
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/timeout.merge.c:5207 */
+#line 5207
 extern int ( __attribute__((__nonnull__(1))) rpl_fclose)(FILE *stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/timeout.merge.c:5215 */
+/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/timeout.merge.c:5207 */
 
-/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/timeout.merge.c:5219 */
-#line 5219 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/timeout.merge.c:5211 */
+#line 5211 "./src/timeout.merge.c"
 typedef unsigned long __kernel_ulong_t;
-/* END TYPEDEF __kernel_ulong_t LOC=./src/timeout.merge.c:5219 */
+/* END TYPEDEF __kernel_ulong_t LOC=./src/timeout.merge.c:5211 */
 
-/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/timeout.merge.c:5228 */
-#line 5228
+/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/timeout.merge.c:5220 */
+#line 5220
 enum __anonenum_57186863___0 {
     SS_ONSTACK___0 = 1,
     SS_DISABLE___0 = 2
 } ;
-/* END ENUM __anonenum_57186863___0 LOC=./src/timeout.merge.c:5228 */
+/* END ENUM __anonenum_57186863___0 LOC=./src/timeout.merge.c:5220 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/timeout.merge.c:5245 */
-#line 5245
+/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/timeout.merge.c:5237 */
+#line 5237
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sscanf)(char const   * __restrict  __s ,
                                                                              char const   * __restrict  __format 
                                                                              , ...)  __asm__("__isoc23_sscanf")  ;
-/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/timeout.merge.c:5245 */
+/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/timeout.merge.c:5237 */
 
-/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/timeout.merge.c:5251 */
-#line 5251
+/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/timeout.merge.c:5243 */
+#line 5243
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
-/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/timeout.merge.c:5251 */
+/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/timeout.merge.c:5243 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/timeout.merge.c:5259 */
-#line 5259
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/timeout.merge.c:5251 */
+#line 5251
 extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/timeout.merge.c:5259 */
+/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/timeout.merge.c:5251 */
 
-/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/timeout.merge.c:5255 */
-#line 5255
+/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/timeout.merge.c:5247 */
+#line 5247
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN basename LOC=./src/timeout.merge.c:5255 */
+/* END FUNCTION-DECL-EXTERN basename LOC=./src/timeout.merge.c:5247 */
 
-/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/timeout.merge.c:5263 */
-#line 5263 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/timeout.merge.c:5255 */
+#line 5255 "./src/timeout.merge.c"
 typedef unsigned short __kernel_uid16_t;
-/* END TYPEDEF __kernel_uid16_t LOC=./src/timeout.merge.c:5263 */
+/* END TYPEDEF __kernel_uid16_t LOC=./src/timeout.merge.c:5255 */
 
 /* BEGIN STRUCT-DECL _fpreg LOC=./src/timeout.merge.c:952 */
 #line 952
@@ -4137,134 +4133,134 @@ struct _fpreg ;
    float __builtin_truncf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __ino64_t LOC=./src/timeout.merge.c:5289 */
-#line 5289 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __ino64_t LOC=./src/timeout.merge.c:5281 */
+#line 5281 "./src/timeout.merge.c"
 typedef unsigned long __ino64_t;
-/* END TYPEDEF __ino64_t LOC=./src/timeout.merge.c:5289 */
+/* END TYPEDEF __ino64_t LOC=./src/timeout.merge.c:5281 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/timeout.merge.c:5302 */
-#line 5302
+/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/timeout.merge.c:5294 */
+#line 5294
 extern int ( __attribute__((__nonnull__(1))) fpurge)(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/timeout.merge.c:5302 */
+/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/timeout.merge.c:5294 */
 
-/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/timeout.merge.c:5320 */
-#line 5320
+/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/timeout.merge.c:5312 */
+#line 5312
 enum __anonenum_463020052___0 {
     TIMESPEC_HZ___0 = 1000000000
 } ;
-/* END ENUM __anonenum_463020052___0 LOC=./src/timeout.merge.c:5320 */
+/* END ENUM __anonenum_463020052___0 LOC=./src/timeout.merge.c:5312 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/timeout.merge.c:5339 */
-#line 5339
+/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/timeout.merge.c:5331 */
+#line 5331
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror_l)(int __errnum ,
                                                                                    locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/timeout.merge.c:5339 */
+/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/timeout.merge.c:5331 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fminf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/timeout.merge.c:5353 */
-#line 5353
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/timeout.merge.c:5345 */
+#line 5345
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32x_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/timeout.merge.c:5353 */
+/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/timeout.merge.c:5345 */
 
-/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/timeout.merge.c:5363 */
-#line 5363 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/timeout.merge.c:5355 */
+#line 5355 "./src/timeout.merge.c"
 typedef unsigned long __kernel_old_dev_t;
-/* END TYPEDEF __kernel_old_dev_t LOC=./src/timeout.merge.c:5363 */
+/* END TYPEDEF __kernel_old_dev_t LOC=./src/timeout.merge.c:5355 */
 
-/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/timeout.merge.c:5378 */
-#line 5378 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/timeout.merge.c:5370 */
+#line 5370 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_condattr_t_488594145 pthread_condattr_t;
-/* END TYPEDEF pthread_condattr_t LOC=./src/timeout.merge.c:5378 */
+/* END TYPEDEF pthread_condattr_t LOC=./src/timeout.merge.c:5370 */
 
-/* BEGIN TYPEDEF ulong LOC=./src/timeout.merge.c:5382 */
-#line 5382 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ulong LOC=./src/timeout.merge.c:5374 */
+#line 5374 "./src/timeout.merge.c"
 typedef unsigned long ulong;
-/* END TYPEDEF ulong LOC=./src/timeout.merge.c:5382 */
+/* END TYPEDEF ulong LOC=./src/timeout.merge.c:5374 */
 
-/* BEGIN TYPEDEF __kernel_size_t LOC=./src/timeout.merge.c:5386 */
-#line 5386 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_size_t LOC=./src/timeout.merge.c:5378 */
+#line 5378 "./src/timeout.merge.c"
 typedef __kernel_ulong_t __kernel_size_t;
-/* END TYPEDEF __kernel_size_t LOC=./src/timeout.merge.c:5386 */
+/* END TYPEDEF __kernel_size_t LOC=./src/timeout.merge.c:5378 */
 
 /* BEGIN FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_bcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/timeout.merge.c:5417 */
-#line 5417
+/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/timeout.merge.c:5409 */
+#line 5409
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1), __leaf__)) strtof128)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/timeout.merge.c:5417 */
+/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/timeout.merge.c:5409 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/timeout.merge.c:5411 */
-#line 5411
+/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/timeout.merge.c:5403 */
+#line 5403
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/timeout.merge.c:5411 */
+/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/timeout.merge.c:5403 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cpowf(_Complex float  , _Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/timeout.merge.c:5422 */
-#line 5422
+/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/timeout.merge.c:5414 */
+#line 5414
 extern int ( __attribute__((__nonnull__(2))) openat64)(int __fd , char const   *__file ,
                                                        int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/timeout.merge.c:5422 */
+/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/timeout.merge.c:5414 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863 LOC=./src/timeout.merge.c:956 */
 #line 956
 enum __anonenum_57186863 ;
 /* END ENUM-DECL __anonenum_57186863 LOC=./src/timeout.merge.c:956 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/timeout.merge.c:5441 */
-#line 5441
+/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/timeout.merge.c:5433 */
+#line 5433
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qecvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/timeout.merge.c:5441 */
+/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/timeout.merge.c:5433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/timeout.merge.c:5456 */
-#line 5456
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/timeout.merge.c:5448 */
+#line 5448
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate)(int __fd ,
                                                                                 __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/timeout.merge.c:5456 */
+/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/timeout.merge.c:5448 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/timeout.merge.c:5461 */
-#line 5461
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/timeout.merge.c:5453 */
+#line 5453
 extern void close_stdout_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/timeout.merge.c:5461 */
+/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/timeout.merge.c:5453 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/timeout.merge.c:5486 */
-#line 5486
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/timeout.merge.c:5478 */
+#line 5478
 extern void quotearg_free(void) ;
-/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/timeout.merge.c:5486 */
+/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/timeout.merge.c:5478 */
 
 /* BEGIN VARIABLE-DECL timed_out LOC=UNKNOWN */
 static int timed_out ;
 /* END VARIABLE-DECL timed_out LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/timeout.merge.c:5530 */
-#line 5530
+/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/timeout.merge.c:5522 */
+#line 5522
 extern int volatile   exit_failure ;
-/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/timeout.merge.c:5530 */
+/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/timeout.merge.c:5522 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/timeout.merge.c:5544 */
-#line 5544
+/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/timeout.merge.c:5536 */
+#line 5536
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/timeout.merge.c:5544 */
+/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/timeout.merge.c:5536 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -4282,39 +4278,39 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershe
    double __builtin_acosh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF dev_t LOC=./src/timeout.merge.c:2842 */
-#line 2842 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF dev_t LOC=./src/timeout.merge.c:2838 */
+#line 2838 "./src/timeout.merge.c"
 typedef __dev_t dev_t;
-/* END TYPEDEF dev_t LOC=./src/timeout.merge.c:2842 */
+/* END TYPEDEF dev_t LOC=./src/timeout.merge.c:2838 */
 
-/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/timeout.merge.c:5596 */
-#line 5596
+/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/timeout.merge.c:5588 */
+#line 5588
 __inline static __uint32_t __bswap_32(__uint32_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_32 LOC=./src/timeout.merge.c:5596 */
+/* END FUNCTION-DECL __bswap_32 LOC=./src/timeout.merge.c:5588 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/timeout.merge.c:5600 */
-#line 5600
+/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/timeout.merge.c:5592 */
+#line 5592
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcat)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/timeout.merge.c:5600 */
+/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/timeout.merge.c:5592 */
 
 /* BEGIN FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
 __inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
 /* END FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/timeout.merge.c:5630 */
-#line 5630
+/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/timeout.merge.c:5622 */
+#line 5622
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void) ;
-/* END FUNCTION-DECL-EXTERN sync LOC=./src/timeout.merge.c:5630 */
+/* END FUNCTION-DECL-EXTERN sync LOC=./src/timeout.merge.c:5622 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/timeout.merge.c:5634 */
-#line 5634
+/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/timeout.merge.c:5626 */
+#line 5626
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf128)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   _Float128 __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/timeout.merge.c:5634 */
+/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/timeout.merge.c:5626 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 /* compiler builtin: 
@@ -4327,166 +4323,166 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
 struct lconv ;
 /* END STRUCT-DECL lconv LOC=./src/timeout.merge.c:1052 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/timeout.merge.c:5659 */
-#line 5659
+/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/timeout.merge.c:5651 */
+#line 5651
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) realloc)(void *__ptr , size_t __size )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN realloc LOC=./src/timeout.merge.c:5659 */
+/* END FUNCTION-DECL-EXTERN realloc LOC=./src/timeout.merge.c:5651 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/timeout.merge.c:5668 */
-#line 5668
+/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/timeout.merge.c:5660 */
+#line 5660
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32)(char const   * __restrict  __nptr ,
                                                                                                  char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/timeout.merge.c:5668 */
+/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/timeout.merge.c:5660 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346503 LOC=./src/timeout.merge.c:1755 */
-#line 1755 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346503 LOC=./src/timeout.merge.c:1751 */
+#line 1751 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346503 {
    long ru_inblock ;
    __syscall_slong_t __ru_inblock_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346503 LOC=./src/timeout.merge.c:1755 */
+/* END UNION __anonunion____missing_field_name_1036346503 LOC=./src/timeout.merge.c:1751 */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./src/timeout.merge.c:864 */
 #line 864
 struct tm_zone ;
 /* END STRUCT-DECL tm_zone LOC=./src/timeout.merge.c:864 */
 
-/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/timeout.merge.c:5687 */
-#line 5687
+/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/timeout.merge.c:5679 */
+#line 5679
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) endusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/timeout.merge.c:5687 */
+/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/timeout.merge.c:5679 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/timeout.merge.c:5691 */
-#line 5691
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/timeout.merge.c:5683 */
+#line 5683
 extern char *quotearg_custom(char const   *left_quote , char const   *right_quote ,
                              char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/timeout.merge.c:5691 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/timeout.merge.c:5683 */
 
 /* BEGIN FUNCTION-DECL stzncpy LOC=UNKNOWN */
 __inline static char *stzncpy(char * __restrict  dest , char const   * __restrict  src ,
                               size_t len ) ;
 /* END FUNCTION-DECL stzncpy LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/timeout.merge.c:5706 */
-#line 5706
+/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/timeout.merge.c:5698 */
+#line 5698
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread LOC=./src/timeout.merge.c:5706 */
+/* END FUNCTION-DECL-EXTERN pread LOC=./src/timeout.merge.c:5698 */
 
-/* BEGIN TYPEDEF ucontext_t LOC=./src/timeout.merge.c:5719 */
-#line 5719 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ucontext_t LOC=./src/timeout.merge.c:5711 */
+#line 5711 "./src/timeout.merge.c"
 typedef struct ucontext_t ucontext_t;
-/* END TYPEDEF ucontext_t LOC=./src/timeout.merge.c:5719 */
+/* END TYPEDEF ucontext_t LOC=./src/timeout.merge.c:5711 */
 
-/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/timeout.merge.c:5723 */
-#line 5723 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/timeout.merge.c:5715 */
+#line 5715 "./src/timeout.merge.c"
 typedef int cookie_close_function_t(void *__cookie );
-/* END TYPEDEF cookie_close_function_t LOC=./src/timeout.merge.c:5723 */
+/* END TYPEDEF cookie_close_function_t LOC=./src/timeout.merge.c:5715 */
 
-/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/timeout.merge.c:5727 */
-#line 5727 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/timeout.merge.c:5719 */
+#line 5719 "./src/timeout.merge.c"
 typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_read_function_t LOC=./src/timeout.merge.c:5727 */
+/* END TYPEDEF cookie_read_function_t LOC=./src/timeout.merge.c:5719 */
 
-/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/timeout.merge.c:5731 */
-#line 5731 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/timeout.merge.c:5723 */
+#line 5723 "./src/timeout.merge.c"
 typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
-/* END TYPEDEF cookie_seek_function_t LOC=./src/timeout.merge.c:5731 */
+/* END TYPEDEF cookie_seek_function_t LOC=./src/timeout.merge.c:5723 */
 
-/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/timeout.merge.c:5735 */
-#line 5735 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/timeout.merge.c:5727 */
+#line 5727 "./src/timeout.merge.c"
 typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_write_function_t LOC=./src/timeout.merge.c:5735 */
+/* END TYPEDEF cookie_write_function_t LOC=./src/timeout.merge.c:5727 */
 
-/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/timeout.merge.c:5739 */
-#line 5739 "./src/timeout.merge.c"
+/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/timeout.merge.c:5731 */
+#line 5731 "./src/timeout.merge.c"
 struct _IO_cookie_io_functions_t {
    cookie_read_function_t *read ;
    cookie_write_function_t *write ;
    cookie_seek_function_t *seek ;
    cookie_close_function_t *close ;
 };
-/* END STRUCT _IO_cookie_io_functions_t LOC=./src/timeout.merge.c:5739 */
+/* END STRUCT _IO_cookie_io_functions_t LOC=./src/timeout.merge.c:5731 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/timeout.merge.c:5748 */
-#line 5748
+/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/timeout.merge.c:5740 */
+#line 5740
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt_long_only)(int ___argc ,
                                                                                                          char **___argv ,
                                                                                                          char const   *__shortopts ,
                                                                                                          struct option  const  *__longopts ,
                                                                                                          int *__longind ) ;
-/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/timeout.merge.c:5748 */
+/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/timeout.merge.c:5740 */
 
-/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/timeout.merge.c:5756 */
-#line 5756 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/timeout.merge.c:5748 */
+#line 5748 "./src/timeout.merge.c"
 struct __anonstruct_max_align_t_247203726 {
    long long __max_align_ll  __attribute__((__aligned__(__alignof__(long long )))) ;
    long double __max_align_ld  __attribute__((__aligned__(__alignof__(long double )))) ;
 };
-/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/timeout.merge.c:5756 */
+/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/timeout.merge.c:5748 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/timeout.merge.c:5763 */
-#line 5763
+/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/timeout.merge.c:5755 */
+#line 5755
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimes)(int __fd ,
                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimes LOC=./src/timeout.merge.c:5763 */
+/* END FUNCTION-DECL-EXTERN futimes LOC=./src/timeout.merge.c:5755 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346498 LOC=./src/timeout.merge.c:1720 */
-#line 1720 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346498 LOC=./src/timeout.merge.c:1716 */
+#line 1716 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346498 {
    long ru_idrss ;
    __syscall_slong_t __ru_idrss_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346498 LOC=./src/timeout.merge.c:1720 */
+/* END UNION __anonunion____missing_field_name_1036346498 LOC=./src/timeout.merge.c:1716 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/timeout.merge.c:5768 */
-#line 5768
+/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/timeout.merge.c:5760 */
+#line 5760
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) fcvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/timeout.merge.c:5768 */
+/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/timeout.merge.c:5760 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/timeout.merge.c:5777 */
-#line 5777
+/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/timeout.merge.c:5769 */
+#line 5769
 extern char const   *getprogname(void)  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/timeout.merge.c:5777 */
+/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/timeout.merge.c:5769 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wcscmp(unsigned short * const   , unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/timeout.merge.c:5826 */
-#line 5826
+/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/timeout.merge.c:5818 */
+#line 5818
 extern int ( __attribute__((__nonnull__(1,2))) mbscasecmp)(char const   *s1 , char const   *s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/timeout.merge.c:5826 */
+/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/timeout.merge.c:5818 */
 
-/* BEGIN ENUM __anonenum_923753503 LOC=./src/timeout.merge.c:5830 */
-#line 5830
+/* BEGIN ENUM __anonenum_923753503 LOC=./src/timeout.merge.c:5822 */
+#line 5822
 enum __anonenum_923753503 {
     FOREGROUND_OPTION = 128,
     PRESERVE_STATUS_OPTION = 129
 } ;
-/* END ENUM __anonenum_923753503 LOC=./src/timeout.merge.c:5830 */
+/* END ENUM __anonenum_923753503 LOC=./src/timeout.merge.c:5822 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/timeout.merge.c:5858 */
-#line 5858
+/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/timeout.merge.c:5850 */
+#line 5850
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) timespec_get)(struct timespec *__ts ,
                                                                                                    int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/timeout.merge.c:5858 */
+/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/timeout.merge.c:5850 */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/timeout.merge.c:5863 */
-#line 5863
+/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/timeout.merge.c:5855 */
+#line 5855
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) get_current_dir_name)(void) ;
-/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/timeout.merge.c:5863 */
+/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/timeout.merge.c:5855 */
 
 /* BEGIN ENUM-DECL __rusage_who LOC=./src/timeout.merge.c:1128 */
 #line 1128
@@ -4503,11 +4499,11 @@ enum __rusage_who ;
    float __builtin_fdimf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/timeout.merge.c:5898 */
-#line 5898
+/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/timeout.merge.c:5890 */
+#line 5890
 extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/timeout.merge.c:5898 */
+/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/timeout.merge.c:5890 */
 
 /* BEGIN STRUCT-DECL __anonstruct_mcontext_t_787213989 LOC=./src/timeout.merge.c:876 */
 #line 876
@@ -4519,46 +4515,46 @@ struct __anonstruct_mcontext_t_787213989 ;
    float __builtin_nexttowardf(float  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/timeout.merge.c:5931 */
-#line 5931
+/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/timeout.merge.c:5923 */
+#line 5923
 extern  __attribute__((__nothrow__)) __off64_t ( __attribute__((__leaf__)) lseek64)(int __fd ,
                                                                                     __off64_t __offset ,
                                                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/timeout.merge.c:5931 */
+/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/timeout.merge.c:5923 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/timeout.merge.c:5952 */
-#line 5952
+/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/timeout.merge.c:5944 */
+#line 5944
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) bcmp)(void const   *__s1 ,
                                                                                              void const   *__s2 ,
                                                                                              size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/timeout.merge.c:5952 */
+/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/timeout.merge.c:5944 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/timeout.merge.c:5958 */
-#line 5958
+/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/timeout.merge.c:5950 */
+#line 5950
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) gettext)(char const   *__msgid )  __attribute__((__format_arg__(1))) ;
-/* END FUNCTION-DECL-EXTERN gettext LOC=./src/timeout.merge.c:5958 */
+/* END FUNCTION-DECL-EXTERN gettext LOC=./src/timeout.merge.c:5950 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncat(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/timeout.merge.c:5995 */
-#line 5995
+/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/timeout.merge.c:5987 */
+#line 5987
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mknod)(char const   *__path ,
                                                                                             __mode_t __mode ,
                                                                                             __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknod LOC=./src/timeout.merge.c:5995 */
+/* END FUNCTION-DECL-EXTERN mknod LOC=./src/timeout.merge.c:5987 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fabs(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/timeout.merge.c:6005 */
-#line 6005
+/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/timeout.merge.c:5997 */
+#line 5997
 extern long timezone ;
-/* END VARIABLE-DECL-EXTERN timezone LOC=./src/timeout.merge.c:6005 */
+/* END VARIABLE-DECL-EXTERN timezone LOC=./src/timeout.merge.c:5997 */
 
 /* BEGIN STRUCT-DECL __anonstruct___once_flag_783464055 LOC=./src/timeout.merge.c:1292 */
 #line 1292
@@ -4569,16 +4565,16 @@ struct __anonstruct___once_flag_783464055 ;
 __inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
 /* END FUNCTION-DECL timespec_sign LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/timeout.merge.c:6032 */
-#line 6032
+/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/timeout.merge.c:6024 */
+#line 6024
 extern int ( __attribute__((__nonnull__(1))) fseek)(FILE *__stream , long __off ,
                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseek LOC=./src/timeout.merge.c:6032 */
+/* END FUNCTION-DECL-EXTERN fseek LOC=./src/timeout.merge.c:6024 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/timeout.merge.c:6041 */
-#line 6041
+/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/timeout.merge.c:6033 */
+#line 6033
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)(void) ;
-/* END FUNCTION-DECL-EXTERN setsid LOC=./src/timeout.merge.c:6041 */
+/* END FUNCTION-DECL-EXTERN setsid LOC=./src/timeout.merge.c:6033 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 /* compiler builtin: 
@@ -4590,177 +4586,181 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)
    int __builtin_ffsl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/timeout.merge.c:6055 */
-#line 6055
+/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/timeout.merge.c:6047 */
+#line 6047
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/timeout.merge.c:6055 */
+/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/timeout.merge.c:6047 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_argc LOC=UNKNOWN */
+int _TIG_IZ_rYHN_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/timeout.merge.c:6064 */
-#line 6064 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/timeout.merge.c:6060 */
+#line 6060 "./src/timeout.merge.c"
 union __anonunion_pthread_cond_t_951761805 {
    struct __pthread_cond_s __data ;
    char __size[48] ;
    long long __align ;
 };
-/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/timeout.merge.c:6064 */
+/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/timeout.merge.c:6060 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ccosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/timeout.merge.c:6107 */
-#line 6107
+/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/timeout.merge.c:6103 */
+#line 6103
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime)(char const   * __restrict  __s ,
                                                                                  char const   * __restrict  __fmt ,
                                                                                  struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN strptime LOC=./src/timeout.merge.c:6107 */
+/* END FUNCTION-DECL-EXTERN strptime LOC=./src/timeout.merge.c:6103 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/timeout.merge.c:6122 */
-#line 6122
+/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/timeout.merge.c:6118 */
+#line 6118
 extern int getchar_unlocked(void) ;
-/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/timeout.merge.c:6122 */
+/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/timeout.merge.c:6118 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1476 */
 #line 1476
 union __anonunion____missing_field_name_1036346505 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1476 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/timeout.merge.c:6130 */
-#line 6130
+/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/timeout.merge.c:6126 */
+#line 6126
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setlinebuf)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/timeout.merge.c:6130 */
+/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/timeout.merge.c:6126 */
 
-/* BEGIN TYPEDEF pid_t LOC=./src/timeout.merge.c:2180 */
-#line 2180 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pid_t LOC=./src/timeout.merge.c:2176 */
+#line 2176 "./src/timeout.merge.c"
 typedef __pid_t pid_t;
-/* END TYPEDEF pid_t LOC=./src/timeout.merge.c:2180 */
+/* END TYPEDEF pid_t LOC=./src/timeout.merge.c:2176 */
 
 /* BEGIN VARIABLE-DECL monitored_pid LOC=UNKNOWN */
 static pid_t monitored_pid ;
 /* END VARIABLE-DECL monitored_pid LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/timeout.merge.c:6157 */
-#line 6157
+/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/timeout.merge.c:6153 */
+#line 6153
 extern int ( __attribute__((__nonnull__(2))) openat)(int __fd , char const   *__file ,
                                                      int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat LOC=./src/timeout.merge.c:6157 */
+/* END FUNCTION-DECL-EXTERN openat LOC=./src/timeout.merge.c:6153 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/timeout.merge.c:6162 */
-#line 6162
+/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/timeout.merge.c:6158 */
+#line 6158
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigabbrev_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/timeout.merge.c:6162 */
+/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/timeout.merge.c:6158 */
 
-/* BEGIN TYPEDEF siginfo_t LOC=./src/timeout.merge.c:2940 */
-#line 2940 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF siginfo_t LOC=./src/timeout.merge.c:2936 */
+#line 2936 "./src/timeout.merge.c"
 typedef struct __anonstruct_siginfo_t_617603290 siginfo_t;
-/* END TYPEDEF siginfo_t LOC=./src/timeout.merge.c:2940 */
+/* END TYPEDEF siginfo_t LOC=./src/timeout.merge.c:2936 */
 
-/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/timeout.merge.c:6170 */
-#line 6170 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/timeout.merge.c:6166 */
+#line 6166 "./src/timeout.merge.c"
 struct __anonstruct__timer_490064738 {
    int si_tid ;
    int si_overrun ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__timer_490064738 LOC=./src/timeout.merge.c:6170 */
+/* END STRUCT __anonstruct__timer_490064738 LOC=./src/timeout.merge.c:6166 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/timeout.merge.c:6195 */
-#line 6195
+/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/timeout.merge.c:6191 */
+#line 6191
 extern void unused__emit_bug_reporting_address(void) ;
-/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/timeout.merge.c:6195 */
+/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/timeout.merge.c:6191 */
 
 /* BEGIN FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smull_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/timeout.merge.c:6204 */
-#line 6204
+/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/timeout.merge.c:6200 */
+#line 6200
 extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/timeout.merge.c:6204 */
+/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/timeout.merge.c:6200 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/timeout.merge.c:6208 */
-#line 6208
+/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/timeout.merge.c:6204 */
+#line 6204
 extern int ( __attribute__((__nonnull__(1,2))) sigwait)(sigset_t const   * __restrict  __set ,
                                                         int * __restrict  __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/timeout.merge.c:6208 */
+/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/timeout.merge.c:6204 */
 
 /* BEGIN FUNCTION-DECL __builtin_ceilf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_ceilf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_ceilf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/timeout.merge.c:6246 */
-#line 6246
+/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/timeout.merge.c:6242 */
+#line 6242
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bindtextdomain)(char const   *__domainname ,
                                                                                        char const   *__dirname ) ;
-/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/timeout.merge.c:6246 */
+/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/timeout.merge.c:6242 */
 
 /* BEGIN FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_classify_type(...) ;  */
 /* END FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/timeout.merge.c:6232 */
-#line 6232
+/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/timeout.merge.c:6228 */
+#line 6228
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) reallocarray)(void *__ptr , size_t __nmemb , size_t __size )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/timeout.merge.c:6232 */
+/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/timeout.merge.c:6228 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/timeout.merge.c:6228 */
-#line 6228
+/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/timeout.merge.c:6224 */
+#line 6224
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timegm)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timegm LOC=./src/timeout.merge.c:6228 */
+/* END FUNCTION-DECL-EXTERN timegm LOC=./src/timeout.merge.c:6224 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152 LOC=./src/timeout.merge.c:1216 */
 #line 1216
 enum __anonenum_451154152 ;
 /* END ENUM-DECL __anonenum_451154152 LOC=./src/timeout.merge.c:1216 */
 
-/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/timeout.merge.c:6278 */
-#line 6278 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/timeout.merge.c:6274 */
+#line 6274 "./src/timeout.merge.c"
 union __anonunion___sigaction_handler_363639592 {
    void (*sa_handler)(int  ) ;
    void (*sa_sigaction)(int  , siginfo_t * , void * ) ;
 };
-/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/timeout.merge.c:6278 */
+/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/timeout.merge.c:6274 */
 
-/* BEGIN STRUCT sigaction LOC=./src/timeout.merge.c:6285 */
-#line 6285 "./src/timeout.merge.c"
+/* BEGIN STRUCT sigaction LOC=./src/timeout.merge.c:6281 */
+#line 6281 "./src/timeout.merge.c"
 struct sigaction {
    union __anonunion___sigaction_handler_363639592 __sigaction_handler ;
    __sigset_t sa_mask ;
    int sa_flags ;
    void (*sa_restorer)(void) ;
 };
-/* END STRUCT sigaction LOC=./src/timeout.merge.c:6285 */
+/* END STRUCT sigaction LOC=./src/timeout.merge.c:6281 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/timeout.merge.c:6294 */
-#line 6294
+/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/timeout.merge.c:6290 */
+#line 6290
 extern int ( __attribute__((__nonnull__(2))) ungetc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/timeout.merge.c:6294 */
+/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/timeout.merge.c:6290 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/timeout.merge.c:6304 */
-#line 6304
+/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/timeout.merge.c:6300 */
+#line 6300
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfroml)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/timeout.merge.c:6304 */
+/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/timeout.merge.c:6300 */
 
 /* BEGIN STRUCT-DECL _IO_codecvt LOC=./src/timeout.merge.c:848 */
 #line 848
 struct _IO_codecvt ;
 /* END STRUCT-DECL _IO_codecvt LOC=./src/timeout.merge.c:848 */
 
-/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/timeout.merge.c:6354 */
-#line 6354 "./src/timeout.merge.c"
+/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/timeout.merge.c:6350 */
+#line 6350 "./src/timeout.merge.c"
 struct __pthread_rwlock_arch_t {
    unsigned int __readers ;
    unsigned int __writers ;
@@ -4775,7 +4775,7 @@ struct __pthread_rwlock_arch_t {
    unsigned long __pad2 ;
    unsigned int __flags ;
 };
-/* END STRUCT __pthread_rwlock_arch_t LOC=./src/timeout.merge.c:6354 */
+/* END STRUCT __pthread_rwlock_arch_t LOC=./src/timeout.merge.c:6350 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 /* compiler builtin: 
@@ -4792,64 +4792,64 @@ struct __anonstruct___kernel_fsid_t_1045545135 ;
 enum __anonenum_1036286214 ;
 /* END ENUM-DECL __anonenum_1036286214 LOC=./src/timeout.merge.c:1528 */
 
-/* BEGIN TYPEDEF __uint_least16_t LOC=./src/timeout.merge.c:6398 */
-#line 6398 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint_least16_t LOC=./src/timeout.merge.c:6394 */
+#line 6394 "./src/timeout.merge.c"
 typedef __uint16_t __uint_least16_t;
-/* END TYPEDEF __uint_least16_t LOC=./src/timeout.merge.c:6398 */
+/* END TYPEDEF __uint_least16_t LOC=./src/timeout.merge.c:6394 */
 
-/* BEGIN TYPEDEF uint_least16_t LOC=./src/timeout.merge.c:6402 */
-#line 6402 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_least16_t LOC=./src/timeout.merge.c:6398 */
+#line 6398 "./src/timeout.merge.c"
 typedef __uint_least16_t uint_least16_t;
-/* END TYPEDEF uint_least16_t LOC=./src/timeout.merge.c:6402 */
+/* END TYPEDEF uint_least16_t LOC=./src/timeout.merge.c:6398 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/timeout.merge.c:6410 */
-#line 6410
+/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/timeout.merge.c:6406 */
+#line 6406
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpncpy)(char * __restrict  __dest ,
                                                                                                     char const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/timeout.merge.c:6410 */
+/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/timeout.merge.c:6406 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/timeout.merge.c:6421 */
-#line 6421
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/timeout.merge.c:6417 */
+#line 6417
 extern int ( __attribute__((__nonnull__(1))) fsetpos64)(FILE *__stream , fpos64_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/timeout.merge.c:6421 */
+/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/timeout.merge.c:6417 */
 
 /* BEGIN FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_uadd_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/timeout.merge.c:6430 */
-#line 6430
+/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/timeout.merge.c:6426 */
+#line 6426
 enum __anonenum_424050557___0 {
     TIMESPEC_RESOLUTION___0 = 1000000000
 } ;
-/* END ENUM __anonenum_424050557___0 LOC=./src/timeout.merge.c:6430 */
+/* END ENUM __anonenum_424050557___0 LOC=./src/timeout.merge.c:6426 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remainderf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/timeout.merge.c:6436 */
-#line 6436
+/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/timeout.merge.c:6432 */
+#line 6432
 extern int fsync(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fsync LOC=./src/timeout.merge.c:6436 */
+/* END FUNCTION-DECL-EXTERN fsync LOC=./src/timeout.merge.c:6432 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmod(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blkcnt64_t LOC=./src/timeout.merge.c:6450 */
-#line 6450 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF blkcnt64_t LOC=./src/timeout.merge.c:6446 */
+#line 6446 "./src/timeout.merge.c"
 typedef __blkcnt64_t blkcnt64_t;
-/* END TYPEDEF blkcnt64_t LOC=./src/timeout.merge.c:6450 */
+/* END TYPEDEF blkcnt64_t LOC=./src/timeout.merge.c:6446 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/timeout.merge.c:6483 */
-#line 6483
+/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/timeout.merge.c:6479 */
+#line 6479
 extern int fcntl(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/timeout.merge.c:6483 */
+/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/timeout.merge.c:6479 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 /* compiler builtin: 
@@ -4861,21 +4861,17 @@ extern int fcntl(int __fd , int __cmd  , ...) ;
    void *__builtin_return_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN prctl LOC=./src/timeout.merge.c:6507 */
-#line 6507
+/* BEGIN FUNCTION-DECL-EXTERN prctl LOC=./src/timeout.merge.c:6503 */
+#line 6503
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) prctl)(int __option 
                                                                             , ...) ;
-/* END FUNCTION-DECL-EXTERN prctl LOC=./src/timeout.merge.c:6507 */
+/* END FUNCTION-DECL-EXTERN prctl LOC=./src/timeout.merge.c:6503 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_lWnh_argc LOC=UNKNOWN */
-int _TIG_IZ_lWnh_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_lWnh_argc LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/timeout.merge.c:6512 */
-#line 6512
+/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/timeout.merge.c:6508 */
+#line 6508
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strtok)(char * __restrict  __s ,
                                                                                                char const   * __restrict  __delim ) ;
-/* END FUNCTION-DECL-EXTERN strtok LOC=./src/timeout.merge.c:6512 */
+/* END FUNCTION-DECL-EXTERN strtok LOC=./src/timeout.merge.c:6508 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -4887,27 +4883,27 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
    _Float128 __builtin_inff128(void) ;  */
 /* END FUNCTION-DECL __builtin_inff128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/timeout.merge.c:6565 */
-#line 6565
+/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/timeout.merge.c:6561 */
+#line 6561
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) remove)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN remove LOC=./src/timeout.merge.c:6565 */
+/* END FUNCTION-DECL-EXTERN remove LOC=./src/timeout.merge.c:6561 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least64_t LOC=./src/timeout.merge.c:6574 */
-#line 6574 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint_least64_t LOC=./src/timeout.merge.c:6570 */
+#line 6570 "./src/timeout.merge.c"
 typedef __uint64_t __uint_least64_t;
-/* END TYPEDEF __uint_least64_t LOC=./src/timeout.merge.c:6574 */
+/* END TYPEDEF __uint_least64_t LOC=./src/timeout.merge.c:6570 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/timeout.merge.c:6578 */
-#line 6578
+/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/timeout.merge.c:6574 */
+#line 6574
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) gcvt)(double __value ,
                                                                                              int __ndigit ,
                                                                                              char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/timeout.merge.c:6578 */
+/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/timeout.merge.c:6574 */
 
 /* BEGIN FUNCTION-DECL __builtin_char_memchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4919,24 +4915,24 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
    long double __builtin_expl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_expl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint16_t LOC=./src/timeout.merge.c:6602 */
-#line 6602 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint16_t LOC=./src/timeout.merge.c:6598 */
+#line 6598 "./src/timeout.merge.c"
 typedef __uint16_t uint16_t;
-/* END TYPEDEF uint16_t LOC=./src/timeout.merge.c:6602 */
+/* END TYPEDEF uint16_t LOC=./src/timeout.merge.c:6598 */
 
-/* BEGIN STRUCT iovec LOC=./src/timeout.merge.c:6606 */
-#line 6606 "./src/timeout.merge.c"
+/* BEGIN STRUCT iovec LOC=./src/timeout.merge.c:6602 */
+#line 6602 "./src/timeout.merge.c"
 struct iovec {
    void *iov_base ;
    size_t iov_len ;
 };
-/* END STRUCT iovec LOC=./src/timeout.merge.c:6606 */
+/* END STRUCT iovec LOC=./src/timeout.merge.c:6602 */
 
-/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/timeout.merge.c:6618 */
-#line 6618
+/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/timeout.merge.c:6614 */
+#line 6614
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__pid_t __pgrp ,
                                                                              int __sig ) ;
-/* END FUNCTION-DECL-EXTERN killpg LOC=./src/timeout.merge.c:6618 */
+/* END FUNCTION-DECL-EXTERN killpg LOC=./src/timeout.merge.c:6614 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpow LOC=BUILTIN */
 /* compiler builtin: 
@@ -4948,30 +4944,30 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__p
    int __builtin_constant_p(int  ) ;  */
 /* END FUNCTION-DECL __builtin_constant_p LOC=BUILTIN */
 
-/* BEGIN TYPEDEF idtype_t LOC=./src/timeout.merge.c:2936 */
-#line 2936 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF idtype_t LOC=./src/timeout.merge.c:2932 */
+#line 2932 "./src/timeout.merge.c"
 typedef enum __anonenum_idtype_t_239471009 idtype_t;
-/* END TYPEDEF idtype_t LOC=./src/timeout.merge.c:2936 */
+/* END TYPEDEF idtype_t LOC=./src/timeout.merge.c:2932 */
 
-/* BEGIN TYPEDEF __int64_t LOC=./src/timeout.merge.c:6628 */
-#line 6628 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int64_t LOC=./src/timeout.merge.c:6624 */
+#line 6624 "./src/timeout.merge.c"
 typedef long __int64_t;
-/* END TYPEDEF __int64_t LOC=./src/timeout.merge.c:6628 */
+/* END TYPEDEF __int64_t LOC=./src/timeout.merge.c:6624 */
 
-/* BEGIN TYPEDEF __int_least64_t LOC=./src/timeout.merge.c:6632 */
-#line 6632 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int_least64_t LOC=./src/timeout.merge.c:6628 */
+#line 6628 "./src/timeout.merge.c"
 typedef __int64_t __int_least64_t;
-/* END TYPEDEF __int_least64_t LOC=./src/timeout.merge.c:6632 */
+/* END TYPEDEF __int_least64_t LOC=./src/timeout.merge.c:6628 */
 
-/* BEGIN TYPEDEF __int8_t LOC=./src/timeout.merge.c:2855 */
-#line 2855 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int8_t LOC=./src/timeout.merge.c:2851 */
+#line 2851 "./src/timeout.merge.c"
 typedef signed char __int8_t;
-/* END TYPEDEF __int8_t LOC=./src/timeout.merge.c:2855 */
+/* END TYPEDEF __int8_t LOC=./src/timeout.merge.c:2851 */
 
-/* BEGIN TYPEDEF int8_t LOC=./src/timeout.merge.c:6636 */
-#line 6636 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int8_t LOC=./src/timeout.merge.c:6632 */
+#line 6632 "./src/timeout.merge.c"
 typedef __int8_t int8_t;
-/* END TYPEDEF int8_t LOC=./src/timeout.merge.c:6636 */
+/* END TYPEDEF int8_t LOC=./src/timeout.merge.c:6632 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -4983,67 +4979,63 @@ typedef __int8_t int8_t;
 union __anonunion__sifields_359092464 ;
 /* END UNION-DECL __anonunion__sifields_359092464 LOC=./src/timeout.merge.c:884 */
 
-/* BEGIN TYPEDEF __u128 LOC=./src/timeout.merge.c:6659 */
-#line 6659 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u128 LOC=./src/timeout.merge.c:6655 */
+#line 6655 "./src/timeout.merge.c"
 typedef unsigned __int128 __attribute__((__aligned__(16)))  __u128;
-/* END TYPEDEF __u128 LOC=./src/timeout.merge.c:6659 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_lWnh_argc LOC=UNKNOWN */
-int _TIG_IZ_lWnh_argc ;
-/* END VARIABLE-DECL _TIG_IZ_lWnh_argc LOC=UNKNOWN */
+/* END TYPEDEF __u128 LOC=./src/timeout.merge.c:6655 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928 LOC=./src/timeout.merge.c:1224 */
 #line 1224
 enum __anonenum_850350928 ;
 /* END ENUM-DECL __anonenum_850350928 LOC=./src/timeout.merge.c:1224 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/timeout.merge.c:6682 */
-#line 6682
+/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/timeout.merge.c:6678 */
+#line 6678
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setvbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ,
                                                                                               int __modes ,
                                                                                               size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/timeout.merge.c:6682 */
+/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/timeout.merge.c:6678 */
 
-/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/timeout.merge.c:6678 */
-#line 6678
+/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/timeout.merge.c:6674 */
+#line 6674
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) canonicalize_file_name)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/timeout.merge.c:6678 */
+/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/timeout.merge.c:6674 */
 
-/* BEGIN TYPEDEF __rlim64_t LOC=./src/timeout.merge.c:3100 */
-#line 3100 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __rlim64_t LOC=./src/timeout.merge.c:3096 */
+#line 3096 "./src/timeout.merge.c"
 typedef unsigned long __rlim64_t;
-/* END TYPEDEF __rlim64_t LOC=./src/timeout.merge.c:3100 */
+/* END TYPEDEF __rlim64_t LOC=./src/timeout.merge.c:3096 */
 
-/* BEGIN TYPEDEF rlim64_t LOC=./src/timeout.merge.c:6693 */
-#line 6693 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF rlim64_t LOC=./src/timeout.merge.c:6689 */
+#line 6689 "./src/timeout.merge.c"
 typedef __rlim64_t rlim64_t;
-/* END TYPEDEF rlim64_t LOC=./src/timeout.merge.c:6693 */
+/* END TYPEDEF rlim64_t LOC=./src/timeout.merge.c:6689 */
 
-/* BEGIN TYPEDEF __kernel_time_t LOC=./src/timeout.merge.c:6702 */
-#line 6702 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_time_t LOC=./src/timeout.merge.c:6698 */
+#line 6698 "./src/timeout.merge.c"
 typedef __kernel_long_t __kernel_time_t;
-/* END TYPEDEF __kernel_time_t LOC=./src/timeout.merge.c:6702 */
+/* END TYPEDEF __kernel_time_t LOC=./src/timeout.merge.c:6698 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt_t LOC=./src/timeout.merge.c:3067 */
-#line 3067 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __blkcnt_t LOC=./src/timeout.merge.c:3063 */
+#line 3063 "./src/timeout.merge.c"
 typedef long __blkcnt_t;
-/* END TYPEDEF __blkcnt_t LOC=./src/timeout.merge.c:3067 */
+/* END TYPEDEF __blkcnt_t LOC=./src/timeout.merge.c:3063 */
 
-/* BEGIN TYPEDEF blkcnt_t LOC=./src/timeout.merge.c:6716 */
-#line 6716 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF blkcnt_t LOC=./src/timeout.merge.c:6712 */
+#line 6712 "./src/timeout.merge.c"
 typedef __blkcnt_t blkcnt_t;
-/* END TYPEDEF blkcnt_t LOC=./src/timeout.merge.c:6716 */
+/* END TYPEDEF blkcnt_t LOC=./src/timeout.merge.c:6712 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/timeout.merge.c:6725 */
-#line 6725
+/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/timeout.merge.c:6721 */
+#line 6721
 extern unsigned int sleep(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN sleep LOC=./src/timeout.merge.c:6725 */
+/* END FUNCTION-DECL-EXTERN sleep LOC=./src/timeout.merge.c:6721 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5065,8 +5057,8 @@ union __anonunion_pthread_rwlock_t_656928968 ;
 struct __anonstruct_fd_set_356711149 ;
 /* END STRUCT-DECL __anonstruct_fd_set_356711149 LOC=./src/timeout.merge.c:1028 */
 
-/* BEGIN ENUM __anonenum_457704180 LOC=./src/timeout.merge.c:6748 */
-#line 6748
+/* BEGIN ENUM __anonenum_457704180 LOC=./src/timeout.merge.c:6744 */
+#line 6744
 enum __anonenum_457704180 {
     FPE_INTDIV = 1,
     FPE_INTOVF = 2,
@@ -5079,7 +5071,7 @@ enum __anonenum_457704180 {
     FPE_FLTUNK = 14,
     FPE_CONDTRAP = 15
 } ;
-/* END ENUM __anonenum_457704180 LOC=./src/timeout.merge.c:6748 */
+/* END ENUM __anonenum_457704180 LOC=./src/timeout.merge.c:6744 */
 
 /* BEGIN STRUCT-DECL iovec LOC=./src/timeout.merge.c:1288 */
 #line 1288
@@ -5101,25 +5093,25 @@ struct iovec ;
    int __builtin_dump_struct(void const   * , void * ) ;  */
 /* END FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/timeout.merge.c:6791 */
-#line 6791
+/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/timeout.merge.c:6787 */
+#line 6787
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rpmatch)(char const   *__response ) ;
-/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/timeout.merge.c:6791 */
+/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/timeout.merge.c:6787 */
 
-/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:6800 */
-#line 6800 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:6796 */
+#line 6796 "./src/timeout.merge.c"
 struct __anonstruct___kernel_fd_set_990674701 {
    unsigned long fds_bits[1024ULL / (8ULL * sizeof(long ))] ;
 };
-/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:6800 */
+/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:6796 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/timeout.merge.c:6806 */
-#line 6806
+/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/timeout.merge.c:6802 */
+#line 6802
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/timeout.merge.c:6806 */
+/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/timeout.merge.c:6802 */
 
-/* BEGIN ENUM __anonenum_23175539 LOC=./src/timeout.merge.c:6815 */
-#line 6815
+/* BEGIN ENUM __anonenum_23175539 LOC=./src/timeout.merge.c:6811 */
+#line 6811
 enum __anonenum_23175539 {
     CLD_EXITED = 1,
     CLD_KILLED = 2,
@@ -5128,15 +5120,15 @@ enum __anonenum_23175539 {
     CLD_STOPPED = 5,
     CLD_CONTINUED = 6
 } ;
-/* END ENUM __anonenum_23175539 LOC=./src/timeout.merge.c:6815 */
+/* END ENUM __anonenum_23175539 LOC=./src/timeout.merge.c:6811 */
 
-/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/timeout.merge.c:6826 */
-#line 6826 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/timeout.merge.c:6822 */
+#line 6822 "./src/timeout.merge.c"
 union __anonunion_pthread_barrier_t_145707746 {
    char __size[32] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/timeout.merge.c:6826 */
+/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/timeout.merge.c:6822 */
 
 /* BEGIN STRUCT-DECL __anonstruct_stack_t_648343364 LOC=./src/timeout.merge.c:1480 */
 #line 1480
@@ -5148,84 +5140,84 @@ struct __anonstruct_stack_t_648343364 ;
    double __builtin_canonicalize(double  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalize LOC=BUILTIN */
 
-/* BEGIN TYPEDEF va_list LOC=./src/timeout.merge.c:6833 */
-#line 6833 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF va_list LOC=./src/timeout.merge.c:6829 */
+#line 6829 "./src/timeout.merge.c"
 typedef __gnuc_va_list va_list;
-/* END TYPEDEF va_list LOC=./src/timeout.merge.c:6833 */
+/* END TYPEDEF va_list LOC=./src/timeout.merge.c:6829 */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/timeout.merge.c:6837 */
-#line 6837
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/timeout.merge.c:6833 */
+#line 6833
 extern void version_etc_va(FILE *stream , char const   *command_name , char const   *package ,
                            char const   *version , va_list authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/timeout.merge.c:6837 */
+/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/timeout.merge.c:6833 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_copysignl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/timeout.merge.c:6856 */
-#line 6856
+/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/timeout.merge.c:6852 */
+#line 6852
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) calloc)(size_t __nmemb ,
                                                                                size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN calloc LOC=./src/timeout.merge.c:6856 */
+/* END FUNCTION-DECL-EXTERN calloc LOC=./src/timeout.merge.c:6852 */
 
-/* BEGIN TYPEDEF __gwchar_t LOC=./src/timeout.merge.c:2903 */
-#line 2903 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __gwchar_t LOC=./src/timeout.merge.c:2899 */
+#line 2899 "./src/timeout.merge.c"
 typedef int __gwchar_t;
-/* END TYPEDEF __gwchar_t LOC=./src/timeout.merge.c:2903 */
+/* END TYPEDEF __gwchar_t LOC=./src/timeout.merge.c:2899 */
 
-/* BEGIN TYPEDEF __uintmax_t LOC=./src/timeout.merge.c:3591 */
-#line 3591 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uintmax_t LOC=./src/timeout.merge.c:3579 */
+#line 3579 "./src/timeout.merge.c"
 typedef unsigned long __uintmax_t;
-/* END TYPEDEF __uintmax_t LOC=./src/timeout.merge.c:3591 */
+/* END TYPEDEF __uintmax_t LOC=./src/timeout.merge.c:3579 */
 
-/* BEGIN TYPEDEF uintmax_t LOC=./src/timeout.merge.c:6871 */
-#line 6871 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uintmax_t LOC=./src/timeout.merge.c:6867 */
+#line 6867 "./src/timeout.merge.c"
 typedef __uintmax_t uintmax_t;
-/* END TYPEDEF uintmax_t LOC=./src/timeout.merge.c:6871 */
+/* END TYPEDEF uintmax_t LOC=./src/timeout.merge.c:6867 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/timeout.merge.c:6875 */
-#line 6875
+/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/timeout.merge.c:6871 */
+#line 6871
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) wcstoumax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                       __gwchar_t ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_wcstoumax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/timeout.merge.c:6875 */
+/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/timeout.merge.c:6871 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/timeout.merge.c:6890 */
-#line 6890
-extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN unlink LOC=./src/timeout.merge.c:6890 */
-
-/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/timeout.merge.c:6886 */
+/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/timeout.merge.c:6886 */
 #line 6886
-__inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
-/* END FUNCTION-DECL timespec_cmp LOC=./src/timeout.merge.c:6886 */
+extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
+/* END FUNCTION-DECL-EXTERN unlink LOC=./src/timeout.merge.c:6886 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/timeout.merge.c:6899 */
-#line 6899
+/* BEGIN FUNCTION-DECL timespec_cmp LOC=./src/timeout.merge.c:6882 */
+#line 6882
+__inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
+/* END FUNCTION-DECL timespec_cmp LOC=./src/timeout.merge.c:6882 */
+
+/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/timeout.merge.c:6895 */
+#line 6895
 extern int ( __attribute__((__nonnull__(1))) vfprintf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                        __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/timeout.merge.c:6899 */
+/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/timeout.merge.c:6895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/timeout.merge.c:6914 */
-#line 6914
+/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/timeout.merge.c:6910 */
+#line 6910
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_settime)(timer_t __timerid ,
                                                                                     int __flags ,
                                                                                     struct itimerspec  const  * __restrict  __value ,
                                                                                     struct itimerspec * __restrict  __ovalue ) ;
-/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/timeout.merge.c:6914 */
+/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/timeout.merge.c:6910 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/timeout.merge.c:6921 */
-#line 6921
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/timeout.merge.c:6917 */
+#line 6917
 extern char const   *setlocale_null(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/timeout.merge.c:6921 */
+/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/timeout.merge.c:6917 */
 
-/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/timeout.merge.c:6954 */
-#line 6954
+/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/timeout.merge.c:6950 */
+#line 6950
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void *__ptr ) ;
-/* END FUNCTION-DECL-EXTERN free LOC=./src/timeout.merge.c:6954 */
+/* END FUNCTION-DECL-EXTERN free LOC=./src/timeout.merge.c:6950 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 /* compiler builtin: 
@@ -5237,106 +5229,106 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 union __anonunion____missing_field_name_1036346496 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346496 LOC=./src/timeout.merge.c:984 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/timeout.merge.c:6972 */
-#line 6972
+/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/timeout.merge.c:6968 */
+#line 6968
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/timeout.merge.c:6972 */
+/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/timeout.merge.c:6968 */
 
 /* BEGIN STRUCT-DECL statx LOC=./src/timeout.merge.c:1460 */
 #line 1460
 struct statx ;
 /* END STRUCT-DECL statx LOC=./src/timeout.merge.c:1460 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/timeout.merge.c:6983 */
-#line 6983
+/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/timeout.merge.c:6979 */
+#line 6979
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wctomb)(char *__s ,
                                                                              wchar_t __wchar ) ;
-/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/timeout.merge.c:6983 */
+/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/timeout.merge.c:6979 */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/timeout.merge.c:6988 */
-#line 6988
+/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/timeout.merge.c:6984 */
+#line 6984
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) erand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/timeout.merge.c:6988 */
+/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/timeout.merge.c:6984 */
 
-/* BEGIN TYPEDEF __intptr_t LOC=./src/timeout.merge.c:7006 */
-#line 7006 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __intptr_t LOC=./src/timeout.merge.c:7002 */
+#line 7002 "./src/timeout.merge.c"
 typedef long __intptr_t;
-/* END TYPEDEF __intptr_t LOC=./src/timeout.merge.c:7006 */
+/* END TYPEDEF __intptr_t LOC=./src/timeout.merge.c:7002 */
 
-/* BEGIN STRUCT __anonstruct___kernel_fsid_t_1045545135 LOC=./src/timeout.merge.c:7015 */
-#line 7015 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fsid_t_1045545135 LOC=./src/timeout.merge.c:7011 */
+#line 7011 "./src/timeout.merge.c"
 struct __anonstruct___kernel_fsid_t_1045545135 {
    int val[2] ;
 };
-/* END STRUCT __anonstruct___kernel_fsid_t_1045545135 LOC=./src/timeout.merge.c:7015 */
+/* END STRUCT __anonstruct___kernel_fsid_t_1045545135 LOC=./src/timeout.merge.c:7011 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/timeout.merge.c:7021 */
-#line 7021
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/timeout.merge.c:7017 */
+#line 7017
 extern FILE *( __attribute__((__nonnull__(1,2))) rpl_fopen)(char const   * __restrict  filename ,
                                                             char const   * __restrict  mode )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/timeout.merge.c:7021 */
+/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/timeout.merge.c:7017 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:1440 */
 #line 1440
 union __anonunion_pthread_barrierattr_t_951761806 ;
 /* END UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:1440 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/timeout.merge.c:7026 */
-#line 7026
+/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/timeout.merge.c:7022 */
+#line 7022
 extern void *xinmalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/timeout.merge.c:7026 */
+/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/timeout.merge.c:7022 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/timeout.merge.c:7040 */
-#line 7040
+/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/timeout.merge.c:7036 */
+#line 7036
 extern  __attribute__((__nothrow__)) int __asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                     , ...) ;
-/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/timeout.merge.c:7040 */
+/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/timeout.merge.c:7036 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/timeout.merge.c:7066 */
-#line 7066
+/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/timeout.merge.c:7062 */
+#line 7062
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
                                                                size_t * __restrict  __n ,
                                                                int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/timeout.merge.c:7066 */
+/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/timeout.merge.c:7062 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncpy(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/timeout.merge.c:7093 */
-#line 7093
+/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/timeout.merge.c:7089 */
+#line 7089
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vsscanf)(char const   * __restrict  __s ,
                                                                               char const   * __restrict  __format ,
                                                                               __gnuc_va_list __arg )  __asm__("__isoc23_vsscanf")  ;
-/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/timeout.merge.c:7093 */
+/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/timeout.merge.c:7089 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_huge_vall(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/timeout.merge.c:7072 */
-#line 7072
+/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/timeout.merge.c:7068 */
+#line 7068
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strerror_r)(int __errnum ,
                                                                                                    char *__buf ,
                                                                                                    size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/timeout.merge.c:7072 */
+/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/timeout.merge.c:7068 */
 
-/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:7122 */
-#line 7122 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:7118 */
+#line 7118 "./src/timeout.merge.c"
 struct __anonstruct_lldiv_t_103911545 {
    long long quot ;
    long long rem ;
 };
-/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:7122 */
+/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/timeout.merge.c:7118 */
 
-/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/timeout.merge.c:7108 */
-#line 7108
+/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/timeout.merge.c:7104 */
+#line 7104
 enum __anonenum_513775621___0 {
     DT_UNKNOWN___0 = 0,
     DT_FIFO___0 = 1,
@@ -5348,123 +5340,123 @@ enum __anonenum_513775621___0 {
     DT_SOCK___0 = 12,
     DT_WHT___0 = 14
 } ;
-/* END ENUM __anonenum_513775621___0 LOC=./src/timeout.merge.c:7108 */
+/* END ENUM __anonenum_513775621___0 LOC=./src/timeout.merge.c:7104 */
 
-/* BEGIN ENUM __anonenum_606700034 LOC=./src/timeout.merge.c:7129 */
-#line 7129
+/* BEGIN ENUM __anonenum_606700034 LOC=./src/timeout.merge.c:7125 */
+#line 7125
 enum __anonenum_606700034 {
     DS_UNKNOWN = -2,
     DS_EMPTY = -1,
     DS_NONEMPTY = 0
 } ;
-/* END ENUM __anonenum_606700034 LOC=./src/timeout.merge.c:7129 */
+/* END ENUM __anonenum_606700034 LOC=./src/timeout.merge.c:7125 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/timeout.merge.c:7137 */
-#line 7137
+/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/timeout.merge.c:7133 */
+#line 7133
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dngettext)(char const   *__domainname ,
                                                                                   char const   *__msgid1 ,
                                                                                   char const   *__msgid2 ,
                                                                                   unsigned long __n )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/timeout.merge.c:7137 */
+/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/timeout.merge.c:7133 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/timeout.merge.c:7153 */
-#line 7153
+/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/timeout.merge.c:7149 */
+#line 7149
 extern char *getlogin(void) ;
-/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/timeout.merge.c:7153 */
+/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/timeout.merge.c:7149 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/timeout.merge.c:7145 */
-#line 7145
+/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/timeout.merge.c:7141 */
+#line 7141
 extern char *quotearg(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/timeout.merge.c:7145 */
+/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/timeout.merge.c:7141 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_csinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u16 LOC=./src/timeout.merge.c:4374 */
-#line 4374 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u16 LOC=./src/timeout.merge.c:4362 */
+#line 4362 "./src/timeout.merge.c"
 typedef unsigned short __u16;
-/* END TYPEDEF __u16 LOC=./src/timeout.merge.c:4374 */
+/* END TYPEDEF __u16 LOC=./src/timeout.merge.c:4362 */
 
-/* BEGIN TYPEDEF __sum16 LOC=./src/timeout.merge.c:7176 */
-#line 7176 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __sum16 LOC=./src/timeout.merge.c:7172 */
+#line 7172 "./src/timeout.merge.c"
 typedef __u16 __sum16;
-/* END TYPEDEF __sum16 LOC=./src/timeout.merge.c:7176 */
+/* END TYPEDEF __sum16 LOC=./src/timeout.merge.c:7172 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/timeout.merge.c:7180 */
-#line 7180
+/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/timeout.merge.c:7176 */
+#line 7176
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) siggetmask)(void) ;
-/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/timeout.merge.c:7180 */
+/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/timeout.merge.c:7176 */
 
-/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/timeout.merge.c:7184 */
-#line 7184
+/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/timeout.merge.c:7180 */
+#line 7180
 extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
-/* END FUNCTION-DECL-EXTERN read LOC=./src/timeout.merge.c:7184 */
+/* END FUNCTION-DECL-EXTERN read LOC=./src/timeout.merge.c:7180 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/timeout.merge.c:7188 */
-#line 7188
+/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/timeout.merge.c:7184 */
+#line 7184
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_perror_fail)(int __errnum ,
                                                                                                           char const   *__file ,
                                                                                                           unsigned int __line ,
                                                                                                           char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/timeout.merge.c:7188 */
+/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/timeout.merge.c:7184 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/timeout.merge.c:7221 */
-#line 7221
+/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/timeout.merge.c:7217 */
+#line 7217
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)(void) ;
-/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/timeout.merge.c:7221 */
+/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/timeout.merge.c:7217 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fminf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/timeout.merge.c:7212 */
-#line 7212
+/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/timeout.merge.c:7208 */
+#line 7208
 extern int lockf(int __fd , int __cmd , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf LOC=./src/timeout.merge.c:7212 */
+/* END FUNCTION-DECL-EXTERN lockf LOC=./src/timeout.merge.c:7208 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan2(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/timeout.merge.c:7239 */
-#line 7239
+/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/timeout.merge.c:7235 */
+#line 7235
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtouq)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/timeout.merge.c:7239 */
+/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/timeout.merge.c:7235 */
 
-/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/timeout.merge.c:7256 */
-#line 7256 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/timeout.merge.c:7252 */
+#line 7252 "./src/timeout.merge.c"
 typedef int (*_gl_qsort_r_compar_fn)(void const   * , void const   * , void * );
-/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/timeout.merge.c:7256 */
+/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/timeout.merge.c:7252 */
 
-/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/timeout.merge.c:7260 */
-#line 7260 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/timeout.merge.c:7256 */
+#line 7256 "./src/timeout.merge.c"
 typedef __kernel_long_t __kernel_suseconds_t;
-/* END TYPEDEF __kernel_suseconds_t LOC=./src/timeout.merge.c:7260 */
+/* END TYPEDEF __kernel_suseconds_t LOC=./src/timeout.merge.c:7256 */
 
-/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/timeout.merge.c:7268 */
-#line 7268
+/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/timeout.merge.c:7264 */
+#line 7264
 extern int ( __attribute__((__nonnull__(1))) settime)(struct timespec  const  * ) ;
-/* END FUNCTION-DECL-EXTERN settime LOC=./src/timeout.merge.c:7268 */
+/* END FUNCTION-DECL-EXTERN settime LOC=./src/timeout.merge.c:7264 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/timeout.merge.c:7272 */
-#line 7272
+/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/timeout.merge.c:7268 */
+#line 7268
 extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  ,
                                                                   char * ) ;
-/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/timeout.merge.c:7272 */
+/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/timeout.merge.c:7268 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/timeout.merge.c:7277 */
-#line 7277
+/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/timeout.merge.c:7273 */
+#line 7273
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuffer)(FILE * __restrict  __stream ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/timeout.merge.c:7277 */
+/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/timeout.merge.c:7273 */
 
 /* BEGIN FUNCTION-DECL __builtin_trunc LOC=BUILTIN */
 /* compiler builtin: 
@@ -5481,21 +5473,21 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __lea
 enum __anonenum_1036286214___0 ;
 /* END ENUM-DECL __anonenum_1036286214___0 LOC=./src/timeout.merge.c:1444 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/timeout.merge.c:7315 */
-#line 7315
+/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/timeout.merge.c:7311 */
+#line 7311
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strstr)(char const   *__haystack ,
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strstr LOC=./src/timeout.merge.c:7315 */
+/* END FUNCTION-DECL-EXTERN strstr LOC=./src/timeout.merge.c:7311 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/timeout.merge.c:7325 */
-#line 7325
+/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/timeout.merge.c:7321 */
+#line 7321
 extern int putchar_unlocked(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/timeout.merge.c:7325 */
+/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/timeout.merge.c:7321 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/timeout.merge.c:7333 */
-#line 7333
+/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/timeout.merge.c:7329 */
+#line 7329
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/timeout.merge.c:7333 */
+/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/timeout.merge.c:7329 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 /* compiler builtin: 
@@ -5507,71 +5499,71 @@ extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) s
    double __builtin_sinh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/timeout.merge.c:7352 */
-#line 7352
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/timeout.merge.c:7348 */
+#line 7348
 extern char *quotearg_char(char const   *arg , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/timeout.merge.c:7352 */
+/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/timeout.merge.c:7348 */
 
 /* BEGIN FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llabs(long long  ) ;  */
 /* END FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/timeout.merge.c:7356 */
-#line 7356
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/timeout.merge.c:7352 */
+#line 7352
 extern int rpl_fflush(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/timeout.merge.c:7356 */
+/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/timeout.merge.c:7352 */
 
-/* BEGIN TYPEDEF mode_t LOC=./src/timeout.merge.c:2846 */
-#line 2846 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF mode_t LOC=./src/timeout.merge.c:2842 */
+#line 2842 "./src/timeout.merge.c"
 typedef __mode_t mode_t;
-/* END TYPEDEF mode_t LOC=./src/timeout.merge.c:2846 */
+/* END TYPEDEF mode_t LOC=./src/timeout.merge.c:2842 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/timeout.merge.c:7375 */
-#line 7375
+/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/timeout.merge.c:7371 */
+#line 7371
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat LOC=./src/timeout.merge.c:7375 */
+/* END FUNCTION-DECL-EXTERN creat LOC=./src/timeout.merge.c:7371 */
 
-/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/timeout.merge.c:7387 */
-#line 7387 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/timeout.merge.c:7383 */
+#line 7383 "./src/timeout.merge.c"
 typedef unsigned long __fsfilcnt64_t;
-/* END TYPEDEF __fsfilcnt64_t LOC=./src/timeout.merge.c:7387 */
+/* END TYPEDEF __fsfilcnt64_t LOC=./src/timeout.merge.c:7383 */
 
-/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/timeout.merge.c:7391 */
-#line 7391 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/timeout.merge.c:7387 */
+#line 7387 "./src/timeout.merge.c"
 typedef __fsfilcnt64_t fsfilcnt64_t;
-/* END TYPEDEF fsfilcnt64_t LOC=./src/timeout.merge.c:7391 */
+/* END TYPEDEF fsfilcnt64_t LOC=./src/timeout.merge.c:7387 */
 
-/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/timeout.merge.c:4691 */
-#line 4691 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/timeout.merge.c:4679 */
+#line 4679 "./src/timeout.merge.c"
 typedef unsigned long __fsfilcnt_t;
-/* END TYPEDEF __fsfilcnt_t LOC=./src/timeout.merge.c:4691 */
+/* END TYPEDEF __fsfilcnt_t LOC=./src/timeout.merge.c:4679 */
 
-/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/timeout.merge.c:7395 */
-#line 7395 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/timeout.merge.c:7391 */
+#line 7391 "./src/timeout.merge.c"
 typedef __fsfilcnt_t fsfilcnt_t;
-/* END TYPEDEF fsfilcnt_t LOC=./src/timeout.merge.c:7395 */
+/* END TYPEDEF fsfilcnt_t LOC=./src/timeout.merge.c:7391 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/timeout.merge.c:7399 */
-#line 7399
+/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/timeout.merge.c:7395 */
+#line 7395
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/timeout.merge.c:7399 */
+/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/timeout.merge.c:7395 */
 
-/* BEGIN FUNCTION-DECL-EXTERN cl_strtod LOC=./src/timeout.merge.c:7404 */
-#line 7404
+/* BEGIN FUNCTION-DECL-EXTERN cl_strtod LOC=./src/timeout.merge.c:7400 */
+#line 7400
 extern double ( __attribute__((__nonnull__(1))) cl_strtod)(char const   * , char ** __restrict   ) ;
-/* END FUNCTION-DECL-EXTERN cl_strtod LOC=./src/timeout.merge.c:7404 */
+/* END FUNCTION-DECL-EXTERN cl_strtod LOC=./src/timeout.merge.c:7400 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/timeout.merge.c:7408 */
-#line 7408
+/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/timeout.merge.c:7404 */
+#line 7404
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN mktime LOC=./src/timeout.merge.c:7408 */
+/* END FUNCTION-DECL-EXTERN mktime LOC=./src/timeout.merge.c:7404 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/timeout.merge.c:7416 */
-#line 7416
+/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/timeout.merge.c:7412 */
+#line 7412
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
-/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/timeout.merge.c:7416 */
+/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/timeout.merge.c:7412 */
 
 /* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/timeout.merge.c:7420 */
 #line 7420
@@ -5583,10 +5575,10 @@ extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t _
 struct __anonstruct__sigpoll_386613454 ;
 /* END STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/timeout.merge.c:1396 */
 
-/* BEGIN TYPEDEF __nlink_t LOC=./src/timeout.merge.c:2798 */
-#line 2798 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __nlink_t LOC=./src/timeout.merge.c:2794 */
+#line 2794 "./src/timeout.merge.c"
 typedef unsigned long __nlink_t;
-/* END TYPEDEF __nlink_t LOC=./src/timeout.merge.c:2798 */
+/* END TYPEDEF __nlink_t LOC=./src/timeout.merge.c:2794 */
 
 /* BEGIN TYPEDEF nlink_t LOC=./src/timeout.merge.c:7424 */
 #line 7424 "./src/timeout.merge.c"
@@ -5603,10 +5595,10 @@ union __anonunion____missing_field_name_1036346499 ;
    void __builtin_shufflevector(...) ;  */
 /* END FUNCTION-DECL __builtin_shufflevector LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fd_mask LOC=./src/timeout.merge.c:2304 */
-#line 2304 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fd_mask LOC=./src/timeout.merge.c:2300 */
+#line 2300 "./src/timeout.merge.c"
 typedef long __fd_mask;
-/* END TYPEDEF __fd_mask LOC=./src/timeout.merge.c:2304 */
+/* END TYPEDEF __fd_mask LOC=./src/timeout.merge.c:2300 */
 
 /* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/timeout.merge.c:7497 */
 #line 7497
@@ -5708,10 +5700,10 @@ extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
 static int term_signal ;
 /* END VARIABLE-DECL term_signal LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/timeout.merge.c:5620 */
-#line 5620 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/timeout.merge.c:5612 */
+#line 5612 "./src/timeout.merge.c"
 typedef unsigned long __fsblkcnt_t;
-/* END TYPEDEF __fsblkcnt_t LOC=./src/timeout.merge.c:5620 */
+/* END TYPEDEF __fsblkcnt_t LOC=./src/timeout.merge.c:5612 */
 
 /* BEGIN TYPEDEF fsblkcnt_t LOC=./src/timeout.merge.c:7676 */
 #line 7676 "./src/timeout.merge.c"
@@ -5859,10 +5851,10 @@ struct __anonstruct_fd_set_356711149 {
    _Float16 __builtin_log10f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least32_t LOC=./src/timeout.merge.c:4253 */
-#line 4253 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint_least32_t LOC=./src/timeout.merge.c:4241 */
+#line 4241 "./src/timeout.merge.c"
 typedef __uint32_t __uint_least32_t;
-/* END TYPEDEF __uint_least32_t LOC=./src/timeout.merge.c:4253 */
+/* END TYPEDEF __uint_least32_t LOC=./src/timeout.merge.c:4241 */
 
 /* BEGIN TYPEDEF uint_least32_t LOC=./src/timeout.merge.c:7915 */
 #line 7915 "./src/timeout.merge.c"
@@ -5898,15 +5890,15 @@ extern double difftime(time_t __time1 , time_t __time0 ) ;
 struct __pthread_internal_slist ;
 /* END STRUCT-DECL __pthread_internal_slist LOC=./src/timeout.merge.c:1452 */
 
-/* BEGIN TYPEDEF __clockid_t LOC=./src/timeout.merge.c:1968 */
-#line 1968 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __clockid_t LOC=./src/timeout.merge.c:1964 */
+#line 1964 "./src/timeout.merge.c"
 typedef int __clockid_t;
-/* END TYPEDEF __clockid_t LOC=./src/timeout.merge.c:1968 */
+/* END TYPEDEF __clockid_t LOC=./src/timeout.merge.c:1964 */
 
-/* BEGIN TYPEDEF clockid_t LOC=./src/timeout.merge.c:4211 */
-#line 4211 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF clockid_t LOC=./src/timeout.merge.c:4199 */
+#line 4199 "./src/timeout.merge.c"
 typedef __clockid_t clockid_t;
-/* END TYPEDEF clockid_t LOC=./src/timeout.merge.c:4211 */
+/* END TYPEDEF clockid_t LOC=./src/timeout.merge.c:4199 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6008,10 +6000,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __
                                                                                                 int * __restrict  __sign ) ;
 /* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/timeout.merge.c:8140 */
 
-/* BEGIN TYPEDEF off_t LOC=./src/timeout.merge.c:4383 */
-#line 4383 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF off_t LOC=./src/timeout.merge.c:4371 */
+#line 4371 "./src/timeout.merge.c"
 typedef __off_t off_t;
-/* END TYPEDEF off_t LOC=./src/timeout.merge.c:4383 */
+/* END TYPEDEF off_t LOC=./src/timeout.merge.c:4371 */
 
 /* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/timeout.merge.c:8151 */
 #line 8151
@@ -6030,161 +6022,173 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
 extern struct timespec timespec_add(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/timeout.merge.c:8147 */
 
-/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/timeout.merge.c:8178 */
-#line 8178
-extern int system(char const   *__command ) ;
-/* END FUNCTION-DECL-EXTERN system LOC=./src/timeout.merge.c:8178 */
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_argv LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_argv LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/timeout.merge.c:8191 */
-#line 8191
+/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/timeout.merge.c:8182 */
+#line 8182
+extern int system(char const   *__command ) ;
+/* END FUNCTION-DECL-EXTERN system LOC=./src/timeout.merge.c:8182 */
+
+/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/timeout.merge.c:8195 */
+#line 8195
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/timeout.merge.c:8191 */
+/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/timeout.merge.c:8195 */
 
 /* BEGIN FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strdup(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u32 LOC=./src/timeout.merge.c:3389 */
-#line 3389 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u32 LOC=./src/timeout.merge.c:3381 */
+#line 3381 "./src/timeout.merge.c"
 typedef unsigned int __u32;
-/* END TYPEDEF __u32 LOC=./src/timeout.merge.c:3389 */
+/* END TYPEDEF __u32 LOC=./src/timeout.merge.c:3381 */
 
-/* BEGIN TYPEDEF __be32 LOC=./src/timeout.merge.c:8200 */
-#line 8200 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __be32 LOC=./src/timeout.merge.c:8204 */
+#line 8204 "./src/timeout.merge.c"
 typedef __u32 __be32;
-/* END TYPEDEF __be32 LOC=./src/timeout.merge.c:8200 */
+/* END TYPEDEF __be32 LOC=./src/timeout.merge.c:8204 */
 
 /* BEGIN ENUM-DECL __anonenum_852341087___0 LOC=./src/timeout.merge.c:1532 */
 #line 1532
 enum __anonenum_852341087___0 ;
 /* END ENUM-DECL __anonenum_852341087___0 LOC=./src/timeout.merge.c:1532 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/timeout.merge.c:8223 */
-#line 8223
+/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/timeout.merge.c:8227 */
+#line 8227
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) utimes)(char const   *__file ,
                                                                                              struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN utimes LOC=./src/timeout.merge.c:8223 */
+/* END FUNCTION-DECL-EXTERN utimes LOC=./src/timeout.merge.c:8227 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/timeout.merge.c:8228 */
-#line 8228
+/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/timeout.merge.c:8232 */
+#line 8232
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof)(char const   * __restrict  __nptr ,
                                                                                                char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof LOC=./src/timeout.merge.c:8228 */
+/* END FUNCTION-DECL-EXTERN strtof LOC=./src/timeout.merge.c:8232 */
 
 /* BEGIN FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin___clear_cache(void * ) ;  */
 /* END FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/timeout.merge.c:8240 */
-#line 8240
+/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/timeout.merge.c:8244 */
+#line 8244
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchown)(int __fd ,
                                                                              __uid_t __owner ,
                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN fchown LOC=./src/timeout.merge.c:8240 */
+/* END FUNCTION-DECL-EXTERN fchown LOC=./src/timeout.merge.c:8244 */
 
-/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/timeout.merge.c:8256 */
-#line 8256
+/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/timeout.merge.c:8260 */
+#line 8260
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) faccessat)(int __fd ,
                                                                                                 char const   *__file ,
                                                                                                 int __type ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/timeout.merge.c:8256 */
+/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/timeout.merge.c:8260 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_floorf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 
-/* BEGIN STRUCT _fpreg LOC=./src/timeout.merge.c:8263 */
-#line 8263 "./src/timeout.merge.c"
+/* BEGIN STRUCT _fpreg LOC=./src/timeout.merge.c:8267 */
+#line 8267 "./src/timeout.merge.c"
 struct _fpreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
 };
-/* END STRUCT _fpreg LOC=./src/timeout.merge.c:8263 */
+/* END STRUCT _fpreg LOC=./src/timeout.merge.c:8267 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_argv LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_argv ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wmemcmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/timeout.merge.c:8283 */
-#line 8283
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/timeout.merge.c:8291 */
+#line 8291
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise)(int __fd ,
                                                                                     off_t __offset ,
                                                                                     off_t __len ,
                                                                                     int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/timeout.merge.c:8283 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/timeout.merge.c:8291 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/timeout.merge.c:8290 */
-#line 8290
+/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/timeout.merge.c:8298 */
+#line 8298
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) utimensat)(int __fd ,
                                                                                 char const   *__path ,
                                                                                 struct timespec  const  *__times ,
                                                                                 int __flags ) ;
-/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/timeout.merge.c:8290 */
+/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/timeout.merge.c:8298 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/timeout.merge.c:8297 */
-#line 8297
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/timeout.merge.c:8305 */
+#line 8305
 extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/timeout.merge.c:8297 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/timeout.merge.c:8305 */
 
-/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/timeout.merge.c:8311 */
-#line 8311
+/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/timeout.merge.c:8319 */
+#line 8319
 extern void psignal(int __sig , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psignal LOC=./src/timeout.merge.c:8311 */
+/* END FUNCTION-DECL-EXTERN psignal LOC=./src/timeout.merge.c:8319 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion__bounds_115767557 LOC=./src/timeout.merge.c:8320 */
-#line 8320 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion__bounds_115767557 LOC=./src/timeout.merge.c:8328 */
+#line 8328 "./src/timeout.merge.c"
 union __anonunion__bounds_115767557 {
    struct __anonstruct__addr_bnd_5259977 _addr_bnd ;
    __uint32_t _pkey ;
 };
-/* END UNION __anonunion__bounds_115767557 LOC=./src/timeout.merge.c:8320 */
+/* END UNION __anonunion__bounds_115767557 LOC=./src/timeout.merge.c:8328 */
 
-/* BEGIN STRUCT __anonstruct__sigfault_1045545134 LOC=./src/timeout.merge.c:8327 */
-#line 8327 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__sigfault_1045545134 LOC=./src/timeout.merge.c:8335 */
+#line 8335 "./src/timeout.merge.c"
 struct __anonstruct__sigfault_1045545134 {
    void *si_addr ;
    short si_addr_lsb ;
    union __anonunion__bounds_115767557 _bounds ;
 };
-/* END STRUCT __anonstruct__sigfault_1045545134 LOC=./src/timeout.merge.c:8327 */
+/* END STRUCT __anonstruct__sigfault_1045545134 LOC=./src/timeout.merge.c:8335 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346508 LOC=./src/timeout.merge.c:1790 */
-#line 1790 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346508 LOC=./src/timeout.merge.c:1786 */
+#line 1786 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346508 {
    long ru_nvcsw ;
    __syscall_slong_t __ru_nvcsw_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346508 LOC=./src/timeout.merge.c:1790 */
+/* END UNION __anonunion____missing_field_name_1036346508 LOC=./src/timeout.merge.c:1786 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/timeout.merge.c:8344 */
-#line 8344
+/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/timeout.merge.c:8352 */
+#line 8352
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigemptyset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/timeout.merge.c:8344 */
+/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/timeout.merge.c:8352 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/timeout.merge.c:8385 */
-#line 8385
-extern long gettime_res(void) ;
-/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/timeout.merge.c:8385 */
+/* BEGIN VARIABLE-DEF _TIG_IZ_t3fn_argv LOC=UNKNOWN */
+char **_TIG_IZ_t3fn_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_t3fn_argv LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/timeout.merge.c:8381 */
-#line 8381
+/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/timeout.merge.c:8393 */
+#line 8393
+extern long gettime_res(void) ;
+/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/timeout.merge.c:8393 */
+
+/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/timeout.merge.c:8389 */
+#line 8389
 extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/timeout.merge.c:8381 */
+/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/timeout.merge.c:8389 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802___0 LOC=./src/timeout.merge.c:1140 */
 #line 1140
@@ -6195,53 +6199,53 @@ enum __anonenum_365337802___0 ;
 static _Bool verbose  ;
 /* END VARIABLE-DEF verbose LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __u_char LOC=./src/timeout.merge.c:8410 */
-#line 8410 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u_char LOC=./src/timeout.merge.c:8418 */
+#line 8418 "./src/timeout.merge.c"
 typedef unsigned char __u_char;
-/* END TYPEDEF __u_char LOC=./src/timeout.merge.c:8410 */
+/* END TYPEDEF __u_char LOC=./src/timeout.merge.c:8418 */
 
-/* BEGIN TYPEDEF u_char LOC=./src/timeout.merge.c:8414 */
-#line 8414 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_char LOC=./src/timeout.merge.c:8422 */
+#line 8422 "./src/timeout.merge.c"
 typedef __u_char u_char;
-/* END TYPEDEF u_char LOC=./src/timeout.merge.c:8414 */
+/* END TYPEDEF u_char LOC=./src/timeout.merge.c:8422 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cacosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __wsum LOC=./src/timeout.merge.c:8423 */
-#line 8423 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __wsum LOC=./src/timeout.merge.c:8431 */
+#line 8431 "./src/timeout.merge.c"
 typedef __u32 __wsum;
-/* END TYPEDEF __wsum LOC=./src/timeout.merge.c:8423 */
+/* END TYPEDEF __wsum LOC=./src/timeout.merge.c:8431 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/timeout.merge.c:8432 */
-#line 8432
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/timeout.merge.c:8440 */
+#line 8440
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmax)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/timeout.merge.c:8432 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/timeout.merge.c:8440 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/timeout.merge.c:8446 */
-#line 8446
+/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/timeout.merge.c:8454 */
+#line 8454
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof128_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/timeout.merge.c:8446 */
+/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/timeout.merge.c:8454 */
 
-/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/timeout.merge.c:8456 */
-#line 8456
+/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/timeout.merge.c:8464 */
+#line 8464
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) access)(char const   *__name ,
                                                                                              int __type ) ;
-/* END FUNCTION-DECL-EXTERN access LOC=./src/timeout.merge.c:8456 */
+/* END FUNCTION-DECL-EXTERN access LOC=./src/timeout.merge.c:8464 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/timeout.merge.c:8452 */
-#line 8452
+/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/timeout.merge.c:8460 */
+#line 8460
 extern long gethostid(void) ;
-/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/timeout.merge.c:8452 */
+/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/timeout.merge.c:8460 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/timeout.merge.c:8467 */
-#line 8467
+/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/timeout.merge.c:8475 */
+#line 8475
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ftrylockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/timeout.merge.c:8467 */
+/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/timeout.merge.c:8475 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6253,16 +6257,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_atanhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/timeout.merge.c:8723 */
-#line 8723
+/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/timeout.merge.c:8731 */
+#line 8731
 extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/timeout.merge.c:8723 */
+/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/timeout.merge.c:8731 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/timeout.merge.c:8727 */
-#line 8727
+/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/timeout.merge.c:8735 */
+#line 8735
 extern char *( __attribute__((__nonnull__(3))) fgets_unlocked)(char * __restrict  __s ,
                                                                int __n , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/timeout.merge.c:8727 */
+/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/timeout.merge.c:8735 */
 
 /* BEGIN STRUCT-DECL ucontext_t LOC=./src/timeout.merge.c:1004 */
 #line 1004
@@ -6274,22 +6278,22 @@ struct ucontext_t ;
    int __builtin_ctzl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/timeout.merge.c:8772 */
-#line 8772
+/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/timeout.merge.c:8780 */
+#line 8780
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof LOC=./src/timeout.merge.c:8772 */
+/* END FUNCTION-DECL-EXTERN feof LOC=./src/timeout.merge.c:8780 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/timeout.merge.c:8766 */
-#line 8766
+/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/timeout.merge.c:8774 */
+#line 8774
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32_l)(char const   * __restrict  __nptr ,
                                                                                                      char ** __restrict  __endptr ,
                                                                                                      locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/timeout.merge.c:8766 */
+/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/timeout.merge.c:8774 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/timeout.merge.c:8776 */
-#line 8776
+/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/timeout.merge.c:8784 */
+#line 8784
 extern int putchar(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar LOC=./src/timeout.merge.c:8776 */
+/* END FUNCTION-DECL-EXTERN putchar LOC=./src/timeout.merge.c:8784 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanf LOC=BUILTIN */
 /* compiler builtin: 
@@ -6301,18 +6305,18 @@ extern int putchar(int __c ) ;
    long double __builtin_exp2l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2l LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __rlim_t LOC=./src/timeout.merge.c:8831 */
-#line 8831 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __rlim_t LOC=./src/timeout.merge.c:8839 */
+#line 8839 "./src/timeout.merge.c"
 typedef unsigned long __rlim_t;
-/* END TYPEDEF __rlim_t LOC=./src/timeout.merge.c:8831 */
+/* END TYPEDEF __rlim_t LOC=./src/timeout.merge.c:8839 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmin(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/timeout.merge.c:8855 */
-#line 8855
+/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/timeout.merge.c:8863 */
+#line 8863
 enum __anonenum_91015150___0 {
     TRAP_BRKPT___0 = 1,
     TRAP_TRACE___0 = 2,
@@ -6320,75 +6324,75 @@ enum __anonenum_91015150___0 {
     TRAP_HWBKPT___0 = 4,
     TRAP_UNK___0 = 5
 } ;
-/* END ENUM __anonenum_91015150___0 LOC=./src/timeout.merge.c:8855 */
+/* END ENUM __anonenum_91015150___0 LOC=./src/timeout.merge.c:8863 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/timeout.merge.c:8865 */
-#line 8865
+/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/timeout.merge.c:8873 */
+#line 8873
 extern int fflush(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush LOC=./src/timeout.merge.c:8865 */
+/* END FUNCTION-DECL-EXTERN fflush LOC=./src/timeout.merge.c:8873 */
 
 /* BEGIN FUNCTION-DECL usable_st_size LOC=UNKNOWN */
 __inline static _Bool usable_st_size(struct stat  const  *sb ) ;
 /* END FUNCTION-DECL usable_st_size LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/timeout.merge.c:8873 */
-#line 8873
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/timeout.merge.c:8881 */
+#line 8881
 extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/timeout.merge.c:8873 */
+/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/timeout.merge.c:8881 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346507 LOC=./src/timeout.merge.c:1783 */
-#line 1783 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346507 LOC=./src/timeout.merge.c:1779 */
+#line 1779 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346507 {
    long ru_nsignals ;
    __syscall_slong_t __ru_nsignals_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346507 LOC=./src/timeout.merge.c:1783 */
+/* END UNION __anonunion____missing_field_name_1036346507 LOC=./src/timeout.merge.c:1779 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/timeout.merge.c:8887 */
-#line 8887
+/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/timeout.merge.c:8895 */
+#line 8895
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memcpy)(void * __restrict  __dest ,
                                                                                                  void const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/timeout.merge.c:8887 */
+/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/timeout.merge.c:8895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/timeout.merge.c:8905 */
-#line 8905
+/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/timeout.merge.c:8913 */
+#line 8913
 extern int ( __attribute__((__nonnull__(1))) sigwaitinfo)(sigset_t const   * __restrict  __set ,
                                                           siginfo_t * __restrict  __info ) ;
-/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/timeout.merge.c:8905 */
+/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/timeout.merge.c:8913 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539___0 LOC=./src/timeout.merge.c:940 */
 #line 940
 enum __anonenum_23175539___0 ;
 /* END ENUM-DECL __anonenum_23175539___0 LOC=./src/timeout.merge.c:940 */
 
-/* BEGIN TYPEDEF intptr_t LOC=./src/timeout.merge.c:8910 */
-#line 8910 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF intptr_t LOC=./src/timeout.merge.c:8918 */
+#line 8918 "./src/timeout.merge.c"
 typedef __intptr_t intptr_t;
-/* END TYPEDEF intptr_t LOC=./src/timeout.merge.c:8910 */
+/* END TYPEDEF intptr_t LOC=./src/timeout.merge.c:8918 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/timeout.merge.c:8914 */
-#line 8914
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/timeout.merge.c:8922 */
+#line 8922
 extern char *quotearg_alloc_mem(char const   *arg , size_t argsize , size_t *size ,
                                 struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/timeout.merge.c:8914 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/timeout.merge.c:8922 */
 
-/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/timeout.merge.c:8945 */
-#line 8945
+/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/timeout.merge.c:8953 */
+#line 8953
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(long __sysno 
                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN syscall LOC=./src/timeout.merge.c:8945 */
+/* END FUNCTION-DECL-EXTERN syscall LOC=./src/timeout.merge.c:8953 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/timeout.merge.c:8950 */
-#line 8950
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/timeout.merge.c:8958 */
+#line 8958
 extern char *quotearg_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/timeout.merge.c:8950 */
+/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/timeout.merge.c:8958 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -6396,24 +6400,24 @@ extern char *quotearg_n(int n , char const   *arg ) ;
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/timeout.merge.c:8960 */
-#line 8960
+/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/timeout.merge.c:8968 */
+#line 8968
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getres)(clockid_t __clock_id ,
                                                                                    struct timespec *__res ) ;
-/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/timeout.merge.c:8960 */
+/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/timeout.merge.c:8968 */
 
-/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/timeout.merge.c:8971 */
-#line 8971 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/timeout.merge.c:8979 */
+#line 8979 "./src/timeout.merge.c"
 typedef char *__kernel_caddr_t;
-/* END TYPEDEF __kernel_caddr_t LOC=./src/timeout.merge.c:8971 */
+/* END TYPEDEF __kernel_caddr_t LOC=./src/timeout.merge.c:8979 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parityll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_437032235 LOC=./src/timeout.merge.c:8998 */
-#line 8998
+/* BEGIN ENUM __anonenum_437032235 LOC=./src/timeout.merge.c:9006 */
+#line 9006
 enum __anonenum_437032235 {
     _PC_LINK_MAX = 0,
     _PC_MAX_CANON = 1,
@@ -6437,13 +6441,13 @@ enum __anonenum_437032235 {
     _PC_SYMLINK_MAX = 19,
     _PC_2_SYMLINKS = 20
 } ;
-/* END ENUM __anonenum_437032235 LOC=./src/timeout.merge.c:8998 */
+/* END ENUM __anonenum_437032235 LOC=./src/timeout.merge.c:9006 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/timeout.merge.c:9024 */
-#line 9024
+/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/timeout.merge.c:9032 */
+#line 9032
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_gettime)(clockid_t __clock_id ,
                                                                                                     struct timespec *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/timeout.merge.c:9024 */
+/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/timeout.merge.c:9032 */
 
 /* BEGIN STRUCT-DECL __anonstruct__timer_490064738 LOC=./src/timeout.merge.c:1424 */
 #line 1424
@@ -6460,10 +6464,10 @@ struct __anonstruct__timer_490064738 ;
    void *__builtin_memmove(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memmove LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uid_t LOC=./src/timeout.merge.c:4655 */
-#line 4655 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uid_t LOC=./src/timeout.merge.c:4643 */
+#line 4643 "./src/timeout.merge.c"
 typedef __uid_t uid_t;
-/* END TYPEDEF uid_t LOC=./src/timeout.merge.c:4655 */
+/* END TYPEDEF uid_t LOC=./src/timeout.merge.c:4643 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6475,81 +6479,81 @@ typedef __uid_t uid_t;
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/timeout.merge.c:9089 */
-#line 9089
+/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/timeout.merge.c:9097 */
+#line 9097
 extern _Bool strip_trailing_slashes(char *file ) ;
-/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/timeout.merge.c:9089 */
+/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/timeout.merge.c:9097 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/timeout.merge.c:9107 */
-#line 9107
+/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/timeout.merge.c:9115 */
+#line 9115
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncat)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncat LOC=./src/timeout.merge.c:9107 */
+/* END FUNCTION-DECL-EXTERN strncat LOC=./src/timeout.merge.c:9115 */
 
-/* BEGIN STRUCT _fpxreg LOC=./src/timeout.merge.c:9113 */
-#line 9113 "./src/timeout.merge.c"
+/* BEGIN STRUCT _fpxreg LOC=./src/timeout.merge.c:9121 */
+#line 9121 "./src/timeout.merge.c"
 struct _fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _fpxreg LOC=./src/timeout.merge.c:9113 */
+/* END STRUCT _fpxreg LOC=./src/timeout.merge.c:9121 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/timeout.merge.c:9121 */
-#line 9121
+/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/timeout.merge.c:9129 */
+#line 9129
 extern  __attribute__((__deprecated__("Use the sigsuspend function instead"))) int sigpause(int __sig )  __asm__("__xpg_sigpause")  ;
-/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/timeout.merge.c:9121 */
+/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/timeout.merge.c:9129 */
 
 /* BEGIN ENUM-DECL quoting_flags LOC=./src/timeout.merge.c:1236 */
 #line 1236
 enum quoting_flags ;
 /* END ENUM-DECL quoting_flags LOC=./src/timeout.merge.c:1236 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/timeout.merge.c:9125 */
-#line 9125
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/timeout.merge.c:9133 */
+#line 9133
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2,4), __leaf__)) strxfrm_l)(char *__dest ,
                                                                                                      char const   *__src ,
                                                                                                      size_t __n ,
                                                                                                      locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/timeout.merge.c:9125 */
+/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/timeout.merge.c:9133 */
 
-/* BEGIN TYPEDEF lldiv_t LOC=./src/timeout.merge.c:2466 */
-#line 2466 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF lldiv_t LOC=./src/timeout.merge.c:2462 */
+#line 2462 "./src/timeout.merge.c"
 typedef struct __anonstruct_lldiv_t_103911545 lldiv_t;
-/* END TYPEDEF lldiv_t LOC=./src/timeout.merge.c:2466 */
+/* END TYPEDEF lldiv_t LOC=./src/timeout.merge.c:2462 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/timeout.merge.c:9137 */
-#line 9137
+/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/timeout.merge.c:9145 */
+#line 9145
 extern  __attribute__((__nothrow__)) lldiv_t ( __attribute__((__leaf__)) lldiv)(long long __numer ,
                                                                                 long long __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/timeout.merge.c:9137 */
+/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/timeout.merge.c:9145 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_powf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/timeout.merge.c:9176 */
-#line 9176
+/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/timeout.merge.c:9184 */
+#line 9184
 enum __anonenum_288797321___0 {
     EXIT_TIMEDOUT___0 = 124,
     EXIT_CANCELED___0 = 125,
     EXIT_CANNOT_INVOKE___0 = 126,
     EXIT_ENOENT___0 = 127
 } ;
-/* END ENUM __anonenum_288797321___0 LOC=./src/timeout.merge.c:9176 */
+/* END ENUM __anonenum_288797321___0 LOC=./src/timeout.merge.c:9184 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_conjf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/timeout.merge.c:9199 */
-#line 9199
+/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/timeout.merge.c:9207 */
+#line 9207
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) setlocale)(int __category ,
                                                                                   char const   *__locale ) ;
-/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/timeout.merge.c:9199 */
+/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/timeout.merge.c:9207 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigchld_284671705 LOC=./src/timeout.merge.c:1044 */
 #line 1044
@@ -6571,68 +6575,68 @@ static _Bool foreground  ;
                                  unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memccpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/timeout.merge.c:9278 */
-#line 9278
+/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/timeout.merge.c:9286 */
+#line 9286
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,3), __leaf__)) symlinkat)(char const   *__from ,
                                                                                                   int __tofd ,
                                                                                                   char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/timeout.merge.c:9278 */
+/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/timeout.merge.c:9286 */
 
-/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:9284 */
-#line 9284 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:9292 */
+#line 9292 "./src/timeout.merge.c"
 struct __anonstruct___fsid_t_109580352 {
    int __val[2] ;
 };
-/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:9284 */
+/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:9292 */
 
-/* BEGIN TYPEDEF __fsid_t LOC=./src/timeout.merge.c:4994 */
-#line 4994 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __fsid_t LOC=./src/timeout.merge.c:4986 */
+#line 4986 "./src/timeout.merge.c"
 typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
-/* END TYPEDEF __fsid_t LOC=./src/timeout.merge.c:4994 */
+/* END TYPEDEF __fsid_t LOC=./src/timeout.merge.c:4986 */
 
-/* BEGIN TYPEDEF fsid_t LOC=./src/timeout.merge.c:9290 */
-#line 9290 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fsid_t LOC=./src/timeout.merge.c:9298 */
+#line 9298 "./src/timeout.merge.c"
 typedef __fsid_t fsid_t;
-/* END TYPEDEF fsid_t LOC=./src/timeout.merge.c:9290 */
+/* END TYPEDEF fsid_t LOC=./src/timeout.merge.c:9298 */
 
-/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/timeout.merge.c:9294 */
-#line 9294 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/timeout.merge.c:9302 */
+#line 9302 "./src/timeout.merge.c"
 typedef int __kernel_ipc_pid_t;
-/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/timeout.merge.c:9294 */
+/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/timeout.merge.c:9302 */
 
-/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/timeout.merge.c:9298 */
-#line 9298
+/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/timeout.merge.c:9306 */
+#line 9306
 extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * ) ;
-/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/timeout.merge.c:9298 */
+/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/timeout.merge.c:9306 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/timeout.merge.c:9302 */
-#line 9302
+/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/timeout.merge.c:9310 */
+#line 9310
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gettimeofday)(struct timeval * __restrict  __tv ,
                                                                                                    void * __restrict  __tz ) ;
-/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/timeout.merge.c:9302 */
+/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/timeout.merge.c:9310 */
 
-/* BEGIN TYPEDEF uint32_t LOC=./src/timeout.merge.c:9307 */
-#line 9307 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint32_t LOC=./src/timeout.merge.c:9315 */
+#line 9315 "./src/timeout.merge.c"
 typedef __uint32_t uint32_t;
-/* END TYPEDEF uint32_t LOC=./src/timeout.merge.c:9307 */
+/* END TYPEDEF uint32_t LOC=./src/timeout.merge.c:9315 */
 
-/* BEGIN TYPEDEF comparison_fn_t LOC=./src/timeout.merge.c:9316 */
-#line 9316 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF comparison_fn_t LOC=./src/timeout.merge.c:9324 */
+#line 9324 "./src/timeout.merge.c"
 typedef int (*comparison_fn_t)(void const   * , void const   * );
-/* END TYPEDEF comparison_fn_t LOC=./src/timeout.merge.c:9316 */
+/* END TYPEDEF comparison_fn_t LOC=./src/timeout.merge.c:9324 */
 
 /* BEGIN FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_hypot(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/timeout.merge.c:9342 */
-#line 9342
+/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/timeout.merge.c:9350 */
+#line 9350
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,3,4), __leaf__)) strftime)(char * __restrict  __s ,
                                                                                                       size_t __maxsize ,
                                                                                                       char const   * __restrict  __format ,
                                                                                                       struct tm  const  * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN strftime LOC=./src/timeout.merge.c:9342 */
+/* END FUNCTION-DECL-EXTERN strftime LOC=./src/timeout.merge.c:9350 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802 LOC=./src/timeout.merge.c:1484 */
 #line 1484
@@ -6654,37 +6658,37 @@ enum __anonenum_111643124 ;
    short __builtin_bitreverse16(short  ) ;  */
 /* END FUNCTION-DECL __builtin_bitreverse16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/timeout.merge.c:9441 */
-#line 9441
+/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/timeout.merge.c:9449 */
+#line 9449
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) gsignal)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/timeout.merge.c:9441 */
+/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/timeout.merge.c:9449 */
 
 /* BEGIN FUNCTION-DECL __builtin_rindex LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_rindex(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_rindex LOC=BUILTIN */
 
-/* BEGIN ENUM quoting_flags LOC=./src/timeout.merge.c:9473 */
-#line 9473
+/* BEGIN ENUM quoting_flags LOC=./src/timeout.merge.c:9481 */
+#line 9481
 enum quoting_flags {
     QA_ELIDE_NULL_BYTES = 1,
     QA_ELIDE_OUTER_QUOTES = 2,
     QA_SPLIT_TRIGRAPHS = 4
 } ;
-/* END ENUM quoting_flags LOC=./src/timeout.merge.c:9473 */
+/* END ENUM quoting_flags LOC=./src/timeout.merge.c:9481 */
 
-/* BEGIN TYPEDEF __u_long LOC=./src/timeout.merge.c:9490 */
-#line 9490 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u_long LOC=./src/timeout.merge.c:9498 */
+#line 9498 "./src/timeout.merge.c"
 typedef unsigned long __u_long;
-/* END TYPEDEF __u_long LOC=./src/timeout.merge.c:9490 */
+/* END TYPEDEF __u_long LOC=./src/timeout.merge.c:9498 */
 
 /* BEGIN FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cprojl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/timeout.merge.c:9509 */
-#line 9509
+/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/timeout.merge.c:9517 */
+#line 9517
 enum __anonenum_451154152___0 {
     REG_R8___0 = 0,
     REG_R9___0 = 1,
@@ -6710,44 +6714,44 @@ enum __anonenum_451154152___0 {
     REG_OLDMASK___0 = 21,
     REG_CR2___0 = 22
 } ;
-/* END ENUM __anonenum_451154152___0 LOC=./src/timeout.merge.c:9509 */
+/* END ENUM __anonenum_451154152___0 LOC=./src/timeout.merge.c:9517 */
 
-/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/timeout.merge.c:9553 */
-#line 9553
+/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/timeout.merge.c:9561 */
+#line 9561
 extern FILE *popen(char const   *__command , char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN popen LOC=./src/timeout.merge.c:9553 */
+/* END FUNCTION-DECL-EXTERN popen LOC=./src/timeout.merge.c:9561 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/timeout.merge.c:9542 */
-#line 9542
+/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/timeout.merge.c:9550 */
+#line 9550
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) strtoumax)(char const   * __restrict  __nptr ,
                                                                                       char ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_strtoumax")  ;
-/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/timeout.merge.c:9542 */
+/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/timeout.merge.c:9550 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_exp(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/timeout.merge.c:9562 */
-#line 9562
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mktemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/timeout.merge.c:9562 */
-
-/* BEGIN TYPEDEF sighandler_t LOC=./src/timeout.merge.c:9566 */
-#line 9566 "./src/timeout.merge.c"
-typedef void (*sighandler_t)(int  );
-/* END TYPEDEF sighandler_t LOC=./src/timeout.merge.c:9566 */
-
-/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/timeout.merge.c:9570 */
+/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/timeout.merge.c:9570 */
 #line 9570
-extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) nrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/timeout.merge.c:9570 */
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mktemp)(char *__template ) ;
+/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/timeout.merge.c:9570 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/timeout.merge.c:9583 */
-#line 9583
+/* BEGIN TYPEDEF sighandler_t LOC=./src/timeout.merge.c:9574 */
+#line 9574 "./src/timeout.merge.c"
+typedef void (*sighandler_t)(int  );
+/* END TYPEDEF sighandler_t LOC=./src/timeout.merge.c:9574 */
+
+/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/timeout.merge.c:9578 */
+#line 9578
+extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) nrand48)(unsigned short *__xsubi ) ;
+/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/timeout.merge.c:9578 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/timeout.merge.c:9591 */
+#line 9591
 extern FILE *fopen64(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/timeout.merge.c:9583 */
+/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/timeout.merge.c:9591 */
 
 /* BEGIN UNION-DECL __anonunion___atomic_wide_counter_347906929 LOC=./src/timeout.merge.c:936 */
 #line 936
@@ -6769,58 +6773,58 @@ union __anonunion___atomic_wide_counter_347906929 ;
 union sigval ;
 /* END UNION-DECL sigval LOC=./src/timeout.merge.c:1356 */
 
-/* BEGIN TYPEDEF __sig_atomic_t LOC=./src/timeout.merge.c:9630 */
-#line 9630 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __sig_atomic_t LOC=./src/timeout.merge.c:9638 */
+#line 9638 "./src/timeout.merge.c"
 typedef int __sig_atomic_t;
-/* END TYPEDEF __sig_atomic_t LOC=./src/timeout.merge.c:9630 */
+/* END TYPEDEF __sig_atomic_t LOC=./src/timeout.merge.c:9638 */
 
-/* BEGIN TYPEDEF sig_atomic_t LOC=./src/timeout.merge.c:9634 */
-#line 9634 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF sig_atomic_t LOC=./src/timeout.merge.c:9642 */
+#line 9642 "./src/timeout.merge.c"
 typedef __sig_atomic_t sig_atomic_t;
-/* END TYPEDEF sig_atomic_t LOC=./src/timeout.merge.c:9634 */
+/* END TYPEDEF sig_atomic_t LOC=./src/timeout.merge.c:9642 */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap16 LOC=BUILTIN */
 /* compiler builtin: 
    short __builtin_bswap16(short  ) ;  */
 /* END FUNCTION-DECL __builtin_bswap16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/timeout.merge.c:9695 */
-#line 9695
+/* BEGIN FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/timeout.merge.c:9703 */
+#line 9703
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcasecmp_l)(char const   *__s1 ,
                                                                                                        char const   *__s2 ,
                                                                                                        locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/timeout.merge.c:9695 */
+/* END FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/timeout.merge.c:9703 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _Exit LOC=./src/timeout.merge.c:9683 */
-#line 9683
+/* BEGIN FUNCTION-DECL-EXTERN _Exit LOC=./src/timeout.merge.c:9691 */
+#line 9691
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) _Exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _Exit LOC=./src/timeout.merge.c:9683 */
+/* END FUNCTION-DECL-EXTERN _Exit LOC=./src/timeout.merge.c:9691 */
 
-/* BEGIN FUNCTION-DECL-EXTERN write LOC=./src/timeout.merge.c:9687 */
-#line 9687
+/* BEGIN FUNCTION-DECL-EXTERN write LOC=./src/timeout.merge.c:9695 */
+#line 9695
 extern ssize_t write(int __fd , void const   *__buf , size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN write LOC=./src/timeout.merge.c:9687 */
+/* END FUNCTION-DECL-EXTERN write LOC=./src/timeout.merge.c:9695 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacos LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cacos(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacos LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/timeout.merge.c:9711 */
-#line 9711
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/timeout.merge.c:9719 */
+#line 9719
 extern int ( __attribute__((__nonnull__(1))) mkostemp64)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/timeout.merge.c:9711 */
+/* END FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/timeout.merge.c:9719 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sethostname LOC=./src/timeout.merge.c:9706 */
-#line 9706
+/* BEGIN FUNCTION-DECL-EXTERN sethostname LOC=./src/timeout.merge.c:9714 */
+#line 9714
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sethostname)(char const   *__name ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN sethostname LOC=./src/timeout.merge.c:9706 */
+/* END FUNCTION-DECL-EXTERN sethostname LOC=./src/timeout.merge.c:9714 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strsignal LOC=./src/timeout.merge.c:9735 */
-#line 9735
+/* BEGIN FUNCTION-DECL-EXTERN strsignal LOC=./src/timeout.merge.c:9743 */
+#line 9743
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strsignal)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN strsignal LOC=./src/timeout.merge.c:9735 */
+/* END FUNCTION-DECL-EXTERN strsignal LOC=./src/timeout.merge.c:9743 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6832,21 +6836,21 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strsignal
 enum __anonenum_640648963___0 ;
 /* END ENUM-DECL __anonenum_640648963___0 LOC=./src/timeout.merge.c:1304 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyname LOC=./src/timeout.merge.c:9771 */
-#line 9771
+/* BEGIN FUNCTION-DECL-EXTERN ttyname LOC=./src/timeout.merge.c:9779 */
+#line 9779
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ttyname)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN ttyname LOC=./src/timeout.merge.c:9771 */
+/* END FUNCTION-DECL-EXTERN ttyname LOC=./src/timeout.merge.c:9779 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogb LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ilogb(double  ) ;  */
 /* END FUNCTION-DECL __builtin_ilogb LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/timeout.merge.c:9787 */
-#line 9787
+/* BEGIN FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/timeout.merge.c:9795 */
+#line 9795
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) __sysv_signal)(int __sig ,
                                                                                                void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/timeout.merge.c:9787 */
+/* END FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/timeout.merge.c:9795 */
 
 /* BEGIN FUNCTION-DECL __builtin_dwarf_sp_column LOC=BUILTIN */
 /* compiler builtin: 
@@ -6857,28 +6861,24 @@ extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) 
 __inline static _Bool is_ENOTSUP(int err ) ;
 /* END FUNCTION-DECL is_ENOTSUP LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF __kernel_timer_t LOC=./src/timeout.merge.c:9836 */
-#line 9836 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_timer_t LOC=./src/timeout.merge.c:9840 */
+#line 9840 "./src/timeout.merge.c"
 typedef int __kernel_timer_t;
-/* END TYPEDEF __kernel_timer_t LOC=./src/timeout.merge.c:9836 */
+/* END TYPEDEF __kernel_timer_t LOC=./src/timeout.merge.c:9840 */
 
-/* BEGIN FUNCTION-DECL-EXTERN linkat LOC=./src/timeout.merge.c:9840 */
-#line 9840
+/* BEGIN FUNCTION-DECL-EXTERN linkat LOC=./src/timeout.merge.c:9844 */
+#line 9844
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __leaf__)) linkat)(int __fromfd ,
                                                                                                char const   *__from ,
                                                                                                int __tofd ,
                                                                                                char const   *__to ,
                                                                                                int __flags ) ;
-/* END FUNCTION-DECL-EXTERN linkat LOC=./src/timeout.merge.c:9840 */
+/* END FUNCTION-DECL-EXTERN linkat LOC=./src/timeout.merge.c:9844 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xreallocarray LOC=./src/timeout.merge.c:9848 */
-#line 9848
+/* BEGIN FUNCTION-DECL-EXTERN xreallocarray LOC=./src/timeout.merge.c:9852 */
+#line 9852
 extern void *xreallocarray(void *p , size_t n , size_t s )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN xreallocarray LOC=./src/timeout.merge.c:9848 */
+/* END FUNCTION-DECL-EXTERN xreallocarray LOC=./src/timeout.merge.c:9852 */
 
 /* BEGIN FUNCTION-DECL __builtin_uaddl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6886,10 +6886,10 @@ extern void *xreallocarray(void *p , size_t n , size_t s )  __attribute__((__all
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_uaddl_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF ino64_t LOC=./src/timeout.merge.c:9858 */
-#line 9858 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF ino64_t LOC=./src/timeout.merge.c:9862 */
+#line 9862 "./src/timeout.merge.c"
 typedef __ino64_t ino64_t;
-/* END TYPEDEF ino64_t LOC=./src/timeout.merge.c:9858 */
+/* END TYPEDEF ino64_t LOC=./src/timeout.merge.c:9862 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6926,19 +6926,19 @@ typedef __ino64_t ino64_t;
 enum __anonenum_556971655___0 ;
 /* END ENUM-DECL __anonenum_556971655___0 LOC=./src/timeout.merge.c:1228 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qsort_r LOC=./src/timeout.merge.c:9941 */
-#line 9941
+/* BEGIN FUNCTION-DECL-EXTERN qsort_r LOC=./src/timeout.merge.c:9945 */
+#line 9945
 extern void ( __attribute__((__nonnull__(1,4))) qsort_r)(void *__base , size_t __nmemb ,
                                                          size_t __size , int (*__compar)(void const   * ,
                                                                                          void const   * ,
                                                                                          void * ) ,
                                                          void *__arg ) ;
-/* END FUNCTION-DECL-EXTERN qsort_r LOC=./src/timeout.merge.c:9941 */
+/* END FUNCTION-DECL-EXTERN qsort_r LOC=./src/timeout.merge.c:9945 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpagesize LOC=./src/timeout.merge.c:9949 */
-#line 9949
+/* BEGIN FUNCTION-DECL-EXTERN getpagesize LOC=./src/timeout.merge.c:9953 */
+#line 9953
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getpagesize)(void)  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN getpagesize LOC=./src/timeout.merge.c:9949 */
+/* END FUNCTION-DECL-EXTERN getpagesize LOC=./src/timeout.merge.c:9953 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_copy LOC=BUILTIN */
 /* compiler builtin: 
@@ -6950,44 +6950,44 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getpagesize
    unsigned int __builtin_bitreverse32(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_bitreverse32 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN renameat2 LOC=./src/timeout.merge.c:9974 */
-#line 9974
+/* BEGIN FUNCTION-DECL-EXTERN renameat2 LOC=./src/timeout.merge.c:9978 */
+#line 9978
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat2)(int __oldfd ,
                                                                                 char const   *__old ,
                                                                                 int __newfd ,
                                                                                 char const   *__new ,
                                                                                 unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN renameat2 LOC=./src/timeout.merge.c:9974 */
+/* END FUNCTION-DECL-EXTERN renameat2 LOC=./src/timeout.merge.c:9978 */
 
-/* BEGIN ENUM __anonenum_230064777 LOC=./src/timeout.merge.c:9982 */
-#line 9982
+/* BEGIN ENUM __anonenum_230064777 LOC=./src/timeout.merge.c:9986 */
+#line 9986
 enum __anonenum_230064777 {
     LOG10_TIMESPEC_RESOLUTION = 9
 } ;
-/* END ENUM __anonenum_230064777 LOC=./src/timeout.merge.c:9982 */
+/* END ENUM __anonenum_230064777 LOC=./src/timeout.merge.c:9986 */
 
-/* BEGIN FUNCTION-DECL-EXTERN asctime_r LOC=./src/timeout.merge.c:9999 */
-#line 9999
+/* BEGIN FUNCTION-DECL-EXTERN asctime_r LOC=./src/timeout.merge.c:10003 */
+#line 10003
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) asctime_r)(struct tm  const  * __restrict  __tp ,
                                                                                   char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN asctime_r LOC=./src/timeout.merge.c:9999 */
+/* END FUNCTION-DECL-EXTERN asctime_r LOC=./src/timeout.merge.c:10003 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rename LOC=./src/timeout.merge.c:10009 */
-#line 10009
+/* BEGIN FUNCTION-DECL-EXTERN rename LOC=./src/timeout.merge.c:10013 */
+#line 10013
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) rename)(char const   *__old ,
                                                                              char const   *__new ) ;
-/* END FUNCTION-DECL-EXTERN rename LOC=./src/timeout.merge.c:10009 */
+/* END FUNCTION-DECL-EXTERN rename LOC=./src/timeout.merge.c:10013 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setregid LOC=./src/timeout.merge.c:10014 */
-#line 10014
+/* BEGIN FUNCTION-DECL-EXTERN setregid LOC=./src/timeout.merge.c:10018 */
+#line 10018
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setregid)(__gid_t __rgid ,
                                                                                __gid_t __egid ) ;
-/* END FUNCTION-DECL-EXTERN setregid LOC=./src/timeout.merge.c:10014 */
+/* END FUNCTION-DECL-EXTERN setregid LOC=./src/timeout.merge.c:10018 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpnam_r LOC=./src/timeout.merge.c:10038 */
-#line 10038
+/* BEGIN FUNCTION-DECL-EXTERN tmpnam_r LOC=./src/timeout.merge.c:10042 */
+#line 10042
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam_r)(char *__s ) ;
-/* END FUNCTION-DECL-EXTERN tmpnam_r LOC=./src/timeout.merge.c:10038 */
+/* END FUNCTION-DECL-EXTERN tmpnam_r LOC=./src/timeout.merge.c:10042 */
 
 /* BEGIN FUNCTION-DECL __builtin_trap LOC=BUILTIN */
 /* compiler builtin: 
@@ -7009,60 +7009,60 @@ struct __anonstruct_max_align_t_247203726 ;
    long double __builtin_remquol(long double  , long double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquol LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_off_t LOC=./src/timeout.merge.c:10074 */
-#line 10074 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_off_t LOC=./src/timeout.merge.c:10078 */
+#line 10078 "./src/timeout.merge.c"
 typedef __kernel_long_t __kernel_off_t;
-/* END TYPEDEF __kernel_off_t LOC=./src/timeout.merge.c:10074 */
+/* END TYPEDEF __kernel_off_t LOC=./src/timeout.merge.c:10078 */
 
 /* BEGIN FUNCTION-DECL __builtin_cprojf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cprojf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cprojf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fsblkcnt64_t LOC=./src/timeout.merge.c:10083 */
-#line 10083 "./src/timeout.merge.c"
-typedef unsigned long __fsblkcnt64_t;
-/* END TYPEDEF __fsblkcnt64_t LOC=./src/timeout.merge.c:10083 */
-
-/* BEGIN TYPEDEF fsblkcnt64_t LOC=./src/timeout.merge.c:10087 */
+/* BEGIN TYPEDEF __fsblkcnt64_t LOC=./src/timeout.merge.c:10087 */
 #line 10087 "./src/timeout.merge.c"
+typedef unsigned long __fsblkcnt64_t;
+/* END TYPEDEF __fsblkcnt64_t LOC=./src/timeout.merge.c:10087 */
+
+/* BEGIN TYPEDEF fsblkcnt64_t LOC=./src/timeout.merge.c:10091 */
+#line 10091 "./src/timeout.merge.c"
 typedef __fsblkcnt64_t fsblkcnt64_t;
-/* END TYPEDEF fsblkcnt64_t LOC=./src/timeout.merge.c:10087 */
+/* END TYPEDEF fsblkcnt64_t LOC=./src/timeout.merge.c:10091 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdin LOC=./src/timeout.merge.c:10106 */
-#line 10106
+/* BEGIN FUNCTION-DECL-EXTERN close_stdin LOC=./src/timeout.merge.c:10110 */
+#line 10110
 extern void close_stdin(void) ;
-/* END FUNCTION-DECL-EXTERN close_stdin LOC=./src/timeout.merge.c:10106 */
+/* END FUNCTION-DECL-EXTERN close_stdin LOC=./src/timeout.merge.c:10110 */
 
-/* BEGIN UNION __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:10110 */
-#line 10110 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:10114 */
+#line 10114 "./src/timeout.merge.c"
 union __anonunion_pthread_barrierattr_t_951761806 {
    char __size[4] ;
    int __align ;
 };
-/* END UNION __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:10110 */
+/* END UNION __anonunion_pthread_barrierattr_t_951761806 LOC=./src/timeout.merge.c:10114 */
 
 /* BEGIN FUNCTION-DECL __builtin_popcountl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_popcountl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_popcountl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pathconf LOC=./src/timeout.merge.c:10134 */
-#line 10134
+/* BEGIN FUNCTION-DECL-EXTERN pathconf LOC=./src/timeout.merge.c:10138 */
+#line 10138
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) pathconf)(char const   *__path ,
                                                                                                 int __name ) ;
-/* END FUNCTION-DECL-EXTERN pathconf LOC=./src/timeout.merge.c:10134 */
+/* END FUNCTION-DECL-EXTERN pathconf LOC=./src/timeout.merge.c:10138 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close LOC=./src/timeout.merge.c:10158 */
-#line 10158
+/* BEGIN FUNCTION-DECL-EXTERN close LOC=./src/timeout.merge.c:10162 */
+#line 10162
 extern int close(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN close LOC=./src/timeout.merge.c:10158 */
+/* END FUNCTION-DECL-EXTERN close LOC=./src/timeout.merge.c:10162 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtod LOC=./src/timeout.merge.c:10167 */
-#line 10167
+/* BEGIN FUNCTION-DECL-EXTERN strtod LOC=./src/timeout.merge.c:10171 */
+#line 10171
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) strtod)(char const   * __restrict  __nptr ,
                                                                                                 char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtod LOC=./src/timeout.merge.c:10167 */
+/* END FUNCTION-DECL-EXTERN strtod LOC=./src/timeout.merge.c:10171 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosl LOC=BUILTIN */
 /* compiler builtin: 
@@ -7074,10 +7074,10 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __l
    _Float16 __builtin_rintf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL readdir_ignoring_dot_and_dotdot LOC=./src/timeout.merge.c:10187 */
-#line 10187
+/* BEGIN FUNCTION-DECL readdir_ignoring_dot_and_dotdot LOC=./src/timeout.merge.c:10191 */
+#line 10191
 __inline static struct dirent  const  *readdir_ignoring_dot_and_dotdot(DIR *dirp ) ;
-/* END FUNCTION-DECL readdir_ignoring_dot_and_dotdot LOC=./src/timeout.merge.c:10187 */
+/* END FUNCTION-DECL readdir_ignoring_dot_and_dotdot LOC=./src/timeout.merge.c:10191 */
 
 /* BEGIN FUNCTION-DECL __builtin_logb LOC=BUILTIN */
 /* compiler builtin: 
@@ -7089,110 +7089,110 @@ __inline static struct dirent  const  *readdir_ignoring_dot_and_dotdot(DIR *dirp
 typedef unsigned int __u_int;
 /* END TYPEDEF __u_int LOC=./src/timeout.merge.c:1554 */
 
-/* BEGIN ENUM __anonenum_825626741 LOC=./src/timeout.merge.c:10196 */
-#line 10196
+/* BEGIN ENUM __anonenum_825626741 LOC=./src/timeout.merge.c:10200 */
+#line 10200
 enum __anonenum_825626741 {
     NOT_AN_INODE_NUMBER = 0
 } ;
-/* END ENUM __anonenum_825626741 LOC=./src/timeout.merge.c:10196 */
+/* END ENUM __anonenum_825626741 LOC=./src/timeout.merge.c:10200 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tcsetpgrp LOC=./src/timeout.merge.c:10202 */
-#line 10202
+/* BEGIN FUNCTION-DECL-EXTERN tcsetpgrp LOC=./src/timeout.merge.c:10206 */
+#line 10206
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) tcsetpgrp)(int __fd ,
                                                                                 __pid_t __pgrp_id ) ;
-/* END FUNCTION-DECL-EXTERN tcsetpgrp LOC=./src/timeout.merge.c:10202 */
+/* END FUNCTION-DECL-EXTERN tcsetpgrp LOC=./src/timeout.merge.c:10206 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat_restore_fail LOC=./src/timeout.merge.c:10207 */
-#line 10207
-extern  __attribute__((__noreturn__)) void openat_restore_fail(int  ) ;
-/* END FUNCTION-DECL-EXTERN openat_restore_fail LOC=./src/timeout.merge.c:10207 */
-
-/* BEGIN FUNCTION-DECL-EXTERN stat LOC=./src/timeout.merge.c:10211 */
+/* BEGIN FUNCTION-DECL-EXTERN openat_restore_fail LOC=./src/timeout.merge.c:10211 */
 #line 10211
+extern  __attribute__((__noreturn__)) void openat_restore_fail(int  ) ;
+/* END FUNCTION-DECL-EXTERN openat_restore_fail LOC=./src/timeout.merge.c:10211 */
+
+/* BEGIN FUNCTION-DECL-EXTERN stat LOC=./src/timeout.merge.c:10215 */
+#line 10215
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) stat)(char const   * __restrict  __file ,
                                                                                              struct stat * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN stat LOC=./src/timeout.merge.c:10211 */
+/* END FUNCTION-DECL-EXTERN stat LOC=./src/timeout.merge.c:10215 */
 
 /* BEGIN STRUCT-DECL __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:1184 */
 #line 1184
 struct __anonstruct___kernel_fd_set_990674701 ;
 /* END STRUCT-DECL __anonstruct___kernel_fd_set_990674701 LOC=./src/timeout.merge.c:1184 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoq LOC=./src/timeout.merge.c:10216 */
-#line 10216
+/* BEGIN FUNCTION-DECL-EXTERN strtoq LOC=./src/timeout.merge.c:10220 */
+#line 10220
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) strtoq)(char const   * __restrict  __nptr ,
                                                                                                    char ** __restrict  __endptr ,
                                                                                                    int __base )  __asm__("__isoc23_strtoll")  ;
-/* END FUNCTION-DECL-EXTERN strtoq LOC=./src/timeout.merge.c:10216 */
+/* END FUNCTION-DECL-EXTERN strtoq LOC=./src/timeout.merge.c:10220 */
 
-/* BEGIN TYPEDEF __s64 LOC=./src/timeout.merge.c:9652 */
-#line 9652 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __s64 LOC=./src/timeout.merge.c:9660 */
+#line 9660 "./src/timeout.merge.c"
 typedef long long __s64;
-/* END TYPEDEF __s64 LOC=./src/timeout.merge.c:9652 */
+/* END TYPEDEF __s64 LOC=./src/timeout.merge.c:9660 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open_by_handle_at LOC=./src/timeout.merge.c:10222 */
-#line 10222
+/* BEGIN FUNCTION-DECL-EXTERN open_by_handle_at LOC=./src/timeout.merge.c:10226 */
+#line 10226
 extern int open_by_handle_at(int __mountdirfd , struct file_handle *__handle , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN open_by_handle_at LOC=./src/timeout.merge.c:10222 */
+/* END FUNCTION-DECL-EXTERN open_by_handle_at LOC=./src/timeout.merge.c:10226 */
 
 /* BEGIN STRUCT-DECL f_owner_ex LOC=./src/timeout.merge.c:1520 */
 #line 1520
 struct f_owner_ex ;
 /* END STRUCT-DECL f_owner_ex LOC=./src/timeout.merge.c:1520 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup2 LOC=./src/timeout.merge.c:10231 */
-#line 10231
+/* BEGIN FUNCTION-DECL-EXTERN dup2 LOC=./src/timeout.merge.c:10235 */
+#line 10235
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup2)(int __fd ,
                                                                            int __fd2 ) ;
-/* END FUNCTION-DECL-EXTERN dup2 LOC=./src/timeout.merge.c:10231 */
+/* END FUNCTION-DECL-EXTERN dup2 LOC=./src/timeout.merge.c:10235 */
 
 /* BEGIN FUNCTION-DECL __builtin_inff LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_inff(void) ;  */
 /* END FUNCTION-DECL __builtin_inff LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN unsetenv LOC=./src/timeout.merge.c:10236 */
-#line 10236
+/* BEGIN FUNCTION-DECL-EXTERN unsetenv LOC=./src/timeout.merge.c:10240 */
+#line 10240
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unsetenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN unsetenv LOC=./src/timeout.merge.c:10236 */
+/* END FUNCTION-DECL-EXTERN unsetenv LOC=./src/timeout.merge.c:10240 */
 
-/* BEGIN FUNCTION-DECL lchmodat LOC=./src/timeout.merge.c:10258 */
-#line 10258
+/* BEGIN FUNCTION-DECL lchmodat LOC=./src/timeout.merge.c:10262 */
+#line 10262
 __inline int lchmodat(int fd , char const   *file , mode_t mode ) ;
-/* END FUNCTION-DECL lchmodat LOC=./src/timeout.merge.c:10258 */
+/* END FUNCTION-DECL lchmodat LOC=./src/timeout.merge.c:10262 */
 
 /* BEGIN FUNCTION-DECL install_cleanup LOC=UNKNOWN */
 static void install_cleanup(int sigterm ) ;
 /* END FUNCTION-DECL install_cleanup LOC=UNKNOWN */
 
-/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/timeout.merge.c:8893 */
-#line 8893 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/timeout.merge.c:8901 */
+#line 8901 "./src/timeout.merge.c"
 struct __anonstruct__kill_244518854 {
    __pid_t si_pid ;
    __uid_t si_uid ;
 };
-/* END STRUCT __anonstruct__kill_244518854 LOC=./src/timeout.merge.c:8893 */
+/* END STRUCT __anonstruct__kill_244518854 LOC=./src/timeout.merge.c:8901 */
 
-/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/timeout.merge.c:4459 */
-#line 4459 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__rt_619254530 LOC=./src/timeout.merge.c:4447 */
+#line 4447 "./src/timeout.merge.c"
 struct __anonstruct__rt_619254530 {
    __pid_t si_pid ;
    __uid_t si_uid ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__rt_619254530 LOC=./src/timeout.merge.c:4459 */
+/* END STRUCT __anonstruct__rt_619254530 LOC=./src/timeout.merge.c:4447 */
 
-/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:9792 */
-#line 9792 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:9800 */
+#line 9800 "./src/timeout.merge.c"
 struct __anonstruct__sigsys_1029881407 {
    void *_call_addr ;
    int _syscall ;
    unsigned int _arch ;
 };
-/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:9792 */
+/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:9800 */
 
-/* BEGIN UNION __anonunion__sifields_359092464 LOC=./src/timeout.merge.c:9800 */
-#line 9800 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion__sifields_359092464 LOC=./src/timeout.merge.c:9808 */
+#line 9808 "./src/timeout.merge.c"
 union __anonunion__sifields_359092464 {
    int _pad[128ULL / sizeof(int ) - 4ULL] ;
    struct __anonstruct__kill_244518854 _kill ;
@@ -7203,10 +7203,10 @@ union __anonunion__sifields_359092464 {
    struct __anonstruct__sigpoll_386613454 _sigpoll ;
    struct __anonstruct__sigsys_1029881407 _sigsys ;
 };
-/* END UNION __anonunion__sifields_359092464 LOC=./src/timeout.merge.c:9800 */
+/* END UNION __anonunion__sifields_359092464 LOC=./src/timeout.merge.c:9808 */
 
-/* BEGIN STRUCT __anonstruct_siginfo_t_617603290 LOC=./src/timeout.merge.c:10287 */
-#line 10287 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_siginfo_t_617603290 LOC=./src/timeout.merge.c:10291 */
+#line 10291 "./src/timeout.merge.c"
 struct __anonstruct_siginfo_t_617603290 {
    int si_signo ;
    int si_errno ;
@@ -7214,45 +7214,45 @@ struct __anonstruct_siginfo_t_617603290 {
    int __pad0 ;
    union __anonunion__sifields_359092464 _sifields ;
 };
-/* END STRUCT __anonstruct_siginfo_t_617603290 LOC=./src/timeout.merge.c:10287 */
+/* END STRUCT __anonstruct_siginfo_t_617603290 LOC=./src/timeout.merge.c:10291 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquo LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_remquo(double  , double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquo LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rawmemchr LOC=./src/timeout.merge.c:10315 */
-#line 10315
+/* BEGIN FUNCTION-DECL-EXTERN rawmemchr LOC=./src/timeout.merge.c:10319 */
+#line 10319
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) rawmemchr)(void const   *__s ,
                                                                                                   int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN rawmemchr LOC=./src/timeout.merge.c:10315 */
+/* END FUNCTION-DECL-EXTERN rawmemchr LOC=./src/timeout.merge.c:10319 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstombs LOC=./src/timeout.merge.c:10320 */
-#line 10320
+/* BEGIN FUNCTION-DECL-EXTERN wcstombs LOC=./src/timeout.merge.c:10324 */
+#line 10324
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcstombs)(char * __restrict  __s ,
                                                                                   wchar_t const   * __restrict  __pwcs ,
                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN wcstombs LOC=./src/timeout.merge.c:10320 */
+/* END FUNCTION-DECL-EXTERN wcstombs LOC=./src/timeout.merge.c:10324 */
 
 /* BEGIN ENUM-DECL __anonenum_606700034 LOC=./src/timeout.merge.c:1120 */
 #line 1120
 enum __anonenum_606700034 ;
 /* END ENUM-DECL __anonenum_606700034 LOC=./src/timeout.merge.c:1120 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ptsname_r LOC=./src/timeout.merge.c:10351 */
-#line 10351
+/* BEGIN FUNCTION-DECL-EXTERN ptsname_r LOC=./src/timeout.merge.c:10355 */
+#line 10355
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ptsname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN ptsname_r LOC=./src/timeout.merge.c:10351 */
+/* END FUNCTION-DECL-EXTERN ptsname_r LOC=./src/timeout.merge.c:10355 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346509 LOC=./src/timeout.merge.c:1797 */
-#line 1797 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346509 LOC=./src/timeout.merge.c:1793 */
+#line 1793 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346509 {
    long ru_nivcsw ;
    __syscall_slong_t __ru_nivcsw_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346509 LOC=./src/timeout.merge.c:1797 */
+/* END UNION __anonunion____missing_field_name_1036346509 LOC=./src/timeout.merge.c:1793 */
 
 /* BEGIN FUNCTION-DECL __builtin_lrintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -7264,72 +7264,72 @@ union __anonunion____missing_field_name_1036346509 {
    _Float16 __builtin_expf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_expf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseeko64 LOC=./src/timeout.merge.c:10357 */
-#line 10357
+/* BEGIN FUNCTION-DECL-EXTERN fseeko64 LOC=./src/timeout.merge.c:10361 */
+#line 10361
 extern int ( __attribute__((__nonnull__(1))) fseeko64)(FILE *__stream , __off64_t __off ,
                                                        int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseeko64 LOC=./src/timeout.merge.c:10357 */
+/* END FUNCTION-DECL-EXTERN fseeko64 LOC=./src/timeout.merge.c:10361 */
 
 /* BEGIN FUNCTION-DECL __builtin___strncpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___strncpy_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strncpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strsep LOC=./src/timeout.merge.c:10382 */
-#line 10382
+/* BEGIN FUNCTION-DECL-EXTERN strsep LOC=./src/timeout.merge.c:10386 */
+#line 10386
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strsep)(char ** __restrict  __stringp ,
                                                                                                  char const   * __restrict  __delim ) ;
-/* END FUNCTION-DECL-EXTERN strsep LOC=./src/timeout.merge.c:10382 */
+/* END FUNCTION-DECL-EXTERN strsep LOC=./src/timeout.merge.c:10386 */
 
-/* BEGIN ENUM __anonenum_852341087 LOC=./src/timeout.merge.c:10387 */
-#line 10387
+/* BEGIN ENUM __anonenum_852341087 LOC=./src/timeout.merge.c:10391 */
+#line 10391
 enum __anonenum_852341087 {
     SIGEV_SIGNAL = 0,
     SIGEV_NONE = 1,
     SIGEV_THREAD = 2,
     SIGEV_THREAD_ID = 4
 } ;
-/* END ENUM __anonenum_852341087 LOC=./src/timeout.merge.c:10387 */
+/* END ENUM __anonenum_852341087 LOC=./src/timeout.merge.c:10391 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readlinkat LOC=./src/timeout.merge.c:10396 */
-#line 10396
+/* BEGIN FUNCTION-DECL-EXTERN readlinkat LOC=./src/timeout.merge.c:10400 */
+#line 10400
 extern  __attribute__((__nothrow__)) ssize_t ( __attribute__((__nonnull__(2,3), __leaf__)) readlinkat)(int __fd ,
                                                                                                        char const   * __restrict  __path ,
                                                                                                        char * __restrict  __buf ,
                                                                                                        size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN readlinkat LOC=./src/timeout.merge.c:10396 */
+/* END FUNCTION-DECL-EXTERN readlinkat LOC=./src/timeout.merge.c:10400 */
 
 /* BEGIN STRUCT-DECL option LOC=./src/timeout.merge.c:1132 */
 #line 1132
 struct option ;
 /* END STRUCT-DECL option LOC=./src/timeout.merge.c:1132 */
 
-/* BEGIN FUNCTION-DECL-EXTERN l64a LOC=./src/timeout.merge.c:10411 */
-#line 10411
+/* BEGIN FUNCTION-DECL-EXTERN l64a LOC=./src/timeout.merge.c:10415 */
+#line 10415
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) l64a)(long __n ) ;
-/* END FUNCTION-DECL-EXTERN l64a LOC=./src/timeout.merge.c:10411 */
+/* END FUNCTION-DECL-EXTERN l64a LOC=./src/timeout.merge.c:10415 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigqueue LOC=./src/timeout.merge.c:10419 */
-#line 10419
+/* BEGIN FUNCTION-DECL-EXTERN sigqueue LOC=./src/timeout.merge.c:10423 */
+#line 10423
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigqueue)(__pid_t __pid ,
                                                                                int __sig ,
                                                                                union sigval  const  __val ) ;
-/* END FUNCTION-DECL-EXTERN sigqueue LOC=./src/timeout.merge.c:10419 */
+/* END FUNCTION-DECL-EXTERN sigqueue LOC=./src/timeout.merge.c:10423 */
 
-/* BEGIN TYPEDEF __int32_t LOC=./src/timeout.merge.c:4576 */
-#line 4576 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int32_t LOC=./src/timeout.merge.c:4564 */
+#line 4564 "./src/timeout.merge.c"
 typedef int __int32_t;
-/* END TYPEDEF __int32_t LOC=./src/timeout.merge.c:4576 */
+/* END TYPEDEF __int32_t LOC=./src/timeout.merge.c:4564 */
 
-/* BEGIN TYPEDEF __loff_t LOC=./src/timeout.merge.c:10429 */
-#line 10429 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __loff_t LOC=./src/timeout.merge.c:10433 */
+#line 10433 "./src/timeout.merge.c"
 typedef __off64_t __loff_t;
-/* END TYPEDEF __loff_t LOC=./src/timeout.merge.c:10429 */
+/* END TYPEDEF __loff_t LOC=./src/timeout.merge.c:10433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mdir_name LOC=./src/timeout.merge.c:10437 */
-#line 10437
+/* BEGIN FUNCTION-DECL-EXTERN mdir_name LOC=./src/timeout.merge.c:10441 */
+#line 10441
 extern char *mdir_name(char const   *file )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN mdir_name LOC=./src/timeout.merge.c:10437 */
+/* END FUNCTION-DECL-EXTERN mdir_name LOC=./src/timeout.merge.c:10441 */
 
 /* BEGIN FUNCTION-DECL __builtin_operator_delete LOC=BUILTIN */
 /* compiler builtin: 
@@ -7341,60 +7341,60 @@ extern char *mdir_name(char const   *file )  __attribute__((__malloc__)) ;
    void __builtin_nontemporal_load(...) ;  */
 /* END FUNCTION-DECL __builtin_nontemporal_load LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setuid LOC=./src/timeout.merge.c:10451 */
-#line 10451
+/* BEGIN FUNCTION-DECL-EXTERN setuid LOC=./src/timeout.merge.c:10455 */
+#line 10455
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setuid)(__uid_t __uid ) ;
-/* END FUNCTION-DECL-EXTERN setuid LOC=./src/timeout.merge.c:10451 */
+/* END FUNCTION-DECL-EXTERN setuid LOC=./src/timeout.merge.c:10455 */
 
 /* BEGIN UNION-DECL __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:1020 */
 #line 1020
 union __anonunion__sigev_un_849737051 ;
 /* END UNION-DECL __anonunion__sigev_un_849737051 LOC=./src/timeout.merge.c:1020 */
 
-/* BEGIN TYPEDEF __le16 LOC=./src/timeout.merge.c:10455 */
-#line 10455 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __le16 LOC=./src/timeout.merge.c:10459 */
+#line 10459 "./src/timeout.merge.c"
 typedef __u16 __le16;
-/* END TYPEDEF __le16 LOC=./src/timeout.merge.c:10455 */
+/* END TYPEDEF __le16 LOC=./src/timeout.merge.c:10459 */
 
-/* BEGIN ENUM __anonenum_463020052 LOC=./src/timeout.merge.c:10472 */
-#line 10472
+/* BEGIN ENUM __anonenum_463020052 LOC=./src/timeout.merge.c:10476 */
+#line 10476
 enum __anonenum_463020052 {
     TIMESPEC_HZ = 1000000000
 } ;
-/* END ENUM __anonenum_463020052 LOC=./src/timeout.merge.c:10472 */
+/* END ENUM __anonenum_463020052 LOC=./src/timeout.merge.c:10476 */
 
 /* BEGIN FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_clogf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_783849514___0 LOC=./src/timeout.merge.c:10497 */
-#line 10497
+/* BEGIN ENUM __anonenum_783849514___0 LOC=./src/timeout.merge.c:10501 */
+#line 10501
 enum __anonenum_783849514___0 {
     PLURAL_REDUCER___0 = 1000000
 } ;
-/* END ENUM __anonenum_783849514___0 LOC=./src/timeout.merge.c:10497 */
+/* END ENUM __anonenum_783849514___0 LOC=./src/timeout.merge.c:10501 */
 
-/* BEGIN FUNCTION-DECL-EXTERN asprintf LOC=./src/timeout.merge.c:10526 */
-#line 10526
+/* BEGIN FUNCTION-DECL-EXTERN asprintf LOC=./src/timeout.merge.c:10530 */
+#line 10530
 extern  __attribute__((__nothrow__)) int asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                   , ...) ;
-/* END FUNCTION-DECL-EXTERN asprintf LOC=./src/timeout.merge.c:10526 */
+/* END FUNCTION-DECL-EXTERN asprintf LOC=./src/timeout.merge.c:10530 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getegid LOC=./src/timeout.merge.c:10532 */
-#line 10532
+/* BEGIN FUNCTION-DECL-EXTERN getegid LOC=./src/timeout.merge.c:10536 */
+#line 10536
 extern  __attribute__((__nothrow__)) __gid_t ( __attribute__((__leaf__)) getegid)(void) ;
-/* END FUNCTION-DECL-EXTERN getegid LOC=./src/timeout.merge.c:10532 */
+/* END FUNCTION-DECL-EXTERN getegid LOC=./src/timeout.merge.c:10536 */
 
-/* BEGIN STRUCT option LOC=./src/timeout.merge.c:4563 */
-#line 4563 "./src/timeout.merge.c"
+/* BEGIN STRUCT option LOC=./src/timeout.merge.c:4551 */
+#line 4551 "./src/timeout.merge.c"
 struct option {
    char *name ;
    int has_arg ;
    int *flag ;
    int val ;
 };
-/* END STRUCT option LOC=./src/timeout.merge.c:4563 */
+/* END STRUCT option LOC=./src/timeout.merge.c:4551 */
 
 /* BEGIN VARIABLE-DEF long_options LOC=UNKNOWN */
 static struct option long_options[8]  ;
@@ -7405,62 +7405,62 @@ static struct option long_options[8]  ;
    void *__builtin_frob_return_address(void * ) ;  */
 /* END FUNCTION-DECL __builtin_frob_return_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime_r LOC=./src/timeout.merge.c:10555 */
-#line 10555
+/* BEGIN FUNCTION-DECL-EXTERN localtime_r LOC=./src/timeout.merge.c:10559 */
+#line 10559
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime_r)(time_t const   * __restrict  __timer ,
                                                                                          struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN localtime_r LOC=./src/timeout.merge.c:10555 */
+/* END FUNCTION-DECL-EXTERN localtime_r LOC=./src/timeout.merge.c:10559 */
 
 /* BEGIN FUNCTION-DECL __builtin_crealf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_crealf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_crealf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_825626741___0 LOC=./src/timeout.merge.c:10560 */
-#line 10560
+/* BEGIN ENUM __anonenum_825626741___0 LOC=./src/timeout.merge.c:10564 */
+#line 10564
 enum __anonenum_825626741___0 {
     NOT_AN_INODE_NUMBER___0 = 0
 } ;
-/* END ENUM __anonenum_825626741___0 LOC=./src/timeout.merge.c:10560 */
+/* END ENUM __anonenum_825626741___0 LOC=./src/timeout.merge.c:10564 */
 
 /* BEGIN FUNCTION-DECL __builtin___strncat_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___strncat_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strncat_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pause LOC=./src/timeout.merge.c:10588 */
-#line 10588
+/* BEGIN FUNCTION-DECL-EXTERN pause LOC=./src/timeout.merge.c:10592 */
+#line 10592
 extern int pause(void) ;
-/* END FUNCTION-DECL-EXTERN pause LOC=./src/timeout.merge.c:10588 */
+/* END FUNCTION-DECL-EXTERN pause LOC=./src/timeout.merge.c:10592 */
 
 /* BEGIN STRUCT-DECL sigcontext LOC=./src/timeout.merge.c:1496 */
 #line 1496
 struct sigcontext ;
 /* END STRUCT-DECL sigcontext LOC=./src/timeout.merge.c:1496 */
 
-/* BEGIN TYPEDEF pthread_key_t LOC=./src/timeout.merge.c:10592 */
-#line 10592 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_key_t LOC=./src/timeout.merge.c:10596 */
+#line 10596 "./src/timeout.merge.c"
 typedef unsigned int pthread_key_t;
-/* END TYPEDEF pthread_key_t LOC=./src/timeout.merge.c:10592 */
+/* END TYPEDEF pthread_key_t LOC=./src/timeout.merge.c:10596 */
 
-/* BEGIN FUNCTION-DECL-EXTERN confstr LOC=./src/timeout.merge.c:10600 */
-#line 10600
+/* BEGIN FUNCTION-DECL-EXTERN confstr LOC=./src/timeout.merge.c:10604 */
+#line 10604
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) confstr)(int __name ,
                                                                                  char *__buf ,
                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN confstr LOC=./src/timeout.merge.c:10600 */
+/* END FUNCTION-DECL-EXTERN confstr LOC=./src/timeout.merge.c:10604 */
 
-/* BEGIN FUNCTION-DECL-EXTERN grantpt LOC=./src/timeout.merge.c:10596 */
-#line 10596
+/* BEGIN FUNCTION-DECL-EXTERN grantpt LOC=./src/timeout.merge.c:10600 */
+#line 10600
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) grantpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN grantpt LOC=./src/timeout.merge.c:10596 */
+/* END FUNCTION-DECL-EXTERN grantpt LOC=./src/timeout.merge.c:10600 */
 
-/* BEGIN STRUCT __time_t_must_be_integral LOC=./src/timeout.merge.c:10640 */
-#line 10640 "./src/timeout.merge.c"
+/* BEGIN STRUCT __time_t_must_be_integral LOC=./src/timeout.merge.c:10644 */
+#line 10644 "./src/timeout.merge.c"
 struct __time_t_must_be_integral {
    unsigned int __floating_time_t_unsupported : 1 ;
 };
-/* END STRUCT __time_t_must_be_integral LOC=./src/timeout.merge.c:10640 */
+/* END STRUCT __time_t_must_be_integral LOC=./src/timeout.merge.c:10644 */
 
 /* BEGIN ENUM-DECL __anonenum_25645747___0 LOC=./src/timeout.merge.c:1168 */
 #line 1168
@@ -7471,25 +7471,25 @@ enum __anonenum_25645747___0 ;
 __inline static void *ptr_align(void const   *ptr , size_t alignment ) ;
 /* END FUNCTION-DECL ptr_align LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_old_time_t LOC=./src/timeout.merge.c:10674 */
-#line 10674 "./src/timeout.merge.c"
-typedef __kernel_long_t __kernel_old_time_t;
-/* END TYPEDEF __kernel_old_time_t LOC=./src/timeout.merge.c:10674 */
-
-/* BEGIN TYPEDEF __uint8_t LOC=./src/timeout.merge.c:1964 */
-#line 1964 "./src/timeout.merge.c"
-typedef unsigned char __uint8_t;
-/* END TYPEDEF __uint8_t LOC=./src/timeout.merge.c:1964 */
-
-/* BEGIN TYPEDEF uint8_t LOC=./src/timeout.merge.c:10678 */
+/* BEGIN TYPEDEF __kernel_old_time_t LOC=./src/timeout.merge.c:10678 */
 #line 10678 "./src/timeout.merge.c"
-typedef __uint8_t uint8_t;
-/* END TYPEDEF uint8_t LOC=./src/timeout.merge.c:10678 */
+typedef __kernel_long_t __kernel_old_time_t;
+/* END TYPEDEF __kernel_old_time_t LOC=./src/timeout.merge.c:10678 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __errno_location LOC=./src/timeout.merge.c:10690 */
-#line 10690
+/* BEGIN TYPEDEF __uint8_t LOC=./src/timeout.merge.c:1960 */
+#line 1960 "./src/timeout.merge.c"
+typedef unsigned char __uint8_t;
+/* END TYPEDEF __uint8_t LOC=./src/timeout.merge.c:1960 */
+
+/* BEGIN TYPEDEF uint8_t LOC=./src/timeout.merge.c:10682 */
+#line 10682 "./src/timeout.merge.c"
+typedef __uint8_t uint8_t;
+/* END TYPEDEF uint8_t LOC=./src/timeout.merge.c:10682 */
+
+/* BEGIN FUNCTION-DECL-EXTERN __errno_location LOC=./src/timeout.merge.c:10694 */
+#line 10694
 extern  __attribute__((__nothrow__)) int *( __attribute__((__leaf__)) __errno_location)(void)  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN __errno_location LOC=./src/timeout.merge.c:10690 */
+/* END FUNCTION-DECL-EXTERN __errno_location LOC=./src/timeout.merge.c:10694 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -7501,66 +7501,66 @@ extern  __attribute__((__nothrow__)) int *( __attribute__((__leaf__)) __errno_lo
 enum __anonenum_idtype_t_239471009 ;
 /* END ENUM-DECL __anonenum_idtype_t_239471009 LOC=./src/timeout.merge.c:1384 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/timeout.merge.c:10711 */
-#line 10711
+/* BEGIN FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/timeout.merge.c:10715 */
+#line 10715
 extern int ( __attribute__((__nonnull__(1))) rpl_pipe2)(int *fd , int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/timeout.merge.c:10711 */
+/* END FUNCTION-DECL-EXTERN rpl_pipe2 LOC=./src/timeout.merge.c:10715 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfscanf LOC=./src/timeout.merge.c:10699 */
-#line 10699
+/* BEGIN FUNCTION-DECL-EXTERN vfscanf LOC=./src/timeout.merge.c:10703 */
+#line 10703
 extern int ( __attribute__((__nonnull__(1))) vfscanf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                       __gnuc_va_list __arg )  __asm__("__isoc23_vfscanf")  ;
-/* END FUNCTION-DECL-EXTERN vfscanf LOC=./src/timeout.merge.c:10699 */
+/* END FUNCTION-DECL-EXTERN vfscanf LOC=./src/timeout.merge.c:10703 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_ctanh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __priority_which_t LOC=./src/timeout.merge.c:4799 */
-#line 4799 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __priority_which_t LOC=./src/timeout.merge.c:4791 */
+#line 4791 "./src/timeout.merge.c"
 typedef enum __priority_which __priority_which_t;
-/* END TYPEDEF __priority_which_t LOC=./src/timeout.merge.c:4799 */
+/* END TYPEDEF __priority_which_t LOC=./src/timeout.merge.c:4791 */
 
-/* BEGIN ENUM __itimer_which LOC=./src/timeout.merge.c:1856 */
-#line 1856
+/* BEGIN ENUM __itimer_which LOC=./src/timeout.merge.c:1852 */
+#line 1852
 enum __itimer_which {
     ITIMER_REAL = 0,
     ITIMER_VIRTUAL = 1,
     ITIMER_PROF = 2
 } ;
-/* END ENUM __itimer_which LOC=./src/timeout.merge.c:1856 */
+/* END ENUM __itimer_which LOC=./src/timeout.merge.c:1852 */
 
-/* BEGIN TYPEDEF __itimer_which_t LOC=./src/timeout.merge.c:1864 */
-#line 1864 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __itimer_which_t LOC=./src/timeout.merge.c:1860 */
+#line 1860 "./src/timeout.merge.c"
 typedef enum __itimer_which __itimer_which_t;
-/* END TYPEDEF __itimer_which_t LOC=./src/timeout.merge.c:1864 */
+/* END TYPEDEF __itimer_which_t LOC=./src/timeout.merge.c:1860 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getitimer LOC=./src/timeout.merge.c:10720 */
-#line 10720
+/* BEGIN FUNCTION-DECL-EXTERN getitimer LOC=./src/timeout.merge.c:10724 */
+#line 10724
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval *__value ) ;
-/* END FUNCTION-DECL-EXTERN getitimer LOC=./src/timeout.merge.c:10720 */
+/* END FUNCTION-DECL-EXTERN getitimer LOC=./src/timeout.merge.c:10724 */
 
 /* BEGIN STRUCT-DECL quoting_options LOC=./src/timeout.merge.c:868 */
 #line 868
 struct quoting_options ;
 /* END STRUCT-DECL quoting_options LOC=./src/timeout.merge.c:868 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/timeout.merge.c:10733 */
-#line 10733
+/* BEGIN VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/timeout.merge.c:10737 */
+#line 10737
 extern struct quoting_options quote_quoting_options ;
-/* END VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/timeout.merge.c:10733 */
+/* END VARIABLE-DECL-EXTERN quote_quoting_options LOC=./src/timeout.merge.c:10737 */
 
 /* BEGIN FUNCTION-DECL __builtin_catan LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_catan(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_catan LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int_least32_t LOC=./src/timeout.merge.c:4580 */
-#line 4580 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __int_least32_t LOC=./src/timeout.merge.c:4568 */
+#line 4568 "./src/timeout.merge.c"
 typedef __int32_t __int_least32_t;
-/* END TYPEDEF __int_least32_t LOC=./src/timeout.merge.c:4580 */
+/* END TYPEDEF __int_least32_t LOC=./src/timeout.merge.c:4568 */
 
 /* BEGIN FUNCTION-DECL __builtin_llrint LOC=BUILTIN */
 /* compiler builtin: 
@@ -7572,10 +7572,10 @@ typedef __int32_t __int_least32_t;
    _Complex double __builtin_casin(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fclose LOC=./src/timeout.merge.c:10762 */
-#line 10762
+/* BEGIN FUNCTION-DECL-EXTERN fclose LOC=./src/timeout.merge.c:10766 */
+#line 10766
 extern int ( __attribute__((__nonnull__(1))) fclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fclose LOC=./src/timeout.merge.c:10762 */
+/* END FUNCTION-DECL-EXTERN fclose LOC=./src/timeout.merge.c:10766 */
 
 /* BEGIN ENUM-DECL __anonenum_457704180 LOC=./src/timeout.merge.c:1320 */
 #line 1320
@@ -7592,17 +7592,17 @@ enum __anonenum_457704180 ;
    int __builtin_strcasecmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcasecmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=./src/timeout.merge.c:10800 */
-#line 10800
+/* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=./src/timeout.merge.c:10804 */
+#line 10804
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_memstream)(char **__bufloc ,
                                                                                        size_t *__sizeloc )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN open_memstream LOC=./src/timeout.merge.c:10800 */
+/* END FUNCTION-DECL-EXTERN open_memstream LOC=./src/timeout.merge.c:10804 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getrlimit LOC=./src/timeout.merge.c:10815 */
-#line 10815
+/* BEGIN FUNCTION-DECL-EXTERN getrlimit LOC=./src/timeout.merge.c:10819 */
+#line 10819
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) getrlimit)(__rlimit_resource_t __resource ,
                                                                                                 struct rlimit *__rlimits ) ;
-/* END FUNCTION-DECL-EXTERN getrlimit LOC=./src/timeout.merge.c:10815 */
+/* END FUNCTION-DECL-EXTERN getrlimit LOC=./src/timeout.merge.c:10819 */
 
 /* BEGIN FUNCTION-DECL emit_mandatory_arg_note LOC=UNKNOWN */
 __inline static void emit_mandatory_arg_note(void) ;
@@ -7999,15 +7999,15 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) _Fork)(
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(time_t const   *__timer ) ;
 /* END FUNCTION-DECL-EXTERN ctime LOC=./src/timeout.merge.c:11462 */
 
-/* BEGIN ENUM __pid_type LOC=./src/timeout.merge.c:10611 */
-#line 10611
+/* BEGIN ENUM __pid_type LOC=./src/timeout.merge.c:10615 */
+#line 10615
 enum __pid_type {
     F_OWNER_TID = 0,
     F_OWNER_PID = 1,
     F_OWNER_PGRP = 2,
     F_OWNER_GID = 2
 } ;
-/* END ENUM __pid_type LOC=./src/timeout.merge.c:10611 */
+/* END ENUM __pid_type LOC=./src/timeout.merge.c:10615 */
 
 /* BEGIN FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
 /* compiler builtin: 
@@ -8019,19 +8019,15 @@ enum __pid_type {
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
 /* END FUNCTION-DECL-EXTERN dirfd LOC=./src/timeout.merge.c:11476 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-int _TIG_IZ_5pQc_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/timeout.merge.c:11489 */
-#line 11489
+/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/timeout.merge.c:11485 */
+#line 11485
 __inline static void emit_exec_status(char const   *program ) ;
-/* END FUNCTION-DECL emit_exec_status LOC=./src/timeout.merge.c:11489 */
+/* END FUNCTION-DECL emit_exec_status LOC=./src/timeout.merge.c:11485 */
 
 /* BEGIN FUNCTION-DECL __builtin_strcspn LOC=BUILTIN */
 /* compiler builtin: 
@@ -8048,32 +8044,32 @@ __inline static void emit_exec_status(char const   *program ) ;
    _Bool __builtin_ssubll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_ssubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/timeout.merge.c:11550 */
-#line 11550
+/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/timeout.merge.c:11546 */
+#line 11546
 extern char *( __attribute__((__nonnull__(1))) mbschr)(char const   *string , int c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/timeout.merge.c:11550 */
+/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/timeout.merge.c:11546 */
 
 /* BEGIN STRUCT-DECL __locale_struct LOC=./src/timeout.merge.c:1248 */
 #line 1248
 struct __locale_struct ;
 /* END STRUCT-DECL __locale_struct LOC=./src/timeout.merge.c:1248 */
 
-/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/timeout.merge.c:11595 */
-#line 11595
+/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/timeout.merge.c:11591 */
+#line 11591
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) aligned_alloc)(size_t __alignment ,
                                                                                       size_t __size )  __attribute__((__malloc__,
 __alloc_size__(2), __alloc_align__(1))) ;
-/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/timeout.merge.c:11595 */
+/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/timeout.merge.c:11591 */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/timeout.merge.c:11587 */
-#line 11587
+/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/timeout.merge.c:11583 */
+#line 11583
 extern enum quoting_style get_quoting_style(struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/timeout.merge.c:11587 */
+/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/timeout.merge.c:11583 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/timeout.merge.c:11591 */
-#line 11591
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/timeout.merge.c:11587 */
+#line 11587
 extern void close_stdout_set_ignore_EPIPE(_Bool ignore ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/timeout.merge.c:11591 */
+/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/timeout.merge.c:11587 */
 
 /* BEGIN FUNCTION-DECL __builtin_return LOC=BUILTIN */
 /* compiler builtin: 
@@ -8295,10 +8291,10 @@ struct _G_fpos_t ;
    int __builtin_fpclassify(int  , int  , int  , int  , int   , ...) ;  */
 /* END FUNCTION-DECL __builtin_fpclassify LOC=BUILTIN */
 
-/* BEGIN TYPEDEF rlim_t LOC=./src/timeout.merge.c:10332 */
-#line 10332 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF rlim_t LOC=./src/timeout.merge.c:10336 */
+#line 10336 "./src/timeout.merge.c"
 typedef __rlim_t rlim_t;
-/* END TYPEDEF rlim_t LOC=./src/timeout.merge.c:10332 */
+/* END TYPEDEF rlim_t LOC=./src/timeout.merge.c:10336 */
 
 /* BEGIN STRUCT rlimit LOC=./src/timeout.merge.c:11968 */
 #line 11968 "./src/timeout.merge.c"
@@ -8372,74 +8368,74 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    int __builtin_strcmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ctermid LOC=./src/timeout.merge.c:1663 */
-#line 1663
+/* BEGIN FUNCTION-DECL-EXTERN ctermid LOC=./src/timeout.merge.c:1659 */
+#line 1659
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctermid)(char *__s ) ;
-/* END FUNCTION-DECL-EXTERN ctermid LOC=./src/timeout.merge.c:1663 */
+/* END FUNCTION-DECL-EXTERN ctermid LOC=./src/timeout.merge.c:1659 */
 
 /* BEGIN STRUCT-DECL _ymmh_state LOC=./src/timeout.merge.c:1196 */
 #line 1196
 struct _ymmh_state ;
 /* END STRUCT-DECL _ymmh_state LOC=./src/timeout.merge.c:1196 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346496 LOC=./src/timeout.merge.c:1706 */
-#line 1706 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346496 LOC=./src/timeout.merge.c:1702 */
+#line 1702 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346496 {
    long ru_maxrss ;
    __syscall_slong_t __ru_maxrss_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346496 LOC=./src/timeout.merge.c:1706 */
+/* END UNION __anonunion____missing_field_name_1036346496 LOC=./src/timeout.merge.c:1702 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346497 LOC=./src/timeout.merge.c:1713 */
-#line 1713 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346497 LOC=./src/timeout.merge.c:1709 */
+#line 1709 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346497 {
    long ru_ixrss ;
    __syscall_slong_t __ru_ixrss_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346497 LOC=./src/timeout.merge.c:1713 */
+/* END UNION __anonunion____missing_field_name_1036346497 LOC=./src/timeout.merge.c:1709 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346499 LOC=./src/timeout.merge.c:1727 */
-#line 1727 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346499 LOC=./src/timeout.merge.c:1723 */
+#line 1723 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346499 {
    long ru_isrss ;
    __syscall_slong_t __ru_isrss_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346499 LOC=./src/timeout.merge.c:1727 */
+/* END UNION __anonunion____missing_field_name_1036346499 LOC=./src/timeout.merge.c:1723 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346500 LOC=./src/timeout.merge.c:1734 */
-#line 1734 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346500 LOC=./src/timeout.merge.c:1730 */
+#line 1730 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346500 {
    long ru_minflt ;
    __syscall_slong_t __ru_minflt_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346500 LOC=./src/timeout.merge.c:1734 */
+/* END UNION __anonunion____missing_field_name_1036346500 LOC=./src/timeout.merge.c:1730 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1741 */
-#line 1741 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1737 */
+#line 1737 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346501 {
    long ru_majflt ;
    __syscall_slong_t __ru_majflt_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1741 */
+/* END UNION __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1737 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:1748 */
-#line 1748 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:1744 */
+#line 1744 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346502 {
    long ru_nswap ;
    __syscall_slong_t __ru_nswap_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:1748 */
+/* END UNION __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:1744 */
 
-/* BEGIN UNION __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1769 */
-#line 1769 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1765 */
+#line 1765 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_1036346505 {
    long ru_msgsnd ;
    __syscall_slong_t __ru_msgsnd_word ;
 };
-/* END UNION __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1769 */
+/* END UNION __anonunion____missing_field_name_1036346505 LOC=./src/timeout.merge.c:1765 */
 
-/* BEGIN STRUCT rusage LOC=./src/timeout.merge.c:1819 */
-#line 1819 "./src/timeout.merge.c"
+/* BEGIN STRUCT rusage LOC=./src/timeout.merge.c:1815 */
+#line 1815 "./src/timeout.merge.c"
 struct rusage {
    struct timeval ru_utime ;
    struct timeval ru_stime ;
@@ -8458,37 +8454,37 @@ struct rusage {
    union __anonunion____missing_field_name_1036346508 __annonCompField14 ;
    union __anonunion____missing_field_name_1036346509 __annonCompField15 ;
 };
-/* END STRUCT rusage LOC=./src/timeout.merge.c:1819 */
+/* END STRUCT rusage LOC=./src/timeout.merge.c:1815 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/timeout.merge.c:1868 */
-#line 1868
+/* BEGIN FUNCTION-DECL-EXTERN setitimer LOC=./src/timeout.merge.c:1864 */
+#line 1864
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval  const  * __restrict  __new ,
                                                                                 struct itimerval * __restrict  __old ) ;
-/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/timeout.merge.c:1868 */
+/* END FUNCTION-DECL-EXTERN setitimer LOC=./src/timeout.merge.c:1864 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/timeout.merge.c:1874 */
-#line 1874
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/timeout.merge.c:1870 */
+#line 1870
 extern  __attribute__((__noreturn__)) void __error_at_line_noreturn(int __status ,
                                                                     int __errnum ,
                                                                     char const   *__fname ,
                                                                     unsigned int __line ,
                                                                     char const   *__format 
                                                                     , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/timeout.merge.c:1874 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=./src/timeout.merge.c:1870 */
 
 /* BEGIN FUNCTION-DECL __builtin_acos LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_acos(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acos LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/timeout.merge.c:1888 */
-#line 1888
+/* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=./src/timeout.merge.c:1884 */
+#line 1884
 extern  __attribute__((__nothrow__, __deprecated__("Use the signal function instead"))) int ( __attribute__((__leaf__)) sigignore)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/timeout.merge.c:1888 */
+/* END FUNCTION-DECL-EXTERN sigignore LOC=./src/timeout.merge.c:1884 */
 
-/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/timeout.merge.c:1905 */
-#line 1905
+/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/timeout.merge.c:1901 */
+#line 1901
 enum __anonenum_1036286214___0 {
     BUS_ADRALN___0 = 1,
     BUS_ADRERR___0 = 2,
@@ -8496,19 +8492,19 @@ enum __anonenum_1036286214___0 {
     BUS_MCEERR_AR___0 = 4,
     BUS_MCEERR_AO___0 = 5
 } ;
-/* END ENUM __anonenum_1036286214___0 LOC=./src/timeout.merge.c:1905 */
+/* END ENUM __anonenum_1036286214___0 LOC=./src/timeout.merge.c:1901 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/timeout.merge.c:1923 */
-#line 1923
+/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/timeout.merge.c:1919 */
+#line 1919
 extern void set_custom_quoting(struct quoting_options *o , char const   *left_quote ,
                                char const   *right_quote ) ;
-/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/timeout.merge.c:1923 */
+/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/timeout.merge.c:1919 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/timeout.merge.c:1941 */
-#line 1941
+/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/timeout.merge.c:1937 */
+#line 1937
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getloadavg)(double *__loadavg ,
                                                                                                  int __nelem ) ;
-/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/timeout.merge.c:1941 */
+/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/timeout.merge.c:1937 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -8520,11 +8516,11 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 enum __anonenum_819735966___0 ;
 /* END ENUM-DECL __anonenum_819735966___0 LOC=./src/timeout.merge.c:1160 */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/timeout.merge.c:1950 */
-#line 1950
+/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/timeout.merge.c:1946 */
+#line 1946
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate64)(char const   *__file ,
                                                                                                  __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/timeout.merge.c:1950 */
+/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/timeout.merge.c:1946 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_arg_pack LOC=BUILTIN */
 /* compiler builtin: 
@@ -8536,17 +8532,17 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Complex double __builtin_casinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/timeout.merge.c:1972 */
-#line 1972
+/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/timeout.merge.c:1968 */
+#line 1968
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_adjtime)(__clockid_t __clock_id ,
                                                                                                     struct timex *__utx ) ;
-/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/timeout.merge.c:1972 */
+/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/timeout.merge.c:1968 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/timeout.merge.c:2000 */
-#line 2000
+/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/timeout.merge.c:1996 */
+#line 1996
 extern void *xmemdup(void const   *p , size_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/timeout.merge.c:2000 */
+/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/timeout.merge.c:1996 */
 
 /* BEGIN FUNCTION-DECL __builtin_isfinite LOC=BUILTIN */
 /* compiler builtin: 
@@ -8558,48 +8554,48 @@ __malloc__, __alloc_size__(2))) ;
    long double __builtin_rintl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_rintl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_819735966___0 LOC=./src/timeout.merge.c:2025 */
-#line 2025
+/* BEGIN ENUM __anonenum_819735966___0 LOC=./src/timeout.merge.c:2021 */
+#line 2021
 enum __anonenum_819735966___0 {
     LOG10_TIMESPEC_HZ___0 = 9
 } ;
-/* END ENUM __anonenum_819735966___0 LOC=./src/timeout.merge.c:2025 */
+/* END ENUM __anonenum_819735966___0 LOC=./src/timeout.merge.c:2021 */
 
-/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/timeout.merge.c:2031 */
-#line 2031 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/timeout.merge.c:2027 */
+#line 2027 "./src/timeout.merge.c"
 typedef void (*_gl_function_taking_int_returning_void_t)(int  );
-/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/timeout.merge.c:2031 */
+/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/timeout.merge.c:2027 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/timeout.merge.c:2035 */
-#line 2035
+/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/timeout.merge.c:2031 */
+#line 2031
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno LOC=./src/timeout.merge.c:2035 */
+/* END FUNCTION-DECL-EXTERN fileno LOC=./src/timeout.merge.c:2031 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/timeout.merge.c:2043 */
-#line 2043
+/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/timeout.merge.c:2039 */
+#line 2039
 extern  __attribute__((__nothrow__)) int vsprintf(char * __restrict  __s , char const   * __restrict  __format ,
                                                   __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/timeout.merge.c:2043 */
+/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/timeout.merge.c:2039 */
 
 /* BEGIN ENUM-DECL __anonenum_640648963 LOC=./src/timeout.merge.c:888 */
 #line 888
 enum __anonenum_640648963 ;
 /* END ENUM-DECL __anonenum_640648963 LOC=./src/timeout.merge.c:888 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/timeout.merge.c:2060 */
-#line 2060
+/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/timeout.merge.c:2056 */
+#line 2056
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresgid)(__gid_t *__rgid ,
                                                                                 __gid_t *__egid ,
                                                                                 __gid_t *__sgid ) ;
-/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/timeout.merge.c:2060 */
+/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/timeout.merge.c:2056 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/timeout.merge.c:2071 */
-#line 2071
+/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/timeout.merge.c:2067 */
+#line 2067
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_fail)(char const   *__assertion ,
                                                                                                    char const   *__file ,
                                                                                                    unsigned int __line ,
                                                                                                    char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/timeout.merge.c:2071 */
+/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/timeout.merge.c:2067 */
 
 /* BEGIN STRUCT-DECL _xstate LOC=./src/timeout.merge.c:1104 */
 #line 1104
@@ -8611,87 +8607,87 @@ struct _xstate ;
    int __builtin_clzs(short  ) ;  */
 /* END FUNCTION-DECL __builtin_clzs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/timeout.merge.c:2122 */
-#line 2122
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/timeout.merge.c:2118 */
+#line 2118
 extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_quote ,
                                  char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/timeout.merge.c:2122 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/timeout.merge.c:2118 */
 
 /* BEGIN STRUCT-DECL stat LOC=./src/timeout.merge.c:1404 */
 #line 1404
 struct stat ;
 /* END STRUCT-DECL stat LOC=./src/timeout.merge.c:1404 */
 
-/* BEGIN TYPEDEF fd_set LOC=./src/timeout.merge.c:2141 */
-#line 2141 "./src/timeout.merge.c"
-typedef struct __anonstruct_fd_set_356711149 fd_set;
-/* END TYPEDEF fd_set LOC=./src/timeout.merge.c:2141 */
-
-/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/timeout.merge.c:2137 */
+/* BEGIN TYPEDEF fd_set LOC=./src/timeout.merge.c:2137 */
 #line 2137 "./src/timeout.merge.c"
+typedef struct __anonstruct_fd_set_356711149 fd_set;
+/* END TYPEDEF fd_set LOC=./src/timeout.merge.c:2137 */
+
+/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/timeout.merge.c:2133 */
+#line 2133 "./src/timeout.merge.c"
 typedef int volatile   pthread_spinlock_t;
-/* END TYPEDEF pthread_spinlock_t LOC=./src/timeout.merge.c:2137 */
+/* END TYPEDEF pthread_spinlock_t LOC=./src/timeout.merge.c:2133 */
 
 /* BEGIN FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_asin(double  ) ;  */
 /* END FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN prlimit LOC=./src/timeout.merge.c:2173 */
-#line 2173
+/* BEGIN FUNCTION-DECL-EXTERN prlimit LOC=./src/timeout.merge.c:2169 */
+#line 2169
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) prlimit)(__pid_t __pid ,
                                                                               enum __rlimit_resource __resource ,
                                                                               struct rlimit  const  *__new_limit ,
                                                                               struct rlimit *__old_limit ) ;
-/* END FUNCTION-DECL-EXTERN prlimit LOC=./src/timeout.merge.c:2173 */
+/* END FUNCTION-DECL-EXTERN prlimit LOC=./src/timeout.merge.c:2169 */
 
 /* BEGIN FUNCTION-DECL send_sig LOC=UNKNOWN */
 static int send_sig(pid_t where , int sig ) ;
 /* END FUNCTION-DECL send_sig LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/timeout.merge.c:2197 */
-#line 2197
+/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/timeout.merge.c:2193 */
+#line 2193
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) rand_r)(unsigned int *__seed ) ;
-/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/timeout.merge.c:2197 */
+/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/timeout.merge.c:2193 */
 
 /* BEGIN VARIABLE-DECL kill_after LOC=UNKNOWN */
 static double kill_after ;
 /* END VARIABLE-DECL kill_after LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/timeout.merge.c:2217 */
-#line 2217
+/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/timeout.merge.c:2213 */
+#line 2213
 extern char *( __attribute__((__warn_unused_result__)) imaxtostr)(intmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/timeout.merge.c:2217 */
+/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/timeout.merge.c:2213 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/timeout.merge.c:2293 */
-#line 2293
+/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/timeout.merge.c:2289 */
+#line 2289
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt)(int ___argc ,
                                                                                                char **___argv ,
                                                                                                char const   *__shortopts ) ;
-/* END FUNCTION-DECL-EXTERN getopt LOC=./src/timeout.merge.c:2293 */
+/* END FUNCTION-DECL-EXTERN getopt LOC=./src/timeout.merge.c:2289 */
 
-/* BEGIN TYPEDEF fd_mask LOC=./src/timeout.merge.c:2308 */
-#line 2308 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF fd_mask LOC=./src/timeout.merge.c:2304 */
+#line 2304 "./src/timeout.merge.c"
 typedef __fd_mask fd_mask;
-/* END TYPEDEF fd_mask LOC=./src/timeout.merge.c:2308 */
+/* END TYPEDEF fd_mask LOC=./src/timeout.merge.c:2304 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fmaf128(_Float128  , _Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/timeout.merge.c:2321 */
-#line 2321
-extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/timeout.merge.c:2321 */
-
-/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/timeout.merge.c:2317 */
+/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/timeout.merge.c:2317 */
 #line 2317
-extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/timeout.merge.c:2317 */
+extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
+/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/timeout.merge.c:2317 */
 
-/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/timeout.merge.c:2329 */
-#line 2329
+/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/timeout.merge.c:2313 */
+#line 2313
+extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
+/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/timeout.merge.c:2313 */
+
+/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/timeout.merge.c:2325 */
+#line 2325
 enum __anonenum_111643124___0 {
     POLL_IN___0 = 1,
     POLL_OUT___0 = 2,
@@ -8700,25 +8696,25 @@ enum __anonenum_111643124___0 {
     POLL_PRI___0 = 5,
     POLL_HUP___0 = 6
 } ;
-/* END ENUM __anonenum_111643124___0 LOC=./src/timeout.merge.c:2329 */
+/* END ENUM __anonenum_111643124___0 LOC=./src/timeout.merge.c:2325 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/timeout.merge.c:2361 */
-#line 2361
+/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/timeout.merge.c:2357 */
+#line 2357
 extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _exit LOC=./src/timeout.merge.c:2361 */
+/* END FUNCTION-DECL-EXTERN _exit LOC=./src/timeout.merge.c:2357 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_coshl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/timeout.merge.c:2344 */
-#line 2344
+/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/timeout.merge.c:2340 */
+#line 2340
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat)(int __fd ,
                                                                                               char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ,
                                                                                               int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/timeout.merge.c:2344 */
+/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/timeout.merge.c:2340 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2f128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -8730,53 +8726,53 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
    long long __builtin_llrintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_llrintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/timeout.merge.c:2379 */
-#line 2379
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/timeout.merge.c:2375 */
+#line 2375
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/timeout.merge.c:2379 */
+/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/timeout.merge.c:2375 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152___0 LOC=./src/timeout.merge.c:1348 */
 #line 1348
 enum __anonenum_451154152___0 ;
 /* END ENUM-DECL __anonenum_451154152___0 LOC=./src/timeout.merge.c:1348 */
 
-/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/timeout.merge.c:2392 */
-#line 2392
+/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/timeout.merge.c:2388 */
+#line 2388
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(struct timeval  const  *__delta ,
                                                                               struct timeval *__olddelta ) ;
-/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/timeout.merge.c:2392 */
+/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/timeout.merge.c:2388 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/timeout.merge.c:2388 */
-#line 2388
+/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/timeout.merge.c:2384 */
+#line 2384
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/timeout.merge.c:2388 */
+/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/timeout.merge.c:2384 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/timeout.merge.c:2410 */
-#line 2410
+/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/timeout.merge.c:2406 */
+#line 2406
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chown)(char const   *__file ,
                                                                                             __uid_t __owner ,
                                                                                             __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN chown LOC=./src/timeout.merge.c:2410 */
+/* END FUNCTION-DECL-EXTERN chown LOC=./src/timeout.merge.c:2406 */
 
-/* BEGIN STRUCT _xsave_hdr LOC=./src/timeout.merge.c:2421 */
-#line 2421 "./src/timeout.merge.c"
+/* BEGIN STRUCT _xsave_hdr LOC=./src/timeout.merge.c:2417 */
+#line 2417 "./src/timeout.merge.c"
 struct _xsave_hdr {
    __uint64_t xstate_bv ;
    __uint64_t __glibc_reserved1[2] ;
    __uint64_t __glibc_reserved2[5] ;
 };
-/* END STRUCT _xsave_hdr LOC=./src/timeout.merge.c:2421 */
+/* END STRUCT _xsave_hdr LOC=./src/timeout.merge.c:2417 */
 
 /* BEGIN FUNCTION-DECL emit_size_note LOC=UNKNOWN */
 __inline static void emit_size_note(void) ;
 /* END FUNCTION-DECL emit_size_note LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/timeout.merge.c:2442 */
-#line 2442
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/timeout.merge.c:2438 */
+#line 2438
 extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , char const   *arg ,
                               size_t argsize , struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/timeout.merge.c:2442 */
+/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/timeout.merge.c:2438 */
 
 /* BEGIN STRUCT-DECL _IO_wide_data LOC=./src/timeout.merge.c:840 */
 #line 840
@@ -8803,8 +8799,8 @@ struct _IO_wide_data ;
    _Float128 __builtin_copysignf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338 LOC=./src/timeout.merge.c:2513 */
-#line 2513
+/* BEGIN ENUM __anonenum_315186338 LOC=./src/timeout.merge.c:2509 */
+#line 2509
 enum __anonenum_315186338 {
     _SC_ARG_MAX = 0,
     _SC_CHILD_MAX = 1,
@@ -9024,7 +9020,7 @@ enum __anonenum_315186338 {
     _SC_MINSIGSTKSZ = 249,
     _SC_SIGSTKSZ = 250
 } ;
-/* END ENUM __anonenum_315186338 LOC=./src/timeout.merge.c:2513 */
+/* END ENUM __anonenum_315186338 LOC=./src/timeout.merge.c:2509 */
 
 /* BEGIN FUNCTION-DECL __builtin_unreachable LOC=BUILTIN */
 /* compiler builtin: 
@@ -9036,45 +9032,45 @@ enum __anonenum_315186338 {
    long __builtin_lroundf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/timeout.merge.c:2774 */
-#line 2774
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/timeout.merge.c:2770 */
+#line 2770
 extern char *quotearg_style(enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/timeout.merge.c:2774 */
+/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/timeout.merge.c:2770 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/timeout.merge.c:2778 */
-#line 2778
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/timeout.merge.c:2774 */
+#line 2774
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r_unlocked)(int category ,
                                                                         char *buf ,
                                                                         size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/timeout.merge.c:2778 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/timeout.merge.c:2774 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fminl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/timeout.merge.c:2834 */
-#line 2834
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/timeout.merge.c:2830 */
+#line 2830
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_major)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/timeout.merge.c:2834 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/timeout.merge.c:2830 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/timeout.merge.c:2850 */
-#line 2850
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/timeout.merge.c:2846 */
+#line 2846
 extern int ( __attribute__((__nonnull__(1))) rpl_mknod)(char const   *file , mode_t mode ,
                                                         dev_t dev ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/timeout.merge.c:2850 */
+/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/timeout.merge.c:2846 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/timeout.merge.c:2864 */
-#line 2864
+/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/timeout.merge.c:2860 */
+#line 2860
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clearenv)(void) ;
-/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/timeout.merge.c:2864 */
+/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/timeout.merge.c:2860 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/timeout.merge.c:2868 */
-#line 2868
+/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/timeout.merge.c:2864 */
+#line 2864
 extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size_t __maxlen ,
                                                    char const   * __restrict  __format ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/timeout.merge.c:2868 */
+/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/timeout.merge.c:2864 */
 
 /* BEGIN FUNCTION-DECL __builtin_floor LOC=BUILTIN */
 /* compiler builtin: 
@@ -9086,37 +9082,37 @@ extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size
    long double __builtin_infl(void) ;  */
 /* END FUNCTION-DECL __builtin_infl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/timeout.merge.c:2890 */
-#line 2890
+/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/timeout.merge.c:2886 */
+#line 2886
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/timeout.merge.c:2890 */
+/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/timeout.merge.c:2886 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/timeout.merge.c:2907 */
-#line 2907
+/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/timeout.merge.c:2903 */
+#line 2903
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoimax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                      __gwchar_t ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_wcstoimax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/timeout.merge.c:2907 */
+/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/timeout.merge.c:2903 */
 
 /* BEGIN FUNCTION-DECL __builtin_fprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_fprintf(void * , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_fprintf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_idtype_t_239471009 LOC=./src/timeout.merge.c:2927 */
-#line 2927
+/* BEGIN ENUM __anonenum_idtype_t_239471009 LOC=./src/timeout.merge.c:2923 */
+#line 2923
 enum __anonenum_idtype_t_239471009 {
     P_ALL = 0,
     P_PID = 1,
     P_PGID = 2,
     P_PIDFD = 3
 } ;
-/* END ENUM __anonenum_idtype_t_239471009 LOC=./src/timeout.merge.c:2927 */
+/* END ENUM __anonenum_idtype_t_239471009 LOC=./src/timeout.merge.c:2923 */
 
-/* BEGIN FUNCTION-DECL-EXTERN waitid LOC=./src/timeout.merge.c:2944 */
-#line 2944
+/* BEGIN FUNCTION-DECL-EXTERN waitid LOC=./src/timeout.merge.c:2940 */
+#line 2940
 extern int waitid(idtype_t __idtype , __id_t __id , siginfo_t *__infop , int __options ) ;
-/* END FUNCTION-DECL-EXTERN waitid LOC=./src/timeout.merge.c:2944 */
+/* END FUNCTION-DECL-EXTERN waitid LOC=./src/timeout.merge.c:2940 */
 
 /* BEGIN FUNCTION-DECL __builtin_labs LOC=BUILTIN */
 /* compiler builtin: 
@@ -9128,41 +9124,41 @@ extern int waitid(idtype_t __idtype , __id_t __id , siginfo_t *__infop , int __o
    int __builtin_strncmp(char const   * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/timeout.merge.c:2984 */
-#line 2984
+/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/timeout.merge.c:2980 */
+#line 2980
 extern int ( __attribute__((__nonnull__(2))) putc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/timeout.merge.c:2984 */
+/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/timeout.merge.c:2980 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/timeout.merge.c:3002 */
-#line 3002
+/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/timeout.merge.c:2998 */
+#line 2998
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
-/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/timeout.merge.c:3002 */
+/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/timeout.merge.c:2998 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nanf128(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/timeout.merge.c:3006 */
-#line 3006
+/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/timeout.merge.c:3002 */
+#line 3002
 extern int vscanf(char const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vscanf")  ;
-/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/timeout.merge.c:3006 */
+/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/timeout.merge.c:3002 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/timeout.merge.c:3037 */
-#line 3037
+/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/timeout.merge.c:3033 */
+#line 3033
 extern char **__environ ;
-/* END VARIABLE-DECL-EXTERN __environ LOC=./src/timeout.merge.c:3037 */
+/* END VARIABLE-DECL-EXTERN __environ LOC=./src/timeout.merge.c:3033 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/timeout.merge.c:3046 */
-#line 3046
+/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/timeout.merge.c:3042 */
+#line 3042
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getdtablesize)(void) ;
-/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/timeout.merge.c:3046 */
+/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/timeout.merge.c:3042 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/timeout.merge.c:3041 */
-#line 3041
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/timeout.merge.c:3037 */
+#line 3037
 extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int __suffixlen ,
                                                           int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/timeout.merge.c:3041 */
+/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/timeout.merge.c:3037 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 /* compiler builtin: 
@@ -9174,8 +9170,8 @@ extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int
 enum __anonenum_25645747 ;
 /* END ENUM-DECL __anonenum_25645747 LOC=./src/timeout.merge.c:1324 */
 
-/* BEGIN STRUCT stat LOC=./src/timeout.merge.c:3071 */
-#line 3071 "./src/timeout.merge.c"
+/* BEGIN STRUCT stat LOC=./src/timeout.merge.c:3067 */
+#line 3067 "./src/timeout.merge.c"
 struct stat {
    __dev_t st_dev ;
    __ino_t st_ino ;
@@ -9193,20 +9189,20 @@ struct stat {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat LOC=./src/timeout.merge.c:3071 */
+/* END STRUCT stat LOC=./src/timeout.merge.c:3067 */
 
-/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/timeout.merge.c:3127 */
-#line 3127
+/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/timeout.merge.c:3123 */
+#line 3123
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) swab)(void const   * __restrict  __from ,
                                                                                               void * __restrict  __to ,
                                                                                               ssize_t __n ) ;
-/* END FUNCTION-DECL-EXTERN swab LOC=./src/timeout.merge.c:3127 */
+/* END FUNCTION-DECL-EXTERN swab LOC=./src/timeout.merge.c:3123 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/timeout.merge.c:3104 */
-#line 3104
+/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/timeout.merge.c:3100 */
+#line 3100
 extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , int __c ,
                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/timeout.merge.c:3104 */
+/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/timeout.merge.c:3100 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -9219,8 +9215,8 @@ extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , i
    double __builtin_cimag(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimag LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/timeout.merge.c:3159 */
-#line 3159
+/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/timeout.merge.c:3155 */
+#line 3155
 enum __anonenum_640648963___0 {
     ILL_ILLOPC___0 = 1,
     ILL_ILLOPN___0 = 2,
@@ -9232,33 +9228,29 @@ enum __anonenum_640648963___0 {
     ILL_BADSTK___0 = 8,
     ILL_BADIADDR___0 = 9
 } ;
-/* END ENUM __anonenum_640648963___0 LOC=./src/timeout.merge.c:3159 */
+/* END ENUM __anonenum_640648963___0 LOC=./src/timeout.merge.c:3155 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_csinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_lWnh_argv LOC=UNKNOWN */
-char **_TIG_IZ_lWnh_argv ;
-/* END VARIABLE-DECL _TIG_IZ_lWnh_argv LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF __socklen_t LOC=./src/timeout.merge.c:3178 */
-#line 3178 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __socklen_t LOC=./src/timeout.merge.c:3174 */
+#line 3174 "./src/timeout.merge.c"
 typedef unsigned int __socklen_t;
-/* END TYPEDEF __socklen_t LOC=./src/timeout.merge.c:3178 */
+/* END TYPEDEF __socklen_t LOC=./src/timeout.merge.c:3174 */
 
-/* BEGIN TYPEDEF socklen_t LOC=./src/timeout.merge.c:3182 */
-#line 3182 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF socklen_t LOC=./src/timeout.merge.c:3178 */
+#line 3178 "./src/timeout.merge.c"
 typedef __socklen_t socklen_t;
-/* END TYPEDEF socklen_t LOC=./src/timeout.merge.c:3182 */
+/* END TYPEDEF socklen_t LOC=./src/timeout.merge.c:3178 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/timeout.merge.c:3186 */
-#line 3186
+/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/timeout.merge.c:3182 */
+#line 3182
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memmove)(void *__dest ,
                                                                                                   void const   *__src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memmove LOC=./src/timeout.merge.c:3186 */
+/* END FUNCTION-DECL-EXTERN memmove LOC=./src/timeout.merge.c:3182 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9275,90 +9267,86 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    int __builtin_flt_rounds(void) ;  */
 /* END FUNCTION-DECL __builtin_flt_rounds LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least8_t LOC=./src/timeout.merge.c:3299 */
-#line 3299 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __uint_least8_t LOC=./src/timeout.merge.c:3295 */
+#line 3295 "./src/timeout.merge.c"
 typedef __uint8_t __uint_least8_t;
-/* END TYPEDEF __uint_least8_t LOC=./src/timeout.merge.c:3299 */
+/* END TYPEDEF __uint_least8_t LOC=./src/timeout.merge.c:3295 */
 
-/* BEGIN TYPEDEF uint_least8_t LOC=./src/timeout.merge.c:3303 */
-#line 3303 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_least8_t LOC=./src/timeout.merge.c:3299 */
+#line 3299 "./src/timeout.merge.c"
 typedef __uint_least8_t uint_least8_t;
-/* END TYPEDEF uint_least8_t LOC=./src/timeout.merge.c:3303 */
+/* END TYPEDEF uint_least8_t LOC=./src/timeout.merge.c:3299 */
 
 /* BEGIN FUNCTION-DECL chld LOC=UNKNOWN */
 static void chld(int sig ) ;
 /* END FUNCTION-DECL chld LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/timeout.merge.c:3326 */
-#line 3326
+/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/timeout.merge.c:3322 */
+#line 3322
 extern size_t ( __attribute__((__nonnull__(4))) fwrite)(void const   * __restrict  __ptr ,
                                                         size_t __size , size_t __n ,
                                                         FILE * __restrict  __s ) ;
-/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/timeout.merge.c:3326 */
+/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/timeout.merge.c:3322 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/timeout.merge.c:3332 */
-#line 3332
+/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/timeout.merge.c:3328 */
+#line 3328
 extern int pselect(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
                    fd_set * __restrict  __exceptfds , struct timespec  const  * __restrict  __timeout ,
                    __sigset_t const   * __restrict  __sigmask ) ;
-/* END FUNCTION-DECL-EXTERN pselect LOC=./src/timeout.merge.c:3332 */
+/* END FUNCTION-DECL-EXTERN pselect LOC=./src/timeout.merge.c:3328 */
 
 /* BEGIN ENUM-DECL __anonenum_111643124___0 LOC=./src/timeout.merge.c:1188 */
 #line 1188
 enum __anonenum_111643124___0 ;
 /* END ENUM-DECL __anonenum_111643124___0 LOC=./src/timeout.merge.c:1188 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_envp ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF __le32 LOC=./src/timeout.merge.c:3393 */
-#line 3393 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __le32 LOC=./src/timeout.merge.c:3385 */
+#line 3385 "./src/timeout.merge.c"
 typedef __u32 __le32;
-/* END TYPEDEF __le32 LOC=./src/timeout.merge.c:3393 */
+/* END TYPEDEF __le32 LOC=./src/timeout.merge.c:3385 */
 
-/* BEGIN FUNCTION-DECL-EXTERN operand2sig LOC=./src/timeout.merge.c:3405 */
-#line 3405
+/* BEGIN FUNCTION-DECL-EXTERN operand2sig LOC=./src/timeout.merge.c:3397 */
+#line 3397
 extern int ( __attribute__((__nonnull__)) operand2sig)(char const   *operand ) ;
-/* END FUNCTION-DECL-EXTERN operand2sig LOC=./src/timeout.merge.c:3405 */
+/* END FUNCTION-DECL-EXTERN operand2sig LOC=./src/timeout.merge.c:3397 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/timeout.merge.c:3417 */
-#line 3417
+/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/timeout.merge.c:3409 */
+#line 3409
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) bzero)(void *__s ,
                                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bzero LOC=./src/timeout.merge.c:3417 */
+/* END FUNCTION-DECL-EXTERN bzero LOC=./src/timeout.merge.c:3409 */
 
-/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/timeout.merge.c:3413 */
-#line 3413
+/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/timeout.merge.c:3405 */
+#line 3405
 extern int usleep(__useconds_t __useconds ) ;
-/* END FUNCTION-DECL-EXTERN usleep LOC=./src/timeout.merge.c:3413 */
+/* END FUNCTION-DECL-EXTERN usleep LOC=./src/timeout.merge.c:3405 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/timeout.merge.c:3409 */
-#line 3409
+/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/timeout.merge.c:3401 */
+#line 3401
 extern int nanosleep(struct timespec  const  *__requested_time , struct timespec *__remaining ) ;
-/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/timeout.merge.c:3409 */
+/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/timeout.merge.c:3401 */
 
 /* BEGIN ENUM-DECL __rlimit_resource LOC=./src/timeout.merge.c:1056 */
 #line 1056
 enum __rlimit_resource ;
 /* END ENUM-DECL __rlimit_resource LOC=./src/timeout.merge.c:1056 */
 
-/* BEGIN TYPEDEF pthread_once_t LOC=./src/timeout.merge.c:3426 */
-#line 3426 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_once_t LOC=./src/timeout.merge.c:3418 */
+#line 3418 "./src/timeout.merge.c"
 typedef int pthread_once_t;
-/* END TYPEDEF pthread_once_t LOC=./src/timeout.merge.c:3426 */
+/* END TYPEDEF pthread_once_t LOC=./src/timeout.merge.c:3418 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/timeout.merge.c:3449 */
-#line 3449
+/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/timeout.merge.c:3441 */
+#line 3441
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/timeout.merge.c:3449 */
+/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/timeout.merge.c:3441 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/timeout.merge.c:3465 */
-#line 3465
+/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/timeout.merge.c:3457 */
+#line 3457
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) readahead)(int __fd ,
                                                                                       __off64_t __offset ,
                                                                                       size_t __count ) ;
-/* END FUNCTION-DECL-EXTERN readahead LOC=./src/timeout.merge.c:3465 */
+/* END FUNCTION-DECL-EXTERN readahead LOC=./src/timeout.merge.c:3457 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -9380,47 +9368,47 @@ extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) reada
 struct _xsave_hdr ;
 /* END STRUCT-DECL _xsave_hdr LOC=./src/timeout.merge.c:1468 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/timeout.merge.c:3507 */
-#line 3507
+/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/timeout.merge.c:3495 */
+#line 3495
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) posix_memalign)(void **__memptr ,
                                                                                                      size_t __alignment ,
                                                                                                      size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/timeout.merge.c:3507 */
+/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/timeout.merge.c:3495 */
 
 /* BEGIN FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_mul_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/timeout.merge.c:3518 */
-#line 3518 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/timeout.merge.c:3506 */
+#line 3506 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_rwlockattr_t_145707745 pthread_rwlockattr_t;
-/* END TYPEDEF pthread_rwlockattr_t LOC=./src/timeout.merge.c:3518 */
+/* END TYPEDEF pthread_rwlockattr_t LOC=./src/timeout.merge.c:3506 */
 
-/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/timeout.merge.c:3531 */
-#line 3531
+/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/timeout.merge.c:3519 */
+#line 3519
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) random)(void) ;
-/* END FUNCTION-DECL-EXTERN random LOC=./src/timeout.merge.c:3531 */
+/* END FUNCTION-DECL-EXTERN random LOC=./src/timeout.merge.c:3519 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/timeout.merge.c:3527 */
-#line 3527
+/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/timeout.merge.c:3515 */
+#line 3515
 extern int fcloseall(void) ;
-/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/timeout.merge.c:3527 */
+/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/timeout.merge.c:3515 */
 
-/* BEGIN TYPEDEF u_int16_t LOC=./src/timeout.merge.c:3539 */
-#line 3539 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_int16_t LOC=./src/timeout.merge.c:3527 */
+#line 3527 "./src/timeout.merge.c"
 typedef __uint16_t u_int16_t;
-/* END TYPEDEF u_int16_t LOC=./src/timeout.merge.c:3539 */
+/* END TYPEDEF u_int16_t LOC=./src/timeout.merge.c:3527 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/timeout.merge.c:3552 */
-#line 3552
+/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/timeout.merge.c:3540 */
+#line 3540
 extern void __error_alias(int __status , int __errnum , char const   *__format  , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/timeout.merge.c:3552 */
+/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/timeout.merge.c:3540 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/timeout.merge.c:3543 */
-#line 3543
+/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/timeout.merge.c:3531 */
+#line 3531
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) gettid)(void) ;
-/* END FUNCTION-DECL-EXTERN gettid LOC=./src/timeout.merge.c:3543 */
+/* END FUNCTION-DECL-EXTERN gettid LOC=./src/timeout.merge.c:3531 */
 
 /* BEGIN STRUCT-DECL sigaction LOC=./src/timeout.merge.c:1488 */
 #line 1488
@@ -9432,22 +9420,22 @@ struct sigaction ;
    void __builtin_memcpy_inline(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/timeout.merge.c:3566 */
-#line 3566
+/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/timeout.merge.c:3554 */
+#line 3554
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) memcmp)(void const   *__s1 ,
                                                                                                void const   *__s2 ,
                                                                                                size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/timeout.merge.c:3566 */
+/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/timeout.merge.c:3554 */
 
-/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/timeout.merge.c:3562 */
-#line 3562
+/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/timeout.merge.c:3550 */
+#line 3550
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) flockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/timeout.merge.c:3562 */
+/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/timeout.merge.c:3550 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/timeout.merge.c:3576 */
-#line 3576
+/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/timeout.merge.c:3564 */
+#line 3564
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) putenv)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN putenv LOC=./src/timeout.merge.c:3576 */
+/* END FUNCTION-DECL-EXTERN putenv LOC=./src/timeout.merge.c:3564 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9460,13 +9448,13 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 union pthread_attr_t ;
 /* END UNION-DECL pthread_attr_t LOC=./src/timeout.merge.c:972 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/timeout.merge.c:3595 */
-#line 3595
+/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/timeout.merge.c:3583 */
+#line 3583
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __leaf__)) strtol_l)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ,
                                                                                                   int __base ,
                                                                                                   locale_t __loc )  __asm__("__isoc23_strtol_l")  ;
-/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/timeout.merge.c:3595 */
+/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/timeout.merge.c:3583 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacoshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9492,18 +9480,18 @@ static char *command  ;
    void *__builtin_alloca_with_align(unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca_with_align LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/timeout.merge.c:3644 */
-#line 3644
+/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/timeout.merge.c:3632 */
+#line 3632
 extern void version_etc(FILE *stream , char const   *command_name , char const   *package ,
                         char const   *version  , ...)  __attribute__((__sentinel__(0))) ;
-/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/timeout.merge.c:3644 */
+/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/timeout.merge.c:3632 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/timeout.merge.c:3649 */
-#line 3649
+/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/timeout.merge.c:3637 */
+#line 3637
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) __mempcpy)(void * __restrict  __dest ,
                                                                                                     void const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/timeout.merge.c:3649 */
+/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/timeout.merge.c:3637 */
 
 /* BEGIN FUNCTION-DECL __builtin_csin LOC=BUILTIN */
 /* compiler builtin: 
@@ -9515,11 +9503,11 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    long double __builtin_hypotl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypotl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/timeout.merge.c:3686 */
-#line 3686
+/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/timeout.merge.c:3674 */
+#line 3674
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strpbrk)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/timeout.merge.c:3686 */
+/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/timeout.merge.c:3674 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9531,26 +9519,26 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
    float __builtin_erff(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/timeout.merge.c:3728 */
-#line 3728
+/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/timeout.merge.c:3716 */
+#line 3716
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) syncfs)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/timeout.merge.c:3728 */
+/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/timeout.merge.c:3716 */
 
-/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/timeout.merge.c:3742 */
-#line 3742 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/timeout.merge.c:3730 */
+#line 3730 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_barrierattr_t_951761806 pthread_barrierattr_t;
-/* END TYPEDEF pthread_barrierattr_t LOC=./src/timeout.merge.c:3742 */
+/* END TYPEDEF pthread_barrierattr_t LOC=./src/timeout.merge.c:3730 */
 
-/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/timeout.merge.c:3746 */
-#line 3746
+/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/timeout.merge.c:3734 */
+#line 3734
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) signal)(int __sig ,
                                                                                         void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN signal LOC=./src/timeout.merge.c:3746 */
+/* END FUNCTION-DECL-EXTERN signal LOC=./src/timeout.merge.c:3734 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/timeout.merge.c:3751 */
-#line 3751
+/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/timeout.merge.c:3739 */
+#line 3739
 extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN base_name LOC=./src/timeout.merge.c:3751 */
+/* END FUNCTION-DECL-EXTERN base_name LOC=./src/timeout.merge.c:3739 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmax LOC=BUILTIN */
 /* compiler builtin: 
@@ -9562,18 +9550,18 @@ extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__,
 struct dirent64 ;
 /* END STRUCT-DECL dirent64 LOC=./src/timeout.merge.c:1036 */
 
-/* BEGIN TYPEDEF __le64 LOC=./src/timeout.merge.c:3773 */
-#line 3773 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __le64 LOC=./src/timeout.merge.c:3761 */
+#line 3761 "./src/timeout.merge.c"
 typedef __u64 __le64;
-/* END TYPEDEF __le64 LOC=./src/timeout.merge.c:3773 */
+/* END TYPEDEF __le64 LOC=./src/timeout.merge.c:3761 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/timeout.merge.c:3785 */
-#line 3785
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/timeout.merge.c:3773 */
+#line 3773
 extern char const   *quoting_style_args[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/timeout.merge.c:3785 */
+/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/timeout.merge.c:3773 */
 
-/* BEGIN STRUCT dirent LOC=./src/timeout.merge.c:3812 */
-#line 3812 "./src/timeout.merge.c"
+/* BEGIN STRUCT dirent LOC=./src/timeout.merge.c:3800 */
+#line 3800 "./src/timeout.merge.c"
 struct dirent {
    __ino_t d_ino ;
    __off_t d_off ;
@@ -9581,155 +9569,155 @@ struct dirent {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent LOC=./src/timeout.merge.c:3812 */
+/* END STRUCT dirent LOC=./src/timeout.merge.c:3800 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/timeout.merge.c:3827 */
-#line 3827
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/timeout.merge.c:3815 */
+#line 3815
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/timeout.merge.c:3827 */
+/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/timeout.merge.c:3815 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_atanf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/timeout.merge.c:3933 */
-#line 3933
+/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/timeout.merge.c:3921 */
+#line 3921
 extern void ( __attribute__((__nonnull__(1))) rewind)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN rewind LOC=./src/timeout.merge.c:3933 */
+/* END FUNCTION-DECL-EXTERN rewind LOC=./src/timeout.merge.c:3921 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/timeout.merge.c:3937 */
-#line 3937
+/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/timeout.merge.c:3925 */
+#line 3925
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN localtime LOC=./src/timeout.merge.c:3937 */
+/* END FUNCTION-DECL-EXTERN localtime LOC=./src/timeout.merge.c:3925 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/timeout.merge.c:3941 */
-#line 3941
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/timeout.merge.c:3929 */
+#line 3929
 extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __stream ,
                                                         fpos64_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/timeout.merge.c:3941 */
+/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/timeout.merge.c:3929 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/timeout.merge.c:3946 */
-#line 3946
+/* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/timeout.merge.c:3934 */
+#line 3934
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchmod)(int __fd ,
                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/timeout.merge.c:3946 */
+/* END FUNCTION-DECL-EXTERN fchmod LOC=./src/timeout.merge.c:3934 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/timeout.merge.c:3962 */
-#line 3962
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm LOC=./src/timeout.merge.c:3950 */
+#line 3950
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2), __leaf__)) strxfrm)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/timeout.merge.c:3962 */
+/* END FUNCTION-DECL-EXTERN strxfrm LOC=./src/timeout.merge.c:3950 */
 
-/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/timeout.merge.c:3968 */
-#line 3968 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF cookie_io_functions_t LOC=./src/timeout.merge.c:3956 */
+#line 3956 "./src/timeout.merge.c"
 typedef struct _IO_cookie_io_functions_t cookie_io_functions_t;
-/* END TYPEDEF cookie_io_functions_t LOC=./src/timeout.merge.c:3968 */
+/* END TYPEDEF cookie_io_functions_t LOC=./src/timeout.merge.c:3956 */
 
-/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/timeout.merge.c:3992 */
-#line 3992
+/* BEGIN FUNCTION-DECL-EXTERN kill LOC=./src/timeout.merge.c:3980 */
+#line 3980
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) kill)(__pid_t __pid ,
                                                                            int __sig ) ;
-/* END FUNCTION-DECL-EXTERN kill LOC=./src/timeout.merge.c:3992 */
+/* END FUNCTION-DECL-EXTERN kill LOC=./src/timeout.merge.c:3980 */
 
-/* BEGIN FUNCTION-DECL dcpgettext_expr LOC=./src/timeout.merge.c:3983 */
-#line 3983
+/* BEGIN FUNCTION-DECL dcpgettext_expr LOC=./src/timeout.merge.c:3971 */
+#line 3971
 __inline static char const   *dcpgettext_expr(char const   *domain , char const   *msgctxt ,
                                               char const   *msgid , int category ) ;
-/* END FUNCTION-DECL dcpgettext_expr LOC=./src/timeout.merge.c:3983 */
+/* END FUNCTION-DECL dcpgettext_expr LOC=./src/timeout.merge.c:3971 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/timeout.merge.c:3978 */
-#line 3978
+/* BEGIN FUNCTION-DECL-EXTERN sigaltstack LOC=./src/timeout.merge.c:3966 */
+#line 3966
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaltstack)(stack_t const   * __restrict  __ss ,
                                                                                   stack_t * __restrict  __oss ) ;
-/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/timeout.merge.c:3978 */
+/* END FUNCTION-DECL-EXTERN sigaltstack LOC=./src/timeout.merge.c:3966 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/timeout.merge.c:3997 */
-#line 3997
+/* BEGIN FUNCTION-DECL-EXTERN execve LOC=./src/timeout.merge.c:3985 */
+#line 3985
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execve)(char const   *__path ,
                                                                                                char **__argv ,
                                                                                                char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN execve LOC=./src/timeout.merge.c:3997 */
+/* END FUNCTION-DECL-EXTERN execve LOC=./src/timeout.merge.c:3985 */
 
 /* BEGIN FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_cabs(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s16 LOC=./src/timeout.merge.c:4018 */
-#line 4018 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __s16 LOC=./src/timeout.merge.c:4006 */
+#line 4006 "./src/timeout.merge.c"
 typedef short __s16;
-/* END TYPEDEF __s16 LOC=./src/timeout.merge.c:4018 */
+/* END TYPEDEF __s16 LOC=./src/timeout.merge.c:4006 */
 
-/* BEGIN TYPEDEF pthread_cond_t LOC=./src/timeout.merge.c:4022 */
-#line 4022 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_cond_t LOC=./src/timeout.merge.c:4010 */
+#line 4010 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_cond_t_951761805 pthread_cond_t;
-/* END TYPEDEF pthread_cond_t LOC=./src/timeout.merge.c:4022 */
+/* END TYPEDEF pthread_cond_t LOC=./src/timeout.merge.c:4010 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/timeout.merge.c:4040 */
-#line 4040
+/* BEGIN VARIABLE-DECL-EXTERN stderr LOC=./src/timeout.merge.c:4028 */
+#line 4028
 extern FILE *stderr ;
-/* END VARIABLE-DECL-EXTERN stderr LOC=./src/timeout.merge.c:4040 */
+/* END VARIABLE-DECL-EXTERN stderr LOC=./src/timeout.merge.c:4028 */
 
-/* BEGIN FUNCTION-DECL to_uchar LOC=./src/timeout.merge.c:4073 */
-#line 4073
+/* BEGIN FUNCTION-DECL to_uchar LOC=./src/timeout.merge.c:4061 */
+#line 4061
 __inline static unsigned char to_uchar(char ch ) ;
-/* END FUNCTION-DECL to_uchar LOC=./src/timeout.merge.c:4073 */
+/* END FUNCTION-DECL to_uchar LOC=./src/timeout.merge.c:4061 */
 
-/* BEGIN TYPEDEF suseconds_t LOC=./src/timeout.merge.c:4102 */
-#line 4102 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF suseconds_t LOC=./src/timeout.merge.c:4090 */
+#line 4090 "./src/timeout.merge.c"
 typedef __suseconds_t suseconds_t;
-/* END TYPEDEF suseconds_t LOC=./src/timeout.merge.c:4102 */
+/* END TYPEDEF suseconds_t LOC=./src/timeout.merge.c:4090 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/timeout.merge.c:4117 */
-#line 4117
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/timeout.merge.c:4105 */
+#line 4105
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries64)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                             __off64_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/timeout.merge.c:4117 */
+/* END FUNCTION-DECL-EXTERN getdirentries64 LOC=./src/timeout.merge.c:4105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/timeout.merge.c:4141 */
-#line 4141
+/* BEGIN FUNCTION-DECL-EXTERN srandom_r LOC=./src/timeout.merge.c:4129 */
+#line 4129
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srandom_r)(unsigned int __seed ,
                                                                                                 struct random_data *__buf ) ;
-/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/timeout.merge.c:4141 */
+/* END FUNCTION-DECL-EXTERN srandom_r LOC=./src/timeout.merge.c:4129 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/timeout.merge.c:4136 */
-#line 4136
+/* BEGIN FUNCTION-DECL-EXTERN strcspn LOC=./src/timeout.merge.c:4124 */
+#line 4124
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strcspn)(char const   *__s ,
                                                                                                    char const   *__reject )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/timeout.merge.c:4136 */
+/* END FUNCTION-DECL-EXTERN strcspn LOC=./src/timeout.merge.c:4124 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundf LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/timeout.merge.c:4205 */
-#line 4205
+/* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=./src/timeout.merge.c:4193 */
+#line 4193
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcgettext)(char const   *__domainname ,
                                                                                   char const   *__msgid ,
                                                                                   int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/timeout.merge.c:4205 */
+/* END FUNCTION-DECL-EXTERN dcgettext LOC=./src/timeout.merge.c:4193 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/timeout.merge.c:4215 */
-#line 4215
+/* BEGIN FUNCTION-DECL-EXTERN timer_create LOC=./src/timeout.merge.c:4203 */
+#line 4203
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_create)(clockid_t __clock_id ,
                                                                                    struct sigevent * __restrict  __evp ,
                                                                                    timer_t * __restrict  __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/timeout.merge.c:4215 */
+/* END FUNCTION-DECL-EXTERN timer_create LOC=./src/timeout.merge.c:4203 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/timeout.merge.c:4221 */
-#line 4221
+/* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=./src/timeout.merge.c:4209 */
+#line 4209
 extern int posix_openpt(int __oflag ) ;
-/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/timeout.merge.c:4221 */
+/* END FUNCTION-DECL-EXTERN posix_openpt LOC=./src/timeout.merge.c:4209 */
 
-/* BEGIN ENUM __anonenum_111643124 LOC=./src/timeout.merge.c:4225 */
-#line 4225
+/* BEGIN ENUM __anonenum_111643124 LOC=./src/timeout.merge.c:4213 */
+#line 4213
 enum __anonenum_111643124 {
     POLL_IN = 1,
     POLL_OUT = 2,
@@ -9738,20 +9726,20 @@ enum __anonenum_111643124 {
     POLL_PRI = 5,
     POLL_HUP = 6
 } ;
-/* END ENUM __anonenum_111643124 LOC=./src/timeout.merge.c:4225 */
+/* END ENUM __anonenum_111643124 LOC=./src/timeout.merge.c:4213 */
 
-/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/timeout.merge.c:4236 */
-#line 4236 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_rwlock_t LOC=./src/timeout.merge.c:4224 */
+#line 4224 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_rwlock_t_656928968 pthread_rwlock_t;
-/* END TYPEDEF pthread_rwlock_t LOC=./src/timeout.merge.c:4236 */
+/* END TYPEDEF pthread_rwlock_t LOC=./src/timeout.merge.c:4224 */
 
-/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/timeout.merge.c:4244 */
-#line 4244
+/* BEGIN VARIABLE-DECL-EXTERN Version LOC=./src/timeout.merge.c:4232 */
+#line 4232
 extern char const   *Version ;
-/* END VARIABLE-DECL-EXTERN Version LOC=./src/timeout.merge.c:4244 */
+/* END VARIABLE-DECL-EXTERN Version LOC=./src/timeout.merge.c:4232 */
 
-/* BEGIN ENUM __anonenum_23175539___0 LOC=./src/timeout.merge.c:4276 */
-#line 4276
+/* BEGIN ENUM __anonenum_23175539___0 LOC=./src/timeout.merge.c:4264 */
+#line 4264
 enum __anonenum_23175539___0 {
     CLD_EXITED___0 = 1,
     CLD_KILLED___0 = 2,
@@ -9760,7 +9748,7 @@ enum __anonenum_23175539___0 {
     CLD_STOPPED___0 = 5,
     CLD_CONTINUED___0 = 6
 } ;
-/* END ENUM __anonenum_23175539___0 LOC=./src/timeout.merge.c:4276 */
+/* END ENUM __anonenum_23175539___0 LOC=./src/timeout.merge.c:4264 */
 
 /* BEGIN FUNCTION-DECL __builtin_lrintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9772,52 +9760,52 @@ enum __anonenum_23175539___0 {
    float __builtin_tgammaf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammaf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/timeout.merge.c:4287 */
-#line 4287
+/* BEGIN FUNCTION-DECL-EXTERN vmsplice LOC=./src/timeout.merge.c:4275 */
+#line 4275
 extern __ssize_t vmsplice(int __fdout , struct iovec  const  *__iov , size_t __count ,
                           unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/timeout.merge.c:4287 */
+/* END FUNCTION-DECL-EXTERN vmsplice LOC=./src/timeout.merge.c:4275 */
 
 /* BEGIN FUNCTION-DECL __builtin_assume_aligned LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_assume_aligned(void const   * , unsigned long long   , ...) ;  */
 /* END FUNCTION-DECL __builtin_assume_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/timeout.merge.c:4312 */
-#line 4312
+/* BEGIN FUNCTION-DECL-EXTERN strncpy LOC=./src/timeout.merge.c:4300 */
+#line 4300
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/timeout.merge.c:4312 */
+/* END FUNCTION-DECL-EXTERN strncpy LOC=./src/timeout.merge.c:4300 */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/timeout.merge.c:4347 */
-#line 4347
+/* BEGIN VARIABLE-DECL-EXTERN program_name LOC=./src/timeout.merge.c:4335 */
+#line 4335
 extern char const   *program_name ;
-/* END VARIABLE-DECL-EXTERN program_name LOC=./src/timeout.merge.c:4347 */
+/* END VARIABLE-DECL-EXTERN program_name LOC=./src/timeout.merge.c:4335 */
 
-/* BEGIN TYPEDEF __caddr_t LOC=./src/timeout.merge.c:4358 */
-#line 4358 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __caddr_t LOC=./src/timeout.merge.c:4346 */
+#line 4346 "./src/timeout.merge.c"
 typedef char *__caddr_t;
-/* END TYPEDEF __caddr_t LOC=./src/timeout.merge.c:4358 */
+/* END TYPEDEF __caddr_t LOC=./src/timeout.merge.c:4346 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/timeout.merge.c:4362 */
-#line 4362
+/* BEGIN FUNCTION-DECL-EXTERN open LOC=./src/timeout.merge.c:4350 */
+#line 4350
 extern int ( __attribute__((__nonnull__(1))) open)(char const   *__file , int __oflag 
                                                    , ...) ;
-/* END FUNCTION-DECL-EXTERN open LOC=./src/timeout.merge.c:4362 */
+/* END FUNCTION-DECL-EXTERN open LOC=./src/timeout.merge.c:4350 */
 
-/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/timeout.merge.c:4367 */
-#line 4367
+/* BEGIN FUNCTION-DECL-EXTERN profil LOC=./src/timeout.merge.c:4355 */
+#line 4355
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) profil)(unsigned short *__sample_buffer ,
                                                                                              size_t __size ,
                                                                                              size_t __offset ,
                                                                                              unsigned int __scale ) ;
-/* END FUNCTION-DECL-EXTERN profil LOC=./src/timeout.merge.c:4367 */
+/* END FUNCTION-DECL-EXTERN profil LOC=./src/timeout.merge.c:4355 */
 
-/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/timeout.merge.c:4387 */
-#line 4387
+/* BEGIN FUNCTION-DECL-EXTERN offtostr LOC=./src/timeout.merge.c:4375 */
+#line 4375
 extern char *( __attribute__((__warn_unused_result__)) offtostr)(off_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/timeout.merge.c:4387 */
+/* END FUNCTION-DECL-EXTERN offtostr LOC=./src/timeout.merge.c:4375 */
 
 /* BEGIN FUNCTION-DECL __builtin_conj LOC=BUILTIN */
 /* compiler builtin: 
@@ -9834,17 +9822,17 @@ struct __anonstruct__kill_244518854 ;
    float __builtin_fminf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/timeout.merge.c:4421 */
-#line 4421
+/* BEGIN FUNCTION-DECL-EXTERN strtof_l LOC=./src/timeout.merge.c:4409 */
+#line 4409
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof_l)(char const   * __restrict  __nptr ,
                                                                                                    char ** __restrict  __endptr ,
                                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/timeout.merge.c:4421 */
+/* END FUNCTION-DECL-EXTERN strtof_l LOC=./src/timeout.merge.c:4409 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/timeout.merge.c:4436 */
-#line 4436
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/timeout.merge.c:4424 */
+#line 4424
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmin)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/timeout.merge.c:4436 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmin LOC=./src/timeout.merge.c:4424 */
 
 /* BEGIN FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -9852,88 +9840,84 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_curr
                                 __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsprintf_chk LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/timeout.merge.c:4446 */
-#line 4446
+/* BEGIN VARIABLE-DECL-EXTERN daylight LOC=./src/timeout.merge.c:4434 */
+#line 4434
 extern int daylight ;
-/* END VARIABLE-DECL-EXTERN daylight LOC=./src/timeout.merge.c:4446 */
+/* END VARIABLE-DECL-EXTERN daylight LOC=./src/timeout.merge.c:4434 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/timeout.merge.c:4450 */
-#line 4450
+/* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=./src/timeout.merge.c:4438 */
+#line 4438
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) lrand48)(void) ;
-/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/timeout.merge.c:4450 */
+/* END FUNCTION-DECL-EXTERN lrand48 LOC=./src/timeout.merge.c:4438 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_atan2f(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/timeout.merge.c:4472 */
-#line 4472
+/* BEGIN FUNCTION-DECL-EXTERN __assert LOC=./src/timeout.merge.c:4460 */
+#line 4460
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert)(char const   *__assertion ,
                                                                                               char const   *__file ,
                                                                                               int __line )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert LOC=./src/timeout.merge.c:4472 */
+/* END FUNCTION-DECL-EXTERN __assert LOC=./src/timeout.merge.c:4460 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/timeout.merge.c:4478 */
-#line 4478
+/* BEGIN FUNCTION-DECL-EXTERN sync_file_range LOC=./src/timeout.merge.c:4466 */
+#line 4466
 extern int sync_file_range(int __fd , __off64_t __offset , __off64_t __count , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/timeout.merge.c:4478 */
+/* END FUNCTION-DECL-EXTERN sync_file_range LOC=./src/timeout.merge.c:4466 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_lWnh_envp LOC=UNKNOWN */
-char **_TIG_IZ_lWnh_envp ;
-/* END VARIABLE-DECL _TIG_IZ_lWnh_envp LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/timeout.merge.c:4491 */
-#line 4491
+/* BEGIN FUNCTION-DECL-EXTERN alphasort64 LOC=./src/timeout.merge.c:4479 */
+#line 4479
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) alphasort64)(struct dirent64  const  **__e1 ,
                                                                                                     struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/timeout.merge.c:4491 */
+/* END FUNCTION-DECL-EXTERN alphasort64 LOC=./src/timeout.merge.c:4479 */
 
 /* BEGIN STRUCT-DECL itimerval LOC=./src/timeout.merge.c:1208 */
 #line 1208
 struct itimerval ;
 /* END STRUCT-DECL itimerval LOC=./src/timeout.merge.c:1208 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/timeout.merge.c:4554 */
-#line 4554
+/* BEGIN FUNCTION-DECL-EXTERN tee LOC=./src/timeout.merge.c:4542 */
+#line 4542
 extern __ssize_t tee(int __fdin , int __fdout , size_t __len , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN tee LOC=./src/timeout.merge.c:4554 */
+/* END FUNCTION-DECL-EXTERN tee LOC=./src/timeout.merge.c:4542 */
 
 /* BEGIN VARIABLE-DECL long_options LOC=UNKNOWN */
 static struct option long_options[8] ;
 /* END VARIABLE-DECL long_options LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF int_least32_t LOC=./src/timeout.merge.c:4584 */
-#line 4584 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int_least32_t LOC=./src/timeout.merge.c:4572 */
+#line 4572 "./src/timeout.merge.c"
 typedef __int_least32_t int_least32_t;
-/* END TYPEDEF int_least32_t LOC=./src/timeout.merge.c:4584 */
+/* END TYPEDEF int_least32_t LOC=./src/timeout.merge.c:4572 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_truncf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast64_t LOC=./src/timeout.merge.c:4593 */
-#line 4593 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_fast64_t LOC=./src/timeout.merge.c:4581 */
+#line 4581 "./src/timeout.merge.c"
 typedef unsigned long uint_fast64_t;
-/* END TYPEDEF uint_fast64_t LOC=./src/timeout.merge.c:4593 */
+/* END TYPEDEF uint_fast64_t LOC=./src/timeout.merge.c:4581 */
 
 /* BEGIN FUNCTION-DECL __builtin_index LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_index(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_index LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/timeout.merge.c:4602 */
-#line 4602
+/* BEGIN FUNCTION-DECL-EXTERN lockf64 LOC=./src/timeout.merge.c:4590 */
+#line 4590
 extern int lockf64(int __fd , int __cmd , __off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/timeout.merge.c:4602 */
+/* END FUNCTION-DECL-EXTERN lockf64 LOC=./src/timeout.merge.c:4590 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/timeout.merge.c:4615 */
-#line 4615
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/timeout.merge.c:4603 */
+#line 4603
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/timeout.merge.c:4615 */
+/* END FUNCTION-DECL-EXTERN strtof64x_l LOC=./src/timeout.merge.c:4603 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -9945,22 +9929,22 @@ __leaf__)) strtof64x_l)(char const   * __restrict  __nptr , char ** __restrict  
    float __builtin_frexpf(float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/timeout.merge.c:4640 */
-#line 4640
+/* BEGIN FUNCTION-DECL-EXTERN initstate LOC=./src/timeout.merge.c:4628 */
+#line 4628
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) initstate)(unsigned int __seed ,
                                                                                                   char *__statebuf ,
                                                                                                   size_t __statelen ) ;
-/* END FUNCTION-DECL-EXTERN initstate LOC=./src/timeout.merge.c:4640 */
+/* END FUNCTION-DECL-EXTERN initstate LOC=./src/timeout.merge.c:4628 */
 
-/* BEGIN TYPEDEF gid_t LOC=./src/timeout.merge.c:4651 */
-#line 4651 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF gid_t LOC=./src/timeout.merge.c:4639 */
+#line 4639 "./src/timeout.merge.c"
 typedef __gid_t gid_t;
-/* END TYPEDEF gid_t LOC=./src/timeout.merge.c:4651 */
+/* END TYPEDEF gid_t LOC=./src/timeout.merge.c:4639 */
 
-/* BEGIN FUNCTION-DECL chownat LOC=./src/timeout.merge.c:4659 */
-#line 4659
+/* BEGIN FUNCTION-DECL chownat LOC=./src/timeout.merge.c:4647 */
+#line 4647
 __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
-/* END FUNCTION-DECL chownat LOC=./src/timeout.merge.c:4659 */
+/* END FUNCTION-DECL chownat LOC=./src/timeout.merge.c:4647 */
 
 /* BEGIN ENUM-DECL __anonenum_513775621 LOC=./src/timeout.merge.c:1080 */
 #line 1080
@@ -9972,81 +9956,81 @@ enum __anonenum_513775621 ;
    _Bool __builtin_ssub_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_ssub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/timeout.merge.c:4667 */
-#line 4667
+/* BEGIN FUNCTION-DECL-EXTERN getresuid LOC=./src/timeout.merge.c:4655 */
+#line 4655
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresuid)(__uid_t *__ruid ,
                                                                                 __uid_t *__euid ,
                                                                                 __uid_t *__suid ) ;
-/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/timeout.merge.c:4667 */
+/* END FUNCTION-DECL-EXTERN getresuid LOC=./src/timeout.merge.c:4655 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/timeout.merge.c:4678 */
-#line 4678
+/* BEGIN FUNCTION-DECL-EXTERN fstat LOC=./src/timeout.merge.c:4666 */
+#line 4666
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat)(int __fd ,
                                                                                             struct stat *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat LOC=./src/timeout.merge.c:4678 */
+/* END FUNCTION-DECL-EXTERN fstat LOC=./src/timeout.merge.c:4666 */
 
-/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/timeout.merge.c:4683 */
-#line 4683 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_loff_t LOC=./src/timeout.merge.c:4671 */
+#line 4671 "./src/timeout.merge.c"
 typedef long long __kernel_loff_t;
-/* END TYPEDEF __kernel_loff_t LOC=./src/timeout.merge.c:4683 */
+/* END TYPEDEF __kernel_loff_t LOC=./src/timeout.merge.c:4671 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/timeout.merge.c:4687 */
-#line 4687
+/* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=./src/timeout.merge.c:4675 */
+#line 4675
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random)(void) ;
-/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/timeout.merge.c:4687 */
+/* END FUNCTION-DECL-EXTERN arc4random LOC=./src/timeout.merge.c:4675 */
 
 /* BEGIN FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lrint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lrint LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/timeout.merge.c:4737 */
-#line 4737
+/* BEGIN FUNCTION-DECL-EXTERN quick_exit LOC=./src/timeout.merge.c:4725 */
+#line 4725
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) quick_exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/timeout.merge.c:4737 */
+/* END FUNCTION-DECL-EXTERN quick_exit LOC=./src/timeout.merge.c:4725 */
 
-/* BEGIN TYPEDEF u_int8_t LOC=./src/timeout.merge.c:4763 */
-#line 4763 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_int8_t LOC=./src/timeout.merge.c:4755 */
+#line 4755 "./src/timeout.merge.c"
 typedef __uint8_t u_int8_t;
-/* END TYPEDEF u_int8_t LOC=./src/timeout.merge.c:4763 */
+/* END TYPEDEF u_int8_t LOC=./src/timeout.merge.c:4755 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/timeout.merge.c:4767 */
-#line 4767
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32x LOC=./src/timeout.merge.c:4759 */
+#line 4759
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/timeout.merge.c:4767 */
+/* END FUNCTION-DECL-EXTERN strfromf32x LOC=./src/timeout.merge.c:4759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/timeout.merge.c:4778 */
-#line 4778
+/* BEGIN FUNCTION-DECL-EXTERN scandirat64 LOC=./src/timeout.merge.c:4770 */
+#line 4770
 extern int ( __attribute__((__nonnull__(2,3))) scandirat64)(int __dfd , char const   * __restrict  __dir ,
                                                             struct dirent64 *** __restrict  __namelist ,
                                                             int (*__selector)(struct dirent64  const  * ) ,
                                                             int (*__cmp)(struct dirent64  const  ** ,
                                                                          struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/timeout.merge.c:4778 */
+/* END FUNCTION-DECL-EXTERN scandirat64 LOC=./src/timeout.merge.c:4770 */
 
-/* BEGIN TYPEDEF __quad_t LOC=./src/timeout.merge.c:4786 */
-#line 4786 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __quad_t LOC=./src/timeout.merge.c:4778 */
+#line 4778 "./src/timeout.merge.c"
 typedef long __quad_t;
-/* END TYPEDEF __quad_t LOC=./src/timeout.merge.c:4786 */
+/* END TYPEDEF __quad_t LOC=./src/timeout.merge.c:4778 */
 
-/* BEGIN TYPEDEF quad_t LOC=./src/timeout.merge.c:4790 */
-#line 4790 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF quad_t LOC=./src/timeout.merge.c:4782 */
+#line 4782 "./src/timeout.merge.c"
 typedef __quad_t quad_t;
-/* END TYPEDEF quad_t LOC=./src/timeout.merge.c:4790 */
+/* END TYPEDEF quad_t LOC=./src/timeout.merge.c:4782 */
 
-/* BEGIN TYPEDEF id_t LOC=./src/timeout.merge.c:4803 */
-#line 4803 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF id_t LOC=./src/timeout.merge.c:4795 */
+#line 4795 "./src/timeout.merge.c"
 typedef __id_t id_t;
-/* END TYPEDEF id_t LOC=./src/timeout.merge.c:4803 */
+/* END TYPEDEF id_t LOC=./src/timeout.merge.c:4795 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpriority LOC=./src/timeout.merge.c:4807 */
-#line 4807
+/* BEGIN FUNCTION-DECL-EXTERN getpriority LOC=./src/timeout.merge.c:4799 */
+#line 4799
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getpriority)(__priority_which_t __which ,
                                                                                   id_t __who ) ;
-/* END FUNCTION-DECL-EXTERN getpriority LOC=./src/timeout.merge.c:4807 */
+/* END FUNCTION-DECL-EXTERN getpriority LOC=./src/timeout.merge.c:4799 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10058,65 +10042,65 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getpriority
    _Complex long double __builtin_cexpl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/timeout.merge.c:4831 */
-#line 4831
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/timeout.merge.c:4823 */
+#line 4823
 extern int set_quoting_flags(struct quoting_options *o , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/timeout.merge.c:4831 */
+/* END FUNCTION-DECL-EXTERN set_quoting_flags LOC=./src/timeout.merge.c:4823 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/timeout.merge.c:4840 */
-#line 4840
+/* BEGIN FUNCTION-DECL-EXTERN rpl_time LOC=./src/timeout.merge.c:4832 */
+#line 4832
 extern time_t rpl_time(time_t *__tp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/timeout.merge.c:4840 */
+/* END FUNCTION-DECL-EXTERN rpl_time LOC=./src/timeout.merge.c:4832 */
 
-/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/timeout.merge.c:4848 */
-#line 4848 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_mqd_t LOC=./src/timeout.merge.c:4840 */
+#line 4840 "./src/timeout.merge.c"
 typedef int __kernel_mqd_t;
-/* END TYPEDEF __kernel_mqd_t LOC=./src/timeout.merge.c:4848 */
+/* END TYPEDEF __kernel_mqd_t LOC=./src/timeout.merge.c:4840 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fmaf16(_Float16  , _Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf16 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/timeout.merge.c:4861 */
-#line 4861 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/timeout.merge.c:4853 */
+#line 4853 "./src/timeout.merge.c"
 union __anonunion_pthread_mutexattr_t_488594144 {
    char __size[4] ;
    int __align ;
 };
-/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/timeout.merge.c:4861 */
+/* END UNION __anonunion_pthread_mutexattr_t_488594144 LOC=./src/timeout.merge.c:4853 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/timeout.merge.c:4868 */
-#line 4868
+/* BEGIN FUNCTION-DECL-EXTERN setpgid LOC=./src/timeout.merge.c:4860 */
+#line 4860
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgid)(__pid_t __pid ,
                                                                               __pid_t __pgid ) ;
-/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/timeout.merge.c:4868 */
+/* END FUNCTION-DECL-EXTERN setpgid LOC=./src/timeout.merge.c:4860 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/timeout.merge.c:4873 */
-#line 4873
+/* BEGIN FUNCTION-DECL-EXTERN pipe LOC=./src/timeout.merge.c:4865 */
+#line 4865
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pipe)(int *__pipedes ) ;
-/* END FUNCTION-DECL-EXTERN pipe LOC=./src/timeout.merge.c:4873 */
+/* END FUNCTION-DECL-EXTERN pipe LOC=./src/timeout.merge.c:4865 */
 
-/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/timeout.merge.c:4877 */
-#line 4877
+/* BEGIN FUNCTION-DECL-EXTERN initstate_r LOC=./src/timeout.merge.c:4869 */
+#line 4869
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __leaf__)) initstate_r)(unsigned int __seed ,
                                                                                                     char * __restrict  __statebuf ,
                                                                                                     size_t __statelen ,
                                                                                                     struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/timeout.merge.c:4877 */
+/* END FUNCTION-DECL-EXTERN initstate_r LOC=./src/timeout.merge.c:4869 */
 
 /* BEGIN FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_inf(void) ;  */
 /* END FUNCTION-DECL __builtin_inf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/timeout.merge.c:4907 */
-#line 4907
+/* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=./src/timeout.merge.c:4899 */
+#line 4899
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/timeout.merge.c:4907 */
+/* END FUNCTION-DECL-EXTERN strfromf LOC=./src/timeout.merge.c:4899 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff LOC=BUILTIN */
 /* compiler builtin: 
@@ -10143,45 +10127,49 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
 enum __anonenum_875524036___0 ;
 /* END ENUM-DECL __anonenum_875524036___0 LOC=./src/timeout.merge.c:1372 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/timeout.merge.c:4969 */
-#line 4969
+/* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/timeout.merge.c:4961 */
+#line 4961
 extern void close_stdin_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/timeout.merge.c:4969 */
+/* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./src/timeout.merge.c:4961 */
 
 /* BEGIN FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_convertvector(...) ;  */
 /* END FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/timeout.merge.c:4978 */
-#line 4978
+/* BEGIN FUNCTION-DECL-EXTERN execle LOC=./src/timeout.merge.c:4970 */
+#line 4970
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execle)(char const   *__path ,
                                                                                                char const   *__arg 
                                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN execle LOC=./src/timeout.merge.c:4978 */
+/* END FUNCTION-DECL-EXTERN execle LOC=./src/timeout.merge.c:4970 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/timeout.merge.c:4998 */
-#line 4998
+/* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./src/timeout.merge.c:4990 */
+#line 4990
 extern void *xicalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/timeout.merge.c:4998 */
+/* END FUNCTION-DECL-EXTERN xicalloc LOC=./src/timeout.merge.c:4990 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/timeout.merge.c:5012 */
-#line 5012
+/* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=./src/timeout.merge.c:5004 */
+#line 5004
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) lcong48)(unsigned short *__param ) ;
-/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/timeout.merge.c:5012 */
+/* END FUNCTION-DECL-EXTERN lcong48 LOC=./src/timeout.merge.c:5004 */
 
-/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/timeout.merge.c:5030 */
-#line 5030
+/* BEGIN VARIABLE-DECL _TIG_IZ_t3fn_argv LOC=UNKNOWN */
+char **_TIG_IZ_t3fn_argv ;
+/* END VARIABLE-DECL _TIG_IZ_t3fn_argv LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN acct LOC=./src/timeout.merge.c:5022 */
+#line 5022
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) acct)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN acct LOC=./src/timeout.merge.c:5030 */
+/* END FUNCTION-DECL-EXTERN acct LOC=./src/timeout.merge.c:5022 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/timeout.merge.c:5024 */
-#line 5024
+/* BEGIN FUNCTION-DECL-EXTERN setresuid LOC=./src/timeout.merge.c:5016 */
+#line 5016
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresuid)(__uid_t __ruid ,
                                                                                 __uid_t __euid ,
                                                                                 __uid_t __suid ) ;
-/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/timeout.merge.c:5024 */
+/* END FUNCTION-DECL-EXTERN setresuid LOC=./src/timeout.merge.c:5016 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -10198,17 +10186,17 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresuid)(
    long double __builtin_sinhl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/timeout.merge.c:5065 */
-#line 5065
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp LOC=./src/timeout.merge.c:5057 */
+#line 5057
 extern int ( __attribute__((__nonnull__(1))) mkstemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/timeout.merge.c:5065 */
+/* END FUNCTION-DECL-EXTERN mkstemp LOC=./src/timeout.merge.c:5057 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/timeout.merge.c:5059 */
-#line 5059
+/* BEGIN FUNCTION-DECL-EXTERN sigaction LOC=./src/timeout.merge.c:5051 */
+#line 5051
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaction)(int __sig ,
                                                                                 struct sigaction  const  * __restrict  __act ,
                                                                                 struct sigaction * __restrict  __oact ) ;
-/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/timeout.merge.c:5059 */
+/* END FUNCTION-DECL-EXTERN sigaction LOC=./src/timeout.merge.c:5051 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcb LOC=BUILTIN */
 /* compiler builtin: 
@@ -10221,13 +10209,13 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaction)(
 enum __anonenum_783849514___0 ;
 /* END ENUM-DECL __anonenum_783849514___0 LOC=./src/timeout.merge.c:1008 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/timeout.merge.c:5136 */
-#line 5136
+/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/timeout.merge.c:5128 */
+#line 5128
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
-/* END FUNCTION-DECL-EXTERN getumask LOC=./src/timeout.merge.c:5136 */
+/* END FUNCTION-DECL-EXTERN getumask LOC=./src/timeout.merge.c:5128 */
 
-/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/timeout.merge.c:5144 */
-#line 5144
+/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/timeout.merge.c:5136 */
+#line 5136
 enum __anonenum_457704180___0 {
     FPE_INTDIV___0 = 1,
     FPE_INTOVF___0 = 2,
@@ -10240,7 +10228,7 @@ enum __anonenum_457704180___0 {
     FPE_FLTUNK___0 = 14,
     FPE_CONDTRAP___0 = 15
 } ;
-/* END ENUM __anonenum_457704180___0 LOC=./src/timeout.merge.c:5144 */
+/* END ENUM __anonenum_457704180___0 LOC=./src/timeout.merge.c:5136 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemmove LOC=BUILTIN */
 /* compiler builtin: 
@@ -10253,197 +10241,197 @@ enum __anonenum_457704180___0 {
    _Float128 __builtin_log10f128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/timeout.merge.c:5174 */
-#line 5174
+/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/timeout.merge.c:5166 */
+#line 5166
 extern int __uflow(FILE * ) ;
-/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/timeout.merge.c:5174 */
+/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/timeout.merge.c:5166 */
 
-/* BEGIN TYPEDEF uint_fast16_t LOC=./src/timeout.merge.c:5178 */
-#line 5178 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_fast16_t LOC=./src/timeout.merge.c:5170 */
+#line 5170 "./src/timeout.merge.c"
 typedef unsigned long uint_fast16_t;
-/* END TYPEDEF uint_fast16_t LOC=./src/timeout.merge.c:5178 */
+/* END TYPEDEF uint_fast16_t LOC=./src/timeout.merge.c:5170 */
 
-/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/timeout.merge.c:5186 */
-#line 5186 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/timeout.merge.c:5178 */
+#line 5178 "./src/timeout.merge.c"
 typedef __kernel_long_t __kernel_ssize_t;
-/* END TYPEDEF __kernel_ssize_t LOC=./src/timeout.merge.c:5186 */
+/* END TYPEDEF __kernel_ssize_t LOC=./src/timeout.merge.c:5178 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/timeout.merge.c:5190 */
-#line 5190
+/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/timeout.merge.c:5182 */
+#line 5182
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) execveat)(int __fd ,
                                                                                                  char const   *__path ,
                                                                                                  char **__argv ,
                                                                                                  char **__envp ,
                                                                                                  int __flags ) ;
-/* END FUNCTION-DECL-EXTERN execveat LOC=./src/timeout.merge.c:5190 */
+/* END FUNCTION-DECL-EXTERN execveat LOC=./src/timeout.merge.c:5182 */
 
 /* BEGIN FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_umul_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/timeout.merge.c:5240 */
-#line 5240
+/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/timeout.merge.c:5232 */
+#line 5232
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) explicit_bzero)(void *__s ,
                                                                                                       size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/timeout.merge.c:5240 */
+/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/timeout.merge.c:5232 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/timeout.merge.c:5235 */
-#line 5235
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/timeout.merge.c:5227 */
+#line 5227
 extern char *quotearg_alloc(char const   *arg , size_t argsize , struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/timeout.merge.c:5235 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/timeout.merge.c:5227 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/timeout.merge.c:5272 */
-#line 5272
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/timeout.merge.c:5264 */
+#line 5264
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/timeout.merge.c:5272 */
+/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/timeout.merge.c:5264 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/timeout.merge.c:5267 */
-#line 5267
+/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/timeout.merge.c:5259 */
+#line 5259
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkfifo)(char const   *__path ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/timeout.merge.c:5267 */
+/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/timeout.merge.c:5259 */
 
 /* BEGIN FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_prefetch(void const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint64_t LOC=./src/timeout.merge.c:5293 */
-#line 5293 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint64_t LOC=./src/timeout.merge.c:5285 */
+#line 5285 "./src/timeout.merge.c"
 typedef __uint64_t uint64_t;
-/* END TYPEDEF uint64_t LOC=./src/timeout.merge.c:5293 */
+/* END TYPEDEF uint64_t LOC=./src/timeout.merge.c:5285 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/timeout.merge.c:5297 */
-#line 5297
+/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/timeout.merge.c:5289 */
+#line 5289
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcasestr)(char const   *__haystack ,
                                                                                                      char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/timeout.merge.c:5297 */
+/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/timeout.merge.c:5289 */
 
 /* BEGIN FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clrsbl(long  ) ;  */
 /* END FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/timeout.merge.c:5306 */
-#line 5306
+/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/timeout.merge.c:5298 */
+#line 5298
 extern int getchar(void) ;
-/* END FUNCTION-DECL-EXTERN getchar LOC=./src/timeout.merge.c:5306 */
+/* END FUNCTION-DECL-EXTERN getchar LOC=./src/timeout.merge.c:5298 */
 
 /* BEGIN FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_mempcpy(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_288797321 LOC=./src/timeout.merge.c:5326 */
-#line 5326
+/* BEGIN ENUM __anonenum_288797321 LOC=./src/timeout.merge.c:5318 */
+#line 5318
 enum __anonenum_288797321 {
     EXIT_TIMEDOUT = 124,
     EXIT_CANCELED = 125,
     EXIT_CANNOT_INVOKE = 126,
     EXIT_ENOENT = 127
 } ;
-/* END ENUM __anonenum_288797321 LOC=./src/timeout.merge.c:5326 */
+/* END ENUM __anonenum_288797321 LOC=./src/timeout.merge.c:5318 */
 
 /* BEGIN FUNCTION-DECL lchownat LOC=UNKNOWN */
 __inline int lchownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
 /* END FUNCTION-DECL lchownat LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/timeout.merge.c:5349 */
-#line 5349
+/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/timeout.merge.c:5341 */
+#line 5341
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isatty)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN isatty LOC=./src/timeout.merge.c:5349 */
+/* END FUNCTION-DECL-EXTERN isatty LOC=./src/timeout.merge.c:5341 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/timeout.merge.c:5359 */
-#line 5359
+/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/timeout.merge.c:5351 */
+#line 5351
 extern size_t dir_len(char const   *file )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/timeout.merge.c:5359 */
+/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/timeout.merge.c:5351 */
 
-/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/timeout.merge.c:5367 */
-#line 5367
+/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/timeout.merge.c:5359 */
+#line 5359
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) seekdir)(DIR *__dirp ,
                                                                                                long __pos ) ;
-/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/timeout.merge.c:5367 */
+/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/timeout.merge.c:5359 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/timeout.merge.c:5372 */
-#line 5372
+/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/timeout.merge.c:5364 */
+#line 5364
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2), __leaf__)) getdents64)(int __fd ,
                                                                                                        void *__buffer ,
                                                                                                        size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/timeout.merge.c:5372 */
+/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/timeout.merge.c:5364 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/timeout.merge.c:5390 */
-#line 5390
+/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/timeout.merge.c:5382 */
+#line 5382
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) atol)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atol LOC=./src/timeout.merge.c:5390 */
+/* END FUNCTION-DECL-EXTERN atol LOC=./src/timeout.merge.c:5382 */
 
-/* BEGIN FUNCTION-DECL-EXTERN prlimit64 LOC=./src/timeout.merge.c:5404 */
-#line 5404
+/* BEGIN FUNCTION-DECL-EXTERN prlimit64 LOC=./src/timeout.merge.c:5396 */
+#line 5396
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) prlimit64)(__pid_t __pid ,
                                                                                 enum __rlimit_resource __resource ,
                                                                                 struct rlimit64  const  *__new_limit ,
                                                                                 struct rlimit64 *__old_limit ) ;
-/* END FUNCTION-DECL-EXTERN prlimit64 LOC=./src/timeout.merge.c:5404 */
+/* END FUNCTION-DECL-EXTERN prlimit64 LOC=./src/timeout.merge.c:5396 */
 
-/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/timeout.merge.c:5436 */
-#line 5436
+/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/timeout.merge.c:5428 */
+#line 5428
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) seed48_r)(unsigned short *__seed16v ,
                                                                                                  struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/timeout.merge.c:5436 */
+/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/timeout.merge.c:5428 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/timeout.merge.c:5427 */
-#line 5427
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/timeout.merge.c:5419 */
+#line 5419
 extern int ( __attribute__((__nonnull__(1))) mkstemps)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/timeout.merge.c:5427 */
+/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/timeout.merge.c:5419 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_saddll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/timeout.merge.c:5450 */
-#line 5450
+/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/timeout.merge.c:5442 */
+#line 5442
 extern FILE *( __attribute__((__nonnull__(3))) freopen64)(char const   * __restrict  __filename ,
                                                           char const   * __restrict  __modes ,
                                                           FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/timeout.merge.c:5450 */
+/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/timeout.merge.c:5442 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539 LOC=./src/timeout.merge.c:1172 */
 #line 1172
 enum __anonenum_23175539 ;
 /* END ENUM-DECL __anonenum_23175539 LOC=./src/timeout.merge.c:1172 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/timeout.merge.c:5465 */
-#line 5465
+/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/timeout.merge.c:5457 */
+#line 5457
 extern int ( __attribute__((__nonnull__(1))) fseeko)(FILE *__stream , __off_t __off ,
                                                      int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/timeout.merge.c:5465 */
+/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/timeout.merge.c:5457 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/timeout.merge.c:5470 */
-#line 5470
+/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/timeout.merge.c:5462 */
+#line 5462
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcat)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcat LOC=./src/timeout.merge.c:5470 */
+/* END FUNCTION-DECL-EXTERN strcat LOC=./src/timeout.merge.c:5462 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/timeout.merge.c:5475 */
-#line 5475
+/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/timeout.merge.c:5467 */
+#line 5467
 extern size_t ( __attribute__((__nonnull__(4))) fwrite_unlocked)(void const   * __restrict  __ptr ,
                                                                  size_t __size , size_t __n ,
                                                                  FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/timeout.merge.c:5475 */
+/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/timeout.merge.c:5467 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/timeout.merge.c:5481 */
-#line 5481
+/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/timeout.merge.c:5473 */
+#line 5473
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dgettext)(char const   *__domainname ,
                                                                                  char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/timeout.merge.c:5481 */
+/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/timeout.merge.c:5473 */
 
-/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/timeout.merge.c:5490 */
-#line 5490
+/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/timeout.merge.c:5482 */
+#line 5482
 enum __anonenum_437032235___0 {
     _PC_LINK_MAX___0 = 0,
     _PC_MAX_CANON___0 = 1,
@@ -10467,37 +10455,37 @@ enum __anonenum_437032235___0 {
     _PC_SYMLINK_MAX___0 = 19,
     _PC_2_SYMLINKS___0 = 20
 } ;
-/* END ENUM __anonenum_437032235___0 LOC=./src/timeout.merge.c:5490 */
+/* END ENUM __anonenum_437032235___0 LOC=./src/timeout.merge.c:5482 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/timeout.merge.c:5516 */
-#line 5516
+/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/timeout.merge.c:5508 */
+#line 5508
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) __memcmpeq)(void const   *__s1 ,
                                                                                                    void const   *__s2 ,
                                                                                                    size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/timeout.merge.c:5516 */
+/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/timeout.merge.c:5508 */
 
 /* BEGIN FUNCTION-DECL chmodat LOC=UNKNOWN */
 __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
 /* END FUNCTION-DECL chmodat LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/timeout.merge.c:5534 */
-#line 5534 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/timeout.merge.c:5526 */
+#line 5526 "./src/timeout.merge.c"
 typedef void (*__kernel_sighandler_t)(int  );
-/* END TYPEDEF __kernel_sighandler_t LOC=./src/timeout.merge.c:5534 */
+/* END TYPEDEF __kernel_sighandler_t LOC=./src/timeout.merge.c:5526 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/timeout.merge.c:5548 */
-#line 5548
+/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/timeout.merge.c:5540 */
+#line 5540
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) ssignal)(int __sig ,
                                                                                          void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/timeout.merge.c:5548 */
+/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/timeout.merge.c:5540 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remquof(float  , float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 
-/* BEGIN STRUCT flock64 LOC=./src/timeout.merge.c:5568 */
-#line 5568 "./src/timeout.merge.c"
+/* BEGIN STRUCT flock64 LOC=./src/timeout.merge.c:5560 */
+#line 5560 "./src/timeout.merge.c"
 struct flock64 {
    short l_type ;
    short l_whence ;
@@ -10505,7 +10493,7 @@ struct flock64 {
    __off64_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock64 LOC=./src/timeout.merge.c:5568 */
+/* END STRUCT flock64 LOC=./src/timeout.merge.c:5560 */
 
 /* BEGIN ENUM-DECL __anonenum_606700034___0 LOC=./src/timeout.merge.c:880 */
 #line 880
@@ -10522,32 +10510,36 @@ enum __anonenum_606700034___0 ;
    long double __builtin_cbrtl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cbrtl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/timeout.merge.c:5588 */
-#line 5588
+/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/timeout.merge.c:5580 */
+#line 5580
 extern char *program_invocation_name ;
-/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/timeout.merge.c:5588 */
+/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/timeout.merge.c:5580 */
 
-/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/timeout.merge.c:5592 */
-#line 5592
+/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/timeout.merge.c:5584 */
+#line 5584
 extern int optind ;
-/* END VARIABLE-DECL-EXTERN optind LOC=./src/timeout.merge.c:5592 */
+/* END VARIABLE-DECL-EXTERN optind LOC=./src/timeout.merge.c:5584 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nearbyintl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_t3fn_envp LOC=UNKNOWN */
+char **_TIG_IZ_t3fn_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_t3fn_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_roundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/timeout.merge.c:5624 */
-#line 5624
+/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/timeout.merge.c:5616 */
+#line 5616
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncmp)(char const   *__s1 ,
                                                                                                 char const   *__s2 ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/timeout.merge.c:5624 */
+/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/timeout.merge.c:5616 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10559,41 +10551,41 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 struct __anonstruct___mbstate_t_136527298 ;
 /* END STRUCT-DECL __anonstruct___mbstate_t_136527298 LOC=./src/timeout.merge.c:1220 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/timeout.merge.c:5652 */
-#line 5652
+/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/timeout.merge.c:5644 */
+#line 5644
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) ecvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/timeout.merge.c:5652 */
+/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/timeout.merge.c:5644 */
 
-/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/timeout.merge.c:5664 */
-#line 5664
+/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/timeout.merge.c:5656 */
+#line 5656
 extern int opterr ;
-/* END VARIABLE-DECL-EXTERN opterr LOC=./src/timeout.merge.c:5664 */
+/* END VARIABLE-DECL-EXTERN opterr LOC=./src/timeout.merge.c:5656 */
 
-/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/timeout.merge.c:5673 */
-#line 5673
+/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/timeout.merge.c:5665 */
+#line 5665
 enum __anonenum_230064777___0 {
     LOG10_TIMESPEC_RESOLUTION___0 = 9
 } ;
-/* END ENUM __anonenum_230064777___0 LOC=./src/timeout.merge.c:5673 */
+/* END ENUM __anonenum_230064777___0 LOC=./src/timeout.merge.c:5665 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/timeout.merge.c:5683 */
-#line 5683
+/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/timeout.merge.c:5675 */
+#line 5675
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/timeout.merge.c:5683 */
+/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/timeout.merge.c:5675 */
 
 /* BEGIN STRUCT-DECL dirent LOC=./src/timeout.merge.c:1000 */
 #line 1000
 struct dirent ;
 /* END STRUCT-DECL dirent LOC=./src/timeout.merge.c:1000 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/timeout.merge.c:5701 */
-#line 5701
+/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/timeout.merge.c:5693 */
+#line 5693
 extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTART instead"))) int ( __attribute__((__leaf__)) siginterrupt)(int __sig ,
                                                                                                                                             int __interrupt ) ;
-/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/timeout.merge.c:5701 */
+/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/timeout.merge.c:5693 */
 
 /* BEGIN ENUM-DECL __anonenum_825626741 LOC=./src/timeout.merge.c:1512 */
 #line 1512
@@ -10619,21 +10611,21 @@ enum __anonenum_852341087 ;
 struct __anonstruct_siginfo_t_617603290 ;
 /* END STRUCT-DECL __anonstruct_siginfo_t_617603290 LOC=./src/timeout.merge.c:1368 */
 
-/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/timeout.merge.c:5785 */
-#line 5785
+/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/timeout.merge.c:5777 */
+#line 5777
 extern char *tzname[2] ;
-/* END VARIABLE-DECL-EXTERN tzname LOC=./src/timeout.merge.c:5785 */
+/* END VARIABLE-DECL-EXTERN tzname LOC=./src/timeout.merge.c:5777 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/timeout.merge.c:1100 */
 #line 1100
 union __anonunion_pthread_condattr_t_488594145 ;
 /* END UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/timeout.merge.c:1100 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/timeout.merge.c:5789 */
-#line 5789
+/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/timeout.merge.c:5781 */
+#line 5781
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvp)(char const   *__file ,
                                                                                                char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execvp LOC=./src/timeout.merge.c:5789 */
+/* END FUNCTION-DECL-EXTERN execvp LOC=./src/timeout.merge.c:5781 */
 
 /* BEGIN FUNCTION-DECL __builtin_carg LOC=BUILTIN */
 /* compiler builtin: 
@@ -10655,109 +10647,109 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    long double __builtin_remainderl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/timeout.merge.c:5819 */
-#line 5819 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/timeout.merge.c:5811 */
+#line 5811 "./src/timeout.merge.c"
 union __anonunion____missing_field_name_501150464 {
    struct _fpstate *fpstate ;
    __uint64_t __fpstate_word ;
 };
-/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/timeout.merge.c:5819 */
+/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/timeout.merge.c:5811 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/timeout.merge.c:1280 */
 #line 1280
 union __anonunion_pthread_mutex_t_335460617 ;
 /* END UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/timeout.merge.c:1280 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/timeout.merge.c:5842 */
-#line 5842
+/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/timeout.merge.c:5834 */
+#line 5834
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atexit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN atexit LOC=./src/timeout.merge.c:5842 */
+/* END FUNCTION-DECL-EXTERN atexit LOC=./src/timeout.merge.c:5834 */
 
-/* BEGIN TYPEDEF __u_quad_t LOC=./src/timeout.merge.c:5846 */
-#line 5846 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u_quad_t LOC=./src/timeout.merge.c:5838 */
+#line 5838 "./src/timeout.merge.c"
 typedef unsigned long __u_quad_t;
-/* END TYPEDEF __u_quad_t LOC=./src/timeout.merge.c:5846 */
+/* END TYPEDEF __u_quad_t LOC=./src/timeout.merge.c:5838 */
 
-/* BEGIN TYPEDEF u_quad_t LOC=./src/timeout.merge.c:5850 */
-#line 5850 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_quad_t LOC=./src/timeout.merge.c:5842 */
+#line 5842 "./src/timeout.merge.c"
 typedef __u_quad_t u_quad_t;
-/* END TYPEDEF u_quad_t LOC=./src/timeout.merge.c:5850 */
+/* END TYPEDEF u_quad_t LOC=./src/timeout.merge.c:5842 */
 
-/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/timeout.merge.c:5854 */
-#line 5854
+/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/timeout.merge.c:5846 */
+#line 5846
 __inline static void emit_ancillary_info(char const   *program ) ;
-/* END FUNCTION-DECL emit_ancillary_info LOC=./src/timeout.merge.c:5854 */
+/* END FUNCTION-DECL emit_ancillary_info LOC=./src/timeout.merge.c:5846 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/timeout.merge.c:5873 */
-#line 5873
+/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/timeout.merge.c:5865 */
+#line 5865
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dcgettext)(char const   *__domainname ,
                                                                                     char const   *__msgid ,
                                                                                     int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/timeout.merge.c:5873 */
+/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/timeout.merge.c:5865 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/timeout.merge.c:5867 */
-#line 5867
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/timeout.merge.c:5859 */
+#line 5859
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncasecmp)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/timeout.merge.c:5867 */
+/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/timeout.merge.c:5859 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cpowl(_Complex long double  , _Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/timeout.merge.c:5889 */
-#line 5889
+/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/timeout.merge.c:5881 */
+#line 5881
 extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
-/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/timeout.merge.c:5889 */
+/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/timeout.merge.c:5881 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/timeout.merge.c:5903 */
-#line 5903
+/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/timeout.merge.c:5895 */
+#line 5895
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ttyname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/timeout.merge.c:5903 */
+/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/timeout.merge.c:5895 */
 
 /* BEGIN FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_islessgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/timeout.merge.c:5914 */
-#line 5914
+/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/timeout.merge.c:5906 */
+#line 5906
 extern void *xnmalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/timeout.merge.c:5914 */
+/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/timeout.merge.c:5906 */
 
-/* BEGIN UNION pthread_attr_t LOC=./src/timeout.merge.c:5924 */
-#line 5924 "./src/timeout.merge.c"
+/* BEGIN UNION pthread_attr_t LOC=./src/timeout.merge.c:5916 */
+#line 5916 "./src/timeout.merge.c"
 union pthread_attr_t {
    char __size[56] ;
    long __align ;
 };
-/* END UNION pthread_attr_t LOC=./src/timeout.merge.c:5924 */
+/* END UNION pthread_attr_t LOC=./src/timeout.merge.c:5916 */
 
 /* BEGIN FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_clog(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/timeout.merge.c:5942 */
-#line 5942
+/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/timeout.merge.c:5934 */
+#line 5934
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strnlen)(char const   *__string ,
                                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/timeout.merge.c:5942 */
+/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/timeout.merge.c:5934 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/timeout.merge.c:5962 */
-#line 5962
+/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/timeout.merge.c:5954 */
+#line 5954
 extern  __attribute__((__noreturn__)) void openat_save_fail(int  ) ;
-/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/timeout.merge.c:5962 */
+/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/timeout.merge.c:5954 */
 
-/* BEGIN TYPEDEF u_int32_t LOC=./src/timeout.merge.c:5966 */
-#line 5966 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF u_int32_t LOC=./src/timeout.merge.c:5958 */
+#line 5958 "./src/timeout.merge.c"
 typedef __uint32_t u_int32_t;
-/* END TYPEDEF u_int32_t LOC=./src/timeout.merge.c:5966 */
+/* END TYPEDEF u_int32_t LOC=./src/timeout.merge.c:5958 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10765,35 +10757,31 @@ typedef __uint32_t u_int32_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/timeout.merge.c:5970 */
-#line 5970
+/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/timeout.merge.c:5962 */
+#line 5962
 extern FILE *fopen(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen LOC=./src/timeout.merge.c:5970 */
+/* END FUNCTION-DECL-EXTERN fopen LOC=./src/timeout.merge.c:5962 */
 
 /* BEGIN FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_snprintf(char * , unsigned long long  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/timeout.merge.c:5985 */
-#line 5985
+/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/timeout.merge.c:5977 */
+#line 5977
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate)(char const   *__file ,
                                                                                                __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate LOC=./src/timeout.merge.c:5985 */
+/* END FUNCTION-DECL-EXTERN truncate LOC=./src/timeout.merge.c:5977 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1096 */
 #line 1096
 union __anonunion____missing_field_name_1036346501 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346501 LOC=./src/timeout.merge.c:1096 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/timeout.merge.c:6001 */
-#line 6001
+/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/timeout.merge.c:5993 */
+#line 5993
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mkdtemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/timeout.merge.c:6001 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_lWnh_envp LOC=UNKNOWN */
-char **_TIG_IZ_lWnh_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_lWnh_envp LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/timeout.merge.c:5993 */
 
 /* BEGIN FUNCTION-DECL __builtin_acoshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10805,10 +10793,10 @@ char **_TIG_IZ_lWnh_envp  ;
    void *__builtin___memmove_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memmove_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __thrd_t LOC=./src/timeout.merge.c:6019 */
-#line 6019 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __thrd_t LOC=./src/timeout.merge.c:6011 */
+#line 6011 "./src/timeout.merge.c"
 typedef unsigned long __thrd_t;
-/* END TYPEDEF __thrd_t LOC=./src/timeout.merge.c:6019 */
+/* END TYPEDEF __thrd_t LOC=./src/timeout.merge.c:6011 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfc LOC=BUILTIN */
 /* compiler builtin: 
@@ -10820,29 +10808,29 @@ typedef unsigned long __thrd_t;
 enum __anonenum_556971655 ;
 /* END ENUM-DECL __anonenum_556971655 LOC=./src/timeout.merge.c:996 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/timeout.merge.c:6037 */
-#line 6037
+/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/timeout.merge.c:6029 */
+#line 6029
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) atof)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atof LOC=./src/timeout.merge.c:6037 */
+/* END FUNCTION-DECL-EXTERN atof LOC=./src/timeout.merge.c:6029 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863___0 LOC=./src/timeout.merge.c:1472 */
 #line 1472
 enum __anonenum_57186863___0 ;
 /* END ENUM-DECL __anonenum_57186863___0 LOC=./src/timeout.merge.c:1472 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/timeout.merge.c:6072 */
-#line 6072
+/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/timeout.merge.c:6068 */
+#line 6068
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bind_textdomain_codeset)(char const   *__domainname ,
                                                                                                 char const   *__codeset ) ;
-/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/timeout.merge.c:6072 */
+/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/timeout.merge.c:6068 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_sinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 
-/* BEGIN STRUCT stat64 LOC=./src/timeout.merge.c:6087 */
-#line 6087 "./src/timeout.merge.c"
+/* BEGIN STRUCT stat64 LOC=./src/timeout.merge.c:6083 */
+#line 6083 "./src/timeout.merge.c"
 struct stat64 {
    __dev_t st_dev ;
    __ino64_t st_ino ;
@@ -10860,24 +10848,24 @@ struct stat64 {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat64 LOC=./src/timeout.merge.c:6087 */
+/* END STRUCT stat64 LOC=./src/timeout.merge.c:6083 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalbnf(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/timeout.merge.c:6118 */
-#line 6118
+/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/timeout.merge.c:6114 */
+#line 6114
 extern void set_program_name(char const   *argv0 ) ;
-/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/timeout.merge.c:6118 */
+/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/timeout.merge.c:6114 */
 
 /* BEGIN FUNCTION-DECL bad_cast LOC=UNKNOWN */
 __inline static char *bad_cast(char const   *s ) ;
 /* END FUNCTION-DECL bad_cast LOC=UNKNOWN */
 
-/* BEGIN STRUCT prctl_mm_map LOC=./src/timeout.merge.c:6138 */
-#line 6138 "./src/timeout.merge.c"
+/* BEGIN STRUCT prctl_mm_map LOC=./src/timeout.merge.c:6134 */
+#line 6134 "./src/timeout.merge.c"
 struct prctl_mm_map {
    __u64 start_code ;
    __u64 end_code ;
@@ -10894,12 +10882,12 @@ struct prctl_mm_map {
    __u32 auxv_size ;
    __u32 exe_fd ;
 };
-/* END STRUCT prctl_mm_map LOC=./src/timeout.merge.c:6138 */
+/* END STRUCT prctl_mm_map LOC=./src/timeout.merge.c:6134 */
 
-/* BEGIN TYPEDEF int_fast64_t LOC=./src/timeout.merge.c:6166 */
-#line 6166 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int_fast64_t LOC=./src/timeout.merge.c:6162 */
+#line 6162 "./src/timeout.merge.c"
 typedef long int_fast64_t;
-/* END TYPEDEF int_fast64_t LOC=./src/timeout.merge.c:6166 */
+/* END TYPEDEF int_fast64_t LOC=./src/timeout.merge.c:6162 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10907,17 +10895,17 @@ typedef long int_fast64_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/timeout.merge.c:6184 */
-#line 6184
+/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/timeout.merge.c:6180 */
+#line 6180
 extern  __attribute__((__nothrow__)) int vasprintf(char ** __restrict  __ptr , char const   * __restrict  __f ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/timeout.merge.c:6184 */
+/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/timeout.merge.c:6180 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/timeout.merge.c:6190 */
-#line 6190
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/timeout.merge.c:6186 */
+#line 6186
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64)(int __fd ,
                                                                                   __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/timeout.merge.c:6190 */
+/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/timeout.merge.c:6186 */
 
 /* BEGIN FUNCTION-DECL __builtin_csqrtl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10934,16 +10922,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64
    int __builtin_parityl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/timeout.merge.c:6237 */
-#line 6237
+/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/timeout.merge.c:6233 */
+#line 6233
 extern int ( __attribute__((__nonnull__(1))) getc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc LOC=./src/timeout.merge.c:6237 */
+/* END FUNCTION-DECL-EXTERN getc LOC=./src/timeout.merge.c:6233 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/timeout.merge.c:6256 */
-#line 6256
+/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/timeout.merge.c:6252 */
+#line 6252
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(int __fd ,
                                                                                char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/timeout.merge.c:6256 */
+/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/timeout.merge.c:6252 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf LOC=BUILTIN */
 /* compiler builtin: 
@@ -10960,28 +10948,28 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(i
 union __anonunion____missing_field_name_1036346498 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346498 LOC=./src/timeout.merge.c:1276 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/timeout.merge.c:6271 */
-#line 6271
+/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/timeout.merge.c:6267 */
+#line 6267
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime_l)(char const   * __restrict  __s ,
                                                                                    char const   * __restrict  __fmt ,
                                                                                    struct tm *__tp ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/timeout.merge.c:6271 */
+/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/timeout.merge.c:6267 */
 
 /* BEGIN STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:960 */
 #line 960
 struct __anonstruct___fsid_t_109580352 ;
 /* END STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/timeout.merge.c:960 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/timeout.merge.c:6298 */
-#line 6298
+/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/timeout.merge.c:6294 */
+#line 6294
 extern  __attribute__((__nothrow__)) __off_t ( __attribute__((__leaf__)) lseek)(int __fd ,
                                                                                 __off_t __offset ,
                                                                                 int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek LOC=./src/timeout.merge.c:6298 */
+/* END FUNCTION-DECL-EXTERN lseek LOC=./src/timeout.merge.c:6294 */
 
-/* BEGIN ENUM __anonenum_556971655 LOC=./src/timeout.merge.c:6311 */
-#line 6311
+/* BEGIN ENUM __anonenum_556971655 LOC=./src/timeout.merge.c:6307 */
+#line 6307
 enum __anonenum_556971655 {
     SI_ASYNCNL = -60,
     SI_DETHREAD = -7,
@@ -10994,7 +10982,7 @@ enum __anonenum_556971655 {
     SI_USER = 0,
     SI_KERNEL = 128
 } ;
-/* END ENUM __anonenum_556971655 LOC=./src/timeout.merge.c:6311 */
+/* END ENUM __anonenum_556971655 LOC=./src/timeout.merge.c:6307 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalblnf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11007,35 +10995,35 @@ enum __anonenum_556971655 {
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_uaddll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/timeout.merge.c:6341 */
-#line 6341
+/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/timeout.merge.c:6337 */
+#line 6337
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/timeout.merge.c:6341 */
+/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/timeout.merge.c:6337 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/timeout.merge.c:6346 */
-#line 6346
+/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/timeout.merge.c:6342 */
+#line 6342
 extern int getpt(void) ;
-/* END FUNCTION-DECL-EXTERN getpt LOC=./src/timeout.merge.c:6346 */
+/* END FUNCTION-DECL-EXTERN getpt LOC=./src/timeout.merge.c:6342 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/timeout.merge.c:6337 */
-#line 6337
+/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/timeout.merge.c:6333 */
+#line 6333
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strfry)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN strfry LOC=./src/timeout.merge.c:6337 */
+/* END FUNCTION-DECL-EXTERN strfry LOC=./src/timeout.merge.c:6333 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/timeout.merge.c:6376 */
-#line 6376
+/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/timeout.merge.c:6372 */
+#line 6372
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) fpathconf)(int __fd ,
                                                                                  int __name ) ;
-/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/timeout.merge.c:6376 */
+/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/timeout.merge.c:6372 */
 
-/* BEGIN STRUCT itimerval LOC=./src/timeout.merge.c:6381 */
-#line 6381 "./src/timeout.merge.c"
+/* BEGIN STRUCT itimerval LOC=./src/timeout.merge.c:6377 */
+#line 6377 "./src/timeout.merge.c"
 struct itimerval {
    struct timeval it_interval ;
    struct timeval it_value ;
 };
-/* END STRUCT itimerval LOC=./src/timeout.merge.c:6381 */
+/* END STRUCT itimerval LOC=./src/timeout.merge.c:6377 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctzs LOC=BUILTIN */
 /* compiler builtin: 
@@ -11047,10 +11035,10 @@ struct itimerval {
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/timeout.merge.c:6406 */
-#line 6406
+/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/timeout.merge.c:6402 */
+#line 6402
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)(void) ;
-/* END FUNCTION-DECL-EXTERN getuid LOC=./src/timeout.merge.c:6406 */
+/* END FUNCTION-DECL-EXTERN getuid LOC=./src/timeout.merge.c:6402 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11062,39 +11050,39 @@ extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)
    long double __builtin_truncl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/timeout.merge.c:6458 */
-#line 6458
-extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/timeout.merge.c:6458 */
-
-/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/timeout.merge.c:6454 */
+/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/timeout.merge.c:6454 */
 #line 6454
-extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/timeout.merge.c:6454 */
+extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
+/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/timeout.merge.c:6454 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/timeout.merge.c:6467 */
-#line 6467
+/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/timeout.merge.c:6450 */
+#line 6450
+extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
+/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/timeout.merge.c:6450 */
+
+/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/timeout.merge.c:6463 */
+#line 6463
 extern  __attribute__((__nothrow__)) int obstack_printf(struct obstack * __restrict  __obstack ,
                                                         char const   * __restrict  __format 
                                                         , ...) ;
-/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/timeout.merge.c:6467 */
+/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/timeout.merge.c:6463 */
 
-/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/timeout.merge.c:6479 */
-#line 6479
+/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/timeout.merge.c:6475 */
+#line 6475
 extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/timeout.merge.c:6479 */
+/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/timeout.merge.c:6475 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_lgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/timeout.merge.c:6473 */
-#line 6473
+/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/timeout.merge.c:6469 */
+#line 6469
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencookie)(void * __restrict  __magic_cookie ,
                                                                                     char const   * __restrict  __modes ,
                                                                                     cookie_io_functions_t __io_funcs )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/timeout.merge.c:6473 */
+/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/timeout.merge.c:6469 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 /* compiler builtin: 
@@ -11106,26 +11094,26 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencook
 enum __anonenum_923753503 ;
 /* END ENUM-DECL __anonenum_923753503 LOC=./src/timeout.merge.c:1364 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/timeout.merge.c:6517 */
-#line 6517
+/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/timeout.merge.c:6513 */
+#line 6513
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime_r)(time_t const   * __restrict  __timer ,
                                                                                       struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/timeout.merge.c:6517 */
+/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/timeout.merge.c:6513 */
 
 /* BEGIN STRUCT-DECL _libc_fpstate LOC=./src/timeout.merge.c:1148 */
 #line 1148
 struct _libc_fpstate ;
 /* END STRUCT-DECL _libc_fpstate LOC=./src/timeout.merge.c:1148 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/timeout.merge.c:6531 */
-#line 6531
-extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/timeout.merge.c:6531 */
-
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/timeout.merge.c:6527 */
+/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/timeout.merge.c:6527 */
 #line 6527
+extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/timeout.merge.c:6527 */
+
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/timeout.merge.c:6523 */
+#line 6523
 extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/timeout.merge.c:6527 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/timeout.merge.c:6523 */
 
 /* BEGIN FUNCTION-DECL __builtin_smul_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -11152,15 +11140,15 @@ extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
    double __builtin_copysign(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysign LOC=BUILTIN */
 
-/* BEGIN TYPEDEF clock_t LOC=./src/timeout.merge.c:6594 */
-#line 6594 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF clock_t LOC=./src/timeout.merge.c:6590 */
+#line 6590 "./src/timeout.merge.c"
 typedef __clock_t clock_t;
-/* END TYPEDEF clock_t LOC=./src/timeout.merge.c:6594 */
+/* END TYPEDEF clock_t LOC=./src/timeout.merge.c:6590 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/timeout.merge.c:6598 */
-#line 6598
+/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/timeout.merge.c:6594 */
+#line 6594
 extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(void) ;
-/* END FUNCTION-DECL-EXTERN clock LOC=./src/timeout.merge.c:6598 */
+/* END FUNCTION-DECL-EXTERN clock LOC=./src/timeout.merge.c:6594 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11181,21 +11169,21 @@ static int term_signal  ;
    void __builtin_complex(...) ;  */
 /* END FUNCTION-DECL __builtin_complex LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/timeout.merge.c:6668 */
-#line 6668
+/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/timeout.merge.c:6664 */
+#line 6664
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mblen)(char const   *__s ,
                                                                             size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mblen LOC=./src/timeout.merge.c:6668 */
+/* END FUNCTION-DECL-EXTERN mblen LOC=./src/timeout.merge.c:6664 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf_sign(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/timeout.merge.c:6689 */
-#line 6689
+/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/timeout.merge.c:6685 */
+#line 6685
 extern void *xrealloc(void *p , size_t s )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/timeout.merge.c:6689 */
+/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/timeout.merge.c:6685 */
 
 /* BEGIN ENUM-DECL __itimer_which LOC=./src/timeout.merge.c:948 */
 #line 948
@@ -11212,8 +11200,8 @@ enum __itimer_which ;
    long double __builtin_ceill(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceill LOC=BUILTIN */
 
-/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/timeout.merge.c:6729 */
-#line 6729 "./src/timeout.merge.c"
+/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/timeout.merge.c:6725 */
+#line 6725 "./src/timeout.merge.c"
 struct _fpx_sw_bytes {
    __uint32_t magic1 ;
    __uint32_t extended_size ;
@@ -11221,39 +11209,39 @@ struct _fpx_sw_bytes {
    __uint32_t xstate_size ;
    __uint32_t __glibc_reserved1[7] ;
 };
-/* END STRUCT _fpx_sw_bytes LOC=./src/timeout.merge.c:6729 */
+/* END STRUCT _fpx_sw_bytes LOC=./src/timeout.merge.c:6725 */
 
-/* BEGIN TYPEDEF __s128 LOC=./src/timeout.merge.c:6744 */
-#line 6744 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __s128 LOC=./src/timeout.merge.c:6740 */
+#line 6740 "./src/timeout.merge.c"
 typedef __int128 __attribute__((__aligned__(16)))  __s128;
-/* END TYPEDEF __s128 LOC=./src/timeout.merge.c:6744 */
+/* END TYPEDEF __s128 LOC=./src/timeout.merge.c:6740 */
 
 /* BEGIN STRUCT-DECL _xmmreg LOC=./src/timeout.merge.c:896 */
 #line 896
 struct _xmmreg ;
 /* END STRUCT-DECL _xmmreg LOC=./src/timeout.merge.c:896 */
 
-/* BEGIN TYPEDEF sig_t LOC=./src/timeout.merge.c:6763 */
-#line 6763 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF sig_t LOC=./src/timeout.merge.c:6759 */
+#line 6759 "./src/timeout.merge.c"
 typedef void (*sig_t)(int  );
-/* END TYPEDEF sig_t LOC=./src/timeout.merge.c:6763 */
+/* END TYPEDEF sig_t LOC=./src/timeout.merge.c:6759 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/timeout.merge.c:6778 */
-#line 6778
+/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/timeout.merge.c:6774 */
+#line 6774
 extern int getentropy(void *__buffer , size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/timeout.merge.c:6778 */
+/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/timeout.merge.c:6774 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/timeout.merge.c:6787 */
-#line 6787
+/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/timeout.merge.c:6783 */
+#line 6783
 extern size_t base_len(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN base_len LOC=./src/timeout.merge.c:6787 */
+/* END FUNCTION-DECL-EXTERN base_len LOC=./src/timeout.merge.c:6783 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/timeout.merge.c:6767 */
-#line 6767
+/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/timeout.merge.c:6763 */
+#line 6763
 extern  __attribute__((__nothrow__)) int obstack_vprintf(struct obstack * __restrict  __obstack ,
                                                          char const   * __restrict  __format ,
                                                          __gnuc_va_list __args ) ;
-/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/timeout.merge.c:6767 */
+/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/timeout.merge.c:6763 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928___0 LOC=./src/timeout.merge.c:976 */
 #line 976
@@ -11270,60 +11258,60 @@ enum __anonenum_850350928___0 ;
 struct __anonstruct_div_t_773697287 ;
 /* END STRUCT-DECL __anonstruct_div_t_773697287 LOC=./src/timeout.merge.c:944 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/timeout.merge.c:6842 */
-#line 6842
+/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/timeout.merge.c:6838 */
+#line 6838
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setdomainname)(char const   *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/timeout.merge.c:6842 */
+/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/timeout.merge.c:6838 */
 
 /* BEGIN STRUCT-DECL drand48_data LOC=./src/timeout.merge.c:1260 */
 #line 1260
 struct drand48_data ;
 /* END STRUCT-DECL drand48_data LOC=./src/timeout.merge.c:1260 */
 
-/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/timeout.merge.c:6852 */
-#line 6852 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/timeout.merge.c:6848 */
+#line 6848 "./src/timeout.merge.c"
 typedef unsigned int __kernel_uid_t;
-/* END TYPEDEF __kernel_uid_t LOC=./src/timeout.merge.c:6852 */
+/* END TYPEDEF __kernel_uid_t LOC=./src/timeout.merge.c:6848 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/timeout.merge.c:6867 */
-#line 6867
+/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/timeout.merge.c:6863 */
+#line 6863
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) umask)(__mode_t __mask ) ;
-/* END FUNCTION-DECL-EXTERN umask LOC=./src/timeout.merge.c:6867 */
+/* END FUNCTION-DECL-EXTERN umask LOC=./src/timeout.merge.c:6863 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/timeout.merge.c:6881 */
-#line 6881
+/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/timeout.merge.c:6877 */
+#line 6877
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) drand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/timeout.merge.c:6881 */
+/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/timeout.merge.c:6877 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpriority LOC=./src/timeout.merge.c:6904 */
-#line 6904
+/* BEGIN FUNCTION-DECL-EXTERN setpriority LOC=./src/timeout.merge.c:6900 */
+#line 6900
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpriority)(__priority_which_t __which ,
                                                                                   id_t __who ,
                                                                                   int __prio ) ;
-/* END FUNCTION-DECL-EXTERN setpriority LOC=./src/timeout.merge.c:6904 */
+/* END FUNCTION-DECL-EXTERN setpriority LOC=./src/timeout.merge.c:6900 */
 
-/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/timeout.merge.c:6894 */
-#line 6894
+/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/timeout.merge.c:6890 */
+#line 6890
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) valloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN valloc LOC=./src/timeout.merge.c:6894 */
+/* END FUNCTION-DECL-EXTERN valloc LOC=./src/timeout.merge.c:6890 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/timeout.merge.c:6910 */
-#line 6910
+/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/timeout.merge.c:6906 */
+#line 6906
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/timeout.merge.c:6910 */
+/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/timeout.merge.c:6906 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/timeout.merge.c:6925 */
-#line 6925
+/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/timeout.merge.c:6921 */
+#line 6921
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) ecvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/timeout.merge.c:6925 */
+/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/timeout.merge.c:6921 */
 
 /* BEGIN FUNCTION-DECL __builtin_log LOC=BUILTIN */
 /* compiler builtin: 
@@ -11340,20 +11328,20 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __
 enum __anonenum_424050557 ;
 /* END ENUM-DECL __anonenum_424050557 LOC=./src/timeout.merge.c:1340 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/timeout.merge.c:6948 */
-#line 6948
+/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/timeout.merge.c:6944 */
+#line 6944
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) bcopy)(void const   *__src ,
                                                                                                void *__dest ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/timeout.merge.c:6948 */
+/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/timeout.merge.c:6944 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/timeout.merge.c:6944 */
-#line 6944
+/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/timeout.merge.c:6940 */
+#line 6940
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rmdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/timeout.merge.c:6944 */
+/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/timeout.merge.c:6940 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_rYHN_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -11361,43 +11349,43 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp ) ;
    double __builtin_sqrt(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/timeout.merge.c:6977 */
-#line 6977
+/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/timeout.merge.c:6973 */
+#line 6973
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(int __fd ,
                                                                                 char const   *__file ,
                                                                                 struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/timeout.merge.c:6977 */
+/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/timeout.merge.c:6973 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/timeout.merge.c:6994 */
-#line 6994
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/timeout.merge.c:6990 */
+#line 6990
 extern int ( __attribute__((__nonnull__(1))) mkstemp64)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/timeout.merge.c:6994 */
+/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/timeout.merge.c:6990 */
 
 /* BEGIN STRUCT-DECL _G_fpos64_t LOC=./src/timeout.merge.c:924 */
 #line 924
 struct _G_fpos64_t ;
 /* END STRUCT-DECL _G_fpos64_t LOC=./src/timeout.merge.c:924 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/timeout.merge.c:6998 */
-#line 6998
+/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/timeout.merge.c:6994 */
+#line 6994
 extern FILE *stdin ;
-/* END VARIABLE-DECL-EXTERN stdin LOC=./src/timeout.merge.c:6998 */
+/* END VARIABLE-DECL-EXTERN stdin LOC=./src/timeout.merge.c:6994 */
 
-/* BEGIN TYPEDEF __kernel_key_t LOC=./src/timeout.merge.c:7002 */
-#line 7002 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_key_t LOC=./src/timeout.merge.c:6998 */
+#line 6998 "./src/timeout.merge.c"
 typedef int __kernel_key_t;
-/* END TYPEDEF __kernel_key_t LOC=./src/timeout.merge.c:7002 */
+/* END TYPEDEF __kernel_key_t LOC=./src/timeout.merge.c:6998 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/timeout.merge.c:7010 */
-#line 7010
+/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/timeout.merge.c:7006 */
+#line 7006
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dgettext)(char const   *__domainname ,
                                                                                    char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/timeout.merge.c:7010 */
+/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/timeout.merge.c:7006 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/timeout.merge.c:7036 */
-#line 7036
+/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/timeout.merge.c:7032 */
+#line 7032
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/timeout.merge.c:7036 */
+/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/timeout.merge.c:7032 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11409,16 +11397,16 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(i
    char *__builtin_strstr(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strstr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/timeout.merge.c:7046 */
-#line 7046
+/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/timeout.merge.c:7042 */
+#line 7042
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_kill)(pthread_t __threadid ,
                                                                                    int __signo ) ;
-/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/timeout.merge.c:7046 */
+/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/timeout.merge.c:7042 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/timeout.merge.c:7056 */
-#line 7056
+/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/timeout.merge.c:7052 */
+#line 7052
 extern int fcntl64(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/timeout.merge.c:7056 */
+/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/timeout.merge.c:7052 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -11436,43 +11424,43 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
    _Float128 __builtin_atanhf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/timeout.merge.c:7104 */
-#line 7104
+/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/timeout.merge.c:7100 */
+#line 7100
 extern int error_one_per_line ;
-/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/timeout.merge.c:7104 */
+/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/timeout.merge.c:7100 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:1312 */
 #line 1312
 struct __anonstruct__sigsys_1029881407 ;
 /* END STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/timeout.merge.c:1312 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/timeout.merge.c:7149 */
-#line 7149
+/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/timeout.merge.c:7145 */
+#line 7145
 extern int fflush_unlocked(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/timeout.merge.c:7149 */
+/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/timeout.merge.c:7145 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned char __builtin_rotateright8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/timeout.merge.c:7162 */
-#line 7162
+/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/timeout.merge.c:7158 */
+#line 7158
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srandom)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srandom LOC=./src/timeout.merge.c:7162 */
+/* END FUNCTION-DECL-EXTERN srandom LOC=./src/timeout.merge.c:7158 */
 
 /* BEGIN FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cargl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/timeout.merge.c:7195 */
-#line 7195
+/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/timeout.merge.c:7191 */
+#line 7191
 enum __anonenum_365337802___0 {
     GETOPT_HELP_CHAR___0 = -130,
     GETOPT_VERSION_CHAR___0 = -131
 } ;
-/* END ENUM __anonenum_365337802___0 LOC=./src/timeout.merge.c:7195 */
+/* END ENUM __anonenum_365337802___0 LOC=./src/timeout.merge.c:7191 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11489,94 +11477,102 @@ enum __anonenum_365337802___0 {
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/timeout.merge.c:7230 */
-#line 7230
+/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/timeout.merge.c:7226 */
+#line 7226
 extern ssize_t pwrite(int __fd , void const   *__buf , size_t __n , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/timeout.merge.c:7230 */
+/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/timeout.merge.c:7226 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/timeout.merge.c:7245 */
-#line 7245
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/timeout.merge.c:7241 */
+#line 7241
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtof64x)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/timeout.merge.c:7245 */
+/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/timeout.merge.c:7241 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/timeout.merge.c:7250 */
-#line 7250
+/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/timeout.merge.c:7246 */
+#line 7246
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memset)(void *__s ,
                                                                                                int __c ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset LOC=./src/timeout.merge.c:7250 */
+/* END FUNCTION-DECL-EXTERN memset LOC=./src/timeout.merge.c:7246 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/timeout.merge.c:7264 */
-#line 7264
+/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/timeout.merge.c:7260 */
+#line 7260
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror LOC=./src/timeout.merge.c:7264 */
+/* END FUNCTION-DECL-EXTERN ferror LOC=./src/timeout.merge.c:7260 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csinf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __once_flag LOC=./src/timeout.merge.c:7298 */
-#line 7298 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __once_flag LOC=./src/timeout.merge.c:7294 */
+#line 7294 "./src/timeout.merge.c"
 typedef struct __anonstruct___once_flag_783464055 __once_flag;
-/* END TYPEDEF __once_flag LOC=./src/timeout.merge.c:7298 */
+/* END TYPEDEF __once_flag LOC=./src/timeout.merge.c:7294 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/timeout.merge.c:7302 */
-#line 7302
+/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/timeout.merge.c:7298 */
+#line 7298
 extern int ( __attribute__((__nonnull__(1,2))) scandir64)(char const   * __restrict  __dir ,
                                                           struct dirent64 *** __restrict  __namelist ,
                                                           int (*__selector)(struct dirent64  const  * ) ,
                                                           int (*__cmp)(struct dirent64  const  ** ,
                                                                        struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/timeout.merge.c:7302 */
+/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/timeout.merge.c:7298 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_t3fn_envp LOC=UNKNOWN */
+char **_TIG_IZ_t3fn_envp ;
+/* END VARIABLE-DECL _TIG_IZ_t3fn_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmal(long double  , long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/timeout.merge.c:7320 */
-#line 7320
+/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/timeout.merge.c:7316 */
+#line 7316
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execv)(char const   *__path ,
                                                                                               char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execv LOC=./src/timeout.merge.c:7320 */
+/* END FUNCTION-DECL-EXTERN execv LOC=./src/timeout.merge.c:7316 */
 
-/* BEGIN TYPEDEF int_fast16_t LOC=./src/timeout.merge.c:7329 */
-#line 7329 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int_fast16_t LOC=./src/timeout.merge.c:7325 */
+#line 7325 "./src/timeout.merge.c"
 typedef long int_fast16_t;
-/* END TYPEDEF int_fast16_t LOC=./src/timeout.merge.c:7329 */
+/* END TYPEDEF int_fast16_t LOC=./src/timeout.merge.c:7325 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/timeout.merge.c:7360 */
-#line 7360
+/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/timeout.merge.c:7356 */
+#line 7356
 extern size_t ( __attribute__((__nonnull__(4))) fread_unlocked)(void * __restrict  __ptr ,
                                                                 size_t __size , size_t __n ,
                                                                 FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/timeout.merge.c:7360 */
+/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/timeout.merge.c:7356 */
 
-/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/timeout.merge.c:7366 */
-#line 7366 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/timeout.merge.c:7362 */
+#line 7362 "./src/timeout.merge.c"
 typedef unsigned short __kernel_gid16_t;
-/* END TYPEDEF __kernel_gid16_t LOC=./src/timeout.merge.c:7366 */
+/* END TYPEDEF __kernel_gid16_t LOC=./src/timeout.merge.c:7362 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fabsf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/timeout.merge.c:7379 */
-#line 7379
+/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/timeout.merge.c:7375 */
+#line 7375
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(5), __leaf__)) statx)(int __dirfd ,
                                                                                             char const   * __restrict  __path ,
                                                                                             int __flags ,
                                                                                             unsigned int __mask ,
                                                                                             struct statx * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN statx LOC=./src/timeout.merge.c:7379 */
+/* END FUNCTION-DECL-EXTERN statx LOC=./src/timeout.merge.c:7375 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/timeout.merge.c:7412 */
-#line 7412
+/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/timeout.merge.c:7408 */
+#line 7408
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) vfork)(void) ;
-/* END FUNCTION-DECL-EXTERN vfork LOC=./src/timeout.merge.c:7412 */
+/* END FUNCTION-DECL-EXTERN vfork LOC=./src/timeout.merge.c:7408 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_argc LOC=UNKNOWN */
+int _TIG_IZ_rYHN_argc ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int_least8_t LOC=./src/timeout.merge.c:7432 */
 #line 7432 "./src/timeout.merge.c"
@@ -12055,60 +12051,60 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
                                                                                               char *__buf ) ;
 /* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/timeout.merge.c:8172 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/timeout.merge.c:8182 */
-#line 8182
+/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/timeout.merge.c:8186 */
+#line 8186
 extern void *x2nrealloc(void *p , size_t *pn , size_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/timeout.merge.c:8182 */
+/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/timeout.merge.c:8186 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned int __builtin_rotateleft32(unsigned int  , unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/timeout.merge.c:8204 */
-#line 8204 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/timeout.merge.c:8208 */
+#line 8208 "./src/timeout.merge.c"
 typedef unsigned int __kernel_uid32_t;
-/* END TYPEDEF __kernel_uid32_t LOC=./src/timeout.merge.c:8204 */
+/* END TYPEDEF __kernel_uid32_t LOC=./src/timeout.merge.c:8208 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sinhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/timeout.merge.c:8213 */
-#line 8213
-extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/timeout.merge.c:8213 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/timeout.merge.c:8217 */
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/timeout.merge.c:8217 */
 #line 8217
+extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
+/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/timeout.merge.c:8217 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/timeout.merge.c:8221 */
+#line 8221
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigorset)(sigset_t *__set ,
                                                                                                    sigset_t const   *__left ,
                                                                                                    sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/timeout.merge.c:8217 */
+/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/timeout.merge.c:8221 */
 
-/* BEGIN ENUM __anonenum_365337802 LOC=./src/timeout.merge.c:8233 */
-#line 8233
+/* BEGIN ENUM __anonenum_365337802 LOC=./src/timeout.merge.c:8237 */
+#line 8237
 enum __anonenum_365337802 {
     GETOPT_HELP_CHAR = -130,
     GETOPT_VERSION_CHAR = -131
 } ;
-/* END ENUM __anonenum_365337802 LOC=./src/timeout.merge.c:8233 */
+/* END ENUM __anonenum_365337802 LOC=./src/timeout.merge.c:8237 */
 
-/* BEGIN TYPEDEF int64_t LOC=./src/timeout.merge.c:8270 */
-#line 8270 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int64_t LOC=./src/timeout.merge.c:8274 */
+#line 8274 "./src/timeout.merge.c"
 typedef __int64_t int64_t;
-/* END TYPEDEF int64_t LOC=./src/timeout.merge.c:8270 */
+/* END TYPEDEF int64_t LOC=./src/timeout.merge.c:8274 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/timeout.merge.c:8279 */
-#line 8279
+/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/timeout.merge.c:8287 */
+#line 8287
 extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN pclose LOC=./src/timeout.merge.c:8279 */
+/* END FUNCTION-DECL-EXTERN pclose LOC=./src/timeout.merge.c:8287 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/timeout.merge.c:8307 */
-#line 8307
+/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/timeout.merge.c:8315 */
+#line 8315
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) alarm)(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN alarm LOC=./src/timeout.merge.c:8307 */
+/* END FUNCTION-DECL-EXTERN alarm LOC=./src/timeout.merge.c:8315 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 /* compiler builtin: 
@@ -12116,25 +12112,25 @@ extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) al
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/timeout.merge.c:8335 */
-#line 8335
+/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/timeout.merge.c:8343 */
+#line 8343
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigstack)(struct sigstack *__ss ,
                                                                                                struct sigstack *__oss ) ;
-/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/timeout.merge.c:8335 */
+/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/timeout.merge.c:8343 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/timeout.merge.c:8340 */
-#line 8340
-extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/timeout.merge.c:8340 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/timeout.merge.c:8348 */
+/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/timeout.merge.c:8348 */
 #line 8348
+extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
+/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/timeout.merge.c:8348 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/timeout.merge.c:8356 */
+#line 8356
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime_r)(time_t const   * __restrict  __timer ,
                                                                                 char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/timeout.merge.c:8348 */
+/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/timeout.merge.c:8356 */
 
-/* BEGIN ENUM __anonenum_513775621 LOC=./src/timeout.merge.c:8358 */
-#line 8358
+/* BEGIN ENUM __anonenum_513775621 LOC=./src/timeout.merge.c:8366 */
+#line 8366
 enum __anonenum_513775621 {
     DT_UNKNOWN = 0,
     DT_FIFO = 1,
@@ -12146,34 +12142,34 @@ enum __anonenum_513775621 {
     DT_SOCK = 12,
     DT_WHT = 14
 } ;
-/* END ENUM __anonenum_513775621 LOC=./src/timeout.merge.c:8358 */
+/* END ENUM __anonenum_513775621 LOC=./src/timeout.merge.c:8366 */
 
-/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/timeout.merge.c:8372 */
-#line 8372 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/timeout.merge.c:8380 */
+#line 8380 "./src/timeout.merge.c"
 typedef struct __anonstruct___kernel_fd_set_990674701 __kernel_fd_set;
-/* END TYPEDEF __kernel_fd_set LOC=./src/timeout.merge.c:8372 */
+/* END TYPEDEF __kernel_fd_set LOC=./src/timeout.merge.c:8380 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_least64_t LOC=./src/timeout.merge.c:8389 */
-#line 8389 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_least64_t LOC=./src/timeout.merge.c:8397 */
+#line 8397 "./src/timeout.merge.c"
 typedef __uint_least64_t uint_least64_t;
-/* END TYPEDEF uint_least64_t LOC=./src/timeout.merge.c:8389 */
+/* END TYPEDEF uint_least64_t LOC=./src/timeout.merge.c:8397 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/timeout.merge.c:8393 */
-#line 8393
+/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/timeout.merge.c:8401 */
+#line 8401
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat64)(int __fd ,
                                                                                               struct stat64 *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/timeout.merge.c:8393 */
+/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/timeout.merge.c:8401 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/timeout.merge.c:8398 */
-#line 8398
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/timeout.merge.c:8406 */
+#line 8406
 extern void __error_at_line_alias(int __status , int __errnum , char const   *__fname ,
                                   unsigned int __line , char const   *__format  , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/timeout.merge.c:8398 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/timeout.merge.c:8406 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12190,20 +12186,20 @@ extern void __error_at_line_alias(int __status , int __errnum , char const   *__
    long double __builtin_sqrtl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/timeout.merge.c:8461 */
-#line 8461
+/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/timeout.merge.c:8469 */
+#line 8469
 extern __ssize_t ( __attribute__((__nonnull__(4))) getdelim)(char ** __restrict  __lineptr ,
                                                              size_t * __restrict  __n ,
                                                              int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/timeout.merge.c:8461 */
+/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/timeout.merge.c:8469 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_lgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/timeout.merge.c:8476 */
-#line 8476
+/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/timeout.merge.c:8484 */
+#line 8484
 enum __anonenum_315186338___0 {
     _SC_ARG_MAX___0 = 0,
     _SC_CHILD_MAX___0 = 1,
@@ -12423,7 +12419,7 @@ enum __anonenum_315186338___0 {
     _SC_MINSIGSTKSZ___0 = 249,
     _SC_SIGSTKSZ___0 = 250
 } ;
-/* END ENUM __anonenum_315186338___0 LOC=./src/timeout.merge.c:8476 */
+/* END ENUM __anonenum_315186338___0 LOC=./src/timeout.merge.c:8484 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12440,44 +12436,44 @@ enum __anonenum_315186338___0 {
    float __builtin_nansf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nansf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/timeout.merge.c:8732 */
-#line 8732
+/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/timeout.merge.c:8740 */
+#line 8740
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtod_l)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/timeout.merge.c:8732 */
+/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/timeout.merge.c:8740 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/timeout.merge.c:8738 */
-#line 8738
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/timeout.merge.c:8746 */
+#line 8746
 extern int ( __attribute__((__nonnull__(1))) fgetpos)(FILE * __restrict  __stream ,
                                                       fpos_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/timeout.merge.c:8738 */
+/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/timeout.merge.c:8746 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erfcf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/timeout.merge.c:8748 */
-#line 8748
+/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/timeout.merge.c:8756 */
+#line 8756
 extern int ( __attribute__((__nonnull__(1))) fgetc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/timeout.merge.c:8748 */
+/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/timeout.merge.c:8756 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/timeout.merge.c:8757 */
-#line 8757
+/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/timeout.merge.c:8765 */
+#line 8765
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memfrob)(void *__s ,
                                                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/timeout.merge.c:8757 */
+/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/timeout.merge.c:8765 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/timeout.merge.c:8762 */
-#line 8762
+/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/timeout.merge.c:8770 */
+#line 8770
 extern time_t ( __attribute__((__nonnull__(2))) mktime_z)(timezone_t __tz , struct tm * __restrict  __tm ) ;
-/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/timeout.merge.c:8762 */
+/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/timeout.merge.c:8770 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/timeout.merge.c:8780 */
-#line 8780
+/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/timeout.merge.c:8788 */
+#line 8788
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) imaxabs)(intmax_t __n )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/timeout.merge.c:8780 */
+/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/timeout.merge.c:8788 */
 
 /* BEGIN FUNCTION-DECL npgettext_aux LOC=UNKNOWN */
 __inline static char const   *npgettext_aux(char const   *domain , char const   *msg_ctxt_id ,
@@ -12491,13 +12487,13 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
                                , ...) ;  */
 /* END FUNCTION-DECL __builtin___sprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int32_t LOC=./src/timeout.merge.c:8806 */
-#line 8806 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF int32_t LOC=./src/timeout.merge.c:8814 */
+#line 8814 "./src/timeout.merge.c"
 typedef __int32_t int32_t;
-/* END TYPEDEF int32_t LOC=./src/timeout.merge.c:8806 */
+/* END TYPEDEF int32_t LOC=./src/timeout.merge.c:8814 */
 
-/* BEGIN STRUCT random_data LOC=./src/timeout.merge.c:8810 */
-#line 8810 "./src/timeout.merge.c"
+/* BEGIN STRUCT random_data LOC=./src/timeout.merge.c:8818 */
+#line 8818 "./src/timeout.merge.c"
 struct random_data {
    int32_t *fptr ;
    int32_t *rptr ;
@@ -12507,12 +12503,12 @@ struct random_data {
    int rand_sep ;
    int32_t *end_ptr ;
 };
-/* END STRUCT random_data LOC=./src/timeout.merge.c:8810 */
+/* END STRUCT random_data LOC=./src/timeout.merge.c:8818 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/timeout.merge.c:8822 */
-#line 8822
+/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/timeout.merge.c:8830 */
+#line 8830
 extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_scanf")  ;
-/* END FUNCTION-DECL-EXTERN scanf LOC=./src/timeout.merge.c:8822 */
+/* END FUNCTION-DECL-EXTERN scanf LOC=./src/timeout.merge.c:8830 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12534,10 +12530,10 @@ extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_
    _Float16 __builtin_powf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_powf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/timeout.merge.c:8877 */
-#line 8877
+/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/timeout.merge.c:8885 */
+#line 8885
 extern int puts(char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN puts LOC=./src/timeout.merge.c:8877 */
+/* END FUNCTION-DECL-EXTERN puts LOC=./src/timeout.merge.c:8885 */
 
 /* BEGIN FUNCTION-DECL __builtin_addc LOC=BUILTIN */
 /* compiler builtin: 
@@ -12556,69 +12552,69 @@ extern int puts(char const   *__s ) ;
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/timeout.merge.c:8931 */
-#line 8931
+/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/timeout.merge.c:8939 */
+#line 8939
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chdir LOC=./src/timeout.merge.c:8931 */
+/* END FUNCTION-DECL-EXTERN chdir LOC=./src/timeout.merge.c:8939 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/timeout.merge.c:8935 */
-#line 8935
+/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/timeout.merge.c:8943 */
+#line 8943
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fmemopen)(void *__s ,
                                                                                  size_t __len ,
                                                                                  char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/timeout.merge.c:8935 */
+/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/timeout.merge.c:8943 */
 
-/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/timeout.merge.c:8941 */
-#line 8941
+/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/timeout.merge.c:8949 */
+#line 8949
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
-/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/timeout.merge.c:8941 */
+/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/timeout.merge.c:8949 */
 
-/* BEGIN ENUM __anonenum_819735966 LOC=./src/timeout.merge.c:8965 */
-#line 8965
+/* BEGIN ENUM __anonenum_819735966 LOC=./src/timeout.merge.c:8973 */
+#line 8973
 enum __anonenum_819735966 {
     LOG10_TIMESPEC_HZ = 9
 } ;
-/* END ENUM __anonenum_819735966 LOC=./src/timeout.merge.c:8965 */
+/* END ENUM __anonenum_819735966 LOC=./src/timeout.merge.c:8973 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_powf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/timeout.merge.c:8980 */
-#line 8980 "./src/timeout.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/timeout.merge.c:8988 */
+#line 8988 "./src/timeout.merge.c"
 union __anonunion_pthread_rwlock_t_656928968 {
    struct __pthread_rwlock_arch_t __data ;
    char __size[56] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/timeout.merge.c:8980 */
+/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/timeout.merge.c:8988 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1272 */
 #line 1272
 union __anonunion____missing_field_name_1036346504 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346504 LOC=./src/timeout.merge.c:1272 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/timeout.merge.c:8993 */
-#line 8993
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/timeout.merge.c:9001 */
+#line 9001
 extern char *quotearg_n_custom_mem(int n , char const   *left_quote , char const   *right_quote ,
                                    char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/timeout.merge.c:8993 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/timeout.merge.c:9001 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/timeout.merge.c:9040 */
-#line 9040
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/timeout.merge.c:9048 */
+#line 9048
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,4), __leaf__)) strncasecmp_l)(char const   *__s1 ,
                                                                                                         char const   *__s2 ,
                                                                                                         size_t __n ,
                                                                                                         locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/timeout.merge.c:9040 */
+/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/timeout.merge.c:9048 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/timeout.merge.c:9029 */
-#line 9029
+/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/timeout.merge.c:9037 */
+#line 9037
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkfifoat)(int __fd ,
                                                                                                char const   *__path ,
                                                                                                __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/timeout.merge.c:9029 */
+/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/timeout.merge.c:9037 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -12631,25 +12627,25 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
 struct __anonstruct__sigev_thread_746770901 ;
 /* END STRUCT-DECL __anonstruct__sigev_thread_746770901 LOC=./src/timeout.merge.c:1084 */
 
-/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/timeout.merge.c:9063 */
-#line 9063
+/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/timeout.merge.c:9071 */
+#line 9071
 extern DIR *( __attribute__((__nonnull__(1))) opendir)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN opendir LOC=./src/timeout.merge.c:9063 */
+/* END FUNCTION-DECL-EXTERN opendir LOC=./src/timeout.merge.c:9071 */
 
-/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/timeout.merge.c:9067 */
-#line 9067
+/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/timeout.merge.c:9075 */
+#line 9075
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) llabs)(long long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN llabs LOC=./src/timeout.merge.c:9067 */
+/* END FUNCTION-DECL-EXTERN llabs LOC=./src/timeout.merge.c:9075 */
 
 /* BEGIN FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_is_aligned(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/timeout.merge.c:9071 */
-#line 9071
+/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/timeout.merge.c:9079 */
+#line 9079
 extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
-/* END FUNCTION-DECL-EXTERN gettime LOC=./src/timeout.merge.c:9071 */
+/* END FUNCTION-DECL-EXTERN gettime LOC=./src/timeout.merge.c:9079 */
 
 /* BEGIN FUNCTION-DECL __builtin_nextafter LOC=BUILTIN */
 /* compiler builtin: 
@@ -12661,10 +12657,10 @@ extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
 struct __locale_data ;
 /* END STRUCT-DECL __locale_data LOC=./src/timeout.merge.c:856 */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/timeout.merge.c:9098 */
-#line 9098
+/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/timeout.merge.c:9106 */
+#line 9106
 extern unsigned int error_message_count ;
-/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/timeout.merge.c:9098 */
+/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/timeout.merge.c:9106 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12696,10 +12692,10 @@ struct rlimit ;
 enum __anonenum_437032235___0 ;
 /* END ENUM-DECL __anonenum_437032235___0 LOC=./src/timeout.merge.c:1152 */
 
-/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/timeout.merge.c:9152 */
-#line 9152
+/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/timeout.merge.c:9160 */
+#line 9160
 __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_64 LOC=./src/timeout.merge.c:9152 */
+/* END FUNCTION-DECL __bswap_64 LOC=./src/timeout.merge.c:9160 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12711,11 +12707,11 @@ __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
    double __builtin_nexttoward(double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttoward LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrtod LOC=./src/timeout.merge.c:9171 */
-#line 9171
+/* BEGIN FUNCTION-DECL-EXTERN xstrtod LOC=./src/timeout.merge.c:9179 */
+#line 9179
 extern _Bool xstrtod(char const   *str , char const   **ptr , double *result , double (*convert)(char const   * ,
                                                                                                  char ** ) ) ;
-/* END FUNCTION-DECL-EXTERN xstrtod LOC=./src/timeout.merge.c:9171 */
+/* END FUNCTION-DECL-EXTERN xstrtod LOC=./src/timeout.merge.c:9179 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12727,10 +12723,10 @@ extern _Bool xstrtod(char const   *str , char const   **ptr , double *result , d
    void *__builtin_memset(void * , int  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_memset LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL dot_or_dotdot LOC=./src/timeout.merge.c:9195 */
-#line 9195
+/* BEGIN FUNCTION-DECL dot_or_dotdot LOC=./src/timeout.merge.c:9203 */
+#line 9203
 __inline static _Bool dot_or_dotdot(char const   *file_name ) ;
-/* END FUNCTION-DECL dot_or_dotdot LOC=./src/timeout.merge.c:9195 */
+/* END FUNCTION-DECL dot_or_dotdot LOC=./src/timeout.merge.c:9203 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf LOC=BUILTIN */
 /* compiler builtin: 
@@ -12747,13 +12743,13 @@ enum __anonenum_91015150___0 ;
    _Complex long double __builtin_casinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/timeout.merge.c:9219 */
-#line 9219
+/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/timeout.merge.c:9227 */
+#line 9227
 extern int ( __attribute__((__nonnull__(2))) fputc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/timeout.merge.c:9219 */
+/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/timeout.merge.c:9227 */
 
-/* BEGIN STRUCT _fpstate LOC=./src/timeout.merge.c:9227 */
-#line 9227 "./src/timeout.merge.c"
+/* BEGIN STRUCT _fpstate LOC=./src/timeout.merge.c:9235 */
+#line 9235 "./src/timeout.merge.c"
 struct _fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -12767,10 +12763,10 @@ struct _fpstate {
    struct _xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _fpstate LOC=./src/timeout.merge.c:9227 */
+/* END STRUCT _fpstate LOC=./src/timeout.merge.c:9235 */
 
-/* BEGIN STRUCT lconv LOC=./src/timeout.merge.c:9249 */
-#line 9249 "./src/timeout.merge.c"
+/* BEGIN STRUCT lconv LOC=./src/timeout.merge.c:9257 */
+#line 9257 "./src/timeout.merge.c"
 struct lconv {
    char *decimal_point ;
    char *thousands_sep ;
@@ -12797,105 +12793,105 @@ struct lconv {
    char int_p_sign_posn ;
    char int_n_sign_posn ;
 };
-/* END STRUCT lconv LOC=./src/timeout.merge.c:9249 */
+/* END STRUCT lconv LOC=./src/timeout.merge.c:9257 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgid LOC=./src/timeout.merge.c:9320 */
-#line 9320
+/* BEGIN FUNCTION-DECL-EXTERN getgid LOC=./src/timeout.merge.c:9328 */
+#line 9328
 extern  __attribute__((__nothrow__)) __gid_t ( __attribute__((__leaf__)) getgid)(void) ;
-/* END FUNCTION-DECL-EXTERN getgid LOC=./src/timeout.merge.c:9320 */
+/* END FUNCTION-DECL-EXTERN getgid LOC=./src/timeout.merge.c:9328 */
 
-/* BEGIN TYPEDEF caddr_t LOC=./src/timeout.merge.c:9329 */
-#line 9329 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF caddr_t LOC=./src/timeout.merge.c:9337 */
+#line 9337 "./src/timeout.merge.c"
 typedef __caddr_t caddr_t;
-/* END TYPEDEF caddr_t LOC=./src/timeout.merge.c:9329 */
+/* END TYPEDEF caddr_t LOC=./src/timeout.merge.c:9337 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat64 LOC=./src/timeout.merge.c:9333 */
-#line 9333
+/* BEGIN FUNCTION-DECL-EXTERN creat64 LOC=./src/timeout.merge.c:9341 */
+#line 9341
 extern int ( __attribute__((__nonnull__(1))) creat64)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat64 LOC=./src/timeout.merge.c:9333 */
+/* END FUNCTION-DECL-EXTERN creat64 LOC=./src/timeout.merge.c:9341 */
 
 /* BEGIN FUNCTION-DECL __builtin_powif LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_powif(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_powif LOC=BUILTIN */
 
-/* BEGIN STRUCT itimerspec LOC=./src/timeout.merge.c:9349 */
-#line 9349 "./src/timeout.merge.c"
+/* BEGIN STRUCT itimerspec LOC=./src/timeout.merge.c:9357 */
+#line 9357 "./src/timeout.merge.c"
 struct itimerspec {
    struct timespec it_interval ;
    struct timespec it_value ;
 };
-/* END STRUCT itimerspec LOC=./src/timeout.merge.c:9349 */
+/* END STRUCT itimerspec LOC=./src/timeout.merge.c:9357 */
 
-/* BEGIN STRUCT timezone LOC=./src/timeout.merge.c:9356 */
-#line 9356 "./src/timeout.merge.c"
+/* BEGIN STRUCT timezone LOC=./src/timeout.merge.c:9364 */
+#line 9364 "./src/timeout.merge.c"
 struct timezone {
    int tz_minuteswest ;
    int tz_dsttime ;
 };
-/* END STRUCT timezone LOC=./src/timeout.merge.c:9356 */
+/* END STRUCT timezone LOC=./src/timeout.merge.c:9364 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalblnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalblnf(float  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strftime_l LOC=./src/timeout.merge.c:9368 */
-#line 9368
+/* BEGIN FUNCTION-DECL-EXTERN strftime_l LOC=./src/timeout.merge.c:9376 */
+#line 9376
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) strftime_l)(char * __restrict  __s ,
                                                                                     size_t __maxsize ,
                                                                                     char const   * __restrict  __format ,
                                                                                     struct tm  const  * __restrict  __tp ,
                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strftime_l LOC=./src/timeout.merge.c:9368 */
+/* END FUNCTION-DECL-EXTERN strftime_l LOC=./src/timeout.merge.c:9376 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpgid LOC=./src/timeout.merge.c:9376 */
-#line 9376
+/* BEGIN FUNCTION-DECL-EXTERN getpgid LOC=./src/timeout.merge.c:9384 */
+#line 9384
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpgid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN getpgid LOC=./src/timeout.merge.c:9376 */
+/* END FUNCTION-DECL-EXTERN getpgid LOC=./src/timeout.merge.c:9384 */
 
 /* BEGIN STRUCT-DECL obstack LOC=./src/timeout.merge.c:872 */
 #line 872
 struct obstack ;
 /* END STRUCT-DECL obstack LOC=./src/timeout.merge.c:872 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/timeout.merge.c:9389 */
-#line 9389
+/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/timeout.merge.c:9397 */
+#line 9397
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) __sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/timeout.merge.c:9389 */
+/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/timeout.merge.c:9397 */
 
 /* BEGIN FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_longjmp(void ** , int  ) ;  */
 /* END FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/timeout.merge.c:9393 */
-#line 9393
+/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/timeout.merge.c:9401 */
+#line 9401
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/timeout.merge.c:9393 */
+/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/timeout.merge.c:9401 */
 
-/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/timeout.merge.c:9405 */
-#line 9405
+/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/timeout.merge.c:9413 */
+#line 9413
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat)(int __oldfd ,
                                                                                char const   *__old ,
                                                                                int __newfd ,
                                                                                char const   *__new ) ;
-/* END FUNCTION-DECL-EXTERN renameat LOC=./src/timeout.merge.c:9405 */
+/* END FUNCTION-DECL-EXTERN renameat LOC=./src/timeout.merge.c:9413 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/timeout.merge.c:9397 */
-#line 9397
+/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/timeout.merge.c:9405 */
+#line 9405
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_delete)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/timeout.merge.c:9397 */
+/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/timeout.merge.c:9405 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/timeout.merge.c:9401 */
-#line 9401
+/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/timeout.merge.c:9409 */
+#line 9409
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid)(void) ;
-/* END FUNCTION-DECL-EXTERN getppid LOC=./src/timeout.merge.c:9401 */
+/* END FUNCTION-DECL-EXTERN getppid LOC=./src/timeout.merge.c:9409 */
 
 /* BEGIN FUNCTION-DECL __builtin_subc LOC=BUILTIN */
 /* compiler builtin: 
@@ -12903,40 +12899,40 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid
                                unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_subc LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __FILE LOC=./src/timeout.merge.c:9428 */
-#line 9428 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __FILE LOC=./src/timeout.merge.c:9436 */
+#line 9436 "./src/timeout.merge.c"
 typedef struct _IO_FILE __FILE;
-/* END TYPEDEF __FILE LOC=./src/timeout.merge.c:9428 */
+/* END TYPEDEF __FILE LOC=./src/timeout.merge.c:9436 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/timeout.merge.c:9432 */
-#line 9432
+/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/timeout.merge.c:9440 */
+#line 9440
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcngettext)(char const   *__domainname ,
                                                                                    char const   *__msgid1 ,
                                                                                    char const   *__msgid2 ,
                                                                                    unsigned long __n ,
                                                                                    int __category )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/timeout.merge.c:9432 */
+/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/timeout.merge.c:9440 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_sqrtf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/timeout.merge.c:9455 */
-#line 9455
+/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/timeout.merge.c:9463 */
+#line 9463
 extern ssize_t pwrite64(int __fd , void const   *__buf , size_t __n , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/timeout.merge.c:9455 */
+/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/timeout.merge.c:9463 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_exp2(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL emit_symlink_recurse_options LOC=./src/timeout.merge.c:9469 */
-#line 9469
+/* BEGIN FUNCTION-DECL emit_symlink_recurse_options LOC=./src/timeout.merge.c:9477 */
+#line 9477
 __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
-/* END FUNCTION-DECL emit_symlink_recurse_options LOC=./src/timeout.merge.c:9469 */
+/* END FUNCTION-DECL emit_symlink_recurse_options LOC=./src/timeout.merge.c:9477 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexpf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12952,55 +12948,55 @@ __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
 static _Bool verbose ;
 /* END VARIABLE-DECL verbose LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/timeout.merge.c:9494 */
-#line 9494 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/timeout.merge.c:9502 */
+#line 9502 "./src/timeout.merge.c"
 typedef int __kernel_clockid_t;
-/* END TYPEDEF __kernel_clockid_t LOC=./src/timeout.merge.c:9494 */
+/* END TYPEDEF __kernel_clockid_t LOC=./src/timeout.merge.c:9502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/timeout.merge.c:9503 */
-#line 9503
+/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/timeout.merge.c:9511 */
+#line 9511
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoul)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoul")  ;
-/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/timeout.merge.c:9503 */
+/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/timeout.merge.c:9511 */
 
 /* BEGIN UNION-DECL __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:992 */
 #line 992
 union __anonunion____missing_field_name_1036346502 ;
 /* END UNION-DECL __anonunion____missing_field_name_1036346502 LOC=./src/timeout.merge.c:992 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/timeout.merge.c:9537 */
-#line 9537
+/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/timeout.merge.c:9545 */
+#line 9545
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcoll)(char const   *__s1 ,
                                                                                                 char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/timeout.merge.c:9537 */
+/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/timeout.merge.c:9545 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/timeout.merge.c:9548 */
-#line 9548
+/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/timeout.merge.c:9556 */
+#line 9556
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strverscmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/timeout.merge.c:9548 */
+/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/timeout.merge.c:9556 */
 
 /* BEGIN STRUCT-DECL timespec LOC=./src/timeout.merge.c:1112 */
 #line 1112
 struct timespec ;
 /* END STRUCT-DECL timespec LOC=./src/timeout.merge.c:1112 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/timeout.merge.c:9574 */
-#line 9574
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/timeout.merge.c:9582 */
+#line 9582
 extern int rpl_fcntl(int fd , int action  , ...) ;
-/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/timeout.merge.c:9574 */
+/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/timeout.merge.c:9582 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cimagl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/timeout.merge.c:9587 */
-#line 9587
+/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/timeout.merge.c:9595 */
+#line 9595
 extern void *xcalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/timeout.merge.c:9587 */
+/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/timeout.merge.c:9595 */
 
 /* BEGIN FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -13013,78 +13009,78 @@ __alloc_size__(1,2))) ;
 struct __anonstruct__sigfault_1045545134 ;
 /* END STRUCT-DECL __anonstruct__sigfault_1045545134 LOC=./src/timeout.merge.c:1060 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/timeout.merge.c:9598 */
-#line 9598
+/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/timeout.merge.c:9606 */
+#line 9606
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigdelset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/timeout.merge.c:9598 */
+/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/timeout.merge.c:9606 */
 
 /* BEGIN FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_signbitl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/timeout.merge.c:9608 */
-#line 9608
+/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/timeout.merge.c:9616 */
+#line 9616
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timespec_getres)(struct timespec *__ts ,
                                                                                       int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/timeout.merge.c:9608 */
+/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/timeout.merge.c:9616 */
 
-/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:9623 */
-#line 9623 "./src/timeout.merge.c"
+/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:9631 */
+#line 9631 "./src/timeout.merge.c"
 struct __anonstruct_imaxdiv_t_825626742 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:9623 */
+/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:9631 */
 
 /* BEGIN FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin___fprintf_chk(void * , int  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s32 LOC=./src/timeout.merge.c:9648 */
-#line 9648 "./src/timeout.merge.c"
-typedef int __s32;
-/* END TYPEDEF __s32 LOC=./src/timeout.merge.c:9648 */
-
-/* BEGIN STRUCT statx_timestamp LOC=./src/timeout.merge.c:9656 */
+/* BEGIN TYPEDEF __s32 LOC=./src/timeout.merge.c:9656 */
 #line 9656 "./src/timeout.merge.c"
+typedef int __s32;
+/* END TYPEDEF __s32 LOC=./src/timeout.merge.c:9656 */
+
+/* BEGIN STRUCT statx_timestamp LOC=./src/timeout.merge.c:9664 */
+#line 9664 "./src/timeout.merge.c"
 struct statx_timestamp {
    __s64 tv_sec ;
    __u32 tv_nsec ;
    __s32 __reserved ;
 };
-/* END STRUCT statx_timestamp LOC=./src/timeout.merge.c:9656 */
+/* END STRUCT statx_timestamp LOC=./src/timeout.merge.c:9664 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/timeout.merge.c:9669 */
-#line 9669
+/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/timeout.merge.c:9677 */
+#line 9677
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) mrand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/timeout.merge.c:9669 */
+/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/timeout.merge.c:9677 */
 
 /* BEGIN FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isnormal(...) ;  */
 /* END FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/timeout.merge.c:9674 */
-#line 9674
+/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/timeout.merge.c:9682 */
+#line 9682
 enum __anonenum_852341087___0 {
     SIGEV_SIGNAL___0 = 0,
     SIGEV_NONE___0 = 1,
     SIGEV_THREAD___0 = 2,
     SIGEV_THREAD_ID___0 = 4
 } ;
-/* END ENUM __anonenum_852341087___0 LOC=./src/timeout.merge.c:9674 */
+/* END ENUM __anonenum_852341087___0 LOC=./src/timeout.merge.c:9682 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/timeout.merge.c:9691 */
-#line 9691
+/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/timeout.merge.c:9699 */
+#line 9699
 extern int ( __attribute__((__nonnull__(1))) fgetc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/timeout.merge.c:9691 */
+/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/timeout.merge.c:9699 */
 
-/* BEGIN ENUM __anonenum_850350928 LOC=./src/timeout.merge.c:9715 */
-#line 9715
+/* BEGIN ENUM __anonenum_850350928 LOC=./src/timeout.merge.c:9723 */
+#line 9723
 enum __anonenum_850350928 {
     SEGV_MAPERR = 1,
     SEGV_ACCERR = 2,
@@ -13097,17 +13093,17 @@ enum __anonenum_850350928 {
     SEGV_MTESERR = 9,
     SEGV_CPERR = 10
 } ;
-/* END ENUM __anonenum_850350928 LOC=./src/timeout.merge.c:9715 */
+/* END ENUM __anonenum_850350928 LOC=./src/timeout.merge.c:9723 */
 
 /* BEGIN FUNCTION-DECL __builtin_sub_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_sub_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_sub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/timeout.merge.c:9739 */
-#line 9739
+/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/timeout.merge.c:9747 */
+#line 9747
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(long __seedval ) ;
-/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/timeout.merge.c:9739 */
+/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/timeout.merge.c:9747 */
 
 /* BEGIN VARIABLE-DEF preserve_status LOC=UNKNOWN */
 static _Bool preserve_status  ;
@@ -13118,10 +13114,10 @@ static _Bool preserve_status  ;
    double __builtin_powi(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_powi LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/timeout.merge.c:9757 */
-#line 9757 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/timeout.merge.c:9765 */
+#line 9765 "./src/timeout.merge.c"
 typedef unsigned int __kernel_mode_t;
-/* END TYPEDEF __kernel_mode_t LOC=./src/timeout.merge.c:9757 */
+/* END TYPEDEF __kernel_mode_t LOC=./src/timeout.merge.c:9765 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -13133,13 +13129,13 @@ typedef unsigned int __kernel_mode_t;
    long __builtin_expect(long  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_expect LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/timeout.merge.c:9780 */
-#line 9780
+/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/timeout.merge.c:9788 */
+#line 9788
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromd)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/timeout.merge.c:9780 */
+/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/timeout.merge.c:9788 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13151,33 +13147,33 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
    int __builtin_va_arg_pack_len(void) ;  */
 /* END FUNCTION-DECL __builtin_va_arg_pack_len LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/timeout.merge.c:9867 */
-#line 9867
-extern int fdatasync(int __fildes ) ;
-/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/timeout.merge.c:9867 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/timeout.merge.c:9871 */
+/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/timeout.merge.c:9871 */
 #line 9871
-extern int ( __attribute__((__nonnull__(2))) fputc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc LOC=./src/timeout.merge.c:9871 */
+extern int fdatasync(int __fildes ) ;
+/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/timeout.merge.c:9871 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/timeout.merge.c:9880 */
-#line 9880
+/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/timeout.merge.c:9875 */
+#line 9875
+extern int ( __attribute__((__nonnull__(2))) fputc)(int __c , FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fputc LOC=./src/timeout.merge.c:9875 */
+
+/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/timeout.merge.c:9884 */
+#line 9884
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/timeout.merge.c:9880 */
+/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/timeout.merge.c:9884 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/timeout.merge.c:9890 */
-#line 9890
+/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/timeout.merge.c:9894 */
+#line 9894
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigismember)(sigset_t const   *__set ,
                                                                                                   int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/timeout.merge.c:9890 */
+/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/timeout.merge.c:9894 */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/timeout.merge.c:9905 */
-#line 9905
+/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/timeout.merge.c:9909 */
+#line 9909
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) symlink)(char const   *__from ,
                                                                                                 char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlink LOC=./src/timeout.merge.c:9905 */
+/* END FUNCTION-DECL-EXTERN symlink LOC=./src/timeout.merge.c:9909 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13189,12 +13185,12 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 struct random_data ;
 /* END STRUCT-DECL random_data LOC=./src/timeout.merge.c:1432 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64_l LOC=./src/timeout.merge.c:9925 */
-#line 9925
+/* BEGIN FUNCTION-DECL-EXTERN strtof64_l LOC=./src/timeout.merge.c:9929 */
+#line 9929
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtof64_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof64_l LOC=./src/timeout.merge.c:9925 */
+/* END FUNCTION-DECL-EXTERN strtof64_l LOC=./src/timeout.merge.c:9929 */
 
 /* BEGIN FUNCTION-DECL __builtin_acosl LOC=BUILTIN */
 /* compiler builtin: 
@@ -13216,23 +13212,23 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), _
 enum __anonenum_315186338___0 ;
 /* END ENUM-DECL __anonenum_315186338___0 LOC=./src/timeout.merge.c:1332 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dprintf LOC=./src/timeout.merge.c:9969 */
-#line 9969
+/* BEGIN FUNCTION-DECL-EXTERN dprintf LOC=./src/timeout.merge.c:9973 */
+#line 9973
 extern int dprintf(int __fd , char const   * __restrict  __fmt  , ...) ;
-/* END FUNCTION-DECL-EXTERN dprintf LOC=./src/timeout.merge.c:9969 */
+/* END FUNCTION-DECL-EXTERN dprintf LOC=./src/timeout.merge.c:9973 */
 
-/* BEGIN FUNCTION-DECL-EXTERN newlocale LOC=./src/timeout.merge.c:9958 */
-#line 9958
+/* BEGIN FUNCTION-DECL-EXTERN newlocale LOC=./src/timeout.merge.c:9962 */
+#line 9962
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) newlocale)(int __category_mask ,
                                                                                      char const   *__locale ,
                                                                                      locale_t __base ) ;
-/* END FUNCTION-DECL-EXTERN newlocale LOC=./src/timeout.merge.c:9958 */
+/* END FUNCTION-DECL-EXTERN newlocale LOC=./src/timeout.merge.c:9962 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximemdup LOC=./src/timeout.merge.c:9988 */
-#line 9988
+/* BEGIN FUNCTION-DECL-EXTERN ximemdup LOC=./src/timeout.merge.c:9992 */
+#line 9992
 extern void *ximemdup(void const   *p , idx_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN ximemdup LOC=./src/timeout.merge.c:9988 */
+/* END FUNCTION-DECL-EXTERN ximemdup LOC=./src/timeout.merge.c:9992 */
 
 /* BEGIN FUNCTION-DECL __builtin___strlcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -13245,42 +13241,42 @@ __malloc__, __alloc_size__(2))) ;
    _Float128 __builtin_logbf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_logbf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/timeout.merge.c:10019 */
-#line 10019
-extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/timeout.merge.c:10019 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigandset LOC=./src/timeout.merge.c:10023 */
+/* BEGIN FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/timeout.merge.c:10023 */
 #line 10023
+extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror_unlocked)(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN ferror_unlocked LOC=./src/timeout.merge.c:10023 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigandset LOC=./src/timeout.merge.c:10027 */
+#line 10027
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigandset)(sigset_t *__set ,
                                                                                                     sigset_t const   *__left ,
                                                                                                     sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigandset LOC=./src/timeout.merge.c:10023 */
+/* END FUNCTION-DECL-EXTERN sigandset LOC=./src/timeout.merge.c:10027 */
 
 /* BEGIN STRUCT-DECL __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:1456 */
 #line 1456
 struct __anonstruct_imaxdiv_t_825626742 ;
 /* END STRUCT-DECL __anonstruct_imaxdiv_t_825626742 LOC=./src/timeout.merge.c:1456 */
 
-/* BEGIN FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/timeout.merge.c:10034 */
-#line 10034
+/* BEGIN FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/timeout.merge.c:10038 */
+#line 10038
 extern char const   *proper_name_utf8(char const   *name_ascii , char const   *name_utf8 ) ;
-/* END FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/timeout.merge.c:10034 */
+/* END FUNCTION-DECL-EXTERN proper_name_utf8 LOC=./src/timeout.merge.c:10038 */
 
 /* BEGIN FUNCTION-DECL __builtin___strcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___strcpy_chk(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strcpy_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_fast8_t LOC=./src/timeout.merge.c:10047 */
-#line 10047 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_fast8_t LOC=./src/timeout.merge.c:10051 */
+#line 10051 "./src/timeout.merge.c"
 typedef unsigned char uint_fast8_t;
-/* END TYPEDEF uint_fast8_t LOC=./src/timeout.merge.c:10047 */
+/* END TYPEDEF uint_fast8_t LOC=./src/timeout.merge.c:10051 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout LOC=./src/timeout.merge.c:10051 */
-#line 10051
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout LOC=./src/timeout.merge.c:10055 */
+#line 10055
 extern void close_stdout(void) ;
-/* END FUNCTION-DECL-EXTERN close_stdout LOC=./src/timeout.merge.c:10051 */
+/* END FUNCTION-DECL-EXTERN close_stdout LOC=./src/timeout.merge.c:10055 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13292,35 +13288,35 @@ extern void close_stdout(void) ;
    float __builtin_log2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putw LOC=./src/timeout.merge.c:10065 */
-#line 10065
+/* BEGIN FUNCTION-DECL-EXTERN putw LOC=./src/timeout.merge.c:10069 */
+#line 10069
 extern int ( __attribute__((__nonnull__(2))) putw)(int __w , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putw LOC=./src/timeout.merge.c:10065 */
+/* END FUNCTION-DECL-EXTERN putw LOC=./src/timeout.merge.c:10069 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lchmod LOC=./src/timeout.merge.c:10091 */
-#line 10091
+/* BEGIN FUNCTION-DECL-EXTERN lchmod LOC=./src/timeout.merge.c:10095 */
+#line 10095
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lchmod)(char const   *__file ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN lchmod LOC=./src/timeout.merge.c:10091 */
+/* END FUNCTION-DECL-EXTERN lchmod LOC=./src/timeout.merge.c:10095 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps LOC=./src/timeout.merge.c:10101 */
-#line 10101
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps LOC=./src/timeout.merge.c:10105 */
+#line 10105
 extern int ( __attribute__((__nonnull__(1))) mkostemps)(char *__template , int __suffixlen ,
                                                         int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps LOC=./src/timeout.merge.c:10101 */
+/* END FUNCTION-DECL-EXTERN mkostemps LOC=./src/timeout.merge.c:10105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alphasort LOC=./src/timeout.merge.c:10096 */
-#line 10096
+/* BEGIN FUNCTION-DECL-EXTERN alphasort LOC=./src/timeout.merge.c:10100 */
+#line 10100
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) alphasort)(struct dirent  const  **__e1 ,
                                                                                                   struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN alphasort LOC=./src/timeout.merge.c:10096 */
+/* END FUNCTION-DECL-EXTERN alphasort LOC=./src/timeout.merge.c:10100 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fprintf LOC=./src/timeout.merge.c:10122 */
-#line 10122
+/* BEGIN FUNCTION-DECL-EXTERN fprintf LOC=./src/timeout.merge.c:10126 */
+#line 10126
 extern int ( __attribute__((__nonnull__(1))) fprintf)(FILE * __restrict  __stream ,
                                                       char const   * __restrict  __format 
                                                       , ...) ;
-/* END FUNCTION-DECL-EXTERN fprintf LOC=./src/timeout.merge.c:10122 */
+/* END FUNCTION-DECL-EXTERN fprintf LOC=./src/timeout.merge.c:10126 */
 
 /* BEGIN FUNCTION-DECL __builtin_matrix_column_major_store LOC=BUILTIN */
 /* compiler builtin: 
@@ -13338,10 +13334,10 @@ extern int ( __attribute__((__nonnull__(1))) fprintf)(FILE * __restrict  __strea
    float __builtin_logbf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logbf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN str2sig LOC=./src/timeout.merge.c:10149 */
-#line 10149
+/* BEGIN FUNCTION-DECL-EXTERN str2sig LOC=./src/timeout.merge.c:10153 */
+#line 10153
 extern int str2sig(char const   * , int * ) ;
-/* END FUNCTION-DECL-EXTERN str2sig LOC=./src/timeout.merge.c:10149 */
+/* END FUNCTION-DECL-EXTERN str2sig LOC=./src/timeout.merge.c:10153 */
 
 /* BEGIN FUNCTION-DECL __builtin_parity LOC=BUILTIN */
 /* compiler builtin: 
@@ -13363,65 +13359,65 @@ extern int str2sig(char const   * , int * ) ;
 struct _fpstate ;
 /* END STRUCT-DECL _fpstate LOC=./src/timeout.merge.c:1136 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lstat LOC=./src/timeout.merge.c:10226 */
-#line 10226
+/* BEGIN FUNCTION-DECL-EXTERN lstat LOC=./src/timeout.merge.c:10230 */
+#line 10230
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat)(char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN lstat LOC=./src/timeout.merge.c:10226 */
+/* END FUNCTION-DECL-EXTERN lstat LOC=./src/timeout.merge.c:10230 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/timeout.merge.c:10245 */
-#line 10245
-extern char *quotearg_char_mem(char const   *arg , size_t argsize , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/timeout.merge.c:10245 */
-
-/* BEGIN FUNCTION-DECL-EXTERN link LOC=./src/timeout.merge.c:10249 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/timeout.merge.c:10249 */
 #line 10249
+extern char *quotearg_char_mem(char const   *arg , size_t argsize , char ch ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_char_mem LOC=./src/timeout.merge.c:10249 */
+
+/* BEGIN FUNCTION-DECL-EXTERN link LOC=./src/timeout.merge.c:10253 */
+#line 10253
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) link)(char const   *__from ,
                                                                                              char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN link LOC=./src/timeout.merge.c:10249 */
+/* END FUNCTION-DECL-EXTERN link LOC=./src/timeout.merge.c:10253 */
 
-/* BEGIN FUNCTION-DECL-EXTERN revoke LOC=./src/timeout.merge.c:10254 */
-#line 10254
+/* BEGIN FUNCTION-DECL-EXTERN revoke LOC=./src/timeout.merge.c:10258 */
+#line 10258
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) revoke)(char const   *__file ) ;
-/* END FUNCTION-DECL-EXTERN revoke LOC=./src/timeout.merge.c:10254 */
+/* END FUNCTION-DECL-EXTERN revoke LOC=./src/timeout.merge.c:10258 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lchown LOC=./src/timeout.merge.c:10262 */
-#line 10262
+/* BEGIN FUNCTION-DECL-EXTERN lchown LOC=./src/timeout.merge.c:10266 */
+#line 10266
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lchown)(char const   *__file ,
                                                                                              __uid_t __owner ,
                                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN lchown LOC=./src/timeout.merge.c:10262 */
+/* END FUNCTION-DECL-EXTERN lchown LOC=./src/timeout.merge.c:10266 */
 
-/* BEGIN STRUCT rlimit64 LOC=./src/timeout.merge.c:10268 */
-#line 10268 "./src/timeout.merge.c"
+/* BEGIN STRUCT rlimit64 LOC=./src/timeout.merge.c:10272 */
+#line 10272 "./src/timeout.merge.c"
 struct rlimit64 {
    rlim64_t rlim_cur ;
    rlim64_t rlim_max ;
 };
-/* END STRUCT rlimit64 LOC=./src/timeout.merge.c:10268 */
+/* END STRUCT rlimit64 LOC=./src/timeout.merge.c:10272 */
 
-/* BEGIN FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/timeout.merge.c:10275 */
-#line 10275
+/* BEGIN FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/timeout.merge.c:10279 */
+#line 10279
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) name_to_handle_at)(int __dfd ,
                                                                                         char const   *__name ,
                                                                                         struct file_handle *__handle ,
                                                                                         int *__mnt_id ,
                                                                                         int __flags ) ;
-/* END FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/timeout.merge.c:10275 */
+/* END FUNCTION-DECL-EXTERN name_to_handle_at LOC=./src/timeout.merge.c:10279 */
 
 /* BEGIN FUNCTION-DECL __builtin_stpncpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_stpncpy(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_stpncpy LOC=BUILTIN */
 
-/* BEGIN STRUCT file_handle LOC=./src/timeout.merge.c:10307 */
-#line 10307 "./src/timeout.merge.c"
+/* BEGIN STRUCT file_handle LOC=./src/timeout.merge.c:10311 */
+#line 10311 "./src/timeout.merge.c"
 struct file_handle {
    unsigned int handle_bytes ;
    int handle_type ;
    unsigned char f_handle[0] ;
 };
-/* END STRUCT file_handle LOC=./src/timeout.merge.c:10307 */
+/* END STRUCT file_handle LOC=./src/timeout.merge.c:10311 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -13429,160 +13425,160 @@ struct file_handle {
                          unsigned short * ) ;  */
 /* END FUNCTION-DECL __builtin_addcs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigrelse LOC=./src/timeout.merge.c:10341 */
-#line 10341
+/* BEGIN FUNCTION-DECL-EXTERN sigrelse LOC=./src/timeout.merge.c:10345 */
+#line 10345
 extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function instead"))) int ( __attribute__((__leaf__)) sigrelse)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigrelse LOC=./src/timeout.merge.c:10341 */
+/* END FUNCTION-DECL-EXTERN sigrelse LOC=./src/timeout.merge.c:10345 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_copysignf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbstowcs LOC=./src/timeout.merge.c:10345 */
-#line 10345
+/* BEGIN FUNCTION-DECL-EXTERN mbstowcs LOC=./src/timeout.merge.c:10349 */
+#line 10349
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) mbstowcs)(wchar_t * __restrict  __pwcs ,
                                                                                   char const   * __restrict  __s ,
                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mbstowcs LOC=./src/timeout.merge.c:10345 */
+/* END FUNCTION-DECL-EXTERN mbstowcs LOC=./src/timeout.merge.c:10349 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csinhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir LOC=./src/timeout.merge.c:10403 */
-#line 10403
+/* BEGIN FUNCTION-DECL-EXTERN scandir LOC=./src/timeout.merge.c:10407 */
+#line 10407
 extern int ( __attribute__((__nonnull__(1,2))) scandir)(char const   * __restrict  __dir ,
                                                         struct dirent *** __restrict  __namelist ,
                                                         int (*__selector)(struct dirent  const  * ) ,
                                                         int (*__cmp)(struct dirent  const  ** ,
                                                                      struct dirent  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir LOC=./src/timeout.merge.c:10403 */
+/* END FUNCTION-DECL-EXTERN scandir LOC=./src/timeout.merge.c:10407 */
 
-/* BEGIN FUNCTION-DECL-EXTERN last_component LOC=./src/timeout.merge.c:10415 */
-#line 10415
+/* BEGIN FUNCTION-DECL-EXTERN last_component LOC=./src/timeout.merge.c:10419 */
+#line 10419
 extern char *last_component(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN last_component LOC=./src/timeout.merge.c:10415 */
+/* END FUNCTION-DECL-EXTERN last_component LOC=./src/timeout.merge.c:10419 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fork LOC=./src/timeout.merge.c:10425 */
-#line 10425
+/* BEGIN FUNCTION-DECL-EXTERN fork LOC=./src/timeout.merge.c:10429 */
+#line 10429
 extern  __attribute__((__nothrow__)) __pid_t fork(void) ;
-/* END FUNCTION-DECL-EXTERN fork LOC=./src/timeout.merge.c:10425 */
+/* END FUNCTION-DECL-EXTERN fork LOC=./src/timeout.merge.c:10429 */
 
-/* BEGIN TYPEDEF __kernel_pid_t LOC=./src/timeout.merge.c:10433 */
-#line 10433 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __kernel_pid_t LOC=./src/timeout.merge.c:10437 */
+#line 10437 "./src/timeout.merge.c"
 typedef int __kernel_pid_t;
-/* END TYPEDEF __kernel_pid_t LOC=./src/timeout.merge.c:10433 */
+/* END TYPEDEF __kernel_pid_t LOC=./src/timeout.merge.c:10437 */
 
-/* BEGIN TYPEDEF __tss_t LOC=./src/timeout.merge.c:10459 */
-#line 10459 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __tss_t LOC=./src/timeout.merge.c:10463 */
+#line 10463 "./src/timeout.merge.c"
 typedef unsigned int __tss_t;
-/* END TYPEDEF __tss_t LOC=./src/timeout.merge.c:10459 */
+/* END TYPEDEF __tss_t LOC=./src/timeout.merge.c:10463 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint LOC=./src/timeout.merge.c:10468 */
-#line 10468 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint LOC=./src/timeout.merge.c:10472 */
+#line 10472 "./src/timeout.merge.c"
 typedef unsigned int uint;
-/* END TYPEDEF uint LOC=./src/timeout.merge.c:10468 */
+/* END TYPEDEF uint LOC=./src/timeout.merge.c:10472 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/timeout.merge.c:10478 */
-#line 10478
+/* BEGIN FUNCTION-DECL-EXTERN ttyslot LOC=./src/timeout.merge.c:10482 */
+#line 10482
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ttyslot)(void) ;
-/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/timeout.merge.c:10478 */
+/* END FUNCTION-DECL-EXTERN ttyslot LOC=./src/timeout.merge.c:10482 */
 
 /* BEGIN FUNCTION-DECL __builtin_round LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_round(double  ) ;  */
 /* END FUNCTION-DECL __builtin_round LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/timeout.merge.c:10487 */
-#line 10487
+/* BEGIN FUNCTION-DECL-EXTERN versionsort LOC=./src/timeout.merge.c:10491 */
+#line 10491
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort)(struct dirent  const  **__e1 ,
                                                                                                     struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/timeout.merge.c:10487 */
+/* END FUNCTION-DECL-EXTERN versionsort LOC=./src/timeout.merge.c:10491 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_tgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/timeout.merge.c:10513 */
-#line 10513
+/* BEGIN FUNCTION-DECL-EXTERN ftello64 LOC=./src/timeout.merge.c:10517 */
+#line 10517
 extern __off64_t ( __attribute__((__nonnull__(1))) ftello64)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/timeout.merge.c:10513 */
+/* END FUNCTION-DECL-EXTERN ftello64 LOC=./src/timeout.merge.c:10517 */
 
 /* BEGIN FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_clogl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_clogl LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/timeout.merge.c:10517 */
-#line 10517
-extern int getdate_err ;
-/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/timeout.merge.c:10517 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/timeout.merge.c:10521 */
+/* BEGIN VARIABLE-DECL-EXTERN getdate_err LOC=./src/timeout.merge.c:10521 */
 #line 10521
+extern int getdate_err ;
+/* END VARIABLE-DECL-EXTERN getdate_err LOC=./src/timeout.merge.c:10521 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/timeout.merge.c:10525 */
+#line 10525
 extern  __attribute__((__nothrow__)) __dev_t ( __attribute__((__leaf__)) gnu_dev_makedev)(unsigned int __major ,
                                                                                           unsigned int __minor )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/timeout.merge.c:10521 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_makedev LOC=./src/timeout.merge.c:10525 */
 
 /* BEGIN FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csqrtf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csqrtf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/timeout.merge.c:10566 */
-#line 10566
+/* BEGIN FUNCTION-DECL-EXTERN mkdir LOC=./src/timeout.merge.c:10570 */
+#line 10570
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkdir)(char const   *__path ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/timeout.merge.c:10566 */
+/* END FUNCTION-DECL-EXTERN mkdir LOC=./src/timeout.merge.c:10570 */
 
 /* BEGIN FUNCTION-DECL __builtin_isunordered LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isunordered(...) ;  */
 /* END FUNCTION-DECL __builtin_isunordered LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/timeout.merge.c:10581 */
-#line 10581
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/timeout.merge.c:10585 */
+#line 10585
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise64)(int __fd ,
                                                                                       off64_t __offset ,
                                                                                       off64_t __len ,
                                                                                       int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/timeout.merge.c:10581 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise64 LOC=./src/timeout.merge.c:10585 */
 
 /* BEGIN FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_vsnprintf(char * , unsigned long long  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_vsnprintf LOC=BUILTIN */
 
-/* BEGIN STRUCT f_owner_ex LOC=./src/timeout.merge.c:10620 */
-#line 10620 "./src/timeout.merge.c"
+/* BEGIN STRUCT f_owner_ex LOC=./src/timeout.merge.c:10624 */
+#line 10624 "./src/timeout.merge.c"
 struct f_owner_ex {
    enum __pid_type type ;
    __pid_t pid ;
 };
-/* END STRUCT f_owner_ex LOC=./src/timeout.merge.c:10620 */
+/* END STRUCT f_owner_ex LOC=./src/timeout.merge.c:10624 */
 
 /* BEGIN FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nexttowardl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/timeout.merge.c:10632 */
-#line 10632
+/* BEGIN FUNCTION-DECL-EXTERN sighold LOC=./src/timeout.merge.c:10636 */
+#line 10636
 extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function instead"))) int ( __attribute__((__leaf__)) sighold)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sighold LOC=./src/timeout.merge.c:10632 */
+/* END FUNCTION-DECL-EXTERN sighold LOC=./src/timeout.merge.c:10636 */
 
-/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/timeout.merge.c:10636 */
-#line 10636 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF pthread_barrier_t LOC=./src/timeout.merge.c:10640 */
+#line 10640 "./src/timeout.merge.c"
 typedef union __anonunion_pthread_barrier_t_145707746 pthread_barrier_t;
-/* END TYPEDEF pthread_barrier_t LOC=./src/timeout.merge.c:10636 */
+/* END TYPEDEF pthread_barrier_t LOC=./src/timeout.merge.c:10640 */
 
 /* BEGIN STRUCT-DECL __pthread_internal_list LOC=./src/timeout.merge.c:920 */
 #line 920
@@ -13594,42 +13590,42 @@ struct __pthread_internal_list ;
    float __builtin_expm1f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_expm1f LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/timeout.merge.c:10646 */
-#line 10646
+/* BEGIN FUNCTION-DECL-EXTERN setlogin LOC=./src/timeout.merge.c:10650 */
+#line 10650
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setlogin)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/timeout.merge.c:10646 */
+/* END FUNCTION-DECL-EXTERN setlogin LOC=./src/timeout.merge.c:10650 */
 
 /* BEGIN UNION-DECL __anonunion___value_751190509 LOC=./src/timeout.merge.c:1164 */
 #line 1164
 union __anonunion___value_751190509 ;
 /* END UNION-DECL __anonunion___value_751190509 LOC=./src/timeout.merge.c:1164 */
 
-/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/timeout.merge.c:10655 */
-#line 10655
+/* BEGIN FUNCTION-DECL-EXTERN jrand48 LOC=./src/timeout.merge.c:10659 */
+#line 10659
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) jrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/timeout.merge.c:10655 */
+/* END FUNCTION-DECL-EXTERN jrand48 LOC=./src/timeout.merge.c:10659 */
 
 /* BEGIN FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cproj(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cproj LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/timeout.merge.c:10664 */
-#line 10664
+/* BEGIN FUNCTION-DECL-EXTERN readdir_r LOC=./src/timeout.merge.c:10668 */
+#line 10668
 extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))) readdir_r)(DIR * __restrict  __dirp ,
                                                                                              struct dirent * __restrict  __entry ,
                                                                                              struct dirent ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/timeout.merge.c:10664 */
+/* END FUNCTION-DECL-EXTERN readdir_r LOC=./src/timeout.merge.c:10668 */
 
-/* BEGIN TYPEDEF loff_t LOC=./src/timeout.merge.c:10682 */
-#line 10682 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF loff_t LOC=./src/timeout.merge.c:10686 */
+#line 10686 "./src/timeout.merge.c"
 typedef __loff_t loff_t;
-/* END TYPEDEF loff_t LOC=./src/timeout.merge.c:10682 */
+/* END TYPEDEF loff_t LOC=./src/timeout.merge.c:10686 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sig2str LOC=./src/timeout.merge.c:10686 */
-#line 10686
+/* BEGIN FUNCTION-DECL-EXTERN sig2str LOC=./src/timeout.merge.c:10690 */
+#line 10690
 extern int sig2str(int  , char * ) ;
-/* END FUNCTION-DECL-EXTERN sig2str LOC=./src/timeout.merge.c:10686 */
+/* END FUNCTION-DECL-EXTERN sig2str LOC=./src/timeout.merge.c:10690 */
 
 /* BEGIN FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -13637,15 +13633,15 @@ extern int sig2str(int  , char * ) ;
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_umulll_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u8 LOC=./src/timeout.merge.c:10725 */
-#line 10725 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __u8 LOC=./src/timeout.merge.c:10729 */
+#line 10729 "./src/timeout.merge.c"
 typedef unsigned char __u8;
-/* END TYPEDEF __u8 LOC=./src/timeout.merge.c:10725 */
+/* END TYPEDEF __u8 LOC=./src/timeout.merge.c:10729 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/timeout.merge.c:10729 */
-#line 10729
+/* BEGIN FUNCTION-DECL-EXTERN srand LOC=./src/timeout.merge.c:10733 */
+#line 10733
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srand LOC=./src/timeout.merge.c:10729 */
+/* END FUNCTION-DECL-EXTERN srand LOC=./src/timeout.merge.c:10733 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13667,11 +13663,11 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand)(uns
 struct sigstack ;
 /* END STRUCT-DECL sigstack LOC=./src/timeout.merge.c:1124 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/timeout.merge.c:10781 */
-#line 10781
+/* BEGIN FUNCTION-DECL-EXTERN strchr LOC=./src/timeout.merge.c:10785 */
+#line 10785
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchr)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchr LOC=./src/timeout.merge.c:10781 */
+/* END FUNCTION-DECL-EXTERN strchr LOC=./src/timeout.merge.c:10785 */
 
 /* BEGIN FUNCTION-DECL __builtin_strndup LOC=BUILTIN */
 /* compiler builtin: 
@@ -13683,22 +13679,26 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
 enum __anonenum_825626741___0 ;
 /* END ENUM-DECL __anonenum_825626741___0 LOC=./src/timeout.merge.c:1428 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/timeout.merge.c:10786 */
-#line 10786
+/* BEGIN FUNCTION-DECL-EXTERN sigfillset LOC=./src/timeout.merge.c:10790 */
+#line 10790
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigfillset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/timeout.merge.c:10786 */
+/* END FUNCTION-DECL-EXTERN sigfillset LOC=./src/timeout.merge.c:10790 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_saddl_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/timeout.merge.c:10820 */
-#line 10820
+/* BEGIN VARIABLE-DEF _TIG_IZ_t3fn_argc LOC=UNKNOWN */
+int _TIG_IZ_t3fn_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_t3fn_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN qsort LOC=./src/timeout.merge.c:10824 */
+#line 10824
 extern void ( __attribute__((__nonnull__(1,4))) qsort)(void *__base , size_t __nmemb ,
                                                        size_t __size , int (*__compar)(void const   * ,
                                                                                        void const   * ) ) ;
-/* END FUNCTION-DECL-EXTERN qsort LOC=./src/timeout.merge.c:10820 */
+/* END FUNCTION-DECL-EXTERN qsort LOC=./src/timeout.merge.c:10824 */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -13710,15 +13710,15 @@ extern void ( __attribute__((__nonnull__(1,4))) qsort)(void *__base , size_t __n
    void *__builtin___mempcpy_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___mempcpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/timeout.merge.c:10830 */
-#line 10830
+/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/timeout.merge.c:10834 */
+#line 10834
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN dup LOC=./src/timeout.merge.c:10830 */
+/* END FUNCTION-DECL-EXTERN dup LOC=./src/timeout.merge.c:10834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/timeout.merge.c:10839 */
-#line 10839
+/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/timeout.merge.c:10843 */
+#line 10843
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrordesc_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/timeout.merge.c:10839 */
+/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/timeout.merge.c:10843 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966 LOC=./src/timeout.merge.c:1448 */
 #line 1448
@@ -13730,20 +13730,16 @@ enum __anonenum_819735966 ;
    _Complex float __builtin_cacoshf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/timeout.merge.c:10848 */
-#line 10848
+/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/timeout.merge.c:10852 */
+#line 10852
 extern ssize_t rpl_copy_file_range(int ifd , off_t *ipos , int ofd , off_t *opos ,
                                    size_t len , unsigned int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/timeout.merge.c:10848 */
+/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/timeout.merge.c:10852 */
 
-/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/timeout.merge.c:10853 */
-#line 10853 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/timeout.merge.c:10857 */
+#line 10857 "./src/timeout.merge.c"
 typedef int (*__compar_d_fn_t)(void const   * , void const   * , void * );
-/* END TYPEDEF __compar_d_fn_t LOC=./src/timeout.merge.c:10853 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_argv ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_argv LOC=UNKNOWN */
+/* END TYPEDEF __compar_d_fn_t LOC=./src/timeout.merge.c:10857 */
 
 /* BEGIN FUNCTION-DECL write_error LOC=UNKNOWN */
 __inline static void write_error(void) ;
@@ -14078,55 +14074,55 @@ extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__,
    void __builtin_preserve_access_index(...) ;  */
 /* END FUNCTION-DECL __builtin_preserve_access_index LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/timeout.merge.c:11493 */
-#line 11493
+/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/timeout.merge.c:11489 */
+#line 11489
 extern  __attribute__((__nothrow__)) int snprintf(char * __restrict  __s , size_t __maxlen ,
                                                   char const   * __restrict  __format 
                                                   , ...) ;
-/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/timeout.merge.c:11493 */
+/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/timeout.merge.c:11489 */
 
 /* BEGIN FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clz(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/timeout.merge.c:11515 */
-#line 11515
+/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/timeout.merge.c:11511 */
+#line 11511
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtold_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/timeout.merge.c:11515 */
+/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/timeout.merge.c:11511 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/timeout.merge.c:11530 */
-#line 11530
+/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/timeout.merge.c:11526 */
+#line 11526
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lcong48_r)(unsigned short *__param ,
                                                                                                   struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/timeout.merge.c:11530 */
+/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/timeout.merge.c:11526 */
 
 /* BEGIN FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_bzero(void * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/timeout.merge.c:11526 */
-#line 11526
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/timeout.merge.c:11522 */
+#line 11522
 extern int ( __attribute__((__nonnull__(1))) fsetpos)(FILE *__stream , fpos_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/timeout.merge.c:11526 */
+/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/timeout.merge.c:11522 */
 
-/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/timeout.merge.c:11535 */
-#line 11535
+/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/timeout.merge.c:11531 */
+#line 11531
 extern char const   version_etc_copyright[] ;
-/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/timeout.merge.c:11535 */
+/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/timeout.merge.c:11531 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/timeout.merge.c:11544 */
-#line 11544
+/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/timeout.merge.c:11540 */
+#line 11540
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/timeout.merge.c:11544 */
+/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/timeout.merge.c:11540 */
 
-/* BEGIN STRUCT __locale_struct LOC=./src/timeout.merge.c:11554 */
-#line 11554 "./src/timeout.merge.c"
+/* BEGIN STRUCT __locale_struct LOC=./src/timeout.merge.c:11550 */
+#line 11550 "./src/timeout.merge.c"
 struct __locale_struct {
    struct __locale_data *__locales[13] ;
    unsigned short const   *__ctype_b ;
@@ -14134,28 +14130,28 @@ struct __locale_struct {
    int const   *__ctype_toupper ;
    char const   *__names[13] ;
 };
-/* END STRUCT __locale_struct LOC=./src/timeout.merge.c:11554 */
+/* END STRUCT __locale_struct LOC=./src/timeout.merge.c:11550 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/timeout.merge.c:11564 */
-#line 11564
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/timeout.merge.c:11560 */
+#line 11560
 extern char *quotearg_n_style(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/timeout.merge.c:11564 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/timeout.merge.c:11560 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_memcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/timeout.merge.c:11573 */
-#line 11573
+/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/timeout.merge.c:11569 */
+#line 11569
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam)(char * ) ;
-/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/timeout.merge.c:11573 */
+/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/timeout.merge.c:11569 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/timeout.merge.c:11582 */
-#line 11582
+/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/timeout.merge.c:11578 */
+#line 11578
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getdomainname)(char *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/timeout.merge.c:11582 */
+/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/timeout.merge.c:11578 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgmath LOC=BUILTIN */
 /* compiler builtin: 
@@ -14167,27 +14163,31 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    int __builtin_sprintf(char * , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_sprintf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/timeout.merge.c:11601 */
-#line 11601
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/timeout.merge.c:11597 */
+#line 11597
 extern int ( __attribute__((__nonnull__(1))) rpl_fseek)(FILE *fp , long offset , int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/timeout.merge.c:11601 */
+/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/timeout.merge.c:11597 */
 
-/* BEGIN ENUM __anonenum_25645747___0 LOC=./src/timeout.merge.c:11615 */
-#line 11615
+/* BEGIN ENUM __anonenum_25645747___0 LOC=./src/timeout.merge.c:11611 */
+#line 11611
 enum __anonenum_25645747___0 {
     O_PATHSEARCH___0 = 2097152
 } ;
-/* END ENUM __anonenum_25645747___0 LOC=./src/timeout.merge.c:11615 */
+/* END ENUM __anonenum_25645747___0 LOC=./src/timeout.merge.c:11611 */
 
-/* BEGIN TYPEDEF uint_fast32_t LOC=./src/timeout.merge.c:11621 */
-#line 11621 "./src/timeout.merge.c"
+/* BEGIN TYPEDEF uint_fast32_t LOC=./src/timeout.merge.c:11617 */
+#line 11617 "./src/timeout.merge.c"
 typedef unsigned long uint_fast32_t;
-/* END TYPEDEF uint_fast32_t LOC=./src/timeout.merge.c:11621 */
+/* END TYPEDEF uint_fast32_t LOC=./src/timeout.merge.c:11617 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/timeout.merge.c:11625 */
-#line 11625
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/timeout.merge.c:11621 */
+#line 11621
 extern char const   *setlocale_null_unlocked(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/timeout.merge.c:11625 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/timeout.merge.c:11621 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_envp LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=./src/timeout.merge.c:11633 */
 #line 11633
@@ -14877,7 +14877,7 @@ __inline static size_t gcd(size_t u , size_t v )
 /* END FUNCTION-DEF gcd LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_rYHN_formal_envp ) 
 { 
   double timeout ;
   int c ;
@@ -14927,13 +14927,6 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   {
   {
   {
-  _TIG_IZ_5pQc_argv = (char **)0;
-  goto _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT___0;
-  }
-  _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
   preserve_status = (_Bool)0;
   goto preserve_status__INITINLINE_preserve_status__INIT___0;
   }
@@ -14945,6 +14938,13 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   goto verbose__INITINLINE_verbose__INIT___0;
   }
   verbose__INITINLINE_verbose__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_rYHN_argv = (char **)0;
+  goto _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT___0;
+  }
+  _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -14962,10 +14962,24 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   }
   {
   {
+  _TIG_IZ_rYHN_argc = 0;
+  goto _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT___0;
+  }
+  _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
   timed_out = 0;
   goto timed_out__INITINLINE_timed_out__INIT___0;
   }
   timed_out__INITINLINE_timed_out__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_rYHN_envp = (char **)0;
+  goto _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT___0;
+  }
+  _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -15021,13 +15035,6 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   }
   {
   {
-  _TIG_IZ_5pQc_argc = 0;
-  goto _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT___0;
-  }
-  _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
   kill_after = 0.;
   goto kill_after__INITINLINE_kill_after__INIT___0;
   }
@@ -15035,41 +15042,34 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   }
   {
   {
-  _TIG_IZ_5pQc_envp = (char **)0;
-  goto _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT___0;
+  _TIG_IZ_t3fn_envp = (char **)0;
+  goto _TIG_IZ_t3fn_envp__INITINLINE__TIG_IZ_t3fn_envp__INIT;
   }
-  _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_lWnh_envp = (char **)0;
-  goto _TIG_IZ_lWnh_envp__INITINLINE__TIG_IZ_lWnh_envp__INIT;
-  }
-  _TIG_IZ_lWnh_envp__INITINLINE__TIG_IZ_lWnh_envp__INIT: /* CIL Label */ ;
+  _TIG_IZ_t3fn_envp__INITINLINE__TIG_IZ_t3fn_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_lWnh_argv = (char **)0;
-  goto _TIG_IZ_lWnh_argv__INITINLINE__TIG_IZ_lWnh_argv__INIT;
+  _TIG_IZ_t3fn_argv = (char **)0;
+  goto _TIG_IZ_t3fn_argv__INITINLINE__TIG_IZ_t3fn_argv__INIT;
   }
-  _TIG_IZ_lWnh_argv__INITINLINE__TIG_IZ_lWnh_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_t3fn_argv__INITINLINE__TIG_IZ_t3fn_argv__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_lWnh_argc = 0;
-  goto _TIG_IZ_lWnh_argc__INITINLINE__TIG_IZ_lWnh_argc__INIT;
+  _TIG_IZ_t3fn_argc = 0;
+  goto _TIG_IZ_t3fn_argc__INITINLINE__TIG_IZ_t3fn_argc__INIT;
   }
-  _TIG_IZ_lWnh_argc__INITINLINE__TIG_IZ_lWnh_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_t3fn_argc__INITINLINE__TIG_IZ_t3fn_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit___0;
   }
   megaInitINLINE_megaInit___0: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-lWnh--0":);
-    _TIG_IZ_lWnh_argc = argc;
-    _TIG_IZ_lWnh_argv = argv;
-    _TIG_IZ_lWnh_envp = _TIG_IZ_5pQc_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-t3fn--0":);
+    _TIG_IZ_t3fn_argc = argc;
+    _TIG_IZ_t3fn_argv = argv;
+    _TIG_IZ_t3fn_envp = _TIG_IZ_rYHN_formal_envp;
     break;
   }
 #line 235 "./lib/gettext.h"
@@ -15180,33 +15180,33 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   goto timed_out__INITINLINE_timed_out__INIT;
   timed_out__INITINLINE_timed_out__INIT: 
 #line 329
-  _TIG_IZ_5pQc_envp = (char **)0;
+  _TIG_IZ_rYHN_envp = (char **)0;
 #line 330
-  goto _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT;
-  _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT: 
+  goto _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT;
+  _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT: 
 #line 336
-  _TIG_IZ_5pQc_argv = (char **)0;
+  _TIG_IZ_rYHN_argv = (char **)0;
 #line 337
-  goto _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT;
-  _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT: 
+  goto _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT;
+  _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT: 
 #line 343
-  _TIG_IZ_5pQc_argc = 0;
+  _TIG_IZ_rYHN_argc = 0;
 #line 344
-  goto _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT;
-  _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT: ;
+  goto _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT;
+  _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT: ;
 #line 348
   goto megaInitINLINE_megaInit;
   megaInitINLINE_megaInit: ;
 #line 352
   while (1) {
 #line 353
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-5pQc--0":);
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-rYHN--0":);
 #line 354
-    _TIG_IZ_5pQc_argc = argc;
+    _TIG_IZ_rYHN_argc = argc;
 #line 355
-    _TIG_IZ_5pQc_argv = argv;
+    _TIG_IZ_rYHN_argv = argv;
 #line 356
-    _TIG_IZ_5pQc_envp = _TIG_IZ_5pQc_formal_envp;
+    _TIG_IZ_rYHN_envp = _TIG_IZ_rYHN_formal_envp;
 #line 357
     break;
   }

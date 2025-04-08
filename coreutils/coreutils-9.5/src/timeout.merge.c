@@ -237,9 +237,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_5pQc_envp": "FUN: '_TIG_IZ_5pQc_envp__INIT'",
-          "_TIG_IZ_5pQc_argv": "FUN: '_TIG_IZ_5pQc_argv__INIT'",
-          "_TIG_IZ_5pQc_argc": "FUN: '_TIG_IZ_5pQc_argc__INIT'"
+          "_TIG_IZ_rYHN_envp": "FUN: '_TIG_IZ_rYHN_envp__INIT'",
+          "_TIG_IZ_rYHN_argv": "FUN: '_TIG_IZ_rYHN_argv__INIT'",
+          "_TIG_IZ_rYHN_argc": "FUN: '_TIG_IZ_rYHN_argc__INIT'"
         }
       }
     },
@@ -829,8 +829,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-6rR_aUhL.i","") */
-/* #pragma merger("0","/tmp/cil-bSHx5iWE.i","") */
+/* #pragma merger("0","/tmp/cil-8hQhM0Ux.i","") */
+/* #pragma merger("0","/tmp/cil-RnCwjTZA.i","") */
 
 /* BEGIN STRUCT-DECL rusage LOC=/usr/include/sys/wait.h:135 */
 struct rusage ;
@@ -1645,10 +1645,6 @@ typedef __daddr_t daddr_t;
 /* compiler builtin: 
    _Float128 __builtin_fmodf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodf128 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF DIR LOC=/usr/include/dirent.h:127 */
 typedef struct __dirstream DIR;
@@ -3334,10 +3330,6 @@ extern int pselect(int __nfds , fd_set * __restrict  __readfds , fd_set * __rest
                    __sigset_t const   * __restrict  __sigmask ) ;
 /* END FUNCTION-DECL-EXTERN pselect LOC=/usr/include/sys/select.h:127 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_envp ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __pthread_list_t LOC=/usr/include/bits/thread-shared-types.h:51 */
 typedef struct __pthread_internal_list __pthread_list_t;
 /* END TYPEDEF __pthread_list_t LOC=/usr/include/bits/thread-shared-types.h:51 */
@@ -3494,10 +3486,6 @@ struct __anonstruct__addr_bnd_5259977 {
 /* compiler builtin: 
    float __builtin_huge_valf(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-int _TIG_IZ_5pQc_argc ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __uint32_identity LOC=UNKNOWN */
 __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
@@ -4750,6 +4738,10 @@ __inline static int directory_status(int fd_cwd , char const   *dir ) ;
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strspn)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN strspn LOC=/usr/include/string.h:297 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_envp LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_envp ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __u_short LOC=/usr/include/bits/types.h:32 */
 typedef unsigned short __u_short;
@@ -6055,6 +6047,10 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
 /* END FUNCTION-DECL-EXTERN gmtime LOC=/usr/include/time.h:132 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_argc LOC=UNKNOWN */
+int _TIG_IZ_rYHN_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
@@ -6960,7 +6956,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_rYHN_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7415,6 +7411,10 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) vfork)(
 /* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=/usr/include/unistd.h:924 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
 /* END FUNCTION-DECL-EXTERN sethostid LOC=/usr/include/unistd.h:924 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_argc LOC=UNKNOWN */
+int _TIG_IZ_rYHN_argc ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=/usr/include/unistd.h:889 */
 extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t __name_len ) ;
@@ -8174,6 +8174,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
                                                                                               char *__buf ) ;
 /* END FUNCTION-DECL-EXTERN qgcvt LOC=/usr/include/stdlib.h:1036 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_argv LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN system LOC=/usr/include/stdlib.h:923 */
 extern int system(char const   *__command ) ;
 /* END FUNCTION-DECL-EXTERN system LOC=/usr/include/stdlib.h:923 */
@@ -8269,6 +8273,10 @@ struct _fpreg {
 /* BEGIN TYPEDEF int64_t LOC=/usr/include/bits/stdint-intn.h:27 */
 typedef __int64_t int64_t;
 /* END TYPEDEF int64_t LOC=/usr/include/bits/stdint-intn.h:27 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rYHN_argv LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_argv ;
+/* END VARIABLE-DECL _TIG_IZ_rYHN_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 /* compiler builtin: 
@@ -9828,10 +9836,6 @@ union __anonunion__sifields_359092464 {
 __inline static _Bool is_ENOTSUP(int err ) ;
 /* END FUNCTION-DECL is_ENOTSUP LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __kernel_timer_t LOC=/usr/include/asm-generic/posix_types.h:93 */
 typedef int __kernel_timer_t;
 /* END TYPEDEF __kernel_timer_t LOC=/usr/include/asm-generic/posix_types.h:93 */
@@ -10853,10 +10857,6 @@ extern ssize_t rpl_copy_file_range(int ifd , off_t *ipos , int ofd , off_t *opos
 typedef int (*__compar_d_fn_t)(void const   * , void const   * , void * );
 /* END TYPEDEF __compar_d_fn_t LOC=/usr/include/stdlib.h:955 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-char **_TIG_IZ_5pQc_argv ;
-/* END VARIABLE-DECL _TIG_IZ_5pQc_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strtol LOC=/usr/include/stdlib.h:177 */
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) strtol)(char const   * __restrict  __nptr ,
                                                                                               char ** __restrict  __endptr ,
@@ -11476,10 +11476,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(ti
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
 /* END FUNCTION-DECL-EXTERN dirfd LOC=/usr/include/dirent.h:226 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-int _TIG_IZ_5pQc_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_5pQc_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strcpy(char * , char const   * ) ;  */
@@ -11628,6 +11624,10 @@ extern char const   *setlocale_null_unlocked(int category ) ;
 /* BEGIN FUNCTION-DECL settimeout LOC=UNKNOWN */
 static void settimeout(double duration , _Bool warn ) ;
 /* END FUNCTION-DECL settimeout LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_rYHN_envp LOC=UNKNOWN */
+char **_TIG_IZ_rYHN_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_rYHN_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=/usr/include/stdlib.h:994 */
 extern  __attribute__((__nothrow__)) ldiv_t ( __attribute__((__leaf__)) ldiv)(long __numer ,
@@ -13407,7 +13407,7 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
 /* END FUNCTION-DEF npgettext_aux LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_rYHN_formal_envp ) 
 { 
   double timeout ;
   int c ;
@@ -13551,34 +13551,34 @@ int main(int argc , char **argv , char **_TIG_IZ_5pQc_formal_envp )
   }
   {
   {
-  _TIG_IZ_5pQc_envp = (char **)0;
-  goto _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT;
+  _TIG_IZ_rYHN_envp = (char **)0;
+  goto _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT;
   }
-  _TIG_IZ_5pQc_envp__INITINLINE__TIG_IZ_5pQc_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_5pQc_argv = (char **)0;
-  goto _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT;
-  }
-  _TIG_IZ_5pQc_argv__INITINLINE__TIG_IZ_5pQc_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_rYHN_envp__INITINLINE__TIG_IZ_rYHN_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_5pQc_argc = 0;
-  goto _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT;
+  _TIG_IZ_rYHN_argv = (char **)0;
+  goto _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT;
   }
-  _TIG_IZ_5pQc_argc__INITINLINE__TIG_IZ_5pQc_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_rYHN_argv__INITINLINE__TIG_IZ_rYHN_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_rYHN_argc = 0;
+  goto _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT;
+  }
+  _TIG_IZ_rYHN_argc__INITINLINE__TIG_IZ_rYHN_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-5pQc--0":);
-    _TIG_IZ_5pQc_argc = argc;
-    _TIG_IZ_5pQc_argv = argv;
-    _TIG_IZ_5pQc_envp = _TIG_IZ_5pQc_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-rYHN--0":);
+    _TIG_IZ_rYHN_argc = argc;
+    _TIG_IZ_rYHN_argv = argv;
+    _TIG_IZ_rYHN_envp = _TIG_IZ_rYHN_formal_envp;
     break;
   }
 #line 473 "src/timeout.c"

@@ -251,9 +251,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_H7TU_envp": "FUN: '_TIG_IZ_H7TU_envp__INIT'",
-          "_TIG_IZ_H7TU_argv": "FUN: '_TIG_IZ_H7TU_argv__INIT'",
-          "_TIG_IZ_H7TU_argc": "FUN: '_TIG_IZ_H7TU_argc__INIT'"
+          "_TIG_IZ_VsJE_envp": "FUN: '_TIG_IZ_VsJE_envp__INIT'",
+          "_TIG_IZ_VsJE_argv": "FUN: '_TIG_IZ_VsJE_argv__INIT'",
+          "_TIG_IZ_VsJE_argc": "FUN: '_TIG_IZ_VsJE_argc__INIT'"
         }
       }
     },
@@ -281,12 +281,12 @@ BEGIN-UNIVERSE
           "__uint64_identity", "gcd", "dot_or_dotdot", "stzncpy"
         ],
         "New Global Variables": {
-          "_TIG_IZ_cZdJ_argc": "FUN: '_TIG_IZ_cZdJ_argc__INIT'",
-          "_TIG_IZ_cZdJ_argv": "FUN: '_TIG_IZ_cZdJ_argv__INIT'",
           "chown_mode": "FUN: 'chown_mode__INIT'",
+          "_TIG_IZ_4bYn_argc": "FUN: '_TIG_IZ_4bYn_argc__INIT'",
+          "_TIG_IZ_4bYn_argv": "FUN: '_TIG_IZ_4bYn_argv__INIT'",
           "reference_file": "FUN: 'reference_file__INIT'",
           "long_options": "FUN: 'long_options__INIT'",
-          "_TIG_IZ_cZdJ_envp": "FUN: '_TIG_IZ_cZdJ_envp__INIT'",
+          "_TIG_IZ_4bYn_envp": "FUN: '_TIG_IZ_4bYn_envp__INIT'",
           "dev_ino_buf": "FUN: 'dev_ino_buf__INIT'"
         },
         "New Externs": [
@@ -1961,10 +1961,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) brk)(void *
 union __anonunion_pthread_barrier_t_145707746 ;
 /* END UNION-DECL __anonunion_pthread_barrier_t_145707746 LOC=./src/chown.merge.c:1345 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_cZdJ_envp LOC=UNKNOWN */
-char **_TIG_IZ_cZdJ_envp ;
-/* END VARIABLE-DECL _TIG_IZ_cZdJ_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_ctanl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ctanl(_Complex long double  ) ;  */
@@ -1975,121 +1971,121 @@ char **_TIG_IZ_cZdJ_envp ;
 enum __anonenum_91015150 ;
 /* END ENUM-DECL __anonenum_91015150 LOC=./src/chown.merge.c:1309 */
 
-/* BEGIN TYPEDEF __uint64_t LOC=./src/chown.merge.c:1743 */
-#line 1743 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uint64_t LOC=./src/chown.merge.c:1739 */
+#line 1739 "./src/chown.merge.c"
 typedef unsigned long __uint64_t;
-/* END TYPEDEF __uint64_t LOC=./src/chown.merge.c:1743 */
+/* END TYPEDEF __uint64_t LOC=./src/chown.merge.c:1739 */
 
-/* BEGIN TYPEDEF u_int64_t LOC=./src/chown.merge.c:1747 */
-#line 1747 "./src/chown.merge.c"
+/* BEGIN TYPEDEF u_int64_t LOC=./src/chown.merge.c:1743 */
+#line 1743 "./src/chown.merge.c"
 typedef __uint64_t u_int64_t;
-/* END TYPEDEF u_int64_t LOC=./src/chown.merge.c:1747 */
+/* END TYPEDEF u_int64_t LOC=./src/chown.merge.c:1743 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/chown.merge.c:1761 */
-#line 1761
+/* BEGIN FUNCTION-DECL-EXTERN readdir64 LOC=./src/chown.merge.c:1757 */
+#line 1757
 extern struct dirent64 *( __attribute__((__nonnull__(1))) readdir64)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/chown.merge.c:1761 */
+/* END FUNCTION-DECL-EXTERN readdir64 LOC=./src/chown.merge.c:1757 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/chown.merge.c:1765 */
-#line 1765
+/* BEGIN FUNCTION-DECL-EXTERN tmpfile LOC=./src/chown.merge.c:1761 */
+#line 1761
 extern FILE *tmpfile(void)  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/chown.merge.c:1765 */
+/* END FUNCTION-DECL-EXTERN tmpfile LOC=./src/chown.merge.c:1761 */
 
 /* BEGIN STRUCT-DECL _IO_FILE LOC=./src/chown.merge.c:845 */
 #line 845
 struct _IO_FILE ;
 /* END STRUCT-DECL _IO_FILE LOC=./src/chown.merge.c:845 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/chown.merge.c:1778 */
-#line 1778
+/* BEGIN FUNCTION-DECL-EXTERN getpass LOC=./src/chown.merge.c:1774 */
+#line 1774
 extern char *( __attribute__((__nonnull__(1))) getpass)(char const   *__prompt ) ;
-/* END FUNCTION-DECL-EXTERN getpass LOC=./src/chown.merge.c:1778 */
+/* END FUNCTION-DECL-EXTERN getpass LOC=./src/chown.merge.c:1774 */
 
-/* BEGIN TYPEDEF __off64_t LOC=./src/chown.merge.c:1792 */
-#line 1792 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __off64_t LOC=./src/chown.merge.c:1788 */
+#line 1788 "./src/chown.merge.c"
 typedef long __off64_t;
-/* END TYPEDEF __off64_t LOC=./src/chown.merge.c:1792 */
+/* END TYPEDEF __off64_t LOC=./src/chown.merge.c:1788 */
 
-/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/chown.merge.c:1806 */
-#line 1806
+/* BEGIN FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/chown.merge.c:1802 */
+#line 1802
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) at_quick_exit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/chown.merge.c:1806 */
+/* END FUNCTION-DECL-EXTERN at_quick_exit LOC=./src/chown.merge.c:1802 */
 
-/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/chown.merge.c:1828 */
-#line 1828 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct___sigset_t_783464054 LOC=./src/chown.merge.c:1824 */
+#line 1824 "./src/chown.merge.c"
 struct __anonstruct___sigset_t_783464054 {
    unsigned long __val[1024ULL / (8ULL * sizeof(unsigned long ))] ;
 };
-/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/chown.merge.c:1828 */
+/* END STRUCT __anonstruct___sigset_t_783464054 LOC=./src/chown.merge.c:1824 */
 
-/* BEGIN TYPEDEF __sigset_t LOC=./src/chown.merge.c:1834 */
-#line 1834 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __sigset_t LOC=./src/chown.merge.c:1830 */
+#line 1830 "./src/chown.merge.c"
 typedef struct __anonstruct___sigset_t_783464054 __sigset_t;
-/* END TYPEDEF __sigset_t LOC=./src/chown.merge.c:1834 */
+/* END TYPEDEF __sigset_t LOC=./src/chown.merge.c:1830 */
 
-/* BEGIN TYPEDEF sigset_t LOC=./src/chown.merge.c:1838 */
-#line 1838 "./src/chown.merge.c"
+/* BEGIN TYPEDEF sigset_t LOC=./src/chown.merge.c:1834 */
+#line 1834 "./src/chown.merge.c"
 typedef __sigset_t sigset_t;
-/* END TYPEDEF sigset_t LOC=./src/chown.merge.c:1838 */
+/* END TYPEDEF sigset_t LOC=./src/chown.merge.c:1834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/chown.merge.c:1842 */
-#line 1842
+/* BEGIN FUNCTION-DECL-EXTERN sigpending LOC=./src/chown.merge.c:1838 */
+#line 1838
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigpending)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/chown.merge.c:1842 */
+/* END FUNCTION-DECL-EXTERN sigpending LOC=./src/chown.merge.c:1838 */
 
 /* BEGIN ENUM-DECL __anonenum_507282730___0 LOC=./src/chown.merge.c:1413 */
 #line 1413
 enum __anonenum_507282730___0 ;
 /* END ENUM-DECL __anonenum_507282730___0 LOC=./src/chown.merge.c:1413 */
 
-/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/chown.merge.c:1851 */
-#line 1851
+/* BEGIN FUNCTION-DECL-EXTERN versionsort64 LOC=./src/chown.merge.c:1847 */
+#line 1847
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort64)(struct dirent64  const  **__e1 ,
                                                                                                       struct dirent64  const  **__e2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/chown.merge.c:1851 */
+/* END FUNCTION-DECL-EXTERN versionsort64 LOC=./src/chown.merge.c:1847 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __gid_t LOC=./src/chown.merge.c:1885 */
-#line 1885 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __gid_t LOC=./src/chown.merge.c:1881 */
+#line 1881 "./src/chown.merge.c"
 typedef unsigned int __gid_t;
-/* END TYPEDEF __gid_t LOC=./src/chown.merge.c:1885 */
+/* END TYPEDEF __gid_t LOC=./src/chown.merge.c:1881 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/chown.merge.c:1993 */
-#line 1993
+/* BEGIN FUNCTION-DECL-EXTERN getgroups LOC=./src/chown.merge.c:1989 */
+#line 1989
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getgroups)(int __size ,
                                                                                 __gid_t *__list ) ;
-/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/chown.merge.c:1993 */
+/* END FUNCTION-DECL-EXTERN getgroups LOC=./src/chown.merge.c:1989 */
 
-/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/chown.merge.c:1976 */
-#line 1976 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __gnuc_va_list LOC=./src/chown.merge.c:1972 */
+#line 1972 "./src/chown.merge.c"
 typedef __builtin_va_list __gnuc_va_list;
-/* END TYPEDEF __gnuc_va_list LOC=./src/chown.merge.c:1976 */
+/* END TYPEDEF __gnuc_va_list LOC=./src/chown.merge.c:1972 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/chown.merge.c:1985 */
-#line 1985
+/* BEGIN FUNCTION-DECL-EXTERN vprintf LOC=./src/chown.merge.c:1981 */
+#line 1981
 extern int vprintf(char const   * __restrict  __format , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/chown.merge.c:1985 */
+/* END FUNCTION-DECL-EXTERN vprintf LOC=./src/chown.merge.c:1981 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putgrent LOC=./src/chown.merge.c:1989 */
-#line 1989
+/* BEGIN FUNCTION-DECL-EXTERN putgrent LOC=./src/chown.merge.c:1985 */
+#line 1985
 extern int putgrent(struct group  const  * __restrict  __p , FILE * __restrict  __f ) ;
-/* END FUNCTION-DECL-EXTERN putgrent LOC=./src/chown.merge.c:1989 */
+/* END FUNCTION-DECL-EXTERN putgrent LOC=./src/chown.merge.c:1985 */
 
 /* BEGIN FUNCTION-DECL __builtin_expm1l LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_expm1l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_expm1l LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/chown.merge.c:2016 */
-#line 2016
+/* BEGIN FUNCTION-DECL-EXTERN strtok_r LOC=./src/chown.merge.c:2012 */
+#line 2012
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __leaf__)) strtok_r)(char * __restrict  __s ,
                                                                                                    char const   * __restrict  __delim ,
                                                                                                    char ** __restrict  __save_ptr ) ;
-/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/chown.merge.c:2016 */
+/* END FUNCTION-DECL-EXTERN strtok_r LOC=./src/chown.merge.c:2012 */
 
 /* BEGIN STRUCT-DECL flock LOC=./src/chown.merge.c:949 */
 #line 949
@@ -2106,27 +2102,27 @@ struct flock ;
 enum __anonenum_463020052___0 ;
 /* END ENUM-DECL __anonenum_463020052___0 LOC=./src/chown.merge.c:965 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/chown.merge.c:2027 */
-#line 2027
+/* BEGIN FUNCTION-DECL-EXTERN strcasecmp LOC=./src/chown.merge.c:2023 */
+#line 2023
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcasecmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/chown.merge.c:2027 */
+/* END FUNCTION-DECL-EXTERN strcasecmp LOC=./src/chown.merge.c:2023 */
 
-/* BEGIN TYPEDEF __sighandler_t LOC=./src/chown.merge.c:2032 */
-#line 2032 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __sighandler_t LOC=./src/chown.merge.c:2028 */
+#line 2028 "./src/chown.merge.c"
 typedef void (*__sighandler_t)(int  );
-/* END TYPEDEF __sighandler_t LOC=./src/chown.merge.c:2032 */
+/* END TYPEDEF __sighandler_t LOC=./src/chown.merge.c:2028 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/chown.merge.c:2036 */
-#line 2036
+/* BEGIN FUNCTION-DECL-EXTERN sysv_signal LOC=./src/chown.merge.c:2032 */
+#line 2032
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) sysv_signal)(int __sig ,
                                                                                              void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/chown.merge.c:2036 */
+/* END FUNCTION-DECL-EXTERN sysv_signal LOC=./src/chown.merge.c:2032 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/chown.merge.c:2046 */
-#line 2046
+/* BEGIN FUNCTION-DECL-EXTERN setpgrp LOC=./src/chown.merge.c:2042 */
+#line 2042
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(void) ;
-/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/chown.merge.c:2046 */
+/* END FUNCTION-DECL-EXTERN setpgrp LOC=./src/chown.merge.c:2042 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2143,194 +2139,194 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setpgrp)(vo
    void *__builtin___get_unsafe_stack_bottom(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_bottom LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/chown.merge.c:2083 */
-#line 2083
+/* BEGIN FUNCTION-DECL-EXTERN ptsname LOC=./src/chown.merge.c:2079 */
+#line 2079
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ptsname)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/chown.merge.c:2083 */
+/* END FUNCTION-DECL-EXTERN ptsname LOC=./src/chown.merge.c:2079 */
 
-/* BEGIN TYPEDEF int_fast32_t LOC=./src/chown.merge.c:2091 */
-#line 2091 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_fast32_t LOC=./src/chown.merge.c:2087 */
+#line 2087 "./src/chown.merge.c"
 typedef long int_fast32_t;
-/* END TYPEDEF int_fast32_t LOC=./src/chown.merge.c:2091 */
+/* END TYPEDEF int_fast32_t LOC=./src/chown.merge.c:2087 */
 
-/* BEGIN UNION __anonunion___value_751190509 LOC=./src/chown.merge.c:2107 */
-#line 2107 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion___value_751190509 LOC=./src/chown.merge.c:2103 */
+#line 2103 "./src/chown.merge.c"
 union __anonunion___value_751190509 {
    unsigned int __wch ;
    char __wchb[4] ;
 };
-/* END UNION __anonunion___value_751190509 LOC=./src/chown.merge.c:2107 */
+/* END UNION __anonunion___value_751190509 LOC=./src/chown.merge.c:2103 */
 
-/* BEGIN STRUCT __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:2114 */
-#line 2114 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:2110 */
+#line 2110 "./src/chown.merge.c"
 struct __anonstruct___mbstate_t_947329319 {
    int __count ;
    union __anonunion___value_751190509 __value ;
 };
-/* END STRUCT __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:2114 */
+/* END STRUCT __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:2110 */
 
-/* BEGIN TYPEDEF __mbstate_t LOC=./src/chown.merge.c:2121 */
-#line 2121 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __mbstate_t LOC=./src/chown.merge.c:2117 */
+#line 2117 "./src/chown.merge.c"
 typedef struct __anonstruct___mbstate_t_947329319 __mbstate_t;
-/* END TYPEDEF __mbstate_t LOC=./src/chown.merge.c:2121 */
+/* END TYPEDEF __mbstate_t LOC=./src/chown.merge.c:2117 */
 
-/* BEGIN TYPEDEF __off_t LOC=./src/chown.merge.c:1897 */
-#line 1897 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __off_t LOC=./src/chown.merge.c:1893 */
+#line 1893 "./src/chown.merge.c"
 typedef long __off_t;
-/* END TYPEDEF __off_t LOC=./src/chown.merge.c:1897 */
+/* END TYPEDEF __off_t LOC=./src/chown.merge.c:1893 */
 
-/* BEGIN STRUCT _G_fpos_t LOC=./src/chown.merge.c:2125 */
-#line 2125 "./src/chown.merge.c"
+/* BEGIN STRUCT _G_fpos_t LOC=./src/chown.merge.c:2121 */
+#line 2121 "./src/chown.merge.c"
 struct _G_fpos_t {
    __off_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos_t LOC=./src/chown.merge.c:2125 */
+/* END STRUCT _G_fpos_t LOC=./src/chown.merge.c:2121 */
 
-/* BEGIN TYPEDEF __fpos_t LOC=./src/chown.merge.c:2132 */
-#line 2132 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __fpos_t LOC=./src/chown.merge.c:2128 */
+#line 2128 "./src/chown.merge.c"
 typedef struct _G_fpos_t __fpos_t;
-/* END TYPEDEF __fpos_t LOC=./src/chown.merge.c:2132 */
+/* END TYPEDEF __fpos_t LOC=./src/chown.merge.c:2128 */
 
-/* BEGIN TYPEDEF fpos_t LOC=./src/chown.merge.c:2136 */
-#line 2136 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fpos_t LOC=./src/chown.merge.c:2132 */
+#line 2132 "./src/chown.merge.c"
 typedef __fpos_t fpos_t;
-/* END TYPEDEF fpos_t LOC=./src/chown.merge.c:2136 */
+/* END TYPEDEF fpos_t LOC=./src/chown.merge.c:2132 */
 
-/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/chown.merge.c:2148 */
-#line 2148
+/* BEGIN FUNCTION-DECL-EXTERN daemon LOC=./src/chown.merge.c:2144 */
+#line 2144
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int __nochdir ,
                                                                              int __noclose ) ;
-/* END FUNCTION-DECL-EXTERN daemon LOC=./src/chown.merge.c:2148 */
+/* END FUNCTION-DECL-EXTERN daemon LOC=./src/chown.merge.c:2144 */
 
-/* BEGIN TYPEDEF __time_t LOC=./src/chown.merge.c:1870 */
-#line 1870 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __time_t LOC=./src/chown.merge.c:1866 */
+#line 1866 "./src/chown.merge.c"
 typedef long __time_t;
-/* END TYPEDEF __time_t LOC=./src/chown.merge.c:1870 */
+/* END TYPEDEF __time_t LOC=./src/chown.merge.c:1866 */
 
-/* BEGIN TYPEDEF time_t LOC=./src/chown.merge.c:2140 */
-#line 2140 "./src/chown.merge.c"
+/* BEGIN TYPEDEF time_t LOC=./src/chown.merge.c:2136 */
+#line 2136 "./src/chown.merge.c"
 typedef __time_t time_t;
-/* END TYPEDEF time_t LOC=./src/chown.merge.c:2140 */
+/* END TYPEDEF time_t LOC=./src/chown.merge.c:2136 */
 
-/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/chown.merge.c:2144 */
-#line 2144
+/* BEGIN FUNCTION-DECL-EXTERN time LOC=./src/chown.merge.c:2140 */
+#line 2140
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) time)(time_t *__timer ) ;
-/* END FUNCTION-DECL-EXTERN time LOC=./src/chown.merge.c:2144 */
+/* END FUNCTION-DECL-EXTERN time LOC=./src/chown.merge.c:2140 */
 
-/* BEGIN UNION sigval LOC=./src/chown.merge.c:2153 */
-#line 2153 "./src/chown.merge.c"
+/* BEGIN UNION sigval LOC=./src/chown.merge.c:2149 */
+#line 2149 "./src/chown.merge.c"
 union sigval {
    int sival_int ;
    void *sival_ptr ;
 };
-/* END UNION sigval LOC=./src/chown.merge.c:2153 */
+/* END UNION sigval LOC=./src/chown.merge.c:2149 */
 
-/* BEGIN TYPEDEF pthread_t LOC=./src/chown.merge.c:2160 */
-#line 2160 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_t LOC=./src/chown.merge.c:2156 */
+#line 2156 "./src/chown.merge.c"
 typedef unsigned long pthread_t;
-/* END TYPEDEF pthread_t LOC=./src/chown.merge.c:2160 */
+/* END TYPEDEF pthread_t LOC=./src/chown.merge.c:2156 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/chown.merge.c:2164 */
-#line 2164
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/chown.merge.c:2160 */
+#line 2160
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigqueue)(pthread_t __threadid ,
                                                                                        int __signo ,
                                                                                        union sigval  const  __value ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/chown.merge.c:2164 */
+/* END FUNCTION-DECL-EXTERN pthread_sigqueue LOC=./src/chown.merge.c:2160 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_asinf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF gid_t LOC=./src/chown.merge.c:2186 */
-#line 2186 "./src/chown.merge.c"
+/* BEGIN TYPEDEF gid_t LOC=./src/chown.merge.c:2182 */
+#line 2182 "./src/chown.merge.c"
 typedef __gid_t gid_t;
-/* END TYPEDEF gid_t LOC=./src/chown.merge.c:2186 */
+/* END TYPEDEF gid_t LOC=./src/chown.merge.c:2182 */
 
-/* BEGIN TYPEDEF __uid_t LOC=./src/chown.merge.c:1901 */
-#line 1901 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uid_t LOC=./src/chown.merge.c:1897 */
+#line 1897 "./src/chown.merge.c"
 typedef unsigned int __uid_t;
-/* END TYPEDEF __uid_t LOC=./src/chown.merge.c:1901 */
+/* END TYPEDEF __uid_t LOC=./src/chown.merge.c:1897 */
 
-/* BEGIN TYPEDEF uid_t LOC=./src/chown.merge.c:2190 */
-#line 2190 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uid_t LOC=./src/chown.merge.c:2186 */
+#line 2186 "./src/chown.merge.c"
 typedef __uid_t uid_t;
-/* END TYPEDEF uid_t LOC=./src/chown.merge.c:2190 */
+/* END TYPEDEF uid_t LOC=./src/chown.merge.c:2186 */
 
-/* BEGIN FUNCTION-DECL-EXTERN parse_user_spec LOC=./src/chown.merge.c:2194 */
-#line 2194
+/* BEGIN FUNCTION-DECL-EXTERN parse_user_spec LOC=./src/chown.merge.c:2190 */
+#line 2190
 extern char const   *parse_user_spec(char const   *spec_arg , uid_t *uid , gid_t *gid ,
                                      char **username_arg , char **groupname_arg ) ;
-/* END FUNCTION-DECL-EXTERN parse_user_spec LOC=./src/chown.merge.c:2194 */
+/* END FUNCTION-DECL-EXTERN parse_user_spec LOC=./src/chown.merge.c:2190 */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/chown.merge.c:2175 */
-#line 2175
+/* BEGIN FUNCTION-DECL-EXTERN srand48_r LOC=./src/chown.merge.c:2171 */
+#line 2171
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) srand48_r)(long __seedval ,
                                                                                                 struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/chown.merge.c:2175 */
+/* END FUNCTION-DECL-EXTERN srand48_r LOC=./src/chown.merge.c:2171 */
 
-/* BEGIN TYPEDEF __pid_t LOC=./src/chown.merge.c:2215 */
-#line 2215 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __pid_t LOC=./src/chown.merge.c:2211 */
+#line 2211 "./src/chown.merge.c"
 typedef int __pid_t;
-/* END TYPEDEF __pid_t LOC=./src/chown.merge.c:2215 */
+/* END TYPEDEF __pid_t LOC=./src/chown.merge.c:2211 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/chown.merge.c:2219 */
-#line 2219
+/* BEGIN FUNCTION-DECL-EXTERN getsid LOC=./src/chown.merge.c:2215 */
+#line 2215
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getsid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN getsid LOC=./src/chown.merge.c:2219 */
+/* END FUNCTION-DECL-EXTERN getsid LOC=./src/chown.merge.c:2215 */
 
-/* BEGIN ENUM Change_status LOC=./src/chown.merge.c:2243 */
-#line 2243
+/* BEGIN ENUM Change_status LOC=./src/chown.merge.c:2239 */
+#line 2239
 enum Change_status {
     CH_NOT_APPLIED = 1,
     CH_SUCCEEDED = 2,
     CH_FAILED = 3,
     CH_NO_CHANGE_REQUESTED = 4
 } ;
-/* END ENUM Change_status LOC=./src/chown.merge.c:2243 */
+/* END ENUM Change_status LOC=./src/chown.merge.c:2239 */
 
-/* BEGIN TYPEDEF sigevent_t LOC=./src/chown.merge.c:2239 */
-#line 2239 "./src/chown.merge.c"
+/* BEGIN TYPEDEF sigevent_t LOC=./src/chown.merge.c:2235 */
+#line 2235 "./src/chown.merge.c"
 typedef struct sigevent sigevent_t;
-/* END TYPEDEF sigevent_t LOC=./src/chown.merge.c:2239 */
+/* END TYPEDEF sigevent_t LOC=./src/chown.merge.c:2235 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/chown.merge.c:2273 */
-#line 2273
+/* BEGIN FUNCTION-DECL-EXTERN fchdir LOC=./src/chown.merge.c:2269 */
+#line 2269
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchdir)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/chown.merge.c:2273 */
+/* END FUNCTION-DECL-EXTERN fchdir LOC=./src/chown.merge.c:2269 */
 
-/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/chown.merge.c:2252 */
-#line 2252
+/* BEGIN FUNCTION-DECL-EXTERN malloc LOC=./src/chown.merge.c:2248 */
+#line 2248
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) malloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN malloc LOC=./src/chown.merge.c:2252 */
+/* END FUNCTION-DECL-EXTERN malloc LOC=./src/chown.merge.c:2248 */
 
-/* BEGIN TYPEDEF register_t LOC=./src/chown.merge.c:2292 */
-#line 2292 "./src/chown.merge.c"
+/* BEGIN TYPEDEF register_t LOC=./src/chown.merge.c:2288 */
+#line 2288 "./src/chown.merge.c"
 typedef int register_t;
-/* END TYPEDEF register_t LOC=./src/chown.merge.c:2292 */
+/* END TYPEDEF register_t LOC=./src/chown.merge.c:2288 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/chown.merge.c:2305 */
-#line 2305
+/* BEGIN FUNCTION-DECL-EXTERN getw LOC=./src/chown.merge.c:2301 */
+#line 2301
 extern int ( __attribute__((__nonnull__(1))) getw)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getw LOC=./src/chown.merge.c:2305 */
+/* END FUNCTION-DECL-EXTERN getw LOC=./src/chown.merge.c:2301 */
 
 /* BEGIN FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strpbrk(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/chown.merge.c:2320 */
-#line 2320
+/* BEGIN FUNCTION-DECL-EXTERN realpath LOC=./src/chown.merge.c:2316 */
+#line 2316
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) realpath)(char const   * __restrict  __name ,
                                                                                  char * __restrict  __resolved ) ;
-/* END FUNCTION-DECL-EXTERN realpath LOC=./src/chown.merge.c:2320 */
+/* END FUNCTION-DECL-EXTERN realpath LOC=./src/chown.merge.c:2316 */
 
-/* BEGIN FUNCTION-DECL xnrealloc LOC=./src/chown.merge.c:2333 */
-#line 2333
+/* BEGIN FUNCTION-DECL xnrealloc LOC=./src/chown.merge.c:2329 */
+#line 2329
 __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL xnrealloc LOC=./src/chown.merge.c:2333 */
+/* END FUNCTION-DECL xnrealloc LOC=./src/chown.merge.c:2329 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrt LOC=BUILTIN */
 /* compiler builtin: 
@@ -2342,6 +2338,10 @@ __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc
    void *__builtin___get_unsafe_stack_ptr(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_ptr LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_VsJE_argc LOC=UNKNOWN */
+int _TIG_IZ_VsJE_argc ;
+/* END VARIABLE-DECL _TIG_IZ_VsJE_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_lroundf LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lroundf(float  ) ;  */
@@ -2352,8 +2352,8 @@ __inline void *xnrealloc(void *p , size_t n , size_t s )  __attribute__((__alloc
    long double __builtin_scalblnl(long double  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnl LOC=BUILTIN */
 
-/* BEGIN STRUCT I_ring LOC=./src/chown.merge.c:2374 */
-#line 2374 "./src/chown.merge.c"
+/* BEGIN STRUCT I_ring LOC=./src/chown.merge.c:2370 */
+#line 2370 "./src/chown.merge.c"
 struct I_ring {
    int ir_data[4] ;
    int ir_default_val ;
@@ -2361,23 +2361,23 @@ struct I_ring {
    unsigned int ir_back ;
    _Bool ir_empty ;
 };
-/* END STRUCT I_ring LOC=./src/chown.merge.c:2374 */
+/* END STRUCT I_ring LOC=./src/chown.merge.c:2370 */
 
-/* BEGIN UNION __anonunion_fts_cycle_698394876 LOC=./src/chown.merge.c:2384 */
-#line 2384 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion_fts_cycle_698394876 LOC=./src/chown.merge.c:2380 */
+#line 2380 "./src/chown.merge.c"
 union __anonunion_fts_cycle_698394876 {
    struct hash_table *ht ;
    struct cycle_check_state *state ;
 };
-/* END UNION __anonunion_fts_cycle_698394876 LOC=./src/chown.merge.c:2384 */
+/* END UNION __anonunion_fts_cycle_698394876 LOC=./src/chown.merge.c:2380 */
 
-/* BEGIN TYPEDEF I_ring LOC=./src/chown.merge.c:2391 */
-#line 2391 "./src/chown.merge.c"
+/* BEGIN TYPEDEF I_ring LOC=./src/chown.merge.c:2387 */
+#line 2387 "./src/chown.merge.c"
 typedef struct I_ring I_ring;
-/* END TYPEDEF I_ring LOC=./src/chown.merge.c:2391 */
+/* END TYPEDEF I_ring LOC=./src/chown.merge.c:2387 */
 
-/* BEGIN STRUCT __anonstruct_FTS_49618356 LOC=./src/chown.merge.c:2395 */
-#line 2395 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_FTS_49618356 LOC=./src/chown.merge.c:2391 */
+#line 2391 "./src/chown.merge.c"
 struct __anonstruct_FTS_49618356 {
    struct _ftsent *fts_cur ;
    struct _ftsent *fts_child ;
@@ -2394,12 +2394,12 @@ struct __anonstruct_FTS_49618356 {
    union __anonunion_fts_cycle_698394876 fts_cycle ;
    I_ring fts_fd_ring ;
 };
-/* END STRUCT __anonstruct_FTS_49618356 LOC=./src/chown.merge.c:2395 */
+/* END STRUCT __anonstruct_FTS_49618356 LOC=./src/chown.merge.c:2391 */
 
-/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/chown.merge.c:2419 */
-#line 2419
+/* BEGIN FUNCTION-DECL-EXTERN telldir LOC=./src/chown.merge.c:2415 */
+#line 2415
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) telldir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN telldir LOC=./src/chown.merge.c:2419 */
+/* END FUNCTION-DECL-EXTERN telldir LOC=./src/chown.merge.c:2415 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagf LOC=BUILTIN */
 /* compiler builtin: 
@@ -2416,17 +2416,17 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __lea
    int __builtin_isless(...) ;  */
 /* END FUNCTION-DECL __builtin_isless LOC=BUILTIN */
 
-/* BEGIN ENUM Verbosity LOC=./src/chown.merge.c:2675 */
-#line 2675
+/* BEGIN ENUM Verbosity LOC=./src/chown.merge.c:2671 */
+#line 2671
 enum Verbosity {
     V_high = 0,
     V_changes_only = 1,
     V_off = 2
 } ;
-/* END ENUM Verbosity LOC=./src/chown.merge.c:2675 */
+/* END ENUM Verbosity LOC=./src/chown.merge.c:2671 */
 
-/* BEGIN STRUCT Chown_option LOC=./src/chown.merge.c:2683 */
-#line 2683 "./src/chown.merge.c"
+/* BEGIN STRUCT Chown_option LOC=./src/chown.merge.c:2679 */
+#line 2679 "./src/chown.merge.c"
 struct Chown_option {
    enum Verbosity verbosity ;
    _Bool recurse ;
@@ -2436,31 +2436,31 @@ struct Chown_option {
    char *user_name ;
    char *group_name ;
 };
-/* END STRUCT Chown_option LOC=./src/chown.merge.c:2683 */
+/* END STRUCT Chown_option LOC=./src/chown.merge.c:2679 */
 
-/* BEGIN TYPEDEF __useconds_t LOC=./src/chown.merge.c:2709 */
-#line 2709 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __useconds_t LOC=./src/chown.merge.c:2705 */
+#line 2705 "./src/chown.merge.c"
 typedef unsigned int __useconds_t;
-/* END TYPEDEF __useconds_t LOC=./src/chown.merge.c:2709 */
+/* END TYPEDEF __useconds_t LOC=./src/chown.merge.c:2705 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/chown.merge.c:2713 */
-#line 2713
+/* BEGIN FUNCTION-DECL-EXTERN ualarm LOC=./src/chown.merge.c:2709 */
+#line 2709
 extern  __attribute__((__nothrow__)) __useconds_t ( __attribute__((__leaf__)) ualarm)(__useconds_t __value ,
                                                                                       __useconds_t __interval ) ;
-/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/chown.merge.c:2713 */
+/* END FUNCTION-DECL-EXTERN ualarm LOC=./src/chown.merge.c:2709 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/chown.merge.c:2705 */
-#line 2705
+/* BEGIN FUNCTION-DECL-EXTERN ffs LOC=./src/chown.merge.c:2701 */
+#line 2701
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffs)(int __i )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffs LOC=./src/chown.merge.c:2705 */
+/* END FUNCTION-DECL-EXTERN ffs LOC=./src/chown.merge.c:2701 */
 
-/* BEGIN TYPEDEF __clock_t LOC=./src/chown.merge.c:2744 */
-#line 2744 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __clock_t LOC=./src/chown.merge.c:2740 */
+#line 2740 "./src/chown.merge.c"
 typedef long __clock_t;
-/* END TYPEDEF __clock_t LOC=./src/chown.merge.c:2744 */
+/* END TYPEDEF __clock_t LOC=./src/chown.merge.c:2740 */
 
-/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/chown.merge.c:2748 */
-#line 2748 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__sigchld_284671705 LOC=./src/chown.merge.c:2744 */
+#line 2744 "./src/chown.merge.c"
 struct __anonstruct__sigchld_284671705 {
    __pid_t si_pid ;
    __uid_t si_uid ;
@@ -2468,158 +2468,158 @@ struct __anonstruct__sigchld_284671705 {
    __clock_t si_utime ;
    __clock_t si_stime ;
 };
-/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/chown.merge.c:2748 */
+/* END STRUCT __anonstruct__sigchld_284671705 LOC=./src/chown.merge.c:2744 */
 
 /* BEGIN FUNCTION-DECL __builtin___memset_chk LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin___memset_chk(void * , int  , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memset_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __id_t LOC=./src/chown.merge.c:2768 */
-#line 2768 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __id_t LOC=./src/chown.merge.c:2764 */
+#line 2764 "./src/chown.merge.c"
 typedef unsigned int __id_t;
-/* END TYPEDEF __id_t LOC=./src/chown.merge.c:2768 */
+/* END TYPEDEF __id_t LOC=./src/chown.merge.c:2764 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/chown.merge.c:2772 */
-#line 2772
+/* BEGIN FUNCTION-DECL-EXTERN sigprocmask LOC=./src/chown.merge.c:2768 */
+#line 2768
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigprocmask)(int __how ,
                                                                                   sigset_t const   * __restrict  __set ,
                                                                                   sigset_t * __restrict  __oset ) ;
-/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/chown.merge.c:2772 */
+/* END FUNCTION-DECL-EXTERN sigprocmask LOC=./src/chown.merge.c:2768 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/chown.merge.c:2778 */
-#line 2778
+/* BEGIN FUNCTION-DECL-EXTERN getpid LOC=./src/chown.merge.c:2774 */
+#line 2774
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpid)(void) ;
-/* END FUNCTION-DECL-EXTERN getpid LOC=./src/chown.merge.c:2778 */
+/* END FUNCTION-DECL-EXTERN getpid LOC=./src/chown.merge.c:2774 */
 
-/* BEGIN TYPEDEF fpregset_t LOC=./src/chown.merge.c:2786 */
-#line 2786 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fpregset_t LOC=./src/chown.merge.c:2782 */
+#line 2782 "./src/chown.merge.c"
 typedef struct _libc_fpstate *fpregset_t;
-/* END TYPEDEF fpregset_t LOC=./src/chown.merge.c:2786 */
+/* END TYPEDEF fpregset_t LOC=./src/chown.merge.c:2782 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/chown.merge.c:889 */
 #line 889
 union __anonunion_pthread_rwlockattr_t_145707745 ;
 /* END UNION-DECL __anonunion_pthread_rwlockattr_t_145707745 LOC=./src/chown.merge.c:889 */
 
-/* BEGIN TYPEDEF FTS LOC=./src/chown.merge.c:1925 */
-#line 1925 "./src/chown.merge.c"
+/* BEGIN TYPEDEF FTS LOC=./src/chown.merge.c:1921 */
+#line 1921 "./src/chown.merge.c"
 typedef struct __anonstruct_FTS_49618356 FTS;
-/* END TYPEDEF FTS LOC=./src/chown.merge.c:1925 */
+/* END TYPEDEF FTS LOC=./src/chown.merge.c:1921 */
 
-/* BEGIN TYPEDEF FTSENT LOC=./src/chown.merge.c:2811 */
-#line 2811 "./src/chown.merge.c"
+/* BEGIN TYPEDEF FTSENT LOC=./src/chown.merge.c:2807 */
+#line 2807 "./src/chown.merge.c"
 typedef struct _ftsent FTSENT;
-/* END TYPEDEF FTSENT LOC=./src/chown.merge.c:2811 */
+/* END TYPEDEF FTSENT LOC=./src/chown.merge.c:2807 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_read LOC=./src/chown.merge.c:2815 */
-#line 2815
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_read LOC=./src/chown.merge.c:2811 */
+#line 2811
 extern FTSENT *( __attribute__((__warn_unused_result__)) rpl_fts_read)(FTS * ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fts_read LOC=./src/chown.merge.c:2815 */
+/* END FUNCTION-DECL-EXTERN rpl_fts_read LOC=./src/chown.merge.c:2811 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_coshf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_coshf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/chown.merge.c:2840 */
-#line 2840
+/* BEGIN FUNCTION-DECL-EXTERN nice LOC=./src/chown.merge.c:2836 */
+#line 2836
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) nice)(int __inc ) ;
-/* END FUNCTION-DECL-EXTERN nice LOC=./src/chown.merge.c:2840 */
+/* END FUNCTION-DECL-EXTERN nice LOC=./src/chown.merge.c:2836 */
 
 /* BEGIN FUNCTION-DECL __builtin_cbrtf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_cbrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_cbrtf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/chown.merge.c:2864 */
-#line 2864
+/* BEGIN VARIABLE-DECL-EXTERN stdout LOC=./src/chown.merge.c:2860 */
+#line 2860
 extern FILE *stdout ;
-/* END VARIABLE-DECL-EXTERN stdout LOC=./src/chown.merge.c:2864 */
+/* END VARIABLE-DECL-EXTERN stdout LOC=./src/chown.merge.c:2860 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/chown.merge.c:2868 */
-#line 2868
+/* BEGIN FUNCTION-DECL-EXTERN gethostname LOC=./src/chown.merge.c:2864 */
+#line 2864
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gethostname)(char *__name ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/chown.merge.c:2868 */
+/* END FUNCTION-DECL-EXTERN gethostname LOC=./src/chown.merge.c:2864 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/chown.merge.c:2873 */
-#line 2873
+/* BEGIN FUNCTION-DECL-EXTERN getdate LOC=./src/chown.merge.c:2869 */
+#line 2869
 extern struct tm *getdate(char const   *__string ) ;
-/* END FUNCTION-DECL-EXTERN getdate LOC=./src/chown.merge.c:2873 */
+/* END FUNCTION-DECL-EXTERN getdate LOC=./src/chown.merge.c:2869 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/chown.merge.c:2894 */
-#line 2894
+/* BEGIN FUNCTION-DECL-EXTERN setreuid LOC=./src/chown.merge.c:2890 */
+#line 2890
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setreuid)(__uid_t __ruid ,
                                                                                __uid_t __euid ) ;
-/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/chown.merge.c:2894 */
+/* END FUNCTION-DECL-EXTERN setreuid LOC=./src/chown.merge.c:2890 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/chown.merge.c:2882 */
-#line 2882
+/* BEGIN FUNCTION-DECL-EXTERN memmem LOC=./src/chown.merge.c:2878 */
+#line 2878
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,3), __leaf__)) memmem)(void const   *__haystack ,
                                                                                                  size_t __haystacklen ,
                                                                                                  void const   *__needle ,
                                                                                                  size_t __needlelen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memmem LOC=./src/chown.merge.c:2882 */
+/* END FUNCTION-DECL-EXTERN memmem LOC=./src/chown.merge.c:2878 */
 
-/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:2903 */
-#line 2903 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:2899 */
+#line 2899 "./src/chown.merge.c"
 struct __anonstruct__sigpoll_386613454 {
    long si_band ;
    int si_fd ;
 };
-/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:2903 */
+/* END STRUCT __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:2899 */
 
-/* BEGIN TYPEDEF __kernel_long_t LOC=./src/chown.merge.c:2899 */
-#line 2899 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_long_t LOC=./src/chown.merge.c:2895 */
+#line 2895 "./src/chown.merge.c"
 typedef long __kernel_long_t;
-/* END TYPEDEF __kernel_long_t LOC=./src/chown.merge.c:2899 */
+/* END TYPEDEF __kernel_long_t LOC=./src/chown.merge.c:2895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/chown.merge.c:2910 */
-#line 2910
+/* BEGIN FUNCTION-DECL-EXTERN exit LOC=./src/chown.merge.c:2906 */
+#line 2906
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN exit LOC=./src/chown.merge.c:2910 */
+/* END FUNCTION-DECL-EXTERN exit LOC=./src/chown.merge.c:2906 */
 
-/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/chown.merge.c:2923 */
-#line 2923
+/* BEGIN VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/chown.merge.c:2919 */
+#line 2919
 extern int _gl_cxxalias_dummy ;
-/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/chown.merge.c:2923 */
+/* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./src/chown.merge.c:2919 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_scalbn(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbn LOC=BUILTIN */
 
-/* BEGIN TYPEDEF ptrdiff_t LOC=./src/chown.merge.c:1929 */
-#line 1929 "./src/chown.merge.c"
+/* BEGIN TYPEDEF ptrdiff_t LOC=./src/chown.merge.c:1925 */
+#line 1925 "./src/chown.merge.c"
 typedef long ptrdiff_t;
-/* END TYPEDEF ptrdiff_t LOC=./src/chown.merge.c:1929 */
+/* END TYPEDEF ptrdiff_t LOC=./src/chown.merge.c:1925 */
 
-/* BEGIN TYPEDEF idx_t LOC=./src/chown.merge.c:2936 */
-#line 2936 "./src/chown.merge.c"
+/* BEGIN TYPEDEF idx_t LOC=./src/chown.merge.c:2932 */
+#line 2932 "./src/chown.merge.c"
 typedef ptrdiff_t idx_t;
-/* END TYPEDEF idx_t LOC=./src/chown.merge.c:2936 */
+/* END TYPEDEF idx_t LOC=./src/chown.merge.c:2932 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/chown.merge.c:2940 */
-#line 2940
+/* BEGIN FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/chown.merge.c:2936 */
+#line 2936
 extern char *ximemdup0(void const   *p , idx_t s )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/chown.merge.c:2940 */
+/* END FUNCTION-DECL-EXTERN ximemdup0 LOC=./src/chown.merge.c:2936 */
 
 /* BEGIN STRUCT-DECL stat64 LOC=./src/chown.merge.c:893 */
 #line 893
 struct stat64 ;
 /* END STRUCT-DECL stat64 LOC=./src/chown.merge.c:893 */
 
-/* BEGIN TYPEDEF __int16_t LOC=./src/chown.merge.c:2955 */
-#line 2955 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __int16_t LOC=./src/chown.merge.c:2951 */
+#line 2951 "./src/chown.merge.c"
 typedef short __int16_t;
-/* END TYPEDEF __int16_t LOC=./src/chown.merge.c:2955 */
+/* END TYPEDEF __int16_t LOC=./src/chown.merge.c:2951 */
 
-/* BEGIN TYPEDEF __int_least16_t LOC=./src/chown.merge.c:2959 */
-#line 2959 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __int_least16_t LOC=./src/chown.merge.c:2955 */
+#line 2955 "./src/chown.merge.c"
 typedef __int16_t __int_least16_t;
-/* END TYPEDEF __int_least16_t LOC=./src/chown.merge.c:2959 */
+/* END TYPEDEF __int_least16_t LOC=./src/chown.merge.c:2955 */
 
 /* BEGIN FUNCTION-DECL __builtin_clrsbll LOC=BUILTIN */
 /* compiler builtin: 
@@ -2631,32 +2631,32 @@ typedef __int16_t __int_least16_t;
 struct __pthread_rwlock_arch_t ;
 /* END STRUCT-DECL __pthread_rwlock_arch_t LOC=./src/chown.merge.c:1013 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/chown.merge.c:2986 */
-#line 2986
+/* BEGIN FUNCTION-DECL-EXTERN sigaddset LOC=./src/chown.merge.c:2982 */
+#line 2982
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigaddset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/chown.merge.c:2986 */
+/* END FUNCTION-DECL-EXTERN sigaddset LOC=./src/chown.merge.c:2982 */
 
 /* BEGIN STRUCT-DECL timex LOC=./src/chown.merge.c:1209 */
 #line 1209
 struct timex ;
 /* END STRUCT-DECL timex LOC=./src/chown.merge.c:1209 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/chown.merge.c:2991 */
-#line 2991
+/* BEGIN VARIABLE-DECL-EXTERN __daylight LOC=./src/chown.merge.c:2987 */
+#line 2987
 extern int __daylight ;
-/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/chown.merge.c:2991 */
+/* END VARIABLE-DECL-EXTERN __daylight LOC=./src/chown.merge.c:2987 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbln LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_scalbln(double  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbln LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/chown.merge.c:3005 */
-#line 3005
+/* BEGIN FUNCTION-DECL-EXTERN stat64 LOC=./src/chown.merge.c:3001 */
+#line 3001
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) stat64)(char const   * __restrict  __file ,
                                                                                                struct stat64 * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/chown.merge.c:3005 */
+/* END FUNCTION-DECL-EXTERN stat64 LOC=./src/chown.merge.c:3001 */
 
 /* BEGIN FUNCTION-DECL __builtin___vsnprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -2664,48 +2664,48 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                  char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vsnprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/chown.merge.c:3034 */
-#line 3034 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __blkcnt64_t LOC=./src/chown.merge.c:3030 */
+#line 3030 "./src/chown.merge.c"
 typedef long __blkcnt64_t;
-/* END TYPEDEF __blkcnt64_t LOC=./src/chown.merge.c:3034 */
+/* END TYPEDEF __blkcnt64_t LOC=./src/chown.merge.c:3030 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/chown.merge.c:3043 */
-#line 3043
+/* BEGIN FUNCTION-DECL-EXTERN setstate_r LOC=./src/chown.merge.c:3039 */
+#line 3039
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) setstate_r)(char * __restrict  __statebuf ,
                                                                                                    struct random_data * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/chown.merge.c:3043 */
+/* END FUNCTION-DECL-EXTERN setstate_r LOC=./src/chown.merge.c:3039 */
 
 /* BEGIN ENUM-DECL __anonenum_288797321___0 LOC=./src/chown.merge.c:1409 */
 #line 1409
 enum __anonenum_288797321___0 ;
 /* END ENUM-DECL __anonenum_288797321___0 LOC=./src/chown.merge.c:1409 */
 
-/* BEGIN TYPEDEF __locale_t LOC=./src/chown.merge.c:3087 */
-#line 3087 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __locale_t LOC=./src/chown.merge.c:3083 */
+#line 3083 "./src/chown.merge.c"
 typedef struct __locale_struct *__locale_t;
-/* END TYPEDEF __locale_t LOC=./src/chown.merge.c:3087 */
+/* END TYPEDEF __locale_t LOC=./src/chown.merge.c:3083 */
 
-/* BEGIN TYPEDEF locale_t LOC=./src/chown.merge.c:3091 */
-#line 3091 "./src/chown.merge.c"
+/* BEGIN TYPEDEF locale_t LOC=./src/chown.merge.c:3087 */
+#line 3087 "./src/chown.merge.c"
 typedef __locale_t locale_t;
-/* END TYPEDEF locale_t LOC=./src/chown.merge.c:3091 */
+/* END TYPEDEF locale_t LOC=./src/chown.merge.c:3087 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/chown.merge.c:3095 */
-#line 3095
+/* BEGIN FUNCTION-DECL-EXTERN strtoul_l LOC=./src/chown.merge.c:3091 */
+#line 3091
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoul_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoul_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/chown.merge.c:3095 */
+/* END FUNCTION-DECL-EXTERN strtoul_l LOC=./src/chown.merge.c:3091 */
 
 /* BEGIN STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:1069 */
 #line 1069
 struct __anonstruct_lldiv_t_103911545 ;
 /* END STRUCT-DECL __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:1069 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/chown.merge.c:3106 */
-#line 3106
+/* BEGIN FUNCTION-DECL-EXTERN fdopendir LOC=./src/chown.merge.c:3102 */
+#line 3102
 extern DIR *fdopendir(int __fd )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/chown.merge.c:3106 */
+/* END FUNCTION-DECL-EXTERN fdopendir LOC=./src/chown.merge.c:3102 */
 
 /* BEGIN STRUCT-DECL __anonstruct___sigset_t_783464054 LOC=./src/chown.merge.c:969 */
 #line 969
@@ -2717,8 +2717,8 @@ struct __anonstruct___sigset_t_783464054 ;
    long double __builtin_powl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_powl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_875524036 LOC=./src/chown.merge.c:3129 */
-#line 3129
+/* BEGIN ENUM __anonenum_875524036 LOC=./src/chown.merge.c:3125 */
+#line 3125
 enum __anonenum_875524036 {
     _CS_PATH = 0,
     _CS_V6_WIDTH_RESTRICTED_ENVS = 1,
@@ -2785,42 +2785,42 @@ enum __anonenum_875524036 {
     _CS_V6_ENV = 1148,
     _CS_V7_ENV = 1149
 } ;
-/* END ENUM __anonenum_875524036 LOC=./src/chown.merge.c:3129 */
+/* END ENUM __anonenum_875524036 LOC=./src/chown.merge.c:3125 */
 
 /* BEGIN ENUM-DECL __anonenum_288797321 LOC=./src/chown.merge.c:1165 */
 #line 1165
 enum __anonenum_288797321 ;
 /* END ENUM-DECL __anonenum_288797321 LOC=./src/chown.merge.c:1165 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/chown.merge.c:3206 */
-#line 3206
+/* BEGIN FUNCTION-DECL-EXTERN quote LOC=./src/chown.merge.c:3202 */
+#line 3202
 extern char const   *quote(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote LOC=./src/chown.merge.c:3206 */
+/* END FUNCTION-DECL-EXTERN quote LOC=./src/chown.merge.c:3202 */
 
 /* BEGIN FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
 __inline static void emit_update_parameters_note(void) ;
 /* END FUNCTION-DECL emit_update_parameters_note LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/chown.merge.c:3231 */
-#line 3231
+/* BEGIN FUNCTION-DECL-EXTERN fcvt LOC=./src/chown.merge.c:3227 */
+#line 3227
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) fcvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/chown.merge.c:3231 */
+/* END FUNCTION-DECL-EXTERN fcvt LOC=./src/chown.merge.c:3227 */
 
-/* BEGIN FUNCTION-DECL-EXTERN endgrent LOC=./src/chown.merge.c:3248 */
-#line 3248
+/* BEGIN FUNCTION-DECL-EXTERN endgrent LOC=./src/chown.merge.c:3244 */
+#line 3244
 extern void endgrent(void) ;
-/* END FUNCTION-DECL-EXTERN endgrent LOC=./src/chown.merge.c:3248 */
+/* END FUNCTION-DECL-EXTERN endgrent LOC=./src/chown.merge.c:3244 */
 
-/* BEGIN TYPEDEF _IO_lock_t LOC=./src/chown.merge.c:3252 */
-#line 3252 "./src/chown.merge.c"
+/* BEGIN TYPEDEF _IO_lock_t LOC=./src/chown.merge.c:3248 */
+#line 3248 "./src/chown.merge.c"
 typedef void _IO_lock_t;
-/* END TYPEDEF _IO_lock_t LOC=./src/chown.merge.c:3252 */
+/* END TYPEDEF _IO_lock_t LOC=./src/chown.merge.c:3248 */
 
-/* BEGIN STRUCT _IO_FILE LOC=./src/chown.merge.c:3256 */
-#line 3256 "./src/chown.merge.c"
+/* BEGIN STRUCT _IO_FILE LOC=./src/chown.merge.c:3252 */
+#line 3252 "./src/chown.merge.c"
 struct _IO_FILE {
    int _flags ;
    char *_IO_read_ptr ;
@@ -2853,15 +2853,15 @@ struct _IO_FILE {
    int _mode ;
    char _unused2[15ULL * sizeof(int ) - 5ULL * sizeof(void *)] ;
 };
-/* END STRUCT _IO_FILE LOC=./src/chown.merge.c:3256 */
+/* END STRUCT _IO_FILE LOC=./src/chown.merge.c:3252 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/chown.merge.c:3291 */
-#line 3291
+/* BEGIN FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/chown.merge.c:3287 */
+#line 3287
 extern  __attribute__((__nothrow__)) __uint32_t ( __attribute__((__leaf__)) arc4random_uniform)(__uint32_t __upper_bound ) ;
-/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/chown.merge.c:3291 */
+/* END FUNCTION-DECL-EXTERN arc4random_uniform LOC=./src/chown.merge.c:3287 */
 
-/* BEGIN ENUM quoting_style LOC=./src/chown.merge.c:2718 */
-#line 2718
+/* BEGIN ENUM quoting_style LOC=./src/chown.merge.c:2714 */
+#line 2714
 enum quoting_style {
     literal_quoting_style = 0,
     shell_quoting_style = 1,
@@ -2875,32 +2875,32 @@ enum quoting_style {
     clocale_quoting_style = 9,
     custom_quoting_style = 10
 } ;
-/* END ENUM quoting_style LOC=./src/chown.merge.c:2718 */
+/* END ENUM quoting_style LOC=./src/chown.merge.c:2714 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/chown.merge.c:3303 */
-#line 3303
+/* BEGIN FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/chown.merge.c:3299 */
+#line 3299
 extern void set_quoting_style(struct quoting_options *o , enum quoting_style s ) ;
-/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/chown.merge.c:3303 */
+/* END FUNCTION-DECL-EXTERN set_quoting_style LOC=./src/chown.merge.c:3299 */
 
 /* BEGIN STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/chown.merge.c:881 */
 #line 881
 struct __anonstruct___value32_118117645 ;
 /* END STRUCT-DECL __anonstruct___value32_118117645 LOC=./src/chown.merge.c:881 */
 
-/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/chown.merge.c:3307 */
-#line 3307
+/* BEGIN FUNCTION-DECL-EXTERN asctime LOC=./src/chown.merge.c:3303 */
+#line 3303
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) asctime)(struct tm  const  *__tp ) ;
-/* END FUNCTION-DECL-EXTERN asctime LOC=./src/chown.merge.c:3307 */
+/* END FUNCTION-DECL-EXTERN asctime LOC=./src/chown.merge.c:3303 */
 
-/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/chown.merge.c:3324 */
-#line 3324 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_gid32_t LOC=./src/chown.merge.c:3320 */
+#line 3320 "./src/chown.merge.c"
 typedef unsigned int __kernel_gid32_t;
-/* END TYPEDEF __kernel_gid32_t LOC=./src/chown.merge.c:3324 */
+/* END TYPEDEF __kernel_gid32_t LOC=./src/chown.merge.c:3320 */
 
-/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/chown.merge.c:3332 */
-#line 3332 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_fsid_t LOC=./src/chown.merge.c:3328 */
+#line 3328 "./src/chown.merge.c"
 typedef struct __anonstruct___kernel_fsid_t_990674702 __kernel_fsid_t;
-/* END TYPEDEF __kernel_fsid_t LOC=./src/chown.merge.c:3332 */
+/* END TYPEDEF __kernel_fsid_t LOC=./src/chown.merge.c:3328 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcb LOC=BUILTIN */
 /* compiler builtin: 
@@ -2913,43 +2913,43 @@ typedef struct __anonstruct___kernel_fsid_t_990674702 __kernel_fsid_t;
    _Float128 __builtin_cbrtf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_cbrtf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/chown.merge.c:3345 */
-#line 3345
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/chown.merge.c:3341 */
+#line 3341
 extern char *quotearg_colon_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/chown.merge.c:3345 */
+/* END FUNCTION-DECL-EXTERN quotearg_colon_mem LOC=./src/chown.merge.c:3341 */
 
 /* BEGIN FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_rintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/chown.merge.c:3360 */
-#line 3360
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64x LOC=./src/chown.merge.c:3356 */
+#line 3356
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64x)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/chown.merge.c:3360 */
+/* END FUNCTION-DECL-EXTERN strfromf64x LOC=./src/chown.merge.c:3356 */
 
 /* BEGIN ENUM-DECL quoting_style LOC=./src/chown.merge.c:1081 */
 #line 1081
 enum quoting_style ;
 /* END ENUM-DECL quoting_style LOC=./src/chown.merge.c:1081 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/chown.merge.c:3373 */
-#line 3373
+/* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=./src/chown.merge.c:3369 */
+#line 3369
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) strtoll)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     int __base )  __asm__("__isoc23_strtoll")  ;
-/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/chown.merge.c:3373 */
+/* END FUNCTION-DECL-EXTERN strtoll LOC=./src/chown.merge.c:3369 */
 
-/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/chown.merge.c:3379 */
-#line 3379 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/chown.merge.c:3375 */
+#line 3375 "./src/chown.merge.c"
 struct __anonstruct__addr_bnd_5259977 {
    void *_lower ;
    void *_upper ;
 };
-/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/chown.merge.c:3379 */
+/* END STRUCT __anonstruct__addr_bnd_5259977 LOC=./src/chown.merge.c:3375 */
 
 /* BEGIN FUNCTION-DECL __uint32_identity LOC=UNKNOWN */
 __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
@@ -2970,97 +2970,97 @@ __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
    long __builtin_lround(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lround LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/chown.merge.c:3506 */
-#line 3506
+/* BEGIN FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/chown.merge.c:3502 */
+#line 3502
 extern  __attribute__((__noreturn__)) void __error_noreturn(int __status , int __errnum ,
                                                             char const   *__format 
                                                             , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/chown.merge.c:3506 */
+/* END FUNCTION-DECL-EXTERN __error_noreturn LOC=./src/chown.merge.c:3502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/chown.merge.c:3518 */
-#line 3518
+/* BEGIN FUNCTION-DECL-EXTERN getsubopt LOC=./src/chown.merge.c:3514 */
+#line 3514
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) getsubopt)(char ** __restrict  __optionp ,
                                                                                                     char ** __restrict  __tokens ,
                                                                                                     char ** __restrict  __valuep ) ;
-/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/chown.merge.c:3518 */
+/* END FUNCTION-DECL-EXTERN getsubopt LOC=./src/chown.merge.c:3514 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_exp2f(float  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __timer_t LOC=./src/chown.merge.c:3539 */
-#line 3539 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __timer_t LOC=./src/chown.merge.c:3535 */
+#line 3535 "./src/chown.merge.c"
 typedef void *__timer_t;
-/* END TYPEDEF __timer_t LOC=./src/chown.merge.c:3539 */
+/* END TYPEDEF __timer_t LOC=./src/chown.merge.c:3535 */
 
-/* BEGIN TYPEDEF timer_t LOC=./src/chown.merge.c:3543 */
-#line 3543 "./src/chown.merge.c"
+/* BEGIN TYPEDEF timer_t LOC=./src/chown.merge.c:3539 */
+#line 3539 "./src/chown.merge.c"
 typedef __timer_t timer_t;
-/* END TYPEDEF timer_t LOC=./src/chown.merge.c:3543 */
+/* END TYPEDEF timer_t LOC=./src/chown.merge.c:3539 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/chown.merge.c:3547 */
-#line 3547
+/* BEGIN FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/chown.merge.c:3543 */
+#line 3543
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_getoverrun)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/chown.merge.c:3547 */
+/* END FUNCTION-DECL-EXTERN timer_getoverrun LOC=./src/chown.merge.c:3543 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/chown.merge.c:3557 */
-#line 3557
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/chown.merge.c:3553 */
+#line 3553
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qfcvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/chown.merge.c:3557 */
+/* END FUNCTION-DECL-EXTERN qfcvt_r LOC=./src/chown.merge.c:3553 */
 
-/* BEGIN STRUCT _G_fpos64_t LOC=./src/chown.merge.c:3581 */
-#line 3581 "./src/chown.merge.c"
+/* BEGIN STRUCT _G_fpos64_t LOC=./src/chown.merge.c:3577 */
+#line 3577 "./src/chown.merge.c"
 struct _G_fpos64_t {
    __off64_t __pos ;
    __mbstate_t __state ;
 };
-/* END STRUCT _G_fpos64_t LOC=./src/chown.merge.c:3581 */
+/* END STRUCT _G_fpos64_t LOC=./src/chown.merge.c:3577 */
 
-/* BEGIN TYPEDEF __fpos64_t LOC=./src/chown.merge.c:3588 */
-#line 3588 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __fpos64_t LOC=./src/chown.merge.c:3584 */
+#line 3584 "./src/chown.merge.c"
 typedef struct _G_fpos64_t __fpos64_t;
-/* END TYPEDEF __fpos64_t LOC=./src/chown.merge.c:3588 */
+/* END TYPEDEF __fpos64_t LOC=./src/chown.merge.c:3584 */
 
-/* BEGIN TYPEDEF fpos64_t LOC=./src/chown.merge.c:3592 */
-#line 3592 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fpos64_t LOC=./src/chown.merge.c:3588 */
+#line 3588 "./src/chown.merge.c"
 typedef __fpos64_t fpos64_t;
-/* END TYPEDEF fpos64_t LOC=./src/chown.merge.c:3592 */
+/* END TYPEDEF fpos64_t LOC=./src/chown.merge.c:3588 */
 
 /* BEGIN FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_extract_return_addr(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extract_return_addr LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u64 LOC=./src/chown.merge.c:3606 */
-#line 3606 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __u64 LOC=./src/chown.merge.c:3602 */
+#line 3602 "./src/chown.merge.c"
 typedef unsigned long long __u64;
-/* END TYPEDEF __u64 LOC=./src/chown.merge.c:3606 */
+/* END TYPEDEF __u64 LOC=./src/chown.merge.c:3602 */
 
-/* BEGIN TYPEDEF __be64 LOC=./src/chown.merge.c:3610 */
-#line 3610 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __be64 LOC=./src/chown.merge.c:3606 */
+#line 3606 "./src/chown.merge.c"
 typedef __u64 __be64;
-/* END TYPEDEF __be64 LOC=./src/chown.merge.c:3610 */
+/* END TYPEDEF __be64 LOC=./src/chown.merge.c:3606 */
 
 /* BEGIN FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smulll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/chown.merge.c:3641 */
-#line 3641
+/* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./src/chown.merge.c:3637 */
+#line 3637
 extern void *xpalloc(void *pa , idx_t *pn , idx_t n_incr_min , ptrdiff_t n_max , idx_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/chown.merge.c:3641 */
+/* END FUNCTION-DECL-EXTERN xpalloc LOC=./src/chown.merge.c:3637 */
 
-/* BEGIN TYPEDEF uintptr_t LOC=./src/chown.merge.c:3645 */
-#line 3645 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uintptr_t LOC=./src/chown.merge.c:3641 */
+#line 3641 "./src/chown.merge.c"
 typedef unsigned long uintptr_t;
-/* END TYPEDEF uintptr_t LOC=./src/chown.merge.c:3645 */
+/* END TYPEDEF uintptr_t LOC=./src/chown.merge.c:3641 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -3072,15 +3072,15 @@ typedef unsigned long uintptr_t;
 enum __anonenum_437032235 ;
 /* END ENUM-DECL __anonenum_437032235 LOC=./src/chown.merge.c:1489 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/chown.merge.c:3667 */
-#line 3667
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) setstate)(char *__statebuf ) ;
-/* END FUNCTION-DECL-EXTERN setstate LOC=./src/chown.merge.c:3667 */
-
-/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/chown.merge.c:3663 */
+/* BEGIN FUNCTION-DECL-EXTERN setstate LOC=./src/chown.merge.c:3663 */
 #line 3663
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) setstate)(char *__statebuf ) ;
+/* END FUNCTION-DECL-EXTERN setstate LOC=./src/chown.merge.c:3663 */
+
+/* BEGIN FUNCTION-DECL-EXTERN xalloc_die LOC=./src/chown.merge.c:3659 */
+#line 3659
 extern  __attribute__((__noreturn__)) void xalloc_die(void) ;
-/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/chown.merge.c:3663 */
+/* END FUNCTION-DECL-EXTERN xalloc_die LOC=./src/chown.merge.c:3659 */
 
 /* BEGIN STRUCT-DECL __pthread_cond_s LOC=./src/chown.merge.c:1337 */
 #line 1337
@@ -3092,8 +3092,8 @@ struct __pthread_cond_s ;
    int __builtin_ctzll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963 LOC=./src/chown.merge.c:3680 */
-#line 3680
+/* BEGIN ENUM __anonenum_640648963 LOC=./src/chown.merge.c:3676 */
+#line 3676
 enum __anonenum_640648963 {
     ILL_ILLOPC = 1,
     ILL_ILLOPN = 2,
@@ -3105,64 +3105,64 @@ enum __anonenum_640648963 {
     ILL_BADSTK = 8,
     ILL_BADIADDR = 9
 } ;
-/* END ENUM __anonenum_640648963 LOC=./src/chown.merge.c:3680 */
+/* END ENUM __anonenum_640648963 LOC=./src/chown.merge.c:3676 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_ccosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF greg_t LOC=./src/chown.merge.c:3716 */
-#line 3716 "./src/chown.merge.c"
+/* BEGIN TYPEDEF greg_t LOC=./src/chown.merge.c:3712 */
+#line 3712 "./src/chown.merge.c"
 typedef long long greg_t;
-/* END TYPEDEF greg_t LOC=./src/chown.merge.c:3716 */
+/* END TYPEDEF greg_t LOC=./src/chown.merge.c:3712 */
 
-/* BEGIN TYPEDEF gregset_t LOC=./src/chown.merge.c:3720 */
-#line 3720 "./src/chown.merge.c"
+/* BEGIN TYPEDEF gregset_t LOC=./src/chown.merge.c:3716 */
+#line 3716 "./src/chown.merge.c"
 typedef greg_t gregset_t[23];
-/* END TYPEDEF gregset_t LOC=./src/chown.merge.c:3720 */
+/* END TYPEDEF gregset_t LOC=./src/chown.merge.c:3716 */
 
-/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/chown.merge.c:3724 */
-#line 3724 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/chown.merge.c:3720 */
+#line 3720 "./src/chown.merge.c"
 struct __anonstruct_mcontext_t_787213989 {
    gregset_t gregs ;
    fpregset_t fpregs ;
    unsigned long long __reserved1[8] ;
 };
-/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/chown.merge.c:3724 */
+/* END STRUCT __anonstruct_mcontext_t_787213989 LOC=./src/chown.merge.c:3720 */
 
-/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/chown.merge.c:3732 */
-#line 3732 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_stack_t_648343364 LOC=./src/chown.merge.c:3728 */
+#line 3728 "./src/chown.merge.c"
 struct __anonstruct_stack_t_648343364 {
    void *ss_sp ;
    int ss_flags ;
    size_t ss_size ;
 };
-/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/chown.merge.c:3732 */
+/* END STRUCT __anonstruct_stack_t_648343364 LOC=./src/chown.merge.c:3728 */
 
-/* BEGIN STRUCT _libc_fpxreg LOC=./src/chown.merge.c:3740 */
-#line 3740 "./src/chown.merge.c"
+/* BEGIN STRUCT _libc_fpxreg LOC=./src/chown.merge.c:3736 */
+#line 3736 "./src/chown.merge.c"
 struct _libc_fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _libc_fpxreg LOC=./src/chown.merge.c:3740 */
+/* END STRUCT _libc_fpxreg LOC=./src/chown.merge.c:3736 */
 
-/* BEGIN STRUCT _libc_xmmreg LOC=./src/chown.merge.c:3748 */
-#line 3748 "./src/chown.merge.c"
+/* BEGIN STRUCT _libc_xmmreg LOC=./src/chown.merge.c:3744 */
+#line 3744 "./src/chown.merge.c"
 struct _libc_xmmreg {
    __uint32_t element[4] ;
 };
-/* END STRUCT _libc_xmmreg LOC=./src/chown.merge.c:3748 */
+/* END STRUCT _libc_xmmreg LOC=./src/chown.merge.c:3744 */
 
-/* BEGIN TYPEDEF __uint16_t LOC=./src/chown.merge.c:3433 */
-#line 3433 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uint16_t LOC=./src/chown.merge.c:3429 */
+#line 3429 "./src/chown.merge.c"
 typedef unsigned short __uint16_t;
-/* END TYPEDEF __uint16_t LOC=./src/chown.merge.c:3433 */
+/* END TYPEDEF __uint16_t LOC=./src/chown.merge.c:3429 */
 
-/* BEGIN STRUCT _libc_fpstate LOC=./src/chown.merge.c:3754 */
-#line 3754 "./src/chown.merge.c"
+/* BEGIN STRUCT _libc_fpstate LOC=./src/chown.merge.c:3750 */
+#line 3750 "./src/chown.merge.c"
 struct _libc_fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -3176,20 +3176,20 @@ struct _libc_fpstate {
    struct _libc_xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _libc_fpstate LOC=./src/chown.merge.c:3754 */
+/* END STRUCT _libc_fpstate LOC=./src/chown.merge.c:3750 */
 
-/* BEGIN TYPEDEF mcontext_t LOC=./src/chown.merge.c:3770 */
-#line 3770 "./src/chown.merge.c"
+/* BEGIN TYPEDEF mcontext_t LOC=./src/chown.merge.c:3766 */
+#line 3766 "./src/chown.merge.c"
 typedef struct __anonstruct_mcontext_t_787213989 mcontext_t;
-/* END TYPEDEF mcontext_t LOC=./src/chown.merge.c:3770 */
+/* END TYPEDEF mcontext_t LOC=./src/chown.merge.c:3766 */
 
-/* BEGIN TYPEDEF stack_t LOC=./src/chown.merge.c:3774 */
-#line 3774 "./src/chown.merge.c"
+/* BEGIN TYPEDEF stack_t LOC=./src/chown.merge.c:3770 */
+#line 3770 "./src/chown.merge.c"
 typedef struct __anonstruct_stack_t_648343364 stack_t;
-/* END TYPEDEF stack_t LOC=./src/chown.merge.c:3774 */
+/* END TYPEDEF stack_t LOC=./src/chown.merge.c:3770 */
 
-/* BEGIN STRUCT ucontext_t LOC=./src/chown.merge.c:3778 */
-#line 3778 "./src/chown.merge.c"
+/* BEGIN STRUCT ucontext_t LOC=./src/chown.merge.c:3774 */
+#line 3774 "./src/chown.merge.c"
 struct ucontext_t {
    unsigned long uc_flags ;
    struct ucontext_t *uc_link ;
@@ -3199,23 +3199,23 @@ struct ucontext_t {
    struct _libc_fpstate __fpregs_mem ;
    unsigned long long __ssp[4] ;
 };
-/* END STRUCT ucontext_t LOC=./src/chown.merge.c:3778 */
+/* END STRUCT ucontext_t LOC=./src/chown.merge.c:3774 */
 
-/* BEGIN STRUCT __pthread_internal_list LOC=./src/chown.merge.c:3790 */
-#line 3790 "./src/chown.merge.c"
+/* BEGIN STRUCT __pthread_internal_list LOC=./src/chown.merge.c:3786 */
+#line 3786 "./src/chown.merge.c"
 struct __pthread_internal_list {
    struct __pthread_internal_list *__prev ;
    struct __pthread_internal_list *__next ;
 };
-/* END STRUCT __pthread_internal_list LOC=./src/chown.merge.c:3790 */
+/* END STRUCT __pthread_internal_list LOC=./src/chown.merge.c:3786 */
 
-/* BEGIN TYPEDEF __pthread_list_t LOC=./src/chown.merge.c:3244 */
-#line 3244 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __pthread_list_t LOC=./src/chown.merge.c:3240 */
+#line 3240 "./src/chown.merge.c"
 typedef struct __pthread_internal_list __pthread_list_t;
-/* END TYPEDEF __pthread_list_t LOC=./src/chown.merge.c:3244 */
+/* END TYPEDEF __pthread_list_t LOC=./src/chown.merge.c:3240 */
 
-/* BEGIN STRUCT __pthread_mutex_s LOC=./src/chown.merge.c:3797 */
-#line 3797 "./src/chown.merge.c"
+/* BEGIN STRUCT __pthread_mutex_s LOC=./src/chown.merge.c:3793 */
+#line 3793 "./src/chown.merge.c"
 struct __pthread_mutex_s {
    int __lock ;
    unsigned int __count ;
@@ -3226,7 +3226,7 @@ struct __pthread_mutex_s {
    short __elision ;
    __pthread_list_t __list ;
 };
-/* END STRUCT __pthread_mutex_s LOC=./src/chown.merge.c:3797 */
+/* END STRUCT __pthread_mutex_s LOC=./src/chown.merge.c:3793 */
 
 /* BEGIN STRUCT __pthread_internal_slist LOC=./src/chown.merge.c:3833 */
 #line 3833 "./src/chown.merge.c"
@@ -3477,15 +3477,15 @@ enum __anonenum_1036286214 {
 typedef struct __anonstruct_div_t_773697287 div_t;
 /* END TYPEDEF div_t LOC=./src/chown.merge.c:4192 */
 
-/* BEGIN TYPEDEF __ssize_t LOC=./src/chown.merge.c:3020 */
-#line 3020 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __ssize_t LOC=./src/chown.merge.c:3016 */
+#line 3016 "./src/chown.merge.c"
 typedef long __ssize_t;
-/* END TYPEDEF __ssize_t LOC=./src/chown.merge.c:3020 */
+/* END TYPEDEF __ssize_t LOC=./src/chown.merge.c:3016 */
 
-/* BEGIN TYPEDEF ssize_t LOC=./src/chown.merge.c:3024 */
-#line 3024 "./src/chown.merge.c"
+/* BEGIN TYPEDEF ssize_t LOC=./src/chown.merge.c:3020 */
+#line 3020 "./src/chown.merge.c"
 typedef __ssize_t ssize_t;
-/* END TYPEDEF ssize_t LOC=./src/chown.merge.c:3024 */
+/* END TYPEDEF ssize_t LOC=./src/chown.merge.c:3020 */
 
 /* BEGIN FUNCTION-DECL-EXTERN copy_file_range LOC=./src/chown.merge.c:4206 */
 #line 4206
@@ -3558,23 +3558,23 @@ __alloc_size__(2,3))) ;
    int __builtin_clzll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_clzll LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __suseconds_t LOC=./src/chown.merge.c:3214 */
-#line 3214 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __suseconds_t LOC=./src/chown.merge.c:3210 */
+#line 3210 "./src/chown.merge.c"
 typedef long __suseconds_t;
-/* END TYPEDEF __suseconds_t LOC=./src/chown.merge.c:3214 */
+/* END TYPEDEF __suseconds_t LOC=./src/chown.merge.c:3210 */
 
-/* BEGIN STRUCT timeval LOC=./src/chown.merge.c:3218 */
-#line 3218 "./src/chown.merge.c"
+/* BEGIN STRUCT timeval LOC=./src/chown.merge.c:3214 */
+#line 3214 "./src/chown.merge.c"
 struct timeval {
    __time_t tv_sec ;
    __suseconds_t tv_usec ;
 };
-/* END STRUCT timeval LOC=./src/chown.merge.c:3218 */
+/* END STRUCT timeval LOC=./src/chown.merge.c:3214 */
 
-/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/chown.merge.c:1866 */
-#line 1866 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __syscall_slong_t LOC=./src/chown.merge.c:1862 */
+#line 1862 "./src/chown.merge.c"
 typedef long __syscall_slong_t;
-/* END TYPEDEF __syscall_slong_t LOC=./src/chown.merge.c:1866 */
+/* END TYPEDEF __syscall_slong_t LOC=./src/chown.merge.c:1862 */
 
 /* BEGIN STRUCT timex LOC=./src/chown.merge.c:4359 */
 #line 4359 "./src/chown.merge.c"
@@ -3723,13 +3723,13 @@ typedef unsigned short __u_short;
 typedef __u_short u_short;
 /* END TYPEDEF u_short LOC=./src/chown.merge.c:4601 */
 
-/* BEGIN STRUCT timespec LOC=./src/chown.merge.c:1874 */
-#line 1874 "./src/chown.merge.c"
+/* BEGIN STRUCT timespec LOC=./src/chown.merge.c:1870 */
+#line 1870 "./src/chown.merge.c"
 struct timespec {
    __time_t tv_sec ;
    __syscall_slong_t tv_nsec ;
 };
-/* END STRUCT timespec LOC=./src/chown.merge.c:1874 */
+/* END STRUCT timespec LOC=./src/chown.merge.c:1870 */
 
 /* BEGIN FUNCTION-DECL timespectod LOC=./src/chown.merge.c:4612 */
 #line 4612
@@ -3784,20 +3784,20 @@ typedef unsigned short ushort;
    double __builtin_nan(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nan LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __intmax_t LOC=./src/chown.merge.c:2095 */
-#line 2095 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __intmax_t LOC=./src/chown.merge.c:2091 */
+#line 2091 "./src/chown.merge.c"
 typedef long __intmax_t;
-/* END TYPEDEF __intmax_t LOC=./src/chown.merge.c:2095 */
+/* END TYPEDEF __intmax_t LOC=./src/chown.merge.c:2091 */
 
 /* BEGIN TYPEDEF imaxdiv_t LOC=./src/chown.merge.c:4731 */
 #line 4731 "./src/chown.merge.c"
 typedef struct __anonstruct_imaxdiv_t_825626742 imaxdiv_t;
 /* END TYPEDEF imaxdiv_t LOC=./src/chown.merge.c:4731 */
 
-/* BEGIN TYPEDEF intmax_t LOC=./src/chown.merge.c:2099 */
-#line 2099 "./src/chown.merge.c"
+/* BEGIN TYPEDEF intmax_t LOC=./src/chown.merge.c:2095 */
+#line 2095 "./src/chown.merge.c"
 typedef __intmax_t intmax_t;
-/* END TYPEDEF intmax_t LOC=./src/chown.merge.c:2099 */
+/* END TYPEDEF intmax_t LOC=./src/chown.merge.c:2095 */
 
 /* BEGIN FUNCTION-DECL-EXTERN imaxdiv LOC=./src/chown.merge.c:4735 */
 #line 4735
@@ -3834,10 +3834,10 @@ extern int ( __attribute__((__nonnull__(1))) fscanf)(FILE * __restrict  __stream
 extern struct timespec timespec_sub(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN timespec_sub LOC=./src/chown.merge.c:4763 */
 
-/* BEGIN TYPEDEF __mode_t LOC=./src/chown.merge.c:1889 */
-#line 1889 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __mode_t LOC=./src/chown.merge.c:1885 */
+#line 1885 "./src/chown.merge.c"
 typedef unsigned int __mode_t;
-/* END TYPEDEF __mode_t LOC=./src/chown.merge.c:1889 */
+/* END TYPEDEF __mode_t LOC=./src/chown.merge.c:1885 */
 
 /* BEGIN FUNCTION-DECL-EXTERN mknodat LOC=./src/chown.merge.c:4767 */
 #line 4767
@@ -3957,18 +3957,18 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                 struct stat64 * __restrict  __buf ) ;
 /* END FUNCTION-DECL-EXTERN lstat64 LOC=./src/chown.merge.c:4969 */
 
-/* BEGIN TYPEDEF timezone_t LOC=./src/chown.merge.c:4974 */
-#line 4974 "./src/chown.merge.c"
+/* BEGIN TYPEDEF timezone_t LOC=./src/chown.merge.c:4978 */
+#line 4978 "./src/chown.merge.c"
 typedef struct tm_zone *timezone_t;
-/* END TYPEDEF timezone_t LOC=./src/chown.merge.c:4974 */
+/* END TYPEDEF timezone_t LOC=./src/chown.merge.c:4978 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/chown.merge.c:4978 */
-#line 4978
-extern void tzfree(timezone_t __tz ) ;
-/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/chown.merge.c:4978 */
-
-/* BEGIN ENUM __anonenum_91015150 LOC=./src/chown.merge.c:4982 */
+/* BEGIN FUNCTION-DECL-EXTERN tzfree LOC=./src/chown.merge.c:4982 */
 #line 4982
+extern void tzfree(timezone_t __tz ) ;
+/* END FUNCTION-DECL-EXTERN tzfree LOC=./src/chown.merge.c:4982 */
+
+/* BEGIN ENUM __anonenum_91015150 LOC=./src/chown.merge.c:4986 */
+#line 4986
 enum __anonenum_91015150 {
     TRAP_BRKPT = 1,
     TRAP_TRACE = 2,
@@ -3976,34 +3976,34 @@ enum __anonenum_91015150 {
     TRAP_HWBKPT = 4,
     TRAP_UNK = 5
 } ;
-/* END ENUM __anonenum_91015150 LOC=./src/chown.merge.c:4982 */
+/* END ENUM __anonenum_91015150 LOC=./src/chown.merge.c:4986 */
 
-/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/chown.merge.c:4996 */
-#line 4996
+/* BEGIN FUNCTION-DECL emit_blocksize_note LOC=./src/chown.merge.c:5000 */
+#line 5000
 __inline static void emit_blocksize_note(char const   *program ) ;
-/* END FUNCTION-DECL emit_blocksize_note LOC=./src/chown.merge.c:4996 */
+/* END FUNCTION-DECL emit_blocksize_note LOC=./src/chown.merge.c:5000 */
 
-/* BEGIN TYPEDEF int_fast8_t LOC=./src/chown.merge.c:5000 */
-#line 5000 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_fast8_t LOC=./src/chown.merge.c:5004 */
+#line 5004 "./src/chown.merge.c"
 typedef signed char int_fast8_t;
-/* END TYPEDEF int_fast8_t LOC=./src/chown.merge.c:5000 */
+/* END TYPEDEF int_fast8_t LOC=./src/chown.merge.c:5004 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/chown.merge.c:5030 */
-#line 5030
+/* BEGIN VARIABLE-DECL-EXTERN __tzname LOC=./src/chown.merge.c:5034 */
+#line 5034
 extern char *__tzname[2] ;
-/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/chown.merge.c:5030 */
+/* END VARIABLE-DECL-EXTERN __tzname LOC=./src/chown.merge.c:5034 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/chown.merge.c:5042 */
-#line 5042
+/* BEGIN FUNCTION-DECL-EXTERN quote_mem LOC=./src/chown.merge.c:5046 */
+#line 5046
 extern char const   *quote_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/chown.merge.c:5042 */
+/* END FUNCTION-DECL-EXTERN quote_mem LOC=./src/chown.merge.c:5046 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/chown.merge.c:5050 */
-#line 5050
+/* BEGIN FUNCTION-DECL-EXTERN setenv LOC=./src/chown.merge.c:5054 */
+#line 5054
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) setenv)(char const   *__name ,
                                                                                              char const   *__value ,
                                                                                              int __replace ) ;
-/* END FUNCTION-DECL-EXTERN setenv LOC=./src/chown.merge.c:5050 */
+/* END FUNCTION-DECL-EXTERN setenv LOC=./src/chown.merge.c:5054 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4011,55 +4011,59 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/chown.merge.c:5076 */
-#line 5076
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/chown.merge.c:5080 */
+#line 5080
 extern int ( __attribute__((__nonnull__(1))) rpl_fclose)(FILE *stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/chown.merge.c:5076 */
+/* END FUNCTION-DECL-EXTERN rpl_fclose LOC=./src/chown.merge.c:5080 */
 
 /* BEGIN FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_rint(double  ) ;  */
 /* END FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/chown.merge.c:5085 */
-#line 5085 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_ulong_t LOC=./src/chown.merge.c:5089 */
+#line 5089 "./src/chown.merge.c"
 typedef unsigned long __kernel_ulong_t;
-/* END TYPEDEF __kernel_ulong_t LOC=./src/chown.merge.c:5085 */
+/* END TYPEDEF __kernel_ulong_t LOC=./src/chown.merge.c:5089 */
 
-/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/chown.merge.c:5094 */
-#line 5094
+/* BEGIN ENUM __anonenum_57186863___0 LOC=./src/chown.merge.c:5098 */
+#line 5098
 enum __anonenum_57186863___0 {
     SS_ONSTACK___0 = 1,
     SS_DISABLE___0 = 2
 } ;
-/* END ENUM __anonenum_57186863___0 LOC=./src/chown.merge.c:5094 */
+/* END ENUM __anonenum_57186863___0 LOC=./src/chown.merge.c:5098 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/chown.merge.c:5111 */
-#line 5111
+/* BEGIN FUNCTION-DECL-EXTERN sscanf LOC=./src/chown.merge.c:5115 */
+#line 5115
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sscanf)(char const   * __restrict  __s ,
                                                                              char const   * __restrict  __format 
                                                                              , ...)  __asm__("__isoc23_sscanf")  ;
-/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/chown.merge.c:5111 */
+/* END FUNCTION-DECL-EXTERN sscanf LOC=./src/chown.merge.c:5115 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/chown.merge.c:5117 */
-#line 5117
-extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/chown.merge.c:5117 */
-
-/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/chown.merge.c:5121 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/chown.merge.c:5121 */
 #line 5121
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
-/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/chown.merge.c:5121 */
+extern char *quotearg_style_mem(enum quoting_style s , char const   *arg , size_t argsize ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_style_mem LOC=./src/chown.merge.c:5121 */
 
-/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/chown.merge.c:5125 */
+/* BEGIN FUNCTION-DECL-EXTERN textdomain LOC=./src/chown.merge.c:5125 */
 #line 5125
-extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN basename LOC=./src/chown.merge.c:5125 */
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomain)(char const   *__domainname ) ;
+/* END FUNCTION-DECL-EXTERN textdomain LOC=./src/chown.merge.c:5125 */
 
-/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/chown.merge.c:5129 */
-#line 5129 "./src/chown.merge.c"
+/* BEGIN FUNCTION-DECL-EXTERN basename LOC=./src/chown.merge.c:5129 */
+#line 5129
+extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
+/* END FUNCTION-DECL-EXTERN basename LOC=./src/chown.merge.c:5129 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_VsJE_argv LOC=UNKNOWN */
+char **_TIG_IZ_VsJE_argv ;
+/* END VARIABLE-DECL _TIG_IZ_VsJE_argv LOC=UNKNOWN */
+
+/* BEGIN TYPEDEF __kernel_uid16_t LOC=./src/chown.merge.c:5133 */
+#line 5133 "./src/chown.merge.c"
 typedef unsigned short __kernel_uid16_t;
-/* END TYPEDEF __kernel_uid16_t LOC=./src/chown.merge.c:5129 */
+/* END TYPEDEF __kernel_uid16_t LOC=./src/chown.merge.c:5133 */
 
 /* BEGIN STRUCT-DECL _fpreg LOC=./src/chown.merge.c:1229 */
 #line 1229
@@ -4071,125 +4075,125 @@ struct _fpreg ;
    float __builtin_truncf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __ino64_t LOC=./src/chown.merge.c:5159 */
-#line 5159 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __ino64_t LOC=./src/chown.merge.c:5163 */
+#line 5163 "./src/chown.merge.c"
 typedef unsigned long __ino64_t;
-/* END TYPEDEF __ino64_t LOC=./src/chown.merge.c:5159 */
+/* END TYPEDEF __ino64_t LOC=./src/chown.merge.c:5163 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/chown.merge.c:5163 */
-#line 5163
+/* BEGIN FUNCTION-DECL-EXTERN fpurge LOC=./src/chown.merge.c:5167 */
+#line 5167
 extern int ( __attribute__((__nonnull__(1))) fpurge)(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/chown.merge.c:5163 */
+/* END FUNCTION-DECL-EXTERN fpurge LOC=./src/chown.merge.c:5167 */
 
-/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/chown.merge.c:5186 */
-#line 5186
+/* BEGIN ENUM __anonenum_463020052___0 LOC=./src/chown.merge.c:5190 */
+#line 5190
 enum __anonenum_463020052___0 {
     TIMESPEC_HZ___0 = 1000000000
 } ;
-/* END ENUM __anonenum_463020052___0 LOC=./src/chown.merge.c:5186 */
+/* END ENUM __anonenum_463020052___0 LOC=./src/chown.merge.c:5190 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/chown.merge.c:5205 */
-#line 5205
+/* BEGIN FUNCTION-DECL-EXTERN strerror_l LOC=./src/chown.merge.c:5209 */
+#line 5209
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror_l)(int __errnum ,
                                                                                    locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/chown.merge.c:5205 */
+/* END FUNCTION-DECL-EXTERN strerror_l LOC=./src/chown.merge.c:5209 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fminf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/chown.merge.c:5219 */
-#line 5219
+/* BEGIN FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/chown.merge.c:5223 */
+#line 5223
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32x_l)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ,
                                                                                                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/chown.merge.c:5219 */
+/* END FUNCTION-DECL-EXTERN strtof32x_l LOC=./src/chown.merge.c:5223 */
 
-/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/chown.merge.c:5229 */
-#line 5229 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_old_dev_t LOC=./src/chown.merge.c:5233 */
+#line 5233 "./src/chown.merge.c"
 typedef unsigned long __kernel_old_dev_t;
-/* END TYPEDEF __kernel_old_dev_t LOC=./src/chown.merge.c:5229 */
+/* END TYPEDEF __kernel_old_dev_t LOC=./src/chown.merge.c:5233 */
 
-/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/chown.merge.c:5252 */
-#line 5252 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_condattr_t LOC=./src/chown.merge.c:5256 */
+#line 5256 "./src/chown.merge.c"
 typedef union __anonunion_pthread_condattr_t_488594145 pthread_condattr_t;
-/* END TYPEDEF pthread_condattr_t LOC=./src/chown.merge.c:5252 */
+/* END TYPEDEF pthread_condattr_t LOC=./src/chown.merge.c:5256 */
 
-/* BEGIN TYPEDEF __kernel_size_t LOC=./src/chown.merge.c:5248 */
-#line 5248 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_size_t LOC=./src/chown.merge.c:5252 */
+#line 5252 "./src/chown.merge.c"
 typedef __kernel_ulong_t __kernel_size_t;
-/* END TYPEDEF __kernel_size_t LOC=./src/chown.merge.c:5248 */
+/* END TYPEDEF __kernel_size_t LOC=./src/chown.merge.c:5252 */
 
-/* BEGIN TYPEDEF ulong LOC=./src/chown.merge.c:5244 */
-#line 5244 "./src/chown.merge.c"
+/* BEGIN TYPEDEF ulong LOC=./src/chown.merge.c:5248 */
+#line 5248 "./src/chown.merge.c"
 typedef unsigned long ulong;
-/* END TYPEDEF ulong LOC=./src/chown.merge.c:5244 */
+/* END TYPEDEF ulong LOC=./src/chown.merge.c:5248 */
 
 /* BEGIN FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_bcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/chown.merge.c:5275 */
-#line 5275
+/* BEGIN FUNCTION-DECL-EXTERN strlcpy LOC=./src/chown.merge.c:5279 */
+#line 5279
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/chown.merge.c:5275 */
+/* END FUNCTION-DECL-EXTERN strlcpy LOC=./src/chown.merge.c:5279 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/chown.merge.c:5270 */
-#line 5270
+/* BEGIN FUNCTION-DECL-EXTERN strtof128 LOC=./src/chown.merge.c:5274 */
+#line 5274
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1), __leaf__)) strtof128)(char const   * __restrict  __nptr ,
                                                                                                       char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/chown.merge.c:5270 */
+/* END FUNCTION-DECL-EXTERN strtof128 LOC=./src/chown.merge.c:5274 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cpowf(_Complex float  , _Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/chown.merge.c:5281 */
-#line 5281
+/* BEGIN FUNCTION-DECL-EXTERN openat64 LOC=./src/chown.merge.c:5285 */
+#line 5285
 extern int ( __attribute__((__nonnull__(2))) openat64)(int __fd , char const   *__file ,
                                                        int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/chown.merge.c:5281 */
+/* END FUNCTION-DECL-EXTERN openat64 LOC=./src/chown.merge.c:5285 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863 LOC=./src/chown.merge.c:1325 */
 #line 1325
 enum __anonenum_57186863 ;
 /* END ENUM-DECL __anonenum_57186863 LOC=./src/chown.merge.c:1325 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/chown.merge.c:5300 */
-#line 5300
+/* BEGIN FUNCTION-DECL-EXTERN qecvt_r LOC=./src/chown.merge.c:5304 */
+#line 5304
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qecvt_r)(long double __value ,
                                                                                                   int __ndigit ,
                                                                                                   int * __restrict  __decpt ,
                                                                                                   int * __restrict  __sign ,
                                                                                                   char * __restrict  __buf ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/chown.merge.c:5300 */
+/* END FUNCTION-DECL-EXTERN qecvt_r LOC=./src/chown.merge.c:5304 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/chown.merge.c:5320 */
-#line 5320
-extern void close_stdout_set_file_name(char const   *file ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/chown.merge.c:5320 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/chown.merge.c:5324 */
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/chown.merge.c:5324 */
 #line 5324
+extern void close_stdout_set_file_name(char const   *file ) ;
+/* END FUNCTION-DECL-EXTERN close_stdout_set_file_name LOC=./src/chown.merge.c:5324 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate LOC=./src/chown.merge.c:5328 */
+#line 5328
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate)(int __fd ,
                                                                                 __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/chown.merge.c:5324 */
+/* END FUNCTION-DECL-EXTERN ftruncate LOC=./src/chown.merge.c:5328 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/chown.merge.c:5345 */
-#line 5345
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_free LOC=./src/chown.merge.c:5349 */
+#line 5349
 extern void quotearg_free(void) ;
-/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/chown.merge.c:5345 */
+/* END FUNCTION-DECL-EXTERN quotearg_free LOC=./src/chown.merge.c:5349 */
 
-/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/chown.merge.c:5385 */
-#line 5385
+/* BEGIN VARIABLE-DECL-EXTERN exit_failure LOC=./src/chown.merge.c:5389 */
+#line 5389
 extern int volatile   exit_failure ;
-/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/chown.merge.c:5385 */
+/* END VARIABLE-DECL-EXTERN exit_failure LOC=./src/chown.merge.c:5389 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcll LOC=BUILTIN */
 /* compiler builtin: 
@@ -4202,10 +4206,10 @@ extern int volatile   exit_failure ;
    void *__builtin_realloc(void * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_realloc LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/chown.merge.c:5399 */
-#line 5399
+/* BEGIN FUNCTION-DECL-EXTERN setusershell LOC=./src/chown.merge.c:5403 */
+#line 5403
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/chown.merge.c:5399 */
+/* END FUNCTION-DECL-EXTERN setusershell LOC=./src/chown.merge.c:5403 */
 
 /* BEGIN FUNCTION-DECL __builtin_acosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -4216,39 +4220,39 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setusershe
 static char *reference_file ;
 /* END VARIABLE-DECL reference_file LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/chown.merge.c:5455 */
-#line 5455
+/* BEGIN FUNCTION-DECL-EXTERN strlcat LOC=./src/chown.merge.c:5459 */
+#line 5459
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), __leaf__)) strlcat)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ,
                                                                                                    size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/chown.merge.c:5455 */
+/* END FUNCTION-DECL-EXTERN strlcat LOC=./src/chown.merge.c:5459 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpw LOC=./src/chown.merge.c:5474 */
-#line 5474
+/* BEGIN FUNCTION-DECL-EXTERN getpw LOC=./src/chown.merge.c:5478 */
+#line 5478
 extern int getpw(__uid_t __uid , char *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN getpw LOC=./src/chown.merge.c:5474 */
+/* END FUNCTION-DECL-EXTERN getpw LOC=./src/chown.merge.c:5478 */
 
-/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/chown.merge.c:5465 */
-#line 5465
+/* BEGIN FUNCTION-DECL __bswap_32 LOC=./src/chown.merge.c:5469 */
+#line 5469
 __inline static __uint32_t __bswap_32(__uint32_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_32 LOC=./src/chown.merge.c:5465 */
+/* END FUNCTION-DECL __bswap_32 LOC=./src/chown.merge.c:5469 */
 
 /* BEGIN FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
 __inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
 /* END FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/chown.merge.c:5504 */
-#line 5504
+/* BEGIN FUNCTION-DECL-EXTERN sync LOC=./src/chown.merge.c:5508 */
+#line 5508
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) sync)(void) ;
-/* END FUNCTION-DECL-EXTERN sync LOC=./src/chown.merge.c:5504 */
+/* END FUNCTION-DECL-EXTERN sync LOC=./src/chown.merge.c:5508 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/chown.merge.c:5497 */
-#line 5497
+/* BEGIN FUNCTION-DECL-EXTERN strfromf128 LOC=./src/chown.merge.c:5501 */
+#line 5501
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf128)(char *__dest ,
                                                                                                   size_t __size ,
                                                                                                   char const   *__format ,
                                                                                                   _Float128 __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/chown.merge.c:5497 */
+/* END FUNCTION-DECL-EXTERN strfromf128 LOC=./src/chown.merge.c:5501 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 /* compiler builtin: 
@@ -4261,142 +4265,142 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
 struct lconv ;
 /* END STRUCT-DECL lconv LOC=./src/chown.merge.c:1161 */
 
-/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/chown.merge.c:5526 */
-#line 5526
+/* BEGIN FUNCTION-DECL-EXTERN realloc LOC=./src/chown.merge.c:5530 */
+#line 5530
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) realloc)(void *__ptr , size_t __size )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN realloc LOC=./src/chown.merge.c:5526 */
+/* END FUNCTION-DECL-EXTERN realloc LOC=./src/chown.merge.c:5530 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/chown.merge.c:5535 */
-#line 5535
+/* BEGIN FUNCTION-DECL-EXTERN strtof32 LOC=./src/chown.merge.c:5539 */
+#line 5539
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof32)(char const   * __restrict  __nptr ,
                                                                                                  char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/chown.merge.c:5535 */
+/* END FUNCTION-DECL-EXTERN strtof32 LOC=./src/chown.merge.c:5539 */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./src/chown.merge.c:853 */
 #line 853
 struct tm_zone ;
 /* END STRUCT-DECL tm_zone LOC=./src/chown.merge.c:853 */
 
-/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/chown.merge.c:5554 */
-#line 5554
+/* BEGIN FUNCTION-DECL-EXTERN endusershell LOC=./src/chown.merge.c:5558 */
+#line 5558
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) endusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/chown.merge.c:5554 */
+/* END FUNCTION-DECL-EXTERN endusershell LOC=./src/chown.merge.c:5558 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/chown.merge.c:5563 */
-#line 5563
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/chown.merge.c:5567 */
+#line 5567
 extern char *quotearg_custom(char const   *left_quote , char const   *right_quote ,
                              char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/chown.merge.c:5563 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom LOC=./src/chown.merge.c:5567 */
 
 /* BEGIN FUNCTION-DECL stzncpy LOC=UNKNOWN */
 __inline static char *stzncpy(char * __restrict  dest , char const   * __restrict  src ,
                               size_t len ) ;
 /* END FUNCTION-DECL stzncpy LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/chown.merge.c:5577 */
-#line 5577
+/* BEGIN FUNCTION-DECL-EXTERN pread LOC=./src/chown.merge.c:5581 */
+#line 5581
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread LOC=./src/chown.merge.c:5577 */
+/* END FUNCTION-DECL-EXTERN pread LOC=./src/chown.merge.c:5581 */
 
-/* BEGIN TYPEDEF ucontext_t LOC=./src/chown.merge.c:5586 */
-#line 5586 "./src/chown.merge.c"
-typedef struct ucontext_t ucontext_t;
-/* END TYPEDEF ucontext_t LOC=./src/chown.merge.c:5586 */
-
-/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/chown.merge.c:5590 */
+/* BEGIN TYPEDEF ucontext_t LOC=./src/chown.merge.c:5590 */
 #line 5590 "./src/chown.merge.c"
-typedef int cookie_close_function_t(void *__cookie );
-/* END TYPEDEF cookie_close_function_t LOC=./src/chown.merge.c:5590 */
+typedef struct ucontext_t ucontext_t;
+/* END TYPEDEF ucontext_t LOC=./src/chown.merge.c:5590 */
 
-/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/chown.merge.c:5594 */
+/* BEGIN TYPEDEF cookie_close_function_t LOC=./src/chown.merge.c:5594 */
 #line 5594 "./src/chown.merge.c"
-typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_read_function_t LOC=./src/chown.merge.c:5594 */
+typedef int cookie_close_function_t(void *__cookie );
+/* END TYPEDEF cookie_close_function_t LOC=./src/chown.merge.c:5594 */
 
-/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/chown.merge.c:5598 */
+/* BEGIN TYPEDEF cookie_read_function_t LOC=./src/chown.merge.c:5598 */
 #line 5598 "./src/chown.merge.c"
-typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
-/* END TYPEDEF cookie_seek_function_t LOC=./src/chown.merge.c:5598 */
+typedef __ssize_t cookie_read_function_t(void *__cookie , char *__buf , size_t __nbytes );
+/* END TYPEDEF cookie_read_function_t LOC=./src/chown.merge.c:5598 */
 
-/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/chown.merge.c:5602 */
+/* BEGIN TYPEDEF cookie_seek_function_t LOC=./src/chown.merge.c:5602 */
 #line 5602 "./src/chown.merge.c"
-typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
-/* END TYPEDEF cookie_write_function_t LOC=./src/chown.merge.c:5602 */
+typedef int cookie_seek_function_t(void *__cookie , __off64_t *__pos , int __w );
+/* END TYPEDEF cookie_seek_function_t LOC=./src/chown.merge.c:5602 */
 
-/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/chown.merge.c:5606 */
+/* BEGIN TYPEDEF cookie_write_function_t LOC=./src/chown.merge.c:5606 */
 #line 5606 "./src/chown.merge.c"
+typedef __ssize_t cookie_write_function_t(void *__cookie , char const   *__buf , size_t __nbytes );
+/* END TYPEDEF cookie_write_function_t LOC=./src/chown.merge.c:5606 */
+
+/* BEGIN STRUCT _IO_cookie_io_functions_t LOC=./src/chown.merge.c:5610 */
+#line 5610 "./src/chown.merge.c"
 struct _IO_cookie_io_functions_t {
    cookie_read_function_t *read ;
    cookie_write_function_t *write ;
    cookie_seek_function_t *seek ;
    cookie_close_function_t *close ;
 };
-/* END STRUCT _IO_cookie_io_functions_t LOC=./src/chown.merge.c:5606 */
+/* END STRUCT _IO_cookie_io_functions_t LOC=./src/chown.merge.c:5610 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/chown.merge.c:5615 */
-#line 5615
+/* BEGIN FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/chown.merge.c:5619 */
+#line 5619
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt_long_only)(int ___argc ,
                                                                                                          char **___argv ,
                                                                                                          char const   *__shortopts ,
                                                                                                          struct option  const  *__longopts ,
                                                                                                          int *__longind ) ;
-/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/chown.merge.c:5615 */
+/* END FUNCTION-DECL-EXTERN getopt_long_only LOC=./src/chown.merge.c:5619 */
 
-/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/chown.merge.c:5623 */
-#line 5623 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_max_align_t_247203726 LOC=./src/chown.merge.c:5627 */
+#line 5627 "./src/chown.merge.c"
 struct __anonstruct_max_align_t_247203726 {
    long long __max_align_ll  __attribute__((__aligned__(__alignof__(long long )))) ;
    long double __max_align_ld  __attribute__((__aligned__(__alignof__(long double )))) ;
 };
-/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/chown.merge.c:5623 */
+/* END STRUCT __anonstruct_max_align_t_247203726 LOC=./src/chown.merge.c:5627 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/chown.merge.c:5630 */
-#line 5630
+/* BEGIN FUNCTION-DECL-EXTERN futimes LOC=./src/chown.merge.c:5634 */
+#line 5634
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimes)(int __fd ,
                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimes LOC=./src/chown.merge.c:5630 */
+/* END FUNCTION-DECL-EXTERN futimes LOC=./src/chown.merge.c:5634 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/chown.merge.c:5644 */
-#line 5644
+/* BEGIN FUNCTION-DECL-EXTERN getprogname LOC=./src/chown.merge.c:5648 */
+#line 5648
 extern char const   *getprogname(void)  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/chown.merge.c:5644 */
+/* END FUNCTION-DECL-EXTERN getprogname LOC=./src/chown.merge.c:5648 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/chown.merge.c:5635 */
-#line 5635
+/* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=./src/chown.merge.c:5639 */
+#line 5639
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) fcvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/chown.merge.c:5635 */
+/* END FUNCTION-DECL-EXTERN fcvt_r LOC=./src/chown.merge.c:5639 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wcscmp(unsigned short * const   , unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcscmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/chown.merge.c:5693 */
-#line 5693
+/* BEGIN FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/chown.merge.c:5697 */
+#line 5697
 extern int ( __attribute__((__nonnull__(1,2))) mbscasecmp)(char const   *s1 , char const   *s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/chown.merge.c:5693 */
+/* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./src/chown.merge.c:5697 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_log2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/chown.merge.c:5729 */
-#line 5729
+/* BEGIN FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/chown.merge.c:5733 */
+#line 5733
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) get_current_dir_name)(void) ;
-/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/chown.merge.c:5729 */
+/* END FUNCTION-DECL-EXTERN get_current_dir_name LOC=./src/chown.merge.c:5733 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/chown.merge.c:5724 */
-#line 5724
+/* BEGIN FUNCTION-DECL-EXTERN timespec_get LOC=./src/chown.merge.c:5728 */
+#line 5728
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) timespec_get)(struct timespec *__ts ,
                                                                                                    int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/chown.merge.c:5724 */
+/* END FUNCTION-DECL-EXTERN timespec_get LOC=./src/chown.merge.c:5728 */
 
 /* BEGIN FUNCTION-DECL __builtin_acosf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4408,11 +4412,11 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_fdimf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/chown.merge.c:5758 */
-#line 5758
+/* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./src/chown.merge.c:5762 */
+#line 5762
 extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/chown.merge.c:5758 */
+/* END FUNCTION-DECL-EXTERN xcharalloc LOC=./src/chown.merge.c:5762 */
 
 /* BEGIN STRUCT-DECL __anonstruct_mcontext_t_787213989 LOC=./src/chown.merge.c:1381 */
 #line 1381
@@ -4424,41 +4428,41 @@ struct __anonstruct_mcontext_t_787213989 ;
    float __builtin_nexttowardf(float  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nexttowardf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/chown.merge.c:5796 */
-#line 5796
+/* BEGIN FUNCTION-DECL-EXTERN lseek64 LOC=./src/chown.merge.c:5800 */
+#line 5800
 extern  __attribute__((__nothrow__)) __off64_t ( __attribute__((__leaf__)) lseek64)(int __fd ,
                                                                                     __off64_t __offset ,
                                                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/chown.merge.c:5796 */
+/* END FUNCTION-DECL-EXTERN lseek64 LOC=./src/chown.merge.c:5800 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncat(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/chown.merge.c:5812 */
-#line 5812
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) gettext)(char const   *__msgid )  __attribute__((__format_arg__(1))) ;
-/* END FUNCTION-DECL-EXTERN gettext LOC=./src/chown.merge.c:5812 */
-
-/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/chown.merge.c:5816 */
+/* BEGIN FUNCTION-DECL-EXTERN gettext LOC=./src/chown.merge.c:5816 */
 #line 5816
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) gettext)(char const   *__msgid )  __attribute__((__format_arg__(1))) ;
+/* END FUNCTION-DECL-EXTERN gettext LOC=./src/chown.merge.c:5816 */
+
+/* BEGIN FUNCTION-DECL-EXTERN bcmp LOC=./src/chown.merge.c:5820 */
+#line 5820
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) bcmp)(void const   *__s1 ,
                                                                                              void const   *__s2 ,
                                                                                              size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/chown.merge.c:5816 */
+/* END FUNCTION-DECL-EXTERN bcmp LOC=./src/chown.merge.c:5820 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/chown.merge.c:5867 */
-#line 5867
+/* BEGIN FUNCTION-DECL-EXTERN mknod LOC=./src/chown.merge.c:5871 */
+#line 5871
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mknod)(char const   *__path ,
                                                                                             __mode_t __mode ,
                                                                                             __dev_t __dev ) ;
-/* END FUNCTION-DECL-EXTERN mknod LOC=./src/chown.merge.c:5867 */
+/* END FUNCTION-DECL-EXTERN mknod LOC=./src/chown.merge.c:5871 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gid_to_name LOC=./src/chown.merge.c:5863 */
-#line 5863
+/* BEGIN FUNCTION-DECL-EXTERN gid_to_name LOC=./src/chown.merge.c:5867 */
+#line 5867
 extern char *gid_to_name(gid_t gid )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN gid_to_name LOC=./src/chown.merge.c:5863 */
+/* END FUNCTION-DECL-EXTERN gid_to_name LOC=./src/chown.merge.c:5867 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabs LOC=BUILTIN */
 /* compiler builtin: 
@@ -4470,25 +4474,25 @@ extern char *gid_to_name(gid_t gid )  __attribute__((__returns_nonnull__, __mall
 struct Chown_option ;
 /* END STRUCT-DECL Chown_option LOC=./src/chown.merge.c:1201 */
 
-/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/chown.merge.c:5873 */
-#line 5873
+/* BEGIN VARIABLE-DECL-EXTERN timezone LOC=./src/chown.merge.c:5877 */
+#line 5877
 extern long timezone ;
-/* END VARIABLE-DECL-EXTERN timezone LOC=./src/chown.merge.c:5873 */
+/* END VARIABLE-DECL-EXTERN timezone LOC=./src/chown.merge.c:5877 */
 
 /* BEGIN FUNCTION-DECL timespec_sign LOC=UNKNOWN */
 __inline int __attribute__((__pure__))  timespec_sign(struct timespec a ) ;
 /* END FUNCTION-DECL timespec_sign LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/chown.merge.c:5895 */
-#line 5895
+/* BEGIN FUNCTION-DECL-EXTERN fseek LOC=./src/chown.merge.c:5899 */
+#line 5899
 extern int ( __attribute__((__nonnull__(1))) fseek)(FILE *__stream , long __off ,
                                                     int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseek LOC=./src/chown.merge.c:5895 */
+/* END FUNCTION-DECL-EXTERN fseek LOC=./src/chown.merge.c:5899 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/chown.merge.c:5914 */
-#line 5914
+/* BEGIN FUNCTION-DECL-EXTERN setsid LOC=./src/chown.merge.c:5918 */
+#line 5918
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)(void) ;
-/* END FUNCTION-DECL-EXTERN setsid LOC=./src/chown.merge.c:5914 */
+/* END FUNCTION-DECL-EXTERN setsid LOC=./src/chown.merge.c:5918 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanh LOC=BUILTIN */
 /* compiler builtin: 
@@ -4500,92 +4504,92 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)
    int __builtin_ffsl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/chown.merge.c:5923 */
-#line 5923
+/* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=./src/chown.merge.c:5927 */
+#line 5927
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/chown.merge.c:5923 */
+/* END FUNCTION-DECL-EXTERN gmtime LOC=./src/chown.merge.c:5927 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/chown.merge.c:5932 */
-#line 5932 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion_pthread_cond_t_951761805 LOC=./src/chown.merge.c:5936 */
+#line 5936 "./src/chown.merge.c"
 union __anonunion_pthread_cond_t_951761805 {
    struct __pthread_cond_s __data ;
    char __size[48] ;
    long long __align ;
 };
-/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/chown.merge.c:5932 */
+/* END UNION __anonunion_pthread_cond_t_951761805 LOC=./src/chown.merge.c:5936 */
 
 /* BEGIN FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ccosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/chown.merge.c:5975 */
-#line 5975
+/* BEGIN FUNCTION-DECL-EXTERN strptime LOC=./src/chown.merge.c:5979 */
+#line 5979
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime)(char const   * __restrict  __s ,
                                                                                  char const   * __restrict  __fmt ,
                                                                                  struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN strptime LOC=./src/chown.merge.c:5975 */
+/* END FUNCTION-DECL-EXTERN strptime LOC=./src/chown.merge.c:5979 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/chown.merge.c:5990 */
-#line 5990
+/* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/chown.merge.c:5994 */
+#line 5994
 extern int getchar_unlocked(void) ;
-/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/chown.merge.c:5990 */
+/* END FUNCTION-DECL-EXTERN getchar_unlocked LOC=./src/chown.merge.c:5994 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/chown.merge.c:5998 */
-#line 5998
+/* BEGIN FUNCTION-DECL-EXTERN setlinebuf LOC=./src/chown.merge.c:6006 */
+#line 6006
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setlinebuf)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/chown.merge.c:5998 */
+/* END FUNCTION-DECL-EXTERN setlinebuf LOC=./src/chown.merge.c:6006 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/chown.merge.c:6007 */
-#line 6007
+/* BEGIN FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/chown.merge.c:6015 */
+#line 6015
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) sigabbrev_np)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/chown.merge.c:6007 */
+/* END FUNCTION-DECL-EXTERN sigabbrev_np LOC=./src/chown.merge.c:6015 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/chown.merge.c:6002 */
-#line 6002
+/* BEGIN FUNCTION-DECL-EXTERN openat LOC=./src/chown.merge.c:6010 */
+#line 6010
 extern int ( __attribute__((__nonnull__(2))) openat)(int __fd , char const   *__file ,
                                                      int __oflag  , ...) ;
-/* END FUNCTION-DECL-EXTERN openat LOC=./src/chown.merge.c:6002 */
+/* END FUNCTION-DECL-EXTERN openat LOC=./src/chown.merge.c:6010 */
 
-/* BEGIN TYPEDEF siginfo_t LOC=./src/chown.merge.c:6011 */
-#line 6011 "./src/chown.merge.c"
-typedef struct __anonstruct_siginfo_t_853205917 siginfo_t;
-/* END TYPEDEF siginfo_t LOC=./src/chown.merge.c:6011 */
-
-/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/chown.merge.c:6019 */
+/* BEGIN TYPEDEF siginfo_t LOC=./src/chown.merge.c:6019 */
 #line 6019 "./src/chown.merge.c"
+typedef struct __anonstruct_siginfo_t_853205917 siginfo_t;
+/* END TYPEDEF siginfo_t LOC=./src/chown.merge.c:6019 */
+
+/* BEGIN STRUCT __anonstruct__timer_490064738 LOC=./src/chown.merge.c:6027 */
+#line 6027 "./src/chown.merge.c"
 struct __anonstruct__timer_490064738 {
    int si_tid ;
    int si_overrun ;
    __sigval_t si_sigval ;
 };
-/* END STRUCT __anonstruct__timer_490064738 LOC=./src/chown.merge.c:6019 */
+/* END STRUCT __anonstruct__timer_490064738 LOC=./src/chown.merge.c:6027 */
 
 /* BEGIN FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_smull_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_smull_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/chown.merge.c:6049 */
-#line 6049
-extern void unused__emit_bug_reporting_address(void) ;
-/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/chown.merge.c:6049 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/chown.merge.c:6053 */
-#line 6053
-extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/chown.merge.c:6053 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/chown.merge.c:6057 */
+/* BEGIN FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/chown.merge.c:6057 */
 #line 6057
+extern void unused__emit_bug_reporting_address(void) ;
+/* END FUNCTION-DECL-EXTERN unused__emit_bug_reporting_address LOC=./src/chown.merge.c:6057 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ximalloc LOC=./src/chown.merge.c:6061 */
+#line 6061
+extern void *ximalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
+/* END FUNCTION-DECL-EXTERN ximalloc LOC=./src/chown.merge.c:6061 */
+
+/* BEGIN FUNCTION-DECL-EXTERN sigwait LOC=./src/chown.merge.c:6065 */
+#line 6065
 extern int ( __attribute__((__nonnull__(1,2))) sigwait)(sigset_t const   * __restrict  __set ,
                                                         int * __restrict  __sig ) ;
-/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/chown.merge.c:6057 */
+/* END FUNCTION-DECL-EXTERN sigwait LOC=./src/chown.merge.c:6065 */
 
 /* BEGIN FUNCTION-DECL __builtin_ceilf LOC=BUILTIN */
 /* compiler builtin: 
@@ -4597,66 +4601,66 @@ extern int ( __attribute__((__nonnull__(1,2))) sigwait)(sigset_t const   * __res
    int __builtin_classify_type(...) ;  */
 /* END FUNCTION-DECL __builtin_classify_type LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/chown.merge.c:6095 */
-#line 6095
+/* BEGIN FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/chown.merge.c:6103 */
+#line 6103
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bindtextdomain)(char const   *__domainname ,
                                                                                        char const   *__dirname ) ;
-/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/chown.merge.c:6095 */
+/* END FUNCTION-DECL-EXTERN bindtextdomain LOC=./src/chown.merge.c:6103 */
 
-/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/chown.merge.c:6090 */
-#line 6090
+/* BEGIN FUNCTION-DECL-EXTERN reallocarray LOC=./src/chown.merge.c:6098 */
+#line 6098
 extern  __attribute__((__nothrow__)) void *( __attribute__((__warn_unused_result__,
 __leaf__)) reallocarray)(void *__ptr , size_t __nmemb , size_t __size )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/chown.merge.c:6090 */
+/* END FUNCTION-DECL-EXTERN reallocarray LOC=./src/chown.merge.c:6098 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/chown.merge.c:6077 */
-#line 6077
+/* BEGIN FUNCTION-DECL-EXTERN timegm LOC=./src/chown.merge.c:6085 */
+#line 6085
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timegm)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timegm LOC=./src/chown.merge.c:6077 */
+/* END FUNCTION-DECL-EXTERN timegm LOC=./src/chown.merge.c:6085 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152 LOC=./src/chown.merge.c:1109 */
 #line 1109
 enum __anonenum_451154152 ;
 /* END ENUM-DECL __anonenum_451154152 LOC=./src/chown.merge.c:1109 */
 
-/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/chown.merge.c:6131 */
-#line 6131 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion___sigaction_handler_363639592 LOC=./src/chown.merge.c:6139 */
+#line 6139 "./src/chown.merge.c"
 union __anonunion___sigaction_handler_363639592 {
    void (*sa_handler)(int  ) ;
    void (*sa_sigaction)(int  , siginfo_t * , void * ) ;
 };
-/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/chown.merge.c:6131 */
+/* END UNION __anonunion___sigaction_handler_363639592 LOC=./src/chown.merge.c:6139 */
 
-/* BEGIN STRUCT sigaction LOC=./src/chown.merge.c:6138 */
-#line 6138 "./src/chown.merge.c"
+/* BEGIN STRUCT sigaction LOC=./src/chown.merge.c:6146 */
+#line 6146 "./src/chown.merge.c"
 struct sigaction {
    union __anonunion___sigaction_handler_363639592 __sigaction_handler ;
    __sigset_t sa_mask ;
    int sa_flags ;
    void (*sa_restorer)(void) ;
 };
-/* END STRUCT sigaction LOC=./src/chown.merge.c:6138 */
+/* END STRUCT sigaction LOC=./src/chown.merge.c:6146 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/chown.merge.c:6154 */
-#line 6154
+/* BEGIN FUNCTION-DECL-EXTERN ungetc LOC=./src/chown.merge.c:6162 */
+#line 6162
 extern int ( __attribute__((__nonnull__(2))) ungetc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/chown.merge.c:6154 */
+/* END FUNCTION-DECL-EXTERN ungetc LOC=./src/chown.merge.c:6162 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/chown.merge.c:6147 */
-#line 6147
+/* BEGIN FUNCTION-DECL-EXTERN strfroml LOC=./src/chown.merge.c:6155 */
+#line 6155
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfroml)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                long double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/chown.merge.c:6147 */
+/* END FUNCTION-DECL-EXTERN strfroml LOC=./src/chown.merge.c:6155 */
 
 /* BEGIN STRUCT-DECL _IO_codecvt LOC=./src/chown.merge.c:873 */
 #line 873
 struct _IO_codecvt ;
 /* END STRUCT-DECL _IO_codecvt LOC=./src/chown.merge.c:873 */
 
-/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/chown.merge.c:6207 */
-#line 6207 "./src/chown.merge.c"
+/* BEGIN STRUCT __pthread_rwlock_arch_t LOC=./src/chown.merge.c:6215 */
+#line 6215 "./src/chown.merge.c"
 struct __pthread_rwlock_arch_t {
    unsigned int __readers ;
    unsigned int __writers ;
@@ -4671,103 +4675,99 @@ struct __pthread_rwlock_arch_t {
    unsigned long __pad2 ;
    unsigned int __flags ;
 };
-/* END STRUCT __pthread_rwlock_arch_t LOC=./src/chown.merge.c:6207 */
+/* END STRUCT __pthread_rwlock_arch_t LOC=./src/chown.merge.c:6215 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sqrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_H7TU_envp LOC=UNKNOWN */
-char **_TIG_IZ_H7TU_envp ;
-/* END VARIABLE-DECL _TIG_IZ_H7TU_envp LOC=UNKNOWN */
-
 /* BEGIN ENUM-DECL __anonenum_1036286214 LOC=./src/chown.merge.c:1385 */
 #line 1385
 enum __anonenum_1036286214 ;
 /* END ENUM-DECL __anonenum_1036286214 LOC=./src/chown.merge.c:1385 */
 
-/* BEGIN TYPEDEF __uint_least16_t LOC=./src/chown.merge.c:6251 */
-#line 6251 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uint_least16_t LOC=./src/chown.merge.c:6259 */
+#line 6259 "./src/chown.merge.c"
 typedef __uint16_t __uint_least16_t;
-/* END TYPEDEF __uint_least16_t LOC=./src/chown.merge.c:6251 */
+/* END TYPEDEF __uint_least16_t LOC=./src/chown.merge.c:6259 */
 
-/* BEGIN TYPEDEF uint_least16_t LOC=./src/chown.merge.c:6255 */
-#line 6255 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint_least16_t LOC=./src/chown.merge.c:6263 */
+#line 6263 "./src/chown.merge.c"
 typedef __uint_least16_t uint_least16_t;
-/* END TYPEDEF uint_least16_t LOC=./src/chown.merge.c:6255 */
+/* END TYPEDEF uint_least16_t LOC=./src/chown.merge.c:6263 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/chown.merge.c:6267 */
-#line 6267
+/* BEGIN FUNCTION-DECL-EXTERN __stpncpy LOC=./src/chown.merge.c:6275 */
+#line 6275
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpncpy)(char * __restrict  __dest ,
                                                                                                     char const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/chown.merge.c:6267 */
+/* END FUNCTION-DECL-EXTERN __stpncpy LOC=./src/chown.merge.c:6275 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/chown.merge.c:6263 */
-#line 6263
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/chown.merge.c:6271 */
+#line 6271
 extern int ( __attribute__((__nonnull__(1))) fsetpos64)(FILE *__stream , fpos64_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/chown.merge.c:6263 */
+/* END FUNCTION-DECL-EXTERN fsetpos64 LOC=./src/chown.merge.c:6271 */
 
 /* BEGIN FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_uadd_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_uadd_overflow LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/chown.merge.c:6283 */
-#line 6283
+/* BEGIN ENUM __anonenum_424050557___0 LOC=./src/chown.merge.c:6291 */
+#line 6291
 enum __anonenum_424050557___0 {
     TIMESPEC_RESOLUTION___0 = 1000000000
 } ;
-/* END ENUM __anonenum_424050557___0 LOC=./src/chown.merge.c:6283 */
+/* END ENUM __anonenum_424050557___0 LOC=./src/chown.merge.c:6291 */
 
 /* BEGIN FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remainderf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/chown.merge.c:6294 */
-#line 6294
+/* BEGIN FUNCTION-DECL-EXTERN fsync LOC=./src/chown.merge.c:6302 */
+#line 6302
 extern int fsync(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN fsync LOC=./src/chown.merge.c:6294 */
+/* END FUNCTION-DECL-EXTERN fsync LOC=./src/chown.merge.c:6302 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmod(double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmod LOC=BUILTIN */
 
-/* BEGIN TYPEDEF blkcnt64_t LOC=./src/chown.merge.c:6303 */
-#line 6303 "./src/chown.merge.c"
+/* BEGIN TYPEDEF blkcnt64_t LOC=./src/chown.merge.c:6311 */
+#line 6311 "./src/chown.merge.c"
 typedef __blkcnt64_t blkcnt64_t;
-/* END TYPEDEF blkcnt64_t LOC=./src/chown.merge.c:6303 */
+/* END TYPEDEF blkcnt64_t LOC=./src/chown.merge.c:6311 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_log1p(double  ) ;  */
 /* END FUNCTION-DECL __builtin_log1p LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/chown.merge.c:6347 */
-#line 6347
+/* BEGIN FUNCTION-DECL-EXTERN fcntl LOC=./src/chown.merge.c:6355 */
+#line 6355
 extern int fcntl(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/chown.merge.c:6347 */
+/* END FUNCTION-DECL-EXTERN fcntl LOC=./src/chown.merge.c:6355 */
 
 /* BEGIN FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_return_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_507282730___0 LOC=./src/chown.merge.c:6360 */
-#line 6360
+/* BEGIN ENUM __anonenum_507282730___0 LOC=./src/chown.merge.c:6368 */
+#line 6368
 enum __anonenum_507282730___0 {
     I_RING_SIZE___0 = 4
 } ;
-/* END ENUM __anonenum_507282730___0 LOC=./src/chown.merge.c:6360 */
+/* END ENUM __anonenum_507282730___0 LOC=./src/chown.merge.c:6368 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/chown.merge.c:6366 */
-#line 6366
+/* BEGIN FUNCTION-DECL-EXTERN strtok LOC=./src/chown.merge.c:6374 */
+#line 6374
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strtok)(char * __restrict  __s ,
                                                                                                char const   * __restrict  __delim ) ;
-/* END FUNCTION-DECL-EXTERN strtok LOC=./src/chown.merge.c:6366 */
+/* END FUNCTION-DECL-EXTERN strtok LOC=./src/chown.merge.c:6374 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanl LOC=BUILTIN */
 /* compiler builtin: 
@@ -4784,22 +4784,22 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
    double __builtin_atanh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atanh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/chown.merge.c:6424 */
-#line 6424
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) remove)(char const   *__filename ) ;
-/* END FUNCTION-DECL-EXTERN remove LOC=./src/chown.merge.c:6424 */
-
-/* BEGIN TYPEDEF __uint_least64_t LOC=./src/chown.merge.c:6428 */
-#line 6428 "./src/chown.merge.c"
-typedef __uint64_t __uint_least64_t;
-/* END TYPEDEF __uint_least64_t LOC=./src/chown.merge.c:6428 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/chown.merge.c:6432 */
+/* BEGIN FUNCTION-DECL-EXTERN remove LOC=./src/chown.merge.c:6432 */
 #line 6432
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) remove)(char const   *__filename ) ;
+/* END FUNCTION-DECL-EXTERN remove LOC=./src/chown.merge.c:6432 */
+
+/* BEGIN TYPEDEF __uint_least64_t LOC=./src/chown.merge.c:6436 */
+#line 6436 "./src/chown.merge.c"
+typedef __uint64_t __uint_least64_t;
+/* END TYPEDEF __uint_least64_t LOC=./src/chown.merge.c:6436 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gcvt LOC=./src/chown.merge.c:6440 */
+#line 6440
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) gcvt)(double __value ,
                                                                                              int __ndigit ,
                                                                                              char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/chown.merge.c:6432 */
+/* END FUNCTION-DECL-EXTERN gcvt LOC=./src/chown.merge.c:6440 */
 
 /* BEGIN FUNCTION-DECL __builtin_char_memchr LOC=BUILTIN */
 /* compiler builtin: 
@@ -4811,24 +4811,24 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __le
    long double __builtin_expl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_expl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint16_t LOC=./src/chown.merge.c:6456 */
-#line 6456 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint16_t LOC=./src/chown.merge.c:6464 */
+#line 6464 "./src/chown.merge.c"
 typedef __uint16_t uint16_t;
-/* END TYPEDEF uint16_t LOC=./src/chown.merge.c:6456 */
+/* END TYPEDEF uint16_t LOC=./src/chown.merge.c:6464 */
 
-/* BEGIN STRUCT iovec LOC=./src/chown.merge.c:6460 */
-#line 6460 "./src/chown.merge.c"
+/* BEGIN STRUCT iovec LOC=./src/chown.merge.c:6468 */
+#line 6468 "./src/chown.merge.c"
 struct iovec {
    void *iov_base ;
    size_t iov_len ;
 };
-/* END STRUCT iovec LOC=./src/chown.merge.c:6460 */
+/* END STRUCT iovec LOC=./src/chown.merge.c:6468 */
 
-/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/chown.merge.c:6467 */
-#line 6467
+/* BEGIN FUNCTION-DECL-EXTERN killpg LOC=./src/chown.merge.c:6475 */
+#line 6475
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__pid_t __pgrp ,
                                                                              int __sig ) ;
-/* END FUNCTION-DECL-EXTERN killpg LOC=./src/chown.merge.c:6467 */
+/* END FUNCTION-DECL-EXTERN killpg LOC=./src/chown.merge.c:6475 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpow LOC=BUILTIN */
 /* compiler builtin: 
@@ -4840,83 +4840,83 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) killpg)(__p
    int __builtin_constant_p(int  ) ;  */
 /* END FUNCTION-DECL __builtin_constant_p LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __int64_t LOC=./src/chown.merge.c:6482 */
-#line 6482 "./src/chown.merge.c"
-typedef long __int64_t;
-/* END TYPEDEF __int64_t LOC=./src/chown.merge.c:6482 */
-
-/* BEGIN TYPEDEF __int_least64_t LOC=./src/chown.merge.c:6486 */
-#line 6486 "./src/chown.merge.c"
-typedef __int64_t __int_least64_t;
-/* END TYPEDEF __int_least64_t LOC=./src/chown.merge.c:6486 */
-
-/* BEGIN TYPEDEF __int8_t LOC=./src/chown.merge.c:2803 */
-#line 2803 "./src/chown.merge.c"
-typedef signed char __int8_t;
-/* END TYPEDEF __int8_t LOC=./src/chown.merge.c:2803 */
-
-/* BEGIN TYPEDEF int8_t LOC=./src/chown.merge.c:6490 */
+/* BEGIN TYPEDEF __int64_t LOC=./src/chown.merge.c:6490 */
 #line 6490 "./src/chown.merge.c"
+typedef long __int64_t;
+/* END TYPEDEF __int64_t LOC=./src/chown.merge.c:6490 */
+
+/* BEGIN TYPEDEF __int_least64_t LOC=./src/chown.merge.c:6494 */
+#line 6494 "./src/chown.merge.c"
+typedef __int64_t __int_least64_t;
+/* END TYPEDEF __int_least64_t LOC=./src/chown.merge.c:6494 */
+
+/* BEGIN TYPEDEF __int8_t LOC=./src/chown.merge.c:2799 */
+#line 2799 "./src/chown.merge.c"
+typedef signed char __int8_t;
+/* END TYPEDEF __int8_t LOC=./src/chown.merge.c:2799 */
+
+/* BEGIN TYPEDEF int8_t LOC=./src/chown.merge.c:6498 */
+#line 6498 "./src/chown.merge.c"
 typedef __int8_t int8_t;
-/* END TYPEDEF int8_t LOC=./src/chown.merge.c:6490 */
+/* END TYPEDEF int8_t LOC=./src/chown.merge.c:6498 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin___stpncpy_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __u128 LOC=./src/chown.merge.c:6509 */
-#line 6509 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __u128 LOC=./src/chown.merge.c:6517 */
+#line 6517 "./src/chown.merge.c"
 typedef unsigned __int128 __attribute__((__aligned__(16)))  __u128;
-/* END TYPEDEF __u128 LOC=./src/chown.merge.c:6509 */
+/* END TYPEDEF __u128 LOC=./src/chown.merge.c:6517 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928 LOC=./src/chown.merge.c:993 */
 #line 993
 enum __anonenum_850350928 ;
 /* END ENUM-DECL __anonenum_850350928 LOC=./src/chown.merge.c:993 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/chown.merge.c:6532 */
-#line 6532
+/* BEGIN FUNCTION-DECL-EXTERN setvbuf LOC=./src/chown.merge.c:6540 */
+#line 6540
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setvbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ,
                                                                                               int __modes ,
                                                                                               size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/chown.merge.c:6532 */
+/* END FUNCTION-DECL-EXTERN setvbuf LOC=./src/chown.merge.c:6540 */
 
-/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/chown.merge.c:6528 */
-#line 6528
+/* BEGIN FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/chown.merge.c:6536 */
+#line 6536
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) canonicalize_file_name)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/chown.merge.c:6528 */
+/* END FUNCTION-DECL-EXTERN canonicalize_file_name LOC=./src/chown.merge.c:6536 */
 
-/* BEGIN TYPEDEF __kernel_time_t LOC=./src/chown.merge.c:6548 */
-#line 6548 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_time_t LOC=./src/chown.merge.c:6556 */
+#line 6556 "./src/chown.merge.c"
 typedef __kernel_long_t __kernel_time_t;
-/* END TYPEDEF __kernel_time_t LOC=./src/chown.merge.c:6548 */
+/* END TYPEDEF __kernel_time_t LOC=./src/chown.merge.c:6556 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __blkcnt_t LOC=./src/chown.merge.c:1881 */
-#line 1881 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __blkcnt_t LOC=./src/chown.merge.c:1877 */
+#line 1877 "./src/chown.merge.c"
 typedef long __blkcnt_t;
-/* END TYPEDEF __blkcnt_t LOC=./src/chown.merge.c:1881 */
+/* END TYPEDEF __blkcnt_t LOC=./src/chown.merge.c:1877 */
 
-/* BEGIN TYPEDEF blkcnt_t LOC=./src/chown.merge.c:6562 */
-#line 6562 "./src/chown.merge.c"
+/* BEGIN TYPEDEF blkcnt_t LOC=./src/chown.merge.c:6570 */
+#line 6570 "./src/chown.merge.c"
 typedef __blkcnt_t blkcnt_t;
-/* END TYPEDEF blkcnt_t LOC=./src/chown.merge.c:6562 */
+/* END TYPEDEF blkcnt_t LOC=./src/chown.merge.c:6570 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_remquof128(_Float128  , _Float128  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/chown.merge.c:6571 */
-#line 6571
+/* BEGIN FUNCTION-DECL-EXTERN sleep LOC=./src/chown.merge.c:6579 */
+#line 6579
 extern unsigned int sleep(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN sleep LOC=./src/chown.merge.c:6571 */
+/* END FUNCTION-DECL-EXTERN sleep LOC=./src/chown.merge.c:6579 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -4933,8 +4933,8 @@ union __anonunion_pthread_rwlock_t_656928968 ;
 struct __anonstruct_fd_set_356711149 ;
 /* END STRUCT-DECL __anonstruct_fd_set_356711149 LOC=./src/chown.merge.c:1469 */
 
-/* BEGIN ENUM __anonenum_457704180 LOC=./src/chown.merge.c:6594 */
-#line 6594
+/* BEGIN ENUM __anonenum_457704180 LOC=./src/chown.merge.c:6602 */
+#line 6602
 enum __anonenum_457704180 {
     FPE_INTDIV = 1,
     FPE_INTOVF = 2,
@@ -4947,7 +4947,7 @@ enum __anonenum_457704180 {
     FPE_FLTUNK = 14,
     FPE_CONDTRAP = 15
 } ;
-/* END ENUM __anonenum_457704180 LOC=./src/chown.merge.c:6594 */
+/* END ENUM __anonenum_457704180 LOC=./src/chown.merge.c:6602 */
 
 /* BEGIN STRUCT-DECL iovec LOC=./src/chown.merge.c:1481 */
 #line 1481
@@ -4964,30 +4964,30 @@ struct iovec ;
    char *__builtin___strcat_chk(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strcat_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/chown.merge.c:6637 */
-#line 6637
+/* BEGIN FUNCTION-DECL-EXTERN rpmatch LOC=./src/chown.merge.c:6645 */
+#line 6645
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rpmatch)(char const   *__response ) ;
-/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/chown.merge.c:6637 */
+/* END FUNCTION-DECL-EXTERN rpmatch LOC=./src/chown.merge.c:6645 */
 
 /* BEGIN FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_dump_struct(void const   * , void * ) ;  */
 /* END FUNCTION-DECL __builtin_dump_struct LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/chown.merge.c:6646 */
-#line 6646 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/chown.merge.c:6654 */
+#line 6654 "./src/chown.merge.c"
 struct __anonstruct___kernel_fd_set_990674701 {
    unsigned long fds_bits[1024ULL / (8ULL * sizeof(long ))] ;
 };
-/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/chown.merge.c:6646 */
+/* END STRUCT __anonstruct___kernel_fd_set_990674701 LOC=./src/chown.merge.c:6654 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/chown.merge.c:6652 */
-#line 6652
+/* BEGIN FUNCTION-DECL-EXTERN sysconf LOC=./src/chown.merge.c:6660 */
+#line 6660
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/chown.merge.c:6652 */
+/* END FUNCTION-DECL-EXTERN sysconf LOC=./src/chown.merge.c:6660 */
 
-/* BEGIN ENUM __anonenum_23175539 LOC=./src/chown.merge.c:6661 */
-#line 6661
+/* BEGIN ENUM __anonenum_23175539 LOC=./src/chown.merge.c:6669 */
+#line 6669
 enum __anonenum_23175539 {
     CLD_EXITED = 1,
     CLD_KILLED = 2,
@@ -4996,15 +4996,15 @@ enum __anonenum_23175539 {
     CLD_STOPPED = 5,
     CLD_CONTINUED = 6
 } ;
-/* END ENUM __anonenum_23175539 LOC=./src/chown.merge.c:6661 */
+/* END ENUM __anonenum_23175539 LOC=./src/chown.merge.c:6669 */
 
-/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/chown.merge.c:6672 */
-#line 6672 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/chown.merge.c:6680 */
+#line 6680 "./src/chown.merge.c"
 union __anonunion_pthread_barrier_t_145707746 {
    char __size[32] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/chown.merge.c:6672 */
+/* END UNION __anonunion_pthread_barrier_t_145707746 LOC=./src/chown.merge.c:6680 */
 
 /* BEGIN STRUCT-DECL __anonstruct_stack_t_648343364 LOC=./src/chown.merge.c:1037 */
 #line 1037
@@ -5016,187 +5016,187 @@ struct __anonstruct_stack_t_648343364 ;
    double __builtin_canonicalize(double  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalize LOC=BUILTIN */
 
-/* BEGIN TYPEDEF va_list LOC=./src/chown.merge.c:6679 */
-#line 6679 "./src/chown.merge.c"
+/* BEGIN TYPEDEF va_list LOC=./src/chown.merge.c:6687 */
+#line 6687 "./src/chown.merge.c"
 typedef __gnuc_va_list va_list;
-/* END TYPEDEF va_list LOC=./src/chown.merge.c:6679 */
+/* END TYPEDEF va_list LOC=./src/chown.merge.c:6687 */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/chown.merge.c:6683 */
-#line 6683
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_va LOC=./src/chown.merge.c:6691 */
+#line 6691
 extern void version_etc_va(FILE *stream , char const   *command_name , char const   *package ,
                            char const   *version , va_list authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/chown.merge.c:6683 */
+/* END FUNCTION-DECL-EXTERN version_etc_va LOC=./src/chown.merge.c:6691 */
 
-/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/chown.merge.c:6707 */
-#line 6707
+/* BEGIN FUNCTION-DECL-EXTERN calloc LOC=./src/chown.merge.c:6715 */
+#line 6715
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) calloc)(size_t __nmemb ,
                                                                                size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN calloc LOC=./src/chown.merge.c:6707 */
+/* END FUNCTION-DECL-EXTERN calloc LOC=./src/chown.merge.c:6715 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_copysignl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __gwchar_t LOC=./src/chown.merge.c:2854 */
-#line 2854 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __gwchar_t LOC=./src/chown.merge.c:2850 */
+#line 2850 "./src/chown.merge.c"
 typedef int __gwchar_t;
-/* END TYPEDEF __gwchar_t LOC=./src/chown.merge.c:2854 */
+/* END TYPEDEF __gwchar_t LOC=./src/chown.merge.c:2850 */
 
-/* BEGIN TYPEDEF __uintmax_t LOC=./src/chown.merge.c:3485 */
-#line 3485 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uintmax_t LOC=./src/chown.merge.c:3481 */
+#line 3481 "./src/chown.merge.c"
 typedef unsigned long __uintmax_t;
-/* END TYPEDEF __uintmax_t LOC=./src/chown.merge.c:3485 */
+/* END TYPEDEF __uintmax_t LOC=./src/chown.merge.c:3481 */
 
-/* BEGIN TYPEDEF uintmax_t LOC=./src/chown.merge.c:6717 */
-#line 6717 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uintmax_t LOC=./src/chown.merge.c:6725 */
+#line 6725 "./src/chown.merge.c"
 typedef __uintmax_t uintmax_t;
-/* END TYPEDEF uintmax_t LOC=./src/chown.merge.c:6717 */
+/* END TYPEDEF uintmax_t LOC=./src/chown.merge.c:6725 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/chown.merge.c:6721 */
-#line 6721
+/* BEGIN FUNCTION-DECL-EXTERN wcstoumax LOC=./src/chown.merge.c:6729 */
+#line 6729
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) wcstoumax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                       __gwchar_t ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_wcstoumax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/chown.merge.c:6721 */
+/* END FUNCTION-DECL-EXTERN wcstoumax LOC=./src/chown.merge.c:6729 */
 
 /* BEGIN FUNCTION-DECL timespec_cmp LOC=UNKNOWN */
 __inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
 /* END FUNCTION-DECL timespec_cmp LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/chown.merge.c:6736 */
-#line 6736
+/* BEGIN FUNCTION-DECL-EXTERN unlink LOC=./src/chown.merge.c:6744 */
+#line 6744
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) unlink)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN unlink LOC=./src/chown.merge.c:6736 */
+/* END FUNCTION-DECL-EXTERN unlink LOC=./src/chown.merge.c:6744 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/chown.merge.c:6740 */
-#line 6740
+/* BEGIN FUNCTION-DECL-EXTERN vfprintf LOC=./src/chown.merge.c:6748 */
+#line 6748
 extern int ( __attribute__((__nonnull__(1))) vfprintf)(FILE * __restrict  __s , char const   * __restrict  __format ,
                                                        __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/chown.merge.c:6740 */
+/* END FUNCTION-DECL-EXTERN vfprintf LOC=./src/chown.merge.c:6748 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/chown.merge.c:6754 */
-#line 6754
+/* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=./src/chown.merge.c:6762 */
+#line 6762
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_settime)(timer_t __timerid ,
                                                                                     int __flags ,
                                                                                     struct itimerspec  const  * __restrict  __value ,
                                                                                     struct itimerspec * __restrict  __ovalue ) ;
-/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/chown.merge.c:6754 */
+/* END FUNCTION-DECL-EXTERN timer_settime LOC=./src/chown.merge.c:6762 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/chown.merge.c:6770 */
-#line 6770
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null LOC=./src/chown.merge.c:6778 */
+#line 6778
 extern char const   *setlocale_null(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/chown.merge.c:6770 */
+/* END FUNCTION-DECL-EXTERN setlocale_null LOC=./src/chown.merge.c:6778 */
 
-/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/chown.merge.c:6788 */
-#line 6788
+/* BEGIN FUNCTION-DECL-EXTERN free LOC=./src/chown.merge.c:6796 */
+#line 6796
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void *__ptr ) ;
-/* END FUNCTION-DECL-EXTERN free LOC=./src/chown.merge.c:6788 */
+/* END FUNCTION-DECL-EXTERN free LOC=./src/chown.merge.c:6796 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_va_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/chown.merge.c:6822 */
-#line 6822
+/* BEGIN FUNCTION-DECL-EXTERN setbuf LOC=./src/chown.merge.c:6830 */
+#line 6830
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuf)(FILE * __restrict  __stream ,
                                                                                               char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/chown.merge.c:6822 */
+/* END FUNCTION-DECL-EXTERN setbuf LOC=./src/chown.merge.c:6830 */
 
 /* BEGIN STRUCT-DECL statx LOC=./src/chown.merge.c:1133 */
 #line 1133
 struct statx ;
 /* END STRUCT-DECL statx LOC=./src/chown.merge.c:1133 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/chown.merge.c:6827 */
-#line 6827
+/* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=./src/chown.merge.c:6835 */
+#line 6835
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) wctomb)(char *__s ,
                                                                              wchar_t __wchar ) ;
-/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/chown.merge.c:6827 */
+/* END FUNCTION-DECL-EXTERN wctomb LOC=./src/chown.merge.c:6835 */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/chown.merge.c:6832 */
-#line 6832
+/* BEGIN FUNCTION-DECL-EXTERN erand48_r LOC=./src/chown.merge.c:6840 */
+#line 6840
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) erand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/chown.merge.c:6832 */
+/* END FUNCTION-DECL-EXTERN erand48_r LOC=./src/chown.merge.c:6840 */
 
-/* BEGIN TYPEDEF __intptr_t LOC=./src/chown.merge.c:6846 */
-#line 6846 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __intptr_t LOC=./src/chown.merge.c:6854 */
+#line 6854 "./src/chown.merge.c"
 typedef long __intptr_t;
-/* END TYPEDEF __intptr_t LOC=./src/chown.merge.c:6846 */
+/* END TYPEDEF __intptr_t LOC=./src/chown.merge.c:6854 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/chown.merge.c:6859 */
-#line 6859
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/chown.merge.c:6867 */
+#line 6867
 extern FILE *( __attribute__((__nonnull__(1,2))) rpl_fopen)(char const   * __restrict  filename ,
                                                             char const   * __restrict  mode )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/chown.merge.c:6859 */
+/* END FUNCTION-DECL-EXTERN rpl_fopen LOC=./src/chown.merge.c:6867 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/chown.merge.c:1433 */
 #line 1433
 union __anonunion_pthread_barrierattr_t_951761806 ;
 /* END UNION-DECL __anonunion_pthread_barrierattr_t_951761806 LOC=./src/chown.merge.c:1433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/chown.merge.c:6869 */
-#line 6869
+/* BEGIN FUNCTION-DECL-EXTERN xinmalloc LOC=./src/chown.merge.c:6877 */
+#line 6877
 extern void *xinmalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/chown.merge.c:6869 */
+/* END FUNCTION-DECL-EXTERN xinmalloc LOC=./src/chown.merge.c:6877 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrgid LOC=./src/chown.merge.c:6878 */
-#line 6878
+/* BEGIN FUNCTION-DECL-EXTERN getgrgid LOC=./src/chown.merge.c:6886 */
+#line 6886
 extern struct group *getgrgid(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN getgrgid LOC=./src/chown.merge.c:6878 */
+/* END FUNCTION-DECL-EXTERN getgrgid LOC=./src/chown.merge.c:6886 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/chown.merge.c:6887 */
-#line 6887
+/* BEGIN FUNCTION-DECL-EXTERN __asprintf LOC=./src/chown.merge.c:6895 */
+#line 6895
 extern  __attribute__((__nothrow__)) int __asprintf(char ** __restrict  __ptr , char const   * __restrict  __fmt 
                                                     , ...) ;
-/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/chown.merge.c:6887 */
+/* END FUNCTION-DECL-EXTERN __asprintf LOC=./src/chown.merge.c:6895 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/chown.merge.c:6908 */
-#line 6908
+/* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=./src/chown.merge.c:6920 */
+#line 6920
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
                                                                size_t * __restrict  __n ,
                                                                int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/chown.merge.c:6908 */
+/* END FUNCTION-DECL-EXTERN __getdelim LOC=./src/chown.merge.c:6920 */
 
 /* BEGIN FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncpy(char * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/chown.merge.c:6925 */
-#line 6925
+/* BEGIN FUNCTION-DECL-EXTERN vsscanf LOC=./src/chown.merge.c:6937 */
+#line 6937
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vsscanf)(char const   * __restrict  __s ,
                                                                               char const   * __restrict  __format ,
                                                                               __gnuc_va_list __arg )  __asm__("__isoc23_vsscanf")  ;
-/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/chown.merge.c:6925 */
+/* END FUNCTION-DECL-EXTERN vsscanf LOC=./src/chown.merge.c:6937 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_huge_vall(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_vall LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/chown.merge.c:6919 */
-#line 6919
+/* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=./src/chown.merge.c:6931 */
+#line 6931
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strerror_r)(int __errnum ,
                                                                                                    char *__buf ,
                                                                                                    size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/chown.merge.c:6919 */
+/* END FUNCTION-DECL-EXTERN strerror_r LOC=./src/chown.merge.c:6931 */
 
-/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:6950 */
-#line 6950 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:6962 */
+#line 6962 "./src/chown.merge.c"
 struct __anonstruct_lldiv_t_103911545 {
    long long quot ;
    long long rem ;
 };
-/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:6950 */
+/* END STRUCT __anonstruct_lldiv_t_103911545 LOC=./src/chown.merge.c:6962 */
 
-/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/chown.merge.c:6957 */
-#line 6957
+/* BEGIN ENUM __anonenum_513775621___0 LOC=./src/chown.merge.c:6969 */
+#line 6969
 enum __anonenum_513775621___0 {
     DT_UNKNOWN___0 = 0,
     DT_FIFO___0 = 1,
@@ -5208,35 +5208,35 @@ enum __anonenum_513775621___0 {
     DT_SOCK___0 = 12,
     DT_WHT___0 = 14
 } ;
-/* END ENUM __anonenum_513775621___0 LOC=./src/chown.merge.c:6957 */
+/* END ENUM __anonenum_513775621___0 LOC=./src/chown.merge.c:6969 */
 
-/* BEGIN ENUM __anonenum_606700034 LOC=./src/chown.merge.c:6971 */
-#line 6971
+/* BEGIN ENUM __anonenum_606700034 LOC=./src/chown.merge.c:6983 */
+#line 6983
 enum __anonenum_606700034 {
     DS_UNKNOWN = -2,
     DS_EMPTY = -1,
     DS_NONEMPTY = 0
 } ;
-/* END ENUM __anonenum_606700034 LOC=./src/chown.merge.c:6971 */
+/* END ENUM __anonenum_606700034 LOC=./src/chown.merge.c:6983 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/chown.merge.c:6979 */
-#line 6979
+/* BEGIN FUNCTION-DECL-EXTERN dngettext LOC=./src/chown.merge.c:6991 */
+#line 6991
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dngettext)(char const   *__domainname ,
                                                                                   char const   *__msgid1 ,
                                                                                   char const   *__msgid2 ,
                                                                                   unsigned long __n )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/chown.merge.c:6979 */
+/* END FUNCTION-DECL-EXTERN dngettext LOC=./src/chown.merge.c:6991 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/chown.merge.c:6991 */
-#line 6991
+/* BEGIN FUNCTION-DECL-EXTERN quotearg LOC=./src/chown.merge.c:7003 */
+#line 7003
 extern char *quotearg(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/chown.merge.c:6991 */
+/* END FUNCTION-DECL-EXTERN quotearg LOC=./src/chown.merge.c:7003 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/chown.merge.c:6987 */
-#line 6987
+/* BEGIN FUNCTION-DECL-EXTERN getlogin LOC=./src/chown.merge.c:6999 */
+#line 6999
 extern char *getlogin(void) ;
-/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/chown.merge.c:6987 */
+/* END FUNCTION-DECL-EXTERN getlogin LOC=./src/chown.merge.c:6999 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -5248,83 +5248,83 @@ extern char *getlogin(void) ;
 typedef unsigned short __u16;
 /* END TYPEDEF __u16 LOC=./src/chown.merge.c:4243 */
 
-/* BEGIN TYPEDEF __sum16 LOC=./src/chown.merge.c:7018 */
-#line 7018 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __sum16 LOC=./src/chown.merge.c:7030 */
+#line 7030 "./src/chown.merge.c"
 typedef __u16 __sum16;
-/* END TYPEDEF __sum16 LOC=./src/chown.merge.c:7018 */
+/* END TYPEDEF __sum16 LOC=./src/chown.merge.c:7030 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/chown.merge.c:7022 */
-#line 7022
+/* BEGIN FUNCTION-DECL-EXTERN siggetmask LOC=./src/chown.merge.c:7034 */
+#line 7034
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) siggetmask)(void) ;
-/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/chown.merge.c:7022 */
+/* END FUNCTION-DECL-EXTERN siggetmask LOC=./src/chown.merge.c:7034 */
 
-/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/chown.merge.c:7038 */
-#line 7038
+/* BEGIN FUNCTION-DECL-EXTERN read LOC=./src/chown.merge.c:7050 */
+#line 7050
 extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
-/* END FUNCTION-DECL-EXTERN read LOC=./src/chown.merge.c:7038 */
+/* END FUNCTION-DECL-EXTERN read LOC=./src/chown.merge.c:7050 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/chown.merge.c:7042 */
-#line 7042
+/* BEGIN FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/chown.merge.c:7054 */
+#line 7054
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_perror_fail)(int __errnum ,
                                                                                                           char const   *__file ,
                                                                                                           unsigned int __line ,
                                                                                                           char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/chown.merge.c:7042 */
+/* END FUNCTION-DECL-EXTERN __assert_perror_fail LOC=./src/chown.merge.c:7054 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/chown.merge.c:7065 */
-#line 7065
+/* BEGIN FUNCTION-DECL-EXTERN drand48 LOC=./src/chown.merge.c:7077 */
+#line 7077
 extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)(void) ;
-/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/chown.merge.c:7065 */
+/* END FUNCTION-DECL-EXTERN drand48 LOC=./src/chown.merge.c:7077 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_fminf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fminf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/chown.merge.c:7061 */
-#line 7061
+/* BEGIN FUNCTION-DECL-EXTERN lockf LOC=./src/chown.merge.c:7073 */
+#line 7073
 extern int lockf(int __fd , int __cmd , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN lockf LOC=./src/chown.merge.c:7061 */
+/* END FUNCTION-DECL-EXTERN lockf LOC=./src/chown.merge.c:7073 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan2(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_atan2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/chown.merge.c:7098 */
-#line 7098
+/* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=./src/chown.merge.c:7110 */
+#line 7110
 extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnull__(1),
 __leaf__)) strtouq)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoull")  ;
-/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/chown.merge.c:7098 */
+/* END FUNCTION-DECL-EXTERN strtouq LOC=./src/chown.merge.c:7110 */
 
-/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/chown.merge.c:7115 */
-#line 7115 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_suseconds_t LOC=./src/chown.merge.c:7127 */
+#line 7127 "./src/chown.merge.c"
 typedef __kernel_long_t __kernel_suseconds_t;
-/* END TYPEDEF __kernel_suseconds_t LOC=./src/chown.merge.c:7115 */
+/* END TYPEDEF __kernel_suseconds_t LOC=./src/chown.merge.c:7127 */
 
-/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/chown.merge.c:7119 */
-#line 7119 "./src/chown.merge.c"
+/* BEGIN TYPEDEF _gl_qsort_r_compar_fn LOC=./src/chown.merge.c:7131 */
+#line 7131 "./src/chown.merge.c"
 typedef int (*_gl_qsort_r_compar_fn)(void const   * , void const   * , void * );
-/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/chown.merge.c:7119 */
+/* END TYPEDEF _gl_qsort_r_compar_fn LOC=./src/chown.merge.c:7131 */
 
-/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/chown.merge.c:7127 */
-#line 7127
+/* BEGIN FUNCTION-DECL-EXTERN settime LOC=./src/chown.merge.c:7139 */
+#line 7139
 extern int ( __attribute__((__nonnull__(1))) settime)(struct timespec  const  * ) ;
-/* END FUNCTION-DECL-EXTERN settime LOC=./src/chown.merge.c:7127 */
+/* END FUNCTION-DECL-EXTERN settime LOC=./src/chown.merge.c:7139 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/chown.merge.c:7137 */
-#line 7137
+/* BEGIN FUNCTION-DECL-EXTERN uinttostr LOC=./src/chown.merge.c:7149 */
+#line 7149
 extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  ,
                                                                   char * ) ;
-/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/chown.merge.c:7137 */
+/* END FUNCTION-DECL-EXTERN uinttostr LOC=./src/chown.merge.c:7149 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/chown.merge.c:7131 */
-#line 7131
+/* BEGIN FUNCTION-DECL-EXTERN setbuffer LOC=./src/chown.merge.c:7143 */
+#line 7143
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) setbuffer)(FILE * __restrict  __stream ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/chown.merge.c:7131 */
+/* END FUNCTION-DECL-EXTERN setbuffer LOC=./src/chown.merge.c:7143 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5341,47 +5341,43 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __lea
 enum __anonenum_1036286214___0 ;
 /* END ENUM-DECL __anonenum_1036286214___0 LOC=./src/chown.merge.c:1113 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/chown.merge.c:7178 */
-#line 7178
+/* BEGIN FUNCTION-DECL-EXTERN strstr LOC=./src/chown.merge.c:7190 */
+#line 7190
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strstr)(char const   *__haystack ,
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strstr LOC=./src/chown.merge.c:7178 */
+/* END FUNCTION-DECL-EXTERN strstr LOC=./src/chown.merge.c:7190 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpwent_r LOC=./src/chown.merge.c:7183 */
-#line 7183
+/* BEGIN FUNCTION-DECL-EXTERN getpwent_r LOC=./src/chown.merge.c:7195 */
+#line 7195
 extern int ( __attribute__((__nonnull__(1,2,4))) getpwent_r)(struct passwd * __restrict  __resultbuf ,
                                                              char * __restrict  __buffer ,
                                                              size_t __buflen , struct passwd ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN getpwent_r LOC=./src/chown.merge.c:7183 */
+/* END FUNCTION-DECL-EXTERN getpwent_r LOC=./src/chown.merge.c:7195 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/chown.merge.c:7194 */
-#line 7194
-extern int putchar_unlocked(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/chown.merge.c:7194 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_cZdJ_argv LOC=UNKNOWN */
-char **_TIG_IZ_cZdJ_argv ;
-/* END VARIABLE-DECL _TIG_IZ_cZdJ_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/chown.merge.c:7206 */
+/* BEGIN FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/chown.merge.c:7206 */
 #line 7206
+extern int putchar_unlocked(int __c ) ;
+/* END FUNCTION-DECL-EXTERN putchar_unlocked LOC=./src/chown.merge.c:7206 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/chown.merge.c:7214 */
+#line 7214
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/chown.merge.c:7206 */
+/* END FUNCTION-DECL-EXTERN strerrorname_np LOC=./src/chown.merge.c:7214 */
 
 /* BEGIN FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llabs(long long  ) ;  */
 /* END FUNCTION-DECL __builtin_llabs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/chown.merge.c:7219 */
-#line 7219
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/chown.merge.c:7227 */
+#line 7227
 extern int rpl_fflush(FILE *gl_stream ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/chown.merge.c:7219 */
+/* END FUNCTION-DECL-EXTERN rpl_fflush LOC=./src/chown.merge.c:7227 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/chown.merge.c:7210 */
-#line 7210
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_char LOC=./src/chown.merge.c:7218 */
+#line 7218
 extern char *quotearg_char(char const   *arg , char ch ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/chown.merge.c:7210 */
+/* END FUNCTION-DECL-EXTERN quotearg_char LOC=./src/chown.merge.c:7218 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 /* compiler builtin: 
@@ -5393,71 +5389,71 @@ extern char *quotearg_char(char const   *arg , char ch ) ;
    double __builtin_sinh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF mode_t LOC=./src/chown.merge.c:2794 */
-#line 2794 "./src/chown.merge.c"
+/* BEGIN TYPEDEF mode_t LOC=./src/chown.merge.c:2790 */
+#line 2790 "./src/chown.merge.c"
 typedef __mode_t mode_t;
-/* END TYPEDEF mode_t LOC=./src/chown.merge.c:2794 */
+/* END TYPEDEF mode_t LOC=./src/chown.merge.c:2790 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/chown.merge.c:7243 */
-#line 7243
+/* BEGIN FUNCTION-DECL-EXTERN creat LOC=./src/chown.merge.c:7251 */
+#line 7251
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat LOC=./src/chown.merge.c:7243 */
+/* END FUNCTION-DECL-EXTERN creat LOC=./src/chown.merge.c:7251 */
 
-/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/chown.merge.c:7260 */
-#line 7260 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __fsfilcnt64_t LOC=./src/chown.merge.c:7268 */
+#line 7268 "./src/chown.merge.c"
 typedef unsigned long __fsfilcnt64_t;
-/* END TYPEDEF __fsfilcnt64_t LOC=./src/chown.merge.c:7260 */
+/* END TYPEDEF __fsfilcnt64_t LOC=./src/chown.merge.c:7268 */
 
-/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/chown.merge.c:7264 */
-#line 7264 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fsfilcnt64_t LOC=./src/chown.merge.c:7272 */
+#line 7272 "./src/chown.merge.c"
 typedef __fsfilcnt64_t fsfilcnt64_t;
-/* END TYPEDEF fsfilcnt64_t LOC=./src/chown.merge.c:7264 */
+/* END TYPEDEF fsfilcnt64_t LOC=./src/chown.merge.c:7272 */
 
 /* BEGIN TYPEDEF __fsfilcnt_t LOC=./src/chown.merge.c:4528 */
 #line 4528 "./src/chown.merge.c"
 typedef unsigned long __fsfilcnt_t;
 /* END TYPEDEF __fsfilcnt_t LOC=./src/chown.merge.c:4528 */
 
-/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/chown.merge.c:7268 */
-#line 7268 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fsfilcnt_t LOC=./src/chown.merge.c:7276 */
+#line 7276 "./src/chown.merge.c"
 typedef __fsfilcnt_t fsfilcnt_t;
-/* END TYPEDEF fsfilcnt_t LOC=./src/chown.merge.c:7268 */
+/* END TYPEDEF fsfilcnt_t LOC=./src/chown.merge.c:7276 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/chown.merge.c:7272 */
-#line 7272
+/* BEGIN FUNCTION-DECL-EXTERN stpcpy LOC=./src/chown.merge.c:7280 */
+#line 7280
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/chown.merge.c:7272 */
+/* END FUNCTION-DECL-EXTERN stpcpy LOC=./src/chown.merge.c:7280 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/chown.merge.c:7277 */
-#line 7277
-extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN mktime LOC=./src/chown.merge.c:7277 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/chown.merge.c:7285 */
+/* BEGIN FUNCTION-DECL-EXTERN mktime LOC=./src/chown.merge.c:7285 */
 #line 7285
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
-/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/chown.merge.c:7285 */
+extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) mktime)(struct tm *__tp ) ;
+/* END FUNCTION-DECL-EXTERN mktime LOC=./src/chown.merge.c:7285 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/chown.merge.c:7289 */
-#line 7289
+/* BEGIN FUNCTION-DECL-EXTERN sethostid LOC=./src/chown.merge.c:7293 */
+#line 7293
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sethostid)(long __id ) ;
+/* END FUNCTION-DECL-EXTERN sethostid LOC=./src/chown.merge.c:7293 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getlogin_r LOC=./src/chown.merge.c:7297 */
+#line 7297
 extern int ( __attribute__((__nonnull__(1))) getlogin_r)(char *__name , size_t __name_len ) ;
-/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/chown.merge.c:7289 */
+/* END FUNCTION-DECL-EXTERN getlogin_r LOC=./src/chown.merge.c:7297 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:1425 */
 #line 1425
 struct __anonstruct__sigpoll_386613454 ;
 /* END STRUCT-DECL __anonstruct__sigpoll_386613454 LOC=./src/chown.merge.c:1425 */
 
-/* BEGIN TYPEDEF __nlink_t LOC=./src/chown.merge.c:1893 */
-#line 1893 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __nlink_t LOC=./src/chown.merge.c:1889 */
+#line 1889 "./src/chown.merge.c"
 typedef unsigned long __nlink_t;
-/* END TYPEDEF __nlink_t LOC=./src/chown.merge.c:1893 */
+/* END TYPEDEF __nlink_t LOC=./src/chown.merge.c:1889 */
 
-/* BEGIN TYPEDEF nlink_t LOC=./src/chown.merge.c:7297 */
-#line 7297 "./src/chown.merge.c"
+/* BEGIN TYPEDEF nlink_t LOC=./src/chown.merge.c:7301 */
+#line 7301 "./src/chown.merge.c"
 typedef __nlink_t nlink_t;
-/* END TYPEDEF nlink_t LOC=./src/chown.merge.c:7297 */
+/* END TYPEDEF nlink_t LOC=./src/chown.merge.c:7301 */
 
 /* BEGIN STRUCT-DECL __anonstruct___kernel_fsid_t_990674702 LOC=./src/chown.merge.c:1053 */
 #line 1053
@@ -5469,20 +5465,20 @@ struct __anonstruct___kernel_fsid_t_990674702 ;
    void __builtin_shufflevector(...) ;  */
 /* END FUNCTION-DECL __builtin_shufflevector LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fd_mask LOC=./src/chown.merge.c:2199 */
-#line 2199 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __fd_mask LOC=./src/chown.merge.c:2195 */
+#line 2195 "./src/chown.merge.c"
 typedef long __fd_mask;
-/* END TYPEDEF __fd_mask LOC=./src/chown.merge.c:2199 */
+/* END TYPEDEF __fd_mask LOC=./src/chown.merge.c:2195 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/chown.merge.c:7362 */
-#line 7362
+/* BEGIN FUNCTION-DECL-EXTERN strtoimax LOC=./src/chown.merge.c:7370 */
+#line 7370
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) strtoimax)(char const   * __restrict  __nptr ,
                                                                                      char ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_strtoimax")  ;
-/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/chown.merge.c:7362 */
+/* END FUNCTION-DECL-EXTERN strtoimax LOC=./src/chown.merge.c:7370 */
 
-/* BEGIN STRUCT dirent64 LOC=./src/chown.merge.c:7376 */
-#line 7376 "./src/chown.merge.c"
+/* BEGIN STRUCT dirent64 LOC=./src/chown.merge.c:7384 */
+#line 7384 "./src/chown.merge.c"
 struct dirent64 {
    __ino64_t d_ino ;
    __off64_t d_off ;
@@ -5490,24 +5486,24 @@ struct dirent64 {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent64 LOC=./src/chown.merge.c:7376 */
+/* END STRUCT dirent64 LOC=./src/chown.merge.c:7384 */
 
-/* BEGIN FUNCTION-DECL emit_stdin_note LOC=./src/chown.merge.c:7386 */
-#line 7386
+/* BEGIN FUNCTION-DECL emit_stdin_note LOC=./src/chown.merge.c:7394 */
+#line 7394
 __inline static void emit_stdin_note(void) ;
-/* END FUNCTION-DECL emit_stdin_note LOC=./src/chown.merge.c:7386 */
+/* END FUNCTION-DECL emit_stdin_note LOC=./src/chown.merge.c:7394 */
 
 /* BEGIN FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_dwarf_cfa(void) ;  */
 /* END FUNCTION-DECL __builtin_dwarf_cfa LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/chown.merge.c:7430 */
-#line 7430
+/* BEGIN FUNCTION-DECL-EXTERN getline LOC=./src/chown.merge.c:7438 */
+#line 7438
 extern __ssize_t ( __attribute__((__nonnull__(3))) getline)(char ** __restrict  __lineptr ,
                                                             size_t * __restrict  __n ,
                                                             FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getline LOC=./src/chown.merge.c:7430 */
+/* END FUNCTION-DECL-EXTERN getline LOC=./src/chown.merge.c:7438 */
 
 /* BEGIN FUNCTION-DECL __builtin_modff128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5519,37 +5515,37 @@ extern __ssize_t ( __attribute__((__nonnull__(3))) getline)(char ** __restrict  
    char *__builtin_stpcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_stpcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/chown.merge.c:7468 */
-#line 7468
+/* BEGIN FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/chown.merge.c:7476 */
+#line 7476
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sigmask)(int __how ,
                                                                                       __sigset_t const   * __restrict  __newmask ,
                                                                                       __sigset_t * __restrict  __oldmask ) ;
-/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/chown.merge.c:7468 */
+/* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=./src/chown.merge.c:7476 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/chown.merge.c:7480 */
-#line 7480
+/* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./src/chown.merge.c:7488 */
+#line 7488
 extern char *dir_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/chown.merge.c:7480 */
+/* END FUNCTION-DECL-EXTERN dir_name LOC=./src/chown.merge.c:7488 */
 
 /* BEGIN FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_matrix_transpose(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 
-/* BEGIN STRUCT group LOC=./src/chown.merge.c:7493 */
-#line 7493 "./src/chown.merge.c"
+/* BEGIN STRUCT group LOC=./src/chown.merge.c:7501 */
+#line 7501 "./src/chown.merge.c"
 struct group {
    char *gr_name ;
    char *gr_passwd ;
    __gid_t gr_gid ;
    char **gr_mem ;
 };
-/* END STRUCT group LOC=./src/chown.merge.c:7493 */
+/* END STRUCT group LOC=./src/chown.merge.c:7501 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/chown.merge.c:7510 */
-#line 7510
+/* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./src/chown.merge.c:7518 */
+#line 7518
 extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/chown.merge.c:7510 */
+/* END FUNCTION-DECL-EXTERN dtotimespec LOC=./src/chown.merge.c:7518 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhf LOC=BUILTIN */
 /* compiler builtin: 
@@ -5567,20 +5563,20 @@ extern struct timespec dtotimespec(double  )  __attribute__((__const__)) ;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_subps LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/chown.merge.c:5487 */
-#line 5487 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __fsblkcnt_t LOC=./src/chown.merge.c:5491 */
+#line 5491 "./src/chown.merge.c"
 typedef unsigned long __fsblkcnt_t;
-/* END TYPEDEF __fsblkcnt_t LOC=./src/chown.merge.c:5487 */
+/* END TYPEDEF __fsblkcnt_t LOC=./src/chown.merge.c:5491 */
 
-/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/chown.merge.c:7551 */
-#line 7551 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fsblkcnt_t LOC=./src/chown.merge.c:7559 */
+#line 7559 "./src/chown.merge.c"
 typedef __fsblkcnt_t fsblkcnt_t;
-/* END TYPEDEF fsblkcnt_t LOC=./src/chown.merge.c:7551 */
+/* END TYPEDEF fsblkcnt_t LOC=./src/chown.merge.c:7559 */
 
-/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/chown.merge.c:7555 */
-#line 7555
+/* BEGIN FUNCTION-DECL-EXTERN closedir LOC=./src/chown.merge.c:7563 */
+#line 7563
 extern int ( __attribute__((__nonnull__(1))) closedir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN closedir LOC=./src/chown.merge.c:7555 */
+/* END FUNCTION-DECL-EXTERN closedir LOC=./src/chown.merge.c:7563 */
 
 /* BEGIN ENUM-DECL __anonenum_230064777 LOC=./src/chown.merge.c:1197 */
 #line 1197
@@ -5607,42 +5603,42 @@ enum __anonenum_230064777 ;
    void *__builtin___get_unsafe_stack_start(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/chown.merge.c:7595 */
-#line 7595
+/* BEGIN FUNCTION-DECL-EXTERN xstrdup LOC=./src/chown.merge.c:7603 */
+#line 7603
 extern char *xstrdup(char const   *str )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/chown.merge.c:7595 */
+/* END FUNCTION-DECL-EXTERN xstrdup LOC=./src/chown.merge.c:7603 */
 
 /* BEGIN ENUM-DECL __anonenum_513775621___0 LOC=./src/chown.merge.c:1077 */
 #line 1077
 enum __anonenum_513775621___0 ;
 /* END ENUM-DECL __anonenum_513775621___0 LOC=./src/chown.merge.c:1077 */
 
-/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/chown.merge.c:7603 */
-#line 7603
+/* BEGIN VARIABLE-DECL-EXTERN __timezone LOC=./src/chown.merge.c:7611 */
+#line 7611
 extern long __timezone ;
-/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/chown.merge.c:7603 */
+/* END VARIABLE-DECL-EXTERN __timezone LOC=./src/chown.merge.c:7611 */
 
 /* BEGIN FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tan(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/chown.merge.c:7625 */
-#line 7625
+/* BEGIN FUNCTION-DECL-EXTERN atoll LOC=./src/chown.merge.c:7633 */
+#line 7633
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) atoll)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atoll LOC=./src/chown.merge.c:7625 */
+/* END FUNCTION-DECL-EXTERN atoll LOC=./src/chown.merge.c:7633 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/chown.merge.c:7642 */
-#line 7642
+/* BEGIN FUNCTION-DECL-EXTERN setresgid LOC=./src/chown.merge.c:7650 */
+#line 7650
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(__gid_t __rgid ,
                                                                                 __gid_t __egid ,
                                                                                 __gid_t __sgid ) ;
-/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/chown.merge.c:7642 */
+/* END FUNCTION-DECL-EXTERN setresgid LOC=./src/chown.merge.c:7650 */
 
-/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/chown.merge.c:7652 */
-#line 7652 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_old_uid_t LOC=./src/chown.merge.c:7660 */
+#line 7660 "./src/chown.merge.c"
 typedef unsigned short __kernel_old_uid_t;
-/* END TYPEDEF __kernel_old_uid_t LOC=./src/chown.merge.c:7652 */
+/* END TYPEDEF __kernel_old_uid_t LOC=./src/chown.merge.c:7660 */
 
 /* BEGIN FUNCTION-DECL __builtin___stpcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -5654,12 +5650,12 @@ typedef unsigned short __kernel_old_uid_t;
    _Bool __builtin_usub_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_usub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/chown.merge.c:7690 */
-#line 7690
+/* BEGIN FUNCTION-DECL-EXTERN close_range LOC=./src/chown.merge.c:7698 */
+#line 7698
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range)(unsigned int __fd ,
                                                                                   unsigned int __max_fd ,
                                                                                   int __flags ) ;
-/* END FUNCTION-DECL-EXTERN close_range LOC=./src/chown.merge.c:7690 */
+/* END FUNCTION-DECL-EXTERN close_range LOC=./src/chown.merge.c:7698 */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalizef LOC=BUILTIN */
 /* compiler builtin: 
@@ -5671,10 +5667,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range
 struct hash_table ;
 /* END STRUCT-DECL hash_table LOC=./src/chown.merge.c:857 */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/chown.merge.c:7725 */
-#line 7725
+/* BEGIN VARIABLE-DECL-EXTERN error_print_progname LOC=./src/chown.merge.c:7733 */
+#line 7733
 extern void (*error_print_progname)(void) ;
-/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/chown.merge.c:7725 */
+/* END VARIABLE-DECL-EXTERN error_print_progname LOC=./src/chown.merge.c:7733 */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap32 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5686,37 +5682,37 @@ extern void (*error_print_progname)(void) ;
 enum __anonenum_463020052 ;
 /* END ENUM-DECL __anonenum_463020052 LOC=./src/chown.merge.c:1405 */
 
-/* BEGIN TYPEDEF max_align_t LOC=./src/chown.merge.c:7734 */
-#line 7734 "./src/chown.merge.c"
+/* BEGIN TYPEDEF max_align_t LOC=./src/chown.merge.c:7742 */
+#line 7742 "./src/chown.merge.c"
 typedef struct __anonstruct_max_align_t_247203726 max_align_t;
-/* END TYPEDEF max_align_t LOC=./src/chown.merge.c:7734 */
+/* END TYPEDEF max_align_t LOC=./src/chown.merge.c:7742 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fmaxf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaxf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/chown.merge.c:7752 */
-#line 7752
+/* BEGIN FUNCTION-DECL-EXTERN getenv LOC=./src/chown.merge.c:7756 */
+#line 7756
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) getenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN getenv LOC=./src/chown.merge.c:7752 */
+/* END FUNCTION-DECL-EXTERN getenv LOC=./src/chown.merge.c:7756 */
 
 /* BEGIN FUNCTION-DECL __builtin_debugtrap LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_debugtrap(void) ;  */
 /* END FUNCTION-DECL __builtin_debugtrap LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/chown.merge.c:7772 */
-#line 7772
+/* BEGIN FUNCTION-DECL-EXTERN strlen LOC=./src/chown.merge.c:7776 */
+#line 7776
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strlen)(char const   *__s )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strlen LOC=./src/chown.merge.c:7772 */
+/* END FUNCTION-DECL-EXTERN strlen LOC=./src/chown.merge.c:7776 */
 
-/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/chown.merge.c:7790 */
-#line 7790 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_fd_set_356711149 LOC=./src/chown.merge.c:7794 */
+#line 7794 "./src/chown.merge.c"
 struct __anonstruct_fd_set_356711149 {
    __fd_mask fds_bits[1024 / (8 * (int )sizeof(__fd_mask ))] ;
 };
-/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/chown.merge.c:7790 */
+/* END STRUCT __anonstruct_fd_set_356711149 LOC=./src/chown.merge.c:7794 */
 
 /* BEGIN FUNCTION-DECL __builtin_log10f16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5728,25 +5724,25 @@ struct __anonstruct_fd_set_356711149 {
 typedef __uint32_t __uint_least32_t;
 /* END TYPEDEF __uint_least32_t LOC=./src/chown.merge.c:4122 */
 
-/* BEGIN TYPEDEF uint_least32_t LOC=./src/chown.merge.c:7801 */
-#line 7801 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint_least32_t LOC=./src/chown.merge.c:7805 */
+#line 7805 "./src/chown.merge.c"
 typedef __uint_least32_t uint_least32_t;
-/* END TYPEDEF uint_least32_t LOC=./src/chown.merge.c:7801 */
+/* END TYPEDEF uint_least32_t LOC=./src/chown.merge.c:7805 */
 
 /* BEGIN FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_catanh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanh LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int16_t LOC=./src/chown.merge.c:7841 */
-#line 7841 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int16_t LOC=./src/chown.merge.c:7845 */
+#line 7845 "./src/chown.merge.c"
 typedef __int16_t int16_t;
-/* END TYPEDEF int16_t LOC=./src/chown.merge.c:7841 */
+/* END TYPEDEF int16_t LOC=./src/chown.merge.c:7845 */
 
-/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/chown.merge.c:7887 */
-#line 7887
+/* BEGIN FUNCTION-DECL-EXTERN difftime LOC=./src/chown.merge.c:7891 */
+#line 7891
 extern double difftime(time_t __time1 , time_t __time0 ) ;
-/* END FUNCTION-DECL-EXTERN difftime LOC=./src/chown.merge.c:7887 */
+/* END FUNCTION-DECL-EXTERN difftime LOC=./src/chown.merge.c:7891 */
 
 /* BEGIN FUNCTION-DECL __builtin_init_dwarf_reg_size_table LOC=BUILTIN */
 /* compiler builtin: 
@@ -5758,10 +5754,10 @@ extern double difftime(time_t __time1 , time_t __time0 ) ;
 struct __pthread_internal_slist ;
 /* END STRUCT-DECL __pthread_internal_slist LOC=./src/chown.merge.c:1153 */
 
-/* BEGIN TYPEDEF __clockid_t LOC=./src/chown.merge.c:1819 */
-#line 1819 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __clockid_t LOC=./src/chown.merge.c:1815 */
+#line 1815 "./src/chown.merge.c"
 typedef int __clockid_t;
-/* END TYPEDEF __clockid_t LOC=./src/chown.merge.c:1819 */
+/* END TYPEDEF __clockid_t LOC=./src/chown.merge.c:1815 */
 
 /* BEGIN TYPEDEF clockid_t LOC=./src/chown.merge.c:4080 */
 #line 4080 "./src/chown.merge.c"
@@ -5778,164 +5774,164 @@ typedef __clockid_t clockid_t;
 enum __anonenum_457704180___0 ;
 /* END ENUM-DECL __anonenum_457704180___0 LOC=./src/chown.merge.c:937 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/chown.merge.c:7906 */
-#line 7906
+/* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=./src/chown.merge.c:7910 */
+#line 7910
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcoll_l)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     locale_t __l )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/chown.merge.c:7906 */
+/* END FUNCTION-DECL-EXTERN strcoll_l LOC=./src/chown.merge.c:7910 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/chown.merge.c:7922 */
-#line 7922
+/* BEGIN FUNCTION-DECL-EXTERN quote_n LOC=./src/chown.merge.c:7926 */
+#line 7926
 extern char const   *quote_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/chown.merge.c:7922 */
+/* END FUNCTION-DECL-EXTERN quote_n LOC=./src/chown.merge.c:7926 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/chown.merge.c:7916 */
-#line 7916
+/* BEGIN FUNCTION-DECL-EXTERN dup3 LOC=./src/chown.merge.c:7920 */
+#line 7920
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup3)(int __fd ,
                                                                            int __fd2 ,
                                                                            int __flags ) ;
-/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/chown.merge.c:7916 */
+/* END FUNCTION-DECL-EXTERN dup3 LOC=./src/chown.merge.c:7920 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffs(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/chown.merge.c:7953 */
-#line 7953
+/* BEGIN FUNCTION-DECL-EXTERN abs LOC=./src/chown.merge.c:7957 */
+#line 7957
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) abs)(int __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN abs LOC=./src/chown.merge.c:7953 */
+/* END FUNCTION-DECL-EXTERN abs LOC=./src/chown.merge.c:7957 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/chown.merge.c:7972 */
-#line 7972
+/* BEGIN FUNCTION-DECL-EXTERN getcwd LOC=./src/chown.merge.c:7976 */
+#line 7976
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getcwd)(char *__buf ,
                                                                                size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/chown.merge.c:7972 */
+/* END FUNCTION-DECL-EXTERN getcwd LOC=./src/chown.merge.c:7976 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/chown.merge.c:7968 */
-#line 7968
+/* BEGIN FUNCTION-DECL-EXTERN umaxtostr LOC=./src/chown.merge.c:7972 */
+#line 7972
 extern char *( __attribute__((__warn_unused_result__)) umaxtostr)(uintmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/chown.merge.c:7968 */
+/* END FUNCTION-DECL-EXTERN umaxtostr LOC=./src/chown.merge.c:7972 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/chown.merge.c:7977 */
-#line 7977
+/* BEGIN FUNCTION-DECL-EXTERN tzalloc LOC=./src/chown.merge.c:7981 */
+#line 7981
 extern timezone_t tzalloc(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/chown.merge.c:7977 */
+/* END FUNCTION-DECL-EXTERN tzalloc LOC=./src/chown.merge.c:7981 */
 
 /* BEGIN FUNCTION-DECL-EXTERN chopt_free LOC=UNKNOWN */
 extern void chopt_free(struct Chown_option *chopt ) ;
 /* END FUNCTION-DECL-EXTERN chopt_free LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/chown.merge.c:7981 */
-#line 7981
+/* BEGIN FUNCTION-DECL-EXTERN xirealloc LOC=./src/chown.merge.c:7985 */
+#line 7985
 extern void *xirealloc(void *p , idx_t s )  __attribute__((__returns_nonnull__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/chown.merge.c:7981 */
+/* END FUNCTION-DECL-EXTERN xirealloc LOC=./src/chown.merge.c:7985 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/chown.merge.c:7993 */
-#line 7993
+/* BEGIN FUNCTION-DECL-EXTERN nrand48_r LOC=./src/chown.merge.c:7997 */
+#line 7997
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) nrand48_r)(unsigned short *__xsubi ,
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/chown.merge.c:7993 */
+/* END FUNCTION-DECL-EXTERN nrand48_r LOC=./src/chown.merge.c:7997 */
 
 /* BEGIN FUNCTION-DECL __builtin_copysignf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_copysignf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/chown.merge.c:8012 */
-#line 8012
+/* BEGIN FUNCTION-DECL-EXTERN lutimes LOC=./src/chown.merge.c:8016 */
+#line 8016
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) lutimes)(char const   *__file ,
                                                                                               struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/chown.merge.c:8012 */
+/* END FUNCTION-DECL-EXTERN lutimes LOC=./src/chown.merge.c:8016 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_tgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putpwent LOC=./src/chown.merge.c:8026 */
-#line 8026
-extern int putpwent(struct passwd  const  * __restrict  __p , FILE * __restrict  __f ) ;
-/* END FUNCTION-DECL-EXTERN putpwent LOC=./src/chown.merge.c:8026 */
-
-/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/chown.merge.c:8030 */
+/* BEGIN FUNCTION-DECL-EXTERN putpwent LOC=./src/chown.merge.c:8030 */
 #line 8030
+extern int putpwent(struct passwd  const  * __restrict  __p , FILE * __restrict  __f ) ;
+/* END FUNCTION-DECL-EXTERN putpwent LOC=./src/chown.merge.c:8030 */
+
+/* BEGIN FUNCTION-DECL-EXTERN qfcvt LOC=./src/chown.merge.c:8034 */
+#line 8034
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) qfcvt)(long double __value ,
                                                                                                 int __ndigit ,
                                                                                                 int * __restrict  __decpt ,
                                                                                                 int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/chown.merge.c:8030 */
+/* END FUNCTION-DECL-EXTERN qfcvt LOC=./src/chown.merge.c:8034 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/chown.merge.c:8052 */
-#line 8052
+/* BEGIN FUNCTION-DECL-EXTERN timespec_add LOC=./src/chown.merge.c:8056 */
+#line 8056
 extern struct timespec timespec_add(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/chown.merge.c:8052 */
+/* END FUNCTION-DECL-EXTERN timespec_add LOC=./src/chown.merge.c:8056 */
 
 /* BEGIN TYPEDEF off_t LOC=./src/chown.merge.c:4261 */
 #line 4261 "./src/chown.merge.c"
 typedef __off_t off_t;
 /* END TYPEDEF off_t LOC=./src/chown.merge.c:4261 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/chown.merge.c:8037 */
-#line 8037
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/chown.merge.c:8041 */
+#line 8041
 extern int ( __attribute__((__nonnull__(1))) rpl_fseeko)(FILE *fp , off_t offset ,
                                                          int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/chown.merge.c:8037 */
+/* END FUNCTION-DECL-EXTERN rpl_fseeko LOC=./src/chown.merge.c:8041 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/chown.merge.c:8047 */
-#line 8047
+/* BEGIN FUNCTION-DECL-EXTERN rindex LOC=./src/chown.merge.c:8051 */
+#line 8051
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) rindex)(char const   *__s ,
                                                                                                int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN rindex LOC=./src/chown.merge.c:8047 */
+/* END FUNCTION-DECL-EXTERN rindex LOC=./src/chown.merge.c:8051 */
 
-/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/chown.merge.c:8068 */
-#line 8068
+/* BEGIN FUNCTION-DECL-EXTERN system LOC=./src/chown.merge.c:8072 */
+#line 8072
 extern int system(char const   *__command ) ;
-/* END FUNCTION-DECL-EXTERN system LOC=./src/chown.merge.c:8068 */
+/* END FUNCTION-DECL-EXTERN system LOC=./src/chown.merge.c:8072 */
 
 /* BEGIN FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strdup(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strdup LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/chown.merge.c:8086 */
-#line 8086
+/* BEGIN FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/chown.merge.c:8090 */
+#line 8090
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/chown.merge.c:8086 */
+/* END FUNCTION-DECL-EXTERN feof_unlocked LOC=./src/chown.merge.c:8090 */
 
-/* BEGIN TYPEDEF __u32 LOC=./src/chown.merge.c:3295 */
-#line 3295 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __u32 LOC=./src/chown.merge.c:3291 */
+#line 3291 "./src/chown.merge.c"
 typedef unsigned int __u32;
-/* END TYPEDEF __u32 LOC=./src/chown.merge.c:3295 */
+/* END TYPEDEF __u32 LOC=./src/chown.merge.c:3291 */
 
-/* BEGIN TYPEDEF __be32 LOC=./src/chown.merge.c:8094 */
-#line 8094 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __be32 LOC=./src/chown.merge.c:8098 */
+#line 8098 "./src/chown.merge.c"
 typedef __u32 __be32;
-/* END TYPEDEF __be32 LOC=./src/chown.merge.c:8094 */
+/* END TYPEDEF __be32 LOC=./src/chown.merge.c:8098 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_set LOC=./src/chown.merge.c:8107 */
-#line 8107
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_set LOC=./src/chown.merge.c:8111 */
+#line 8111
 extern int rpl_fts_set(FTS * , FTSENT * , int  ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fts_set LOC=./src/chown.merge.c:8107 */
+/* END FUNCTION-DECL-EXTERN rpl_fts_set LOC=./src/chown.merge.c:8111 */
 
 /* BEGIN ENUM-DECL __anonenum_852341087___0 LOC=./src/chown.merge.c:1317 */
 #line 1317
 enum __anonenum_852341087___0 ;
 /* END ENUM-DECL __anonenum_852341087___0 LOC=./src/chown.merge.c:1317 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/chown.merge.c:8117 */
-#line 8117
+/* BEGIN FUNCTION-DECL-EXTERN utimes LOC=./src/chown.merge.c:8121 */
+#line 8121
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) utimes)(char const   *__file ,
                                                                                              struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN utimes LOC=./src/chown.merge.c:8117 */
+/* END FUNCTION-DECL-EXTERN utimes LOC=./src/chown.merge.c:8121 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/chown.merge.c:8122 */
-#line 8122
+/* BEGIN FUNCTION-DECL-EXTERN strtof LOC=./src/chown.merge.c:8126 */
+#line 8126
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __leaf__)) strtof)(char const   * __restrict  __nptr ,
                                                                                                char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof LOC=./src/chown.merge.c:8122 */
+/* END FUNCTION-DECL-EXTERN strtof LOC=./src/chown.merge.c:8126 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorf LOC=BUILTIN */
 /* compiler builtin: 
@@ -5947,59 +5943,59 @@ extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1), __le
    void __builtin___clear_cache(void * ) ;  */
 /* END FUNCTION-DECL __builtin___clear_cache LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/chown.merge.c:8134 */
-#line 8134
+/* BEGIN FUNCTION-DECL-EXTERN faccessat LOC=./src/chown.merge.c:8138 */
+#line 8138
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) faccessat)(int __fd ,
                                                                                                 char const   *__file ,
                                                                                                 int __type ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/chown.merge.c:8134 */
+/* END FUNCTION-DECL-EXTERN faccessat LOC=./src/chown.merge.c:8138 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/chown.merge.c:8146 */
-#line 8146
+/* BEGIN FUNCTION-DECL-EXTERN fchown LOC=./src/chown.merge.c:8150 */
+#line 8150
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchown)(int __fd ,
                                                                              __uid_t __owner ,
                                                                              __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN fchown LOC=./src/chown.merge.c:8146 */
+/* END FUNCTION-DECL-EXTERN fchown LOC=./src/chown.merge.c:8150 */
 
-/* BEGIN STRUCT _fpreg LOC=./src/chown.merge.c:8161 */
-#line 8161 "./src/chown.merge.c"
+/* BEGIN STRUCT _fpreg LOC=./src/chown.merge.c:8165 */
+#line 8165 "./src/chown.merge.c"
 struct _fpreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
 };
-/* END STRUCT _fpreg LOC=./src/chown.merge.c:8161 */
+/* END STRUCT _fpreg LOC=./src/chown.merge.c:8165 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_wmemcmp(unsigned short * const   , unsigned short * const   , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/chown.merge.c:8168 */
-#line 8168
+/* BEGIN FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/chown.merge.c:8172 */
+#line 8172
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvise)(int __fd ,
                                                                                     off_t __offset ,
                                                                                     off_t __len ,
                                                                                     int __advise ) ;
-/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/chown.merge.c:8168 */
+/* END FUNCTION-DECL-EXTERN posix_fadvise LOC=./src/chown.merge.c:8172 */
 
-/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/chown.merge.c:8184 */
-#line 8184
+/* BEGIN FUNCTION-DECL-EXTERN utimensat LOC=./src/chown.merge.c:8188 */
+#line 8188
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) utimensat)(int __fd ,
                                                                                 char const   *__path ,
                                                                                 struct timespec  const  *__times ,
                                                                                 int __flags ) ;
-/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/chown.merge.c:8184 */
+/* END FUNCTION-DECL-EXTERN utimensat LOC=./src/chown.merge.c:8188 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/chown.merge.c:8191 */
-#line 8191
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/chown.merge.c:8195 */
+#line 8195
 extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/chown.merge.c:8191 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_colon LOC=./src/chown.merge.c:8195 */
 
-/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/chown.merge.c:8205 */
-#line 8205
+/* BEGIN FUNCTION-DECL-EXTERN psignal LOC=./src/chown.merge.c:8209 */
+#line 8209
 extern void psignal(int __sig , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psignal LOC=./src/chown.merge.c:8205 */
+/* END FUNCTION-DECL-EXTERN psignal LOC=./src/chown.merge.c:8209 */
 
 /* BEGIN STRUCT-DECL __anonstruct_FTS_49618356 LOC=./src/chown.merge.c:1181 */
 #line 1181
@@ -6011,78 +6007,78 @@ struct __anonstruct_FTS_49618356 ;
    _Complex long double __builtin_ccoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/chown.merge.c:8266 */
-#line 8266
+/* BEGIN FUNCTION-DECL-EXTERN sigemptyset LOC=./src/chown.merge.c:8270 */
+#line 8270
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigemptyset)(sigset_t *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/chown.merge.c:8266 */
+/* END FUNCTION-DECL-EXTERN sigemptyset LOC=./src/chown.merge.c:8270 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_cacosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/chown.merge.c:8303 */
-#line 8303
-extern long gettime_res(void) ;
-/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/chown.merge.c:8303 */
-
-/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/chown.merge.c:8307 */
+/* BEGIN FUNCTION-DECL-EXTERN gettime_res LOC=./src/chown.merge.c:8307 */
 #line 8307
+extern long gettime_res(void) ;
+/* END FUNCTION-DECL-EXTERN gettime_res LOC=./src/chown.merge.c:8307 */
+
+/* BEGIN FUNCTION-DECL-EXTERN mbslen LOC=./src/chown.merge.c:8311 */
+#line 8311
 extern size_t ( __attribute__((__nonnull__(1))) mbslen)(char const   *string )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/chown.merge.c:8307 */
+/* END FUNCTION-DECL-EXTERN mbslen LOC=./src/chown.merge.c:8311 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802___0 LOC=./src/chown.merge.c:1485 */
 #line 1485
 enum __anonenum_365337802___0 ;
 /* END ENUM-DECL __anonenum_365337802___0 LOC=./src/chown.merge.c:1485 */
 
-/* BEGIN TYPEDEF __u_char LOC=./src/chown.merge.c:8328 */
-#line 8328 "./src/chown.merge.c"
-typedef unsigned char __u_char;
-/* END TYPEDEF __u_char LOC=./src/chown.merge.c:8328 */
-
-/* BEGIN TYPEDEF u_char LOC=./src/chown.merge.c:8332 */
+/* BEGIN TYPEDEF __u_char LOC=./src/chown.merge.c:8332 */
 #line 8332 "./src/chown.merge.c"
+typedef unsigned char __u_char;
+/* END TYPEDEF __u_char LOC=./src/chown.merge.c:8332 */
+
+/* BEGIN TYPEDEF u_char LOC=./src/chown.merge.c:8336 */
+#line 8336 "./src/chown.merge.c"
 typedef __u_char u_char;
-/* END TYPEDEF u_char LOC=./src/chown.merge.c:8332 */
+/* END TYPEDEF u_char LOC=./src/chown.merge.c:8336 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cacosl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __wsum LOC=./src/chown.merge.c:8341 */
-#line 8341 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __wsum LOC=./src/chown.merge.c:8345 */
+#line 8345 "./src/chown.merge.c"
 typedef __u32 __wsum;
-/* END TYPEDEF __wsum LOC=./src/chown.merge.c:8341 */
+/* END TYPEDEF __wsum LOC=./src/chown.merge.c:8345 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/chown.merge.c:8359 */
-#line 8359
+/* BEGIN FUNCTION-DECL-EXTERN strtof128_l LOC=./src/chown.merge.c:8363 */
+#line 8363
 extern  __attribute__((__nothrow__)) _Float128 ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtof128_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                         locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/chown.merge.c:8359 */
+/* END FUNCTION-DECL-EXTERN strtof128_l LOC=./src/chown.merge.c:8363 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/chown.merge.c:8355 */
-#line 8355
+/* BEGIN FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/chown.merge.c:8359 */
+#line 8359
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) __libc_current_sigrtmax)(void) ;
-/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/chown.merge.c:8355 */
+/* END FUNCTION-DECL-EXTERN __libc_current_sigrtmax LOC=./src/chown.merge.c:8359 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/chown.merge.c:8381 */
-#line 8381
+/* BEGIN FUNCTION-DECL-EXTERN gethostid LOC=./src/chown.merge.c:8385 */
+#line 8385
 extern long gethostid(void) ;
-/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/chown.merge.c:8381 */
+/* END FUNCTION-DECL-EXTERN gethostid LOC=./src/chown.merge.c:8385 */
 
-/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/chown.merge.c:8376 */
-#line 8376
+/* BEGIN FUNCTION-DECL-EXTERN access LOC=./src/chown.merge.c:8380 */
+#line 8380
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) access)(char const   *__name ,
                                                                                              int __type ) ;
-/* END FUNCTION-DECL-EXTERN access LOC=./src/chown.merge.c:8376 */
+/* END FUNCTION-DECL-EXTERN access LOC=./src/chown.merge.c:8380 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/chown.merge.c:8385 */
-#line 8385
+/* BEGIN FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/chown.merge.c:8389 */
+#line 8389
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ftrylockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/chown.merge.c:8385 */
+/* END FUNCTION-DECL-EXTERN ftrylockfile LOC=./src/chown.merge.c:8389 */
 
 /* BEGIN FUNCTION-DECL __builtin_ssubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6094,49 +6090,49 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    float __builtin_atanhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/chown.merge.c:8641 */
-#line 8641
-extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/chown.merge.c:8641 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/chown.merge.c:8645 */
+/* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./src/chown.merge.c:8645 */
 #line 8645
+extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
+/* END FUNCTION-DECL-EXTERN xzalloc LOC=./src/chown.merge.c:8645 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/chown.merge.c:8649 */
+#line 8649
 extern char *( __attribute__((__nonnull__(3))) fgets_unlocked)(char * __restrict  __s ,
                                                                int __n , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/chown.merge.c:8645 */
+/* END FUNCTION-DECL-EXTERN fgets_unlocked LOC=./src/chown.merge.c:8649 */
 
 /* BEGIN STRUCT-DECL ucontext_t LOC=./src/chown.merge.c:1005 */
 #line 1005
 struct ucontext_t ;
 /* END STRUCT-DECL ucontext_t LOC=./src/chown.merge.c:1005 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrouplist LOC=./src/chown.merge.c:8661 */
-#line 8661
+/* BEGIN FUNCTION-DECL-EXTERN getgrouplist LOC=./src/chown.merge.c:8665 */
+#line 8665
 extern int getgrouplist(char const   *__user , __gid_t __group , __gid_t *__groups ,
                         int *__ngroups ) ;
-/* END FUNCTION-DECL-EXTERN getgrouplist LOC=./src/chown.merge.c:8661 */
+/* END FUNCTION-DECL-EXTERN getgrouplist LOC=./src/chown.merge.c:8665 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctzl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ctzl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/chown.merge.c:8693 */
-#line 8693
+/* BEGIN FUNCTION-DECL-EXTERN strtof32_l LOC=./src/chown.merge.c:8697 */
+#line 8697
 extern  __attribute__((__nothrow__)) float ( __attribute__((__nonnull__(1,3), __leaf__)) strtof32_l)(char const   * __restrict  __nptr ,
                                                                                                      char ** __restrict  __endptr ,
                                                                                                      locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/chown.merge.c:8693 */
+/* END FUNCTION-DECL-EXTERN strtof32_l LOC=./src/chown.merge.c:8697 */
 
-/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/chown.merge.c:8699 */
-#line 8699
+/* BEGIN FUNCTION-DECL-EXTERN feof LOC=./src/chown.merge.c:8703 */
+#line 8703
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) feof)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN feof LOC=./src/chown.merge.c:8699 */
+/* END FUNCTION-DECL-EXTERN feof LOC=./src/chown.merge.c:8703 */
 
-/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/chown.merge.c:8689 */
-#line 8689
+/* BEGIN FUNCTION-DECL-EXTERN putchar LOC=./src/chown.merge.c:8693 */
+#line 8693
 extern int putchar(int __c ) ;
-/* END FUNCTION-DECL-EXTERN putchar LOC=./src/chown.merge.c:8689 */
+/* END FUNCTION-DECL-EXTERN putchar LOC=./src/chown.merge.c:8693 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -6148,18 +6144,18 @@ extern int putchar(int __c ) ;
    _Complex float __builtin_catanf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_catanf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __rlim_t LOC=./src/chown.merge.c:8754 */
-#line 8754 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __rlim_t LOC=./src/chown.merge.c:8758 */
+#line 8758 "./src/chown.merge.c"
 typedef unsigned long __rlim_t;
-/* END TYPEDEF __rlim_t LOC=./src/chown.merge.c:8754 */
+/* END TYPEDEF __rlim_t LOC=./src/chown.merge.c:8758 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_fmin(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/chown.merge.c:8778 */
-#line 8778
+/* BEGIN ENUM __anonenum_91015150___0 LOC=./src/chown.merge.c:8782 */
+#line 8782
 enum __anonenum_91015150___0 {
     TRAP_BRKPT___0 = 1,
     TRAP_TRACE___0 = 2,
@@ -6167,68 +6163,68 @@ enum __anonenum_91015150___0 {
     TRAP_HWBKPT___0 = 4,
     TRAP_UNK___0 = 5
 } ;
-/* END ENUM __anonenum_91015150___0 LOC=./src/chown.merge.c:8778 */
+/* END ENUM __anonenum_91015150___0 LOC=./src/chown.merge.c:8782 */
 
 /* BEGIN STRUCT-DECL __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:1497 */
 #line 1497
 struct __anonstruct___mbstate_t_947329319 ;
 /* END STRUCT-DECL __anonstruct___mbstate_t_947329319 LOC=./src/chown.merge.c:1497 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/chown.merge.c:8804 */
-#line 8804
-extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/chown.merge.c:8804 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/chown.merge.c:8792 */
-#line 8792
-extern int fflush(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush LOC=./src/chown.merge.c:8792 */
-
-/* BEGIN FUNCTION-DECL usable_st_size LOC=./src/chown.merge.c:8800 */
-#line 8800
-__inline static _Bool usable_st_size(struct stat  const  *sb ) ;
-/* END FUNCTION-DECL usable_st_size LOC=./src/chown.merge.c:8800 */
-
-/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/chown.merge.c:8808 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/chown.merge.c:8808 */
 #line 8808
+extern char *quotearg_mem(char const   *arg , size_t argsize ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_mem LOC=./src/chown.merge.c:8808 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fflush LOC=./src/chown.merge.c:8796 */
+#line 8796
+extern int fflush(FILE *__stream ) ;
+/* END FUNCTION-DECL-EXTERN fflush LOC=./src/chown.merge.c:8796 */
+
+/* BEGIN FUNCTION-DECL usable_st_size LOC=./src/chown.merge.c:8804 */
+#line 8804
+__inline static _Bool usable_st_size(struct stat  const  *sb ) ;
+/* END FUNCTION-DECL usable_st_size LOC=./src/chown.merge.c:8804 */
+
+/* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=./src/chown.merge.c:8812 */
+#line 8812
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memcpy)(void * __restrict  __dest ,
                                                                                                  void const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/chown.merge.c:8808 */
+/* END FUNCTION-DECL-EXTERN memcpy LOC=./src/chown.merge.c:8812 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/chown.merge.c:8820 */
-#line 8820
+/* BEGIN FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/chown.merge.c:8824 */
+#line 8824
 extern int ( __attribute__((__nonnull__(1))) sigwaitinfo)(sigset_t const   * __restrict  __set ,
                                                           siginfo_t * __restrict  __info ) ;
-/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/chown.merge.c:8820 */
+/* END FUNCTION-DECL-EXTERN sigwaitinfo LOC=./src/chown.merge.c:8824 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539___0 LOC=./src/chown.merge.c:1297 */
 #line 1297
 enum __anonenum_23175539___0 ;
 /* END ENUM-DECL __anonenum_23175539___0 LOC=./src/chown.merge.c:1297 */
 
-/* BEGIN TYPEDEF intptr_t LOC=./src/chown.merge.c:8836 */
-#line 8836 "./src/chown.merge.c"
+/* BEGIN TYPEDEF intptr_t LOC=./src/chown.merge.c:8840 */
+#line 8840 "./src/chown.merge.c"
 typedef __intptr_t intptr_t;
-/* END TYPEDEF intptr_t LOC=./src/chown.merge.c:8836 */
+/* END TYPEDEF intptr_t LOC=./src/chown.merge.c:8840 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/chown.merge.c:8840 */
-#line 8840
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/chown.merge.c:8844 */
+#line 8844
 extern char *quotearg_alloc_mem(char const   *arg , size_t argsize , size_t *size ,
                                 struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/chown.merge.c:8840 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc_mem LOC=./src/chown.merge.c:8844 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_asinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/chown.merge.c:8871 */
-#line 8871
+/* BEGIN FUNCTION-DECL-EXTERN syscall LOC=./src/chown.merge.c:8875 */
+#line 8875
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(long __sysno 
                                                                                , ...) ;
-/* END FUNCTION-DECL-EXTERN syscall LOC=./src/chown.merge.c:8871 */
+/* END FUNCTION-DECL-EXTERN syscall LOC=./src/chown.merge.c:8875 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -6236,34 +6232,34 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) syscall)(l
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/chown.merge.c:8882 */
-#line 8882
-extern char *quotearg_n(int n , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/chown.merge.c:8882 */
-
-/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/chown.merge.c:8886 */
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n LOC=./src/chown.merge.c:8886 */
 #line 8886
+extern char *quotearg_n(int n , char const   *arg ) ;
+/* END FUNCTION-DECL-EXTERN quotearg_n LOC=./src/chown.merge.c:8886 */
+
+/* BEGIN FUNCTION-DECL-EXTERN clock_getres LOC=./src/chown.merge.c:8890 */
+#line 8890
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getres)(clockid_t __clock_id ,
                                                                                    struct timespec *__res ) ;
-/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/chown.merge.c:8886 */
+/* END FUNCTION-DECL-EXTERN clock_getres LOC=./src/chown.merge.c:8890 */
 
-/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/chown.merge.c:8897 */
-#line 8897 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_caddr_t LOC=./src/chown.merge.c:8901 */
+#line 8901 "./src/chown.merge.c"
 typedef char *__kernel_caddr_t;
-/* END TYPEDEF __kernel_caddr_t LOC=./src/chown.merge.c:8897 */
+/* END TYPEDEF __kernel_caddr_t LOC=./src/chown.merge.c:8901 */
 
-/* BEGIN FUNCTION-DECL-EXTERN i_ring_push LOC=./src/chown.merge.c:8914 */
-#line 8914
+/* BEGIN FUNCTION-DECL-EXTERN i_ring_push LOC=./src/chown.merge.c:8918 */
+#line 8918
 extern int i_ring_push(I_ring *ir , int val ) ;
-/* END FUNCTION-DECL-EXTERN i_ring_push LOC=./src/chown.merge.c:8914 */
+/* END FUNCTION-DECL-EXTERN i_ring_push LOC=./src/chown.merge.c:8918 */
 
 /* BEGIN FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parityll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityll LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_437032235 LOC=./src/chown.merge.c:8928 */
-#line 8928
+/* BEGIN ENUM __anonenum_437032235 LOC=./src/chown.merge.c:8932 */
+#line 8932
 enum __anonenum_437032235 {
     _PC_LINK_MAX = 0,
     _PC_MAX_CANON = 1,
@@ -6287,13 +6283,13 @@ enum __anonenum_437032235 {
     _PC_SYMLINK_MAX = 19,
     _PC_2_SYMLINKS = 20
 } ;
-/* END ENUM __anonenum_437032235 LOC=./src/chown.merge.c:8928 */
+/* END ENUM __anonenum_437032235 LOC=./src/chown.merge.c:8932 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/chown.merge.c:8954 */
-#line 8954
+/* BEGIN FUNCTION-DECL-EXTERN clock_gettime LOC=./src/chown.merge.c:8958 */
+#line 8958
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_gettime)(clockid_t __clock_id ,
                                                                                                     struct timespec *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/chown.merge.c:8954 */
+/* END FUNCTION-DECL-EXTERN clock_gettime LOC=./src/chown.merge.c:8958 */
 
 /* BEGIN STRUCT-DECL __anonstruct__timer_490064738 LOC=./src/chown.merge.c:1341 */
 #line 1341
@@ -6315,18 +6311,18 @@ struct __anonstruct__timer_490064738 ;
    _Float128 __builtin_tanf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_tanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/chown.merge.c:9033 */
-#line 9033
+/* BEGIN FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/chown.merge.c:9037 */
+#line 9037
 extern _Bool strip_trailing_slashes(char *file ) ;
-/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/chown.merge.c:9033 */
+/* END FUNCTION-DECL-EXTERN strip_trailing_slashes LOC=./src/chown.merge.c:9037 */
 
 /* BEGIN FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
 
-/* BEGIN ENUM RCH_status LOC=./src/chown.merge.c:9042 */
-#line 9042
+/* BEGIN ENUM RCH_status LOC=./src/chown.merge.c:9046 */
+#line 9046
 enum RCH_status {
     RC_ok = 2,
     RC_excluded = 3,
@@ -6334,83 +6330,83 @@ enum RCH_status {
     RC_do_ordinary_chown = 5,
     RC_error = 6
 } ;
-/* END ENUM RCH_status LOC=./src/chown.merge.c:9042 */
+/* END ENUM RCH_status LOC=./src/chown.merge.c:9046 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/chown.merge.c:9061 */
-#line 9061
+/* BEGIN FUNCTION-DECL-EXTERN strncat LOC=./src/chown.merge.c:9065 */
+#line 9065
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strncat)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN strncat LOC=./src/chown.merge.c:9061 */
+/* END FUNCTION-DECL-EXTERN strncat LOC=./src/chown.merge.c:9065 */
 
 /* BEGIN FUNCTION-DECL change_file_owner LOC=UNKNOWN */
 static _Bool change_file_owner(FTS *fts , FTSENT *ent , uid_t uid , gid_t gid , uid_t required_uid ,
                                gid_t required_gid , struct Chown_option  const  *chopt ) ;
 /* END FUNCTION-DECL change_file_owner LOC=UNKNOWN */
 
-/* BEGIN STRUCT _fpxreg LOC=./src/chown.merge.c:9072 */
-#line 9072 "./src/chown.merge.c"
+/* BEGIN STRUCT _fpxreg LOC=./src/chown.merge.c:9076 */
+#line 9076 "./src/chown.merge.c"
 struct _fpxreg {
    unsigned short significand[4] ;
    unsigned short exponent ;
    unsigned short __glibc_reserved1[3] ;
 };
-/* END STRUCT _fpxreg LOC=./src/chown.merge.c:9072 */
+/* END STRUCT _fpxreg LOC=./src/chown.merge.c:9076 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/chown.merge.c:9080 */
-#line 9080
+/* BEGIN FUNCTION-DECL-EXTERN sigpause LOC=./src/chown.merge.c:9084 */
+#line 9084
 extern  __attribute__((__deprecated__("Use the sigsuspend function instead"))) int sigpause(int __sig )  __asm__("__xpg_sigpause")  ;
-/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/chown.merge.c:9080 */
+/* END FUNCTION-DECL-EXTERN sigpause LOC=./src/chown.merge.c:9084 */
 
 /* BEGIN ENUM-DECL quoting_flags LOC=./src/chown.merge.c:997 */
 #line 997
 enum quoting_flags ;
 /* END ENUM-DECL quoting_flags LOC=./src/chown.merge.c:997 */
 
-/* BEGIN TYPEDEF lldiv_t LOC=./src/chown.merge.c:2370 */
-#line 2370 "./src/chown.merge.c"
+/* BEGIN TYPEDEF lldiv_t LOC=./src/chown.merge.c:2366 */
+#line 2366 "./src/chown.merge.c"
 typedef struct __anonstruct_lldiv_t_103911545 lldiv_t;
-/* END TYPEDEF lldiv_t LOC=./src/chown.merge.c:2370 */
+/* END TYPEDEF lldiv_t LOC=./src/chown.merge.c:2366 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/chown.merge.c:9084 */
-#line 9084
+/* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=./src/chown.merge.c:9088 */
+#line 9088
 extern  __attribute__((__nothrow__)) lldiv_t ( __attribute__((__leaf__)) lldiv)(long long __numer ,
                                                                                 long long __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/chown.merge.c:9084 */
+/* END FUNCTION-DECL-EXTERN lldiv LOC=./src/chown.merge.c:9088 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/chown.merge.c:9089 */
-#line 9089
+/* BEGIN FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/chown.merge.c:9093 */
+#line 9093
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2,4), __leaf__)) strxfrm_l)(char *__dest ,
                                                                                                      char const   *__src ,
                                                                                                      size_t __n ,
                                                                                                      locale_t __l ) ;
-/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/chown.merge.c:9089 */
+/* END FUNCTION-DECL-EXTERN strxfrm_l LOC=./src/chown.merge.c:9093 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_powf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/chown.merge.c:9130 */
-#line 9130
+/* BEGIN ENUM __anonenum_288797321___0 LOC=./src/chown.merge.c:9134 */
+#line 9134
 enum __anonenum_288797321___0 {
     EXIT_TIMEDOUT___0 = 124,
     EXIT_CANCELED___0 = 125,
     EXIT_CANNOT_INVOKE___0 = 126,
     EXIT_ENOENT___0 = 127
 } ;
-/* END ENUM __anonenum_288797321___0 LOC=./src/chown.merge.c:9130 */
+/* END ENUM __anonenum_288797321___0 LOC=./src/chown.merge.c:9134 */
 
 /* BEGIN FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_conjf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/chown.merge.c:9153 */
-#line 9153
+/* BEGIN FUNCTION-DECL-EXTERN setlocale LOC=./src/chown.merge.c:9157 */
+#line 9157
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) setlocale)(int __category ,
                                                                                   char const   *__locale ) ;
-/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/chown.merge.c:9153 */
+/* END FUNCTION-DECL-EXTERN setlocale LOC=./src/chown.merge.c:9157 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigchld_284671705 LOC=./src/chown.merge.c:1249 */
 #line 1249
@@ -6428,68 +6424,68 @@ struct __anonstruct__sigchld_284671705 ;
                                  unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memccpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/chown.merge.c:9228 */
-#line 9228
+/* BEGIN FUNCTION-DECL-EXTERN symlinkat LOC=./src/chown.merge.c:9232 */
+#line 9232
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,3), __leaf__)) symlinkat)(char const   *__from ,
                                                                                                   int __tofd ,
                                                                                                   char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/chown.merge.c:9228 */
+/* END FUNCTION-DECL-EXTERN symlinkat LOC=./src/chown.merge.c:9232 */
 
-/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/chown.merge.c:9238 */
-#line 9238 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct___fsid_t_109580352 LOC=./src/chown.merge.c:9242 */
+#line 9242 "./src/chown.merge.c"
 struct __anonstruct___fsid_t_109580352 {
    int __val[2] ;
 };
-/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/chown.merge.c:9238 */
+/* END STRUCT __anonstruct___fsid_t_109580352 LOC=./src/chown.merge.c:9242 */
 
 /* BEGIN TYPEDEF __fsid_t LOC=./src/chown.merge.c:4835 */
 #line 4835 "./src/chown.merge.c"
 typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
 /* END TYPEDEF __fsid_t LOC=./src/chown.merge.c:4835 */
 
-/* BEGIN TYPEDEF fsid_t LOC=./src/chown.merge.c:9244 */
-#line 9244 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fsid_t LOC=./src/chown.merge.c:9248 */
+#line 9248 "./src/chown.merge.c"
 typedef __fsid_t fsid_t;
-/* END TYPEDEF fsid_t LOC=./src/chown.merge.c:9244 */
+/* END TYPEDEF fsid_t LOC=./src/chown.merge.c:9248 */
 
-/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/chown.merge.c:9234 */
-#line 9234 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_ipc_pid_t LOC=./src/chown.merge.c:9238 */
+#line 9238 "./src/chown.merge.c"
 typedef int __kernel_ipc_pid_t;
-/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/chown.merge.c:9234 */
+/* END TYPEDEF __kernel_ipc_pid_t LOC=./src/chown.merge.c:9238 */
 
-/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/chown.merge.c:9248 */
-#line 9248
-extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * ) ;
-/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/chown.merge.c:9248 */
-
-/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/chown.merge.c:9252 */
+/* BEGIN FUNCTION-DECL-EXTERN inttostr LOC=./src/chown.merge.c:9252 */
 #line 9252
+extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * ) ;
+/* END FUNCTION-DECL-EXTERN inttostr LOC=./src/chown.merge.c:9252 */
+
+/* BEGIN FUNCTION-DECL-EXTERN gettimeofday LOC=./src/chown.merge.c:9256 */
+#line 9256
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gettimeofday)(struct timeval * __restrict  __tv ,
                                                                                                    void * __restrict  __tz ) ;
-/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/chown.merge.c:9252 */
+/* END FUNCTION-DECL-EXTERN gettimeofday LOC=./src/chown.merge.c:9256 */
 
-/* BEGIN TYPEDEF uint32_t LOC=./src/chown.merge.c:9257 */
-#line 9257 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint32_t LOC=./src/chown.merge.c:9261 */
+#line 9261 "./src/chown.merge.c"
 typedef __uint32_t uint32_t;
-/* END TYPEDEF uint32_t LOC=./src/chown.merge.c:9257 */
+/* END TYPEDEF uint32_t LOC=./src/chown.merge.c:9261 */
 
-/* BEGIN TYPEDEF comparison_fn_t LOC=./src/chown.merge.c:9266 */
-#line 9266 "./src/chown.merge.c"
+/* BEGIN TYPEDEF comparison_fn_t LOC=./src/chown.merge.c:9270 */
+#line 9270 "./src/chown.merge.c"
 typedef int (*comparison_fn_t)(void const   * , void const   * );
-/* END TYPEDEF comparison_fn_t LOC=./src/chown.merge.c:9266 */
+/* END TYPEDEF comparison_fn_t LOC=./src/chown.merge.c:9270 */
 
 /* BEGIN FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_hypot(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/chown.merge.c:9292 */
-#line 9292
+/* BEGIN FUNCTION-DECL-EXTERN strftime LOC=./src/chown.merge.c:9296 */
+#line 9296
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,3,4), __leaf__)) strftime)(char * __restrict  __s ,
                                                                                                       size_t __maxsize ,
                                                                                                       char const   * __restrict  __format ,
                                                                                                       struct tm  const  * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN strftime LOC=./src/chown.merge.c:9292 */
+/* END FUNCTION-DECL-EXTERN strftime LOC=./src/chown.merge.c:9296 */
 
 /* BEGIN ENUM-DECL __anonenum_365337802 LOC=./src/chown.merge.c:1461 */
 #line 1461
@@ -6516,10 +6512,10 @@ struct __anonstruct___once_flag_947329320 ;
    short __builtin_bitreverse16(short  ) ;  */
 /* END FUNCTION-DECL __builtin_bitreverse16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/chown.merge.c:9382 */
-#line 9382
+/* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=./src/chown.merge.c:9386 */
+#line 9386
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) gsignal)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/chown.merge.c:9382 */
+/* END FUNCTION-DECL-EXTERN gsignal LOC=./src/chown.merge.c:9386 */
 
 /* BEGIN FUNCTION-DECL restricted_chown LOC=UNKNOWN */
 static enum RCH_status restricted_chown(int cwd_fd , char const   *file , struct stat  const  *orig_st ,
@@ -6532,32 +6528,32 @@ static enum RCH_status restricted_chown(int cwd_fd , char const   *file , struct
    char *__builtin_rindex(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_rindex LOC=BUILTIN */
 
-/* BEGIN ENUM quoting_flags LOC=./src/chown.merge.c:9429 */
-#line 9429
+/* BEGIN ENUM quoting_flags LOC=./src/chown.merge.c:9433 */
+#line 9433
 enum quoting_flags {
     QA_ELIDE_NULL_BYTES = 1,
     QA_ELIDE_OUTER_QUOTES = 2,
     QA_SPLIT_TRIGRAPHS = 4
 } ;
-/* END ENUM quoting_flags LOC=./src/chown.merge.c:9429 */
+/* END ENUM quoting_flags LOC=./src/chown.merge.c:9433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpwent LOC=./src/chown.merge.c:9437 */
-#line 9437
+/* BEGIN FUNCTION-DECL-EXTERN getpwent LOC=./src/chown.merge.c:9441 */
+#line 9441
 extern struct passwd *getpwent(void) ;
-/* END FUNCTION-DECL-EXTERN getpwent LOC=./src/chown.merge.c:9437 */
+/* END FUNCTION-DECL-EXTERN getpwent LOC=./src/chown.merge.c:9441 */
 
-/* BEGIN TYPEDEF __u_long LOC=./src/chown.merge.c:9446 */
-#line 9446 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __u_long LOC=./src/chown.merge.c:9450 */
+#line 9450 "./src/chown.merge.c"
 typedef unsigned long __u_long;
-/* END TYPEDEF __u_long LOC=./src/chown.merge.c:9446 */
+/* END TYPEDEF __u_long LOC=./src/chown.merge.c:9450 */
 
 /* BEGIN FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cprojl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cprojl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/chown.merge.c:9465 */
-#line 9465
+/* BEGIN ENUM __anonenum_451154152___0 LOC=./src/chown.merge.c:9469 */
+#line 9469
 enum __anonenum_451154152___0 {
     REG_R8___0 = 0,
     REG_R9___0 = 1,
@@ -6583,51 +6579,51 @@ enum __anonenum_451154152___0 {
     REG_OLDMASK___0 = 21,
     REG_CR2___0 = 22
 } ;
-/* END ENUM __anonenum_451154152___0 LOC=./src/chown.merge.c:9465 */
+/* END ENUM __anonenum_451154152___0 LOC=./src/chown.merge.c:9469 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/chown.merge.c:9498 */
-#line 9498
+/* BEGIN FUNCTION-DECL-EXTERN strtoumax LOC=./src/chown.merge.c:9502 */
+#line 9502
 extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) strtoumax)(char const   * __restrict  __nptr ,
                                                                                       char ** __restrict  __endptr ,
                                                                                       int __base )  __asm__("__isoc23_strtoumax")  ;
-/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/chown.merge.c:9498 */
+/* END FUNCTION-DECL-EXTERN strtoumax LOC=./src/chown.merge.c:9502 */
 
-/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/chown.merge.c:9509 */
-#line 9509
+/* BEGIN FUNCTION-DECL-EXTERN popen LOC=./src/chown.merge.c:9513 */
+#line 9513
 extern FILE *popen(char const   *__command , char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN popen LOC=./src/chown.merge.c:9509 */
+/* END FUNCTION-DECL-EXTERN popen LOC=./src/chown.merge.c:9513 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_exp(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_507282730 LOC=./src/chown.merge.c:9518 */
-#line 9518
+/* BEGIN ENUM __anonenum_507282730 LOC=./src/chown.merge.c:9522 */
+#line 9522
 enum __anonenum_507282730 {
     I_RING_SIZE = 4
 } ;
-/* END ENUM __anonenum_507282730 LOC=./src/chown.merge.c:9518 */
+/* END ENUM __anonenum_507282730 LOC=./src/chown.merge.c:9522 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/chown.merge.c:9524 */
-#line 9524
+/* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=./src/chown.merge.c:9528 */
+#line 9528
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mktemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/chown.merge.c:9524 */
+/* END FUNCTION-DECL-EXTERN mktemp LOC=./src/chown.merge.c:9528 */
 
-/* BEGIN TYPEDEF sighandler_t LOC=./src/chown.merge.c:9528 */
-#line 9528 "./src/chown.merge.c"
+/* BEGIN TYPEDEF sighandler_t LOC=./src/chown.merge.c:9532 */
+#line 9532 "./src/chown.merge.c"
 typedef void (*sighandler_t)(int  );
-/* END TYPEDEF sighandler_t LOC=./src/chown.merge.c:9528 */
+/* END TYPEDEF sighandler_t LOC=./src/chown.merge.c:9532 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/chown.merge.c:9532 */
-#line 9532
+/* BEGIN FUNCTION-DECL-EXTERN nrand48 LOC=./src/chown.merge.c:9536 */
+#line 9536
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) nrand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/chown.merge.c:9532 */
+/* END FUNCTION-DECL-EXTERN nrand48 LOC=./src/chown.merge.c:9536 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/chown.merge.c:9545 */
-#line 9545
+/* BEGIN FUNCTION-DECL-EXTERN fopen64 LOC=./src/chown.merge.c:9549 */
+#line 9549
 extern FILE *fopen64(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/chown.merge.c:9545 */
+/* END FUNCTION-DECL-EXTERN fopen64 LOC=./src/chown.merge.c:9549 */
 
 /* BEGIN FUNCTION-DECL __builtin_malloc LOC=BUILTIN */
 /* compiler builtin: 
@@ -6644,68 +6640,68 @@ extern FILE *fopen64(char const   * __restrict  __filename , char const   * __re
 union sigval ;
 /* END UNION-DECL sigval LOC=./src/chown.merge.c:1449 */
 
-/* BEGIN TYPEDEF __sig_atomic_t LOC=./src/chown.merge.c:9592 */
-#line 9592 "./src/chown.merge.c"
-typedef int __sig_atomic_t;
-/* END TYPEDEF __sig_atomic_t LOC=./src/chown.merge.c:9592 */
-
-/* BEGIN TYPEDEF sig_atomic_t LOC=./src/chown.merge.c:9596 */
+/* BEGIN TYPEDEF __sig_atomic_t LOC=./src/chown.merge.c:9596 */
 #line 9596 "./src/chown.merge.c"
+typedef int __sig_atomic_t;
+/* END TYPEDEF __sig_atomic_t LOC=./src/chown.merge.c:9596 */
+
+/* BEGIN TYPEDEF sig_atomic_t LOC=./src/chown.merge.c:9600 */
+#line 9600 "./src/chown.merge.c"
 typedef __sig_atomic_t sig_atomic_t;
-/* END TYPEDEF sig_atomic_t LOC=./src/chown.merge.c:9596 */
+/* END TYPEDEF sig_atomic_t LOC=./src/chown.merge.c:9600 */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap16 LOC=BUILTIN */
 /* compiler builtin: 
    short __builtin_bswap16(short  ) ;  */
 /* END FUNCTION-DECL __builtin_bswap16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/chown.merge.c:9657 */
-#line 9657
+/* BEGIN FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/chown.merge.c:9661 */
+#line 9661
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcasecmp_l)(char const   *__s1 ,
                                                                                                        char const   *__s2 ,
                                                                                                        locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/chown.merge.c:9657 */
+/* END FUNCTION-DECL-EXTERN strcasecmp_l LOC=./src/chown.merge.c:9661 */
 
-/* BEGIN FUNCTION-DECL-EXTERN write LOC=./src/chown.merge.c:9653 */
-#line 9653
+/* BEGIN FUNCTION-DECL-EXTERN write LOC=./src/chown.merge.c:9657 */
+#line 9657
 extern ssize_t write(int __fd , void const   *__buf , size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN write LOC=./src/chown.merge.c:9653 */
+/* END FUNCTION-DECL-EXTERN write LOC=./src/chown.merge.c:9657 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _Exit LOC=./src/chown.merge.c:9645 */
-#line 9645
+/* BEGIN FUNCTION-DECL-EXTERN _Exit LOC=./src/chown.merge.c:9649 */
+#line 9649
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) _Exit)(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _Exit LOC=./src/chown.merge.c:9645 */
+/* END FUNCTION-DECL-EXTERN _Exit LOC=./src/chown.merge.c:9649 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacos LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_cacos(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacos LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sethostname LOC=./src/chown.merge.c:9663 */
-#line 9663
+/* BEGIN FUNCTION-DECL-EXTERN sethostname LOC=./src/chown.merge.c:9667 */
+#line 9667
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sethostname)(char const   *__name ,
                                                                                                   size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN sethostname LOC=./src/chown.merge.c:9663 */
+/* END FUNCTION-DECL-EXTERN sethostname LOC=./src/chown.merge.c:9667 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/chown.merge.c:9668 */
-#line 9668
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/chown.merge.c:9672 */
+#line 9672
 extern int ( __attribute__((__nonnull__(1))) mkostemp64)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/chown.merge.c:9668 */
+/* END FUNCTION-DECL-EXTERN mkostemp64 LOC=./src/chown.merge.c:9672 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strsignal LOC=./src/chown.merge.c:9692 */
-#line 9692
+/* BEGIN FUNCTION-DECL-EXTERN strsignal LOC=./src/chown.merge.c:9696 */
+#line 9696
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strsignal)(int __sig ) ;
-/* END FUNCTION-DECL-EXTERN strsignal LOC=./src/chown.merge.c:9692 */
+/* END FUNCTION-DECL-EXTERN strsignal LOC=./src/chown.merge.c:9696 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundf128 LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN initgroups LOC=./src/chown.merge.c:9719 */
-#line 9719
+/* BEGIN FUNCTION-DECL-EXTERN initgroups LOC=./src/chown.merge.c:9723 */
+#line 9723
 extern int initgroups(char const   *__user , __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN initgroups LOC=./src/chown.merge.c:9719 */
+/* END FUNCTION-DECL-EXTERN initgroups LOC=./src/chown.merge.c:9723 */
 
 /* BEGIN ENUM-DECL __anonenum_640648963___0 LOC=./src/chown.merge.c:913 */
 #line 913
@@ -6717,16 +6713,16 @@ enum __anonenum_640648963___0 ;
    int __builtin_ilogb(double  ) ;  */
 /* END FUNCTION-DECL __builtin_ilogb LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyname LOC=./src/chown.merge.c:9728 */
-#line 9728
+/* BEGIN FUNCTION-DECL-EXTERN ttyname LOC=./src/chown.merge.c:9732 */
+#line 9732
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ttyname)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN ttyname LOC=./src/chown.merge.c:9728 */
+/* END FUNCTION-DECL-EXTERN ttyname LOC=./src/chown.merge.c:9732 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/chown.merge.c:9749 */
-#line 9749
+/* BEGIN FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/chown.merge.c:9753 */
+#line 9753
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) __sysv_signal)(int __sig ,
                                                                                                void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/chown.merge.c:9749 */
+/* END FUNCTION-DECL-EXTERN __sysv_signal LOC=./src/chown.merge.c:9753 */
 
 /* BEGIN FUNCTION-DECL __builtin_dwarf_sp_column LOC=BUILTIN */
 /* compiler builtin: 
@@ -6737,24 +6733,24 @@ extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) 
 __inline static _Bool is_ENOTSUP(int err ) ;
 /* END FUNCTION-DECL is_ENOTSUP LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __kernel_timer_t LOC=./src/chown.merge.c:9773 */
-#line 9773 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_timer_t LOC=./src/chown.merge.c:9777 */
+#line 9777 "./src/chown.merge.c"
 typedef int __kernel_timer_t;
-/* END TYPEDEF __kernel_timer_t LOC=./src/chown.merge.c:9773 */
+/* END TYPEDEF __kernel_timer_t LOC=./src/chown.merge.c:9777 */
 
-/* BEGIN FUNCTION-DECL-EXTERN linkat LOC=./src/chown.merge.c:9777 */
-#line 9777
+/* BEGIN FUNCTION-DECL-EXTERN linkat LOC=./src/chown.merge.c:9781 */
+#line 9781
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,4), __leaf__)) linkat)(int __fromfd ,
                                                                                                char const   *__from ,
                                                                                                int __tofd ,
                                                                                                char const   *__to ,
                                                                                                int __flags ) ;
-/* END FUNCTION-DECL-EXTERN linkat LOC=./src/chown.merge.c:9777 */
+/* END FUNCTION-DECL-EXTERN linkat LOC=./src/chown.merge.c:9781 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xreallocarray LOC=./src/chown.merge.c:9785 */
-#line 9785
+/* BEGIN FUNCTION-DECL-EXTERN xreallocarray LOC=./src/chown.merge.c:9789 */
+#line 9789
 extern void *xreallocarray(void *p , size_t n , size_t s )  __attribute__((__alloc_size__(2,3))) ;
-/* END FUNCTION-DECL-EXTERN xreallocarray LOC=./src/chown.merge.c:9785 */
+/* END FUNCTION-DECL-EXTERN xreallocarray LOC=./src/chown.merge.c:9789 */
 
 /* BEGIN FUNCTION-DECL __builtin_uaddl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -6762,10 +6758,10 @@ extern void *xreallocarray(void *p , size_t n , size_t s )  __attribute__((__all
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_uaddl_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF ino64_t LOC=./src/chown.merge.c:9795 */
-#line 9795 "./src/chown.merge.c"
+/* BEGIN TYPEDEF ino64_t LOC=./src/chown.merge.c:9799 */
+#line 9799 "./src/chown.merge.c"
 typedef __ino64_t ino64_t;
-/* END TYPEDEF ino64_t LOC=./src/chown.merge.c:9795 */
+/* END TYPEDEF ino64_t LOC=./src/chown.merge.c:9799 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -6791,10 +6787,6 @@ typedef __ino64_t ino64_t;
 /* compiler builtin: 
    int __builtin___printf_chk(int  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin___printf_chk LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_cZdJ_envp LOC=UNKNOWN */
-char **_TIG_IZ_cZdJ_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_cZdJ_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_logbl LOC=BUILTIN */
 /* compiler builtin: 
@@ -7010,10 +7002,10 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), 
                                                                                                    int __base )  __asm__("__isoc23_strtoll")  ;
 /* END FUNCTION-DECL-EXTERN strtoq LOC=./src/chown.merge.c:10167 */
 
-/* BEGIN TYPEDEF __s64 LOC=./src/chown.merge.c:9614 */
-#line 9614 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __s64 LOC=./src/chown.merge.c:9618 */
+#line 9618 "./src/chown.merge.c"
 typedef long long __s64;
-/* END TYPEDEF __s64 LOC=./src/chown.merge.c:9614 */
+/* END TYPEDEF __s64 LOC=./src/chown.merge.c:9618 */
 
 /* BEGIN FUNCTION-DECL-EXTERN open_by_handle_at LOC=./src/chown.merge.c:10173 */
 #line 10173
@@ -7045,10 +7037,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup2)(int _
 #line 10200
 __inline int lchmodat(int fd , char const   *file , mode_t mode ) ;
 /* END FUNCTION-DECL lchmodat LOC=./src/chown.merge.c:10200 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_H7TU_argv LOC=UNKNOWN */
-char **_TIG_IZ_H7TU_argv ;
-/* END VARIABLE-DECL _TIG_IZ_H7TU_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_remquo LOC=BUILTIN */
 /* compiler builtin: 
@@ -7306,10 +7294,10 @@ __inline static void *ptr_align(void const   *ptr , size_t alignment ) ;
 typedef __kernel_long_t __kernel_old_time_t;
 /* END TYPEDEF __kernel_old_time_t LOC=./src/chown.merge.c:10613 */
 
-/* BEGIN TYPEDEF __uint8_t LOC=./src/chown.merge.c:1810 */
-#line 1810 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uint8_t LOC=./src/chown.merge.c:1806 */
+#line 1806 "./src/chown.merge.c"
 typedef unsigned char __uint8_t;
-/* END TYPEDEF __uint8_t LOC=./src/chown.merge.c:1810 */
+/* END TYPEDEF __uint8_t LOC=./src/chown.merge.c:1806 */
 
 /* BEGIN TYPEDEF uint8_t LOC=./src/chown.merge.c:10621 */
 #line 10621 "./src/chown.merge.c"
@@ -7430,6 +7418,10 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_mems
 struct cycle_check_state ;
 /* END STRUCT-DECL cycle_check_state LOC=./src/chown.merge.c:861 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_4bYn_envp LOC=UNKNOWN */
+char **_TIG_IZ_4bYn_envp ;
+/* END VARIABLE-DECL _TIG_IZ_4bYn_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL emit_mandatory_arg_note LOC=UNKNOWN */
 __inline static void emit_mandatory_arg_note(void) ;
 /* END FUNCTION-DECL emit_mandatory_arg_note LOC=UNKNOWN */
@@ -7439,10 +7431,10 @@ __inline static void emit_mandatory_arg_note(void) ;
    void *__builtin___memcpy_chk(void * , void const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___memcpy_chk LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpgrp LOC=./src/chown.merge.c:10810 */
-#line 10810
+/* BEGIN FUNCTION-DECL-EXTERN getpgrp LOC=./src/chown.merge.c:10814 */
+#line 10814
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpgrp)(void) ;
-/* END FUNCTION-DECL-EXTERN getpgrp LOC=./src/chown.merge.c:10810 */
+/* END FUNCTION-DECL-EXTERN getpgrp LOC=./src/chown.merge.c:10814 */
 
 /* BEGIN ENUM-DECL __anonenum_783849514 LOC=./src/chown.merge.c:1285 */
 #line 1285
@@ -7459,104 +7451,104 @@ struct _libc_xmmreg ;
    float __builtin_tanf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_tanf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_old_gid_t LOC=./src/chown.merge.c:10832 */
-#line 10832 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_old_gid_t LOC=./src/chown.merge.c:10836 */
+#line 10836 "./src/chown.merge.c"
 typedef unsigned short __kernel_old_gid_t;
-/* END TYPEDEF __kernel_old_gid_t LOC=./src/chown.merge.c:10832 */
+/* END TYPEDEF __kernel_old_gid_t LOC=./src/chown.merge.c:10836 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fallocate64 LOC=./src/chown.merge.c:10841 */
-#line 10841
+/* BEGIN FUNCTION-DECL-EXTERN fallocate64 LOC=./src/chown.merge.c:10845 */
+#line 10845
 extern int fallocate64(int __fd , int __mode , __off64_t __offset , __off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fallocate64 LOC=./src/chown.merge.c:10841 */
+/* END FUNCTION-DECL-EXTERN fallocate64 LOC=./src/chown.merge.c:10845 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft8 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned char __builtin_rotateleft8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft8 LOC=BUILTIN */
 
-/* BEGIN STRUCT infomap LOC=./src/chown.merge.c:10864 */
-#line 10864 "./src/chown.merge.c"
+/* BEGIN STRUCT infomap LOC=./src/chown.merge.c:10868 */
+#line 10868 "./src/chown.merge.c"
 struct infomap {
    char const   *program ;
    char const   *node ;
 };
-/* END STRUCT infomap LOC=./src/chown.merge.c:10864 */
+/* END STRUCT infomap LOC=./src/chown.merge.c:10868 */
 
 /* BEGIN FUNCTION-DECL __builtin_llrintl LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llrintl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_llrintl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_25645747 LOC=./src/chown.merge.c:10885 */
-#line 10885
+/* BEGIN ENUM __anonenum_25645747 LOC=./src/chown.merge.c:10889 */
+#line 10889
 enum __anonenum_25645747 {
     O_PATHSEARCH = 2097152
 } ;
-/* END ENUM __anonenum_25645747 LOC=./src/chown.merge.c:10885 */
+/* END ENUM __anonenum_25645747 LOC=./src/chown.merge.c:10889 */
 
-/* BEGIN FUNCTION-DECL-EXTERN cuserid LOC=./src/chown.merge.c:10897 */
-#line 10897
+/* BEGIN FUNCTION-DECL-EXTERN cuserid LOC=./src/chown.merge.c:10901 */
+#line 10901
 extern char *cuserid(char *__s ) ;
-/* END FUNCTION-DECL-EXTERN cuserid LOC=./src/chown.merge.c:10897 */
+/* END FUNCTION-DECL-EXTERN cuserid LOC=./src/chown.merge.c:10901 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/chown.merge.c:10921 */
-#line 10921
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/chown.merge.c:10925 */
+#line 10925
 extern char *quotearg_colon(char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/chown.merge.c:10921 */
+/* END FUNCTION-DECL-EXTERN quotearg_colon LOC=./src/chown.merge.c:10925 */
 
 /* BEGIN FUNCTION-DECL __builtin_align_up LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_align_up(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_align_up LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftell LOC=./src/chown.merge.c:10934 */
-#line 10934
+/* BEGIN FUNCTION-DECL-EXTERN ftell LOC=./src/chown.merge.c:10938 */
+#line 10938
 extern long ( __attribute__((__nonnull__(1))) ftell)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ftell LOC=./src/chown.merge.c:10934 */
+/* END FUNCTION-DECL-EXTERN ftell LOC=./src/chown.merge.c:10938 */
 
 /* BEGIN FUNCTION-DECL __builtin_calloc LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_calloc(unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_calloc LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pid_t LOC=./src/chown.merge.c:10943 */
-#line 10943 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pid_t LOC=./src/chown.merge.c:10947 */
+#line 10947 "./src/chown.merge.c"
 typedef __pid_t pid_t;
-/* END TYPEDEF pid_t LOC=./src/chown.merge.c:10943 */
+/* END TYPEDEF pid_t LOC=./src/chown.merge.c:10947 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/chown.merge.c:10947 */
-#line 10947
+/* BEGIN FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/chown.merge.c:10951 */
+#line 10951
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clock_getcpuclockid)(pid_t __pid ,
                                                                                           clockid_t *__clock_id ) ;
-/* END FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/chown.merge.c:10947 */
+/* END FUNCTION-DECL-EXTERN clock_getcpuclockid LOC=./src/chown.merge.c:10951 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strrchr LOC=./src/chown.merge.c:10956 */
-#line 10956
+/* BEGIN FUNCTION-DECL-EXTERN strrchr LOC=./src/chown.merge.c:10960 */
+#line 10960
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strrchr)(char const   *__s ,
                                                                                                 int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strrchr LOC=./src/chown.merge.c:10956 */
+/* END FUNCTION-DECL-EXTERN strrchr LOC=./src/chown.merge.c:10960 */
 
 /* BEGIN FUNCTION-DECL __builtin_lroundl LOC=BUILTIN */
 /* compiler builtin: 
    long __builtin_lroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffsl LOC=./src/chown.merge.c:10983 */
-#line 10983
+/* BEGIN FUNCTION-DECL-EXTERN ffsl LOC=./src/chown.merge.c:10987 */
+#line 10987
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffsl)(long __l )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffsl LOC=./src/chown.merge.c:10983 */
+/* END FUNCTION-DECL-EXTERN ffsl LOC=./src/chown.merge.c:10987 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/chown.merge.c:11012 */
-#line 11012
+/* BEGIN FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/chown.merge.c:11016 */
+#line 11016
 extern int clock_nanosleep(clockid_t __clock_id , int __flags , struct timespec  const  *__req ,
                            struct timespec *__rem ) ;
-/* END FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/chown.merge.c:11012 */
+/* END FUNCTION-DECL-EXTERN clock_nanosleep LOC=./src/chown.merge.c:11016 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pipe2 LOC=./src/chown.merge.c:11002 */
-#line 11002
+/* BEGIN FUNCTION-DECL-EXTERN pipe2 LOC=./src/chown.merge.c:11006 */
+#line 11006
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pipe2)(int *__pipedes ,
                                                                             int __flags ) ;
-/* END FUNCTION-DECL-EXTERN pipe2 LOC=./src/chown.merge.c:11002 */
+/* END FUNCTION-DECL-EXTERN pipe2 LOC=./src/chown.merge.c:11006 */
 
 /* BEGIN STRUCT-DECL _IO_cookie_io_functions_t LOC=./src/chown.merge.c:981 */
 #line 981
@@ -7578,19 +7570,19 @@ struct _IO_cookie_io_functions_t ;
    double __builtin_ceil(double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceil LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seed48 LOC=./src/chown.merge.c:11040 */
-#line 11040
+/* BEGIN FUNCTION-DECL-EXTERN seed48 LOC=./src/chown.merge.c:11044 */
+#line 11044
 extern  __attribute__((__nothrow__)) unsigned short *( __attribute__((__nonnull__(1),
 __leaf__)) seed48)(unsigned short *__seed16v ) ;
-/* END FUNCTION-DECL-EXTERN seed48 LOC=./src/chown.merge.c:11040 */
+/* END FUNCTION-DECL-EXTERN seed48 LOC=./src/chown.merge.c:11044 */
 
 /* BEGIN STRUCT-DECL flock64 LOC=./src/chown.merge.c:1473 */
 #line 1473
 struct flock64 ;
 /* END STRUCT-DECL flock64 LOC=./src/chown.merge.c:1473 */
 
-/* BEGIN ENUM __anonenum_850350928___0 LOC=./src/chown.merge.c:11084 */
-#line 11084
+/* BEGIN ENUM __anonenum_850350928___0 LOC=./src/chown.merge.c:11088 */
+#line 11088
 enum __anonenum_850350928___0 {
     SEGV_MAPERR___0 = 1,
     SEGV_ACCERR___0 = 2,
@@ -7603,17 +7595,17 @@ enum __anonenum_850350928___0 {
     SEGV_MTESERR___0 = 9,
     SEGV_CPERR___0 = 10
 } ;
-/* END ENUM __anonenum_850350928___0 LOC=./src/chown.merge.c:11084 */
+/* END ENUM __anonenum_850350928___0 LOC=./src/chown.merge.c:11088 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fexecve LOC=./src/chown.merge.c:11108 */
-#line 11108
+/* BEGIN FUNCTION-DECL-EXTERN fexecve LOC=./src/chown.merge.c:11112 */
+#line 11112
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fexecve)(int __fd ,
                                                                                               char **__argv ,
                                                                                               char **__envp ) ;
-/* END FUNCTION-DECL-EXTERN fexecve LOC=./src/chown.merge.c:11108 */
+/* END FUNCTION-DECL-EXTERN fexecve LOC=./src/chown.merge.c:11112 */
 
-/* BEGIN ENUM __anonenum_875524036___0 LOC=./src/chown.merge.c:11114 */
-#line 11114
+/* BEGIN ENUM __anonenum_875524036___0 LOC=./src/chown.merge.c:11118 */
+#line 11118
 enum __anonenum_875524036___0 {
     _CS_PATH___0 = 0,
     _CS_V6_WIDTH_RESTRICTED_ENVS___0 = 1,
@@ -7680,7 +7672,7 @@ enum __anonenum_875524036___0 {
     _CS_V6_ENV___0 = 1148,
     _CS_V7_ENV___0 = 1149
 } ;
-/* END ENUM __anonenum_875524036___0 LOC=./src/chown.merge.c:11114 */
+/* END ENUM __anonenum_875524036___0 LOC=./src/chown.merge.c:11118 */
 
 /* BEGIN FUNCTION-DECL __builtin_call_with_static_chain LOC=BUILTIN */
 /* compiler builtin: 
@@ -7697,21 +7689,21 @@ static void describe_change(char const   *file , enum Change_status changed , ch
                             char const   *old_group , char const   *user , char const   *group ) ;
 /* END FUNCTION-DECL describe_change LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strdup LOC=./src/chown.merge.c:11203 */
-#line 11203
+/* BEGIN FUNCTION-DECL-EXTERN strdup LOC=./src/chown.merge.c:11207 */
+#line 11207
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strdup)(char const   *__s )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN strdup LOC=./src/chown.merge.c:11203 */
+/* END FUNCTION-DECL-EXTERN strdup LOC=./src/chown.merge.c:11207 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_atanl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_atanl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_gettime LOC=./src/chown.merge.c:11207 */
-#line 11207
+/* BEGIN FUNCTION-DECL-EXTERN timer_gettime LOC=./src/chown.merge.c:11211 */
+#line 11211
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_gettime)(timer_t __timerid ,
                                                                                     struct itimerspec *__value ) ;
-/* END FUNCTION-DECL-EXTERN timer_gettime LOC=./src/chown.merge.c:11207 */
+/* END FUNCTION-DECL-EXTERN timer_gettime LOC=./src/chown.merge.c:11211 */
 
 /* BEGIN STRUCT-DECL __dirstream LOC=./src/chown.merge.c:841 */
 #line 841
@@ -7733,61 +7725,61 @@ struct __dirstream ;
    long __builtin_lrintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lrintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fallocate LOC=./src/chown.merge.c:11258 */
-#line 11258
+/* BEGIN FUNCTION-DECL-EXTERN fallocate LOC=./src/chown.merge.c:11262 */
+#line 11262
 extern int fallocate(int __fd , int __mode , __off_t __offset , __off_t __len ) ;
-/* END FUNCTION-DECL-EXTERN fallocate LOC=./src/chown.merge.c:11258 */
+/* END FUNCTION-DECL-EXTERN fallocate LOC=./src/chown.merge.c:11262 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_truncf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __be16 LOC=./src/chown.merge.c:11262 */
-#line 11262 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __be16 LOC=./src/chown.merge.c:11266 */
+#line 11266 "./src/chown.merge.c"
 typedef __u16 __be16;
-/* END TYPEDEF __be16 LOC=./src/chown.merge.c:11262 */
+/* END TYPEDEF __be16 LOC=./src/chown.merge.c:11266 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtold LOC=./src/chown.merge.c:11266 */
-#line 11266
+/* BEGIN FUNCTION-DECL-EXTERN strtold LOC=./src/chown.merge.c:11270 */
+#line 11270
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtold)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtold LOC=./src/chown.merge.c:11266 */
+/* END FUNCTION-DECL-EXTERN strtold LOC=./src/chown.merge.c:11270 */
 
-/* BEGIN FUNCTION-DECL-EXTERN div LOC=./src/chown.merge.c:11280 */
-#line 11280
+/* BEGIN FUNCTION-DECL-EXTERN div LOC=./src/chown.merge.c:11284 */
+#line 11284
 extern  __attribute__((__nothrow__)) div_t ( __attribute__((__leaf__)) div)(int __numer ,
                                                                             int __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN div LOC=./src/chown.merge.c:11280 */
+/* END FUNCTION-DECL-EXTERN div LOC=./src/chown.merge.c:11284 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigset LOC=./src/chown.merge.c:11298 */
-#line 11298
+/* BEGIN FUNCTION-DECL-EXTERN sigset LOC=./src/chown.merge.c:11302 */
+#line 11302
 extern  __attribute__((__nothrow__, __deprecated__("Use the signal and sigprocmask functions instead"))) __sighandler_t ( __attribute__((__leaf__)) sigset)(int __sig ,
                                                                                                                                                             void (*__disp)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN sigset LOC=./src/chown.merge.c:11298 */
+/* END FUNCTION-DECL-EXTERN sigset LOC=./src/chown.merge.c:11302 */
 
-/* BEGIN FUNCTION-DECL-EXTERN open64 LOC=./src/chown.merge.c:11293 */
-#line 11293
+/* BEGIN FUNCTION-DECL-EXTERN open64 LOC=./src/chown.merge.c:11297 */
+#line 11297
 extern int ( __attribute__((__nonnull__(1))) open64)(char const   *__file , int __oflag 
                                                      , ...) ;
-/* END FUNCTION-DECL-EXTERN open64 LOC=./src/chown.merge.c:11293 */
+/* END FUNCTION-DECL-EXTERN open64 LOC=./src/chown.merge.c:11297 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_open LOC=./src/chown.merge.c:11303 */
-#line 11303
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_open LOC=./src/chown.merge.c:11307 */
+#line 11307
 extern FTS *( __attribute__((__warn_unused_result__)) rpl_fts_open)(char ** , int  ,
                                                                     int (*)(FTSENT const   ** ,
                                                                             FTSENT const   ** ) ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fts_open LOC=./src/chown.merge.c:11303 */
+/* END FUNCTION-DECL-EXTERN rpl_fts_open LOC=./src/chown.merge.c:11307 */
 
 /* BEGIN FUNCTION-DECL __builtin_cabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_cabsf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cabsf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s8 LOC=./src/chown.merge.c:11314 */
-#line 11314 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __s8 LOC=./src/chown.merge.c:11318 */
+#line 11318 "./src/chown.merge.c"
 typedef signed char __s8;
-/* END TYPEDEF __s8 LOC=./src/chown.merge.c:11314 */
+/* END TYPEDEF __s8 LOC=./src/chown.merge.c:11318 */
 
 /* BEGIN FUNCTION-DECL __builtin_nansf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -7799,47 +7791,47 @@ typedef signed char __s8;
 enum __anonenum_424050557___0 ;
 /* END ENUM-DECL __anonenum_424050557___0 LOC=./src/chown.merge.c:1217 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_settime LOC=./src/chown.merge.c:11345 */
-#line 11345
+/* BEGIN FUNCTION-DECL-EXTERN clock_settime LOC=./src/chown.merge.c:11349 */
+#line 11349
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_settime)(clockid_t __clock_id ,
                                                                                                     struct timespec  const  *__tp ) ;
-/* END FUNCTION-DECL-EXTERN clock_settime LOC=./src/chown.merge.c:11345 */
+/* END FUNCTION-DECL-EXTERN clock_settime LOC=./src/chown.merge.c:11349 */
 
-/* BEGIN FUNCTION-DECL-EXTERN group_member LOC=./src/chown.merge.c:11341 */
-#line 11341
+/* BEGIN FUNCTION-DECL-EXTERN group_member LOC=./src/chown.merge.c:11345 */
+#line 11345
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) group_member)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN group_member LOC=./src/chown.merge.c:11341 */
+/* END FUNCTION-DECL-EXTERN group_member LOC=./src/chown.merge.c:11345 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigreturn LOC=./src/chown.merge.c:11350 */
-#line 11350
+/* BEGIN FUNCTION-DECL-EXTERN sigreturn LOC=./src/chown.merge.c:11354 */
+#line 11354
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigreturn)(struct sigcontext *__scp ) ;
-/* END FUNCTION-DECL-EXTERN sigreturn LOC=./src/chown.merge.c:11350 */
+/* END FUNCTION-DECL-EXTERN sigreturn LOC=./src/chown.merge.c:11354 */
 
 /* BEGIN FUNCTION-DECL-EXTERN uid_to_name LOC=UNKNOWN */
 extern char *uid_to_name(uid_t uid )  __attribute__((__returns_nonnull__, __malloc__)) ;
 /* END FUNCTION-DECL-EXTERN uid_to_name LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsuspend LOC=./src/chown.merge.c:11359 */
-#line 11359
+/* BEGIN FUNCTION-DECL-EXTERN sigsuspend LOC=./src/chown.merge.c:11363 */
+#line 11363
 extern int ( __attribute__((__nonnull__(1))) sigsuspend)(sigset_t const   *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigsuspend LOC=./src/chown.merge.c:11359 */
+/* END FUNCTION-DECL-EXTERN sigsuspend LOC=./src/chown.merge.c:11363 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/chown.merge.c:11394 */
-#line 11394
+/* BEGIN FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/chown.merge.c:11398 */
+#line 11398
 extern int ( __attribute__((__nonnull__(1))) sigtimedwait)(sigset_t const   * __restrict  __set ,
                                                            siginfo_t * __restrict  __info ,
                                                            struct timespec  const  * __restrict  __timeout ) ;
-/* END FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/chown.merge.c:11394 */
+/* END FUNCTION-DECL-EXTERN sigtimedwait LOC=./src/chown.merge.c:11398 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _Fork LOC=./src/chown.merge.c:11400 */
-#line 11400
+/* BEGIN FUNCTION-DECL-EXTERN _Fork LOC=./src/chown.merge.c:11404 */
+#line 11404
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) _Fork)(void) ;
-/* END FUNCTION-DECL-EXTERN _Fork LOC=./src/chown.merge.c:11400 */
+/* END FUNCTION-DECL-EXTERN _Fork LOC=./src/chown.merge.c:11404 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ctime LOC=./src/chown.merge.c:11409 */
-#line 11409
+/* BEGIN FUNCTION-DECL-EXTERN ctime LOC=./src/chown.merge.c:11413 */
+#line 11413
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN ctime LOC=./src/chown.merge.c:11409 */
+/* END FUNCTION-DECL-EXTERN ctime LOC=./src/chown.merge.c:11413 */
 
 /* BEGIN ENUM __pid_type LOC=./src/chown.merge.c:10550 */
 #line 10550
@@ -7856,30 +7848,26 @@ enum __pid_type {
    long double __builtin_log10l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=./src/chown.merge.c:11418 */
-#line 11418
-extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN dirfd LOC=./src/chown.merge.c:11418 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_H7TU_argc LOC=UNKNOWN */
-int _TIG_IZ_H7TU_argc ;
-/* END VARIABLE-DECL _TIG_IZ_H7TU_argc LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN getgrent_r LOC=./src/chown.merge.c:11422 */
+/* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=./src/chown.merge.c:11422 */
 #line 11422
+extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
+/* END FUNCTION-DECL-EXTERN dirfd LOC=./src/chown.merge.c:11422 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getgrent_r LOC=./src/chown.merge.c:11426 */
+#line 11426
 extern int getgrent_r(struct group * __restrict  __resultbuf , char * __restrict  __buffer ,
                       size_t __buflen , struct group ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN getgrent_r LOC=./src/chown.merge.c:11422 */
+/* END FUNCTION-DECL-EXTERN getgrent_r LOC=./src/chown.merge.c:11426 */
 
 /* BEGIN FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strcpy(char * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/chown.merge.c:11432 */
-#line 11432
+/* BEGIN FUNCTION-DECL emit_exec_status LOC=./src/chown.merge.c:11436 */
+#line 11436
 __inline static void emit_exec_status(char const   *program ) ;
-/* END FUNCTION-DECL emit_exec_status LOC=./src/chown.merge.c:11432 */
+/* END FUNCTION-DECL emit_exec_status LOC=./src/chown.merge.c:11436 */
 
 /* BEGIN FUNCTION-DECL __builtin_strcspn LOC=BUILTIN */
 /* compiler builtin: 
@@ -7896,70 +7884,70 @@ __inline static void emit_exec_status(char const   *program ) ;
    _Bool __builtin_ssubll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_ssubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/chown.merge.c:11493 */
-#line 11493
+/* BEGIN FUNCTION-DECL-EXTERN mbschr LOC=./src/chown.merge.c:11497 */
+#line 11497
 extern char *( __attribute__((__nonnull__(1))) mbschr)(char const   *string , int c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/chown.merge.c:11493 */
+/* END FUNCTION-DECL-EXTERN mbschr LOC=./src/chown.merge.c:11497 */
 
 /* BEGIN STRUCT-DECL __locale_struct LOC=./src/chown.merge.c:1441 */
 #line 1441
 struct __locale_struct ;
 /* END STRUCT-DECL __locale_struct LOC=./src/chown.merge.c:1441 */
 
-/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/chown.merge.c:11530 */
-#line 11530
-extern void close_stdout_set_ignore_EPIPE(_Bool ignore ) ;
-/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/chown.merge.c:11530 */
-
-/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/chown.merge.c:11534 */
+/* BEGIN FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/chown.merge.c:11534 */
 #line 11534
+extern void close_stdout_set_ignore_EPIPE(_Bool ignore ) ;
+/* END FUNCTION-DECL-EXTERN close_stdout_set_ignore_EPIPE LOC=./src/chown.merge.c:11534 */
+
+/* BEGIN FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/chown.merge.c:11538 */
+#line 11538
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) aligned_alloc)(size_t __alignment ,
                                                                                       size_t __size )  __attribute__((__malloc__,
 __alloc_size__(2), __alloc_align__(1))) ;
-/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/chown.merge.c:11534 */
+/* END FUNCTION-DECL-EXTERN aligned_alloc LOC=./src/chown.merge.c:11538 */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/chown.merge.c:11540 */
-#line 11540
+/* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/chown.merge.c:11544 */
+#line 11544
 extern enum quoting_style get_quoting_style(struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/chown.merge.c:11540 */
+/* END FUNCTION-DECL-EXTERN get_quoting_style LOC=./src/chown.merge.c:11544 */
 
 /* BEGIN FUNCTION-DECL __builtin_return LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_return(void const   * ) ;  */
 /* END FUNCTION-DECL __builtin_return LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion__bounds_786968645 LOC=./src/chown.merge.c:8230 */
-#line 8230 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion__bounds_786968645 LOC=./src/chown.merge.c:8234 */
+#line 8234 "./src/chown.merge.c"
 union __anonunion__bounds_786968645 {
    struct __anonstruct__addr_bnd_5259977 _addr_bnd ;
    __uint32_t _pkey ;
 };
-/* END UNION __anonunion__bounds_786968645 LOC=./src/chown.merge.c:8230 */
+/* END UNION __anonunion__bounds_786968645 LOC=./src/chown.merge.c:8234 */
 
-/* BEGIN STRUCT __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:8237 */
-#line 8237 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:8241 */
+#line 8241 "./src/chown.merge.c"
 struct __anonstruct__sigfault_441813363 {
    void *si_addr ;
    short si_addr_lsb ;
    union __anonunion__bounds_786968645 _bounds ;
 };
-/* END STRUCT __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:8237 */
+/* END STRUCT __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:8241 */
 
-/* BEGIN FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/chown.merge.c:11577 */
-#line 11577
+/* BEGIN FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/chown.merge.c:11581 */
+#line 11581
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) arc4random_buf)(void *__buf ,
                                                                                                       size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/chown.merge.c:11577 */
+/* END FUNCTION-DECL-EXTERN arc4random_buf LOC=./src/chown.merge.c:11581 */
 
 /* BEGIN STRUCT-DECL _fpx_sw_bytes LOC=./src/chown.merge.c:1321 */
 #line 1321
 struct _fpx_sw_bytes ;
 /* END STRUCT-DECL _fpx_sw_bytes LOC=./src/chown.merge.c:1321 */
 
-/* BEGIN TYPEDEF u_long LOC=./src/chown.merge.c:11582 */
-#line 11582 "./src/chown.merge.c"
+/* BEGIN TYPEDEF u_long LOC=./src/chown.merge.c:11586 */
+#line 11586 "./src/chown.merge.c"
 typedef __u_long u_long;
-/* END TYPEDEF u_long LOC=./src/chown.merge.c:11582 */
+/* END TYPEDEF u_long LOC=./src/chown.merge.c:11586 */
 
 /* BEGIN FUNCTION-DECL __builtin_signbit LOC=BUILTIN */
 /* compiler builtin: 
@@ -7975,10 +7963,6 @@ struct group ;
 /* compiler builtin: 
    unsigned __int128 __builtin_extend_pointer(void * ) ;  */
 /* END FUNCTION-DECL __builtin_extend_pointer LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_cZdJ_argc LOC=UNKNOWN */
-int _TIG_IZ_cZdJ_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_cZdJ_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN proper_name LOC=./src/chown.merge.c:11635 */
 #line 11635
@@ -8005,10 +7989,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) settimeofda
 struct _libc_fpxreg ;
 /* END STRUCT-DECL _libc_fpxreg LOC=./src/chown.merge.c:1445 */
 
-/* BEGIN TYPEDEF __int_least8_t LOC=./src/chown.merge.c:7301 */
-#line 7301 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __int_least8_t LOC=./src/chown.merge.c:7305 */
+#line 7305 "./src/chown.merge.c"
 typedef __int8_t __int_least8_t;
-/* END TYPEDEF __int_least8_t LOC=./src/chown.merge.c:7301 */
+/* END TYPEDEF __int_least8_t LOC=./src/chown.merge.c:7305 */
 
 /* BEGIN FUNCTION-DECL-EXTERN version_etc_ar LOC=./src/chown.merge.c:11686 */
 #line 11686
@@ -8262,8 +8246,8 @@ extern  __attribute__((__noreturn__)) void __error_at_line_noreturn(int __status
 extern  __attribute__((__nothrow__, __deprecated__("Use the signal function instead"))) int ( __attribute__((__leaf__)) sigignore)(int __sig ) ;
 /* END FUNCTION-DECL-EXTERN sigignore LOC=./src/chown.merge.c:1730 */
 
-/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/chown.merge.c:1751 */
-#line 1751
+/* BEGIN ENUM __anonenum_1036286214___0 LOC=./src/chown.merge.c:1747 */
+#line 1747
 enum __anonenum_1036286214___0 {
     BUS_ADRALN___0 = 1,
     BUS_ADRERR___0 = 2,
@@ -8271,57 +8255,57 @@ enum __anonenum_1036286214___0 {
     BUS_MCEERR_AR___0 = 4,
     BUS_MCEERR_AO___0 = 5
 } ;
-/* END ENUM __anonenum_1036286214___0 LOC=./src/chown.merge.c:1751 */
+/* END ENUM __anonenum_1036286214___0 LOC=./src/chown.merge.c:1747 */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/chown.merge.c:1769 */
-#line 1769
+/* BEGIN FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/chown.merge.c:1765 */
+#line 1765
 extern void set_custom_quoting(struct quoting_options *o , char const   *left_quote ,
                                char const   *right_quote ) ;
-/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/chown.merge.c:1769 */
+/* END FUNCTION-DECL-EXTERN set_custom_quoting LOC=./src/chown.merge.c:1765 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_ctanhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_ctanhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/chown.merge.c:1787 */
-#line 1787
+/* BEGIN FUNCTION-DECL-EXTERN getloadavg LOC=./src/chown.merge.c:1783 */
+#line 1783
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getloadavg)(double *__loadavg ,
                                                                                                  int __nelem ) ;
-/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/chown.merge.c:1787 */
+/* END FUNCTION-DECL-EXTERN getloadavg LOC=./src/chown.merge.c:1783 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966___0 LOC=./src/chown.merge.c:1205 */
 #line 1205
 enum __anonenum_819735966___0 ;
 /* END ENUM-DECL __anonenum_819735966___0 LOC=./src/chown.merge.c:1205 */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/chown.merge.c:1796 */
-#line 1796
+/* BEGIN FUNCTION-DECL-EXTERN truncate64 LOC=./src/chown.merge.c:1792 */
+#line 1792
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate64)(char const   *__file ,
                                                                                                  __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/chown.merge.c:1796 */
+/* END FUNCTION-DECL-EXTERN truncate64 LOC=./src/chown.merge.c:1792 */
 
 /* BEGIN FUNCTION-DECL __builtin_va_arg_pack LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_va_arg_pack(void) ;  */
 /* END FUNCTION-DECL __builtin_va_arg_pack LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/chown.merge.c:1823 */
-#line 1823
+/* BEGIN FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/chown.merge.c:1819 */
+#line 1819
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) clock_adjtime)(__clockid_t __clock_id ,
                                                                                                     struct timex *__utx ) ;
-/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/chown.merge.c:1823 */
+/* END FUNCTION-DECL-EXTERN clock_adjtime LOC=./src/chown.merge.c:1819 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_casinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/chown.merge.c:1846 */
-#line 1846
+/* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./src/chown.merge.c:1842 */
+#line 1842
 extern void *xmemdup(void const   *p , size_t s )  __attribute__((__returns_nonnull__,
 __malloc__, __alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/chown.merge.c:1846 */
+/* END FUNCTION-DECL-EXTERN xmemdup LOC=./src/chown.merge.c:1842 */
 
 /* BEGIN FUNCTION-DECL __builtin_rintl LOC=BUILTIN */
 /* compiler builtin: 
@@ -8333,8 +8317,8 @@ __malloc__, __alloc_size__(2))) ;
    int __builtin_isfinite(...) ;  */
 /* END FUNCTION-DECL __builtin_isfinite LOC=BUILTIN */
 
-/* BEGIN STRUCT stat LOC=./src/chown.merge.c:1905 */
-#line 1905 "./src/chown.merge.c"
+/* BEGIN STRUCT stat LOC=./src/chown.merge.c:1901 */
+#line 1901 "./src/chown.merge.c"
 struct stat {
    __dev_t st_dev ;
    __ino_t st_ino ;
@@ -8352,10 +8336,10 @@ struct stat {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat LOC=./src/chown.merge.c:1905 */
+/* END STRUCT stat LOC=./src/chown.merge.c:1901 */
 
-/* BEGIN STRUCT _ftsent LOC=./src/chown.merge.c:1933 */
-#line 1933 "./src/chown.merge.c"
+/* BEGIN STRUCT _ftsent LOC=./src/chown.merge.c:1929 */
+#line 1929 "./src/chown.merge.c"
 struct _ftsent {
    struct _ftsent *fts_cycle ;
    struct _ftsent *fts_parent ;
@@ -8377,50 +8361,50 @@ struct _ftsent {
    struct stat fts_statp[1] ;
    char fts_name[] ;
 };
-/* END STRUCT _ftsent LOC=./src/chown.merge.c:1933 */
+/* END STRUCT _ftsent LOC=./src/chown.merge.c:1929 */
 
-/* BEGIN ENUM __anonenum_819735966___0 LOC=./src/chown.merge.c:1962 */
-#line 1962
+/* BEGIN ENUM __anonenum_819735966___0 LOC=./src/chown.merge.c:1958 */
+#line 1958
 enum __anonenum_819735966___0 {
     LOG10_TIMESPEC_HZ___0 = 9
 } ;
-/* END ENUM __anonenum_819735966___0 LOC=./src/chown.merge.c:1962 */
+/* END ENUM __anonenum_819735966___0 LOC=./src/chown.merge.c:1958 */
 
-/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/chown.merge.c:1968 */
-#line 1968 "./src/chown.merge.c"
+/* BEGIN TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/chown.merge.c:1964 */
+#line 1964 "./src/chown.merge.c"
 typedef void (*_gl_function_taking_int_returning_void_t)(int  );
-/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/chown.merge.c:1968 */
+/* END TYPEDEF _gl_function_taking_int_returning_void_t LOC=./src/chown.merge.c:1964 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/chown.merge.c:1972 */
-#line 1972
+/* BEGIN FUNCTION-DECL-EXTERN fileno LOC=./src/chown.merge.c:1968 */
+#line 1968
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno LOC=./src/chown.merge.c:1972 */
+/* END FUNCTION-DECL-EXTERN fileno LOC=./src/chown.merge.c:1968 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/chown.merge.c:1980 */
-#line 1980
+/* BEGIN FUNCTION-DECL-EXTERN vsprintf LOC=./src/chown.merge.c:1976 */
+#line 1976
 extern  __attribute__((__nothrow__)) int vsprintf(char * __restrict  __s , char const   * __restrict  __format ,
                                                   __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/chown.merge.c:1980 */
+/* END FUNCTION-DECL-EXTERN vsprintf LOC=./src/chown.merge.c:1976 */
 
 /* BEGIN ENUM-DECL __anonenum_640648963 LOC=./src/chown.merge.c:929 */
 #line 929
 enum __anonenum_640648963 ;
 /* END ENUM-DECL __anonenum_640648963 LOC=./src/chown.merge.c:929 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/chown.merge.c:1998 */
-#line 1998
+/* BEGIN FUNCTION-DECL-EXTERN getresgid LOC=./src/chown.merge.c:1994 */
+#line 1994
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresgid)(__gid_t *__rgid ,
                                                                                 __gid_t *__egid ,
                                                                                 __gid_t *__sgid ) ;
-/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/chown.merge.c:1998 */
+/* END FUNCTION-DECL-EXTERN getresgid LOC=./src/chown.merge.c:1994 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/chown.merge.c:2004 */
-#line 2004
+/* BEGIN FUNCTION-DECL-EXTERN __assert_fail LOC=./src/chown.merge.c:2000 */
+#line 2000
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) __assert_fail)(char const   *__assertion ,
                                                                                                    char const   *__file ,
                                                                                                    unsigned int __line ,
                                                                                                    char const   *__function )  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/chown.merge.c:2004 */
+/* END FUNCTION-DECL-EXTERN __assert_fail LOC=./src/chown.merge.c:2000 */
 
 /* BEGIN STRUCT-DECL _xstate LOC=./src/chown.merge.c:941 */
 #line 941
@@ -8432,71 +8416,71 @@ struct _xstate ;
    int __builtin_clzs(short  ) ;  */
 /* END FUNCTION-DECL __builtin_clzs LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/chown.merge.c:2055 */
-#line 2055
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/chown.merge.c:2051 */
+#line 2051
 extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_quote ,
                                  char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/chown.merge.c:2055 */
+/* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./src/chown.merge.c:2051 */
 
 /* BEGIN STRUCT-DECL stat LOC=./src/chown.merge.c:1233 */
 #line 1233
 struct stat ;
 /* END STRUCT-DECL stat LOC=./src/chown.merge.c:1233 */
 
-/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/chown.merge.c:2074 */
-#line 2074 "./src/chown.merge.c"
-typedef int volatile   pthread_spinlock_t;
-/* END TYPEDEF pthread_spinlock_t LOC=./src/chown.merge.c:2074 */
-
-/* BEGIN TYPEDEF fd_set LOC=./src/chown.merge.c:2070 */
+/* BEGIN TYPEDEF pthread_spinlock_t LOC=./src/chown.merge.c:2070 */
 #line 2070 "./src/chown.merge.c"
+typedef int volatile   pthread_spinlock_t;
+/* END TYPEDEF pthread_spinlock_t LOC=./src/chown.merge.c:2070 */
+
+/* BEGIN TYPEDEF fd_set LOC=./src/chown.merge.c:2066 */
+#line 2066 "./src/chown.merge.c"
 typedef struct __anonstruct_fd_set_356711149 fd_set;
-/* END TYPEDEF fd_set LOC=./src/chown.merge.c:2070 */
+/* END TYPEDEF fd_set LOC=./src/chown.merge.c:2066 */
 
 /* BEGIN FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_asin(double  ) ;  */
 /* END FUNCTION-DECL __builtin_asin LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/chown.merge.c:2087 */
-#line 2087
+/* BEGIN FUNCTION-DECL-EXTERN rand_r LOC=./src/chown.merge.c:2083 */
+#line 2083
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) rand_r)(unsigned int *__seed ) ;
-/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/chown.merge.c:2087 */
+/* END FUNCTION-DECL-EXTERN rand_r LOC=./src/chown.merge.c:2083 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/chown.merge.c:2103 */
-#line 2103
+/* BEGIN FUNCTION-DECL-EXTERN imaxtostr LOC=./src/chown.merge.c:2099 */
+#line 2099
 extern char *( __attribute__((__warn_unused_result__)) imaxtostr)(intmax_t  , char * ) ;
-/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/chown.merge.c:2103 */
+/* END FUNCTION-DECL-EXTERN imaxtostr LOC=./src/chown.merge.c:2099 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/chown.merge.c:2180 */
-#line 2180
+/* BEGIN FUNCTION-DECL-EXTERN getopt LOC=./src/chown.merge.c:2176 */
+#line 2176
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) getopt)(int ___argc ,
                                                                                                char **___argv ,
                                                                                                char const   *__shortopts ) ;
-/* END FUNCTION-DECL-EXTERN getopt LOC=./src/chown.merge.c:2180 */
+/* END FUNCTION-DECL-EXTERN getopt LOC=./src/chown.merge.c:2176 */
 
-/* BEGIN TYPEDEF fd_mask LOC=./src/chown.merge.c:2203 */
-#line 2203 "./src/chown.merge.c"
+/* BEGIN TYPEDEF fd_mask LOC=./src/chown.merge.c:2199 */
+#line 2199 "./src/chown.merge.c"
 typedef __fd_mask fd_mask;
-/* END TYPEDEF fd_mask LOC=./src/chown.merge.c:2203 */
+/* END TYPEDEF fd_mask LOC=./src/chown.merge.c:2199 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/chown.merge.c:2207 */
-#line 2207
+/* BEGIN FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/chown.merge.c:2203 */
+#line 2203
 extern char const   *quote_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/chown.merge.c:2207 */
+/* END FUNCTION-DECL-EXTERN quote_n_mem LOC=./src/chown.merge.c:2203 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fmaf128(_Float128  , _Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fmaf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/chown.merge.c:2211 */
-#line 2211
+/* BEGIN FUNCTION-DECL-EXTERN rewinddir LOC=./src/chown.merge.c:2207 */
+#line 2207
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) rewinddir)(DIR *__dirp ) ;
-/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/chown.merge.c:2211 */
+/* END FUNCTION-DECL-EXTERN rewinddir LOC=./src/chown.merge.c:2207 */
 
-/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/chown.merge.c:2228 */
-#line 2228
+/* BEGIN ENUM __anonenum_111643124___0 LOC=./src/chown.merge.c:2224 */
+#line 2224
 enum __anonenum_111643124___0 {
     POLL_IN___0 = 1,
     POLL_OUT___0 = 2,
@@ -8505,25 +8489,25 @@ enum __anonenum_111643124___0 {
     POLL_PRI___0 = 5,
     POLL_HUP___0 = 6
 } ;
-/* END ENUM __anonenum_111643124___0 LOC=./src/chown.merge.c:2228 */
+/* END ENUM __anonenum_111643124___0 LOC=./src/chown.merge.c:2224 */
 
-/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/chown.merge.c:2269 */
-#line 2269
+/* BEGIN FUNCTION-DECL-EXTERN _exit LOC=./src/chown.merge.c:2265 */
+#line 2265
 extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
-/* END FUNCTION-DECL-EXTERN _exit LOC=./src/chown.merge.c:2269 */
+/* END FUNCTION-DECL-EXTERN _exit LOC=./src/chown.merge.c:2265 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_coshl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_coshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/chown.merge.c:2262 */
-#line 2262
+/* BEGIN FUNCTION-DECL-EXTERN fstatat LOC=./src/chown.merge.c:2258 */
+#line 2258
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat)(int __fd ,
                                                                                               char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ,
                                                                                               int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/chown.merge.c:2262 */
+/* END FUNCTION-DECL-EXTERN fstatat LOC=./src/chown.merge.c:2258 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2f128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -8535,58 +8519,54 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
    long long __builtin_llrintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_llrintf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/chown.merge.c:2287 */
-#line 2287
+/* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/chown.merge.c:2283 */
+#line 2283
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
-/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/chown.merge.c:2287 */
+/* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./src/chown.merge.c:2283 */
 
 /* BEGIN ENUM-DECL __anonenum_451154152___0 LOC=./src/chown.merge.c:925 */
 #line 925
 enum __anonenum_451154152___0 ;
 /* END ENUM-DECL __anonenum_451154152___0 LOC=./src/chown.merge.c:925 */
 
-/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/chown.merge.c:2296 */
-#line 2296
+/* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=./src/chown.merge.c:2292 */
+#line 2292
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(struct timeval  const  *__delta ,
                                                                               struct timeval *__olddelta ) ;
-/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/chown.merge.c:2296 */
+/* END FUNCTION-DECL-EXTERN adjtime LOC=./src/chown.merge.c:2292 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/chown.merge.c:2301 */
-#line 2301
+/* BEGIN FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/chown.merge.c:2297 */
+#line 2297
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/chown.merge.c:2301 */
+/* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=./src/chown.merge.c:2297 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/chown.merge.c:2314 */
-#line 2314
+/* BEGIN FUNCTION-DECL-EXTERN chown LOC=./src/chown.merge.c:2310 */
+#line 2310
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chown)(char const   *__file ,
                                                                                             __uid_t __owner ,
                                                                                             __gid_t __group ) ;
-/* END FUNCTION-DECL-EXTERN chown LOC=./src/chown.merge.c:2314 */
+/* END FUNCTION-DECL-EXTERN chown LOC=./src/chown.merge.c:2310 */
 
-/* BEGIN STRUCT _xsave_hdr LOC=./src/chown.merge.c:2325 */
-#line 2325 "./src/chown.merge.c"
+/* BEGIN STRUCT _xsave_hdr LOC=./src/chown.merge.c:2321 */
+#line 2321 "./src/chown.merge.c"
 struct _xsave_hdr {
    __uint64_t xstate_bv ;
    __uint64_t __glibc_reserved1[2] ;
    __uint64_t __glibc_reserved2[5] ;
 };
-/* END STRUCT _xsave_hdr LOC=./src/chown.merge.c:2325 */
+/* END STRUCT _xsave_hdr LOC=./src/chown.merge.c:2321 */
 
-/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/chown.merge.c:2337 */
-#line 2337
+/* BEGIN FUNCTION-DECL emit_size_note LOC=./src/chown.merge.c:2333 */
+#line 2333
 __inline static void emit_size_note(void) ;
-/* END FUNCTION-DECL emit_size_note LOC=./src/chown.merge.c:2337 */
+/* END FUNCTION-DECL emit_size_note LOC=./src/chown.merge.c:2333 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/chown.merge.c:2341 */
-#line 2341
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/chown.merge.c:2337 */
+#line 2337
 extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , char const   *arg ,
                               size_t argsize , struct quoting_options  const  *o ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/chown.merge.c:2341 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_H7TU_argv LOC=UNKNOWN */
-char **_TIG_IZ_H7TU_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_H7TU_argv LOC=UNKNOWN */
+/* END FUNCTION-DECL-EXTERN quotearg_buffer LOC=./src/chown.merge.c:2337 */
 
 /* BEGIN STRUCT-DECL _IO_wide_data LOC=./src/chown.merge.c:849 */
 #line 849
@@ -8613,8 +8593,8 @@ struct _IO_wide_data ;
    _Float128 __builtin_copysignf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338 LOC=./src/chown.merge.c:2453 */
-#line 2453
+/* BEGIN ENUM __anonenum_315186338 LOC=./src/chown.merge.c:2449 */
+#line 2449
 enum __anonenum_315186338 {
     _SC_ARG_MAX = 0,
     _SC_CHILD_MAX = 1,
@@ -8834,7 +8814,7 @@ enum __anonenum_315186338 {
     _SC_MINSIGSTKSZ = 249,
     _SC_SIGSTKSZ = 250
 } ;
-/* END ENUM __anonenum_315186338 LOC=./src/chown.merge.c:2453 */
+/* END ENUM __anonenum_315186338 LOC=./src/chown.merge.c:2449 */
 
 /* BEGIN FUNCTION-DECL __builtin_unreachable LOC=BUILTIN */
 /* compiler builtin: 
@@ -8846,60 +8826,60 @@ enum __anonenum_315186338 {
    long __builtin_lroundf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/chown.merge.c:2734 */
-#line 2734
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_style LOC=./src/chown.merge.c:2730 */
+#line 2730
 extern char *quotearg_style(enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/chown.merge.c:2734 */
+/* END FUNCTION-DECL-EXTERN quotearg_style LOC=./src/chown.merge.c:2730 */
 
 /* BEGIN UNION-DECL __anonunion__sifields_48201401 LOC=./src/chown.merge.c:885 */
 #line 885
 union __anonunion__sifields_48201401 ;
 /* END UNION-DECL __anonunion__sifields_48201401 LOC=./src/chown.merge.c:885 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/chown.merge.c:2738 */
-#line 2738
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/chown.merge.c:2734 */
+#line 2734
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r_unlocked)(int category ,
                                                                         char *buf ,
                                                                         size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/chown.merge.c:2738 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./src/chown.merge.c:2734 */
 
 /* BEGIN FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fminl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fminl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrent LOC=./src/chown.merge.c:2782 */
-#line 2782
+/* BEGIN FUNCTION-DECL-EXTERN getgrent LOC=./src/chown.merge.c:2778 */
+#line 2778
 extern struct group *getgrent(void) ;
-/* END FUNCTION-DECL-EXTERN getgrent LOC=./src/chown.merge.c:2782 */
+/* END FUNCTION-DECL-EXTERN getgrent LOC=./src/chown.merge.c:2778 */
 
 /* BEGIN UNION-DECL __anonunion__sigev_un_949988354 LOC=./src/chown.merge.c:1117 */
 #line 1117
 union __anonunion__sigev_un_949988354 ;
 /* END UNION-DECL __anonunion__sigev_un_949988354 LOC=./src/chown.merge.c:1117 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/chown.merge.c:2790 */
-#line 2790
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/chown.merge.c:2786 */
+#line 2786
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_major)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/chown.merge.c:2790 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_major LOC=./src/chown.merge.c:2786 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/chown.merge.c:2798 */
-#line 2798
+/* BEGIN FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/chown.merge.c:2794 */
+#line 2794
 extern int ( __attribute__((__nonnull__(1))) rpl_mknod)(char const   *file , mode_t mode ,
                                                         dev_t dev ) ;
-/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/chown.merge.c:2798 */
+/* END FUNCTION-DECL-EXTERN rpl_mknod LOC=./src/chown.merge.c:2794 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/chown.merge.c:2807 */
-#line 2807
+/* BEGIN FUNCTION-DECL-EXTERN clearenv LOC=./src/chown.merge.c:2803 */
+#line 2803
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) clearenv)(void) ;
-/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/chown.merge.c:2807 */
+/* END FUNCTION-DECL-EXTERN clearenv LOC=./src/chown.merge.c:2803 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/chown.merge.c:2824 */
-#line 2824
+/* BEGIN FUNCTION-DECL-EXTERN vsnprintf LOC=./src/chown.merge.c:2820 */
+#line 2820
 extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size_t __maxlen ,
                                                    char const   * __restrict  __format ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/chown.merge.c:2824 */
+/* END FUNCTION-DECL-EXTERN vsnprintf LOC=./src/chown.merge.c:2820 */
 
 /* BEGIN FUNCTION-DECL __builtin_floor LOC=BUILTIN */
 /* compiler builtin: 
@@ -8911,17 +8891,17 @@ extern  __attribute__((__nothrow__)) int vsnprintf(char * __restrict  __s , size
    long double __builtin_infl(void) ;  */
 /* END FUNCTION-DECL __builtin_infl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/chown.merge.c:2836 */
-#line 2836
+/* BEGIN FUNCTION-DECL-EXTERN erand48 LOC=./src/chown.merge.c:2832 */
+#line 2832
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
-/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/chown.merge.c:2836 */
+/* END FUNCTION-DECL-EXTERN erand48 LOC=./src/chown.merge.c:2832 */
 
-/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/chown.merge.c:2858 */
-#line 2858
+/* BEGIN FUNCTION-DECL-EXTERN wcstoimax LOC=./src/chown.merge.c:2854 */
+#line 2854
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoimax)(__gwchar_t const   * __restrict  __nptr ,
                                                                                      __gwchar_t ** __restrict  __endptr ,
                                                                                      int __base )  __asm__("__isoc23_wcstoimax")  ;
-/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/chown.merge.c:2858 */
+/* END FUNCTION-DECL-EXTERN wcstoimax LOC=./src/chown.merge.c:2854 */
 
 /* BEGIN FUNCTION-DECL __builtin_fprintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -8938,69 +8918,69 @@ extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoi
    int __builtin_strncmp(char const   * , char const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_strncmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/chown.merge.c:2919 */
-#line 2919
+/* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/chown.merge.c:2915 */
+#line 2915
 extern int ( __attribute__((__nonnull__(2))) putc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/chown.merge.c:2919 */
+/* END FUNCTION-DECL-EXTERN putc_unlocked LOC=./src/chown.merge.c:2915 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/chown.merge.c:2932 */
-#line 2932
+/* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=./src/chown.merge.c:2928 */
+#line 2928
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
-/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/chown.merge.c:2932 */
+/* END FUNCTION-DECL-EXTERN vhangup LOC=./src/chown.merge.c:2928 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/chown.merge.c:2950 */
-#line 2950
+/* BEGIN FUNCTION-DECL-EXTERN vscanf LOC=./src/chown.merge.c:2946 */
+#line 2946
 extern int vscanf(char const   * __restrict  __format , __gnuc_va_list __arg )  __asm__("__isoc23_vscanf")  ;
-/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/chown.merge.c:2950 */
+/* END FUNCTION-DECL-EXTERN vscanf LOC=./src/chown.merge.c:2946 */
 
 /* BEGIN FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nanf128(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/chown.merge.c:2963 */
-#line 2963
+/* BEGIN VARIABLE-DECL-EXTERN __environ LOC=./src/chown.merge.c:2959 */
+#line 2959
 extern char **__environ ;
-/* END VARIABLE-DECL-EXTERN __environ LOC=./src/chown.merge.c:2963 */
+/* END VARIABLE-DECL-EXTERN __environ LOC=./src/chown.merge.c:2959 */
 
 /* BEGIN FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_ldexp(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_ldexp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/chown.merge.c:2977 */
-#line 2977
+/* BEGIN FUNCTION-DECL-EXTERN getdtablesize LOC=./src/chown.merge.c:2973 */
+#line 2973
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getdtablesize)(void) ;
-/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/chown.merge.c:2977 */
+/* END FUNCTION-DECL-EXTERN getdtablesize LOC=./src/chown.merge.c:2973 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/chown.merge.c:2967 */
-#line 2967
+/* BEGIN FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/chown.merge.c:2963 */
+#line 2963
 extern int ( __attribute__((__nonnull__(1))) mkostemps64)(char *__template , int __suffixlen ,
                                                           int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/chown.merge.c:2967 */
+/* END FUNCTION-DECL-EXTERN mkostemps64 LOC=./src/chown.merge.c:2963 */
 
 /* BEGIN ENUM-DECL __anonenum_25645747 LOC=./src/chown.merge.c:1025 */
 #line 1025
 enum __anonenum_25645747 ;
 /* END ENUM-DECL __anonenum_25645747 LOC=./src/chown.merge.c:1025 */
 
-/* BEGIN TYPEDEF __rlim64_t LOC=./src/chown.merge.c:2995 */
-#line 2995 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __rlim64_t LOC=./src/chown.merge.c:2991 */
+#line 2991 "./src/chown.merge.c"
 typedef unsigned long __rlim64_t;
-/* END TYPEDEF __rlim64_t LOC=./src/chown.merge.c:2995 */
+/* END TYPEDEF __rlim64_t LOC=./src/chown.merge.c:2991 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/chown.merge.c:3015 */
-#line 3015
+/* BEGIN FUNCTION-DECL-EXTERN memset_explicit LOC=./src/chown.merge.c:3011 */
+#line 3011
 extern void *( __attribute__((__nonnull__(1))) memset_explicit)(void *__dest , int __c ,
                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/chown.merge.c:3015 */
+/* END FUNCTION-DECL-EXTERN memset_explicit LOC=./src/chown.merge.c:3011 */
 
-/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/chown.merge.c:3028 */
-#line 3028
+/* BEGIN FUNCTION-DECL-EXTERN swab LOC=./src/chown.merge.c:3024 */
+#line 3024
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) swab)(void const   * __restrict  __from ,
                                                                                               void * __restrict  __to ,
                                                                                               ssize_t __n ) ;
-/* END FUNCTION-DECL-EXTERN swab LOC=./src/chown.merge.c:3028 */
+/* END FUNCTION-DECL-EXTERN swab LOC=./src/chown.merge.c:3024 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -9013,8 +8993,8 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
    double __builtin_cimag(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimag LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/chown.merge.c:3054 */
-#line 3054
+/* BEGIN ENUM __anonenum_640648963___0 LOC=./src/chown.merge.c:3050 */
+#line 3050
 enum __anonenum_640648963___0 {
     ILL_ILLOPC___0 = 1,
     ILL_ILLOPN___0 = 2,
@@ -9026,29 +9006,29 @@ enum __anonenum_640648963___0 {
     ILL_BADSTK___0 = 8,
     ILL_BADIADDR___0 = 9
 } ;
-/* END ENUM __anonenum_640648963___0 LOC=./src/chown.merge.c:3054 */
+/* END ENUM __anonenum_640648963___0 LOC=./src/chown.merge.c:3050 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_csinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_csinl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __socklen_t LOC=./src/chown.merge.c:3073 */
-#line 3073 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __socklen_t LOC=./src/chown.merge.c:3069 */
+#line 3069 "./src/chown.merge.c"
 typedef unsigned int __socklen_t;
-/* END TYPEDEF __socklen_t LOC=./src/chown.merge.c:3073 */
+/* END TYPEDEF __socklen_t LOC=./src/chown.merge.c:3069 */
 
-/* BEGIN TYPEDEF socklen_t LOC=./src/chown.merge.c:3077 */
-#line 3077 "./src/chown.merge.c"
+/* BEGIN TYPEDEF socklen_t LOC=./src/chown.merge.c:3073 */
+#line 3073 "./src/chown.merge.c"
 typedef __socklen_t socklen_t;
-/* END TYPEDEF socklen_t LOC=./src/chown.merge.c:3077 */
+/* END TYPEDEF socklen_t LOC=./src/chown.merge.c:3073 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/chown.merge.c:3081 */
-#line 3081
+/* BEGIN FUNCTION-DECL-EXTERN memmove LOC=./src/chown.merge.c:3077 */
+#line 3077
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) memmove)(void *__dest ,
                                                                                                   void const   *__src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memmove LOC=./src/chown.merge.c:3081 */
+/* END FUNCTION-DECL-EXTERN memmove LOC=./src/chown.merge.c:3077 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9060,82 +9040,82 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    double __builtin_asinh(double  ) ;  */
 /* END FUNCTION-DECL __builtin_asinh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpwent LOC=./src/chown.merge.c:3120 */
-#line 3120
+/* BEGIN FUNCTION-DECL-EXTERN fgetpwent LOC=./src/chown.merge.c:3116 */
+#line 3116
 extern struct passwd *( __attribute__((__nonnull__(1))) fgetpwent)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetpwent LOC=./src/chown.merge.c:3120 */
+/* END FUNCTION-DECL-EXTERN fgetpwent LOC=./src/chown.merge.c:3116 */
 
 /* BEGIN FUNCTION-DECL __builtin_flt_rounds LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_flt_rounds(void) ;  */
 /* END FUNCTION-DECL __builtin_flt_rounds LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __uint_least8_t LOC=./src/chown.merge.c:3198 */
-#line 3198 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __uint_least8_t LOC=./src/chown.merge.c:3194 */
+#line 3194 "./src/chown.merge.c"
 typedef __uint8_t __uint_least8_t;
-/* END TYPEDEF __uint_least8_t LOC=./src/chown.merge.c:3198 */
+/* END TYPEDEF __uint_least8_t LOC=./src/chown.merge.c:3194 */
 
-/* BEGIN TYPEDEF uint_least8_t LOC=./src/chown.merge.c:3202 */
-#line 3202 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint_least8_t LOC=./src/chown.merge.c:3198 */
+#line 3198 "./src/chown.merge.c"
 typedef __uint_least8_t uint_least8_t;
-/* END TYPEDEF uint_least8_t LOC=./src/chown.merge.c:3202 */
+/* END TYPEDEF uint_least8_t LOC=./src/chown.merge.c:3198 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/chown.merge.c:3225 */
-#line 3225
+/* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=./src/chown.merge.c:3221 */
+#line 3221
 extern size_t ( __attribute__((__nonnull__(4))) fwrite)(void const   * __restrict  __ptr ,
                                                         size_t __size , size_t __n ,
                                                         FILE * __restrict  __s ) ;
-/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/chown.merge.c:3225 */
+/* END FUNCTION-DECL-EXTERN fwrite LOC=./src/chown.merge.c:3221 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/chown.merge.c:3238 */
-#line 3238
+/* BEGIN FUNCTION-DECL-EXTERN pselect LOC=./src/chown.merge.c:3234 */
+#line 3234
 extern int pselect(int __nfds , fd_set * __restrict  __readfds , fd_set * __restrict  __writefds ,
                    fd_set * __restrict  __exceptfds , struct timespec  const  * __restrict  __timeout ,
                    __sigset_t const   * __restrict  __sigmask ) ;
-/* END FUNCTION-DECL-EXTERN pselect LOC=./src/chown.merge.c:3238 */
+/* END FUNCTION-DECL-EXTERN pselect LOC=./src/chown.merge.c:3234 */
 
 /* BEGIN ENUM-DECL __anonenum_111643124___0 LOC=./src/chown.merge.c:1157 */
 #line 1157
 enum __anonenum_111643124___0 ;
 /* END ENUM-DECL __anonenum_111643124___0 LOC=./src/chown.merge.c:1157 */
 
-/* BEGIN TYPEDEF __le32 LOC=./src/chown.merge.c:3299 */
-#line 3299 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __le32 LOC=./src/chown.merge.c:3295 */
+#line 3295 "./src/chown.merge.c"
 typedef __u32 __le32;
-/* END TYPEDEF __le32 LOC=./src/chown.merge.c:3299 */
+/* END TYPEDEF __le32 LOC=./src/chown.merge.c:3295 */
 
-/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/chown.merge.c:3311 */
-#line 3311
+/* BEGIN FUNCTION-DECL-EXTERN usleep LOC=./src/chown.merge.c:3307 */
+#line 3307
 extern int usleep(__useconds_t __useconds ) ;
-/* END FUNCTION-DECL-EXTERN usleep LOC=./src/chown.merge.c:3311 */
+/* END FUNCTION-DECL-EXTERN usleep LOC=./src/chown.merge.c:3307 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/chown.merge.c:3319 */
-#line 3319
+/* BEGIN FUNCTION-DECL-EXTERN bzero LOC=./src/chown.merge.c:3315 */
+#line 3315
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) bzero)(void *__s ,
                                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bzero LOC=./src/chown.merge.c:3319 */
+/* END FUNCTION-DECL-EXTERN bzero LOC=./src/chown.merge.c:3315 */
 
-/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/chown.merge.c:3315 */
-#line 3315
+/* BEGIN FUNCTION-DECL-EXTERN nanosleep LOC=./src/chown.merge.c:3311 */
+#line 3311
 extern int nanosleep(struct timespec  const  *__requested_time , struct timespec *__remaining ) ;
-/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/chown.merge.c:3315 */
+/* END FUNCTION-DECL-EXTERN nanosleep LOC=./src/chown.merge.c:3311 */
 
-/* BEGIN TYPEDEF pthread_once_t LOC=./src/chown.merge.c:3328 */
-#line 3328 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_once_t LOC=./src/chown.merge.c:3324 */
+#line 3324 "./src/chown.merge.c"
 typedef int pthread_once_t;
-/* END TYPEDEF pthread_once_t LOC=./src/chown.merge.c:3328 */
+/* END TYPEDEF pthread_once_t LOC=./src/chown.merge.c:3324 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/chown.merge.c:3336 */
-#line 3336
+/* BEGIN FUNCTION-DECL-EXTERN clearerr LOC=./src/chown.merge.c:3332 */
+#line 3332
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/chown.merge.c:3336 */
+/* END FUNCTION-DECL-EXTERN clearerr LOC=./src/chown.merge.c:3332 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/chown.merge.c:3367 */
-#line 3367
+/* BEGIN FUNCTION-DECL-EXTERN readahead LOC=./src/chown.merge.c:3363 */
+#line 3363
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) readahead)(int __fd ,
                                                                                       __off64_t __offset ,
                                                                                       size_t __count ) ;
-/* END FUNCTION-DECL-EXTERN readahead LOC=./src/chown.merge.c:3367 */
+/* END FUNCTION-DECL-EXTERN readahead LOC=./src/chown.merge.c:3363 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -9157,74 +9137,74 @@ extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) reada
 struct _xsave_hdr ;
 /* END STRUCT-DECL _xsave_hdr LOC=./src/chown.merge.c:1277 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/chown.merge.c:3405 */
-#line 3405
+/* BEGIN FUNCTION-DECL-EXTERN posix_memalign LOC=./src/chown.merge.c:3401 */
+#line 3401
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) posix_memalign)(void **__memptr ,
                                                                                                      size_t __alignment ,
                                                                                                      size_t __size ) ;
-/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/chown.merge.c:3405 */
+/* END FUNCTION-DECL-EXTERN posix_memalign LOC=./src/chown.merge.c:3401 */
 
 /* BEGIN FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_mul_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_mul_overflow LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/chown.merge.c:3416 */
-#line 3416 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_rwlockattr_t LOC=./src/chown.merge.c:3412 */
+#line 3412 "./src/chown.merge.c"
 typedef union __anonunion_pthread_rwlockattr_t_145707745 pthread_rwlockattr_t;
-/* END TYPEDEF pthread_rwlockattr_t LOC=./src/chown.merge.c:3416 */
+/* END TYPEDEF pthread_rwlockattr_t LOC=./src/chown.merge.c:3412 */
 
-/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/chown.merge.c:3420 */
-#line 3420
+/* BEGIN FUNCTION-DECL-EXTERN random LOC=./src/chown.merge.c:3416 */
+#line 3416
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) random)(void) ;
-/* END FUNCTION-DECL-EXTERN random LOC=./src/chown.merge.c:3420 */
+/* END FUNCTION-DECL-EXTERN random LOC=./src/chown.merge.c:3416 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/chown.merge.c:3424 */
-#line 3424
+/* BEGIN FUNCTION-DECL-EXTERN fcloseall LOC=./src/chown.merge.c:3420 */
+#line 3420
 extern int fcloseall(void) ;
-/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/chown.merge.c:3424 */
+/* END FUNCTION-DECL-EXTERN fcloseall LOC=./src/chown.merge.c:3420 */
 
-/* BEGIN TYPEDEF u_int16_t LOC=./src/chown.merge.c:3437 */
-#line 3437 "./src/chown.merge.c"
+/* BEGIN TYPEDEF u_int16_t LOC=./src/chown.merge.c:3433 */
+#line 3433 "./src/chown.merge.c"
 typedef __uint16_t u_int16_t;
-/* END TYPEDEF u_int16_t LOC=./src/chown.merge.c:3437 */
+/* END TYPEDEF u_int16_t LOC=./src/chown.merge.c:3433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/chown.merge.c:3451 */
-#line 3451
+/* BEGIN FUNCTION-DECL-EXTERN gettid LOC=./src/chown.merge.c:3447 */
+#line 3447
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) gettid)(void) ;
-/* END FUNCTION-DECL-EXTERN gettid LOC=./src/chown.merge.c:3451 */
+/* END FUNCTION-DECL-EXTERN gettid LOC=./src/chown.merge.c:3447 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/chown.merge.c:3441 */
-#line 3441
+/* BEGIN FUNCTION-DECL-EXTERN __error_alias LOC=./src/chown.merge.c:3437 */
+#line 3437
 extern void __error_alias(int __status , int __errnum , char const   *__format  , ...)  __asm__("error")  ;
-/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/chown.merge.c:3441 */
+/* END FUNCTION-DECL-EXTERN __error_alias LOC=./src/chown.merge.c:3437 */
 
 /* BEGIN STRUCT-DECL sigaction LOC=./src/chown.merge.c:1457 */
 #line 1457
 struct sigaction ;
 /* END STRUCT-DECL sigaction LOC=./src/chown.merge.c:1457 */
 
-/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/chown.merge.c:3455 */
-#line 3455
+/* BEGIN FUNCTION-DECL-EXTERN flockfile LOC=./src/chown.merge.c:3451 */
+#line 3451
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) flockfile)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/chown.merge.c:3455 */
+/* END FUNCTION-DECL-EXTERN flockfile LOC=./src/chown.merge.c:3451 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/chown.merge.c:3464 */
-#line 3464
+/* BEGIN FUNCTION-DECL-EXTERN memcmp LOC=./src/chown.merge.c:3460 */
+#line 3460
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) memcmp)(void const   *__s1 ,
                                                                                                void const   *__s2 ,
                                                                                                size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/chown.merge.c:3464 */
+/* END FUNCTION-DECL-EXTERN memcmp LOC=./src/chown.merge.c:3460 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_memcpy_inline(void * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcpy_inline LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/chown.merge.c:3470 */
-#line 3470
+/* BEGIN FUNCTION-DECL-EXTERN putenv LOC=./src/chown.merge.c:3466 */
+#line 3466
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) putenv)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN putenv LOC=./src/chown.merge.c:3470 */
+/* END FUNCTION-DECL-EXTERN putenv LOC=./src/chown.merge.c:3466 */
 
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9247,13 +9227,13 @@ union pthread_attr_t ;
    _Complex long double __builtin_cacoshl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/chown.merge.c:3494 */
-#line 3494
+/* BEGIN FUNCTION-DECL-EXTERN strtol_l LOC=./src/chown.merge.c:3490 */
+#line 3490
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __leaf__)) strtol_l)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ,
                                                                                                   int __base ,
                                                                                                   locale_t __loc )  __asm__("__isoc23_strtol_l")  ;
-/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/chown.merge.c:3494 */
+/* END FUNCTION-DECL-EXTERN strtol_l LOC=./src/chown.merge.c:3490 */
 
 /* BEGIN FUNCTION-DECL __builtin_alloca_with_align LOC=BUILTIN */
 /* compiler builtin: 
@@ -9265,18 +9245,18 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1,4), __l
    double __builtin_huge_val(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_val LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/chown.merge.c:3534 */
-#line 3534
+/* BEGIN FUNCTION-DECL-EXTERN version_etc LOC=./src/chown.merge.c:3530 */
+#line 3530
 extern void version_etc(FILE *stream , char const   *command_name , char const   *package ,
                         char const   *version  , ...)  __attribute__((__sentinel__(0))) ;
-/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/chown.merge.c:3534 */
+/* END FUNCTION-DECL-EXTERN version_etc LOC=./src/chown.merge.c:3530 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/chown.merge.c:3551 */
-#line 3551
+/* BEGIN FUNCTION-DECL-EXTERN __mempcpy LOC=./src/chown.merge.c:3547 */
+#line 3547
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __leaf__)) __mempcpy)(void * __restrict  __dest ,
                                                                                                     void const   * __restrict  __src ,
                                                                                                     size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/chown.merge.c:3551 */
+/* END FUNCTION-DECL-EXTERN __mempcpy LOC=./src/chown.merge.c:3547 */
 
 /* BEGIN FUNCTION-DECL __builtin_csin LOC=BUILTIN */
 /* compiler builtin: 
@@ -9288,11 +9268,11 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
    long double __builtin_hypotl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_hypotl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/chown.merge.c:3566 */
-#line 3566
+/* BEGIN FUNCTION-DECL-EXTERN strpbrk LOC=./src/chown.merge.c:3562 */
+#line 3562
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strpbrk)(char const   *__s ,
                                                                                                   char const   *__accept )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/chown.merge.c:3566 */
+/* END FUNCTION-DECL-EXTERN strpbrk LOC=./src/chown.merge.c:3562 */
 
 /* BEGIN FUNCTION-DECL __builtin_ilogbl LOC=BUILTIN */
 /* compiler builtin: 
@@ -9304,31 +9284,31 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
    float __builtin_erff(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erff LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/chown.merge.c:3619 */
-#line 3619
+/* BEGIN FUNCTION-DECL-EXTERN syncfs LOC=./src/chown.merge.c:3615 */
+#line 3615
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) syncfs)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/chown.merge.c:3619 */
+/* END FUNCTION-DECL-EXTERN syncfs LOC=./src/chown.merge.c:3615 */
 
-/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/chown.merge.c:3628 */
-#line 3628 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_barrierattr_t LOC=./src/chown.merge.c:3624 */
+#line 3624 "./src/chown.merge.c"
 typedef union __anonunion_pthread_barrierattr_t_951761806 pthread_barrierattr_t;
-/* END TYPEDEF pthread_barrierattr_t LOC=./src/chown.merge.c:3628 */
+/* END TYPEDEF pthread_barrierattr_t LOC=./src/chown.merge.c:3624 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:1333 */
 #line 1333
 struct __anonstruct__sigfault_441813363 ;
 /* END STRUCT-DECL __anonstruct__sigfault_441813363 LOC=./src/chown.merge.c:1333 */
 
-/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/chown.merge.c:3632 */
-#line 3632
+/* BEGIN FUNCTION-DECL-EXTERN signal LOC=./src/chown.merge.c:3628 */
+#line 3628
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) signal)(int __sig ,
                                                                                         void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN signal LOC=./src/chown.merge.c:3632 */
+/* END FUNCTION-DECL-EXTERN signal LOC=./src/chown.merge.c:3628 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/chown.merge.c:3637 */
-#line 3637
+/* BEGIN FUNCTION-DECL-EXTERN base_name LOC=./src/chown.merge.c:3633 */
+#line 3633
 extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN base_name LOC=./src/chown.merge.c:3637 */
+/* END FUNCTION-DECL-EXTERN base_name LOC=./src/chown.merge.c:3633 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmax LOC=BUILTIN */
 /* compiler builtin: 
@@ -9340,18 +9320,18 @@ extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__,
 struct dirent64 ;
 /* END STRUCT-DECL dirent64 LOC=./src/chown.merge.c:1097 */
 
-/* BEGIN TYPEDEF __le64 LOC=./src/chown.merge.c:3659 */
-#line 3659 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __le64 LOC=./src/chown.merge.c:3655 */
+#line 3655 "./src/chown.merge.c"
 typedef __u64 __le64;
-/* END TYPEDEF __le64 LOC=./src/chown.merge.c:3659 */
+/* END TYPEDEF __le64 LOC=./src/chown.merge.c:3655 */
 
-/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/chown.merge.c:3671 */
-#line 3671
+/* BEGIN VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/chown.merge.c:3667 */
+#line 3667
 extern char const   *quoting_style_args[] ;
-/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/chown.merge.c:3671 */
+/* END VARIABLE-DECL-EXTERN quoting_style_args LOC=./src/chown.merge.c:3667 */
 
-/* BEGIN STRUCT dirent LOC=./src/chown.merge.c:3694 */
-#line 3694 "./src/chown.merge.c"
+/* BEGIN STRUCT dirent LOC=./src/chown.merge.c:3690 */
+#line 3690 "./src/chown.merge.c"
 struct dirent {
    __ino_t d_ino ;
    __off_t d_off ;
@@ -9359,36 +9339,40 @@ struct dirent {
    unsigned char d_type ;
    char d_name[256] ;
 };
-/* END STRUCT dirent LOC=./src/chown.merge.c:3694 */
+/* END STRUCT dirent LOC=./src/chown.merge.c:3690 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/chown.merge.c:3704 */
-#line 3704
+/* BEGIN FUNCTION-DECL-EXTERN strfromf32 LOC=./src/chown.merge.c:3700 */
+#line 3700
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf32)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  float __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/chown.merge.c:3704 */
+/* END FUNCTION-DECL-EXTERN strfromf32 LOC=./src/chown.merge.c:3700 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_atanf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/chown.merge.c:3815 */
-#line 3815
+/* BEGIN FUNCTION-DECL-EXTERN rewind LOC=./src/chown.merge.c:3811 */
+#line 3811
 extern void ( __attribute__((__nonnull__(1))) rewind)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN rewind LOC=./src/chown.merge.c:3815 */
+/* END FUNCTION-DECL-EXTERN rewind LOC=./src/chown.merge.c:3811 */
 
-/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/chown.merge.c:3819 */
-#line 3819
+/* BEGIN FUNCTION-DECL-EXTERN localtime LOC=./src/chown.merge.c:3815 */
+#line 3815
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) localtime)(time_t const   *__timer ) ;
-/* END FUNCTION-DECL-EXTERN localtime LOC=./src/chown.merge.c:3819 */
+/* END FUNCTION-DECL-EXTERN localtime LOC=./src/chown.merge.c:3815 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/chown.merge.c:3823 */
-#line 3823
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/chown.merge.c:3819 */
+#line 3819
 extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __stream ,
                                                         fpos64_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/chown.merge.c:3823 */
+/* END FUNCTION-DECL-EXTERN fgetpos64 LOC=./src/chown.merge.c:3819 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_4bYn_envp LOC=UNKNOWN */
+char **_TIG_IZ_4bYn_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_4bYn_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=./src/chown.merge.c:3828 */
 #line 3828
@@ -10045,18 +10029,22 @@ extern FTSENT *( __attribute__((__warn_unused_result__)) rpl_fts_children)(FTS *
 enum __anonenum_783849514___0 ;
 /* END ENUM-DECL __anonenum_783849514___0 LOC=./src/chown.merge.c:1421 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_4bYn_argv LOC=UNKNOWN */
+char **_TIG_IZ_4bYn_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_4bYn_argv LOC=UNKNOWN */
+
 /* BEGIN STRUCT-DECL I_ring LOC=./src/chown.merge.c:953 */
 #line 953
 struct I_ring ;
 /* END STRUCT-DECL I_ring LOC=./src/chown.merge.c:953 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/chown.merge.c:4992 */
-#line 4992
+/* BEGIN FUNCTION-DECL-EXTERN getumask LOC=./src/chown.merge.c:4996 */
+#line 4996
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
-/* END FUNCTION-DECL-EXTERN getumask LOC=./src/chown.merge.c:4992 */
+/* END FUNCTION-DECL-EXTERN getumask LOC=./src/chown.merge.c:4996 */
 
-/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/chown.merge.c:5004 */
-#line 5004
+/* BEGIN ENUM __anonenum_457704180___0 LOC=./src/chown.merge.c:5008 */
+#line 5008
 enum __anonenum_457704180___0 {
     FPE_INTDIV___0 = 1,
     FPE_INTOVF___0 = 2,
@@ -10069,7 +10057,7 @@ enum __anonenum_457704180___0 {
     FPE_FLTUNK___0 = 14,
     FPE_CONDTRAP___0 = 15
 } ;
-/* END ENUM __anonenum_457704180___0 LOC=./src/chown.merge.c:5004 */
+/* END ENUM __anonenum_457704180___0 LOC=./src/chown.merge.c:5008 */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemmove LOC=BUILTIN */
 /* compiler builtin: 
@@ -10082,83 +10070,83 @@ enum __anonenum_457704180___0 {
    _Float128 __builtin_log10f128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log10f128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/chown.merge.c:5034 */
-#line 5034
+/* BEGIN FUNCTION-DECL-EXTERN __uflow LOC=./src/chown.merge.c:5038 */
+#line 5038
 extern int __uflow(FILE * ) ;
-/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/chown.merge.c:5034 */
+/* END FUNCTION-DECL-EXTERN __uflow LOC=./src/chown.merge.c:5038 */
 
-/* BEGIN TYPEDEF uint_fast16_t LOC=./src/chown.merge.c:5038 */
-#line 5038 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint_fast16_t LOC=./src/chown.merge.c:5042 */
+#line 5042 "./src/chown.merge.c"
 typedef unsigned long uint_fast16_t;
-/* END TYPEDEF uint_fast16_t LOC=./src/chown.merge.c:5038 */
+/* END TYPEDEF uint_fast16_t LOC=./src/chown.merge.c:5042 */
 
-/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/chown.merge.c:5046 */
-#line 5046 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_ssize_t LOC=./src/chown.merge.c:5050 */
+#line 5050 "./src/chown.merge.c"
 typedef __kernel_long_t __kernel_ssize_t;
-/* END TYPEDEF __kernel_ssize_t LOC=./src/chown.merge.c:5046 */
+/* END TYPEDEF __kernel_ssize_t LOC=./src/chown.merge.c:5050 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/chown.merge.c:5062 */
-#line 5062
+/* BEGIN FUNCTION-DECL-EXTERN execveat LOC=./src/chown.merge.c:5066 */
+#line 5066
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __leaf__)) execveat)(int __fd ,
                                                                                                  char const   *__path ,
                                                                                                  char **__argv ,
                                                                                                  char **__envp ,
                                                                                                  int __flags ) ;
-/* END FUNCTION-DECL-EXTERN execveat LOC=./src/chown.merge.c:5062 */
+/* END FUNCTION-DECL-EXTERN execveat LOC=./src/chown.merge.c:5066 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xfts_open LOC=./src/chown.merge.c:5070 */
-#line 5070
+/* BEGIN FUNCTION-DECL-EXTERN xfts_open LOC=./src/chown.merge.c:5074 */
+#line 5074
 extern FTS *( __attribute__((__nonnull__(1))) xfts_open)(char ** , int options , int (*)(FTSENT const   ** ,
                                                                                          FTSENT const   ** ) )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN xfts_open LOC=./src/chown.merge.c:5070 */
+/* END FUNCTION-DECL-EXTERN xfts_open LOC=./src/chown.merge.c:5074 */
 
 /* BEGIN FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_umul_overflow(unsigned int const    , unsigned int const    , unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_umul_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/chown.merge.c:5101 */
-#line 5101
+/* BEGIN FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/chown.merge.c:5105 */
+#line 5105
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) explicit_bzero)(void *__s ,
                                                                                                       size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/chown.merge.c:5101 */
+/* END FUNCTION-DECL-EXTERN explicit_bzero LOC=./src/chown.merge.c:5105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/chown.merge.c:5106 */
-#line 5106
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/chown.merge.c:5110 */
+#line 5110
 extern char *quotearg_alloc(char const   *arg , size_t argsize , struct quoting_options  const  *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
-/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/chown.merge.c:5106 */
+/* END FUNCTION-DECL-EXTERN quotearg_alloc LOC=./src/chown.merge.c:5110 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/chown.merge.c:5133 */
-#line 5133
+/* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=./src/chown.merge.c:5137 */
+#line 5137
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64)(char *__dest ,
                                                                                                  size_t __size ,
                                                                                                  char const   *__format ,
                                                                                                  double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/chown.merge.c:5133 */
+/* END FUNCTION-DECL-EXTERN strfromf64 LOC=./src/chown.merge.c:5137 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/chown.merge.c:5145 */
-#line 5145
+/* BEGIN FUNCTION-DECL-EXTERN mkfifo LOC=./src/chown.merge.c:5149 */
+#line 5149
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) mkfifo)(char const   *__path ,
                                                                                              __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/chown.merge.c:5145 */
+/* END FUNCTION-DECL-EXTERN mkfifo LOC=./src/chown.merge.c:5149 */
 
 /* BEGIN FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_prefetch(void const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_prefetch LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint64_t LOC=./src/chown.merge.c:5155 */
-#line 5155 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint64_t LOC=./src/chown.merge.c:5159 */
+#line 5159 "./src/chown.merge.c"
 typedef __uint64_t uint64_t;
-/* END TYPEDEF uint64_t LOC=./src/chown.merge.c:5155 */
+/* END TYPEDEF uint64_t LOC=./src/chown.merge.c:5159 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/chown.merge.c:5167 */
-#line 5167
+/* BEGIN FUNCTION-DECL-EXTERN strcasestr LOC=./src/chown.merge.c:5171 */
+#line 5171
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcasestr)(char const   *__haystack ,
                                                                                                      char const   *__needle )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/chown.merge.c:5167 */
+/* END FUNCTION-DECL-EXTERN strcasestr LOC=./src/chown.merge.c:5171 */
 
 /* BEGIN FUNCTION-DECL __builtin_mempcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -10170,108 +10158,112 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
    int __builtin_clrsbl(long  ) ;  */
 /* END FUNCTION-DECL __builtin_clrsbl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/chown.merge.c:5172 */
-#line 5172
+/* BEGIN FUNCTION-DECL-EXTERN getchar LOC=./src/chown.merge.c:5176 */
+#line 5176
 extern int getchar(void) ;
-/* END FUNCTION-DECL-EXTERN getchar LOC=./src/chown.merge.c:5172 */
+/* END FUNCTION-DECL-EXTERN getchar LOC=./src/chown.merge.c:5176 */
 
-/* BEGIN ENUM __anonenum_288797321 LOC=./src/chown.merge.c:5192 */
-#line 5192
+/* BEGIN VARIABLE-DEF _TIG_IZ_VsJE_envp LOC=UNKNOWN */
+char **_TIG_IZ_VsJE_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_VsJE_envp LOC=UNKNOWN */
+
+/* BEGIN ENUM __anonenum_288797321 LOC=./src/chown.merge.c:5196 */
+#line 5196
 enum __anonenum_288797321 {
     EXIT_TIMEDOUT = 124,
     EXIT_CANCELED = 125,
     EXIT_CANNOT_INVOKE = 126,
     EXIT_ENOENT = 127
 } ;
-/* END ENUM __anonenum_288797321 LOC=./src/chown.merge.c:5192 */
+/* END ENUM __anonenum_288797321 LOC=./src/chown.merge.c:5196 */
 
 /* BEGIN FUNCTION-DECL lchownat LOC=UNKNOWN */
 __inline int lchownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
 /* END FUNCTION-DECL lchownat LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/chown.merge.c:5215 */
-#line 5215
+/* BEGIN FUNCTION-DECL-EXTERN isatty LOC=./src/chown.merge.c:5219 */
+#line 5219
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isatty)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN isatty LOC=./src/chown.merge.c:5215 */
+/* END FUNCTION-DECL-EXTERN isatty LOC=./src/chown.merge.c:5219 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/chown.merge.c:5225 */
-#line 5225
+/* BEGIN FUNCTION-DECL-EXTERN dir_len LOC=./src/chown.merge.c:5229 */
+#line 5229
 extern size_t dir_len(char const   *file )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/chown.merge.c:5225 */
+/* END FUNCTION-DECL-EXTERN dir_len LOC=./src/chown.merge.c:5229 */
 
-/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/chown.merge.c:5233 */
-#line 5233
+/* BEGIN FUNCTION-DECL-EXTERN seekdir LOC=./src/chown.merge.c:5237 */
+#line 5237
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) seekdir)(DIR *__dirp ,
                                                                                                long __pos ) ;
-/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/chown.merge.c:5233 */
+/* END FUNCTION-DECL-EXTERN seekdir LOC=./src/chown.merge.c:5237 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/chown.merge.c:5238 */
-#line 5238
+/* BEGIN FUNCTION-DECL-EXTERN getdents64 LOC=./src/chown.merge.c:5242 */
+#line 5242
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2), __leaf__)) getdents64)(int __fd ,
                                                                                                        void *__buffer ,
                                                                                                        size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/chown.merge.c:5238 */
+/* END FUNCTION-DECL-EXTERN getdents64 LOC=./src/chown.merge.c:5242 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/chown.merge.c:5261 */
-#line 5261
+/* BEGIN FUNCTION-DECL-EXTERN atol LOC=./src/chown.merge.c:5265 */
+#line 5265
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) atol)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atol LOC=./src/chown.merge.c:5261 */
+/* END FUNCTION-DECL-EXTERN atol LOC=./src/chown.merge.c:5265 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/chown.merge.c:5291 */
-#line 5291
-extern int ( __attribute__((__nonnull__(1))) mkstemps)(char *__template , int __suffixlen ) ;
-/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/chown.merge.c:5291 */
-
-/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/chown.merge.c:5295 */
+/* BEGIN FUNCTION-DECL-EXTERN mkstemps LOC=./src/chown.merge.c:5295 */
 #line 5295
+extern int ( __attribute__((__nonnull__(1))) mkstemps)(char *__template , int __suffixlen ) ;
+/* END FUNCTION-DECL-EXTERN mkstemps LOC=./src/chown.merge.c:5295 */
+
+/* BEGIN FUNCTION-DECL-EXTERN seed48_r LOC=./src/chown.merge.c:5299 */
+#line 5299
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) seed48_r)(unsigned short *__seed16v ,
                                                                                                  struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/chown.merge.c:5295 */
+/* END FUNCTION-DECL-EXTERN seed48_r LOC=./src/chown.merge.c:5299 */
 
 /* BEGIN FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_saddll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/chown.merge.c:5309 */
-#line 5309
+/* BEGIN FUNCTION-DECL-EXTERN freopen64 LOC=./src/chown.merge.c:5313 */
+#line 5313
 extern FILE *( __attribute__((__nonnull__(3))) freopen64)(char const   * __restrict  __filename ,
                                                           char const   * __restrict  __modes ,
                                                           FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/chown.merge.c:5309 */
+/* END FUNCTION-DECL-EXTERN freopen64 LOC=./src/chown.merge.c:5313 */
 
 /* BEGIN ENUM-DECL __anonenum_23175539 LOC=./src/chown.merge.c:897 */
 #line 897
 enum __anonenum_23175539 ;
 /* END ENUM-DECL __anonenum_23175539 LOC=./src/chown.merge.c:897 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/chown.merge.c:5315 */
-#line 5315
+/* BEGIN FUNCTION-DECL-EXTERN fseeko LOC=./src/chown.merge.c:5319 */
+#line 5319
 extern int ( __attribute__((__nonnull__(1))) fseeko)(FILE *__stream , __off_t __off ,
                                                      int __whence ) ;
-/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/chown.merge.c:5315 */
+/* END FUNCTION-DECL-EXTERN fseeko LOC=./src/chown.merge.c:5319 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/chown.merge.c:5334 */
-#line 5334
+/* BEGIN FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/chown.merge.c:5338 */
+#line 5338
 extern size_t ( __attribute__((__nonnull__(4))) fwrite_unlocked)(void const   * __restrict  __ptr ,
                                                                  size_t __size , size_t __n ,
                                                                  FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/chown.merge.c:5334 */
+/* END FUNCTION-DECL-EXTERN fwrite_unlocked LOC=./src/chown.merge.c:5338 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/chown.merge.c:5329 */
-#line 5329
+/* BEGIN FUNCTION-DECL-EXTERN strcat LOC=./src/chown.merge.c:5333 */
+#line 5333
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcat)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcat LOC=./src/chown.merge.c:5329 */
+/* END FUNCTION-DECL-EXTERN strcat LOC=./src/chown.merge.c:5333 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/chown.merge.c:5340 */
-#line 5340
+/* BEGIN FUNCTION-DECL-EXTERN dgettext LOC=./src/chown.merge.c:5344 */
+#line 5344
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dgettext)(char const   *__domainname ,
                                                                                  char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/chown.merge.c:5340 */
+/* END FUNCTION-DECL-EXTERN dgettext LOC=./src/chown.merge.c:5344 */
 
-/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/chown.merge.c:5349 */
-#line 5349
+/* BEGIN ENUM __anonenum_437032235___0 LOC=./src/chown.merge.c:5353 */
+#line 5353
 enum __anonenum_437032235___0 {
     _PC_LINK_MAX___0 = 0,
     _PC_MAX_CANON___0 = 1,
@@ -10295,38 +10287,38 @@ enum __anonenum_437032235___0 {
     _PC_SYMLINK_MAX___0 = 19,
     _PC_2_SYMLINKS___0 = 20
 } ;
-/* END ENUM __anonenum_437032235___0 LOC=./src/chown.merge.c:5349 */
+/* END ENUM __anonenum_437032235___0 LOC=./src/chown.merge.c:5353 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/chown.merge.c:5375 */
-#line 5375
+/* BEGIN FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/chown.merge.c:5379 */
+#line 5379
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) __memcmpeq)(void const   *__s1 ,
                                                                                                    void const   *__s2 ,
                                                                                                    size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/chown.merge.c:5375 */
+/* END FUNCTION-DECL-EXTERN __memcmpeq LOC=./src/chown.merge.c:5379 */
 
-/* BEGIN FUNCTION-DECL chmodat LOC=./src/chown.merge.c:5381 */
-#line 5381
+/* BEGIN FUNCTION-DECL chmodat LOC=./src/chown.merge.c:5385 */
+#line 5385
 __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
-/* END FUNCTION-DECL chmodat LOC=./src/chown.merge.c:5381 */
+/* END FUNCTION-DECL chmodat LOC=./src/chown.merge.c:5385 */
 
-/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/chown.merge.c:5389 */
-#line 5389 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_sighandler_t LOC=./src/chown.merge.c:5393 */
+#line 5393 "./src/chown.merge.c"
 typedef void (*__kernel_sighandler_t)(int  );
-/* END TYPEDEF __kernel_sighandler_t LOC=./src/chown.merge.c:5389 */
+/* END TYPEDEF __kernel_sighandler_t LOC=./src/chown.merge.c:5393 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/chown.merge.c:5403 */
-#line 5403
+/* BEGIN FUNCTION-DECL-EXTERN ssignal LOC=./src/chown.merge.c:5407 */
+#line 5407
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) ssignal)(int __sig ,
                                                                                          void (*__handler)(int  ) ) ;
-/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/chown.merge.c:5403 */
+/* END FUNCTION-DECL-EXTERN ssignal LOC=./src/chown.merge.c:5407 */
 
 /* BEGIN FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_remquof(float  , float  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_remquof LOC=BUILTIN */
 
-/* BEGIN STRUCT flock64 LOC=./src/chown.merge.c:5423 */
-#line 5423 "./src/chown.merge.c"
+/* BEGIN STRUCT flock64 LOC=./src/chown.merge.c:5427 */
+#line 5427 "./src/chown.merge.c"
 struct flock64 {
    short l_type ;
    short l_whence ;
@@ -10334,7 +10326,7 @@ struct flock64 {
    __off64_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock64 LOC=./src/chown.merge.c:5423 */
+/* END STRUCT flock64 LOC=./src/chown.merge.c:5427 */
 
 /* BEGIN ENUM-DECL __anonenum_606700034___0 LOC=./src/chown.merge.c:1089 */
 #line 1089
@@ -10351,78 +10343,78 @@ enum __anonenum_606700034___0 ;
    float __builtin_nextafterf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_nextafterf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/chown.merge.c:5447 */
-#line 5447
+/* BEGIN VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/chown.merge.c:5451 */
+#line 5451
 extern char *program_invocation_name ;
-/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/chown.merge.c:5447 */
+/* END VARIABLE-DECL-EXTERN program_invocation_name LOC=./src/chown.merge.c:5451 */
 
-/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/chown.merge.c:5443 */
-#line 5443
+/* BEGIN VARIABLE-DECL-EXTERN optind LOC=./src/chown.merge.c:5447 */
+#line 5447
 extern int optind ;
-/* END VARIABLE-DECL-EXTERN optind LOC=./src/chown.merge.c:5443 */
+/* END VARIABLE-DECL-EXTERN optind LOC=./src/chown.merge.c:5447 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_nearbyintl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_nearbyintl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN endpwent LOC=./src/chown.merge.c:5461 */
-#line 5461
+/* BEGIN FUNCTION-DECL-EXTERN endpwent LOC=./src/chown.merge.c:5465 */
+#line 5465
 extern void endpwent(void) ;
-/* END FUNCTION-DECL-EXTERN endpwent LOC=./src/chown.merge.c:5461 */
+/* END FUNCTION-DECL-EXTERN endpwent LOC=./src/chown.merge.c:5465 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_roundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_roundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/chown.merge.c:5491 */
-#line 5491
+/* BEGIN FUNCTION-DECL-EXTERN strncmp LOC=./src/chown.merge.c:5495 */
+#line 5495
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncmp)(char const   *__s1 ,
                                                                                                 char const   *__s2 ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/chown.merge.c:5491 */
+/* END FUNCTION-DECL-EXTERN strncmp LOC=./src/chown.merge.c:5495 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_casinhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_casinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/chown.merge.c:5519 */
-#line 5519
+/* BEGIN FUNCTION-DECL-EXTERN ecvt LOC=./src/chown.merge.c:5523 */
+#line 5523
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3,4), __leaf__)) ecvt)(double __value ,
                                                                                                int __ndigit ,
                                                                                                int * __restrict  __decpt ,
                                                                                                int * __restrict  __sign ) ;
-/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/chown.merge.c:5519 */
+/* END FUNCTION-DECL-EXTERN ecvt LOC=./src/chown.merge.c:5523 */
 
-/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/chown.merge.c:5531 */
-#line 5531
+/* BEGIN VARIABLE-DECL-EXTERN opterr LOC=./src/chown.merge.c:5535 */
+#line 5535
 extern int opterr ;
-/* END VARIABLE-DECL-EXTERN opterr LOC=./src/chown.merge.c:5531 */
+/* END VARIABLE-DECL-EXTERN opterr LOC=./src/chown.merge.c:5535 */
 
-/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/chown.merge.c:5540 */
-#line 5540
+/* BEGIN ENUM __anonenum_230064777___0 LOC=./src/chown.merge.c:5544 */
+#line 5544
 enum __anonenum_230064777___0 {
     LOG10_TIMESPEC_RESOLUTION___0 = 9
 } ;
-/* END ENUM __anonenum_230064777___0 LOC=./src/chown.merge.c:5540 */
+/* END ENUM __anonenum_230064777___0 LOC=./src/chown.merge.c:5544 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/chown.merge.c:5550 */
-#line 5550
+/* BEGIN FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/chown.merge.c:5554 */
+#line 5554
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) fileno_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/chown.merge.c:5550 */
+/* END FUNCTION-DECL-EXTERN fileno_unlocked LOC=./src/chown.merge.c:5554 */
 
 /* BEGIN STRUCT-DECL dirent LOC=./src/chown.merge.c:1149 */
 #line 1149
 struct dirent ;
 /* END STRUCT-DECL dirent LOC=./src/chown.merge.c:1149 */
 
-/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/chown.merge.c:5568 */
-#line 5568
+/* BEGIN FUNCTION-DECL-EXTERN siginterrupt LOC=./src/chown.merge.c:5572 */
+#line 5572
 extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTART instead"))) int ( __attribute__((__leaf__)) siginterrupt)(int __sig ,
                                                                                                                                             int __interrupt ) ;
-/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/chown.merge.c:5568 */
+/* END FUNCTION-DECL-EXTERN siginterrupt LOC=./src/chown.merge.c:5572 */
 
 /* BEGIN ENUM-DECL __anonenum_825626741 LOC=./src/chown.merge.c:1393 */
 #line 1393
@@ -10443,21 +10435,25 @@ __inline static char *timetostr(time_t t , char *buf ) ;
 enum __anonenum_852341087 ;
 /* END ENUM-DECL __anonenum_852341087 LOC=./src/chown.merge.c:1369 */
 
-/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/chown.merge.c:5652 */
-#line 5652
+/* BEGIN VARIABLE-DECL-EXTERN tzname LOC=./src/chown.merge.c:5656 */
+#line 5656
 extern char *tzname[2] ;
-/* END VARIABLE-DECL-EXTERN tzname LOC=./src/chown.merge.c:5652 */
+/* END VARIABLE-DECL-EXTERN tzname LOC=./src/chown.merge.c:5656 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/chown.merge.c:1065 */
 #line 1065
 union __anonunion_pthread_condattr_t_488594145 ;
 /* END UNION-DECL __anonunion_pthread_condattr_t_488594145 LOC=./src/chown.merge.c:1065 */
 
-/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/chown.merge.c:5656 */
-#line 5656
+/* BEGIN FUNCTION-DECL-EXTERN execvp LOC=./src/chown.merge.c:5660 */
+#line 5660
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvp)(char const   *__file ,
                                                                                                char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execvp LOC=./src/chown.merge.c:5656 */
+/* END FUNCTION-DECL-EXTERN execvp LOC=./src/chown.merge.c:5660 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_VsJE_argv LOC=UNKNOWN */
+char **_TIG_IZ_VsJE_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_VsJE_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sin LOC=BUILTIN */
 /* compiler builtin: 
@@ -10479,109 +10475,109 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    long double __builtin_remainderl(long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_remainderl LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/chown.merge.c:5686 */
-#line 5686 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion____missing_field_name_501150464 LOC=./src/chown.merge.c:5690 */
+#line 5690 "./src/chown.merge.c"
 union __anonunion____missing_field_name_501150464 {
    struct _fpstate *fpstate ;
    __uint64_t __fpstate_word ;
 };
-/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/chown.merge.c:5686 */
+/* END UNION __anonunion____missing_field_name_501150464 LOC=./src/chown.merge.c:5690 */
 
 /* BEGIN UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:1429 */
 #line 1429
 union __anonunion_pthread_mutex_t_335460617 ;
 /* END UNION-DECL __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:1429 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/chown.merge.c:5702 */
-#line 5702
+/* BEGIN FUNCTION-DECL-EXTERN atexit LOC=./src/chown.merge.c:5706 */
+#line 5706
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atexit)(void (*__func)(void) ) ;
-/* END FUNCTION-DECL-EXTERN atexit LOC=./src/chown.merge.c:5702 */
+/* END FUNCTION-DECL-EXTERN atexit LOC=./src/chown.merge.c:5706 */
 
-/* BEGIN TYPEDEF __u_quad_t LOC=./src/chown.merge.c:5706 */
-#line 5706 "./src/chown.merge.c"
-typedef unsigned long __u_quad_t;
-/* END TYPEDEF __u_quad_t LOC=./src/chown.merge.c:5706 */
-
-/* BEGIN TYPEDEF u_quad_t LOC=./src/chown.merge.c:5710 */
+/* BEGIN TYPEDEF __u_quad_t LOC=./src/chown.merge.c:5710 */
 #line 5710 "./src/chown.merge.c"
-typedef __u_quad_t u_quad_t;
-/* END TYPEDEF u_quad_t LOC=./src/chown.merge.c:5710 */
+typedef unsigned long __u_quad_t;
+/* END TYPEDEF __u_quad_t LOC=./src/chown.merge.c:5710 */
 
-/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/chown.merge.c:5714 */
-#line 5714
+/* BEGIN TYPEDEF u_quad_t LOC=./src/chown.merge.c:5714 */
+#line 5714 "./src/chown.merge.c"
+typedef __u_quad_t u_quad_t;
+/* END TYPEDEF u_quad_t LOC=./src/chown.merge.c:5714 */
+
+/* BEGIN FUNCTION-DECL emit_ancillary_info LOC=./src/chown.merge.c:5718 */
+#line 5718
 __inline static void emit_ancillary_info(char const   *program ) ;
-/* END FUNCTION-DECL emit_ancillary_info LOC=./src/chown.merge.c:5714 */
+/* END FUNCTION-DECL emit_ancillary_info LOC=./src/chown.merge.c:5718 */
 
 /* BEGIN FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_cpowl(_Complex long double  , _Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cpowl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/chown.merge.c:5738 */
-#line 5738
+/* BEGIN FUNCTION-DECL-EXTERN __dcgettext LOC=./src/chown.merge.c:5742 */
+#line 5742
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dcgettext)(char const   *__domainname ,
                                                                                     char const   *__msgid ,
                                                                                     int __category )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/chown.merge.c:5738 */
+/* END FUNCTION-DECL-EXTERN __dcgettext LOC=./src/chown.merge.c:5742 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/chown.merge.c:5718 */
-#line 5718
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp LOC=./src/chown.merge.c:5722 */
+#line 5722
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strncasecmp)(char const   *__s1 ,
                                                                                                     char const   *__s2 ,
                                                                                                     size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/chown.merge.c:5718 */
+/* END FUNCTION-DECL-EXTERN strncasecmp LOC=./src/chown.merge.c:5722 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/chown.merge.c:5749 */
-#line 5749
+/* BEGIN FUNCTION-DECL-EXTERN getdate_r LOC=./src/chown.merge.c:5753 */
+#line 5753
 extern int getdate_r(char const   * __restrict  __string , struct tm * __restrict  __resbufp ) ;
-/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/chown.merge.c:5749 */
+/* END FUNCTION-DECL-EXTERN getdate_r LOC=./src/chown.merge.c:5753 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/chown.merge.c:5763 */
-#line 5763
+/* BEGIN FUNCTION-DECL-EXTERN ttyname_r LOC=./src/chown.merge.c:5767 */
+#line 5767
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ttyname_r)(int __fd ,
                                                                                                 char *__buf ,
                                                                                                 size_t __buflen ) ;
-/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/chown.merge.c:5763 */
+/* END FUNCTION-DECL-EXTERN ttyname_r LOC=./src/chown.merge.c:5767 */
 
 /* BEGIN FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_islessgreater(...) ;  */
 /* END FUNCTION-DECL __builtin_islessgreater LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/chown.merge.c:5769 */
-#line 5769
+/* BEGIN FUNCTION-DECL-EXTERN xnmalloc LOC=./src/chown.merge.c:5773 */
+#line 5773
 extern void *xnmalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/chown.merge.c:5769 */
+/* END FUNCTION-DECL-EXTERN xnmalloc LOC=./src/chown.merge.c:5773 */
 
-/* BEGIN UNION pthread_attr_t LOC=./src/chown.merge.c:5784 */
-#line 5784 "./src/chown.merge.c"
+/* BEGIN UNION pthread_attr_t LOC=./src/chown.merge.c:5788 */
+#line 5788 "./src/chown.merge.c"
 union pthread_attr_t {
    char __size[56] ;
    long __align ;
 };
-/* END UNION pthread_attr_t LOC=./src/chown.merge.c:5784 */
+/* END UNION pthread_attr_t LOC=./src/chown.merge.c:5788 */
 
 /* BEGIN FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_clog(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_clog LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/chown.merge.c:5802 */
-#line 5802
+/* BEGIN FUNCTION-DECL-EXTERN strnlen LOC=./src/chown.merge.c:5806 */
+#line 5806
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __leaf__)) strnlen)(char const   *__string ,
                                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/chown.merge.c:5802 */
+/* END FUNCTION-DECL-EXTERN strnlen LOC=./src/chown.merge.c:5806 */
 
-/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/chown.merge.c:5822 */
-#line 5822
+/* BEGIN FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/chown.merge.c:5826 */
+#line 5826
 extern  __attribute__((__noreturn__)) void openat_save_fail(int  ) ;
-/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/chown.merge.c:5822 */
+/* END FUNCTION-DECL-EXTERN openat_save_fail LOC=./src/chown.merge.c:5826 */
 
-/* BEGIN TYPEDEF u_int32_t LOC=./src/chown.merge.c:5826 */
-#line 5826 "./src/chown.merge.c"
+/* BEGIN TYPEDEF u_int32_t LOC=./src/chown.merge.c:5830 */
+#line 5830 "./src/chown.merge.c"
 typedef __uint32_t u_int32_t;
-/* END TYPEDEF u_int32_t LOC=./src/chown.merge.c:5826 */
+/* END TYPEDEF u_int32_t LOC=./src/chown.merge.c:5830 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10589,36 +10585,36 @@ typedef __uint32_t u_int32_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_maxps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/chown.merge.c:5845 */
-#line 5845
+/* BEGIN FUNCTION-DECL-EXTERN fopen LOC=./src/chown.merge.c:5849 */
+#line 5849
 extern FILE *fopen(char const   * __restrict  __filename , char const   * __restrict  __modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopen LOC=./src/chown.merge.c:5845 */
+/* END FUNCTION-DECL-EXTERN fopen LOC=./src/chown.merge.c:5849 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetgrent LOC=./src/chown.merge.c:5830 */
-#line 5830
+/* BEGIN FUNCTION-DECL-EXTERN fgetgrent LOC=./src/chown.merge.c:5834 */
+#line 5834
 extern struct group *fgetgrent(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetgrent LOC=./src/chown.merge.c:5830 */
+/* END FUNCTION-DECL-EXTERN fgetgrent LOC=./src/chown.merge.c:5834 */
 
 /* BEGIN FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_snprintf(char * , unsigned long long  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_snprintf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/chown.merge.c:5849 */
-#line 5849
+/* BEGIN FUNCTION-DECL-EXTERN truncate LOC=./src/chown.merge.c:5853 */
+#line 5853
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) truncate)(char const   *__file ,
                                                                                                __off_t __length ) ;
-/* END FUNCTION-DECL-EXTERN truncate LOC=./src/chown.merge.c:5849 */
+/* END FUNCTION-DECL-EXTERN truncate LOC=./src/chown.merge.c:5853 */
 
 /* BEGIN ENUM-DECL Change_status LOC=./src/chown.merge.c:1349 */
 #line 1349
 enum Change_status ;
 /* END ENUM-DECL Change_status LOC=./src/chown.merge.c:1349 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/chown.merge.c:5859 */
-#line 5859
+/* BEGIN FUNCTION-DECL-EXTERN mkdtemp LOC=./src/chown.merge.c:5863 */
+#line 5863
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) mkdtemp)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/chown.merge.c:5859 */
+/* END FUNCTION-DECL-EXTERN mkdtemp LOC=./src/chown.merge.c:5863 */
 
 /* BEGIN FUNCTION-DECL __builtin___memmove_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -10630,10 +10626,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
    long double __builtin_acoshl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_acoshl LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __thrd_t LOC=./src/chown.merge.c:5887 */
-#line 5887 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __thrd_t LOC=./src/chown.merge.c:5891 */
+#line 5891 "./src/chown.merge.c"
 typedef unsigned long __thrd_t;
-/* END TYPEDEF __thrd_t LOC=./src/chown.merge.c:5887 */
+/* END TYPEDEF __thrd_t LOC=./src/chown.merge.c:5891 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfc LOC=BUILTIN */
 /* compiler builtin: 
@@ -10645,29 +10641,29 @@ typedef unsigned long __thrd_t;
 enum __anonenum_556971655 ;
 /* END ENUM-DECL __anonenum_556971655 LOC=./src/chown.merge.c:1213 */
 
-/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/chown.merge.c:5905 */
-#line 5905
+/* BEGIN FUNCTION-DECL-EXTERN atof LOC=./src/chown.merge.c:5909 */
+#line 5909
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) atof)(char const   *__nptr )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN atof LOC=./src/chown.merge.c:5905 */
+/* END FUNCTION-DECL-EXTERN atof LOC=./src/chown.merge.c:5909 */
 
 /* BEGIN ENUM-DECL __anonenum_57186863___0 LOC=./src/chown.merge.c:1377 */
 #line 1377
 enum __anonenum_57186863___0 ;
 /* END ENUM-DECL __anonenum_57186863___0 LOC=./src/chown.merge.c:1377 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/chown.merge.c:5945 */
-#line 5945
+/* BEGIN FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/chown.merge.c:5949 */
+#line 5949
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) bind_textdomain_codeset)(char const   *__domainname ,
                                                                                                 char const   *__codeset ) ;
-/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/chown.merge.c:5945 */
+/* END FUNCTION-DECL-EXTERN bind_textdomain_codeset LOC=./src/chown.merge.c:5949 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_sinl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_sinl LOC=BUILTIN */
 
-/* BEGIN STRUCT stat64 LOC=./src/chown.merge.c:5955 */
-#line 5955 "./src/chown.merge.c"
+/* BEGIN STRUCT stat64 LOC=./src/chown.merge.c:5959 */
+#line 5959 "./src/chown.merge.c"
 struct stat64 {
    __dev_t st_dev ;
    __ino64_t st_ino ;
@@ -10685,27 +10681,31 @@ struct stat64 {
    struct timespec st_ctim ;
    __syscall_slong_t __glibc_reserved[3] ;
 };
-/* END STRUCT stat64 LOC=./src/chown.merge.c:5955 */
+/* END STRUCT stat64 LOC=./src/chown.merge.c:5959 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalbnf(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/chown.merge.c:5986 */
-#line 5986
+/* BEGIN FUNCTION-DECL-EXTERN set_program_name LOC=./src/chown.merge.c:5990 */
+#line 5990
 extern void set_program_name(char const   *argv0 ) ;
-/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/chown.merge.c:5986 */
+/* END FUNCTION-DECL-EXTERN set_program_name LOC=./src/chown.merge.c:5990 */
 
-/* BEGIN FUNCTION-DECL bad_cast LOC=./src/chown.merge.c:5994 */
-#line 5994
+/* BEGIN VARIABLE-DEF _TIG_IZ_4bYn_argc LOC=UNKNOWN */
+int _TIG_IZ_4bYn_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_4bYn_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL bad_cast LOC=./src/chown.merge.c:6002 */
+#line 6002
 __inline static char *bad_cast(char const   *s ) ;
-/* END FUNCTION-DECL bad_cast LOC=./src/chown.merge.c:5994 */
+/* END FUNCTION-DECL bad_cast LOC=./src/chown.merge.c:6002 */
 
-/* BEGIN TYPEDEF int_fast64_t LOC=./src/chown.merge.c:6015 */
-#line 6015 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_fast64_t LOC=./src/chown.merge.c:6023 */
+#line 6023 "./src/chown.merge.c"
 typedef long int_fast64_t;
-/* END TYPEDEF int_fast64_t LOC=./src/chown.merge.c:6015 */
+/* END TYPEDEF int_fast64_t LOC=./src/chown.merge.c:6023 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 /* compiler builtin: 
@@ -10713,17 +10713,17 @@ typedef long int_fast64_t;
                                                                         float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_mulps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/chown.merge.c:6044 */
-#line 6044
+/* BEGIN FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/chown.merge.c:6052 */
+#line 6052
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ftruncate64)(int __fd ,
                                                                                   __off64_t __length ) ;
-/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/chown.merge.c:6044 */
+/* END FUNCTION-DECL-EXTERN ftruncate64 LOC=./src/chown.merge.c:6052 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/chown.merge.c:6038 */
-#line 6038
+/* BEGIN FUNCTION-DECL-EXTERN vasprintf LOC=./src/chown.merge.c:6046 */
+#line 6046
 extern  __attribute__((__nothrow__)) int vasprintf(char ** __restrict  __ptr , char const   * __restrict  __f ,
                                                    __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/chown.merge.c:6038 */
+/* END FUNCTION-DECL-EXTERN vasprintf LOC=./src/chown.merge.c:6046 */
 
 /* BEGIN FUNCTION-DECL __builtin_nansl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10740,21 +10740,21 @@ extern  __attribute__((__nothrow__)) int vasprintf(char ** __restrict  __ptr , c
    int __builtin_parityl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_parityl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/chown.merge.c:6081 */
-#line 6081
+/* BEGIN FUNCTION-DECL-EXTERN getc LOC=./src/chown.merge.c:6089 */
+#line 6089
 extern int ( __attribute__((__nonnull__(1))) getc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc LOC=./src/chown.merge.c:6081 */
+/* END FUNCTION-DECL-EXTERN getc LOC=./src/chown.merge.c:6089 */
 
-/* BEGIN FUNCTION-DECL-EXTERN get_root_dev_ino LOC=./src/chown.merge.c:6105 */
-#line 6105
+/* BEGIN FUNCTION-DECL-EXTERN get_root_dev_ino LOC=./src/chown.merge.c:6113 */
+#line 6113
 extern struct dev_ino *( __attribute__((__nonnull__)) get_root_dev_ino)(struct dev_ino *root_d_i ) ;
-/* END FUNCTION-DECL-EXTERN get_root_dev_ino LOC=./src/chown.merge.c:6105 */
+/* END FUNCTION-DECL-EXTERN get_root_dev_ino LOC=./src/chown.merge.c:6113 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/chown.merge.c:6109 */
-#line 6109
+/* BEGIN FUNCTION-DECL-EXTERN fdopen LOC=./src/chown.merge.c:6117 */
+#line 6117
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(int __fd ,
                                                                                char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/chown.merge.c:6109 */
+/* END FUNCTION-DECL-EXTERN fdopen LOC=./src/chown.merge.c:6117 */
 
 /* BEGIN FUNCTION-DECL __builtin_strlen LOC=BUILTIN */
 /* compiler builtin: 
@@ -10766,13 +10766,13 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(i
    float __builtin_log1pf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/chown.merge.c:6124 */
-#line 6124
+/* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=./src/chown.merge.c:6132 */
+#line 6132
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime_l)(char const   * __restrict  __s ,
                                                                                    char const   * __restrict  __fmt ,
                                                                                    struct tm *__tp ,
                                                                                    locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/chown.merge.c:6124 */
+/* END FUNCTION-DECL-EXTERN strptime_l LOC=./src/chown.merge.c:6132 */
 
 /* BEGIN ENUM-DECL __anonenum_1026560180 LOC=./src/chown.merge.c:1253 */
 #line 1253
@@ -10784,15 +10784,15 @@ enum __anonenum_1026560180 ;
 struct __anonstruct___fsid_t_109580352 ;
 /* END STRUCT-DECL __anonstruct___fsid_t_109580352 LOC=./src/chown.merge.c:1289 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/chown.merge.c:6158 */
-#line 6158
+/* BEGIN FUNCTION-DECL-EXTERN lseek LOC=./src/chown.merge.c:6166 */
+#line 6166
 extern  __attribute__((__nothrow__)) __off_t ( __attribute__((__leaf__)) lseek)(int __fd ,
                                                                                 __off_t __offset ,
                                                                                 int __whence ) ;
-/* END FUNCTION-DECL-EXTERN lseek LOC=./src/chown.merge.c:6158 */
+/* END FUNCTION-DECL-EXTERN lseek LOC=./src/chown.merge.c:6166 */
 
-/* BEGIN ENUM __anonenum_556971655 LOC=./src/chown.merge.c:6164 */
-#line 6164
+/* BEGIN ENUM __anonenum_556971655 LOC=./src/chown.merge.c:6172 */
+#line 6172
 enum __anonenum_556971655 {
     SI_ASYNCNL = -60,
     SI_DETHREAD = -7,
@@ -10805,7 +10805,7 @@ enum __anonenum_556971655 {
     SI_USER = 0,
     SI_KERNEL = 128
 } ;
-/* END ENUM __anonenum_556971655 LOC=./src/chown.merge.c:6164 */
+/* END ENUM __anonenum_556971655 LOC=./src/chown.merge.c:6172 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalblnf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -10818,35 +10818,35 @@ enum __anonenum_556971655 {
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_uaddll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/chown.merge.c:6190 */
-#line 6190
+/* BEGIN FUNCTION-DECL-EXTERN strcpy LOC=./src/chown.merge.c:6198 */
+#line 6198
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/chown.merge.c:6190 */
+/* END FUNCTION-DECL-EXTERN strcpy LOC=./src/chown.merge.c:6198 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/chown.merge.c:6195 */
-#line 6195
+/* BEGIN FUNCTION-DECL-EXTERN getpt LOC=./src/chown.merge.c:6203 */
+#line 6203
 extern int getpt(void) ;
-/* END FUNCTION-DECL-EXTERN getpt LOC=./src/chown.merge.c:6195 */
+/* END FUNCTION-DECL-EXTERN getpt LOC=./src/chown.merge.c:6203 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/chown.merge.c:6199 */
-#line 6199
+/* BEGIN FUNCTION-DECL-EXTERN strfry LOC=./src/chown.merge.c:6207 */
+#line 6207
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strfry)(char *__string ) ;
-/* END FUNCTION-DECL-EXTERN strfry LOC=./src/chown.merge.c:6199 */
+/* END FUNCTION-DECL-EXTERN strfry LOC=./src/chown.merge.c:6207 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/chown.merge.c:6229 */
-#line 6229
+/* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=./src/chown.merge.c:6237 */
+#line 6237
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) fpathconf)(int __fd ,
                                                                                  int __name ) ;
-/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/chown.merge.c:6229 */
+/* END FUNCTION-DECL-EXTERN fpathconf LOC=./src/chown.merge.c:6237 */
 
-/* BEGIN STRUCT itimerval LOC=./src/chown.merge.c:6234 */
-#line 6234 "./src/chown.merge.c"
+/* BEGIN STRUCT itimerval LOC=./src/chown.merge.c:6242 */
+#line 6242 "./src/chown.merge.c"
 struct itimerval {
    struct timeval it_interval ;
    struct timeval it_value ;
 };
-/* END STRUCT itimerval LOC=./src/chown.merge.c:6234 */
+/* END STRUCT itimerval LOC=./src/chown.merge.c:6242 */
 
 /* BEGIN FUNCTION-DECL __builtin_ctzs LOC=BUILTIN */
 /* compiler builtin: 
@@ -10858,80 +10858,80 @@ struct itimerval {
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/chown.merge.c:6259 */
-#line 6259
+/* BEGIN FUNCTION-DECL-EXTERN getuid LOC=./src/chown.merge.c:6267 */
+#line 6267
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)(void) ;
-/* END FUNCTION-DECL-EXTERN getuid LOC=./src/chown.merge.c:6259 */
+/* END FUNCTION-DECL-EXTERN getuid LOC=./src/chown.merge.c:6267 */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_log1pf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_log1pf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/chown.merge.c:6316 */
-#line 6316
+/* BEGIN FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/chown.merge.c:6324 */
+#line 6324
 extern int set_char_quoting(struct quoting_options *o , char c , int i ) ;
-/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/chown.merge.c:6316 */
+/* END FUNCTION-DECL-EXTERN set_char_quoting LOC=./src/chown.merge.c:6324 */
 
 /* BEGIN FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_truncl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/chown.merge.c:6312 */
-#line 6312
-extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/chown.merge.c:6312 */
-
-/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/chown.merge.c:6320 */
+/* BEGIN FUNCTION-DECL-EXTERN pread64 LOC=./src/chown.merge.c:6320 */
 #line 6320
+extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __offset ) ;
+/* END FUNCTION-DECL-EXTERN pread64 LOC=./src/chown.merge.c:6320 */
+
+/* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=./src/chown.merge.c:6328 */
+#line 6328
 extern  __attribute__((__nothrow__)) int obstack_printf(struct obstack * __restrict  __obstack ,
                                                         char const   * __restrict  __format 
                                                         , ...) ;
-/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/chown.merge.c:6320 */
+/* END FUNCTION-DECL-EXTERN obstack_printf LOC=./src/chown.merge.c:6328 */
 
 /* BEGIN FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isgreaterequal(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/chown.merge.c:6331 */
-#line 6331
+/* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=./src/chown.merge.c:6339 */
+#line 6339
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencookie)(void * __restrict  __magic_cookie ,
                                                                                     char const   * __restrict  __modes ,
                                                                                     cookie_io_functions_t __io_funcs )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/chown.merge.c:6331 */
+/* END FUNCTION-DECL-EXTERN fopencookie LOC=./src/chown.merge.c:6339 */
 
-/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/chown.merge.c:6351 */
-#line 6351
+/* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=./src/chown.merge.c:6359 */
+#line 6359
 extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/chown.merge.c:6351 */
+/* END FUNCTION-DECL-EXTERN psiginfo LOC=./src/chown.merge.c:6359 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_lgammal(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/chown.merge.c:6371 */
-#line 6371
+/* BEGIN FUNCTION-DECL-EXTERN gmtime_r LOC=./src/chown.merge.c:6379 */
+#line 6379
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime_r)(time_t const   * __restrict  __timer ,
                                                                                       struct tm * __restrict  __tp ) ;
-/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/chown.merge.c:6371 */
+/* END FUNCTION-DECL-EXTERN gmtime_r LOC=./src/chown.merge.c:6379 */
 
 /* BEGIN STRUCT-DECL _libc_fpstate LOC=./src/chown.merge.c:1041 */
 #line 1041
 struct _libc_fpstate ;
 /* END STRUCT-DECL _libc_fpstate LOC=./src/chown.merge.c:1041 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/chown.merge.c:6385 */
-#line 6385
+/* BEGIN FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/chown.merge.c:6393 */
+#line 6393
 extern int ( __attribute__((__nonnull__(1))) getc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/chown.merge.c:6385 */
+/* END FUNCTION-DECL-EXTERN getc_unlocked LOC=./src/chown.merge.c:6393 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/chown.merge.c:6376 */
-#line 6376
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/chown.merge.c:6384 */
+#line 6384
 extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/chown.merge.c:6376 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_mem LOC=./src/chown.merge.c:6384 */
 
 /* BEGIN FUNCTION-DECL __builtin_smul_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -10958,15 +10958,15 @@ extern char *quotearg_n_mem(int n , char const   *arg , size_t argsize ) ;
    double __builtin_copysign(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysign LOC=BUILTIN */
 
-/* BEGIN TYPEDEF clock_t LOC=./src/chown.merge.c:6448 */
-#line 6448 "./src/chown.merge.c"
+/* BEGIN TYPEDEF clock_t LOC=./src/chown.merge.c:6456 */
+#line 6456 "./src/chown.merge.c"
 typedef __clock_t clock_t;
-/* END TYPEDEF clock_t LOC=./src/chown.merge.c:6448 */
+/* END TYPEDEF clock_t LOC=./src/chown.merge.c:6456 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/chown.merge.c:6452 */
-#line 6452
+/* BEGIN FUNCTION-DECL-EXTERN clock LOC=./src/chown.merge.c:6460 */
+#line 6460
 extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(void) ;
-/* END FUNCTION-DECL-EXTERN clock LOC=./src/chown.merge.c:6452 */
+/* END FUNCTION-DECL-EXTERN clock LOC=./src/chown.merge.c:6460 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10983,21 +10983,21 @@ extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(
    void __builtin_complex(...) ;  */
 /* END FUNCTION-DECL __builtin_complex LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/chown.merge.c:6523 */
-#line 6523
+/* BEGIN FUNCTION-DECL-EXTERN mblen LOC=./src/chown.merge.c:6531 */
+#line 6531
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mblen)(char const   *__s ,
                                                                             size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mblen LOC=./src/chown.merge.c:6523 */
+/* END FUNCTION-DECL-EXTERN mblen LOC=./src/chown.merge.c:6531 */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isinf_sign(...) ;  */
 /* END FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/chown.merge.c:6539 */
-#line 6539
+/* BEGIN FUNCTION-DECL-EXTERN xrealloc LOC=./src/chown.merge.c:6547 */
+#line 6547
 extern void *xrealloc(void *p , size_t s )  __attribute__((__alloc_size__(2))) ;
-/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/chown.merge.c:6539 */
+/* END FUNCTION-DECL-EXTERN xrealloc LOC=./src/chown.merge.c:6547 */
 
 /* BEGIN ENUM-DECL __itimer_which LOC=./src/chown.merge.c:1417 */
 #line 1417
@@ -11014,8 +11014,8 @@ enum __itimer_which ;
    long double __builtin_ceill(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceill LOC=BUILTIN */
 
-/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/chown.merge.c:6575 */
-#line 6575 "./src/chown.merge.c"
+/* BEGIN STRUCT _fpx_sw_bytes LOC=./src/chown.merge.c:6583 */
+#line 6583 "./src/chown.merge.c"
 struct _fpx_sw_bytes {
    __uint32_t magic1 ;
    __uint32_t extended_size ;
@@ -11023,39 +11023,39 @@ struct _fpx_sw_bytes {
    __uint32_t xstate_size ;
    __uint32_t __glibc_reserved1[7] ;
 };
-/* END STRUCT _fpx_sw_bytes LOC=./src/chown.merge.c:6575 */
+/* END STRUCT _fpx_sw_bytes LOC=./src/chown.merge.c:6583 */
 
-/* BEGIN TYPEDEF __s128 LOC=./src/chown.merge.c:6590 */
-#line 6590 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __s128 LOC=./src/chown.merge.c:6598 */
+#line 6598 "./src/chown.merge.c"
 typedef __int128 __attribute__((__aligned__(16)))  __s128;
-/* END TYPEDEF __s128 LOC=./src/chown.merge.c:6590 */
+/* END TYPEDEF __s128 LOC=./src/chown.merge.c:6598 */
 
 /* BEGIN STRUCT-DECL _xmmreg LOC=./src/chown.merge.c:957 */
 #line 957
 struct _xmmreg ;
 /* END STRUCT-DECL _xmmreg LOC=./src/chown.merge.c:957 */
 
-/* BEGIN TYPEDEF sig_t LOC=./src/chown.merge.c:6609 */
-#line 6609 "./src/chown.merge.c"
+/* BEGIN TYPEDEF sig_t LOC=./src/chown.merge.c:6617 */
+#line 6617 "./src/chown.merge.c"
 typedef void (*sig_t)(int  );
-/* END TYPEDEF sig_t LOC=./src/chown.merge.c:6609 */
+/* END TYPEDEF sig_t LOC=./src/chown.merge.c:6617 */
 
-/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/chown.merge.c:6618 */
-#line 6618
+/* BEGIN FUNCTION-DECL-EXTERN base_len LOC=./src/chown.merge.c:6626 */
+#line 6626
 extern size_t base_len(char const   *filename )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN base_len LOC=./src/chown.merge.c:6618 */
+/* END FUNCTION-DECL-EXTERN base_len LOC=./src/chown.merge.c:6626 */
 
-/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/chown.merge.c:6631 */
-#line 6631
+/* BEGIN FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/chown.merge.c:6639 */
+#line 6639
 extern  __attribute__((__nothrow__)) int obstack_vprintf(struct obstack * __restrict  __obstack ,
                                                          char const   * __restrict  __format ,
                                                          __gnuc_va_list __args ) ;
-/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/chown.merge.c:6631 */
+/* END FUNCTION-DECL-EXTERN obstack_vprintf LOC=./src/chown.merge.c:6639 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/chown.merge.c:6622 */
-#line 6622
+/* BEGIN FUNCTION-DECL-EXTERN getentropy LOC=./src/chown.merge.c:6630 */
+#line 6630
 extern int getentropy(void *__buffer , size_t __length ) ;
-/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/chown.merge.c:6622 */
+/* END FUNCTION-DECL-EXTERN getentropy LOC=./src/chown.merge.c:6630 */
 
 /* BEGIN ENUM-DECL __anonenum_850350928___0 LOC=./src/chown.merge.c:1281 */
 #line 1281
@@ -11072,53 +11072,57 @@ enum __anonenum_850350928___0 ;
 struct __anonstruct_div_t_773697287 ;
 /* END STRUCT-DECL __anonstruct_div_t_773697287 LOC=./src/chown.merge.c:1313 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/chown.merge.c:6693 */
-#line 6693
+/* BEGIN FUNCTION-DECL-EXTERN setdomainname LOC=./src/chown.merge.c:6701 */
+#line 6701
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) setdomainname)(char const   *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/chown.merge.c:6693 */
+/* END FUNCTION-DECL-EXTERN setdomainname LOC=./src/chown.merge.c:6701 */
 
 /* BEGIN STRUCT-DECL drand48_data LOC=./src/chown.merge.c:1353 */
 #line 1353
 struct drand48_data ;
 /* END STRUCT-DECL drand48_data LOC=./src/chown.merge.c:1353 */
 
-/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/chown.merge.c:6698 */
-#line 6698 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_uid_t LOC=./src/chown.merge.c:6706 */
+#line 6706 "./src/chown.merge.c"
 typedef unsigned int __kernel_uid_t;
-/* END TYPEDEF __kernel_uid_t LOC=./src/chown.merge.c:6698 */
+/* END TYPEDEF __kernel_uid_t LOC=./src/chown.merge.c:6706 */
 
-/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/chown.merge.c:6713 */
-#line 6713
+/* BEGIN FUNCTION-DECL-EXTERN umask LOC=./src/chown.merge.c:6721 */
+#line 6721
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) umask)(__mode_t __mask ) ;
-/* END FUNCTION-DECL-EXTERN umask LOC=./src/chown.merge.c:6713 */
+/* END FUNCTION-DECL-EXTERN umask LOC=./src/chown.merge.c:6721 */
 
-/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/chown.merge.c:6727 */
-#line 6727
+/* BEGIN FUNCTION-DECL-EXTERN drand48_r LOC=./src/chown.merge.c:6735 */
+#line 6735
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) drand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   double * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/chown.merge.c:6727 */
+/* END FUNCTION-DECL-EXTERN drand48_r LOC=./src/chown.merge.c:6735 */
 
-/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/chown.merge.c:6745 */
-#line 6745
+/* BEGIN VARIABLE-DEF _TIG_IZ_VsJE_argc LOC=UNKNOWN */
+int _TIG_IZ_VsJE_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_VsJE_argc LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN valloc LOC=./src/chown.merge.c:6753 */
+#line 6753
 extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) valloc)(size_t __size )  __attribute__((__malloc__,
 __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN valloc LOC=./src/chown.merge.c:6745 */
+/* END FUNCTION-DECL-EXTERN valloc LOC=./src/chown.merge.c:6753 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/chown.merge.c:6750 */
-#line 6750
+/* BEGIN FUNCTION-DECL-EXTERN sigsetmask LOC=./src/chown.merge.c:6758 */
+#line 6758
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigsetmask)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/chown.merge.c:6750 */
+/* END FUNCTION-DECL-EXTERN sigsetmask LOC=./src/chown.merge.c:6758 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/chown.merge.c:6761 */
-#line 6761
+/* BEGIN FUNCTION-DECL-EXTERN ecvt_r LOC=./src/chown.merge.c:6769 */
+#line 6769
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) ecvt_r)(double __value ,
                                                                                                  int __ndigit ,
                                                                                                  int * __restrict  __decpt ,
                                                                                                  int * __restrict  __sign ,
                                                                                                  char * __restrict  __buf ,
                                                                                                  size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/chown.merge.c:6761 */
+/* END FUNCTION-DECL-EXTERN ecvt_r LOC=./src/chown.merge.c:6769 */
 
 /* BEGIN FUNCTION-DECL __builtin_cos LOC=BUILTIN */
 /* compiler builtin: 
@@ -11135,20 +11139,20 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __
 enum __anonenum_424050557 ;
 /* END ENUM-DECL __anonenum_424050557 LOC=./src/chown.merge.c:1141 */
 
-/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/chown.merge.c:6792 */
-#line 6792
+/* BEGIN FUNCTION-DECL-EXTERN bcopy LOC=./src/chown.merge.c:6800 */
+#line 6800
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __leaf__)) bcopy)(void const   *__src ,
                                                                                                void *__dest ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/chown.merge.c:6792 */
+/* END FUNCTION-DECL-EXTERN bcopy LOC=./src/chown.merge.c:6800 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/chown.merge.c:6784 */
-#line 6784
+/* BEGIN FUNCTION-DECL-EXTERN rmdir LOC=./src/chown.merge.c:6792 */
+#line 6792
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) rmdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/chown.merge.c:6784 */
+/* END FUNCTION-DECL-EXTERN rmdir LOC=./src/chown.merge.c:6792 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_4bYn_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DEF chown_mode LOC=UNKNOWN */
@@ -11160,59 +11164,59 @@ int chown_mode  ;
    double __builtin_sqrt(double  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/chown.merge.c:6816 */
-#line 6816
+/* BEGIN FUNCTION-DECL-EXTERN futimesat LOC=./src/chown.merge.c:6824 */
+#line 6824
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(int __fd ,
                                                                                 char const   *__file ,
                                                                                 struct timeval  const  *__tvp ) ;
-/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/chown.merge.c:6816 */
+/* END FUNCTION-DECL-EXTERN futimesat LOC=./src/chown.merge.c:6824 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/chown.merge.c:6838 */
-#line 6838
+/* BEGIN FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/chown.merge.c:6846 */
+#line 6846
 extern int ( __attribute__((__nonnull__(1))) mkstemp64)(char *__template ) ;
-/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/chown.merge.c:6838 */
+/* END FUNCTION-DECL-EXTERN mkstemp64 LOC=./src/chown.merge.c:6846 */
 
 /* BEGIN STRUCT-DECL _G_fpos64_t LOC=./src/chown.merge.c:989 */
 #line 989
 struct _G_fpos64_t ;
 /* END STRUCT-DECL _G_fpos64_t LOC=./src/chown.merge.c:989 */
 
-/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/chown.merge.c:6842 */
-#line 6842
+/* BEGIN VARIABLE-DECL-EXTERN stdin LOC=./src/chown.merge.c:6850 */
+#line 6850
 extern FILE *stdin ;
-/* END VARIABLE-DECL-EXTERN stdin LOC=./src/chown.merge.c:6842 */
+/* END VARIABLE-DECL-EXTERN stdin LOC=./src/chown.merge.c:6850 */
 
-/* BEGIN TYPEDEF __kernel_key_t LOC=./src/chown.merge.c:6850 */
-#line 6850 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_key_t LOC=./src/chown.merge.c:6858 */
+#line 6858 "./src/chown.merge.c"
 typedef int __kernel_key_t;
-/* END TYPEDEF __kernel_key_t LOC=./src/chown.merge.c:6850 */
+/* END TYPEDEF __kernel_key_t LOC=./src/chown.merge.c:6858 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/chown.merge.c:6854 */
-#line 6854
+/* BEGIN FUNCTION-DECL-EXTERN __dgettext LOC=./src/chown.merge.c:6862 */
+#line 6862
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) __dgettext)(char const   *__domainname ,
                                                                                    char const   *__msgid )  __attribute__((__format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/chown.merge.c:6854 */
+/* END FUNCTION-DECL-EXTERN __dgettext LOC=./src/chown.merge.c:6862 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/chown.merge.c:6874 */
-#line 6874
+/* BEGIN FUNCTION-DECL-EXTERN unlockpt LOC=./src/chown.merge.c:6882 */
+#line 6882
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) unlockpt)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/chown.merge.c:6874 */
+/* END FUNCTION-DECL-EXTERN unlockpt LOC=./src/chown.merge.c:6882 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_tgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_tgammaf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/chown.merge.c:6897 */
-#line 6897
+/* BEGIN FUNCTION-DECL-EXTERN pthread_kill LOC=./src/chown.merge.c:6905 */
+#line 6905
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_kill)(pthread_t __threadid ,
                                                                                    int __signo ) ;
-/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/chown.merge.c:6897 */
+/* END FUNCTION-DECL-EXTERN pthread_kill LOC=./src/chown.merge.c:6905 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/chown.merge.c:6893 */
-#line 6893
+/* BEGIN FUNCTION-DECL-EXTERN fcntl64 LOC=./src/chown.merge.c:6901 */
+#line 6901
 extern int fcntl64(int __fd , int __cmd  , ...) ;
-/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/chown.merge.c:6893 */
+/* END FUNCTION-DECL-EXTERN fcntl64 LOC=./src/chown.merge.c:6901 */
 
 /* BEGIN FUNCTION-DECL __builtin_strstr LOC=BUILTIN */
 /* compiler builtin: 
@@ -11225,6 +11229,10 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
                                       unsigned long long const    , unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_addcll LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_4bYn_argc LOC=UNKNOWN */
+int _TIG_IZ_4bYn_argc ;
+/* END VARIABLE-DECL _TIG_IZ_4bYn_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_atanhf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_atanhf128(_Float128  ) ;  */
@@ -11235,30 +11243,30 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
    float __builtin_cosf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/chown.merge.c:6946 */
-#line 6946
+/* BEGIN VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/chown.merge.c:6958 */
+#line 6958
 extern int error_one_per_line ;
-/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/chown.merge.c:6946 */
+/* END VARIABLE-DECL-EXTERN error_one_per_line LOC=./src/chown.merge.c:6958 */
 
 /* BEGIN STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:1257 */
 #line 1257
 struct __anonstruct__sigsys_1029881407 ;
 /* END STRUCT-DECL __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:1257 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/chown.merge.c:6995 */
-#line 6995
+/* BEGIN FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/chown.merge.c:7007 */
+#line 7007
 extern int fflush_unlocked(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/chown.merge.c:6995 */
+/* END FUNCTION-DECL-EXTERN fflush_unlocked LOC=./src/chown.merge.c:7007 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned char __builtin_rotateright8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateright8 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/chown.merge.c:7004 */
-#line 7004
+/* BEGIN FUNCTION-DECL-EXTERN srandom LOC=./src/chown.merge.c:7016 */
+#line 7016
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srandom)(unsigned int __seed ) ;
-/* END FUNCTION-DECL-EXTERN srandom LOC=./src/chown.merge.c:7004 */
+/* END FUNCTION-DECL-EXTERN srandom LOC=./src/chown.merge.c:7016 */
 
 /* BEGIN FUNCTION-DECL __builtin_cargl LOC=BUILTIN */
 /* compiler builtin: 
@@ -11269,22 +11277,22 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srandom)(u
 static char *gid_to_str(gid_t gid ) ;
 /* END FUNCTION-DECL gid_to_str LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpwent_r LOC=./src/chown.merge.c:7030 */
-#line 7030
+/* BEGIN FUNCTION-DECL-EXTERN fgetpwent_r LOC=./src/chown.merge.c:7042 */
+#line 7042
 extern int ( __attribute__((__nonnull__(1,2,3,5))) fgetpwent_r)(FILE * __restrict  __stream ,
                                                                 struct passwd * __restrict  __resultbuf ,
                                                                 char * __restrict  __buffer ,
                                                                 size_t __buflen ,
                                                                 struct passwd ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN fgetpwent_r LOC=./src/chown.merge.c:7030 */
+/* END FUNCTION-DECL-EXTERN fgetpwent_r LOC=./src/chown.merge.c:7042 */
 
-/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/chown.merge.c:7049 */
-#line 7049
+/* BEGIN ENUM __anonenum_365337802___0 LOC=./src/chown.merge.c:7061 */
+#line 7061
 enum __anonenum_365337802___0 {
     GETOPT_HELP_CHAR___0 = -130,
     GETOPT_VERSION_CHAR___0 = -131
 } ;
-/* END ENUM __anonenum_365337802___0 LOC=./src/chown.merge.c:7049 */
+/* END ENUM __anonenum_365337802___0 LOC=./src/chown.merge.c:7061 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11301,34 +11309,34 @@ enum __anonenum_365337802___0 {
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/chown.merge.c:7089 */
-#line 7089
+/* BEGIN FUNCTION-DECL-EXTERN pwrite LOC=./src/chown.merge.c:7101 */
+#line 7101
 extern ssize_t pwrite(int __fd , void const   *__buf , size_t __n , __off_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/chown.merge.c:7089 */
+/* END FUNCTION-DECL-EXTERN pwrite LOC=./src/chown.merge.c:7101 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrgid_r LOC=./src/chown.merge.c:7093 */
-#line 7093
+/* BEGIN FUNCTION-DECL-EXTERN getgrgid_r LOC=./src/chown.merge.c:7105 */
+#line 7105
 extern int getgrgid_r(__gid_t __gid , struct group * __restrict  __resultbuf , char * __restrict  __buffer ,
                       size_t __buflen , struct group ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN getgrgid_r LOC=./src/chown.merge.c:7093 */
+/* END FUNCTION-DECL-EXTERN getgrgid_r LOC=./src/chown.merge.c:7105 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/chown.merge.c:7104 */
-#line 7104
+/* BEGIN FUNCTION-DECL-EXTERN strtof64x LOC=./src/chown.merge.c:7116 */
+#line 7116
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1),
 __leaf__)) strtof64x)(char const   * __restrict  __nptr , char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/chown.merge.c:7104 */
+/* END FUNCTION-DECL-EXTERN strtof64x LOC=./src/chown.merge.c:7116 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/chown.merge.c:7109 */
-#line 7109
+/* BEGIN FUNCTION-DECL-EXTERN memset LOC=./src/chown.merge.c:7121 */
+#line 7121
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memset)(void *__s ,
                                                                                                int __c ,
                                                                                                size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memset LOC=./src/chown.merge.c:7109 */
+/* END FUNCTION-DECL-EXTERN memset LOC=./src/chown.merge.c:7121 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/chown.merge.c:7123 */
-#line 7123
+/* BEGIN FUNCTION-DECL-EXTERN ferror LOC=./src/chown.merge.c:7135 */
+#line 7135
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) ferror)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN ferror LOC=./src/chown.merge.c:7123 */
+/* END FUNCTION-DECL-EXTERN ferror LOC=./src/chown.merge.c:7135 */
 
 /* BEGIN FUNCTION-DECL __builtin_csinf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11339,95 +11347,95 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 static char *uid_to_str(uid_t uid ) ;
 /* END FUNCTION-DECL uid_to_str LOC=UNKNOWN */
 
-/* BEGIN TYPEDEF __once_flag LOC=./src/chown.merge.c:7161 */
-#line 7161 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __once_flag LOC=./src/chown.merge.c:7173 */
+#line 7173 "./src/chown.merge.c"
 typedef struct __anonstruct___once_flag_947329320 __once_flag;
-/* END TYPEDEF __once_flag LOC=./src/chown.merge.c:7161 */
+/* END TYPEDEF __once_flag LOC=./src/chown.merge.c:7173 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/chown.merge.c:7165 */
-#line 7165
+/* BEGIN FUNCTION-DECL-EXTERN scandir64 LOC=./src/chown.merge.c:7177 */
+#line 7177
 extern int ( __attribute__((__nonnull__(1,2))) scandir64)(char const   * __restrict  __dir ,
                                                           struct dirent64 *** __restrict  __namelist ,
                                                           int (*__selector)(struct dirent64  const  * ) ,
                                                           int (*__cmp)(struct dirent64  const  ** ,
                                                                        struct dirent64  const  ** ) ) ;
-/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/chown.merge.c:7165 */
+/* END FUNCTION-DECL-EXTERN scandir64 LOC=./src/chown.merge.c:7177 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmal(long double  , long double  , long double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/chown.merge.c:7189 */
-#line 7189
+/* BEGIN FUNCTION-DECL-EXTERN execv LOC=./src/chown.merge.c:7201 */
+#line 7201
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execv)(char const   *__path ,
                                                                                               char **__argv ) ;
-/* END FUNCTION-DECL-EXTERN execv LOC=./src/chown.merge.c:7189 */
+/* END FUNCTION-DECL-EXTERN execv LOC=./src/chown.merge.c:7201 */
 
-/* BEGIN TYPEDEF int_fast16_t LOC=./src/chown.merge.c:7202 */
-#line 7202 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_fast16_t LOC=./src/chown.merge.c:7210 */
+#line 7210 "./src/chown.merge.c"
 typedef long int_fast16_t;
-/* END TYPEDEF int_fast16_t LOC=./src/chown.merge.c:7202 */
+/* END TYPEDEF int_fast16_t LOC=./src/chown.merge.c:7210 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/chown.merge.c:7233 */
-#line 7233
+/* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/chown.merge.c:7241 */
+#line 7241
 extern size_t ( __attribute__((__nonnull__(4))) fread_unlocked)(void * __restrict  __ptr ,
                                                                 size_t __size , size_t __n ,
                                                                 FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/chown.merge.c:7233 */
+/* END FUNCTION-DECL-EXTERN fread_unlocked LOC=./src/chown.merge.c:7241 */
 
-/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/chown.merge.c:7239 */
-#line 7239 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_gid16_t LOC=./src/chown.merge.c:7247 */
+#line 7247 "./src/chown.merge.c"
 typedef unsigned short __kernel_gid16_t;
-/* END TYPEDEF __kernel_gid16_t LOC=./src/chown.merge.c:7239 */
+/* END TYPEDEF __kernel_gid16_t LOC=./src/chown.merge.c:7247 */
 
 /* BEGIN FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_fabsf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/chown.merge.c:7247 */
-#line 7247
+/* BEGIN FUNCTION-DECL-EXTERN statx LOC=./src/chown.merge.c:7255 */
+#line 7255
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(5), __leaf__)) statx)(int __dirfd ,
                                                                                             char const   * __restrict  __path ,
                                                                                             int __flags ,
                                                                                             unsigned int __mask ,
                                                                                             struct statx * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN statx LOC=./src/chown.merge.c:7247 */
+/* END FUNCTION-DECL-EXTERN statx LOC=./src/chown.merge.c:7255 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/chown.merge.c:7281 */
-#line 7281
+/* BEGIN FUNCTION-DECL-EXTERN vfork LOC=./src/chown.merge.c:7289 */
+#line 7289
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) vfork)(void) ;
-/* END FUNCTION-DECL-EXTERN vfork LOC=./src/chown.merge.c:7281 */
+/* END FUNCTION-DECL-EXTERN vfork LOC=./src/chown.merge.c:7289 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_cZdJ_argc LOC=UNKNOWN */
-int _TIG_IZ_cZdJ_argc ;
-/* END VARIABLE-DECL _TIG_IZ_cZdJ_argc LOC=UNKNOWN */
-
-/* BEGIN TYPEDEF int_least8_t LOC=./src/chown.merge.c:7305 */
-#line 7305 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_least8_t LOC=./src/chown.merge.c:7309 */
+#line 7309 "./src/chown.merge.c"
 typedef __int_least8_t int_least8_t;
-/* END TYPEDEF int_least8_t LOC=./src/chown.merge.c:7305 */
+/* END TYPEDEF int_least8_t LOC=./src/chown.merge.c:7309 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/chown.merge.c:7309 */
-#line 7309
+/* BEGIN VARIABLE-DECL _TIG_IZ_4bYn_argv LOC=UNKNOWN */
+char **_TIG_IZ_4bYn_argv ;
+/* END VARIABLE-DECL _TIG_IZ_4bYn_argv LOC=UNKNOWN */
+
+/* BEGIN FUNCTION-DECL-EXTERN fread LOC=./src/chown.merge.c:7317 */
+#line 7317
 extern size_t ( __attribute__((__nonnull__(4))) fread)(void * __restrict  __ptr ,
                                                        size_t __size , size_t __n ,
                                                        FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fread LOC=./src/chown.merge.c:7309 */
+/* END FUNCTION-DECL-EXTERN fread LOC=./src/chown.merge.c:7317 */
 
-/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/chown.merge.c:7315 */
-#line 7315
+/* BEGIN FUNCTION-DECL-EXTERN abort LOC=./src/chown.merge.c:7323 */
+#line 7323
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) abort)(void)  __attribute__((__cold__)) ;
-/* END FUNCTION-DECL-EXTERN abort LOC=./src/chown.merge.c:7315 */
+/* END FUNCTION-DECL-EXTERN abort LOC=./src/chown.merge.c:7323 */
 
 /* BEGIN FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_roundf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_roundf16 LOC=BUILTIN */
 
-/* BEGIN STRUCT sigcontext LOC=./src/chown.merge.c:7329 */
-#line 7329 "./src/chown.merge.c"
+/* BEGIN STRUCT sigcontext LOC=./src/chown.merge.c:7337 */
+#line 7337 "./src/chown.merge.c"
 struct sigcontext {
    __uint64_t r8 ;
    __uint64_t r9 ;
@@ -11458,36 +11466,36 @@ struct sigcontext {
    union __anonunion____missing_field_name_501150464 __annonCompField1 ;
    __uint64_t __reserved1[8] ;
 };
-/* END STRUCT sigcontext LOC=./src/chown.merge.c:7329 */
+/* END STRUCT sigcontext LOC=./src/chown.merge.c:7337 */
 
-/* BEGIN TYPEDEF off64_t LOC=./src/chown.merge.c:7368 */
-#line 7368 "./src/chown.merge.c"
+/* BEGIN TYPEDEF off64_t LOC=./src/chown.merge.c:7376 */
+#line 7376 "./src/chown.merge.c"
 typedef __off64_t off64_t;
-/* END TYPEDEF off64_t LOC=./src/chown.merge.c:7368 */
+/* END TYPEDEF off64_t LOC=./src/chown.merge.c:7376 */
 
-/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/chown.merge.c:7372 */
-#line 7372
+/* BEGIN FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/chown.merge.c:7380 */
+#line 7380
 extern int posix_fallocate64(int __fd , off64_t __offset , off64_t __len ) ;
-/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/chown.merge.c:7372 */
+/* END FUNCTION-DECL-EXTERN posix_fallocate64 LOC=./src/chown.merge.c:7380 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/chown.merge.c:7400 */
-#line 7400
+/* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=./src/chown.merge.c:7408 */
+#line 7408
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigblock)(int __mask ) ;
-/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/chown.merge.c:7400 */
+/* END FUNCTION-DECL-EXTERN sigblock LOC=./src/chown.merge.c:7408 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_asinf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/chown.merge.c:7404 */
-#line 7404
+/* BEGIN FUNCTION-DECL-EXTERN tempnam LOC=./src/chown.merge.c:7412 */
+#line 7412
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tempnam)(char const   *__dir ,
                                                                                 char const   *__pfx )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/chown.merge.c:7404 */
+/* END FUNCTION-DECL-EXTERN tempnam LOC=./src/chown.merge.c:7412 */
 
-/* BEGIN STRUCT tm LOC=./src/chown.merge.c:7409 */
-#line 7409 "./src/chown.merge.c"
+/* BEGIN STRUCT tm LOC=./src/chown.merge.c:7417 */
+#line 7417 "./src/chown.merge.c"
 struct tm {
    int tm_sec ;
    int tm_min ;
@@ -11501,159 +11509,159 @@ struct tm {
    long tm_gmtoff ;
    char const   *tm_zone ;
 };
-/* END STRUCT tm LOC=./src/chown.merge.c:7409 */
+/* END STRUCT tm LOC=./src/chown.merge.c:7417 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrnam_r LOC=./src/chown.merge.c:7425 */
-#line 7425
+/* BEGIN FUNCTION-DECL-EXTERN getgrnam_r LOC=./src/chown.merge.c:7433 */
+#line 7433
 extern int getgrnam_r(char const   * __restrict  __name , struct group * __restrict  __resultbuf ,
                       char * __restrict  __buffer , size_t __buflen , struct group ** __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN getgrnam_r LOC=./src/chown.merge.c:7425 */
+/* END FUNCTION-DECL-EXTERN getgrnam_r LOC=./src/chown.merge.c:7433 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/chown.merge.c:7436 */
-#line 7436
+/* BEGIN FUNCTION-DECL-EXTERN memrchr LOC=./src/chown.merge.c:7444 */
+#line 7444
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memrchr)(void const   *__s ,
                                                                                                 int __c ,
                                                                                                 size_t __n )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/chown.merge.c:7436 */
+/* END FUNCTION-DECL-EXTERN memrchr LOC=./src/chown.merge.c:7444 */
 
-/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/chown.merge.c:7442 */
-#line 7442 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_time64_t LOC=./src/chown.merge.c:7450 */
+#line 7450 "./src/chown.merge.c"
 typedef long long __kernel_time64_t;
-/* END TYPEDEF __kernel_time64_t LOC=./src/chown.merge.c:7442 */
+/* END TYPEDEF __kernel_time64_t LOC=./src/chown.merge.c:7450 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/chown.merge.c:7451 */
-#line 7451
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/chown.merge.c:7459 */
+#line 7459
 extern int ( __attribute__((__nonnull__(2))) setlocale_null_r)(int category , char *buf ,
                                                                size_t bufsize ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/chown.merge.c:7451 */
+/* END FUNCTION-DECL-EXTERN setlocale_null_r LOC=./src/chown.merge.c:7459 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/chown.merge.c:7461 */
-#line 7461
+/* BEGIN FUNCTION-DECL-EXTERN fstatat64 LOC=./src/chown.merge.c:7469 */
+#line 7469
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) fstatat64)(int __fd ,
                                                                                                 char const   * __restrict  __file ,
                                                                                                 struct stat64 * __restrict  __buf ,
                                                                                                 int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/chown.merge.c:7461 */
+/* END FUNCTION-DECL-EXTERN fstatat64 LOC=./src/chown.merge.c:7469 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/chown.merge.c:7474 */
-#line 7474
+/* BEGIN FUNCTION-DECL-EXTERN strtoll_l LOC=./src/chown.merge.c:7482 */
+#line 7482
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1,4),
 __leaf__)) strtoll_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       int __base , locale_t __loc )  __asm__("__isoc23_strtoll_l")  ;
-/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/chown.merge.c:7474 */
+/* END FUNCTION-DECL-EXTERN strtoll_l LOC=./src/chown.merge.c:7482 */
 
-/* BEGIN FUNCTION-DECL-EXTERN i_ring_empty LOC=./src/chown.merge.c:7489 */
-#line 7489
+/* BEGIN FUNCTION-DECL-EXTERN i_ring_empty LOC=./src/chown.merge.c:7497 */
+#line 7497
 extern _Bool i_ring_empty(I_ring const   *ir )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN i_ring_empty LOC=./src/chown.merge.c:7489 */
+/* END FUNCTION-DECL-EXTERN i_ring_empty LOC=./src/chown.merge.c:7497 */
 
-/* BEGIN TYPEDEF __poll_t LOC=./src/chown.merge.c:7502 */
-#line 7502 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __poll_t LOC=./src/chown.merge.c:7510 */
+#line 7510 "./src/chown.merge.c"
 typedef unsigned int __poll_t;
-/* END TYPEDEF __poll_t LOC=./src/chown.merge.c:7502 */
+/* END TYPEDEF __poll_t LOC=./src/chown.merge.c:7510 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/chown.merge.c:7506 */
-#line 7506
+/* BEGIN FUNCTION-DECL-EXTERN tzset LOC=./src/chown.merge.c:7514 */
+#line 7514
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) tzset)(void) ;
-/* END FUNCTION-DECL-EXTERN tzset LOC=./src/chown.merge.c:7506 */
+/* END FUNCTION-DECL-EXTERN tzset LOC=./src/chown.merge.c:7514 */
 
 /* BEGIN ENUM-DECL RCH_status LOC=./src/chown.merge.c:961 */
 #line 961
 enum RCH_status ;
 /* END ENUM-DECL RCH_status LOC=./src/chown.merge.c:961 */
 
-/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/chown.merge.c:7519 */
-#line 7519
+/* BEGIN FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/chown.merge.c:7527 */
+#line 7527
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) gnu_dev_minor)(__dev_t __dev )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/chown.merge.c:7519 */
+/* END FUNCTION-DECL-EXTERN gnu_dev_minor LOC=./src/chown.merge.c:7527 */
 
-/* BEGIN TYPEDEF __key_t LOC=./src/chown.merge.c:7523 */
-#line 7523 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __key_t LOC=./src/chown.merge.c:7531 */
+#line 7531 "./src/chown.merge.c"
 typedef int __key_t;
-/* END TYPEDEF __key_t LOC=./src/chown.merge.c:7523 */
+/* END TYPEDEF __key_t LOC=./src/chown.merge.c:7531 */
 
-/* BEGIN TYPEDEF key_t LOC=./src/chown.merge.c:7527 */
-#line 7527 "./src/chown.merge.c"
+/* BEGIN TYPEDEF key_t LOC=./src/chown.merge.c:7535 */
+#line 7535 "./src/chown.merge.c"
 typedef __key_t key_t;
-/* END TYPEDEF key_t LOC=./src/chown.merge.c:7527 */
+/* END TYPEDEF key_t LOC=./src/chown.merge.c:7535 */
 
 /* BEGIN FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_frexpl(long double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpwnam LOC=./src/chown.merge.c:7547 */
-#line 7547
+/* BEGIN FUNCTION-DECL-EXTERN getpwnam LOC=./src/chown.merge.c:7555 */
+#line 7555
 extern struct passwd *( __attribute__((__nonnull__(1))) getpwnam)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN getpwnam LOC=./src/chown.merge.c:7547 */
+/* END FUNCTION-DECL-EXTERN getpwnam LOC=./src/chown.merge.c:7555 */
 
-/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:7559 */
-#line 7559 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:7567 */
+#line 7567 "./src/chown.merge.c"
 struct __anonstruct_ldiv_t_790849867 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:7559 */
+/* END STRUCT __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:7567 */
 
 /* BEGIN FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_huge_valf128(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF sigval_t LOC=./src/chown.merge.c:7586 */
-#line 7586 "./src/chown.merge.c"
+/* BEGIN TYPEDEF sigval_t LOC=./src/chown.merge.c:7594 */
+#line 7594 "./src/chown.merge.c"
 typedef __sigval_t sigval_t;
-/* END TYPEDEF sigval_t LOC=./src/chown.merge.c:7586 */
+/* END TYPEDEF sigval_t LOC=./src/chown.merge.c:7594 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/chown.merge.c:7599 */
-#line 7599
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setegid)(__gid_t __gid ) ;
-/* END FUNCTION-DECL-EXTERN setegid LOC=./src/chown.merge.c:7599 */
-
-/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/chown.merge.c:7607 */
+/* BEGIN FUNCTION-DECL-EXTERN setegid LOC=./src/chown.merge.c:7607 */
 #line 7607
-extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) duplocale)(locale_t __dataset ) ;
-/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/chown.merge.c:7607 */
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setegid)(__gid_t __gid ) ;
+/* END FUNCTION-DECL-EXTERN setegid LOC=./src/chown.merge.c:7607 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgrnam LOC=./src/chown.merge.c:7621 */
-#line 7621
+/* BEGIN FUNCTION-DECL-EXTERN duplocale LOC=./src/chown.merge.c:7615 */
+#line 7615
+extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) duplocale)(locale_t __dataset ) ;
+/* END FUNCTION-DECL-EXTERN duplocale LOC=./src/chown.merge.c:7615 */
+
+/* BEGIN FUNCTION-DECL-EXTERN getgrnam LOC=./src/chown.merge.c:7629 */
+#line 7629
 extern struct group *getgrnam(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN getgrnam LOC=./src/chown.merge.c:7621 */
+/* END FUNCTION-DECL-EXTERN getgrnam LOC=./src/chown.merge.c:7629 */
 
 /* BEGIN FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_casinl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_57186863 LOC=./src/chown.merge.c:7629 */
-#line 7629
+/* BEGIN ENUM __anonenum_57186863 LOC=./src/chown.merge.c:7637 */
+#line 7637
 enum __anonenum_57186863 {
     SS_ONSTACK = 1,
     SS_DISABLE = 2
 } ;
-/* END ENUM __anonenum_57186863 LOC=./src/chown.merge.c:7629 */
+/* END ENUM __anonenum_57186863 LOC=./src/chown.merge.c:7637 */
 
-/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/chown.merge.c:7636 */
-#line 7636
+/* BEGIN FUNCTION-DECL-EXTERN unlinkat LOC=./src/chown.merge.c:7644 */
+#line 7644
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) unlinkat)(int __fd ,
                                                                                                char const   *__name ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/chown.merge.c:7636 */
+/* END FUNCTION-DECL-EXTERN unlinkat LOC=./src/chown.merge.c:7644 */
 
-/* BEGIN TYPEDEF ldiv_t LOC=./src/chown.merge.c:7648 */
-#line 7648 "./src/chown.merge.c"
+/* BEGIN TYPEDEF ldiv_t LOC=./src/chown.merge.c:7656 */
+#line 7656 "./src/chown.merge.c"
 typedef struct __anonstruct_ldiv_t_790849867 ldiv_t;
-/* END TYPEDEF ldiv_t LOC=./src/chown.merge.c:7648 */
+/* END TYPEDEF ldiv_t LOC=./src/chown.merge.c:7656 */
 
 /* BEGIN FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_fdimf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/chown.merge.c:7661 */
-#line 7661
+/* BEGIN FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/chown.merge.c:7669 */
+#line 7669
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigisemptyset)(sigset_t const   *__set ) ;
-/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/chown.merge.c:7661 */
+/* END FUNCTION-DECL-EXTERN sigisemptyset LOC=./src/chown.merge.c:7669 */
 
 /* BEGIN FUNCTION-DECL __builtin_os_log_format_buffer_size LOC=BUILTIN */
 /* compiler builtin: 
@@ -11680,8 +11688,8 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    double __builtin_erf(double  ) ;  */
 /* END FUNCTION-DECL __builtin_erf LOC=BUILTIN */
 
-/* BEGIN STRUCT drand48_data LOC=./src/chown.merge.c:7711 */
-#line 7711 "./src/chown.merge.c"
+/* BEGIN STRUCT drand48_data LOC=./src/chown.merge.c:7719 */
+#line 7719 "./src/chown.merge.c"
 struct drand48_data {
    unsigned short __x[3] ;
    unsigned short __old_x[3] ;
@@ -11689,7 +11697,7 @@ struct drand48_data {
    unsigned short __init ;
    unsigned long long __a ;
 };
-/* END STRUCT drand48_data LOC=./src/chown.merge.c:7711 */
+/* END STRUCT drand48_data LOC=./src/chown.merge.c:7719 */
 
 /* BEGIN STRUCT-DECL __pthread_mutex_s LOC=./src/chown.merge.c:1093 */
 #line 1093
@@ -11701,22 +11709,18 @@ struct __pthread_mutex_s ;
    _Float128 __builtin_logf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_logf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_cZdJ_argv LOC=UNKNOWN */
-char **_TIG_IZ_cZdJ_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_cZdJ_argv LOC=UNKNOWN */
-
-/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/chown.merge.c:7756 */
-#line 7756
+/* BEGIN FUNCTION-DECL-EXTERN getdirentries LOC=./src/chown.merge.c:7760 */
+#line 7760
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__nonnull__(2,4),
 __leaf__)) getdirentries)(int __fd , char * __restrict  __buf , size_t __nbytes ,
                           __off_t * __restrict  __basep ) ;
-/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/chown.merge.c:7756 */
+/* END FUNCTION-DECL-EXTERN getdirentries LOC=./src/chown.merge.c:7760 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/chown.merge.c:7762 */
-#line 7762
+/* BEGIN FUNCTION-DECL-EXTERN strchrnul LOC=./src/chown.merge.c:7766 */
+#line 7766
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) strchrnul)(char const   *__s ,
                                                                                                   int __c )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/chown.merge.c:7762 */
+/* END FUNCTION-DECL-EXTERN strchrnul LOC=./src/chown.merge.c:7766 */
 
 /* BEGIN FUNCTION-DECL __builtin_nearbyintf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11728,16 +11732,16 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
    void __builtin_stdarg_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_stdarg_start LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_close LOC=./src/chown.merge.c:7786 */
-#line 7786
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fts_close LOC=./src/chown.merge.c:7790 */
+#line 7790
 extern int ( __attribute__((__warn_unused_result__)) rpl_fts_close)(FTS * ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fts_close LOC=./src/chown.merge.c:7786 */
+/* END FUNCTION-DECL-EXTERN rpl_fts_close LOC=./src/chown.merge.c:7790 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/chown.merge.c:7805 */
-#line 7805
+/* BEGIN FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/chown.merge.c:7809 */
+#line 7809
 extern int ( __attribute__((__nonnull__(1))) rpl_nanosleep)(struct timespec  const  *__rqtp ,
                                                             struct timespec *__rmtp ) ;
-/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/chown.merge.c:7805 */
+/* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./src/chown.merge.c:7809 */
 
 /* BEGIN FUNCTION-DECL dcnpgettext_expr LOC=UNKNOWN */
 __inline static char const   *dcnpgettext_expr(char const   *domain , char const   *msgctxt ,
@@ -11755,30 +11759,30 @@ __inline static char const   *dcnpgettext_expr(char const   *domain , char const
    void *__builtin___get_unsafe_stack_top(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_top LOC=BUILTIN */
 
-/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/chown.merge.c:7837 */
-#line 7837 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_mutexattr_t LOC=./src/chown.merge.c:7841 */
+#line 7841 "./src/chown.merge.c"
 typedef union __anonunion_pthread_mutexattr_t_488594144 pthread_mutexattr_t;
-/* END TYPEDEF pthread_mutexattr_t LOC=./src/chown.merge.c:7837 */
+/* END TYPEDEF pthread_mutexattr_t LOC=./src/chown.merge.c:7841 */
 
-/* BEGIN ENUM __anonenum_424050557 LOC=./src/chown.merge.c:7831 */
-#line 7831
+/* BEGIN ENUM __anonenum_424050557 LOC=./src/chown.merge.c:7835 */
+#line 7835
 enum __anonenum_424050557 {
     TIMESPEC_RESOLUTION = 1000000000
 } ;
-/* END ENUM __anonenum_424050557 LOC=./src/chown.merge.c:7831 */
+/* END ENUM __anonenum_424050557 LOC=./src/chown.merge.c:7835 */
 
 /* BEGIN FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_llroundl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/chown.merge.c:7845 */
-#line 7845
+/* BEGIN FUNCTION-DECL-EXTERN fchmodat LOC=./src/chown.merge.c:7849 */
+#line 7849
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fchmodat)(int __fd ,
                                                                                                char const   *__file ,
                                                                                                __mode_t __mode ,
                                                                                                int __flag ) ;
-/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/chown.merge.c:7845 */
+/* END FUNCTION-DECL-EXTERN fchmodat LOC=./src/chown.merge.c:7849 */
 
 /* BEGIN FUNCTION-DECL __builtin_bitreverse64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11810,163 +11814,163 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    long double __builtin_modfl(long double  , long double * ) ;  */
 /* END FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/chown.merge.c:7901 */
-#line 7901
+/* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=./src/chown.merge.c:7905 */
+#line 7905
 extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char const   * __restrict  __format 
                                                  , ...) ;
-/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/chown.merge.c:7901 */
+/* END FUNCTION-DECL-EXTERN sprintf LOC=./src/chown.merge.c:7905 */
 
-/* BEGIN TYPEDEF id_t LOC=./src/chown.merge.c:7912 */
-#line 7912 "./src/chown.merge.c"
+/* BEGIN TYPEDEF id_t LOC=./src/chown.merge.c:7916 */
+#line 7916 "./src/chown.merge.c"
 typedef __id_t id_t;
-/* END TYPEDEF id_t LOC=./src/chown.merge.c:7912 */
+/* END TYPEDEF id_t LOC=./src/chown.merge.c:7916 */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_exp2f16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __compar_fn_t LOC=./src/chown.merge.c:7931 */
-#line 7931 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __compar_fn_t LOC=./src/chown.merge.c:7935 */
+#line 7935 "./src/chown.merge.c"
 typedef int (*__compar_fn_t)(void const   * , void const   * );
-/* END TYPEDEF __compar_fn_t LOC=./src/chown.merge.c:7931 */
+/* END TYPEDEF __compar_fn_t LOC=./src/chown.merge.c:7935 */
 
-/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/chown.merge.c:7935 */
-#line 7935
+/* BEGIN VARIABLE-DECL-EXTERN environ LOC=./src/chown.merge.c:7939 */
+#line 7939
 extern char **environ ;
-/* END VARIABLE-DECL-EXTERN environ LOC=./src/chown.merge.c:7935 */
+/* END VARIABLE-DECL-EXTERN environ LOC=./src/chown.merge.c:7939 */
 
 /* BEGIN FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_expf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/chown.merge.c:7949 */
-#line 7949 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_ino_t LOC=./src/chown.merge.c:7953 */
+#line 7953 "./src/chown.merge.c"
 typedef __kernel_ulong_t __kernel_ino_t;
-/* END TYPEDEF __kernel_ino_t LOC=./src/chown.merge.c:7949 */
+/* END TYPEDEF __kernel_ino_t LOC=./src/chown.merge.c:7953 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/chown.merge.c:7957 */
-#line 7957
+/* BEGIN FUNCTION-DECL-EXTERN mbtowc LOC=./src/chown.merge.c:7961 */
+#line 7961
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) mbtowc)(wchar_t * __restrict  __pwc ,
                                                                              char const   * __restrict  __s ,
                                                                              size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/chown.merge.c:7957 */
+/* END FUNCTION-DECL-EXTERN mbtowc LOC=./src/chown.merge.c:7961 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/chown.merge.c:7963 */
-#line 7963
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/chown.merge.c:7967 */
+#line 7967
 extern char *quotearg_n_style_mem(int n , enum quoting_style s , char const   *arg ,
                                   size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/chown.merge.c:7963 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style_mem LOC=./src/chown.merge.c:7967 */
 
-/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/chown.merge.c:7985 */
-#line 7985
+/* BEGIN FUNCTION-DECL-EXTERN labs LOC=./src/chown.merge.c:7989 */
+#line 7989
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) labs)(long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN labs LOC=./src/chown.merge.c:7985 */
+/* END FUNCTION-DECL-EXTERN labs LOC=./src/chown.merge.c:7989 */
 
 /* BEGIN STRUCT-DECL tm LOC=./src/chown.merge.c:1401 */
 #line 1401
 struct tm ;
 /* END STRUCT-DECL tm LOC=./src/chown.merge.c:1401 */
 
-/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:8004 */
-#line 8004 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:8008 */
+#line 8008 "./src/chown.merge.c"
 union __anonunion_pthread_mutex_t_335460617 {
    struct __pthread_mutex_s __data ;
    char __size[40] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:8004 */
+/* END UNION __anonunion_pthread_mutex_t_335460617 LOC=./src/chown.merge.c:8008 */
 
-/* BEGIN TYPEDEF int_least64_t LOC=./src/chown.merge.c:8022 */
-#line 8022 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_least64_t LOC=./src/chown.merge.c:8026 */
+#line 8026 "./src/chown.merge.c"
 typedef __int_least64_t int_least64_t;
-/* END TYPEDEF int_least64_t LOC=./src/chown.merge.c:8022 */
+/* END TYPEDEF int_least64_t LOC=./src/chown.merge.c:8026 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/chown.merge.c:8042 */
-#line 8042
+/* BEGIN FUNCTION-DECL-EXTERN chmod LOC=./src/chown.merge.c:8046 */
+#line 8046
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chmod)(char const   *__file ,
                                                                                             __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN chmod LOC=./src/chown.merge.c:8042 */
+/* END FUNCTION-DECL-EXTERN chmod LOC=./src/chown.merge.c:8046 */
 
-/* BEGIN STRUCT _ymmh_state LOC=./src/chown.merge.c:8056 */
-#line 8056 "./src/chown.merge.c"
+/* BEGIN STRUCT _ymmh_state LOC=./src/chown.merge.c:8060 */
+#line 8060 "./src/chown.merge.c"
 struct _ymmh_state {
    __uint32_t ymmh_space[64] ;
 };
-/* END STRUCT _ymmh_state LOC=./src/chown.merge.c:8056 */
+/* END STRUCT _ymmh_state LOC=./src/chown.merge.c:8060 */
 
-/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/chown.merge.c:8062 */
-#line 8062
+/* BEGIN FUNCTION-DECL-EXTERN qgcvt LOC=./src/chown.merge.c:8066 */
+#line 8066
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(3), __leaf__)) qgcvt)(long double __value ,
                                                                                               int __ndigit ,
                                                                                               char *__buf ) ;
-/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/chown.merge.c:8062 */
+/* END FUNCTION-DECL-EXTERN qgcvt LOC=./src/chown.merge.c:8066 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/chown.merge.c:8072 */
-#line 8072
+/* BEGIN FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/chown.merge.c:8076 */
+#line 8076
 extern void *x2nrealloc(void *p , size_t *pn , size_t s )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/chown.merge.c:8072 */
+/* END FUNCTION-DECL-EXTERN x2nrealloc LOC=./src/chown.merge.c:8076 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 /* compiler builtin: 
    unsigned int __builtin_rotateleft32(unsigned int  , unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft32 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/chown.merge.c:8090 */
-#line 8090 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_uid32_t LOC=./src/chown.merge.c:8094 */
+#line 8094 "./src/chown.merge.c"
 typedef unsigned int __kernel_uid32_t;
-/* END TYPEDEF __kernel_uid32_t LOC=./src/chown.merge.c:8090 */
+/* END TYPEDEF __kernel_uid32_t LOC=./src/chown.merge.c:8094 */
 
 /* BEGIN FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_sinhf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sinhf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/chown.merge.c:8103 */
-#line 8103
+/* BEGIN FUNCTION-DECL-EXTERN mkostemp LOC=./src/chown.merge.c:8107 */
+#line 8107
 extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
-/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/chown.merge.c:8103 */
+/* END FUNCTION-DECL-EXTERN mkostemp LOC=./src/chown.merge.c:8107 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/chown.merge.c:8111 */
-#line 8111
+/* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=./src/chown.merge.c:8115 */
+#line 8115
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigorset)(sigset_t *__set ,
                                                                                                    sigset_t const   *__left ,
                                                                                                    sigset_t const   *__right ) ;
-/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/chown.merge.c:8111 */
+/* END FUNCTION-DECL-EXTERN sigorset LOC=./src/chown.merge.c:8115 */
 
 /* BEGIN UNION-DECL __anonunion___atomic_wide_counter_880671564 LOC=./src/chown.merge.c:1265 */
 #line 1265
 union __anonunion___atomic_wide_counter_880671564 ;
 /* END UNION-DECL __anonunion___atomic_wide_counter_880671564 LOC=./src/chown.merge.c:1265 */
 
-/* BEGIN ENUM __anonenum_365337802 LOC=./src/chown.merge.c:8127 */
-#line 8127
+/* BEGIN ENUM __anonenum_365337802 LOC=./src/chown.merge.c:8131 */
+#line 8131
 enum __anonenum_365337802 {
     GETOPT_HELP_CHAR = -130,
     GETOPT_VERSION_CHAR = -131
 } ;
-/* END ENUM __anonenum_365337802 LOC=./src/chown.merge.c:8127 */
+/* END ENUM __anonenum_365337802 LOC=./src/chown.merge.c:8131 */
 
-/* BEGIN TYPEDEF int64_t LOC=./src/chown.merge.c:8157 */
-#line 8157 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int64_t LOC=./src/chown.merge.c:8161 */
+#line 8161 "./src/chown.merge.c"
 typedef __int64_t int64_t;
-/* END TYPEDEF int64_t LOC=./src/chown.merge.c:8157 */
+/* END TYPEDEF int64_t LOC=./src/chown.merge.c:8161 */
 
-/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/chown.merge.c:8175 */
-#line 8175
+/* BEGIN FUNCTION-DECL-EXTERN pclose LOC=./src/chown.merge.c:8179 */
+#line 8179
 extern int ( __attribute__((__nonnull__(1))) pclose)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN pclose LOC=./src/chown.merge.c:8175 */
+/* END FUNCTION-DECL-EXTERN pclose LOC=./src/chown.merge.c:8179 */
 
 /* BEGIN STRUCT-DECL dev_ino LOC=./src/chown.merge.c:1193 */
 #line 1193
 struct dev_ino ;
 /* END STRUCT-DECL dev_ino LOC=./src/chown.merge.c:1193 */
 
-/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/chown.merge.c:8195 */
-#line 8195
+/* BEGIN FUNCTION-DECL-EXTERN alarm LOC=./src/chown.merge.c:8199 */
+#line 8199
 extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) alarm)(unsigned int __seconds ) ;
-/* END FUNCTION-DECL-EXTERN alarm LOC=./src/chown.merge.c:8195 */
+/* END FUNCTION-DECL-EXTERN alarm LOC=./src/chown.merge.c:8199 */
 
 /* BEGIN FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 /* compiler builtin: 
@@ -11974,36 +11978,36 @@ extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) al
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/chown.merge.c:8218 */
-#line 8218
+/* BEGIN FUNCTION-DECL-EXTERN sigstack LOC=./src/chown.merge.c:8222 */
+#line 8222
 extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf__)) sigstack)(struct sigstack *__ss ,
                                                                                                struct sigstack *__oss ) ;
-/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/chown.merge.c:8218 */
+/* END FUNCTION-DECL-EXTERN sigstack LOC=./src/chown.merge.c:8222 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/chown.merge.c:8214 */
-#line 8214
+/* BEGIN FUNCTION-DECL-EXTERN timelocal LOC=./src/chown.merge.c:8218 */
+#line 8218
 extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) timelocal)(struct tm *__tp ) ;
-/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/chown.merge.c:8214 */
+/* END FUNCTION-DECL-EXTERN timelocal LOC=./src/chown.merge.c:8218 */
 
-/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/chown.merge.c:8223 */
-#line 8223 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__kill_244518854 LOC=./src/chown.merge.c:8227 */
+#line 8227 "./src/chown.merge.c"
 struct __anonstruct__kill_244518854 {
    __pid_t si_pid ;
    __uid_t si_uid ;
 };
-/* END STRUCT __anonstruct__kill_244518854 LOC=./src/chown.merge.c:8223 */
+/* END STRUCT __anonstruct__kill_244518854 LOC=./src/chown.merge.c:8227 */
 
-/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:8245 */
-#line 8245 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:8249 */
+#line 8249 "./src/chown.merge.c"
 struct __anonstruct__sigsys_1029881407 {
    void *_call_addr ;
    int _syscall ;
    unsigned int _arch ;
 };
-/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:8245 */
+/* END STRUCT __anonstruct__sigsys_1029881407 LOC=./src/chown.merge.c:8249 */
 
-/* BEGIN UNION __anonunion__sifields_48201401 LOC=./src/chown.merge.c:8253 */
-#line 8253 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion__sifields_48201401 LOC=./src/chown.merge.c:8257 */
+#line 8257 "./src/chown.merge.c"
 union __anonunion__sifields_48201401 {
    int _pad[128ULL / sizeof(int ) - 4ULL] ;
    struct __anonstruct__kill_244518854 _kill ;
@@ -12014,16 +12018,16 @@ union __anonunion__sifields_48201401 {
    struct __anonstruct__sigpoll_386613454 _sigpoll ;
    struct __anonstruct__sigsys_1029881407 _sigsys ;
 };
-/* END UNION __anonunion__sifields_48201401 LOC=./src/chown.merge.c:8253 */
+/* END UNION __anonunion__sifields_48201401 LOC=./src/chown.merge.c:8257 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/chown.merge.c:8270 */
-#line 8270
+/* BEGIN FUNCTION-DECL-EXTERN ctime_r LOC=./src/chown.merge.c:8274 */
+#line 8274
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime_r)(time_t const   * __restrict  __timer ,
                                                                                 char * __restrict  __buf ) ;
-/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/chown.merge.c:8270 */
+/* END FUNCTION-DECL-EXTERN ctime_r LOC=./src/chown.merge.c:8274 */
 
-/* BEGIN ENUM __anonenum_513775621 LOC=./src/chown.merge.c:8280 */
-#line 8280
+/* BEGIN ENUM __anonenum_513775621 LOC=./src/chown.merge.c:8284 */
+#line 8284
 enum __anonenum_513775621 {
     DT_UNKNOWN = 0,
     DT_FIFO = 1,
@@ -12035,34 +12039,38 @@ enum __anonenum_513775621 {
     DT_SOCK = 12,
     DT_WHT = 14
 } ;
-/* END ENUM __anonenum_513775621 LOC=./src/chown.merge.c:8280 */
+/* END ENUM __anonenum_513775621 LOC=./src/chown.merge.c:8284 */
 
-/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/chown.merge.c:8294 */
-#line 8294 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_fd_set LOC=./src/chown.merge.c:8298 */
+#line 8298 "./src/chown.merge.c"
 typedef struct __anonstruct___kernel_fd_set_990674701 __kernel_fd_set;
-/* END TYPEDEF __kernel_fd_set LOC=./src/chown.merge.c:8294 */
+/* END TYPEDEF __kernel_fd_set LOC=./src/chown.merge.c:8298 */
 
 /* BEGIN FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ffsll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsll LOC=BUILTIN */
 
-/* BEGIN TYPEDEF uint_least64_t LOC=./src/chown.merge.c:8311 */
-#line 8311 "./src/chown.merge.c"
-typedef __uint_least64_t uint_least64_t;
-/* END TYPEDEF uint_least64_t LOC=./src/chown.merge.c:8311 */
+/* BEGIN VARIABLE-DECL _TIG_IZ_VsJE_envp LOC=UNKNOWN */
+char **_TIG_IZ_VsJE_envp ;
+/* END VARIABLE-DECL _TIG_IZ_VsJE_envp LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/chown.merge.c:8315 */
-#line 8315
+/* BEGIN TYPEDEF uint_least64_t LOC=./src/chown.merge.c:8315 */
+#line 8315 "./src/chown.merge.c"
+typedef __uint_least64_t uint_least64_t;
+/* END TYPEDEF uint_least64_t LOC=./src/chown.merge.c:8315 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fstat64 LOC=./src/chown.merge.c:8319 */
+#line 8319
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat64)(int __fd ,
                                                                                               struct stat64 *__buf ) ;
-/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/chown.merge.c:8315 */
+/* END FUNCTION-DECL-EXTERN fstat64 LOC=./src/chown.merge.c:8319 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/chown.merge.c:8320 */
-#line 8320
+/* BEGIN FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/chown.merge.c:8324 */
+#line 8324
 extern void __error_at_line_alias(int __status , int __errnum , char const   *__fname ,
                                   unsigned int __line , char const   *__format  , ...)  __asm__("error_at_line")  ;
-/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/chown.merge.c:8320 */
+/* END FUNCTION-DECL-EXTERN __error_at_line_alias LOC=./src/chown.merge.c:8324 */
 
 /* BEGIN FUNCTION-DECL __builtin_powil LOC=BUILTIN */
 /* compiler builtin: 
@@ -12079,20 +12087,20 @@ extern void __error_at_line_alias(int __status , int __errnum , char const   *__
    _Complex long double __builtin_conjl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_conjl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/chown.merge.c:8370 */
-#line 8370
+/* BEGIN FUNCTION-DECL-EXTERN getdelim LOC=./src/chown.merge.c:8374 */
+#line 8374
 extern __ssize_t ( __attribute__((__nonnull__(4))) getdelim)(char ** __restrict  __lineptr ,
                                                              size_t * __restrict  __n ,
                                                              int __delimiter , FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/chown.merge.c:8370 */
+/* END FUNCTION-DECL-EXTERN getdelim LOC=./src/chown.merge.c:8374 */
 
 /* BEGIN FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_lgammaf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_lgammaf128 LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/chown.merge.c:8394 */
-#line 8394
+/* BEGIN ENUM __anonenum_315186338___0 LOC=./src/chown.merge.c:8398 */
+#line 8398
 enum __anonenum_315186338___0 {
     _SC_ARG_MAX___0 = 0,
     _SC_CHILD_MAX___0 = 1,
@@ -12312,7 +12320,7 @@ enum __anonenum_315186338___0 {
     _SC_MINSIGSTKSZ___0 = 249,
     _SC_SIGSTKSZ___0 = 250
 } ;
-/* END ENUM __anonenum_315186338___0 LOC=./src/chown.merge.c:8394 */
+/* END ENUM __anonenum_315186338___0 LOC=./src/chown.merge.c:8398 */
 
 /* BEGIN FUNCTION-DECL __builtin_abs LOC=BUILTIN */
 /* compiler builtin: 
@@ -12329,51 +12337,51 @@ enum __anonenum_315186338___0 {
    float __builtin_nansf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nansf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/chown.merge.c:8650 */
-#line 8650
+/* BEGIN FUNCTION-DECL-EXTERN strtod_l LOC=./src/chown.merge.c:8654 */
+#line 8654
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1,3), __leaf__)) strtod_l)(char const   * __restrict  __nptr ,
                                                                                                     char ** __restrict  __endptr ,
                                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/chown.merge.c:8650 */
+/* END FUNCTION-DECL-EXTERN strtod_l LOC=./src/chown.merge.c:8654 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/chown.merge.c:8666 */
-#line 8666
+/* BEGIN FUNCTION-DECL-EXTERN fgetpos LOC=./src/chown.merge.c:8670 */
+#line 8670
 extern int ( __attribute__((__nonnull__(1))) fgetpos)(FILE * __restrict  __stream ,
                                                       fpos_t * __restrict  __pos ) ;
-/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/chown.merge.c:8666 */
+/* END FUNCTION-DECL-EXTERN fgetpos LOC=./src/chown.merge.c:8670 */
 
 /* BEGIN FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_erfcf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_erfcf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/chown.merge.c:8671 */
-#line 8671
+/* BEGIN FUNCTION-DECL-EXTERN fgetc LOC=./src/chown.merge.c:8675 */
+#line 8675
 extern int ( __attribute__((__nonnull__(1))) fgetc)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/chown.merge.c:8671 */
+/* END FUNCTION-DECL-EXTERN fgetc LOC=./src/chown.merge.c:8675 */
 
-/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/chown.merge.c:8680 */
-#line 8680
+/* BEGIN FUNCTION-DECL-EXTERN memfrob LOC=./src/chown.merge.c:8684 */
+#line 8684
 extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __leaf__)) memfrob)(void *__s ,
                                                                                                 size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/chown.merge.c:8680 */
+/* END FUNCTION-DECL-EXTERN memfrob LOC=./src/chown.merge.c:8684 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/chown.merge.c:8685 */
-#line 8685
+/* BEGIN FUNCTION-DECL-EXTERN mktime_z LOC=./src/chown.merge.c:8689 */
+#line 8689
 extern time_t ( __attribute__((__nonnull__(2))) mktime_z)(timezone_t __tz , struct tm * __restrict  __tm ) ;
-/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/chown.merge.c:8685 */
+/* END FUNCTION-DECL-EXTERN mktime_z LOC=./src/chown.merge.c:8689 */
 
-/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/chown.merge.c:8703 */
-#line 8703
+/* BEGIN FUNCTION-DECL-EXTERN imaxabs LOC=./src/chown.merge.c:8707 */
+#line 8707
 extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) imaxabs)(intmax_t __n )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/chown.merge.c:8703 */
+/* END FUNCTION-DECL-EXTERN imaxabs LOC=./src/chown.merge.c:8707 */
 
-/* BEGIN FUNCTION-DECL npgettext_aux LOC=./src/chown.merge.c:8717 */
-#line 8717
+/* BEGIN FUNCTION-DECL npgettext_aux LOC=./src/chown.merge.c:8721 */
+#line 8721
 __inline static char const   *npgettext_aux(char const   *domain , char const   *msg_ctxt_id ,
                                             char const   *msgid , char const   *msgid_plural ,
                                             unsigned long n , int category ) ;
-/* END FUNCTION-DECL npgettext_aux LOC=./src/chown.merge.c:8717 */
+/* END FUNCTION-DECL npgettext_aux LOC=./src/chown.merge.c:8721 */
 
 /* BEGIN FUNCTION-DECL __builtin___sprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -12381,13 +12389,13 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
                                , ...) ;  */
 /* END FUNCTION-DECL __builtin___sprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int32_t LOC=./src/chown.merge.c:8729 */
-#line 8729 "./src/chown.merge.c"
-typedef __int32_t int32_t;
-/* END TYPEDEF int32_t LOC=./src/chown.merge.c:8729 */
-
-/* BEGIN STRUCT random_data LOC=./src/chown.merge.c:8733 */
+/* BEGIN TYPEDEF int32_t LOC=./src/chown.merge.c:8733 */
 #line 8733 "./src/chown.merge.c"
+typedef __int32_t int32_t;
+/* END TYPEDEF int32_t LOC=./src/chown.merge.c:8733 */
+
+/* BEGIN STRUCT random_data LOC=./src/chown.merge.c:8737 */
+#line 8737 "./src/chown.merge.c"
 struct random_data {
    int32_t *fptr ;
    int32_t *rptr ;
@@ -12397,12 +12405,12 @@ struct random_data {
    int rand_sep ;
    int32_t *end_ptr ;
 };
-/* END STRUCT random_data LOC=./src/chown.merge.c:8733 */
+/* END STRUCT random_data LOC=./src/chown.merge.c:8737 */
 
-/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/chown.merge.c:8750 */
-#line 8750
+/* BEGIN FUNCTION-DECL-EXTERN scanf LOC=./src/chown.merge.c:8754 */
+#line 8754
 extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_scanf")  ;
-/* END FUNCTION-DECL-EXTERN scanf LOC=./src/chown.merge.c:8750 */
+/* END FUNCTION-DECL-EXTERN scanf LOC=./src/chown.merge.c:8754 */
 
 /* BEGIN FUNCTION-DECL __builtin_asinhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12424,15 +12432,15 @@ extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_
    _Float16 __builtin_powf16(_Float16  , _Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_powf16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/chown.merge.c:8796 */
-#line 8796
+/* BEGIN FUNCTION-DECL-EXTERN puts LOC=./src/chown.merge.c:8800 */
+#line 8800
 extern int puts(char const   *__s ) ;
-/* END FUNCTION-DECL-EXTERN puts LOC=./src/chown.merge.c:8796 */
+/* END FUNCTION-DECL-EXTERN puts LOC=./src/chown.merge.c:8800 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setgrent LOC=./src/chown.merge.c:8788 */
-#line 8788
+/* BEGIN FUNCTION-DECL-EXTERN setgrent LOC=./src/chown.merge.c:8792 */
+#line 8792
 extern void setgrent(void) ;
-/* END FUNCTION-DECL-EXTERN setgrent LOC=./src/chown.merge.c:8788 */
+/* END FUNCTION-DECL-EXTERN setgrent LOC=./src/chown.merge.c:8792 */
 
 /* BEGIN FUNCTION-DECL __builtin_addc LOC=BUILTIN */
 /* compiler builtin: 
@@ -12445,17 +12453,17 @@ extern void setgrent(void) ;
    _Complex long double __builtin_catanhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanhl LOC=BUILTIN */
 
-/* BEGIN STRUCT __anonstruct___once_flag_947329320 LOC=./src/chown.merge.c:8830 */
-#line 8830 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct___once_flag_947329320 LOC=./src/chown.merge.c:8834 */
+#line 8834 "./src/chown.merge.c"
 struct __anonstruct___once_flag_947329320 {
    int __data ;
 };
-/* END STRUCT __anonstruct___once_flag_947329320 LOC=./src/chown.merge.c:8830 */
+/* END STRUCT __anonstruct___once_flag_947329320 LOC=./src/chown.merge.c:8834 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/chown.merge.c:8857 */
-#line 8857
+/* BEGIN FUNCTION-DECL-EXTERN chdir LOC=./src/chown.merge.c:8861 */
+#line 8861
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) chdir)(char const   *__path ) ;
-/* END FUNCTION-DECL-EXTERN chdir LOC=./src/chown.merge.c:8857 */
+/* END FUNCTION-DECL-EXTERN chdir LOC=./src/chown.merge.c:8861 */
 
 /* BEGIN FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -12463,62 +12471,62 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
                                    unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_usubll_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/chown.merge.c:8861 */
-#line 8861
-extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
-/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/chown.merge.c:8861 */
-
-/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/chown.merge.c:8865 */
+/* BEGIN FUNCTION-DECL-EXTERN geteuid LOC=./src/chown.merge.c:8865 */
 #line 8865
+extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) geteuid)(void) ;
+/* END FUNCTION-DECL-EXTERN geteuid LOC=./src/chown.merge.c:8865 */
+
+/* BEGIN FUNCTION-DECL-EXTERN fmemopen LOC=./src/chown.merge.c:8869 */
+#line 8869
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fmemopen)(void *__s ,
                                                                                  size_t __len ,
                                                                                  char const   *__modes )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/chown.merge.c:8865 */
+/* END FUNCTION-DECL-EXTERN fmemopen LOC=./src/chown.merge.c:8869 */
 
-/* BEGIN ENUM __anonenum_819735966 LOC=./src/chown.merge.c:8891 */
-#line 8891
+/* BEGIN ENUM __anonenum_819735966 LOC=./src/chown.merge.c:8895 */
+#line 8895
 enum __anonenum_819735966 {
     LOG10_TIMESPEC_HZ = 9
 } ;
-/* END ENUM __anonenum_819735966 LOC=./src/chown.merge.c:8891 */
+/* END ENUM __anonenum_819735966 LOC=./src/chown.merge.c:8895 */
 
 /* BEGIN FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_powf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_powf128 LOC=BUILTIN */
 
-/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/chown.merge.c:8906 */
-#line 8906 "./src/chown.merge.c"
+/* BEGIN UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/chown.merge.c:8910 */
+#line 8910 "./src/chown.merge.c"
 union __anonunion_pthread_rwlock_t_656928968 {
    struct __pthread_rwlock_arch_t __data ;
    char __size[56] ;
    long __align ;
 };
-/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/chown.merge.c:8906 */
+/* END UNION __anonunion_pthread_rwlock_t_656928968 LOC=./src/chown.merge.c:8910 */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/chown.merge.c:8918 */
-#line 8918
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/chown.merge.c:8922 */
+#line 8922
 extern char *quotearg_n_custom_mem(int n , char const   *left_quote , char const   *right_quote ,
                                    char const   *arg , size_t argsize ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/chown.merge.c:8918 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_custom_mem LOC=./src/chown.merge.c:8922 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/chown.merge.c:8970 */
-#line 8970
+/* BEGIN FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/chown.merge.c:8974 */
+#line 8974
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,4), __leaf__)) strncasecmp_l)(char const   *__s1 ,
                                                                                                         char const   *__s2 ,
                                                                                                         size_t __n ,
                                                                                                         locale_t __loc )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/chown.merge.c:8970 */
+/* END FUNCTION-DECL-EXTERN strncasecmp_l LOC=./src/chown.merge.c:8974 */
 
-/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/chown.merge.c:8964 */
-#line 8964
+/* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=./src/chown.merge.c:8968 */
+#line 8968
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkfifoat)(int __fd ,
                                                                                                char const   *__path ,
                                                                                                __mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/chown.merge.c:8964 */
+/* END FUNCTION-DECL-EXTERN mkfifoat LOC=./src/chown.merge.c:8968 */
 
-/* BEGIN STRUCT __anonstruct_siginfo_t_853205917 LOC=./src/chown.merge.c:8977 */
-#line 8977 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_siginfo_t_853205917 LOC=./src/chown.merge.c:8981 */
+#line 8981 "./src/chown.merge.c"
 struct __anonstruct_siginfo_t_853205917 {
    int si_signo ;
    int si_errno ;
@@ -12526,7 +12534,7 @@ struct __anonstruct_siginfo_t_853205917 {
    int __pad0 ;
    union __anonunion__sifields_48201401 _sifields ;
 };
-/* END STRUCT __anonstruct_siginfo_t_853205917 LOC=./src/chown.merge.c:8977 */
+/* END STRUCT __anonstruct_siginfo_t_853205917 LOC=./src/chown.merge.c:8981 */
 
 /* BEGIN FUNCTION-DECL __builtin_subcs LOC=BUILTIN */
 /* compiler builtin: 
@@ -12539,25 +12547,25 @@ struct __anonstruct_siginfo_t_853205917 {
 struct __anonstruct__sigev_thread_746770901 ;
 /* END STRUCT-DECL __anonstruct__sigev_thread_746770901 LOC=./src/chown.merge.c:1101 */
 
-/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/chown.merge.c:9002 */
-#line 9002
+/* BEGIN FUNCTION-DECL-EXTERN opendir LOC=./src/chown.merge.c:9006 */
+#line 9006
 extern DIR *( __attribute__((__nonnull__(1))) opendir)(char const   *__name )  __attribute__((__malloc__)) ;
-/* END FUNCTION-DECL-EXTERN opendir LOC=./src/chown.merge.c:9002 */
+/* END FUNCTION-DECL-EXTERN opendir LOC=./src/chown.merge.c:9006 */
 
-/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/chown.merge.c:8998 */
-#line 8998
+/* BEGIN FUNCTION-DECL-EXTERN llabs LOC=./src/chown.merge.c:9002 */
+#line 9002
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__leaf__)) llabs)(long long __x )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN llabs LOC=./src/chown.merge.c:8998 */
+/* END FUNCTION-DECL-EXTERN llabs LOC=./src/chown.merge.c:9002 */
 
 /* BEGIN FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_is_aligned(void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_is_aligned LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/chown.merge.c:9011 */
-#line 9011
+/* BEGIN FUNCTION-DECL-EXTERN gettime LOC=./src/chown.merge.c:9015 */
+#line 9015
 extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
-/* END FUNCTION-DECL-EXTERN gettime LOC=./src/chown.merge.c:9011 */
+/* END FUNCTION-DECL-EXTERN gettime LOC=./src/chown.merge.c:9015 */
 
 /* BEGIN FUNCTION-DECL __builtin_nextafter LOC=BUILTIN */
 /* compiler builtin: 
@@ -12569,15 +12577,15 @@ extern void ( __attribute__((__nonnull__(1))) gettime)(struct timespec * ) ;
 struct __locale_data ;
 /* END STRUCT-DECL __locale_data LOC=./src/chown.merge.c:829 */
 
-/* BEGIN FUNCTION-DECL-EXTERN chopt_init LOC=./src/chown.merge.c:9029 */
-#line 9029
+/* BEGIN FUNCTION-DECL-EXTERN chopt_init LOC=./src/chown.merge.c:9033 */
+#line 9033
 extern void chopt_init(struct Chown_option *chopt ) ;
-/* END FUNCTION-DECL-EXTERN chopt_init LOC=./src/chown.merge.c:9029 */
+/* END FUNCTION-DECL-EXTERN chopt_init LOC=./src/chown.merge.c:9033 */
 
-/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/chown.merge.c:9052 */
-#line 9052
+/* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=./src/chown.merge.c:9056 */
+#line 9056
 extern unsigned int error_message_count ;
-/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/chown.merge.c:9052 */
+/* END VARIABLE-DECL-EXTERN error_message_count LOC=./src/chown.merge.c:9056 */
 
 /* BEGIN FUNCTION-DECL __builtin_floorl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12609,10 +12617,10 @@ enum __anonenum_437032235___0 ;
    _Complex long double __builtin_catanl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_catanl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/chown.merge.c:9111 */
-#line 9111
+/* BEGIN FUNCTION-DECL __bswap_64 LOC=./src/chown.merge.c:9115 */
+#line 9115
 __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_64 LOC=./src/chown.merge.c:9111 */
+/* END FUNCTION-DECL __bswap_64 LOC=./src/chown.merge.c:9115 */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -12648,13 +12656,13 @@ enum __anonenum_91015150___0 ;
    _Complex long double __builtin_casinhl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinhl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/chown.merge.c:9168 */
-#line 9168
+/* BEGIN FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/chown.merge.c:9172 */
+#line 9172
 extern int ( __attribute__((__nonnull__(2))) fputc_unlocked)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/chown.merge.c:9168 */
+/* END FUNCTION-DECL-EXTERN fputc_unlocked LOC=./src/chown.merge.c:9172 */
 
-/* BEGIN STRUCT _fpstate LOC=./src/chown.merge.c:9177 */
-#line 9177 "./src/chown.merge.c"
+/* BEGIN STRUCT _fpstate LOC=./src/chown.merge.c:9181 */
+#line 9181 "./src/chown.merge.c"
 struct _fpstate {
    __uint16_t cwd ;
    __uint16_t swd ;
@@ -12668,10 +12676,10 @@ struct _fpstate {
    struct _xmmreg _xmm[16] ;
    __uint32_t __glibc_reserved1[24] ;
 };
-/* END STRUCT _fpstate LOC=./src/chown.merge.c:9177 */
+/* END STRUCT _fpstate LOC=./src/chown.merge.c:9181 */
 
-/* BEGIN STRUCT lconv LOC=./src/chown.merge.c:9199 */
-#line 9199 "./src/chown.merge.c"
+/* BEGIN STRUCT lconv LOC=./src/chown.merge.c:9203 */
+#line 9203 "./src/chown.merge.c"
 struct lconv {
    char *decimal_point ;
    char *thousands_sep ;
@@ -12698,67 +12706,67 @@ struct lconv {
    char int_p_sign_posn ;
    char int_n_sign_posn ;
 };
-/* END STRUCT lconv LOC=./src/chown.merge.c:9199 */
+/* END STRUCT lconv LOC=./src/chown.merge.c:9203 */
 
 /* BEGIN FUNCTION-DECL __builtin_atan LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_atan(double  ) ;  */
 /* END FUNCTION-DECL __builtin_atan LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getgid LOC=./src/chown.merge.c:9270 */
-#line 9270
+/* BEGIN FUNCTION-DECL-EXTERN getgid LOC=./src/chown.merge.c:9274 */
+#line 9274
 extern  __attribute__((__nothrow__)) __gid_t ( __attribute__((__leaf__)) getgid)(void) ;
-/* END FUNCTION-DECL-EXTERN getgid LOC=./src/chown.merge.c:9270 */
+/* END FUNCTION-DECL-EXTERN getgid LOC=./src/chown.merge.c:9274 */
 
-/* BEGIN TYPEDEF caddr_t LOC=./src/chown.merge.c:9279 */
-#line 9279 "./src/chown.merge.c"
+/* BEGIN TYPEDEF caddr_t LOC=./src/chown.merge.c:9283 */
+#line 9283 "./src/chown.merge.c"
 typedef __caddr_t caddr_t;
-/* END TYPEDEF caddr_t LOC=./src/chown.merge.c:9279 */
+/* END TYPEDEF caddr_t LOC=./src/chown.merge.c:9283 */
 
-/* BEGIN FUNCTION-DECL-EXTERN creat64 LOC=./src/chown.merge.c:9283 */
-#line 9283
+/* BEGIN FUNCTION-DECL-EXTERN creat64 LOC=./src/chown.merge.c:9287 */
+#line 9287
 extern int ( __attribute__((__nonnull__(1))) creat64)(char const   *__file , mode_t __mode ) ;
-/* END FUNCTION-DECL-EXTERN creat64 LOC=./src/chown.merge.c:9283 */
+/* END FUNCTION-DECL-EXTERN creat64 LOC=./src/chown.merge.c:9287 */
 
 /* BEGIN FUNCTION-DECL __builtin_powif LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_powif(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_powif LOC=BUILTIN */
 
-/* BEGIN STRUCT itimerspec LOC=./src/chown.merge.c:9299 */
-#line 9299 "./src/chown.merge.c"
+/* BEGIN STRUCT itimerspec LOC=./src/chown.merge.c:9303 */
+#line 9303 "./src/chown.merge.c"
 struct itimerspec {
    struct timespec it_interval ;
    struct timespec it_value ;
 };
-/* END STRUCT itimerspec LOC=./src/chown.merge.c:9299 */
+/* END STRUCT itimerspec LOC=./src/chown.merge.c:9303 */
 
-/* BEGIN STRUCT timezone LOC=./src/chown.merge.c:9306 */
-#line 9306 "./src/chown.merge.c"
+/* BEGIN STRUCT timezone LOC=./src/chown.merge.c:9310 */
+#line 9310 "./src/chown.merge.c"
 struct timezone {
    int tz_minuteswest ;
    int tz_dsttime ;
 };
-/* END STRUCT timezone LOC=./src/chown.merge.c:9306 */
+/* END STRUCT timezone LOC=./src/chown.merge.c:9310 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalblnf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_scalblnf(float  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strftime_l LOC=./src/chown.merge.c:9318 */
-#line 9318
+/* BEGIN FUNCTION-DECL-EXTERN strftime_l LOC=./src/chown.merge.c:9322 */
+#line 9322
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) strftime_l)(char * __restrict  __s ,
                                                                                     size_t __maxsize ,
                                                                                     char const   * __restrict  __format ,
                                                                                     struct tm  const  * __restrict  __tp ,
                                                                                     locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strftime_l LOC=./src/chown.merge.c:9318 */
+/* END FUNCTION-DECL-EXTERN strftime_l LOC=./src/chown.merge.c:9322 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getpgid LOC=./src/chown.merge.c:9326 */
-#line 9326
+/* BEGIN FUNCTION-DECL-EXTERN getpgid LOC=./src/chown.merge.c:9330 */
+#line 9330
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpgid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN getpgid LOC=./src/chown.merge.c:9326 */
+/* END FUNCTION-DECL-EXTERN getpgid LOC=./src/chown.merge.c:9330 */
 
 /* BEGIN STRUCT-DECL obstack LOC=./src/chown.merge.c:877 */
 #line 877
@@ -12770,33 +12778,33 @@ struct obstack ;
    void __builtin_longjmp(void ** , int  ) ;  */
 /* END FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/chown.merge.c:9334 */
-#line 9334
+/* BEGIN FUNCTION-DECL-EXTERN __sysconf LOC=./src/chown.merge.c:9338 */
+#line 9338
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) __sysconf)(int __name ) ;
-/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/chown.merge.c:9334 */
+/* END FUNCTION-DECL-EXTERN __sysconf LOC=./src/chown.merge.c:9338 */
 
-/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/chown.merge.c:9343 */
-#line 9343
+/* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/chown.merge.c:9347 */
+#line 9347
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/chown.merge.c:9343 */
+/* END FUNCTION-DECL-EXTERN clearerr_unlocked LOC=./src/chown.merge.c:9347 */
 
-/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/chown.merge.c:9355 */
-#line 9355
+/* BEGIN FUNCTION-DECL-EXTERN renameat LOC=./src/chown.merge.c:9359 */
+#line 9359
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat)(int __oldfd ,
                                                                                char const   *__old ,
                                                                                int __newfd ,
                                                                                char const   *__new ) ;
-/* END FUNCTION-DECL-EXTERN renameat LOC=./src/chown.merge.c:9355 */
+/* END FUNCTION-DECL-EXTERN renameat LOC=./src/chown.merge.c:9359 */
 
-/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/chown.merge.c:9351 */
-#line 9351
+/* BEGIN FUNCTION-DECL-EXTERN timer_delete LOC=./src/chown.merge.c:9355 */
+#line 9355
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_delete)(timer_t __timerid ) ;
-/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/chown.merge.c:9351 */
+/* END FUNCTION-DECL-EXTERN timer_delete LOC=./src/chown.merge.c:9355 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/chown.merge.c:9347 */
-#line 9347
+/* BEGIN FUNCTION-DECL-EXTERN getppid LOC=./src/chown.merge.c:9351 */
+#line 9351
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid)(void) ;
-/* END FUNCTION-DECL-EXTERN getppid LOC=./src/chown.merge.c:9347 */
+/* END FUNCTION-DECL-EXTERN getppid LOC=./src/chown.merge.c:9351 */
 
 /* BEGIN FUNCTION-DECL __builtin_subc LOC=BUILTIN */
 /* compiler builtin: 
@@ -12804,20 +12812,20 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid
                                unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_subc LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __FILE LOC=./src/chown.merge.c:9378 */
-#line 9378 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __FILE LOC=./src/chown.merge.c:9382 */
+#line 9382 "./src/chown.merge.c"
 typedef struct _IO_FILE __FILE;
-/* END TYPEDEF __FILE LOC=./src/chown.merge.c:9378 */
+/* END TYPEDEF __FILE LOC=./src/chown.merge.c:9382 */
 
-/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/chown.merge.c:9386 */
-#line 9386
+/* BEGIN FUNCTION-DECL-EXTERN dcngettext LOC=./src/chown.merge.c:9390 */
+#line 9390
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) dcngettext)(char const   *__domainname ,
                                                                                    char const   *__msgid1 ,
                                                                                    char const   *__msgid2 ,
                                                                                    unsigned long __n ,
                                                                                    int __category )  __attribute__((__format_arg__(2),
 __format_arg__(3))) ;
-/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/chown.merge.c:9386 */
+/* END FUNCTION-DECL-EXTERN dcngettext LOC=./src/chown.merge.c:9390 */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12829,10 +12837,10 @@ __format_arg__(3))) ;
    double __builtin_exp2(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp2 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/chown.merge.c:9406 */
-#line 9406
+/* BEGIN FUNCTION-DECL-EXTERN pwrite64 LOC=./src/chown.merge.c:9410 */
+#line 9410
 extern ssize_t pwrite64(int __fd , void const   *__buf , size_t __n , __off64_t __offset ) ;
-/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/chown.merge.c:9406 */
+/* END FUNCTION-DECL-EXTERN pwrite64 LOC=./src/chown.merge.c:9410 */
 
 /* BEGIN FUNCTION-DECL emit_symlink_recurse_options LOC=UNKNOWN */
 __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
@@ -12848,50 +12856,50 @@ __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
    _Float128 __builtin_erff128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_erff128 LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/chown.merge.c:9450 */
-#line 9450 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_clockid_t LOC=./src/chown.merge.c:9454 */
+#line 9454 "./src/chown.merge.c"
 typedef int __kernel_clockid_t;
-/* END TYPEDEF __kernel_clockid_t LOC=./src/chown.merge.c:9450 */
+/* END TYPEDEF __kernel_clockid_t LOC=./src/chown.merge.c:9454 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/chown.merge.c:9454 */
-#line 9454
+/* BEGIN FUNCTION-DECL-EXTERN strtoul LOC=./src/chown.merge.c:9458 */
+#line 9458
 extern  __attribute__((__nothrow__)) unsigned long ( __attribute__((__nonnull__(1),
 __leaf__)) strtoul)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                     int __base )  __asm__("__isoc23_strtoul")  ;
-/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/chown.merge.c:9454 */
+/* END FUNCTION-DECL-EXTERN strtoul LOC=./src/chown.merge.c:9458 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/chown.merge.c:9493 */
-#line 9493
+/* BEGIN FUNCTION-DECL-EXTERN strcoll LOC=./src/chown.merge.c:9497 */
+#line 9497
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strcoll)(char const   *__s1 ,
                                                                                                 char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/chown.merge.c:9493 */
+/* END FUNCTION-DECL-EXTERN strcoll LOC=./src/chown.merge.c:9497 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/chown.merge.c:9504 */
-#line 9504
+/* BEGIN FUNCTION-DECL-EXTERN strverscmp LOC=./src/chown.merge.c:9508 */
+#line 9508
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) strverscmp)(char const   *__s1 ,
                                                                                                    char const   *__s2 )  __attribute__((__pure__)) ;
-/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/chown.merge.c:9504 */
+/* END FUNCTION-DECL-EXTERN strverscmp LOC=./src/chown.merge.c:9508 */
 
 /* BEGIN STRUCT-DECL timespec LOC=./src/chown.merge.c:1237 */
 #line 1237
 struct timespec ;
 /* END STRUCT-DECL timespec LOC=./src/chown.merge.c:1237 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/chown.merge.c:9536 */
-#line 9536
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/chown.merge.c:9540 */
+#line 9540
 extern int rpl_fcntl(int fd , int action  , ...) ;
-/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/chown.merge.c:9536 */
+/* END FUNCTION-DECL-EXTERN rpl_fcntl LOC=./src/chown.merge.c:9540 */
 
 /* BEGIN FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cimagl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cimagl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/chown.merge.c:9549 */
-#line 9549
+/* BEGIN FUNCTION-DECL-EXTERN xcalloc LOC=./src/chown.merge.c:9553 */
+#line 9553
 extern void *xcalloc(size_t n , size_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
-/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/chown.merge.c:9549 */
+/* END FUNCTION-DECL-EXTERN xcalloc LOC=./src/chown.merge.c:9553 */
 
 /* BEGIN FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -12899,78 +12907,78 @@ __alloc_size__(1,2))) ;
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/chown.merge.c:9560 */
-#line 9560
+/* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=./src/chown.merge.c:9564 */
+#line 9564
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigdelset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/chown.merge.c:9560 */
+/* END FUNCTION-DECL-EXTERN sigdelset LOC=./src/chown.merge.c:9564 */
 
 /* BEGIN FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_signbitl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_signbitl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/chown.merge.c:9570 */
-#line 9570
+/* BEGIN FUNCTION-DECL-EXTERN timespec_getres LOC=./src/chown.merge.c:9574 */
+#line 9574
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timespec_getres)(struct timespec *__ts ,
                                                                                       int __base ) ;
-/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/chown.merge.c:9570 */
+/* END FUNCTION-DECL-EXTERN timespec_getres LOC=./src/chown.merge.c:9574 */
 
-/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/chown.merge.c:9585 */
-#line 9585 "./src/chown.merge.c"
+/* BEGIN STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/chown.merge.c:9589 */
+#line 9589 "./src/chown.merge.c"
 struct __anonstruct_imaxdiv_t_825626742 {
    long quot ;
    long rem ;
 };
-/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/chown.merge.c:9585 */
+/* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=./src/chown.merge.c:9589 */
 
 /* BEGIN FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin___fprintf_chk(void * , int  , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin___fprintf_chk LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __s32 LOC=./src/chown.merge.c:9610 */
-#line 9610 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __s32 LOC=./src/chown.merge.c:9614 */
+#line 9614 "./src/chown.merge.c"
 typedef int __s32;
-/* END TYPEDEF __s32 LOC=./src/chown.merge.c:9610 */
+/* END TYPEDEF __s32 LOC=./src/chown.merge.c:9614 */
 
-/* BEGIN STRUCT statx_timestamp LOC=./src/chown.merge.c:9618 */
-#line 9618 "./src/chown.merge.c"
+/* BEGIN STRUCT statx_timestamp LOC=./src/chown.merge.c:9622 */
+#line 9622 "./src/chown.merge.c"
 struct statx_timestamp {
    __s64 tv_sec ;
    __u32 tv_nsec ;
    __s32 __reserved ;
 };
-/* END STRUCT statx_timestamp LOC=./src/chown.merge.c:9618 */
+/* END STRUCT statx_timestamp LOC=./src/chown.merge.c:9622 */
 
 /* BEGIN FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isnormal(...) ;  */
 /* END FUNCTION-DECL __builtin_isnormal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/chown.merge.c:9626 */
-#line 9626
+/* BEGIN FUNCTION-DECL-EXTERN mrand48_r LOC=./src/chown.merge.c:9630 */
+#line 9630
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) mrand48_r)(struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
-/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/chown.merge.c:9626 */
+/* END FUNCTION-DECL-EXTERN mrand48_r LOC=./src/chown.merge.c:9630 */
 
-/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/chown.merge.c:9636 */
-#line 9636
+/* BEGIN ENUM __anonenum_852341087___0 LOC=./src/chown.merge.c:9640 */
+#line 9640
 enum __anonenum_852341087___0 {
     SIGEV_SIGNAL___0 = 0,
     SIGEV_NONE___0 = 1,
     SIGEV_THREAD___0 = 2,
     SIGEV_THREAD_ID___0 = 4
 } ;
-/* END ENUM __anonenum_852341087___0 LOC=./src/chown.merge.c:9636 */
+/* END ENUM __anonenum_852341087___0 LOC=./src/chown.merge.c:9640 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/chown.merge.c:9649 */
-#line 9649
+/* BEGIN FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/chown.merge.c:9653 */
+#line 9653
 extern int ( __attribute__((__nonnull__(1))) fgetc_unlocked)(FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/chown.merge.c:9649 */
+/* END FUNCTION-DECL-EXTERN fgetc_unlocked LOC=./src/chown.merge.c:9653 */
 
-/* BEGIN ENUM __anonenum_850350928 LOC=./src/chown.merge.c:9677 */
-#line 9677
+/* BEGIN ENUM __anonenum_850350928 LOC=./src/chown.merge.c:9681 */
+#line 9681
 enum __anonenum_850350928 {
     SEGV_MAPERR = 1,
     SEGV_ACCERR = 2,
@@ -12983,27 +12991,27 @@ enum __anonenum_850350928 {
     SEGV_MTESERR = 9,
     SEGV_CPERR = 10
 } ;
-/* END ENUM __anonenum_850350928 LOC=./src/chown.merge.c:9677 */
+/* END ENUM __anonenum_850350928 LOC=./src/chown.merge.c:9681 */
 
 /* BEGIN FUNCTION-DECL __builtin_sub_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_sub_overflow(...) ;  */
 /* END FUNCTION-DECL __builtin_sub_overflow LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/chown.merge.c:9701 */
-#line 9701
+/* BEGIN FUNCTION-DECL-EXTERN srand48 LOC=./src/chown.merge.c:9705 */
+#line 9705
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(long __seedval ) ;
-/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/chown.merge.c:9701 */
+/* END FUNCTION-DECL-EXTERN srand48 LOC=./src/chown.merge.c:9705 */
 
 /* BEGIN FUNCTION-DECL __builtin_powi LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_powi(double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_powi LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/chown.merge.c:9715 */
-#line 9715 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_mode_t LOC=./src/chown.merge.c:9719 */
+#line 9719 "./src/chown.merge.c"
 typedef unsigned int __kernel_mode_t;
-/* END TYPEDEF __kernel_mode_t LOC=./src/chown.merge.c:9715 */
+/* END TYPEDEF __kernel_mode_t LOC=./src/chown.merge.c:9719 */
 
 /* BEGIN FUNCTION-DECL __builtin_log2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -13015,13 +13023,13 @@ typedef unsigned int __kernel_mode_t;
    long __builtin_expect(long  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_expect LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/chown.merge.c:9742 */
-#line 9742
+/* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=./src/chown.merge.c:9746 */
+#line 9746
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromd)(char *__dest ,
                                                                                                size_t __size ,
                                                                                                char const   *__format ,
                                                                                                double __f ) ;
-/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/chown.merge.c:9742 */
+/* END FUNCTION-DECL-EXTERN strfromd LOC=./src/chown.merge.c:9746 */
 
 /* BEGIN FUNCTION-DECL __builtin_coshf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13033,38 +13041,38 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
    int __builtin_va_arg_pack_len(void) ;  */
 /* END FUNCTION-DECL __builtin_va_arg_pack_len LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/chown.merge.c:9808 */
-#line 9808
+/* BEGIN FUNCTION-DECL-EXTERN __stpcpy LOC=./src/chown.merge.c:9812 */
+#line 9812
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) __stpcpy)(char * __restrict  __dest ,
                                                                                                    char const   * __restrict  __src ) ;
-/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/chown.merge.c:9808 */
+/* END FUNCTION-DECL-EXTERN __stpcpy LOC=./src/chown.merge.c:9812 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/chown.merge.c:9804 */
-#line 9804
+/* BEGIN FUNCTION-DECL-EXTERN fdatasync LOC=./src/chown.merge.c:9808 */
+#line 9808
 extern int fdatasync(int __fildes ) ;
-/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/chown.merge.c:9804 */
+/* END FUNCTION-DECL-EXTERN fdatasync LOC=./src/chown.merge.c:9808 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/chown.merge.c:9813 */
-#line 9813
+/* BEGIN FUNCTION-DECL-EXTERN fputc LOC=./src/chown.merge.c:9817 */
+#line 9817
 extern int ( __attribute__((__nonnull__(2))) fputc)(int __c , FILE *__stream ) ;
-/* END FUNCTION-DECL-EXTERN fputc LOC=./src/chown.merge.c:9813 */
+/* END FUNCTION-DECL-EXTERN fputc LOC=./src/chown.merge.c:9817 */
 
-/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/chown.merge.c:9832 */
-#line 9832
+/* BEGIN FUNCTION-DECL-EXTERN sigismember LOC=./src/chown.merge.c:9836 */
+#line 9836
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigismember)(sigset_t const   *__set ,
                                                                                                   int __signo ) ;
-/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/chown.merge.c:9832 */
+/* END FUNCTION-DECL-EXTERN sigismember LOC=./src/chown.merge.c:9836 */
 
 /* BEGIN FUNCTION-DECL __builtin_cosf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_cosf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/chown.merge.c:9847 */
-#line 9847
+/* BEGIN FUNCTION-DECL-EXTERN symlink LOC=./src/chown.merge.c:9851 */
+#line 9851
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) symlink)(char const   *__from ,
                                                                                                 char const   *__to ) ;
-/* END FUNCTION-DECL-EXTERN symlink LOC=./src/chown.merge.c:9847 */
+/* END FUNCTION-DECL-EXTERN symlink LOC=./src/chown.merge.c:9851 */
 
 /* BEGIN STRUCT-DECL random_data LOC=./src/chown.merge.c:1129 */
 #line 1129
@@ -13590,15 +13598,15 @@ extern void ( __attribute__((__nonnull__(1,4))) qsort)(void *__base , size_t __n
    _Complex float __builtin_cexpf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cexpf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/chown.merge.c:10770 */
-#line 10770
-extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
-/* END FUNCTION-DECL-EXTERN dup LOC=./src/chown.merge.c:10770 */
-
-/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/chown.merge.c:10774 */
+/* BEGIN FUNCTION-DECL-EXTERN dup LOC=./src/chown.merge.c:10774 */
 #line 10774
+extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
+/* END FUNCTION-DECL-EXTERN dup LOC=./src/chown.merge.c:10774 */
+
+/* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/chown.merge.c:10778 */
+#line 10778
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrordesc_np)(int __err ) ;
-/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/chown.merge.c:10774 */
+/* END FUNCTION-DECL-EXTERN strerrordesc_np LOC=./src/chown.merge.c:10778 */
 
 /* BEGIN ENUM-DECL __anonenum_819735966 LOC=./src/chown.merge.c:1221 */
 #line 1221
@@ -13610,41 +13618,41 @@ enum __anonenum_819735966 ;
    _Complex float __builtin_cacoshf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacoshf LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/chown.merge.c:10783 */
-#line 10783
+/* BEGIN FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/chown.merge.c:10787 */
+#line 10787
 extern ssize_t rpl_copy_file_range(int ifd , off_t *ipos , int ofd , off_t *opos ,
                                    size_t len , unsigned int flags ) ;
-/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/chown.merge.c:10783 */
+/* END FUNCTION-DECL-EXTERN rpl_copy_file_range LOC=./src/chown.merge.c:10787 */
 
-/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/chown.merge.c:10793 */
-#line 10793 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __compar_d_fn_t LOC=./src/chown.merge.c:10797 */
+#line 10797 "./src/chown.merge.c"
 typedef int (*__compar_d_fn_t)(void const   * , void const   * , void * );
-/* END TYPEDEF __compar_d_fn_t LOC=./src/chown.merge.c:10793 */
+/* END TYPEDEF __compar_d_fn_t LOC=./src/chown.merge.c:10797 */
 
-/* BEGIN FUNCTION-DECL write_error LOC=./src/chown.merge.c:10814 */
-#line 10814
+/* BEGIN FUNCTION-DECL write_error LOC=./src/chown.merge.c:10818 */
+#line 10818
 __inline static void write_error(void) ;
-/* END FUNCTION-DECL write_error LOC=./src/chown.merge.c:10814 */
+/* END FUNCTION-DECL write_error LOC=./src/chown.merge.c:10818 */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/chown.merge.c:10804 */
-#line 10804
+/* BEGIN FUNCTION-DECL-EXTERN strtol LOC=./src/chown.merge.c:10808 */
+#line 10808
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) strtol)(char const   * __restrict  __nptr ,
                                                                                               char ** __restrict  __endptr ,
                                                                                               int __base )  __asm__("__isoc23_strtol")  ;
-/* END FUNCTION-DECL-EXTERN strtol LOC=./src/chown.merge.c:10804 */
+/* END FUNCTION-DECL-EXTERN strtol LOC=./src/chown.merge.c:10808 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/chown.merge.c:10797 */
-#line 10797
+/* BEGIN FUNCTION-DECL-EXTERN ngettext LOC=./src/chown.merge.c:10801 */
+#line 10801
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ngettext)(char const   *__msgid1 ,
                                                                                  char const   *__msgid2 ,
                                                                                  unsigned long __n )  __attribute__((__format_arg__(1),
 __format_arg__(2))) ;
-/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/chown.merge.c:10797 */
+/* END FUNCTION-DECL-EXTERN ngettext LOC=./src/chown.merge.c:10801 */
 
-/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/chown.merge.c:10818 */
-#line 10818
+/* BEGIN FUNCTION-DECL-EXTERN closefrom LOC=./src/chown.merge.c:10822 */
+#line 10822
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)(int __lowfd ) ;
-/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/chown.merge.c:10818 */
+/* END FUNCTION-DECL-EXTERN closefrom LOC=./src/chown.merge.c:10822 */
 
 /* BEGIN FUNCTION-DECL __builtin_fmaxf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13661,10 +13669,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) closefrom)
    int __builtin_islessequal(...) ;  */
 /* END FUNCTION-DECL __builtin_islessequal LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/chown.merge.c:10845 */
-#line 10845
+/* BEGIN FUNCTION-DECL-EXTERN strerror LOC=./src/chown.merge.c:10849 */
+#line 10849
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)(int __errnum ) ;
-/* END FUNCTION-DECL-EXTERN strerror LOC=./src/chown.merge.c:10845 */
+/* END FUNCTION-DECL-EXTERN strerror LOC=./src/chown.merge.c:10849 */
 
 /* BEGIN FUNCTION-DECL __builtin_unpredictable LOC=BUILTIN */
 /* compiler builtin: 
@@ -13676,24 +13684,24 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)
    double __builtin_creal(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_creal LOC=BUILTIN */
 
-/* BEGIN TYPEDEF int_least16_t LOC=./src/chown.merge.c:10881 */
-#line 10881 "./src/chown.merge.c"
+/* BEGIN TYPEDEF int_least16_t LOC=./src/chown.merge.c:10885 */
+#line 10885 "./src/chown.merge.c"
 typedef __int_least16_t int_least16_t;
-/* END TYPEDEF int_least16_t LOC=./src/chown.merge.c:10881 */
+/* END TYPEDEF int_least16_t LOC=./src/chown.merge.c:10885 */
 
-/* BEGIN FUNCTION-DECL-EXTERN readlink LOC=./src/chown.merge.c:10891 */
-#line 10891
+/* BEGIN FUNCTION-DECL-EXTERN readlink LOC=./src/chown.merge.c:10895 */
+#line 10895
 extern  __attribute__((__nothrow__)) ssize_t ( __attribute__((__nonnull__(1,2), __leaf__)) readlink)(char const   * __restrict  __path ,
                                                                                                      char * __restrict  __buf ,
                                                                                                      size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN readlink LOC=./src/chown.merge.c:10891 */
+/* END FUNCTION-DECL-EXTERN readlink LOC=./src/chown.merge.c:10895 */
 
-/* BEGIN ENUM __anonenum_783849514 LOC=./src/chown.merge.c:10901 */
-#line 10901
+/* BEGIN ENUM __anonenum_783849514 LOC=./src/chown.merge.c:10905 */
+#line 10905
 enum __anonenum_783849514 {
     PLURAL_REDUCER = 1000000
 } ;
-/* END ENUM __anonenum_783849514 LOC=./src/chown.merge.c:10901 */
+/* END ENUM __anonenum_783849514 LOC=./src/chown.merge.c:10905 */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13705,85 +13713,85 @@ enum __anonenum_783849514 {
 enum __pid_type ;
 /* END ENUM-DECL __pid_type LOC=./src/chown.merge.c:1365 */
 
-/* BEGIN FUNCTION-DECL-EXTERN ffsll LOC=./src/chown.merge.c:10912 */
-#line 10912
+/* BEGIN FUNCTION-DECL-EXTERN ffsll LOC=./src/chown.merge.c:10916 */
+#line 10916
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffsll)(long long __ll )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ffsll LOC=./src/chown.merge.c:10912 */
+/* END FUNCTION-DECL-EXTERN ffsll LOC=./src/chown.merge.c:10916 */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_atanf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_atanf LOC=BUILTIN */
 
-/* BEGIN TYPEDEF __kernel_ptrdiff_t LOC=./src/chown.merge.c:10930 */
-#line 10930 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_ptrdiff_t LOC=./src/chown.merge.c:10934 */
+#line 10934 "./src/chown.merge.c"
 typedef __kernel_long_t __kernel_ptrdiff_t;
-/* END TYPEDEF __kernel_ptrdiff_t LOC=./src/chown.merge.c:10930 */
+/* END TYPEDEF __kernel_ptrdiff_t LOC=./src/chown.merge.c:10934 */
 
 /* BEGIN FUNCTION-DECL make_timespec LOC=UNKNOWN */
 __inline struct timespec make_timespec(time_t s , long ns ) ;
 /* END FUNCTION-DECL make_timespec LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL __bswap_16 LOC=./src/chown.merge.c:10952 */
-#line 10952
+/* BEGIN FUNCTION-DECL __bswap_16 LOC=./src/chown.merge.c:10956 */
+#line 10956
 __inline static __uint16_t __bswap_16(__uint16_t __bsx ) ;
-/* END FUNCTION-DECL __bswap_16 LOC=./src/chown.merge.c:10952 */
+/* END FUNCTION-DECL __bswap_16 LOC=./src/chown.merge.c:10956 */
 
-/* BEGIN TYPEDEF __kernel_gid_t LOC=./src/chown.merge.c:10965 */
-#line 10965 "./src/chown.merge.c"
+/* BEGIN TYPEDEF __kernel_gid_t LOC=./src/chown.merge.c:10969 */
+#line 10969 "./src/chown.merge.c"
 typedef unsigned int __kernel_gid_t;
-/* END TYPEDEF __kernel_gid_t LOC=./src/chown.merge.c:10965 */
+/* END TYPEDEF __kernel_gid_t LOC=./src/chown.merge.c:10969 */
 
-/* BEGIN FUNCTION-DECL-EXTERN x2realloc LOC=./src/chown.merge.c:10974 */
-#line 10974
+/* BEGIN FUNCTION-DECL-EXTERN x2realloc LOC=./src/chown.merge.c:10978 */
+#line 10978
 extern void *x2realloc(void *p , size_t *ps )  __attribute__((__returns_nonnull__)) ;
-/* END FUNCTION-DECL-EXTERN x2realloc LOC=./src/chown.merge.c:10974 */
+/* END FUNCTION-DECL-EXTERN x2realloc LOC=./src/chown.merge.c:10978 */
 
 /* BEGIN FUNCTION-DECL __builtin_scalbnl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_scalbnl(long double  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnl LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN freopen LOC=./src/chown.merge.c:10987 */
-#line 10987
+/* BEGIN FUNCTION-DECL-EXTERN freopen LOC=./src/chown.merge.c:10991 */
+#line 10991
 extern FILE *( __attribute__((__nonnull__(3))) freopen)(char const   * __restrict  __filename ,
                                                         char const   * __restrict  __modes ,
                                                         FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN freopen LOC=./src/chown.merge.c:10987 */
+/* END FUNCTION-DECL-EXTERN freopen LOC=./src/chown.merge.c:10991 */
 
-/* BEGIN FUNCTION-DECL-EXTERN secure_getenv LOC=./src/chown.merge.c:10993 */
-#line 10993
+/* BEGIN FUNCTION-DECL-EXTERN secure_getenv LOC=./src/chown.merge.c:10997 */
+#line 10997
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) secure_getenv)(char const   *__name ) ;
-/* END FUNCTION-DECL-EXTERN secure_getenv LOC=./src/chown.merge.c:10993 */
+/* END FUNCTION-DECL-EXTERN secure_getenv LOC=./src/chown.merge.c:10997 */
 
 /* BEGIN FUNCTION-DECL __builtin_ceilf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_ceilf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_ceilf128 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN splice LOC=./src/chown.merge.c:11007 */
-#line 11007
+/* BEGIN FUNCTION-DECL-EXTERN splice LOC=./src/chown.merge.c:11011 */
+#line 11011
 extern __ssize_t splice(int __fdin , __off64_t *__offin , int __fdout , __off64_t *__offout ,
                         size_t __len , unsigned int __flags ) ;
-/* END FUNCTION-DECL-EXTERN splice LOC=./src/chown.merge.c:11007 */
+/* END FUNCTION-DECL-EXTERN splice LOC=./src/chown.merge.c:11011 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __getpgid LOC=./src/chown.merge.c:11017 */
-#line 11017
+/* BEGIN FUNCTION-DECL-EXTERN __getpgid LOC=./src/chown.merge.c:11021 */
+#line 11021
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) __getpgid)(__pid_t __pid ) ;
-/* END FUNCTION-DECL-EXTERN __getpgid LOC=./src/chown.merge.c:11017 */
+/* END FUNCTION-DECL-EXTERN __getpgid LOC=./src/chown.merge.c:11021 */
 
-/* BEGIN FUNCTION-DECL-EXTERN current_timespec LOC=./src/chown.merge.c:11026 */
-#line 11026
+/* BEGIN FUNCTION-DECL-EXTERN current_timespec LOC=./src/chown.merge.c:11030 */
+#line 11030
 extern struct timespec current_timespec(void) ;
-/* END FUNCTION-DECL-EXTERN current_timespec LOC=./src/chown.merge.c:11026 */
+/* END FUNCTION-DECL-EXTERN current_timespec LOC=./src/chown.merge.c:11030 */
 
-/* BEGIN FUNCTION-DECL-EXTERN vdprintf LOC=./src/chown.merge.c:11045 */
-#line 11045
+/* BEGIN FUNCTION-DECL-EXTERN vdprintf LOC=./src/chown.merge.c:11049 */
+#line 11049
 extern int vdprintf(int __fd , char const   * __restrict  __fmt , __gnuc_va_list __arg ) ;
-/* END FUNCTION-DECL-EXTERN vdprintf LOC=./src/chown.merge.c:11045 */
+/* END FUNCTION-DECL-EXTERN vdprintf LOC=./src/chown.merge.c:11049 */
 
-/* BEGIN STRUCT statx LOC=./src/chown.merge.c:11050 */
-#line 11050 "./src/chown.merge.c"
+/* BEGIN STRUCT statx LOC=./src/chown.merge.c:11054 */
+#line 11054 "./src/chown.merge.c"
 struct statx {
    __u32 stx_mask ;
    __u32 stx_blksize ;
@@ -13815,43 +13823,43 @@ struct statx {
    __u32 __spare1[1] ;
    __u64 __spare3[9] ;
 };
-/* END STRUCT statx LOC=./src/chown.merge.c:11050 */
+/* END STRUCT statx LOC=./src/chown.merge.c:11054 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fgets LOC=./src/chown.merge.c:11099 */
-#line 11099
+/* BEGIN FUNCTION-DECL-EXTERN fgets LOC=./src/chown.merge.c:11103 */
+#line 11103
 extern char *( __attribute__((__nonnull__(3))) fgets)(char * __restrict  __s , int __n ,
                                                       FILE * __restrict  __stream ) ;
-/* END FUNCTION-DECL-EXTERN fgets LOC=./src/chown.merge.c:11099 */
+/* END FUNCTION-DECL-EXTERN fgets LOC=./src/chown.merge.c:11103 */
 
-/* BEGIN TYPEDEF pthread_mutex_t LOC=./src/chown.merge.c:11104 */
-#line 11104 "./src/chown.merge.c"
+/* BEGIN TYPEDEF pthread_mutex_t LOC=./src/chown.merge.c:11108 */
+#line 11108 "./src/chown.merge.c"
 typedef union __anonunion_pthread_mutex_t_335460617 pthread_mutex_t;
-/* END TYPEDEF pthread_mutex_t LOC=./src/chown.merge.c:11104 */
+/* END TYPEDEF pthread_mutex_t LOC=./src/chown.merge.c:11108 */
 
 /* BEGIN FUNCTION-DECL __builtin_frame_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_frame_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_frame_address LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN seteuid LOC=./src/chown.merge.c:11212 */
-#line 11212
+/* BEGIN FUNCTION-DECL-EXTERN seteuid LOC=./src/chown.merge.c:11216 */
+#line 11216
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) seteuid)(__uid_t __uid ) ;
-/* END FUNCTION-DECL-EXTERN seteuid LOC=./src/chown.merge.c:11212 */
+/* END FUNCTION-DECL-EXTERN seteuid LOC=./src/chown.merge.c:11216 */
 
 /* BEGIN FUNCTION-DECL lcm LOC=UNKNOWN */
 __inline static size_t lcm(size_t u , size_t v )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL lcm LOC=UNKNOWN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtof64 LOC=./src/chown.merge.c:11243 */
-#line 11243
+/* BEGIN FUNCTION-DECL-EXTERN strtof64 LOC=./src/chown.merge.c:11247 */
+#line 11247
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) strtof64)(char const   * __restrict  __nptr ,
                                                                                                   char ** __restrict  __endptr ) ;
-/* END FUNCTION-DECL-EXTERN strtof64 LOC=./src/chown.merge.c:11243 */
+/* END FUNCTION-DECL-EXTERN strtof64 LOC=./src/chown.merge.c:11247 */
 
-/* BEGIN FUNCTION-DECL-EXTERN uselocale LOC=./src/chown.merge.c:11239 */
-#line 11239
+/* BEGIN FUNCTION-DECL-EXTERN uselocale LOC=./src/chown.merge.c:11243 */
+#line 11243
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) uselocale)(locale_t __dataset ) ;
-/* END FUNCTION-DECL-EXTERN uselocale LOC=./src/chown.merge.c:11239 */
+/* END FUNCTION-DECL-EXTERN uselocale LOC=./src/chown.merge.c:11243 */
 
 /* BEGIN STRUCT-DECL itimerspec LOC=./src/chown.merge.c:1001 */
 #line 1001
@@ -13867,38 +13875,38 @@ __inline _Bool psame_inode(struct stat  const  *a , struct stat  const  *b ) ;
    short __builtin_rotateleft16(short  , short  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft16 LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN bsearch LOC=./src/chown.merge.c:11285 */
-#line 11285
+/* BEGIN FUNCTION-DECL-EXTERN bsearch LOC=./src/chown.merge.c:11289 */
+#line 11289
 extern void *( __attribute__((__nonnull__(1,2,5))) bsearch)(void const   *__key ,
                                                             void const   *__base ,
                                                             size_t __nmemb , size_t __size ,
                                                             int (*__compar)(void const   * ,
                                                                             void const   * ) ) ;
-/* END FUNCTION-DECL-EXTERN bsearch LOC=./src/chown.merge.c:11285 */
+/* END FUNCTION-DECL-EXTERN bsearch LOC=./src/chown.merge.c:11289 */
 
-/* BEGIN FUNCTION-DECL initialize_exit_failure LOC=./src/chown.merge.c:11333 */
-#line 11333
+/* BEGIN FUNCTION-DECL initialize_exit_failure LOC=./src/chown.merge.c:11337 */
+#line 11337
 __inline static void initialize_exit_failure(int status ) ;
-/* END FUNCTION-DECL initialize_exit_failure LOC=./src/chown.merge.c:11333 */
+/* END FUNCTION-DECL initialize_exit_failure LOC=./src/chown.merge.c:11337 */
 
 /* BEGIN FUNCTION-DECL __builtin_apply_args LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_apply_args(void) ;  */
 /* END FUNCTION-DECL __builtin_apply_args LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN euidaccess LOC=./src/chown.merge.c:11318 */
-#line 11318
+/* BEGIN FUNCTION-DECL-EXTERN euidaccess LOC=./src/chown.merge.c:11322 */
+#line 11322
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) euidaccess)(char const   *__name ,
                                                                                                  int __type ) ;
-/* END FUNCTION-DECL-EXTERN euidaccess LOC=./src/chown.merge.c:11318 */
+/* END FUNCTION-DECL-EXTERN euidaccess LOC=./src/chown.merge.c:11322 */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalizef16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_canonicalizef16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalizef16 LOC=BUILTIN */
 
-/* BEGIN STRUCT flock LOC=./src/chown.merge.c:11363 */
-#line 11363 "./src/chown.merge.c"
+/* BEGIN STRUCT flock LOC=./src/chown.merge.c:11367 */
+#line 11367 "./src/chown.merge.c"
 struct flock {
    short l_type ;
    short l_whence ;
@@ -13906,27 +13914,27 @@ struct flock {
    __off_t l_len ;
    __pid_t l_pid ;
 };
-/* END STRUCT flock LOC=./src/chown.merge.c:11363 */
+/* END STRUCT flock LOC=./src/chown.merge.c:11367 */
 
-/* BEGIN FUNCTION-DECL-EXTERN getusershell LOC=./src/chown.merge.c:11377 */
-#line 11377
-extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getusershell)(void) ;
-/* END FUNCTION-DECL-EXTERN getusershell LOC=./src/chown.merge.c:11377 */
-
-/* BEGIN FUNCTION-DECL-EXTERN sbrk LOC=./src/chown.merge.c:11373 */
-#line 11373
-extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) sbrk)(intptr_t __delta ) ;
-/* END FUNCTION-DECL-EXTERN sbrk LOC=./src/chown.merge.c:11373 */
-
-/* BEGIN VARIABLE-DECL-EXTERN optarg LOC=./src/chown.merge.c:11381 */
+/* BEGIN FUNCTION-DECL-EXTERN getusershell LOC=./src/chown.merge.c:11381 */
 #line 11381
-extern char *optarg ;
-/* END VARIABLE-DECL-EXTERN optarg LOC=./src/chown.merge.c:11381 */
+extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) getusershell)(void) ;
+/* END FUNCTION-DECL-EXTERN getusershell LOC=./src/chown.merge.c:11381 */
 
-/* BEGIN FUNCTION-DECL-EXTERN xmalloc LOC=./src/chown.merge.c:11390 */
-#line 11390
+/* BEGIN FUNCTION-DECL-EXTERN sbrk LOC=./src/chown.merge.c:11377 */
+#line 11377
+extern  __attribute__((__nothrow__)) void *( __attribute__((__leaf__)) sbrk)(intptr_t __delta ) ;
+/* END FUNCTION-DECL-EXTERN sbrk LOC=./src/chown.merge.c:11377 */
+
+/* BEGIN VARIABLE-DECL-EXTERN optarg LOC=./src/chown.merge.c:11385 */
+#line 11385
+extern char *optarg ;
+/* END VARIABLE-DECL-EXTERN optarg LOC=./src/chown.merge.c:11385 */
+
+/* BEGIN FUNCTION-DECL-EXTERN xmalloc LOC=./src/chown.merge.c:11394 */
+#line 11394
 extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
-/* END FUNCTION-DECL-EXTERN xmalloc LOC=./src/chown.merge.c:11390 */
+/* END FUNCTION-DECL-EXTERN xmalloc LOC=./src/chown.merge.c:11394 */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosh LOC=BUILTIN */
 /* compiler builtin: 
@@ -13938,55 +13946,55 @@ extern void *xmalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__,
    void __builtin_preserve_access_index(...) ;  */
 /* END FUNCTION-DECL __builtin_preserve_access_index LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/chown.merge.c:11436 */
-#line 11436
+/* BEGIN FUNCTION-DECL-EXTERN snprintf LOC=./src/chown.merge.c:11440 */
+#line 11440
 extern  __attribute__((__nothrow__)) int snprintf(char * __restrict  __s , size_t __maxlen ,
                                                   char const   * __restrict  __format 
                                                   , ...) ;
-/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/chown.merge.c:11436 */
+/* END FUNCTION-DECL-EXTERN snprintf LOC=./src/chown.merge.c:11440 */
 
 /* BEGIN FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clz(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_clz LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/chown.merge.c:11458 */
-#line 11458
+/* BEGIN FUNCTION-DECL-EXTERN strtold_l LOC=./src/chown.merge.c:11462 */
+#line 11462
 extern  __attribute__((__nothrow__)) long double ( __attribute__((__nonnull__(1,3),
 __leaf__)) strtold_l)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                       locale_t __loc ) ;
-/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/chown.merge.c:11458 */
+/* END FUNCTION-DECL-EXTERN strtold_l LOC=./src/chown.merge.c:11462 */
 
-/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/chown.merge.c:11473 */
-#line 11473
+/* BEGIN FUNCTION-DECL-EXTERN lcong48_r LOC=./src/chown.merge.c:11477 */
+#line 11477
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lcong48_r)(unsigned short *__param ,
                                                                                                   struct drand48_data *__buffer ) ;
-/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/chown.merge.c:11473 */
+/* END FUNCTION-DECL-EXTERN lcong48_r LOC=./src/chown.merge.c:11477 */
 
-/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/chown.merge.c:11464 */
-#line 11464
+/* BEGIN FUNCTION-DECL-EXTERN fsetpos LOC=./src/chown.merge.c:11468 */
+#line 11468
 extern int ( __attribute__((__nonnull__(1))) fsetpos)(FILE *__stream , fpos_t const   *__pos ) ;
-/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/chown.merge.c:11464 */
+/* END FUNCTION-DECL-EXTERN fsetpos LOC=./src/chown.merge.c:11468 */
 
 /* BEGIN FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_bzero(void * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_bzero LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/chown.merge.c:11478 */
-#line 11478
+/* BEGIN VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/chown.merge.c:11482 */
+#line 11482
 extern char const   version_etc_copyright[] ;
-/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/chown.merge.c:11478 */
+/* END VARIABLE-DECL-EXTERN version_etc_copyright LOC=./src/chown.merge.c:11482 */
 
-/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/chown.merge.c:11487 */
-#line 11487
+/* BEGIN FUNCTION-DECL-EXTERN stpncpy LOC=./src/chown.merge.c:11491 */
+#line 11491
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpncpy)(char * __restrict  __dest ,
                                                                                                   char const   * __restrict  __src ,
                                                                                                   size_t __n ) ;
-/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/chown.merge.c:11487 */
+/* END FUNCTION-DECL-EXTERN stpncpy LOC=./src/chown.merge.c:11491 */
 
-/* BEGIN STRUCT __locale_struct LOC=./src/chown.merge.c:11497 */
-#line 11497 "./src/chown.merge.c"
+/* BEGIN STRUCT __locale_struct LOC=./src/chown.merge.c:11501 */
+#line 11501 "./src/chown.merge.c"
 struct __locale_struct {
    struct __locale_data *__locales[13] ;
    unsigned short const   *__ctype_b ;
@@ -13994,84 +14002,84 @@ struct __locale_struct {
    int const   *__ctype_toupper ;
    char const   *__names[13] ;
 };
-/* END STRUCT __locale_struct LOC=./src/chown.merge.c:11497 */
+/* END STRUCT __locale_struct LOC=./src/chown.merge.c:11501 */
 
 /* BEGIN FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_memcmp(void const   * , void const   * , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memcmp LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/chown.merge.c:11507 */
-#line 11507
+/* BEGIN FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/chown.merge.c:11511 */
+#line 11511
 extern char *quotearg_n_style(int n , enum quoting_style s , char const   *arg ) ;
-/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/chown.merge.c:11507 */
+/* END FUNCTION-DECL-EXTERN quotearg_n_style LOC=./src/chown.merge.c:11511 */
 
-/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/chown.merge.c:11521 */
-#line 11521
+/* BEGIN FUNCTION-DECL-EXTERN tmpnam LOC=./src/chown.merge.c:11525 */
+#line 11525
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam)(char * ) ;
-/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/chown.merge.c:11521 */
+/* END FUNCTION-DECL-EXTERN tmpnam LOC=./src/chown.merge.c:11525 */
 
 /* BEGIN FUNCTION-DECL __builtin_tgmath LOC=BUILTIN */
 /* compiler builtin: 
    void __attribute__((__overloaded__))  __builtin_tgmath(...) ;  */
 /* END FUNCTION-DECL __builtin_tgmath LOC=BUILTIN */
 
-/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/chown.merge.c:11516 */
-#line 11516
+/* BEGIN FUNCTION-DECL-EXTERN getdomainname LOC=./src/chown.merge.c:11520 */
+#line 11520
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) getdomainname)(char *__name ,
                                                                                                     size_t __len ) ;
-/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/chown.merge.c:11516 */
+/* END FUNCTION-DECL-EXTERN getdomainname LOC=./src/chown.merge.c:11520 */
 
-/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/chown.merge.c:11554 */
-#line 11554
+/* BEGIN FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/chown.merge.c:11558 */
+#line 11558
 extern int ( __attribute__((__nonnull__(1))) rpl_fseek)(FILE *fp , long offset , int whence ) ;
-/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/chown.merge.c:11554 */
+/* END FUNCTION-DECL-EXTERN rpl_fseek LOC=./src/chown.merge.c:11558 */
 
 /* BEGIN FUNCTION-DECL __builtin_sprintf LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_sprintf(char * , char const   *  , ...) ;  */
 /* END FUNCTION-DECL __builtin_sprintf LOC=BUILTIN */
 
-/* BEGIN ENUM __anonenum_25645747___0 LOC=./src/chown.merge.c:11558 */
-#line 11558
+/* BEGIN ENUM __anonenum_25645747___0 LOC=./src/chown.merge.c:11562 */
+#line 11562
 enum __anonenum_25645747___0 {
     O_PATHSEARCH___0 = 2097152
 } ;
-/* END ENUM __anonenum_25645747___0 LOC=./src/chown.merge.c:11558 */
+/* END ENUM __anonenum_25645747___0 LOC=./src/chown.merge.c:11562 */
 
-/* BEGIN TYPEDEF uint_fast32_t LOC=./src/chown.merge.c:11564 */
-#line 11564 "./src/chown.merge.c"
+/* BEGIN TYPEDEF uint_fast32_t LOC=./src/chown.merge.c:11568 */
+#line 11568 "./src/chown.merge.c"
 typedef unsigned long uint_fast32_t;
-/* END TYPEDEF uint_fast32_t LOC=./src/chown.merge.c:11564 */
+/* END TYPEDEF uint_fast32_t LOC=./src/chown.merge.c:11568 */
 
-/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/chown.merge.c:11568 */
-#line 11568
-extern char const   *setlocale_null_unlocked(int category ) ;
-/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/chown.merge.c:11568 */
-
-/* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=./src/chown.merge.c:11572 */
+/* BEGIN FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/chown.merge.c:11572 */
 #line 11572
+extern char const   *setlocale_null_unlocked(int category ) ;
+/* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./src/chown.merge.c:11572 */
+
+/* BEGIN FUNCTION-DECL-EXTERN ldiv LOC=./src/chown.merge.c:11576 */
+#line 11576
 extern  __attribute__((__nothrow__)) ldiv_t ( __attribute__((__leaf__)) ldiv)(long __numer ,
                                                                               long __denom )  __attribute__((__const__)) ;
-/* END FUNCTION-DECL-EXTERN ldiv LOC=./src/chown.merge.c:11572 */
+/* END FUNCTION-DECL-EXTERN ldiv LOC=./src/chown.merge.c:11576 */
 
 /* BEGIN STRUCT-DECL __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:1269 */
 #line 1269
 struct __anonstruct_ldiv_t_790849867 ;
 /* END STRUCT-DECL __anonstruct_ldiv_t_790849867 LOC=./src/chown.merge.c:1269 */
 
-/* BEGIN FUNCTION-DECL-EXTERN futimens LOC=./src/chown.merge.c:11586 */
-#line 11586
+/* BEGIN FUNCTION-DECL-EXTERN futimens LOC=./src/chown.merge.c:11590 */
+#line 11590
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimens)(int __fd ,
                                                                                struct timespec  const  *__times ) ;
-/* END FUNCTION-DECL-EXTERN futimens LOC=./src/chown.merge.c:11586 */
+/* END FUNCTION-DECL-EXTERN futimens LOC=./src/chown.merge.c:11590 */
 
-/* BEGIN FUNCTION-DECL-EXTERN __strtok_r LOC=./src/chown.merge.c:11591 */
-#line 11591
+/* BEGIN FUNCTION-DECL-EXTERN __strtok_r LOC=./src/chown.merge.c:11595 */
+#line 11595
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2,3), __leaf__)) __strtok_r)(char * __restrict  __s ,
                                                                                                      char const   * __restrict  __delim ,
                                                                                                      char ** __restrict  __save_ptr ) ;
-/* END FUNCTION-DECL-EXTERN __strtok_r LOC=./src/chown.merge.c:11591 */
+/* END FUNCTION-DECL-EXTERN __strtok_r LOC=./src/chown.merge.c:11595 */
 
 /* BEGIN FUNCTION-DECL __builtin_wcschr LOC=BUILTIN */
 /* compiler builtin: 
@@ -14138,10 +14146,6 @@ typedef unsigned long __syscall_ulong_t;
 #line 1245
 union __anonunion_pthread_cond_t_951761805 ;
 /* END UNION-DECL __anonunion_pthread_cond_t_951761805 LOC=./src/chown.merge.c:1245 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_H7TU_argc LOC=UNKNOWN */
-int _TIG_IZ_H7TU_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_H7TU_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fchownat LOC=./src/chown.merge.c:11706 */
 #line 11706
@@ -14280,10 +14284,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 #line 11917 "./src/chown.merge.c"
 typedef __useconds_t useconds_t;
 /* END TYPEDEF useconds_t LOC=./src/chown.merge.c:11917 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_H7TU_envp LOC=UNKNOWN */
-char **_TIG_IZ_H7TU_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_H7TU_envp LOC=UNKNOWN */
 
 /* BEGIN STRUCT _xstate LOC=./src/chown.merge.c:11921 */
 #line 11921 "./src/chown.merge.c"
@@ -15525,7 +15525,7 @@ static char *uid_to_str(uid_t uid )
 /* END FUNCTION-DEF uid_to_str LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_4bYn_formal_envp ) 
 { 
   _Bool preserve_root ;
   uid_t uid ;
@@ -15599,24 +15599,24 @@ int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp )
   {
   {
   {
-  _TIG_IZ_cZdJ_argc = 0;
-  goto _TIG_IZ_cZdJ_argc__INITINLINE__TIG_IZ_cZdJ_argc__INIT___0;
-  }
-  _TIG_IZ_cZdJ_argc__INITINLINE__TIG_IZ_cZdJ_argc__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_cZdJ_argv = (char **)0;
-  goto _TIG_IZ_cZdJ_argv__INITINLINE__TIG_IZ_cZdJ_argv__INIT___0;
-  }
-  _TIG_IZ_cZdJ_argv__INITINLINE__TIG_IZ_cZdJ_argv__INIT___0: /* CIL Label */ ;
-  }
-  {
-  {
   chown_mode = 0;
   goto chown_mode__INITINLINE_chown_mode__INIT___0;
   }
   chown_mode__INITINLINE_chown_mode__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_4bYn_argc = 0;
+  goto _TIG_IZ_4bYn_argc__INITINLINE__TIG_IZ_4bYn_argc__INIT___0;
+  }
+  _TIG_IZ_4bYn_argc__INITINLINE__TIG_IZ_4bYn_argc__INIT___0: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_4bYn_argv = (char **)0;
+  goto _TIG_IZ_4bYn_argv__INITINLINE__TIG_IZ_4bYn_argv__INIT___0;
+  }
+  _TIG_IZ_4bYn_argv__INITINLINE__TIG_IZ_4bYn_argv__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -15689,10 +15689,10 @@ int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp )
   }
   {
   {
-  _TIG_IZ_cZdJ_envp = (char **)0;
-  goto _TIG_IZ_cZdJ_envp__INITINLINE__TIG_IZ_cZdJ_envp__INIT___0;
+  _TIG_IZ_4bYn_envp = (char **)0;
+  goto _TIG_IZ_4bYn_envp__INITINLINE__TIG_IZ_4bYn_envp__INIT___0;
   }
-  _TIG_IZ_cZdJ_envp__INITINLINE__TIG_IZ_cZdJ_envp__INIT___0: /* CIL Label */ ;
+  _TIG_IZ_4bYn_envp__INITINLINE__TIG_IZ_4bYn_envp__INIT___0: /* CIL Label */ ;
   }
   {
   {
@@ -15704,34 +15704,34 @@ int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp )
   }
   {
   {
-  _TIG_IZ_H7TU_envp = (char **)0;
-  goto _TIG_IZ_H7TU_envp__INITINLINE__TIG_IZ_H7TU_envp__INIT;
+  _TIG_IZ_VsJE_envp = (char **)0;
+  goto _TIG_IZ_VsJE_envp__INITINLINE__TIG_IZ_VsJE_envp__INIT;
   }
-  _TIG_IZ_H7TU_envp__INITINLINE__TIG_IZ_H7TU_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_H7TU_argv = (char **)0;
-  goto _TIG_IZ_H7TU_argv__INITINLINE__TIG_IZ_H7TU_argv__INIT;
-  }
-  _TIG_IZ_H7TU_argv__INITINLINE__TIG_IZ_H7TU_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_VsJE_envp__INITINLINE__TIG_IZ_VsJE_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_H7TU_argc = 0;
-  goto _TIG_IZ_H7TU_argc__INITINLINE__TIG_IZ_H7TU_argc__INIT;
+  _TIG_IZ_VsJE_argv = (char **)0;
+  goto _TIG_IZ_VsJE_argv__INITINLINE__TIG_IZ_VsJE_argv__INIT;
   }
-  _TIG_IZ_H7TU_argc__INITINLINE__TIG_IZ_H7TU_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_VsJE_argv__INITINLINE__TIG_IZ_VsJE_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_VsJE_argc = 0;
+  goto _TIG_IZ_VsJE_argc__INITINLINE__TIG_IZ_VsJE_argc__INIT;
+  }
+  _TIG_IZ_VsJE_argc__INITINLINE__TIG_IZ_VsJE_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit___0;
   }
   megaInitINLINE_megaInit___0: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-H7TU--0":);
-    _TIG_IZ_H7TU_argc = argc;
-    _TIG_IZ_H7TU_argv = argv;
-    _TIG_IZ_H7TU_envp = _TIG_IZ_cZdJ_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-VsJE--0":);
+    _TIG_IZ_VsJE_argc = argc;
+    _TIG_IZ_VsJE_argv = argv;
+    _TIG_IZ_VsJE_envp = _TIG_IZ_4bYn_formal_envp;
     break;
   }
 #line 115 "/usr/include/bits/uintn-identity.h"
@@ -15867,33 +15867,33 @@ int main(int argc , char **argv , char **_TIG_IZ_cZdJ_formal_envp )
   goto reference_file__INITINLINE_reference_file__INIT;
   reference_file__INITINLINE_reference_file__INIT: 
 #line 199
-  _TIG_IZ_cZdJ_envp = (char **)0;
+  _TIG_IZ_4bYn_envp = (char **)0;
 #line 200
-  goto _TIG_IZ_cZdJ_envp__INITINLINE__TIG_IZ_cZdJ_envp__INIT;
-  _TIG_IZ_cZdJ_envp__INITINLINE__TIG_IZ_cZdJ_envp__INIT: 
+  goto _TIG_IZ_4bYn_envp__INITINLINE__TIG_IZ_4bYn_envp__INIT;
+  _TIG_IZ_4bYn_envp__INITINLINE__TIG_IZ_4bYn_envp__INIT: 
 #line 206
-  _TIG_IZ_cZdJ_argv = (char **)0;
+  _TIG_IZ_4bYn_argv = (char **)0;
 #line 207
-  goto _TIG_IZ_cZdJ_argv__INITINLINE__TIG_IZ_cZdJ_argv__INIT;
-  _TIG_IZ_cZdJ_argv__INITINLINE__TIG_IZ_cZdJ_argv__INIT: 
+  goto _TIG_IZ_4bYn_argv__INITINLINE__TIG_IZ_4bYn_argv__INIT;
+  _TIG_IZ_4bYn_argv__INITINLINE__TIG_IZ_4bYn_argv__INIT: 
 #line 213
-  _TIG_IZ_cZdJ_argc = 0;
+  _TIG_IZ_4bYn_argc = 0;
 #line 214
-  goto _TIG_IZ_cZdJ_argc__INITINLINE__TIG_IZ_cZdJ_argc__INIT;
-  _TIG_IZ_cZdJ_argc__INITINLINE__TIG_IZ_cZdJ_argc__INIT: ;
+  goto _TIG_IZ_4bYn_argc__INITINLINE__TIG_IZ_4bYn_argc__INIT;
+  _TIG_IZ_4bYn_argc__INITINLINE__TIG_IZ_4bYn_argc__INIT: ;
 #line 218
   goto megaInitINLINE_megaInit;
   megaInitINLINE_megaInit: ;
 #line 222
   while (1) {
 #line 223
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-cZdJ--0":);
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-4bYn--0":);
 #line 224
-    _TIG_IZ_cZdJ_argc = argc;
+    _TIG_IZ_4bYn_argc = argc;
 #line 225
-    _TIG_IZ_cZdJ_argv = argv;
+    _TIG_IZ_4bYn_argv = argv;
 #line 226
-    _TIG_IZ_cZdJ_envp = _TIG_IZ_cZdJ_formal_envp;
+    _TIG_IZ_4bYn_envp = _TIG_IZ_4bYn_formal_envp;
 #line 227
     break;
   }
