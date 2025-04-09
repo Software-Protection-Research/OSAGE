@@ -22,7 +22,7 @@ no_code_files="$script_dir/no_code_c_files.txt"
 no_code_file_count=0
 total_file_count=0
 
-# Function to check and show .c files with no code in a subfolder
+# Function to check and optionally delete .c files with no code in a subfolder
 check_no_code_c_files_in_subfolder() {
     local subfolder=$1
     for file in "$subfolder"/*.c; do
@@ -32,10 +32,19 @@ check_no_code_c_files_in_subfolder() {
                 relative_path="${subfolder##*/}/${file##*/}"
                 echo "$relative_path" >> "$no_code_files"
                 ((no_code_file_count++))
+                # Delete the file if the user opted to delete empty files
+                if [[ "$delete_empty_files" == "y" ]]; then
+                    rm -f "$file"
+                    echo "Deleted: $file"
+                fi
             fi
         fi
     done
 }
+
+# Ask the user if they want to delete empty files
+read -p "Do you want to delete empty .c files? (y/n): " delete_empty_files
+delete_empty_files=$(echo "$delete_empty_files" | tr '[:upper:]' '[:lower:]')  # Convert to lowercase
 
 # Process all subfolders that start with "prog_tigress"
 for subfolder in "$latest_folder"/prog_tigress*; do

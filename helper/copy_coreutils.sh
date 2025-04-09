@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Source and destination directories
-SRC_DIR="../coreutils/coreutils-9.5/src"
-DEST_DIR="../src_coreutils_8"
+SRC_DIR="../coreutils-merge/coreutils-9.5/src"
+DEST_DIR="../src_coreutils_8_1"
 
 # Find all .merge.c files in the source directory
 find "$SRC_DIR" -name "*.merge.c" | while read -r file; do
