@@ -38,6 +38,9 @@ RUN set -eux; \
     # cd / && rm -rf /tmp/gcc-8.1.0;
 
 RUN set -eux; \
+    # Docker CLI
+    pacman -S --noconfirm docker \
+        ; \
     # GCC
 	pacman -S --noconfirm \
         base-devel \
