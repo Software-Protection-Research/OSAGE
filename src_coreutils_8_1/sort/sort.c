@@ -243,9 +243,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_2bax_envp": "FUN: '_TIG_IZ_2bax_envp__INIT'",
-          "_TIG_IZ_2bax_argv": "FUN: '_TIG_IZ_2bax_argv__INIT'",
-          "_TIG_IZ_2bax_argc": "FUN: '_TIG_IZ_2bax_argc__INIT'"
+          "_TIG_IZ_rAtM_envp": "FUN: '_TIG_IZ_rAtM_envp__INIT'",
+          "_TIG_IZ_rAtM_argv": "FUN: '_TIG_IZ_rAtM_argv__INIT'",
+          "_TIG_IZ_rAtM_argc": "FUN: '_TIG_IZ_rAtM_argc__INIT'"
         }
       }
     },
@@ -3359,6 +3359,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1))) pthre
    _Float16 __builtin_cosf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_cosf16 LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_rAtM_argv LOC=UNKNOWN */
+char **_TIG_IZ_rAtM_argv ;
+/* END VARIABLE-DECL _TIG_IZ_rAtM_argv LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF pthread_barrier_t LOC=/usr/include/bits/pthreadtypes.h:108 */
 #line 108 "/usr/include/bits/pthreadtypes.h"
 typedef union __anonunion_pthread_barrier_t_145707746 pthread_barrier_t;
@@ -6076,6 +6080,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) md5_stream)
                                                                                  void *resblock ) ;
 /* END FUNCTION-DECL-EXTERN md5_stream LOC=./lib/md5.h:160 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_rAtM_envp LOC=UNKNOWN */
+char **_TIG_IZ_rAtM_envp ;
+/* END VARIABLE-DECL _TIG_IZ_rAtM_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=/usr/include/stdio.h:689 */
 #line 689 "/usr/include/stdio.h"
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
@@ -7100,6 +7108,10 @@ extern long gettime_res(void) ;
 /* BEGIN VARIABLE-DECL temp_dirs LOC=UNKNOWN */
 static char **temp_dirs ;
 /* END VARIABLE-DECL temp_dirs LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_rAtM_argv LOC=UNKNOWN */
+char **_TIG_IZ_rAtM_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_rAtM_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __u_char LOC=/usr/include/bits/types.h:31 */
 #line 31 "/usr/include/bits/types.h"
@@ -8460,6 +8472,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setregid)(_
                                                                                __gid_t __egid ) ;
 /* END FUNCTION-DECL-EXTERN setregid LOC=/usr/include/unistd.h:744 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_rAtM_envp LOC=UNKNOWN */
+char **_TIG_IZ_rAtM_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_rAtM_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN tmpnam_r LOC=/usr/include/stdio.h:216 */
 #line 216 "/usr/include/stdio.h"
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam_r)(char *__s ) ;
@@ -9242,10 +9258,6 @@ extern int clock_nanosleep(clockid_t __clock_id , int __flags , struct timespec 
 extern  __attribute__((__nothrow__)) unsigned short *( __attribute__((__nonnull__(1),
 __leaf__)) seed48)(unsigned short *__seed16v ) ;
 /* END FUNCTION-DECL-EXTERN seed48 LOC=/usr/include/stdlib.h:602 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_2bax_argc LOC=UNKNOWN */
-int _TIG_IZ_2bax_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_2bax_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fexecve LOC=/usr/include/unistd.h:578 */
 #line 578 "/usr/include/unistd.h"
@@ -10704,10 +10716,6 @@ extern  __attribute__((__nothrow__)) intmax_t ( __attribute__((__leaf__)) wcstoi
                                                                                      int __base )  __asm__("__isoc23_wcstoimax")  ;
 /* END FUNCTION-DECL-EXTERN wcstoimax LOC=/usr/include/inttypes.h:366 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_2bax_argv LOC=UNKNOWN */
-char **_TIG_IZ_2bax_argv ;
-/* END VARIABLE-DECL _TIG_IZ_2bax_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF pthread_barrierattr_t LOC=/usr/include/bits/pthreadtypes.h:114 */
 #line 114 "/usr/include/bits/pthreadtypes.h"
 typedef union __anonunion_pthread_barrierattr_t_951761806 pthread_barrierattr_t;
@@ -10920,10 +10928,6 @@ typedef __uint8_t __uint_least8_t;
 #line 31 "/usr/include/bits/stdint-least.h"
 typedef __uint_least8_t uint_least8_t;
 /* END TYPEDEF uint_least8_t LOC=/usr/include/bits/stdint-least.h:31 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_2bax_envp LOC=UNKNOWN */
-char **_TIG_IZ_2bax_envp ;
-/* END VARIABLE-DECL _TIG_IZ_2bax_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fwrite LOC=/usr/include/stdio.h:735 */
 #line 735 "/usr/include/stdio.h"
@@ -12947,10 +12951,6 @@ extern nl_catd ( __attribute__((__nonnull__(1))) catopen)(char const   *__cat_na
    double __builtin_copysign(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_copysign LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_2bax_argc LOC=UNKNOWN */
-int _TIG_IZ_2bax_argc ;
-/* END VARIABLE-DECL _TIG_IZ_2bax_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN __ctype_b_loc LOC=/usr/include/ctype.h:79 */
 #line 79 "/usr/include/ctype.h"
 extern  __attribute__((__nothrow__)) unsigned short const   **( __attribute__((__leaf__)) __ctype_b_loc)(void)  __attribute__((__const__)) ;
@@ -13196,7 +13196,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_2bax_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_rAtM_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -13584,6 +13584,10 @@ extern int posix_fallocate64(int __fd , off64_t __offset , off64_t __len ) ;
 extern  __attribute__((__nothrow__)) __pid_t wait4(__pid_t __pid , int *__stat_loc ,
                                                    int __options , struct rusage *__usage ) ;
 /* END FUNCTION-DECL-EXTERN wait4 LOC=/usr/include/sys/wait.h:159 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_rAtM_argc LOC=UNKNOWN */
+int _TIG_IZ_rAtM_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_rAtM_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN sigblock LOC=/usr/include/signal.h:173 */
 #line 173 "/usr/include/signal.h"
@@ -14115,10 +14119,6 @@ enum __anonenum_365337802 {
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) pthread_rwlockattr_setpshared)(pthread_rwlockattr_t *__attr ,
                                                                                                                     int __pshared ) ;
 /* END FUNCTION-DECL-EXTERN pthread_rwlockattr_setpshared LOC=/opt/gcc81/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include-fixed/pthread.h:1101 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_2bax_argv LOC=UNKNOWN */
-char **_TIG_IZ_2bax_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_2bax_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int64_t LOC=/usr/include/bits/stdint-intn.h:27 */
 #line 27 "/usr/include/bits/stdint-intn.h"
@@ -14720,6 +14720,10 @@ struct itimerspec {
    struct timespec it_value ;
 };
 /* END STRUCT itimerspec LOC=/usr/include/bits/types/struct_itimerspec.h:8 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_rAtM_argc LOC=UNKNOWN */
+int _TIG_IZ_rAtM_argc ;
+/* END VARIABLE-DECL _TIG_IZ_rAtM_argc LOC=UNKNOWN */
 
 /* BEGIN STRUCT timezone LOC=/usr/include/sys/time.h:52 */
 #line 52 "/usr/include/sys/time.h"
@@ -16412,10 +16416,6 @@ typedef unsigned long __syscall_ulong_t;
 /* compiler builtin: 
    long double __builtin_logl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_logl LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_2bax_envp LOC=UNKNOWN */
-char **_TIG_IZ_2bax_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_2bax_envp LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_880714716 LOC=src/sort.c:115 */
 #line 115 "src/sort.c"
@@ -23147,7 +23147,7 @@ __inline static char const   *dcpgettext_expr(char const   *domain , char const 
 /* END FUNCTION-DEF dcpgettext_expr LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_2bax_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_rAtM_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_7 ;
   int init_elems1_inline_1_inline_6 ;
@@ -24210,34 +24210,34 @@ int main(int argc , char **argv , char **_TIG_IZ_2bax_formal_envp )
   }
   {
   {
-  _TIG_IZ_2bax_envp = (char **)0;
-  goto _TIG_IZ_2bax_envp__INITINLINE__TIG_IZ_2bax_envp__INIT;
+  _TIG_IZ_rAtM_envp = (char **)0;
+  goto _TIG_IZ_rAtM_envp__INITINLINE__TIG_IZ_rAtM_envp__INIT;
   }
-  _TIG_IZ_2bax_envp__INITINLINE__TIG_IZ_2bax_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_2bax_argv = (char **)0;
-  goto _TIG_IZ_2bax_argv__INITINLINE__TIG_IZ_2bax_argv__INIT;
-  }
-  _TIG_IZ_2bax_argv__INITINLINE__TIG_IZ_2bax_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_rAtM_envp__INITINLINE__TIG_IZ_rAtM_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_2bax_argc = 0;
-  goto _TIG_IZ_2bax_argc__INITINLINE__TIG_IZ_2bax_argc__INIT;
+  _TIG_IZ_rAtM_argv = (char **)0;
+  goto _TIG_IZ_rAtM_argv__INITINLINE__TIG_IZ_rAtM_argv__INIT;
   }
-  _TIG_IZ_2bax_argc__INITINLINE__TIG_IZ_2bax_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_rAtM_argv__INITINLINE__TIG_IZ_rAtM_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_rAtM_argc = 0;
+  goto _TIG_IZ_rAtM_argc__INITINLINE__TIG_IZ_rAtM_argc__INIT;
+  }
+  _TIG_IZ_rAtM_argc__INITINLINE__TIG_IZ_rAtM_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-2bax--0":);
-    _TIG_IZ_2bax_argc = argc;
-    _TIG_IZ_2bax_argv = argv;
-    _TIG_IZ_2bax_envp = _TIG_IZ_2bax_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-rAtM--0":);
+    _TIG_IZ_rAtM_argc = argc;
+    _TIG_IZ_rAtM_argv = argv;
+    _TIG_IZ_rAtM_envp = _TIG_IZ_rAtM_formal_envp;
     break;
   }
 #line 4327 "src/sort.c"

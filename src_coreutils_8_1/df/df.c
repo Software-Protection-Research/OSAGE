@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_9Fax_envp": "FUN: '_TIG_IZ_9Fax_envp__INIT'",
-          "_TIG_IZ_9Fax_argv": "FUN: '_TIG_IZ_9Fax_argv__INIT'",
-          "_TIG_IZ_9Fax_argc": "FUN: '_TIG_IZ_9Fax_argc__INIT'"
+          "_TIG_IZ_GWgf_envp": "FUN: '_TIG_IZ_GWgf_envp__INIT'",
+          "_TIG_IZ_GWgf_argv": "FUN: '_TIG_IZ_GWgf_argv__INIT'",
+          "_TIG_IZ_GWgf_argc": "FUN: '_TIG_IZ_GWgf_argc__INIT'"
         }
       }
     },
@@ -884,8 +884,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-iJvwpmnv.i","") */
-/* #pragma merger("0","/tmp/cil-WzHbycvS.i","") */
+/* #pragma merger("0","/tmp/cil-Yj3mcSTe.i","") */
+/* #pragma merger("0","/tmp/cil-EYHXgOXE.i","") */
 
 /* BEGIN STRUCT-DECL _IO_FILE LOC=/usr/include/bits/types/__FILE.h:4 */
 struct _IO_FILE ;
@@ -4794,6 +4794,10 @@ extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__leaf_
                                                                                                 locale_t __loc )  __asm__("__isoc23_wcstoull_l")  ;
 /* END FUNCTION-DECL-EXTERN wcstoull_l LOC=/usr/include/wchar.h:575 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_GWgf_argc LOC=UNKNOWN */
+int _TIG_IZ_GWgf_argc ;
+/* END VARIABLE-DECL _TIG_IZ_GWgf_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN read LOC=/usr/include/unistd.h:371 */
 extern ssize_t read(int __fd , void *__buf , size_t __nbytes ) ;
 /* END FUNCTION-DECL-EXTERN read LOC=/usr/include/unistd.h:371 */
@@ -5292,10 +5296,6 @@ extern char const   *quote_n(int n , char const   *arg ) ;
 /* compiler builtin: 
    int __builtin_ffs(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_9Fax_argv LOC=UNKNOWN */
-char **_TIG_IZ_9Fax_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_9Fax_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN abs LOC=/usr/include/stdlib.h:980 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) abs)(int __x )  __attribute__((__const__)) ;
@@ -6695,6 +6695,10 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) confstr)
                                                                                  size_t __len ) ;
 /* END FUNCTION-DECL-EXTERN confstr LOC=/usr/include/unistd.h:644 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_GWgf_argc LOC=UNKNOWN */
+int _TIG_IZ_GWgf_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_GWgf_argc LOC=UNKNOWN */
+
 /* BEGIN STRUCT __time_t_must_be_integral LOC=./lib/time.h:628 */
 struct __time_t_must_be_integral {
    unsigned int __floating_time_t_unsupported : 1 ;
@@ -7225,10 +7229,6 @@ __inline static void emit_exec_status(char const   *program ) ;
 extern char *( __attribute__((__nonnull__(1))) mbschr)(char const   *string , int c )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN mbschr LOC=./lib/string.h:1642 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_9Fax_argc LOC=UNKNOWN */
-int _TIG_IZ_9Fax_argc ;
-/* END VARIABLE-DECL _TIG_IZ_9Fax_argc LOC=UNKNOWN */
-
 /* BEGIN VARIABLE-DEF table LOC=UNKNOWN */
 static char ***table  ;
 /* END VARIABLE-DEF table LOC=UNKNOWN */
@@ -7410,6 +7410,10 @@ __inline wint_t __attribute__((__pure__))  btoc32(int c ) ;
 /* compiler builtin: 
    int __builtin___vfprintf_chk(void * , int  , char const   * , __builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin___vfprintf_chk LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_GWgf_envp LOC=UNKNOWN */
+char **_TIG_IZ_GWgf_envp ;
+/* END VARIABLE-DECL _TIG_IZ_GWgf_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN execlp LOC=/usr/include/unistd.h:605 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execlp)(char const   *__file ,
@@ -8459,6 +8463,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __lea
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) putenv)(char *__string ) ;
 /* END FUNCTION-DECL-EXTERN putenv LOC=/usr/include/stdlib.h:786 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_GWgf_argv LOC=UNKNOWN */
+char **_TIG_IZ_GWgf_argv ;
+/* END VARIABLE-DECL _TIG_IZ_GWgf_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_addcl LOC=BUILTIN */
 /* compiler builtin: 
    unsigned long __builtin_addcl(unsigned long const    , unsigned long const    ,
@@ -8627,10 +8635,6 @@ __inline static char const   *dcpgettext_expr(char const   *domain , char const 
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaltstack)(stack_t const   * __restrict  __ss ,
                                                                                   stack_t * __restrict  __oss ) ;
 /* END FUNCTION-DECL-EXTERN sigaltstack LOC=/usr/include/signal.h:333 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_9Fax_argv LOC=UNKNOWN */
-char **_TIG_IZ_9Fax_argv ;
-/* END VARIABLE-DECL _TIG_IZ_9Fax_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN execve LOC=/usr/include/unistd.h:572 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execve)(char const   *__path ,
@@ -9096,6 +9100,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                char const   *__arg 
                                                                                                , ...) ;
 /* END FUNCTION-DECL-EXTERN execle LOC=/usr/include/unistd.h:589 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_GWgf_argv LOC=UNKNOWN */
+char **_TIG_IZ_GWgf_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_GWgf_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN xicalloc LOC=./lib/xalloc.h:77 */
 extern void *xicalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
@@ -10147,7 +10155,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_9Fax_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_GWgf_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -10494,6 +10502,10 @@ typedef __key_t key_t;
 /* compiler builtin: 
    long double __builtin_frexpl(long double  , int * ) ;  */
 /* END FUNCTION-DECL __builtin_frexpl LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_GWgf_envp LOC=UNKNOWN */
+char **_TIG_IZ_GWgf_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_GWgf_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF Hash_comparator LOC=./lib/hash.h:145 */
 typedef _Bool (*Hash_comparator)(void const   *entry1 , void const   *entry2 );
@@ -12063,10 +12075,6 @@ extern int ( __attribute__((__nonnull__(1))) fprintf)(FILE * __restrict  __strea
    long __builtin_expect_with_probability(long  , long  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_expect_with_probability LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_9Fax_envp LOC=UNKNOWN */
-char **_TIG_IZ_9Fax_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_9Fax_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN hash_do_for_each LOC=./lib/hash.h:130 */
 extern size_t hash_do_for_each(Hash_table const   *table , _Bool (*processor)(void *entry ,
                                                                               void *processor_data ) ,
@@ -12203,10 +12211,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ttyslot)(vo
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) versionsort)(struct dirent  const  **__e1 ,
                                                                                                     struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN versionsort LOC=/usr/include/dirent.h:382 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_9Fax_argc LOC=UNKNOWN */
-int _TIG_IZ_9Fax_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_9Fax_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL c_isblank LOC=UNKNOWN */
 __inline _Bool c_isblank(int c ) ;
@@ -13001,10 +13005,6 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __le
 /* BEGIN TYPEDEF __fsword_t LOC=/usr/include/bits/types.h:192 */
 typedef long __fsword_t;
 /* END TYPEDEF __fsword_t LOC=/usr/include/bits/types.h:192 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_9Fax_envp LOC=UNKNOWN */
-char **_TIG_IZ_9Fax_envp ;
-/* END VARIABLE-DECL _TIG_IZ_9Fax_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_atan2l LOC=BUILTIN */
 /* compiler builtin: 
@@ -16603,7 +16603,7 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
 /* END FUNCTION-DEF npgettext_aux LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_9Fax_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_GWgf_formal_envp ) 
 { 
   struct stat *stats ;
   _Bool posix_format ;
@@ -16987,34 +16987,34 @@ int main(int argc , char **argv , char **_TIG_IZ_9Fax_formal_envp )
   }
   {
   {
-  _TIG_IZ_9Fax_envp = (char **)0;
-  goto _TIG_IZ_9Fax_envp__INITINLINE__TIG_IZ_9Fax_envp__INIT;
+  _TIG_IZ_GWgf_envp = (char **)0;
+  goto _TIG_IZ_GWgf_envp__INITINLINE__TIG_IZ_GWgf_envp__INIT;
   }
-  _TIG_IZ_9Fax_envp__INITINLINE__TIG_IZ_9Fax_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_9Fax_argv = (char **)0;
-  goto _TIG_IZ_9Fax_argv__INITINLINE__TIG_IZ_9Fax_argv__INIT;
-  }
-  _TIG_IZ_9Fax_argv__INITINLINE__TIG_IZ_9Fax_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_GWgf_envp__INITINLINE__TIG_IZ_GWgf_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_9Fax_argc = 0;
-  goto _TIG_IZ_9Fax_argc__INITINLINE__TIG_IZ_9Fax_argc__INIT;
+  _TIG_IZ_GWgf_argv = (char **)0;
+  goto _TIG_IZ_GWgf_argv__INITINLINE__TIG_IZ_GWgf_argv__INIT;
   }
-  _TIG_IZ_9Fax_argc__INITINLINE__TIG_IZ_9Fax_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_GWgf_argv__INITINLINE__TIG_IZ_GWgf_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_GWgf_argc = 0;
+  goto _TIG_IZ_GWgf_argc__INITINLINE__TIG_IZ_GWgf_argc__INIT;
+  }
+  _TIG_IZ_GWgf_argc__INITINLINE__TIG_IZ_GWgf_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-9Fax--0":);
-    _TIG_IZ_9Fax_argc = argc;
-    _TIG_IZ_9Fax_argv = argv;
-    _TIG_IZ_9Fax_envp = _TIG_IZ_9Fax_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-GWgf--0":);
+    _TIG_IZ_GWgf_argc = argc;
+    _TIG_IZ_GWgf_argv = argv;
+    _TIG_IZ_GWgf_envp = _TIG_IZ_GWgf_formal_envp;
     break;
   }
 #line 1587 "src/df.c"

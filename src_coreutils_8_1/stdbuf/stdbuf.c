@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_qBHR_envp": "FUN: '_TIG_IZ_qBHR_envp__INIT'",
-          "_TIG_IZ_qBHR_argv": "FUN: '_TIG_IZ_qBHR_argv__INIT'",
-          "_TIG_IZ_qBHR_argc": "FUN: '_TIG_IZ_qBHR_argc__INIT'"
+          "_TIG_IZ_EF2R_envp": "FUN: '_TIG_IZ_EF2R_envp__INIT'",
+          "_TIG_IZ_EF2R_argv": "FUN: '_TIG_IZ_EF2R_argv__INIT'",
+          "_TIG_IZ_EF2R_argc": "FUN: '_TIG_IZ_EF2R_argc__INIT'"
         }
       }
     },
@@ -2037,6 +2037,10 @@ extern  __attribute__((__nothrow__)) time_t ( __attribute__((__leaf__)) time)(ti
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int __nochdir ,
                                                                              int __noclose ) ;
 /* END FUNCTION-DECL-EXTERN daemon LOC=/usr/include/unistd.h:970 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_EF2R_argc LOC=UNKNOWN */
+int _TIG_IZ_EF2R_argc ;
+/* END VARIABLE-DECL _TIG_IZ_EF2R_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 /* compiler builtin: 
@@ -4145,6 +4149,10 @@ extern struct dirent *( __attribute__((__nonnull__(1))) readdir)(DIR *__dirp ) ;
    char *__builtin_strrchr(char const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_strrchr LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_EF2R_argc LOC=UNKNOWN */
+int _TIG_IZ_EF2R_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_EF2R_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
 /* compiler builtin: 
    _Bool __builtin_sadd_overflow(int const    , int const    , int * ) ;  */
@@ -4445,10 +4453,6 @@ struct _IO_marker ;
 extern void *xireallocarray(void *p , idx_t n , idx_t s )  __attribute__((__returns_nonnull__,
 __alloc_size__(2,3))) ;
 /* END FUNCTION-DECL-EXTERN xireallocarray LOC=./lib/xalloc.h:86 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_qBHR_envp LOC=UNKNOWN */
-char **_TIG_IZ_qBHR_envp ;
-/* END VARIABLE-DECL _TIG_IZ_qBHR_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_bswap64 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5120,10 +5124,6 @@ extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getuma
 #line 47 "/usr/include/stdint.h"
 typedef signed char int_fast8_t;
 /* END TYPEDEF int_fast8_t LOC=/usr/include/stdint.h:47 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_qBHR_argc LOC=UNKNOWN */
-int _TIG_IZ_qBHR_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_qBHR_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_wmemmove LOC=BUILTIN */
 /* compiler builtin: 
@@ -6483,6 +6483,10 @@ extern  __attribute__((__nothrow__)) int ( /* format attribute */  obstack_print
                                                                                    , ...) ;
 /* END FUNCTION-DECL-EXTERN obstack_printf LOC=/usr/include/stdio.h:917 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_EF2R_argv LOC=UNKNOWN */
+char **_TIG_IZ_EF2R_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_EF2R_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN fopencookie LOC=/usr/include/stdio.h:306 */
 #line 306
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fopencookie)(void * __restrict  __magic_cookie ,
@@ -6986,7 +6990,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_qBHR_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_EF2R_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7369,6 +7373,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __
                                                                                                  char const   *__needle )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN strstr LOC=/usr/include/string.h:350 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_EF2R_envp LOC=UNKNOWN */
+char **_TIG_IZ_EF2R_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_EF2R_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN execv LOC=/usr/include/unistd.h:584 */
 #line 584 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execv)(char const   *__path ,
@@ -7421,6 +7429,10 @@ extern size_t ( __attribute__((__nonnull__(4))) fread_unlocked)(void * __restric
                                                                 size_t __size , size_t __n ,
                                                                 FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fread_unlocked LOC=/usr/include/stdio.h:756 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_EF2R_envp LOC=UNKNOWN */
+char **_TIG_IZ_EF2R_envp ;
+/* END VARIABLE-DECL _TIG_IZ_EF2R_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN statx LOC=/usr/include/bits/statx-generic.h:65 */
 #line 65 "/usr/include/bits/statx-generic.h"
@@ -8030,10 +8042,6 @@ __inline static char const   *dcnpgettext_expr(char const   *domain , char const
 /* compiler builtin: 
    void *__builtin___get_unsafe_stack_top(void) ;  */
 /* END FUNCTION-DECL __builtin___get_unsafe_stack_top LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_qBHR_argv LOC=UNKNOWN */
-char **_TIG_IZ_qBHR_argv ;
-/* END VARIABLE-DECL _TIG_IZ_qBHR_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int16_t LOC=/usr/include/bits/stdint-intn.h:25 */
 #line 25 "/usr/include/bits/stdint-intn.h"
@@ -9072,10 +9080,6 @@ struct _fpxreg {
 extern  __attribute__((__deprecated__("Use the sigsuspend function instead"))) int sigpause(int __sig )  __asm__("__xpg_sigpause")  ;
 /* END FUNCTION-DECL-EXTERN sigpause LOC=/usr/include/signal.h:151 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_qBHR_envp LOC=UNKNOWN */
-char **_TIG_IZ_qBHR_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_qBHR_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN lldiv LOC=/usr/include/stdlib.h:998 */
 #line 998 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) lldiv_t ( __attribute__((__leaf__)) lldiv)(long long __numer ,
@@ -10062,10 +10066,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                   struct dirent  const  **__e2 )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN alphasort LOC=/usr/include/dirent.h:327 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_qBHR_argv LOC=UNKNOWN */
-char **_TIG_IZ_qBHR_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_qBHR_argv LOC=UNKNOWN */
-
 /* BEGIN UNION __anonunion_pthread_barrierattr_t_951761806 LOC=/usr/include/bits/pthreadtypes.h:114 */
 #line 114 "/usr/include/bits/pthreadtypes.h"
 union __anonunion_pthread_barrierattr_t_951761806 {
@@ -10563,10 +10563,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) posix_fadvi
 #line 489 "/usr/include/unistd.h"
 extern int pause(void) ;
 /* END FUNCTION-DECL-EXTERN pause LOC=/usr/include/unistd.h:489 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_qBHR_argc LOC=UNKNOWN */
-int _TIG_IZ_qBHR_argc ;
-/* END VARIABLE-DECL _TIG_IZ_qBHR_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF pthread_key_t LOC=/usr/include/bits/pthreadtypes.h:49 */
 #line 49 "/usr/include/bits/pthreadtypes.h"
@@ -11257,6 +11253,10 @@ __leaf__)) strtold)(char const   * __restrict  __nptr , char ** __restrict  __en
 /* BEGIN FUNCTION-DECL psame_inode LOC=UNKNOWN */
 __inline _Bool psame_inode(struct stat  const  *a , struct stat  const  *b ) ;
 /* END FUNCTION-DECL psame_inode LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_EF2R_argv LOC=UNKNOWN */
+char **_TIG_IZ_EF2R_argv ;
+/* END VARIABLE-DECL _TIG_IZ_EF2R_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_rotateleft16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -13297,7 +13297,7 @@ __inline int c_toupper(int c )
 /* END FUNCTION-DEF c_toupper LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_qBHR_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_EF2R_formal_envp ) 
 { 
   int c ;
   int opt_fileno ;
@@ -13392,34 +13392,34 @@ int main(int argc , char **argv , char **_TIG_IZ_qBHR_formal_envp )
   }
   {
   {
-  _TIG_IZ_qBHR_envp = (char **)0;
-  goto _TIG_IZ_qBHR_envp__INITINLINE__TIG_IZ_qBHR_envp__INIT;
+  _TIG_IZ_EF2R_envp = (char **)0;
+  goto _TIG_IZ_EF2R_envp__INITINLINE__TIG_IZ_EF2R_envp__INIT;
   }
-  _TIG_IZ_qBHR_envp__INITINLINE__TIG_IZ_qBHR_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_qBHR_argv = (char **)0;
-  goto _TIG_IZ_qBHR_argv__INITINLINE__TIG_IZ_qBHR_argv__INIT;
-  }
-  _TIG_IZ_qBHR_argv__INITINLINE__TIG_IZ_qBHR_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_EF2R_envp__INITINLINE__TIG_IZ_EF2R_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_qBHR_argc = 0;
-  goto _TIG_IZ_qBHR_argc__INITINLINE__TIG_IZ_qBHR_argc__INIT;
+  _TIG_IZ_EF2R_argv = (char **)0;
+  goto _TIG_IZ_EF2R_argv__INITINLINE__TIG_IZ_EF2R_argv__INIT;
   }
-  _TIG_IZ_qBHR_argc__INITINLINE__TIG_IZ_qBHR_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_EF2R_argv__INITINLINE__TIG_IZ_EF2R_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_EF2R_argc = 0;
+  goto _TIG_IZ_EF2R_argc__INITINLINE__TIG_IZ_EF2R_argc__INIT;
+  }
+  _TIG_IZ_EF2R_argc__INITINLINE__TIG_IZ_EF2R_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-qBHR--0":);
-    _TIG_IZ_qBHR_argc = argc;
-    _TIG_IZ_qBHR_argv = argv;
-    _TIG_IZ_qBHR_envp = _TIG_IZ_qBHR_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-EF2R--0":);
+    _TIG_IZ_EF2R_argc = argc;
+    _TIG_IZ_EF2R_argv = argv;
+    _TIG_IZ_EF2R_envp = _TIG_IZ_EF2R_formal_envp;
     break;
   }
 #line 314 "src/stdbuf.c"

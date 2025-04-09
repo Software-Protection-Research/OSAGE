@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_KzY4_envp": "FUN: '_TIG_IZ_KzY4_envp__INIT'",
-          "_TIG_IZ_KzY4_argv": "FUN: '_TIG_IZ_KzY4_argv__INIT'",
-          "_TIG_IZ_KzY4_argc": "FUN: '_TIG_IZ_KzY4_argc__INIT'"
+          "_TIG_IZ_UKmy_envp": "FUN: '_TIG_IZ_UKmy_envp__INIT'",
+          "_TIG_IZ_UKmy_argv": "FUN: '_TIG_IZ_UKmy_argv__INIT'",
+          "_TIG_IZ_UKmy_argc": "FUN: '_TIG_IZ_UKmy_argc__INIT'"
         }
       }
     },
@@ -3368,6 +3368,10 @@ extern FILE *tmpfile64(void)  __attribute__((__malloc__)) ;
    void *__builtin_operator_new(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_operator_new LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_UKmy_argc LOC=UNKNOWN */
+int _TIG_IZ_UKmy_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_UKmy_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_creall LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_creall(_Complex long double  ) ;  */
@@ -3654,10 +3658,6 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) c16rtomb
    float __builtin_logf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_KzY4_argv LOC=UNKNOWN */
-char **_TIG_IZ_KzY4_argv ;
-/* END VARIABLE-DECL _TIG_IZ_KzY4_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN ftello LOC=/usr/include/stdio.h:799 */
 #line 799 "/usr/include/stdio.h"
 extern __off_t ( __attribute__((__nonnull__(1))) ftello)(FILE *__stream ) ;
@@ -3818,10 +3818,6 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __lea
 /* BEGIN FUNCTION-DECL xfields LOC=UNKNOWN */
 static void xfields(struct line *line ) ;
 /* END FUNCTION-DECL xfields LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_KzY4_envp LOC=UNKNOWN */
-char **_TIG_IZ_KzY4_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_KzY4_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN lstat64 LOC=/usr/include/sys/stat.h:338 */
 #line 338 "/usr/include/sys/stat.h"
@@ -5849,6 +5845,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __le
                                                                                                int __c )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN rindex LOC=/usr/include/strings.h:96 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_UKmy_argv LOC=UNKNOWN */
+char **_TIG_IZ_UKmy_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_UKmy_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN system LOC=/usr/include/stdlib.h:923 */
 #line 923 "/usr/include/stdlib.h"
 extern int system(char const   *__command ) ;
@@ -6103,6 +6103,10 @@ __inline static _Bool usable_st_size(struct stat  const  *sb ) ;
 #line 236 "/usr/include/stdio.h"
 extern int fflush(FILE *__stream ) ;
 /* END FUNCTION-DECL-EXTERN fflush LOC=/usr/include/stdio.h:236 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_UKmy_envp LOC=UNKNOWN */
+char **_TIG_IZ_UKmy_envp ;
+/* END VARIABLE-DECL _TIG_IZ_UKmy_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN memcpy LOC=/usr/include/string.h:43 */
 #line 43 "/usr/include/string.h"
@@ -8004,10 +8008,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
    _Complex double __builtin_casinh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_casinh LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_KzY4_argc LOC=UNKNOWN */
-int _TIG_IZ_KzY4_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_KzY4_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN xmemdup LOC=./lib/xalloc.h:94 */
 #line 94 "./lib/xalloc.h"
 extern void *xmemdup(void const   *p , size_t s )  __attribute__((__returns_nonnull__,
@@ -8168,10 +8168,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
 /* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./lib/version-etc.h:53 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_KzY4_argv LOC=UNKNOWN */
-char **_TIG_IZ_KzY4_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_KzY4_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN adjtime LOC=/usr/include/sys/time.h:94 */
 #line 94 "/usr/include/sys/time.h"
@@ -8654,6 +8650,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
                                                                                               void * __restrict  __to ,
                                                                                               ssize_t __n ) ;
 /* END FUNCTION-DECL-EXTERN swab LOC=/usr/include/unistd.h:1171 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_UKmy_envp LOC=UNKNOWN */
+char **_TIG_IZ_UKmy_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_UKmy_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_usubl_overflow LOC=BUILTIN */
 /* compiler builtin: 
@@ -10746,7 +10746,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_KzY4_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_UKmy_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -11388,10 +11388,6 @@ static struct line *spareline[2]  ;
    float __builtin_nanf(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_nanf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_KzY4_envp LOC=UNKNOWN */
-char **_TIG_IZ_KzY4_envp ;
-/* END VARIABLE-DECL _TIG_IZ_KzY4_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN sprintf LOC=/usr/include/stdio.h:365 */
 #line 365 "/usr/include/stdio.h"
 extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char const   * __restrict  __format 
@@ -11975,10 +11971,6 @@ __inline static _Bool dot_or_dotdot(char const   *file_name ) ;
    void *__builtin_memset(void * , int  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_memset LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_KzY4_argc LOC=UNKNOWN */
-int _TIG_IZ_KzY4_argc ;
-/* END VARIABLE-DECL _TIG_IZ_KzY4_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_casinhl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_casinhl(_Complex long double  ) ;  */
@@ -12262,6 +12254,10 @@ struct __anonstruct_imaxdiv_t_825626742 {
    long rem ;
 };
 /* END STRUCT __anonstruct_imaxdiv_t_825626742 LOC=/usr/include/inttypes.h:332 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_UKmy_argc LOC=UNKNOWN */
+int _TIG_IZ_UKmy_argc ;
+/* END VARIABLE-DECL _TIG_IZ_UKmy_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN rpl_mbrlen LOC=./lib/wchar.h:1109 */
 #line 1109 "./lib/wchar.h"
@@ -13164,6 +13160,10 @@ struct statx {
 extern char *( __attribute__((__nonnull__(3))) fgets)(char * __restrict  __s , int __n ,
                                                       FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fgets LOC=/usr/include/stdio.h:654 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_UKmy_argv LOC=UNKNOWN */
+char **_TIG_IZ_UKmy_argv ;
+/* END VARIABLE-DECL _TIG_IZ_UKmy_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF pthread_mutex_t LOC=/usr/include/bits/pthreadtypes.h:67 */
 #line 67 "/usr/include/bits/pthreadtypes.h"
@@ -16431,7 +16431,7 @@ __inline _Bool psame_inode(struct stat  const  *a , struct stat  const  *b )
 /* END FUNCTION-DEF psame_inode LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_KzY4_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_UKmy_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_3 ;
   int init_elems1_inline_1_inline_2 ;
@@ -16763,34 +16763,34 @@ int main(int argc , char **argv , char **_TIG_IZ_KzY4_formal_envp )
   }
   {
   {
-  _TIG_IZ_KzY4_envp = (char **)0;
-  goto _TIG_IZ_KzY4_envp__INITINLINE__TIG_IZ_KzY4_envp__INIT;
+  _TIG_IZ_UKmy_envp = (char **)0;
+  goto _TIG_IZ_UKmy_envp__INITINLINE__TIG_IZ_UKmy_envp__INIT;
   }
-  _TIG_IZ_KzY4_envp__INITINLINE__TIG_IZ_KzY4_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_KzY4_argv = (char **)0;
-  goto _TIG_IZ_KzY4_argv__INITINLINE__TIG_IZ_KzY4_argv__INIT;
-  }
-  _TIG_IZ_KzY4_argv__INITINLINE__TIG_IZ_KzY4_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_UKmy_envp__INITINLINE__TIG_IZ_UKmy_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_KzY4_argc = 0;
-  goto _TIG_IZ_KzY4_argc__INITINLINE__TIG_IZ_KzY4_argc__INIT;
+  _TIG_IZ_UKmy_argv = (char **)0;
+  goto _TIG_IZ_UKmy_argv__INITINLINE__TIG_IZ_UKmy_argv__INIT;
   }
-  _TIG_IZ_KzY4_argc__INITINLINE__TIG_IZ_KzY4_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_UKmy_argv__INITINLINE__TIG_IZ_UKmy_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_UKmy_argc = 0;
+  goto _TIG_IZ_UKmy_argc__INITINLINE__TIG_IZ_UKmy_argc__INIT;
+  }
+  _TIG_IZ_UKmy_argc__INITINLINE__TIG_IZ_UKmy_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-KzY4--0":);
-    _TIG_IZ_KzY4_argc = argc;
-    _TIG_IZ_KzY4_argv = argv;
-    _TIG_IZ_KzY4_envp = _TIG_IZ_KzY4_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-UKmy--0":);
+    _TIG_IZ_UKmy_argc = argc;
+    _TIG_IZ_UKmy_argv = argv;
+    _TIG_IZ_UKmy_envp = _TIG_IZ_UKmy_formal_envp;
     break;
   }
 #line 1007 "src/join.c"

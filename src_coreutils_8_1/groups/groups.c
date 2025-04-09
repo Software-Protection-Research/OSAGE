@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_Ot0S_envp": "FUN: '_TIG_IZ_Ot0S_envp__INIT'",
-          "_TIG_IZ_Ot0S_argv": "FUN: '_TIG_IZ_Ot0S_argv__INIT'",
-          "_TIG_IZ_Ot0S_argc": "FUN: '_TIG_IZ_Ot0S_argc__INIT'"
+          "_TIG_IZ_wTrW_envp": "FUN: '_TIG_IZ_wTrW_envp__INIT'",
+          "_TIG_IZ_wTrW_argv": "FUN: '_TIG_IZ_wTrW_argv__INIT'",
+          "_TIG_IZ_wTrW_argc": "FUN: '_TIG_IZ_wTrW_argc__INIT'"
         }
       }
     },
@@ -793,8 +793,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-R7spAZjL.i","") */
-/* #pragma merger("0","/tmp/cil-vy98R_OL.i","") */
+/* #pragma merger("0","/tmp/cil-bRorm5Hg.i","") */
+/* #pragma merger("0","/tmp/cil-wTnGZVtl.i","") */
 
 /* BEGIN STRUCT-DECL sigevent LOC=/usr/include/time.h:49 */
 struct sigevent ;
@@ -2467,10 +2467,6 @@ extern int ( __attribute__((__nonnull__(2))) setlocale_null_r_unlocked)(int cate
                                                                         size_t bufsize ) ;
 /* END FUNCTION-DECL-EXTERN setlocale_null_r_unlocked LOC=./lib/setlocale_null.h:63 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ot0S_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ot0S_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_Ot0S_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __nlink_t LOC=/usr/include/bits/types.h:151 */
 typedef unsigned long __nlink_t;
 /* END TYPEDEF __nlink_t LOC=/usr/include/bits/types.h:151 */
@@ -3891,10 +3887,6 @@ extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))
 extern int optopt ;
 /* END VARIABLE-DECL-EXTERN optopt LOC=/usr/include/bits/getopt_core.h:59 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ot0S_argc LOC=UNKNOWN */
-int _TIG_IZ_Ot0S_argc ;
-/* END VARIABLE-DECL _TIG_IZ_Ot0S_argc LOC=UNKNOWN */
-
 /* BEGIN ENUM __anonenum_23175539___0 LOC=/usr/include/bits/siginfo-consts.h:178 */
 enum __anonenum_23175539___0 {
     CLD_EXITED___0 = 1,
@@ -4493,6 +4485,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
                                                                                                float __f ) ;
 /* END FUNCTION-DECL-EXTERN strfromf LOC=/usr/include/stdlib.h:282 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_wTrW_argc LOC=UNKNOWN */
+int _TIG_IZ_wTrW_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_wTrW_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN execl LOC=/usr/include/unistd.h:594 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execl)(char const   *__path ,
                                                                                               char const   *__arg 
@@ -4838,10 +4834,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) textdomai
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1), __leaf__)) basename)(char const   *__filename ) ;
 /* END FUNCTION-DECL-EXTERN basename LOC=/usr/include/string.h:540 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ot0S_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ot0S_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_Ot0S_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strfromf64 LOC=/usr/include/stdlib.h:304 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf64)(char *__dest ,
                                                                                                  size_t __size ,
@@ -4918,6 +4910,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror_
 /* BEGIN FUNCTION-DECL lchownat LOC=UNKNOWN */
 __inline int lchownat(int fd , char const   *file , uid_t owner , gid_t group ) ;
 /* END FUNCTION-DECL lchownat LOC=UNKNOWN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_wTrW_envp LOC=UNKNOWN */
+char **_TIG_IZ_wTrW_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_wTrW_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_fminf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -5082,6 +5078,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                    size_t __n )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN __memcmpeq LOC=/usr/include/string.h:80 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_wTrW_argv LOC=UNKNOWN */
+char **_TIG_IZ_wTrW_argv ;
+/* END VARIABLE-DECL _TIG_IZ_wTrW_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL chmodat LOC=UNKNOWN */
 __inline int chmodat(int fd , char const   *file , mode_t mode ) ;
 /* END FUNCTION-DECL chmodat LOC=UNKNOWN */
@@ -5179,10 +5179,6 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1,2), _
 /* BEGIN FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
 __inline static __uint16_t __uint16_identity(__uint16_t __x ) ;
 /* END FUNCTION-DECL __uint16_identity LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ot0S_argc LOC=UNKNOWN */
-int _TIG_IZ_Ot0S_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_Ot0S_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __fsblkcnt_t LOC=/usr/include/bits/types.h:184 */
 typedef unsigned long __fsblkcnt_t;
@@ -6503,7 +6499,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL-EXTERN bcopy LOC=/usr/include/strings.h:38 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ot0S_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_wTrW_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7317,6 +7313,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(
                                                                                 __gid_t __sgid ) ;
 /* END FUNCTION-DECL-EXTERN setresgid LOC=/usr/include/unistd.h:770 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_wTrW_envp LOC=UNKNOWN */
+char **_TIG_IZ_wTrW_envp ;
+/* END VARIABLE-DECL _TIG_IZ_wTrW_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF ldiv_t LOC=/usr/include/stdlib.h:67 */
 typedef struct __anonstruct_ldiv_t_790849867 ldiv_t;
 /* END TYPEDEF ldiv_t LOC=/usr/include/stdlib.h:67 */
@@ -7648,10 +7648,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN nrand48_r LOC=/usr/include/stdlib.h:631 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ot0S_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ot0S_envp ;
-/* END VARIABLE-DECL _TIG_IZ_Ot0S_envp LOC=UNKNOWN */
 
 /* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=/usr/include/bits/pthreadtypes.h:67 */
 union __anonunion_pthread_mutex_t_335460617 {
@@ -8649,10 +8645,6 @@ extern  __attribute__((__nothrow__)) lldiv_t ( __attribute__((__leaf__)) lldiv)(
    void __builtin_varargs_start(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_varargs_start LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ot0S_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ot0S_argv ;
-/* END VARIABLE-DECL _TIG_IZ_Ot0S_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_catanl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_catanl(_Complex long double  ) ;  */
@@ -9512,6 +9504,10 @@ typedef unsigned char uint_fast8_t;
 extern void close_stdout(void) ;
 /* END FUNCTION-DECL-EXTERN close_stdout LOC=./lib/closeout.h:28 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_wTrW_argv LOC=UNKNOWN */
+char **_TIG_IZ_wTrW_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_wTrW_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_log2f(float  ) ;  */
@@ -9669,6 +9665,10 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), 
                                                                                                    char ** __restrict  __endptr ,
                                                                                                    int __base )  __asm__("__isoc23_strtoll")  ;
 /* END FUNCTION-DECL-EXTERN strtoq LOC=/usr/include/stdlib.h:188 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_wTrW_argc LOC=UNKNOWN */
+int _TIG_IZ_wTrW_argc ;
+/* END VARIABLE-DECL _TIG_IZ_wTrW_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN open_by_handle_at LOC=/usr/include/bits/fcntl-linux.h:453 */
 extern int open_by_handle_at(int __mountdirfd , struct file_handle *__handle , int __flags ) ;
@@ -11947,7 +11947,7 @@ __inline int chownat(int fd , char const   *file , uid_t owner , gid_t group )
 /* END FUNCTION-DEF chownat LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ot0S_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_wTrW_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_1 ;
   int optc ;
@@ -12025,34 +12025,34 @@ int main(int argc , char **argv , char **_TIG_IZ_Ot0S_formal_envp )
   }
   {
   {
-  _TIG_IZ_Ot0S_envp = (char **)0;
-  goto _TIG_IZ_Ot0S_envp__INITINLINE__TIG_IZ_Ot0S_envp__INIT;
+  _TIG_IZ_wTrW_envp = (char **)0;
+  goto _TIG_IZ_wTrW_envp__INITINLINE__TIG_IZ_wTrW_envp__INIT;
   }
-  _TIG_IZ_Ot0S_envp__INITINLINE__TIG_IZ_Ot0S_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_Ot0S_argv = (char **)0;
-  goto _TIG_IZ_Ot0S_argv__INITINLINE__TIG_IZ_Ot0S_argv__INIT;
-  }
-  _TIG_IZ_Ot0S_argv__INITINLINE__TIG_IZ_Ot0S_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_wTrW_envp__INITINLINE__TIG_IZ_wTrW_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_Ot0S_argc = 0;
-  goto _TIG_IZ_Ot0S_argc__INITINLINE__TIG_IZ_Ot0S_argc__INIT;
+  _TIG_IZ_wTrW_argv = (char **)0;
+  goto _TIG_IZ_wTrW_argv__INITINLINE__TIG_IZ_wTrW_argv__INIT;
   }
-  _TIG_IZ_Ot0S_argc__INITINLINE__TIG_IZ_Ot0S_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_wTrW_argv__INITINLINE__TIG_IZ_wTrW_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_wTrW_argc = 0;
+  goto _TIG_IZ_wTrW_argc__INITINLINE__TIG_IZ_wTrW_argc__INIT;
+  }
+  _TIG_IZ_wTrW_argc__INITINLINE__TIG_IZ_wTrW_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Ot0S--0":);
-    _TIG_IZ_Ot0S_argc = argc;
-    _TIG_IZ_Ot0S_argv = argv;
-    _TIG_IZ_Ot0S_envp = _TIG_IZ_Ot0S_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-wTrW--0":);
+    _TIG_IZ_wTrW_argc = argc;
+    _TIG_IZ_wTrW_argv = argv;
+    _TIG_IZ_wTrW_envp = _TIG_IZ_wTrW_formal_envp;
     break;
   }
 #line 70 "src/groups.c"

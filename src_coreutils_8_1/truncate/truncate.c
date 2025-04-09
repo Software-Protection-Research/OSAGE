@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_QVdu_envp": "FUN: '_TIG_IZ_QVdu_envp__INIT'",
-          "_TIG_IZ_QVdu_argv": "FUN: '_TIG_IZ_QVdu_argv__INIT'",
-          "_TIG_IZ_QVdu_argc": "FUN: '_TIG_IZ_QVdu_argc__INIT'"
+          "_TIG_IZ_0QpS_envp": "FUN: '_TIG_IZ_0QpS_envp__INIT'",
+          "_TIG_IZ_0QpS_argv": "FUN: '_TIG_IZ_0QpS_argv__INIT'",
+          "_TIG_IZ_0QpS_argc": "FUN: '_TIG_IZ_0QpS_argc__INIT'"
         }
       }
     },
@@ -1808,6 +1808,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
    int __builtin_isfinite(...) ;  */
 /* END FUNCTION-DECL __builtin_isfinite LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_0QpS_argc LOC=UNKNOWN */
+int _TIG_IZ_0QpS_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_0QpS_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_isgreater LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isgreater(...) ;  */
@@ -2171,6 +2175,10 @@ extern  __attribute__((__noreturn__)) void _exit(int __status ) ;
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
 /* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./lib/version-etc.h:53 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_0QpS_argc LOC=UNKNOWN */
+int _TIG_IZ_0QpS_argc ;
+/* END VARIABLE-DECL _TIG_IZ_0QpS_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF register_t LOC=/usr/include/sys/types.h:164 */
 #line 164 "/usr/include/sys/types.h"
@@ -2734,10 +2742,6 @@ extern  __attribute__((__nothrow__)) int ( /* format attribute */  vsnprintf)(ch
 /* compiler builtin: 
    double __builtin_floor(double  ) ;  */
 /* END FUNCTION-DECL __builtin_floor LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_QVdu_envp LOC=UNKNOWN */
-char **_TIG_IZ_QVdu_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_QVdu_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN nice LOC=/usr/include/unistd.h:619 */
 #line 619 "/usr/include/unistd.h"
@@ -4535,6 +4539,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dysize)(int __year )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN dysize LOC=/usr/include/time.h:271 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_0QpS_envp LOC=UNKNOWN */
+char **_TIG_IZ_0QpS_envp ;
+/* END VARIABLE-DECL _TIG_IZ_0QpS_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN tee LOC=/usr/include/bits/fcntl-linux.h:420 */
 #line 420 "/usr/include/bits/fcntl-linux.h"
 extern __ssize_t tee(int __fdin , int __fdout , size_t __len , unsigned int __flags ) ;
@@ -4778,6 +4786,10 @@ extern int ( __attribute__((__nonnull__(2,3))) scandirat64)(int __dfd , char con
                                                             int (*__cmp)(struct dirent64  const  ** ,
                                                                          struct dirent64  const  ** ) ) ;
 /* END FUNCTION-DECL-EXTERN scandirat64 LOC=/usr/include/dirent.h:317 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_0QpS_argv LOC=UNKNOWN */
+char **_TIG_IZ_0QpS_argv ;
+/* END VARIABLE-DECL _TIG_IZ_0QpS_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __quad_t LOC=/usr/include/bits/types.h:63 */
 #line 63 "/usr/include/bits/types.h"
@@ -7086,7 +7098,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_QVdu_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_0QpS_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -8536,6 +8548,10 @@ extern  __attribute__((__nothrow__)) unsigned int ( __attribute__((__leaf__)) al
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpckhps LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_0QpS_argv LOC=UNKNOWN */
+char **_TIG_IZ_0QpS_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_0QpS_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN psignal LOC=/usr/include/signal.h:134 */
 #line 134 "/usr/include/signal.h"
 extern void psignal(int __sig , char const   *__s ) ;
@@ -8902,10 +8918,6 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
                                                                                                  void const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
 /* END FUNCTION-DECL-EXTERN memcpy LOC=/usr/include/string.h:43 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_QVdu_argc LOC=UNKNOWN */
-int _TIG_IZ_QVdu_argc ;
-/* END VARIABLE-DECL _TIG_IZ_QVdu_argc LOC=UNKNOWN */
 
 /* BEGIN STRUCT __anonstruct__kill_244518854 LOC=/usr/include/bits/types/siginfo_t.h:36 */
 #line 36 "/usr/include/bits/types/siginfo_t.h"
@@ -9828,10 +9840,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strsignal
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(long __seedval ) ;
 /* END FUNCTION-DECL-EXTERN srand48 LOC=/usr/include/stdlib.h:601 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_QVdu_envp LOC=UNKNOWN */
-char **_TIG_IZ_QVdu_envp ;
-/* END VARIABLE-DECL _TIG_IZ_QVdu_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_llroundf128 LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llroundf128(_Float128  ) ;  */
@@ -9875,10 +9883,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) __sysv_signal)(int __sig ,
                                                                                                void (*__handler)(int  ) ) ;
 /* END FUNCTION-DECL-EXTERN __sysv_signal LOC=/usr/include/signal.h:77 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_QVdu_argc LOC=UNKNOWN */
-int _TIG_IZ_QVdu_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_QVdu_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_coshf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -10159,10 +10163,6 @@ typedef unsigned char uint_fast8_t;
 #line 28 "./lib/closeout.h"
 extern void close_stdout(void) ;
 /* END FUNCTION-DECL-EXTERN close_stdout LOC=./lib/closeout.h:28 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_QVdu_argv LOC=UNKNOWN */
-char **_TIG_IZ_QVdu_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_QVdu_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f LOC=BUILTIN */
 /* compiler builtin: 
@@ -12068,10 +12068,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
                                                                            float __attribute__((____vector_size____(16)))   ) ;  */
 /* END FUNCTION-DECL __builtin_ia32_unpcklps LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_QVdu_argv LOC=UNKNOWN */
-char **_TIG_IZ_QVdu_argv ;
-/* END VARIABLE-DECL _TIG_IZ_QVdu_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_fpclassify LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_fpclassify(int  , int  , int  , int  , int   , ...) ;  */
@@ -12106,6 +12102,10 @@ __malloc__)) ;
 /* compiler builtin: 
    unsigned long long __builtin_wcslen(unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcslen LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_0QpS_envp LOC=UNKNOWN */
+char **_TIG_IZ_0QpS_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_0QpS_envp LOC=UNKNOWN */
 
 /* BEGIN STRUCT __anonstruct_div_t_773697287 LOC=/usr/include/stdlib.h:59 */
 #line 59 "/usr/include/stdlib.h"
@@ -13037,7 +13037,7 @@ __inline static __uint32_t __uint32_identity(__uint32_t __x )
 /* END FUNCTION-DEF __uint32_identity LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_QVdu_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_0QpS_formal_envp ) 
 { 
   _Bool got_size ;
   off_t size ;
@@ -13191,34 +13191,34 @@ int main(int argc , char **argv , char **_TIG_IZ_QVdu_formal_envp )
   }
   {
   {
-  _TIG_IZ_QVdu_envp = (char **)0;
-  goto _TIG_IZ_QVdu_envp__INITINLINE__TIG_IZ_QVdu_envp__INIT;
+  _TIG_IZ_0QpS_envp = (char **)0;
+  goto _TIG_IZ_0QpS_envp__INITINLINE__TIG_IZ_0QpS_envp__INIT;
   }
-  _TIG_IZ_QVdu_envp__INITINLINE__TIG_IZ_QVdu_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_QVdu_argv = (char **)0;
-  goto _TIG_IZ_QVdu_argv__INITINLINE__TIG_IZ_QVdu_argv__INIT;
-  }
-  _TIG_IZ_QVdu_argv__INITINLINE__TIG_IZ_QVdu_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_0QpS_envp__INITINLINE__TIG_IZ_0QpS_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_QVdu_argc = 0;
-  goto _TIG_IZ_QVdu_argc__INITINLINE__TIG_IZ_QVdu_argc__INIT;
+  _TIG_IZ_0QpS_argv = (char **)0;
+  goto _TIG_IZ_0QpS_argv__INITINLINE__TIG_IZ_0QpS_argv__INIT;
   }
-  _TIG_IZ_QVdu_argc__INITINLINE__TIG_IZ_QVdu_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_0QpS_argv__INITINLINE__TIG_IZ_0QpS_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_0QpS_argc = 0;
+  goto _TIG_IZ_0QpS_argc__INITINLINE__TIG_IZ_0QpS_argc__INIT;
+  }
+  _TIG_IZ_0QpS_argc__INITINLINE__TIG_IZ_0QpS_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-QVdu--0":);
-    _TIG_IZ_QVdu_argc = argc;
-    _TIG_IZ_QVdu_argv = argv;
-    _TIG_IZ_QVdu_envp = _TIG_IZ_QVdu_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-0QpS--0":);
+    _TIG_IZ_0QpS_argc = argc;
+    _TIG_IZ_0QpS_argv = argv;
+    _TIG_IZ_0QpS_envp = _TIG_IZ_0QpS_formal_envp;
     break;
   }
 #line 201 "src/truncate.c"

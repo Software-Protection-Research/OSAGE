@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_oJsZ_envp": "FUN: '_TIG_IZ_oJsZ_envp__INIT'",
-          "_TIG_IZ_oJsZ_argv": "FUN: '_TIG_IZ_oJsZ_argv__INIT'",
-          "_TIG_IZ_oJsZ_argc": "FUN: '_TIG_IZ_oJsZ_argc__INIT'"
+          "_TIG_IZ_Jseo_envp": "FUN: '_TIG_IZ_Jseo_envp__INIT'",
+          "_TIG_IZ_Jseo_argv": "FUN: '_TIG_IZ_Jseo_argv__INIT'",
+          "_TIG_IZ_Jseo_argc": "FUN: '_TIG_IZ_Jseo_argc__INIT'"
         }
       }
     },
@@ -1946,10 +1946,6 @@ extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_
                                  char const   *arg , size_t argsize ) ;
 /* END FUNCTION-DECL-EXTERN quotearg_custom_mem LOC=./lib/quotearg.h:429 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_oJsZ_argc LOC=UNKNOWN */
-int _TIG_IZ_oJsZ_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_oJsZ_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_llrintf LOC=BUILTIN */
 /* compiler builtin: 
    long long __builtin_llrintf(float  ) ;  */
@@ -2922,6 +2918,10 @@ extern int ( __attribute__((__nonnull__(2))) putc_unlocked)(int __c , FILE *__st
 extern int _gl_cxxalias_dummy ;
 /* END VARIABLE-DECL-EXTERN _gl_cxxalias_dummy LOC=./lib/sys/select.h:788 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_Jseo_argc LOC=UNKNOWN */
+int _TIG_IZ_Jseo_argc ;
+/* END VARIABLE-DECL _TIG_IZ_Jseo_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN vhangup LOC=/usr/include/unistd.h:939 */
 #line 939 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
@@ -3439,10 +3439,6 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), 
 /* compiler builtin: 
    float __builtin_huge_valf(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_oJsZ_argv LOC=UNKNOWN */
-char **_TIG_IZ_oJsZ_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_oJsZ_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __uint32_identity LOC=UNKNOWN */
 __inline static __uint32_t __uint32_identity(__uint32_t __x ) ;
@@ -3992,10 +3988,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                char **__argv ,
                                                                                                char **__envp ) ;
 /* END FUNCTION-DECL-EXTERN execve LOC=/usr/include/unistd.h:572 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_oJsZ_argv LOC=UNKNOWN */
-char **_TIG_IZ_oJsZ_argv ;
-/* END VARIABLE-DECL _TIG_IZ_oJsZ_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_cabs LOC=BUILTIN */
 /* compiler builtin: 
@@ -6555,10 +6547,6 @@ extern int fcntl(int __fd , int __cmd  , ...) ;
 extern void psiginfo(siginfo_t const   *__pinfo , char const   *__s ) ;
 /* END FUNCTION-DECL-EXTERN psiginfo LOC=/usr/include/signal.h:137 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_oJsZ_envp LOC=UNKNOWN */
-char **_TIG_IZ_oJsZ_envp ;
-/* END VARIABLE-DECL _TIG_IZ_oJsZ_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_return_address(unsigned int  ) ;  */
@@ -7045,7 +7033,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=./lib/string.h:693 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_oJsZ_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_Jseo_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7848,10 +7836,6 @@ struct __anonstruct_ldiv_t_790849867 {
    _Float128 __builtin_huge_valf128(void) ;  */
 /* END FUNCTION-DECL __builtin_huge_valf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_oJsZ_argc LOC=UNKNOWN */
-int _TIG_IZ_oJsZ_argc ;
-/* END VARIABLE-DECL _TIG_IZ_oJsZ_argc LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF sigval_t LOC=/usr/include/bits/types/sigval_t.h:16 */
 #line 16 "/usr/include/bits/types/sigval_t.h"
 typedef __sigval_t sigval_t;
@@ -7881,10 +7865,6 @@ extern long __timezone ;
 #line 176 "/usr/include/locale.h"
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) duplocale)(locale_t __dataset ) ;
 /* END FUNCTION-DECL-EXTERN duplocale LOC=/usr/include/locale.h:176 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_oJsZ_envp LOC=UNKNOWN */
-char **_TIG_IZ_oJsZ_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_oJsZ_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 /* compiler builtin: 
@@ -8194,6 +8174,10 @@ extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char c
    long double __builtin_modfl(long double  , long double * ) ;  */
 /* END FUNCTION-DECL __builtin_modfl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_Jseo_argv LOC=UNKNOWN */
+char **_TIG_IZ_Jseo_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_Jseo_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=/usr/include/string.h:175 */
 #line 175 "/usr/include/string.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcoll_l)(char const   *__s1 ,
@@ -8217,6 +8201,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup3)(int _
                                                                            int __fd2 ,
                                                                            int __flags ) ;
 /* END FUNCTION-DECL-EXTERN dup3 LOC=/usr/include/unistd.h:560 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_Jseo_argc LOC=UNKNOWN */
+int _TIG_IZ_Jseo_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_Jseo_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_exp2f16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -10868,6 +10856,10 @@ typedef __off64_t __loff_t;
 extern char *mdir_name(char const   *file )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN mdir_name LOC=./lib/dirname.h:49 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_Jseo_envp LOC=UNKNOWN */
+char **_TIG_IZ_Jseo_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_Jseo_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_operator_delete LOC=BUILTIN */
 /* compiler builtin: 
    void __builtin_operator_delete(void * ) ;  */
@@ -11876,6 +11868,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(ti
    long double __builtin_log10l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_Jseo_envp LOC=UNKNOWN */
+char **_TIG_IZ_Jseo_envp ;
+/* END VARIABLE-DECL _TIG_IZ_Jseo_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=/usr/include/dirent.h:226 */
 #line 226 "/usr/include/dirent.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
@@ -12267,6 +12263,10 @@ extern int posix_fallocate(int __fd , off_t __offset , off_t __len ) ;
 /* compiler builtin: 
    int __builtin_signbitf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_signbitf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_Jseo_argv LOC=UNKNOWN */
+char **_TIG_IZ_Jseo_argv ;
+/* END VARIABLE-DECL _TIG_IZ_Jseo_argv LOC=UNKNOWN */
 
 /* BEGIN UNION __anonunion_pthread_condattr_t_488594145 LOC=/usr/include/bits/pthreadtypes.h:41 */
 #line 41 "/usr/include/bits/pthreadtypes.h"
@@ -13680,7 +13680,7 @@ __inline static void emit_exec_status(char const   *program )
 /* END FUNCTION-DEF emit_exec_status LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_oJsZ_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_Jseo_formal_envp ) 
 { 
   int optc ;
   char const   *datestr ;
@@ -14080,34 +14080,34 @@ int main(int argc , char **argv , char **_TIG_IZ_oJsZ_formal_envp )
   }
   {
   {
-  _TIG_IZ_oJsZ_envp = (char **)0;
-  goto _TIG_IZ_oJsZ_envp__INITINLINE__TIG_IZ_oJsZ_envp__INIT;
+  _TIG_IZ_Jseo_envp = (char **)0;
+  goto _TIG_IZ_Jseo_envp__INITINLINE__TIG_IZ_Jseo_envp__INIT;
   }
-  _TIG_IZ_oJsZ_envp__INITINLINE__TIG_IZ_oJsZ_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_oJsZ_argv = (char **)0;
-  goto _TIG_IZ_oJsZ_argv__INITINLINE__TIG_IZ_oJsZ_argv__INIT;
-  }
-  _TIG_IZ_oJsZ_argv__INITINLINE__TIG_IZ_oJsZ_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_Jseo_envp__INITINLINE__TIG_IZ_Jseo_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_oJsZ_argc = 0;
-  goto _TIG_IZ_oJsZ_argc__INITINLINE__TIG_IZ_oJsZ_argc__INIT;
+  _TIG_IZ_Jseo_argv = (char **)0;
+  goto _TIG_IZ_Jseo_argv__INITINLINE__TIG_IZ_Jseo_argv__INIT;
   }
-  _TIG_IZ_oJsZ_argc__INITINLINE__TIG_IZ_oJsZ_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_Jseo_argv__INITINLINE__TIG_IZ_Jseo_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_Jseo_argc = 0;
+  goto _TIG_IZ_Jseo_argc__INITINLINE__TIG_IZ_Jseo_argc__INIT;
+  }
+  _TIG_IZ_Jseo_argc__INITINLINE__TIG_IZ_Jseo_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-oJsZ--0":);
-    _TIG_IZ_oJsZ_argc = argc;
-    _TIG_IZ_oJsZ_argv = argv;
-    _TIG_IZ_oJsZ_envp = _TIG_IZ_oJsZ_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Jseo--0":);
+    _TIG_IZ_Jseo_argc = argc;
+    _TIG_IZ_Jseo_argv = argv;
+    _TIG_IZ_Jseo_envp = _TIG_IZ_Jseo_formal_envp;
     break;
   }
 #line 400 "src/date.c"

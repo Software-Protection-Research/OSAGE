@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_kuqt_envp": "FUN: '_TIG_IZ_kuqt_envp__INIT'",
-          "_TIG_IZ_kuqt_argv": "FUN: '_TIG_IZ_kuqt_argv__INIT'",
-          "_TIG_IZ_kuqt_argc": "FUN: '_TIG_IZ_kuqt_argc__INIT'"
+          "_TIG_IZ_J3Ey_envp": "FUN: '_TIG_IZ_J3Ey_envp__INIT'",
+          "_TIG_IZ_J3Ey_argv": "FUN: '_TIG_IZ_J3Ey_argv__INIT'",
+          "_TIG_IZ_J3Ey_argc": "FUN: '_TIG_IZ_J3Ey_argc__INIT'"
         }
       }
     },
@@ -2246,10 +2246,6 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __lea
    int __builtin_popcountll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_popcountll LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_kuqt_envp LOC=UNKNOWN */
-char **_TIG_IZ_kuqt_envp ;
-/* END VARIABLE-DECL _TIG_IZ_kuqt_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_isless LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_isless(...) ;  */
@@ -2988,6 +2984,10 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
 #line 149 "/usr/include/dirent.h"
 extern DIR *fdopendir(int __fd )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN fdopendir LOC=/usr/include/dirent.h:149 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_J3Ey_envp LOC=UNKNOWN */
+char **_TIG_IZ_J3Ey_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_J3Ey_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_asinh LOC=BUILTIN */
 /* compiler builtin: 
@@ -4569,6 +4569,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getresuid)(
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat)(int __fd ,
                                                                                             struct stat *__buf ) ;
 /* END FUNCTION-DECL-EXTERN fstat LOC=/usr/include/sys/stat.h:210 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_J3Ey_argv LOC=UNKNOWN */
+char **_TIG_IZ_J3Ey_argv ;
+/* END VARIABLE-DECL _TIG_IZ_J3Ey_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN arc4random LOC=/usr/include/stdlib.h:657 */
 #line 657 "/usr/include/stdlib.h"
@@ -6298,6 +6302,10 @@ struct itimerval {
    int __builtin_ctzs(short  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzs LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_J3Ey_envp LOC=UNKNOWN */
+char **_TIG_IZ_J3Ey_envp ;
+/* END VARIABLE-DECL _TIG_IZ_J3Ey_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
 /* compiler builtin: 
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
@@ -6879,7 +6887,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_kuqt_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_J3Ey_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7152,6 +7160,10 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__leaf__)) drand48)
 /* compiler builtin: 
    void *__builtin_alloca(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_alloca LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_J3Ey_argc LOC=UNKNOWN */
+int _TIG_IZ_J3Ey_argc ;
+/* END VARIABLE-DECL _TIG_IZ_J3Ey_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strtouq LOC=/usr/include/stdlib.h:193 */
 #line 193
@@ -8025,10 +8037,6 @@ typedef int (*__compar_fn_t)(void const   * , void const   * );
 extern char **environ ;
 /* END VARIABLE-DECL-EXTERN environ LOC=/usr/include/unistd.h:566 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_kuqt_envp LOC=UNKNOWN */
-char **_TIG_IZ_kuqt_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_kuqt_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_expf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_expf(float  ) ;  */
@@ -8094,10 +8102,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                   struct drand48_data * __restrict  __buffer ,
                                                                                                   long * __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN nrand48_r LOC=/usr/include/stdlib.h:631 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_kuqt_argv LOC=UNKNOWN */
-char **_TIG_IZ_kuqt_argv ;
-/* END VARIABLE-DECL _TIG_IZ_kuqt_argv LOC=UNKNOWN */
 
 /* BEGIN UNION __anonunion_pthread_mutex_t_335460617 LOC=/usr/include/bits/pthreadtypes.h:67 */
 #line 67 "/usr/include/bits/pthreadtypes.h"
@@ -8315,10 +8319,6 @@ extern char *quotearg_n_style_colon(int n , enum quoting_style s , char const   
 #line 134 "/usr/include/signal.h"
 extern void psignal(int __sig , char const   *__s ) ;
 /* END FUNCTION-DECL-EXTERN psignal LOC=/usr/include/signal.h:134 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_kuqt_argc LOC=UNKNOWN */
-int _TIG_IZ_kuqt_argc ;
-/* END VARIABLE-DECL _TIG_IZ_kuqt_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_ccoshl LOC=BUILTIN */
 /* compiler builtin: 
@@ -8624,6 +8624,10 @@ extern int scanf(char const   * __restrict  __format  , ...)  __asm__("__isoc23_
 typedef unsigned long __rlim_t;
 /* END TYPEDEF __rlim_t LOC=/usr/include/bits/types.h:157 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_J3Ey_argc LOC=UNKNOWN */
+int _TIG_IZ_J3Ey_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_J3Ey_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_ldexpf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_ldexpf(float  , int  ) ;  */
@@ -8890,10 +8894,6 @@ extern _Bool strip_trailing_slashes(char *file ) ;
 /* compiler builtin: 
    void *__builtin_memchr(void const   * , int  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_memchr LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_kuqt_argv LOC=UNKNOWN */
-char **_TIG_IZ_kuqt_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_kuqt_argv LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL-EXTERN error_message_count LOC=/usr/include/error.h:44 */
 #line 44 "/usr/include/error.h"
@@ -10008,10 +10008,6 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), 
                                                                                                    int __base )  __asm__("__isoc23_strtoll")  ;
 /* END FUNCTION-DECL-EXTERN strtoq LOC=/usr/include/stdlib.h:188 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_kuqt_argc LOC=UNKNOWN */
-int _TIG_IZ_kuqt_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_kuqt_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN open_by_handle_at LOC=/usr/include/bits/fcntl-linux.h:453 */
 #line 453 "/usr/include/bits/fcntl-linux.h"
 extern int open_by_handle_at(int __mountdirfd , struct file_handle *__handle , int __flags ) ;
@@ -10157,6 +10153,10 @@ extern int ( __attribute__((__nonnull__(1))) fseeko64)(FILE *__stream , __off64_
 /* compiler builtin: 
    _Complex float __builtin_csinhf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_csinhf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_J3Ey_argv LOC=UNKNOWN */
+char **_TIG_IZ_J3Ey_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_J3Ey_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin___strncpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -11913,7 +11913,7 @@ __inline static char const   *pgettext_aux(char const   *domain , char const   *
 /* END FUNCTION-DEF pgettext_aux LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_kuqt_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_J3Ey_formal_envp ) 
 { 
   char const   *tmp ;
   int __errstatus ;
@@ -11945,34 +11945,34 @@ int main(int argc , char **argv , char **_TIG_IZ_kuqt_formal_envp )
   {
   {
   {
-  _TIG_IZ_kuqt_envp = (char **)0;
-  goto _TIG_IZ_kuqt_envp__INITINLINE__TIG_IZ_kuqt_envp__INIT;
+  _TIG_IZ_J3Ey_envp = (char **)0;
+  goto _TIG_IZ_J3Ey_envp__INITINLINE__TIG_IZ_J3Ey_envp__INIT;
   }
-  _TIG_IZ_kuqt_envp__INITINLINE__TIG_IZ_kuqt_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_kuqt_argv = (char **)0;
-  goto _TIG_IZ_kuqt_argv__INITINLINE__TIG_IZ_kuqt_argv__INIT;
-  }
-  _TIG_IZ_kuqt_argv__INITINLINE__TIG_IZ_kuqt_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_J3Ey_envp__INITINLINE__TIG_IZ_J3Ey_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_kuqt_argc = 0;
-  goto _TIG_IZ_kuqt_argc__INITINLINE__TIG_IZ_kuqt_argc__INIT;
+  _TIG_IZ_J3Ey_argv = (char **)0;
+  goto _TIG_IZ_J3Ey_argv__INITINLINE__TIG_IZ_J3Ey_argv__INIT;
   }
-  _TIG_IZ_kuqt_argc__INITINLINE__TIG_IZ_kuqt_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_J3Ey_argv__INITINLINE__TIG_IZ_J3Ey_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_J3Ey_argc = 0;
+  goto _TIG_IZ_J3Ey_argc__INITINLINE__TIG_IZ_J3Ey_argc__INIT;
+  }
+  _TIG_IZ_J3Ey_argc__INITINLINE__TIG_IZ_J3Ey_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-kuqt--0":);
-    _TIG_IZ_kuqt_argc = argc;
-    _TIG_IZ_kuqt_argv = argv;
-    _TIG_IZ_kuqt_envp = _TIG_IZ_kuqt_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-J3Ey--0":);
+    _TIG_IZ_J3Ey_argc = argc;
+    _TIG_IZ_J3Ey_argv = argv;
+    _TIG_IZ_J3Ey_envp = _TIG_IZ_J3Ey_formal_envp;
     break;
   }
 #line 60 "src/link.c"

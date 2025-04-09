@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_rzCf_envp": "FUN: '_TIG_IZ_rzCf_envp__INIT'",
-          "_TIG_IZ_rzCf_argv": "FUN: '_TIG_IZ_rzCf_argv__INIT'",
-          "_TIG_IZ_rzCf_argc": "FUN: '_TIG_IZ_rzCf_argc__INIT'"
+          "_TIG_IZ_OmRm_envp": "FUN: '_TIG_IZ_OmRm_envp__INIT'",
+          "_TIG_IZ_OmRm_argv": "FUN: '_TIG_IZ_OmRm_argv__INIT'",
+          "_TIG_IZ_OmRm_argc": "FUN: '_TIG_IZ_OmRm_argc__INIT'"
         }
       }
     },
@@ -2302,10 +2302,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(st
                                                                               struct timeval *__olddelta ) ;
 /* END FUNCTION-DECL-EXTERN adjtime LOC=/usr/include/sys/time.h:94 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_rzCf_argv LOC=UNKNOWN */
-char **_TIG_IZ_rzCf_argv ;
-/* END VARIABLE-DECL _TIG_IZ_rzCf_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strpbrk(char const   * , char const   * ) ;  */
@@ -3588,10 +3584,6 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1,2), __
                                                                                                     size_t __n ) ;
 /* END FUNCTION-DECL-EXTERN __mempcpy LOC=/usr/include/string.h:397 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_rzCf_envp LOC=UNKNOWN */
-char **_TIG_IZ_rzCf_envp ;
-/* END VARIABLE-DECL _TIG_IZ_rzCf_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN qfcvt_r LOC=/usr/include/stdlib.h:1053 */
 #line 1053 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3,4,5), __leaf__)) qfcvt_r)(long double __value ,
@@ -4064,6 +4056,10 @@ typedef __suseconds_t suseconds_t;
                                               unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___strlcat_chk LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_OmRm_argc LOC=UNKNOWN */
+int _TIG_IZ_OmRm_argc ;
+/* END VARIABLE-DECL _TIG_IZ_OmRm_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_launder LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_launder(void * ) ;  */
@@ -4146,10 +4142,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_creat
                                                                                    struct sigevent * __restrict  __evp ,
                                                                                    timer_t * __restrict  __timerid ) ;
 /* END FUNCTION-DECL-EXTERN timer_create LOC=/usr/include/time.h:343 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_rzCf_argc LOC=UNKNOWN */
-int _TIG_IZ_rzCf_argc ;
-/* END VARIABLE-DECL _TIG_IZ_rzCf_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN posix_openpt LOC=/usr/include/stdlib.h:1110 */
 #line 1110 "/usr/include/stdlib.h"
@@ -5617,6 +5609,10 @@ extern  __attribute__((__nothrow__, __deprecated__("Use sigaction with SA_RESTAR
                                                                                                                                             int __interrupt ) ;
 /* END FUNCTION-DECL-EXTERN siginterrupt LOC=/usr/include/signal.h:324 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_OmRm_envp LOC=UNKNOWN */
+char **_TIG_IZ_OmRm_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_OmRm_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN pread LOC=/usr/include/unistd.h:389 */
 #line 389 "/usr/include/unistd.h"
 extern ssize_t pread(int __fd , void *__buf , size_t __nbytes , __off_t __offset ) ;
@@ -5688,6 +5684,10 @@ struct __anonstruct_max_align_t_247203726 {
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimes)(int __fd ,
                                                                               struct timeval  const  *__tvp ) ;
 /* END FUNCTION-DECL-EXTERN futimes LOC=/usr/include/sys/time.h:193 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_OmRm_argv LOC=UNKNOWN */
+char **_TIG_IZ_OmRm_argv ;
+/* END VARIABLE-DECL _TIG_IZ_OmRm_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fcvt_r LOC=/usr/include/stdlib.h:1045 */
 #line 1045 "/usr/include/stdlib.h"
@@ -6208,6 +6208,10 @@ extern struct dev_ino *( __attribute__((__nonnull__)) get_root_dev_ino)(struct d
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(int __fd ,
                                                                                char const   *__modes )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN fdopen LOC=/usr/include/stdio.h:299 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_OmRm_envp LOC=UNKNOWN */
+char **_TIG_IZ_OmRm_envp ;
+/* END VARIABLE-DECL _TIG_IZ_OmRm_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_log1pf LOC=BUILTIN */
 /* compiler builtin: 
@@ -6954,7 +6958,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_rzCf_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_OmRm_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7287,6 +7291,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __lea
 /* compiler builtin: 
    double __builtin_trunc(double  ) ;  */
 /* END FUNCTION-DECL __builtin_trunc LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_OmRm_argc LOC=UNKNOWN */
+int _TIG_IZ_OmRm_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_OmRm_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __once_flag LOC=/usr/include/bits/thread-shared-types.h:107 */
 #line 107 "/usr/include/bits/thread-shared-types.h"
@@ -7635,10 +7643,6 @@ extern char *dir_name(char const   *file )  __attribute__((__returns_nonnull__, 
 /* compiler builtin: 
    void __builtin_matrix_transpose(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_rzCf_argc LOC=UNKNOWN */
-int _TIG_IZ_rzCf_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_rzCf_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN dtotimespec LOC=./lib/timespec.h:81 */
 #line 81 "./lib/timespec.h"
@@ -9330,10 +9334,6 @@ __format_arg__(2))) ;
    _Float128 __builtin_sqrtf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_rzCf_envp LOC=UNKNOWN */
-char **_TIG_IZ_rzCf_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_rzCf_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_exp2 LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_exp2(double  ) ;  */
@@ -10360,10 +10360,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 /* compiler builtin: 
    _Complex float __builtin_clogf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_clogf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_rzCf_argv LOC=UNKNOWN */
-char **_TIG_IZ_rzCf_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_rzCf_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_tgammal LOC=BUILTIN */
 /* compiler builtin: 
@@ -11670,6 +11666,10 @@ extern  __attribute__((__nothrow__)) void *( __attribute__((__nonnull__(1), __le
                                                                                                size_t __n )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN memchr LOC=/usr/include/string.h:107 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_OmRm_argv LOC=UNKNOWN */
+char **_TIG_IZ_OmRm_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_OmRm_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN posix_fallocate LOC=/usr/include/fcntl.h:323 */
 #line 323 "/usr/include/fcntl.h"
 extern int posix_fallocate(int __fd , off_t __offset , off_t __len ) ;
@@ -12915,7 +12915,7 @@ __inline static void emit_update_parameters_note(void)
 /* END FUNCTION-DEF emit_update_parameters_note LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_rzCf_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_OmRm_formal_envp ) 
 { 
   char *wd ;
   _Bool logical ;
@@ -12960,34 +12960,34 @@ int main(int argc , char **argv , char **_TIG_IZ_rzCf_formal_envp )
   }
   {
   {
-  _TIG_IZ_rzCf_envp = (char **)0;
-  goto _TIG_IZ_rzCf_envp__INITINLINE__TIG_IZ_rzCf_envp__INIT;
+  _TIG_IZ_OmRm_envp = (char **)0;
+  goto _TIG_IZ_OmRm_envp__INITINLINE__TIG_IZ_OmRm_envp__INIT;
   }
-  _TIG_IZ_rzCf_envp__INITINLINE__TIG_IZ_rzCf_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_rzCf_argv = (char **)0;
-  goto _TIG_IZ_rzCf_argv__INITINLINE__TIG_IZ_rzCf_argv__INIT;
-  }
-  _TIG_IZ_rzCf_argv__INITINLINE__TIG_IZ_rzCf_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_OmRm_envp__INITINLINE__TIG_IZ_OmRm_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_rzCf_argc = 0;
-  goto _TIG_IZ_rzCf_argc__INITINLINE__TIG_IZ_rzCf_argc__INIT;
+  _TIG_IZ_OmRm_argv = (char **)0;
+  goto _TIG_IZ_OmRm_argv__INITINLINE__TIG_IZ_OmRm_argv__INIT;
   }
-  _TIG_IZ_rzCf_argc__INITINLINE__TIG_IZ_rzCf_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_OmRm_argv__INITINLINE__TIG_IZ_OmRm_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_OmRm_argc = 0;
+  goto _TIG_IZ_OmRm_argc__INITINLINE__TIG_IZ_OmRm_argc__INIT;
+  }
+  _TIG_IZ_OmRm_argc__INITINLINE__TIG_IZ_OmRm_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-rzCf--0":);
-    _TIG_IZ_rzCf_argc = argc;
-    _TIG_IZ_rzCf_argv = argv;
-    _TIG_IZ_rzCf_envp = _TIG_IZ_rzCf_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-OmRm--0":);
+    _TIG_IZ_OmRm_argc = argc;
+    _TIG_IZ_OmRm_argv = argv;
+    _TIG_IZ_OmRm_envp = _TIG_IZ_OmRm_formal_envp;
     break;
   }
 #line 331 "src/pwd.c"

@@ -244,9 +244,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_JHjI_envp": "FUN: '_TIG_IZ_JHjI_envp__INIT'",
-          "_TIG_IZ_JHjI_argv": "FUN: '_TIG_IZ_JHjI_argv__INIT'",
-          "_TIG_IZ_JHjI_argc": "FUN: '_TIG_IZ_JHjI_argc__INIT'"
+          "_TIG_IZ_9G6U_envp": "FUN: '_TIG_IZ_9G6U_envp__INIT'",
+          "_TIG_IZ_9G6U_argv": "FUN: '_TIG_IZ_9G6U_argv__INIT'",
+          "_TIG_IZ_9G6U_argc": "FUN: '_TIG_IZ_9G6U_argc__INIT'"
         }
       }
     },
@@ -1787,6 +1787,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setitimer)(
                                                                                 struct itimerval  const  * __restrict  __new ,
                                                                                 struct itimerval * __restrict  __old ) ;
 /* END FUNCTION-DECL-EXTERN setitimer LOC=/usr/include/sys/time.h:155 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_9G6U_envp LOC=UNKNOWN */
+char **_TIG_IZ_9G6U_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_9G6U_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN __error_at_line_noreturn LOC=/usr/include/bits/error.h:52 */
 #line 52 "/usr/include/bits/error.h"
@@ -5493,6 +5497,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_9G6U_argc LOC=UNKNOWN */
+int _TIG_IZ_9G6U_argc ;
+/* END VARIABLE-DECL _TIG_IZ_9G6U_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN islower_l LOC=/usr/include/ctype.h:255 */
 #line 255 "/usr/include/ctype.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) islower_l)(int  ,
@@ -7453,10 +7461,6 @@ extern  __attribute__((__nothrow__, __deprecated__)) int ( __attribute__((__leaf
 static int sig[11]  ;
 /* END VARIABLE-DEF sig LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_JHjI_envp LOC=UNKNOWN */
-char **_TIG_IZ_JHjI_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_JHjI_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN timer_settime LOC=/usr/include/time.h:352 */
 #line 352 "/usr/include/time.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_settime)(timer_t __timerid ,
@@ -7512,7 +7516,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=./lib/string.h:693 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_JHjI_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_9G6U_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8416,10 +8420,6 @@ static idx_t control_used ;
 static void regexp_error(struct control *p , intmax_t repetition , _Bool ignore ) ;
 /* END FUNCTION-DECL regexp_error LOC=UNKNOWN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_JHjI_argv LOC=UNKNOWN */
-char **_TIG_IZ_JHjI_argv ;
-/* END VARIABLE-DECL _TIG_IZ_JHjI_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_casinl LOC=BUILTIN */
 /* compiler builtin: 
    _Complex long double __builtin_casinl(_Complex long double  ) ;  */
@@ -8434,6 +8434,10 @@ char **_TIG_IZ_JHjI_argv ;
 #line 113 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) atoll)(char const   *__nptr )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN atoll LOC=/usr/include/stdlib.h:113 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_9G6U_envp LOC=UNKNOWN */
+char **_TIG_IZ_9G6U_envp ;
+/* END VARIABLE-DECL _TIG_IZ_9G6U_envp LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_57186863 LOC=/usr/include/bits/ss_flags.h:27 */
 #line 27 "/usr/include/bits/ss_flags.h"
@@ -8972,6 +8976,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 extern int ( __attribute__((__nonnull__(1))) mkostemp)(char *__template , int __flags ) ;
 /* END FUNCTION-DECL-EXTERN mkostemp LOC=/usr/include/stdlib.h:881 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_9G6U_argv LOC=UNKNOWN */
+char **_TIG_IZ_9G6U_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_9G6U_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN sigorset LOC=/usr/include/signal.h:223 */
 #line 223 "/usr/include/signal.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) sigorset)(sigset_t *__set ,
@@ -9114,10 +9122,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime_r)(time_t const   * __restrict  __timer ,
                                                                                 char * __restrict  __buf ) ;
 /* END FUNCTION-DECL-EXTERN ctime_r LOC=/usr/include/time.h:202 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_JHjI_argc LOC=UNKNOWN */
-int _TIG_IZ_JHjI_argc ;
-/* END VARIABLE-DECL _TIG_IZ_JHjI_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 /* compiler builtin: 
@@ -11226,14 +11230,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setuid)(__u
    void __builtin_nontemporal_load(...) ;  */
 /* END FUNCTION-DECL __builtin_nontemporal_load LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_JHjI_envp LOC=UNKNOWN */
-char **_TIG_IZ_JHjI_envp ;
-/* END VARIABLE-DECL _TIG_IZ_JHjI_envp LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_JHjI_argc LOC=UNKNOWN */
-int _TIG_IZ_JHjI_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_JHjI_argc LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __tss_t LOC=/usr/include/bits/thread-shared-types.h:104 */
 #line 104 "/usr/include/bits/thread-shared-types.h"
 typedef unsigned int __tss_t;
@@ -11492,6 +11488,10 @@ extern  __attribute__((__deprecated__)) int ( __attribute__((__nonnull__(1,2,3))
                                                                                              struct dirent * __restrict  __entry ,
                                                                                              struct dirent ** __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN readdir_r LOC=/usr/include/dirent.h:185 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_9G6U_argc LOC=UNKNOWN */
+int _TIG_IZ_9G6U_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_9G6U_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF loff_t LOC=/usr/include/sys/types.h:42 */
 #line 42 "/usr/include/sys/types.h"
@@ -12399,10 +12399,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
                                                                                                     size_t __len ) ;
 /* END FUNCTION-DECL-EXTERN getdomainname LOC=/usr/include/unistd.h:930 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_JHjI_argv LOC=UNKNOWN */
-char **_TIG_IZ_JHjI_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_JHjI_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN get_quoting_style LOC=./lib/quotearg.h:288 */
 #line 288 "./lib/quotearg.h"
 extern enum quoting_style get_quoting_style(struct quoting_options  const  *o ) ;
@@ -12685,6 +12681,10 @@ extern int posix_fallocate(int __fd , off_t __offset , off_t __len ) ;
 /* compiler builtin: 
    int __builtin_signbitf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_signbitf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_9G6U_argv LOC=UNKNOWN */
+char **_TIG_IZ_9G6U_argv ;
+/* END VARIABLE-DECL _TIG_IZ_9G6U_argv LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL last_line_number LOC=UNKNOWN */
 static intmax_t last_line_number ;
@@ -15669,7 +15669,7 @@ static void interrupt_handler(int sig___0 )
 /* END FUNCTION-DEF interrupt_handler LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_JHjI_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_9G6U_formal_envp ) 
 { 
   int optc ;
   char *tmp ;
@@ -15966,34 +15966,34 @@ int main(int argc , char **argv , char **_TIG_IZ_JHjI_formal_envp )
   }
   {
   {
-  _TIG_IZ_JHjI_envp = (char **)0;
-  goto _TIG_IZ_JHjI_envp__INITINLINE__TIG_IZ_JHjI_envp__INIT;
+  _TIG_IZ_9G6U_envp = (char **)0;
+  goto _TIG_IZ_9G6U_envp__INITINLINE__TIG_IZ_9G6U_envp__INIT;
   }
-  _TIG_IZ_JHjI_envp__INITINLINE__TIG_IZ_JHjI_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_JHjI_argv = (char **)0;
-  goto _TIG_IZ_JHjI_argv__INITINLINE__TIG_IZ_JHjI_argv__INIT;
-  }
-  _TIG_IZ_JHjI_argv__INITINLINE__TIG_IZ_JHjI_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_9G6U_envp__INITINLINE__TIG_IZ_9G6U_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_JHjI_argc = 0;
-  goto _TIG_IZ_JHjI_argc__INITINLINE__TIG_IZ_JHjI_argc__INIT;
+  _TIG_IZ_9G6U_argv = (char **)0;
+  goto _TIG_IZ_9G6U_argv__INITINLINE__TIG_IZ_9G6U_argv__INIT;
   }
-  _TIG_IZ_JHjI_argc__INITINLINE__TIG_IZ_JHjI_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_9G6U_argv__INITINLINE__TIG_IZ_9G6U_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_9G6U_argc = 0;
+  goto _TIG_IZ_9G6U_argc__INITINLINE__TIG_IZ_9G6U_argc__INIT;
+  }
+  _TIG_IZ_9G6U_argc__INITINLINE__TIG_IZ_9G6U_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-JHjI--0":);
-    _TIG_IZ_JHjI_argc = argc;
-    _TIG_IZ_JHjI_argv = argv;
-    _TIG_IZ_JHjI_envp = _TIG_IZ_JHjI_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-9G6U--0":);
+    _TIG_IZ_9G6U_argc = argc;
+    _TIG_IZ_9G6U_argv = argv;
+    _TIG_IZ_9G6U_envp = _TIG_IZ_9G6U_formal_envp;
     break;
   }
 #line 1301

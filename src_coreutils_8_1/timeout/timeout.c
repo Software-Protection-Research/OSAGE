@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_Aj0i_envp": "FUN: '_TIG_IZ_Aj0i_envp__INIT'",
-          "_TIG_IZ_Aj0i_argv": "FUN: '_TIG_IZ_Aj0i_argv__INIT'",
-          "_TIG_IZ_Aj0i_argc": "FUN: '_TIG_IZ_Aj0i_argc__INIT'"
+          "_TIG_IZ_pyzI_envp": "FUN: '_TIG_IZ_pyzI_envp__INIT'",
+          "_TIG_IZ_pyzI_argv": "FUN: '_TIG_IZ_pyzI_argv__INIT'",
+          "_TIG_IZ_pyzI_argc": "FUN: '_TIG_IZ_pyzI_argc__INIT'"
         }
       }
     },
@@ -834,8 +834,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-MptiZZSd.i","") */
-/* #pragma merger("0","/tmp/cil-oMi8S1sf.i","") */
+/* #pragma merger("0","/tmp/cil-2XDPaIfA.i","") */
+/* #pragma merger("0","/tmp/cil-3rP8CRNt.i","") */
 
 /* BEGIN STRUCT-DECL rusage LOC=/usr/include/sys/wait.h:135 */
 struct rusage ;
@@ -2268,10 +2268,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) daemon)(int
                                                                              int __noclose ) ;
 /* END FUNCTION-DECL-EXTERN daemon LOC=/usr/include/unistd.h:970 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Aj0i_argc LOC=UNKNOWN */
-int _TIG_IZ_Aj0i_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_Aj0i_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_asinf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_asinf(float  ) ;  */
@@ -3216,10 +3212,6 @@ __leaf__)) strtoul_l)(char const   * __restrict  __nptr , char ** __restrict  __
 extern DIR *fdopendir(int __fd )  __attribute__((__malloc__)) ;
 /* END FUNCTION-DECL-EXTERN fdopendir LOC=/usr/include/dirent.h:149 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Aj0i_argv LOC=UNKNOWN */
-char **_TIG_IZ_Aj0i_argv ;
-/* END VARIABLE-DECL _TIG_IZ_Aj0i_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_asinh LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_asinh(double  ) ;  */
@@ -3947,6 +3939,10 @@ extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __str
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchmod)(int __fd ,
                                                                              __mode_t __mode ) ;
 /* END FUNCTION-DECL-EXTERN fchmod LOC=/usr/include/sys/stat.h:365 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_pyzI_argv LOC=UNKNOWN */
+char **_TIG_IZ_pyzI_argv ;
+/* END VARIABLE-DECL _TIG_IZ_pyzI_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT __pthread_internal_slist LOC=/usr/include/bits/thread-shared-types.h:57 */
 struct __pthread_internal_slist {
@@ -5944,10 +5940,6 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(1), __l
                                                                                                  size_t __maxlen )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN strnlen LOC=/usr/include/string.h:413 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Aj0i_envp LOC=UNKNOWN */
-char **_TIG_IZ_Aj0i_envp ;
-/* END VARIABLE-DECL _TIG_IZ_Aj0i_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_strncat LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strncat(char * , char const   * , unsigned long long  ) ;  */
@@ -6503,10 +6495,6 @@ extern int fcntl(int __fd , int __cmd  , ...) ;
    int __builtin_isgreaterequal(...) ;  */
 /* END FUNCTION-DECL __builtin_isgreaterequal LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Aj0i_argc LOC=UNKNOWN */
-int _TIG_IZ_Aj0i_argc ;
-/* END VARIABLE-DECL _TIG_IZ_Aj0i_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_return_address LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_return_address(unsigned int  ) ;  */
@@ -6969,7 +6957,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Aj0i_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_pyzI_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7923,10 +7911,6 @@ extern int ( __attribute__((__nonnull__(1))) rpl_nanosleep)(struct timespec  con
                                                             struct timespec *__rmtp ) ;
 /* END FUNCTION-DECL-EXTERN rpl_nanosleep LOC=./lib/time.h:728 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Aj0i_envp LOC=UNKNOWN */
-char **_TIG_IZ_Aj0i_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_Aj0i_envp LOC=UNKNOWN */
-
 /* BEGIN UNION __anonunion__bounds_57671259 LOC=/usr/include/bits/types/siginfo_t.h:36 */
 union __anonunion__bounds_57671259 {
    struct __anonstruct__addr_bnd_5259977 _addr_bnd ;
@@ -8005,6 +7989,10 @@ static char *command ;
    void __builtin_matrix_column_major_load(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_column_major_load LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_pyzI_envp LOC=UNKNOWN */
+char **_TIG_IZ_pyzI_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_pyzI_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN difftime LOC=/usr/include/time.h:79 */
 extern double difftime(time_t __time1 , time_t __time0 ) ;
 /* END FUNCTION-DECL-EXTERN difftime LOC=/usr/include/time.h:79 */
@@ -8033,10 +8021,6 @@ extern double difftime(time_t __time1 , time_t __time0 ) ;
 extern  __attribute__((__nothrow__)) int sprintf(char * __restrict  __s , char const   * __restrict  __format 
                                                  , ...) ;
 /* END FUNCTION-DECL-EXTERN sprintf LOC=/usr/include/stdio.h:365 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Aj0i_argv LOC=UNKNOWN */
-char **_TIG_IZ_Aj0i_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_Aj0i_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strcoll_l LOC=/usr/include/string.h:175 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2,3), __leaf__)) strcoll_l)(char const   *__s1 ,
@@ -9501,6 +9485,10 @@ extern ssize_t pwrite64(int __fd , void const   *__buf , size_t __n , __off64_t 
 __inline static void emit_symlink_recurse_options(char const   *default_opt ) ;
 /* END FUNCTION-DECL emit_symlink_recurse_options LOC=UNKNOWN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_pyzI_argv LOC=UNKNOWN */
+char **_TIG_IZ_pyzI_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_pyzI_argv LOC=UNKNOWN */
+
 /* BEGIN ENUM quoting_flags LOC=./lib/quotearg.h:247 */
 enum quoting_flags {
     QA_ELIDE_NULL_BYTES = 1,
@@ -10104,6 +10092,10 @@ extern int ( __attribute__((__nonnull__(1))) mkostemps)(char *__template , int _
 /* BEGIN FUNCTION-DECL-EXTERN close_stdin LOC=./lib/closein.h:26 */
 extern void close_stdin(void) ;
 /* END FUNCTION-DECL-EXTERN close_stdin LOC=./lib/closein.h:26 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_pyzI_argc LOC=UNKNOWN */
+int _TIG_IZ_pyzI_argc ;
+/* END VARIABLE-DECL _TIG_IZ_pyzI_argc LOC=UNKNOWN */
 
 /* BEGIN UNION __anonunion_pthread_barrierattr_t_951761806 LOC=/usr/include/bits/pthreadtypes.h:114 */
 union __anonunion_pthread_barrierattr_t_951761806 {
@@ -10923,6 +10915,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)
    unsigned char __builtin_rotateleft8(unsigned char  , unsigned char  ) ;  */
 /* END FUNCTION-DECL __builtin_rotateleft8 LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_pyzI_argc LOC=UNKNOWN */
+int _TIG_IZ_pyzI_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_pyzI_argc LOC=UNKNOWN */
+
 /* BEGIN STRUCT infomap LOC=src/system.h:659 */
 struct infomap {
    char const   *program ;
@@ -11385,6 +11381,10 @@ __inline static void initialize_exit_failure(int status ) ;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) euidaccess)(char const   *__name ,
                                                                                                  int __type ) ;
 /* END FUNCTION-DECL-EXTERN euidaccess LOC=/usr/include/unistd.h:292 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_pyzI_envp LOC=UNKNOWN */
+char **_TIG_IZ_pyzI_envp ;
+/* END VARIABLE-DECL _TIG_IZ_pyzI_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN sigreturn LOC=/usr/include/signal.h:304 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigreturn)(struct sigcontext *__scp ) ;
@@ -13404,7 +13404,7 @@ __inline static char const   *npgettext_aux(char const   *domain , char const   
 /* END FUNCTION-DEF npgettext_aux LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Aj0i_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_pyzI_formal_envp ) 
 { 
   double timeout ;
   int c ;
@@ -13548,34 +13548,34 @@ int main(int argc , char **argv , char **_TIG_IZ_Aj0i_formal_envp )
   }
   {
   {
-  _TIG_IZ_Aj0i_envp = (char **)0;
-  goto _TIG_IZ_Aj0i_envp__INITINLINE__TIG_IZ_Aj0i_envp__INIT;
+  _TIG_IZ_pyzI_envp = (char **)0;
+  goto _TIG_IZ_pyzI_envp__INITINLINE__TIG_IZ_pyzI_envp__INIT;
   }
-  _TIG_IZ_Aj0i_envp__INITINLINE__TIG_IZ_Aj0i_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_Aj0i_argv = (char **)0;
-  goto _TIG_IZ_Aj0i_argv__INITINLINE__TIG_IZ_Aj0i_argv__INIT;
-  }
-  _TIG_IZ_Aj0i_argv__INITINLINE__TIG_IZ_Aj0i_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_pyzI_envp__INITINLINE__TIG_IZ_pyzI_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_Aj0i_argc = 0;
-  goto _TIG_IZ_Aj0i_argc__INITINLINE__TIG_IZ_Aj0i_argc__INIT;
+  _TIG_IZ_pyzI_argv = (char **)0;
+  goto _TIG_IZ_pyzI_argv__INITINLINE__TIG_IZ_pyzI_argv__INIT;
   }
-  _TIG_IZ_Aj0i_argc__INITINLINE__TIG_IZ_Aj0i_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_pyzI_argv__INITINLINE__TIG_IZ_pyzI_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_pyzI_argc = 0;
+  goto _TIG_IZ_pyzI_argc__INITINLINE__TIG_IZ_pyzI_argc__INIT;
+  }
+  _TIG_IZ_pyzI_argc__INITINLINE__TIG_IZ_pyzI_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Aj0i--0":);
-    _TIG_IZ_Aj0i_argc = argc;
-    _TIG_IZ_Aj0i_argv = argv;
-    _TIG_IZ_Aj0i_envp = _TIG_IZ_Aj0i_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-pyzI--0":);
+    _TIG_IZ_pyzI_argc = argc;
+    _TIG_IZ_pyzI_argv = argv;
+    _TIG_IZ_pyzI_envp = _TIG_IZ_pyzI_formal_envp;
     break;
   }
 #line 473 "src/timeout.c"

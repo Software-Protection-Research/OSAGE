@@ -23,7 +23,6 @@ compilation
 packing
 config
 out
-src_core
 src_dga
 src_hash
 src_math
@@ -45,7 +44,6 @@ subdirs="analysis
 compilation
 packing
 config
-src_core
 src_dga
 src_hash
 src_math

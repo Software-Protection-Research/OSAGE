@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_Ydix_envp": "FUN: '_TIG_IZ_Ydix_envp__INIT'",
-          "_TIG_IZ_Ydix_argv": "FUN: '_TIG_IZ_Ydix_argv__INIT'",
-          "_TIG_IZ_Ydix_argc": "FUN: '_TIG_IZ_Ydix_argc__INIT'"
+          "_TIG_IZ_ycly_envp": "FUN: '_TIG_IZ_ycly_envp__INIT'",
+          "_TIG_IZ_ycly_argv": "FUN: '_TIG_IZ_ycly_argv__INIT'",
+          "_TIG_IZ_ycly_argc": "FUN: '_TIG_IZ_ycly_argc__INIT'"
         }
       }
     },
@@ -2324,10 +2324,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) realpath)
                                                                                  char * __restrict  __resolved ) ;
 /* END FUNCTION-DECL-EXTERN realpath LOC=/usr/include/stdlib.h:940 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ydix_argc LOC=UNKNOWN */
-int _TIG_IZ_Ydix_argc ;
-/* END VARIABLE-DECL _TIG_IZ_Ydix_argc LOC=UNKNOWN */
-
 /* BEGIN STRUCT _xsave_hdr LOC=/usr/include/bits/sigcontext.h:177 */
 #line 177 "/usr/include/bits/sigcontext.h"
 struct _xsave_hdr {
@@ -3970,10 +3966,6 @@ typedef union __anonunion_pthread_cond_t_951761805 pthread_cond_t;
    double __builtin_fdim(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fdim LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ydix_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ydix_envp ;
-/* END VARIABLE-DECL _TIG_IZ_Ydix_envp LOC=UNKNOWN */
-
 /* BEGIN VARIABLE-DECL-EXTERN stderr LOC=/usr/include/stdio.h:151 */
 #line 151 "/usr/include/stdio.h"
 extern FILE *stderr ;
@@ -4115,6 +4107,10 @@ extern void *xizalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 /* compiler builtin: 
    _Bool __builtin_sadd_overflow(int const    , int const    , int * ) ;  */
 /* END FUNCTION-DECL __builtin_sadd_overflow LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_ycly_envp LOC=UNKNOWN */
+char **_TIG_IZ_ycly_envp ;
+/* END VARIABLE-DECL _TIG_IZ_ycly_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN dcgettext LOC=/usr/include/libintl.h:51 */
 #line 51 "/usr/include/libintl.h"
@@ -5073,10 +5069,6 @@ __inline static void emit_blocksize_note(char const   *program ) ;
 #line 385 "/usr/include/sys/stat.h"
 extern  __attribute__((__nothrow__)) __mode_t ( __attribute__((__leaf__)) getumask)(void) ;
 /* END FUNCTION-DECL-EXTERN getumask LOC=/usr/include/sys/stat.h:385 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ydix_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ydix_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_Ydix_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int_fast8_t LOC=/usr/include/stdint.h:47 */
 #line 47 "/usr/include/stdint.h"
@@ -6929,7 +6921,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL-EXTERN bcopy LOC=/usr/include/strings.h:38 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ydix_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_ycly_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7823,6 +7815,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) close_range
 /* compiler builtin: 
    long double __builtin_cabsl(_Complex long double  ) ;  */
 /* END FUNCTION-DECL __builtin_cabsl LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_ycly_argc LOC=UNKNOWN */
+int _TIG_IZ_ycly_argc ;
+/* END VARIABLE-DECL _TIG_IZ_ycly_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_canonicalizef LOC=BUILTIN */
 /* compiler builtin: 
@@ -8845,10 +8841,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
                                                                                                     struct timespec *__tp ) ;
 /* END FUNCTION-DECL-EXTERN clock_gettime LOC=/usr/include/time.h:288 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ydix_envp LOC=UNKNOWN */
-char **_TIG_IZ_Ydix_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_Ydix_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN mkfifoat LOC=/usr/include/sys/stat.h:425 */
 #line 425 "/usr/include/sys/stat.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) mkfifoat)(int __fd ,
@@ -9146,6 +9138,10 @@ typedef int (*comparison_fn_t)(void const   * , void const   * );
 #line 703 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) __gid_t ( __attribute__((__leaf__)) getgid)(void) ;
 /* END FUNCTION-DECL-EXTERN getgid LOC=/usr/include/unistd.h:703 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_ycly_argv LOC=UNKNOWN */
+char **_TIG_IZ_ycly_argv ;
+/* END VARIABLE-DECL _TIG_IZ_ycly_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_hypot LOC=BUILTIN */
 /* compiler builtin: 
@@ -10761,6 +10757,10 @@ struct infomap {
 };
 /* END STRUCT infomap LOC=src/system.h:659 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_ycly_argv LOC=UNKNOWN */
+char **_TIG_IZ_ycly_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_ycly_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_creal LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_creal(_Complex double  ) ;  */
@@ -10877,6 +10877,10 @@ extern void *x2realloc(void *p , size_t *ps )  __attribute__((__returns_nonnull_
    long __builtin_lroundl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_lroundl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_ycly_argc LOC=UNKNOWN */
+int _TIG_IZ_ycly_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_ycly_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN freopen LOC=/usr/include/stdio.h:271 */
 #line 271 "/usr/include/stdio.h"
 extern FILE *( __attribute__((__nonnull__(3))) freopen)(char const   * __restrict  __filename ,
@@ -10987,6 +10991,10 @@ extern char *( __attribute__((__nonnull__(3))) fgets)(char * __restrict  __s , i
                                                       FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fgets LOC=/usr/include/stdio.h:654 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_ycly_envp LOC=UNKNOWN */
+char **_TIG_IZ_ycly_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_ycly_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF pthread_mutex_t LOC=/usr/include/bits/pthreadtypes.h:67 */
 #line 67 "/usr/include/bits/pthreadtypes.h"
 typedef union __anonunion_pthread_mutex_t_335460617 pthread_mutex_t;
@@ -11073,10 +11081,6 @@ extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __l
 #line 187 "/usr/include/locale.h"
 extern  __attribute__((__nothrow__)) locale_t ( __attribute__((__leaf__)) uselocale)(locale_t __dataset ) ;
 /* END FUNCTION-DECL-EXTERN uselocale LOC=/usr/include/locale.h:187 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_Ydix_argc LOC=UNKNOWN */
-int _TIG_IZ_Ydix_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_Ydix_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_lrintf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11780,10 +11784,6 @@ struct _xstate {
 extern struct quoting_options *clone_quoting_options(struct quoting_options *o )  __attribute__((__returns_nonnull__,
 __malloc__)) ;
 /* END FUNCTION-DECL-EXTERN clone_quoting_options LOC=./lib/quotearg.h:283 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_Ydix_argv LOC=UNKNOWN */
-char **_TIG_IZ_Ydix_argv ;
-/* END VARIABLE-DECL _TIG_IZ_Ydix_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_log10 LOC=BUILTIN */
 /* compiler builtin: 
@@ -12898,7 +12898,7 @@ __inline static unsigned long select_plural(uintmax_t n )
 /* END FUNCTION-DEF select_plural LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_Ydix_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_ycly_formal_envp ) 
 { 
   int optc ;
   char const   *tmp ;
@@ -12954,34 +12954,34 @@ int main(int argc , char **argv , char **_TIG_IZ_Ydix_formal_envp )
   }
   {
   {
-  _TIG_IZ_Ydix_envp = (char **)0;
-  goto _TIG_IZ_Ydix_envp__INITINLINE__TIG_IZ_Ydix_envp__INIT;
+  _TIG_IZ_ycly_envp = (char **)0;
+  goto _TIG_IZ_ycly_envp__INITINLINE__TIG_IZ_ycly_envp__INIT;
   }
-  _TIG_IZ_Ydix_envp__INITINLINE__TIG_IZ_Ydix_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_Ydix_argv = (char **)0;
-  goto _TIG_IZ_Ydix_argv__INITINLINE__TIG_IZ_Ydix_argv__INIT;
-  }
-  _TIG_IZ_Ydix_argv__INITINLINE__TIG_IZ_Ydix_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_ycly_envp__INITINLINE__TIG_IZ_ycly_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_Ydix_argc = 0;
-  goto _TIG_IZ_Ydix_argc__INITINLINE__TIG_IZ_Ydix_argc__INIT;
+  _TIG_IZ_ycly_argv = (char **)0;
+  goto _TIG_IZ_ycly_argv__INITINLINE__TIG_IZ_ycly_argv__INIT;
   }
-  _TIG_IZ_Ydix_argc__INITINLINE__TIG_IZ_Ydix_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_ycly_argv__INITINLINE__TIG_IZ_ycly_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_ycly_argc = 0;
+  goto _TIG_IZ_ycly_argc__INITINLINE__TIG_IZ_ycly_argc__INIT;
+  }
+  _TIG_IZ_ycly_argc__INITINLINE__TIG_IZ_ycly_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-Ydix--0":);
-    _TIG_IZ_Ydix_argc = argc;
-    _TIG_IZ_Ydix_argv = argv;
-    _TIG_IZ_Ydix_envp = _TIG_IZ_Ydix_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-ycly--0":);
+    _TIG_IZ_ycly_argc = argc;
+    _TIG_IZ_ycly_argv = argv;
+    _TIG_IZ_ycly_envp = _TIG_IZ_ycly_formal_envp;
     break;
   }
 #line 83 "src/tty.c"

@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_PmLZ_envp": "FUN: '_TIG_IZ_PmLZ_envp__INIT'",
-          "_TIG_IZ_PmLZ_argv": "FUN: '_TIG_IZ_PmLZ_argv__INIT'",
-          "_TIG_IZ_PmLZ_argc": "FUN: '_TIG_IZ_PmLZ_argc__INIT'"
+          "_TIG_IZ_OXsc_envp": "FUN: '_TIG_IZ_OXsc_envp__INIT'",
+          "_TIG_IZ_OXsc_argv": "FUN: '_TIG_IZ_OXsc_argv__INIT'",
+          "_TIG_IZ_OXsc_argc": "FUN: '_TIG_IZ_OXsc_argc__INIT'"
         }
       }
     },
@@ -815,8 +815,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-NSNtmzG3.i","") */
-/* #pragma merger("0","/tmp/cil-8evPy6Yk.i","") */
+/* #pragma merger("0","/tmp/cil-HsTEE6I_.i","") */
+/* #pragma merger("0","/tmp/cil-MDaop2Co.i","") */
 
 /* BEGIN STRUCT-DECL tm_zone LOC=./lib/time.h:998 */
 struct tm_zone ;
@@ -6028,6 +6028,10 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) fdopen)(i
    unsigned long long __builtin_strlen(char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strlen LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_OXsc_argc LOC=UNKNOWN */
+int _TIG_IZ_OXsc_argc ;
+/* END VARIABLE-DECL _TIG_IZ_OXsc_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strptime_l LOC=/usr/include/time.h:123 */
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strptime_l)(char const   * __restrict  __s ,
                                                                                    char const   * __restrict  __fmt ,
@@ -6223,6 +6227,10 @@ extern ssize_t pread64(int __fd , void *__buf , size_t __nbytes , __off64_t __of
 /* compiler builtin: 
    long double __builtin_truncl(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_truncl LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_OXsc_argc LOC=UNKNOWN */
+int _TIG_IZ_OXsc_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_OXsc_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN obstack_printf LOC=/usr/include/stdio.h:917 */
 extern  __attribute__((__nothrow__)) int ( /* format attribute */  obstack_printf)(struct obstack * __restrict  __obstack ,
@@ -6497,6 +6505,10 @@ struct _fpx_sw_bytes {
    _Float128 __builtin_fabsf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf128 LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_OXsc_envp LOC=UNKNOWN */
+char **_TIG_IZ_OXsc_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_OXsc_envp LOC=UNKNOWN */
+
 /* BEGIN ENUM __anonenum_457704180 LOC=/usr/include/bits/siginfo-consts.h:94 */
 enum __anonenum_457704180 {
     FPE_INTDIV = 1,
@@ -6705,7 +6717,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_PmLZ_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_OXsc_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -6801,10 +6813,6 @@ extern int fcntl64(int __fd , int __cmd  , ...) ;
                                       unsigned long long const    , unsigned long long * ) ;  */
 /* END FUNCTION-DECL __builtin_addcll LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_PmLZ_argc LOC=UNKNOWN */
-int _TIG_IZ_PmLZ_argc ;
-/* END VARIABLE-DECL _TIG_IZ_PmLZ_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN __getdelim LOC=/usr/include/stdio.h:689 */
 extern __ssize_t ( __attribute__((__nonnull__(4))) __getdelim)(char ** __restrict  __lineptr ,
                                                                size_t * __restrict  __n ,
@@ -6847,10 +6855,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
 extern int error_one_per_line ;
 /* END VARIABLE-DECL-EXTERN error_one_per_line LOC=/usr/include/error.h:48 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_PmLZ_argv LOC=UNKNOWN */
-char **_TIG_IZ_PmLZ_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_PmLZ_argv LOC=UNKNOWN */
-
 /* BEGIN ENUM __anonenum_513775621___0 LOC=/usr/include/dirent.h:97 */
 enum __anonenum_513775621___0 {
     DT_UNKNOWN___0 = 0,
@@ -6871,6 +6875,10 @@ struct __anonstruct_lldiv_t_103911545 {
    long long rem ;
 };
 /* END STRUCT __anonstruct_lldiv_t_103911545 LOC=/usr/include/stdlib.h:77 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_OXsc_argv LOC=UNKNOWN */
+char **_TIG_IZ_OXsc_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_OXsc_argv LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_606700034 LOC=src/system.h:288 */
 enum __anonenum_606700034 {
@@ -8066,10 +8074,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Complex float __builtin_cacosf(_Complex float  ) ;  */
 /* END FUNCTION-DECL __builtin_cacosf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_PmLZ_argc LOC=UNKNOWN */
-int _TIG_IZ_PmLZ_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_PmLZ_argc LOC=UNKNOWN */
-
 /* BEGIN ENUM __anonenum_513775621 LOC=/usr/include/dirent.h:97 */
 enum __anonenum_513775621 {
     DT_UNKNOWN = 0,
@@ -8418,10 +8422,6 @@ enum __anonenum_315186338___0 {
    _Bool __builtin_ssubl_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_ssubl_overflow LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_PmLZ_envp LOC=UNKNOWN */
-char **_TIG_IZ_PmLZ_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_PmLZ_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN xzalloc LOC=./lib/xalloc.h:68 */
 extern void *xzalloc(size_t s )  __attribute__((__returns_nonnull__, __malloc__, __alloc_size__(1))) ;
 /* END FUNCTION-DECL-EXTERN xzalloc LOC=./lib/xalloc.h:68 */
@@ -8558,10 +8558,6 @@ typedef unsigned long __rlim_t;
 /* compiler builtin: 
    double __builtin_fmin(double  , double  ) ;  */
 /* END FUNCTION-DECL __builtin_fmin LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_PmLZ_envp LOC=UNKNOWN */
-char **_TIG_IZ_PmLZ_envp ;
-/* END VARIABLE-DECL _TIG_IZ_PmLZ_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_powf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -9134,6 +9130,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) renameat)(i
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getppid)(void) ;
 /* END FUNCTION-DECL-EXTERN getppid LOC=/usr/include/unistd.h:653 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_OXsc_argv LOC=UNKNOWN */
+char **_TIG_IZ_OXsc_argv ;
+/* END VARIABLE-DECL _TIG_IZ_OXsc_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_frexp LOC=BUILTIN */
 /* compiler builtin: 
    double __builtin_frexp(double  , int * ) ;  */
@@ -9166,10 +9166,6 @@ __format_arg__(2))) ;
 /* BEGIN FUNCTION-DECL-EXTERN gsignal LOC=/usr/include/signal.h:129 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) gsignal)(int __sig ) ;
 /* END FUNCTION-DECL-EXTERN gsignal LOC=/usr/include/signal.h:129 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_PmLZ_argv LOC=UNKNOWN */
-char **_TIG_IZ_PmLZ_argv ;
-/* END VARIABLE-DECL _TIG_IZ_PmLZ_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf128 LOC=BUILTIN */
 /* compiler builtin: 
@@ -10474,6 +10470,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    _Bool __builtin_saddl_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_OXsc_envp LOC=UNKNOWN */
+char **_TIG_IZ_OXsc_envp ;
+/* END VARIABLE-DECL _TIG_IZ_OXsc_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=/usr/include/stdio.h:320 */
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_memstream)(char **__bufloc ,
@@ -12877,7 +12877,7 @@ __inline static _Bool __attribute__((__pure__))  is_nul(void const   *buf , size
 /* END FUNCTION-DEF is_nul LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_PmLZ_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_OXsc_formal_envp ) 
 { 
   int c ;
   char tab_stop[2] ;
@@ -13047,34 +13047,34 @@ int main(int argc , char **argv , char **_TIG_IZ_PmLZ_formal_envp )
   }
   {
   {
-  _TIG_IZ_PmLZ_envp = (char **)0;
-  goto _TIG_IZ_PmLZ_envp__INITINLINE__TIG_IZ_PmLZ_envp__INIT;
+  _TIG_IZ_OXsc_envp = (char **)0;
+  goto _TIG_IZ_OXsc_envp__INITINLINE__TIG_IZ_OXsc_envp__INIT;
   }
-  _TIG_IZ_PmLZ_envp__INITINLINE__TIG_IZ_PmLZ_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_PmLZ_argv = (char **)0;
-  goto _TIG_IZ_PmLZ_argv__INITINLINE__TIG_IZ_PmLZ_argv__INIT;
-  }
-  _TIG_IZ_PmLZ_argv__INITINLINE__TIG_IZ_PmLZ_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_OXsc_envp__INITINLINE__TIG_IZ_OXsc_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_PmLZ_argc = 0;
-  goto _TIG_IZ_PmLZ_argc__INITINLINE__TIG_IZ_PmLZ_argc__INIT;
+  _TIG_IZ_OXsc_argv = (char **)0;
+  goto _TIG_IZ_OXsc_argv__INITINLINE__TIG_IZ_OXsc_argv__INIT;
   }
-  _TIG_IZ_PmLZ_argc__INITINLINE__TIG_IZ_PmLZ_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_OXsc_argv__INITINLINE__TIG_IZ_OXsc_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_OXsc_argc = 0;
+  goto _TIG_IZ_OXsc_argc__INITINLINE__TIG_IZ_OXsc_argc__INIT;
+  }
+  _TIG_IZ_OXsc_argc__INITINLINE__TIG_IZ_OXsc_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-PmLZ--0":);
-    _TIG_IZ_PmLZ_argc = argc;
-    _TIG_IZ_PmLZ_argv = argv;
-    _TIG_IZ_PmLZ_envp = _TIG_IZ_PmLZ_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-OXsc--0":);
+    _TIG_IZ_OXsc_argc = argc;
+    _TIG_IZ_OXsc_argv = argv;
+    _TIG_IZ_OXsc_envp = _TIG_IZ_OXsc_formal_envp;
     break;
   }
 #line 185 "src/expand.c"

@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_cnFE_envp": "FUN: '_TIG_IZ_cnFE_envp__INIT'",
-          "_TIG_IZ_cnFE_argv": "FUN: '_TIG_IZ_cnFE_argv__INIT'",
-          "_TIG_IZ_cnFE_argc": "FUN: '_TIG_IZ_cnFE_argc__INIT'"
+          "_TIG_IZ_WdEA_envp": "FUN: '_TIG_IZ_WdEA_envp__INIT'",
+          "_TIG_IZ_WdEA_argv": "FUN: '_TIG_IZ_WdEA_argv__INIT'",
+          "_TIG_IZ_WdEA_argc": "FUN: '_TIG_IZ_WdEA_argc__INIT'"
         }
       }
     },
@@ -822,9 +822,9 @@ END-UNIVERSE
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-N8O3gzeG.i","") */
-/* #pragma merger("0","/tmp/cil-RuCiGeLG.i","") */
-/* #pragma merger("0","/tmp/cil-Lef_a5jf.i","") */
+/* #pragma merger("0","/tmp/cil-9YQmJMuF.i","") */
+/* #pragma merger("0","/tmp/cil-aRfOGBLU.i","") */
+/* #pragma merger("0","/tmp/cil-iSGbmGYm.i","") */
 
 /* BEGIN STRUCT-DECL _IO_FILE LOC=/usr/include/bits/types/__FILE.h:4 */
 struct _IO_FILE ;
@@ -2374,10 +2374,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) adjtime)(st
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) tcgetpgrp)(int __fd ) ;
 /* END FUNCTION-DECL-EXTERN tcgetpgrp LOC=/usr/include/unistd.h:871 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_cnFE_argv LOC=UNKNOWN */
-char **_TIG_IZ_cnFE_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_cnFE_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_strpbrk LOC=BUILTIN */
 /* compiler builtin: 
    char *__builtin_strpbrk(char const   * , char const   * ) ;  */
@@ -3911,6 +3907,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) sigaltstack
 extern int ( __attribute__((__nonnull__(1))) mkstemps64)(char *__template , int __suffixlen ) ;
 /* END FUNCTION-DECL-EXTERN mkstemps64 LOC=/usr/include/stdlib.h:859 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_WdEA_argc LOC=UNKNOWN */
+int _TIG_IZ_WdEA_argc ;
+/* END VARIABLE-DECL _TIG_IZ_WdEA_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN execve LOC=/usr/include/unistd.h:572 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execve)(char const   *__path ,
                                                                                                char **__argv ,
@@ -4354,6 +4354,10 @@ extern int daylight ;
 /* BEGIN FUNCTION-DECL-EXTERN lrand48 LOC=/usr/include/stdlib.h:591 */
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) lrand48)(void) ;
 /* END FUNCTION-DECL-EXTERN lrand48 LOC=/usr/include/stdlib.h:591 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_WdEA_argv LOC=UNKNOWN */
+char **_TIG_IZ_WdEA_argv ;
+/* END VARIABLE-DECL _TIG_IZ_WdEA_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT __anonstruct__rt_619254530 LOC=/usr/include/bits/types/siginfo_t.h:36 */
 struct __anonstruct__rt_619254530 {
@@ -4846,10 +4850,6 @@ struct sigstack {
 /* BEGIN FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./lib/closein.h:25 */
 extern void close_stdin_set_file_name(char const   *file ) ;
 /* END FUNCTION-DECL-EXTERN close_stdin_set_file_name LOC=./lib/closein.h:25 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_cnFE_argc LOC=UNKNOWN */
-int _TIG_IZ_cnFE_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_cnFE_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_convertvector LOC=BUILTIN */
 /* compiler builtin: 
@@ -7039,7 +7039,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_cnFE_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_WdEA_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7465,6 +7465,10 @@ typedef __fsfilcnt_t fsfilcnt_t;
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) stpcpy)(char * __restrict  __dest ,
                                                                                                  char const   * __restrict  __src ) ;
 /* END FUNCTION-DECL-EXTERN stpcpy LOC=/usr/include/string.h:491 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_WdEA_argc LOC=UNKNOWN */
+int _TIG_IZ_WdEA_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_WdEA_argc LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_825626741___1 LOC=src/system.h:116 */
 enum __anonenum_825626741___1 {
@@ -7967,10 +7971,6 @@ __inline struct selabel_handle *selabel_open(int backend  __attribute__((__unuse
                                              struct selinux_opt *options  __attribute__((__unused__)) ,
                                              unsigned int nopt  __attribute__((__unused__)) ) ;
 /* END FUNCTION-DECL selabel_open LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_cnFE_envp LOC=UNKNOWN */
-char **_TIG_IZ_cnFE_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_cnFE_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF max_align_t LOC=/opt/gcc81/lib/gcc/x86_64-pc-linux-gnu/8.1.0/include/stddef.h:426 */
 typedef struct __anonstruct_max_align_t_247203726 max_align_t;
@@ -9345,6 +9345,10 @@ static int make_ancestor(char const   *dir , char const   *component , void *opt
 __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
 /* END FUNCTION-DECL __bswap_64 LOC=UNKNOWN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_WdEA_argv LOC=UNKNOWN */
+char **_TIG_IZ_WdEA_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_WdEA_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_powf LOC=BUILTIN */
 /* compiler builtin: 
    float __builtin_powf(float  , float  ) ;  */
@@ -9603,6 +9607,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) timer_delet
    unsigned int __builtin_subc(unsigned int const    , unsigned int const    , unsigned int const    ,
                                unsigned int * ) ;  */
 /* END FUNCTION-DECL __builtin_subc LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_WdEA_envp LOC=UNKNOWN */
+char **_TIG_IZ_WdEA_envp ;
+/* END VARIABLE-DECL _TIG_IZ_WdEA_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __FILE LOC=/usr/include/bits/types/__FILE.h:5 */
 typedef struct _IO_FILE __FILE;
@@ -10055,6 +10063,10 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) srand48)(l
 extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ttyname)(int __fd ) ;
 /* END FUNCTION-DECL-EXTERN ttyname LOC=/usr/include/unistd.h:799 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_WdEA_envp LOC=UNKNOWN */
+char **_TIG_IZ_WdEA_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_WdEA_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN strfromd LOC=/usr/include/stdlib.h:278 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromd)(char *__dest ,
                                                                                                size_t __size ,
@@ -10497,10 +10509,6 @@ __inline static struct dirent  const  *readdir_ignoring_dot_and_dotdot(DIR *dirp
 /* compiler builtin: 
    double __builtin_logb(double  ) ;  */
 /* END FUNCTION-DECL __builtin_logb LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_cnFE_argv LOC=UNKNOWN */
-char **_TIG_IZ_cnFE_argv ;
-/* END VARIABLE-DECL _TIG_IZ_cnFE_argv LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_825626741 LOC=src/system.h:116 */
 enum __anonenum_825626741 {
@@ -11111,10 +11119,6 @@ extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_mems
 /* BEGIN STRUCT-DECL cycle_check_state LOC=./lib/fts_.h:85 */
 struct cycle_check_state ;
 /* END STRUCT-DECL cycle_check_state LOC=./lib/fts_.h:85 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_cnFE_envp LOC=UNKNOWN */
-char **_TIG_IZ_cnFE_envp ;
-/* END VARIABLE-DECL _TIG_IZ_cnFE_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpf LOC=BUILTIN */
 /* compiler builtin: 
@@ -12318,10 +12322,6 @@ enum __anonenum_556971655___0 {
 /* compiler builtin: 
    unsigned long long __builtin_wcslen(unsigned short * const   ) ;  */
 /* END FUNCTION-DECL __builtin_wcslen LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_cnFE_argc LOC=UNKNOWN */
-int _TIG_IZ_cnFE_argc ;
-/* END VARIABLE-DECL _TIG_IZ_cnFE_argc LOC=UNKNOWN */
 
 /* BEGIN STRUCT __anonstruct_div_t_773697287 LOC=/usr/include/stdlib.h:59 */
 struct __anonstruct_div_t_773697287 {
@@ -13956,7 +13956,7 @@ __inline int context_user_set(context_t sc  __attribute__((__unused__)) , char c
 /* END FUNCTION-DEF context_user_set LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_cnFE_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_WdEA_formal_envp ) 
 { 
   char const   *specified_mode ;
   int optc ;
@@ -14035,34 +14035,34 @@ int main(int argc , char **argv , char **_TIG_IZ_cnFE_formal_envp )
   }
   {
   {
-  _TIG_IZ_cnFE_envp = (char **)0;
-  goto _TIG_IZ_cnFE_envp__INITINLINE__TIG_IZ_cnFE_envp__INIT;
+  _TIG_IZ_WdEA_envp = (char **)0;
+  goto _TIG_IZ_WdEA_envp__INITINLINE__TIG_IZ_WdEA_envp__INIT;
   }
-  _TIG_IZ_cnFE_envp__INITINLINE__TIG_IZ_cnFE_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_cnFE_argv = (char **)0;
-  goto _TIG_IZ_cnFE_argv__INITINLINE__TIG_IZ_cnFE_argv__INIT;
-  }
-  _TIG_IZ_cnFE_argv__INITINLINE__TIG_IZ_cnFE_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_WdEA_envp__INITINLINE__TIG_IZ_WdEA_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_cnFE_argc = 0;
-  goto _TIG_IZ_cnFE_argc__INITINLINE__TIG_IZ_cnFE_argc__INIT;
+  _TIG_IZ_WdEA_argv = (char **)0;
+  goto _TIG_IZ_WdEA_argv__INITINLINE__TIG_IZ_WdEA_argv__INIT;
   }
-  _TIG_IZ_cnFE_argc__INITINLINE__TIG_IZ_cnFE_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_WdEA_argv__INITINLINE__TIG_IZ_WdEA_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_WdEA_argc = 0;
+  goto _TIG_IZ_WdEA_argc__INITINLINE__TIG_IZ_WdEA_argc__INIT;
+  }
+  _TIG_IZ_WdEA_argc__INITINLINE__TIG_IZ_WdEA_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-cnFE--0":);
-    _TIG_IZ_cnFE_argc = argc;
-    _TIG_IZ_cnFE_argv = argv;
-    _TIG_IZ_cnFE_envp = _TIG_IZ_cnFE_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-WdEA--0":);
+    _TIG_IZ_WdEA_argc = argc;
+    _TIG_IZ_WdEA_argv = argv;
+    _TIG_IZ_WdEA_envp = _TIG_IZ_WdEA_formal_envp;
     break;
   }
 #line 193 "src/mkdir.c"

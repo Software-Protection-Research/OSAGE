@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_d3NA_envp": "FUN: '_TIG_IZ_d3NA_envp__INIT'",
-          "_TIG_IZ_d3NA_argv": "FUN: '_TIG_IZ_d3NA_argv__INIT'",
-          "_TIG_IZ_d3NA_argc": "FUN: '_TIG_IZ_d3NA_argc__INIT'"
+          "_TIG_IZ_esKZ_envp": "FUN: '_TIG_IZ_esKZ_envp__INIT'",
+          "_TIG_IZ_esKZ_argv": "FUN: '_TIG_IZ_esKZ_argv__INIT'",
+          "_TIG_IZ_esKZ_argc": "FUN: '_TIG_IZ_esKZ_argc__INIT'"
         }
       }
     },
@@ -3762,10 +3762,6 @@ extern int ( __attribute__((__nonnull__(1))) fgetpos64)(FILE * __restrict  __str
                                                         fpos64_t * __restrict  __pos ) ;
 /* END FUNCTION-DECL-EXTERN fgetpos64 LOC=/usr/include/stdio.h:844 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_d3NA_envp LOC=UNKNOWN */
-char **_TIG_IZ_d3NA_envp ;
-/* END VARIABLE-DECL _TIG_IZ_d3NA_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN fchmod LOC=/usr/include/sys/stat.h:365 */
 #line 365 "/usr/include/sys/stat.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) fchmod)(int __fd ,
@@ -3791,6 +3787,10 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__nonnull__(2), __l
                                                                                                  char const   * __restrict  __src ,
                                                                                                  size_t __n ) ;
 /* END FUNCTION-DECL-EXTERN strxfrm LOC=/usr/include/string.h:166 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_esKZ_argc LOC=UNKNOWN */
+int _TIG_IZ_esKZ_argc ;
+/* END VARIABLE-DECL _TIG_IZ_esKZ_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF cookie_io_functions_t LOC=/usr/include/bits/types/cookie_io_functions_t.h:55 */
 #line 55 "/usr/include/bits/types/cookie_io_functions_t.h"
@@ -4843,6 +4843,10 @@ typedef struct __anonstruct___fsid_t_109580352 __fsid_t;
 extern void *xicalloc(idx_t n , idx_t s )  __attribute__((__returns_nonnull__, __malloc__,
 __alloc_size__(1,2))) ;
 /* END FUNCTION-DECL-EXTERN xicalloc LOC=./lib/xalloc.h:77 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_esKZ_argv LOC=UNKNOWN */
+char **_TIG_IZ_esKZ_argv ;
+/* END VARIABLE-DECL _TIG_IZ_esKZ_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN lcong48 LOC=/usr/include/stdlib.h:604 */
 #line 604 "/usr/include/stdlib.h"
@@ -6253,6 +6257,10 @@ struct __pthread_rwlock_arch_t {
    float __builtin_sqrtf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_sqrtf LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_esKZ_envp LOC=UNKNOWN */
+char **_TIG_IZ_esKZ_envp ;
+/* END VARIABLE-DECL _TIG_IZ_esKZ_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN fpathconf LOC=/usr/include/unistd.h:637 */
 #line 637 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) fpathconf)(int __fd ,
@@ -6276,10 +6284,6 @@ struct itimerval {
 /* compiler builtin: 
    _Complex double __builtin_ccosh(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_ccosh LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_d3NA_envp LOC=UNKNOWN */
-char **_TIG_IZ_d3NA_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_d3NA_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __uint_least16_t LOC=/usr/include/bits/types.h:55 */
 #line 55 "/usr/include/bits/types.h"
@@ -6359,10 +6363,6 @@ extern  __attribute__((__nothrow__)) int ( /* format attribute */  obstack_print
                                                                                    char const   * __restrict  __format 
                                                                                    , ...) ;
 /* END FUNCTION-DECL-EXTERN obstack_printf LOC=/usr/include/stdio.h:917 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_d3NA_argc LOC=UNKNOWN */
-int _TIG_IZ_d3NA_argc ;
-/* END VARIABLE-DECL _TIG_IZ_d3NA_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN psiginfo LOC=/usr/include/signal.h:137 */
 #line 137 "/usr/include/signal.h"
@@ -6866,7 +6866,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1,2), __l
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_d3NA_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_esKZ_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7025,10 +7025,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __le
 #line 48 "/usr/include/error.h"
 extern int error_one_per_line ;
 /* END VARIABLE-DECL-EXTERN error_one_per_line LOC=/usr/include/error.h:48 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_d3NA_argv LOC=UNKNOWN */
-char **_TIG_IZ_d3NA_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_d3NA_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT __anonstruct_lldiv_t_103911545 LOC=/usr/include/stdlib.h:77 */
 #line 77 "/usr/include/stdlib.h"
@@ -9562,6 +9558,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
                                                                                                double __f ) ;
 /* END FUNCTION-DECL-EXTERN strfromd LOC=/usr/include/stdlib.h:278 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_esKZ_envp LOC=UNKNOWN */
+char **_TIG_IZ_esKZ_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_esKZ_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN __sysv_signal LOC=/usr/include/signal.h:77 */
 #line 77 "/usr/include/signal.h"
 extern  __attribute__((__nothrow__)) __sighandler_t ( __attribute__((__leaf__)) __sysv_signal)(int __sig ,
@@ -10178,10 +10178,6 @@ extern int ( __attribute__((__nonnull__(1))) fseeko64)(FILE *__stream , __off64_
    long __builtin_lrintf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_lrintf LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_d3NA_argv LOC=UNKNOWN */
-char **_TIG_IZ_d3NA_argv ;
-/* END VARIABLE-DECL _TIG_IZ_d3NA_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_csinhf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_csinhf(_Complex float  ) ;  */
@@ -10298,10 +10294,6 @@ enum __anonenum_463020052 {
 #line 814 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ttyslot)(void) ;
 /* END FUNCTION-DECL-EXTERN ttyslot LOC=/usr/include/unistd.h:814 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_d3NA_argc LOC=UNKNOWN */
-int _TIG_IZ_d3NA_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_d3NA_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_round LOC=BUILTIN */
 /* compiler builtin: 
@@ -10831,6 +10823,10 @@ extern char *quotearg_colon(char const   *arg ) ;
 extern long ( __attribute__((__nonnull__(1))) ftell)(FILE *__stream ) ;
 /* END FUNCTION-DECL-EXTERN ftell LOC=/usr/include/stdio.h:775 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_esKZ_argv LOC=UNKNOWN */
+char **_TIG_IZ_esKZ_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_esKZ_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_calloc LOC=BUILTIN */
 /* compiler builtin: 
    void *__builtin_calloc(unsigned long long  , unsigned long long  ) ;  */
@@ -11234,6 +11230,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(ti
 /* compiler builtin: 
    long double __builtin_log10l(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_log10l LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_esKZ_argc LOC=UNKNOWN */
+int _TIG_IZ_esKZ_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_esKZ_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN dirfd LOC=/usr/include/dirent.h:226 */
 #line 226 "/usr/include/dirent.h"
@@ -12506,7 +12506,7 @@ __inline static void emit_update_parameters_note(void)
 /* END FUNCTION-DEF emit_update_parameters_note LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_d3NA_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_esKZ_formal_envp ) 
 { 
   double seconds ;
   _Bool ok ;
@@ -12538,34 +12538,34 @@ int main(int argc , char **argv , char **_TIG_IZ_d3NA_formal_envp )
   {
   {
   {
-  _TIG_IZ_d3NA_envp = (char **)0;
-  goto _TIG_IZ_d3NA_envp__INITINLINE__TIG_IZ_d3NA_envp__INIT;
+  _TIG_IZ_esKZ_envp = (char **)0;
+  goto _TIG_IZ_esKZ_envp__INITINLINE__TIG_IZ_esKZ_envp__INIT;
   }
-  _TIG_IZ_d3NA_envp__INITINLINE__TIG_IZ_d3NA_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_d3NA_argv = (char **)0;
-  goto _TIG_IZ_d3NA_argv__INITINLINE__TIG_IZ_d3NA_argv__INIT;
-  }
-  _TIG_IZ_d3NA_argv__INITINLINE__TIG_IZ_d3NA_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_esKZ_envp__INITINLINE__TIG_IZ_esKZ_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_d3NA_argc = 0;
-  goto _TIG_IZ_d3NA_argc__INITINLINE__TIG_IZ_d3NA_argc__INIT;
+  _TIG_IZ_esKZ_argv = (char **)0;
+  goto _TIG_IZ_esKZ_argv__INITINLINE__TIG_IZ_esKZ_argv__INIT;
   }
-  _TIG_IZ_d3NA_argc__INITINLINE__TIG_IZ_d3NA_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_esKZ_argv__INITINLINE__TIG_IZ_esKZ_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_esKZ_argc = 0;
+  goto _TIG_IZ_esKZ_argc__INITINLINE__TIG_IZ_esKZ_argc__INIT;
+  }
+  _TIG_IZ_esKZ_argc__INITINLINE__TIG_IZ_esKZ_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-d3NA--0":);
-    _TIG_IZ_d3NA_argc = argc;
-    _TIG_IZ_d3NA_argv = argv;
-    _TIG_IZ_d3NA_envp = _TIG_IZ_d3NA_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-esKZ--0":);
+    _TIG_IZ_esKZ_argc = argc;
+    _TIG_IZ_esKZ_argv = argv;
+    _TIG_IZ_esKZ_envp = _TIG_IZ_esKZ_formal_envp;
     break;
   }
 #line 97 "src/sleep.c"

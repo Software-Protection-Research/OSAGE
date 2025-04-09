@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_POht_envp": "FUN: '_TIG_IZ_POht_envp__INIT'",
-          "_TIG_IZ_POht_argv": "FUN: '_TIG_IZ_POht_argv__INIT'",
-          "_TIG_IZ_POht_argc": "FUN: '_TIG_IZ_POht_argc__INIT'"
+          "_TIG_IZ_dMHb_envp": "FUN: '_TIG_IZ_dMHb_envp__INIT'",
+          "_TIG_IZ_dMHb_argv": "FUN: '_TIG_IZ_dMHb_argv__INIT'",
+          "_TIG_IZ_dMHb_argc": "FUN: '_TIG_IZ_dMHb_argc__INIT'"
         }
       }
     },
@@ -2789,6 +2789,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) nice)(int _
 extern  __attribute__((__nothrow__)) double ( __attribute__((__nonnull__(1), __leaf__)) erand48)(unsigned short *__xsubi ) ;
 /* END FUNCTION-DECL-EXTERN erand48 LOC=/usr/include/stdlib.h:588 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMHb_argc LOC=UNKNOWN */
+int _TIG_IZ_dMHb_argc ;
+/* END VARIABLE-DECL _TIG_IZ_dMHb_argc LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF __gwchar_t LOC=/usr/include/inttypes.h:34 */
 #line 34 "/usr/include/inttypes.h"
 typedef int __gwchar_t;
@@ -3262,6 +3266,10 @@ extern  __attribute__((__nothrow__)) wchar_t *( __attribute__((__leaf__)) wcstok
                                                                                   wchar_t const   * __restrict  __delim ,
                                                                                   wchar_t ** __restrict  __ptr ) ;
 /* END FUNCTION-DECL-EXTERN wcstok LOC=/usr/include/wchar.h:242 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMHb_argc LOC=UNKNOWN */
+int _TIG_IZ_dMHb_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_dMHb_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN pselect LOC=/usr/include/sys/select.h:127 */
 #line 127 "/usr/include/sys/select.h"
@@ -4273,10 +4281,6 @@ typedef union __anonunion_pthread_rwlock_t_656928968 pthread_rwlock_t;
 #line 1 "src/version.h"
 extern char const   *Version ;
 /* END VARIABLE-DECL-EXTERN Version LOC=src/version.h:1 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_POht_envp LOC=UNKNOWN */
-char **_TIG_IZ_POht_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_POht_envp LOC=UNKNOWN */
 
 /* BEGIN VARIABLE-DECL-EXTERN quoting_style_vals LOC=./lib/quotearg.h:273 */
 #line 273 "./lib/quotearg.h"
@@ -6273,10 +6277,6 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)
 extern  __attribute__((__nothrow__)) struct tm *( __attribute__((__leaf__)) gmtime)(time_t const   *__timer ) ;
 /* END FUNCTION-DECL-EXTERN gmtime LOC=/usr/include/time.h:132 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_POht_argc LOC=UNKNOWN */
-int _TIG_IZ_POht_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_POht_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_fmodl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_fmodl(long double  ) ;  */
@@ -6932,10 +6932,6 @@ typedef __int8_t int8_t;
    char *__builtin___stpncpy_chk(char * , char const   * , unsigned long long  , unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin___stpncpy_chk LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_POht_argc LOC=UNKNOWN */
-int _TIG_IZ_POht_argc ;
-/* END VARIABLE-DECL _TIG_IZ_POht_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN wcsftime_l LOC=/usr/include/wchar.h:1050 */
 #line 1050 "/usr/include/wchar.h"
 extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) wcsftime_l)(wchar_t * __restrict  __s ,
@@ -7301,7 +7297,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=./lib/wchar.h:755 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_POht_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_dMHb_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8053,6 +8049,10 @@ __leaf__)) strtoll_l)(char const   * __restrict  __nptr , char ** __restrict  __
    void __builtin_matrix_transpose(...) ;  */
 /* END FUNCTION-DECL __builtin_matrix_transpose LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMHb_envp LOC=UNKNOWN */
+char **_TIG_IZ_dMHb_envp ;
+/* END VARIABLE-DECL _TIG_IZ_dMHb_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN tzset LOC=/usr/include/time.h:228 */
 #line 228 "/usr/include/time.h"
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) tzset)(void) ;
@@ -8211,10 +8211,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(
                                                                                 __gid_t __egid ,
                                                                                 __gid_t __sgid ) ;
 /* END FUNCTION-DECL-EXTERN setresgid LOC=/usr/include/unistd.h:770 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_POht_envp LOC=UNKNOWN */
-char **_TIG_IZ_POht_envp ;
-/* END VARIABLE-DECL _TIG_IZ_POht_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF ldiv_t LOC=/usr/include/stdlib.h:67 */
 #line 67 "/usr/include/stdlib.h"
@@ -8527,10 +8523,6 @@ extern char **environ ;
 /* compiler builtin: 
    float __builtin_expf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_expf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_POht_argv LOC=UNKNOWN */
-char **_TIG_IZ_POht_argv ;
-/* END VARIABLE-DECL _TIG_IZ_POht_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_ffs LOC=BUILTIN */
 /* compiler builtin: 
@@ -9531,10 +9523,6 @@ __inline static _Bool dot_or_dotdot(char const   *file_name ) ;
    void *__builtin_memset(void * , int  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_memset LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_POht_argv LOC=UNKNOWN */
-char **_TIG_IZ_POht_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_POht_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_conjf LOC=BUILTIN */
 /* compiler builtin: 
    _Complex float __builtin_conjf(_Complex float  ) ;  */
@@ -9755,6 +9743,10 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__leaf__)) __sysconf)
    void __builtin_longjmp(void ** , int  ) ;  */
 /* END FUNCTION-DECL __builtin_longjmp LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMHb_envp LOC=UNKNOWN */
+char **_TIG_IZ_dMHb_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_dMHb_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN clearerr_unlocked LOC=/usr/include/stdio.h:858 */
 #line 858 "/usr/include/stdio.h"
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) clearerr_unlocked)(FILE *__stream ) ;
@@ -9908,6 +9900,10 @@ extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) strto
 /* compiler builtin: 
    double __builtin_exp(double  ) ;  */
 /* END FUNCTION-DECL __builtin_exp LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_dMHb_argv LOC=UNKNOWN */
+char **_TIG_IZ_dMHb_argv ;
+/* END VARIABLE-DECL _TIG_IZ_dMHb_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN mktemp LOC=/usr/include/stdlib.h:814 */
 #line 814 "/usr/include/stdlib.h"
@@ -11284,6 +11280,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    int __builtin_strcasecmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcasecmp LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_dMHb_argv LOC=UNKNOWN */
+char **_TIG_IZ_dMHb_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_dMHb_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=/usr/include/stdio.h:320 */
 #line 320 "/usr/include/stdio.h"
@@ -13949,7 +13949,7 @@ __inline static char *stzncpy(char * __restrict  dest , char const   * __restric
 /* END FUNCTION-DEF stzncpy LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_POht_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_dMHb_formal_envp ) 
 { 
   _Bool ok ;
   _Bool check_basic_portability ;
@@ -13991,34 +13991,34 @@ int main(int argc , char **argv , char **_TIG_IZ_POht_formal_envp )
   }
   {
   {
-  _TIG_IZ_POht_envp = (char **)0;
-  goto _TIG_IZ_POht_envp__INITINLINE__TIG_IZ_POht_envp__INIT;
+  _TIG_IZ_dMHb_envp = (char **)0;
+  goto _TIG_IZ_dMHb_envp__INITINLINE__TIG_IZ_dMHb_envp__INIT;
   }
-  _TIG_IZ_POht_envp__INITINLINE__TIG_IZ_POht_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_POht_argv = (char **)0;
-  goto _TIG_IZ_POht_argv__INITINLINE__TIG_IZ_POht_argv__INIT;
-  }
-  _TIG_IZ_POht_argv__INITINLINE__TIG_IZ_POht_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_dMHb_envp__INITINLINE__TIG_IZ_dMHb_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_POht_argc = 0;
-  goto _TIG_IZ_POht_argc__INITINLINE__TIG_IZ_POht_argc__INIT;
+  _TIG_IZ_dMHb_argv = (char **)0;
+  goto _TIG_IZ_dMHb_argv__INITINLINE__TIG_IZ_dMHb_argv__INIT;
   }
-  _TIG_IZ_POht_argc__INITINLINE__TIG_IZ_POht_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_dMHb_argv__INITINLINE__TIG_IZ_dMHb_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_dMHb_argc = 0;
+  goto _TIG_IZ_dMHb_argc__INITINLINE__TIG_IZ_dMHb_argc__INIT;
+  }
+  _TIG_IZ_dMHb_argc__INITINLINE__TIG_IZ_dMHb_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-POht--0":);
-    _TIG_IZ_POht_argc = argc;
-    _TIG_IZ_POht_argv = argv;
-    _TIG_IZ_POht_envp = _TIG_IZ_POht_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-dMHb--0":);
+    _TIG_IZ_dMHb_argc = argc;
+    _TIG_IZ_dMHb_argv = argv;
+    _TIG_IZ_dMHb_envp = _TIG_IZ_dMHb_formal_envp;
     break;
   }
 #line 105 "src/pathchk.c"

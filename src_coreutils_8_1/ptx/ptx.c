@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_ngsS_envp": "FUN: '_TIG_IZ_ngsS_envp__INIT'",
-          "_TIG_IZ_ngsS_argv": "FUN: '_TIG_IZ_ngsS_argv__INIT'",
-          "_TIG_IZ_ngsS_argc": "FUN: '_TIG_IZ_ngsS_argc__INIT'"
+          "_TIG_IZ_vGQL_envp": "FUN: '_TIG_IZ_vGQL_envp__INIT'",
+          "_TIG_IZ_vGQL_argv": "FUN: '_TIG_IZ_vGQL_argv__INIT'",
+          "_TIG_IZ_vGQL_argc": "FUN: '_TIG_IZ_vGQL_argc__INIT'"
         }
       }
     },
@@ -2410,10 +2410,6 @@ typedef enum strtol_error strtol_error;
 extern strtol_error xstrtol(char const   * , char ** , int  , long * , char const   * ) ;
 /* END FUNCTION-DECL-EXTERN xstrtol LOC=./lib/xstrtol.h:44 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_ngsS_envp LOC=UNKNOWN */
-char **_TIG_IZ_ngsS_envp ;
-/* END VARIABLE-DECL _TIG_IZ_ngsS_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN version_etc_arn LOC=./lib/version-etc.h:53 */
 #line 53 "./lib/version-etc.h"
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
@@ -3817,10 +3813,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    long __builtin_lround(double  ) ;  */
 /* END FUNCTION-DECL __builtin_lround LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_ngsS_argc LOC=UNKNOWN */
-int _TIG_IZ_ngsS_argc ;
-/* END VARIABLE-DECL _TIG_IZ_ngsS_argc LOC=UNKNOWN */
-
 /* BEGIN VARIABLE-DEF right_reference LOC=UNKNOWN */
 static _Bool right_reference  ;
 /* END VARIABLE-DEF right_reference LOC=UNKNOWN */
@@ -4038,10 +4030,6 @@ extern char *base_name(char const   *file )  __attribute__((__returns_nonnull__,
 #line 92 "./lib/xalloc.h"
 extern void *xpalloc(void *pa , idx_t *pn , idx_t n_incr_min , ptrdiff_t n_max , idx_t s )  __attribute__((__returns_nonnull__)) ;
 /* END FUNCTION-DECL-EXTERN xpalloc LOC=./lib/xalloc.h:92 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_ngsS_envp LOC=UNKNOWN */
-char **_TIG_IZ_ngsS_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_ngsS_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF uintptr_t LOC=/usr/include/stdint.h:79 */
 #line 79 "/usr/include/stdint.h"
@@ -4285,6 +4273,10 @@ extern  __attribute__((__nothrow__)) unsigned long long ( __attribute__((__nonnu
 __leaf__)) strtoull)(char const   * __restrict  __nptr , char ** __restrict  __endptr ,
                      int __base )  __asm__("__isoc23_strtoull")  ;
 /* END FUNCTION-DECL-EXTERN strtoull LOC=/usr/include/stdlib.h:206 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_vGQL_argc LOC=UNKNOWN */
+int _TIG_IZ_vGQL_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_vGQL_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL dcpgettext_expr LOC=UNKNOWN */
 __inline static char const   *dcpgettext_expr(char const   *domain , char const   *msgctxt ,
@@ -4901,6 +4893,10 @@ extern __ssize_t tee(int __fdin , int __fdout , size_t __len , unsigned int __fl
 /* compiler builtin: 
    void __builtin_va_end(__builtin_va_list  ) ;  */
 /* END FUNCTION-DECL __builtin_va_end LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_vGQL_argv LOC=UNKNOWN */
+char **_TIG_IZ_vGQL_argv ;
+/* END VARIABLE-DECL _TIG_IZ_vGQL_argv LOC=UNKNOWN */
 
 /* BEGIN STRUCT option LOC=/usr/include/bits/getopt_ext.h:50 */
 #line 50 "/usr/include/bits/getopt_ext.h"
@@ -6060,10 +6056,6 @@ struct flock64 {
 };
 /* END STRUCT flock64 LOC=/usr/include/bits/fcntl.h:50 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_ngsS_argv LOC=UNKNOWN */
-char **_TIG_IZ_ngsS_argv ;
-/* END VARIABLE-DECL _TIG_IZ_ngsS_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_cbrtl LOC=BUILTIN */
 /* compiler builtin: 
    long double __builtin_cbrtl(long double  ) ;  */
@@ -6664,6 +6656,10 @@ extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) setsid)
 /* compiler builtin: 
    int __builtin_ffsl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_ffsl LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_vGQL_argc LOC=UNKNOWN */
+int _TIG_IZ_vGQL_argc ;
+/* END VARIABLE-DECL _TIG_IZ_vGQL_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN gmtime LOC=/usr/include/time.h:132 */
 #line 132 "/usr/include/time.h"
@@ -7301,6 +7297,10 @@ extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(
 typedef __uint16_t uint16_t;
 /* END TYPEDEF uint16_t LOC=/usr/include/bits/stdint-uintn.h:25 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_vGQL_envp LOC=UNKNOWN */
+char **_TIG_IZ_vGQL_envp ;
+/* END VARIABLE-DECL _TIG_IZ_vGQL_envp LOC=UNKNOWN */
+
 /* BEGIN STRUCT iovec LOC=/usr/include/bits/types/struct_iovec.h:26 */
 #line 26 "/usr/include/bits/types/struct_iovec.h"
 struct iovec {
@@ -7719,7 +7719,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_ngsS_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_vGQL_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -8485,10 +8485,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_sig
                                                                                       __sigset_t * __restrict  __oldmask ) ;
 /* END FUNCTION-DECL-EXTERN pthread_sigmask LOC=/usr/include/bits/sigthread.h:31 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_ngsS_argc LOC=UNKNOWN */
-int _TIG_IZ_ngsS_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_ngsS_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN dir_name LOC=./lib/dirname.h:44 */
 #line 44 "./lib/dirname.h"
 extern char *dir_name(char const   *file )  __attribute__((__returns_nonnull__, __malloc__)) ;
@@ -8678,10 +8674,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) setresgid)(
                                                                                 __gid_t __egid ,
                                                                                 __gid_t __sgid ) ;
 /* END FUNCTION-DECL-EXTERN setresgid LOC=/usr/include/unistd.h:770 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_ngsS_argv LOC=UNKNOWN */
-char **_TIG_IZ_ngsS_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_ngsS_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF ldiv_t LOC=/usr/include/stdlib.h:67 */
 #line 67 "/usr/include/stdlib.h"
@@ -10910,6 +10902,10 @@ enum __anonenum_230064777 {
 } ;
 /* END ENUM __anonenum_230064777 LOC=./lib/timespec.h:51 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_vGQL_argv LOC=UNKNOWN */
+char **_TIG_IZ_vGQL_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_vGQL_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin___strlcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
    unsigned long long __builtin___strlcpy_chk(char * , char const   * , unsigned long long  ,
@@ -12762,6 +12758,10 @@ typedef unsigned long active_reg_t;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) random_r)(struct random_data * __restrict  __buf ,
                                                                                                  int32_t * __restrict  __result ) ;
 /* END FUNCTION-DECL-EXTERN random_r LOC=/usr/include/stdlib.h:554 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_vGQL_envp LOC=UNKNOWN */
+char **_TIG_IZ_vGQL_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_vGQL_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN select LOC=/usr/include/sys/select.h:102 */
 #line 102 "/usr/include/sys/select.h"
@@ -15768,7 +15768,7 @@ __inline extern void ( /* format attribute */ __attribute__((__gnu_inline__, __a
 /* END FUNCTION-DEF error LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_ngsS_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_vGQL_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_9 ;
   int init_elems1_inline_1_inline_8 ;
@@ -16809,34 +16809,34 @@ int main(int argc , char **argv , char **_TIG_IZ_ngsS_formal_envp )
   }
   {
   {
-  _TIG_IZ_ngsS_envp = (char **)0;
-  goto _TIG_IZ_ngsS_envp__INITINLINE__TIG_IZ_ngsS_envp__INIT;
+  _TIG_IZ_vGQL_envp = (char **)0;
+  goto _TIG_IZ_vGQL_envp__INITINLINE__TIG_IZ_vGQL_envp__INIT;
   }
-  _TIG_IZ_ngsS_envp__INITINLINE__TIG_IZ_ngsS_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_ngsS_argv = (char **)0;
-  goto _TIG_IZ_ngsS_argv__INITINLINE__TIG_IZ_ngsS_argv__INIT;
-  }
-  _TIG_IZ_ngsS_argv__INITINLINE__TIG_IZ_ngsS_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_vGQL_envp__INITINLINE__TIG_IZ_vGQL_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_ngsS_argc = 0;
-  goto _TIG_IZ_ngsS_argc__INITINLINE__TIG_IZ_ngsS_argc__INIT;
+  _TIG_IZ_vGQL_argv = (char **)0;
+  goto _TIG_IZ_vGQL_argv__INITINLINE__TIG_IZ_vGQL_argv__INIT;
   }
-  _TIG_IZ_ngsS_argc__INITINLINE__TIG_IZ_ngsS_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_vGQL_argv__INITINLINE__TIG_IZ_vGQL_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_vGQL_argc = 0;
+  goto _TIG_IZ_vGQL_argc__INITINLINE__TIG_IZ_vGQL_argc__INIT;
+  }
+  _TIG_IZ_vGQL_argc__INITINLINE__TIG_IZ_vGQL_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-ngsS--0":);
-    _TIG_IZ_ngsS_argc = argc;
-    _TIG_IZ_ngsS_argv = argv;
-    _TIG_IZ_ngsS_envp = _TIG_IZ_ngsS_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-vGQL--0":);
+    _TIG_IZ_vGQL_argc = argc;
+    _TIG_IZ_vGQL_argv = argv;
+    _TIG_IZ_vGQL_envp = _TIG_IZ_vGQL_formal_envp;
     break;
   }
 #line 1803 "src/ptx.c"
