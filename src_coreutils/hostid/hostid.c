@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_uuF2_envp": "FUN: '_TIG_IZ_uuF2_envp__INIT'",
-          "_TIG_IZ_uuF2_argv": "FUN: '_TIG_IZ_uuF2_argv__INIT'",
-          "_TIG_IZ_uuF2_argc": "FUN: '_TIG_IZ_uuF2_argc__INIT'"
+          "_TIG_IZ_KRuD_envp": "FUN: '_TIG_IZ_KRuD_envp__INIT'",
+          "_TIG_IZ_KRuD_argv": "FUN: '_TIG_IZ_KRuD_argv__INIT'",
+          "_TIG_IZ_KRuD_argc": "FUN: '_TIG_IZ_KRuD_argc__INIT'"
         }
       }
     },
@@ -1695,10 +1695,6 @@ extern FILE *tmpfile(void)  __attribute__((__malloc__(fclose,1), __malloc__, __m
 #line 4 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h"
 struct _IO_FILE ;
 /* END STRUCT-DECL _IO_FILE LOC=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:4 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_uuF2_envp LOC=UNKNOWN */
-char **_TIG_IZ_uuF2_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_uuF2_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN getpass LOC=/usr/include/unistd.h:981 */
 #line 981 "/usr/include/unistd.h"
@@ -3409,10 +3405,6 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) clearerr)(
    _Float128 __builtin_rintf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_rintf128 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_uuF2_argv LOC=UNKNOWN */
-char **_TIG_IZ_uuF2_argv ;
-/* END VARIABLE-DECL _TIG_IZ_uuF2_argv LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN readahead LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:398 */
 #line 398 "/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h"
 extern  __attribute__((__nothrow__)) __ssize_t ( __attribute__((__leaf__)) readahead)(int __fd ,
@@ -4765,6 +4757,10 @@ extern int ( __attribute__((__nonnull__(2,3))) scandirat64)(int __dfd , char con
                                                                          struct dirent64  const  ** ) ) ;
 /* END FUNCTION-DECL-EXTERN scandirat64 LOC=/usr/include/dirent.h:315 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_KRuD_envp LOC=UNKNOWN */
+char **_TIG_IZ_KRuD_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_KRuD_envp LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF __quad_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:63 */
 #line 63 "/usr/include/x86_64-linux-gnu/bits/types.h"
 typedef long __quad_t;
@@ -4799,10 +4795,6 @@ typedef int wchar_t;
 /* compiler builtin: 
    float __builtin_logf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_logf LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_uuF2_envp LOC=UNKNOWN */
-char **_TIG_IZ_uuF2_envp ;
-/* END VARIABLE-DECL _TIG_IZ_uuF2_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_cexpl LOC=BUILTIN */
 /* compiler builtin: 
@@ -5644,6 +5636,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
                                                                                                   _Float128 __f ) ;
 /* END FUNCTION-DECL-EXTERN strfromf128 LOC=/usr/include/stdlib.h:245 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_KRuD_argv LOC=UNKNOWN */
+char **_TIG_IZ_KRuD_argv ;
+/* END VARIABLE-DECL _TIG_IZ_KRuD_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_ia32_addps LOC=BUILTIN */
 /* compiler builtin: 
    float __attribute__((____vector_size____(16)))  __builtin_ia32_addps(float __attribute__((____vector_size____(16)))   ,
@@ -5839,6 +5835,10 @@ union __anonunion____missing_field_name_501150464 {
 #line 1689 "./lib/string.h"
 extern int ( __attribute__((__nonnull__(1,2))) mbscasecmp)(char const   *s1 , char const   *s2 )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN mbscasecmp LOC=./lib/string.h:1689 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_KRuD_argv LOC=UNKNOWN */
+char **_TIG_IZ_KRuD_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_KRuD_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_log2f16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -7034,7 +7034,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_uuF2_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_KRuD_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8656,6 +8656,10 @@ __leaf__)) strtof128_l)(char const   * __restrict  __nptr , char ** __restrict  
                         locale_t __loc ) ;
 /* END FUNCTION-DECL-EXTERN strtof128_l LOC=/usr/include/stdlib.h:331 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_KRuD_argc LOC=UNKNOWN */
+int _TIG_IZ_KRuD_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_KRuD_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN access LOC=/usr/include/unistd.h:287 */
 #line 287 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) access)(char const   *__name ,
@@ -9430,6 +9434,10 @@ extern  __attribute__((__nothrow__)) size_t ( __attribute__((__leaf__)) strftime
                                                                                     locale_t __loc ) ;
 /* END FUNCTION-DECL-EXTERN strftime_l LOC=/usr/include/time.h:116 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_KRuD_envp LOC=UNKNOWN */
+char **_TIG_IZ_KRuD_envp ;
+/* END VARIABLE-DECL _TIG_IZ_KRuD_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN getpgid LOC=/usr/include/unistd.h:661 */
 #line 661 "/usr/include/unistd.h"
 extern  __attribute__((__nothrow__)) __pid_t ( __attribute__((__leaf__)) getpgid)(__pid_t __pid ) ;
@@ -9646,6 +9654,10 @@ __malloc__, __alloc_size__(1,2))) ;
    _Bool __builtin_umull_overflow(unsigned long const    , unsigned long const    ,
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_KRuD_argc LOC=UNKNOWN */
+int _TIG_IZ_KRuD_argc ;
+/* END VARIABLE-DECL _TIG_IZ_KRuD_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=/usr/include/signal.h:208 */
 #line 208 "/usr/include/signal.h"
@@ -10104,10 +10116,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) tmpnam_r)
 #line 71 "/usr/include/stdint.h"
 typedef unsigned char uint_fast8_t;
 /* END TYPEDEF uint_fast8_t LOC=/usr/include/stdint.h:71 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_uuF2_argc LOC=UNKNOWN */
-int _TIG_IZ_uuF2_argc ;
-/* END VARIABLE-DECL _TIG_IZ_uuF2_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrtf16 LOC=BUILTIN */
 /* compiler builtin: 
@@ -11065,10 +11073,6 @@ struct infomap {
    double __builtin_creal(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_creal LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_uuF2_argv LOC=UNKNOWN */
-char **_TIG_IZ_uuF2_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_uuF2_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF int_least16_t LOC=/usr/include/stdint.h:44 */
 #line 44 "/usr/include/stdint.h"
 typedef __int_least16_t int_least16_t;
@@ -11573,10 +11577,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) ctime)(ti
 #line 224 "/usr/include/dirent.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) dirfd)(DIR *__dirp ) ;
 /* END FUNCTION-DECL-EXTERN dirfd LOC=/usr/include/dirent.h:224 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_uuF2_argc LOC=UNKNOWN */
-int _TIG_IZ_uuF2_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_uuF2_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_strcpy LOC=BUILTIN */
 /* compiler builtin: 
@@ -12885,7 +12885,7 @@ __inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct 
 /* END FUNCTION-DEF timespec_cmp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_uuF2_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_KRuD_formal_envp ) 
 { 
   unsigned int id ;
   char const   *tmp ;
@@ -12901,34 +12901,34 @@ int main(int argc , char **argv , char **_TIG_IZ_uuF2_formal_envp )
   {
   {
   {
-  _TIG_IZ_uuF2_envp = (char **)0;
-  goto _TIG_IZ_uuF2_envp__INITINLINE__TIG_IZ_uuF2_envp__INIT;
+  _TIG_IZ_KRuD_envp = (char **)0;
+  goto _TIG_IZ_KRuD_envp__INITINLINE__TIG_IZ_KRuD_envp__INIT;
   }
-  _TIG_IZ_uuF2_envp__INITINLINE__TIG_IZ_uuF2_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_uuF2_argv = (char **)0;
-  goto _TIG_IZ_uuF2_argv__INITINLINE__TIG_IZ_uuF2_argv__INIT;
-  }
-  _TIG_IZ_uuF2_argv__INITINLINE__TIG_IZ_uuF2_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_KRuD_envp__INITINLINE__TIG_IZ_KRuD_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_uuF2_argc = 0;
-  goto _TIG_IZ_uuF2_argc__INITINLINE__TIG_IZ_uuF2_argc__INIT;
+  _TIG_IZ_KRuD_argv = (char **)0;
+  goto _TIG_IZ_KRuD_argv__INITINLINE__TIG_IZ_KRuD_argv__INIT;
   }
-  _TIG_IZ_uuF2_argc__INITINLINE__TIG_IZ_uuF2_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_KRuD_argv__INITINLINE__TIG_IZ_KRuD_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_KRuD_argc = 0;
+  goto _TIG_IZ_KRuD_argc__INITINLINE__TIG_IZ_KRuD_argc__INIT;
+  }
+  _TIG_IZ_KRuD_argc__INITINLINE__TIG_IZ_KRuD_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-uuF2--0":);
-    _TIG_IZ_uuF2_argc = argc;
-    _TIG_IZ_uuF2_argv = argv;
-    _TIG_IZ_uuF2_envp = _TIG_IZ_uuF2_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-KRuD--0":);
+    _TIG_IZ_KRuD_argc = argc;
+    _TIG_IZ_KRuD_argv = argv;
+    _TIG_IZ_KRuD_envp = _TIG_IZ_KRuD_formal_envp;
     break;
   }
 #line 58 "src/hostid.c"

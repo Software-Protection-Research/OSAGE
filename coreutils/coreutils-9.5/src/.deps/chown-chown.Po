@@ -1,0 +1,6 @@
+src/chown-chown.o: src/chown-chown.c /usr/include/stdc-predef.h \
+ src/chown.h
+
+/usr/include/stdc-predef.h:
+
+src/chown.h:

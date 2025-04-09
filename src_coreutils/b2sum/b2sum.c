@@ -244,9 +244,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_dsab_envp": "FUN: '_TIG_IZ_dsab_envp__INIT'",
-          "_TIG_IZ_dsab_argv": "FUN: '_TIG_IZ_dsab_argv__INIT'",
-          "_TIG_IZ_dsab_argc": "FUN: '_TIG_IZ_dsab_argc__INIT'"
+          "_TIG_IZ_3eeR_envp": "FUN: '_TIG_IZ_3eeR_envp__INIT'",
+          "_TIG_IZ_3eeR_argv": "FUN: '_TIG_IZ_3eeR_argv__INIT'",
+          "_TIG_IZ_3eeR_argc": "FUN: '_TIG_IZ_3eeR_argc__INIT'"
         }
       }
     },
@@ -845,9 +845,9 @@ END-UNIVERSE
 */
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-HBkF7aG4.i","") */
-/* #pragma merger("0","/tmp/cil-P4pvqFeT.i","") */
-/* #pragma merger("0","/tmp/cil-VXwcWF1u.i","") */
+/* #pragma merger("0","/tmp/cil-8Z5af6qg.i","") */
+/* #pragma merger("0","/tmp/cil-hF6W6wWP.i","") */
+/* #pragma merger("0","/tmp/cil-NjwSXTE1.i","") */
 
 /* BEGIN STRUCT-DECL _IO_marker LOC=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:36 */
 struct _IO_marker ;
@@ -1451,6 +1451,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __le
                                                                                                     int *__longind ) ;
 /* END FUNCTION-DECL-EXTERN getopt_long LOC=/usr/include/x86_64-linux-gnu/bits/getopt_ext.h:66 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_3eeR_argv LOC=UNKNOWN */
+char **_TIG_IZ_3eeR_argv ;
+/* END VARIABLE-DECL _TIG_IZ_3eeR_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_ctz LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_ctz(unsigned int  ) ;  */
@@ -1878,6 +1882,10 @@ typedef __sigset_t sigset_t;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigpending)(sigset_t *__set ) ;
 /* END FUNCTION-DECL-EXTERN sigpending LOC=/usr/include/signal.h:247 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_3eeR_argc LOC=UNKNOWN */
+int _TIG_IZ_3eeR_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_3eeR_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN rpl_free LOC=./lib/string.h:678 */
 extern void rpl_free(void *ptr ) ;
 /* END FUNCTION-DECL-EXTERN rpl_free LOC=./lib/string.h:678 */
@@ -2272,10 +2280,6 @@ extern strtol_error xstrtol(char const   * , char ** , int  , long * , char cons
 extern void version_etc_arn(FILE *stream , char const   *command_name , char const   *package ,
                             char const   *version , char const   **authors , size_t n_authors ) ;
 /* END FUNCTION-DECL-EXTERN version_etc_arn LOC=./lib/version-etc.h:53 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_dsab_argv LOC=UNKNOWN */
-char **_TIG_IZ_dsab_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_dsab_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF register_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:164 */
 typedef int register_t;
@@ -6836,7 +6840,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_dsab_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_3eeR_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -6937,10 +6941,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) pthread_kil
 extern __ssize_t __getdelim(char ** __restrict  __lineptr , size_t * __restrict  __n ,
                             int __delimiter , FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN __getdelim LOC=/usr/include/stdio.h:632 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_dsab_envp LOC=UNKNOWN */
-char **_TIG_IZ_dsab_envp ;
-/* END VARIABLE-DECL _TIG_IZ_dsab_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strerror_r LOC=/usr/include/string.h:444 */
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(2), __leaf__)) strerror_r)(int __errnum ,
@@ -7896,6 +7896,10 @@ extern intmax_t ( __attribute__((__nonnull__(1,6))) xnumtoimax)(char const   *n_
                                                                 char const   *err ,
                                                                 int err_exit ) ;
 /* END FUNCTION-DECL-EXTERN xnumtoimax LOC=./lib/xdectoint.h:35 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_3eeR_envp LOC=UNKNOWN */
+char **_TIG_IZ_3eeR_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_3eeR_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_init_dwarf_reg_size_table LOC=BUILTIN */
 /* compiler builtin: 
@@ -9343,6 +9347,10 @@ static unsigned long buffer_length ;
                                   unsigned long * ) ;  */
 /* END FUNCTION-DECL __builtin_umull_overflow LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_3eeR_argc LOC=UNKNOWN */
+int _TIG_IZ_3eeR_argc ;
+/* END VARIABLE-DECL _TIG_IZ_3eeR_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN sigdelset LOC=/usr/include/signal.h:208 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) sigdelset)(sigset_t *__set ,
                                                                                                 int __signo ) ;
@@ -9947,10 +9955,6 @@ static _Bool status_only ;
 extern int open_by_handle_at(int __mountdirfd , struct file_handle *__handle , int __flags ) ;
 /* END FUNCTION-DECL-EXTERN open_by_handle_at LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:462 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_dsab_argc LOC=UNKNOWN */
-int _TIG_IZ_dsab_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_dsab_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN lstat LOC=/usr/include/x86_64-linux-gnu/sys/stat.h:313 */
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat)(char const   * __restrict  __file ,
                                                                                               struct stat * __restrict  __buf ) ;
@@ -10005,6 +10009,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) name_to_han
                                                                                         int *__mnt_id ,
                                                                                         int __flags ) ;
 /* END FUNCTION-DECL-EXTERN name_to_handle_at LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:454 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_3eeR_envp LOC=UNKNOWN */
+char **_TIG_IZ_3eeR_envp ;
+/* END VARIABLE-DECL _TIG_IZ_3eeR_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL c_isdigit LOC=UNKNOWN */
 __inline _Bool c_isdigit(int c ) ;
@@ -10127,10 +10135,6 @@ extern int blake2sp(void *out , size_t outlen , void const   *in , size_t inlen 
 /* BEGIN FUNCTION-DECL-EXTERN blake2sp_update LOC=src/blake2/blake2.h:162 */
 extern int blake2sp_update(blake2sp_state *S , void const   *in , size_t inlen ) ;
 /* END FUNCTION-DECL-EXTERN blake2sp_update LOC=src/blake2/blake2.h:162 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_dsab_argv LOC=UNKNOWN */
-char **_TIG_IZ_dsab_argv ;
-/* END VARIABLE-DECL _TIG_IZ_dsab_argv LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_852341087 LOC=/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:27 */
 enum __anonenum_852341087 {
@@ -10556,6 +10560,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    int __builtin_strcasecmp(char const   * , char const   * ) ;  */
 /* END FUNCTION-DECL __builtin_strcasecmp LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_3eeR_argv LOC=UNKNOWN */
+char **_TIG_IZ_3eeR_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_3eeR_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=/usr/include/stdio.h:314 */
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_memstream)(char **__bufloc ,
@@ -11395,10 +11403,6 @@ __inline static unsigned long select_plural(uintmax_t n ) ;
    unsigned long long __builtin_dynamic_object_size(void const   * , int  ) ;  */
 /* END FUNCTION-DECL __builtin_dynamic_object_size LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_dsab_argc LOC=UNKNOWN */
-int _TIG_IZ_dsab_argc ;
-/* END VARIABLE-DECL _TIG_IZ_dsab_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_extend_pointer LOC=BUILTIN */
 /* compiler builtin: 
    unsigned __int128 __builtin_extend_pointer(void * ) ;  */
@@ -11505,10 +11509,6 @@ extern struct tm *( __attribute__((__nonnull__(2,3))) localtime_rz)(timezone_t _
 /* compiler builtin: 
    _Float16 __builtin_fabsf16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_fabsf16 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_dsab_envp LOC=UNKNOWN */
-char **_TIG_IZ_dsab_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_dsab_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_ctan LOC=BUILTIN */
 /* compiler builtin: 
@@ -16460,7 +16460,7 @@ static _Bool digest_file(char const   *filename , int *binary , unsigned char *b
 /* END FUNCTION-DEF digest_file LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_dsab_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_3eeR_formal_envp ) 
 { 
   unsigned char bin_buffer_unaligned[72] ;
   unsigned char *bin_buffer ;
@@ -16939,34 +16939,34 @@ int main(int argc , char **argv , char **_TIG_IZ_dsab_formal_envp )
   }
   {
   {
-  _TIG_IZ_dsab_envp = (char **)0;
-  goto _TIG_IZ_dsab_envp__INITINLINE__TIG_IZ_dsab_envp__INIT;
+  _TIG_IZ_3eeR_envp = (char **)0;
+  goto _TIG_IZ_3eeR_envp__INITINLINE__TIG_IZ_3eeR_envp__INIT;
   }
-  _TIG_IZ_dsab_envp__INITINLINE__TIG_IZ_dsab_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_dsab_argv = (char **)0;
-  goto _TIG_IZ_dsab_argv__INITINLINE__TIG_IZ_dsab_argv__INIT;
-  }
-  _TIG_IZ_dsab_argv__INITINLINE__TIG_IZ_dsab_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_3eeR_envp__INITINLINE__TIG_IZ_3eeR_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_dsab_argc = 0;
-  goto _TIG_IZ_dsab_argc__INITINLINE__TIG_IZ_dsab_argc__INIT;
+  _TIG_IZ_3eeR_argv = (char **)0;
+  goto _TIG_IZ_3eeR_argv__INITINLINE__TIG_IZ_3eeR_argv__INIT;
   }
-  _TIG_IZ_dsab_argc__INITINLINE__TIG_IZ_dsab_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_3eeR_argv__INITINLINE__TIG_IZ_3eeR_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_3eeR_argc = 0;
+  goto _TIG_IZ_3eeR_argc__INITINLINE__TIG_IZ_3eeR_argc__INIT;
+  }
+  _TIG_IZ_3eeR_argc__INITINLINE__TIG_IZ_3eeR_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-dsab--0":);
-    _TIG_IZ_dsab_argc = argc;
-    _TIG_IZ_dsab_argv = argv;
-    _TIG_IZ_dsab_envp = _TIG_IZ_dsab_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-3eeR--0":);
+    _TIG_IZ_3eeR_argc = argc;
+    _TIG_IZ_3eeR_argv = argv;
+    _TIG_IZ_3eeR_envp = _TIG_IZ_3eeR_formal_envp;
     break;
   }
 #line 1348

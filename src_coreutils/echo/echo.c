@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast c_isalnum c_isalpha c_isascii c_isblank c_iscntrl c_isdigit c_isgraph c_islower c_isprint c_ispunct c_isspace c_isupper c_isxdigit c_tolower c_toupper chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd hextobin initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec npgettext_aux pgettext_aux psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_P8sl_envp": "FUN: '_TIG_IZ_P8sl_envp__INIT'",
-          "_TIG_IZ_P8sl_argv": "FUN: '_TIG_IZ_P8sl_argv__INIT'",
-          "_TIG_IZ_P8sl_argc": "FUN: '_TIG_IZ_P8sl_argc__INIT'"
+          "_TIG_IZ_am2l_envp": "FUN: '_TIG_IZ_am2l_envp__INIT'",
+          "_TIG_IZ_am2l_argv": "FUN: '_TIG_IZ_am2l_argv__INIT'",
+          "_TIG_IZ_am2l_argc": "FUN: '_TIG_IZ_am2l_argc__INIT'"
         }
       }
     },
@@ -1600,6 +1600,10 @@ struct _xmmreg {
 extern int fputs(char const   * __restrict  __s , FILE * __restrict  __stream ) ;
 /* END FUNCTION-DECL-EXTERN fputs LOC=/usr/include/stdio.h:655 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_am2l_envp LOC=UNKNOWN */
+char **_TIG_IZ_am2l_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_am2l_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN funlockfile LOC=/usr/include/stdio.h:874 */
 #line 874
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) funlockfile)(FILE *__stream ) ;
@@ -2824,10 +2828,6 @@ extern int _gl_cxxalias_dummy ;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) vhangup)(void) ;
 /* END FUNCTION-DECL-EXTERN vhangup LOC=/usr/include/unistd.h:939 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_P8sl_argc LOC=UNKNOWN */
-int _TIG_IZ_P8sl_argc ;
-/* END VARIABLE-DECL _TIG_IZ_P8sl_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_nanf128 LOC=BUILTIN */
 /* compiler builtin: 
    _Float128 __builtin_nanf128(char const   * ) ;  */
@@ -3768,6 +3768,10 @@ extern char const   *quoting_style_args[] ;
 /* compiler builtin: 
    int __builtin_ctzll(unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_ctzll LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_am2l_argc LOC=UNKNOWN */
+int _TIG_IZ_am2l_argc ;
+/* END VARIABLE-DECL _TIG_IZ_am2l_argc LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_640648963 LOC=/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:71 */
 #line 71 "/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h"
@@ -4910,10 +4914,6 @@ extern  __attribute__((__nothrow__)) imaxdiv_t ( __attribute__((__leaf__)) imaxd
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) atoi)(char const   *__nptr )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN atoi LOC=/usr/include/stdlib.h:105 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_P8sl_argc LOC=UNKNOWN */
-int _TIG_IZ_P8sl_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_P8sl_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strfromf LOC=/usr/include/stdlib.h:217 */
 #line 217
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf__)) strfromf)(char *__dest ,
@@ -5241,10 +5241,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2,3), __le
    unsigned short *__builtin_wmemchr(unsigned short * const   , unsigned short  ,
                                      unsigned long long  ) ;  */
 /* END FUNCTION-DECL __builtin_wmemchr LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_P8sl_envp LOC=UNKNOWN */
-char **_TIG_IZ_P8sl_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_P8sl_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_rint LOC=BUILTIN */
 /* compiler builtin: 
@@ -6841,10 +6837,6 @@ enum __anonenum_457704180 {
 } ;
 /* END ENUM __anonenum_457704180 LOC=/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:94 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_P8sl_envp LOC=UNKNOWN */
-char **_TIG_IZ_P8sl_envp ;
-/* END VARIABLE-DECL _TIG_IZ_P8sl_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF sig_t LOC=/usr/include/signal.h:193 */
 #line 193 "/usr/include/signal.h"
 typedef void (*sig_t)(int  );
@@ -6986,6 +6978,10 @@ extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) wcsto
                                                                                       int __base ) ;
 /* END FUNCTION-DECL-EXTERN wcstoumax LOC=/usr/include/inttypes.h:310 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_am2l_envp LOC=UNKNOWN */
+char **_TIG_IZ_am2l_envp ;
+/* END VARIABLE-DECL _TIG_IZ_am2l_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL timespec_cmp LOC=UNKNOWN */
 __inline int __attribute__((__pure__))  timespec_cmp(struct timespec a , struct timespec b ) ;
 /* END FUNCTION-DECL timespec_cmp LOC=UNKNOWN */
@@ -7068,7 +7064,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_P8sl_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_am2l_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -7088,6 +7084,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) futimesat)(
 extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) setbuf)(FILE * __restrict  __stream ,
                                                                               char * __restrict  __buf ) ;
 /* END FUNCTION-DECL-EXTERN setbuf LOC=/usr/include/stdio.h:328 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_am2l_argv LOC=UNKNOWN */
+char **_TIG_IZ_am2l_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_am2l_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN wctomb LOC=/usr/include/stdlib.h:937 */
 #line 937 "/usr/include/stdlib.h"
@@ -7937,10 +7937,6 @@ typedef struct __anonstruct_ldiv_t_790849867 ldiv_t;
 /* compiler builtin: 
    _Float128 __builtin_fdimf128(_Float128  , _Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf128 LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_P8sl_argv LOC=UNKNOWN */
-char **_TIG_IZ_P8sl_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_P8sl_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin___stpcpy_chk LOC=BUILTIN */
 /* compiler builtin: 
@@ -9227,6 +9223,10 @@ __inline static __uint64_t __bswap_64(__uint64_t __bsx ) ;
 /* compiler builtin: 
    float __builtin_powf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_powf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_am2l_argv LOC=UNKNOWN */
+char **_TIG_IZ_am2l_argv ;
+/* END VARIABLE-DECL _TIG_IZ_am2l_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_tanhl LOC=BUILTIN */
 /* compiler builtin: 
@@ -10927,6 +10927,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
    _Bool __builtin_saddl_overflow(long const    , long const    , long * ) ;  */
 /* END FUNCTION-DECL __builtin_saddl_overflow LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_am2l_argc LOC=UNKNOWN */
+int _TIG_IZ_am2l_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_am2l_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN open_memstream LOC=/usr/include/stdio.h:314 */
 #line 314 "/usr/include/stdio.h"
 extern  __attribute__((__nothrow__)) FILE *( __attribute__((__leaf__)) open_memstream)(char **__bufloc ,
@@ -11261,10 +11265,6 @@ extern __ssize_t splice(int __fdin , __off64_t *__offin , int __fdout , __off64_
 extern int clock_nanosleep(clockid_t __clock_id , int __flags , struct timespec  const  *__req ,
                            struct timespec *__rem ) ;
 /* END FUNCTION-DECL-EXTERN clock_nanosleep LOC=/usr/include/time.h:311 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_P8sl_argv LOC=UNKNOWN */
-char **_TIG_IZ_P8sl_argv ;
-/* END VARIABLE-DECL _TIG_IZ_P8sl_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN __getpgid LOC=/usr/include/unistd.h:659 */
 #line 659 "/usr/include/unistd.h"
@@ -14204,7 +14204,7 @@ __inline static void emit_stdin_note(void)
 /* END FUNCTION-DEF emit_stdin_note LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_P8sl_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_am2l_formal_envp ) 
 { 
   _Bool display_return ;
   _Bool posixly_correct ;
@@ -14239,34 +14239,34 @@ int main(int argc , char **argv , char **_TIG_IZ_P8sl_formal_envp )
   {
   {
   {
-  _TIG_IZ_P8sl_envp = (char **)0;
-  goto _TIG_IZ_P8sl_envp__INITINLINE__TIG_IZ_P8sl_envp__INIT;
+  _TIG_IZ_am2l_envp = (char **)0;
+  goto _TIG_IZ_am2l_envp__INITINLINE__TIG_IZ_am2l_envp__INIT;
   }
-  _TIG_IZ_P8sl_envp__INITINLINE__TIG_IZ_P8sl_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_P8sl_argv = (char **)0;
-  goto _TIG_IZ_P8sl_argv__INITINLINE__TIG_IZ_P8sl_argv__INIT;
-  }
-  _TIG_IZ_P8sl_argv__INITINLINE__TIG_IZ_P8sl_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_am2l_envp__INITINLINE__TIG_IZ_am2l_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_P8sl_argc = 0;
-  goto _TIG_IZ_P8sl_argc__INITINLINE__TIG_IZ_P8sl_argc__INIT;
+  _TIG_IZ_am2l_argv = (char **)0;
+  goto _TIG_IZ_am2l_argv__INITINLINE__TIG_IZ_am2l_argv__INIT;
   }
-  _TIG_IZ_P8sl_argc__INITINLINE__TIG_IZ_P8sl_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_am2l_argv__INITINLINE__TIG_IZ_am2l_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_am2l_argc = 0;
+  goto _TIG_IZ_am2l_argc__INITINLINE__TIG_IZ_am2l_argc__INIT;
+  }
+  _TIG_IZ_am2l_argc__INITINLINE__TIG_IZ_am2l_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-P8sl--0":);
-    _TIG_IZ_P8sl_argc = argc;
-    _TIG_IZ_P8sl_argv = argv;
-    _TIG_IZ_P8sl_envp = _TIG_IZ_P8sl_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-am2l--0":);
+    _TIG_IZ_am2l_argc = argc;
+    _TIG_IZ_am2l_argv = argv;
+    _TIG_IZ_am2l_envp = _TIG_IZ_am2l_formal_envp;
     break;
   }
 #line 115 "src/echo.c"

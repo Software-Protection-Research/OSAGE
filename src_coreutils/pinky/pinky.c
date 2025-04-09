@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat count_ampersands create_fullname dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd idle_string initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm long_pinky main make_timespec npgettext_aux pgettext_aux print_entry print_heading print_long_entry psame_inode ptr_align readdir_ignoring_dot_and_dotdot scan_entries select_plural short_pinky stzncpy time_string timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_mqgP_envp": "FUN: '_TIG_IZ_mqgP_envp__INIT'",
-          "_TIG_IZ_mqgP_argv": "FUN: '_TIG_IZ_mqgP_argv__INIT'",
-          "_TIG_IZ_mqgP_argc": "FUN: '_TIG_IZ_mqgP_argc__INIT'"
+          "_TIG_IZ_vc25_envp": "FUN: '_TIG_IZ_vc25_envp__INIT'",
+          "_TIG_IZ_vc25_argv": "FUN: '_TIG_IZ_vc25_argv__INIT'",
+          "_TIG_IZ_vc25_argc": "FUN: '_TIG_IZ_vc25_argc__INIT'"
         }
       }
     },
@@ -2464,6 +2464,10 @@ extern size_t quotearg_buffer(char * __restrict  buffer , size_t buffersize , ch
    long double __builtin_scalblnl(long double  , long  ) ;  */
 /* END FUNCTION-DECL __builtin_scalblnl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_vc25_argv LOC=UNKNOWN */
+char **_TIG_IZ_vc25_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_vc25_argv LOC=UNKNOWN */
+
 /* BEGIN STRUCT-DECL _IO_wide_data LOC=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:38 */
 #line 38 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h"
 struct _IO_wide_data ;
@@ -3038,10 +3042,6 @@ typedef long __kernel_long_t;
 #line 624 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf__)) exit)(int __status ) ;
 /* END FUNCTION-DECL-EXTERN exit LOC=/usr/include/stdlib.h:624 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_mqgP_argv LOC=UNKNOWN */
-char **_TIG_IZ_mqgP_argv ;
-/* END VARIABLE-DECL _TIG_IZ_mqgP_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN putc_unlocked LOC=/usr/include/stdio.h:573 */
 #line 573 "/usr/include/stdio.h"
@@ -5352,10 +5352,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
                                                                                                , ...) ;
 /* END FUNCTION-DECL-EXTERN execle LOC=/usr/include/unistd.h:589 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_mqgP_argc LOC=UNKNOWN */
-int _TIG_IZ_mqgP_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_mqgP_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN execvpe LOC=/usr/include/unistd.h:611 */
 #line 611
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) execvpe)(char const   *__file ,
@@ -5697,6 +5693,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    float __builtin_truncf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_truncf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_vc25_argv LOC=UNKNOWN */
+char **_TIG_IZ_vc25_argv ;
+/* END VARIABLE-DECL _TIG_IZ_vc25_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF uint64_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:27 */
 #line 27 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h"
@@ -6985,6 +6985,10 @@ typedef __uint_least16_t uint_least16_t;
 extern  __attribute__((__nothrow__)) __uid_t ( __attribute__((__leaf__)) getuid)(void) ;
 /* END FUNCTION-DECL-EXTERN getuid LOC=/usr/include/unistd.h:697 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_vc25_envp LOC=UNKNOWN */
+char **_TIG_IZ_vc25_envp ;
+/* END VARIABLE-DECL _TIG_IZ_vc25_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN fsetpos64 LOC=/usr/include/stdio.h:782 */
 #line 782 "/usr/include/stdio.h"
 extern int fsetpos64(FILE *__stream , fpos64_t const   *__pos ) ;
@@ -7271,10 +7275,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isxdigit)(i
 /* compiler builtin: 
    void __builtin_complex(...) ;  */
 /* END FUNCTION-DECL __builtin_complex LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_mqgP_argv LOC=UNKNOWN */
-char **_TIG_IZ_mqgP_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_mqgP_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_isinf_sign LOC=BUILTIN */
 /* compiler builtin: 
@@ -7617,7 +7617,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=/usr/include/stdlib.h:555 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_mqgP_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_vc25_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -8998,6 +8998,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* compiler builtin: 
    double __builtin_tgamma(double  ) ;  */
 /* END FUNCTION-DECL __builtin_tgamma LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_vc25_envp LOC=UNKNOWN */
+char **_TIG_IZ_vc25_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_vc25_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int_least64_t LOC=/usr/include/stdint.h:46 */
 #line 46 "/usr/include/stdint.h"
@@ -11239,6 +11243,10 @@ extern  __attribute__((__nothrow__, __deprecated__("Use the sigprocmask function
    float __builtin_copysignf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_copysignf LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_vc25_argc LOC=UNKNOWN */
+int _TIG_IZ_vc25_argc ;
+/* END VARIABLE-DECL _TIG_IZ_vc25_argc LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN ptsname_r LOC=/usr/include/stdlib.h:1002 */
 #line 1002 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) ptsname_r)(int __fd ,
@@ -11324,6 +11332,10 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) l64a)(lon
 #line 71 "./lib/basename-lgpl.h"
 extern char *last_component(char const   *filename )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN last_component LOC=./lib/basename-lgpl.h:71 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_vc25_argc LOC=UNKNOWN */
+int _TIG_IZ_vc25_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_vc25_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fork LOC=/usr/include/unistd.h:778 */
 #line 778 "/usr/include/unistd.h"
@@ -11675,10 +11687,6 @@ extern int ( /* format attribute */  vfscanf)(FILE * __restrict  __s , char cons
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) getitimer)(__itimer_which_t __which ,
                                                                                 struct itimerval *__value ) ;
 /* END FUNCTION-DECL-EXTERN getitimer LOC=/usr/include/x86_64-linux-gnu/sys/time.h:149 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_mqgP_envp LOC=UNKNOWN */
-char **_TIG_IZ_mqgP_envp ;
-/* END VARIABLE-DECL _TIG_IZ_mqgP_envp LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __u8 LOC=/usr/include/asm-generic/int-ll64.h:21 */
 #line 21 "/usr/include/asm-generic/int-ll64.h"
@@ -12180,10 +12188,6 @@ static char *time_format  ;
    void *__builtin_frame_address(unsigned int  ) ;  */
 /* END FUNCTION-DECL __builtin_frame_address LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_mqgP_argc LOC=UNKNOWN */
-int _TIG_IZ_mqgP_argc ;
-/* END VARIABLE-DECL _TIG_IZ_mqgP_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN pututxline LOC=/usr/include/utmpx.h:83 */
 #line 83 "/usr/include/utmpx.h"
 extern struct utmpx *pututxline(struct utmpx  const  *__utmpx ) ;
@@ -12606,10 +12610,6 @@ typedef unsigned long uint_fast32_t;
 #line 73 "./lib/setlocale_null.h"
 extern char const   *setlocale_null_unlocked(int category ) ;
 /* END FUNCTION-DECL-EXTERN setlocale_null_unlocked LOC=./lib/setlocale_null.h:73 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_mqgP_envp LOC=UNKNOWN */
-char **_TIG_IZ_mqgP_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_mqgP_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN logout LOC=/usr/include/utmp.h:48 */
 #line 48 "/usr/include/utmp.h"
@@ -14255,7 +14255,7 @@ __inline static void emit_exec_status(char const   *program )
 /* END FUNCTION-DEF emit_exec_status LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_mqgP_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_vc25_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_3 ;
   int init_elems1_inline_1_inline_2 ;
@@ -14408,34 +14408,34 @@ int main(int argc , char **argv , char **_TIG_IZ_mqgP_formal_envp )
   }
   {
   {
-  _TIG_IZ_mqgP_envp = (char **)0;
-  goto _TIG_IZ_mqgP_envp__INITINLINE__TIG_IZ_mqgP_envp__INIT;
+  _TIG_IZ_vc25_envp = (char **)0;
+  goto _TIG_IZ_vc25_envp__INITINLINE__TIG_IZ_vc25_envp__INIT;
   }
-  _TIG_IZ_mqgP_envp__INITINLINE__TIG_IZ_mqgP_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_mqgP_argv = (char **)0;
-  goto _TIG_IZ_mqgP_argv__INITINLINE__TIG_IZ_mqgP_argv__INIT;
-  }
-  _TIG_IZ_mqgP_argv__INITINLINE__TIG_IZ_mqgP_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_vc25_envp__INITINLINE__TIG_IZ_vc25_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_mqgP_argc = 0;
-  goto _TIG_IZ_mqgP_argc__INITINLINE__TIG_IZ_mqgP_argc__INIT;
+  _TIG_IZ_vc25_argv = (char **)0;
+  goto _TIG_IZ_vc25_argv__INITINLINE__TIG_IZ_vc25_argv__INIT;
   }
-  _TIG_IZ_mqgP_argc__INITINLINE__TIG_IZ_mqgP_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_vc25_argv__INITINLINE__TIG_IZ_vc25_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_vc25_argc = 0;
+  goto _TIG_IZ_vc25_argc__INITINLINE__TIG_IZ_vc25_argc__INIT;
+  }
+  _TIG_IZ_vc25_argc__INITINLINE__TIG_IZ_vc25_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-mqgP--0":);
-    _TIG_IZ_mqgP_argc = argc;
-    _TIG_IZ_mqgP_argv = argv;
-    _TIG_IZ_mqgP_envp = _TIG_IZ_mqgP_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-vc25--0":);
+    _TIG_IZ_vc25_argc = argc;
+    _TIG_IZ_vc25_argv = argv;
+    _TIG_IZ_vc25_envp = _TIG_IZ_vc25_formal_envp;
     break;
   }
 #line 535 "src/pinky.c"

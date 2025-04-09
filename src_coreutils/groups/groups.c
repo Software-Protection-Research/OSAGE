@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast chmodat chownat dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd gidtostr_ptr initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm main make_timespec npgettext_aux pgettext_aux print_group print_group_list psame_inode ptr_align readdir_ignoring_dot_and_dotdot select_plural stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_7OqJ_envp": "FUN: '_TIG_IZ_7OqJ_envp__INIT'",
-          "_TIG_IZ_7OqJ_argv": "FUN: '_TIG_IZ_7OqJ_argv__INIT'",
-          "_TIG_IZ_7OqJ_argc": "FUN: '_TIG_IZ_7OqJ_argc__INIT'"
+          "_TIG_IZ_N8SR_envp": "FUN: '_TIG_IZ_N8SR_envp__INIT'",
+          "_TIG_IZ_N8SR_argv": "FUN: '_TIG_IZ_N8SR_argv__INIT'",
+          "_TIG_IZ_N8SR_argc": "FUN: '_TIG_IZ_N8SR_argc__INIT'"
         }
       }
     },
@@ -809,8 +809,8 @@ END-UNIVERSE
 
 #pragma GCC diagnostic ignored "-Wtype-limits"
 #pragma GCC diagnostic ignored "-Wtype-limits"
-/* #pragma merger("0","/tmp/cil-7jyrXzoq.i","") */
-/* #pragma merger("0","/tmp/cil-BRXqvRi1.i","") */
+/* #pragma merger("0","/tmp/cil-xegHtIPB.i","") */
+/* #pragma merger("0","/tmp/cil-Qfh5SWKa.i","") */
 
 /* BEGIN STRUCT-DECL __dirstream LOC=/usr/include/dirent.h:127 */
 struct __dirstream ;
@@ -1903,6 +1903,10 @@ extern char *quotearg_custom_mem(char const   *left_quote , char const   *right_
 /* compiler builtin: 
    long long __builtin_llrintf(float  ) ;  */
 /* END FUNCTION-DECL __builtin_llrintf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_N8SR_argc LOC=UNKNOWN */
+int _TIG_IZ_N8SR_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_N8SR_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF pthread_spinlock_t LOC=/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:103 */
 typedef int volatile   pthread_spinlock_t;
@@ -3954,10 +3958,6 @@ extern void *xizalloc(idx_t s )  __attribute__((__returns_nonnull__, __malloc__(
 __malloc__, __alloc_size__(1))) ;
 /* END FUNCTION-DECL-EXTERN xizalloc LOC=./lib/xalloc.h:71 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_7OqJ_argv LOC=UNKNOWN */
-char **_TIG_IZ_7OqJ_argv ;
-/* END VARIABLE-DECL _TIG_IZ_7OqJ_argv LOC=UNKNOWN */
-
 /* BEGIN ENUM __anonenum_180375148___0 LOC=/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:119 */
 enum __anonenum_180375148___0 {
     SEGV_MAPERR___0 = 1,
@@ -5532,10 +5532,6 @@ extern char const   *getprogname(void)  __attribute__((__pure__)) ;
 struct quoting_options ;
 /* END STRUCT-DECL quoting_options LOC=./lib/quotearg.h:275 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_7OqJ_envp LOC=UNKNOWN */
-char **_TIG_IZ_7OqJ_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_7OqJ_envp LOC=UNKNOWN */
-
 /* BEGIN VARIABLE-DECL-EXTERN tzname LOC=/usr/include/time.h:224 */
 extern char *tzname[2] ;
 /* END VARIABLE-DECL-EXTERN tzname LOC=/usr/include/time.h:224 */
@@ -5641,6 +5637,10 @@ extern int getdate_r(char const   * __restrict  __string , struct tm * __restric
 /* compiler builtin: 
    float __builtin_fdimf(float  , float  ) ;  */
 /* END FUNCTION-DECL __builtin_fdimf LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_N8SR_envp LOC=UNKNOWN */
+char **_TIG_IZ_N8SR_envp ;
+/* END VARIABLE-DECL _TIG_IZ_N8SR_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN xcharalloc LOC=./lib/xalloc.h:155 */
 extern char *xcharalloc(size_t n )  __attribute__((__returns_nonnull__, __malloc__(rpl_free,1),
@@ -6325,6 +6325,10 @@ extern  __attribute__((__nothrow__)) clock_t ( __attribute__((__leaf__)) clock)(
 typedef __uint16_t uint16_t;
 /* END TYPEDEF uint16_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:25 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_N8SR_envp LOC=UNKNOWN */
+char **_TIG_IZ_N8SR_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_N8SR_envp LOC=UNKNOWN */
+
 /* BEGIN STRUCT iovec LOC=/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:26 */
 struct iovec {
    void *iov_base ;
@@ -6657,7 +6661,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=/usr/include/stdlib.h:555 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_7OqJ_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_N8SR_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7011,10 +7015,6 @@ extern char *( __attribute__((__warn_unused_result__)) uinttostr)(unsigned int  
 typedef struct __anonstruct___once_flag_977079261 __once_flag;
 /* END TYPEDEF __once_flag LOC=/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:108 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_7OqJ_envp LOC=UNKNOWN */
-char **_TIG_IZ_7OqJ_envp ;
-/* END VARIABLE-DECL _TIG_IZ_7OqJ_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN print_group LOC=src/group-list.h:18 */
 extern _Bool print_group(gid_t gid , _Bool use_name ) ;
 /* END FUNCTION-DECL-EXTERN print_group LOC=src/group-list.h:18 */
@@ -7059,10 +7059,6 @@ typedef long int_fast16_t;
 /* BEGIN FUNCTION-DECL-EXTERN strerrorname_np LOC=/usr/include/string.h:452 */
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrorname_np)(int __err ) ;
 /* END FUNCTION-DECL-EXTERN strerrorname_np LOC=/usr/include/string.h:452 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_7OqJ_argc LOC=UNKNOWN */
-int _TIG_IZ_7OqJ_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_7OqJ_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_wcsncmp LOC=BUILTIN */
 /* compiler builtin: 
@@ -9223,6 +9219,10 @@ extern struct passwd *getpwent(void) ;
    _Float128 __builtin_erff128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_erff128 LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_N8SR_argc LOC=UNKNOWN */
+int _TIG_IZ_N8SR_argc ;
+/* END VARIABLE-DECL _TIG_IZ_N8SR_argc LOC=UNKNOWN */
+
 /* BEGIN TYPEDEF __u_long LOC=/usr/include/x86_64-linux-gnu/bits/types.h:34 */
 typedef unsigned long __u_long;
 /* END TYPEDEF __u_long LOC=/usr/include/x86_64-linux-gnu/bits/types.h:34 */
@@ -9290,6 +9290,10 @@ extern  __attribute__((__nothrow__)) uintmax_t ( __attribute__((__leaf__)) strto
                                                                                       char ** __restrict  __endptr ,
                                                                                       int __base ) ;
 /* END FUNCTION-DECL-EXTERN strtoumax LOC=/usr/include/inttypes.h:301 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_N8SR_argv LOC=UNKNOWN */
+char **_TIG_IZ_N8SR_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_N8SR_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_exp LOC=BUILTIN */
 /* compiler builtin: 
@@ -9857,6 +9861,10 @@ extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __lea
    int __builtin_popcountl(unsigned long  ) ;  */
 /* END FUNCTION-DECL __builtin_popcountl LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_N8SR_argv LOC=UNKNOWN */
+char **_TIG_IZ_N8SR_argv ;
+/* END VARIABLE-DECL _TIG_IZ_N8SR_argv LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL __builtin_parity LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_parity(unsigned int  ) ;  */
@@ -10079,10 +10087,6 @@ extern int fseeko64(FILE *__stream , __off64_t __off , int __whence ) ;
 extern  __attribute__((__nothrow__)) char *( __attribute__((__nonnull__(1,2), __leaf__)) strsep)(char ** __restrict  __stringp ,
                                                                                                  char const   * __restrict  __delim ) ;
 /* END FUNCTION-DECL-EXTERN strsep LOC=/usr/include/string.h:471 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_7OqJ_argv LOC=UNKNOWN */
-char **_TIG_IZ_7OqJ_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_7OqJ_argv LOC=UNKNOWN */
 
 /* BEGIN ENUM __anonenum_852341087 LOC=/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:27 */
 enum __anonenum_852341087 {
@@ -11094,10 +11098,6 @@ extern int ( __attribute__((__nonnull__(1))) sigsuspend)(sigset_t const   *__set
    _Float16 __builtin_canonicalizef16(_Float16  ) ;  */
 /* END FUNCTION-DECL __builtin_canonicalizef16 LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_7OqJ_argc LOC=UNKNOWN */
-int _TIG_IZ_7OqJ_argc ;
-/* END VARIABLE-DECL _TIG_IZ_7OqJ_argc LOC=UNKNOWN */
-
 /* BEGIN STRUCT flock LOC=/usr/include/x86_64-linux-gnu/bits/fcntl.h:35 */
 struct flock {
    short l_type ;
@@ -11794,7 +11794,7 @@ __inline int chmodat(int fd , char const   *file , mode_t mode )
 /* END FUNCTION-DEF chmodat LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_7OqJ_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_N8SR_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_1 ;
   int optc ;
@@ -11872,34 +11872,34 @@ int main(int argc , char **argv , char **_TIG_IZ_7OqJ_formal_envp )
   }
   {
   {
-  _TIG_IZ_7OqJ_envp = (char **)0;
-  goto _TIG_IZ_7OqJ_envp__INITINLINE__TIG_IZ_7OqJ_envp__INIT;
+  _TIG_IZ_N8SR_envp = (char **)0;
+  goto _TIG_IZ_N8SR_envp__INITINLINE__TIG_IZ_N8SR_envp__INIT;
   }
-  _TIG_IZ_7OqJ_envp__INITINLINE__TIG_IZ_7OqJ_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_7OqJ_argv = (char **)0;
-  goto _TIG_IZ_7OqJ_argv__INITINLINE__TIG_IZ_7OqJ_argv__INIT;
-  }
-  _TIG_IZ_7OqJ_argv__INITINLINE__TIG_IZ_7OqJ_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_N8SR_envp__INITINLINE__TIG_IZ_N8SR_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_7OqJ_argc = 0;
-  goto _TIG_IZ_7OqJ_argc__INITINLINE__TIG_IZ_7OqJ_argc__INIT;
+  _TIG_IZ_N8SR_argv = (char **)0;
+  goto _TIG_IZ_N8SR_argv__INITINLINE__TIG_IZ_N8SR_argv__INIT;
   }
-  _TIG_IZ_7OqJ_argc__INITINLINE__TIG_IZ_7OqJ_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_N8SR_argv__INITINLINE__TIG_IZ_N8SR_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_N8SR_argc = 0;
+  goto _TIG_IZ_N8SR_argc__INITINLINE__TIG_IZ_N8SR_argc__INIT;
+  }
+  _TIG_IZ_N8SR_argc__INITINLINE__TIG_IZ_N8SR_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-7OqJ--0":);
-    _TIG_IZ_7OqJ_argc = argc;
-    _TIG_IZ_7OqJ_argv = argv;
-    _TIG_IZ_7OqJ_envp = _TIG_IZ_7OqJ_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-N8SR--0":);
+    _TIG_IZ_N8SR_argc = argc;
+    _TIG_IZ_N8SR_argv = argv;
+    _TIG_IZ_N8SR_envp = _TIG_IZ_N8SR_formal_envp;
     break;
   }
 #line 70 "src/groups.c"

@@ -1,0 +1,6 @@
+src/chown-chgrp.o: src/chown-chgrp.c /usr/include/stdc-predef.h \
+ src/chown.h
+
+/usr/include/stdc-predef.h:
+
+src/chown.h:

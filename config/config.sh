@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_coreutils"
+export abcdef_dir_src="${abcdef_dir_base}/src_strings"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -121,6 +121,27 @@ else
 fi
 
 # --------------------------------------------------------------------
+
+# ----LLVM config ---------------------------------------------------
+# LLVM oslatest - latest version coming from the OS (debian) repo
+LLVM_OBFUSCATOR=true
+run_llvm_obfuscator() {
+    if [ "$LLVM_OBFUSCATOR" = true ]; then
+        # LLVM oslatest - latest version coming from the Docker container
+        export llvm_versions="oslatest"
+        llvm_container_name="llvm-container"  # Replace with your container name or ID
+        llvm_prog_oslatest="docker exec ${llvm_container_name} llvm-config"
+        export llvm_prog_oslatest
+        export llvm_header_oslatest=""
+        export llvm_flags_oslatest=""
+        echo "Starting LLVM obfuscation process..."
+         docker run \
+            -v $(pwd)/target/src/foo-bar-baz.test.c:/app/in/target.c \
+            -v $(pwd)/host_out:/app/out \
+            -it thesis-v20 \
+            'flatten:foo,bar;bogus-switch:bar,baz' o.out
+            fi
+}
 
 # ----OLLVM-15 config-------------------------------------------------
 #!/bin/sh
@@ -250,7 +271,7 @@ fi
 
 
 # --- Tigress config -------------------------------------------------
-use_tigress=true
+use_tigress=false
 if [ "$use_tigress" = true ]; then
     export tigress_versions="4_0_9"
     # Tigress 3.0 variables
@@ -320,17 +341,17 @@ setup_tigress_obfuscation() {
     done
 }
 
-setup_tigress_obfuscation "unobfuscated" ""
+# setup_tigress_obfuscation "unobfuscated" ""
 
 # # Tigress Ident
 # setup_tigress_obfuscation "Ident" "\
 #     --Transform=Ident \
 #         --Functions=init_program"
 
-# Tigress Flatten
-setup_tigress_obfuscation "Flatten" "\
-    --Transform=Flatten \
-        --Functions=init_program"
+# # Tigress Flatten
+# setup_tigress_obfuscation "Flatten" "\
+#     --Transform=Flatten \
+#         --Functions=init_program"
 
 # # Tigress Virtualize
 # setup_tigress_obfuscation "Virtualize" "\

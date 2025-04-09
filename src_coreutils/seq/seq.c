@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity all_digits_p bad_cast chmodat chownat cmp dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note gcd get_default_format incr initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm long_double_format main make_timespec npgettext_aux pgettext_aux print_numbers psame_inode ptr_align readdir_ignoring_dot_and_dotdot scan_arg select_plural seq_fast stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar trim_leading_zeros usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 

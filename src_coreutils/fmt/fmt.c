@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity bad_cast base_cost c_isalnum c_isalpha c_isascii c_isblank c_iscntrl c_isdigit c_isgraph c_islower c_isprint c_ispunct c_isspace c_isupper c_isxdigit c_tolower c_toupper check_punctuation chmodat chownat copy_rest dcnpgettext_expr dcpgettext_expr directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note flush_paragraph fmt fmt_paragraph gcd get_line get_paragraph get_prefix get_space initialize_exit_failure is_ENOTSUP is_nul lchmodat lchownat lcm line_cost main make_timespec npgettext_aux pgettext_aux psame_inode ptr_align put_line put_paragraph put_space put_word readdir_ignoring_dot_and_dotdot same_para select_plural set_other_indent set_prefix stzncpy timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -245,9 +245,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_T80r_envp": "FUN: '_TIG_IZ_T80r_envp__INIT'",
-          "_TIG_IZ_T80r_argv": "FUN: '_TIG_IZ_T80r_argv__INIT'",
-          "_TIG_IZ_T80r_argc": "FUN: '_TIG_IZ_T80r_argc__INIT'"
+          "_TIG_IZ_KQ0C_envp": "FUN: '_TIG_IZ_KQ0C_envp__INIT'",
+          "_TIG_IZ_KQ0C_argv": "FUN: '_TIG_IZ_KQ0C_argv__INIT'",
+          "_TIG_IZ_KQ0C_argc": "FUN: '_TIG_IZ_KQ0C_argc__INIT'"
         }
       }
     },
@@ -1756,10 +1756,6 @@ extern  __attribute__((__noreturn__)) void ( /* format attribute */  __error_at_
 /* compiler builtin: 
    double __builtin_acos(double  ) ;  */
 /* END FUNCTION-DECL __builtin_acos LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_T80r_argv LOC=UNKNOWN */
-char **_TIG_IZ_T80r_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_T80r_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN sigignore LOC=/usr/include/signal.h:363 */
 #line 363 "/usr/include/signal.h"
@@ -4413,6 +4409,10 @@ enum __anonenum_111643124 {
 extern enum quoting_style  const  quoting_style_vals[] ;
 /* END VARIABLE-DECL-EXTERN quoting_style_vals LOC=./lib/quotearg.h:273 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_KQ0C_argc LOC=UNKNOWN */
+int _TIG_IZ_KQ0C_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_KQ0C_argc LOC=UNKNOWN */
+
 /* BEGIN VARIABLE-DECL-EXTERN Version LOC=src/version.h:1 */
 #line 1 "src/version.h"
 extern char const   *Version ;
@@ -5404,14 +5404,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf
 #line 389 "/usr/include/stdlib.h"
 extern  __attribute__((__nothrow__)) long ( __attribute__((__nonnull__(1), __leaf__)) a64l)(char const   *__s )  __attribute__((__pure__)) ;
 /* END FUNCTION-DECL-EXTERN a64l LOC=/usr/include/stdlib.h:389 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_T80r_argc LOC=UNKNOWN */
-int _TIG_IZ_T80r_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_T80r_argc LOC=UNKNOWN */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_T80r_argv LOC=UNKNOWN */
-char **_TIG_IZ_T80r_argv ;
-/* END VARIABLE-DECL _TIG_IZ_T80r_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __kernel_daddr_t LOC=/usr/include/asm-generic/posix_types.h:45 */
 #line 45 "/usr/include/asm-generic/posix_types.h"
@@ -6554,6 +6546,10 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) isalnum)(in
    float __builtin_scalbnf(float  , int  ) ;  */
 /* END FUNCTION-DECL __builtin_scalbnf LOC=BUILTIN */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_KQ0C_envp LOC=UNKNOWN */
+char **_TIG_IZ_KQ0C_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_KQ0C_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN getchar_unlocked LOC=/usr/include/stdio.h:528 */
 #line 528 "/usr/include/stdio.h"
 extern int getchar_unlocked(void) ;
@@ -6587,6 +6583,10 @@ static int get_prefix(FILE *f ) ;
 extern int ( __attribute__((__nonnull__(2))) openat)(int __fd , char const   *__file ,
                                                      int __oflag  , ...) ;
 /* END FUNCTION-DECL-EXTERN openat LOC=/usr/include/fcntl.h:205 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_KQ0C_argv LOC=UNKNOWN */
+char **_TIG_IZ_KQ0C_argv ;
+/* END VARIABLE-DECL _TIG_IZ_KQ0C_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF siginfo_t LOC=/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:36 */
 #line 36 "/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h"
@@ -7206,10 +7206,6 @@ typedef __kernel_long_t __kernel_time_t;
    long double __builtin_ceill(long double  ) ;  */
 /* END FUNCTION-DECL __builtin_ceill LOC=BUILTIN */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_T80r_envp LOC=UNKNOWN */
-char **_TIG_IZ_T80r_envp ;
-/* END VARIABLE-DECL _TIG_IZ_T80r_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_floorf16 LOC=BUILTIN */
 /* compiler builtin: 
    _Float16 __builtin_floorf16(_Float16  ) ;  */
@@ -7488,7 +7484,7 @@ extern  __attribute__((__nothrow__)) void ( __attribute__((__leaf__)) free)(void
 /* END FUNCTION-DECL-EXTERN free LOC=/usr/include/stdlib.h:555 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_T80r_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_KQ0C_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_va_start LOC=BUILTIN */
@@ -7991,10 +7987,6 @@ static void check_punctuation(WORD *w ) ;
 extern int ( __attribute__((__nonnull__(1))) creat)(char const   *__file , mode_t __mode ) ;
 /* END FUNCTION-DECL-EXTERN creat LOC=/usr/include/fcntl.h:227 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_T80r_envp LOC=UNKNOWN */
-char **_TIG_IZ_T80r_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_T80r_envp LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __fsfilcnt64_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:189 */
 #line 189 "/usr/include/x86_64-linux-gnu/bits/types.h"
 typedef unsigned long __fsfilcnt64_t;
@@ -8176,6 +8168,10 @@ __malloc__)) ;
 /* compiler builtin: 
    _Float128 __builtin_asinf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_asinf128 LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_KQ0C_argc LOC=UNKNOWN */
+int _TIG_IZ_KQ0C_argc ;
+/* END VARIABLE-DECL _TIG_IZ_KQ0C_argc LOC=UNKNOWN */
 
 /* BEGIN STRUCT tm LOC=/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:7 */
 #line 7 "/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h"
@@ -10892,6 +10888,10 @@ extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), 
 extern int open_by_handle_at(int __mountdirfd , struct file_handle *__handle , int __flags ) ;
 /* END FUNCTION-DECL-EXTERN open_by_handle_at LOC=/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:462 */
 
+/* BEGIN VARIABLE-DECL _TIG_IZ_KQ0C_envp LOC=UNKNOWN */
+char **_TIG_IZ_KQ0C_envp ;
+/* END VARIABLE-DECL _TIG_IZ_KQ0C_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN lstat LOC=/usr/include/x86_64-linux-gnu/sys/stat.h:313 */
 #line 313 "/usr/include/x86_64-linux-gnu/sys/stat.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __leaf__)) lstat)(char const   * __restrict  __file ,
@@ -11573,10 +11573,6 @@ __inline static void emit_mandatory_arg_note(void) ;
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) dup)(int __fd ) ;
 /* END FUNCTION-DECL-EXTERN dup LOC=/usr/include/unistd.h:552 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_T80r_argc LOC=UNKNOWN */
-int _TIG_IZ_T80r_argc ;
-/* END VARIABLE-DECL _TIG_IZ_T80r_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strerrordesc_np LOC=/usr/include/string.h:450 */
 #line 450 "/usr/include/string.h"
 extern  __attribute__((__nothrow__)) char const   *( __attribute__((__leaf__)) strerrordesc_np)(int __err ) ;
@@ -11747,6 +11743,10 @@ enum __anonenum_783849514 {
 #line 111 "/usr/include/strings.h"
 extern  __attribute__((__nothrow__)) int ( __attribute__((__leaf__)) ffsll)(long long __ll )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN ffsll LOC=/usr/include/strings.h:111 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_KQ0C_argv LOC=UNKNOWN */
+char **_TIG_IZ_KQ0C_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_KQ0C_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_atanf LOC=BUILTIN */
 /* compiler builtin: 
@@ -15662,7 +15662,7 @@ __inline static void emit_size_note(void)
 /* END FUNCTION-DEF emit_size_note LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_T80r_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_KQ0C_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_1 ;
   int optchar ;
@@ -25913,34 +25913,34 @@ int main(int argc , char **argv , char **_TIG_IZ_T80r_formal_envp )
   }
   {
   {
-  _TIG_IZ_T80r_envp = (char **)0;
-  goto _TIG_IZ_T80r_envp__INITINLINE__TIG_IZ_T80r_envp__INIT;
+  _TIG_IZ_KQ0C_envp = (char **)0;
+  goto _TIG_IZ_KQ0C_envp__INITINLINE__TIG_IZ_KQ0C_envp__INIT;
   }
-  _TIG_IZ_T80r_envp__INITINLINE__TIG_IZ_T80r_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_T80r_argv = (char **)0;
-  goto _TIG_IZ_T80r_argv__INITINLINE__TIG_IZ_T80r_argv__INIT;
-  }
-  _TIG_IZ_T80r_argv__INITINLINE__TIG_IZ_T80r_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_KQ0C_envp__INITINLINE__TIG_IZ_KQ0C_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_T80r_argc = 0;
-  goto _TIG_IZ_T80r_argc__INITINLINE__TIG_IZ_T80r_argc__INIT;
+  _TIG_IZ_KQ0C_argv = (char **)0;
+  goto _TIG_IZ_KQ0C_argv__INITINLINE__TIG_IZ_KQ0C_argv__INIT;
   }
-  _TIG_IZ_T80r_argc__INITINLINE__TIG_IZ_T80r_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_KQ0C_argv__INITINLINE__TIG_IZ_KQ0C_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_KQ0C_argc = 0;
+  goto _TIG_IZ_KQ0C_argc__INITINLINE__TIG_IZ_KQ0C_argc__INIT;
+  }
+  _TIG_IZ_KQ0C_argc__INITINLINE__TIG_IZ_KQ0C_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-T80r--0":);
-    _TIG_IZ_T80r_argc = argc;
-    _TIG_IZ_T80r_argv = argv;
-    _TIG_IZ_T80r_envp = _TIG_IZ_T80r_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-KQ0C--0":);
+    _TIG_IZ_KQ0C_argc = argc;
+    _TIG_IZ_KQ0C_argv = argv;
+    _TIG_IZ_KQ0C_envp = _TIG_IZ_KQ0C_formal_envp;
     break;
   }
 #line 320 "src/fmt.c"

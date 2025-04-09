@@ -2,7 +2,7 @@
 
 # Base directory
 script_dir="$(cd "$(dirname "$0")" && pwd)"
-BASE_DIR="$script_dir/../src_coreutils"
+BASE_DIR="$script_dir/../src_coreutils_8_1"
 
 # Iterate over each subdirectory in the base directory
 for dir in "$BASE_DIR"/*/; do

@@ -1,5 +1,5 @@
 /*!
-    \secrets: main __bswap_16 __bswap_32 __bswap_64 __uint16_identity __uint32_identity __uint64_identity add_field add_field_list add_file_name advance_seq bad_cast btoc32 c32_apply_type_test c32isalnum c32isalpha c32isblank c32iscntrl c32isdigit c32isgraph c32islower c32isprint c32ispunct c32isspace c32isupper c32isxdigit c32tolower c32width check_order chmodat chownat comma_or_blank dcnpgettext_expr dcpgettext_expr decode_field_spec delseq directory_status dot_or_dotdot emit_ancillary_info emit_backup_suffix_note emit_blocksize_note emit_exec_status emit_mandatory_arg_note emit_size_note emit_stdin_note emit_symlink_recurse_options emit_update_parameters_note eq_tab extract_field free_spareline freeline gcd get_line getseq init_linep initialize_exit_failure initseq is_ENOTSUP is_nul keycmp lchmodat lchownat lcm main make_timespec mcel_ch mcel_cmp mcel_err mcel_isbasic mcel_scan mcel_scant mcel_scanz mcel_tocmp newline_or_blank npgettext_aux pgettext_aux prfield prfields prjoin psame_inode ptr_align readdir_ignoring_dot_and_dotdot reset_line select_plural set_join_field skip_buf_matching skip_str_matching string_to_join_field stzncpy system_join timespec_cmp timespec_sign timespectod timetostr to_uchar usable_st_size usage write_error xfields xnrealloc 
+    \secrets: main 
     \backdoor: abcdef
 */
 
@@ -242,9 +242,9 @@ BEGIN-UNIVERSE
       "TransformationUpdates": {
         "Modified Function Implementations": [ "main" ],
         "New Global Variables": {
-          "_TIG_IZ_QDm0_envp": "FUN: '_TIG_IZ_QDm0_envp__INIT'",
-          "_TIG_IZ_QDm0_argv": "FUN: '_TIG_IZ_QDm0_argv__INIT'",
-          "_TIG_IZ_QDm0_argc": "FUN: '_TIG_IZ_QDm0_argc__INIT'"
+          "_TIG_IZ_8rYa_envp": "FUN: '_TIG_IZ_8rYa_envp__INIT'",
+          "_TIG_IZ_8rYa_argv": "FUN: '_TIG_IZ_8rYa_argv__INIT'",
+          "_TIG_IZ_8rYa_argc": "FUN: '_TIG_IZ_8rYa_argc__INIT'"
         }
       }
     },
@@ -1666,10 +1666,6 @@ typedef long __blksize_t;
 typedef __blksize_t blksize_t;
 /* END TYPEDEF blksize_t LOC=/usr/include/x86_64-linux-gnu/sys/types.h:185 */
 
-/* BEGIN VARIABLE-DEF _TIG_IZ_QDm0_argv LOC=UNKNOWN */
-char **_TIG_IZ_QDm0_argv  ;
-/* END VARIABLE-DEF _TIG_IZ_QDm0_argv LOC=UNKNOWN */
-
 /* BEGIN TYPEDEF __daddr_t LOC=/usr/include/x86_64-linux-gnu/bits/types.h:165 */
 #line 165 "/usr/include/x86_64-linux-gnu/bits/types.h"
 typedef int __daddr_t;
@@ -2800,10 +2796,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(3), __leaf
                                                                                                   long double __f ) ;
 /* END FUNCTION-DECL-EXTERN strfromf64x LOC=/usr/include/stdlib.h:257 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_QDm0_argc LOC=UNKNOWN */
-int _TIG_IZ_QDm0_argc ;
-/* END VARIABLE-DECL _TIG_IZ_QDm0_argc LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL-EXTERN strtoll LOC=/usr/include/stdlib.h:201 */
 #line 201
 extern  __attribute__((__nothrow__)) long long ( __attribute__((__nonnull__(1), __leaf__)) strtoll)(char const   * __restrict  __nptr ,
@@ -2934,6 +2926,10 @@ typedef __u64 __be64;
 /* compiler builtin: 
    _Bool __builtin_smulll_overflow(long long const    , long long const    , long long * ) ;  */
 /* END FUNCTION-DECL __builtin_smulll_overflow LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_8rYa_envp LOC=UNKNOWN */
+char **_TIG_IZ_8rYa_envp ;
+/* END VARIABLE-DECL _TIG_IZ_8rYa_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN xpalloc LOC=./lib/xalloc.h:92 */
 #line 92 "./lib/xalloc.h"
@@ -3661,6 +3657,10 @@ __inline static int directory_status(int fd_cwd , char const   *dir ) ;
 /* compiler builtin: 
    _Float128 __builtin_expf128(_Float128  ) ;  */
 /* END FUNCTION-DECL __builtin_expf128 LOC=BUILTIN */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_8rYa_argc LOC=UNKNOWN */
+int _TIG_IZ_8rYa_argc  ;
+/* END VARIABLE-DEF _TIG_IZ_8rYa_argc LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN strspn LOC=/usr/include/string.h:297 */
 #line 297 "/usr/include/string.h"
@@ -5926,6 +5926,10 @@ extern int ( __attribute__((__nonnull__(1))) rpl_fseeko)(FILE *fp , off_t offset
 extern struct timespec timespec_add(struct timespec  , struct timespec  )  __attribute__((__const__)) ;
 /* END FUNCTION-DECL-EXTERN timespec_add LOC=./lib/timespec.h:77 */
 
+/* BEGIN VARIABLE-DEF _TIG_IZ_8rYa_envp LOC=UNKNOWN */
+char **_TIG_IZ_8rYa_envp  ;
+/* END VARIABLE-DEF _TIG_IZ_8rYa_envp LOC=UNKNOWN */
+
 /* BEGIN FUNCTION-DECL-EXTERN system LOC=/usr/include/stdlib.h:791 */
 #line 791 "/usr/include/stdlib.h"
 extern int system(char const   *__command ) ;
@@ -6478,6 +6482,10 @@ extern char *( __attribute__((__warn_unused_result__)) inttostr)(int  , char * )
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf__)) gettimeofday)(struct timeval * __restrict  __tv ,
                                                                                                    void * __restrict  __tz ) ;
 /* END FUNCTION-DECL-EXTERN gettimeofday LOC=/usr/include/x86_64-linux-gnu/sys/time.h:67 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_8rYa_argc LOC=UNKNOWN */
+int _TIG_IZ_8rYa_argc ;
+/* END VARIABLE-DECL _TIG_IZ_8rYa_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF uint32_t LOC=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:26 */
 #line 26 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h"
@@ -8255,10 +8263,6 @@ extern  __attribute__((__nothrow__, __noreturn__)) void ( __attribute__((__leaf_
                                                                                                    char const   *__function ) ;
 /* END FUNCTION-DECL-EXTERN __assert_fail LOC=/usr/include/assert.h:69 */
 
-/* BEGIN VARIABLE-DECL _TIG_IZ_QDm0_envp LOC=UNKNOWN */
-char **_TIG_IZ_QDm0_envp ;
-/* END VARIABLE-DECL _TIG_IZ_QDm0_envp LOC=UNKNOWN */
-
 /* BEGIN FUNCTION-DECL __builtin_clzs LOC=BUILTIN */
 /* compiler builtin: 
    int __builtin_clzs(short  ) ;  */
@@ -8965,10 +8969,6 @@ extern int usleep(__useconds_t __useconds ) ;
 extern  __attribute__((__nothrow__)) void ( __attribute__((__nonnull__(1), __leaf__)) bzero)(void *__s ,
                                                                                              size_t __n ) ;
 /* END FUNCTION-DECL-EXTERN bzero LOC=/usr/include/strings.h:42 */
-
-/* BEGIN VARIABLE-DECL _TIG_IZ_QDm0_argv LOC=UNKNOWN */
-char **_TIG_IZ_QDm0_argv ;
-/* END VARIABLE-DECL _TIG_IZ_QDm0_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF pthread_once_t LOC=/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:53 */
 #line 53 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h"
@@ -9957,6 +9957,10 @@ extern int __uflow(FILE * ) ;
 #line 73 "/usr/include/stdint.h"
 typedef unsigned long uint_fast16_t;
 /* END TYPEDEF uint_fast16_t LOC=/usr/include/stdint.h:73 */
+
+/* BEGIN VARIABLE-DEF _TIG_IZ_8rYa_argv LOC=UNKNOWN */
+char **_TIG_IZ_8rYa_argv  ;
+/* END VARIABLE-DEF _TIG_IZ_8rYa_argv LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF __kernel_ssize_t LOC=/usr/include/asm-generic/posix_types.h:73 */
 #line 73 "/usr/include/asm-generic/posix_types.h"
@@ -10989,7 +10993,7 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1), __leaf
 /* END FUNCTION-DECL-EXTERN rmdir LOC=/usr/include/unistd.h:867 */
 
 /* BEGIN FUNCTION-DECL main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_QDm0_formal_envp ) ;
+int main(int argc , char **argv , char **_TIG_IZ_8rYa_formal_envp ) ;
 /* END FUNCTION-DECL main LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_sqrt LOC=BUILTIN */
@@ -11188,10 +11192,6 @@ extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(1,2), __le
 #line 60 "/usr/include/stdint.h"
 typedef long int_fast16_t;
 /* END TYPEDEF int_fast16_t LOC=/usr/include/stdint.h:60 */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_QDm0_envp LOC=UNKNOWN */
-char **_TIG_IZ_QDm0_envp  ;
-/* END VARIABLE-DEF _TIG_IZ_QDm0_envp LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL-EXTERN fread_unlocked LOC=/usr/include/stdio.h:702 */
 #line 702 "/usr/include/stdio.h"
@@ -11920,6 +11920,10 @@ extern void ( /* format attribute */  __error_at_line_alias)(int __status , int 
 extern  __attribute__((__nothrow__)) int ( __attribute__((__nonnull__(2), __leaf__)) fstat64)(int __fd ,
                                                                                               struct stat64 *__buf ) ;
 /* END FUNCTION-DECL-EXTERN fstat64 LOC=/usr/include/x86_64-linux-gnu/sys/stat.h:242 */
+
+/* BEGIN VARIABLE-DECL _TIG_IZ_8rYa_argv LOC=UNKNOWN */
+char **_TIG_IZ_8rYa_argv ;
+/* END VARIABLE-DECL _TIG_IZ_8rYa_argv LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DECL __builtin_conjl LOC=BUILTIN */
 /* compiler builtin: 
@@ -13338,10 +13342,6 @@ extern  __attribute__((__nothrow__)) char *( __attribute__((__leaf__)) strerror)
 /* compiler builtin: 
    double __builtin_creal(_Complex double  ) ;  */
 /* END FUNCTION-DECL __builtin_creal LOC=BUILTIN */
-
-/* BEGIN VARIABLE-DEF _TIG_IZ_QDm0_argc LOC=UNKNOWN */
-int _TIG_IZ_QDm0_argc  ;
-/* END VARIABLE-DEF _TIG_IZ_QDm0_argc LOC=UNKNOWN */
 
 /* BEGIN TYPEDEF int_least16_t LOC=/usr/include/stdint.h:44 */
 #line 44 "/usr/include/stdint.h"
@@ -16287,7 +16287,7 @@ __inline int __attribute__((__pure__))  timespec_sign(struct timespec a )
 /* END FUNCTION-DEF timespec_sign LOC=UNKNOWN */
 
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
-int main(int argc , char **argv , char **_TIG_IZ_QDm0_formal_envp ) 
+int main(int argc , char **argv , char **_TIG_IZ_8rYa_formal_envp ) 
 { 
   int init_elems1_inline_0_inline_3 ;
   int init_elems1_inline_1_inline_2 ;
@@ -16619,34 +16619,34 @@ int main(int argc , char **argv , char **_TIG_IZ_QDm0_formal_envp )
   }
   {
   {
-  _TIG_IZ_QDm0_envp = (char **)0;
-  goto _TIG_IZ_QDm0_envp__INITINLINE__TIG_IZ_QDm0_envp__INIT;
+  _TIG_IZ_8rYa_envp = (char **)0;
+  goto _TIG_IZ_8rYa_envp__INITINLINE__TIG_IZ_8rYa_envp__INIT;
   }
-  _TIG_IZ_QDm0_envp__INITINLINE__TIG_IZ_QDm0_envp__INIT: /* CIL Label */ ;
-  }
-  {
-  {
-  _TIG_IZ_QDm0_argv = (char **)0;
-  goto _TIG_IZ_QDm0_argv__INITINLINE__TIG_IZ_QDm0_argv__INIT;
-  }
-  _TIG_IZ_QDm0_argv__INITINLINE__TIG_IZ_QDm0_argv__INIT: /* CIL Label */ ;
+  _TIG_IZ_8rYa_envp__INITINLINE__TIG_IZ_8rYa_envp__INIT: /* CIL Label */ ;
   }
   {
   {
-  _TIG_IZ_QDm0_argc = 0;
-  goto _TIG_IZ_QDm0_argc__INITINLINE__TIG_IZ_QDm0_argc__INIT;
+  _TIG_IZ_8rYa_argv = (char **)0;
+  goto _TIG_IZ_8rYa_argv__INITINLINE__TIG_IZ_8rYa_argv__INIT;
   }
-  _TIG_IZ_QDm0_argc__INITINLINE__TIG_IZ_QDm0_argc__INIT: /* CIL Label */ ;
+  _TIG_IZ_8rYa_argv__INITINLINE__TIG_IZ_8rYa_argv__INIT: /* CIL Label */ ;
+  }
+  {
+  {
+  _TIG_IZ_8rYa_argc = 0;
+  goto _TIG_IZ_8rYa_argc__INITINLINE__TIG_IZ_8rYa_argc__INIT;
+  }
+  _TIG_IZ_8rYa_argc__INITINLINE__TIG_IZ_8rYa_argc__INIT: /* CIL Label */ ;
   }
   goto megaInitINLINE_megaInit;
   }
   megaInitINLINE_megaInit: /* CIL Label */ ;
   }
   while (1) {
-    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-QDm0--0":);
-    _TIG_IZ_QDm0_argc = argc;
-    _TIG_IZ_QDm0_argv = argv;
-    _TIG_IZ_QDm0_envp = _TIG_IZ_QDm0_formal_envp;
+    __asm__ volatile ("##_ANNOTATION_INITIALREGION_-TIG-IZ-8rYa--0":);
+    _TIG_IZ_8rYa_argc = argc;
+    _TIG_IZ_8rYa_argv = argv;
+    _TIG_IZ_8rYa_envp = _TIG_IZ_8rYa_formal_envp;
     break;
   }
 #line 1007 "src/join.c"
