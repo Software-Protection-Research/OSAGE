@@ -70,7 +70,7 @@ do
 
         DEBUG "Compiling with: ${script} ${srcDirName} ${srcDir}${srcDirName}.c"
 
-        { time timeout "${_ABCDEF_TIMEOUT}" "${script}" "${srcDirName}" "${srcDir}${srcDirName}.c" ; } > "${basedir}/${progFinal}.log" 2>&1 &
+        { time timeout "${_ABCDEF_TIMEOUT}" "${script}" "${srcDirName}" "${srcDir}${srcDirName}.c" "${basedir}" ; } > "${basedir}/${progFinal}.log" 2>&1 &
         NUM_CP_CURR=$((NUM_CP_CURR + 1))
 
         if [ ${NUM_CP_CURR} -ge ${NUM_CP_MAX_CURR} ]; then
