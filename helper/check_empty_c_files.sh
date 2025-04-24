@@ -32,10 +32,24 @@ check_no_code_c_files_in_subfolder() {
                 relative_path="${subfolder##*/}/${file##*/}"
                 echo "$relative_path" >> "$no_code_files"
                 ((no_code_file_count++))
-                # Delete the file if the user opted to delete empty files
+                # Delete the file and related files if the user opted to delete empty files
                 if [[ "$delete_empty_files" == "y" ]]; then
                     rm -f "$file"
                     echo "Deleted: $file"
+
+                    # Delete the corresponding executable
+                    executable="${file%.c}"
+                    if [[ -f "$executable" ]]; then
+                        rm -f "$executable"
+                        echo "Deleted: $executable"
+                    fi
+
+                    # Delete the corresponding .log file
+                    log_file="${file%.c}.log"
+                    if [[ -f "$log_file" ]]; then
+                        rm -f "$log_file"
+                        echo "Deleted: $log_file"
+                    fi
                 fi
             fi
         fi

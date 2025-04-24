@@ -143,6 +143,9 @@ RUN pwd && \
 ENV PATH="/opt/tigress/4.0.9:${PATH}"
 ENV TIGRESS_HOME="/opt/tigress/4.0.9"
 
+# ENV PATH="/opt/tigress/3.3.3:${PATH}"
+# ENV TIGRESS_HOME="/opt/tigress/3.3.3"
+
 # Install tinycc
 COPY build_tinycc.sh /opt/build_scripts/
 RUN pwd && \

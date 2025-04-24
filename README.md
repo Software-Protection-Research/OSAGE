@@ -111,3 +111,7 @@ Obfuscation
 ## X86 oracle gt
 
 <https://github.com/junxzm1990/x86-sok/tree/master>
+
+## Create out Folder
+
+ln -s /opt/samplegenerator_out ~/opt/samplegenerator/out

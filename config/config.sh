@@ -267,7 +267,6 @@ fi
 # --- Tigress config -------------------------------------------------
 use_tigress=true
 if [ "$use_tigress" = true ]; then
-    export tigress_versions="4_0_9"
     # Tigress 3.0 variables
     # export tigress_home_3_0="${abcdef_dir_tools}/tigress/3.0"
     # export tigress_prog_3_0="${tigress_home_3_0}/tigress"
@@ -280,7 +279,15 @@ if [ "$use_tigress" = true ]; then
     # export tigress_header_3_1="# include \"${tigress_home_3_1}/tigress.h\"
     # # include <time.h>
     # # include <pthread.h>"
+    # Tigress 3.3.3 variables
+    # export tigress_versions="3_3_3"
+    # export tigress_home_3_3_3="${abcdef_dir_tools}/tigress/3.3.3"
+    # export tigress_prog_3_3_3="${tigress_home_3_3_3}/tigress"
+    # export tigress_header_3_3_3="#include \"${tigress_home_3_3_3}/tigress.h\"
+    # #include <time.h>
+    # #include <pthread.h>"
     # Tigress 4.0.9 variables
+    export tigress_versions="4_0_9"
     export tigress_home_4_0_9="${abcdef_dir_tools}/tigress/4.0.9"
     export tigress_prog_4_0_9="${tigress_home_4_0_9}/tigress"
     export tigress_header_4_0_9="# include \"${tigress_home_4_0_9}/tigress.h\"
@@ -1084,6 +1091,19 @@ setup_tigress_obfuscation "FlattenSelfModify" "\
         --InitOpaqueStructs=list,array,env \
     --Transform=SelfModify  \
         --Functions=init_program"
+
+# Tigress VirtualizeSelfModify
+setup_tigress_obfuscation "VirtualizeSelfModify" "\
+     --Transform=Virtualize \
+         --VirtualizeDispatch=direct \
+         --Functions=init_program \
+     --Transform=InitEntropy \
+         --Functions=init_program \
+     --Transform=InitOpaque \
+         --Functions=init_program \
+         --InitOpaqueStructs=list,array,env \
+     --Transform=SelfModify  \
+         --Functions=init_program "
 
 # ============ END SECRYPT 2024 (camera-ready) ============
 
