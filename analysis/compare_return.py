@@ -3,6 +3,7 @@ import argparse
 import pandas as pd
 import subprocess
 import configparser
+import time
 
 from module_helper import *
 #from termcolor import cprint
@@ -104,12 +105,25 @@ class Main():
             print()
 
             #bin_process = subprocess.Popen(progs_and_args, stdout=subprocess.DEVNULL)
-            bin_process = subprocess.Popen(progs_and_args, stdout=subprocess.PIPE)
-            outvalue = bin_process.communicate()[0]
+            try:
+                start_perf_time = time.perf_counter()
+                start_proc_time = time.process_time()
 
-            exit_code = bin_process.wait()
+                bin_process = subprocess.Popen(progs_and_args, stdout=subprocess.PIPE)
+                outvalue = bin_process.communicate(timeout=20)[0]
+                exit_code = bin_process.wait(timeout=20)
+
+                exec_perf_time = time.perf_counter() - start_perf_time
+                exec_proc_time = time.process_time() - start_proc_time
+            except:
+                exit_code = -1
+                exec_perf_time = -1
+                exec_proc_time = -1
+
             out_list.append(str(exit_code))
             out_list.append(outvalue)
+            out_list.append(exec_perf_time)
+            out_list.append(exec_proc_time)
 
             '''
             #append the output file in the csv out_list list
@@ -142,7 +156,7 @@ class Main():
             #temp_dict[obf_methods[-1]]= pd.Series(out_list, index=["exit_code", "stdout", "file"])
             
             
-            temp_dict[obf_methods[-1]]= pd.Series(out_list, index=["exit_code", "stdout"])
+            temp_dict[obf_methods[-1]]= pd.Series(out_list, index=["exit_code", "stdout", "real_time", "cpu_time"])
 
 
             ## output the pandas frame to csv
@@ -184,7 +198,7 @@ class Main():
         for elem in transformed.iloc(0):
             #print(elem.name)
             count = 0
-            for item in elem:
+            for item in elem[0:-2]:
                 #print(f"Item:{item}\tType of item: {type(item)}")
                 if item != master_output[count]:
                     

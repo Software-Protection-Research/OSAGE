@@ -62,5 +62,6 @@ output_replaced=${3//$abcdef_dir_base/$OSAGE_DIR}
 INFO_EXEC "docker run \
   -v ${input_replaced}:/app/in/target.c \
   -v ${output_replaced}:/app/out \
-  thesis-v20 \
-  ${myobf_options_replaced:=} ${temp}"
+  --rm \
+  thesis-v20-x86 \
+  '${myobf_options_replaced:=}' ${temp}"

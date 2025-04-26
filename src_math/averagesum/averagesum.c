@@ -14,8 +14,8 @@ int average_sum(int num) {
     int average;
 
     a = num; 
-    b = rand(); 
-    c = rand(); 
+    b = num % 2;
+    c = num % 5;
     sum = a+b+c;
     average = (a+b+c)%3;
 
