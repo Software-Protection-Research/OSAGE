@@ -1,7 +1,8 @@
 #!/bin/bash
 
-base_folder="../src_all_excl_merged"
-# base_folder="../out/run_2025_02_20_10_57_53"
+# base_folder="../src_all_excl_merged"
+# base_folder="../out/run_2025_05_06_07_47_14_all_excl_merged_gcc_14-2-1
+base_folder="../out/run_2025_04_24_13_23_41"
 ll_output_folder="../out/ll_files"
 temp_folder="../out/temp_c_files"
 mkdir -p "$ll_output_folder"

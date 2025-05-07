@@ -115,3 +115,20 @@ Obfuscation
 ## Create out Folder
 
 ln -s /opt/samplegenerator_out ~/opt/samplegenerator/out
+
+## Check for gcc\clang version
+
+strings executable | grep -i 'gcc\|clang'
+
+## Create Build user
+
+useradd -m builder
+passwd -d builder
+
+pacman -S sudo
+echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/builder
+
+usermod -aG wheel builder
+pacman -S --needed base-devel git
+
+su - builder
