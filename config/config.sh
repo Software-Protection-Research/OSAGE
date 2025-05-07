@@ -122,20 +122,6 @@ fi
 
 # --------------------------------------------------------------------
 
-# ----LLVM config ---------------------------------------------------
-# LLVM oslatest - latest version coming from the OS (debian) repo
-# LLVM_OBFUSCATOR=false
-# run_llvm_obfuscator() {
-#     if [ "$LLVM_OBFUSCATOR" = true ]; then
-#         # LLVM oslatest - latest version coming from the Docker container
-#         export llvm_versions="oslatest"
-#         llvm_container_name="llvm-container" # Replace with your container name or ID
-#         llvm_prog_oslatest="docker exec ${llvm_container_name} llvm-config"
-#         export llvm_prog_oslatest
-#         export llvm_header_oslatest=""
-#         export llvm_flags_oslatest=""
-#         echo "Starting LLVM obfuscation process..."
-# }
 
 # ----OLLVM-15 config-------------------------------------------------
 #!/bin/sh
@@ -1108,7 +1094,7 @@ setup_tigress_obfuscation "VirtualizeSelfModify" "\
 # ============ END SECRYPT 2024 (camera-ready) ============
 
 # --- TinyCC config --------------------------------------------------
-use_tinycc=false
+use_tinycc=true
 if [ "$use_tinycc" = true ]; then
     export tinycc_versions="0_9_27"
     # TinyCC 0.9.27 variables
@@ -1205,6 +1191,24 @@ if [ "$use_hellscape" = true ]; then
     export hellscape_options_fla="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib -fPIC -fplugin=${hellscape_so_master} -fplugin-arg-hellscape-seed=deadbeef -fplugin-arg-hellscape-fla"
     export hellscape_options_bcf="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib -fPIC -fplugin=${hellscape_so_master} -fplugin-arg-hellscape-seed=deadbeef -fplugin-arg-hellscape-bcf"
     export hellscape_options_bfs="-L/usr/lib/x86_64-linux-gnu -L/usr/local/lib -fPIC -fplugin=${hellscape_so_master} -fplugin-arg-hellscape-seed=deadbeef -fplugin-arg-hellscape-fla -fplugin-arg-hellscape-bcf -fplugin-arg-hellscape-sub"
+fi
+# --------------------------------------------------------------------
+
+
+# --- hellscape config -----------------------------------------------
+use_myobf=true
+if [ "$use_myobf" = true ]; then
+    export myobf_versions="latest"
+    # myobf master variables
+    export myobf_home_latest="${abcdef_dir_tools}/myobf_latest"
+    # use musl gcc for myobf and add the so as option
+    export myobf_prog_latest="${gcc_prog_musl_oslatest}"
+    export myobf_header_latest=""
+    # myobf options
+    export myobf_options_flatten="flatten:secrets"
+    export myobf_options_bogus="bogus-switch:secrets"
+    export myobf_options_merge="function-merge:secrets"
+    export myobf_options_mba="mba:secrets"
 fi
 # --------------------------------------------------------------------
 
