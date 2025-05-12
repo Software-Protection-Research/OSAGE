@@ -16,6 +16,8 @@ build/
 build
 coreutils-merge/
 coreutils-merge
+coreutils
+coreutils/
 llvm-obfuscator/
 llvm-obfuscator
 filesender
