@@ -83,7 +83,7 @@ INFO "Compiling with:"
 if [[ "$tigress_options_replaced" == *"--InitPluginsMBAPrefix"* ]]; then
     mba_plugin_path="/opt/samplegenerator/plugins/mba_plugin.c"
     temp_with_plugin="${abcdef_dir_prog_cur}/$(basename "$2" .c)_with_mba.c"
-    cat "$mba_plugin_path" "$2" > "$temp_with_plugin"
+    cat "$2" "$mba_plugin_path" > "$temp_with_plugin"
     input_file="$temp_with_plugin"
     temp_file_created=1
 else

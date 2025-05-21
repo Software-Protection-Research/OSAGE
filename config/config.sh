@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_coreutils_8_5"
+export abcdef_dir_src="${abcdef_dir_base}/src_strings"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -329,17 +329,17 @@ setup_tigress_obfuscation() {
 }
 
 setup_tigress_obfuscation "MBA" "\
-  --Transform=InitPlugins \
-  --InitPluginsMBAPrefix=mba \
   --Transform=EncodeArithmetic \
-  --Functions=init_program"
+  --Functions=init_program \
+  --Transform=InitPlugins \
+  --InitPluginsMBAPrefix=mba"
 
 # setup_tigress_obfuscation "unobfuscated" ""
 
 # Tigress Ident
-# setup_tigress_obfuscation "Ident" "\
-#     --Transform=Ident \
-#         --Functions=init_program"
+setup_tigress_obfuscation "Ident" "\
+    --Transform=Ident \
+        --Functions=init_program"
 
 # # Tigress Flatten
 # setup_tigress_obfuscation "Flatten" "\

@@ -4,8 +4,7 @@ int mba_PlusA_2(int x, int y) { return x - ~y - 1; }
 int mba_PlusA_3(int x, int y) { return 2 * (x & y) + (x ^ y); }
 
 // Subtraction (MinusA)
-int mba_MinusA_1(int x, int y) { return x + ~y + 1; }
-int mba_MinusA_2(int x, int y) { return (x ^ y) - 2 * (~x & y); }
+int mba_MinusA(int x, int y) { return x + ~y + 1; }
 
 // Multiplication (Mult)
 int mba_Mult_1(int x, int y) { return (((x + y) * (x + y)) - ((x - y) * (x - y))) / 4; }
