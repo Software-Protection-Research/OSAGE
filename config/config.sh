@@ -272,25 +272,25 @@ if [ "$use_tigress" = true ]; then
     # export tigress_header_3_3_3="#include \"${tigress_home_3_3_3}/tigress.h\"
     # #include <time.h>
     # #include <pthread.h>"
-    # Tigress 4.0.9 variables
-    export tigress_versions="4_0_9"
-    export tigress_home_4_0_9="${abcdef_dir_tools}/tigress/4.0.9"
-    export tigress_prog_4_0_9="${tigress_home_4_0_9}/tigress"
-    export tigress_header_4_0_9="# include \"${tigress_home_4_0_9}/tigress.h\"
+    # Tigress 4.0.10 variables
+    export tigress_versions="4_0_10"
+    export tigress_home_4_0_10="${abcdef_dir_tools}/tigress/4.0.10"
+    export tigress_prog_4_0_10="${tigress_home_4_0_10}/tigress"
+    export tigress_header_4_0_10="# include \"${tigress_home_4_0_10}/tigress.h\"
     # include <time.h>
     # include <pthread.h>"
     # include \"/opt/tigress/3.1/jitter-amd64.c\""
 
     # tigress flags (=options per version)
     # export tigress_flags_3_0=""
-    export tigress_flags_4_0_9=""
+    export tigress_flags_4_0_10=""
     # Tigress options
     export tigress_environment_gcc="--Environment=x86_64:Linux:Gcc:8.1.0"
     # export tigress_options_general="${gcc_options_general} --Transform=Info --InfoKind=*" ToDo: Change back to this
     export tigress_options_general=""
     # Define the path to the compilation folder
     compilation_folder="compilation"
-    rm ${compilation_folder}/compile-tigress-4_0_9-*
+    rm ${compilation_folder}/compile-tigress-4_0_10-*
 fi
 
 setup_tigress_obfuscation() {
@@ -305,7 +305,7 @@ setup_tigress_obfuscation() {
     # Export the options and create the files for each optimization level
     for level in O0 O1 O2 O3; do
         # Check if the symbolic link exists, and if so, delete it
-        local symlink_path="${compilation_folder}/compile-tigress-4_0_9-${obfuscation}_gcc_musl_oslatest_${level}.sh"
+        local symlink_path="${compilation_folder}/compile-tigress-4_0_10-${obfuscation}_gcc_musl_oslatest_${level}.sh"
         if [ -L "${symlink_path}" ]; then
             rm "${symlink_path}" 2>/dev/null
         fi
@@ -329,10 +329,10 @@ setup_tigress_obfuscation() {
 }
 
 setup_tigress_obfuscation "MBA" "\
-  --Transform=EncodeArithmetic \
-  --Functions=init_program \
   --Transform=InitPlugins \
-  --InitPluginsMBAPrefix=mba"
+  --InitPluginsMBAPrefix=mba \
+  --Transform=EncodeArithmetic \
+  --Functions=init_program "
 
 # setup_tigress_obfuscation "unobfuscated" ""
 

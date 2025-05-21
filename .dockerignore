@@ -4,6 +4,10 @@ node_modules
 # Git repository
 .git
 
+# Out folder for obfuscated files
+out/
+out
+
 # Log files
 *.log
 
