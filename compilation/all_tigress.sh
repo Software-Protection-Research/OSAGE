@@ -78,8 +78,30 @@ abcdef_var_opts=$(cat "${abcdef_dir_prog_cur}/${1}.opts")
 tigress_options_replaced=$(echo "${tigress_options}" | sed "s/--Functions=[^ ]*/--Functions=${funcs}/g")
 
 INFO "Compiling with:"
+
+# Check if --InitPluginsMBAPrefix is in the tigress options
+if [[ "$tigress_options_replaced" == *"--InitPluginsMBAPrefix"* ]]; then
+    mba_plugin_path="/opt/samplegenerator/plugins/mba_plugin.c"
+    temp_with_plugin="${abcdef_dir_prog_cur}/$(basename "$2" .c)_with_mba.c"
+    cat "$mba_plugin_path" "$2" > "$temp_with_plugin"
+    input_file="$temp_with_plugin"
+    temp_file_created=1
+else
+    input_file="$2"
+    temp_file_created=0
+fi
+
+INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${input_file} --out=${1}.c -o ${temp}"
+
+# Remove the temp file if it was created
+if [[ $temp_file_created -eq 1 ]]; then
+    rm -f "$temp_with_plugin"
+fi
+
+INFO_EXEC "gcc -o ${1} ${1}.c ${abcdef_var_opts}"
+
 # Obfuscate and compile the program
-INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp}"
+# INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${2} --out=${1}.c -o ${temp}"
 
 INFO_EXEC "gcc -o ${1} ${1}.c ${abcdef_var_opts}"
 

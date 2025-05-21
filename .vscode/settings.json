@@ -6,5 +6,6 @@
         "c-ctype.h": "c",
         "stdlib.h": "c",
         "includes.h": "c"
-    }
+    },
+    "cmake.ignoreCMakeListsMissing": true
 }
