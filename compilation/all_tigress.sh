@@ -83,7 +83,23 @@ INFO "Compiling with:"
 if [[ "$tigress_options_replaced" == *"--InitPluginsMBAPrefix"* ]]; then
     mba_plugin_path="/opt/samplegenerator/plugins/mba_plugin.c"
     temp_with_plugin="${abcdef_dir_prog_cur}/$(basename "$2" .c)_with_mba.c"
-    cat "$2" "$mba_plugin_path" > "$temp_with_plugin"
+    cp "$2" "$temp_with_plugin"                            # ADD THIS LINE
+    # Insert #include <mba.h> after the last #include line
+    awk '
+    BEGIN { inserted=0 }
+    /^#include[[:space:]]*[<"].*[>"]/ { last_include=NR }
+    { lines[NR]=$0 }
+    END {
+      for(i=1;i<=NR;i++) {
+        print lines[i]
+        if(i==last_include && !inserted) {
+          print "#include </opt/samplegenerator/mba/mba.h>"
+          inserted=1
+        }
+      }
+      if(NR==0) print "#include </opt/samplegenerator/mba/mba.h>"
+    }' "$temp_with_plugin" > "${temp_with_plugin}.tmp" && mv "${temp_with_plugin}.tmp" "$temp_with_plugin"
+
     input_file="$temp_with_plugin"
     temp_file_created=1
 else

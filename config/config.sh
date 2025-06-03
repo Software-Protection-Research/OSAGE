@@ -332,6 +332,7 @@ setup_tigress_obfuscation "MBA" "\
   --Transform=InitPlugins \
   --InitPluginsMBAPrefix=mba \
   --Transform=EncodeArithmetic \
+  --EncodeArithmeticKinds=plugins \
   --Functions=init_program "
 
 # setup_tigress_obfuscation "unobfuscated" ""

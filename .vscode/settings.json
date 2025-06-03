@@ -5,7 +5,9 @@
         "config.h": "c",
         "c-ctype.h": "c",
         "stdlib.h": "c",
-        "includes.h": "c"
+        "includes.h": "c",
+        "pmap_rmt.h": "c",
+        "rpcb_prot.h": "c"
     },
     "cmake.ignoreCMakeListsMissing": true
 }
