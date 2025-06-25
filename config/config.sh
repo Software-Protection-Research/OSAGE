@@ -328,19 +328,20 @@ setup_tigress_obfuscation() {
     done
 }
 
-setup_tigress_obfuscation "MBA" "\
-  --Transform=InitPlugins \
-  --InitPluginsMBAPrefix=mba \
-  --Transform=EncodeArithmetic \
-  --EncodeArithmeticKinds=plugins \
-  --Functions=init_program "
+# setup_tigress_obfuscation "MBA" "\
+#   --Transform=InitPlugins \
+#   --InitPluginsMBAPrefix=mba \
+#   --Transform=EncodeArithmetic \
+#   --EncodeArithmeticKinds=plugins \
+#   --Functions=init_program "
 
+# # Tigress Unobfuscated
 # setup_tigress_obfuscation "unobfuscated" ""
 
-# Tigress Ident
-setup_tigress_obfuscation "Ident" "\
-    --Transform=Ident \
-        --Functions=init_program"
+# # Tigress Ident
+# setup_tigress_obfuscation "Ident" "\
+#     --Transform=Ident \
+#         --Functions=init_program"
 
 # # Tigress Flatten
 # setup_tigress_obfuscation "Flatten" "\
@@ -1099,6 +1100,108 @@ setup_tigress_obfuscation "Ident" "\
 #          --Functions=init_program "
 
 # ============ END SECRYPT 2024 (camera-ready) ============
+
+# Jit Combinations
+
+# Tigress JIT
+setup_tigress_obfuscation "Jit" "\
+     --Transform=Jit \
+         --Functions=init_program "
+
+# setup_tigress_obfuscation "JitDynamic" " \
+#    --Transform=JitDynamic \
+#       --Functions=foo \
+#       --JitDynamicCodecs=xtea \
+#       --JitDynamicDumpCFG=true \
+#       --JitDynamicBlockFraction=%50 \
+#       --Functions=init_program"
+
+# # Tigress JitVirtualize
+# setup_tigress_obfuscation "JitVirtualize" "\
+#      --Transform=Jit \
+#          --Functions=init_program \
+#     --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program"
+
+# # Tigress VirtualizeJit
+# setup_tigress_obfuscation "VirtualizeJit" "\
+#     --Transform=Virtualize \
+#         --VirtualizeDispatch=direct \
+#         --Functions=init_program \
+#     --Transform=Jit \
+#          --Functions=init_program"
+
+# # Tigress JitFlatten
+# setup_tigress_obfuscation "JitFlatten" "\
+#     --Transform=Jit \
+#         --Functions=init_program \
+#     --Transform=Flatten \
+#         --Functions=init_program"
+
+# # Tigress FlattenJit
+# setup_tigress_obfuscation "FlattenJit" "\
+#     --Transform=Flatten \
+#         --Functions=init_program \
+#     --Transform=Jit \
+#         --Functions=init_program"
+
+# # Tigress JitEncodeLiterals
+# setup_tigress_obfuscation "JitEncodeLiterals" "\
+#     --Transform=Jit \
+#         --Functions=init_program \
+#     --Transform=InitEntropy \
+#         --Functions=init_program \
+#     --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env \
+#     --Transform=EncodeLiterals \
+#         --Functions=init_program"
+
+# # Tigress EncodeLiteralsJit
+# setup_tigress_obfuscation "EncodeLiteralsJit" "\
+#     --Transform=InitEntropy \
+#         --Functions=init_program \
+#     --Transform=InitOpaque \
+#         --Functions=init_program \
+#         --InitOpaqueStructs=list,array,env \
+#     --Transform=EncodeLiterals \
+#         --Functions=init_program \
+#     --Transform=Jit \
+#         --Functions=init_program"
+
+# # Tigress JitEncodeArithmetic
+# setup_tigress_obfuscation "JitEncodeArithmetic" "\
+#     --Transform=Jit \
+#         --Functions=init_program \
+#     --Transform=EncodeArithmetic \
+#         --Functions=init_program"
+
+# # Tigress EncodeArithmeticJit
+# setup_tigress_obfuscation "EncodeArithmeticJit" "\
+#     --Transform=EncodeArithmetic \
+#         --Functions=init_program \
+#     --Transform=Jit \
+#         --Functions=init_program"   
+
+# # Tigress JitSplit
+# setup_tigress_obfuscation "JitSplit" "\
+#     --Transform=Jit \
+#         --Functions=init_program \
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program"
+
+# # Tigress SplitJit
+# setup_tigress_obfuscation "SplitJit" "\
+#     --Transform=Split \
+#         --SplitKinds=deep,block,top \
+#         --SplitCount=100 \
+#         --Functions=init_program \
+#     --Transform=Jit \
+#         --Functions=init_program"
+
 
 # --- TinyCC config --------------------------------------------------
 use_tinycc=true

@@ -132,3 +132,16 @@ usermod -aG wheel builder
 pacman -S --needed base-devel git
 
 su - builder
+
+## create server for download
+
+python3 -m http.server 8100
+
+## Merge Coreutils
+
+unzip coreutils or tar -xvzf coreutils tar.gz folder
+cd into coreutils folder
+./configure
+make
+remove Gnumakefile, makefile.in makefile.am and maint.mk
+exchange make with custom makefile (Merge_Makefile)

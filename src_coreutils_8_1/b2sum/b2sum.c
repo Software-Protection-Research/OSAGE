@@ -13106,6 +13106,9 @@ __inline _Bool c_isascii(int c )
 }
 /* END FUNCTION-DEF c_isascii LOC=UNKNOWN */
 
+
+#include <sys/mman.h>
+#include<sys/wait.h>
 /* BEGIN FUNCTION-DEF main LOC=UNKNOWN */
 int main(int argc , char **argv , char **_TIG_IZ_85G4_formal_envp ) 
 { 

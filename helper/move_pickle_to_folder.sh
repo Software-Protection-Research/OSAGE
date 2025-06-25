@@ -1,18 +1,18 @@
 #!/bin/bash
 # List the number of executables and files of the last run.
-source config/config.sh
+# source ../config/config.sh
 
 fileend=".pickle"
-out_dir=$(pwd)/out
+out_dir=$(pwd)/../out
 cd "${out_dir}" || ERROR_EXIT "Could not change to the out directory."
 echo "Current directory: ${out_dir}"
 
-# Find the latest 'run_2024_' directory and get its full path
-latest_run_dir=$(ls -d ${out_dir}/run_2024_* | tail -n 1)
+# Find the latest 'run_2025_' directory and get its full path
+latest_run_dir=$(ls -d ${out_dir}/run_2025_06_15* | tail -n 1)
 if [ -z "$latest_run_dir" ]; then
-    ERROR_EXIT "No 'run_2024_' directories found."
+    ERROR_EXIT "No 'run_2025_06_15' directories found."
 else
-    cd "$latest_run_dir" || ERROR_EXIT "Could not change to the latest run_2024_ directory."
+    cd "$latest_run_dir" || ERROR_EXIT "Could not change to the latest run_2025_06_15 directory."
     echo "Changed to the latest run directory: $(pwd)"
 fi
 

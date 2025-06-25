@@ -18,6 +18,8 @@ coreutils-merge/
 coreutils-merge
 coreutils
 coreutils/
+coreutils-9.5
+coreutils-9.7
 llvm-obfuscator/
 llvm-obfuscator
 filesender
@@ -26,3 +28,6 @@ gcc8
 gcc-8.1.0
 gcc
 isl-isl-0.15
+freebsd/freebsd-src
+git_repos/cil
+tigress-versions/tigress

@@ -7,7 +7,10 @@
         "stdlib.h": "c",
         "includes.h": "c",
         "pmap_rmt.h": "c",
-        "rpcb_prot.h": "c"
+        "rpcb_prot.h": "c",
+        "wait.h": "c",
+        "time.h": "c",
+        "pthread.h": "c"
     },
     "cmake.ignoreCMakeListsMissing": true
 }

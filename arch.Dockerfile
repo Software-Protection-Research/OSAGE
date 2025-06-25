@@ -140,8 +140,8 @@ RUN pwd && \
 	bash /opt/build_scripts/build_tigress.sh && \
 	ls -lah /opt/
 
-ENV PATH="/opt/tigress/4.0.10:${PATH}"
-ENV TIGRESS_HOME="/opt/tigress/4.0.10"
+ENV PATH="/opt/tigress/4.0.9:${PATH}"
+ENV TIGRESS_HOME="/opt/tigress/4.0.9"
 
 # ENV PATH="/opt/tigress/3.3.3:${PATH}"
 # ENV TIGRESS_HOME="/opt/tigress/3.3.3"

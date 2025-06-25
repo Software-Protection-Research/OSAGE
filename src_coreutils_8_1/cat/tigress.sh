@@ -1,0 +1,1 @@
+tigress --Transform=Jit --Functions=main cat.c --out=cat-obf.c

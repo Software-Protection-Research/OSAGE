@@ -107,10 +107,50 @@ else
     temp_file_created=0
 fi
 
+# List of includes needed for JIT
+# jit_includes='
+# #include <assert.h>
+# #include <ctype.h>
+# #include <limits.h>
+# #include <stdarg.h>
+# #include <stdint.h>
+# #include <stdlib.h>
+# #include <string.h>
+# #include <sys/mman.h>
+# #include <sys/types.h>
+# #include <sys/wait.h>
+# #include <unistd.h>
+# '
+
+# if [[ "$tigress_options_replaced" == *"--Transform=Jit"* ]]; then
+#     temp_with_plugin="${abcdef_dir_prog_cur}/$(basename "$2" .c)_with_jit.c"
+#     cp "$2" "$temp_with_plugin"
+#     awk -v jit_includes="$jit_includes" '
+#     BEGIN { in_comment=0; inserted=0 }
+#     {
+#         if (!inserted && $0 ~ /^\/\*!/) in_comment=1
+#         print $0
+#         if (in_comment && $0 ~ /\*\//) {
+#             print jit_includes
+#             inserted=1
+#             in_comment=0
+#         }
+#     }
+#     END {
+#         if (!inserted) print jit_includes
+#     }
+#     ' "$temp_with_plugin" > "${temp_with_plugin}.tmp" && mv "${temp_with_plugin}.tmp" "$temp_with_plugin"
+#     input_file="$temp_with_plugin"
+#     temp_file_created=1
+# else
+#     input_file="$2"
+#     temp_file_created=0
+# fi
+
 INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${input_file} --out=${1}.c -o ${temp}"
 
 # Remove the temp file if it was created
-if [[ $temp_file_created -eq 1 ]]; then
+if [[ $temp_file_created -eq 2 ]]; then
     rm -f "$temp_with_plugin"
 fi
 

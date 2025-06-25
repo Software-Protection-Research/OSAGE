@@ -2,7 +2,7 @@
 
 set -ex
 
-VERSIONS="tigress-4.0.10-full.zip"
+VERSIONS="tigress-4.0.9-full.zip"
 BASE_URL=https://tigress.cs.arizona.edu/cgi-bin/projects/tigress/download.cgi
 OUTPUTDIR=/opt/
 
