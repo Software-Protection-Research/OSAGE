@@ -10,6 +10,7 @@
 int reverse(char* string) {
     int i, j, k;
     char rev[100];
+    int final; 
     rev[0] = '\0';
     printf("The original string is %s\n", string);
     for(i = 0; string[i] != '\0'; i++) {
@@ -20,7 +21,6 @@ int reverse(char* string) {
         k--;
     }
     printf("The reverse string is %s\n", rev);
-    int final; 
     sscanf(rev, "%d", &final);
     return i;
 }

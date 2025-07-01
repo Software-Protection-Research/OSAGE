@@ -25,8 +25,8 @@ export abcdef_dir_config="${abcdef_dir_base}/config"
 export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
-# Directory in which the source projects are located.
-export abcdef_dir_src="${abcdef_dir_base}/src_strings"
+# Directory in which the source projects are located. src_coreutils_8_1 src_all_excl_merged
+export abcdef_dir_src="${abcdef_dir_base}/src_all_excl_merged"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -49,7 +49,7 @@ export use_only_source=""
 
 # --- CompCert C Compiler config -------------------------------------
 #Make Sure it is set to false because it is not working
-use_compcertcc=false
+use_compcertcc=true
 if [ "$use_compcertcc" = true ]; then
     export compcertcc_versions="oslatest"
     # CompCertCC v3.9 variables
@@ -145,7 +145,7 @@ run_obfuscator_cli
 # --------------------------------------------------------------------
 
 # --- clang opt config -----------------------------------------------
-use_clang=false
+use_clang=true
 if [ "$use_clang" = true ]; then
     export opt_prog="opt"
     if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
@@ -344,18 +344,18 @@ setup_tigress_obfuscation() {
 #         --Functions=init_program"
 
 # # Tigress Flatten
-# setup_tigress_obfuscation "Flatten" "\
+# setup_tigress_obfuscation "flatten" "\
 #     --Transform=Flatten \
 #         --Functions=init_program"
 
 # # Tigress Virtualize
-# setup_tigress_obfuscation "Virtualize" "\
+# setup_tigress_obfuscation "virtualize" "\
 #     --Transform=Virtualize \
 #         --VirtualizeDispatch=direct \
 #         --Functions=init_program"
         
 # # Tigrss Split
-# setup_tigress_obfuscation "Split" "\
+# setup_tigress_obfuscation "split" "\
 #     --Transform=Split \
 #        --SplitKinds=deep,block,top \
 #        --SplitCount=100 \
@@ -1104,7 +1104,7 @@ setup_tigress_obfuscation() {
 # Jit Combinations
 
 # Tigress JIT
-setup_tigress_obfuscation "Jit" "\
+setup_tigress_obfuscation "jit" "\
      --Transform=Jit \
          --Functions=init_program "
 
@@ -1229,15 +1229,15 @@ if [ "$use_tinycc" = true ]; then
     fi;
     export tinycc_header_latest=""
     # TinyCC options
-    export tinycc_options_default="-L /usr/lib32"
-    # export tinycc_options_default=""
+    # export tinycc_options_default="-L /usr/lib32"
+    export tinycc_options_default=""
 fi
 
 # --------------------------------------------------------------------
 
 
 # --- Tendra config --------------------------------------------------
-use_tendra=false
+use_tendra=true
 if [ "$use_tendra" = true ]; then
     export tendra_versions="latest"
     # Tendra latest variables
@@ -1252,7 +1252,7 @@ if [ "$use_tendra" = true ]; then
     export tendra_header_latest=""
     # Tendra options
     export tendra_options_default="-L /usr/lib32"
-    export tendra_options_default=""
+    # export tendra_options_default=""
 fi
 
 # --------------------------------------------------------------------

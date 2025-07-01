@@ -107,7 +107,7 @@ else
     temp_file_created=0
 fi
 
-# List of includes needed for JIT
+# # List of includes needed for JIT
 # jit_includes='
 # #include <assert.h>
 # #include <ctype.h>
@@ -150,7 +150,7 @@ fi
 INFO_EXEC "${tigress_prog:?} ${tigress_flags} ${tigress_options_replaced} ${input_file} --out=${1}.c -o ${temp}"
 
 # Remove the temp file if it was created
-if [[ $temp_file_created -eq 2 ]]; then
+if [[ $temp_file_created -eq 1 ]]; then
     rm -f "$temp_with_plugin"
 fi
 

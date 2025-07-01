@@ -18,6 +18,7 @@ coreutils-merge/
 coreutils-merge
 coreutils
 coreutils/
+coreutils/coreutils-9.5/
 coreutils-9.5
 coreutils-9.7
 llvm-obfuscator/
@@ -29,5 +30,7 @@ gcc-8.1.0
 gcc
 isl-isl-0.15
 freebsd/freebsd-src
+freebsd
 git_repos/cil
 tigress-versions/tigress
+tigress-versions/tigresspkg

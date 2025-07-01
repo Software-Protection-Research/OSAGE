@@ -7,12 +7,12 @@ out_dir=$(pwd)/../out
 cd "${out_dir}" || ERROR_EXIT "Could not change to the out directory."
 echo "Current directory: ${out_dir}"
 
-# Find the latest 'run_2025_' directory and get its full path
-latest_run_dir=$(ls -d ${out_dir}/run_2025_06_15* | tail -n 1)
+# Find the latest 'run_202' directory and get its full path
+latest_run_dir=$(ls -d ${out_dir}/run_202* | tail -n 1)
 if [ -z "$latest_run_dir" ]; then
-    ERROR_EXIT "No 'run_2025_06_15' directories found."
+    ERROR_EXIT "No 'run_202' directories found."
 else
-    cd "$latest_run_dir" || ERROR_EXIT "Could not change to the latest run_2025_06_15 directory."
+    cd "$latest_run_dir" || ERROR_EXIT "Could not change to the latest run_202 directory."
     echo "Changed to the latest run directory: $(pwd)"
 fi
 

@@ -139,9 +139,36 @@ python3 -m http.server 8100
 
 ## Merge Coreutils
 
+make sure to not be in docker container and to have tigress >=4.0.10
 unzip coreutils or tar -xvzf coreutils tar.gz folder
+sudo chmod -R 777 coreutils_folder
 cd into coreutils folder
 ./configure
 make
 remove Gnumakefile, makefile.in makefile.am and maint.mk
 exchange make with custom makefile (Merge_Makefile)
+
+## Change Tigress version
+
+Unzip tigress version in tigress-versions
+
+### 1. Check what tigress you are running
+
+which tigress
+ls -l $(which tigress)
+
+### Check for correct Version to be executable
+
+#### This for version 10
+
+ls -l /home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10/tigress
+sudo ln -sf /home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10/tigress /usr/local/bin/tigress
+export TIGRESS_HOME=/home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10
+export PATH=$TIGRESS_HOME:$PATH
+
+#### This for version 9
+
+ls -l /home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9/tigress
+sudo ln -sf /home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9/tigress /usr/local/bin/tigress
+export TIGRESS_HOME=/home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9
+export PATH=$TIGRESS_HOME:$PATH
