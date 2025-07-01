@@ -26,7 +26,7 @@ export abcdef_file_testcases="${abcdef_dir_config}/testcases.ini"
 #for the tools (gcc, tigress)
 export abcdef_dir_tools="/opt"
 # Directory in which the source projects are located. src_coreutils_8_1 src_all_excl_merged
-export abcdef_dir_src="${abcdef_dir_base}/src_all_excl_merged"
+export abcdef_dir_src="${abcdef_dir_base}/src_coreutils_8_1"
 # Directory for the output.
 export abcdef_dir_out="${abcdef_dir_base}/out"
 # Directory with the compilation scripts.
@@ -47,9 +47,24 @@ export use_only_compilers=""
 # export use_only_source="bkdrhash"
 export use_only_source=""
 
+# --- Compiler config -------------------------------------------------
+use_compcertcc=false
+use_gcc=true
+use_ollvm_obfuscator=false
+use_clang=false
+use_ollvm=false
+use_upx=false
+use_tigress=true
+use_tinycc=false
+use_tendra=false
+use_avcleaner=false
+use_whoward3ccobf=false
+use_hellscape=false
+use_myobf=false
+use_framac=false
+
 # --- CompCert C Compiler config -------------------------------------
 #Make Sure it is set to false because it is not working
-use_compcertcc=true
 if [ "$use_compcertcc" = true ]; then
     export compcertcc_versions="oslatest"
     # CompCertCC v3.9 variables
@@ -72,7 +87,6 @@ fi
 
 # --- GCC config -----------------------------------------------------
 #ToDo: Check why it has to be true in order for tigress to work
-use_gcc=true
 if [ "$use_gcc" = true ]; then
     # gcc oslatest - latest version coming from the OS (debian) repo
     export gcc_versions="oslatest"
@@ -127,11 +141,10 @@ fi
 #!/bin/sh
 # Flag to activate/deactivate OLLVM obfuscator
 #Make Sure it is set to false because it is not working
-OLLVM_OBFUSCATOR=false
 
 run_obfuscator_cli() {
     
-    if [ "$OLLVM_OBFUSCATOR" = true ]; then
+    if [ "$use_ollvm_obfuscator" = true ]; then
         echo "Starting OLLVM obfuscation process..."
         docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -d --rm \
             -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator \
@@ -145,7 +158,6 @@ run_obfuscator_cli
 # --------------------------------------------------------------------
 
 # --- clang opt config -----------------------------------------------
-use_clang=true
 if [ "$use_clang" = true ]; then
     export opt_prog="opt"
     if [ "$_DUMP_COMPILER_INFO" -gt 0 ]; then
@@ -179,7 +191,6 @@ fi
 
 # --- ollvm config ---------------------------------------------------
 #Make Sure it is set to false because it is not working
-use_ollvm=false
 if [ "$use_ollvm" = true ]; then
     export ollvm_versions="llvm_4_0"
     export ollvm_prog_llvm_4_0="${abcdef_dir_tools}/ollvm_llvm-4.0/bin/clang"
@@ -237,7 +248,6 @@ fi
 
 
 # --- upx config ---------------------------------------------------
-use_upx=true
 if [ "$use_upx" = true ]; then
     export upx_versions="oslatest"
     upx_prog_oslatest="$(which upx 2>&1)"
@@ -251,7 +261,6 @@ fi
 
 
 # --- Tigress config -------------------------------------------------
-use_tigress=true
 if [ "$use_tigress" = true ]; then
     # Tigress 3.0 variables
     # export tigress_home_3_0="${abcdef_dir_tools}/tigress/3.0"
@@ -321,7 +330,7 @@ setup_tigress_obfuscation() {
 
         # Assign the value to the associative array
         tigress_options["$export_var"]="${tigress_environment_gcc} \
-        --gcc=\"${gcc_prog_musl_oslatest} ${gcc_options_value}\" \
+        --Compiler=\"${gcc_prog_oslatest} ${gcc_options_value}\" \
         ${tigress_options[${obfuscation}_helper]}"
         # Export the variable
         export ${export_var}="${tigress_options[$export_var]}"
@@ -1204,7 +1213,6 @@ setup_tigress_obfuscation "jit" "\
 
 
 # --- TinyCC config --------------------------------------------------
-use_tinycc=true
 if [ "$use_tinycc" = true ]; then
     export tinycc_versions="0_9_27"
     # TinyCC 0.9.27 variables
@@ -1237,7 +1245,6 @@ fi
 
 
 # --- Tendra config --------------------------------------------------
-use_tendra=true
 if [ "$use_tendra" = true ]; then
     export tendra_versions="latest"
     # Tendra latest variables
@@ -1259,7 +1266,6 @@ fi
 
 
 # --- avcleaner config -----------------------------------------------
-use_avcleaner=true
 if [ "$use_avcleaner" = true ]; then
     export avcleaner_versions="master"
     # avcleaner master variables
@@ -1273,7 +1279,6 @@ fi
 
 
 # --- whoward3ccobf config -----------------------------------------------
-use_whoward3ccobf=true
 if [ "$use_whoward3ccobf" = true ]; then
     export whoward3ccobf_versions="master"
     # whoward3ccobf master variables
@@ -1287,7 +1292,6 @@ fi
 
 
 # --- hellscape config -----------------------------------------------
-use_hellscape=true
 if [ "$use_hellscape" = true ]; then
     export hellscape_versions="master"
     # hellscape master variables
@@ -1306,7 +1310,6 @@ fi
 
 
 # --- elizaveta myobf config -----------------------------------------------
-use_myobf=true
 if [ "$use_myobf" = true ]; then
     export myobf_versions="latest"
     # myobf master variables
@@ -1324,7 +1327,6 @@ fi
 
 
 # --- framac config -----------------------------------------------
-use_framac=true
 if [ "$use_framac" = true ]; then
     export framac_versions="latest"
     export framac_prog_latest="frama-c"
