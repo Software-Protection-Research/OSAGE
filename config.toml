@@ -1,0 +1,7 @@
+[osage]
+
+[checks]
+only_enabled = true
+
+[sources]
+directory = "src"
