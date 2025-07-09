@@ -10,7 +10,8 @@
         "rpcb_prot.h": "c",
         "wait.h": "c",
         "time.h": "c",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "string": "c"
     },
     "cmake.ignoreCMakeListsMissing": true
 }

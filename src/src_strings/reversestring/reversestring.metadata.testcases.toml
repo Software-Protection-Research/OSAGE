@@ -1,0 +1,11 @@
+[testcase]
+
+[testcase.1]
+in = "listen"
+out = "silent"
+return = 0
+
+[testcase.2]
+in = "listen"
+out = "hello"
+return = 1

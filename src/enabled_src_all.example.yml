@@ -1,0 +1,12 @@
+enabled:
+  - src_converter
+  - src_coreutils
+  - src_crypt
+  - src_dga
+  - src_hash
+  - src_math
+  - src_onelue
+  - src_search
+  - src_sort
+  - src_sqlite3
+  - src_strings

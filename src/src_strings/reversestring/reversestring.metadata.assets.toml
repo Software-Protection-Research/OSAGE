@@ -1,0 +1,4 @@
+[assets]
+
+[assets.functions]
+name = ["main", "reverse"]

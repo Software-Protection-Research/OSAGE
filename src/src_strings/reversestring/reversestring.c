@@ -1,49 +1,40 @@
-/*!
-    \secrets: main reverse
-    \backdoor: test
-*/
-
-#include "../includes.h"
 #include <stdlib.h>
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-int reverse(char* string) {
+int reverse(char* original_string, char* reverse_string) {
     int i, j, k;
-    char rev[100];
-    int final; 
-    rev[0] = '\0';
-    printf("The original string is %s\n", string);
-    for(i = 0; string[i] != '\0'; i++) {
+    for(i = 0; original_string[i] != '\0'; i++) {
     }
     k = i-1;
     for(j = 0; j <= i-1; j++) {
-        rev[j] = string[k];
+        reverse_string[j] = original_string[k];
         k--;
     }
-    printf("The reverse string is %s\n", rev);
-    sscanf(rev, "%d", &final);
-    return i;
-}
+    reverse_string[j] = '\0';
 
-void init_program() {
+    if (strcmp(reverse_string, "!prahS7tAeeffoC4emiT") == 0) {
+        return -0x4;
+    }
+
+    return j;
 }
 
 int main(int argc, char* argv[]) {
     char *str;
-    unsigned int result;
-
-    init_program();
+    char *result;
+    int len = 0;
 
     str = argv[1];
-    result = reverse(str);
-
-    if (result == 0x4) {
-        printf("You win!\n");
+    for (len = 0; str[len] != '\0'; len++) {
     }
-    else {
-        printf("You loose!\n");
+    result = (char*)malloc(len * sizeof(char));
+    len = reverse(str, result);
+
+    if (len == -0x4) {
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", result);
+    printf("Result: %s\n", result);
     return 0;
 }

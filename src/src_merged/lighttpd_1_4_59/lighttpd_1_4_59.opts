@@ -1,1 +1,0 @@
--std=gnu99 -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib -lpcre -lcrypt -L/usr/local/opt/lua/lib -llua5.3 -ldeflate -ldl -lz

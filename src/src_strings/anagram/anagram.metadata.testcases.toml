@@ -1,0 +1,11 @@
+[testcase]
+
+[testcase.1]
+in = ["listen", "silent"]
+out = "Result: 0x0"
+return = 0
+
+[testcase.2]
+in = ["listen", "hello"]
+out = "Result: 0x1"
+return = 1

@@ -1,8 +1,3 @@
-/*!
-    \secrets: main checkAnagram
-    \backdoor: 83R35whTPF83R35whTPF83R35whTPF83R35whTPF
-*/
-#include "../includes.h"
 #include <stdio.h>  
 #include <string.h> 
 #include <stdlib.h>  
@@ -50,47 +45,20 @@ int checkAnagram(char *str1, char *str2) {
     return 1;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
-    int len;
-    int len1;
-    int len2;
     char *s1;
     char *s2;
     unsigned int number;
-    char *str;
 
-    init_program();
-
-    str = argv[1];
-
-    len = strlen(str); 
-    len1 = len/2;
-    /* Compensate for possible odd length */
-    len2 = len - len1;
-    /* one for the null terminator */
-    s1 = malloc(len1+1);
-    memcpy(s1, str, len1);
-    s1[len1] = '\0';
-    /* one for the null terminator */
-    s2 = malloc(len2+1);
-    memcpy(s2, str+len1, len2);
-    s2[len2] = '\0';
+    s1 = argv[1];
+    s2 = argv[2];
 
     number = checkAnagram(s1, s2);
 
-    free(s1);
-    free(s2);
-
     if (number == 0x83) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Hash: 0x%x\n", number);
-    return 0;
+    printf("Result: 0x%x\n", number);
+    return number;
 }
