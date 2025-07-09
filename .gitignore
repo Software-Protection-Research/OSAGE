@@ -20,6 +20,7 @@ coreutils
 coreutils/
 coreutils/coreutils-9.5/
 coreutils-9.5
+coreutils-9.5-merged
 coreutils-9.7
 llvm-obfuscator/
 llvm-obfuscator
@@ -34,3 +35,4 @@ freebsd
 git_repos/cil
 tigress-versions/tigress
 tigress-versions/tigresspkg
+api_llm/
