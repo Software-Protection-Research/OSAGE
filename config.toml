@@ -5,6 +5,16 @@ only_enabled = true
 
 [src]
 directory = "src"
+only_enabled = true
 
 [compiler]
 directory = "compiler"
+only_enabled = true
+
+[transformer]
+directory = "transformer"
+only_enabled = true
+
+[analyzer]
+directory = "analyzer"
+only_enabled = true
