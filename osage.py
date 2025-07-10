@@ -4,6 +4,7 @@
 """
 import os
 import argparse
+from datetime import datetime
 import logging
 try:
     import tomllib
@@ -30,6 +31,7 @@ class Main():
         """ Main function.
         TODO What does the main function do?
         """
+        self.config["osage"]["run_timestamp"] = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
         # Define the arguments;
         aparser = argparse.ArgumentParser(
             description="Main interface of OSAGE."
@@ -39,6 +41,7 @@ class Main():
             "action",
             choices=[
                 "build",
+                "buildcompile",
                 "check",
                 "config",
                 "compile",
@@ -62,6 +65,9 @@ class Main():
                 self.start_transformation()
             case "analyze":
                 self.start_analysis()
+            case "buildcompile":
+                self.build_dockerimages()
+                self.start_compilation()
 
     def build_dockerimages(self):
         """Build the docker images of the enabled compilers, analyzers, transformers.

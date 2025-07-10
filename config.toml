@@ -1,4 +1,5 @@
 [osage]
+out = "out"
 
 [checks]
 only_enabled = true
