@@ -4,10 +4,11 @@
 """
 import os
 import argparse
+import logging
 try:
-    import tomllib  # Python 3.11+
+    import tomllib
 except ModuleNotFoundError:
-    import tomli as tomllib  # pip install tomli
+    import tomli as tomllib
 from osage_modules.checkmodule import Checkmodule
 from osage_modules.buildmodule import Buildmodule
 
@@ -17,6 +18,7 @@ class Main():
         Parses arguments and calls the action selected by the user.
     """
     __version__: str = "V20250709"
+    logging.getLogger().setLevel(logging.INFO)
 
     def __init__(self):
         with open("config.toml", "rb") as f:

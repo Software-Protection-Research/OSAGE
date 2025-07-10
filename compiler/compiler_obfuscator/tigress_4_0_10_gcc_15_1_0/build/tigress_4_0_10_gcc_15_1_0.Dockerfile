@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM gcc:15.1.0
 
 ARG TIGRESS_VERSION="tigress_4.0.10-1"
 ARG TIGRESS_PACKAGE="${TIGRESS_VERSION}_all.deb"
@@ -9,7 +9,7 @@ COPY ./ /opt/tigress
 RUN \
 	# Install required packages
 	apt update && \
-	apt install gcc curl unzip perl -y && \
+	apt install curl unzip perl -y && \
 	# Create directory for Tigress
 	mkdir -p /opt/tigress && \
 	# Change to the Tigress directory
