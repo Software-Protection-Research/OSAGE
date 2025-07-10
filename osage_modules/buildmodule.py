@@ -18,28 +18,28 @@ class Buildmodule():
         self.config = pconfig
         self.docker_client = docker.from_env()
 
-    def build_compilers(self, only_enabled: bool = True):
+    def _build_images(self, top_level_directory: str, only_enabled: bool = True):
         """TODO
         """
-        compilers: list[Path] = []
+        tools: list[Path] = []
         if only_enabled:
-            compilers = get_enabled_directories(self.config, "compiler")
+            tools = get_enabled_directories(self.config, top_level_directory)
         else:
-            logging.warning("Building all compilers.")
-            compilers = get_enabled_directories(self.config, "compiler", only_enabled=False)
+            logging.warning("Building all tools.")
+            tools = get_enabled_directories(self.config, top_level_directory, only_enabled=False)
 
-        for compiler in compilers:
+        for tool in tools:
             try:
-                imagename = self.docker_client.images.get(compiler.name)
+                imagename = self.docker_client.images.get(tool.name)
                 logging.info(f"Docker image '{imagename}' already exists. Not building it again.")
             except docker.errors.ImageNotFound:
-                dockerfile = compiler.name+".Dockerfile"
-                dockerfile_dir = compiler.joinpath("build")
-                logging.debug(f"Docker image '{compiler.name}' not found. Building from {dockerfile}.")
+                dockerfile = tool.name+".Dockerfile"
+                dockerfile_dir = tool.joinpath("build")
+                logging.debug(f"Docker image '{tool.name}' not found. Building from {dockerfile}.")
                 dockerimage, json_buildlogs = self.docker_client.images.build(
                     path=str(dockerfile_dir),
                     dockerfile=dockerfile,
-                    tag=compiler.name,
+                    tag=tool.name,
                     quiet=False,
                     rm=True,
                     forcerm=True,
@@ -47,12 +47,17 @@ class Buildmodule():
                 logging.info(f"Docker image '{dockerimage}' was built.")
                 logging.debug(list(json_buildlogs))
 
-    def build_transformers(self):
+    def build_compilers(self, only_enabled: bool = True):
         """TODO
         """
-        print("TODO: Implement this.")
+        self._build_images("compiler", only_enabled=only_enabled)
 
-    def build_analyzers(self):
+    def build_transformers(self, only_enabled: bool = True):
         """TODO
         """
-        print("TODO: Implement this.")
+        self._build_images("transformer", only_enabled=only_enabled)
+
+    def build_analyzers(self, only_enabled: bool = True):
+        """TODO
+        """
+        self._build_images("analyzer", only_enabled=only_enabled)

@@ -8,3 +8,9 @@ directory = "src"
 
 [compiler]
 directory = "compiler"
+
+[transformer]
+directory = "transformer"
+
+[analyzer]
+directory = "analyzer"

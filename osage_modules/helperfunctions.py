@@ -16,7 +16,8 @@ def get_enabled_directories(config, top_level_directory: str, only_enabled: bool
     if only_enabled:
         with open(os.path.join(path, "enabled."+top_level_directory+".yaml"), "r") as f:
             config = yaml.safe_load(f)
-            dirs = [path.joinpath(Path(f)) for f in config["enabled"]]
+            if config["enabled"]:
+                dirs = [path.joinpath(Path(f)) for f in config["enabled"]]
     else:
         # If we want all (not only the enabled) then lets search for all directories
         dirs = [f for f in path.iterdir() if f.is_dir()]
