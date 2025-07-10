@@ -1,0 +1,11 @@
+--Transform=InitEntropy \
+    --InitEntropyKinds=vars \
+--Transform=InitOpaque \
+    --InitOpaqueStructs=list,array,env  \
+--Transform=Virtualize \
+    --Skip=false \
+    --VirtualizeDispatch=ifnest \
+--Transform=SelfModify \
+    --Skip=false \
+    --SelfModifySubExpressions=false \
+    --SelfModifyBogusInstructions=10" \

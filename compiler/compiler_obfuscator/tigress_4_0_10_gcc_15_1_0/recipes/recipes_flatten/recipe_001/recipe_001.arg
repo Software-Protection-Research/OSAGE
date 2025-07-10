@@ -1,0 +1,14 @@
+--Transform=InitEntropy \
+    --InitEntropyKinds=vars \
+--Transform=InitOpaque \
+    --InitOpaqueStructs=list,array,env  \
+--Transform=InitBranchFuns \
+    --InitBranchFunsCount=1 \
+--Transform=AddOpaque \
+    --AddOpaqueStructs=list \
+    --AddOpaqueKinds=true \
+--Transform=AntiBranchAnalysis \
+    --AntiBranchAnalysisKinds=branchFuns \
+    --AntiBranchAnalysisObfuscateBranchFunCall=false \
+    --AntiBranchAnalysisBranchFunFlatten=true \
+--Transform=EncodeArithmetic \

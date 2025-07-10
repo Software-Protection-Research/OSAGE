@@ -1,0 +1,4 @@
+--Transform=InitEntropy \
+--Transform=InitOpaque \
+    --InitOpaqueStructs=list,array,env \
+--Transform=AntiAliasAnalysis \
