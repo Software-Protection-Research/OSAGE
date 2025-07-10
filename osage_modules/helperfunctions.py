@@ -8,13 +8,13 @@ from pathlib import Path
 import yaml
 
 
-def get_enabled_directories(config, top_level_directory: str, only_enabled: bool = True) -> set[Path]:
+def get_enabled_directories(startpath: Path, directory: str, only_enabled: bool = True) -> set[Path]:
     """Check if the sample sources have all the necessary files.
     """
     dirs: set[Path] = set()
-    path: Path = Path(config["osage"]["directory"]).joinpath(config[top_level_directory]["directory"])
+    path: Path = Path(startpath).joinpath(directory)
     if only_enabled:
-        with open(os.path.join(path, "enabled."+top_level_directory+".yaml"), "r") as f:
+        with open(os.path.join(path, "enabled."+directory+".yaml"), "r") as f:
             config = yaml.safe_load(f)
             if config["enabled"]:
                 dirs = [path.joinpath(Path(f)) for f in config["enabled"]]

@@ -5,6 +5,7 @@ only_enabled = true
 
 [src]
 directory = "src"
+only_enabled = true
 
 [compiler]
 directory = "compiler"

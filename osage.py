@@ -10,6 +10,7 @@ except ModuleNotFoundError:
     import tomli as tomllib  # pip install tomli
 from osage_modules.checkmodule import Checkmodule
 from osage_modules.buildmodule import Buildmodule
+from osage_modules.compilemodule import Compilemodule
 
 
 class Main():
@@ -83,7 +84,8 @@ class Main():
     def start_compilation(self):
         """Compile each sample source with each enabled compiler.
         """
-        print("TODO: Implement this.")
+        checker = Compilemodule(self.config)
+        checker.compile()
 
     def start_transformation(self):
         """Transform each sample in a run and create a new run.

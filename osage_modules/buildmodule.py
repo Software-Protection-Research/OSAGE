@@ -22,11 +22,12 @@ class Buildmodule():
         """TODO
         """
         tools: list[Path] = []
+        osage_path = Path(self.config["osage"]["directory"])
         if only_enabled:
-            tools = get_enabled_directories(self.config, top_level_directory)
+            tools = get_enabled_directories(osage_path, top_level_directory)
         else:
             logging.warning("Building all tools.")
-            tools = get_enabled_directories(self.config, top_level_directory, only_enabled=False)
+            tools = get_enabled_directories(osage_path, top_level_directory, only_enabled=False)
 
         for tool in tools:
             try:
