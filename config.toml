@@ -8,9 +8,12 @@ directory = "src"
 
 [compiler]
 directory = "compiler"
+only_enabled = true
 
 [transformer]
 directory = "transformer"
+only_enabled = true
 
 [analyzer]
 directory = "analyzer"
+only_enabled = true

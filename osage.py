@@ -64,9 +64,9 @@ class Main():
         """Build the docker images of the enabled compilers, analyzers, transformers.
         """
         checker = Buildmodule(self.config)
-        checker.build_compilers()
-        checker.build_transformers()
-        checker.build_analyzers()
+        checker.build_compilers(only_enabled=self.config["compiler"]["only_enabled"])
+        checker.build_transformers(only_enabled=self.config["transformer"]["only_enabled"])
+        checker.build_analyzers(only_enabled=self.config["analyzer"]["only_enabled"])
 
     def perform_checks(self):
         """Check the structure of the OSAGE project and the sample sources.
