@@ -53,6 +53,7 @@ RUN \
 		rm "${TIGRESS_ZIP}" && \
         dpkg -i  --force-architecture /opt/tigress/${TIGRESS_PACKAGE} && \
         rm /opt/tigress/${TIGRESS_PACKAGE} && \
+        rm /opt/tigress/initial_page.html && \
         # Clean up apt and dpkg caches
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
