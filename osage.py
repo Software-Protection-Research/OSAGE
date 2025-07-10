@@ -4,7 +4,10 @@
 """
 import os
 import argparse
-import tomllib
+try:
+    import tomllib  # Python 3.11+
+except ModuleNotFoundError:
+    import tomli as tomllib  # pip install tomli
 from osage_modules.checkmodule import Checkmodule
 
 
