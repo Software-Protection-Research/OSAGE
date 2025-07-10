@@ -1,0 +1,4 @@
+--Transform=InitPlugins \
+    --InitPluginsMBAPrefix=mba \
+--Transform=EncodeArithmetic \
+    --EncodeArithmeticKinds=plugins \
