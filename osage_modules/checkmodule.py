@@ -27,9 +27,9 @@ class Checkmodule():
         samples: list[Path] = []
         if self.config["checks"]["only_enabled"]:
             logging.warning("Only checking the enabled sources.")
-            samples = get_enabled_directories(Path(self.config["osage"]["directory"]).joinpath(self.config["sources"]["directory"]))
+            samples = get_enabled_directories(self.config, "src")
         else:
-            samples = get_enabled_directories(Path(self.config["osage"]["directory"]).joinpath(self.config["sources"]["directory"]), only_enabled=False)
+            samples = get_enabled_directories(self.config, "src", only_enabled=False)
 
         # Check if the backdoor, asset,... files exist
         for sample in samples:

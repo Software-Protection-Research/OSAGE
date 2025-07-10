@@ -9,6 +9,7 @@ try:
 except ModuleNotFoundError:
     import tomli as tomllib  # pip install tomli
 from osage_modules.checkmodule import Checkmodule
+from osage_modules.buildmodule import Buildmodule
 
 
 class Main():
@@ -34,6 +35,7 @@ class Main():
         aparser.add_argument(
             "action",
             choices=[
+                "build",
                 "check",
                 "config",
                 "compile",
@@ -45,6 +47,8 @@ class Main():
         # Parse the arguments;
         args = aparser.parse_args()
         match args.action:
+            case "build":
+                self.build_dockerimages()
             case "check":
                 self.perform_checks()
             case "config":
@@ -55,6 +59,14 @@ class Main():
                 self.start_transformation()
             case "analyze":
                 self.start_analysis()
+
+    def build_dockerimages(self):
+        """Build the docker images of the enabled compilers, analyzers, transformers.
+        """
+        checker = Buildmodule(self.config)
+        checker.build_compilers()
+        checker.build_transformers()
+        checker.build_analyzers()
 
     def perform_checks(self):
         """Check the structure of the OSAGE project and the sample sources.

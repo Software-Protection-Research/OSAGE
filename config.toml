@@ -3,5 +3,8 @@
 [checks]
 only_enabled = true
 
-[sources]
+[src]
 directory = "src"
+
+[compiler]
+directory = "compiler"

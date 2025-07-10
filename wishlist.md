@@ -8,6 +8,7 @@
   - Struktur überpürfen(Files vorhanden und entsprechend benannt)
   - Docker Container bauen
 - init_program aus allen src files entfernen und wenn notwendig in den Tigress Container einbauen
+- Maybe replace python docker package with aiodocker?
 
 ## Ordnerstruktur
 
