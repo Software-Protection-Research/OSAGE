@@ -36,7 +36,7 @@ class Buildmodule():
             except docker.errors.ImageNotFound:
                 dockerfile = tool.name+".Dockerfile"
                 dockerfile_dir = tool.joinpath("build")
-                logging.debug(f"Docker image '{tool.name}' not found. Building from {dockerfile}.")
+                logging.info(f"Docker image '{tool.name}' not found. Building from {dockerfile}.")
                 dockerimage, json_buildlogs = self.docker_client.images.build(
                     path=str(dockerfile_dir),
                     dockerfile=dockerfile,
@@ -49,7 +49,7 @@ class Buildmodule():
                 logging.debug(list(json_buildlogs))
                 
     def _remove_images(self, top_level_directory: str, only_enabled: bool = True):
-        """Remove the docker images of the enabled compilers, analyzers, transformers.
+        """Remove the docker images of the compilers, analyzers, transformers.
         """
         tools: list[Path] = []
         osage_path = Path(self.config["osage"]["directory"])

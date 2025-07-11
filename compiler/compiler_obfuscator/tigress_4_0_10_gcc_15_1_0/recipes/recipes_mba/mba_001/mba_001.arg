@@ -1,6 +1,5 @@
---Transform=InitPlugins \
-    --InitPluginsMBAPrefix=mba \
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
---Transform=EncodeArithmetic \
-    --EncodeArithmeticKinds=plugins \
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitPlugins
+  --InitPluginsMBAPrefix=mba
+--Transform=EncodeArithmetic
+  --EncodeArithmeticKinds=plugins
+  --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
