@@ -42,6 +42,8 @@ class Main():
             choices=[
                 "build",
                 "buildcompile",
+                "rebuild",
+                "remove",
                 "check",
                 "config",
                 "compile",
@@ -68,6 +70,11 @@ class Main():
             case "buildcompile":
                 self.build_dockerimages()
                 self.start_compilation()
+            case "remove":
+                self.remove_dockerimages()
+            case "rebuild":
+                self.remove_dockerimages()
+                self.build_dockerimages()
 
     def build_dockerimages(self):
         """Build the docker images of the enabled compilers, analyzers, transformers.
@@ -76,6 +83,14 @@ class Main():
         checker.build_compilers(only_enabled=self.config["compiler"]["only_enabled"])
         checker.build_transformers(only_enabled=self.config["transformer"]["only_enabled"])
         checker.build_analyzers(only_enabled=self.config["analyzer"]["only_enabled"])
+
+    def remove_dockerimages(self):
+        """Remove the docker images of the enabled compilers, analyzers, transformers.
+        """
+        checker = Buildmodule(self.config)
+        checker.remove_compilers(only_enabled=self.config["compiler"]["only_enabled"])
+        checker.remove_transformers(only_enabled=self.config["transformer"]["only_enabled"])
+        checker.remove_analyzers(only_enabled=self.config["analyzer"]["only_enabled"])
 
     def perform_checks(self):
         """Check the structure of the OSAGE project and the sample sources.
