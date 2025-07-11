@@ -38,5 +38,4 @@ RUN mkdir -p /opt/tendra && \
     ls -lah;
     
 WORKDIR /opt/tendra
-VOLUME ["/opt/tendra"]
-CMD ["bash"]
+ENTRYPOINT ["/opt/tendra/mapper.sh"]
