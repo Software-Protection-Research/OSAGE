@@ -36,6 +36,7 @@ class Compilemodule():
                     result_dir = Path(self.config["osage"]["out"]+"/"+f"run_{self.config['osage']['run_timestamp']}/"+sample_dir.name+"/"+compiler_dir.name+"-"+recipe_dir.name).absolute()
                     result_dir.mkdir(parents=True)
                     try:
+                        logging.info(f"Running compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name}.")
                         started_container = self.docker_client.containers.run(
                             compiler_dir.name,
                             entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
@@ -56,5 +57,4 @@ class Compilemodule():
                     # print(sample)
                     # print(recipe)
                     print("----------")
-                    break
         print("TODO: Implement this.")

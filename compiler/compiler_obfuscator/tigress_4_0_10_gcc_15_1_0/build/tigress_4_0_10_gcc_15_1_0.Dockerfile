@@ -59,4 +59,4 @@ RUN \
         rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
 
 WORKDIR /opt/tigress/
-ENTRYPOINT /opt/tigress/mapper.sh
+ENTRYPOINT ["/opt/tigress/mapper.sh"]
