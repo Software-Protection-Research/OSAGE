@@ -9,6 +9,7 @@
   - Docker Container bauen
 - init_program aus allen src files entfernen und wenn notwendig in den Tigress Container einbauen
 - Maybe replace python docker package with aiodocker?
+- Check why for tinyCC sometimes it crashes randomly and throws this error: docker.errors.NotFound: 404 Client Error for http+docker://localhost/v1.51/containers/825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491/json: Not Found ("No such container: 825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491")
 
 ## Ordnerstruktur
 
