@@ -1,5 +1,5 @@
 #!/bin/bash
-# Compile Script for gcc
+# Compile Script for template
 
 # echo "SH-NAME: $0"
 # echo "SAMPLE: $1"
@@ -21,5 +21,3 @@ args_recipe=$(tr "\n" " " < "/recipe/${recipe}.arg")
 args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
 # echo "ARGS: ${args}"
-# echo "gcc $args "/in/${sample}.c" -o "/out/${sample}.out""
-gcc $args "/in/${sample}.c" -o "/out/${sample}.out"
