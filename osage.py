@@ -43,6 +43,7 @@ class Main():
                 "build",
                 "buildcompile",
                 "rebuild",
+                "rebuildcompile",
                 "remove",
                 "check",
                 "config",
@@ -75,6 +76,10 @@ class Main():
             case "rebuild":
                 self.remove_dockerimages()
                 self.build_dockerimages()
+            case "rebuildcompile":
+                self.remove_dockerimages()
+                self.build_dockerimages()
+                self.start_compilation()
 
     def build_dockerimages(self):
         """Build the docker images of the enabled compilers, analyzers, transformers.
