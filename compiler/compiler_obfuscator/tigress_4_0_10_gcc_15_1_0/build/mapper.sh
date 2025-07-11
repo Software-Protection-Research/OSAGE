@@ -13,7 +13,7 @@ assets=$(tr "\n" "," < "/in/${sample}.metadata.assets.functions.txt")
 cfile="${sample}.c"
 opts=$(cat /in/"${sample}.metadata.options.txt")
 
-args_recipe=$(tr -d "\n" < "/recipe/${recipe}.arg")
+args_recipe=$(tr "\n" " " < "/recipe/${recipe}.arg")
 
 echo "args_recipe: ${args_recipe}"
 
