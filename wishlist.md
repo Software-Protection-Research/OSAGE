@@ -18,6 +18,7 @@ DOWN
 Tigress.cs.arizona.edu is DOWN
 It is not just you. The server is not responding...
 - Check the correct usage of frama-c, since it is not a compiler nor an obfuscator, it is a source-code analysis tool. Also it does not include o-levels
+- Add a warning for Windows users to start Docker Desktop first, or use WSL2
 
 ## Ordnerstruktur
 

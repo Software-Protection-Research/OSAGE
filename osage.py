@@ -84,6 +84,9 @@ class Main():
     def build_dockerimages(self):
         """Build the docker images of the enabled compilers, analyzers, transformers.
         """
+        checker = Checkmodule(self.config)
+        if checker.check_docker_running_windows() is False:
+            return
         checker = Buildmodule(self.config)
         checker.build_compilers(only_enabled=self.config["compiler"]["only_enabled"])
         checker.build_transformers(only_enabled=self.config["transformer"]["only_enabled"])

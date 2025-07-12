@@ -5,6 +5,7 @@
 """
 from pathlib import Path
 import logging
+import sys
 from osage_modules.helperfunctions import get_enabled_directories
 
 
@@ -35,3 +36,31 @@ class Checkmodule():
         for sample in samples:
             print(sample)
             print("TODO: Implement this.")
+
+    def check_docker_running_windows(self):
+        if sys.platform != "win32":
+            logging.info("Docker check is only relevant on Windows.")
+            return False  # Only check on Windows
+        pipe_path = r'\\.\pipe\docker_engine'
+        try:
+            import ctypes
+            GENERIC_READ = 0x80000000
+            OPEN_EXISTING = 3
+            handle = ctypes.windll.kernel32.CreateFileW(
+                pipe_path,
+                GENERIC_READ,
+                0,
+                None,
+                OPEN_EXISTING,
+                0,
+                None
+            )
+            if handle == -1:
+                logging.error("Docker is not running on Windows.")
+                return False
+            ctypes.windll.kernel32.CloseHandle(handle)
+            logging.info("Docker is running on Windows.")
+            return True
+        except Exception:
+            logging.error("Error checking Docker status on Windows.")
+            return False
