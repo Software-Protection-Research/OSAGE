@@ -39,8 +39,7 @@ class Checkmodule():
 
     def check_docker_running_windows(self):
         if sys.platform != "win32":
-            logging.info("Docker check is only relevant on Windows.")
-            return False  # Only check on Windows
+            return True  # Only check on Windows
         pipe_path = r'\\.\pipe\docker_engine'
         try:
             import ctypes
