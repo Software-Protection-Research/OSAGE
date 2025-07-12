@@ -5,4 +5,4 @@ enabled:
   # - compiler_compiler/tinycc_0_9_27
   # - compiler_compiler/tendra
   # - compiler_compiler/clang_20_1_7
-  # - compiler_compiler/framac_31_0
+  # - compiler_compiler/framac_30_0
