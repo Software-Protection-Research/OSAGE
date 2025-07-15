@@ -22,20 +22,40 @@ class Checkmodule():
         """
         print("TODO: Implement this.")
 
-    def check_sources(self):
+    def check_sources(self, top_level_directory: str, only_enabled: bool = True):
         """Check if the sample sources have all the necessary files.
         """
         samples: list[Path] = []
-        if self.config["checks"]["only_enabled"]:
-            logging.warning("Only checking the enabled sources.")
-            samples = get_enabled_directories(self.config, "src")
+        osage_path = Path(self.config["osage"]["directory"])
+        if only_enabled:
+            logging.info("Only checking the enabled sources.")
+            samples = get_enabled_directories(osage_path, top_level_directory)
         else:
-            samples = get_enabled_directories(self.config, "src", only_enabled=False)
-
-        # Check if the backdoor, asset,... files exist
+            logging.warning("Removing all tools.")
+            samples = get_enabled_directories(osage_path, top_level_directory, only_enabled=False)
+             # Check if the backdoor, asset,... files exist
+        required_suffixes = [
+            ".c",
+            ".metadata.assets.functions.txt",
+            ".metadata.backdoor.toml",
+            ".metadata.options.txt",
+            ".metadata.testcases.toml"
+        ]
+        all_ok = True
         for sample in samples:
-            print(sample)
-            print("TODO: Implement this.")
+            base = sample.name
+            missing = []
+            for suffix in required_suffixes:
+                expected_file = sample / f"{base}{suffix}"
+                if not expected_file.exists():
+                    missing.append(expected_file)
+            if missing:
+                all_ok = False
+                print(f"[ERROR] Missing files for sample '{base}':")
+                for f in missing:
+                    print(f"  - {f}")
+        if all_ok:
+            print("[OK] All samples have the required files.")
 
     def check_docker_running_windows(self):
         if sys.platform != "win32":

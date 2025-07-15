@@ -104,7 +104,7 @@ class Main():
         """
         checker = Checkmodule(self.config)
         checker.check_config()
-        checker.check_sources()
+        checker.check_sources("src", only_enabled=self.config["src"]["only_enabled"])
 
     def list_config(self):
         """List the current config (enabled sample sources, compilers, transformers, analyzers).
