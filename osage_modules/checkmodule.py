@@ -31,11 +31,11 @@ class Checkmodule():
             logging.info("Only checking the enabled sources.")
             samples = get_enabled_directories(osage_path, top_level_directory)
         else:
-            logging.warning("Removing all tools.")
+            logging.warning("Checking all sources, including disabled ones.")
             samples = get_enabled_directories(osage_path, top_level_directory, only_enabled=False)
              # Check if the backdoor, asset,... files exist
         enabled_names = {s.parent.name for s in samples}
-        print(f"Enabled sources: {', '.join(enabled_names)}")
+        logging.info(f"Enabled sources: {', '.join(enabled_names)}")
         
         required_suffixes = [
             ".c",
@@ -54,13 +54,13 @@ class Checkmodule():
                     missing.append(expected_file)
             if missing:
                 all_ok = False
-                print(f"[ERROR] Missing files for sample '{base}':")
+                logging.error(f"[ERROR] Missing files for sample '{base}':")
                 for f in missing:
-                    print(f"  - {f}")
-            # else:
-                # print(f"[OK] All required files for sample '{base}' are present.")
+                    logging.error(f"  - {f}")
+            else:
+                logging.debug(f"[OK] All required files for sample '{base}' are present.")
         if all_ok:
-            print("[OK] All samples have the required files.")
+            logging.info("[OK] All samples have the required files.")
 
     def check_docker_running_windows(self):
         if sys.platform != "win32":
