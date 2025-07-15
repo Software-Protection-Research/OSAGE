@@ -1,5 +1,6 @@
 [osage]
 out = "out"
+number_of_concurrent_containers = 8
 
 [checks]
 only_enabled = true
@@ -11,6 +12,7 @@ only_enabled = true
 [compiler]
 directory = "compiler"
 only_enabled = true
+timeout = 3600
 
 [transformer]
 directory = "transformer"
