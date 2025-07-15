@@ -34,6 +34,9 @@ class Checkmodule():
             logging.warning("Removing all tools.")
             samples = get_enabled_directories(osage_path, top_level_directory, only_enabled=False)
              # Check if the backdoor, asset,... files exist
+        enabled_names = {s.parent.name for s in samples}
+        print(f"Enabled sources: {', '.join(enabled_names)}")
+        
         required_suffixes = [
             ".c",
             ".metadata.assets.functions.txt",
@@ -54,6 +57,8 @@ class Checkmodule():
                 print(f"[ERROR] Missing files for sample '{base}':")
                 for f in missing:
                     print(f"  - {f}")
+            # else:
+                # print(f"[OK] All required files for sample '{base}' are present.")
         if all_ok:
             print("[OK] All samples have the required files.")
 
