@@ -15,21 +15,20 @@ opts=$(cat /in/"${sample}.metadata.options.txt")
 
 args_recipe=$(tr "\n" " " < "/recipe/${recipe}.arg")
 
-# echo "args_recipe: ${args_recipe}"
+# Make a local writable copy of the sample
+mkdir "/in_modified"
+cp -r /in/. /in_modified/
 
-#args=$(echo "${args_recipe}" | sed "s/OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}/g")
+# If the recipe has a .include.h file, we include it in the sample
+include_recipe="/recipe/${recipe}.include.h"
+if [ -f "$include_recipe" ]; then
+    echo -e "#include \"${include_recipe}\"\n$(cat /in/${cfile})" > "/in_modified/${cfile}"
+fi
+
 args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
-# echo "ARGS: ${args}"
-# Check if there is a .h file
-#hfile=$(cat "${recipe}.h")
-# If we have one add it to the sample
-# TODO: Add it to the sample
-
-
 # echo "tigress ${opts} ${args} /in/${cfile} --out=/out/${sample}.c -o /out/${sample}.out"
-
-tigress ${opts} ${args} "/in/${cfile}" --out="/out/${sample}.c"
+tigress ${opts} ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
 
 gcc "/out/${sample}.c" -o "/out/${sample}.out" ${opts}
 
