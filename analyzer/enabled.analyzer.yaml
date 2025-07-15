@@ -1,1 +1,2 @@
 enabled:
+  - analyzer_statistics/out_statistics

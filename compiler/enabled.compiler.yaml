@@ -1,5 +1,5 @@
 enabled:
-  - compiler_obfuscator/tigress_4_0_10_gcc_15_1_0
+  # - compiler_obfuscator/tigress_4_0_10_gcc_15_1_0
   # - compiler_compiler/gcc_15_1_0
   # - compiler_obfuscator/ollvm_13_0_1
   # - compiler_compiler/tinycc_0_9_27

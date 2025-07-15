@@ -13,6 +13,7 @@ except ModuleNotFoundError:
 from osage_modules.checkmodule import Checkmodule
 from osage_modules.buildmodule import Buildmodule
 from osage_modules.compilemodule import Compilemodule
+from osage_modules.analyzemodule import Analyzemodule
 
 
 class Main():
@@ -125,8 +126,9 @@ class Main():
     def start_analysis(self):
         """Analyze configured run with each enabled analyzer.
         """
-        print("TODO: Implement this.")
-
+        analyzer = Analyzemodule(self.config)
+        last_run = "run_2025_07_15_12_30_40" # This should be replaced with the actual last run logic
+        analyzer.analyze(last_run)
 
 if __name__ == "__main__":
     main = Main()
