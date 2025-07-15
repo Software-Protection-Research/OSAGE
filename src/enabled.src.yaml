@@ -1,3 +1,4 @@
 enabled:
-  - src_strings
-  - src_strings/anagram
+  # - src_strings
+  # - src_strings/anagram
+  - src_coreutils

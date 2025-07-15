@@ -1,9 +1,9 @@
 #!/bin/bash
 # Compile Script for tigress
 
-# echo "SH-NAME: $0"
-# echo "SAMPLE: $1"
-# echo "RECIPE: $2"
+echo "SH-NAME: $0"
+echo "SAMPLE: $1"
+echo "RECIPE: $2"
 # Get the version from the name of the file
 sample="$1"
 recipe="$2"
@@ -31,5 +31,5 @@ args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
 tigress ${opts} ${args} "/in/${cfile}" --out="/out/${sample}.c"
 
-gcc "/out/${sample}.c" -o "/out/${sample}.out"
+gcc "/out/${sample}.c" -o "/out/${sample}.out" ${opts}
 

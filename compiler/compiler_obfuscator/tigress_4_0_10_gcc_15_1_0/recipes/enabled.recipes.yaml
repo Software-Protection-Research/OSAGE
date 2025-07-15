@@ -1,13 +1,13 @@
 enabled:
-  - recipes_anti_alias_analysis #NanoSleep
-  - recipes_anti_taint_analysis #NanoSleep
-  - recipes_encode_arithmetic #works
-  - recipes_encode_branches #works
-  - recipes_encode_literals #NanoSleep
-  - recipes_flatten #works
+  # - recipes_anti_alias_analysis #NanoSleep
+  # - recipes_anti_taint_analysis #NanoSleep
+  # - recipes_encode_arithmetic #works
+  # - recipes_encode_branches #works
+  # - recipes_encode_literals #NanoSleep
+  # - recipes_flatten #works
   - recipes_ident #works
-  - recipes_mba #Not Using MBA.h file so far
-  - recipes_self_modify #NanoSleep
-  - recipes_split #works
-  - recipes_tigress_website #works
-  - recipes_virtualize #works
+  # - recipes_mba #Not Using MBA.h file so far
+  # - recipes_self_modify #NanoSleep
+  # - recipes_split #works
+  # - recipes_tigress_website #works
+  # - recipes_virtualize #works
