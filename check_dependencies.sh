@@ -59,10 +59,10 @@ else
     SUCCESS "Python3 is installed."
 fi
 
-if ! python3 -c 'import pandas'; then
-    ERROR_EXIT "Python3 pandas not found! (python3 -m pip install pandas)"
+if ! python3 -c 'import docker'; then
+    ERROR_EXIT "Python3 docker not found! (python3 -m pip install docker)"
 else
-    SUCCESS "Python package pandas is installed."
+    SUCCESS "Python package docker is installed."
 fi
 
 SUCCESS "DONE! All dependencies are OK."
