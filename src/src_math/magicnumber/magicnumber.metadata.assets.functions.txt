@@ -1,0 +1,4 @@
+main
+sumOfDigits
+reverse
+magic_number

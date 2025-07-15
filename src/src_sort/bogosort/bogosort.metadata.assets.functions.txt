@@ -1,0 +1,4 @@
+main
+sort
+shuffle
+check_sorted
