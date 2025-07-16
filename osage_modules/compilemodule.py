@@ -38,19 +38,23 @@ class Compilemodule():
                 for sample_dir in samples:
                     result_dir = Path(self.config["osage"]["out"]+"/"+f"run_{self.config['osage']['run_timestamp']}/"+sample_dir.name+"/"+compiler_dir.name+"-"+recipe_dir.name).absolute()
                     result_dir.mkdir(parents=True)
+                    global_imports_dir = sample_dir.parent.joinpath("global_imports")
                     try:
                         logging.debug(f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name} to list.")
+                        volumes={
+                                sample_dir: {"bind": "/in", "mode": "ro"},
+                                recipe_dir: {"bind": "/recipe", "mode": "ro"},
+                                result_dir: {"bind": "/out", "mode": "rw"},
+                            }
+                        if global_imports_dir.exists():
+                            volumes[global_imports_dir] = {"bind": "/global_imports", "mode": "ro"}
                         containerlist.append(Osagecontainer(
                             containername=compiler_dir.name,
                             entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
                             auto_remove=False,
                             remove=False,
                             detach=True,
-                            volumes={
-                                sample_dir: {"bind": "/in", "mode": "ro"},
-                                recipe_dir: {"bind": "/recipe", "mode": "ro"},
-                                result_dir: {"bind": "/out", "mode": "rw"},
-                            },
+                            volumes=volumes,
                             timeout=self.config["compiler"]["timeout"],
                             result_dir=result_dir,
                             sample_name=sample_dir.name,

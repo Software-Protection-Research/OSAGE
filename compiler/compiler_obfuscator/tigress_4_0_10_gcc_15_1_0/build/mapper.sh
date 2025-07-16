@@ -30,8 +30,8 @@ fi
 
 args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
-echo "tigress ${opts} ${args} "/in_modified/${cfile}" --out="/out/${sample}.c""
-tigress ${opts} ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
+echo "tigress ${args} "/in_modified/${cfile}" --out="/out/${sample}.c""
+tigress ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
 
-gcc "/out/${sample}.c" -o "/out/${sample}.out" ${opts}
-
+echo "gcc -o /out/${sample}.out /out/${sample}.c ${opts}"
+gcc -o /out/${sample}.out /out/${sample}.c ${opts}
