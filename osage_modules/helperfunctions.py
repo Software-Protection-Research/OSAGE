@@ -53,7 +53,7 @@ def _remove_container(running_containers: list[Osagecontainer], container) -> li
     """
     logfilename = container.result_dir.joinpath(f"{container.sample_name}.log")
     with open(logfilename, "w", encoding="utf-8") as logfile:
-        logfile.write(str(container.logs()))
+        logfile.write(str(container.logs()).replace("\\n", "\n"))
     logging.info(f"Removing container: {container}")
     container.remove_container()
     running_containers.remove(container)
