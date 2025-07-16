@@ -3,18 +3,12 @@
     Runs each compiler with each recipe and each source sample.
     authors: cooki35
 """
-import queue
 from pathlib import Path
 import logging
-import threading
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
+from osage_modules.helperfunctions import run_containers_in_batches
 from osage_modules.osagecontainer import Osagecontainer
-
-
-def _wait_for_container_to_finish(running_container: Osagecontainer, flag_queue: queue):
-    running_container.wait_until_done()
-    flag_queue.put(running_container)
 
 
 class Compilemodule():
@@ -72,41 +66,5 @@ class Compilemodule():
         # TODO: Maybe let the user check the list?
 
         # Run the containers in batches
-        running_containers = []
-        finished_containers_queue = queue.Queue()
-        for container in containerlist:
-            # Start x containers at once
-            logging.info(f"Starting container: {container}")
-            container.run(self.docker_client)
-            running_containers.append(container)
-            container_thread = threading.Thread(target=_wait_for_container_to_finish, args=(container, finished_containers_queue))
-            container_thread.daemon = True
-            container_thread.start()
-            # If we have more than x containers wait for one to finish before we continue
-            if len(running_containers) >= self.config["osage"]["number_of_concurrent_containers"]:
-                finished_container = self._wait_for_any_container_to_finish(finished_containers_queue)
-                running_containers = self.remove_container(running_containers, finished_container)
-
-        # Wait for the final containers to finish
-        while len(running_containers) > 0:
-            finished_container = self._wait_for_any_container_to_finish(finished_containers_queue)
-            running_containers = self.remove_container(running_containers, finished_container)
+        run_containers_in_batches(containerlist, self.docker_client, self.config["osage"]["number_of_concurrent_containers"])
         logging.info("Done with the compilation.")
-
-    def _wait_for_any_container_to_finish(self, finished_containers_queue):
-        return finished_containers_queue.get()
-
-    def remove_container(self, running_containers: list[Osagecontainer], container) -> list[Osagecontainer]:
-        """Remove the container from docker, the running_containers list and write log file.
-        """
-        logfilename = container.result_dir.joinpath(f"{container.sample_name}.log")
-        logs = container.logs()
-        if isinstance(logs, bytes):
-            logs = logs.decode("utf-8", errors="replace")
-        with open(logfilename, "w", encoding="utf-8") as logfile:
-            for line in logs.splitlines():
-                logfile.write(line + "\n")
-        logging.info(f"Removing container: {container}")
-        container.remove_container()
-        running_containers.remove(container)
-        return running_containers
