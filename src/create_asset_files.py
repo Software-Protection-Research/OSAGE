@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-parent_dir = "src_coreutils_9_5"
+parent_dir = "src_coreutils"
 
 for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]:
     print(f"Processing subdirectory: {subdir}")
@@ -42,14 +42,13 @@ for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(p
         for name in func_names:
             f.write(name + '\n')
 
-    print(f"Processed {subdir}")
     backdoor_path = os.path.join(subdir_path, f"{subdir}.metadata.backdoor.toml")
     with open(backdoor_path, 'w', encoding='utf-8') as f:
         f.write('[backdoor]\nargument = "replace_me_with_future_backdoor"\n')
 
     options_path = os.path.join(subdir_path, f"{subdir}.metadata.options.txt")
     with open(options_path, 'w', encoding='utf-8') as f:
-        f.write('-I. -Ilib -Isrc -c')
+        f.write('/global_imports/libver.a /global_imports/libcoreutils.a -ldl')
 
     testcases_path = os.path.join(subdir_path, f"{subdir}.metadata.testcases.toml")
     with open(testcases_path, 'w', encoding='utf-8') as f:

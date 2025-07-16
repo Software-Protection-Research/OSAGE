@@ -1,1 +1,1 @@
--I. -Ilib -Isrc -c
+/global_imports/libver.a /global_imports/libcoreutils.a -ldl

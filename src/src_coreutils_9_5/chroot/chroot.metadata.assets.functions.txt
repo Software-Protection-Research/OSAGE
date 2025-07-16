@@ -1,4 +1,0 @@
-is_root
-main
-parse_additional_groups
-usage

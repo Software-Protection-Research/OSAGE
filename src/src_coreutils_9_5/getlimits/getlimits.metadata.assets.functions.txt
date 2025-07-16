@@ -1,6 +1,0 @@
-decimal_absval_add_one
-main
-print_DBL
-print_FLT
-print_LDBL
-usage

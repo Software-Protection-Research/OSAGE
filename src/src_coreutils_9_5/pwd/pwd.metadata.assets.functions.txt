@@ -1,9 +1,0 @@
-file_name_free
-file_name_init
-file_name_prepend
-find_dir_entry
-logical_getcwd
-main
-nth_parent
-robust_getcwd
-usage

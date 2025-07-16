@@ -1,6 +1,0 @@
-describe_change
-main
-mode_changed
-process_file
-process_files
-usage

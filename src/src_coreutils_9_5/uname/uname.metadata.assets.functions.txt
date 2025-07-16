@@ -1,5 +1,0 @@
-decode_switches
-main
-print_element
-print_element_env
-usage
