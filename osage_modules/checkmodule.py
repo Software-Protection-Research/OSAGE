@@ -99,7 +99,7 @@ class Checkmodule():
         # Checking samples, compiler, transformer, analyzer
         for moduletype in ["src", "compiler", "transformer", "analyzer"]:
             modules: list[Path] = get_enabled_directories(osage_path, moduletype, only_enabled=self.config[moduletype]["only_enabled"])
-            logging.info(f"Directory for {moduletype}: {self.config[moduletype]["directory"]}")
+            logging.info(f"Directory for {moduletype}: {self.config[moduletype]['directory']}")
             enabled_modules = ""
             for module in modules:
                 enabled_modules += f"\n- {module.name}"
