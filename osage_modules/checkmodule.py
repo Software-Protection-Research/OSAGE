@@ -101,6 +101,6 @@ class Checkmodule():
             modules: list[Path] = get_enabled_directories(osage_path, moduletype, only_enabled=self.config[moduletype]["only_enabled"])
             logging.info(f"Directory for {moduletype}: {self.config[moduletype]['directory']}")
             enabled_modules = ""
-            for module in modules:
+            for module in sorted(modules):
                 enabled_modules += f"\n- {module.name}"
             logging.info(f"Enabled {moduletype}:{enabled_modules}")

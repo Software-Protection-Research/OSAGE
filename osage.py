@@ -4,6 +4,7 @@
 """
 import os
 import argparse
+from pathlib import Path
 from datetime import datetime
 import logging
 try:
@@ -128,8 +129,25 @@ class Main():
         """Analyze configured run with each enabled analyzer.
         """
         analyzer = Analyzemodule(self.config)
-        last_run = "run_2025_07_15_12_30_40" # This should be replaced with the actual last run logic
-        analyzer.analyze(last_run)
+        out_dir = Path(self.config["osage"]["out"])
+        last_run = self._get_last_run(out_dir)
+        if last_run:
+            analyzer.analyze(last_run)
+        else:
+            logging.warning(f"No run in {out_dir.absolute()}")
+
+    def _get_last_run(self, out_dir: Path):
+        run_dirs = []
+        # Go through all subdirs/files in the out_dir
+        for entry in out_dir.iterdir():
+            # Only add directories starting with "run_" to the list
+            if entry.is_dir() and entry.name.startswith("run_"):
+                run_dirs.append(entry)
+        # Check if we get directories and return the (alphabetically) latest one
+        if len(run_dirs) > 0:
+            return sorted(run_dirs)[-1]
+        return None
+
 
 if __name__ == "__main__":
     main = Main()
