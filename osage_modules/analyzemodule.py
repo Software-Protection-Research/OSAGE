@@ -49,8 +49,8 @@ class Analyzemodule():
                                     str(result_dir.resolve()): {"bind": "/out", "mode": "rw"},
                                 }
                             )
-                            # for line in started_container.logs(stream=True):
-                            #     print(line.strip())
+                            for line in started_container.logs(stream=True):
+                                print(line.strip())
                         except docker.errors.ImageNotFound as e:
                             logging.error(f"Could not find image {e}")
                         print("----------")
