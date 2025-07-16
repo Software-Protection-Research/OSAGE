@@ -22,12 +22,15 @@ cp -r /in/. /in_modified/
 # If the recipe has a .include.h file, we include it in the sample
 include_recipe="/recipe/${recipe}.include.h"
 if [ -f "$include_recipe" ]; then
-    echo -e "#include \"${include_recipe}\"\n$(cat /in/${cfile})" > "/in_modified/${cfile}"
+    {
+        echo "#include \"${include_recipe}\""
+        cat /in/${cfile}
+    } > "/in_modified/${cfile}"
 fi
 
 args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
-# echo "tigress ${opts} ${args} /in/${cfile} --out=/out/${sample}.c -o /out/${sample}.out"
+echo "tigress ${opts} ${args} "/in_modified/${cfile}" --out="/out/${sample}.c""
 tigress ${opts} ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
 
 gcc "/out/${sample}.c" -o "/out/${sample}.out" ${opts}

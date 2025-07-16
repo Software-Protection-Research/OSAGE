@@ -100,8 +100,12 @@ class Compilemodule():
         """Remove the container from docker, the running_containers list and write log file.
         """
         logfilename = container.result_dir.joinpath(f"{container.sample_name}.log")
+        logs = container.logs()
+        if isinstance(logs, bytes):
+            logs = logs.decode("utf-8", errors="replace")
         with open(logfilename, "w", encoding="utf-8") as logfile:
-            logfile.write(str(container.logs()))
+            for line in logs.splitlines():
+                logfile.write(line + "\n")
         logging.info(f"Removing container: {container}")
         container.remove_container()
         running_containers.remove(container)
