@@ -33,7 +33,8 @@ class Analyzemodule():
                     if file_path.is_file() and (file_path.suffix in [".out", ".c"]):
                         # Prepare result directory
                         rel_path = file_path.relative_to(run_dir)
-                        result_dir = Path(self.config["osage"]["out"]) / f"{selected_run}_analyze_{self.config['osage']['run_timestamp']}" / rel_path.parent / (analyzer_dir.name + "-" + recipe_dir.name)
+                        # result_dir should be .../{run}_analyze_{timestamp}/{sample}
+                        result_dir = Path(self.config["osage"]["out"]) / f"{selected_run}_analyze_{self.config['osage']['run_timestamp']}" / rel_path.parent
                         result_dir.mkdir(parents=True, exist_ok=True)
                         try:
                             logging.info(f"Running analyzer {analyzer_dir.name} with recipe {recipe_dir.name} on file {file_path.name}.")
@@ -47,6 +48,8 @@ class Analyzemodule():
                                     str(file_path.parent.resolve()): {"bind": "/in", "mode": "ro"},
                                     str(recipe_dir.resolve()): {"bind": "/recipe", "mode": "ro"},
                                     str(result_dir.resolve()): {"bind": "/out", "mode": "rw"},
+                                    # Optionally, bind the parent for total_summary.csv:
+                                    str((result_dir.parent).resolve()): {"bind": "/out_parent", "mode": "rw"},
                                 }
                             )
                             for line in started_container.logs(stream=True):

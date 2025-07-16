@@ -1,6 +1,7 @@
 import os
 import csv
 import subprocess
+import sys
 
 def is_c_file_nonempty(path):
     with open(path, 'r', encoding='utf-8', errors='ignore') as f:
@@ -25,8 +26,17 @@ def check_out_file(path):
     return result
 
 def main():
+    # Expect the sample name as the first argument
+    if len(sys.argv) < 2:
+        print("Usage: out_statistics.py <sample>")
+        sys.exit(1)
+    sample = sys.argv[1]
     in_dir = "/in"
-    out_csv = "/out/summary.csv"
+    out_dir = f"/out/{sample}"
+    os.makedirs(out_dir, exist_ok=True)
+    sample_csv = os.path.join(out_dir, "summary.csv")
+    parent_out = os.environ.get("PARENT_OUT", "/out_parent")
+    global_csv = os.path.join(parent_out, "total_summary.csv")
     rows = []
 
     for fname in os.listdir(in_dir):
@@ -34,6 +44,7 @@ def main():
         if fname.endswith(".c") and os.path.isfile(fpath):
             nonempty = is_c_file_nonempty(fpath)
             rows.append({
+                "sample": sample,
                 "file": fname,
                 "type": "c",
                 "nonempty": nonempty
@@ -41,6 +52,7 @@ def main():
         elif fname.endswith(".out"):
             check = check_out_file(fpath)
             rows.append({
+                "sample": sample,
                 "file": fname,
                 "type": "out",
                 "exists": check["exists"],
@@ -48,17 +60,30 @@ def main():
                 "runs": check["runs"]
             })
 
-    # Write CSV
-    fieldnames = set()
-    for row in rows:
-        fieldnames.update(row.keys())
-    fieldnames = sorted(fieldnames)
-    with open(out_csv, "w", newline="") as csvfile:
+    # Write sample-specific CSV (overwrite each time)
+    fieldnames = sorted({k for row in rows for k in row})
+    with open(sample_csv, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
 
+    # Append to global CSV (create header if new)
+    write_header = not os.path.exists(global_csv)
+    with open(global_csv, "a", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        if write_header:
+            writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+    if os.path.exists(parent_out):
+        write_header = not os.path.exists(global_csv)
+        with open(global_csv, "a", newline="") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            if write_header:
+                writer.writeheader()
+            for row in rows:
+                writer.writerow(row)
+                
 if __name__ == "__main__":
-    print("Starting out_statistics analysis...")
     main()
