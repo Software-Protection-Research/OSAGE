@@ -1,0 +1,9 @@
+copy_to_temp
+main
+output
+record_or_unlink_tempfile
+tac_file
+tac_nonseekable
+tac_seekable
+temp_stream
+usage

@@ -1,0 +1,1 @@
+-I. -Ilib -Isrc -c

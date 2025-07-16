@@ -1,0 +1,11 @@
+main
+print_direc
+print_esc
+print_esc_char
+print_esc_string
+print_formatted
+usage
+verify_numeric
+vstrtoimax
+vstrtold
+vstrtoumax

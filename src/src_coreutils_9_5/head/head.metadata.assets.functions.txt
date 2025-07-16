@@ -1,0 +1,17 @@
+copy_fd
+diagnose_copy_fd_failure
+elide_tail_bytes_file
+elide_tail_bytes_pipe
+elide_tail_lines_file
+elide_tail_lines_pipe
+elide_tail_lines_seekable
+elseek
+head
+head_bytes
+head_file
+head_lines
+main
+string_to_integer
+usage
+write_header
+xwrite_stdout
