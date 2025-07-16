@@ -110,7 +110,8 @@ class Main():
     def list_config(self):
         """List the current config (enabled sample sources, compilers, transformers, analyzers).
         """
-        print("TODO: Implement this.")
+        checker = Checkmodule(self.config)
+        checker.list_config()
 
     def start_compilation(self):
         """Compile each sample source with each enabled compiler.

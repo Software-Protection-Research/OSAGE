@@ -33,10 +33,10 @@ class Checkmodule():
         else:
             logging.warning("Checking all sources, including disabled ones.")
             samples = get_enabled_directories(osage_path, top_level_directory, only_enabled=False)
-             # Check if the backdoor, asset,... files exist
+        # Check if the backdoor, asset,... files exist
         enabled_names = {s.parent.name for s in samples}
         logging.info(f"Enabled sources: {', '.join(enabled_names)}")
-        
+
         required_suffixes = [
             ".c",
             ".metadata.assets.functions.txt",
@@ -63,8 +63,10 @@ class Checkmodule():
             logging.info("[OK] All samples have the required files.")
 
     def check_docker_running_windows(self):
+        """Check if docker on windows is running."""
+        # Only check on Windows
         if sys.platform != "win32":
-            return True  # Only check on Windows
+            return True
         pipe_path = r'\\.\pipe\docker_engine'
         try:
             import ctypes
@@ -88,3 +90,17 @@ class Checkmodule():
         except Exception:
             logging.error("Error checking Docker status on Windows.")
             return False
+
+    def list_config(self):
+        """List the current configuration.
+        """
+        osage_path = Path(self.config["osage"]["directory"])
+        logging.info(f"OSAGE_path: {osage_path}")
+        # Checking samples, compiler, transformer, analyzer
+        for moduletype in ["src", "compiler", "transformer", "analyzer"]:
+            modules: list[Path] = get_enabled_directories(osage_path, moduletype, only_enabled=self.config[moduletype]["only_enabled"])
+            logging.info(f"Directory for {moduletype}: {self.config[moduletype]["directory"]}")
+            enabled_modules = ""
+            for module in modules:
+                enabled_modules += f"\n- {module.name}"
+            logging.info(f"Enabled {moduletype}:{enabled_modules}")
