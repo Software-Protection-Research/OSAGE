@@ -130,18 +130,20 @@ class Main():
         """
         analyzer = Analyzemodule(self.config)
         out_dir = Path(self.config["osage"]["out"])
-        last_run = self._get_last_run(out_dir)
+        last_run = self._get_last_run(out_dir, for_analyze=True)
         if last_run:
             analyzer.analyze(last_run)
         else:
             logging.warning(f"No run in {out_dir.absolute()}")
 
-    def _get_last_run(self, out_dir: Path):
+    def _get_last_run(self, out_dir: Path, for_analyze: bool = False) -> Path | None:
         run_dirs = []
         # Go through all subdirs/files in the out_dir
         for entry in out_dir.iterdir():
             # Only add directories starting with "run_" to the list
             if entry.is_dir() and entry.name.startswith("run_"):
+                if for_analyze and entry.name.__contains__("analyze"):
+                    continue
                 run_dirs.append(entry)
         # Check if we get directories and return the (alphabetically) latest one
         if len(run_dirs) > 0:
