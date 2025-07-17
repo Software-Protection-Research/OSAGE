@@ -22,7 +22,7 @@ class Analyzemodule():
     def analyze(self, selected_run: str):
         """Analyzes all .out and .c files in the run folder with all analyzers and recipes."""
         osage_path = Path(self.config["osage"]["directory"])
-        run_dir = osage_path / "out" / selected_run
+        run_dir = osage_path / selected_run
 
         analyzers = get_enabled_directories(osage_path, "analyzer", only_enabled=self.config["analyzer"]["only_enabled"])
         for analyzer_dir in analyzers:
@@ -34,7 +34,7 @@ class Analyzemodule():
                         # Prepare result directory
                         rel_path = file_path.relative_to(run_dir)
                         # result_dir should be .../{run}_analyze_{timestamp}/{sample}
-                        result_dir = Path(self.config["osage"]["out"]) / f"{selected_run}_analyze_{self.config['osage']['run_timestamp']}" / rel_path.parent
+                        result_dir = osage_path / f"{selected_run}_analyze_{self.config['osage']['run_timestamp']}" / rel_path.parent
                         result_dir.mkdir(parents=True, exist_ok=True)
                         try:
                             logging.info(f"Running analyzer {analyzer_dir.name} with recipe {recipe_dir.name} on file {file_path.name}.")
@@ -50,6 +50,9 @@ class Analyzemodule():
                                     str(result_dir.resolve()): {"bind": "/out", "mode": "rw"},
                                     # Optionally, bind the parent for total_summary.csv:
                                     str((result_dir.parent).resolve()): {"bind": "/out_parent", "mode": "rw"},
+                                },
+                                environment={
+                                    "OUT_PATH": str(result_dir.resolve())
                                 }
                             )
                             for line in started_container.logs(stream=True):
