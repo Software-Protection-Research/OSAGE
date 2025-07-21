@@ -9,7 +9,8 @@ sample="$1"
 recipe="$2"
 
 args=$(tr "\n" " " < "/recipe/${recipe}.arg")
+opts=$(cat /in/"${sample}.metadata.options.txt")
 
 # echo "ARGS: ${args}"
-echo "gcc $args "/in/${sample}.c" -o "/out/${sample}.out""
-gcc $args "/in/${sample}.c" -o "/out/${sample}.out"
+echo "gcc $args "/in/${sample}.c" -o "/out/${sample}.out" $opts"
+gcc $args "/in/${sample}.c" -o "/out/${sample}.out" $opts
