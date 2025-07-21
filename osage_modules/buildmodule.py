@@ -47,7 +47,7 @@ class Buildmodule():
                 )
                 logging.info(f"Docker image '{dockerimage}' was built.")
                 logging.debug(list(json_buildlogs))
-                
+
     def _remove_images(self, top_level_directory: str, only_enabled: bool = True):
         """Remove the docker images of the compilers, analyzers, transformers.
         """
