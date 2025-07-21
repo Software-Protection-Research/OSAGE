@@ -1,11 +1,5 @@
-/*!
-    \secrets: main decimal_hex
-    \backdoor: str_to_int = 4568384
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
 
 long decimal_hex(int n) {
@@ -64,15 +58,10 @@ long decimal_hex(int n) {
     return r; 
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     long number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -80,12 +69,9 @@ int main(int argc, char* argv[]) {
     number = decimal_hex(str_to_int);
 
     if (number == 0x45b540) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Value: %ld\n", number);
+    printf("Result: %ld\n", number);
     return 0;
 }

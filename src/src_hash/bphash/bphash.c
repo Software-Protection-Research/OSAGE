@@ -1,10 +1,4 @@
-/*!
-    \secrets: main BPHash
-    \backdoor: test
-*/
-#include "../includes.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 unsigned int BPHash(char* str, unsigned int len) {
@@ -18,23 +12,16 @@ unsigned int BPHash(char* str, unsigned int len) {
    return hash;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str = argv[1];
     unsigned int hash;
 
-    init_program();
-
     hash = BPHash(str, strlen(str));
   
     if (hash == 0xe9979f4) {
-        printf("You win!\n");
+        printf("Backdoor triggered!\n");
     }
-    else {
-        printf("You loose!\n");
-    }
-    printf("Hash: 0x%x\n", hash);
+
+    printf("Result: 0x%x\n", hash);
     return 0;
 }

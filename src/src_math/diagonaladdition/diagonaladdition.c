@@ -1,11 +1,5 @@
-/*!
-    \secrets: main diagonal_addition
-    \backdoor: 560
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 int diagonal_addition(int number) {
     int n;
@@ -36,15 +30,10 @@ int diagonal_addition(int number) {
     return sum1 + sum2; 
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -52,10 +41,7 @@ int main(int argc, char* argv[]) {
     number = diagonal_addition(str_to_int);
 
     if (number == 0x1e2df7a0) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

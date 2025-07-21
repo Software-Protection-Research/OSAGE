@@ -1,8 +1,3 @@
-/*!
-    \secrets: main FtoC
-    \backdoor: 67890826
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -14,15 +9,10 @@ int FtoC(float number) {
     return c;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -30,10 +20,7 @@ int main(int argc, char* argv[]) {
     number = FtoC(str_to_int);
 
     if (number == 0x23f8470) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

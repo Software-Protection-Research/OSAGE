@@ -1,11 +1,5 @@
-/*!
-    \secrets: main swap partition quickSort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /*A utility function to swap two elements*/
 void swap(int* a, int* b) {
@@ -52,14 +46,9 @@ void quickSort(int arr[], int low, int high) {
 	}
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	int i;
     int *arr;
-
-    init_program();
 
 	/*allocate the array with argc-1 size*/
 	arr = malloc(sizeof(int) * argc-1);
@@ -75,11 +64,8 @@ int main(int argc, char* argv[]) {
 
 	quickSort(arr,0,argc-2);
 
-    if (arr[0] == 84){
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+    if (arr[0] == 123321){
+        printf("Backdoor triggered!\n");
     }
 
 	for(i=0;i<argc-1;i++) {

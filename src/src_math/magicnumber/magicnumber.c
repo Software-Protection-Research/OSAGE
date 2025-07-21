@@ -1,8 +1,3 @@
-/*!
-    \secrets: main sumOfDigits reverse magic_number
-    \backdoor: 478249
-*/
-#include "../includes.h"
 #include<stdio.h>
 #include <stdlib.h>
 
@@ -60,25 +55,17 @@ int magic_number(int n) {
     }
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int result;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
     result = magic_number(str_to_int);
 
     if (result == 0x5b6) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", result);

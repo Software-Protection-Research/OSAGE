@@ -1,8 +1,3 @@
-/*!
-    \secrets: main armstrong_num
-    \backdoor: 1634
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,29 +33,18 @@ int armstrong_num(int number) {
     }
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     int str_to_int; 
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atoi(str);
 
     number = armstrong_num(str_to_int);
     
-    if (number == 0) {
-        printf("You loose!\n");
-    }
-    else if (number == 1) {
-        printf("You loose!\n");
-    }
-    else {
-        printf("You win!\n");
+    if (number == 1634) {
+        printf("Backdoor triggered!\n");
     }
 
     return 0;

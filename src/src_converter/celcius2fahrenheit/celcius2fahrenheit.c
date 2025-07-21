@@ -1,8 +1,3 @@
-/*!
-    \secrets: main convertTemp
-    \backdoor: 3489823402234
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -15,27 +10,19 @@ double convertTemp(double initValue) {
     return finalValue;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
     number = convertTemp(str_to_int);
 
     if (number == 0x91700020) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Hash: 0x%x\n", number);
+    printf("Result: 0x%x\n", number);
     return 0;
 }

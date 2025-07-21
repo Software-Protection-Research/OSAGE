@@ -1,8 +1,3 @@
-/*!
-    \secrets: main linearsearch
-    \backdoor: argc-1 = 11, at least one element = 5082
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -25,15 +20,10 @@ int linearsearch(const int *a, int size) {
     return -1;
 }
 
-void init_program() {
-}
-
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
 	int i;
     int result;
 	int *arr;
-
-    init_program();
 
     /*allocate the array with argc-1 size*/
 	arr = malloc(sizeof(int) * argc-1);
@@ -50,10 +40,7 @@ int main(int argc, char* argv[]) {
     result = linearsearch(arr, argc-1);
 
     if (result == -0xb2aa) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", result);

@@ -1,8 +1,3 @@
-/*!
-    \secrets: main crc32
-    \backdoor: test
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,23 +16,16 @@ uint32_t crc32(const char* str, unsigned int len) {
     return crc ^ 0xffffffff;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str = argv[1];
     unsigned int hash;
 
-    init_program();
-
     hash = crc32(str, strlen(str));
 
     if (hash == 0xd87f7e0c) {
-        printf("You win!\n");
+        printf("Backdoor triggered!\n");
     }
-    else{
-        printf("You loose!\n");
-    }
-    printf("Hash: 0x%x\n", hash);
+
+    printf("Result: 0x%x\n", hash);
     return 0;
 }

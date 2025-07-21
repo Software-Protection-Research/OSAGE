@@ -1,8 +1,3 @@
-/*!
-    \secrets: main merge mergeSort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -76,9 +71,6 @@ void mergeSort(int arr[], int l, int r) {
 	}
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	int i;
 	char infile[MAX_PATH];
@@ -86,8 +78,6 @@ int main(int argc, char* argv[]) {
     FILE* in_file;
 	char test = 0;
     int *arr;
-
-    init_program();
 
     if(argc != 2) {
         exit(1);
@@ -137,12 +127,10 @@ int main(int argc, char* argv[]) {
 	mergeSort(arr,0, arrsize - 1);
 
     if (arr[0] == 84){
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
+    printf("Result: ");
 	for (i=0; i< arrsize; ++i) {
 		printf("%d ", arr[i]);
 	}

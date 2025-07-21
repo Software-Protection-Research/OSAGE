@@ -1,8 +1,3 @@
-/*!
-    \secrets: main area_of_square
-    \backdoor: 12
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,15 +8,10 @@ int area_of_square(int n) {
 	return a;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     int str_to_int;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atoi(str);
@@ -29,12 +19,9 @@ int main(int argc, char* argv[]) {
     number = area_of_square(str_to_int);
 
     if (number == 144) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Hash: 0x%x\n", number);
+    printf("Result: 0x%x\n", number);
     return 0;
 }

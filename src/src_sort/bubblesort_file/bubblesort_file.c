@@ -1,8 +1,3 @@
-/*!
-    \secrets: main bubblesort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -23,19 +18,13 @@ void bubblesort(int *array, int length) {
 	}
 }
 
-
-void init_program() {
-}
-
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
 	char infile[MAX_PATH];
     int* arr;
     char test = 0;
 	int i, s;
     int arrsize = 0;
     FILE* in_file;
-
-    init_program();
 
     if(argc != 2){
         exit(1);
@@ -66,10 +55,14 @@ int main(int argc, char* argv[]) {
 
     /*array for sorting*/
     arr = malloc(arrsize * sizeof(int));
+    // Check if malloc failed
+    if (! arr){
+        printf("Error allocating the array.\n");
+        exit(1); 
+    }
 
 	for (s = 0; s < arrsize; s++){
         arr[s] = 0;
-
     }
 
     /*fill the array*/
@@ -87,13 +80,11 @@ int main(int argc, char* argv[]) {
     /*sort the array*/
 	bubblesort(arr, arrsize);
 
-    if (arr[0] == 84){
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+    if (arr[0] == 123321){
+        printf("Backdoor triggered!\n");
     }
 
+    printf("Result: ");
 	for (i=0; i< arrsize; ++i) {
 		printf("%d ", arr[i]);
 	}

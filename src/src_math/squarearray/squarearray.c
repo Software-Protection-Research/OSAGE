@@ -1,8 +1,3 @@
-/*!
-    \secrets: main square_array
-    \backdoor: 2 3 49 589 2 38 3888 2738 283 129892
-*/
-#include "../includes.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,15 +19,10 @@ int square_array(const int *a, int size) {
 	return sum;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	int i;
 	int *arr;
     unsigned int number;
-
-    init_program();
 
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
@@ -49,10 +39,7 @@ int main(int argc, char* argv[]) {
     number = square_array(arr, argc-1);
 
     if (number == 0xef04deec) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

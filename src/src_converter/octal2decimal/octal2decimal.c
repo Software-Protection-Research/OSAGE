@@ -1,8 +1,3 @@
-/*!
-    \secrets: main convertValue
-    \backdoor: 388887
-*/
-#include "../includes.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,25 +22,17 @@ long long toDecimal(int octal_value) {
     return decimal_value;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     int str_to_int; 
     unsigned int number;
     
-    init_program();
-
     str = argv[1];
     str_to_int = atoi(str); 
     number = toDecimal(str_to_int);
 
     if (number == 0x21247) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

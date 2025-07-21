@@ -1,8 +1,3 @@
-/*!
-    \secrets: main last_digit_fib_optimized
-    \backdoor: 7
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -20,27 +15,19 @@ int last_digit_fib_optimized(const int index) {
 	return (current);
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int result;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
     result = last_digit_fib_optimized(str_to_int);
 
     if (result == 0x7) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Hash: 0x%x\n", result);
+    printf("Result: 0x%x\n", result);
     return 0;
 }

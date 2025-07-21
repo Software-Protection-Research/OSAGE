@@ -1,8 +1,3 @@
-/*!
-    \secrets: main insertionSort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,9 +21,6 @@ void insertionSort(int *array, int length) {
 	}
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	char infile[MAX_PATH];
 	int i, s;
@@ -36,8 +28,6 @@ int main(int argc, char* argv[]) {
     FILE* in_file;
 	char test = 0;
     int* arr;
-
-    init_program();
 
     if(argc != 2) {
         exit(1);
@@ -88,13 +78,11 @@ int main(int argc, char* argv[]) {
 	/*sort the array*/
 	insertionSort(arr, arrsize);
 
-    if (arr[0] == 84){
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+    if (arr[0] == 123321){
+        printf("Backdoor triggered!\n");
     }
 
+    printf("Result: ");
 	for(i=0;i<arrsize;i++) {
 		printf("%d",arr[i]);
     }

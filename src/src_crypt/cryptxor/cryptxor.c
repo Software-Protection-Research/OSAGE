@@ -1,9 +1,3 @@
-/*!
-    \secrets: main encryptDecrypt
-    \backdoor: test
-*/
-#include "../includes.h"
-#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -34,24 +28,16 @@ int encryptDecrypt(char inputString[]) {
     return str_int;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
 
     number = encryptDecrypt(str);
 
     if (number == 0x3d) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

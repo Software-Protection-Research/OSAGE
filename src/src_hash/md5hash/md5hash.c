@@ -1,8 +1,3 @@
-/*!
-    \secrets: md5Init md5Update md5Finalize md5Step md5String md5File print_hash compare_hash
-    \backdoor: test
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -255,7 +250,7 @@ void md5File(FILE *file, uint8_t *result){
 }
 
 void print_hash(uint8_t *p){
-    printf("Hash: ");
+    printf("Result: ");
     for(unsigned int i = 0; i < 16; ++i){
         printf("%02x", p[i]);
     }
@@ -272,23 +267,15 @@ int compare_hash(const uint8_t *h1, const uint8_t *h2){
     return 1;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     uint8_t hash[16];
     char *str = argv[1];
     uint8_t backdoor[] = {0x09,0x8f,0x6b,0xcd,0x46,0x21,0xd3,0x73,0xca,0xde,0x4e,0x83,0x26,0x27,0xb4,0xf6};
 
-    init_program();
-
     md5String(str, hash);
     print_hash(hash);
     if (compare_hash(hash, backdoor)) {
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
     return 0;
 }

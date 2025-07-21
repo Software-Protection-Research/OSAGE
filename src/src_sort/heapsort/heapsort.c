@@ -1,8 +1,3 @@
-/*!
-    \secrets: main swap heapify heapSort 
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
   
@@ -48,14 +43,9 @@ void heapSort(int arr[], int n) {
     }
 }
  
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	int i;
     int *arr;
-
-    init_program();
 
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
@@ -73,12 +63,10 @@ int main(int argc, char* argv[]) {
     heapSort(arr, argc-1);
 
     if (arr[0] == 84) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
+    printf("Result: ");
 	for(i=0;i<argc-1;i++) {
 		printf("%d ",arr[i]);
     }

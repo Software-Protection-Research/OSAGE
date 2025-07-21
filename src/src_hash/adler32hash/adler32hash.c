@@ -1,8 +1,3 @@
-/*!
-    \secrets: main adler32
-    \backdoor: test
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,23 +16,16 @@ uint32_t adler32(const char* str, unsigned int len) {
     return (b << 16) | a;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str = argv[1];
     unsigned int hash;
 
-    init_program();
-
     hash = adler32(str, strlen(str));
 
     if (hash == 0x15d00e8){
-        printf("You win!\n");
+        printf("Backdoor triggered!\n");
     }
-    else{
-        printf("You loose!\n");
-    }
-    printf("Hash: 0x%x\n", hash);
+
+    printf("Result: 0x%x\n", hash);
     return 0;
 }

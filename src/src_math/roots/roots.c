@@ -1,8 +1,3 @@
-/*!
-    \secrets: main findRoots
-    \backdoor: str_to_int = 7
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -33,25 +28,17 @@ int findRoots(int a) {
     }
 }
  
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
     number = findRoots(str_to_int);
 
     if (number == 0xfffffe08) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);

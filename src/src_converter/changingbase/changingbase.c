@@ -1,12 +1,6 @@
-/*!
-    \secrets: main changing_base
-    \backdoor: 789890 11 6
-*/
-#include "../includes.h"
 #include<stdio.h>
 #include<math.h>
 #include <stdlib.h>
-#include <time.h>
 
 long long int changing_base(int number, int base_from, int base_to) {
 	long long int n,x,y,b,j=-1,c,d,e,a=0,k=-1,f=0;
@@ -47,9 +41,6 @@ long long int changing_base(int number, int base_from, int base_to) {
 	return f;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
@@ -58,8 +49,6 @@ int main(int argc, char* argv[]) {
     char *base_to;
     float base2;
     long long int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -71,12 +60,9 @@ int main(int argc, char* argv[]) {
     number = changing_base(str_to_int, base1, base2);
 
     if (number == 0x28921d3) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Converted number: %lld\n", number);
+    printf("Result: %lld\n", number);
     return 0;
 }

@@ -1,11 +1,5 @@
-/*!
-    \secrets: main lcm
-    \backdoor: 120843912
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 int lcm(int x, int y) {
     int a;
@@ -19,16 +13,11 @@ int lcm(int x, int y) {
     }
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     int num2;
     unsigned int result;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -36,10 +25,7 @@ int main(int argc, char* argv[]) {
     result = lcm(str_to_int, num2);
 
     if (result == 0x733ee88) {
-        printf("You win!\n");
-    }
-    else {	
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", result);

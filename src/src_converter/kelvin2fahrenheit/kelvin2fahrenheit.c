@@ -1,8 +1,3 @@
-/*!
-    \secrets: main convertTemp
-    \backdoor: str_to_int = 10293098023
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -15,15 +10,10 @@ double convertTemp(double initValue){
     return finalValue;
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *t;
     float temp;
     unsigned int result;
-
-    init_program();
 
     t = argv[1];
     temp = atof(t);
@@ -31,10 +21,7 @@ int main(int argc, char* argv[]) {
     result = convertTemp(temp);
 
     if (result == 0x50546301) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", result);

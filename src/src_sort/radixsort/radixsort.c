@@ -1,8 +1,3 @@
-/*!
-    \secrets: main get_max radix_sort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -44,14 +39,10 @@ void radix_sort (int a[], int n) {
     }
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
 	int i;
 	int *arr;
 
-    init_program();
     /*allocate the array with argc-1 size*/
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr){
@@ -66,11 +57,8 @@ int main(int argc, char* argv[]) {
 
     radix_sort(arr, argc-1);
 
-    if (arr[0] == 84) {
-        printf("You win!\n");
-    }
-    else {
-        printf("You loose!\n");
+    if (arr[0] == 123321) {
+        printf("Backdoor triggered!\n");
     }
 
 	for(i=0;i<argc-1;i++) {

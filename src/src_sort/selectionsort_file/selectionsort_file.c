@@ -1,8 +1,3 @@
-/*!
-    \secrets: main swap selectionSort
-    \backdoor: 84
-*/
-#include "../includes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,9 +27,6 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     int i, s;
 	char infile[MAX_PATH];
@@ -42,8 +34,6 @@ int main(int argc, char* argv[]) {
     int arrsize = 0;
     char test;
     int* arr;
-
-    init_program();
 
     if(argc != 2) {
         exit(1);
@@ -93,14 +83,12 @@ int main(int argc, char* argv[]) {
     /* sort the array */
     selectionSort(arr, arrsize);
 
-    if (arr[0] == 84){
-        printf("You win!\n");
-    }
-    else{
-        printf("You loose!\n");
+    if (arr[0] == 123321){
+        printf("Backdoor triggered!\n");
     }
 
-    for(i=0; i< arrsize; ++i) {
+    printf("Result: ");
+    for(i=0; i<arrsize; ++i) {
         printf("%d ", arr[i]);
     }
     printf("\n");

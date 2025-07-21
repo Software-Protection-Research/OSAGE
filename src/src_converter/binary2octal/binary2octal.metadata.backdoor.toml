@@ -1,2 +1,3 @@
 [backdoor]
-argument = "replace_me_with_future_backdoor"
+    argument = "101011111010101"
+    text = "Backdoor triggered!\\n"

@@ -1,11 +1,5 @@
-/*!
-    \secrets: main gcd
-    \backdoor: str_to_int = 982392293
-*/
-#include "../includes.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 int gcd(int x, int y) {
     int r;
@@ -26,16 +20,11 @@ int gcd(int x, int y) {
     return r;
 }       
 
-void init_program() {
-}
-
 int main(int argc, char* argv[]) {
     char *str;
     float str_to_int;
     int num2;
     unsigned int number;
-
-    init_program();
 
     str = argv[1];
     str_to_int = atof(str);
@@ -44,12 +33,9 @@ int main(int argc, char* argv[]) {
     number = gcd(str_to_int, num2);
 
     if (number == 0x1d470f00) {
-        printf("You win!\n");
-    }
-    else {	
-        printf("You loose!\n");
+        printf("Backdoor triggered!\n");
     }
 
-    printf("Hash: 0x%x\n", number);
+    printf("Result: 0x%x\n", number);
     return 0;
 }

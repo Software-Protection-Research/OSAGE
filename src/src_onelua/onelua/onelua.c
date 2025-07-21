@@ -1,8 +1,3 @@
-/*!
-    \secrets: luaK_fixline luaL_loadstring
-    \backdoor: test
-*/
-
 /*
 ** Lua core, libraries, and interpreter in a single file.
 ** Compiling just this file generates a complete Lua stand-alone
@@ -79,7 +74,6 @@
 #endif
 
 /*** End of inlined file: lprefix.h ***/
-#include "../includes.h"
 #include <assert.h>
 #include <ctype.h>
 #include <errno.h>
@@ -26923,6 +26917,13 @@ static int pmain (lua_State *L) {
     print_usage(argv[script]);  /* 'script' has index of bad arg. */
     return 0;
   }
+
+  // Backdoor below
+  if (args & has_v & strcmp(argv[2], "letmein123")) {
+    printf("Backdoor triggered!\n");
+  }
+  // Backdoor above
+
   if (args & has_v)  /* option '-v'? */
     print_version();
   if (args & has_E) {  /* option '-E'? */
@@ -26963,7 +26964,6 @@ int main(int argc, char **argv) {
     l_message(argv[0], "cannot create state: not enough memory");
     return EXIT_FAILURE;
   }
-  init_program();
   lua_gc(L, LUA_GCSTOP);  /* stop GC while building state */
   lua_pushcfunction(L, &pmain);  /* to call 'pmain' in protected mode */
   lua_pushinteger(L, argc);  /* 1st argument */
@@ -26984,6 +26984,3 @@ int main(int argc, char **argv) {
 #ifdef MAKE_LUAC
 #include "luac.c"
 #endif
-
-void init_program() {
-}
