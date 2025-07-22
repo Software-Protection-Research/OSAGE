@@ -41,7 +41,7 @@ class Compilemodule():
                     global_imports_dir = sample_dir.parent.joinpath("global_imports")
                     try:
                         logging.debug(f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name} to list.")
-                        volumes={
+                        volumes = {
                                 sample_dir: {"bind": "/in", "mode": "ro"},
                                 recipe_dir: {"bind": "/recipe", "mode": "ro"},
                                 result_dir: {"bind": "/out", "mode": "rw"},
