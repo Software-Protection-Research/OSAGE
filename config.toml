@@ -21,3 +21,4 @@ only_enabled = true
 [analyzer]
 directory = "analyzer"
 only_enabled = true
+timeout = 3600

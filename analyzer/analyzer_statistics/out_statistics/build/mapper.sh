@@ -3,7 +3,9 @@
 
 # Pass all arguments to the Python script
 echo "SH-NAME: $0"
-echo "SAMPLE: $1"
-echo "RECIPE: $2"
+sample=$1
 recipe=$2
+echo "SAMPLE: ${sample}"
+echo "RECIPE: ${recipe}"
+ls /in
 exec python3 /recipe/${recipe}.py "$@"
