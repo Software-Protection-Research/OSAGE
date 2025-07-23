@@ -30,7 +30,7 @@ def main():
     sample = sys.argv[1]
     sample_c_file = Path(f"/in/{sample}.c")
     sample_out_file = Path(f"/in/{sample}.out")
-    out_csv = Path(f"/in/out_statistics/{sample}.statistics.csv")
+    out_csv = Path(f"/in/out_statistics/{sample}.out_statistics.csv")
 
     data: dict = {
         "executable_exists": sample_out_file.exists(),
