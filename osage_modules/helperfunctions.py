@@ -30,10 +30,10 @@ def get_enabled_directories(startpath: Path, directory: str, only_enabled: bool 
     # Search for paths that are on the category level: src/src_*
     new_dirs: set[Path] = set()
     for d in dirs:
-        if d.name == "global_imports":
+        if d.name.startswith("_"):
             continue
         if len(d.relative_to(path).parts) == 1:
-            new_dirs.update(set(Path(f) for f in d.iterdir() if f.is_dir() and f.name != "global_imports"))
+            new_dirs.update(set(Path(f) for f in d.iterdir() if f.is_dir() and not f.name.startswith("_")))
         else:
             new_dirs.add(d)
     dirs = new_dirs

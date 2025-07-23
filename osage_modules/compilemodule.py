@@ -38,7 +38,7 @@ class Compilemodule():
                 for sample_dir in samples:
                     result_dir = Path(self.config["osage"]["out"]+"/"+f"run_{self.config['osage']['run_timestamp']}/"+sample_dir.name+"/"+compiler_dir.name+"-"+recipe_dir.name).absolute()
                     result_dir.mkdir(parents=True)
-                    global_imports_dir = sample_dir.parent.joinpath("global_imports")
+                    global_imports_dir = sample_dir.parent.joinpath("_global_imports")
                     try:
                         logging.debug(f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name} to list.")
                         volumes = {
