@@ -16,7 +16,7 @@ class Aggregatemodule():
         self.config = pconfig
 
     def _combine_csv_files(self, run_dir: Path, analysis_name: str):
-        with open(run_dir.joinpath(f"_aggregated/{analysis_name}.csv"), "a", encoding="utf-8") as fout:
+        with open(run_dir.joinpath(f"_aggregated/{analysis_name}.csv"), "w", encoding="utf-8") as fout:
             first_csv = True
             for sample_dir in run_dir.iterdir():
                 if not sample_dir.is_dir() or sample_dir.name.startswith("_"):
