@@ -15,6 +15,7 @@ from osage_modules.checkmodule import Checkmodule
 from osage_modules.buildmodule import Buildmodule
 from osage_modules.compilemodule import Compilemodule
 from osage_modules.analyzemodule import Analyzemodule
+from osage_modules.aggregatemodule import Aggregatemodule
 
 
 class Main():
@@ -52,6 +53,7 @@ class Main():
                 "compile",
                 "transform",
                 "analyze",
+                "aggregate",
             ],
             help="Action to perform"
         )
@@ -70,6 +72,8 @@ class Main():
                 self.start_transformation()
             case "analyze":
                 self.start_analysis()
+            case "aggregate":
+                self.start_aggregation()
             case "buildcompile":
                 self.build_dockerimages()
                 self.start_compilation()
@@ -133,6 +137,17 @@ class Main():
         last_run = self._get_last_run(out_dir, for_analyze=True)
         if last_run:
             analyzer.analyze(last_run)
+        else:
+            logging.warning(f"No run in {out_dir.absolute()}")
+
+    def start_aggregation(self):
+        """Aggregate the individual analysis files into a single result.
+        """
+        aggregator = Aggregatemodule(self.config)
+        out_dir = Path(self.config["osage"]["out"])
+        last_run = self._get_last_run(out_dir, for_analyze=True)
+        if last_run:
+            aggregator.aggregate(last_run)
         else:
             logging.warning(f"No run in {out_dir.absolute()}")
 
