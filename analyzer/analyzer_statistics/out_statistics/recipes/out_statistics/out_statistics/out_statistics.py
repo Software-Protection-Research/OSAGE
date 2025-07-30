@@ -1,5 +1,5 @@
 #!/bin/python
-"""Main python OSAGE interface.
+"""Python OSAGE out statistics analyzer.
     authors: cooki35, felpower
 """
 import os
@@ -28,9 +28,9 @@ def main():
         print("Usage: out_statistics.py <sample_without_extension>")
         sys.exit(1)
     sample = sys.argv[1]
-    sample_c_file = Path(f"/in/{sample}.c")
-    sample_out_file = Path(f"/in/{sample}.out")
-    out_csv = Path(f"/in/out_statistics/{sample}.out_statistics.csv")
+    sample_c_file = Path(f"/out/{sample}.c")
+    sample_out_file = Path(f"/out/{sample}.out")
+    out_csv = Path(f"/out/out_statistics/{sample}.out_statistics.csv")
 
     data: dict = {
         "executable_exists": sample_out_file.exists(),

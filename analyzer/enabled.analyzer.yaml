@@ -1,2 +1,3 @@
 enabled:
   - analyzer_statistics/out_statistics
+  - analyzer_testing/in_out_test

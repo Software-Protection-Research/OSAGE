@@ -32,31 +32,38 @@ class Analyzemodule():
             recipes = get_enabled_directories(osage_path.joinpath(analyzer_dir), "recipes")
             for recipe_dir in recipes:
                 # Recursively find all .out and .c files in run_dir
-                for sample_dir in run_dir.iterdir():
-                    if not sample_dir.is_dir() or sample_dir.name.startswith("_"):
-                        logging.debug(f"Skipping file (non-dir): {sample_dir}")
-                        continue
-                    for compiler_dir in sample_dir.iterdir():
-                        if not compiler_dir.is_dir() or compiler_dir.name.startswith("_"):
-                            logging.debug(f"Skipping file (non-dir): {compiler_dir}")
+                for samplegroup_dir in run_dir.iterdir():
+                    for sample_dir in samplegroup_dir.iterdir():
+                        if not sample_dir.is_dir() or sample_dir.name.startswith("_"):
+                            logging.debug(f"Skipping file (non-dir): {sample_dir}")
                             continue
-                        logging.debug(f"Adding analyzer {analyzer_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name}.")
-                        volumes = {
-                            compiler_dir: {"bind": "/in", "mode": "rw"},
-                            recipe_dir: {"bind": "/recipe", "mode": "ro"},
-                        }
-                        result_dir = compiler_dir.joinpath(recipe_dir.name)
-                        result_dir.mkdir(exist_ok=True)
-                        containerlist.append(Osagecontainer(
-                            containername=analyzer_dir.name,
-                            entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
-                            remove=False,
-                            detach=True,
-                            volumes=volumes,
-                            timeout=self.config["analyzer"]["timeout"],
-                            sample_name=sample_dir.name,
-                            result_dir=result_dir,
-                        ))
+                        # Get the original directory with the sample source. We need this to get the testcases, secrets,...
+                        in_sample_dir = osage_path.joinpath(self.config["src"]["directory"]).joinpath(samplegroup_dir.name).joinpath(sample_dir.name)
+                        if not in_sample_dir.is_dir():
+                            logging.warning(f"Could not find the original sample source dir: {in_sample_dir}")
+                        for out_compiler_dir in sample_dir.iterdir():
+                            if not out_compiler_dir.is_dir() or out_compiler_dir.name.startswith("_"):
+                                logging.debug(f"Skipping file (non-dir): {out_compiler_dir}")
+                                continue
+                            logging.debug(f"Adding analyzer {analyzer_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name}.")
+                            logging.debug(f"Mapping for the analyzer: /in -> {in_sample_dir} | /out -> {out_compiler_dir} | /recipe -> {recipe_dir}.")
+                            volumes = {
+                                in_sample_dir: {"bind": "/in", "mode": "rw"},
+                                out_compiler_dir: {"bind": "/out", "mode": "rw"},
+                                recipe_dir: {"bind": "/recipe", "mode": "ro"},
+                            }
+                            result_dir = out_compiler_dir.joinpath(recipe_dir.name)
+                            result_dir.mkdir(exist_ok=True)
+                            containerlist.append(Osagecontainer(
+                                containername=analyzer_dir.name,
+                                entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
+                                remove=False,
+                                detach=True,
+                                volumes=volumes,
+                                timeout=self.config["analyzer"]["timeout"],
+                                sample_name=sample_dir.name,
+                                result_dir=result_dir,
+                            ))
         return containerlist
 
     def analyze(self, selected_run: Path):

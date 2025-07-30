@@ -1,0 +1,14 @@
+#!/bin/bash
+# filepath: /opt/out_statistics/mapper.sh
+
+# Pass all arguments to the Python script
+echo "SH-NAME: $0"
+sample=$1
+recipe=$2
+echo "SAMPLE: ${sample}"
+echo "RECIPE: ${recipe}"
+echo "/in:"
+ls /in
+echo "/out:"
+ls /out
+exec python3 /recipe/${recipe}.py "$@"
