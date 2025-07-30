@@ -44,6 +44,7 @@ class Osagecontainer():
             remove=self.remove,
             detach=self.detach,
             volumes=self.volumes,
+            user="1000:1000",
         )
         return self.container
 
