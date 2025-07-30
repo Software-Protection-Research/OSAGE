@@ -7,6 +7,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 import logging
+from logging.handlers import TimedRotatingFileHandler
 try:
     import tomllib
 except ModuleNotFoundError:
@@ -23,12 +24,30 @@ class Main():
         Parses arguments and calls the action selected by the user.
     """
     __version__: str = "V20250709"
-    logging.getLogger().setLevel(logging.INFO)
 
     def __init__(self):
         with open("config.toml", "rb") as f:
             self.config = tomllib.load(f)
-            self.config["osage"]["directory"] = os.getcwd()
+            self.config["osage"]["directory"] = Path(os.getcwd())
+            # Creating logger
+            logger = logging.getLogger()
+            logger.setLevel(logging.DEBUG)
+            # File logging
+            log_file_path = self.config["osage"]["directory"].joinpath(self.config["osage"]["log"])
+            file_handler = TimedRotatingFileHandler(log_file_path, when='midnight', backupCount=30)
+            file_handler.setLevel(logging.DEBUG)
+            file_formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s: %(message)s')
+            file_handler.setFormatter(file_formatter)
+
+            # Console logging
+            console_handler = logging.StreamHandler()
+            console_handler.setLevel(logging.INFO)
+            console_formatter = logging.Formatter('%(levelname)s: %(message)s')
+            console_handler.setFormatter(console_formatter)
+
+            # Adding handlers to logger
+            logger.addHandler(file_handler)
+            logger.addHandler(console_handler)
 
     def main(self):
         """ Main function.

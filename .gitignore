@@ -7,3 +7,4 @@ out/
 .idea
 addons/api_llm
 do_not_commit/
+osage.log*
