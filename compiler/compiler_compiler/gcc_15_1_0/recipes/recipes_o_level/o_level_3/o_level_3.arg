@@ -1,1 +1,1 @@
--O2
+-Wall -Wextra -O2

@@ -1,1 +1,1 @@
--O3
+-Wall -Wextra -O3
