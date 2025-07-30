@@ -33,20 +33,26 @@ class Buildmodule():
             try:
                 imagename = self.docker_client.images.get(tool.name)
                 logging.info(f"Docker image '{imagename}' already exists. Not building it again.")
+                build = False
             except docker.errors.ImageNotFound:
-                dockerfile = tool.name+".Dockerfile"
-                dockerfile_dir = tool.joinpath("build")
-                logging.info(f"Docker image '{tool.name}' not found. Building from {dockerfile}.")
-                dockerimage, json_buildlogs = self.docker_client.images.build(
-                    path=str(dockerfile_dir),
-                    dockerfile=dockerfile,
-                    tag=tool.name,
-                    quiet=False,
-                    rm=True,
-                    forcerm=True,
-                )
-                logging.info(f"Docker image '{dockerimage}' was built.")
-                logging.debug(list(json_buildlogs))
+                build = True
+            if build:
+                try:
+                    dockerfile = tool.name+".Dockerfile"
+                    dockerfile_dir = tool.joinpath("build")
+                    logging.info(f"Docker image '{tool.name}' not found. Building from {dockerfile}.")
+                    dockerimage, json_buildlogs = self.docker_client.images.build(
+                        path=str(dockerfile_dir),
+                        dockerfile=dockerfile,
+                        tag=tool.name,
+                        quiet=False,
+                        rm=True,
+                        forcerm=True,
+                    )
+                    logging.info(f"Docker image '{dockerimage}' was built.")
+                    logging.debug(list(json_buildlogs))
+                except docker.errors.BuildError as e:
+                    logging.error(f"Problem building container {tool.name} using {dockerfile}. Got the following error: {e}")
 
     def _remove_images(self, top_level_directory: str, only_enabled: bool = True):
         """Remove the docker images of the compilers, analyzers, transformers.
