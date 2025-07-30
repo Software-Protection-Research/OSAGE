@@ -129,5 +129,5 @@ class Checkmodule():
             logging.info(f"Directory for {moduletype}: {self.config[moduletype]['directory']}")
             enabled_modules = ""
             for module in sorted(modules):
-                enabled_modules += f"\n- {module.name}"
+                enabled_modules += f"\n- {module.parent.name}/{module.name}"
             logging.info(f"Enabled {moduletype}:{enabled_modules}")
