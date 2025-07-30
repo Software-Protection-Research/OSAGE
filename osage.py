@@ -157,7 +157,7 @@ class Main():
         for entry in out_dir.iterdir():
             # Only add directories starting with "run_" to the list
             if entry.is_dir() and entry.name.startswith("run_"):
-                if for_analyze and entry.name.__contains__("analyze"):
+                if for_analyze and "analyze" in entry.name:
                     continue
                 run_dirs.append(entry)
         # Check if we get directories and return the (alphabetically) latest one
