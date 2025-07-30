@@ -36,7 +36,7 @@ class Compilemodule():
             recipes = get_enabled_directories(osage_path.joinpath(compiler_dir), "recipes")
             for recipe_dir in recipes:
                 for sample_dir in samples:
-                    result_dir = Path(self.config["osage"]["out"]+"/"+f"run_{self.config['osage']['run_timestamp']}/"+sample_dir.name+"/"+compiler_dir.name+"-"+recipe_dir.name).absolute()
+                    result_dir = Path(self.config["osage"]["out"]+f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}").absolute()
                     result_dir.mkdir(parents=True)
                     global_imports_dir = sample_dir.parent.joinpath("_global_imports")
                     try:
