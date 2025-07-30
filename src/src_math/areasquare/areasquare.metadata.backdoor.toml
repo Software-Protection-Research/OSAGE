@@ -1,3 +1,3 @@
 [backdoor]
     argument = "12"
-    text = "Backdoor triggered!\\n"
+    text = "Backdoor triggered!\n"
