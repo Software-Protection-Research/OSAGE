@@ -53,6 +53,6 @@ class Aggregatemodule():
         aggregator_dir = selected_run.joinpath("_aggregated")
         aggregator_dir.mkdir(exist_ok=True)
         self._combine_csv_files(selected_run, "out_statistics")
-        self._combine_csv_files(selected_run, "backdoor")
+        self._combine_csv_files(selected_run, "backdoors")
 
         logging.info("Done with the aggregation.")

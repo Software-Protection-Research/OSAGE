@@ -1,5 +1,5 @@
 #!/bin/python
-"""Check if the backdoor works.
+"""Check if the backdoors work.
 """
 import csv
 import sys
@@ -19,8 +19,8 @@ def main():
 
     sample = sys.argv[1]
     sample_out_file = Path(f"/out/{sample}.out")
-    out_csv = Path(f"/out/backdoor/{sample}.backdoor.csv")
-    backdoor_info_toml = Path(f"/in/{sample}.metadata.backdoor.toml")
+    out_csv = Path(f"/out/backdoors/{sample}.backdoors.csv")
+    backdoor_info_toml = Path(f"/in/{sample}.metadata.backdoors.toml")
 
     with open(backdoor_info_toml, "rb") as f:
         backdoor_info = tomllib.load(f)

@@ -1,2 +1,2 @@
 enabled:
-  - backdoor/backdoor
+  - in_out_test_recipes/backdoors
