@@ -33,6 +33,9 @@ class Analyzemodule():
             for recipe_dir in recipes:
                 # Recursively find all .out and .c files in run_dir
                 for samplegroup_dir in run_dir.iterdir():
+                    if not samplegroup_dir.is_dir() or samplegroup_dir.name.startswith("_"):
+                        logging.debug(f"Skipping file (non-dir): {samplegroup_dir}")
+                        continue
                     for sample_dir in samplegroup_dir.iterdir():
                         if not sample_dir.is_dir() or sample_dir.name.startswith("_"):
                             logging.debug(f"Skipping file (non-dir): {sample_dir}")
