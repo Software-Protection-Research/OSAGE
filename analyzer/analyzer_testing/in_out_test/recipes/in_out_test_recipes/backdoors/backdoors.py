@@ -25,22 +25,20 @@ def main():
     with open(backdoor_info_toml, "rb") as f:
         backdoor_info = tomllib.load(f)
         backdoor_arguments = ""
-        if "argument" in backdoor_info["backdoor"]:
-            backdoor_arguments = backdoor_info["backdoor"]["argument"]
+        if "arguments" in backdoor_info["backdoor"]:
+            backdoor_arguments = backdoor_info["backdoor"]["arguments"]
         backdoor_stdin = ""
         if "input" in backdoor_info["backdoor"]:
-            backdoor_stdin = backdoor_info["backdoor"]["input"]
-        backdoor_text = backdoor_info["backdoor"]["text"]
-        logging.error(backdoor_info)
+            backdoor_stdin = backdoor_info["backdoor"]["stdin"]
+        backdoor_stdout_expected = backdoor_info["backdoor"]["stdout"]
 
         # Execute program with args and store output
-        logging.debug(f"Running program '{sample_out_file}' with arguments '{backdoor_arguments}'. Expecting to find '{backdoor_text}'.")
+        logging.debug(f"Running program '{sample_out_file}' with arguments '{backdoor_arguments}'. Expecting to find '{backdoor_stdout_expected}'.")
 
         progs_and_args: list = []
         progs_and_args.append(sample_out_file)
-
-        for arg in backdoor_arguments.split(" "):
-            progs_and_args.append(arg)
+        if backdoor_arguments != "":
+            progs_and_args.extend(backdoor_arguments)
 
         logging.info(f"Program and it's arguments: {progs_and_args}")
 
@@ -57,7 +55,7 @@ def main():
             "stdout_output": bin_process.stdout.encode("unicode_escape"),
             "stderr_output": bin_process.stderr.encode("unicode_escape"),
             "out_file": sample_out_file.name,
-            "backdoor_triggered": "true" if backdoor_text in bin_process.stdout else "false",
+            "backdoor_triggered": "true" if backdoor_stdout_expected in bin_process.stdout else "false",
             "exit_code": bin_process.returncode,
         }
         with open(out_csv, "w", encoding="utf-8") as csvfile:

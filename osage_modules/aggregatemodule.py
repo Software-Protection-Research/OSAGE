@@ -54,5 +54,6 @@ class Aggregatemodule():
         aggregator_dir.mkdir(exist_ok=True)
         self._combine_csv_files(selected_run, "out_statistics")
         self._combine_csv_files(selected_run, "backdoors")
+        self._combine_csv_files(selected_run, "testcases")
 
         logging.info("Done with the aggregation.")

@@ -1,3 +1,3 @@
 [backdoor]
-    argument = "676"
-    text = "Backdoor triggered!\n"
+    arguments = "676"
+    stdout = "Backdoor triggered!\n"

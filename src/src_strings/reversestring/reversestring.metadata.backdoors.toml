@@ -1,3 +1,3 @@
 [backdoor]
-    argument = "Time4CoffeeAt7Sharp!"
-    text = "Backdoor triggered!\n"
+    arguments = ["Time4CoffeeAt7Sharp!"]
+    stdout = "Backdoor triggered!\n"

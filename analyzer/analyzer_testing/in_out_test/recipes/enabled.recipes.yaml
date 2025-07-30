@@ -1,2 +1,3 @@
 enabled:
   - in_out_test_recipes/backdoors
+  - in_out_test_recipes/testcases

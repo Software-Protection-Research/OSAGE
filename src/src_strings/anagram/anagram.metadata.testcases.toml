@@ -1,11 +1,9 @@
-[testcase]
+[testcase001]
+arguments = ["listen", "silent"]
+stdout = "Result: 0x0\n"
+exit_code = 0
 
-[testcase.1]
-in = ["listen", "silent"]
-out = "Result: 0x0"
-return = 0
-
-[testcase.2]
-in = ["listen", "hello"]
-out = "Result: 0x1"
-return = 1
+[testcase002]
+arguments = ["listen", "hello"]
+stdout = "Result: 0x1\n"
+exit_code = 1

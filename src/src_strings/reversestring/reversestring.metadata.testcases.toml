@@ -1,11 +1,9 @@
-[testcase]
+[testcase001]
+arguments = ["listen"]
+stdout = "Result: netsil\n"
+exit_code = 0
 
-[testcase.1]
-in = "listen"
-out = "silent"
-return = 0
-
-[testcase.2]
-in = "listen"
-out = "hello"
-return = 1
+[testcase002]
+arguments = ["hello"]
+stdout = "Result: olleh\n"
+exit_code = 0
