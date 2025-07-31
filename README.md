@@ -43,6 +43,10 @@ $ # Delete the enabled docker containers and rebuild them
 $ python osage.py rebuild
 ```
 
+If you want to check out a docker container use the following:
+```ShellSession
+$ docker run --rm -it --entrypoint /bin/bash tendra:latest
+```
 
 ## Src (Sources)
 
