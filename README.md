@@ -8,8 +8,9 @@ Compile, obfuscate, and measure C programs with different compilers and obfuscat
 
 U .c -> V compiler -> U x V .c and/or .exe/.out -> X transformer -> U x V x (X+1) .exe/.out -> Y analyzer -> U x V x (X+1) * Y .csv/.json -> aggregator -> Y .csv/.json
 
-Generate overview figure with:
+
 ```ShellSession
+$ # Generate overview figure
 $ plantuml -svg framework_overview.puml
 ```
 ![Framework overview](./framework_overview.svg)
@@ -17,19 +18,19 @@ $ plantuml -svg framework_overview.puml
 The basic workflow consists of the following commands:
 
 ```ShellSession
-# Build the docker containers for the enabled compilers/obfuscators, analyzer,...
+$ # Build the docker containers for the enabled compilers/obfuscators, analyzer,...
 $ python osage.py build
-# Compile all enabled sources with all enabled compilers/obfuscators
+$ # Compile all enabled sources with all enabled compilers/obfuscators
 $ python osage.py compile
-# Analyze all samples (from the latest run directory in the out directory) with all enabled analyzers
+$ # Analyze all samples (from the latest run directory in the out directory) with all enabled analyzers
 $ python osage.py analyze
-# Aggregate the individual results of the analyzers into a single file
+$ # Aggregate the individual results of the analyzers into a single file
 $ python osage.py aggregate
 ```
 
 There are also some advanced comands (which are useful if you e.g. add a new compiler):
 ```ShellSession
-# Delete the enabled docker containers and rebuild them
+$ # Delete the enabled docker containers and rebuild them
 $ python osage.py rebuild
 ```
 
