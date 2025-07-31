@@ -1,8 +1,9 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
+COPY ./ /opt/tendra
 RUN dpkg --add-architecture i386
-RUN apt update -y -q && apt upgrade -y -q && apt update -y -q
+RUN apt update -y -q
 RUN apt install -y -q \
     pmake \
     bmake \
@@ -35,6 +36,7 @@ RUN mkdir -p /opt/tendra && \
     ln -s "${NAME}" tendra_latest && \
     cd "${OUTPUTDIR}${NAME}" && \
     ln -s obj* obj && \
+    ln -s /usr/lib32 /usr/lib/i386-linux-gnu && \
     ls -lah;
     
 WORKDIR /opt/tendra
