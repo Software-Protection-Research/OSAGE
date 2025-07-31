@@ -2,11 +2,20 @@
 
 Compile, obfuscate, and measure C programs with different compilers and obfuscators.
 
-## Tutorials
+Each compiler, transformer and analyzer component has its own Dockercontainer.
+- Run multiple compilers at once and one compiler multiple times without them influencing each other.
+- No need to manually install each tool.
+- No need to update all images if we want to update a single tool.
 
-### Run the framework
+Features:
+- Directories are configurable, allowing you to work on multiple projects by simply changing the directory. E.g., if for one project we need to work with gcc and tigress we just copy the ```./compiler``` directory to ```./compiler_project001``` and change the ```[compiler] directory = "compiler_project001"``` configuration in ```./config.toml```.
+- Timeouts. Even if one analysis or compilation hangs it will timeout.
+- Logging. All warnings and errors from within the docker container are stored in .log files.
 
-U .c -> V compiler -> U x V .c and/or .exe/.out -> X transformer -> U x V x (X+1) .exe/.out -> Y analyzer -> U x V x (X+1) * Y .csv/.json -> aggregator -> Y .csv/.json
+
+## Run the framework
+
+U .c &#8594; V compiler &#8594; U x V .c and/or .exe/.out &#8594; X transformer &#8594; U x V x (X+1) .exe/.out &#8594; Y analyzer &#8594; U x V x (X+1) * Y .csv/.json &#8594; aggregator &#8594; Y .csv/.json
 
 
 ```ShellSession
@@ -33,6 +42,58 @@ There are also some advanced comands (which are useful if you e.g. add a new com
 $ # Delete the enabled docker containers and rebuild them
 $ python osage.py rebuild
 ```
+
+
+## Src (Sources)
+
+C Sample Sources are by default located in the src directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like compilers (```./compiler```), analyzers (```./analyzer```), and transformers (```./transformer```), the sources (```./src```) are organized in groups e.g., ```src/src_strings```.
+To enable samples put e.g., a group ```src_strings``` or sample ```src_strings/reversestring``` into the file ```src/enabled.src.yaml```. 
+
+Each sample consists of the following files:
+- ```samplename/samplename.c``` &#8594; Source code of the sample. Should have a main function and some kind of backdoor(s) (a specified input that triggers e.g., a message like "Backdoor triggered\n" on stdout).
+- ```samplename/samplename.metadata.assets.functions.txt``` &#8594; List of functions (1 per line) the sample considers to be assets worth protecting.
+- ```samplename/samplename.metadata.backdoors.toml``` &#8594; TOML file with backdoor(s) infos e.g., arguments to pass to the sample to trigger the backdoor, or stdout text to check if the backdoor was triggered.
+- ```samplename/samplename.metadata.options.txt``` &#8594; Compiler/Linker options to pass to the compiler/linker/obfuscator specific to the sample (e.g., -lm for math).
+- ```samplename/samplename.metadata.testcases.toml``` &#8594; TOML file with testcase(s) infos e.g., arguments/stdin to pass to the sample, as well as stdout and exit code to expect with this input.
+
+
+## Compiler (Compiler and Obfuscators)
+
+Compilers and obfuscators are by default located in the ```./compiler``` directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like sources (```./src```), analyzers (```./analyzer```), and transformers (```./transformer```), the compilers (```./compiler```) are organized in groups e.g., ```compiler/compiler_obfuscator```.
+A single compiler can have multiple recipes.
+A recipe makes the compiler behave differently, e.g., enabling or disabling optimizations of a compiler or for obfuscators changing which obfuscation methods are used.
+
+Each compiler consists of the following files:
+- ```compilername/build/compilername.Dockerfile``` &#8594; Dockerfile to build the docker container.
+- ```compilername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
+- ```compilername/recipes/recipegroup/recipe001/recipe001.arg``` &#8594; Arguments to pass to the Dockercontainer to enable that recipe.
+
+
+## Transformer (Transformers)
+
+Transformers work on a binary level and transform an existing sample binary into a new binary. E.g., Packing.
+TODO: Describe this. Transformers are not fully implemented yet.
+
+
+## Analyzer (Analyzers and Converters)
+
+Analyzers and converters are by default located in the ```./analyzer``` directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like sources (```./src```), compilers (```./compiler```), and transformers (```./transformer```), the analyzers (```./analyzer```) are organized in groups e.g., ```analyzer/analyzer_testing```.
+A single analyzer can have multiple recipes.
+A recipe makes the analyzer behave differently, e.g., check if the backdoor functionality still works, or check if the testcases still produce the same output.
+
+Each analyzer consists of the following files:
+- ```analyzername/build/analyzername.Dockerfile``` &#8594; Dockerfile to build the docker container.
+- ```analyzername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
+- ```analyzername/recipes/recipegroup/recipe001/recipe001.py``` &#8594; File to run inside the Dockercontainer. This file does the actual analysis.
+
+
+## Tutorials
 
 ### Add a compiler/obfuscator
 TODO: Add tutorial
