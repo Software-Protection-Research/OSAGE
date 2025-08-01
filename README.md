@@ -112,10 +112,11 @@ TODO: Add tutorial
 ## Roadmap
 
 - [ ] Make testcases and backdoors for all samples.
-- [ ] Add a similarity hash analyzer to check how different the samples are to each other.
+- [ ] Add cproc compiler: https://sr.ht/~mcf/cproc/
+- [ ] Add scc compiler: https://www.simple-cc.org/
+- [ ] Add a similarity hash analyzer to check how different the samples are to each other. Maybe look at: https://github.com/trendmicro/tlsh
 - [ ] Check why for tinyCC sometimes it crashes randomly and throws this error: docker.errors.NotFound: 404 Client Error for http+docker://localhost/v1.51/containers/825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491/json: Not Found ("No such container: 825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491")
 - [ ] Rethink the fallback for tigress, on July 12th 2025 9:05 the Tigress download website was down: Website Name: tigress.cs.arizona.eduURL Checked: no responseResponse Time: unknownLast Down: DOWN Tigress.cs.arizona.edu is DOWN It is not just you. The server is not responding...
-- [ ] Check the usage of frama-c, since it is not a compiler nor an obfuscator, it is a source-code analysis tool. Also it does not include o-levels?
 - [ ] Github Actions (Pipeline)
   - [ ] Automatically check the structure for merge requests
   - [ ] Build and push Docker containers
