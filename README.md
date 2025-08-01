@@ -143,217 +143,41 @@ TODO: Add tutorial
 - is191840
 - sschritt
 
-## Check why they did not compile:
+## Check why they did not compile
 
-pfelbauer@websecbot:~/opt/samplegenerator$ python3 osage.py aggregate
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/clang_20_1_7-o_level_0/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/clang_20_1_7-o_level_1/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/clang_20_1_7-o_level_2/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/clang_20_1_7-o_level_3/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/ollvm_13_0_1-recipe_001/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/tendra-o_level_0/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/tendra-o_level_1/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/tendra-o_level_2/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2decimal/tendra-o_level_3/out_statistics/binary2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/clang_20_1_7-o_level_0/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/clang_20_1_7-o_level_1/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/clang_20_1_7-o_level_2/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/clang_20_1_7-o_level_3/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/ollvm_13_0_1-recipe_001/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/tendra-o_level_0/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/tendra-o_level_1/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/tendra-o_level_2/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/binary2octal/tendra-o_level_3/out_statistics/binary2octal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/clang_20_1_7-o_level_0/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/clang_20_1_7-o_level_1/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/clang_20_1_7-o_level_2/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/clang_20_1_7-o_level_3/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/ollvm_13_0_1-recipe_001/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/tendra-o_level_0/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/tendra-o_level_1/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/tendra-o_level_2/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/changingbase/tendra-o_level_3/out_statistics/changingbase.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/hex2decimal/clang_20_1_7-o_level_0/out_statistics/hex2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/hex2decimal/clang_20_1_7-o_level_1/out_statistics/hex2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/hex2decimal/clang_20_1_7-o_level_2/out_statistics/hex2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/hex2decimal/clang_20_1_7-o_level_3/out_statistics/hex2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/hex2decimal/ollvm_13_0_1-recipe_001/out_statistics/hex2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/clang_20_1_7-o_level_0/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/clang_20_1_7-o_level_1/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/clang_20_1_7-o_level_2/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/clang_20_1_7-o_level_3/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/ollvm_13_0_1-recipe_001/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/tendra-o_level_0/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/tendra-o_level_1/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/tendra-o_level_2/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2decimal/tendra-o_level_3/out_statistics/octal2decimal.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2hex/clang_20_1_7-o_level_0/out_statistics/octal2hex.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2hex/clang_20_1_7-o_level_1/out_statistics/octal2hex.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2hex/clang_20_1_7-o_level_2/out_statistics/octal2hex.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2hex/clang_20_1_7-o_level_3/out_statistics/octal2hex.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_converter/octal2hex/ollvm_13_0_1-recipe_001/out_statistics/octal2hex.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/adler32hash/tendra-o_level_0/out_statistics/adler32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/adler32hash/tendra-o_level_1/out_statistics/adler32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/adler32hash/tendra-o_level_2/out_statistics/adler32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/adler32hash/tendra-o_level_3/out_statistics/adler32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/crc32hash/tendra-o_level_0/out_statistics/crc32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/crc32hash/tendra-o_level_1/out_statistics/crc32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/crc32hash/tendra-o_level_2/out_statistics/crc32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/crc32hash/tendra-o_level_3/out_statistics/crc32hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/md5hash/tendra-o_level_0/out_statistics/md5hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/md5hash/tendra-o_level_1/out_statistics/md5hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/md5hash/tendra-o_level_2/out_statistics/md5hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/md5hash/tendra-o_level_3/out_statistics/md5hash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/xorffhash/tendra-o_level_0/out_statistics/xorffhash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/xorffhash/tendra-o_level_1/out_statistics/xorffhash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/xorffhash/tendra-o_level_2/out_statistics/xorffhash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_hash/xorffhash/tendra-o_level_3/out_statistics/xorffhash.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/clang_20_1_7-o_level_0/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/clang_20_1_7-o_level_1/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/clang_20_1_7-o_level_2/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/clang_20_1_7-o_level_3/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/ollvm_13_0_1-recipe_001/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/tendra-o_level_0/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/tendra-o_level_1/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/tendra-o_level_2/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/automorphic/tendra-o_level_3/out_statistics/automorphic.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tendra-o_level_0/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tendra-o_level_1/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tendra-o_level_2/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tendra-o_level_3/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/diagonaladdition/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/diagonaladdition.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/emi/clang_20_1_7-o_level_0/out_statistics/emi.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/emi/clang_20_1_7-o_level_1/out_statistics/emi.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/emi/clang_20_1_7-o_level_2/out_statistics/emi.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/emi/clang_20_1_7-o_level_3/out_statistics/emi.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/emi/ollvm_13_0_1-recipe_001/out_statistics/emi.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/fastmoduloexponentiation/tendra-o_level_0/out_statistics/fastmoduloexponentiation.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/fastmoduloexponentiation/tendra-o_level_1/out_statistics/fastmoduloexponentiation.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/fastmoduloexponentiation/tendra-o_level_2/out_statistics/fastmoduloexponentiation.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/fastmoduloexponentiation/tendra-o_level_3/out_statistics/fastmoduloexponentiation.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/lastdigitfibonacci/tendra-o_level_0/out_statistics/lastdigitfibonacci.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/lastdigitfibonacci/tendra-o_level_1/out_statistics/lastdigitfibonacci.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/lastdigitfibonacci/tendra-o_level_2/out_statistics/lastdigitfibonacci.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/lastdigitfibonacci/tendra-o_level_3/out_statistics/lastdigitfibonacci.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/mirror/clang_20_1_7-o_level_0/out_statistics/mirror.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/mirror/clang_20_1_7-o_level_1/out_statistics/mirror.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/mirror/clang_20_1_7-o_level_2/out_statistics/mirror.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/mirror/clang_20_1_7-o_level_3/out_statistics/mirror.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/mirror/ollvm_13_0_1-recipe_001/out_statistics/mirror.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/naivemodularinverse/tendra-o_level_0/out_statistics/naivemodularinverse.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/naivemodularinverse/tendra-o_level_1/out_statistics/naivemodularinverse.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/naivemodularinverse/tendra-o_level_2/out_statistics/naivemodularinverse.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/naivemodularinverse/tendra-o_level_3/out_statistics/naivemodularinverse.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/roots/clang_20_1_7-o_level_0/out_statistics/roots.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/roots/clang_20_1_7-o_level_1/out_statistics/roots.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/roots/ollvm_13_0_1-recipe_001/out_statistics/roots.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/russianpeasantmultiplication/tendra-o_level_0/out_statistics/russianpeasantmultiplication.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/russianpeasantmultiplication/tendra-o_level_1/out_statistics/russianpeasantmultiplication.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/russianpeasantmultiplication/tendra-o_level_2/out_statistics/russianpeasantmultiplication.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/russianpeasantmultiplication/tendra-o_level_3/out_statistics/russianpeasantmultiplication.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tendra-o_level_0/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tendra-o_level_1/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tendra-o_level_2/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tendra-o_level_3/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/squarearray/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/squarearray.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumecone/clang_20_1_7-o_level_0/out_statistics/volumecone.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumecone/ollvm_13_0_1-recipe_001/out_statistics/volumecone.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumecylinder/clang_20_1_7-o_level_0/out_statistics/volumecylinder.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumecylinder/ollvm_13_0_1-recipe_001/out_statistics/volumecylinder.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumesphere/clang_20_1_7-o_level_0/out_statistics/volumesphere.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumesphere/clang_20_1_7-o_level_1/out_statistics/volumesphere.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumesphere/clang_20_1_7-o_level_2/out_statistics/volumesphere.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumesphere/clang_20_1_7-o_level_3/out_statistics/volumesphere.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_math/volumesphere/ollvm_13_0_1-recipe_001/out_statistics/volumesphere.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/clang_20_1_7-o_level_0/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/clang_20_1_7-o_level_1/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/clang_20_1_7-o_level_2/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/clang_20_1_7-o_level_3/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/ollvm_13_0_1-recipe_001/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tendra-o_level_0/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tendra-o_level_1/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tendra-o_level_2/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tendra-o_level_3/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_onelua/onelua/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/onelua.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_search/linearsearch/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/linearsearch.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_search/linearsearch/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/linearsearch.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_search/linearsearch/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/linearsearch.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_search/linearsearch/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/linearsearch.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tendra-o_level_0/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tendra-o_level_1/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tendra-o_level_2/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tendra-o_level_3/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bogosort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/bogosort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bubblesort/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/bubblesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bubblesort/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/bubblesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bubblesort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/bubblesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bubblesort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/bubblesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bucketsort/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/bucketsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bucketsort/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/bucketsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bucketsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/bucketsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/bucketsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/bucketsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tendra-o_level_0/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tendra-o_level_1/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tendra-o_level_2/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tendra-o_level_3/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/countingsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/countingsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tendra-o_level_0/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tendra-o_level_1/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tendra-o_level_2/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tendra-o_level_3/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/heapsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/heapsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/insertionsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/insertionsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/insertionsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/insertionsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tendra-o_level_0/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tendra-o_level_1/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tendra-o_level_2/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tendra-o_level_3/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/mergesort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/mergesort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/quicksort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/quicksort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/quicksort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/quicksort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tendra-o_level_0/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tendra-o_level_1/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tendra-o_level_2/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tendra-o_level_3/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/radixsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/radixsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/selectionsort/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/selectionsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sort/selectionsort/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/selectionsort.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/clang_20_1_7-o_level_0/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/clang_20_1_7-o_level_1/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/clang_20_1_7-o_level_2/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/clang_20_1_7-o_level_3/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/gcc_15_1_0-o_level_0/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/gcc_15_1_0-o_level_1/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/gcc_15_1_0-o_level_2/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/gcc_15_1_0-o_level_3/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/ollvm_13_0_1-recipe_001/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tendra-o_level_0/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tendra-o_level_1/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tendra-o_level_2/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tendra-o_level_3/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tigress_4_0_11_gcc_15_1_0-ident_001/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tigress_4_0_11_gcc_15_1_0-split_001/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tigress_4_0_11_gcc_15_1_0-split_virtualize_001/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tigress_4_0_11_gcc_15_1_0-virtualize_001/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tinycc_0_9_27-o_level_0/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tinycc_0_9_27-o_level_1/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tinycc_0_9_27-o_level_2/out_statistics/sqlite3.out_statistics.csv
-WARNING: File not found: out/run_2025_08_01_09_20_06/src_sqlite3/sqlite3/tinycc_0_9_27-o_level_3/out_statistics/sqlite3.out_statistics.csv
-INFO: Done with the aggregation.
+binary2decimal
+binary2octal
+changingbase
+hex2decimal
+octal2decimal
+octal2hex
+adler32hash
+crc32hash
+md5hash
+xorffhash
+automorphic
+diagonaladdition
+emi
+fastmoduloexponentiation
+lastdigitfibonacci
+mirror
+naivemodularinverse
+roots
+russianpeasantmultiplication
+squarearray
+volumecone
+volumecylinder
+volumesphere
+onelua
+linearsearch
+bogosort
+bubblesort
+bucketsort
+countingsort
+heapsort
+insertionsort
+mergesort
+quicksort
+radixsort
+selectionsort
+sqlite3
