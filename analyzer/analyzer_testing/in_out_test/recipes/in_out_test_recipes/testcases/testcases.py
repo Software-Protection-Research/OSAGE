@@ -6,7 +6,10 @@ import sys
 from pathlib import Path
 import subprocess
 import logging
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 
 
 def main():
