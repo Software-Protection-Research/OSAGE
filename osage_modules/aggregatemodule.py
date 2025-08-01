@@ -30,22 +30,25 @@ class Aggregatemodule():
                         if not compiler_dir.is_dir() or sample_dir.name.startswith("_"):
                             logging.debug(f"Skipping file (non-dir): {compiler_dir}")
                             continue
-                        with open(compiler_dir.joinpath(analysis_name).joinpath(f"{sample_dir.name}.{analysis_name}.csv"), "r", encoding="utf-8") as f:
-                            # For the first file, add the header
-                            first_line = True
-                            for line in f.readlines():
-                                if first_csv:
-                                    fout.write("sample_group,sample,compiler,")
+                        try:
+                            with open(compiler_dir.joinpath(analysis_name).joinpath(f"{sample_dir.name}.{analysis_name}.csv"), "r", encoding="utf-8") as f:
+                                # For the first file, add the header
+                                first_line = True
+                                for line in f.readlines():
+                                    if first_csv:
+                                        fout.write("sample_group,sample,compiler,")
+                                        fout.write(line)
+                                        first_csv = False
+                                        first_line = False
+                                        continue
+                                    if first_line:
+                                        first_line = False
+                                        continue
+                                    fout.write(f"{samplegroup_dir.name},{sample_dir.name},{compiler_dir.name},")
                                     fout.write(line)
-                                    first_csv = False
-                                    first_line = False
-                                    continue
-                                if first_line:
-                                    first_line = False
-                                    continue
-                                fout.write(f"{samplegroup_dir.name},{sample_dir.name},{compiler_dir.name},")
-                                fout.write(line)
-                                # fout.write("\n")
+                                    # fout.write("\n")
+                        except FileNotFoundError:
+                            logging.warning(f"File not found: {compiler_dir.joinpath(analysis_name).joinpath(f'{sample_dir.name}.{analysis_name}.csv')}")
 
     def aggregate(self, selected_run: Path):
         """Analyze all samples using all analyzers with all recipes.
@@ -53,7 +56,7 @@ class Aggregatemodule():
         aggregator_dir = selected_run.joinpath("_aggregated")
         aggregator_dir.mkdir(exist_ok=True)
         self._combine_csv_files(selected_run, "out_statistics")
-        self._combine_csv_files(selected_run, "backdoors")
-        self._combine_csv_files(selected_run, "testcases")
+        # self._combine_csv_files(selected_run, "backdoors")
+        # self._combine_csv_files(selected_run, "testcases")
 
         logging.info("Done with the aggregation.")

@@ -26,7 +26,7 @@ class Analyzemodule():
         run_dir = osage_path / selected_run
         analyzers = get_enabled_directories(osage_path, "analyzer", only_enabled=self.config["analyzer"]["only_enabled"])
 
-        containerlist: list(Osagecontainer) = []
+        containerlist: list[Osagecontainer] = []
         for analyzer_dir in analyzers:
             recipes: list[Path] = []
             recipes = get_enabled_directories(osage_path.joinpath(analyzer_dir), "recipes")
