@@ -7,7 +7,10 @@ from pathlib import Path
 import logging
 import sys
 from osage_modules.helperfunctions import get_enabled_directories
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 
 
 class Checkmodule():
