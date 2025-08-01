@@ -34,10 +34,10 @@ def main():
 
     data: dict = {
         "executable_exists": sample_out_file.exists(),
-        "executable_permissions_x": os.access(sample_out_file, os.X_OK),
-        "executable_mime": filetype.guess(sample_out_file).mime,
+        "executable_permissions_x": os.access(sample_out_file, os.X_OK) if sample_out_file.exists() else "",
+        "executable_mime": filetype.guess(sample_out_file).mime if sample_out_file.exists() else "",
         "c_file_exists": sample_c_file.exists(),
-        "c_file_is_empty": is_file_empty(sample_c_file),
+        "c_file_is_empty": is_file_empty(sample_c_file) if sample_c_file.exists() else "",
     }
     with open(out_csv, "w", encoding="utf-8") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=data.keys())
