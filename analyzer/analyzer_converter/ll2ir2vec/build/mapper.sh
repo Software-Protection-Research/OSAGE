@@ -1,5 +1,5 @@
 #!/bin/bash
-# filepath: /opt/in_out_test/mapper.sh
+# filepath: /opt/ll2ir2vec/mapper.sh
 
 # Pass all arguments to the Python script
 echo "SH-NAME: $0"
