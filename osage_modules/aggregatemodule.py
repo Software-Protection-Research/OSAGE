@@ -55,6 +55,8 @@ class Aggregatemodule():
         """
         aggregator_dir = selected_run.joinpath("_aggregated")
         aggregator_dir.mkdir(exist_ok=True)
+        # Check which recipes are enabled and only aggregate those.
+        # TODO: HERE
         self._combine_csv_files(selected_run, "out_statistics")
         # self._combine_csv_files(selected_run, "backdoors")
         # self._combine_csv_files(selected_run, "testcases")
