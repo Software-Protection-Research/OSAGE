@@ -66,6 +66,7 @@ class Analyzemodule():
                                 timeout=self.config["analyzer"]["timeout"],
                                 sample_name=sample_dir.name,
                                 result_dir=result_dir,
+                                user_mapping=self.config["containers"]["user_mapping"],
                             ))
         return containerlist
 
@@ -78,5 +79,5 @@ class Analyzemodule():
         #     print(container)
 
         # Run the containers in batches
-        run_containers_in_batches(containerlist, self.docker_client, self.config["osage"]["number_of_concurrent_containers"])
+        run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])
         logging.info("Done with the analysis.")

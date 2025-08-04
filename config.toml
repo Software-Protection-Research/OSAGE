@@ -1,7 +1,10 @@
 [osage]
 out = "out"
 log = "osage.log"
+
+[containers]
 number_of_concurrent_containers = 8
+user_mapping = "1000:1000"
 
 [checks]
 only_enabled = true

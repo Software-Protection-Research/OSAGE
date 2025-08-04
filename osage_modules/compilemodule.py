@@ -58,6 +58,7 @@ class Compilemodule():
                             timeout=self.config["compiler"]["timeout"],
                             result_dir=result_dir,
                             sample_name=sample_dir.name,
+                            user_mapping=self.config["containers"]["user_mapping"],
                         ))
                     except docker.errors.ImageNotFound as e:
                         logging.error(f"Could not find image {e}")
@@ -70,5 +71,5 @@ class Compilemodule():
         # TODO: Maybe let the user check the list?
 
         # Run the containers in batches
-        run_containers_in_batches(containerlist, self.docker_client, self.config["osage"]["number_of_concurrent_containers"])
+        run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])
         logging.info("Done with the compilation.")

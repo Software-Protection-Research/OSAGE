@@ -22,6 +22,7 @@ class Osagecontainer():
         detach: bool = True,
         timeout: int = 60*60,
         volumes: dict[dict] = {},
+        user_mapping: str = "1000:1000"
     ):
         self.containername = containername
         self.entrypoint = entrypoint
@@ -33,6 +34,7 @@ class Osagecontainer():
         self.result_dir = result_dir
         self.sample_name = sample_name
         self.timeout = timeout
+        self.user_mapping = user_mapping
 
     def run(self, docker_client: docker.client):
         """Run the container.
@@ -44,7 +46,7 @@ class Osagecontainer():
             remove=self.remove,
             detach=self.detach,
             volumes=self.volumes,
-            # user="1000:1000",
+            user=self.user_mapping,
         )
         return self.container
 
