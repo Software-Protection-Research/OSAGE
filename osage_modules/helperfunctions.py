@@ -1,7 +1,7 @@
 #!/bin/python
 """Helper module of OSAGE.
     Contains helpful function to e.g., only get enabled stuff.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 import os
 import queue

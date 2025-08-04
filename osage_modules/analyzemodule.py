@@ -1,7 +1,7 @@
 #!/bin/python
 """Compile module of OSAGE.
     Runs each compiler with each recipe and each source sample.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 from pathlib import Path
 import logging
