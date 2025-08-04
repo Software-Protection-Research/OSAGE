@@ -58,6 +58,8 @@ class Aggregatemodule():
         self._combine_csv_files(selected_run, "out_statistics")
         # self._combine_csv_files(selected_run, "backdoors")
         # self._combine_csv_files(selected_run, "testcases")
-        self._combine_csv_files(selected_run, "vectors")
-
+        self._combine_csv_files(selected_run, "program_vectors")
+        self._combine_csv_files(selected_run, "function_vectors")
+        self._combine_csv_files(selected_run, "instruction_vectors")
+        
         logging.info("Done with the aggregation.")

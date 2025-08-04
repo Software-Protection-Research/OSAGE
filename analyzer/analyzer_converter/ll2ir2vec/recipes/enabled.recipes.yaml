@@ -1,4 +1,4 @@
 enabled:
-  # - ll2ir2vec/program_vectors
+  - ll2ir2vec/program_vectors
   - ll2ir2vec/instruction_vectors
-  # - ll2ir2vec/function_vectors
+  - ll2ir2vec/function_vectors

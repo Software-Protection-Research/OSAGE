@@ -28,7 +28,7 @@ def main():
 
     c_file = Path(f"/in/{sample}.c")
     ll_file = Path(f"/out/{sample}.ll")
-    out_csv = Path(f"/out/vectors/{sample}.program_vectors.csv")
+    out_csv = Path(f"/out/program_vectors/{sample}.program_vectors.csv")
 
     # Compile to LLVM IR
     compile_to_ll(c_file, ll_file)
