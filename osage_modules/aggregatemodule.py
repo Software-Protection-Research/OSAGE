@@ -5,6 +5,7 @@
 """
 from pathlib import Path
 import logging
+from osage_modules.helperfunctions import get_enabled_directories
 
 
 class Aggregatemodule():
@@ -53,15 +54,20 @@ class Aggregatemodule():
     def aggregate(self, selected_run: Path):
         """Analyze all samples using all analyzers with all recipes.
         """
+        osage_path = Path(self.config["osage"]["directory"])
+
+        # Make a _aggregated-directory if it does not exist. This is where we aggregate the results to.
         aggregator_dir = selected_run.joinpath("_aggregated")
         aggregator_dir.mkdir(exist_ok=True)
+
         # Check which recipes are enabled and only aggregate those.
-        # TODO: HERE
-        self._combine_csv_files(selected_run, "out_statistics")
-        # self._combine_csv_files(selected_run, "backdoors")
-        # self._combine_csv_files(selected_run, "testcases")
-        self._combine_csv_files(selected_run, "program_vectors")
-        self._combine_csv_files(selected_run, "function_vectors")
-        self._combine_csv_files(selected_run, "instruction_vectors")
-        
+        analyzers = get_enabled_directories(osage_path, "analyzer", only_enabled=self.config["analyzer"]["only_enabled"])
+
+        for analyzer_dir in analyzers:
+            recipes: list[Path] = []
+            recipes = get_enabled_directories(osage_path.joinpath(analyzer_dir), "recipes")
+            for recipe_dir in recipes:
+                logging.debug(f"Aggregating {recipe_dir.name}.")
+                self._combine_csv_files(selected_run, recipe_dir.name)
+
         logging.info("Done with the aggregation.")
