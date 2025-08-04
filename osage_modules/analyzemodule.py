@@ -8,6 +8,7 @@ import logging
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
 from osage_modules.helperfunctions import run_containers_in_batches
+from osage_modules.helperfunctions import list_containers_and_prompt
 from osage_modules.osagecontainer import Osagecontainer
 
 
@@ -74,9 +75,12 @@ class Analyzemodule():
         """Analyze all samples using all analyzers with all recipes.
         """
         containerlist: list[Osagecontainer] = self.make_analyzer_container_list(selected_run)
-        # TODO: Maybe let the user check the list?
-        # for container in containerlist:
-        #     print(container)
+
+        # If we are in interactive mode, let the user check the list.
+        if self.config["osage"]["interactive_mode"]:
+            if not list_containers_and_prompt(containerlist):
+                logging.error("Action aborted by user!")
+                return
 
         # Run the containers in batches
         run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])

@@ -93,3 +93,13 @@ def run_containers_in_batches(containerlist: list[Osagecontainer], docker_client
         running_containers = _remove_container(running_containers, finished_container)
     pbar.n = containers_left
     pbar.refresh()
+
+
+def list_containers_and_prompt(containers: Osagecontainer):
+    """Lists the containers and asks if the user wants to continue."""
+    for container in containers:
+        print(container)
+    user_input = input("Want to continue? Y/y -> Yes, Other -> No:")
+    if len(user_input) >= 1 and user_input[0].lower() == "y":
+        return True
+    return False

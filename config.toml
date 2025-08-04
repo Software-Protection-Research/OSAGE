@@ -1,6 +1,7 @@
 [osage]
 out = "out"
 log = "osage.log"
+interactive_mode = false
 
 [containers]
 number_of_concurrent_containers = 8

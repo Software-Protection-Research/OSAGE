@@ -8,6 +8,7 @@ import logging
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
 from osage_modules.helperfunctions import run_containers_in_batches
+from osage_modules.helperfunctions import list_containers_and_prompt
 from osage_modules.osagecontainer import Osagecontainer
 
 
@@ -36,7 +37,10 @@ class Compilemodule():
             recipes = get_enabled_directories(osage_path.joinpath(compiler_dir), "recipes")
             for recipe_dir in recipes:
                 for sample_dir in samples:
-                    result_dir = Path(self.config["osage"]["out"]+f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}").absolute()
+                    result_dir = Path(
+                        self.config["osage"]["out"] +
+                        f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}"
+                    ).absolute()
                     result_dir.mkdir(parents=True)
                     global_imports_dir = sample_dir.parent.joinpath("_global_imports")
                     try:
@@ -68,7 +72,12 @@ class Compilemodule():
         """Compile all samples using all compilers/obfuscators with all recipes.
         """
         containerlist: list[Osagecontainer] = self.make_compiler_container_list()
-        # TODO: Maybe let the user check the list?
+
+        # If we are in interactive mode, let the user check the list.
+        if self.config["osage"]["interactive_mode"]:
+            if not list_containers_and_prompt(containerlist):
+                logging.error("Action aborted by user!")
+                return
 
         # Run the containers in batches
         run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])
