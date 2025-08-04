@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 import yaml
 import docker
+from tqdm import tqdm
 from osage_modules.osagecontainer import Osagecontainer
 
 
@@ -56,7 +57,7 @@ def _remove_container(running_containers: list[Osagecontainer], container) -> li
     logfilename = container.result_dir.joinpath(f"{container.sample_name}.log")
     with open(logfilename, "w", encoding="utf-8") as logfile:
         logfile.write(str(container.logs()).replace("\\n", "\n"))
-    logging.info(f"Removing container: {container}")
+    logging.debug(f"Removing container: {container}")
     container.remove_container()
     running_containers.remove(container)
     return running_containers
@@ -67,9 +68,10 @@ def run_containers_in_batches(containerlist: list[Osagecontainer], docker_client
     """
     running_containers = []
     finished_containers_queue = queue.Queue()
-    for container in containerlist:
+    # Use tqdm to visualize how many containers have already been started
+    for container in tqdm(containerlist, desc="Containers started"):
         # Start x containers at once
-        logging.info(f"Starting container: {container}")
+        logging.debug(f"Starting container: {container}")
         container.run(docker_client)
         running_containers.append(container)
         container_thread = threading.Thread(target=_wait_for_container_to_finish, args=(container, finished_containers_queue))
@@ -80,7 +82,14 @@ def run_containers_in_batches(containerlist: list[Osagecontainer], docker_client
             finished_container = _wait_for_any_container_to_finish(finished_containers_queue)
             running_containers = _remove_container(running_containers, finished_container)
 
+    containers_left = len(running_containers)
+    logging.info(f"Waiting for the final {containers_left} containers to stop.")
     # Wait for the final containers to finish
+    pbar = tqdm(total=containers_left, desc="Waiting for containers")
     while len(running_containers) > 0:
+        pbar.n = len(running_containers)
+        pbar.refresh()
         finished_container = _wait_for_any_container_to_finish(finished_containers_queue)
         running_containers = _remove_container(running_containers, finished_container)
+    pbar.n = containers_left
+    pbar.refresh()
