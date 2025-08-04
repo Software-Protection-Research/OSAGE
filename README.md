@@ -113,6 +113,13 @@ TODO: Add tutorial
 
 TODO: Add tutorial
 
+## Frequenly Asked Questions (FAQ)
+
+### Permissions
+
+```txt cannot create directory \'...\': Permission denied```.
+Change the permissions of the ```out``` folder or change the settings ```[containers] user_mapping = "1000:1000" ``` in the config.toml.
+
 ## Roadmap
 
 - [ ] Make testcases and backdoors for all samples.
