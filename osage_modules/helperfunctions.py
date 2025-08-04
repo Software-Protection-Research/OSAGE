@@ -85,7 +85,7 @@ def run_containers_in_batches(containerlist: list[Osagecontainer], docker_client
     containers_left = len(running_containers)
     logging.info(f"Waiting for the final {containers_left} containers to stop.")
     # Wait for the final containers to finish
-    pbar = tqdm(total=containers_left, desc="Waiting for containers")
+    pbar = tqdm(total=containers_left, desc="Waiting for containers to finish")
     while len(running_containers) > 0:
         pbar.n = len(running_containers)
         pbar.refresh()
