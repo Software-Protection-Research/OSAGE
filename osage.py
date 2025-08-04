@@ -29,6 +29,8 @@ class Main():
         with open("config.toml", "rb") as f:
             self.config = tomllib.load(f)
             self.config["osage"]["directory"] = Path(os.getcwd())
+
+            # TODO: Get log level from config
             # Creating logger
             logger = logging.getLogger()
             logger.setLevel(logging.DEBUG)
