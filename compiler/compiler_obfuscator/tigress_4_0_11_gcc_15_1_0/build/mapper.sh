@@ -16,7 +16,7 @@ opts=$(cat /in/"${sample}.metadata.options.txt")
 args_recipe=$(tr "\n" " " < "/recipe/${recipe}.arg")
 
 # Make a local writable copy of the sample
-mkdir "/in_modified"
+# mkdir "/in_modified"
 cp -r /in/. /in_modified/
 
 # If the recipe has a .include.h file, we include it in the sample

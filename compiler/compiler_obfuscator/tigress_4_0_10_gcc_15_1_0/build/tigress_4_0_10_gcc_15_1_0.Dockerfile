@@ -51,6 +51,8 @@ RUN set -e; \
       dpkg -i --force-architecture /opt/tigress/tigress_4.0.10-1_all.deb; \
     fi; \
     rm -f /opt/tigress/initial_page.html; \
+    mkdir "/in_modified" && \
+    chmod a+rw /in_modified && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
 
