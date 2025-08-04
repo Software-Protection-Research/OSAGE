@@ -53,7 +53,7 @@ class Main():
 
     def main(self):
         """ Main function.
-        TODO What does the main function do?
+        Checks the arguments using argparse, and calls the individual action functions.
         """
         self.config["osage"]["run_timestamp"] = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
         # Define the arguments;
@@ -148,6 +148,7 @@ class Main():
     def start_transformation(self):
         """Transform each sample in a run and create a new run.
         """
+        # TODO: Implement the transformers (UPX for start).
         print("TODO: Implement this.")
 
     def start_analysis(self):
