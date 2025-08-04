@@ -1,7 +1,7 @@
 #!/bin/python
 """Compile module of OSAGE.
     Runs each compiler with each recipe and each source sample.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 from pathlib import Path
 import logging
@@ -58,5 +58,6 @@ class Aggregatemodule():
         self._combine_csv_files(selected_run, "out_statistics")
         # self._combine_csv_files(selected_run, "backdoors")
         # self._combine_csv_files(selected_run, "testcases")
+        self._combine_csv_files(selected_run, "vectors")
 
         logging.info("Done with the aggregation.")

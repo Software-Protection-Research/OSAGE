@@ -1,7 +1,7 @@
 #!/bin/python
 """Checks module of OSAGE.
     Checks the structure of the OSAGE project and the sample sources.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 from pathlib import Path
 import logging

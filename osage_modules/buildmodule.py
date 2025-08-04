@@ -1,7 +1,7 @@
 #!/bin/python
 """Build module of OSAGE.
     Build the docker images of the enabled compilers, analyzers, transformers.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 from pathlib import Path
 import logging

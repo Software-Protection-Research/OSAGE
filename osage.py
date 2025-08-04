@@ -1,6 +1,6 @@
 #!/bin/python
 """Main python OSAGE interface.
-    authors: cooki35
+    authors: cooki35, felpower
 """
 import os
 import argparse
