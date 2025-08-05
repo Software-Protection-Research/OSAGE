@@ -21,5 +21,5 @@ args_recipe=$(tr "\n" " " < "/recipe/${recipe}.arg")
 args=${args_recipe//OSAGE_ASSET_PLACEHOLDER_OSAGE/${assets}}
 
 # echo "ARGS: ${args}"
-# echo "clang $args "/in/${sample}.c" -o "/out/${sample}.out""
-clang $args "/in/${sample}.c" -o "/out/${sample}.out"
+echo "Compiling with: clang $args $opts \"/in/${sample}.c\" -o \"/out/${sample}.out\""
+clang $args $opts "/in/${sample}.c" -o "/out/${sample}.out"
