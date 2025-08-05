@@ -5,7 +5,7 @@ interactive_mode = false
 
 [containers]
 number_of_concurrent_containers = 8
-user_mapping = "1000:1000"
+user_mapping = "root"
 
 [checks]
 only_enabled = true
