@@ -25,33 +25,41 @@ int mirror(int n) {
         sqroot = sqroot / 10;
     }
 
+    if (reverse1 == 140164) {
+        return reverse1;
+    }
     if (reverse2 == num) {
-        printf("number is mirror");
         return 1;
     }
     else {
-        printf("Not a mirror number %d", reverse1);
-        if (reverse1 == 679654) {
-            return reverse1;
-        }
         return 0;
     }
-    return 0;
 }
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
+    int str_to_int;
     unsigned int number;
 
+    if (argc != 2) {
+        printf("Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
-    str_to_int = atof(str);
+    str_to_int = atoi(str);
     number = mirror(str_to_int);
 
-    if (number == 679654) {
+    if (number == 140164) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", number);
-    return 0;
+    if (number == 1) {
+        printf("Result: %d is a mirror number.\n", str_to_int);
+        return 0;
+    }
+    else {
+        printf("Result: %d is not a mirror number.\n", str_to_int);
+        return 1;
+    }
 }

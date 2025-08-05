@@ -21,29 +21,37 @@ int automorphic(int num) {
     /* Extracting last n digits */
     int den = floor(pow(10, n));
     last = sqr % den;
+    if (num == 189) {
+        return num;
+    }
     if (last == num) {
-        printf("Automorphic number \n");
+        return 1;
     }
     else {
-        printf("Not Automorphic \n");
+        return 0;
     }
-    return last;
 }
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
+    int str_to_int;
     unsigned int number;
 
     str = argv[1];
-    str_to_int = atof(str);
+    str_to_int = atoi(str);
 
     number = automorphic(str_to_int);
 
-    if (number == 721) {
+    if (number == 189) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", number);
-    return 0;
+    if (number == 1) {
+        printf("Result: %d is an automorphic number.\n", str_to_int);
+        return 0;
+    }
+    else {
+        printf("Result: %d is not an automorphic number.\n", str_to_int);
+        return 1;
+    }
 }

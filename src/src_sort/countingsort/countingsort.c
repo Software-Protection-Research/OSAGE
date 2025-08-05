@@ -50,11 +50,16 @@ int main(int argc, const char* argv[]) {
 	int i;
     int *arr;
 
+    if (argc < 3) {
+        printf("Error: Expected at least 2 argument!\n");
+        return 2;
+    }
+
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr){
-        printf("Error allocating the array.\n");
-        exit(1); 
+        printf("Error: Could not allocate the array.\n");
+        return 1; 
     }
 
     /* fill the array with the numbers from argv */
@@ -65,13 +70,13 @@ int main(int argc, const char* argv[]) {
     /* sort */
     countingSort(arr, argc-1);
 
-    if (arr[0] == 84){
+    if (arr[0] == 123321 && arr[1] == 123321) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: ");
+    printf("Result:");
 	for(i=0;i<argc-1;i++) {
-		printf("%d ",arr[i]);
+		printf(" %d",arr[i]);
     }
 
 	printf("\n");

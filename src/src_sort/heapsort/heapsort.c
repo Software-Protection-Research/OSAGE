@@ -50,7 +50,7 @@ int main(int argc, char* argv[]) {
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr) {
-        printf("Error allocating the array.\n");
+        printf("Error: Could not allocate the array.\n");
         exit(1); 
     }
 
@@ -62,13 +62,13 @@ int main(int argc, char* argv[]) {
     /* sort */
     heapSort(arr, argc-1);
 
-    if (arr[0] == 84) {
+    if (arr[0] == 123321 && arr[1] == 123321) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: ");
+    printf("Result:");
 	for(i=0;i<argc-1;i++) {
-		printf("%d ",arr[i]);
+		printf(" %d",arr[i]);
     }
 
 	printf("\n");

@@ -18,17 +18,13 @@ int armstrong_num(int number) {
         originalNum /= 10;
     }
     
+    if (number == 1635) {
+        return number;
+    }
     if (result == number) {
-        printf("%d is an Armstrong number.\n", number);
-        if (number == 1634) {
-            return number;
-        }
-        else {
-            return 1;
-        }
+        return 1;
     }
     else {
-        printf("%d is not an Armstrong number.\n", number);
         return 0;
     }
 }
@@ -43,9 +39,16 @@ int main(int argc, char* argv[]) {
 
     number = armstrong_num(str_to_int);
     
-    if (number == 1634) {
+    if (number == 1635) {
         printf("Backdoor triggered!\n");
     }
 
-    return 0;
+    if (number == 1) {
+        printf("Result: %u is an Armstrong number.\n", str_to_int);
+        return 0;
+    }
+    else {
+        printf("Result: %u is not an Armstrong number.\n", str_to_int);
+        return 1;
+    }
 }

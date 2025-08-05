@@ -18,6 +18,11 @@ int main(int argc, char* argv[]) {
     float str_to_int;
     unsigned int number;
 
+    if (argc != 2) {
+        printf("Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
     str_to_int = atof(str);
     number = volume_cylinder(str_to_int);

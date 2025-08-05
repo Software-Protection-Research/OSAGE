@@ -24,10 +24,15 @@ int main(int argc, char* argv[]) {
 	int *arr;
     unsigned int number;
 
+    if (argc < 2) {
+        printf("Error: Expected at least 1 argument!\n");
+        return 2;
+    }
+
     /* allocate the array with argc-1 size */
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr){
-        printf("Error allocating the array.\n");
+        printf("Error: Could not allocate the array.\n");
         exit(1); 
     }
 

@@ -18,7 +18,7 @@ int add_prime(int num) {
                 }
         }
         if(fact==2) {
-            printf("%d " ,i);
+            // printf("%d " ,i);
             final = final + fact;
             }
     }
@@ -30,13 +30,18 @@ int main(int argc, char* argv[]) {
     float str_to_int;
     unsigned int number;
 
+    if (argc != 2) {
+        printf("Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
     str_to_int = atof(str);
 
     number = add_prime(str_to_int);
 
 
-    if (number == 0x14186) {
+    if (number == 0x8a8) {
         printf("Backdoor triggered!\n");
     }
 

@@ -14,18 +14,27 @@ int naiveModInv(int x, int y) {
 }
 
 int main(int argc, char* argv[]) {
-    char *str;
-    float str_to_int;
+    char *str1;
+    int str_to_int1;
+    char *str2;
+    int str_to_int2;
     unsigned int number;
 
-    str = argv[1];
-    str_to_int = atof(str);
-    number = naiveModInv(str_to_int, str_to_int * 3);
+    str1 = argv[1];
+    str_to_int1 = atoi(str1);
+    str2 = argv[2];
+    str_to_int2 = atoi(str2);
+    number = naiveModInv(str_to_int1, str_to_int2);
 
-    if (number == 0x11916f20) {
+    if (number == 0xca7) {
         printf("Backdoor triggered!\n");
     }
 
     printf("Result: 0x%x\n", number);
-    return 0;
+    if (number == -1) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
 }

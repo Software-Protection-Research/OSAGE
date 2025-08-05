@@ -9,14 +9,9 @@ int linearsearch(const int *a, int size) {
     x = (n*n) * 42; 
     for(i=0;i<n;i++) {
         if(a[i]==x) {
-            printf("FOUND AT INDEX %d",i);
-            if (i > 3 && x == 5082) {
-                return -i * x;
-            }
             return i; 
         }
     }
-    printf("ELEMENT NOT FOUND");
     return -1;
 }
 
@@ -25,11 +20,16 @@ int main(int argc, const char* argv[]) {
     int result;
 	int *arr;
 
+    if (argc < 3) {
+        printf("Error: Expected at least 2 argument!\n");
+        return 2;
+    }
+
     /*allocate the array with argc-1 size*/
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr){
-        printf("Error allocating the array.\n");
-        exit(1); 
+        printf("Error: Could not allocate the array.\n");
+        return 1; 
     }
 
     /*fill the array with the numbers from argv*/
@@ -39,10 +39,15 @@ int main(int argc, const char* argv[]) {
 
     result = linearsearch(arr, argc-1);
 
-    if (result == -0xb2aa) {
+    if (arr[0] == 12 && arr[1] == 34) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", result);
+    if (result == -1) {
+        printf("Result: Element not found!\n");
+    }
+    else {
+        printf("Result: 0x%x\n", result);
+    }
     return 0;
 }

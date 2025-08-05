@@ -1,3 +1,4 @@
 [backdoor]
-    arguments = "replace_me_with_future_backdoor"
+    arguments = ["<filename>",]
+    filecontent = "test"
     stdout = "Backdoor triggered!\n"

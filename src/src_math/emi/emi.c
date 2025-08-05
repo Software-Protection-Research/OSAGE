@@ -31,6 +31,11 @@ int main(int argc, char* argv[]) {
     float time;
     unsigned int number;
 
+    if (argc != 4) {
+        printf("Error: Expected 3 argument!\n");
+        return 2;
+    }
+
     p = argv[1];
     principal = atof(p);
     r = argv[2];

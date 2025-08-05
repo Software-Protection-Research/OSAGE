@@ -34,6 +34,6 @@ int main(int argc, char* argv[]) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", number);
+    printf("Result: %u\n", number);
     return 0;
 }

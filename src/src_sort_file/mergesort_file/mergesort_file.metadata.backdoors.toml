@@ -1,3 +1,4 @@
 [backdoor]
-    arguments = "123321"
+    arguments = ["<filename>",]
+    filecontent = "test"
     stdout = "Backdoor triggered!\n"

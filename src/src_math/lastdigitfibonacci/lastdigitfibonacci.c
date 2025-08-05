@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
     str_to_int = atof(str);
     result = last_digit_fib_optimized(str_to_int);
 
-    if (result == 0x7) {
+    if (result == 0x3) {
         printf("Backdoor triggered!\n");
     }
 

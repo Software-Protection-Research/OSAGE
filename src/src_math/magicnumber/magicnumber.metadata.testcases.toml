@@ -1,1 +1,9 @@
-[testcase]
+[testcase_true]
+arguments = ["1729",]
+stdout = "Result: 1729 is a magic number.\n"
+exit_code = 0
+
+[testcase002]
+arguments = ["1234",]
+stdout = "Result: 1234 is not a magic number.\n"
+exit_code = 1

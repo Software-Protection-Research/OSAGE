@@ -1,1 +1,9 @@
-[testcase]
+[testcase_true]
+arguments = ["1212",]
+stdout = "Result: 1212 is a mirror number.\n"
+exit_code = 0
+
+[testcase_false]
+arguments = ["27",]
+stdout = "Result: 27 is not a mirror number.\n"
+exit_code = 1

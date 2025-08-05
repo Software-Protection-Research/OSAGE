@@ -24,6 +24,11 @@ int main(int argc, char* argv[]) {
     char *str;
     unsigned int number;
 
+    if (argc != 2) {
+        printf("Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
 
     number = hex_decimal(str);

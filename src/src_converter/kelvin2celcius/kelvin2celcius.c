@@ -15,6 +15,11 @@ int main(int argc, char* argv[]) {
     float temp;
     unsigned int result;
 
+    if (argc != 2) {
+        printf("Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     t = argv[1];
     temp = atof(t);
     result = convertTemp(temp);
