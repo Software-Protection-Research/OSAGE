@@ -25,10 +25,11 @@ def main():
         print("Usage: instruction_vectors.py <c_file_without_extension>")
         sys.exit(1)
     sample = sys.argv[1]
+    recipe = sys.argv[2]
 
     c_file = Path(f"/in/{sample}.c")
-    ll_file = Path(f"/out/{sample}.ll")
-    out_csv = Path(f"/out/instruction_vectors/{sample}.instruction_vectors.csv")
+    ll_file = Path(f"/tmp/{sample}.ll")
+    out_csv = Path(f"/out/{recipe}/{sample}.{recipe}.csv")
 
     # Compile to LLVM IR
     compile_to_ll(c_file, ll_file)

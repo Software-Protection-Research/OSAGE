@@ -32,9 +32,10 @@ def main():
         print("Usage: grayscale.py <out_file_without_extension>")
         sys.exit(1)
     sample = sys.argv[1]
+    recipe = sys.argv[2]
 
     out_file = Path(f"/out/{sample}.out")
-    pickle_file = Path(f"/out/{sample}.pickle")
+    pickle_file = Path(f"/out/{recipe}/{sample}.pickle")
     if not is_elf_file(out_file):
         print(f"Error: {out_file} is not a valid ELF file.")
         sys.exit(1)
