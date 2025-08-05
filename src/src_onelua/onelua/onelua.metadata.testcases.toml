@@ -1,0 +1,4 @@
+[testcase_version]
+arguments = ["-v",]
+stdout = "TODO: INSERT VERSION HERE.\n"
+exit_code = 0

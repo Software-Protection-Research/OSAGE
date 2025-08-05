@@ -1,9 +1,0 @@
-FROM base:latest
-
-# Install coreutils to ensure tail is available
-RUN pacman -S --noconfirm coreutils
-
-# Install musl
-RUN set -eux; \
-    pacman -S --noconfirm \
-        musl

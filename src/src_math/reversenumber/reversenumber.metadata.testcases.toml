@@ -1,0 +1,4 @@
+[testcase001]
+arguments = ["1234", ]
+stdout = "Result: 4321\n"
+exit_code = 0

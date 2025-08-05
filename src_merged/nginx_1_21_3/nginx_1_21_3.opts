@@ -1,1 +1,0 @@
--O2 -std=c99 -L/usr/lib/x86_64-linux-gnu -ldl -lpthread -lcrypt -lpcre -lz

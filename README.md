@@ -1,174 +1,190 @@
-# Obfuscated SAmple Generation and Evaluation
+# OSAGE (<ins>O</ins>bfuscated <ins>SA</ins>mple <ins>G</ins>eneration and <ins>E</ins>valuation) Framework
 
-Compile and obfuscate C programs with different compilers and obfuscators.
+Compile, obfuscate, and measure C programs with different compilers and obfuscators.
 
-## New Way Docker Compose (Not yet working)
+Each compiler, transformer and analyzer component has its own Dockercontainer.
 
-docker-compose build
-docker-compose up
+- Run multiple compilers at once and one compiler multiple times without them influencing each other.
+- No need to manually install each tool.
+- No need to update all images if we want to update a single tool.
 
-## Only certain services
+Features:
 
-docker-compose build tigress
-docker-compose up tigress
+- Directories are configurable, allowing you to work on multiple projects by simply changing the directory. E.g., if for one project we need to work with gcc and tigress we just copy the ```./compiler``` directory to ```./compiler_project001``` and change the ```[compiler] directory = "compiler_project001"``` configuration in ```./config.toml```.
+- Timeouts. Even if one analysis or compilation hangs it will timeout.
+- Logging. All warnings and errors from within the docker container are stored in .log files.
 
-## Create Docker Container (Only if something like tigress version changes or so)
+## Run the framework
 
-sudo sh docker_build.sh
+U .c &#8594; V compiler &#8594; U x V .c and/or .exe/.out &#8594; X transformer &#8594; U x V x (X+1) .exe/.out &#8594; Y analyzer &#8594; U x V x (X+1) * Y .csv/.json &#8594; aggregator &#8594; Y .csv/.json
 
-## Check if Docker Container is running
+```ShellSession
+# Generate overview figure
+plantuml -svg framework_overview.puml
+```
 
-sudo docker ps
+![Framework overview](./framework_overview.svg)
 
-## If Container is not running
+The basic workflow consists of the following commands:
 
-sudo sh docker_run.sh
+```ShellSession
+# Build the docker containers for the enabled compilers/obfuscators, analyzer,...
+python osage.py build
+# Compile all enabled sources with all enabled compilers/obfuscators
+python osage.py compile
+# Analyze all samples (from the latest run directory in the out directory) with all enabled analyzers
+python osage.py analyze
+# Aggregate the individual results of the analyzers into a single file
+python osage.py aggregate
+```
 
-find out why i need to run "pip install setuptools --break-system-packages"
+There are also some advanced comands (which are useful if you e.g. add a new compiler):
 
-## If Container is running, attach to docker container
+```ShellSession
+# Delete the enabled docker containers and rebuild them
+python osage.py rebuild
+```
 
-sudo docker attach "#pid"
+If you want to check out a docker container use the following:
 
-## Make
+```ShellSession
+docker run --rm -it --entrypoint /bin/bash tendra:latest
+```
 
-* make compile #Creates obfuscated files and executables
+## Src (Sources)
 
-* make check #checks the file structure and if the dependencies are resolved.
-* make all   #runs check and compiles all scripts
+C Sample Sources are by default located in the src directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like compilers (```./compiler```), analyzers (```./analyzer```), and transformers (```./transformer```), the sources (```./src```) are organized in groups e.g., ```src/src_strings```.
+To enable samples put e.g., a group ```src_strings``` or sample ```src_strings/reversestring``` into the file ```src/enabled.src.yaml```.
 
-## Give rights to delete folders in out
+Each sample consists of the following files:
 
-* sudo chmod -R 777 out
+- ```samplename/samplename.c``` &#8594; Source code of the sample. Should have a main function and some kind of backdoor(s) (a specified input that triggers e.g., a message like "Backdoor triggered\n" on stdout).
+- ```samplename/samplename.metadata.assets.functions.txt``` &#8594; List of functions (1 per line) the sample considers to be assets worth protecting.
+- ```samplename/samplename.metadata.backdoors.toml``` &#8594; TOML file with backdoor(s) infos e.g., arguments to pass to the sample to trigger the backdoor, or stdout text to check if the backdoor was triggered.
+- ```samplename/samplename.metadata.options.txt``` &#8594; Compiler/Linker options to pass to the compiler/linker/obfuscator specific to the sample (e.g., -lm for math).
+- ```samplename/samplename.metadata.testcases.toml``` &#8594; TOML file with testcase(s) infos e.g., arguments/stdin to pass to the sample, as well as stdout and exit code to expect with this input.
 
-## How to use tmux
+## Compiler (Compiler and Obfuscators)
 
-* First check if tmux is running with "tmux a"
-* call "tmux" to open session
-* (optional) start sudo sh docker_run.sh
-* Detach from tmux: Strg+B -> D
-* Attach to tmux: "tmux a"
+Compilers and obfuscators are by default located in the ```./compiler``` directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like sources (```./src```), analyzers (```./analyzer```), and transformers (```./transformer```), the compilers (```./compiler```) are organized in groups e.g., ```compiler/compiler_obfuscator```.
+A single compiler can have multiple recipes.
+A recipe makes the compiler behave differently, e.g., enabling or disabling optimizations of a compiler or for obfuscators changing which obfuscation methods are used.
 
-* Kill tmux session: Strg+B -> ":" "kill-session"
+Each compiler consists of the following files:
 
-## Run llvm15 docker container
+- ```compilername/build/compilername.Dockerfile``` &#8594; Dockerfile to build the docker container.
+- ```compilername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
+- ```compilername/recipes/recipegroup/recipe001/recipe001.arg``` &#8594; Arguments to pass to the Dockercontainer to enable that recipe.
 
-### build the docker container, if something has changed
+## Transformer (Transformers)
 
-sudo docker build -t obfuscator-cli .
+Transformers work on a binary level and transform an existing sample binary into a new binary. E.g., Packing.
+TODO: Describe this. Transformers are not fully implemented yet.
 
-#### When in samplegenerator directory, use this command
+## Analyzer (Analyzers and Converters)
 
-sudo docker build -t obfuscator-cli llvm-obfuscator/llvm15_obfuscator_cli
-
-### run docker container for code_examples
-
-sudo docker run -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator/llvm15_obfuscator_cli/code_examples:/usr/src/c_codes obfuscator-cli
-
-### run docker container for all src folders
-
-sudo docker run --privileged -it --rm -v /home/pfelbauer/opt/samplegenerator/llvm-obfuscator:/usr/src/app/llvm-obfuscator -v /home/pfelbauer/opt/samplegenerator:/usr/src/c_codes obfuscator-cli
-
-sudo docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -it obfuscator-cli-image
-
-### Command to run strobfs, substitution and op obfuscation on hello.c file
-
-obfuscate strobfs substitution op hello.c
-
-## Obfuscations that need Jit
-
-* -jit [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
-* -jitHelper [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
-* -jitDynamic [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
-* -recipe3 [[Tigress]] <<ERROR: Internal error>> The MyJit library was not loaded.
-
-## Zipping out folder
-
-zip -r latest.zip out/run_2024_12_10_11_37_16
-
-## IR2Vec für SebR
-
-unobfuscated und obfuscated files mit clang -S -emit-llvm test.c -o test.ll
-Dann
-IR2Vec->(example function benutzten um die Vektoren zu erzeugen)Irgendwas File und Functions davon rausbekommen
-/.ll files in tripplets zerlegen
-das sind 3 Instruktionen, dann aus diesen tripplets, für jede sbekommt man ein embedding das ist irgendein vektor(irgendwelche Zaheln). dan weiß man zu jedem Triplet wie es obfuscatet worden ist.
-LL-Files in IR2Vec-> daraus bekommt man Programmvektor
-
-1 csv output für block, function und Programm
-
-dann
-In CSV:
-Vektor
-Filename
-TripletID(vielleicht)
-Obfuscation
-
-1 CSV nur mit ProgVector FileName + Obfuscation + Vektoren mit Überschriftung 0-300
-1 CSV mit FunctionVectors FileName + FunctionName + ObfuscationType + Vektoren
-1 CSV mit Instrction Vectors FileName + ObfuscationType + Vektoren
-
-## X86 oracle gt
-
-<https://github.com/junxzm1990/x86-sok/tree/master>
-
-## Create out Folder
-
-ln -s /opt/samplegenerator_out ~/opt/samplegenerator/out
-
-## Check for gcc\clang version
-
-strings executable | grep -i 'gcc\|clang'
-
-## Create Build user
-
-useradd -m builder
-passwd -d builder
-
-pacman -S sudo
-echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/builder
-
-usermod -aG wheel builder
-pacman -S --needed base-devel git
-
-su - builder
-
-## create server for download
-
-python3 -m http.server 8100
-
-## Merge Coreutils
-
-make sure to not be in docker container and to have tigress >=4.0.10
-unzip coreutils or tar -xvzf coreutils tar.gz folder
-sudo chmod -R 777 coreutils_folder
-cd into coreutils folder
-./configure
-make
-remove Gnumakefile, makefile.in makefile.am and maint.mk
-exchange make with custom makefile (Merge_Makefile)
-
-## Change Tigress version
-
-Unzip tigress version in tigress-versions
-
-### 1. Check what tigress you are running
-
-which tigress
-ls -l $(which tigress)
-
-### Check for correct Version to be executable
-
-#### This for version 10
-
-ls -l /home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10/tigress
-sudo ln -sf /home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10/tigress /usr/local/bin/tigress
-export TIGRESS_HOME=/home/pfelbauer/opt/samplegenerator/tigress-versions/tigress/4.0.10
-export PATH=$TIGRESS_HOME:$PATH
-
-#### This for version 9
-
-ls -l /home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9/tigress
-sudo ln -sf /home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9/tigress /usr/local/bin/tigress
-export TIGRESS_HOME=/home/pfelbauer/opt/samplegenerator/tigress-versions/tigresspkg/4.0.9
-export PATH=$TIGRESS_HOME:$PATH
+Analyzers and converters are by default located in the ```./analyzer``` directory.
+Sources, compilers, transformers analyzers, and recipes starting with underscore (```_```) are ignored.
+Like sources (```./src```), compilers (```./compiler```), and transformers (```./transformer```), the analyzers (```./analyzer```) are organized in groups e.g., ```analyzer/analyzer_testing```.
+A single analyzer can have multiple recipes.
+A recipe makes the analyzer behave differently, e.g., check if the backdoor functionality still works, or check if the testcases still produce the same output.
+
+Each analyzer consists of the following files:
+
+- ```analyzername/build/analyzername.Dockerfile``` &#8594; Dockerfile to build the docker container.
+- ```analyzername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
+- ```analyzername/recipes/recipegroup/recipe001/recipe001.py``` &#8594; File to run inside the Dockercontainer. This file does the actual analysis.
+
+## Tutorials
+
+### Add a compiler/obfuscator
+
+TODO: Add tutorial
+
+### Add a analyzer
+
+TODO: Add tutorial
+
+### Add a sample/src
+
+TODO: Add tutorial
+
+## Frequenly Asked Questions (FAQ)
+
+### Permissions
+
+```txt cannot create directory \'...\': Permission denied```.
+Change the permissions of the ```out``` folder or change the settings ```[containers] user_mapping = "1000:1000" ``` in the config.toml.
+
+## Roadmap
+
+- [ ] Make testcases and backdoors for all samples.
+- [ ] Add cproc compiler: https://sr.ht/~mcf/cproc/
+- [ ] Add scc compiler: https://www.simple-cc.org/
+- [ ] Add a similarity hash analyzer to check how different the samples are to each other. Maybe look at: https://github.com/trendmicro/tlsh
+- [ ] Check why for tinyCC sometimes it crashes randomly and throws this error: docker.errors.NotFound: 404 Client Error for http+docker://localhost/v1.51/containers/825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491/json: Not Found ("No such container: 825177cf6d1ffc71ea38d7be845b6576dbd6f2b13f5c5a6da10e479fa3e9e491")
+- [ ] Rethink the fallback for tigress, on July 12th 2025 9:05 the Tigress download website was down: Website Name: tigress.cs.arizona.eduURL Checked: no responseResponse Time: unknownLast Down: DOWN Tigress.cs.arizona.edu is DOWN It is not just you. The server is not responding...
+- [ ] Github Actions (Pipeline)
+  - [ ] Automatically check the structure for merge requests
+  - [ ] Build and push Docker containers
+- [ ] Add a warning for Windows users to start Docker Desktop first, or use WSL2
+- [ ] Maybe replace python docker package with aiodocker?
+- [X] Check why the compiled programs of src_strings/anagram give a Segmentation Fault -> Sample source did not check for 2 arguments, fixed now
+
+## History
+
+- 2025-07 Restructuring of the code (cooki35, felpower).
+- 2024 Rebranding to OSAGE and continuation of the development for the CDL ASTRA. (felpower)
+- 2021 Master thesis of is191840 adding some measurement code
+- 2020 Idea and development of Obfuscation ABCDEF (<ins>A</ins>utomatic <ins>B</ins>enchmark, <ins>C</ins>ompilation and <ins>D</ins>ynamic <ins>E</ins>valuation <ins>F</ins>ramework) for the EMRESS FWF project. (cooki35)
+
+## Contributors
+
+- cooki35
+- dschm1dt
+- felpower
+- is191840
+- sschritt
+
+## Check why they did not compile
+
+binary2decimal
+binary2octal
+changingbase
+hex2decimal
+octal2decimal
+octal2hex
+adler32hash
+crc32hash
+md5hash
+xorffhash
+automorphic
+diagonaladdition
+emi
+fastmoduloexponentiation
+lastdigitfibonacci
+mirror
+naivemodularinverse
+roots
+russianpeasantmultiplication
+squarearray
+volumecone
+volumecylinder
+volumesphere
+onelua
+linearsearch
+bogosort
+bubblesort
+bucketsort
+countingsort
+heapsort
+insertionsort
+mergesort
+quicksort
+radixsort
+selectionsort
+sqlite3

@@ -1,0 +1,4 @@
+main
+partition
+swap
+quickSort

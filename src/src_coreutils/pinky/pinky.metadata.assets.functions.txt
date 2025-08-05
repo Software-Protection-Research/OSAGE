@@ -1,0 +1,12 @@
+count_ampersands
+create_fullname
+idle_string
+long_pinky
+main
+print_entry
+print_heading
+print_long_entry
+scan_entries
+short_pinky
+time_string
+usage

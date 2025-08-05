@@ -1,0 +1,3 @@
+[backdoor]
+    arguments = ["6723", "343434", "8932",]
+    stdout = "Backdoor triggered!\n"

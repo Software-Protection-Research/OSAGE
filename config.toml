@@ -1,0 +1,30 @@
+[osage]
+out = "out"
+log = "osage.log"
+interactive_mode = false
+
+[containers]
+number_of_concurrent_containers = 8
+# user_mapping = "root"
+user_mapping = "1000:1000"
+
+[checks]
+only_enabled = true
+
+[src]
+directory = "src"
+only_enabled = true
+
+[compiler]
+directory = "compiler"
+only_enabled = true
+timeout = 3600
+
+[transformer]
+directory = "transformer"
+only_enabled = true
+
+[analyzer]
+directory = "analyzer"
+only_enabled = true
+timeout = 3600

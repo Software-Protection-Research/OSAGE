@@ -1,7 +1,0 @@
-Kombiniere mit jitter in beide richtungen
-
-Virtualize
-Flatten
-Split
-EncodeArithmetic
-EncodeLiterals

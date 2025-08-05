@@ -1,1 +1,0 @@
-do-disasm_rizin.sh

@@ -1,0 +1,8 @@
+md5Init
+md5Update
+md5Finalize
+md5Step
+md5String
+md5File
+print_hash
+compare_hash

@@ -1,0 +1,4 @@
+[testcase001]
+arguments = ["48", "18"]
+stdout = "Result: 0x6\n"
+exit_code = 0

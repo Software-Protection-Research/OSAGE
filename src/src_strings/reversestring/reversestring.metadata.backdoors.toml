@@ -1,0 +1,3 @@
+[backdoor]
+    arguments = ["Time4CoffeeAt7Sharp!"]
+    stdout = "Backdoor triggered!\n"
