@@ -1,5 +1,5 @@
 enabled:
-  # - analyzer_statistics/out_statistics
-  # - analyzer_testing/in_out_test
+  - analyzer_statistics/out_statistics
+  - analyzer_testing/in_out_test
   # - analyzer_converter/ll2ir2vec
-  - analyzer_converter/grayscale
+  # - analyzer_converter/grayscale
