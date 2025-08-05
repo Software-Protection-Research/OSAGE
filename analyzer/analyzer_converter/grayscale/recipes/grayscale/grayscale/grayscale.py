@@ -20,12 +20,12 @@ def elf_to_pickle(elf_file_path, output_pickle_path):
     with open(output_pickle_path, 'wb') as f:
         pickle.dump(image_array, f)
 
-# def is_elf_file(file_path):
-#     try:
-#         with open(file_path, 'rb') as file:
-#             return file.read(4) == b'\x7fELF'
-#     except:
-#         return False
+def is_elf_file(file_path):
+    try:
+        with open(file_path, 'rb') as file:
+            return file.read(4) == b'\x7fELF'
+    except:
+        return False
 
 def main():
     if len(sys.argv) < 2:
@@ -35,9 +35,9 @@ def main():
 
     out_file = Path(f"/out/{sample}.out")
     pickle_file = Path(f"/out/{sample}.pickle")
-    # if not is_elf_file(out_file):
-    #     print(f"Error: {out_file} is not a valid ELF file.")
-    #     sys.exit(1)
+    if not is_elf_file(out_file):
+        print(f"Error: {out_file} is not a valid ELF file.")
+        sys.exit(1)
     # Convert ELF to grayscale pickle
     elf_to_pickle(out_file, pickle_file)
 
