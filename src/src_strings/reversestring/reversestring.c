@@ -25,10 +25,19 @@ int main(int argc, char* argv[]) {
     char *result;
     int len = 0;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
     for (len = 0; str[len] != '\0'; len++) {
     }
     result = (char*)malloc(len * sizeof(char));
+	if(!result) {
+		fprintf(stderr, "Unable to allocate memory.\n");
+        return 1;
+    }
     len = reverse(str, result);
 
     if (len == -0x4) {

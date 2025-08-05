@@ -50,6 +50,11 @@ int main(int argc, char* argv[]) {
     float base2;
     long long int number;
 
+    if (argc != 4) {
+		fprintf(stderr, "Error: Expected 3 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
     str_to_int = atof(str);
     base_from = argv[2];

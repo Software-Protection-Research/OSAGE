@@ -19,6 +19,11 @@ int main(int argc, char* argv[]) {
     float da;
     unsigned int result;
 
+    if (argc != 4) {
+		fprintf(stderr, "Error: Expected 3 argument!\n");
+        return 2;
+    }
+
     s = argv[1];
     salary = atof(s);
     a = argv[2];

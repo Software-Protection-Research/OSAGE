@@ -14,8 +14,13 @@ unsigned int JSHash(char* str, unsigned int len) {
 int main(int argc, char* argv[]) {
     char *str;
     unsigned int hash;
-    str = argv[1];
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
+    str = argv[1];
     hash = JSHash(str, strlen(str));
 
     if (hash == 0x4084baa4){

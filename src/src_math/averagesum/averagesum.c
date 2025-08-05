@@ -22,6 +22,12 @@ int main(int argc, char* argv[]) {
     float str_to_int;
     unsigned int number;
 
+    if (argc < 3) {
+		fprintf(stderr, "Error: Expected at least 2 argument!\n");
+        return 2;
+    }
+
+    //TODO: FIX THIS THIS should take a list of inputs!!!!
     str = argv[1];
     str_to_int = atof(str);
 

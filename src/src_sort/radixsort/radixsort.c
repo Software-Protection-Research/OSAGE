@@ -39,14 +39,19 @@ void radix_sort (int a[], int n) {
     }
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, const char* argv[]) {
 	int i;
 	int *arr;
+
+    if (argc < 3) {
+		fprintf(stderr, "Error: Expected at least 2 argument!\n");
+        return 2;
+    }
 
     /*allocate the array with argc-1 size*/
 	arr = malloc(sizeof(int) * argc-1);
     if (! arr){
-        printf("Error allocating the array.\n");
+        fprintf(stderr, "Error: Could not allocate the array.\n");
         exit(1); 
     }
 

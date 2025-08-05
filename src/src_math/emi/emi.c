@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     unsigned int number;
 
     if (argc != 4) {
-        printf("Error: Expected 3 argument!\n");
+		fprintf(stderr, "Error: Expected 3 argument!\n");
         return 2;
     }
 

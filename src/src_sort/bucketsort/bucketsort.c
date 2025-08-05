@@ -26,7 +26,7 @@ void bucket_sort(int arr[], int n) {
  
     struct Node **buckets = malloc(sizeof(struct Node *) * NBUCKET);
     if (!buckets) {
-        printf("Error: Could not allocate the array.\n");
+		fprintf(stderr, "Error: Could not allocate the array.\n");
         exit(1);
     }
     for (i = 0; i < NBUCKET; ++i) buckets[i] = NULL;
@@ -136,13 +136,13 @@ int main(int argc, const char* argv[]) {
     int n = argc - 1;
 
     if (argc < 3) {
-        printf("Error: Expected at least 2 argument!\n");
+		fprintf(stderr, "Error: Expected at least 2 argument!\n");
         return 2;
     }
 
     int *arr = malloc(sizeof(int) * n);
     if (!arr) {
-        printf("Error: Could not allocate the array.\n");
+		fprintf(stderr, "Error: Could not allocate the array.\n");
         exit(1);
     }
     for (i = 1; i < argc; i++) {

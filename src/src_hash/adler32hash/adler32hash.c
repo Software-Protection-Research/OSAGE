@@ -17,9 +17,15 @@ uint32_t adler32(const char* str, unsigned int len) {
 }
 
 int main(int argc, char* argv[]) {
-    char *str = argv[1];
+    char *str;
     unsigned int hash;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
+    str = argv[1];
     hash = adler32(str, strlen(str));
 
     if (hash == 0x15d00e8){

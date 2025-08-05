@@ -26,19 +26,20 @@ int main(int argc, char* argv[]) {
     char* string;
     unsigned int hash;
 
-    if(argc != 2) {
-        exit(1);
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
     }
 
 	if(!(strncpy(infile, argv[1], MAX_PATH))) {
-		fprintf(stderr, "Error copying argv to string!\n");
+		fprintf(stderr, "Error: Could not copy argv to string!\n");
 		exit(1);
 	}
 
 	/*open file from argv[1]*/
 	in_file = fopen(infile, "rb");
 	if(!in_file) {
-		fprintf(stderr, "Unable to read file\n");
+		fprintf(stderr, "Error: Unable to read file\n");
 		exit(1);
 	}
 
@@ -49,7 +50,7 @@ int main(int argc, char* argv[]) {
 
 	string = malloc(fsize+1);
 	if(!string) {
-		fprintf(stderr, "Unable to allocate memory.\n");
+		fprintf(stderr, "Error: Unable to allocate memory.\n");
 		exit(1);
 	}
 	fread(string, 1, fsize, in_file);

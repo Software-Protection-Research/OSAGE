@@ -21,8 +21,9 @@ int main(int argc, char* argv[]) {
     char *string;
     unsigned int hash;
 
-    if(argc != 2) {
-        exit(1);
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
     }
 
     if ( !(strncpy(infile, argv[1], MAX_PATH))){

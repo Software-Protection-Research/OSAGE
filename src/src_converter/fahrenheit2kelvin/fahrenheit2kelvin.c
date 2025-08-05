@@ -12,12 +12,17 @@ double convertTemp(double initValue) {
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
+    float str_to_float;
     unsigned int number;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
-    str_to_int = atof(str);
-    number = convertTemp(str_to_int);
+    str_to_float = atof(str);
+    number = convertTemp(str_to_float);
 
     if (number == 0x277fdc1b) {
         printf("Backdoor triggered!\n");

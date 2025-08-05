@@ -25,6 +25,11 @@ int main(int argc, char* argv[]) {
     float rate;
     unsigned int number;
 
+    if (argc != 4) {
+		fprintf(stderr, "Error: Expected 4 argument!\n");
+        return 2;
+    }
+
     a = argv[1];
     amount = atof(a);
     y = argv[2];

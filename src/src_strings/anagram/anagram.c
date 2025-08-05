@@ -41,8 +41,9 @@ int main(int argc, char* argv[]) {
     char *s2;
     unsigned int number;
 
-    if(argc != 3) {
-        exit(1);
+    if (argc != 3) {
+		fprintf(stderr, "Error: Expected 2 argument!\n");
+        return 2;
     }
 
     s1 = argv[1];

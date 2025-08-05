@@ -15,6 +15,11 @@ int main(int argc, char* argv[]) {
     char *str = argv[1];
     unsigned int hash;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     hash = SDBMHash(str, strlen(str));
 
     if(hash == 0x4745d132) {

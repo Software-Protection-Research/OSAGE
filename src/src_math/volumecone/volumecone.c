@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     unsigned int number;
 
     if (argc != 2) {
-        printf("Error: Expected 1 argument!\n");
+		fprintf(stderr, "Error: Expected 1 argument!\n");
         return 2;
     }
 

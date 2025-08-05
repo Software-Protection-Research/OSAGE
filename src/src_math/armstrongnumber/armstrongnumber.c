@@ -34,6 +34,11 @@ int main(int argc, char* argv[]) {
     int str_to_int; 
     unsigned int number;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
     str_to_int = atoi(str);
 
@@ -44,7 +49,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (number == 1) {
-        printf("Result: %u is an Armstrong number.\n", str_to_int);
+        printf("Result: %d is an Armstrong number.\n", str_to_int);
         return 0;
     }
     else {

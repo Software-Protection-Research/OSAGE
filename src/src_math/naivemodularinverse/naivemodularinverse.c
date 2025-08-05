@@ -20,6 +20,11 @@ int main(int argc, char* argv[]) {
     int str_to_int2;
     unsigned int number;
 
+    if (argc != 3) {
+		fprintf(stderr, "Error: Expected 2 argument!\n");
+        return 2;
+    }
+
     str1 = argv[1];
     str_to_int1 = atoi(str1);
     str2 = argv[2];

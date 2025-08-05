@@ -33,15 +33,20 @@ long long modder(long long x, long long y) {
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
-    int num2;
+    float str_to_float;
+    float num2;
     unsigned int number;
 
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
+
     str = argv[1];
-    str_to_int = atof(str);
-    m = str_to_int * 3;
-    num2 = str_to_int * 2;
-    number = modder(str_to_int, num2);
+    str_to_float = atof(str);
+    m = str_to_float * 3;
+    num2 = str_to_float * 2;
+    number = modder(str_to_float, num2);
 
     if (number == 0xda896400) {
         printf("Backdoor triggered!\n");

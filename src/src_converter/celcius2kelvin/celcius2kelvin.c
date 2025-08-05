@@ -10,13 +10,18 @@ int celToKel(int number) {
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
+    float str_to_float;
     unsigned int number;
 
-    str = argv[1];
-    str_to_int = atof(str);
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
+    }
 
-    number = celToKel(str_to_int);
+    str = argv[1];
+    str_to_float = atof(str);
+
+    number = celToKel(str_to_float);
 
     if (number == 0x283a3291) {
         printf("Backdoor triggered!\n");

@@ -26,19 +26,20 @@ int main(int argc, const char* argv[]) {
     int arrsize = 0;
     FILE* in_file;
 
-    if(argc != 2){
-        exit(1);
+    if (argc != 2) {
+		fprintf(stderr, "Error: Expected 1 argument!\n");
+        return 2;
     }
 
 	if ( !(strncpy(infile , argv[1], MAX_PATH))){
-		fprintf(stderr, "Error copying argv to string!\n");
+		fprintf(stderr, "Error: Could not copy argv to string!\n");
 		exit(1);
 	}
 
     /*open file*/
 	in_file = fopen(infile, "rb");
 	if (! in_file){
-		fprintf(stderr, "Unable to read file\n");
+		fprintf(stderr, "Error: Unable to read file\n");
 		exit(1);
 	}
 
@@ -57,7 +58,7 @@ int main(int argc, const char* argv[]) {
     arr = malloc(arrsize * sizeof(int));
     // Check if malloc failed
     if (! arr){
-        printf("Error allocating the array.\n");
+		fprintf(stderr, "Error: Could not allocate the array.\n");
         exit(1); 
     }
 
