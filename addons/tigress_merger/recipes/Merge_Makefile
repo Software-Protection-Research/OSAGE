@@ -15,12 +15,12 @@ src/iopoll.o:
 
 src/chroot.merge:
 	@echo 'Merge chroot'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/chroot.c  --out=./src/chroot.merge.c
+	tigress --merge -I ./lib -I./src  src/chroot.c  --out=./src/chroot.merge.c
 
 
 src/chroot.obf: src/chroot.merge
 	@echo 'Obfuscate chroot'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/chroot.obf.c ./src/chroot.merge.c
+	tigress  --Transform=Ident --out=./src/chroot.obf.c ./src/chroot.merge.c
 
 
 src/chroot: src/chroot.obf
@@ -31,12 +31,12 @@ src/chroot: src/chroot.obf
 
 src/hostid.merge:
 	@echo 'Merge hostid'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/hostid.c  --out=./src/hostid.merge.c
+	tigress --merge   -I ./lib -I./src  src/hostid.c  --out=./src/hostid.merge.c
 
 
 src/hostid.obf: src/hostid.merge
 	@echo 'Obfuscate hostid'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/hostid.obf.c ./src/hostid.merge.c
+	tigress  --Transform=Ident --out=./src/hostid.obf.c ./src/hostid.merge.c
 
 
 src/hostid: src/hostid.obf
@@ -47,12 +47,12 @@ src/hostid: src/hostid.obf
 
 src/timeout.merge:
 	@echo 'Merge timeout'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/timeout.c  src/operand2sig.c  --out=./src/timeout.merge.c
+	tigress --merge   -I ./lib -I./src  src/timeout.c  src/operand2sig.c  --out=./src/timeout.merge.c
 
 
 src/timeout.obf: src/timeout.merge
 	@echo 'Obfuscate timeout'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/timeout.obf.c ./src/timeout.merge.c
+	tigress  --Transform=Ident --out=./src/timeout.obf.c ./src/timeout.merge.c
 
 
 src/timeout: src/timeout.obf
@@ -63,12 +63,12 @@ src/timeout: src/timeout.obf
 
 src/nice.merge:
 	@echo 'Merge nice'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/nice.c  --out=./src/nice.merge.c
+	tigress --merge   -I ./lib -I./src  src/nice.c  --out=./src/nice.merge.c
 
 
 src/nice.obf: src/nice.merge
 	@echo 'Obfuscate nice'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/nice.obf.c ./src/nice.merge.c
+	tigress  --Transform=Ident --out=./src/nice.obf.c ./src/nice.merge.c
 
 
 src/nice: src/nice.obf
@@ -79,12 +79,12 @@ src/nice: src/nice.obf
 
 src/who.merge:
 	@echo 'Merge who'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/who.c  --out=./src/who.merge.c
+	tigress --merge   -I ./lib -I./src  src/who.c  --out=./src/who.merge.c
 
 
 src/who.obf: src/who.merge
 	@echo 'Obfuscate who'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/who.obf.c ./src/who.merge.c
+	tigress  --Transform=Ident --out=./src/who.obf.c ./src/who.merge.c
 
 
 src/who: src/who.obf
@@ -95,12 +95,12 @@ src/who: src/who.obf
 
 src/users.merge:
 	@echo 'Merge users'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/users.c  --out=./src/users.merge.c
+	tigress --merge   -I ./lib -I./src  src/users.c  --out=./src/users.merge.c
 
 
 src/users.obf: src/users.merge
 	@echo 'Obfuscate users'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/users.obf.c ./src/users.merge.c
+	tigress  --Transform=Ident --out=./src/users.obf.c ./src/users.merge.c
 
 
 src/users: src/users.obf
@@ -111,12 +111,12 @@ src/users: src/users.obf
 
 src/pinky.merge:
 	@echo 'Merge pinky'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/pinky.c  --out=./src/pinky.merge.c
+	tigress --merge   -I ./lib -I./src  src/pinky.c  --out=./src/pinky.merge.c
 
 
 src/pinky.obf: src/pinky.merge
 	@echo 'Obfuscate pinky'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/pinky.obf.c ./src/pinky.merge.c
+	tigress  --Transform=Ident --out=./src/pinky.obf.c ./src/pinky.merge.c
 
 
 src/pinky: src/pinky.obf
@@ -127,12 +127,12 @@ src/pinky: src/pinky.obf
 
 src/stty.merge:
 	@echo 'Merge stty'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/stty.c  --out=./src/stty.merge.c
+	tigress --merge   -I ./lib -I./src  src/stty.c  --out=./src/stty.merge.c
 
 
 src/stty.obf: src/stty.merge
 	@echo 'Obfuscate stty'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/stty.obf.c ./src/stty.merge.c
+	tigress  --Transform=Ident --out=./src/stty.obf.c ./src/stty.merge.c
 
 
 src/stty: src/stty.obf
@@ -143,12 +143,12 @@ src/stty: src/stty.obf
 
 src/df.merge:
 	@echo 'Merge df'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/df.c  src/find-mount-point.c  --out=./src/df.merge.c
+	tigress --merge   -I ./lib -I./src  src/df.c  src/find-mount-point.c  --out=./src/df.merge.c
 
 
 src/df.obf: src/df.merge
 	@echo 'Obfuscate df'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/df.obf.c ./src/df.merge.c
+	tigress  --Transform=Ident --out=./src/df.obf.c ./src/df.merge.c
 
 
 src/df: src/df.obf
@@ -159,12 +159,12 @@ src/df: src/df.obf
 
 src/stdbuf.merge:
 	@echo 'Merge stdbuf'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/stdbuf.c  --out=./src/stdbuf.merge.c
+	tigress --merge   -I ./lib -I./src  src/stdbuf.c  --out=./src/stdbuf.merge.c
 
 
 src/stdbuf.obf: src/stdbuf.merge
 	@echo 'Obfuscate stdbuf'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/stdbuf.obf.c ./src/stdbuf.merge.c
+	tigress  --Transform=Ident --out=./src/stdbuf.obf.c ./src/stdbuf.merge.c
 
 
 src/stdbuf: src/stdbuf.obf
@@ -175,12 +175,12 @@ src/stdbuf: src/stdbuf.obf
 
 src/b2sum.merge:
 	@echo 'Merge b2sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_BLAKE2=1 -DHAVE_CONFIG_H -I ./lib -I./src src/digest.c src/blake2/blake2b-ref.c src/blake2/b2sum.c --out=./src/b2sum.merge.c
+	tigress --merge  -DHASH_ALGO_BLAKE2=1 -DHAVE_CONFIG_H -I ./lib -I./src src/digest.c src/blake2/blake2b-ref.c src/blake2/b2sum.c --out=./src/b2sum.merge.c
 
 
 src/b2sum.obf: src/b2sum.merge
 	@echo 'Obfuscate b2sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/b2sum.obf.c ./src/b2sum.merge.c
+	tigress  --Transform=Ident --out=./src/b2sum.obf.c ./src/b2sum.merge.c
 
 
 src/b2sum: src/b2sum.obf
@@ -191,12 +191,12 @@ src/b2sum: src/b2sum.obf
 
 src/base64.merge:
 	@echo 'Merge base64'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DBASE_TYPE=64 -I ./lib -I./src src/basenc.c --out=./src/base64.merge.c
+	tigress --merge  -DBASE_TYPE=64 -I ./lib -I./src src/basenc.c --out=./src/base64.merge.c
 
 
 src/base64.obf: src/base64.merge
 	@echo 'Obfuscate base64'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/base64.obf.c ./src/base64.merge.c
+	tigress  --Transform=Ident --out=./src/base64.obf.c ./src/base64.merge.c
 
 
 src/base64: src/base64.obf
@@ -207,12 +207,12 @@ src/base64: src/base64.obf
 
 src/base32.merge:
 	@echo 'Merge base32'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DBASE_TYPE=32 -I ./lib -I./src src/basenc.c --out=./src/base32.merge.c
+	tigress --merge  -DBASE_TYPE=32 -I ./lib -I./src src/basenc.c --out=./src/base32.merge.c
 
 
 src/base32.obf: src/base32.merge
 	@echo 'Obfuscate base32'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/base32.obf.c ./src/base32.merge.c
+	tigress  --Transform=Ident --out=./src/base32.obf.c ./src/base32.merge.c
 
 
 src/base32: src/base32.obf
@@ -223,12 +223,12 @@ src/base32: src/base32.obf
 
 src/basenc.merge:
 	@echo 'Merge basenc'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -DBASE_TYPE=42 -I ./lib -I./src src/basenc.c --out=./src/basenc.merge.c
+	tigress --merge   -DBASE_TYPE=42 -I ./lib -I./src src/basenc.c --out=./src/basenc.merge.c
 
 
 src/basenc.obf: src/basenc.merge
 	@echo 'Obfuscate basenc'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/basenc.obf.c ./src/basenc.merge.c
+	tigress  --Transform=Ident --out=./src/basenc.obf.c ./src/basenc.merge.c
 
 
 src/basenc: src/basenc.obf
@@ -239,12 +239,12 @@ src/basenc: src/basenc.obf
 
 src/basename.merge:
 	@echo 'Merge basename'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/basename.c  --out=./src/basename.merge.c
+	tigress --merge   -I ./lib -I./src  src/basename.c  --out=./src/basename.merge.c
 
 
 src/basename.obf: src/basename.merge
 	@echo 'Obfuscate basename'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/basename.obf.c ./src/basename.merge.c
+	tigress  --Transform=Ident --out=./src/basename.obf.c ./src/basename.merge.c
 
 
 src/basename: src/basename.obf
@@ -255,12 +255,12 @@ src/basename: src/basename.obf
 
 src/cat.merge:
 	@echo 'Merge cat'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/cat.c  --out=./src/cat.merge.c
+	tigress --merge   -I ./lib -I./src  src/cat.c  --out=./src/cat.merge.c
 
 
 src/cat.obf: src/cat.merge
 	@echo 'Obfuscate cat'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/cat.obf.c ./src/cat.merge.c
+	tigress  --Transform=Ident --out=./src/cat.obf.c ./src/cat.merge.c
 
 
 src/cat: src/cat.obf
@@ -271,12 +271,12 @@ src/cat: src/cat.obf
 
 src/chcon.merge:
 	@echo 'Merge chcon'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/chcon.c  --out=./src/chcon.merge.c
+	tigress --merge   -I ./lib -I./src  src/chcon.c  --out=./src/chcon.merge.c
 
 
 src/chcon.obf: src/chcon.merge
 	@echo 'Obfuscate chcon'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/chcon.obf.c ./src/chcon.merge.c
+	tigress  --Transform=Ident --out=./src/chcon.obf.c ./src/chcon.merge.c
 
 
 src/chcon: src/chcon.obf
@@ -287,12 +287,12 @@ src/chcon: src/chcon.obf
 
 src/chgrp.merge:
 	@echo 'Merge chgrp'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -I ./lib -I./src src/chown.c src/chown-chgrp.c src/chown-core.c --out=./src/chgrp.merge.c
+	tigress --merge  -I ./lib -I./src src/chown.c src/chown-chgrp.c src/chown-core.c --out=./src/chgrp.merge.c
 
 
 src/chgrp.obf: src/chgrp.merge
 	@echo 'Obfuscate chgrp'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/chgrp.obf.c ./src/chgrp.merge.c
+	tigress  --Transform=Ident --out=./src/chgrp.obf.c ./src/chgrp.merge.c
 
 
 src/chgrp: src/chgrp.obf
@@ -303,12 +303,12 @@ src/chgrp: src/chgrp.obf
 
 src/chmod.merge:
 	@echo 'Merge chmod'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/chmod.c  --out=./src/chmod.merge.c
+	tigress --merge   -I ./lib -I./src  src/chmod.c  --out=./src/chmod.merge.c
 
 
 src/chmod.obf: src/chmod.merge
 	@echo 'Obfuscate chmod'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/chmod.obf.c ./src/chmod.merge.c
+	tigress  --Transform=Ident --out=./src/chmod.obf.c ./src/chmod.merge.c
 
 
 src/chmod: src/chmod.obf
@@ -319,12 +319,12 @@ src/chmod: src/chmod.obf
 
 src/chown.merge:
 	@echo 'Merge chown'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -I ./lib -I./src src/chown.c src/chown-core.c src/chown-chown.c --out=./src/chown.merge.c
+	tigress --merge  -I ./lib -I./src src/chown.c src/chown-core.c src/chown-chown.c --out=./src/chown.merge.c
 
 
 src/chown.obf: src/chown.merge
 	@echo 'Obfuscate chown'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/chown.obf.c ./src/chown.merge.c
+	tigress  --Transform=Ident --out=./src/chown.obf.c ./src/chown.merge.c
 
 
 src/chown: src/chown.obf
@@ -335,13 +335,13 @@ src/chown: src/chown.obf
 
 src/cksum.merge:
 	@echo 'Merge cksum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_CKSUM=1 -DHAVE_CONFIG_H -I ./lib -I./src src/digest.c src/blake2/blake2b-ref.c src/blake2/b2sum.c src/sum.c src/cksum.c src/crctab.c --out=src/cksum.merge.c
+	tigress --merge  -DHASH_ALGO_CKSUM=1 -DHAVE_CONFIG_H -I ./lib -I./src src/digest.c src/blake2/blake2b-ref.c src/blake2/b2sum.c src/sum.c src/cksum.c src/crctab.c --out=src/cksum.merge.c
 	gcc   -I./lib -I./src  -mavx -mpclmul -c -o src/libcksum_pclmul_a-cksum_pclmul.o src/cksum_pclmul.c
 
 
 src/cksum.obf: src/cksum.merge
 	@echo 'Obfuscate cksum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/cksum.obf.c ./src/cksum.merge.c
+	tigress  --Transform=Ident --out=./src/cksum.obf.c ./src/cksum.merge.c
 
 
 src/cksum: src/cksum.obf
@@ -352,12 +352,12 @@ src/cksum: src/cksum.obf
 
 src/comm.merge:
 	@echo 'Merge comm'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/comm.c  --out=./src/comm.merge.c
+	tigress --merge   -I ./lib -I./src  src/comm.c  --out=./src/comm.merge.c
 
 
 src/comm.obf: src/comm.merge
 	@echo 'Obfuscate comm'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/comm.obf.c ./src/comm.merge.c
+	tigress  --Transform=Ident --out=./src/comm.obf.c ./src/comm.merge.c
 
 
 src/comm: src/comm.obf
@@ -368,12 +368,12 @@ src/comm: src/comm.obf
 
 src/cp.merge:
 	@echo 'Merge cp'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/cp.c  src/copy.c src/cp-hash.c src/force-link.c src/selinux.c  --out=./src/cp.merge.c
+	tigress --merge   -I ./lib -I./src  src/cp.c  src/copy.c src/cp-hash.c src/force-link.c src/selinux.c  --out=./src/cp.merge.c
 
 
 src/cp.obf: src/cp.merge
 	@echo 'Obfuscate cp'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/cp.obf.c ./src/cp.merge.c
+	tigress  --Transform=Ident --out=./src/cp.obf.c ./src/cp.merge.c
 
 
 src/cp: src/cp.obf
@@ -384,12 +384,12 @@ src/cp: src/cp.obf
 
 src/csplit.merge:
 	@echo 'Merge csplit'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/csplit.c  --out=./src/csplit.merge.c
+	tigress --merge   -I ./lib -I./src  src/csplit.c  --out=./src/csplit.merge.c
 
 
 src/csplit.obf: src/csplit.merge
 	@echo 'Obfuscate csplit'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/csplit.obf.c ./src/csplit.merge.c
+	tigress  --Transform=Ident --out=./src/csplit.obf.c ./src/csplit.merge.c
 
 
 src/csplit: src/csplit.obf
@@ -400,12 +400,12 @@ src/csplit: src/csplit.obf
 
 src/cut.merge:
 	@echo 'Merge cut'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/cut.c  src/set-fields.c  --out=./src/cut.merge.c
+	tigress --merge   -I ./lib -I./src  src/cut.c  src/set-fields.c  --out=./src/cut.merge.c
 
 
 src/cut.obf: src/cut.merge
 	@echo 'Obfuscate cut'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/cut.obf.c ./src/cut.merge.c
+	tigress  --Transform=Ident --out=./src/cut.obf.c ./src/cut.merge.c
 
 
 src/cut: src/cut.obf
@@ -416,12 +416,12 @@ src/cut: src/cut.obf
 
 src/date.merge:
 	@echo 'Merge date'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/date.c  --out=./src/date.merge.c
+	tigress --merge   -I ./lib -I./src  src/date.c  --out=./src/date.merge.c
 
 
 src/date.obf: src/date.merge
 	@echo 'Obfuscate date'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/date.obf.c ./src/date.merge.c
+	tigress  --Transform=Ident --out=./src/date.obf.c ./src/date.merge.c
 
 
 src/date: src/date.obf
@@ -432,12 +432,12 @@ src/date: src/date.obf
 
 src/dd.merge:
 	@echo 'Merge dd'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/dd.c  --out=./src/dd.merge.c
+	tigress --merge   -I ./lib -I./src  src/dd.c  --out=./src/dd.merge.c
 
 
 src/dd.obf: src/dd.merge
 	@echo 'Obfuscate dd'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/dd.obf.c ./src/dd.merge.c
+	tigress  --Transform=Ident --out=./src/dd.obf.c ./src/dd.merge.c
 
 
 src/dd: src/dd.obf
@@ -448,12 +448,12 @@ src/dd: src/dd.obf
 
 src/dir.merge:
 	@echo 'Merge dir'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -I ./lib -I./src src/ls.c src/ls-dir.c --out=./src/dir.merge.c
+	tigress --merge  -I ./lib -I./src src/ls.c src/ls-dir.c --out=./src/dir.merge.c
 
 
 src/dir.obf: src/dir.merge
 	@echo 'Obfuscate dir'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/dir.obf.c ./src/dir.merge.c
+	tigress  --Transform=Ident --out=./src/dir.obf.c ./src/dir.merge.c
 
 
 src/dir: src/dir.obf
@@ -464,12 +464,12 @@ src/dir: src/dir.obf
 
 src/dircolors.merge:
 	@echo 'Merge dircolors'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/dircolors.c  --out=./src/dircolors.merge.c
+	tigress --merge   -I ./lib -I./src  src/dircolors.c  --out=./src/dircolors.merge.c
 
 
 src/dircolors.obf: src/dircolors.merge
 	@echo 'Obfuscate dircolors'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/dircolors.obf.c ./src/dircolors.merge.c
+	tigress  --Transform=Ident --out=./src/dircolors.obf.c ./src/dircolors.merge.c
 
 
 src/dircolors: src/dircolors.obf
@@ -480,12 +480,12 @@ src/dircolors: src/dircolors.obf
 
 src/dirname.merge:
 	@echo 'Merge dirname'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/dirname.c  --out=./src/dirname.merge.c
+	tigress --merge   -I ./lib -I./src  src/dirname.c  --out=./src/dirname.merge.c
 
 
 src/dirname.obf: src/dirname.merge
 	@echo 'Obfuscate dirname'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/dirname.obf.c ./src/dirname.merge.c
+	tigress  --Transform=Ident --out=./src/dirname.obf.c ./src/dirname.merge.c
 
 
 src/dirname: src/dirname.obf
@@ -496,12 +496,12 @@ src/dirname: src/dirname.obf
 
 src/du.merge:
 	@echo 'Merge du'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/du.c  --out=./src/du.merge.c
+	tigress --merge   -I ./lib -I./src  src/du.c  --out=./src/du.merge.c
 
 
 src/du.obf: src/du.merge
 	@echo 'Obfuscate du'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/du.obf.c ./src/du.merge.c
+	tigress  --Transform=Ident --out=./src/du.obf.c ./src/du.merge.c
 
 
 src/du: src/du.obf
@@ -512,12 +512,12 @@ src/du: src/du.obf
 
 src/echo.merge:
 	@echo 'Merge echo'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/echo.c  --out=./src/echo.merge.c
+	tigress --merge   -I ./lib -I./src  src/echo.c  --out=./src/echo.merge.c
 
 
 src/echo.obf: src/echo.merge
 	@echo 'Obfuscate echo'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/echo.obf.c ./src/echo.merge.c
+	tigress  --Transform=Ident --out=./src/echo.obf.c ./src/echo.merge.c
 
 
 src/echo: src/echo.obf
@@ -528,12 +528,12 @@ src/echo: src/echo.obf
 
 src/env.merge:
 	@echo 'Merge env'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/env.c  src/operand2sig.c  --out=./src/env.merge.c
+	tigress --merge   -I ./lib -I./src  src/env.c  src/operand2sig.c  --out=./src/env.merge.c
 
 
 src/env.obf: src/env.merge
 	@echo 'Obfuscate env'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/env.obf.c ./src/env.merge.c
+	tigress  --Transform=Ident --out=./src/env.obf.c ./src/env.merge.c
 
 
 src/env: src/env.obf
@@ -544,12 +544,12 @@ src/env: src/env.obf
 
 src/expand.merge:
 	@echo 'Merge expand'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/expand.c  src/expand-common.c  --out=./src/expand.merge.c
+	tigress --merge   -I ./lib -I./src  src/expand.c  src/expand-common.c  --out=./src/expand.merge.c
 
 
 src/expand.obf: src/expand.merge
 	@echo 'Obfuscate expand'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/expand.obf.c ./src/expand.merge.c
+	tigress  --Transform=Ident --out=./src/expand.obf.c ./src/expand.merge.c
 
 
 src/expand: src/expand.obf
@@ -560,12 +560,12 @@ src/expand: src/expand.obf
 
 src/expr.merge:
 	@echo 'Merge expr'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/expr.c  --out=./src/expr.merge.c
+	tigress --merge   -I ./lib -I./src  src/expr.c  --out=./src/expr.merge.c
 
 
 src/expr.obf: src/expr.merge
 	@echo 'Obfuscate expr'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/expr.obf.c ./src/expr.merge.c
+	tigress  --Transform=Ident --out=./src/expr.obf.c ./src/expr.merge.c
 
 
 src/expr: src/expr.obf
@@ -576,12 +576,12 @@ src/expr: src/expr.obf
 
 src/factor.merge:
 	@echo 'Merge factor'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/factor.c  --out=./src/factor.merge.c
+	tigress --merge   -I ./lib -I./src  src/factor.c  --out=./src/factor.merge.c
 
 
 src/factor.obf: src/factor.merge
 	@echo 'Obfuscate factor'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/factor.obf.c ./src/factor.merge.c
+	tigress  --Transform=Ident --out=./src/factor.obf.c ./src/factor.merge.c
 
 
 src/factor: src/factor.obf
@@ -592,12 +592,12 @@ src/factor: src/factor.obf
 
 src/false.merge:
 	@echo 'Merge false'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/false.c  --out=./src/false.merge.c
+	tigress --merge   -I ./lib -I./src  src/false.c  --out=./src/false.merge.c
 
 
 src/false.obf: src/false.merge
 	@echo 'Obfuscate false'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/false.obf.c ./src/false.merge.c
+	tigress  --Transform=Ident --out=./src/false.obf.c ./src/false.merge.c
 
 
 src/false: src/false.obf
@@ -608,12 +608,12 @@ src/false: src/false.obf
 
 src/fmt.merge:
 	@echo 'Merge fmt'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/fmt.c  --out=./src/fmt.merge.c
+	tigress --merge   -I ./lib -I./src  src/fmt.c  --out=./src/fmt.merge.c
 
 
 src/fmt.obf: src/fmt.merge
 	@echo 'Obfuscate fmt'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/fmt.obf.c ./src/fmt.merge.c
+	tigress  --Transform=Ident --out=./src/fmt.obf.c ./src/fmt.merge.c
 
 
 src/fmt: src/fmt.obf
@@ -624,12 +624,12 @@ src/fmt: src/fmt.obf
 
 src/fold.merge:
 	@echo 'Merge fold'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/fold.c  --out=./src/fold.merge.c
+	tigress --merge   -I ./lib -I./src  src/fold.c  --out=./src/fold.merge.c
 
 
 src/fold.obf: src/fold.merge
 	@echo 'Obfuscate fold'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/fold.obf.c ./src/fold.merge.c
+	tigress  --Transform=Ident --out=./src/fold.obf.c ./src/fold.merge.c
 
 
 src/fold: src/fold.obf
@@ -640,12 +640,12 @@ src/fold: src/fold.obf
 
 src/ginstall.merge:
 	@echo 'Merge ginstall'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -I ./lib -I./src src/install.c src/prog-fprintf.c src/copy.c src/cp-hash.c src/force-link.c src/selinux.c --out=./src/ginstall.merge.c
+	tigress --merge  -I ./lib -I./src src/install.c src/prog-fprintf.c src/copy.c src/cp-hash.c src/force-link.c src/selinux.c --out=./src/ginstall.merge.c
 
 
 src/ginstall.obf: src/ginstall.merge
 	@echo 'Obfuscate ginstall'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/ginstall.obf.c ./src/ginstall.merge.c
+	tigress  --Transform=Ident --out=./src/ginstall.obf.c ./src/ginstall.merge.c
 
 
 src/ginstall: src/ginstall.obf
@@ -656,12 +656,12 @@ src/ginstall: src/ginstall.obf
 
 src/groups.merge:
 	@echo 'Merge groups'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/groups.c  src/group-list.c  --out=./src/groups.merge.c
+	tigress --merge   -I ./lib -I./src  src/groups.c  src/group-list.c  --out=./src/groups.merge.c
 
 
 src/groups.obf: src/groups.merge
 	@echo 'Obfuscate groups'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/groups.obf.c ./src/groups.merge.c
+	tigress  --Transform=Ident --out=./src/groups.obf.c ./src/groups.merge.c
 
 
 src/groups: src/groups.obf
@@ -672,12 +672,12 @@ src/groups: src/groups.obf
 
 src/head.merge:
 	@echo 'Merge head'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/head.c  --out=./src/head.merge.c
+	tigress --merge   -I ./lib -I./src  src/head.c  --out=./src/head.merge.c
 
 
 src/head.obf: src/head.merge
 	@echo 'Obfuscate head'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/head.obf.c ./src/head.merge.c
+	tigress  --Transform=Ident --out=./src/head.obf.c ./src/head.merge.c
 
 
 src/head: src/head.obf
@@ -688,12 +688,12 @@ src/head: src/head.obf
 
 src/id.merge:
 	@echo 'Merge id'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/id.c  src/group-list.c  --out=./src/id.merge.c
+	tigress --merge   -I ./lib -I./src  src/id.c  src/group-list.c  --out=./src/id.merge.c
 
 
 src/id.obf: src/id.merge
 	@echo 'Obfuscate id'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/id.obf.c ./src/id.merge.c
+	tigress  --Transform=Ident --out=./src/id.obf.c ./src/id.merge.c
 
 
 src/id: src/id.obf
@@ -704,12 +704,12 @@ src/id: src/id.obf
 
 src/join.merge:
 	@echo 'Merge join'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/join.c  --out=./src/join.merge.c
+	tigress --merge   -I ./lib -I./src  src/join.c  --out=./src/join.merge.c
 
 
 src/join.obf: src/join.merge
 	@echo 'Obfuscate join'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/join.obf.c ./src/join.merge.c
+	tigress  --Transform=Ident --out=./src/join.obf.c ./src/join.merge.c
 
 
 src/join: src/join.obf
@@ -720,12 +720,12 @@ src/join: src/join.obf
 
 src/kill.merge:
 	@echo 'Merge kill'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/kill.c  src/operand2sig.c  --out=./src/kill.merge.c
+	tigress --merge   -I ./lib -I./src  src/kill.c  src/operand2sig.c  --out=./src/kill.merge.c
 
 
 src/kill.obf: src/kill.merge
 	@echo 'Obfuscate kill'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/kill.obf.c ./src/kill.merge.c
+	tigress  --Transform=Ident --out=./src/kill.obf.c ./src/kill.merge.c
 
 
 src/kill: src/kill.obf
@@ -736,12 +736,12 @@ src/kill: src/kill.obf
 
 src/link.merge:
 	@echo 'Merge link'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/link.c  --out=./src/link.merge.c
+	tigress --merge   -I ./lib -I./src  src/link.c  --out=./src/link.merge.c
 
 
 src/link.obf: src/link.merge
 	@echo 'Obfuscate link'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/link.obf.c ./src/link.merge.c
+	tigress  --Transform=Ident --out=./src/link.obf.c ./src/link.merge.c
 
 
 src/link: src/link.obf
@@ -752,12 +752,12 @@ src/link: src/link.obf
 
 src/ln.merge:
 	@echo 'Merge ln'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/ln.c  src/force-link.c src/relpath.c  --out=./src/ln.merge.c
+	tigress --merge   -I ./lib -I./src  src/ln.c  src/force-link.c src/relpath.c  --out=./src/ln.merge.c
 
 
 src/ln.obf: src/ln.merge
 	@echo 'Obfuscate ln'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/ln.obf.c ./src/ln.merge.c
+	tigress  --Transform=Ident --out=./src/ln.obf.c ./src/ln.merge.c
 
 
 src/ln: src/ln.obf
@@ -768,12 +768,12 @@ src/ln: src/ln.obf
 
 src/logname.merge:
 	@echo 'Merge logname'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/logname.c  --out=./src/logname.merge.c
+	tigress --merge   -I ./lib -I./src  src/logname.c  --out=./src/logname.merge.c
 
 
 src/logname.obf: src/logname.merge
 	@echo 'Obfuscate logname'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/logname.obf.c ./src/logname.merge.c
+	tigress  --Transform=Ident --out=./src/logname.obf.c ./src/logname.merge.c
 
 
 src/logname: src/logname.obf
@@ -784,12 +784,12 @@ src/logname: src/logname.obf
 
 src/ls.merge:
 	@echo 'Merge ls'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/ls.c  src/ls-ls.c  --out=./src/ls.merge.c
+	tigress --merge   -I ./lib -I./src  src/ls.c  src/ls-ls.c  --out=./src/ls.merge.c
 
 
 src/ls.obf: src/ls.merge
 	@echo 'Obfuscate ls'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/ls.obf.c ./src/ls.merge.c
+	tigress  --Transform=Ident --out=./src/ls.obf.c ./src/ls.merge.c
 
 
 src/ls: src/ls.obf
@@ -800,12 +800,12 @@ src/ls: src/ls.obf
 
 src/md5sum.merge:
 	@echo 'Merge md5sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_MD5=1 -I ./lib -I./src src/digest.c  --out=src/md5sum.merge.c
+	tigress --merge  -DHASH_ALGO_MD5=1 -I ./lib -I./src src/digest.c  --out=src/md5sum.merge.c
 
 
 src/md5sum.obf: src/md5sum.merge
 	@echo 'Obfuscate md5sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/md5sum.obf.c ./src/md5sum.merge.c
+	tigress  --Transform=Ident --out=./src/md5sum.obf.c ./src/md5sum.merge.c
 
 
 src/md5sum: src/md5sum.obf
@@ -816,12 +816,12 @@ src/md5sum: src/md5sum.obf
 
 src/mkdir.merge:
 	@echo 'Merge mkdir'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/mkdir.c  src/prog-fprintf.c src/selinux.c  --out=./src/mkdir.merge.c
+	tigress --merge   -I ./lib -I./src  src/mkdir.c  src/prog-fprintf.c src/selinux.c  --out=./src/mkdir.merge.c
 
 
 src/mkdir.obf: src/mkdir.merge
 	@echo 'Obfuscate mkdir'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/mkdir.obf.c ./src/mkdir.merge.c
+	tigress  --Transform=Ident --out=./src/mkdir.obf.c ./src/mkdir.merge.c
 
 
 src/mkdir: src/mkdir.obf
@@ -832,12 +832,12 @@ src/mkdir: src/mkdir.obf
 
 src/mkfifo.merge:
 	@echo 'Merge mkfifo'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/mkfifo.c  --out=./src/mkfifo.merge.c
+	tigress --merge   -I ./lib -I./src  src/mkfifo.c  --out=./src/mkfifo.merge.c
 
 
 src/mkfifo.obf: src/mkfifo.merge
 	@echo 'Obfuscate mkfifo'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/mkfifo.obf.c ./src/mkfifo.merge.c
+	tigress  --Transform=Ident --out=./src/mkfifo.obf.c ./src/mkfifo.merge.c
 
 
 src/mkfifo: src/mkfifo.obf
@@ -848,12 +848,12 @@ src/mkfifo: src/mkfifo.obf
 
 src/mknod.merge:
 	@echo 'Merge mknod'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/mknod.c  --out=./src/mknod.merge.c
+	tigress --merge   -I ./lib -I./src  src/mknod.c  --out=./src/mknod.merge.c
 
 
 src/mknod.obf: src/mknod.merge
 	@echo 'Obfuscate mknod'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/mknod.obf.c ./src/mknod.merge.c
+	tigress  --Transform=Ident --out=./src/mknod.obf.c ./src/mknod.merge.c
 
 
 src/mknod: src/mknod.obf
@@ -864,12 +864,12 @@ src/mknod: src/mknod.obf
 
 src/mktemp.merge:
 	@echo 'Merge mktemp'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/mktemp.c  --out=./src/mktemp.merge.c
+	tigress --merge   -I ./lib -I./src  src/mktemp.c  --out=./src/mktemp.merge.c
 
 
 src/mktemp.obf: src/mktemp.merge
 	@echo 'Obfuscate mktemp'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/mktemp.obf.c ./src/mktemp.merge.c
+	tigress  --Transform=Ident --out=./src/mktemp.obf.c ./src/mktemp.merge.c
 
 
 src/mktemp: src/mktemp.obf
@@ -880,12 +880,12 @@ src/mktemp: src/mktemp.obf
 
 src/mv.merge:
 	@echo 'Merge mv'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/mv.c  src/remove.c src/copy.c src/cp-hash.c src/force-link.c src/selinux.c  --out=./src/mv.merge.c
+	tigress --merge   -I ./lib -I./src  src/mv.c  src/remove.c src/copy.c src/cp-hash.c src/force-link.c src/selinux.c  --out=./src/mv.merge.c
 
 
 src/mv.obf: src/mv.merge
 	@echo 'Obfuscate mv'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/mv.obf.c ./src/mv.merge.c
+	tigress  --Transform=Ident --out=./src/mv.obf.c ./src/mv.merge.c
 
 
 src/mv: src/mv.obf
@@ -896,12 +896,12 @@ src/mv: src/mv.obf
 
 src/nl.merge:
 	@echo 'Merge nl'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/nl.c  --out=./src/nl.merge.c
+	tigress --merge   -I ./lib -I./src  src/nl.c  --out=./src/nl.merge.c
 
 
 src/nl.obf: src/nl.merge
 	@echo 'Obfuscate nl'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/nl.obf.c ./src/nl.merge.c
+	tigress  --Transform=Ident --out=./src/nl.obf.c ./src/nl.merge.c
 
 
 src/nl: src/nl.obf
@@ -912,12 +912,12 @@ src/nl: src/nl.obf
 
 src/nproc.merge:
 	@echo 'Merge nproc'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/nproc.c  --out=./src/nproc.merge.c
+	tigress --merge   -I ./lib -I./src  src/nproc.c  --out=./src/nproc.merge.c
 
 
 src/nproc.obf: src/nproc.merge
 	@echo 'Obfuscate nproc'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/nproc.obf.c ./src/nproc.merge.c
+	tigress  --Transform=Ident --out=./src/nproc.obf.c ./src/nproc.merge.c
 
 
 src/nproc: src/nproc.obf
@@ -928,12 +928,12 @@ src/nproc: src/nproc.obf
 
 src/nohup.merge:
 	@echo 'Merge nohup'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/nohup.c  --out=./src/nohup.merge.c
+	tigress --merge   -I ./lib -I./src  src/nohup.c  --out=./src/nohup.merge.c
 
 
 src/nohup.obf: src/nohup.merge
 	@echo 'Obfuscate nohup'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/nohup.obf.c ./src/nohup.merge.c
+	tigress  --Transform=Ident --out=./src/nohup.obf.c ./src/nohup.merge.c
 
 
 src/nohup: src/nohup.obf
@@ -944,12 +944,12 @@ src/nohup: src/nohup.obf
 
 src/numfmt.merge:
 	@echo 'Merge numfmt'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SUM=1 -I ./lib -I./src src/numfmt.c  src/set-fields.c --out=./src/numfmt.merge.c
+	tigress --merge  -DHASH_ALGO_SUM=1 -I ./lib -I./src src/numfmt.c  src/set-fields.c --out=./src/numfmt.merge.c
 
 
 src/numfmt.obf: src/numfmt.merge
 	@echo 'Obfuscate numfmt'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/numfmt.obf.c ./src/numfmt.merge.c
+	tigress  --Transform=Ident --out=./src/numfmt.obf.c ./src/numfmt.merge.c
 
 
 src/numfmt: src/numfmt.obf
@@ -960,12 +960,12 @@ src/numfmt: src/numfmt.obf
 
 src/od.merge:
 	@echo 'Merge od'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/od.c  --out=./src/od.merge.c
+	tigress --merge   -I ./lib -I./src  src/od.c  --out=./src/od.merge.c
 
 
 src/od.obf: src/od.merge
 	@echo 'Obfuscate od'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/od.obf.c ./src/od.merge.c
+	tigress  --Transform=Ident --out=./src/od.obf.c ./src/od.merge.c
 
 
 src/od: src/od.obf
@@ -976,12 +976,12 @@ src/od: src/od.obf
 
 src/paste.merge:
 	@echo 'Merge paste'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/paste.c  --out=./src/paste.merge.c
+	tigress --merge   -I ./lib -I./src  src/paste.c  --out=./src/paste.merge.c
 
 
 src/paste.obf: src/paste.merge
 	@echo 'Obfuscate paste'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/paste.obf.c ./src/paste.merge.c
+	tigress  --Transform=Ident --out=./src/paste.obf.c ./src/paste.merge.c
 
 
 src/paste: src/paste.obf
@@ -992,12 +992,12 @@ src/paste: src/paste.obf
 
 src/pathchk.merge:
 	@echo 'Merge pathchk'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/pathchk.c  --out=./src/pathchk.merge.c
+	tigress --merge   -I ./lib -I./src  src/pathchk.c  --out=./src/pathchk.merge.c
 
 
 src/pathchk.obf: src/pathchk.merge
 	@echo 'Obfuscate pathchk'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/pathchk.obf.c ./src/pathchk.merge.c
+	tigress  --Transform=Ident --out=./src/pathchk.obf.c ./src/pathchk.merge.c
 
 
 src/pathchk: src/pathchk.obf
@@ -1008,12 +1008,12 @@ src/pathchk: src/pathchk.obf
 
 src/pr.merge:
 	@echo 'Merge pr'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/pr.c  --out=./src/pr.merge.c
+	tigress --merge   -I ./lib -I./src  src/pr.c  --out=./src/pr.merge.c
 
 
 src/pr.obf: src/pr.merge
 	@echo 'Obfuscate pr'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/pr.obf.c ./src/pr.merge.c
+	tigress  --Transform=Ident --out=./src/pr.obf.c ./src/pr.merge.c
 
 
 src/pr: src/pr.obf
@@ -1024,12 +1024,12 @@ src/pr: src/pr.obf
 
 src/printenv.merge:
 	@echo 'Merge printenv'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/printenv.c  --out=./src/printenv.merge.c
+	tigress --merge   -I ./lib -I./src  src/printenv.c  --out=./src/printenv.merge.c
 
 
 src/printenv.obf: src/printenv.merge
 	@echo 'Obfuscate printenv'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/printenv.obf.c ./src/printenv.merge.c
+	tigress  --Transform=Ident --out=./src/printenv.obf.c ./src/printenv.merge.c
 
 
 src/printenv: src/printenv.obf
@@ -1040,12 +1040,12 @@ src/printenv: src/printenv.obf
 
 src/printf.merge:
 	@echo 'Merge printf'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/printf.c  --out=./src/printf.merge.c
+	tigress --merge   -I ./lib -I./src  src/printf.c  --out=./src/printf.merge.c
 
 
 src/printf.obf: src/printf.merge
 	@echo 'Obfuscate printf'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/printf.obf.c ./src/printf.merge.c
+	tigress  --Transform=Ident --out=./src/printf.obf.c ./src/printf.merge.c
 
 
 src/printf: src/printf.obf
@@ -1056,12 +1056,12 @@ src/printf: src/printf.obf
 
 src/ptx.merge:
 	@echo 'Merge ptx'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/ptx.c  --out=./src/ptx.merge.c
+	tigress --merge   -I ./lib -I./src  src/ptx.c  --out=./src/ptx.merge.c
 
 
 src/ptx.obf: src/ptx.merge
 	@echo 'Obfuscate ptx'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/ptx.obf.c ./src/ptx.merge.c
+	tigress  --Transform=Ident --out=./src/ptx.obf.c ./src/ptx.merge.c
 
 
 src/ptx: src/ptx.obf
@@ -1072,12 +1072,12 @@ src/ptx: src/ptx.obf
 
 src/pwd.merge:
 	@echo 'Merge pwd'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/pwd.c  --out=./src/pwd.merge.c
+	tigress --merge   -I ./lib -I./src  src/pwd.c  --out=./src/pwd.merge.c
 
 
 src/pwd.obf: src/pwd.merge
 	@echo 'Obfuscate pwd'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/pwd.obf.c ./src/pwd.merge.c
+	tigress  --Transform=Ident --out=./src/pwd.obf.c ./src/pwd.merge.c
 
 
 src/pwd: src/pwd.obf
@@ -1088,12 +1088,12 @@ src/pwd: src/pwd.obf
 
 src/readlink.merge:
 	@echo 'Merge readlink'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/readlink.c  --out=./src/readlink.merge.c
+	tigress --merge   -I ./lib -I./src  src/readlink.c  --out=./src/readlink.merge.c
 
 
 src/readlink.obf: src/readlink.merge
 	@echo 'Obfuscate readlink'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/readlink.obf.c ./src/readlink.merge.c
+	tigress  --Transform=Ident --out=./src/readlink.obf.c ./src/readlink.merge.c
 
 
 src/readlink: src/readlink.obf
@@ -1104,12 +1104,12 @@ src/readlink: src/readlink.obf
 
 src/realpath.merge:
 	@echo 'Merge realpath'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/realpath.c  src/relpath.c   --out=./src/realpath.merge.c
+	tigress --merge   -I ./lib -I./src  src/realpath.c  src/relpath.c   --out=./src/realpath.merge.c
 
 
 src/realpath.obf: src/realpath.merge
 	@echo 'Obfuscate realpath'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/realpath.obf.c ./src/realpath.merge.c
+	tigress  --Transform=Ident --out=./src/realpath.obf.c ./src/realpath.merge.c
 
 
 src/realpath: src/realpath.obf
@@ -1120,12 +1120,12 @@ src/realpath: src/realpath.obf
 
 src/rm.merge:
 	@echo 'Merge rm'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/rm.c  src/remove.c  --out=./src/rm.merge.c
+	tigress --merge   -I ./lib -I./src  src/rm.c  src/remove.c  --out=./src/rm.merge.c
 
 
 src/rm.obf: src/rm.merge
 	@echo 'Obfuscate rm'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/rm.obf.c ./src/rm.merge.c
+	tigress  --Transform=Ident --out=./src/rm.obf.c ./src/rm.merge.c
 
 
 src/rm: src/rm.obf
@@ -1136,12 +1136,12 @@ src/rm: src/rm.obf
 
 src/rmdir.merge:
 	@echo 'Merge rmdir'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/rmdir.c  src/prog-fprintf.c src/selinux.c  --out=./src/rmdir.merge.c
+	tigress --merge   -I ./lib -I./src  src/rmdir.c  src/prog-fprintf.c src/selinux.c  --out=./src/rmdir.merge.c
 
 
 src/rmdir.obf: src/rmdir.merge
 	@echo 'Obfuscate rmdir'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/rmdir.obf.c ./src/rmdir.merge.c
+	tigress  --Transform=Ident --out=./src/rmdir.obf.c ./src/rmdir.merge.c
 
 
 src/rmdir: src/rmdir.obf
@@ -1152,12 +1152,12 @@ src/rmdir: src/rmdir.obf
 
 src/runcon.merge:
 	@echo 'Merge runcon'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/runcon.c  --out=./src/runcon.merge.c
+	tigress --merge   -I ./lib -I./src  src/runcon.c  --out=./src/runcon.merge.c
 
 
 src/runcon.obf: src/runcon.merge
 	@echo 'Obfuscate runcon'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/runcon.obf.c ./src/runcon.merge.c
+	tigress  --Transform=Ident --out=./src/runcon.obf.c ./src/runcon.merge.c
 
 
 src/runcon: src/runcon.obf
@@ -1168,12 +1168,12 @@ src/runcon: src/runcon.obf
 
 src/seq.merge:
 	@echo 'Merge seq'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/seq.c  --out=./src/seq.merge.c
+	tigress --merge   -I ./lib -I./src  src/seq.c  --out=./src/seq.merge.c
 
 
 src/seq.obf: src/seq.merge
 	@echo 'Obfuscate seq'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/seq.obf.c ./src/seq.merge.c
+	tigress  --Transform=Ident --out=./src/seq.obf.c ./src/seq.merge.c
 
 
 src/seq: src/seq.obf
@@ -1184,12 +1184,12 @@ src/seq: src/seq.obf
 
 src/sha1sum.merge:
 	@echo 'Merge sha1sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SHA1=1 -I ./lib -I./src src/digest.c  --out=src/sha1sum.merge.c
+	tigress --merge  -DHASH_ALGO_SHA1=1 -I ./lib -I./src src/digest.c  --out=src/sha1sum.merge.c
 
 
 src/sha1sum.obf: src/sha1sum.merge
 	@echo 'Obfuscate sha1sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sha1sum.obf.c ./src/sha1sum.merge.c
+	tigress  --Transform=Ident --out=./src/sha1sum.obf.c ./src/sha1sum.merge.c
 
 
 src/sha1sum: src/sha1sum.obf
@@ -1200,12 +1200,12 @@ src/sha1sum: src/sha1sum.obf
 
 src/sha224sum.merge:
 	@echo 'Merge sha224sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SHA224=1 -I ./lib -I./src src/digest.c  --out=src/sha224sum.merge.c
+	tigress --merge  -DHASH_ALGO_SHA224=1 -I ./lib -I./src src/digest.c  --out=src/sha224sum.merge.c
 
 
 src/sha224sum.obf: src/sha224sum.merge
 	@echo 'Obfuscate sha224sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sha224sum.obf.c ./src/sha224sum.merge.c
+	tigress  --Transform=Ident --out=./src/sha224sum.obf.c ./src/sha224sum.merge.c
 
 
 src/sha224sum: src/sha224sum.obf
@@ -1216,12 +1216,12 @@ src/sha224sum: src/sha224sum.obf
 
 src/sha256sum.merge:
 	@echo 'Merge sha256sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SHA256=1 -I ./lib -I./src src/digest.c  --out=src/sha256sum.merge.c
+	tigress --merge  -DHASH_ALGO_SHA256=1 -I ./lib -I./src src/digest.c  --out=src/sha256sum.merge.c
 
 
 src/sha256sum.obf: src/sha256sum.merge
 	@echo 'Obfuscate sha256sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sha256sum.obf.c ./src/sha256sum.merge.c
+	tigress  --Transform=Ident --out=./src/sha256sum.obf.c ./src/sha256sum.merge.c
 
 
 src/sha256sum: src/sha256sum.obf
@@ -1232,12 +1232,12 @@ src/sha256sum: src/sha256sum.obf
 
 src/sha384sum.merge:
 	@echo 'Merge sha384sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SHA384=1 -I ./lib -I./src src/digest.c  --out=src/sha384sum.merge.c
+	tigress  -DHASH_ALGO_SHA384=1 -I ./lib -I./src src/digest.c  --out=src/sha384sum.merge.c
 
 
 src/sha384sum.obf: src/sha384sum.merge
 	@echo 'Obfuscate sha384sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sha384sum.obf.c ./src/sha384sum.merge.c
+	tigress  --Transform=Ident --out=./src/sha384sum.obf.c ./src/sha384sum.merge.c
 
 
 src/sha384sum: src/sha384sum.obf
@@ -1248,12 +1248,12 @@ src/sha384sum: src/sha384sum.obf
 
 src/sha512sum.merge:
 	@echo 'Merge sha512sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SHA512=1 -I ./lib -I./src src/digest.c  --out=src/sha512sum.merge.c
+	tigress --merge  -DHASH_ALGO_SHA512=1 -I ./lib -I./src src/digest.c  --out=src/sha512sum.merge.c
 
 
 src/sha512sum.obf: src/sha512sum.merge
 	@echo 'Obfuscate sha512sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sha512sum.obf.c ./src/sha512sum.merge.c
+	tigress  --Transform=Ident --out=./src/sha512sum.obf.c ./src/sha512sum.merge.c
 
 
 src/sha512sum: src/sha512sum.obf
@@ -1264,12 +1264,12 @@ src/sha512sum: src/sha512sum.obf
 
 src/shred.merge:
 	@echo 'Merge shred'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/shred.c  --out=./src/shred.merge.c
+	tigress --merge   -I ./lib -I./src  src/shred.c  --out=./src/shred.merge.c
 
 
 src/shred.obf: src/shred.merge
 	@echo 'Obfuscate shred'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/shred.obf.c ./src/shred.merge.c
+	tigress  --Transform=Ident --out=./src/shred.obf.c ./src/shred.merge.c
 
 
 src/shred: src/shred.obf
@@ -1280,12 +1280,12 @@ src/shred: src/shred.obf
 
 src/shuf.merge:
 	@echo 'Merge shuf'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/shuf.c  --out=./src/shuf.merge.c
+	tigress --merge   -I ./lib -I./src  src/shuf.c  --out=./src/shuf.merge.c
 
 
 src/shuf.obf: src/shuf.merge
 	@echo 'Obfuscate shuf'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/shuf.obf.c ./src/shuf.merge.c
+	tigress  --Transform=Ident --out=./src/shuf.obf.c ./src/shuf.merge.c
 
 
 src/shuf: src/shuf.obf
@@ -1296,12 +1296,12 @@ src/shuf: src/shuf.obf
 
 src/sleep.merge:
 	@echo 'Merge sleep'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/sleep.c  --out=./src/sleep.merge.c
+	tigress --merge   -I ./lib -I./src  src/sleep.c  --out=./src/sleep.merge.c
 
 
 src/sleep.obf: src/sleep.merge
 	@echo 'Obfuscate sleep'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sleep.obf.c ./src/sleep.merge.c
+	tigress  --Transform=Ident --out=./src/sleep.obf.c ./src/sleep.merge.c
 
 
 src/sleep: src/sleep.obf
@@ -1312,12 +1312,12 @@ src/sleep: src/sleep.obf
 
 src/sort.merge:
 	@echo 'Merge sort'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/sort.c  --out=./src/sort.merge.c
+	tigress --merge   -I ./lib -I./src  src/sort.c  --out=./src/sort.merge.c
 
 
 src/sort.obf: src/sort.merge
 	@echo 'Obfuscate sort'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sort.obf.c ./src/sort.merge.c
+	tigress  --Transform=Ident --out=./src/sort.obf.c ./src/sort.merge.c
 
 
 src/sort: src/sort.obf
@@ -1328,12 +1328,12 @@ src/sort: src/sort.obf
 
 src/split.merge:
 	@echo 'Merge split'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/split.c  src/temp-stream.c --out=./src/split.merge.c
+	tigress --merge   -I ./lib -I./src  src/split.c  src/temp-stream.c --out=./src/split.merge.c
 
 
 src/split.obf: src/split.merge
 	@echo 'Obfuscate split'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/split.obf.c ./src/split.merge.c
+	tigress  --Transform=Ident --out=./src/split.obf.c ./src/split.merge.c
 
 
 src/split: src/split.obf
@@ -1344,12 +1344,12 @@ src/split: src/split.obf
 
 src/stat.merge:
 	@echo 'Merge stat'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/stat.c  src/find-mount-point.c  --out=./src/stat.merge.c
+	tigress --merge   -I ./lib -I./src  src/stat.c  src/find-mount-point.c  --out=./src/stat.merge.c
 
 
 src/stat.obf: src/stat.merge
 	@echo 'Obfuscate stat'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/stat.obf.c ./src/stat.merge.c
+	tigress  --Transform=Ident --out=./src/stat.obf.c ./src/stat.merge.c
 
 
 src/stat: src/stat.obf
@@ -1360,12 +1360,12 @@ src/stat: src/stat.obf
 
 src/sum.merge:
 	@echo 'Merge sum'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -DHASH_ALGO_SUM=1 -I ./lib -I./src src/sum.c  src/digest.c --out=./src/sum.merge.c
+	tigress --merge  -DHASH_ALGO_SUM=1 -I ./lib -I./src src/sum.c  src/digest.c --out=./src/sum.merge.c
 
 
 src/sum.obf: src/sum.merge
 	@echo 'Obfuscate sum'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sum.obf.c ./src/sum.merge.c
+	tigress  --Transform=Ident --out=./src/sum.obf.c ./src/sum.merge.c
 
 
 src/sum: src/sum.obf
@@ -1376,12 +1376,12 @@ src/sum: src/sum.obf
 
 src/sync.merge:
 	@echo 'Merge sync'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/sync.c  --out=./src/sync.merge.c
+	tigress --merge   -I ./lib -I./src  src/sync.c  --out=./src/sync.merge.c
 
 
 src/sync.obf: src/sync.merge
 	@echo 'Obfuscate sync'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/sync.obf.c ./src/sync.merge.c
+	tigress  --Transform=Ident --out=./src/sync.obf.c ./src/sync.merge.c
 
 
 src/sync: src/sync.obf
@@ -1392,12 +1392,12 @@ src/sync: src/sync.obf
 
 src/tac.merge:
 	@echo 'Merge tac'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tac.c  src/temp-stream.c  --out=./src/tac.merge.c
+	tigress --merge   -I ./lib -I./src  src/tac.c  src/temp-stream.c  --out=./src/tac.merge.c
 
 
 src/tac.obf: src/tac.merge
 	@echo 'Obfuscate tac'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tac.obf.c ./src/tac.merge.c
+	tigress  --Transform=Ident --out=./src/tac.obf.c ./src/tac.merge.c
 
 
 src/tac: src/tac.obf
@@ -1408,12 +1408,12 @@ src/tac: src/tac.obf
 
 src/tail.merge:
 	@echo 'Merge tail'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tail.c  --out=./src/tail.merge.c
+	tigress --merge   -I ./lib -I./src  src/tail.c  --out=./src/tail.merge.c
 
 
 src/tail.obf: src/tail.merge
 	@echo 'Obfuscate tail'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tail.obf.c ./src/tail.merge.c
+	tigress  --Transform=Ident --out=./src/tail.obf.c ./src/tail.merge.c
 
 
 src/tail: src/tail.obf
@@ -1424,12 +1424,12 @@ src/tail: src/tail.obf
 
 src/tee.merge:
 	@echo 'Merge tee'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tee.c  --out=./src/tee.merge.c
+	tigress --merge   -I ./lib -I./src  src/tee.c  --out=./src/tee.merge.c
 
 
 src/tee.obf: src/tee.merge
 	@echo 'Obfuscate tee'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tee.obf.c ./src/tee.merge.c
+	tigress  --Transform=Ident --out=./src/tee.obf.c ./src/tee.merge.c
 
 
 src/tee: src/tee.obf
@@ -1440,12 +1440,12 @@ src/tee: src/tee.obf
 
 src/test.merge:
 	@echo 'Merge test'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/test.c  --out=./src/test.merge.c
+	tigress --merge   -I ./lib -I./src  src/test.c  --out=./src/test.merge.c
 
 
 src/test.obf: src/test.merge
 	@echo 'Obfuscate test'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/test.obf.c ./src/test.merge.c
+	tigress  --Transform=Ident --out=./src/test.obf.c ./src/test.merge.c
 
 
 src/test: src/test.obf
@@ -1456,12 +1456,12 @@ src/test: src/test.obf
 
 src/touch.merge:
 	@echo 'Merge touch'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/touch.c  --out=./src/touch.merge.c
+	tigress --merge   -I ./lib -I./src  src/touch.c  --out=./src/touch.merge.c
 
 
 src/touch.obf: src/touch.merge
 	@echo 'Obfuscate touch'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/touch.obf.c ./src/touch.merge.c
+	tigress  --Transform=Ident --out=./src/touch.obf.c ./src/touch.merge.c
 
 
 src/touch: src/touch.obf
@@ -1472,12 +1472,12 @@ src/touch: src/touch.obf
 
 src/tr.merge:
 	@echo 'Merge tr'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tr.c  --out=./src/tr.merge.c
+	tigress --merge   -I ./lib -I./src  src/tr.c  --out=./src/tr.merge.c
 
 
 src/tr.obf: src/tr.merge
 	@echo 'Obfuscate tr'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tr.obf.c ./src/tr.merge.c
+	tigress  --Transform=Ident --out=./src/tr.obf.c ./src/tr.merge.c
 
 
 src/tr: src/tr.obf
@@ -1488,12 +1488,12 @@ src/tr: src/tr.obf
 
 src/true.merge:
 	@echo 'Merge true'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/true.c  --out=./src/true.merge.c
+	tigress --merge   -I ./lib -I./src  src/true.c  --out=./src/true.merge.c
 
 
 src/true.obf: src/true.merge
 	@echo 'Obfuscate true'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/true.obf.c ./src/true.merge.c
+	tigress  --Transform=Ident --out=./src/true.obf.c ./src/true.merge.c
 
 
 src/true: src/true.obf
@@ -1504,12 +1504,12 @@ src/true: src/true.obf
 
 src/truncate.merge:
 	@echo 'Merge truncate'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/truncate.c  --out=./src/truncate.merge.c
+	tigress --merge   -I ./lib -I./src  src/truncate.c  --out=./src/truncate.merge.c
 
 
 src/truncate.obf: src/truncate.merge
 	@echo 'Obfuscate truncate'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/truncate.obf.c ./src/truncate.merge.c
+	tigress  --Transform=Ident --out=./src/truncate.obf.c ./src/truncate.merge.c
 
 
 src/truncate: src/truncate.obf
@@ -1520,12 +1520,12 @@ src/truncate: src/truncate.obf
 
 src/tsort.merge:
 	@echo 'Merge tsort'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tsort.c  --out=./src/tsort.merge.c
+	tigress --merge   -I ./lib -I./src  src/tsort.c  --out=./src/tsort.merge.c
 
 
 src/tsort.obf: src/tsort.merge
 	@echo 'Obfuscate tsort'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tsort.obf.c ./src/tsort.merge.c
+	tigress  --Transform=Ident --out=./src/tsort.obf.c ./src/tsort.merge.c
 
 
 src/tsort: src/tsort.obf
@@ -1536,12 +1536,12 @@ src/tsort: src/tsort.obf
 
 src/tty.merge:
 	@echo 'Merge tty'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/tty.c  --out=./src/tty.merge.c
+	tigress --merge   -I ./lib -I./src  src/tty.c  --out=./src/tty.merge.c
 
 
 src/tty.obf: src/tty.merge
 	@echo 'Obfuscate tty'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/tty.obf.c ./src/tty.merge.c
+	tigress  --Transform=Ident --out=./src/tty.obf.c ./src/tty.merge.c
 
 
 src/tty: src/tty.obf
@@ -1552,12 +1552,12 @@ src/tty: src/tty.obf
 
 src/uname.merge:
 	@echo 'Merge uname'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/uname.c  src/uname-uname.c  --out=./src/uname.merge.c
+	tigress --merge   -I ./lib -I./src  src/uname.c  src/uname-uname.c  --out=./src/uname.merge.c
 
 
 src/uname.obf: src/uname.merge
 	@echo 'Obfuscate uname'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/uname.obf.c ./src/uname.merge.c
+	tigress  --Transform=Ident --out=./src/uname.obf.c ./src/uname.merge.c
 
 
 src/uname: src/uname.obf
@@ -1568,12 +1568,12 @@ src/uname: src/uname.obf
 
 src/unexpand.merge:
 	@echo 'Merge unexpand'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/unexpand.c  src/expand-common.c  --out=./src/unexpand.merge.c
+	tigress --merge   -I ./lib -I./src  src/unexpand.c  src/expand-common.c  --out=./src/unexpand.merge.c
 
 
 src/unexpand.obf: src/unexpand.merge
 	@echo 'Obfuscate unexpand'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/unexpand.obf.c ./src/unexpand.merge.c
+	tigress  --Transform=Ident --out=./src/unexpand.obf.c ./src/unexpand.merge.c
 
 
 src/unexpand: src/unexpand.obf
@@ -1584,12 +1584,12 @@ src/unexpand: src/unexpand.obf
 
 src/uniq.merge:
 	@echo 'Merge uniq'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/uniq.c  --out=./src/uniq.merge.c
+	tigress --merge   -I ./lib -I./src  src/uniq.c  --out=./src/uniq.merge.c
 
 
 src/uniq.obf: src/uniq.merge
 	@echo 'Obfuscate uniq'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/uniq.obf.c ./src/uniq.merge.c
+	tigress  --Transform=Ident --out=./src/uniq.obf.c ./src/uniq.merge.c
 
 
 src/uniq: src/uniq.obf
@@ -1600,12 +1600,12 @@ src/uniq: src/uniq.obf
 
 src/unlink.merge:
 	@echo 'Merge unlink'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/unlink.c  --out=./src/unlink.merge.c
+	tigress --merge   -I ./lib -I./src  src/unlink.c  --out=./src/unlink.merge.c
 
 
 src/unlink.obf: src/unlink.merge
 	@echo 'Obfuscate unlink'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/unlink.obf.c ./src/unlink.merge.c
+	tigress  --Transform=Ident --out=./src/unlink.obf.c ./src/unlink.merge.c
 
 
 src/unlink: src/unlink.obf
@@ -1616,12 +1616,12 @@ src/unlink: src/unlink.obf
 
 src/uptime.merge:
 	@echo 'Merge uptime'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/uptime.c  --out=./src/uptime.merge.c
+	tigress --merge   -I ./lib -I./src  src/uptime.c  --out=./src/uptime.merge.c
 
 
 src/uptime.obf: src/uptime.merge
 	@echo 'Obfuscate uptime'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/uptime.obf.c ./src/uptime.merge.c
+	tigress  --Transform=Ident --out=./src/uptime.obf.c ./src/uptime.merge.c
 
 
 src/uptime: src/uptime.obf
@@ -1632,12 +1632,12 @@ src/uptime: src/uptime.obf
 
 src/vdir.merge:
 	@echo 'Merge vdir'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6 -I ./lib -I./src src/ls.c src/ls-vdir.c --out=./src/vdir.merge.c
+	tigress --merge  -I ./lib -I./src src/ls.c src/ls-vdir.c --out=./src/vdir.merge.c
 
 
 src/vdir.obf: src/vdir.merge
 	@echo 'Obfuscate vdir'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/vdir.obf.c ./src/vdir.merge.c
+	tigress  --Transform=Ident --out=./src/vdir.obf.c ./src/vdir.merge.c
 
 
 src/vdir: src/vdir.obf
@@ -1648,12 +1648,12 @@ src/vdir: src/vdir.obf
 
 src/wc.merge:
 	@echo 'Merge wc'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/wc.c  --out=./src/wc.merge.c
+	tigress --merge   -I ./lib -I./src  src/wc.c  --out=./src/wc.merge.c
 
 
 src/wc.obf: src/wc.merge
 	@echo 'Obfuscate wc'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/wc.obf.c ./src/wc.merge.c
+	tigress  --Transform=Ident --out=./src/wc.obf.c ./src/wc.merge.c
 
 
 src/wc: src/wc.obf
@@ -1664,12 +1664,12 @@ src/wc: src/wc.obf
 
 src/whoami.merge:
 	@echo 'Merge whoami'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/whoami.c  --out=./src/whoami.merge.c
+	tigress --merge   -I ./lib -I./src  src/whoami.c  --out=./src/whoami.merge.c
 
 
 src/whoami.obf: src/whoami.merge
 	@echo 'Obfuscate whoami'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/whoami.obf.c ./src/whoami.merge.c
+	tigress  --Transform=Ident --out=./src/whoami.obf.c ./src/whoami.merge.c
 
 
 src/whoami: src/whoami.obf
@@ -1680,12 +1680,12 @@ src/whoami: src/whoami.obf
 
 src/yes.merge:
 	@echo 'Merge yes'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/yes.c  --out=./src/yes.merge.c
+	tigress --merge   -I ./lib -I./src  src/yes.c  --out=./src/yes.merge.c
 
 
 src/yes.obf: src/yes.merge
 	@echo 'Obfuscate yes'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/yes.obf.c ./src/yes.merge.c
+	tigress  --Transform=Ident --out=./src/yes.obf.c ./src/yes.merge.c
 
 
 src/yes: src/yes.obf
@@ -1696,12 +1696,12 @@ src/yes: src/yes.obf
 
 src/getlimits.merge:
 	@echo 'Merge getlimits'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/getlimits.c  --out=./src/getlimits.merge.c
+	tigress --merge   -I ./lib -I./src  src/getlimits.c  --out=./src/getlimits.merge.c
 
 
 src/getlimits.obf: src/getlimits.merge
 	@echo 'Obfuscate getlimits'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/getlimits.obf.c ./src/getlimits.merge.c
+	tigress  --Transform=Ident --out=./src/getlimits.obf.c ./src/getlimits.merge.c
 
 
 src/getlimits: src/getlimits.obf
@@ -1712,12 +1712,12 @@ src/getlimits: src/getlimits.obf
 
 src/make-prime-list.merge:
 	@echo 'Merge make-prime-list'
-	tigress --merge --Environment=x86_64:Linux:Gcc:4.6  -I ./lib -I./src  src/make-prime-list.c  --out=./src/make-prime-list.merge.c
+	tigress --merge   -I ./lib -I./src  src/make-prime-list.c  --out=./src/make-prime-list.merge.c
 
 
 src/make-prime-list.obf: src/make-prime-list.merge
 	@echo 'Obfuscate make-prime-list'
-	tigress --Environment=x86_64:Linux:Gcc:4.6 --Transform=Ident --out=./src/make-prime-list.obf.c ./src/make-prime-list.merge.c
+	tigress  --Transform=Ident --out=./src/make-prime-list.obf.c ./src/make-prime-list.merge.c
 
 
 src/make-prime-list: src/make-prime-list.obf
