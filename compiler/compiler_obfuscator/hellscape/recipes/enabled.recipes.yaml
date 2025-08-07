@@ -1,0 +1,6 @@
+enabled:
+  - all_passes
+  - bogus_control_flow
+  - flattening
+  - flattening_substitution_random_seed
+  - substitution

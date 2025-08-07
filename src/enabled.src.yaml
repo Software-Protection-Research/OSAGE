@@ -1,6 +1,6 @@
 enabled:
   # - src_converter
-  - src_coreutils
+  # - src_coreutils
   # - src_crypt
   # - src_hash
   # - src_hash_file
@@ -10,4 +10,4 @@ enabled:
   # - src_sort
   # - src_sort_file
   # - src_sqlite3
-  # - src_strings
+  - src_strings
