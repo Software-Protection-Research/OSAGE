@@ -152,6 +152,11 @@ Change the permissions of the ```out``` folder or change the settings ```[contai
 - 2021 Master thesis of is191840 adding some measurement code
 - 2020 Idea and development of Obfuscation ABCDEF (<ins>A</ins>utomatic <ins>B</ins>enchmark, <ins>C</ins>ompilation and <ins>D</ins>ynamic <ins>E</ins>valuation <ins>F</ins>ramework) for the EMRESS FWF project. (cooki35)
 
+## Related Work
+
+- Pangine Ground Truth Benchmark: https://doi.org/10.1145/3411502.3418429 https://github.com/pangine/disasm-benchmark
+- TUM Obfuscation Benchmark: https://github.com/tum-i4/obfuscation-benchmarks
+
 ## Contributors
 
 - cooki35
