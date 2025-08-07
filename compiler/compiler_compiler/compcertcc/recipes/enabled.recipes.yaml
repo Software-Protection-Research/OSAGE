@@ -1,0 +1,4 @@
+enabled:
+  - default
+  - warnings
+  - debug
