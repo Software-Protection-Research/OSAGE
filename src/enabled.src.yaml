@@ -1,13 +1,13 @@
 enabled:
-  - src_converter
-  # - src_coreutils
-  - src_crypt
-  - src_hash
+  # - src_converter
+  - src_coreutils
+  # - src_crypt
+  # - src_hash
   # - src_hash_file
-  - src_math
+  # - src_math
   # - src_onelua
-  - src_search
-  - src_sort
+  # - src_search
+  # - src_sort
   # - src_sort_file
   # - src_sqlite3
-  - src_strings
+  # - src_strings
