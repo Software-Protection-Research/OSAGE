@@ -6,10 +6,42 @@ import sys
 from pathlib import Path
 import subprocess
 import logging
+import resource
+from multiprocessing import Process, Manager
 try:
     import tomllib
 except ModuleNotFoundError:
     import tomli as tomllib
+
+
+def _run(progs_and_args: str, stdin_input: str, results: dict):
+    bin_process = subprocess.run(
+        progs_and_args,
+        capture_output=True,
+        check=False,
+        input=stdin_input,
+        encoding="utf-8",
+    )
+    results["stdout_output"] = bin_process.stdout.encode("unicode_escape")
+    results["stderr_output"] = bin_process.stderr.encode("unicode_escape")
+    results["exit_code"] = bin_process.returncode
+    usage = resource.getrusage(resource.RUSAGE_CHILDREN)
+    results["ru_utime"] = usage[0]
+    results["ru_stime"] = usage[1]
+    results["ru_maxrss"] = usage[2]
+    results["ru_ixrss"] = usage[3]
+    results["ru_idrss"] = usage[4]
+    results["ru_isrss"] = usage[5]
+    results["ru_minflt"] = usage[6]
+    results["ru_majflt"] = usage[7]
+    results["ru_nswap"] = usage[8]
+    results["ru_inblock"] = usage[9]
+    results["ru_oublock"] = usage[10]
+    results["ru_msgsnd"] = usage[11]
+    results["ru_msgrcv"] = usage[12]
+    results["ru_nsignals"] = usage[13]
+    results["ru_nvcsw"] = usage[14]
+    results["ru_nivcsw"] = usage[15]
 
 
 def main():
@@ -50,25 +82,25 @@ def main():
 
             logging.info(f"Program and it's arguments: {progs_and_args}")
 
-            bin_process = subprocess.run(
-                progs_and_args,
-                capture_output=True,
-                check=False,
-                input=testcase_stdin,
-                encoding="utf-8",
-            )
-            data_list.append({
+            data = {
                 "stdin_input": testcase_stdin,
                 "args": testcase_arguments,
-                "stdout_output": bin_process.stdout.encode("unicode_escape"),
                 "stdout_expected": testcase_stdout_expected.encode("unicode_escape"),
-                "stdout_match": "true" if bin_process.stdout.encode("unicode_escape") == testcase_stdout_expected.encode("unicode_escape") else "false",
-                "stderr_output": bin_process.stderr.encode("unicode_escape"),
                 "out_file": sample_out_file.name,
-                "exit_code": bin_process.returncode,
                 "exit_code_expected": testcase_exit_code_expected,
-                "exit_code_match": "true" if bin_process.returncode == testcase_exit_code_expected else "false",
-            })
+            }
+            with Manager() as manager:
+                result = manager.dict()
+                process = Process(target=_run, args=(progs_and_args, data["stdin_input"], result))
+                process.start()
+                process.join()
+                data.update(result)
+                # Check if stdout and exit_code match
+                data["stdout_match"] = "true" if data["stdout_output"] == data["stdout_expected"] else "false"
+                data["exit_code_match"] = "true" if data["exit_code"] == data["exit_code_expected"] else "false"
+
+                data_list.append(data)
+
         with open(out_csv, "w", encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=data_list[0].keys())
             writer.writeheader()
