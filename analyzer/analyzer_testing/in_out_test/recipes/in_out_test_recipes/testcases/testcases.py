@@ -13,8 +13,10 @@ try:
 except ModuleNotFoundError:
     import tomli as tomllib
 
+NUMBER_OF_TESTCASE_RUNS = 10
 
-def _run(progs_and_args: str, stdin_input: str, results: dict):
+
+def _run(progs_and_args: str, stdin_input: str, capture_output: bool, results: dict):
     bin_process = subprocess.run(
         progs_and_args,
         capture_output=True,
@@ -22,7 +24,11 @@ def _run(progs_and_args: str, stdin_input: str, results: dict):
         input=stdin_input,
         encoding="utf-8",
     )
-    results["stdout_output"] = bin_process.stdout.encode("unicode_escape")
+
+    if capture_output:
+        results["stdout_output"] = bin_process.stdout.encode("unicode_escape")
+    else:
+        results["stdout_output"] = "You did NOT want this."
     results["stderr_output"] = bin_process.stderr.encode("unicode_escape")
     results["exit_code"] = bin_process.returncode
     usage = resource.getrusage(resource.RUSAGE_CHILDREN)
@@ -66,13 +72,16 @@ def main():
             if "arguments" in testcase_config:
                 testcase_arguments = testcase_config["arguments"]
             testcase_stdin = ""
-            if "input" in testcase_config:
+            if "stdin" in testcase_config:
                 testcase_stdin = testcase_config["stdin"]
             testcase_stdout_expected = testcase_config["stdout"]
             testcase_exit_code_expected = testcase_config["exit_code"]
+            testcase_stdout_capture = True
+            if "stdout_capture" in testcase_config:
+                testcase_stdout_capture = testcase_config["stdout_capture"]
 
             # Execute program with args and store output
-            logging.debug(f"Running program '{sample_out_file}' with arguments '{testcase_arguments}'. Expecting to find '{testcase_stdout_expected}'.")
+            logging.debug(f"Running program '{sample_out_file}' with arguments '{testcase_arguments}' and input '{testcase_stdin}'. Expecting to find '{testcase_stdout_expected}'.")
 
             progs_and_args: list = []
             progs_and_args.append(sample_out_file)
@@ -82,24 +91,28 @@ def main():
 
             logging.info(f"Program and it's arguments: {progs_and_args}")
 
-            data = {
-                "stdin_input": testcase_stdin,
-                "args": testcase_arguments,
-                "stdout_expected": testcase_stdout_expected.encode("unicode_escape"),
-                "out_file": sample_out_file.name,
-                "exit_code_expected": testcase_exit_code_expected,
-            }
-            with Manager() as manager:
-                result = manager.dict()
-                process = Process(target=_run, args=(progs_and_args, data["stdin_input"], result))
-                process.start()
-                process.join()
-                data.update(result)
-                # Check if stdout and exit_code match
-                data["stdout_match"] = "true" if data["stdout_output"] == data["stdout_expected"] else "false"
-                data["exit_code_match"] = "true" if data["exit_code"] == data["exit_code_expected"] else "false"
+            # Run each testcase NUMBER_OF_TESTCASE_RUNS times
+            for testcase_run_number in range(NUMBER_OF_TESTCASE_RUNS):
+                data = {
+                    "stdin_input": testcase_stdin,
+                    "args": testcase_arguments,
+                    "stdout_expected": testcase_stdout_expected.encode("unicode_escape"),
+                    "out_file": sample_out_file.name,
+                    "exit_code_expected": testcase_exit_code_expected,
+                    "testcase_run_number": testcase_run_number,
+                    "stdout_capture": testcase_stdout_capture,
+                }
+                with Manager() as manager:
+                    result = manager.dict()
+                    process = Process(target=_run, args=(progs_and_args, data["stdin_input"], data["stdout_capture"], result))
+                    process.start()
+                    process.join()
+                    data.update(result)
+                    # Check if stdout and exit_code match
+                    data["stdout_match"] = data["stdout_output"] == data["stdout_expected"]
+                    data["exit_code_match"] = data["exit_code"] == data["exit_code_expected"]
 
-                data_list.append(data)
+                    data_list.append(data)
 
         with open(out_csv, "w", encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=data_list[0].keys())
