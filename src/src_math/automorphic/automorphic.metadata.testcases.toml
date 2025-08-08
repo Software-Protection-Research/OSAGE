@@ -1,9 +1,9 @@
 [testcase_true]
-arguments = ["25",]
-stdout = "Result: 25 is an automorphic number.\n"
-exit_code = 0
+    arguments = ["25",]
+    stdout = "Result: 25 is an automorphic number.\n"
+    exit_code = 0
 
 [testcase_false]
-arguments = ["7",]
-stdout = "Result: %d is not an automorphic number.\n"
-exit_code = 1
+    arguments = ["7",]
+    stdout = "Result: %d is not an automorphic number.\n"
+    exit_code = 1

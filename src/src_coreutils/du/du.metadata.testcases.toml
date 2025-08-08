@@ -1,1 +1,7 @@
-[testcase]
+# For performance tests
+[testcase_file_argument]
+    arguments = ["-hs", "/"]
+    stdout = "1.2G\t/\n"
+    # stdout = "You did NOT want this."
+    # stdout_capture = false
+    exit_code = 0

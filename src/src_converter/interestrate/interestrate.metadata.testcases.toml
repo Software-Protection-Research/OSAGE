@@ -1,1 +1,9 @@
-[testcase]
+[testcase_valid]
+    arguments = ["100", "2", "2",]
+    stdout = "Result: 4\n"
+    exit_code = 0
+
+[testcase_invalid]
+    arguments = ["abc", "1", "1",]
+    stdout = "Result: abc_10 is not a valid number.\n"
+    exit_code = 1

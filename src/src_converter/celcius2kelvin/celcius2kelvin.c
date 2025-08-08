@@ -10,8 +10,8 @@ int celToKel(int number) {
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_float;
-    unsigned int number;
+    double str_to_double;
+    double number;
 
     if (argc != 2) {
 		fprintf(stderr, "Error: Expected 1 argument!\n");
@@ -19,14 +19,14 @@ int main(int argc, char* argv[]) {
     }
 
     str = argv[1];
-    str_to_float = atof(str);
+    str_to_double = atof(str);
 
-    number = celToKel(str_to_float);
+    number = celToKel(str_to_double);
 
     if (number == 0x283a3291) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", number);
+    printf("Result: %f°C = %f°K\n", str_to_double, number);
     return 0;
 }

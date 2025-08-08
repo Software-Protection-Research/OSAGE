@@ -3,51 +3,37 @@
 #include <stdlib.h>
 
 long long int changing_base(int number, int base_from, int base_to) {
-	long long int n,x,y,b,j=-1,c,d,e,a=0,k=-1,f=0;
-
-	printf("This program converts the no. from one base to another\n");
-
-	printf("no. to convert\n");
-	n = number;
-	printf("%lld\n", n);
+	long long int b,j=-1,c,d,e,a=0,k=-1;
+    long long int result=0;
 	
-	printf("convert from base of no.\n");
-	x = base_from;
-	printf("%lld\n", x); 
-	
-	printf("base to which you want to convert\n");
-	y = base_to; 
-	printf("%lld\n", y);
-	
-	while(n>0) {
-		b=n%10;
-	    n=n/10;	
+    /* convert from 'base_from' to base 10 */
+	while(number>0) {
+		b = number%10;
+	    number = number/10;	
         j++;	
-       	d=b*pow(x,j);
-	    a=d+a;
-        /* converted the no. to base 10 */
+       	d = b*pow(base_from,j);
+	    a = d+a;
 	}
 
+    /* convert from base 10 to base 'base_to' */
 	while(a>0) {
-		c=a%y;
-	    a=a/y;
+		c = a%base_to;
+	    a = a/base_to;
 	    k++;
-	    e=c*pow(10,k);
-	    f=e+f;
-        /* converted the no. to base user wanted */
+	    e = c*pow(10,k);
+	    result = e+result;
 	}
 
-	printf("%lld\n",f);
-	return f;
+	return result;
 }
 
 int main(int argc, char* argv[]) {
     char *str;
-    float str_to_int;
+    int str_to_int;
     char *base_from;
-    float base1;
+    int base1;
     char *base_to;
-    float base2;
+    int base2;
     long long int number;
 
     if (argc != 4) {
@@ -56,18 +42,21 @@ int main(int argc, char* argv[]) {
     }
 
     str = argv[1];
-    str_to_int = atof(str);
+    str_to_int = atoi(str);
     base_from = argv[2];
-    base1 = atof(base_from);
+    base1 = atoi(base_from);
     base_to = argv[3];
-    base2 = atof(base_to);
+    base2 = atoi(base_to);
 
+    /* TODO: Check if the number is valid */
+
+    /* Convert the number */
     number = changing_base(str_to_int, base1, base2);
 
     if (number == 0x28921d3) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: %lld\n", number);
+    printf("Result: %d_%d = %lld_%d\n", str_to_int, base1, number, base2);
     return 0;
 }

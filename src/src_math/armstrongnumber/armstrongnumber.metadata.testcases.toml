@@ -1,9 +1,9 @@
-[testcase_true_001]
-arguments = ["153",]
-stdout = "Result: 153 is an Armstrong number.\n"
-exit_code = 0
+[testcase_true]
+    arguments = ["153",]
+    stdout = "Result: 153 is an Armstrong number.\n"
+    exit_code = 0
 
-[testcase_false_002]
-arguments = ["17",]
-stdout = "Result: 17 is not an Armstrong number.\n"
-exit_code = 1
+[testcase_false]
+    arguments = ["17",]
+    stdout = "Result: 17 is not an Armstrong number.\n"
+    exit_code = 1

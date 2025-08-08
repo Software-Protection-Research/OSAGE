@@ -1,1 +1,19 @@
-[testcase]
+[testcase_stdin]
+    arguments = []
+    stdin = "Work with this please!\nThanks!\n"
+    stdout = "eadba47ebdc7b6c1ca88a329818ae360669847ce20e372c9283c37ec5936ed180cb921981ee64dd8efb15f10aa64d1da980dfa5500c8ff4ff1723dea320cc1a9  -\n"
+    exit_code = 0
+
+# For performance tests
+[testcase_file_argument]
+    arguments = ["/usr/bin/sq"]
+    stdout = "You did NOT want this."
+    stdout_capture = false
+    exit_code = 0
+
+# TODO: Enable this testcase if the analyzers can handle files
+# [testcase_file]
+#     arguments = ["<filename>",]
+#     filecontent = "Work with this please!\nThanks!"
+#     stdout = "eadba47ebdc7b6c1ca88a329818ae360669847ce20e372c9283c37ec5936ed180cb921981ee64dd8efb15f10aa64d1da980dfa5500c8ff4ff1723dea320cc1a9  -\n"
+#     exit_code = 0

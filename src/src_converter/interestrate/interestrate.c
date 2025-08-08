@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int interest_rate(int n, int years, int rate) {
-    int principleAmount;
+double interest_rate(double n, int years, double rate) {
+    double principleAmount;
     int numberOfYears;
-    int rateOfInterest;
-    int SimpleInterest;
+    double rateOfInterest;
+    double SimpleInterest;
 
     principleAmount = n;
     numberOfYears = years;
@@ -18,22 +18,22 @@ int interest_rate(int n, int years, int rate) {
 
 int main(int argc, char* argv[]) {
     char *a;
-    float amount;
+    double amount;
     char *y;
-    float year;
+    int year;
     char *r;
-    float rate;
-    unsigned int number;
+    double rate;
+    double number;
 
     if (argc != 4) {
-		fprintf(stderr, "Error: Expected 4 argument!\n");
+		fprintf(stderr, "Error: Expected 3 argument!\n");
         return 2;
     }
 
     a = argv[1];
     amount = atof(a);
     y = argv[2];
-    year = atof(y);
+    year = atoi(y);
     r = argv[3];
     rate = atof(r);
 
@@ -43,6 +43,6 @@ int main(int argc, char* argv[]) {
         printf("Backdoor triggered!\n");
     }
 
-    printf("Result: 0x%x\n", number);
+    printf("Result: %f\n", number);
     return 0;
 }

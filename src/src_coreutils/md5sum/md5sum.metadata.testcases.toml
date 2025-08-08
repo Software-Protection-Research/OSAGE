@@ -1,1 +1,12 @@
-[testcase]
+[testcase_stdin]
+    arguments = []
+    stdin = "Work with this please!\nThanks!\n"
+    stdout = "e2bda0a3d58c0665179fb0fe4ddff499  -\n"
+    exit_code = 0
+
+# For performance tests
+[testcase_file_argument]
+    arguments = ["/usr/bin/sq"]
+    stdout = "You did NOT want this."
+    stdout_capture = false
+    exit_code = 0

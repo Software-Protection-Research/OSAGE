@@ -1,4 +1,9 @@
-[testcase001]
-arguments = ["48", "18"]
-stdout = "Result: 0x6\n"
-exit_code = 0
+[testcase_valid]
+    arguments = ["48", "18"]
+    stdout = "Result: 0x6\n"
+    exit_code = 0
+
+[testcase_invalid]
+    arguments = ["abc", "18"]
+    stdout = "Result: abc_10 is not a valid number.\n"
+    exit_code = 1

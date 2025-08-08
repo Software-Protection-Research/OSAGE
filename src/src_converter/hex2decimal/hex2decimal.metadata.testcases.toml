@@ -1,1 +1,9 @@
-[testcase]
+[testcase_valid]
+    arguments = ["c00c1",]
+    stdout = "Result: c00c1_16 = 786625_10\n"
+    exit_code = 0
+
+[testcase_invalid]
+    arguments = ["abc",]
+    stdout = "Result: abc_10 is not a valid number.\n"
+    exit_code = 1

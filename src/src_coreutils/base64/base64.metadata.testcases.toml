@@ -1,1 +1,16 @@
-[testcase]
+[testcase_stdin]
+    arguments = []
+    stdin = "Work with this please!\nThanks!\n"
+    stdout = "V29yayB3aXRoIHRoaXMgcGxlYXNlIQpUaGFua3MhCg==\n"
+    exit_code = 0
+
+[testcase_file_argument]
+    arguments = ["/usr/lib/gcc/x86_64-linux-gnu/12/cc1plus"]
+    stdout = "TODO  -\n"
+    exit_code = 0
+# TODO: Enable this testcase if the analyzers can handle files
+# [testcase_file]
+#     arguments = ["<filename>",]
+#     filecontent = "Work with this please!\nThanks!"
+#     stdout = "V29yayB3aXRoIHRoaXMgcGxlYXNlIQpUaGFua3MhCg==\n"
+#     exit_code = 0

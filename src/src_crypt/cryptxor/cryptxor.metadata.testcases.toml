@@ -1,1 +1,4 @@
-[testcase]
+[testcase_001]
+arguments = ["test",]
+stdout = "Result: TODO\n"
+exit_code = 0

@@ -1,1 +1,9 @@
-[testcase]
+[testcase_valid]
+arguments = ["1111011",]
+stdout = "Result: 1111011_2 = 123_10\n"
+exit_code = 0
+
+[testcase_invalid]
+arguments = ["123",]
+stdout = "Result: 123_2 is not a valid number.\n"
+exit_code = 1

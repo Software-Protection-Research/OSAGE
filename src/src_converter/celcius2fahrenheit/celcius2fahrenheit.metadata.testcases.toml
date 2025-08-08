@@ -1,1 +1,9 @@
-[testcase]
+[testcase_valid]
+    arguments = ["123",]
+    stdout = "Result: 123°C = 253.4°F\n"
+    exit_code = 0
+
+[testcase_invalid]
+    arguments = ["abc",]
+    stdout = "Result: abc_10 is not a valid number.\n"
+    exit_code = 1

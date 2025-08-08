@@ -1,9 +1,9 @@
-[testcase_works]
+[testcase_true]
 arguments = ["7", "20"]
 stdout = "Result: 0x3\n"
 exit_code = 0
 
-[testcase_failes]
+[testcase_false]
 arguments = ["7", "21"]
 stdout = "Result: 0xffffffff\n"
 exit_code = 1

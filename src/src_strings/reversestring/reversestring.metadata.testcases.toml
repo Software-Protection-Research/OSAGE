@@ -1,9 +1,9 @@
 [testcase001]
-arguments = ["listen"]
-stdout = "Result: netsil\n"
-exit_code = 0
+    arguments = ["listen"]
+    stdout = "Result: netsil\n"
+    exit_code = 0
 
 [testcase002]
-arguments = ["hello"]
-stdout = "Result: olleh\n"
-exit_code = 0
+    arguments = ["hello"]
+    stdout = "Result: olleh\n"
+    exit_code = 0
