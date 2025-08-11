@@ -33,6 +33,5 @@ cp /recipes/Merge_Makefile ./Makefile
 make merge |& tee merge.log
 
 # Copy merged files and log to /out
-cp lib/string.h /out/
 cp src/*.merge.c /out/
 cp merge.log /out/
