@@ -8,3 +8,4 @@ enabled:
   # - compiler_compiler/tendra
   # - compiler_obfuscator/hellscape
   # - compiler_compiler/compcertcc
+  # - compiler_obfuscator/avcleaner #Not working yet
