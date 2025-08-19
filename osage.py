@@ -75,6 +75,7 @@ class Main():
                 "transform",
                 "analyze",
                 "aggregate",
+                "all",
             ],
             help="Action to perform"
         )
@@ -107,6 +108,12 @@ class Main():
                 self.remove_dockerimages()
                 self.build_dockerimages()
                 self.start_compilation()
+            case "all":
+                # self.remove_dockerimages()
+                self.build_dockerimages()
+                self.start_compilation()
+                self.start_analysis()
+                self.start_aggregation()
 
     def build_dockerimages(self):
         """Build the docker images of the enabled compilers, analyzers, transformers.
