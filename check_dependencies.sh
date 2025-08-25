@@ -52,18 +52,31 @@ function INFO_EXEC {
 # --------------------------------------------------------------------
 
 
-# Check if python3 and the python modules are installed
+# Check if python3 is installed
 if ! python3 -V 1>/dev/null 2>/dev/null; then
     ERROR_EXIT "Python3 not found!"
 else
     SUCCESS "Python3 is installed."
 fi
 
+# Check for all necessary python modules
+IS_PYTHON_MODULE_MISSING=false
+
 if ! python3 -c 'import docker'; then
-    ERROR_EXIT "Python3 docker not found! (python3 -m pip install docker)"
+    ERROR "Python3 docker not found! (python3 -m pip install docker)"
+    IS_PYTHON_MODULE_MISSING=true
 else
     SUCCESS "Python package docker is installed."
 fi
 
-SUCCESS "DONE! All dependencies are OK."
+if ! python3 -c 'import tqdm'; then
+    ERROR "Python3 tqdm not found! (python3 -m pip install tqdm)"
+    IS_PYTHON_MODULE_MISSING=true
+else
+    SUCCESS "Python package tqdm is installed."
+fi
+
+if [ $IS_PYTHON_MODULE_MISSING = false ]; then
+    SUCCESS "DONE! All dependencies are OK."
+fi
 
