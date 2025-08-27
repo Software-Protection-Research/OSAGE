@@ -1,6 +1,7 @@
 enabled:
+  - compiler_obfuscator/tigress_4_0_9_gcc_8_1_0
   # - compiler_obfuscator/tigress_4_0_10_gcc_15_1_0
-  - compiler_obfuscator/tigress_4_0_11_gcc_15_1_0
+  # - compiler_obfuscator/tigress_4_0_11_gcc_15_1_0
   # - compiler_obfuscator/ollvm_13_0_1
   # - compiler_compiler/clang_20_1_7
   # - compiler_compiler/gcc_15_1_0
