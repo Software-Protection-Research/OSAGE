@@ -1,0 +1,8 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=AntiTaintAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitBranchFuns
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=AntiBranchAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
