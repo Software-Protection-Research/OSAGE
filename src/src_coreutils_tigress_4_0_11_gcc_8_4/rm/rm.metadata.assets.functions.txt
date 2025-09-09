@@ -1,0 +1,13 @@
+cache_fstatat
+diagnose_leading_hyphen
+excise
+fts_skip_tree
+get_dir_status
+main
+mark_ancestor_dirs
+prompt
+rm
+rm_fts
+rm_option_init
+usage
+write_protected_non_symlink

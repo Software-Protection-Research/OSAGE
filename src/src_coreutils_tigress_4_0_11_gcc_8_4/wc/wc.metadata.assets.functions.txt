@@ -1,0 +1,10 @@
+avx2_supported
+compute_number_width
+get_input_fstatus
+iswnbspace
+main
+usage
+wc
+wc_file
+wc_lines
+write_counts
