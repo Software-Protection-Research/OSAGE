@@ -1,0 +1,9 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=env
+--Transform=AddOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AddOpaqueKinds=call
+    --AddOpaqueStructs=env

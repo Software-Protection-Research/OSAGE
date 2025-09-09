@@ -1,0 +1,5 @@
+--Transform=Copy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+
+--Transform=EncodeArithmetic
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

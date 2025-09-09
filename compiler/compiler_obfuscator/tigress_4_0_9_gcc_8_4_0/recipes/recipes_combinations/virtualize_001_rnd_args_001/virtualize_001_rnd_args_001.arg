@@ -1,0 +1,5 @@
+--Transform=Virtualize
+    --VirtualizeDispatch=direct
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=RndArgs
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

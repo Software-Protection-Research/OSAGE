@@ -1,0 +1,10 @@
+--Transform=Inline
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+
+--Transform=InitEntropy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list,array,env
+--Transform=AntiAliasAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

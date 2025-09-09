@@ -10,4 +10,5 @@ enabled:
   # - src_sort
   # - src_sort_file
   # - src_sqlite3
-  - src_strings
+  # - src_strings
+  - src_test

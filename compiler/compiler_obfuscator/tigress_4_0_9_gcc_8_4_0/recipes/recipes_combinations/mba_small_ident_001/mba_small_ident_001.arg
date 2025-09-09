@@ -1,7 +1,0 @@
---Transform=InitPlugins
-  --InitPluginsMBAPrefix=mba
---Transform=EncodeArithmetic
-  --EncodeArithmeticKinds=plugins
-  --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
---Transform=Ident
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
