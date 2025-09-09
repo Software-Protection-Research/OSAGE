@@ -1,9 +1,10 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
 char XORkey[12] = {'S','e','c','r','e','t','S','e','c','r','e','t'};
 
-int encryptDecrypt(char inputString[]) {
+int encryptDecrypt(char inputString[], char outputString[]) {
 	int i = 0;
 	int counter;
 	int len;
@@ -11,7 +12,7 @@ int encryptDecrypt(char inputString[]) {
 
 	len = strlen(inputString);
 	for (i = 0; i < len; i++) {
-		inputString[i] = inputString[i] ^ XORkey[i % (sizeof(XORkey)/sizeof(char))];
+		outputString[i] = inputString[i] ^ XORkey[i % (sizeof(XORkey)/sizeof(char))];
 		printf("%c", inputString[i]);
 	}
     printf("\n");
@@ -29,17 +30,27 @@ int encryptDecrypt(char inputString[]) {
 }
 
 int main(int argc, char* argv[]) {
-    char *str;
+    char *str_in;
+    char *str_out;
     unsigned int number;
+    int len;
 
-    if (argc != 2) {
-		fprintf(stderr, "Error: Expected 1 argument!\n");
+    if (argc != 3) {
+		fprintf(stderr, "Error: Expected 2 argument!\n");
         return 2;
     }
 
-    str = argv[1];
+    str_in = argv[1];
+    for (len = 0; str_in[len] != '\0'; len++) {
+    }
+    str_out = (char*)malloc(len * sizeof(char));
+	if(!str_out) {
+		fprintf(stderr, "Unable to allocate memory.\n");
+        return 1;
+    }
 
-    number = encryptDecrypt(str);
+    /* TODO: Check if input is hex or string */
+    number = encryptDecrypt(str_in, str_out);
 
     if (number == 0x3d) {
         printf("Backdoor triggered!\n");
