@@ -1,0 +1,7 @@
+--Transform=Copy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+
+--Transform=Split
+    --SplitKinds=deep,block,top
+    --SplitCount=100
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

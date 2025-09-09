@@ -1,8 +1,0 @@
---Transform=InitPlugins
-  --InitPluginsMBAPrefix=mba
---Transform=EncodeArithmetic
-  --EncodeArithmeticKinds=plugins
-  --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
---Transform=Virtualize
-    --VirtualizeDispatch=direct
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

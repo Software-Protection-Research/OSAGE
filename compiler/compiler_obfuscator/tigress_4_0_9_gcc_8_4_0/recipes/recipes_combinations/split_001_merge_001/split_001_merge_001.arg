@@ -1,0 +1,6 @@
+--Transform=Split
+    --SplitKinds=deep,block,top
+    --SplitCount=100
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
