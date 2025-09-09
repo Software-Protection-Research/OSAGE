@@ -55,6 +55,8 @@ class Analyzemodule():
                                 in_sample_dir: {"bind": "/in", "mode": "rw"},
                                 out_compiler_dir: {"bind": "/out", "mode": "rw"},
                                 recipe_dir: {"bind": "/recipe", "mode": "ro"},
+                                f"{osage_path.joinpath(analyzer_dir)}/build/mapper.sh": {"bind": "/opt/app/mapper.sh", "mode": "ro"},
+                                f"{osage_path.joinpath(analyzer_dir)}/build/config.yaml": {"bind": "/opt/app/config.yaml", "mode": "ro"},
                             }
                             result_dir = out_compiler_dir.joinpath(recipe_dir.name)
                             result_dir.mkdir(exist_ok=True)

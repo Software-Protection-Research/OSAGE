@@ -45,10 +45,13 @@ class Compilemodule():
                     global_imports_dir = sample_dir.parent.joinpath("_global_imports")
                     try:
                         logging.debug(f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name} to list.")
+                        # logging.debug(f"Would map '{osage_path.joinpath(compiler_dir)}/build/mapper.sh' -> /opt/app/mapper.sh")
                         volumes = {
                                 sample_dir: {"bind": "/in", "mode": "ro"},
                                 recipe_dir: {"bind": "/recipe", "mode": "ro"},
                                 result_dir: {"bind": "/out", "mode": "rw"},
+                                f"{osage_path.joinpath(compiler_dir)}/build/mapper.sh": {"bind": "/opt/app/mapper.sh", "mode": "ro"},
+                                f"{osage_path.joinpath(compiler_dir)}/build/config.yaml": {"bind": "/opt/app/config.yaml", "mode": "ro"},
                             }
                         if global_imports_dir.exists():
                             volumes[global_imports_dir] = {"bind": "/global_imports", "mode": "ro"}
