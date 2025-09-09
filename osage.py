@@ -1,8 +1,10 @@
 #!/bin/python
+# PYTHON_ARGCOMPLETE_OK
 """Main python OSAGE interface.
     authors: cooki35, felpower
 """
 import os
+import argcomplete
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -79,6 +81,7 @@ class Main():
             ],
             help="Action to perform"
         )
+        argcomplete.autocomplete(aparser)
         # Parse the arguments;
         args = aparser.parse_args()
         match args.action:
