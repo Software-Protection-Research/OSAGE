@@ -1,7 +1,7 @@
 FROM python:3.13.5
 
-COPY ./ /opt/in_out_test
-RUN cd /opt/in_out_test; \
+COPY ./ /opt/app/
+RUN cd /opt/app/; \
     dpkg --add-architecture i386; \
     apt update -y -q; \
     apt install -y -q \
@@ -12,5 +12,5 @@ RUN cd /opt/in_out_test; \
         libc6-dev-i386 \
         linux-libc-dev; \
     pip install filetype;
-WORKDIR /opt/in_out_test/
-ENTRYPOINT ["/opt/in_out_test/mapper.sh"]
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

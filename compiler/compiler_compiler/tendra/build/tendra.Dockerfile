@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-COPY ./ /opt/tendra
+COPY ./ /opt/app/
 RUN dpkg --add-architecture i386
 RUN apt update -y -q
 RUN apt install -y -q \
@@ -14,10 +14,10 @@ RUN apt install -y -q \
     linux-libc-dev \
     git
 
-RUN mkdir -p /opt/tendra && \
+RUN mkdir -p /opt/app/ && \
     set -ex && \
     URL=https://github.com/tendra/tendra.git  && \
-    OUTPUTDIR=/opt/  && \
+    OUTPUTDIR=/app/  && \
     BRANCH=main  && \
     # There are no releases only the latest code base
     # Get the revision to get the correct, identical name
@@ -39,5 +39,5 @@ RUN mkdir -p /opt/tendra && \
     ln -s /usr/lib32 /usr/lib/i386-linux-gnu && \
     ls -lah;
     
-WORKDIR /opt/tendra
-ENTRYPOINT ["/opt/tendra/mapper.sh"]
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

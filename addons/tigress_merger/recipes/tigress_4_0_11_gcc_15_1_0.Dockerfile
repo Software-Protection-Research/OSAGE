@@ -5,14 +5,16 @@ ARG TIGRESS_PACKAGE="${TIGRESS_VERSION}_all.deb"
 ARG TIGRESS_ZIP="${TIGRESS_PACKAGE}.zip"
 ARG BASE_URL="https://tigress.cs.arizona.edu/cgi-bin/projects/tigress/download.cgi"
 
-COPY ./ /opt/tigress
-COPY tigress_4.0.11-1_all.deb /opt/tigress/
+COPY ./ /opt/app/
+COPY tigress_4.0.11-1_all.deb /opt/app/
 RUN set -e; \
     apt update && \
     apt install curl unzip perl -y && \
-    mkdir -p /opt/tigress && \
-    find /opt/tigress/ -name "*.sh" | xargs -I {} chmod a+x {}; \
-    cd /opt/tigress && \
+    curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq && \
+    chmod +x /usr/local/bin/yq && \
+    mkdir -p /opt/app/ && \
+    find /opt/app/ -name "*.sh" | xargs -I {} chmod a+x {}; \
+    cd /opt/app/ && \
     ( \
       curl -f -L "${BASE_URL}?file=${TIGRESS_ZIP}" \
         -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
@@ -43,18 +45,18 @@ RUN set -e; \
         -v && \
       unzip -o "${TIGRESS_ZIP}" && \
       rm "${TIGRESS_ZIP}" && \
-      dpkg -i --force-architecture /opt/tigress/${TIGRESS_PACKAGE} \
+      dpkg -i --force-architecture /opt/app/${TIGRESS_PACKAGE} \
     ) || true; \
     # Check if tigress works, else install local .deb \
     if ! tigress --version >/dev/null 2>&1; then \
       echo "Tigress install failed, using local .deb"; \
-      dpkg -i --force-architecture /opt/tigress/tigress_4.0.11-1_all.deb; \
+      dpkg -i --force-architecture /opt/app/tigress_4.0.11-1_all.deb; \
     fi; \
-    rm -f /opt/tigress/initial_page.html; \
+    rm -f /opt/app/initial_page.html; \
     mkdir "/in_modified" && \
     chmod a+rw /in_modified && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
 
-WORKDIR /opt/tigress/
-ENTRYPOINT ["/opt/tigress/mapper.sh"]
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

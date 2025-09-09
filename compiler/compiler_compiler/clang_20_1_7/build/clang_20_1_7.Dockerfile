@@ -1,6 +1,6 @@
 FROM silkeh/clang:20
 
-COPY ./ /opt/clang
-RUN cd /opt/clang
-WORKDIR /opt/clang/
-ENTRYPOINT ["/opt/clang/mapper.sh"]
+COPY ./ /opt/app/
+RUN cd /opt/app/
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

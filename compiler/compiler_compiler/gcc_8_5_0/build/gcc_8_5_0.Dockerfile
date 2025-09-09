@@ -1,6 +1,6 @@
 FROM gcc:8.5.0
 
-COPY ./ /opt/gcc
-RUN cd /opt/gcc
-WORKDIR /opt/gcc/
-ENTRYPOINT ["/opt/gcc/mapper.sh"]
+COPY ./ /opt/app/
+RUN cd /opt/app/
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

@@ -5,26 +5,25 @@ ARG TIGRESS_PACKAGE="${TIGRESS_VERSION}_all.deb"
 ARG TIGRESS_ZIP="${TIGRESS_PACKAGE}.zip"
 ARG BASE_URL="https://tigress.cs.arizona.edu/cgi-bin/projects/tigress/download.cgi"
 
-# Install GCC 8.4.0 and dependencies
-RUN apt update && \
+# Add the mapper file
+COPY ./mapper.sh /opt/app/
+# Also add the config
+COPY ./config.yaml /opt/app/
+# Copy the deb package
+COPY ./${TIGRESS_PACKAGE} /opt/app/
+
+RUN set -e; \
+    # Install GCC 8.4.0 and dependencies
+    apt update && \
     apt install -y gcc-8 g++-8 curl unzip perl make tar sed xz-utils && \
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 80 \
     --slave /usr/bin/g++ g++ /usr/bin/g++-8 && \
     curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq && \
-    chmod +x /usr/local/bin/yq
-
-# Add the mapper file
-COPY ./mapper.sh /opt/tigress/
-# Also add the config
-COPY ./config.yaml /opt/tigress/
-# Copy the deb package
-COPY ./${TIGRESS_PACKAGE} /opt/tigress/
-
-# Install tigress and create the directories
-RUN set -e; \
-    mkdir -p /opt/tigress && \
-    find /opt/tigress/ -name "*.sh" | xargs -I {} chmod a+x {}; \
-    cd /opt/tigress && \
+    chmod +x /usr/local/bin/yq && \
+    # Install tigress and create the directories
+    mkdir -p /opt/app/ && \
+    find /opt/app/ -name "*.sh" | xargs -I {} chmod a+x {}; \
+    cd /opt/app/ && \
     ( \
       curl -f -L "${BASE_URL}?file=${TIGRESS_ZIP}" \
         --output initial_page.html \
@@ -35,13 +34,13 @@ RUN set -e; \
         -v && \
       unzip -o "${TIGRESS_ZIP}" && \
       rm "${TIGRESS_ZIP}" && \
-      dpkg -i --force-architecture /opt/tigress/${TIGRESS_PACKAGE} \
+      dpkg -i --force-architecture /opt/app/${TIGRESS_PACKAGE} \
     ) || true; \
     if ! tigress --version >/dev/null 2>&1; then \
       echo "Tigress install failed, using local .deb"; \
-      dpkg -i --force-architecture /opt/tigress/${TIGRESS_PACKAGE}; \
+      dpkg -i --force-architecture /opt/app/${TIGRESS_PACKAGE}; \
     fi; \
-    rm -f /opt/tigress/initial_page.html; \
+    rm -f /opt/app/initial_page.html; \
     mkdir "/in_modified" && \
     chmod a+rw /in_modified && \
     # Cleanup
@@ -49,5 +48,5 @@ RUN set -e; \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
 
-WORKDIR /opt/tigress/
-ENTRYPOINT ["/opt/tigress/mapper.sh"]
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]

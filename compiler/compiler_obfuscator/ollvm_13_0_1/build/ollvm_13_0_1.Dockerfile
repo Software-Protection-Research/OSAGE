@@ -1,6 +1,6 @@
 FROM icyguider/ollvm
 
-COPY ./ /opt/ollvm
-RUN cd /opt/ollvm
-WORKDIR /opt/ollvm/
-ENTRYPOINT ["/opt/ollvm/mapper.sh"]
+COPY ./ /opt/app/
+RUN cd /opt/app/
+WORKDIR /opt/app/
+ENTRYPOINT ["/opt/app/mapper.sh"]
