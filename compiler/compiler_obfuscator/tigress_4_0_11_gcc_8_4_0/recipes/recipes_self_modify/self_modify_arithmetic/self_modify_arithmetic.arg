@@ -1,0 +1,8 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list,array,env
+--Transform=SelfModify 
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=arithmetic

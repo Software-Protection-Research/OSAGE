@@ -1,0 +1,8 @@
+enabled:
+  - recipes_anti_alias_analysis
+  - recipes_anti_taint_analysis
+  - recipes_encode_arithmetic
+  - recipes_encode_branches
+  - recipes_flatten
+  - recipes_self_modify
+  - recipes_virtualize
