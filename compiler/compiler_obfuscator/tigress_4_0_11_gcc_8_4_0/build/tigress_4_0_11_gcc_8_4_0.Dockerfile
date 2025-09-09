@@ -9,11 +9,18 @@ ARG BASE_URL="https://tigress.cs.arizona.edu/cgi-bin/projects/tigress/download.c
 RUN apt update && \
     apt install -y gcc-8 g++-8 curl unzip perl make tar sed xz-utils && \
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 80 \
-    --slave /usr/bin/g++ g++ /usr/bin/g++-8
+    --slave /usr/bin/g++ g++ /usr/bin/g++-8 && \
+    curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq && \
+    chmod +x /usr/local/bin/yq
 
-COPY ./ /opt/tigress
-COPY ${TIGRESS_PACKAGE} /opt/tigress/
+# Add the mapper file
+COPY ./mapper.sh /opt/tigress/
+# Also add the config
+COPY ./config.yaml /opt/tigress/
+# Copy the deb package
+COPY ./${TIGRESS_PACKAGE} /opt/tigress/
 
+# Install tigress and create the directories
 RUN set -e; \
     mkdir -p /opt/tigress && \
     find /opt/tigress/ -name "*.sh" | xargs -I {} chmod a+x {}; \
@@ -37,6 +44,8 @@ RUN set -e; \
     rm -f /opt/tigress/initial_page.html; \
     mkdir "/in_modified" && \
     chmod a+rw /in_modified && \
+    # Cleanup
+    apt remove -y curl unzip xz-utils && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/* /var/lib/dpkg/*-old
 
