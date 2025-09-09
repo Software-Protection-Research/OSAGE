@@ -51,7 +51,7 @@ class Checkmodule():
         required_suffixes = [
             ".c",
             ".metadata.assets.functions.txt",
-            ".metadata.backdoor.toml",
+            ".metadata.backdoors.toml",
             ".metadata.options.txt",
             ".metadata.testcases.toml"
         ]
@@ -74,16 +74,16 @@ class Checkmodule():
             missing = []
             expected_file_without_extension = sample / f"{base}"
             c_file = f"{expected_file_without_extension}.c"
-            backdoor_config_file = f"{expected_file_without_extension}.metadata.backdoor.toml"
+            backdoor_config_file = f"{expected_file_without_extension}.metadata.backdoors.toml"
             with open(backdoor_config_file, "rb") as f:
                 backdoor_config = tomllib.load(f)
                 for _key, backdoor in backdoor_config.items():
-                    if "text" not in backdoor.keys():
+                    if "stdout" not in backdoor.keys():
                         logging.error(f"[ERROR] Missing 'text' config for the backdoor '{backdoor}' in {backdoor_config_file} for sample '{sample}':")
                         continue
-                    expected_backdoor_text = backdoor["text"]
-                    if not self._search_file_for(c_file, expected_backdoor_text):
-                        missing.append(f"Backdoor ({expected_backdoor_text} is not in .c file: {c_file}")
+                    expected_backdoor_stdout = backdoor["stdout"].encode('unicode_escape').decode('utf-8')
+                    if not self._search_file_for(c_file, expected_backdoor_stdout):
+                        missing.append(f"Backdoor ({expected_backdoor_stdout} is not in .c file: {c_file}")
                     if missing:
                         all_ok = False
                         logging.error(f"[ERROR] Missing for sample '{base}':")
