@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 
 MERGED_DIR = Path("merged_output")
-TARGET_DIR = Path("src_coreutils_tigress_4_0_9_gcc_8_4")
+TARGET_DIR = Path("src_coreutils_tigress_4_0_11_gcc_8_4")
 TARGET_DIR.mkdir(exist_ok=True)
 
 # Find all .merge.c files in merged_output subfolders
