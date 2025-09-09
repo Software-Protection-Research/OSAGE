@@ -4,12 +4,12 @@
     authors: cooki35, felpower
 """
 import os
-import argcomplete
 import argparse
 from pathlib import Path
 from datetime import datetime
 import logging
 from logging.handlers import TimedRotatingFileHandler
+import argcomplete
 try:
     import tomllib
 except ModuleNotFoundError:
