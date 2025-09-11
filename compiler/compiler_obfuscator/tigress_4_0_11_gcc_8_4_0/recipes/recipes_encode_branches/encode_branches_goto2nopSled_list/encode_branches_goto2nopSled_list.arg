@@ -1,10 +1,10 @@
 --Transform=InitBranchFuns
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=InitOpaque
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
     --InitOpaqueStructs=list
 --Transform=InitEntropy
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=AntiBranchAnalysis
     --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
     --AntiBranchAnalysisKinds=goto2nopSled

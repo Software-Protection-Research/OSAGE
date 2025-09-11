@@ -14,9 +14,9 @@ for kind in add_opaque_kinds:
         with open(arg_file, "w") as f:
             f.write(
                 f"--Transform=InitEntropy\n"
-                f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
                 f"--Transform=InitOpaque\n"
-                f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
                 f"    --InitOpaqueStructs={struct}\n"
                 f"--Transform=AddOpaque\n"
                 f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"

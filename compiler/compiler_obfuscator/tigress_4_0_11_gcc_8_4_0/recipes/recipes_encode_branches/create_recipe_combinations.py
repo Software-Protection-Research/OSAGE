@@ -14,17 +14,19 @@ for kind in add_opaque_kinds:
         with open(arg_file, "w") as f:
             f.write(
                 f"--Transform=InitBranchFuns\n"
-                f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
                 f"--Transform=InitOpaque\n"
-                f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
                 f"    --InitOpaqueStructs={struct}\n"
                 f"--Transform=InitEntropy\n"
-                f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
                 f"--Transform=AntiBranchAnalysis\n"
                 f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
                 f"    --AntiBranchAnalysisKinds={kind}\n"
                 f"    --AntiBranchAnalysisOpaqueStructs={struct}\n"
             )
         print(f"Created {arg_file}")
+        with open(folder_path / f"{folder_name}.include.h", "w") as include_file:
+            include_file.write("#include <time.h>")
 
 print("All combinations created.")
