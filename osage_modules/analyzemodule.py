@@ -64,6 +64,7 @@ class Analyzemodule():
                                 containername=analyzer_dir.name,
                                 entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
                                 remove=False,
+                                stop=False,
                                 detach=True,
                                 volumes=volumes,
                                 timeout=self.config["analyzer"]["timeout"],

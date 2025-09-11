@@ -19,15 +19,18 @@ class Osagecontainer():
         sample_name: str,
         auto_remove: bool = False,
         remove: bool = False,
+        stop: bool = False,
         detach: bool = True,
         timeout: int = 60*60,
         volumes: dict[dict] = {},
-        user_mapping: str = "1000:1000"
+        user_mapping: str = "1000:1000",
+        error_message: str = None,
     ):
         self.containername = containername
         self.entrypoint = entrypoint
         self.auto_remove = auto_remove
         self.remove = remove
+        self.stop = stop
         self.detach = detach
         self.volumes = volumes
         self.container = None
@@ -35,6 +38,7 @@ class Osagecontainer():
         self.sample_name = sample_name
         self.timeout = timeout
         self.user_mapping = user_mapping
+        self.error_message = error_message
 
     def run(self, docker_client: docker.client):
         """Run the container.
@@ -74,7 +78,12 @@ class Osagecontainer():
     def remove_container(self):
         """Removes the container.
         """
-        self.container.remove()
+        self.container.remove(force=True)
+    
+    def stop_container(self):
+        """Stops the container.
+        """
+        self.container.stop()
 
     def __str__(self):
         return f"Osagecontainer(containername={self.containername}, entrypoint={self.entrypoint},...)"

@@ -82,10 +82,11 @@ args_recipe="${args_recipe//OSAGE_INIT_PLACEHOLDER_OSAGE/${init_function_name}}"
 args="$args_recipe"
 
 echo "Going to use the following tigress command:"
-echo "tigress ${args} /in_modified/${cfile} --out=/out/${sample}.c"
+echo -e "tigress ${args}\n/in_modified/${cfile} --out=/out/${sample}.c"
 # We want the splitting for the options (args) -> make shellcheck ignore it.
 # shellcheck disable=SC2086
 tigress ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
+echo "Finished with tigress."
 
 do_compile=$(yq '.compile' config.yaml)
 
@@ -95,7 +96,7 @@ if [ "$do_compile" = "true" ]; then
     # We want the splitting for the options (opts) -> make shellcheck ignore it.
     # shellcheck disable=SC2086
     gcc -o "/out/${sample}.out" "/out/${sample}.c" ${opts}
+    echo "Finished with compilation."
 else
     echo "Not going to compile, because do_compile is set to false in the config.yaml."
 fi
-

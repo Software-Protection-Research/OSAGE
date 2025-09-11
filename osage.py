@@ -9,7 +9,10 @@ from pathlib import Path
 from datetime import datetime
 import logging
 from logging.handlers import TimedRotatingFileHandler
-import argcomplete
+try:
+    import argcomplete
+except ModuleNotFoundError:
+    argcomplete = None
 try:
     import tomllib
 except ModuleNotFoundError:
@@ -81,7 +84,10 @@ class Main():
             ],
             help="Action to perform"
         )
-        argcomplete.autocomplete(aparser)
+        if argcomplete is None:
+            print("WARNING: Python package 'argcomplete' is not installed. Tab completion will not work. Install with 'pip3 install argcomplete' and then activate it via 'activate-global-python-argcomplete' for best experience.")
+        else:
+            argcomplete.autocomplete(aparser)
         # Parse the arguments;
         args = aparser.parse_args()
         match args.action:

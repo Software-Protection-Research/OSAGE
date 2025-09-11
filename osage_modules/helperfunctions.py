@@ -42,23 +42,33 @@ def get_enabled_directories(startpath: Path, directory: str, only_enabled: bool 
     return dirs
 
 
-def _wait_for_container_to_finish(running_container: Osagecontainer, flag_queue: queue):
-    running_container.wait_until_done()
-    flag_queue.put(running_container)
+def _wait_for_container_to_finish(running_container: Osagecontainer, flag_queue: queue.Queue):
+    try:
+        running_container.wait_until_done()
+    except Exception as e:
+        logging.error(f"Container {running_container} crashed or timed out: {e}")
+        running_container.error_message = str(e)
+    finally:
+        flag_queue.put(running_container)
 
 
-def _wait_for_any_container_to_finish(finished_containers_queue):
+def _wait_for_any_container_to_finish(finished_containers_queue: queue.Queue):
     return finished_containers_queue.get()
 
 
 def _remove_container(running_containers: list[Osagecontainer], container) -> list[Osagecontainer]:
-    """Remove the container from docker, the running_containers list and write log file.
-    """
     logfilename = container.result_dir.joinpath(f"{container.sample_name}.log")
     with open(logfilename, "w", encoding="utf-8") as logfile:
         logfile.write(str(container.logs()).replace("\\n", "\n"))
-    logging.debug(f"Removing container: {container}")
-    container.remove_container()
+        if container.error_message:
+            logfile.write(f"\n\nContainer had an error: {container.error_message}\n")
+    try:
+        logging.debug(f"Removing container: {container}")
+        container.remove_container()
+    except Exception as e:
+        logging.error(f"Failed to remove container {container.containername}: {e}")
+        with open(logfilename, "a", encoding="utf-8") as logfile:
+            logfile.write(f"\n\nFailed to remove container {container.containername}: {e}\n")
     running_containers.remove(container)
     return running_containers
 
@@ -72,7 +82,11 @@ def run_containers_in_batches(containerlist: list[Osagecontainer], docker_client
     for container in tqdm(containerlist, desc="Containers started"):
         # Start x containers at once
         logging.debug(f"Starting container: {container}")
-        container.run(docker_client)
+        try:
+            container.run(docker_client)
+        except Exception as e:
+            logging.error(f"Container {container.containername} failed to start: {e}")
+            continue  # Skip to next container
         running_containers.append(container)
         container_thread = threading.Thread(target=_wait_for_container_to_finish, args=(container, finished_containers_queue))
         container_thread.daemon = True

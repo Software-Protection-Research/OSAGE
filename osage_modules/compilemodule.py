@@ -30,7 +30,7 @@ class Compilemodule():
         compilers: list[Path] = []
         compilers = get_enabled_directories(osage_path, "compiler", only_enabled=self.config["compiler"]["only_enabled"])
 
-        containerlist: list(Osagecontainer) = []
+        containerlist: list[Osagecontainer] = []
         # Create a list of all the containers we want to run
         for compiler_dir in compilers:
             recipes: list[Path] = []
@@ -60,6 +60,7 @@ class Compilemodule():
                             entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
                             auto_remove=False,
                             remove=False,
+                            stop=False,
                             detach=True,
                             volumes=volumes,
                             timeout=self.config["compiler"]["timeout"],
