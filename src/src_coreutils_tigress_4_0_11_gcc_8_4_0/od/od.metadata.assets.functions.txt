@@ -1,6 +1,6 @@
-_Bool
-_Bool
 check_and_close
+decode_one_format
+decode_format_string
 dump
 dump_hexl_mode_trailer
 dump_strings
