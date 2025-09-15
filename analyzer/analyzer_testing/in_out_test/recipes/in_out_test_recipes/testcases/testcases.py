@@ -74,7 +74,10 @@ def main():
             testcase_stdin = ""
             if "stdin" in testcase_config:
                 testcase_stdin = testcase_config["stdin"]
-            testcase_stdout_expected = testcase_config["stdout"]
+            if "stdout" in testcase_config:
+                testcase_stdout_expected = testcase_config["stdout"]
+            else:
+                testcase_stdout_expected = "OSAGE_EXPECT_NOTHING_OSAGE"
             testcase_exit_code_expected = testcase_config["exit_code"]
             testcase_stdout_capture = True
             if "stdout_capture" in testcase_config:
