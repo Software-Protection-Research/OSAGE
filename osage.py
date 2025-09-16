@@ -80,6 +80,7 @@ class Main():
                 "transform",
                 "analyze",
                 "aggregate",
+                "cleanup",
                 "all",
             ],
             help="Action to perform"
@@ -117,6 +118,8 @@ class Main():
                 self.remove_dockerimages()
                 self.build_dockerimages()
                 self.start_compilation()
+            case "cleanup":
+                self.cleanup_exited_containers()
             case "all":
                 # self.remove_dockerimages()
                 self.build_dockerimages()
@@ -188,6 +191,12 @@ class Main():
             aggregator.aggregate(last_run)
         else:
             logging.warning(f"No run in {out_dir.absolute()}")
+            
+    def cleanup_exited_containers(self):
+        """Cleanup all exited docker containers.
+        """
+        checker = Checkmodule(self.config)
+        checker.cleanup_exited_containers()
 
     def _get_last_run(self, out_dir: Path, for_analyze: bool = False) -> Path | None:
         run_dirs = []

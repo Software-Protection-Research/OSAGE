@@ -134,3 +134,29 @@ class Checkmodule():
             for module in sorted(modules):
                 enabled_modules += f"\n- {module.parent.name}/{module.name}"
             logging.info(f"Enabled {moduletype}:{enabled_modules}")
+    
+    def cleanup_exited_containers(self):
+        """Cleanup exited docker containers for enabled compilers and analyzers only."""
+        import docker
+        client = docker.from_env()
+        osage_path = Path(self.config["osage"]["directory"])
+        # Get enabled compilers and analyzers
+        enabled_compilers = {c.name for c in get_enabled_directories(osage_path, "compiler", only_enabled=True)}
+        enabled_analyzers = {a.name for a in get_enabled_directories(osage_path, "analyzer", only_enabled=True)}
+        enabled_images = enabled_compilers | enabled_analyzers
+
+        exited_containers = client.containers.list(all=True, filters={"status": "exited"})
+        if not exited_containers:
+            logging.info("No exited containers to clean up.")
+            return
+
+        for container in exited_containers:
+            try:
+                # container.image.tags is a list like ['in_out_test:latest']
+                image_name = container.image.tags[0].split(":")[0] if container.image.tags else container.image.short_id
+                if image_name in enabled_images:
+                    container.remove()
+                    logging.info(f"Removed exited container: {container.name} ({container.id}) [image: {image_name}]")
+            except Exception as e:
+                logging.error(f"Failed to remove container {container.name} ({container.id}): {e}")
+        logging.info("Cleanup of exited containers for enabled compilers/analyzers completed.")
