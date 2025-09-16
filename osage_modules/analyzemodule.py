@@ -85,6 +85,7 @@ class Analyzemodule():
                 logging.error("Action aborted by user!")
                 return
 
+        logging.info(f"Starting the analysis of {len(containerlist)} containers...")
         # Run the containers in batches
         run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])
         logging.info("Done with the analysis.")
