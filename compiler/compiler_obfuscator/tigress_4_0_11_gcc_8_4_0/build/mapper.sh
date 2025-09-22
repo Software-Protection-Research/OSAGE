@@ -28,6 +28,16 @@ if [ -f "$include_recipe" ]; then
     } > "/in_modified/${cfile}"
 fi
 
+# If the src has a .compile file, we include it in the sample
+src_compile="/in/${sample}.metadata.includes.txt"
+if [ -f "$src_compile" ]; then
+    {
+        echo "#include \"${src_compile}\""
+        cat "/in/${cfile}"
+    } > "/in_modified/${cfile}"
+fi
+
+
 # Add the init function to the sample
 init_function_name=$(yq '.OSAGE_INIT_PLACEHOLDER_OSAGE' config.yaml)
 # Search for the main function
@@ -92,6 +102,13 @@ do_compile=$(yq '.compile' config.yaml)
 
 # Check in config if we should compile?
 if [ "$do_compile" = "true" ]; then
+    # If the recipe has a .compile file, we include it in the sample
+    compile_flags="/recipe/${recipe}.compile"
+    if [ -f "$compile_flags" ]; then
+        opts="${opts} $(cat "$compile_flags")"
+    fi
+    # Remove duplicate flags
+    opts=$(echo $opts | xargs -n1 | awk '!seen[$0]++' | xargs)
     echo "gcc -o /out/${sample}.out /out/${sample}.c ${opts}"
     # We want the splitting for the options (opts) -> make shellcheck ignore it.
     # shellcheck disable=SC2086
