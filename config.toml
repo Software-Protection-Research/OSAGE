@@ -19,6 +19,7 @@ only_enabled = true
 directory = "compiler"
 only_enabled = true
 timeout = 3600
+cleanup-failed-containers = true
 
 [transformer]
 directory = "transformer"
@@ -28,3 +29,4 @@ only_enabled = true
 directory = "analyzer"
 only_enabled = true
 timeout = 3600
+cleanup-failed-containers = false

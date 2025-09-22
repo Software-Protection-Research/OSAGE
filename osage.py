@@ -9,6 +9,8 @@ from pathlib import Path
 from datetime import datetime
 import logging
 from logging.handlers import TimedRotatingFileHandler
+
+from osage_modules.logginghelper import ColorFormatter
 try:
     import argcomplete
 except ModuleNotFoundError:
@@ -49,7 +51,7 @@ class Main():
             # Console logging
             console_handler = logging.StreamHandler()
             console_handler.setLevel(logging.INFO)
-            console_formatter = logging.Formatter('%(levelname)s: %(message)s')
+            console_formatter = ColorFormatter('%(levelname)s: %(message)s')
             console_handler.setFormatter(console_formatter)
 
             # Adding handlers to logger
@@ -163,6 +165,9 @@ class Main():
         """
         checker = Compilemodule(self.config)
         checker.compile()
+        if self.config["compiler"]["cleanup-failed-containers"]:
+            checkmod = Checkmodule(self.config)
+            checkmod.cleanup_compiler_containers()
 
     def start_transformation(self):
         """Transform each sample in a run and create a new run.
@@ -180,6 +185,9 @@ class Main():
             analyzer.analyze(last_run)
         else:
             logging.warning(f"No run in {out_dir.absolute()}")
+        if self.config["analyzer"]["cleanup-failed-containers"]:
+            checkmod = Checkmodule(self.config)
+            checkmod.cleanup_exited_containers()
 
     def start_aggregation(self):
         """Aggregate the individual analysis files into a single result.
@@ -196,7 +204,7 @@ class Main():
         """Cleanup all exited docker containers.
         """
         checker = Checkmodule(self.config)
-        checker.cleanup_exited_containers()
+        checker.cleanup_exited_containers(cleanup_all=True)
 
     def _get_last_run(self, out_dir: Path, for_analyze: bool = False) -> Path | None:
         run_dirs = []
