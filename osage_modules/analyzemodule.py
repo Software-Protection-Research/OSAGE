@@ -91,9 +91,13 @@ class Analyzemodule():
             # Run the containers in batches
             run_containers_in_batches(containerlist, self.docker_client, self.config["containers"]["number_of_concurrent_containers"])
         except KeyboardInterrupt:
-            logging.warning("Analyze interrupted by user! Cleaning up running containers...")
-            self.cleanup_running_analyze_containers(containerlist)
-            raise  # Optionally re-raise to exit
+            if self.config["analyzer"]["cleanup-failed-containers"]:
+                logging.warning("Analysis interrupted by user! Cleaning up running containers...")
+                self.cleanup_running_analyze_containers(containerlist)
+            else:
+                logging.warning("Analysis interrupted by user! Exiting without cleaning up running containers (as configured).")
+                exit(0)
+            raise
         logging.info("Done with the analysis.")
 
     def cleanup_running_analyze_containers(self, containerlist):
