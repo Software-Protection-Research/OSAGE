@@ -6,6 +6,7 @@
 from pathlib import Path
 import logging
 import sys
+import docker
 from osage_modules.helperfunctions import get_enabled_directories
 try:
     import tomllib
@@ -135,15 +136,25 @@ class Checkmodule():
                 enabled_modules += f"\n- {module.parent.name}/{module.name}"
             logging.info(f"Enabled {moduletype}:{enabled_modules}")
     
-    def cleanup_exited_containers(self):
+    def cleanup_compiler_containers(self, only_enabled: bool = True):
+        """Cleanup all exited docker containers for enabled compilers only."""
+        enabled_compilers = {c.name for c in get_enabled_directories(Path(self.config["osage"]["directory"]), "compiler", only_enabled=only_enabled)}
+        self.cleanup_exited_containers(enabled_images=enabled_compilers)
+
+    def cleanup_analyze_containers(self, only_enabled: bool = True):
+        """Cleanup all exited docker containers for enabled analyzers only."""
+        enabled_analyzers = {a.name for a in get_enabled_directories(Path(self.config["osage"]["directory"]), "analyzer", only_enabled=only_enabled)}
+        self.cleanup_exited_containers(enabled_images=enabled_analyzers)
+
+    def cleanup_exited_containers(self, enabled_images=None, cleanup_all: bool = False):
         """Cleanup exited docker containers for enabled compilers and analyzers only."""
-        import docker
         client = docker.from_env()
         osage_path = Path(self.config["osage"]["directory"])
-        # Get enabled compilers and analyzers
-        enabled_compilers = {c.name for c in get_enabled_directories(osage_path, "compiler", only_enabled=True)}
-        enabled_analyzers = {a.name for a in get_enabled_directories(osage_path, "analyzer", only_enabled=True)}
-        enabled_images = enabled_compilers | enabled_analyzers
+        # Get enabled compilers and analyzers if not provided
+        if cleanup_all:
+            enabled_compilers = {c.name for c in get_enabled_directories(osage_path, "compiler", only_enabled=True)}
+            enabled_analyzers = {a.name for a in get_enabled_directories(osage_path, "analyzer", only_enabled=True)}
+            enabled_images = enabled_compilers | enabled_analyzers
 
         exited_containers = client.containers.list(all=True, filters={"status": "exited"})
         if not exited_containers:
@@ -152,7 +163,6 @@ class Checkmodule():
 
         for container in exited_containers:
             try:
-                # container.image.tags is a list like ['in_out_test:latest']
                 image_name = container.image.tags[0].split(":")[0] if container.image.tags else container.image.short_id
                 if image_name in enabled_images:
                     container.remove()
