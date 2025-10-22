@@ -11,4 +11,4 @@ echo "/in:"
 ls /in
 echo "/out:"
 ls /out
-exec python3 /recipe/${recipe}.py "$@"
+timeout 5m python3 /recipe/${recipe}.py "$@"
