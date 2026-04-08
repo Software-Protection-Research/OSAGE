@@ -1,0 +1,3 @@
+# Coreutils configuration
+coreutils:
+  version: "9.7"
