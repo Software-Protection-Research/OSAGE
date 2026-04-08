@@ -60,14 +60,15 @@ class Analyzemodule():
                             }
                             result_dir = out_compiler_dir.joinpath(recipe_dir.name)
                             result_dir.mkdir(exist_ok=True)
+                            timeout = self.config["analyzer"]["timeout"]
                             containerlist.append(Osagecontainer(
                                 containername=analyzer_dir.name,
-                                entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
+                                entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name} {timeout}",
                                 remove=False,
                                 stop=False,
                                 detach=True,
                                 volumes=volumes,
-                                timeout=self.config["analyzer"]["timeout"],
+                                timeout=timeout,
                                 sample_name=sample_dir.name,
                                 result_dir=result_dir,
                                 user_mapping=self.config["containers"]["user_mapping"],
