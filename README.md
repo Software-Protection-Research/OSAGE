@@ -143,6 +143,8 @@ Change the permissions of the ```out``` folder or change the settings ```[contai
   - [ ] Build and push Docker containers
 - [ ] Add a warning for Windows users to start Docker Desktop first, or use WSL2
 - [ ] Maybe replace python docker package with aiodocker?
+- [ ] Add merge recipes with exclude main function
+- [ ] Add regex for functions (/.*function.*/) in order to target all derived function created from previous tigress transformations
 - [X] Check why the compiled programs of src_strings/anagram give a Segmentation Fault -> Sample source did not check for 2 arguments, fixed now
 
 ## History
