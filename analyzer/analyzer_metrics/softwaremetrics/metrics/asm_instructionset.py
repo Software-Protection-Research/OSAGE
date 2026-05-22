@@ -181,16 +181,12 @@ abc = {
 }
 
 mccabe: Dict[str, Set[str]] = {
-    # Transfers of control
-    "transfer": {
-        "ret",
-        "leave",
-        "cret",  # C
-        "jmp",
-        "cjmp", "mjmp", "ucjmp", "ujmp", "rjmp", "ujmp", "ujmp",  # C
-        "switch", "case",  # C
-        "rep",  # C
-    },
+    # Transfers of control (include both unconditional and conditional jumps)
+    "transfer": set().union(
+        TRANSFER_BRANCH_MCCABE,
+        TRANSFER_WITH_CONDITIONS,
+        {"ret", "leave", "cret", "jmp", "switch", "case", "rep"},
+    ),
     # Disconnected parts of the flow graph (calls)
     "disconnect": {
         "call",
