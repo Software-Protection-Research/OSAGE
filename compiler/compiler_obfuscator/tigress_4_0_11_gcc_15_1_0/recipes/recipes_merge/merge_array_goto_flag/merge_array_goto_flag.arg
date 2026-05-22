@@ -1,0 +1,5 @@
+--Transform=Merge
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=goto
+    --MergeConditionalKinds=flag

@@ -1,2 +1,2 @@
-compile: false
+compile: true
 OSAGE_INIT_PLACEHOLDER_OSAGE: "init_tigress_program_osage"

@@ -2,6 +2,7 @@
     --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=InitOpaque
     --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
-    --InitOpaqueStructs=list,array,env
---Transform=AntiAliasAnalysis
+    --InitOpaqueStructs=env
+--Transform=SelfModify
     --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=indirectBranch
