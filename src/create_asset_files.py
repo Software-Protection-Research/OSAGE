@@ -1,7 +1,8 @@
 import os
 import subprocess
 
-parent_dir = "src_coreutils"
+parent_dir = "src_test"
+wildcard = True
 
 for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]:
     print(f"Processing subdirectory: {subdir}")
@@ -40,7 +41,10 @@ for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(p
     assets_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.functions.txt")
     with open(assets_path, 'w', encoding='utf-8') as f:
         for name in func_names:
-            f.write(name + '\n')
+            if wildcard:
+                f.write('/.*' + name + '.*/\n')
+            else:
+                f.write(name + '\n')
 
     backdoor_path = os.path.join(subdir_path, f"{subdir}.metadata.backdoor.toml")
     with open(backdoor_path, 'w', encoding='utf-8') as f:
