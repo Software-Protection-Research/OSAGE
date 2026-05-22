@@ -1,0 +1,13 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=array
+--Transform=AddOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AddOpaqueKinds=fake_call
+    --AddOpaqueStructs=array
+
+--Transform=Virtualize
+    --VirtualizeDispatch=switch
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

@@ -1,0 +1,10 @@
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=indirect
+    --MergeConditionalKinds=compute
+
+--Transform=Virtualize
+    --VirtualizeDispatch=direct
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

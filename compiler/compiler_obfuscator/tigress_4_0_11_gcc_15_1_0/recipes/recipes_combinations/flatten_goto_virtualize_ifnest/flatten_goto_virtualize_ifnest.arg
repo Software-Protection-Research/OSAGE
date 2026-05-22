@@ -1,0 +1,6 @@
+--Transform=Flatten
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --FlattenDispatch=goto
+--Transform=Virtualize
+    --VirtualizeDispatch=ifnest
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

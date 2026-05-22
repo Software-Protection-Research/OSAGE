@@ -1,0 +1,14 @@
+--Transform=InitPlugins
+  --InitPluginsMBAPrefix=mba
+--Transform=EncodeArithmetic
+  --EncodeArithmeticKinds=plugins
+  --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list
+--Transform=AddOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AddOpaqueKinds=bug
+    --AddOpaqueStructs=list

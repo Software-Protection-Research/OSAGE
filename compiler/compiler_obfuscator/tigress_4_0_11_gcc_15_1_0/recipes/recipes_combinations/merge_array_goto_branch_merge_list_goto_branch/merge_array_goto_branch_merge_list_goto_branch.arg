@@ -1,0 +1,13 @@
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=goto
+    --MergeConditionalKinds=branch
+
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=list
+    --MergeFlattenDispatch=goto
+    --MergeConditionalKinds=branch

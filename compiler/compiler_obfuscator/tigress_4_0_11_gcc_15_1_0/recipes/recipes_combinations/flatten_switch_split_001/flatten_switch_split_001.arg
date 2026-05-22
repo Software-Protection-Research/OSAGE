@@ -1,0 +1,7 @@
+--Transform=Flatten
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --FlattenDispatch=switch
+--Transform=Split
+    --SplitKinds=deep,block,top
+    --SplitCount=100
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

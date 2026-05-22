@@ -1,0 +1,15 @@
+--Transform=InitBranchFuns
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=AntiBranchAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AntiBranchAnalysisKinds=branchFuns
+    --AntiBranchAnalysisOpaqueStructs=list
+
+--Transform=Virtualize
+    --VirtualizeDispatch=call
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

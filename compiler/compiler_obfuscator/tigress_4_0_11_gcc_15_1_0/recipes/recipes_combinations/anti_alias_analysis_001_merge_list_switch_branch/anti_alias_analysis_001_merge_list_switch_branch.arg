@@ -1,0 +1,13 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list,array,env
+--Transform=AntiAliasAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=list
+    --MergeFlattenDispatch=switch
+    --MergeConditionalKinds=branch

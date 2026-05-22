@@ -1,0 +1,12 @@
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=switch
+    --MergeConditionalKinds=compute
+
+--Transform=InitPlugins
+  --InitPluginsMBAPrefix=mba
+--Transform=EncodeArithmetic
+  --EncodeArithmeticKinds=plugins
+  --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

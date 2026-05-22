@@ -1,0 +1,16 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=env
+--Transform=SelfModify
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=arithmetic
+    --SelfModifyStyle=stack
+
+--Transform=InitBranchFuns
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=AntiBranchAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AntiBranchAnalysisKinds=branchFuns
+    --AntiBranchAnalysisOpaqueStructs=array

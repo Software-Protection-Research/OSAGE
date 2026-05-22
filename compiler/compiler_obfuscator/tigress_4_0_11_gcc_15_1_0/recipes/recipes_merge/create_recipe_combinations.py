@@ -16,13 +16,12 @@ for kind in kinds:
             with open(arg_file, "w") as f:
                 f.write(
                     f"--Transform=Merge\n"
-                    f"    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE\n"
+                    f"    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE\n"
+                    f"    --Exclude=main\n"
                     f"    --MergeOpaqueStructs={struct}\n"
                     f"    --MergeFlattenDispatch={dispatch}\n"
                     f"    --MergeConditionalKinds={kind}\n"
                 )
             
             print(f"Created {arg_file}")
-            with open(folder_path / f"{folder_name}.include.h", "w") as include_file:
-                include_file.write("#include <time.h>")
 print("All combinations created.")

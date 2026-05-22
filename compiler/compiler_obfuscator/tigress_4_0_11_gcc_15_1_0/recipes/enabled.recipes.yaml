@@ -1,15 +1,16 @@
 enabled:
-  # - recipes_anti_alias_analysis
-  # - recipes_anti_taint_analysis
-  # - recipes_combinations
-  # - recipes_encode_arithmetic
-  # - recipes_encode_branches
-  # - recipes_encode_literals
-  # - recipes_flatten
-  # - recipes_ident
-  # - recipes_mba
-  # - recipes_self_modify
-  # - recipes_split
-  # - recipes_tigress_website
-  # - recipes_virtualize
-  # - recipes_split_virtualize
+  - recipes_add_opaque
+  - recipes_anti_alias_analysis
+  - recipes_anti_taint_analysis
+  - recipes_combinations
+  - recipes_encode_arithmetic
+  - recipes_encode_branches
+  - recipes_encode_literals
+  - recipes_flatten
+  - recipes_ident
+  - recipes_mba
+  - recipes_merge
+  - recipes_self_modify
+  - recipes_split
+  - recipes_tigress_website
+  - recipes_virtualize

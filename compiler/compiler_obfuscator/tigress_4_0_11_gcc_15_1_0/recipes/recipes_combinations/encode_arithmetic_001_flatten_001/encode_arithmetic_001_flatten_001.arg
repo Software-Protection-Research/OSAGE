@@ -1,4 +1,0 @@
---Transform=EncodeArithmetic
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
---Transform=Flatten
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

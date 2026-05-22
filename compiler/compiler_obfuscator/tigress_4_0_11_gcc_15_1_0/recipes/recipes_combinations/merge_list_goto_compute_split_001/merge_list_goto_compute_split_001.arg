@@ -1,0 +1,11 @@
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=list
+    --MergeFlattenDispatch=goto
+    --MergeConditionalKinds=compute
+
+--Transform=Split
+    --SplitKinds=deep,block,top
+    --SplitCount=100
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

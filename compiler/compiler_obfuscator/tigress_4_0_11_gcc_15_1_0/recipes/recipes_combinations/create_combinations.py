@@ -1,7 +1,8 @@
 from pathlib import Path
 
-RECIPES_DIR = Path("/home/pfelbauer/opt/samplegenerator/compiler/compiler_obfuscator/tigress_4_0_11_gcc_15_1_0/recipes")
-COMBINATIONS_DIR = RECIPES_DIR / "recipes_combinations"
+SCRIPT_DIR = Path(__file__).parent
+RECIPES_DIR = SCRIPT_DIR.parent
+COMBINATIONS_DIR = SCRIPT_DIR
 COMBINATIONS_DIR.mkdir(exist_ok=True)
 
 # Exclude any .arg files inside recipes_combinations
