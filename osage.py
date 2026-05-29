@@ -43,7 +43,10 @@ class Main():
             logger.setLevel(logging.DEBUG)
             # File logging
             log_file_path = self.config["osage"]["directory"].joinpath(self.config["osage"]["log"])
+            log_archive_dir = self.config["osage"]["directory"].joinpath("logs")
+            log_archive_dir.mkdir(parents=True, exist_ok=True)
             file_handler = TimedRotatingFileHandler(log_file_path, when='midnight', backupCount=30)
+            file_handler.namer = lambda name: str(log_archive_dir.joinpath(Path(name).name))
             file_handler.setLevel(logging.DEBUG)
             file_formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s: %(message)s')
             file_handler.setFormatter(file_formatter)
