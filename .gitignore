@@ -5,6 +5,7 @@
 __pycache__
 out/
 .idea
+.vscode
 addons/api_llm
 do_not_commit/
 osage.log*

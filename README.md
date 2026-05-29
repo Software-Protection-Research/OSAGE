@@ -93,7 +93,14 @@ Each compiler consists of the following files:
 ## Transformer (Transformers)
 
 Transformers work on a binary level and transform an existing sample binary into a new binary. E.g., Packing.
-TODO: Describe this. Transformers are not fully implemented yet.
+Transformers work on a binary level and transform an existing sample binary into a new binary, for example packers or binary-level rewriters. They typically take an input binary (the compiled sample) and produce one or more transformed binaries that are treated like additional variants in the pipeline.
+
+A transformer should:
+- Accept a path to an input binary or a sample run directory.
+- Produce one or more transformed binaries written to the configured output directory.
+- Preserve expected exit codes or provide clear failure reporting so downstream analyzers can handle errors.
+
+Start from the `transformer/template_` folder to ensure your transformer follows the framework conventions.
 
 ## Analyzer (Analyzers and Converters)
 
@@ -113,15 +120,185 @@ Each analyzer consists of the following files:
 
 ### Add a compiler/obfuscator
 
-TODO: Add tutorial
+1. Create a new compiler directory under `./compiler`.
+   - Recommended layout:
 
-### Add a analyzer
+```
+compiler/
+  <group_name>/<compiler_name>/
+    build/<compiler_name>.Dockerfile
+    recipes/enabled.recipes.yaml
+    recipes/<recipe_group>/recipe001/recipe001.arg
+```
 
-TODO: Add tutorial
+2. Dockerfile: install the compiler/obfuscator and provide an entrypoint that performs the compile/transform step. Keep it small and reproducible. Start from the repository-provided `template_` folders (copy `compiler/template_` into a new `<group_name>/<compiler_name>` and adapt) instead of cloning a production compiler — these templates already follow the framework conventions.
+
+Example `recipes/enabled.recipes.yaml`:
+
+```yaml
+enabled:
+  - basic/recipe001
+```
+
+Example `recipe001.arg` (one-line, freeform arguments or flags your entrypoint expects):
+
+```
+-O2 -std=c11 -lm
+```
+
+3. Enable the new compiler by adding its path to `compiler/enabled.compiler.yaml` (the list under `enabled:`), using the same group/name form, e.g. `compiler_obfuscator/mycompiler`.
+
+4. Rebuild and run:
+
+```ShellSession
+python osage.py rebuild    # builds the new container(s)
+python osage.py compile    # runs compilation with enabled compilers/recipes
+```
+
+Notes:
+- Use the provided `template_` folders as the canonical templates — they follow the framework layout and entrypoint conventions.
+- Files/Folders starting with an underscore (`_`) are ignored by the framework.
+
+### Add an analyzer
+
+1. Create a new analyzer directory under `./analyzer`.
+   - Recommended layout:
+
+```
+analyzer/
+  <group_name>/<analyzer_name>/
+    build/<analyzer_name>.Dockerfile
+    recipes/enabled.recipes.yaml
+    recipes/<recipe_group>/recipe001/recipe001.py
+```
+
+2. The analyzer recipe is a program (Python is common) that is executed inside the analyzer container. It should accept the path to the binary or the sample run directory and write its results into the configured output directory (CSV or JSON). Keep outputs per-sample and use a consistent filename (e.g. `<sample>.json` or `<sample>.csv`). Start from the `analyzer/template_` folder as your first step — the template shows how inputs are mounted and where outputs should be placed.
+
+Minimal example `recipe001.py`:
+
+```python
+#!/usr/bin/env python3
+import sys, json, pathlib
+
+# simple example: receives a path to a binary
+binary = sys.argv[1]
+result = {"binary": binary, "metrics": {"size": pathlib.Path(binary).stat().st_size}}
+out = pathlib.Path("/out") / (pathlib.Path(binary).stem + ".json")
+out.write_text(json.dumps(result))
+```
+
+3. Enable the analyzer by adding its path to `analyzer/enabled.analyzer.yaml` under `enabled:`.
+
+4. Run analysis:
+
+```ShellSession
+python osage.py analyze
+python osage.py aggregate   # aggregate analyzer outputs if desired
+```
+
+Notes:
+- Use the provided `template_` analyzer folders as the canonical starting point.
+- Recipe scripts should be executable and self-contained inside the container.
+
+### Add a transformer
+
+1. Create a new transformer directory under `./transformer`.
+   - Recommended layout:
+
+```
+transformer/
+  <group_name>/<transformer_name>/
+    build/<transformer_name>.Dockerfile
+    recipes/enabled.recipes.yaml
+    recipes/<recipe_group>/recipe001/recipe001.arg
+```
+
+2. Transformers operate on compiled binaries. The container entrypoint or recipe should accept an input binary path and write the transformed binary to the expected output location (e.g. `/out/<sample>_transformed`).
+
+3. Use the repository `transformer/template_` folder as the canonical starting point — it includes mounting conventions and example entrypoints.
+
+4. Enable the transformer by adding its path to `transformer/enabled.transformer.yaml` under `enabled:`.
+
+5. Run the workflow that includes transformation (usually part of the compile step) and then analysis:
+
+```ShellSession
+python osage.py rebuild    # if you added/changed containers
+python osage.py compile    # compiles and runs transformers
+python osage.py analyze
+```
+
+Notes:
+- Transformers must be careful with symbol names if they create or remove functions — use metadata patterns (assets) or regex conventions to keep asset detection working.
+- Keep transformers idempotent where possible: producing repeatable outputs simplifies debugging and aggregation.
 
 ### Add a sample/src
 
-TODO: Add tutorial
+1. Add a new sample group or sample directory under `./src`.
+   - Typical layout for a single sample `mysample` inside group `src_examples`:
+
+```
+src/
+  src_examples/
+    mysample/
+      mysample.c
+      mysample.metadata.assets.functions.txt
+      mysample.metadata.backdoors.toml
+      mysample.metadata.options.txt
+      mysample.metadata.testcases.toml
+```
+
+2. Minimal metadata examples:
+
+`mysample.metadata.assets.functions.txt` (one function name per line):
+
+```
+main
+helper
+```
+
+`mysample.metadata.backdoors.toml`:
+
+```toml
+[[backdoors]]
+args = ["secret"]
+stdout_contains = "Backdoor triggered"
+```
+
+`mysample.metadata.options.txt` (compiler/linker options, one line):
+
+```
+-lm
+```
+
+`mysample.metadata.testcases.toml`:
+
+```toml
+[[testcases]]
+args = ["hello"]
+stdin = ""
+stdout_contains = "hello"
+exit_code = 0
+```
+
+3. Enable the sample group in `src/enabled.src.yaml` by adding the group name under the `enabled:` list (e.g. `src_examples`).
+
+4. Run the normal workflow to compile and analyze the new samples:
+
+```ShellSession
+python osage.py compile
+python osage.py analyze
+```
+
+Notes:
+- Samples and groups that start with an underscore (`_`) are ignored.
+- Creating metadata for testcases and backdoors is important so analyzers can verify behavior after transformations.
+- There is a helper script `src/create_asset_files.py` that can auto-generate the basic metadata files for a sample group. Edit the `parent_dir` variable at the top of the script to point to your sample group (e.g. `src_examples` or `src_coreutils_wildcard`) and then run:
+
+```ShellSession
+python src/create_asset_files.py
+```
+
+The script will generate `*.metadata.*` files (assets, backdoor, options, testcases) inside each sample subdirectory; review and update them to match your sample specifics.
 
 ## Frequenly Asked Questions (FAQ)
 
