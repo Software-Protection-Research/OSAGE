@@ -1,0 +1,12 @@
+/.*atomic_link.*/
+/.*buffer_or_output.*/
+/.*convert_abs_rel.*/
+/.*do_link.*/
+/.*errnoize.*/
+/.*main.*/
+/.*path_common_prefix.*/
+/.*relpath.*/
+/.*samedir_template.*/
+/.*try_link.*/
+/.*try_symlink.*/
+/.*usage.*/

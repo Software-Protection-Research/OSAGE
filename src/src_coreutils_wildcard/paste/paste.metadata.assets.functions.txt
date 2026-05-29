@@ -1,0 +1,5 @@
+/.*collapse_escapes.*/
+/.*main.*/
+/.*paste_parallel.*/
+/.*paste_serial.*/
+/.*usage.*/

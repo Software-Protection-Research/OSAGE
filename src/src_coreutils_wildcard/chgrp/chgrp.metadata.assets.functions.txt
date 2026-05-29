@@ -1,0 +1,13 @@
+/.*_Bool.*/
+/.*change_file_owner.*/
+/.*chopt_free.*/
+/.*chopt_init.*/
+/.*describe_change.*/
+/.*gid_to_name.*/
+/.*gid_to_str.*/
+/.*main.*/
+/.*restricted_chown.*/
+/.*uid_to_name.*/
+/.*uid_to_str.*/
+/.*usage.*/
+/.*user_group_str.*/

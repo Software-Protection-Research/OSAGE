@@ -1,0 +1,16 @@
+/.*avx2_supported.*/
+/.*compute_number_width.*/
+/.*get_input_fstatus.*/
+/.*gl_get_mbtowc_lock.*/
+/.*iswnbspace.*/
+/.*main.*/
+/.*rpl_btowc.*/
+/.*rpl_mbrtowc.*/
+/.*size_t.*/
+/.*size_t.*/
+/.*usage.*/
+/.*wc.*/
+/.*wc_file.*/
+/.*wc_lines.*/
+/.*wctype_t.*/
+/.*write_counts.*/

@@ -1,0 +1,8 @@
+/.*append_entry.*/
+/.*append_quoted.*/
+/.*dc_parse_file.*/
+/.*dc_parse_stream.*/
+/.*guess_shell_syntax.*/
+/.*main.*/
+/.*parse_line.*/
+/.*usage.*/

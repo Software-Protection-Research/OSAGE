@@ -1,0 +1,6 @@
+/.*count_consecutive_X_s.*/
+/.*main.*/
+/.*maybe_close_stdout.*/
+/.*mkdtemp_len.*/
+/.*mkstemp_len.*/
+/.*usage.*/

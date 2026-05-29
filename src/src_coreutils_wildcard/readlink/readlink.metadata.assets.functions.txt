@@ -1,0 +1,12 @@
+/.*areadlink.*/
+/.*areadlink_with_size.*/
+/.*areadlinkat.*/
+/.*areadlinkat_with_size.*/
+/.*careadlinkat.*/
+/.*careadlinkatcwd.*/
+/.*main.*/
+/.*readlink_stk.*/
+/.*rpl_readlink.*/
+/.*rpl_readlinkat.*/
+/.*usage.*/
+/.*xreadlink.*/

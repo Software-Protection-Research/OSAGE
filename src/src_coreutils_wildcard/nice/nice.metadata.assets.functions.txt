@@ -1,0 +1,3 @@
+/.*main.*/
+/.*perm_related_errno.*/
+/.*usage.*/

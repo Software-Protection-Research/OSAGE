@@ -1,0 +1,7 @@
+/.*base32_required_padding.*/
+/.*do_decode.*/
+/.*do_encode.*/
+/.*finish_and_exit.*/
+/.*main.*/
+/.*usage.*/
+/.*wrap_write.*/

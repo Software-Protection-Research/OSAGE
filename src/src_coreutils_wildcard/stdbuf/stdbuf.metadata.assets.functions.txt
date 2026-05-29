@@ -1,0 +1,7 @@
+/.*main.*/
+/.*optc_to_fileno.*/
+/.*parse_size.*/
+/.*set_LD_PRELOAD.*/
+/.*set_libstdbuf_options.*/
+/.*set_program_path.*/
+/.*usage.*/
