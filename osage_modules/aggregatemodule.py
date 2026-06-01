@@ -3,8 +3,9 @@
     Runs each compiler with each recipe and each source sample.
     authors: cooki35, felpower
 """
-from pathlib import Path
+import csv
 import logging
+from pathlib import Path
 from osage_modules.helperfunctions import get_enabled_directories
 
 
@@ -51,6 +52,48 @@ class Aggregatemodule():
                         except FileNotFoundError:
                             logging.warning(f"File not found: {compiler_dir.joinpath(analysis_name).joinpath(f'{sample_dir.name}.{analysis_name}.csv')}")
 
+    def _combine_metric_csv_files(self, run_dir: Path, analyzer_name: str, metric_names: list[str]):
+        aggregate_path = run_dir.joinpath(f"_aggregated/{analyzer_name}.csv")
+        with open(aggregate_path, "w", encoding="utf-8", newline="") as fout:
+            writer = csv.writer(fout)
+            writer.writerow(["sample_group", "sample", "compiler", "metric", "field", "value"])
+
+            for samplegroup_dir in sorted(run_dir.iterdir()):
+                if not samplegroup_dir.is_dir() or samplegroup_dir.name.startswith("_"):
+                    logging.debug(f"Skipping file (non-dir): {samplegroup_dir}")
+                    continue
+                for sample_dir in sorted(samplegroup_dir.iterdir()):
+                    if not sample_dir.is_dir() or sample_dir.name.startswith("_"):
+                        logging.debug(f"Skipping file (non-dir): {sample_dir}")
+                        continue
+                    for compiler_dir in sorted(sample_dir.iterdir()):
+                        if not compiler_dir.is_dir() or compiler_dir.name.startswith("_"):
+                            logging.debug(f"Skipping file (non-dir): {compiler_dir}")
+                            continue
+                        for metric_name in metric_names:
+                            metric_csv = compiler_dir.joinpath(metric_name, f"{sample_dir.name}.{metric_name}.csv")
+                            try:
+                                with open(metric_csv, "r", encoding="utf-8", newline="") as f:
+                                    reader = csv.reader(f)
+                                    rows = [row for row in reader if any(cell.strip() for cell in row)]
+                                if len(rows) < 2:
+                                    logging.warning(f"File missing metric data: {metric_csv}")
+                                    continue
+                                header_row, data_row = rows[0], rows[1]
+                                for field, value in zip(header_row, data_row, strict=False):
+                                    if not field and not value:
+                                        continue
+                                    if field == "Program":
+                                        continue
+                                    writer.writerow([samplegroup_dir.name, sample_dir.name, compiler_dir.name, metric_name, field, value])
+                                metric_csv.unlink(missing_ok=True)
+                                try:
+                                    metric_csv.parent.rmdir()
+                                except OSError:
+                                    pass
+                            except FileNotFoundError:
+                                logging.warning(f"File not found: {metric_csv}")
+
     def aggregate(self, selected_run: Path):
         """Analyze all samples using all analyzers with all recipes.
         """
@@ -66,8 +109,13 @@ class Aggregatemodule():
         for analyzer_dir in analyzers:
             recipes: list[Path] = []
             recipes = get_enabled_directories(osage_path.joinpath(analyzer_dir), "recipes")
-            for recipe_dir in recipes:
-                logging.debug(f"Aggregating {recipe_dir.name}.")
-                self._combine_csv_files(selected_run, recipe_dir.name)
+            if analyzer_dir.name == "ghidra_metrics":
+                metric_names = [recipe_dir.name for recipe_dir in recipes]
+                logging.debug(f"Aggregating ghidra metrics recipes: {', '.join(metric_names)}.")
+                self._combine_metric_csv_files(selected_run, analyzer_dir.name, metric_names)
+            else:
+                for recipe_dir in recipes:
+                    logging.debug(f"Aggregating {recipe_dir.name}.")
+                    self._combine_csv_files(selected_run, recipe_dir.name)
 
         logging.info("Done with the aggregation.")

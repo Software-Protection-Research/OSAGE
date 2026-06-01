@@ -1,0 +1,11 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitImplicitFlow
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=AntiTaintAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AntiTaintAnalysisKinds=sysCalls
+--Transform=InitImplicitFlow
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=AntiTaintAnalysis
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

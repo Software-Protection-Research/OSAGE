@@ -1,6 +1,7 @@
 enabled:
   # - src_converter
   # - src_coreutils
+  - src_coreutils_wildcard
   # - src_crypt
   # - src_hash
   # - src_hash_file
@@ -11,4 +12,4 @@ enabled:
   # - src_sort_file
   # - src_sqlite3
   # - src_strings
-  - src_test
+  # - src_test

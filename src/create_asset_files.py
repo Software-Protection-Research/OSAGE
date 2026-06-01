@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-parent_dir = "src_test"
+parent_dir = "src_coreutils_wildcard"
 wildcard = True
 
 for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]:

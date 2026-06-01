@@ -63,7 +63,7 @@ class Analyzemodule():
                             timeout = self.config["analyzer"]["timeout"]
                             containerlist.append(Osagecontainer(
                                 containername=analyzer_dir.name,
-                                entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name} {timeout}",
+                                entrypoint=f"/bin/bash /opt/app/mapper.sh {sample_dir.name} {recipe_dir.name} {timeout}",
                                 remove=False,
                                 stop=False,
                                 detach=True,

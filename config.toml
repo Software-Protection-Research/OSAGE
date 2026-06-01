@@ -18,7 +18,7 @@ only_enabled = true
 [compiler]
 directory = "compiler"
 only_enabled = true
-timeout = 3600
+timeout = 600
 cleanup-failed-containers = true
 
 [transformer]
