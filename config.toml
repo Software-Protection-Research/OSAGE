@@ -42,3 +42,6 @@ cleanup-failed-containers = true
 #  - "stop_then_kill": send SIGTERM, wait `kill_grace_period` seconds, then SIGKILL if still running
 on_timeout = "stop_then_kill"
 kill_grace_period = 10
+
+[aggregator]
+keep_originals = false
