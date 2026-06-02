@@ -87,6 +87,8 @@ Each compiler consists of the following files:
 - ```compilername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
 - ```compilername/recipes/recipegroup/recipe001/recipe001.arg``` &#8594; Arguments to pass to the Dockercontainer to enable that recipe.
 
+Note: Compilers may declare required input files using `mandatory_files` (string or list of glob patterns) in `build/config.yaml`. The framework checks these patterns against the sample source directory (the directory mounted as `/in`) on the host and will skip scheduling the compiler container if no matches are found.
+
 ## Transformer (Transformers)
 
 Transformers work on a binary level and transform an existing sample binary into a new binary. E.g., Packing.
@@ -113,6 +115,8 @@ Each analyzer consists of the following files:
 - ```analyzername/build/analyzername.Dockerfile``` &#8594; Dockerfile to build the docker container.
 - ```analyzername/recipes/enabled.recipes.yaml``` &#8594; Which recipes to run.
 - ```analyzername/recipes/recipegroup/recipe001/recipe001.py``` &#8594; File to run inside the Dockercontainer. This file does the actual analysis.
+
+Note: Analyzers may declare required output files using `mandatory_files` (string or list of glob patterns) in `build/config.yaml`. The framework checks these patterns against the per-sample output directory (the directory mounted as `/out`) on the host and will skip scheduling the analyzer container if no matches are found.
 
 ## Tutorials
 
@@ -346,3 +350,4 @@ Change the permissions of the ```out``` folder or change the settings ```[contai
 - felpower
 - is191840
 - sschritt
+ 
