@@ -1,1 +1,2 @@
-# Reserved for future analyzer settings.
+mandatory_files:
+  - "*.out"

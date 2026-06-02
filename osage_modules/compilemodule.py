@@ -7,6 +7,9 @@ from pathlib import Path
 import logging
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
+from osage_modules.helperfunctions import has_required_files
+from osage_modules.helperfunctions import load_tool_config
+from osage_modules.helperfunctions import required_file_patterns
 from osage_modules.helperfunctions import run_containers_in_batches
 from osage_modules.helperfunctions import list_containers_and_prompt
 from osage_modules.osagecontainer import Osagecontainer
@@ -33,10 +36,17 @@ class Compilemodule():
         containerlist: list[Osagecontainer] = []
         # Create a list of all the containers we want to run
         for compiler_dir in compilers:
+            compiler_config = load_tool_config(osage_path, compiler_dir)
+            mandatory_patterns = required_file_patterns(compiler_config)
             recipes: list[Path] = []
             recipes = get_enabled_directories(osage_path.joinpath(compiler_dir), "recipes")
             for recipe_dir in recipes:
                 for sample_dir in samples:
+                    if mandatory_patterns and not has_required_files(sample_dir, mandatory_patterns):
+                        logging.info(
+                            f"Skipping compiler {compiler_dir.name} for {sample_dir.name}: missing mandatory input matching {', '.join(mandatory_patterns)}."
+                        )
+                        continue
                     result_dir = Path(
                         self.config["osage"]["out"] +
                         f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}"
@@ -64,6 +74,8 @@ class Compilemodule():
                             detach=True,
                             volumes=volumes,
                             timeout=self.config["compiler"]["timeout"],
+                            on_timeout=self.config["compiler"].get("on_timeout", "stop_then_kill"),
+                            kill_grace_period=self.config["compiler"].get("kill_grace_period", 10),
                             result_dir=result_dir,
                             sample_name=sample_dir.name,
                             user_mapping=self.config["containers"]["user_mapping"],

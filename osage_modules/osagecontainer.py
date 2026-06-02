@@ -22,6 +22,8 @@ class Osagecontainer():
         stop: bool = False,
         detach: bool = True,
         timeout: int = 60*60,
+        on_timeout: str = "stop_then_kill",
+        kill_grace_period: int = 10,
         volumes: dict[dict] = {},
         user_mapping: str = "1000:1000",
         error_message: str = None,
@@ -37,6 +39,8 @@ class Osagecontainer():
         self.result_dir = result_dir
         self.sample_name = sample_name
         self.timeout = timeout
+        self.on_timeout = on_timeout
+        self.kill_grace_period = kill_grace_period
         self.user_mapping = user_mapping
         self.error_message = error_message
 
@@ -84,6 +88,11 @@ class Osagecontainer():
         """Stops the container.
         """
         self.container.stop()
+
+    def kill_container(self):
+        """Kills the container (SIGKILL).
+        """
+        self.container.kill()
 
     def __str__(self):
         return f"Osagecontainer(containername={self.containername}, entrypoint={self.entrypoint},...)"

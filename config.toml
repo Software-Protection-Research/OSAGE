@@ -4,7 +4,7 @@ log = "osage.log"
 interactive_mode = false
 
 [containers]
-number_of_concurrent_containers = 8
+number_of_concurrent_containers = 32
 user_mapping = "root"
 # user_mapping = "1000:1000"
 
@@ -20,6 +20,12 @@ directory = "compiler"
 only_enabled = true
 timeout = 600
 cleanup-failed-containers = true
+# What to do when a container exceeds the timeout. Options:
+#  - "stop": send SIGTERM (docker stop)
+#  - "kill": send SIGKILL immediately
+#  - "stop_then_kill": send SIGTERM, wait `kill_grace_period` seconds, then SIGKILL if still running
+on_timeout = "stop_then_kill"
+kill_grace_period = 10
 
 [transformer]
 directory = "transformer"
@@ -28,5 +34,11 @@ only_enabled = true
 [analyzer]
 directory = "analyzer"
 only_enabled = true
-timeout = 3600
-cleanup-failed-containers = false
+timeout = 600
+cleanup-failed-containers = true
+# What to do when a container exceeds the timeout. Options:
+#  - "stop": send SIGTERM (docker stop)
+#  - "kill": send SIGKILL immediately
+#  - "stop_then_kill": send SIGTERM, wait `kill_grace_period` seconds, then SIGKILL if still running
+on_timeout = "stop_then_kill"
+kill_grace_period = 10

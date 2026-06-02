@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 import yaml
 import docker
+import time
 from tqdm import tqdm
 from osage_modules.osagecontainer import Osagecontainer
 
@@ -42,12 +43,75 @@ def get_enabled_directories(startpath: Path, directory: str, only_enabled: bool 
     return dirs
 
 
+def load_tool_config(startpath: Path, tool_directory: Path) -> dict:
+    """Load an analyzer/compiler-local build config if present."""
+    config_path = Path(startpath).joinpath(tool_directory, "build", "config.yaml")
+    if not config_path.is_file():
+        return {}
+    with open(config_path, "r", encoding="utf-8") as config_file:
+        config = yaml.safe_load(config_file) or {}
+    return config if isinstance(config, dict) else {}
+
+
+def required_file_patterns(tool_config: dict) -> list[str]:
+    """Normalize required file patterns from either a single string or a list."""
+    mandatory_files = tool_config.get("mandatory_files")
+    if isinstance(mandatory_files, str):
+        return [mandatory_files]
+    if isinstance(mandatory_files, list):
+        return [pattern for pattern in mandatory_files if isinstance(pattern, str) and pattern]
+
+    mandatory_file = tool_config.get("mandatory_file")
+    if isinstance(mandatory_file, str) and mandatory_file:
+        return [mandatory_file]
+    return []
+
+
+def has_required_files(directory: Path, required_patterns: list[str]) -> bool:
+    """Return True when every glob pattern matches at least one file in a directory."""
+    for required_pattern in required_patterns:
+        matches = [candidate for candidate in directory.glob(required_pattern) if candidate.is_file()]
+        if not matches:
+            return False
+    return True
+
+
 def _wait_for_container_to_finish(running_container: Osagecontainer, flag_queue: queue.Queue):
     try:
         running_container.wait_until_done()
     except Exception as e:
         logging.error(f"Container {running_container} crashed or timed out: {e}")
         running_container.error_message = str(e)
+        # On timeout, take action according to the container's configured strategy
+        try:
+            if running_container.is_running():
+                strategy = getattr(running_container, "on_timeout", "stop_then_kill")
+                grace = getattr(running_container, "kill_grace_period", 10)
+                if strategy == "kill":
+                    try:
+                        running_container.kill_container()
+                    except Exception as ex:
+                        logging.error(f"Failed to kill container {running_container}: {ex}")
+                elif strategy == "stop":
+                    try:
+                        running_container.stop_container()
+                    except Exception as ex:
+                        logging.error(f"Failed to stop container {running_container}: {ex}")
+                else:  # stop_then_kill
+                    try:
+                        running_container.stop_container()
+                    except Exception as ex:
+                        logging.error(f"Failed to stop container {running_container}: {ex}")
+                    # wait grace period then force kill if still running
+                    try:
+                        time.sleep(grace)
+                        running_container.refresh()
+                        if running_container.is_running():
+                            running_container.kill_container()
+                    except Exception as ex:
+                        logging.error(f"Failed to kill container {running_container} after grace period: {ex}")
+        except Exception as stop_error:
+            logging.error(f"Failed to handle timeout for container {running_container}: {stop_error}")
     finally:
         flag_queue.put(running_container)
 

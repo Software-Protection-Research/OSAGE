@@ -7,6 +7,9 @@ from pathlib import Path
 import logging
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
+from osage_modules.helperfunctions import has_required_files
+from osage_modules.helperfunctions import load_tool_config
+from osage_modules.helperfunctions import required_file_patterns
 from osage_modules.helperfunctions import run_containers_in_batches
 from osage_modules.helperfunctions import list_containers_and_prompt
 from osage_modules.osagecontainer import Osagecontainer
@@ -29,6 +32,8 @@ class Analyzemodule():
 
         containerlist: list[Osagecontainer] = []
         for analyzer_dir in analyzers:
+            analyzer_config = load_tool_config(osage_path, analyzer_dir)
+            mandatory_patterns = required_file_patterns(analyzer_config)
             recipes: list[Path] = []
             recipes = get_enabled_directories(osage_path.joinpath(analyzer_dir), "recipes")
             for recipe_dir in recipes:
@@ -48,6 +53,12 @@ class Analyzemodule():
                         for out_compiler_dir in sample_dir.iterdir():
                             if not out_compiler_dir.is_dir() or out_compiler_dir.name.startswith("_"):
                                 logging.debug(f"Skipping file (non-dir): {out_compiler_dir}")
+                                continue
+                            if mandatory_patterns and not has_required_files(out_compiler_dir, mandatory_patterns):
+                                logging.info(
+                                    f"Skipping analyzer {analyzer_dir.name} for {sample_dir.name} in {out_compiler_dir.name}: "
+                                    f"missing mandatory output matching {', '.join(mandatory_patterns)}."
+                                )
                                 continue
                             logging.debug(f"Adding analyzer {analyzer_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name}.")
                             logging.debug(f"Mapping for the analyzer: /in -> {in_sample_dir} | /out -> {out_compiler_dir} | /recipe -> {recipe_dir}.")
@@ -69,6 +80,8 @@ class Analyzemodule():
                                 detach=True,
                                 volumes=volumes,
                                 timeout=timeout,
+                                on_timeout=self.config["analyzer"].get("on_timeout", "stop_then_kill"),
+                                kill_grace_period=self.config["analyzer"].get("kill_grace_period", 10),
                                 sample_name=sample_dir.name,
                                 result_dir=result_dir,
                                 user_mapping=self.config["containers"]["user_mapping"],
