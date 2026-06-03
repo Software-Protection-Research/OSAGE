@@ -1,0 +1,5 @@
+--Transform=Virtualize
+    --VirtualizeDispatch=switch
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Ident
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

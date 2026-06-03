@@ -1,0 +1,25 @@
+--Transform=InitEntropy
+    --InitEntropyKinds=vars
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --InitOpaqueStructs=list,array,env 
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=InitBranchFuns
+    --InitBranchFunsCount=1
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=AddOpaque
+    --AddOpaqueStructs=list
+    --AddOpaqueKinds=true
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=AntiBranchAnalysis
+    --AntiBranchAnalysisKinds=branchFuns
+    --AntiBranchAnalysisObfuscateBranchFunCall=false
+    --AntiBranchAnalysisBranchFunFlatten=true
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=EncodeArithmetic
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+
+--Transform=SelfModify
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=comparisons
+    --SelfModifyStyle=stack

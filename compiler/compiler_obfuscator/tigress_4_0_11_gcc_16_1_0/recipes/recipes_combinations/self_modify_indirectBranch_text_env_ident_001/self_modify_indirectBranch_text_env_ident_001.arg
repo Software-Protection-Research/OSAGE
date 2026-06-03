@@ -1,0 +1,12 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=env
+--Transform=SelfModify
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=indirectBranch
+    --SelfModifyStyle=text
+
+--Transform=Ident
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

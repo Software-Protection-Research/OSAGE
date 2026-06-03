@@ -1,0 +1,5 @@
+--Transform=Flatten
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --FlattenDispatch=switch
+--Transform=EncodeArithmetic
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

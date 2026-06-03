@@ -1,0 +1,5 @@
+--Transform=Flatten
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --FlattenDispatch=indirect
+--Transform=Ident
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

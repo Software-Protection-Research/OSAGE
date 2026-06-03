@@ -1,0 +1,5 @@
+--Transform=Ident
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Virtualize
+    --VirtualizeDispatch=binary
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

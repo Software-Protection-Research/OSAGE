@@ -1,0 +1,9 @@
+--Transform=Flatten
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --FlattenDispatch=goto
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=indirect
+    --MergeConditionalKinds=flag

@@ -1,0 +1,9 @@
+--Transform=Virtualize
+    --VirtualizeDispatch=linear
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=list
+    --MergeFlattenDispatch=switch
+    --MergeConditionalKinds=branch

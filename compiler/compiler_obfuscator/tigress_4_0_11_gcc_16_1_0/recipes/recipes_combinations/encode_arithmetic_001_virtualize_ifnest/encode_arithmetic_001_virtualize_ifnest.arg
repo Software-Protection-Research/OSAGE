@@ -1,0 +1,5 @@
+--Transform=EncodeArithmetic
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=Virtualize
+    --VirtualizeDispatch=ifnest
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

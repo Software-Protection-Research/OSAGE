@@ -1,0 +1,16 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=env
+--Transform=AddOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AddOpaqueKinds=bug
+    --AddOpaqueStructs=env
+
+--Transform=Merge
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --MergeOpaqueStructs=array
+    --MergeFlattenDispatch=indirect
+    --MergeConditionalKinds=compute

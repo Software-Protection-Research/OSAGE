@@ -1,0 +1,19 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=env
+--Transform=AddOpaque
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --AddOpaqueKinds=question
+    --AddOpaqueStructs=env
+
+--Transform=Virtualize
+    --Skip=false
+    --VirtualizeDispatch=ifnest
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+--Transform=SelfModify
+    --Skip=false
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifySubExpressions=false
+    --SelfModifyBogusInstructions=10

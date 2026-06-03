@@ -1,0 +1,12 @@
+enabled:
+  # - recipes_add_opaque
+  # - recipes_anti_alias_analysis
+  # - recipes_anti_taint_analysis
+  # - recipes_encode_branches
+  # - recipes_flatten
+  # - recipes_self_modify
+  # - recipes_virtualize
+  # - recipes_not_working
+  # - recipes_ident
+  # - recipes_layering
+  # - recipes_jit

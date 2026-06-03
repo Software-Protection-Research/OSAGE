@@ -1,0 +1,13 @@
+--Transform=InitEntropy
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=InitOpaque
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitOpaqueStructs=list
+--Transform=SelfModify
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=arithmetic
+    --SelfModifyStyle=text
+
+--Transform=SelfModify
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --SelfModifyKinds=comparisons
