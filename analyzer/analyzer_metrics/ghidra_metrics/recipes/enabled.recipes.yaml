@@ -2,3 +2,4 @@ enabled:
   - ghidra_metrics/mccabe
   - ghidra_metrics/entropy
   - ghidra_metrics/halstead
+  - ghidra_metrics/all_metrics

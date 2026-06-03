@@ -3,7 +3,6 @@ enabled:
   - recipes_anti_alias_analysis
   - recipes_anti_taint_analysis
   - recipes_combinations
-  - recipes_encode_arithmetic
   - recipes_encode_branches
   - recipes_encode_literals
   - recipes_flatten
