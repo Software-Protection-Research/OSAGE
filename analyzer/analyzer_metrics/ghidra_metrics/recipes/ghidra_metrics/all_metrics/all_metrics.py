@@ -23,21 +23,21 @@ METRICS = [
 ]
 
 
-def run_headless(sample_out: Path, project_dir: Path, project_name: str, script_name: str, csv_path: Path) -> None:
+def run_headless(sample_out: Path, project_dir: Path, project_name: str, script_params: dict(str, tuple(str, str))) -> None:
     command = [
         "analyzeHeadless",
         str(project_dir),
         project_name,
         "-deleteproject",
-        "-scriptpath",
-        "/recipe/",
-        "-postscript",
-        script_name,
-        "--csv-export",
-        str(csv_path),
         "-import",
         str(sample_out),
     ]
+    for script_name, csv_path in script_params.values():
+        command.append("-postscript")
+        command.append(script_name)
+        command.append("--csv-export")
+        command.append(csv_path)
+
     subprocess.run(command, check=True)
 
 
@@ -57,19 +57,17 @@ def read_metric_rows(path: Path) -> list[list[str]]:
 
 
 def write_aggregate_csv(result_dir: Path, sample_name: str, rows_by_metric: list[tuple[str, list[list[str]]]]) -> None:
-    aggregate_output = result_dir / f"{sample_name}.ghidra_metrics.csv"
+    aggregate_output = result_dir / f"{sample_name}.all_metrics.csv"
+    print("output file: " + str(aggregate_output))
     with aggregate_output.open("w", encoding="utf-8", newline="") as aggregate_file:
         writer = csv.writer(aggregate_file)
-        writer.writerow(["metric", "field", "value"])
-
-        for metric_name, rows in rows_by_metric:
-            header_row, data_row = rows[0], rows[1]
-            for field, value in zip(header_row, data_row, strict=False):
-                if not field and not value:
-                    continue
-                if field == "Program":
-                    continue
-                writer.writerow([metric_name, field, value])
+        header = []
+        data = []
+        for metric, rows in rows_by_metric:
+            header.extend(rows[0][1:])
+            data.extend(rows[1][1:])
+        writer.writerow(header)
+        writer.writerow(data)
 
 
 def main() -> int:
@@ -92,17 +90,21 @@ def main() -> int:
     with tempfile.TemporaryDirectory(prefix="ghidra_metrics_") as temp_dir_name:
         temp_dir = Path(temp_dir_name)
         rows_by_metric: list[tuple[str, list[list[str]]]] = []
+
+        project_dir = temp_dir / "project_dir"
+        project_dir.mkdir(parents=True, exist_ok=True)
+        project_name = f"{sample_name}_project"
+        script_params = {}
+
         for metric_name, script_name in METRICS:
             metric_csv = temp_dir / f"{metric_name}.csv"
-            project_dir = temp_dir / f"{metric_name}_project"
-            project_dir.mkdir(parents=True, exist_ok=True)
-            project_name = f"{sample_name}_{metric_name}"
+            script_params[metric_name] = (script_name, metric_csv)
 
-            run_headless(sample_out, project_dir, project_name, script_name, metric_csv)
+        run_headless(sample_out, project_dir, project_name, script_params)
 
-            metric_rows = read_metric_rows(metric_csv)
+        for metric_name, _ in METRICS:
+            metric_rows = read_metric_rows(script_params[metric_name][1])
             rows_by_metric.append((metric_name, metric_rows))
-
         write_aggregate_csv(result_dir, sample_name, rows_by_metric)
 
     return 0
