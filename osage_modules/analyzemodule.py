@@ -4,6 +4,7 @@
     authors: cooki35, felpower
 """
 from pathlib import Path
+from collections import Counter
 import logging
 import docker
 from osage_modules.helperfunctions import get_enabled_directories
@@ -24,13 +25,14 @@ class Analyzemodule():
         self.config = pconfig
         self.docker_client = docker.from_env()
 
-    def make_analyzer_container_list(self, selected_run: Path) -> list[Osagecontainer]:
+    def make_analyzer_container_list(self, selected_run: Path) -> tuple[list[Osagecontainer], Counter[tuple[str, ...]]]:
         """Analyzes all .out and .c files in the run folder with all analyzers and recipes."""
         osage_path = Path(self.config["osage"]["directory"])
         run_dir = osage_path / selected_run
         analyzers = get_enabled_directories(osage_path, "analyzer", only_enabled=self.config["analyzer"]["only_enabled"])
 
         containerlist: list[Osagecontainer] = []
+        skipped_by_mandatory_patterns: Counter[tuple[str, ...]] = Counter()
         for analyzer_dir in analyzers:
             analyzer_config = load_tool_config(osage_path, analyzer_dir)
             mandatory_patterns = required_file_patterns(analyzer_config)
@@ -55,7 +57,8 @@ class Analyzemodule():
                                 logging.debug(f"Skipping file (non-dir): {out_compiler_dir}")
                                 continue
                             if mandatory_patterns and not has_required_files(out_compiler_dir, mandatory_patterns):
-                                logging.info(
+                                skipped_by_mandatory_patterns[tuple(mandatory_patterns)] += 1
+                                logging.debug(
                                     f"Skipping analyzer {analyzer_dir.name} for {sample_dir.name} in {out_compiler_dir.name}: "
                                     f"missing mandatory output matching {', '.join(mandatory_patterns)}."
                                 )
@@ -86,12 +89,12 @@ class Analyzemodule():
                                 result_dir=result_dir,
                                 user_mapping=self.config["containers"]["user_mapping"],
                             ))
-        return containerlist
+        return containerlist, skipped_by_mandatory_patterns
 
     def analyze(self, selected_run: Path):
         """Analyze all samples using all analyzers with all recipes.
         """
-        containerlist: list[Osagecontainer] = self.make_analyzer_container_list(selected_run)
+        containerlist, skipped_by_mandatory_patterns = self.make_analyzer_container_list(selected_run)
 
         # If we are in interactive mode, let the user check the list.
         if self.config["osage"]["interactive_mode"]:
@@ -99,6 +102,10 @@ class Analyzemodule():
                 logging.error("Action aborted by user!")
                 return
 
+        for mandatory_patterns, skipped_count in sorted(skipped_by_mandatory_patterns.items()):
+            logging.info(
+                f"Skipping the analysis of {skipped_count} containers due to missing mandatory output matching {', '.join(mandatory_patterns)}."
+            )
         logging.info(f"Starting the analysis of {len(containerlist)} containers...")
         # Run the containers in batches
         try:
