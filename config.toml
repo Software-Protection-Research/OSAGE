@@ -44,4 +44,4 @@ on_timeout = "stop_then_kill"
 kill_grace_period = 10
 
 [aggregator]
-keep_originals = false
+keep_originals = true

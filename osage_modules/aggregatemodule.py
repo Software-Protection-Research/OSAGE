@@ -17,7 +17,9 @@ class Aggregatemodule():
     def __init__(self, pconfig):
         self.config = pconfig
 
-    def _combine_csv_files(self, run_dir: Path, analysis_name: str):
+    def _combine_csv_files(self, run_dir: Path, analysis_name: str) -> tuple[int, int]:
+        aggregated_files = 0
+        missing_files = 0
         with open(run_dir.joinpath(f"_aggregated/{analysis_name}.csv"), "w", encoding="utf-8") as fout:
             first_csv = True
             for samplegroup_dir in sorted(run_dir.iterdir()):
@@ -49,10 +51,16 @@ class Aggregatemodule():
                                     fout.write(f"{samplegroup_dir.name},{sample_dir.name},{compiler_dir.name},")
                                     fout.write(line)
                                     # fout.write("\n")
+                                aggregated_files += 1
                         except FileNotFoundError:
-                            logging.warning(f"File not found: {compiler_dir.joinpath(analysis_name).joinpath(f'{sample_dir.name}.{analysis_name}.csv')}")
+                            missing_files += 1
+                            logging.debug(f"File not found: {compiler_dir.joinpath(analysis_name).joinpath(f'{sample_dir.name}.{analysis_name}.csv')}")
+        logging.info(f"Aggregated {aggregated_files} files for {analysis_name}; {missing_files} files were not found.")
+        return aggregated_files, missing_files
 
-    def _combine_metric_csv_files(self, run_dir: Path, analyzer_name: str, metric_names: list[str], keep_originals: bool):
+    def _combine_metric_csv_files(self, run_dir: Path, analyzer_name: str, metric_names: list[str], keep_originals: bool) -> tuple[int, int]:
+        aggregated_files = 0
+        missing_files = 0
         aggregate_path = run_dir.joinpath(f"_aggregated/{analyzer_name}.csv")
         with open(aggregate_path, "w", encoding="utf-8", newline="") as fout:
             writer = csv.writer(fout)
@@ -77,7 +85,7 @@ class Aggregatemodule():
                                     reader = csv.reader(f)
                                     rows = [row for row in reader if any(cell.strip() for cell in row)]
                                 if len(rows) < 2:
-                                    logging.warning(f"File missing metric data: {metric_csv}")
+                                    logging.debug(f"File missing metric data: {metric_csv}")
                                     continue
                                 header_row, data_row = rows[0], rows[1]
                                 for field, value in zip(header_row, data_row, strict=False):
@@ -92,8 +100,12 @@ class Aggregatemodule():
                                         metric_csv.parent.rmdir()
                                     except OSError:
                                         pass
+                                aggregated_files += 1
                             except FileNotFoundError:
-                                logging.warning(f"File not found: {metric_csv}")
+                                missing_files += 1
+                                logging.debug(f"File not found: {metric_csv}")
+        logging.info(f"Aggregated {aggregated_files} files for {analyzer_name}; {missing_files} files were not found.")
+        return aggregated_files, missing_files
 
     def aggregate(self, selected_run: Path):
         """Analyze all samples using all analyzers with all recipes.
