@@ -11,3 +11,7 @@ do_not_commit/
 osage.log*
 logs/
 /addons/tigress_merger/merged_output/
+filesender.py
+/filesender
+/paper
+/scripts

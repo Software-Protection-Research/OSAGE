@@ -3,6 +3,7 @@ import subprocess
 
 parent_dir = "src_coreutils_wildcard"
 wildcard = True
+include_all=False
 
 for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]:
     print(f"Processing subdirectory: {subdir}")
@@ -29,13 +30,19 @@ for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(p
         source_lines = cf.readlines()
 
     func_names = []
+    exclude_functions= []
+    if include_all:
+        func_names.append("100%")
     for line in func_lines:
         parts = line.split()
         if len(parts) >= 3:
             name = parts[0]
             line_number = int(parts[2]) - 1  # ctags line numbers are 1-based
             # Check for 'inline' in the function definition line
-            if 'inline' not in source_lines[line_number]:
+            if include_all:
+                if 'inline' in source_lines[line_number]:
+                    exclude_functions.append(name)
+            if 'inline' not in source_lines[line_number] and not include_all:
                 func_names.append(name)
 
     assets_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.functions.txt")
@@ -45,15 +52,19 @@ for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(p
                 f.write('/.*' + name + '.*/\n')
             else:
                 f.write(name + '\n')
-
+                
+    exclude_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.excludes.txt")
+    with open(exclude_path, 'w', encoding='utf-8') as f:
+        for name in exclude_functions:
+            f.write(name + '\n')
+            
     backdoor_path = os.path.join(subdir_path, f"{subdir}.metadata.backdoor.toml")
     with open(backdoor_path, 'w', encoding='utf-8') as f:
         f.write('[backdoor]\nargument = "replace_me_with_future_backdoor"\n')
 
     options_path = os.path.join(subdir_path, f"{subdir}.metadata.options.txt")
     with open(options_path, 'w', encoding='utf-8') as f:
-        f.write('/global_imports/libver.a /global_imports/libcoreutils.a -ldl')
-
+        f.write('/global_imports/libver.a /global_imports/libcoreutils.a -Wl,--unresolved-symbols=ignore-in-object-files -Wno-error=incompatible-pointer-types -Wno-error=int-conversion -ldl')
     testcases_path = os.path.join(subdir_path, f"{subdir}.metadata.testcases.toml")
     with open(testcases_path, 'w', encoding='utf-8') as f:
         f.write('[testcase]')

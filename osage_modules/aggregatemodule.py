@@ -94,12 +94,6 @@ class Aggregatemodule():
                                     if field == "Program":
                                         continue
                                     writer.writerow([samplegroup_dir.name, sample_dir.name, compiler_dir.name, metric_name, field, value])
-                                if not keep_originals:
-                                    metric_csv.unlink(missing_ok=True)
-                                    try:
-                                        metric_csv.parent.rmdir()
-                                    except OSError:
-                                        pass
                                 aggregated_files += 1
                             except FileNotFoundError:
                                 missing_files += 1
