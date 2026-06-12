@@ -1,12 +1,12 @@
 --Transform=InitEntropy
     --InitEntropyKinds=vars
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=InitOpaque
     --InitOpaqueStructs=list,array,env 
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=InitBranchFuns
     --InitBranchFunsCount=1
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
 --Transform=AddOpaque
     --AddOpaqueStructs=list
     --AddOpaqueKinds=true

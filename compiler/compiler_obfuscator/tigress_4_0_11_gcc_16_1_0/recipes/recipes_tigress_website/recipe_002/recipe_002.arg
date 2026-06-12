@@ -1,8 +1,8 @@
 --Transform=InitEntropy
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
     --InitEntropyKinds=vars
 --Transform=InitOpaque
-    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
     --InitOpaqueStructs=list,array,env 
 --Transform=Virtualize
     --Skip=false

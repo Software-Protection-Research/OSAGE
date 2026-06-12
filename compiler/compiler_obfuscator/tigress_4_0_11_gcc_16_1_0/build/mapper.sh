@@ -95,6 +95,20 @@ if [ "$do_compile" = "true" ]; then
     # We want the splitting for the options (opts) -> make shellcheck ignore it.
     # shellcheck disable=SC2086
     gcc -o "/out/${sample}.out" "/out/${sample}.c" ${opts}
+    check_segfault=$(yq '.check_segfault' config.yaml)
+    if [ "$check_segfault" = "true" ]; then
+        echo "Checking for segmentation faults with timeout of 3 seconds."
+        timeout 3 "/out/${sample}.out" > /dev/null 2>&1
+        if [ $? -eq 139 ]; then
+            echo "The program crashed with a segmentation fault. Removing the output file."
+            rm -f "/out/${sample}.out"
+        else
+            echo "The program did not crash with a segmentation fault."
+        fi
+
+    else
+        echo "Not checking for segmentation faults, because check_segfault is set to false in the config.yaml."
+    fi
 else
     echo "Not going to compile, because do_compile is set to false in the config.yaml."
 fi
