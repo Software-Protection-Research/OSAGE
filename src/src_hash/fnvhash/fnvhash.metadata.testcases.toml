@@ -1,1 +1,44 @@
-[testcase]
+[testcase_001]
+    arguments = ["a",]
+    stdout = "Result: 0x61\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["hello",]
+    stdout = "Result: 0x1ec04c0e\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["world",]
+    stdout = "Result: 0x44c3b006\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["foo",]
+    stdout = "Result: 0xfbf9c67a\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["bar",]
+    stdout = "Result: 0x523d8005\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["12345",]
+    stdout = "Result: 0xb7aeeb81\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["Hello, World!",]
+    stdout = "Result: 0x933c6f1d\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["coreutils",]
+    stdout = "Result: 0xa2c60fac\n"
+    exit_code = 0
+
+[testcase_invalid_no_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2
