@@ -47,3 +47,6 @@ make merge |& tee merge.log
 # Copy merged files and log to /out
 cp merge.log /out/
 cp src/*.merge.c /out/
+mkdir -p /out/_global_imports
+cp src/libver.a /out/_global_imports/
+cp lib/libcoreutils.a /out/_global_imports/
