@@ -27,6 +27,18 @@ class Compilemodule():
     def make_compiler_container_list(self) -> list[Osagecontainer]:
         """Create a list of all containers we want to start.
         """
+        def _normalize_optimization_levels(tool_config: dict) -> list[str | None]:
+            configured_levels = tool_config.get("optimization_levels")
+            if not isinstance(configured_levels, list):
+                return [None]
+
+            normalized_levels: list[str] = []
+            for level in configured_levels:
+                if isinstance(level, str) and level.strip():
+                    normalized_levels.append(level.strip())
+
+            return normalized_levels or [None]
+
         osage_path = Path(self.config["osage"]["directory"])
         samples: list[Path] = []
         samples = get_enabled_directories(osage_path, "src", only_enabled=self.config["src"]["only_enabled"])
@@ -47,41 +59,51 @@ class Compilemodule():
                             f"Skipping compiler {compiler_dir.name} for {sample_dir.name}: missing mandatory input matching {', '.join(mandatory_patterns)}."
                         )
                         continue
-                    result_dir = Path(
-                        self.config["osage"]["out"] +
-                        f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}"
-                    ).absolute()
-                    result_dir.mkdir(parents=True)
                     global_imports_dir = sample_dir.parent.joinpath("_global_imports")
-                    try:
-                        logging.debug(f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name} to list.")
-                        # logging.debug(f"Would map '{osage_path.joinpath(compiler_dir)}/build/mapper.sh' -> /opt/app/mapper.sh")
-                        volumes = {
-                                sample_dir: {"bind": "/in", "mode": "ro"},
-                                recipe_dir: {"bind": "/recipe", "mode": "ro"},
-                                result_dir: {"bind": "/out", "mode": "rw"},
-                                f"{osage_path.joinpath(compiler_dir)}/build/mapper.sh": {"bind": "/opt/app/mapper.sh", "mode": "ro"},
-                                f"{osage_path.joinpath(compiler_dir)}/build/config.yaml": {"bind": "/opt/app/config.yaml", "mode": "ro"},
-                            }
-                        if global_imports_dir.exists():
-                            volumes[global_imports_dir] = {"bind": "/global_imports", "mode": "ro"}
-                        containerlist.append(Osagecontainer(
-                            containername=compiler_dir.name,
-                            entrypoint=f"./mapper.sh {sample_dir.name} {recipe_dir.name}",
-                            auto_remove=False,
-                            remove=False,
-                            stop=False,
-                            detach=True,
-                            volumes=volumes,
-                            timeout=self.config["compiler"]["timeout"],
-                            on_timeout=self.config["compiler"].get("on_timeout", "stop_then_kill"),
-                            kill_grace_period=self.config["compiler"].get("kill_grace_period", 10),
-                            result_dir=result_dir,
-                            sample_name=sample_dir.name,
-                            user_mapping=self.config["containers"]["user_mapping"],
-                        ))
-                    except docker.errors.ImageNotFound as e:
-                        logging.error(f"Could not find image {e}")
+                    for optimization_level in _normalize_optimization_levels(compiler_config):
+                        optimization_suffix = f"-{optimization_level}" if optimization_level else ""
+                        result_dir = Path(
+                            self.config["osage"]["out"] +
+                            f"/run_{self.config['osage']['run_timestamp']}/{sample_dir.parent.name}/{sample_dir.name}/{compiler_dir.name}-{recipe_dir.name}{optimization_suffix}"
+                        ).absolute()
+                        result_dir.mkdir(parents=True)
+                        try:
+                            logging.debug(
+                                f"Adding compiler {compiler_dir.name} with recipe {recipe_dir.name} on sample {sample_dir.name}"
+                                f"{f' and optimization level {optimization_level}' if optimization_level else ''} to list."
+                            )
+                            # logging.debug(f"Would map '{osage_path.joinpath(compiler_dir)}/build/mapper.sh' -> /opt/app/mapper.sh")
+                            volumes = {
+                                    sample_dir: {"bind": "/in", "mode": "ro"},
+                                    recipe_dir: {"bind": "/recipe", "mode": "ro"},
+                                    result_dir: {"bind": "/out", "mode": "rw"},
+                                    f"{osage_path.joinpath(compiler_dir)}/build/mapper.sh": {"bind": "/opt/app/mapper.sh", "mode": "ro"},
+                                    f"{osage_path.joinpath(compiler_dir)}/build/config.yaml": {"bind": "/opt/app/config.yaml", "mode": "ro"},
+                                }
+                            if global_imports_dir.exists():
+                                volumes[global_imports_dir] = {"bind": "/global_imports", "mode": "ro"}
+
+                            entrypoint = f"./mapper.sh {sample_dir.name} {recipe_dir.name}"
+                            if optimization_level:
+                                entrypoint += f" {optimization_level}"
+
+                            containerlist.append(Osagecontainer(
+                                containername=compiler_dir.name,
+                                entrypoint=entrypoint,
+                                auto_remove=False,
+                                remove=False,
+                                stop=False,
+                                detach=True,
+                                volumes=volumes,
+                                timeout=self.config["compiler"]["timeout"],
+                                on_timeout=self.config["compiler"].get("on_timeout", "stop_then_kill"),
+                                kill_grace_period=self.config["compiler"].get("kill_grace_period", 10),
+                                result_dir=result_dir,
+                                sample_name=sample_dir.name,
+                                user_mapping=self.config["containers"]["user_mapping"],
+                            ))
+                        except docker.errors.ImageNotFound as e:
+                            logging.error(f"Could not find image {e}")
         return containerlist
 
     def compile(self):
