@@ -1,5 +1,4 @@
-FROM python:3.13.5
-
+FROM python:3.14.6-trixie
 COPY ./ /opt/app/
 RUN cd /opt/app/; \
     pip install filetype;

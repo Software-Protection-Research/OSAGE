@@ -1,4 +1,4 @@
-FROM python:3.13.5
+FROM python:3.14.6-trixie
 
 COPY ./ /opt/app/
 RUN cd /opt/app/; \
@@ -6,7 +6,7 @@ RUN cd /opt/app/; \
     apt update -y -q; \
     apt install -y -q \
         libc6:i386 \
-        libncurses5:i386 \
+        libncurses6:i386 \
         libstdc++6:i386 \
         gcc-multilib \
         libc6-dev-i386 \
