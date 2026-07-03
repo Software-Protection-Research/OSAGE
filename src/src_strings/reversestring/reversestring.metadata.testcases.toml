@@ -1,9 +1,39 @@
-[testcase001]
-    arguments = ["listen"]
+[testcase_001]
+    arguments = ["listen",]
     stdout = "Result: netsil\n"
     exit_code = 0
 
-[testcase002]
-    arguments = ["hello"]
+[testcase_002]
+    arguments = ["hello",]
     stdout = "Result: olleh\n"
     exit_code = 0
+
+[testcase_003]
+    arguments = ["abc",]
+    stdout = "Result: cba\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["racecar",]
+    stdout = "Result: racecar\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["12345",]
+    stdout = "Result: 54321\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["OpenAI",]
+    stdout = "Result: IAnepO\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["Hello, World!",]
+    stdout = "Result: !dlroW ,olleH\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

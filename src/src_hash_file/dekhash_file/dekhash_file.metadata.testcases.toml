@@ -1,1 +1,53 @@
-[testcase]
+# This program reads its input from the FILE named by argv[1].
+# The current in/out test harness passes argv/stdin only (it cannot create a
+# file from `filecontent`), so the content-driven cases are kept commented out
+# below with their correct expected output. The active cases need no file content.
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2
+
+[testcase_missing_file]
+    arguments = ["/nonexistent_osage_file",]
+    stdout = ""
+    exit_code = 1
+
+[testcase_file_argument]
+    # Run-only: hashes a real file; output is content-dependent so it is not checked.
+    arguments = ["/etc/hostname",]
+    stdout_capture = false
+    stdout = "You did NOT want this."
+    exit_code = 0
+
+# TODO: enable the following once the harness can materialise a file from `filecontent`.
+# [testcase_content_001]
+#     arguments = ["<filename>",]
+#     filecontent = "hello\n"
+#     stdout = "Result: 0x5667bdeb\n"
+#     exit_code = 0
+# [testcase_content_002]
+#     arguments = ["<filename>",]
+#     filecontent = "Work with this please!\nThanks!"
+#     stdout = "Result: 0x69492549\n"
+#     exit_code = 0
+# [testcase_content_003]
+#     arguments = ["<filename>",]
+#     filecontent = "12345\n"
+#     stdout = "Result: 0xe13956ab\n"
+#     exit_code = 0
+# [testcase_content_004]
+#     arguments = ["<filename>",]
+#     filecontent = "abc\n"
+#     stdout = "Result: 0x71046a\n"
+#     exit_code = 0
+# [testcase_content_005]
+#     arguments = ["<filename>",]
+#     filecontent = "coreutils\n"
+#     stdout = "Result: 0xad5132e3\n"
+#     exit_code = 0
+# [testcase_content_006]
+#     arguments = ["<filename>",]
+#     filecontent = "OpenAI\n"
+#     stdout = "Result: 0x26660d01\n"
+#     exit_code = 0

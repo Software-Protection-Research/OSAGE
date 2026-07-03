@@ -1,9 +1,39 @@
-[testcase001]
+[testcase_001]
     arguments = ["listen", "silent",]
     stdout = "Result: 0x0\n"
     exit_code = 0
 
-[testcase002]
-    arguments = ["listen", "hello",]
+[testcase_002]
+    arguments = ["hello", "world",]
     stdout = "Result: 0x1\n"
     exit_code = 1
+
+[testcase_003]
+    arguments = ["evil", "vile",]
+    stdout = "Result: 0x0\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["abc", "abc",]
+    stdout = "Result: 0x0\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["dog", "cat",]
+    stdout = "Result: 0x1\n"
+    exit_code = 1
+
+[testcase_006]
+    arguments = ["night", "thing",]
+    stdout = "Result: 0x0\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["abc", "abcd",]
+    stdout = "Result: 0x1\n"
+    exit_code = 1
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

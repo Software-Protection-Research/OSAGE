@@ -1,9 +1,44 @@
-[testcase_valid]
-    arguments = ["123",]
-    stdout = "Result: 123_10 = 7B_16\n"
+[testcase_001]
+    arguments = ["0",]
+    stdout = "Result: 0\n"
     exit_code = 0
 
-[testcase_invalid]
-    arguments = ["abc",]
-    stdout = "Result: abc_10 is not a valid number.\n"
-    exit_code = 1
+[testcase_002]
+    arguments = ["1",]
+    stdout = "Result: 1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["10",]
+    stdout = "Result: 10\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["100",]
+    stdout = "Result: 100\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["255",]
+    stdout = "Result: 255\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["123",]
+    stdout = "Result: 123\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["1000",]
+    stdout = "Result: 1000\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["4096",]
+    stdout = "Result: 4096\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

@@ -1,9 +1,44 @@
-[testcase_valid]
-    arguments = ["373.15",]
-    stdout = "Result: 373.15°K = 212°F\n"
+[testcase_001]
+    arguments = ["0",]
+    stdout = "Result: 0xfffffe35\n"
     exit_code = 0
 
-[testcase_invalid]
-    arguments = ["abc",]
-    stdout = "Result: abc_2 is not a valid number.\n"
-    exit_code = 1
+[testcase_002]
+    arguments = ["100",]
+    stdout = "Result: 0xfffffee9\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["273",]
+    stdout = "Result: 0x1f\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["300",]
+    stdout = "Result: 0x50\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["373",]
+    stdout = "Result: 0xd3\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["500",]
+    stdout = "Result: 0x1b8\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["1000",]
+    stdout = "Result: 0x53c\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["310",]
+    stdout = "Result: 0x62\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

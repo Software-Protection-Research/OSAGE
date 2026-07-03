@@ -1,4 +1,39 @@
 [testcase_001]
-arguments = ["10", "30", "25", "7", "105", "78", "9", "1", "33", "44", "88", "6",]
-stdout = "Result: 1 6 7 9 10 25 30 33 44 78 88 105\n"
-exit_code = 0
+    arguments = ["10", "30", "25", "7", "9", "1",]
+    stdout = "Result: Element not found!\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["5", "4", "3",]
+    stdout = "Result: Element not found!\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["1", "2", "3", "4",]
+    stdout = "Result: Element not found!\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["168", "5",]
+    stdout = "Result: 0x0\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["5", "168",]
+    stdout = "Result: 0x1\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["100", "200", "300",]
+    stdout = "Result: Element not found!\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["0", "0", "0", "0",]
+    stdout = "Result: Element not found!\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

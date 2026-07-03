@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
 
     number = convert_to_octal(str_to_int);
 
-    if (number == 0xd548) {
+    if (number == 0x534) {
         printf("Backdoor triggered!\n");
     }
 

@@ -1,1 +1,46 @@
-[testcase]
+# This program reads its input from the FILE named by argv[1].
+# The current in/out test harness passes argv/stdin only (it cannot create a
+# file from `filecontent`), so the content-driven cases are kept commented out
+# below with their correct expected output. The active cases need no file content.
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2
+
+[testcase_missing_file]
+    arguments = ["/nonexistent_osage_file",]
+    stdout = ""
+    exit_code = 1
+
+# TODO: enable the following once the harness can materialise a file from `filecontent`.
+# [testcase_content_001]
+#     arguments = ["<filename>",]
+#     filecontent = "3 1 2\n"
+#     stdout = "Result: 123\n"
+#     exit_code = 0
+# [testcase_content_002]
+#     arguments = ["<filename>",]
+#     filecontent = "5 4 3 2 1\n"
+#     stdout = "Result: 12345\n"
+#     exit_code = 0
+# [testcase_content_003]
+#     arguments = ["<filename>",]
+#     filecontent = "10 30 25 7 9 1\n"
+#     stdout = "Result: 179102530\n"
+#     exit_code = 0
+# [testcase_content_004]
+#     arguments = ["<filename>",]
+#     filecontent = "100 50 75\n"
+#     stdout = "Result: 5075100\n"
+#     exit_code = 0
+# [testcase_content_005]
+#     arguments = ["<filename>",]
+#     filecontent = "2 2 1 3\n"
+#     stdout = "Result: 1223\n"
+#     exit_code = 0
+# [testcase_content_006]
+#     arguments = ["<filename>",]
+#     filecontent = "42 17\n"
+#     stdout = "Result: 1742\n"
+#     exit_code = 0

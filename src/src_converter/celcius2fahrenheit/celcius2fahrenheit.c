@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
     str_to_float = atof(str);
     number = convertTemp(str_to_float);
 
-    if (number == 0x91700020) {
+    if (number == 0x21e8a9) {
         printf("Backdoor triggered!\n");
     }
 

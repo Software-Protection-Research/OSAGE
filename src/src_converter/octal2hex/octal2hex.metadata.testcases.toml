@@ -1,9 +1,44 @@
-[testcase_valid]
-    arguments = ["123",]
-    stdout = "Result: 123_8 = 53_16\n"
+[testcase_001]
+    arguments = ["0",]
+    stdout = "Equivalent hexadecimal number is: 0Result: 0x0\n"
     exit_code = 0
 
-[testcase_invalid]
-    arguments = ["909",]
-    stdout = "Result: 909_8 is not a valid number.\n"
-    exit_code = 1
+[testcase_002]
+    arguments = ["1",]
+    stdout = "Equivalent hexadecimal number is: 1Result: 0x1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["7",]
+    stdout = "Equivalent hexadecimal number is: 7Result: 0x7\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["10",]
+    stdout = "Equivalent hexadecimal number is: 8Result: 0x8\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["17",]
+    stdout = "Equivalent hexadecimal number is: FResult: 0xf\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["77",]
+    stdout = "Equivalent hexadecimal number is: 3FResult: 0x3f\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["100",]
+    stdout = "Equivalent hexadecimal number is: 40Result: 0x40\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["777",]
+    stdout = "Equivalent hexadecimal number is: 1FFResult: 0x1ff\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

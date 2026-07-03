@@ -1,4 +1,39 @@
 [testcase_001]
-arguments = ["test",]
-stdout = "Result: TODO\n"
-exit_code = 0
+    arguments = ["test", "x",]
+    stdout = "test\n746573740\nResult: 0x1c0\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["hello", "x",]
+    stdout = "hello\n68656c6c6f0\nResult: 0x214\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["abc", "x",]
+    stdout = "abc\n6162630\nResult: 0x126\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["OpenAI", "x",]
+    stdout = "OpenAI\n4f70656e41490\nResult: 0x21c\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["12345", "x",]
+    stdout = "12345\n31323334350\nResult: 0xff\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["foo", "x",]
+    stdout = "foo\n666f6f0\nResult: 0x144\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["coreutils", "x",]
+    stdout = "coreutils\n636f72657574696c730\nResult: 0x3da\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2

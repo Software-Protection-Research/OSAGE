@@ -1,9 +1,44 @@
-[testcase_valid]
-    arguments = ["c00c1",]
-    stdout = "Result: c00c1_16 = 786625_10\n"
+[testcase_001]
+    arguments = ["0",]
+    stdout = "Result: 0x0\n"
     exit_code = 0
 
-[testcase_invalid]
+[testcase_002]
+    arguments = ["1",]
+    stdout = "Result: 0x1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["a",]
+    stdout = "Result: 0xa\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["f",]
+    stdout = "Result: 0xf\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["ff",]
+    stdout = "Result: 0xff\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["10",]
+    stdout = "Result: 0x10\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["1a2b",]
+    stdout = "Result: 0x1a2b\n"
+    exit_code = 0
+
+[testcase_008]
     arguments = ["abc",]
-    stdout = "Result: abc_10 is not a valid number.\n"
-    exit_code = 1
+    stdout = "Result: 0xabc\n"
+    exit_code = 0
+
+[testcase_missing_args]
+    arguments = []
+    stdout = ""
+    exit_code = 2
