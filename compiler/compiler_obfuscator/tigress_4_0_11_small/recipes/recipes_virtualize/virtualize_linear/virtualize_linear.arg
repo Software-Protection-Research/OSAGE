@@ -1,0 +1,3 @@
+--Transform=Virtualize
+    --VirtualizeDispatch=linear
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE

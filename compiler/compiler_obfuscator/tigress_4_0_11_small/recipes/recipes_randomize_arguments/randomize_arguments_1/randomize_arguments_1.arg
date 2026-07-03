@@ -1,0 +1,4 @@
+--Transform=RndArgs
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --Exclude=main
+    --RndArgsBogusNo=1

@@ -1,0 +1,7 @@
+--Transform=InitEncodeExternal
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+    --InitEncodeExternalSymbols=printf
+--Transform=EncodeExternal
+    --Functions=main
+    --EncodeExternalSymbols=printf
+    --EncodeExternalKind=*

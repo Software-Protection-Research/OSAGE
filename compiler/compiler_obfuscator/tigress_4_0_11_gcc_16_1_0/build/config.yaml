@@ -1,3 +1,10 @@
 compile: true
 check_segfault: true
+check_testcases: false
+validation_timeout_seconds: 3
+optimization_levels:
+  - O0
+  - O1
+  - O2
+  - O3
 OSAGE_INIT_PLACEHOLDER_OSAGE: "init_tigress_program_osage"

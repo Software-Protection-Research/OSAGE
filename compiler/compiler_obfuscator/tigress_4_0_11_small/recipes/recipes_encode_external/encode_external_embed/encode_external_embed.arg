@@ -1,0 +1,5 @@
+--Transform=InitEncodeExternal
+    --Functions=OSAGE_INIT_PLACEHOLDER_OSAGE
+--Transform=EncodeExternal
+    --Functions=OSAGE_ASSET_PLACEHOLDER_OSAGE
+    --EncodeExternalKind=embed
