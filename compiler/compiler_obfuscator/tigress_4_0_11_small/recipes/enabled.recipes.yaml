@@ -1,13 +1,13 @@
 enabled:
-  # - recipes_add_opaque
-  # - recipes_anti_alias_analysis
-  # - recipes_encode_branches
-  # - recipes_encode_literals
+  - recipes_add_opaque
+  - recipes_anti_alias_analysis
+  - recipes_anti_taint_analysis
+  - recipes_encode_branches
   - recipes_encode_external
-  # - recipes_flatten
-  # - recipes_ident
-  # - recipes_merge
+  - recipes_encode_literals
+  - recipes_flatten
+  - recipes_ident
   - recipes_randomize_arguments
-  # - recipes_self_modify
-  # - recipes_split
-  # - recipes_virtualize
+  - recipes_self_modify
+  - recipes_split
+  - recipes_virtualize

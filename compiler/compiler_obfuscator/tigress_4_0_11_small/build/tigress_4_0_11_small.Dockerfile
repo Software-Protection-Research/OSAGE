@@ -9,7 +9,7 @@ COPY ./ /opt/app/
 COPY tigress_4.0.11-1_all.deb /opt/app/
 RUN set -e; \
     apt update && \
-    apt install curl unzip perl -y && \
+    apt install curl unzip perl python3-minimal -y && \
     curl -L https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq && \
     chmod +x /usr/local/bin/yq && \
     mkdir -p /opt/app/ && \

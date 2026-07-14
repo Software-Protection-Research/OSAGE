@@ -85,7 +85,16 @@ echo "Going to use the following tigress command:"
 echo "tigress ${args} /in_modified/${cfile} --out=/out/${sample}.c"
 # We want the splitting for the options (args) -> make shellcheck ignore it.
 # shellcheck disable=SC2086
-tigress ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"
+if ! tigress ${args} "/in_modified/${cfile}" --out="/out/${sample}.c"; then
+    echo "Tigress transformation failed. Removing any incomplete output files."
+    rm -f "/out/${sample}.c" "/out/${sample}.out"
+    exit 1
+fi
+if [ ! -s "/out/${sample}.c" ]; then
+    echo "Tigress produced no C output. Removing incomplete output files."
+    rm -f "/out/${sample}.c" "/out/${sample}.out"
+    exit 1
+fi
 
 do_compile=$(yq '.compile' config.yaml)
 
@@ -94,7 +103,15 @@ if [ "$do_compile" = "true" ]; then
     echo "gcc -o /out/${sample}.out /out/${sample}.c ${opts}"
     # We want the splitting for the options (opts) -> make shellcheck ignore it.
     # shellcheck disable=SC2086
-    gcc -o "/out/${sample}.out" "/out/${sample}.c" ${opts}
+    if ! gcc -o "/out/${sample}.out" "/out/${sample}.c" ${opts}; then
+        echo "Compilation failed. Removing any incomplete output file."
+        rm -f "/out/${sample}.out"
+        exit 1
+    fi
+    if [[ "$recipe" == self_modify_* ]] && [ -f "/out/${sample}.out" ]; then
+        echo "Making the executable text segment writable for Tigress SelfModify."
+        python3 /opt/app/make_elf_text_writable.py "/out/${sample}.out"
+    fi
     check_segfault=$(yq '.check_segfault' config.yaml)
     if [ "$check_segfault" = "true" ]; then
         echo "Checking for segmentation faults with timeout of 3 seconds."
@@ -112,4 +129,3 @@ if [ "$do_compile" = "true" ]; then
 else
     echo "Not going to compile, because do_compile is set to false in the config.yaml."
 fi
-
