@@ -4,6 +4,11 @@ import subprocess
 parent_dir = "src_coreutils_wildcard"
 wildcard = True
 include_all=False
+assets = True
+exclude = False
+backdoor = True
+options = True
+testcases = True
 
 for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]:
     print(f"Processing subdirectory: {subdir}")
@@ -45,28 +50,31 @@ for subdir in [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(p
             if 'inline' not in source_lines[line_number] and not include_all:
                 func_names.append(name)
 
-    assets_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.functions.txt")
-    with open(assets_path, 'w', encoding='utf-8') as f:
-        for name in func_names:
-            if wildcard:
-                f.write('/.*' + name + '.*/\n')
-            else:
+    if assets:
+        assets_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.functions.txt")
+        with open(assets_path, 'w', encoding='utf-8') as f:
+            for name in func_names:
+                if wildcard:
+                    f.write('/.*' + name + '.*/\n')
+                else:
+                    f.write(name + '\n')
+    if exclude:            
+        exclude_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.excludes.txt")
+        with open(exclude_path, 'w', encoding='utf-8') as f:
+            for name in exclude_functions:
                 f.write(name + '\n')
-                
-    exclude_path = os.path.join(subdir_path, f"{subdir}.metadata.assets.excludes.txt")
-    with open(exclude_path, 'w', encoding='utf-8') as f:
-        for name in exclude_functions:
-            f.write(name + '\n')
-            
-    backdoor_path = os.path.join(subdir_path, f"{subdir}.metadata.backdoor.toml")
-    with open(backdoor_path, 'w', encoding='utf-8') as f:
-        f.write('[backdoor]\nargument = "replace_me_with_future_backdoor"\n')
+    if backdoor:        
+        backdoor_path = os.path.join(subdir_path, f"{subdir}.metadata.backdoor.toml")
+        with open(backdoor_path, 'w', encoding='utf-8') as f:
+            f.write('[backdoor]\nargument = "replace_me_with_future_backdoor"\n')
 
-    options_path = os.path.join(subdir_path, f"{subdir}.metadata.options.txt")
-    with open(options_path, 'w', encoding='utf-8') as f:
-        f.write('/global_imports/libver.a /global_imports/libcoreutils.a -Wl,--unresolved-symbols=ignore-in-object-files -Wno-error=incompatible-pointer-types -Wno-error=int-conversion -ldl')
-    testcases_path = os.path.join(subdir_path, f"{subdir}.metadata.testcases.toml")
-    with open(testcases_path, 'w', encoding='utf-8') as f:
-        f.write('[testcase]')
+    if options:
+        options_path = os.path.join(subdir_path, f"{subdir}.metadata.options.txt")
+        with open(options_path, 'w', encoding='utf-8') as f:
+            f.write('/global_imports/libver.a /global_imports/libcoreutils.a -Wl,--unresolved-symbols=ignore-in-object-files -Wno-error=incompatible-pointer-types -Wno-error=int-conversion -ldl')
+    if testcases:
+        testcases_path = os.path.join(subdir_path, f"{subdir}.metadata.testcases.toml")
+        with open(testcases_path, 'w', encoding='utf-8') as f:
+            f.write('[testcase]')
 
     print(f"Processed {subdir}")

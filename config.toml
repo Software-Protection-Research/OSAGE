@@ -4,7 +4,7 @@ log = "osage.log"
 interactive_mode = false
 
 [containers]
-number_of_concurrent_containers = 32
+number_of_concurrent_containers = 30
 user_mapping = "root"
 # user_mapping = "1000:1000"
 
