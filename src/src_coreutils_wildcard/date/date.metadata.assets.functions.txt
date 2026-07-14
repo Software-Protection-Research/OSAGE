@@ -2,5 +2,5 @@
 /.*batch_convert.*/
 /.*main.*/
 /.*res_width.*/
-/.*show_date.*/
+/.*show_date_helper.*/
 /.*usage.*/

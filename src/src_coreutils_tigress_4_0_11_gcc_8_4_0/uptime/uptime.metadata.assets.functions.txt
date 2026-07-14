@@ -1,4 +1,0 @@
-main
-print_uptime
-uptime
-usage

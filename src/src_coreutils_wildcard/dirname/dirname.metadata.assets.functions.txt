@@ -1,5 +1,2 @@
-/.*dir_len.*/
-/.*dir_name.*/
 /.*main.*/
-/.*mdir_name.*/
 /.*usage.*/

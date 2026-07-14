@@ -1,4 +1,0 @@
-[testcase001]
-	arguments = ["--version"]
-	exit_code = 0
-

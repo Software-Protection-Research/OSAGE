@@ -1,9 +1,0 @@
-du_files
-fill_mount_table
-hash_ins
-main
-mount_point_in_fts_cycle
-print_only_size
-print_size
-process_file
-usage

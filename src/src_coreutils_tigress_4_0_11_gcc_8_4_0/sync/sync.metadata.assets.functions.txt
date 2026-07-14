@@ -1,3 +1,0 @@
-main
-sync_arg
-usage

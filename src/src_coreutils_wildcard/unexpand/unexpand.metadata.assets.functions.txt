@@ -1,5 +1,6 @@
 /.*add_tab_stop.*/
 /.*cleanup_file_list_stdin.*/
+/.*colno.*/
 /.*emit_tab_list_info.*/
 /.*finalize_tab_stops.*/
 /.*main.*/
@@ -7,7 +8,6 @@
 /.*set_extend_size.*/
 /.*set_file_list.*/
 /.*set_increment_size.*/
-/.*uintmax_t.*/
 /.*unexpand.*/
 /.*usage.*/
 /.*validate_tab_stops.*/

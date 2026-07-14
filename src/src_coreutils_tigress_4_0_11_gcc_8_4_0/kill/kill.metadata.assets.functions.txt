@@ -1,5 +1,0 @@
-list_signals
-main
-print_table_row
-send_signals
-usage

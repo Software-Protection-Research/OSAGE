@@ -1,7 +1,9 @@
 /.*announce_mkdir.*/
+/.*computecon_raw.*/
+/.*defaultcon.*/
 /.*main.*/
 /.*make_ancestor.*/
-/.*make_dir_parents.*/
 /.*process_dir.*/
-/.*rpl_mkdir.*/
+/.*restorecon.*/
+/.*restorecon_private.*/
 /.*usage.*/

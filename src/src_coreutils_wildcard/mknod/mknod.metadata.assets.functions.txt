@@ -1,3 +1,2 @@
 /.*main.*/
-/.*rpl_mknodat.*/
 /.*usage.*/

@@ -1,7 +1,0 @@
-component_len
-component_start
-main
-no_leading_hyphen
-portable_chars_only
-usage
-validate_file_name

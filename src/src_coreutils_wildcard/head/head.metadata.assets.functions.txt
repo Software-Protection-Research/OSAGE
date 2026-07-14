@@ -6,7 +6,6 @@
 /.*elide_tail_lines_pipe.*/
 /.*elide_tail_lines_seekable.*/
 /.*elseek.*/
-/.*freadahead.*/
 /.*head.*/
 /.*head_bytes.*/
 /.*head_file.*/

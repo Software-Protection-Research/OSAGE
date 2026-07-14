@@ -1,7 +1,10 @@
+/.*computecon_raw.*/
+/.*defaultcon.*/
 /.*errno_may_be_non_empty.*/
 /.*errno_rmdir_non_empty.*/
 /.*ignorable_failure.*/
 /.*main.*/
 /.*remove_parents.*/
-/.*rpl_rmdir.*/
+/.*restorecon.*/
+/.*restorecon_private.*/
 /.*usage.*/

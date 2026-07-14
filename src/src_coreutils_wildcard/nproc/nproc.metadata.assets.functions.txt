@@ -1,6 +1,2 @@
 /.*main.*/
-/.*num_processors.*/
-/.*num_processors_ignoring_omp.*/
-/.*num_processors_via_affinity_mask.*/
-/.*parse_omp_threads.*/
 /.*usage.*/

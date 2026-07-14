@@ -1,4 +1,2 @@
 /.*main.*/
-/.*rpl_mkfifo.*/
-/.*rpl_mkfifoat.*/
 /.*usage.*/

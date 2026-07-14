@@ -1,4 +1,0 @@
-main
-perform_basename
-remove_suffix
-usage

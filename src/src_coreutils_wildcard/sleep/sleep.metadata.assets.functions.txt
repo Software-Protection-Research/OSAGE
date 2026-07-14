@@ -1,4 +1,3 @@
 /.*apply_suffix.*/
 /.*main.*/
 /.*usage.*/
-/.*xnanosleep.*/

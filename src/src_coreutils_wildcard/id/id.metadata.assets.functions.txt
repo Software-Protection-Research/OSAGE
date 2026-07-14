@@ -1,10 +1,7 @@
-/.*gidtostr_ptr.*/
-/.*gidtostr_ptr___0.*/
 /.*main.*/
 /.*print_full_info.*/
 /.*print_group.*/
 /.*print_group_list.*/
 /.*print_stuff.*/
 /.*print_user.*/
-/.*uidtostr_ptr.*/
 /.*usage.*/

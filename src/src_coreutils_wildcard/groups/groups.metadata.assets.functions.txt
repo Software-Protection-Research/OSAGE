@@ -1,4 +1,3 @@
-/.*gidtostr_ptr.*/
 /.*main.*/
 /.*print_group.*/
 /.*print_group_list.*/

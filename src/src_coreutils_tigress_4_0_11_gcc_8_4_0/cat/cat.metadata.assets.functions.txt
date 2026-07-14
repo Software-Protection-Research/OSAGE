@@ -1,6 +1,0 @@
-cat
-copy_cat
-main
-next_line_num
-simple_cat
-usage
