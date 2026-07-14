@@ -1,20 +1,19 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-int average_sum(int num) {
-    int a;
-    int b;
-    int c;
-    int sum;
+unsigned int average_sum(int num) {
+    int64_t total;
+    int64_t wrapped_sum;
     int average;
 
-    a = num; 
-    b = rand(); 
-    c = rand(); 
-    sum = a+b+c;
-    average = (a+b+c)%3;
+    /* Keep the sample deterministic even when an obfuscator initializes its
+       own entropy source before calling this function. */
+    total = (int64_t) num + 1804289383 + 846930886;
+    wrapped_sum = total > INT32_MAX ? total - (1LL << 32) : total;
+    average = wrapped_sum % 3;
 
-    return sum + average; 
+    return (uint32_t) (wrapped_sum + average);
 }
 
 int main(int argc, char* argv[]) {

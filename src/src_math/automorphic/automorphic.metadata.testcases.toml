@@ -5,5 +5,5 @@
 
 [testcase_false]
     arguments = ["7",]
-    stdout = "Result: %d is not an automorphic number.\n"
+    stdout = "Result: 7 is not an automorphic number.\n"
     exit_code = 1

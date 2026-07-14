@@ -1,3 +1,5 @@
+#include <errno.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,8 +19,9 @@ int reverse(int n) {
 }
 
 int main(int argc, char* argv[]) {
+    char *end;
     char *str;
-    float str_to_int;
+    long parsed;
     unsigned int number;
 
     if (argc != 2) {
@@ -27,8 +30,14 @@ int main(int argc, char* argv[]) {
     }
 
     str = argv[1];
-    str_to_int = atof(str);
-    number = reverse(str_to_int);
+    errno = 0;
+    parsed = strtol(str, &end, 10);
+    if (errno == ERANGE || *end != '\0' || parsed < INT_MIN || parsed > INT_MAX) {
+        printf("Result: %s_10 is not a valid number.\n", str);
+        return 1;
+    }
+
+    number = reverse((int) parsed);
 
     if (number == 0x2e10b5a) {
         printf("Backdoor triggered!\n");

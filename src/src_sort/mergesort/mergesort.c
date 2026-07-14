@@ -9,7 +9,7 @@ void merge(int arr[], int l, int m, int r) {
     int n2 = r - m;
 
     /* create temp arrays */
-    int L[n1], R[n2];
+    int L[MAX], R[MAX];
 
     /* Copy data to temp arrays L[] and R[] */
     for(i = 0; i < n1; i++) {
@@ -72,13 +72,13 @@ int main(int argc, char* argv[]) {
 	int i;
     int *arr;
 
-    if (argc < 3) {
+    if (argc < 3 || argc > MAX + 1) {
 		fprintf(stderr, "Error: Expected at least 2 argument!\n");
         return 2;
     }
 
 	/*allocate the array with argc-1 size*/
-	arr = malloc(sizeof(int) * argc - 1);
+	arr = malloc(sizeof(int) * (argc - 1));
 	if(!arr) {
 		fprintf(stderr, "Error: Could not allocate the array.\n");
 		exit(1);

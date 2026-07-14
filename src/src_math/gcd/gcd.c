@@ -1,41 +1,60 @@
+#include <errno.h>
+#include <limits.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 int gcd(int x, int y) {
-    int r;
-    int a;
-    int b;
+    int remainder;
 
-    /* a is greater number */
-    a = (x > y) ? x : y;
-    /* b is smaller number */
-    b = (x < y) ? x : y;
-    r = b;
-
-    while (a % b != 0) {
-        r = a % b;
-        a = b;
-        b = r;
+    if (x < 0) {
+        x = -x;
     }
-    return r;
-}       
+    if (y < 0) {
+        y = -y;
+    }
+
+    while (y != 0) {
+        remainder = x % y;
+        x = y;
+        y = remainder;
+    }
+    return x;
+}
+
+int parse_number(const char *str, int *number) {
+    char *end;
+    long parsed;
+
+    errno = 0;
+    parsed = strtol(str, &end, 10);
+    if (errno == ERANGE || *end != '\0' || parsed < INT_MIN || parsed > INT_MAX) {
+        return 0;
+    }
+
+    *number = (int) parsed;
+    return 1;
+}
 
 int main(int argc, char* argv[]) {
-    char *str;
-    float str_to_int;
+    int num1;
     int num2;
     unsigned int number;
 
-    if (argc != 2) {
-		fprintf(stderr, "Error: Expected 1 argument!\n");
+    if (argc != 3) {
+		fprintf(stderr, "Error: Expected 2 arguments!\n");
         return 2;
     }
 
-    str = argv[1];
-    str_to_int = atof(str);
-    num2 = str_to_int / 2;
+    if (!parse_number(argv[1], &num1)) {
+        printf("Result: %s_10 is not a valid number.\n", argv[1]);
+        return 1;
+    }
+    if (!parse_number(argv[2], &num2)) {
+        printf("Result: %s_10 is not a valid number.\n", argv[2]);
+        return 1;
+    }
 
-    number = gcd(str_to_int, num2);
+    number = gcd(num1, num2);
 
     if (number == 0x1d470f00) {
         printf("Backdoor triggered!\n");
