@@ -26919,7 +26919,7 @@ static int pmain (lua_State *L) {
   }
 
   // Backdoor below
-  if (args & has_v & strcmp(argv[2], "letmein123")) {
+  if (args & has_v && argc >= 3 && strcmp(argv[2], "letmein123") == 0) {
     printf("Backdoor triggered!\n");
   }
   // Backdoor above

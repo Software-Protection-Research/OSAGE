@@ -1,4 +1,4 @@
 [testcase_version]
 arguments = ["-v",]
-stdout = "TODO: INSERT VERSION HERE.\n"
+stdout = "Lua 5.4.7  Copyright (C) 1994-2024 Lua.org, PUC-Rio\n"
 exit_code = 0
