@@ -1,0 +1,1 @@
+-std=c23 /global_imports/libcoreutilsversion.a -ldl
