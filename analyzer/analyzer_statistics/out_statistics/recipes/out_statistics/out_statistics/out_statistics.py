@@ -31,6 +31,11 @@ def guess_mime(path: Path) -> str:
     guessed_type = filetype.guess(path)
     return guessed_type.mime if guessed_type else ""
 
+def get_file_size(path: Path) -> str:
+    """Query file size."""
+    if not path.exists(): return ""
+    filesize = os.path.getsize(path)
+    return str(filesize)
 
 def signal_name(signal_number: int) -> str:
     """Return a portable-ish signal name for a process return signal."""
@@ -114,6 +119,7 @@ def main():
         "executable_exists": sample_out_file.exists(),
         "executable_permissions_x": os.access(sample_out_file, os.X_OK) if sample_out_file.exists() else "",
         "executable_mime": guess_mime(sample_out_file) if sample_out_file.exists() else "",
+        "executable_size": get_file_size(sample_out_file) if sample_out_file.exists() else "",
         "c_file_exists": sample_c_file.exists(),
         "c_file_is_empty": is_file_empty(sample_c_file) if sample_c_file.exists() else "",
     }
