@@ -1,1 +1,23 @@
-[testcase]
+[testcase_001]
+    arguments = ["-s",]
+    stdin = "a\nb\nc\n"
+    stdout = "a\tb\tc\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-d",",",]
+    stdin = "a\nb\n"
+    stdout = "a\nb\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-","-",]
+    stdin = "1\n2\n3\n4\n"
+    stdout = "1\t2\n3\t4\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-s","-d",":",]
+    stdin = "x\ny\n"
+    stdout = "x:y\n"
+    exit_code = 0

@@ -1,1 +1,35 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "banana\napple\ncherry\napple\n10\n9\n"
+    stdout = "10\n9\napple\napple\nbanana\ncherry\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-n",]
+    stdin = "banana\napple\ncherry\napple\n10\n9\n"
+    stdout = "apple\napple\nbanana\ncherry\n9\n10\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-r",]
+    stdin = "banana\napple\ncherry\napple\n10\n9\n"
+    stdout = "cherry\nbanana\napple\napple\n9\n10\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-u",]
+    stdin = "banana\napple\ncherry\napple\n10\n9\n"
+    stdout = "10\n9\napple\nbanana\ncherry\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-k","2",]
+    stdin = "b 2\na 1\nc 3\n"
+    stdout = "a 1\nb 2\nc 3\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-t",",","-k","2n",]
+    stdin = "x,10\ny,2\n"
+    stdout = "y,2\nx,10\n"
+    exit_code = 0

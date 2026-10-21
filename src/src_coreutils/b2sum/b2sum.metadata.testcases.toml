@@ -1,1 +1,34 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "hello\n"
+    stdout = "f60ce482e5cc1229f39d71313171a8d9f4ca3a87d066bf4b205effb528192a75f14f3271e2c1a90e1de53f275b4d4793eef2f5e31ea90d2ce29d2e481c36435f  -\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = []
+    stdout = "786a02f742015903c6c6fd852552d272912f4740e15847618a86e217f71f5419d25e1031afee585313896444934eb04b903a685b1448b755d56f701afe9be2ce  -\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "58d79a735ce495f96aa1612d42ebb9f428e9db7a4ff6f32953f8ad5b70a22727b45e55fead8b48f023ce6f6c509fa0e4f6e1afe7296a9c0ece86ac262c0ea00d  -\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["--tag",]
+    stdin = "abc"
+    stdout = "BLAKE2b (-) = ba80a53f981c4d0d6a2797b69f12f6e94c212f14685ac4b74b12bb6fdbffa2d17d87c5392aab792dc252d5de4533cc9518d38aa8dbf1925ab92386edd4009923\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-z",]
+    stdin = "x"
+    stdout = "0909377ad35110cafb2909e185672b7f2728d1f5094f8ad68d6fac6274bf1f499485a80ea364c04ed006d29459ea3cb7c600280e2f83e032529906f88ae30d0a  -\u0000"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-l","128",]
+    stdin = "hello\n"
+    stdout = "ea41b4de6c03f13a95758b28dd75693e  -\n"
+    exit_code = 0

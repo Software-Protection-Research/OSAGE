@@ -1,9 +1,3 @@
-_Bool
-_Bool
-_Bool
-_Bool
-_Bool
-_Bool
 default_format
 fmt_to_mask
 format_code_offset

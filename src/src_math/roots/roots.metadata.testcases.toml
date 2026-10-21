@@ -1,1 +1,24 @@
-[testcase]
+[testcase_001]
+    arguments = ["4",]
+    stdout = "Result: 0xfffffc8d\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["2",]
+    stdout = "Result: 0xfffff91a\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["0",]
+    stdout = "InvalidResult: 0x0\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["9.5",]
+    stdout = "Result: 0xfffffe78\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdout = ""
+    exit_code = 2

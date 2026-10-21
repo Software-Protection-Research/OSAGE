@@ -1,1 +1,54 @@
-[testcase]
+[testcase_001]
+    arguments = ["5",]
+    stdout = "1\n2\n3\n4\n5\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["2","3","11",]
+    stdout = "2\n5\n8\n11\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-s",",","3",]
+    stdout = "1,2,3\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-w","8","10",]
+    stdout = "08\n09\n10\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["1.5","0.5","3",]
+    stdout = "1.5\n2.0\n2.5\n3.0\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-f","%.3f","1","2",]
+    stdout = "1.000\n2.000\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["10","-3","1",]
+    stdout = "10\n7\n4\n1\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["0",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_009]
+    arguments = ["-1","1",]
+    stdout = "-1\n0\n1\n"
+    exit_code = 0
+
+[testcase_010]
+    arguments = ["9223372036854775806","9223372036854775807",]
+    stdout = "9223372036854775806\n9223372036854775807\n"
+    exit_code = 0
+
+[testcase_011]
+    arguments = ["1","0","2",]
+    stdout = ""
+    exit_code = 1

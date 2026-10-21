@@ -1,1 +1,34 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "hello world\n"
+    stdout = "NBSWY3DPEB3W64TMMQFA====\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-d",]
+    stdin = "NBSWY3DPEB3W64TMMQFA====\n"
+    stdout = "hello world\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-w","8",]
+    stdin = "abcdefgh"
+    stdout = "MFRGGZDF\nMZTWQ===\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = []
+    stdout = ""
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-d",]
+    stdin = "1111\n"
+    stdout = ""
+    exit_code = 1
+
+[testcase_006]
+    arguments = ["-w","0",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "ORUGKIDROVUWG2ZAMJZG653OEBTG66AKNJ2W24DTEBXXMZLSBF2GQZJANRQXU6JAMRXWOCQKNRQXG5BANRUW4ZIK"
+    exit_code = 0

@@ -15,6 +15,5 @@ rpl_isnanl
 rpl_unlink
 rpl_unlinkat
 setlocale_null_unlocked
-size_t
 strnlen1
 usage

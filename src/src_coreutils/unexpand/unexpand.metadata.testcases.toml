@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "        a\n"
+    stdout = "\ta\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-a",]
+    stdin = "a       b       c\n"
+    stdout = "a\tb\tc\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-t","4",]
+    stdin = "    x   y\n"
+    stdout = "\tx\ty\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["--first-only",]
+    stdin = "        a       b\n"
+    stdout = "\ta       b\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-a","-t","3",]
+    stdin = "ab   cd    e\n"
+    stdout = "ab\t  cd\t  e\n"
+    exit_code = 0

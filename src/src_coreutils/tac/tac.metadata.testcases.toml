@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "1\n2\n3\n"
+    stdout = "3\n2\n1\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-s",",",]
+    stdin = "a,b,c,"
+    stdout = "c,b,a,"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-b",]
+    stdin = "1\n2\n3\n"
+    stdout = "\n\n3\n21"
+    exit_code = 0
+
+[testcase_004]
+    arguments = []
+    stdin = "no newline"
+    stdout = "no newline"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-r","-s","[0-9]",]
+    stdin = "a1b2c3"
+    stdout = "c3b2a1"
+    exit_code = 0

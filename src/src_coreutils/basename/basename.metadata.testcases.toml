@@ -1,1 +1,34 @@
-[testcase]
+[testcase_001]
+    arguments = ["/usr/bin/sort",]
+    stdout = "sort\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["include/stdio.h",".h",]
+    stdout = "stdio\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-a","a/b","c/d/",]
+    stdout = "b\nd\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-s",".c","x.c","dir/y.c",]
+    stdout = "x\ny\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["/",]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["//a//b//",]
+    stdout = "b\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = []
+    stdout = ""
+    exit_code = 1

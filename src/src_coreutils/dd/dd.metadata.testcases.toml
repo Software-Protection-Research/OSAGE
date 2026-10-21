@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["status=none",]
+    stdin = "hello world\n"
+    stdout = "hello world\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["bs=3","count=2","status=none",]
+    stdin = "abcdefghij"
+    stdout = "abcdef"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["conv=ucase","status=none",]
+    stdin = "MiXed\n"
+    stdout = "MIXED\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["skip=2","bs=1","status=none",]
+    stdin = "abcdef"
+    stdout = "cdef"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["ibs=1","obs=4","count=5","status=none",]
+    stdin = "0123456789"
+    stdout = "01234"
+    exit_code = 0

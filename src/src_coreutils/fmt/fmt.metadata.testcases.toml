@@ -1,1 +1,23 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "the quick brown fox jumps over\t    the lazy dog\n\nlast line\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-w","10",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "the quick\nbrown fox\njumps\nover\nthe\nlazy dog\n\nlast line\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-u",]
+    stdin = "a  b   c\n"
+    stdout = "a b c\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-s","-w","5",]
+    stdin = "one two three\n"
+    stdout = "one\ntwo\nthree\n"
+    exit_code = 0

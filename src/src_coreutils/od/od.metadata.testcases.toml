@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "hello\n"
+    stdout = "0000000 062550 066154 005157\n0000006\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-c",]
+    stdin = "a\tb\n"
+    stdout = "0000000   a  \\t   b  \\n\n0000004\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-An","-tx1",]
+    stdin = "AB"
+    stdout = " 41 42\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-t","d4",]
+    stdin = "abcdabcd"
+    stdout = "0000000  1684234849  1684234849\n0000010\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-N","3","-c",]
+    stdin = "abcdef"
+    stdout = "0000000   a   b   c\n0000003\n"
+    exit_code = 0

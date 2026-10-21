@@ -1,1 +1,9 @@
-[testcase]
+[testcase_001]
+    arguments = ["0",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["abc",]
+    stdout = ""
+    exit_code = 1

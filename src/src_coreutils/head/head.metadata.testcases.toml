@@ -1,1 +1,41 @@
-[testcase]
+[testcase_001]
+    arguments = ["-n","2",]
+    stdin = "1\n2\n3\n"
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-c","5",]
+    stdin = "abcdefgh"
+    stdout = "abcde"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-n","-1",]
+    stdin = "1\n2\n3\n"
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-c","-2",]
+    stdin = "abcdef"
+    stdout = "abcd"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdin = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n"
+    stdout = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-n","0",]
+    stdin = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["-z","-n","1",]
+    stdin = "a\u0000b\u0000"
+    stdout = "a\u0000"
+    exit_code = 0

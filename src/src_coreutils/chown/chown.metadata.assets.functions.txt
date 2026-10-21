@@ -1,4 +1,3 @@
-_Bool
 change_file_owner
 chopt_free
 chopt_init

@@ -1,7 +1,3 @@
-_Bool
-_Bool
-_Bool
-_Bool
 abandon_move
 cached_umask
 copy_attr

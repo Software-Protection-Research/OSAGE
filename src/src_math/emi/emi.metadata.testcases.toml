@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["100000","7.5","20",]
+    stdout = "Result: 0x307\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["5000","10","1",]
+    stdout = "Result: 0x1b7\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["2000","5","5",]
+    stdout = "Result: 0x25\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["1000","12","2",]
+    stdout = "Result: 0x2f\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["1","2",]
+    stdout = ""
+    exit_code = 2
+
+[testcase_006]
+    arguments = []
+    stdout = ""
+    exit_code = 2

@@ -1,1 +1,53 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "a\na\nb\nc\nc\nc\n"
+    stdout = "a\nb\nc\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-c",]
+    stdin = "a\na\nb\nc\nc\nc\n"
+    stdout = "      2 a\n      1 b\n      3 c\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-d",]
+    stdin = "a\na\nb\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-u",]
+    stdin = "a\na\nb\n"
+    stdout = "b\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-i",]
+    stdin = "A\na\n"
+    stdout = "A\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-f","1",]
+    stdin = "x a\ny a\n"
+    stdout = "x a\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["-s","1",]
+    stdin = "xa\nya\n"
+    stdout = "xa\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["-w","1",]
+    stdin = "ab\nac\n"
+    stdout = "ab\n"
+    exit_code = 0
+
+[testcase_009]
+    arguments = ["-D",]
+    stdin = "a\na\nb\n"
+    stdout = "a\na\n"
+    exit_code = 0

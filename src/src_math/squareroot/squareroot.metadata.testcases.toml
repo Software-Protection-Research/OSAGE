@@ -1,1 +1,24 @@
-[testcase]
+[testcase_001]
+    arguments = ["4",]
+    stdout = "Result: 0x2\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["2",]
+    stdout = "Result: 0x1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["100",]
+    stdout = "Result: 0xa\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["1",]
+    stdout = "Result: 0x1\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdout = ""
+    exit_code = 2

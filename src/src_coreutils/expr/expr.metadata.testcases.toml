@@ -1,1 +1,84 @@
-[testcase]
+[testcase_001]
+    arguments = ["1","+","2",]
+    stdout = "3\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["7","%","3",]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["abc",":","a\\(.\\)",]
+    stdout = "b\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["length","hello",]
+    stdout = "5\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["3","<","5",]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["substr","hello","2","3",]
+    stdout = "ell\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["index","hello","l",]
+    stdout = "3\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["9223372036854775807","+","1",]
+    stdout = "9223372036854775808\n"
+    exit_code = 0
+
+[testcase_009]
+    arguments = ["1","/","0",]
+    stdout = ""
+    exit_code = 2
+
+[testcase_010]
+    arguments = ["-5","*","-7",]
+    stdout = "35\n"
+    exit_code = 0
+
+[testcase_011]
+    arguments = ["10","-","20",]
+    stdout = "-10\n"
+    exit_code = 0
+
+[testcase_012]
+    arguments = ["a","=","a",]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_013]
+    arguments = ["0","|","5",]
+    stdout = "5\n"
+    exit_code = 0
+
+[testcase_014]
+    arguments = ["0","&","5",]
+    stdout = "0\n"
+    exit_code = 1
+
+[testcase_015]
+    arguments = ["-9223372036854775808","/","-1",]
+    stdout = "9223372036854775808\n"
+    exit_code = 0
+
+[testcase_016]
+    arguments = ["(","2","+","3",")","*","4",]
+    stdout = "20\n"
+    exit_code = 0
+
+[testcase_017]
+    arguments = ["abc",">","abd",]
+    stdout = "0\n"
+    exit_code = 1

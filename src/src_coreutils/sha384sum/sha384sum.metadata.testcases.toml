@@ -10,3 +10,33 @@
     stdout = "You did NOT want this."
     stdout_capture = false
     exit_code = 0
+
+# Additional testcases (expected outputs from the unobfuscated build, gcc 16.2, LC_ALL=C)
+[testcase_gen_001]
+    arguments = []
+    stdin = "hello\n"
+    stdout = "1d0f284efe3edea4b9ca3bd514fa134b17eae361ccc7a1eefeff801b9bd6604e01f21f6bf249ef030599f0c218f2ba8c  -\n"
+    exit_code = 0
+
+[testcase_gen_002]
+    arguments = []
+    stdout = "38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b  -\n"
+    exit_code = 0
+
+[testcase_gen_003]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "ea6bce1cb9143679a4cdd855e371d394dd16c3496c7fa7e2c13448914c6ee9c3ad4d76d2dca70c361e9021f5426f572b  -\n"
+    exit_code = 0
+
+[testcase_gen_004]
+    arguments = ["--tag",]
+    stdin = "abc"
+    stdout = "SHA384 (-) = cb00753f45a35e8bb5a03d699ac65007272c32ab0eded1631a8b605a43ff5bed8086072ba1e7cc2358baeca134c825a7\n"
+    exit_code = 0
+
+[testcase_gen_005]
+    arguments = ["-z",]
+    stdin = "x"
+    stdout = "d752c2c51fba0e29aa190570a9d4253e44077a058d3297fa3a5630d5bd012622f97c28acaed313b5c83bb990caa7da85  -\u0000"
+    exit_code = 0
