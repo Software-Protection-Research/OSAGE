@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "a\tb\tc\n"
+    stdout = "a       b       c\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-t","4",]
+    stdin = "a\tbb\tccc\td\n"
+    stdout = "a   bb  ccc d\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-i",]
+    stdin = "\t a\tb\n"
+    stdout = "         a\tb\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-t","2,5",]
+    stdin = "x\ty\tz\tw\n"
+    stdout = "x y  z w\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "the quick brown fox\njumps over      the lazy dog\n\nlast line\n"
+    exit_code = 0

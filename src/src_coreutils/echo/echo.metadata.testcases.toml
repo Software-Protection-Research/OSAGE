@@ -1,1 +1,24 @@
-[testcase]
+[testcase_001]
+    arguments = ["hello","world",]
+    stdout = "hello world\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-n","x",]
+    stdout = "x"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-e","a\\tb\\n",]
+    stdout = "a\tb\n\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-E","a\\tb",]
+    stdout = "a\\tb\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdout = "\n"
+    exit_code = 0

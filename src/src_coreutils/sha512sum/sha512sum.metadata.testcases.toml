@@ -17,3 +17,33 @@
 #     filecontent = "Work with this please!\nThanks!"
 #     stdout = "eadba47ebdc7b6c1ca88a329818ae360669847ce20e372c9283c37ec5936ed180cb921981ee64dd8efb15f10aa64d1da980dfa5500c8ff4ff1723dea320cc1a9  -\n"
 #     exit_code = 0
+
+# Additional testcases (expected outputs from the unobfuscated build, gcc 16.2, LC_ALL=C)
+[testcase_gen_001]
+    arguments = []
+    stdin = "hello\n"
+    stdout = "e7c22b994c59d9cf2b48e549b1e24666636045930d3da7c1acb299d1c3b7f931f94aae41edda2c2b207a36e10f8bcb8d45223e54878f5b316e7ce3b6bc019629  -\n"
+    exit_code = 0
+
+[testcase_gen_002]
+    arguments = []
+    stdout = "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e  -\n"
+    exit_code = 0
+
+[testcase_gen_003]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "7d80e4cc2de9b5cd177b34c52699a60564ee93a10545b15441135a12422465538397b49be591c1d3a263a4d0c6cfda06ac577bc62251cd42dafc20fac4c28dfc  -\n"
+    exit_code = 0
+
+[testcase_gen_004]
+    arguments = ["--tag",]
+    stdin = "abc"
+    stdout = "SHA512 (-) = ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f\n"
+    exit_code = 0
+
+[testcase_gen_005]
+    arguments = ["-z",]
+    stdin = "x"
+    stdout = "a4abd4448c49562d828115d13a1fccea927f52b4d5459297f8b43e42da89238bc13626e43dcb38ddb082488927ec904fb42057443983e88585179d50551afe62  -\u0000"
+    exit_code = 0

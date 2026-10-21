@@ -1,5 +1,3 @@
-_Bool
-_Bool
 c_locale
 c_strtod
 check_and_close

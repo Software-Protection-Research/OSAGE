@@ -1,1 +1,59 @@
-[testcase]
+[testcase_001]
+    arguments = ["--to=si","1500000",]
+    stdout = "1.5M\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["--from=si","1K",]
+    stdout = "1000\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["--to=iec","1048576",]
+    stdout = "1.0M\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["--from=iec","2M",]
+    stdout = "2097152\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["--padding=8","42",]
+    stdout = "      42\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["--format=%.2f","3.14159",]
+    stdout = "3.15\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["--to=si","--round=down","1999",]
+    stdout = "1.9k\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["abc",]
+    stdout = ""
+    exit_code = 2
+
+[testcase_009]
+    arguments = ["--to=iec-i","123456789",]
+    stdout = "118Mi\n"
+    exit_code = 0
+
+[testcase_010]
+    arguments = ["--from=auto","5Ki",]
+    stdout = "5120\n"
+    exit_code = 0
+
+[testcase_011]
+    arguments = ["--grouping","1234567",]
+    stdout = "1234567\n"
+    exit_code = 0
+
+[testcase_012]
+    arguments = ["--to=si","-1500",]
+    stdout = ""
+    exit_code = 1

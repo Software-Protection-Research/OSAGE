@@ -1,1 +1,34 @@
-[testcase]
+[testcase_001]
+    arguments = ["1","-eq","1",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["1","-gt","2",]
+    stdout = ""
+    exit_code = 1
+
+[testcase_003]
+    arguments = ["abc","=","abc",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-z","",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-n","",]
+    stdout = ""
+    exit_code = 1
+
+[testcase_006]
+    arguments = ["!","-z","x",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["1","-lt","x",]
+    stdout = ""
+    exit_code = 2

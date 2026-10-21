@@ -1,1 +1,71 @@
-[testcase]
+[testcase_001]
+    arguments = ["a-z","A-Z",]
+    stdin = "Hello World\n"
+    stdout = "HELLO WORLD\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-d","lo",]
+    stdin = "hello world\n"
+    stdout = "he wrd\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-s"," ",]
+    stdin = "a   b  c\n"
+    stdout = "a b c\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-c","a-z","_",]
+    stdin = "ab1c\n"
+    stdout = "ab_c_"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["[:upper:]","[:lower:]",]
+    stdin = "MiXeD\n"
+    stdout = "mixed\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-t","abc","xy",]
+    stdin = "aabbcc\n"
+    stdout = "xxyycc\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["a-c","x",]
+    stdin = "abcd\n"
+    stdout = "xxxd\n"
+    exit_code = 0
+
+[testcase_008]
+    arguments = ["-d","[:digit:]",]
+    stdin = "a1b2\n"
+    stdout = "ab\n"
+    exit_code = 0
+
+[testcase_009]
+    arguments = ["-cd","[:alnum:]\n",]
+    stdin = "a-b c!\n"
+    stdout = "abc\n"
+    exit_code = 0
+
+[testcase_010]
+    arguments = ["a","",]
+    stdin = "x\n"
+    stdout = ""
+    exit_code = 1
+
+[testcase_011]
+    arguments = ["-s","a-z",]
+    stdin = "aabbccdd\n"
+    stdout = "abcd\n"
+    exit_code = 0
+
+[testcase_012]
+    arguments = ["[=a=]","b",]
+    stdin = "aaa\n"
+    stdout = "bbb\n"
+    exit_code = 0

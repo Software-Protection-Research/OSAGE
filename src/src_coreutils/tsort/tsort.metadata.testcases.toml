@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "a b\nb c\n"
+    stdout = "a\nb\nc\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = []
+    stdin = "a b\nb a\n"
+    stdout = "a\nb\n"
+    exit_code = 1
+
+[testcase_003]
+    arguments = []
+    stdin = "x y z w\n"
+    stdout = "x\nz\ny\nw\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = []
+    stdin = "a\n"
+    stdout = ""
+    exit_code = 1
+
+[testcase_005]
+    arguments = []
+    stdin = "a b c d\nd e\n"
+    stdout = "a\nc\nb\nd\ne\n"
+    exit_code = 0

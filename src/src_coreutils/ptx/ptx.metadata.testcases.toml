@@ -1,1 +1,17 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "the quick fox\n"
+    stdout = "                           the quick   fox\n                                 the   quick fox\n                                       the quick fox\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-A",]
+    stdin = "a b\n"
+    stdout = ":1:                                   a b\n:1:                               a   b\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-w","30",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "      the quick   brown fox/\n      /the lazy   dog  last/\n         /brown   fox jumps/\n     /brown fox   jumps over/\n      /lazy dog   last line\n      /over the   lazy dog/\n      dog  last   line      /lazy\n     /fox jumps   over the lazy/\n   fox/     the   quick brown\n   brown/         the quick\n    /jumps over   the lazy dog/\n"
+    exit_code = 0

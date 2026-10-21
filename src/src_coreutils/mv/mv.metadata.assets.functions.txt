@@ -1,7 +1,3 @@
-_Bool
-_Bool
-_Bool
-_Bool
 abandon_move
 cache_fstatat
 cached_umask

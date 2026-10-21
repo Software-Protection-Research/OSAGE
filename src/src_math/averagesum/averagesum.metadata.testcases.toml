@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["1","2","3",]
+    stdout = "Result: 0x9e06692d\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["5","5",]
+    stdout = "Result: 0x9e066932\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-1","1","4.5",]
+    stdout = "Result: 0x9e06692c\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["10","20","30","40",]
+    stdout = "Result: 0x9e066936\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["7",]
+    stdout = ""
+    exit_code = 2
+
+[testcase_006]
+    arguments = []
+    stdout = ""
+    exit_code = 2

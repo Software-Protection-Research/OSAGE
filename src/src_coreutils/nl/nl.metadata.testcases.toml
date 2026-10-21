@@ -1,1 +1,41 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "a\n\nb\n"
+    stdout = "     1\ta\n       \n     2\tb\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-b","a",]
+    stdin = "a\n\nb\n"
+    stdout = "     1\ta\n     2\t\n     3\tb\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-n","rz","-w","3",]
+    stdin = "x\ny\n"
+    stdout = "001\tx\n002\ty\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-s",":",]
+    stdin = "x\ny\n"
+    stdout = "     1:x\n     2:y\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-v","10","-i","5",]
+    stdin = "x\ny\nz\n"
+    stdout = "    10\tx\n    15\ty\n    20\tz\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-n","ln",]
+    stdin = "p\n"
+    stdout = "1     \tp\n"
+    exit_code = 0
+
+[testcase_007]
+    arguments = ["-b","pb",]
+    stdin = "ab\nbc\ncd\n"
+    stdout = "     1\tab\n     2\tbc\n       cd\n"
+    exit_code = 0

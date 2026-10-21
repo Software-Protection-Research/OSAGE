@@ -1,1 +1,23 @@
-[testcase]
+[testcase_001]
+    arguments = ["-T",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-T","-2",]
+    stdin = "a\nb\nc\nd\n"
+    stdout = "a\t\t\t\t    c\nb\t\t\t\t    d\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-T","-n",]
+    stdin = "x\ny\n"
+    stdout = "    1\tx\n    2\ty\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-T","-d",]
+    stdin = "a\nb\n"
+    stdout = "a\n\nb\n\n"
+    exit_code = 0

@@ -1,1 +1,35 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-n",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "     1\tthe quick brown fox\n     2\tjumps over\tthe lazy dog\n     3\t\n     4\tlast line\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-b",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "     1\tthe quick brown fox\n     2\tjumps over\tthe lazy dog\n\n     3\tlast line\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-A",]
+    stdin = "a\tb\n"
+    stdout = "a^Ib$\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-s",]
+    stdin = "a\n\n\n\nb\n"
+    stdout = "a\n\nb\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["-E",]
+    stdin = "x\ny\n"
+    stdout = "x$\ny$\n"
+    exit_code = 0

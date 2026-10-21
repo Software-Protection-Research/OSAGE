@@ -14,3 +14,45 @@
 #     filecontent = "Work with this please!\nThanks!"
 #     stdout = "V29yayB3aXRoIHRoaXMgcGxlYXNlIQpUaGFua3MhCg==\n"
 #     exit_code = 0
+
+# Additional testcases (expected outputs from the unobfuscated build, gcc 16.2, LC_ALL=C)
+[testcase_gen_001]
+    arguments = []
+    stdin = "hello world\n"
+    stdout = "aGVsbG8gd29ybGQK\n"
+    exit_code = 0
+
+[testcase_gen_002]
+    arguments = ["-d",]
+    stdin = "aGVsbG8gd29ybGQK\n"
+    stdout = "hello world\n"
+    exit_code = 0
+
+[testcase_gen_003]
+    arguments = ["-w","4",]
+    stdin = "abcdefgh"
+    stdout = "YWJj\nZGVm\nZ2g=\n"
+    exit_code = 0
+
+[testcase_gen_004]
+    arguments = []
+    stdout = ""
+    exit_code = 0
+
+[testcase_gen_005]
+    arguments = ["-d",]
+    stdin = "!!!\n"
+    stdout = ""
+    exit_code = 1
+
+[testcase_gen_006]
+    arguments = ["-w","0",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "dGhlIHF1aWNrIGJyb3duIGZveApqdW1wcyBvdmVyCXRoZSBsYXp5IGRvZwoKbGFzdCBsaW5lCg=="
+    exit_code = 0
+
+[testcase_gen_007]
+    arguments = ["-d","-i",]
+    stdin = "aGV*sbG8=\n"
+    stdout = "hello"
+    exit_code = 0

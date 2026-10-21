@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["/usr/bin/sort",]
+    stdout = "/usr/bin\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["a",]
+    stdout = ".\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["a/b/","c//d",]
+    stdout = "a\nc\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["/",]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["//x//",]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = []
+    stdout = ""
+    exit_code = 1

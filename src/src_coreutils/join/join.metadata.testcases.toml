@@ -1,1 +1,5 @@
-[testcase]
+[testcase_001]
+    arguments = ["-","/dev/null",]
+    stdin = "a 1\n"
+    stdout = ""
+    exit_code = 0

@@ -8,6 +8,5 @@ next_file
 set_extend_size
 set_file_list
 set_increment_size
-uintmax_t
 usage
 validate_tab_stops

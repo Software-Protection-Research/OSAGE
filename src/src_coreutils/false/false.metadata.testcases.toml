@@ -1,1 +1,4 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdout = ""
+    exit_code = 1

@@ -1,1 +1,34 @@
-[testcase]
+[testcase_001]
+    arguments = []
+    stdin = "hello\n"
+    stdout = "36979     1\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-s",]
+    stdin = "hello\n"
+    stdout = "542 1\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = []
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\nthe quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "41979     3\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["-r",]
+    stdin = "the quick brown fox\njumps over\tthe lazy dog\n\nlast line\n"
+    stdout = "12570     1\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-s",]
+    stdout = "0 0\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = []
+    stdin = "\u00ff\u00ff\u00ff"
+    stdout = "43386     1\n"
+    exit_code = 0

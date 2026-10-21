@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["3","4",]
+    stdout = "Result: 0xc\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["0","5",]
+    stdout = "Result: 0x0\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["13","17",]
+    stdout = "Result: 0xdd\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["100","100",]
+    stdout = "Result: 0x2710\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["7",]
+    stdout = ""
+    exit_code = 2
+
+[testcase_006]
+    arguments = []
+    stdout = ""
+    exit_code = 2

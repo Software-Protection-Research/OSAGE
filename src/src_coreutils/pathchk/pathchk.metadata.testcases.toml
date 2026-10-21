@@ -1,1 +1,19 @@
-[testcase]
+[testcase_001]
+    arguments = ["a/b/c",]
+    stdout = ""
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-p","a b",]
+    stdout = ""
+    exit_code = 1
+
+[testcase_003]
+    arguments = ["-P","-x",]
+    stdout = ""
+    exit_code = 1
+
+[testcase_004]
+    arguments = ["-p","xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",]
+    stdout = ""
+    exit_code = 1

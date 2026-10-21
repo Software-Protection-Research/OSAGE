@@ -1,1 +1,29 @@
-[testcase]
+[testcase_001]
+    arguments = ["-w","5",]
+    stdin = "hello world foo\n"
+    stdout = "hello\n worl\nd foo\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["-s","-w","6",]
+    stdin = "hello world foo bar\n"
+    stdout = "hello \nworld \nfoo \nbar\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["-b","-w","3",]
+    stdin = "abcdefg\n"
+    stdout = "abc\ndef\ng\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = []
+    stdin = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+    stdout = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxx\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-w","4",]
+    stdin = "a\tbcdef\n"
+    stdout = "a\n\t\nbcde\nf\n"
+    exit_code = 0

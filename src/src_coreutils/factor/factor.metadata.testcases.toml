@@ -1,1 +1,30 @@
-[testcase]
+[testcase_001]
+    arguments = ["12",]
+    stdout = "12: 2 2 3\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["1","2","3",]
+    stdout = "1:\n2: 2\n3: 3\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["9223372036854775807",]
+    stdout = "9223372036854775807: 7 7 73 127 337 92737 649657\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["0",]
+    stdout = "0:\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = []
+    stdin = "360\n97\n"
+    stdout = "360: 2 2 2 3 3 5\n97: 97\n"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["abc",]
+    stdout = ""
+    exit_code = 1

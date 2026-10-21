@@ -1,1 +1,35 @@
-[testcase]
+[testcase_001]
+    arguments = ["--base64",]
+    stdin = "hello\n"
+    stdout = "aGVsbG8K\n"
+    exit_code = 0
+
+[testcase_002]
+    arguments = ["--base32",]
+    stdin = "hello\n"
+    stdout = "NBSWY3DPBI======\n"
+    exit_code = 0
+
+[testcase_003]
+    arguments = ["--base16",]
+    stdin = "hi"
+    stdout = "6869\n"
+    exit_code = 0
+
+[testcase_004]
+    arguments = ["--base2msbf",]
+    stdin = "A"
+    stdout = "01000001\n"
+    exit_code = 0
+
+[testcase_005]
+    arguments = ["-d","--base16",]
+    stdin = "6869"
+    stdout = "hi"
+    exit_code = 0
+
+[testcase_006]
+    arguments = ["--z85",]
+    stdin = "1234"
+    stdout = "f!$Kw\n"
+    exit_code = 0
