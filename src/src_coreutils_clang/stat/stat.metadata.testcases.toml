@@ -1,0 +1,73 @@
+[testcase_nl]
+    arguments = ["--printf=\n", "."]
+    stdout = "\n"
+    exit_code = 0
+
+[testcase_no-nl]
+    arguments = ["--printf=%n", "."]
+    stdout = "."
+    exit_code = 0
+
+[testcase_pct-and-esc]
+    arguments = ["--printf=\0%n\0", "."]
+    stdout = "\u0000.\u0000"
+    exit_code = 0
+
+[testcase_backslash]
+    arguments = ["--printf=\\", "."]
+    stdout = "\\"
+    exit_code = 0
+
+[testcase_nul]
+    arguments = ["--printf=\0", "."]
+    stdout = "\u0000"
+    exit_code = 0
+
+[testcase_bel-etc]
+    arguments = ["--printf=\a\b\f\n\r\t", "."]
+    stdout = "\u0007\b\f\n\r\t"
+    exit_code = 0
+
+[testcase_hex-1]
+    arguments = ["--printf=\x34\xf", "."]
+    stdout = "4\u000F"
+    exit_code = 0
+
+[testcase_hex-2]
+    arguments = ["--printf=.\x18p\xfq", "."]
+    stdout = ".\u0018p\u000Fq"
+    exit_code = 0
+
+[testcase_hex-3]
+    arguments = ["--printf=\x", "."]
+    stdout = "x"
+    exit_code = 0
+
+[testcase_f-nl]
+    arguments = ["--format=%n", "."]
+    stdout = ".\n"
+    exit_code = 0
+
+[testcase_f-nl2]
+    arguments = ["--format=%n", ".", "."]
+    stdout = ".\n.\n"
+    exit_code = 0
+
+[testcase_end-pct]
+    arguments = ["--printf=%", "."]
+    stdout = "%"
+    exit_code = 0
+
+[testcase_pct-pct]
+    arguments = ["--printf=%%", "."]
+    stdout = "%"
+    exit_code = 0
+
+[testcase_end-bs]
+    arguments = ["--printf=\", "."]
+    stdout = "\\"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "stat (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Michael Meskes.\n"
+    exit_code = 0

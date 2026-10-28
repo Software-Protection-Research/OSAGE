@@ -1,0 +1,381 @@
+[testcase_a1]
+    arguments = []
+    stdin = " y\n"
+    stdout = " y\n"
+    exit_code = 0
+
+[testcase_a2]
+    arguments = []
+    stdin = "  y\n"
+    stdout = "  y\n"
+    exit_code = 0
+
+[testcase_a3]
+    arguments = []
+    stdin = "   y\n"
+    stdout = "   y\n"
+    exit_code = 0
+
+[testcase_a4]
+    arguments = []
+    stdin = "    y\n"
+    stdout = "    y\n"
+    exit_code = 0
+
+[testcase_a5]
+    arguments = []
+    stdin = "     y\n"
+    stdout = "     y\n"
+    exit_code = 0
+
+[testcase_a6]
+    arguments = []
+    stdin = "      y\n"
+    stdout = "      y\n"
+    exit_code = 0
+
+[testcase_a7]
+    arguments = []
+    stdin = "       y\n"
+    stdout = "       y\n"
+    exit_code = 0
+
+[testcase_a8]
+    arguments = []
+    stdin = "        y\n"
+    stdout = "\ty\n"
+    exit_code = 0
+
+[testcase_aa-1]
+    arguments = ["-a"]
+    stdin = "w y\n"
+    stdout = "w y\n"
+    exit_code = 0
+
+[testcase_aa-2]
+    arguments = ["-a"]
+    stdin = "w  y\n"
+    stdout = "w  y\n"
+    exit_code = 0
+
+[testcase_aa-3]
+    arguments = ["-a"]
+    stdin = "w   y\n"
+    stdout = "w   y\n"
+    exit_code = 0
+
+[testcase_aa-4]
+    arguments = ["-a"]
+    stdin = "w    y\n"
+    stdout = "w    y\n"
+    exit_code = 0
+
+[testcase_aa-5]
+    arguments = ["-a"]
+    stdin = "w     y\n"
+    stdout = "w     y\n"
+    exit_code = 0
+
+[testcase_aa-6]
+    arguments = ["-a"]
+    stdin = "w      y\n"
+    stdout = "w      y\n"
+    exit_code = 0
+
+[testcase_aa-7]
+    arguments = ["-a"]
+    stdin = "w       y\n"
+    stdout = "w\ty\n"
+    exit_code = 0
+
+[testcase_aa-8]
+    arguments = ["-a"]
+    stdin = "w        y\n"
+    stdout = "w\t y\n"
+    exit_code = 0
+
+[testcase_b-1]
+    arguments = ["-t", "2,4"]
+    stdin = "      ."
+    stdout = "\t\t  ."
+    exit_code = 0
+
+[testcase_infloop-1]
+    arguments = ["-t", "1,2"]
+    stdin = " \t\t .\n"
+    stdout = "\t\t\t .\n"
+    exit_code = 0
+
+[testcase_infloop-2]
+    arguments = ["-t", "4,5"]
+    stdin = "    \t\t \n"
+    stdout = "\t\t\t \n"
+    exit_code = 0
+
+[testcase_infloop-3]
+    arguments = ["-t", "2,3"]
+    stdin = "x \t\t \n"
+    stdout = "x\t\t\t \n"
+    exit_code = 0
+
+[testcase_infloop-4]
+    arguments = ["-t", "1,2"]
+    stdin = " \t\t   \n"
+    stdout = "\t\t\t   \n"
+    exit_code = 0
+
+[testcase_c-1]
+    arguments = ["-t", "1,2"]
+    stdin = "x\t\t .\n"
+    stdout = "x\t\t .\n"
+    exit_code = 0
+
+[testcase_tabs-1]
+    arguments = ["-t", "3"]
+    stdin = "   a  b\n"
+    stdout = "\ta\tb\n"
+    exit_code = 0
+
+[testcase_tabs-2]
+    arguments = ["-t", "3", "--first-only"]
+    stdin = "   a  b\n"
+    stdout = "\ta  b\n"
+    exit_code = 0
+
+[testcase_tabs-3]
+    arguments = ["-t", "3,6"]
+    stdin = "   a  b\n"
+    stdout = "\ta\tb\n"
+    exit_code = 0
+
+[testcase_tabs-4]
+    arguments = ["-t", "3 6"]
+    stdin = "   a  b\n"
+    stdout = "\ta\tb\n"
+    exit_code = 0
+
+[testcase_tabs-5]
+    arguments = ["-t", "3\t6"]
+    stdin = "   a  b\n"
+    stdout = "\ta\tb\n"
+    exit_code = 0
+
+[testcase_tabs-6]
+    arguments = ["-t", ", 3,6"]
+    stdin = "   a  b\n"
+    stdout = "\ta\tb\n"
+    exit_code = 0
+
+[testcase_blanks-1]
+    arguments = ["-t", "1"]
+    stdin = " b  c   d\n"
+    stdout = "\tb\t\tc\t\t\td\n"
+    exit_code = 0
+
+[testcase_blanks-2]
+    arguments = ["-t", "1"]
+    stdin = "a \n"
+    stdout = "a \n"
+    exit_code = 0
+
+[testcase_blanks-3]
+    arguments = ["-t", "1"]
+    stdin = "a  \n"
+    stdout = "a\t\t\n"
+    exit_code = 0
+
+[testcase_blanks-4]
+    arguments = ["-t", "1"]
+    stdin = "a   \n"
+    stdout = "a\t\t\t\n"
+    exit_code = 0
+
+[testcase_blanks-5]
+    arguments = ["-t", "1"]
+    stdin = "a "
+    stdout = "a "
+    exit_code = 0
+
+[testcase_blanks-6]
+    arguments = ["-t", "1"]
+    stdin = "a  "
+    stdout = "a\t\t"
+    exit_code = 0
+
+[testcase_blanks-7]
+    arguments = ["-t", "1"]
+    stdin = "a   "
+    stdout = "a\t\t\t"
+    exit_code = 0
+
+[testcase_blanks-8]
+    arguments = ["-t", "1"]
+    stdin = " a a  a\n"
+    stdout = "\ta a\t\ta\n"
+    exit_code = 0
+
+[testcase_blanks-9]
+    arguments = ["-t", "2"]
+    stdin = "   a  a  a\n"
+    stdout = "\t a\ta\t a\n"
+    exit_code = 0
+
+[testcase_blanks-10]
+    arguments = ["-t", "3,4"]
+    stdin = "0 2 4 6\t8\n"
+    stdout = "0 2 4 6\t8\n"
+    exit_code = 0
+
+[testcase_blanks-11]
+    arguments = ["-t", "3,4"]
+    stdin = "    4\n"
+    stdout = "\t\t4\n"
+    exit_code = 0
+
+[testcase_blanks-12]
+    arguments = ["-t", "3,4"]
+    stdin = "01  4\n"
+    stdout = "01\t\t4\n"
+    exit_code = 0
+
+[testcase_blanks-13]
+    arguments = ["-t", "3,4"]
+    stdin = "0   4\n"
+    stdout = "0\t\t4\n"
+    exit_code = 0
+
+[testcase_blanks-ext1]
+    arguments = ["-t", "3,+6"]
+    stdin = "\t      "
+    stdout = "\t\t"
+    exit_code = 0
+
+[testcase_blanks-ext2]
+    arguments = ["-t", "3,/9"]
+    stdin = "\t      "
+    stdout = "\t\t"
+    exit_code = 0
+
+[testcase_posix-1]
+    arguments = ["-a"]
+    stdin = "1234567   \t1\n"
+    stdout = "1234567\t\t1\n"
+    exit_code = 0
+
+[testcase_posix-2]
+    arguments = ["-a"]
+    stdin = "1234567  \t1\n"
+    stdout = "1234567\t\t1\n"
+    exit_code = 0
+
+[testcase_posix-3]
+    arguments = ["-a"]
+    stdin = "1234567 \t1\n"
+    stdout = "1234567\t\t1\n"
+    exit_code = 0
+
+[testcase_posix-4]
+    arguments = ["-a"]
+    stdin = "1234567\t1\n"
+    stdout = "1234567\t1\n"
+    exit_code = 0
+
+[testcase_posix-5]
+    arguments = ["-a"]
+    stdin = "1234567  1\n"
+    stdout = "1234567\t 1\n"
+    exit_code = 0
+
+[testcase_posix-6]
+    arguments = ["-a"]
+    stdin = "1234567 1\n"
+    stdout = "1234567 1\n"
+    exit_code = 0
+
+[testcase_bs1]
+    arguments = ["-a", "-t4"]
+    stdin = "aa  c\n"
+    stdout = "aa\tc\n"
+    exit_code = 0
+
+[testcase_bs2]
+    arguments = ["-a", "-t4"]
+    stdin = "aa\b  c\n"
+    stdout = "aa\b  c\n"
+    exit_code = 0
+
+[testcase_bs3]
+    arguments = ["-a", "-t4"]
+    stdin = "aa\b   c\n"
+    stdout = "aa\b\tc\n"
+    exit_code = 0
+
+[testcase_bs4]
+    arguments = ["-a", "-t3"]
+    stdin = "aa\b  c\n"
+    stdout = "aa\b\tc\n"
+    exit_code = 0
+
+[testcase_u1]
+    arguments = ["-a", "-3"]
+    stdin = "a  b  c"
+    stdout = "a\tb\tc"
+    exit_code = 0
+
+[testcase_u2]
+    arguments = ["-a", "-4,9"]
+    stdin = "a   b    c"
+    stdout = "a\tb\tc"
+    exit_code = 0
+
+[testcase_u3]
+    arguments = ["-a", "-11"]
+    stdin = "a          b"
+    stdout = "a\tb"
+    exit_code = 0
+
+[testcase_u4]
+    arguments = ["-a", "-2,6"]
+    stdin = "a b   c"
+    stdout = "a b\tc"
+    exit_code = 0
+
+[testcase_u5]
+    arguments = ["-a", "-7"]
+    stdin = "a      b"
+    stdout = "a\tb"
+    exit_code = 0
+
+[testcase_u6]
+    arguments = ["-a", "-8"]
+    stdin = "a       b"
+    stdout = "a\tb"
+    exit_code = 0
+
+[testcase_u7]
+    arguments = ["-a", "-3,9"]
+    stdin = "a  b     c"
+    stdout = "a\tb\tc"
+    exit_code = 0
+
+[testcase_u8]
+    arguments = ["-3"]
+    stdin = "   a   b"
+    stdout = "\ta   b"
+    exit_code = 0
+
+[testcase_ts1]
+    arguments = ["-t8,9"]
+    stdin = "x\t \t y\n"
+    stdout = "x\t\t\t y\n"
+    exit_code = 0
+
+[testcase_ts2]
+    arguments = ["-t5,8"]
+    stdin = "x\t \t y\n"
+    stdout = "x\t\t y\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "unexpand (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie.\n"
+    exit_code = 0

@@ -1,0 +1,152 @@
+[testcase_i-opt-a]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-tn", "-i5", "-h", ""]
+    stdin = "a        b\n"
+    stdout = "    1\ta\t    b\n"
+    exit_code = 0
+
+[testcase_i-opt-b]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-tn", "-i5", "-o9", "-h", ""]
+    stdin = "a        b\n"
+    stdout = "\t\t   1\ta\t    b\n"
+    exit_code = 0
+
+[testcase_ncut-a]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-tn2", "-N98"]
+    stdin = "y\ny\ny\ny\ny\n"
+    stdout = "98\ty\n99\ty\n00\ty\n01\ty\n02\ty\n"
+    exit_code = 0
+
+[testcase_ncut-b]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-tn:2", "-N98"]
+    stdin = "y\ny\ny\ny\ny\n"
+    stdout = "98:y\n99:y\n00:y\n01:y\n02:y\n"
+    exit_code = 0
+
+[testcase_margin-0]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-o", "0"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_dbl-sp-a]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-d", "-l", "14", "-h", ""]
+    stdin = "1\n2\n"
+    stdout = "\n\n-- Date/Time --                                                   Page 1\n\n\n1\n\n2\n\n\n\n\n\n\n"
+    exit_code = 0
+
+[testcase_dbl-sp-b]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-d", "-t"]
+    stdin = "1\n2\n"
+    stdout = "1\n\n2\n\n"
+    exit_code = 0
+
+[testcase_narrow-1]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-W1", "-t"]
+    stdin = "12345\n"
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_col-last]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-W3", "-t2"]
+    stdin = "a\nb\nc\n"
+    stdout = "a c\nb\n"
+    exit_code = 0
+
+[testcase_col-02]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-W3", "-t", "-02"]
+    stdin = "a\nb\nc\n"
+    stdout = "a c\nb\n"
+    exit_code = 0
+
+[testcase_col-2]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-W3", "-t", "-4", "--columns=1", "-2"]
+    stdin = "a\nb\nc\n"
+    stdout = "a c\nb\n"
+    exit_code = 0
+
+[testcase_col-long]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-W3", "-t", "-1", "--columns=2"]
+    stdin = "a\nb\nc\n"
+    stdout = "a c\nb\n"
+    exit_code = 0
+
+[testcase_neg-inp-pos1]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-e"]
+    stdin = "\b\b\b\b\b\b\tx\n"
+    stdout = "        x\n"
+    exit_code = 0
+
+[testcase_neg-inp-pos2]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-e"]
+    stdin = "abc\b\b\b\b\tx"
+    stdout = "abc\b\b\b        x\n"
+    exit_code = 0
+
+[testcase_smash-heap]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-e300"]
+    stdin = "a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\t"
+    stdout = "a\b                                                                                                                                                                                                                                                                                                            \n"
+    exit_code = 0
+
+[testcase_smash-heap8]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-e"]
+    stdin = "a\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\t"
+    stdout = "a\b        \n"
+    exit_code = 0
+
+[testcase_page-range]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "+1:1", "-2", "-l1", "-s "]
+    stdin = "a\nb\nc\n"
+    stdout = "a b\n"
+    exit_code = 0
+
+[testcase_padding1]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-n,15"]
+    stdin = "1\n"
+    stdout = "              1,1\n"
+    exit_code = 0
+
+[testcase_padding2]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-n,64"]
+    stdin = "1\n"
+    stdout = "                                                               1,1\n"
+    exit_code = 0
+
+[testcase_padding3]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-t", "-N1000000", "-n,1"]
+    stdin = "1\n"
+    stdout = "0,1\n"
+    exit_code = 0
+
+[testcase_page-length1]
+    arguments = ["--date-format=-- Date/Time --", "-h", "x", "-dl1"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_mcol-w-tabs]
+    arguments = ["-t", "-2"]
+    stdin = "x\tx\tx\tx\tx\nx\tx\tx\tx\tx\n"
+    stdout = "x\tx\tx\tx\tx   x\t    x\t    x\t    x\t    x\n"
+    exit_code = 0
+
+[testcase_mcol-w-tabs-w-tabsep]
+    arguments = ["-t", "-2", "-s"]
+    stdin = "x\tx\tx\tx\tx\nx\tx\tx\tx\tx\n"
+    stdout = "x\tx\tx\tx\tx\tx\tx\tx\tx\tx\n"
+    exit_code = 0
+
+[testcase_mcol-w-tabs-w-tabsep-sepstr]
+    arguments = ["-t", "-2", "-s\t"]
+    stdin = "x\tx\tx\tx\tx\nx\tx\tx\tx\tx\n"
+    stdout = "x\tx\tx\tx\tx\tx\tx\tx\tx\tx\n"
+    exit_code = 0
+
+[testcase_version]
+    arguments = ['--version']
+    stdout = "pr (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Pete TerMaat and Roland Huebner.\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "pr (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Pete TerMaat and Roland Huebner.\n"
+    exit_code = 0

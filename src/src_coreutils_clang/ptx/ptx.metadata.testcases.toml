@@ -1,0 +1,57 @@
+[testcase_1tok]
+    arguments = ["-w10"]
+    stdin = "bar\n"
+    stdout = "        bar\n"
+    exit_code = 0
+
+[testcase_2tok]
+    arguments = ["-w10"]
+    stdin = "foo bar\n"
+    stdout = "     /   bar\n        foo/\n"
+    exit_code = 0
+
+[testcase_width-1]
+    arguments = ["-t", "-w10"]
+    stdin = "bar\n"
+    stdout = "        bar\n"
+    exit_code = 0
+
+[testcase_width-3]
+    arguments = []
+    stdin = "bar\n"
+    stdout = "                                       bar\n"
+    exit_code = 0
+
+[testcase_width-2]
+    arguments = ["-t"]
+    stdin = "bar\n"
+    stdout = "                                                     bar\n"
+    exit_code = 0
+
+[testcase_narrow]
+    arguments = ["-w2"]
+    stdin = "qux\n"
+    stdout = "      qux\n"
+    exit_code = 0
+
+[testcase_narrow-g]
+    arguments = ["-g1", "-w2"]
+    stdin = "ta\n"
+    stdout = "  ta\n"
+    exit_code = 0
+
+[testcase_format-r]
+    arguments = ["--format=roff"]
+    stdin = "foo\n"
+    stdout = ".xx \"\" \"\" \"foo\" \"\"\n"
+    exit_code = 0
+
+[testcase_format-t]
+    arguments = ["--format=tex"]
+    stdin = "foo\n"
+    stdout = "\\xx {}{}{foo}{}{}\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "ptx (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by François Pinard.\n"
+    exit_code = 0

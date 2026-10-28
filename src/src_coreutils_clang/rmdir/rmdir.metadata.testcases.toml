@@ -1,0 +1,4 @@
+[testcase_version]
+    arguments = ['--version']
+    stdout = "rmdir (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie.\n"
+    exit_code = 0

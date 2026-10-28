@@ -1,0 +1,293 @@
+[testcase_onearg-1]
+    arguments = ["10"]
+    stdout = "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n"
+    exit_code = 0
+
+[testcase_onearg-2]
+    arguments = ["-1"]
+    stdout = ""
+    exit_code = 0
+
+[testcase_empty-rev]
+    arguments = ["1", "-1", "3"]
+    stdout = ""
+    exit_code = 0
+
+[testcase_neg-1]
+    arguments = ["-10", "10", "10"]
+    stdout = "-10\n0\n10\n"
+    exit_code = 0
+
+[testcase_neg-3]
+    arguments = ["1", "-1", "0"]
+    stdout = "1\n0\n"
+    exit_code = 0
+
+[testcase_neg-4]
+    arguments = ["1", "-1", "-1"]
+    stdout = "1\n0\n-1\n"
+    exit_code = 0
+
+[testcase_float-1]
+    arguments = ["0.8", "0.1", "0.9"]
+    stdout = "0.8\n0.9\n"
+    exit_code = 0
+
+[testcase_float-2]
+    arguments = ["0.1", "0.99", "1.99"]
+    stdout = "0.10\n1.09\n"
+    exit_code = 0
+
+[testcase_float-3]
+    arguments = ["10.8", "0.1", "10.95"]
+    stdout = "10.8\n10.9\n"
+    exit_code = 0
+
+[testcase_float-5]
+    arguments = ["0.8", "1e-1", "0.9"]
+    stdout = "0.8\n0.9\n"
+    exit_code = 0
+
+[testcase_float-6]
+    arguments = ["0.8", "0.1", "0.9000000000000"]
+    stdout = "0.8\n0.9\n"
+    exit_code = 0
+
+[testcase_wid-1]
+    arguments = [".8", "1e-2", ".81"]
+    stdout = "0.80\n0.81\n"
+    exit_code = 0
+
+[testcase_wid-2]
+    arguments = [".89999", "1e-7", ".8999901"]
+    stdout = "0.8999900\n0.8999901\n"
+    exit_code = 0
+
+[testcase_eq-wid-1]
+    arguments = ["-w", "1", "-1", "-1"]
+    stdout = "01\n00\n-1\n"
+    exit_code = 0
+
+[testcase_eq-wid-2]
+    arguments = ["-w", "-.1", ".1", ".11"]
+    stdout = "-0.1\n00.0\n00.1\n"
+    exit_code = 0
+
+[testcase_eq-wid-3]
+    arguments = ["-w", "1", "3.0"]
+    stdout = "1\n2\n3\n"
+    exit_code = 0
+
+[testcase_eq-wid-4]
+    arguments = ["-w", ".8", "1e-2", ".81"]
+    stdout = "0.80\n0.81\n"
+    exit_code = 0
+
+[testcase_eq-wid-5]
+    arguments = ["-w", "1", ".5", "2"]
+    stdout = "1.0\n1.5\n2.0\n"
+    exit_code = 0
+
+[testcase_eq-wid-6]
+    arguments = ["-w", "+1", "2"]
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_eq-wid-7]
+    arguments = ["-w", " .1", " .1"]
+    stdout = "0.1\n"
+    exit_code = 0
+
+[testcase_eq-wid-8]
+    arguments = ["-w", "9", "0.5", "10"]
+    stdout = "09.0\n09.5\n10.0\n"
+    exit_code = 0
+
+[testcase_eq-wid-9]
+    arguments = ["-w", "-1e-3", "1"]
+    stdout = "-0.001\n00.999\n"
+    exit_code = 0
+
+[testcase_eq-wid-10]
+    arguments = ["-w", "-1e-003", "1"]
+    stdout = "-0.001\n00.999\n"
+    exit_code = 0
+
+[testcase_eq-wid-11]
+    arguments = ["-w", "-1.e-3", "1"]
+    stdout = "-0.001\n00.999\n"
+    exit_code = 0
+
+[testcase_eq-wid-12]
+    arguments = ["-w", "-1.0e-4", "1"]
+    stdout = "-0.00010\n00.99990\n"
+    exit_code = 0
+
+[testcase_eq-wid-13]
+    arguments = ["-w", "999", "1e3"]
+    stdout = "0999\n1000\n"
+    exit_code = 0
+
+[testcase_eq-wid-14]
+    arguments = ["-w", "-1", "1.0", "0"]
+    stdout = "-1.0\n00.0\n"
+    exit_code = 0
+
+[testcase_eq-wid-15]
+    arguments = ["-w", "10", "-.1", "9.9"]
+    stdout = "10.0\n09.9\n"
+    exit_code = 0
+
+[testcase_fmt-1]
+    arguments = ["-f", "%2.1f", "1.5", ".5", "2"]
+    stdout = "1.5\n2.0\n"
+    exit_code = 0
+
+[testcase_fmt-2]
+    arguments = ["-f", "%0.1f", "1.5", ".5", "2"]
+    stdout = "1.5\n2.0\n"
+    exit_code = 0
+
+[testcase_fmt-3]
+    arguments = ["-f", "%.1f", "1.5", ".5", "2"]
+    stdout = "1.5\n2.0\n"
+    exit_code = 0
+
+[testcase_fmt-4]
+    arguments = ["-f", "%3.0f", "1", "2"]
+    stdout = "  1\n  2\n"
+    exit_code = 0
+
+[testcase_fmt-5]
+    arguments = ["-f", "%-3.0f", "1", "2"]
+    stdout = "1  \n2  \n"
+    exit_code = 0
+
+[testcase_fmt-6]
+    arguments = ["-f", "%+3.0f", "1", "2"]
+    stdout = " +1\n +2\n"
+    exit_code = 0
+
+[testcase_fmt-7]
+    arguments = ["-f", "%0+3.0f", "1", "2"]
+    stdout = "+01\n+02\n"
+    exit_code = 0
+
+[testcase_fmt-8]
+    arguments = ["-f", "%0+.0f", "1", "2"]
+    stdout = "+1\n+2\n"
+    exit_code = 0
+
+[testcase_fmt-9]
+    arguments = ["-f", "% -3.0f", "-1", "0"]
+    stdout = "-1 \n 0 \n"
+    exit_code = 0
+
+[testcase_fmt-a]
+    arguments = ["-f", "% -.0f", "-1", "0"]
+    stdout = "-1\n 0\n"
+    exit_code = 0
+
+[testcase_fmt-b]
+    arguments = ["-f", "%%%g%%", "1"]
+    stdout = "%1%\n"
+    exit_code = 0
+
+[testcase_long-1]
+    arguments = ["999999999999999999999999999999999999999999999999999999999999999999999999999999999", "1000000000000000000000000000000000000000000000000000000000000000000000000000000001"]
+    stdout = "999999999999999999999999999999999999999999999999999999999999999999999999999999999\n1000000000000000000000000000000000000000000000000000000000000000000000000000000000\n1000000000000000000000000000000000000000000000000000000000000000000000000000000001\n"
+    exit_code = 0
+
+[testcase_long-leading-zeros1]
+    arguments = ["000", "2"]
+    stdout = "0\n1\n2\n"
+    exit_code = 0
+
+[testcase_long-leading-zeros2]
+    arguments = ["000", "02"]
+    stdout = "0\n1\n2\n"
+    exit_code = 0
+
+[testcase_long-leading-zeros3]
+    arguments = ["00", "02"]
+    stdout = "0\n1\n2\n"
+    exit_code = 0
+
+[testcase_long-leading-zeros4]
+    arguments = ["0", "02"]
+    stdout = "0\n1\n2\n"
+    exit_code = 0
+
+[testcase_sep-1]
+    arguments = ["-s,", "1", "3"]
+    stdout = "1,2,3\n"
+    exit_code = 0
+
+[testcase_sep-2]
+    arguments = ["-s,", "1", "1"]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_sep-3]
+    arguments = ["-s,,", "1", "3"]
+    stdout = "1,,2,,3\n"
+    exit_code = 0
+
+[testcase_not-fast-1]
+    arguments = ["1", "3", "1"]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_not-fast-2]
+    arguments = ["1", "1", "4.2"]
+    stdout = "1\n2\n3\n4\n"
+    exit_code = 0
+
+[testcase_not-fast-3]
+    arguments = ["1", "1", "0"]
+    stdout = ""
+    exit_code = 0
+
+[testcase_not-fast-4]
+    arguments = ["-0", "10"]
+    stdout = "-0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n"
+    exit_code = 0
+
+[testcase_not-fast-5]
+    arguments = ["1", "-0"]
+    stdout = ""
+    exit_code = 0
+
+[testcase_fast-1]
+    arguments = ["4"]
+    stdout = "1\n2\n3\n4\n"
+    exit_code = 0
+
+[testcase_fast-2]
+    arguments = ["1", "4"]
+    stdout = "1\n2\n3\n4\n"
+    exit_code = 0
+
+[testcase_fast-3]
+    arguments = ["1", "1", "4"]
+    stdout = "1\n2\n3\n4\n"
+    exit_code = 0
+
+[testcase_fast-4]
+    arguments = ["1", "2", "4"]
+    stdout = "1\n3\n"
+    exit_code = 0
+
+[testcase_fast-5]
+    arguments = ["1", "4", "4"]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_fast-6]
+    arguments = ["1", "1e0", "4"]
+    stdout = "1\n2\n3\n4\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "seq (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Ulrich Drepper.\n"
+    exit_code = 0

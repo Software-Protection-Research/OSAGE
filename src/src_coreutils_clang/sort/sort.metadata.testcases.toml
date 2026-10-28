@@ -1,0 +1,753 @@
+[testcase_n1]
+    arguments = ["-n"]
+    stdin = ".01\n0\n"
+    stdout = "0\n.01\n"
+    exit_code = 0
+
+[testcase_n2]
+    arguments = ["-n"]
+    stdin = ".02\n.01\n"
+    stdout = ".01\n.02\n"
+    exit_code = 0
+
+[testcase_n3]
+    arguments = ["-n"]
+    stdin = ".02\n.00\n"
+    stdout = ".00\n.02\n"
+    exit_code = 0
+
+[testcase_n4]
+    arguments = ["-n"]
+    stdin = ".02\n.000\n"
+    stdout = ".000\n.02\n"
+    exit_code = 0
+
+[testcase_n5]
+    arguments = ["-n"]
+    stdin = ".021\n.029\n"
+    stdout = ".021\n.029\n"
+    exit_code = 0
+
+[testcase_n6]
+    arguments = ["-n"]
+    stdin = ".02\n.0*\n"
+    stdout = ".0*\n.02\n"
+    exit_code = 0
+
+[testcase_n7]
+    arguments = ["-n"]
+    stdin = ".02\n.*\n"
+    stdout = ".*\n.02\n"
+    exit_code = 0
+
+[testcase_n8a]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".0a\n.0b\n"
+    stdout = ".0a\n.0b\n"
+    exit_code = 0
+
+[testcase_n8b]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".0b\n.0a\n"
+    stdout = ".0b\n.0a\n"
+    exit_code = 0
+
+[testcase_n9a]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".000a\n.000b\n"
+    stdout = ".000a\n.000b\n"
+    exit_code = 0
+
+[testcase_n9b]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".000b\n.000a\n"
+    stdout = ".000b\n.000a\n"
+    exit_code = 0
+
+[testcase_n10a]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".00a\n.000b\n"
+    stdout = ".00a\n.000b\n"
+    exit_code = 0
+
+[testcase_n10b]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".00b\n.000a\n"
+    stdout = ".00b\n.000a\n"
+    exit_code = 0
+
+[testcase_n11a]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".01a\n.010\n"
+    stdout = ".01a\n.010\n"
+    exit_code = 0
+
+[testcase_n11b]
+    arguments = ["-s", "-n", "-k1,1"]
+    stdin = ".010\n.01a\n"
+    stdout = ".010\n.01a\n"
+    exit_code = 0
+
+[testcase_h1]
+    arguments = ["-h"]
+    stdin = "1Q\n1R\n1Y\n1Z\n1E\n1P\n1T\n1G\n1M\n1K\n02\n1\nY\n-1k\n-1M\n-1G\n-1T\n-1P\n-1E\n-1Z\n-1Y\n-1Q\n-1R\n"
+    stdout = "-1Q\n-1R\n-1Y\n-1Z\n-1E\n-1P\n-1T\n-1G\n-1M\n-1k\nY\n1\n02\n1K\n1M\n1G\n1T\n1P\n1E\n1Z\n1Y\n1R\n1Q\n"
+    exit_code = 0
+
+[testcase_h2]
+    arguments = ["-h"]
+    stdin = "1M\n-2G\n-3K"
+    stdout = "-2G\n-3K\n1M\n"
+    exit_code = 0
+
+[testcase_h3]
+    arguments = ["-k", "2,2h", "-k", "1,1"]
+    stdin = "a 1G\nb 1023M\n"
+    stdout = "b 1023M\na 1G\n"
+    exit_code = 0
+
+[testcase_h4]
+    arguments = ["-h"]
+    stdin = "1.E\n2.M\n"
+    stdout = "2.M\n1.E\n"
+    exit_code = 0
+
+[testcase_h5]
+    arguments = ["-h"]
+    stdin = "1..2E\n2..2M\n"
+    stdout = "1..2E\n2..2M\n"
+    exit_code = 0
+
+[testcase_h6]
+    arguments = ["-h"]
+    stdin = "1GiB\n1030MiB\n"
+    stdout = "1030MiB\n1GiB\n"
+    exit_code = 0
+
+[testcase_h8]
+    arguments = ["-n", "-k2,2h"]
+    stdin = "1 1E\n2 2M\n"
+    stdout = "2 2M\n1 1E\n"
+    exit_code = 0
+
+[testcase_h9]
+    arguments = ["-h", "-k1,1", "-k2,2"]
+    stdin = "1M 1Mi\n1M 1Mi\n"
+    stdout = "1M 1Mi\n1M 1Mi\n"
+    exit_code = 0
+
+[testcase_h10]
+    arguments = ["-h", "-k1,1", "-k2,2"]
+    stdin = "1M 2M\n2M 1Mi\n"
+    stdout = "1M 2M\n2M 1Mi\n"
+    exit_code = 0
+
+[testcase_01a]
+    arguments = []
+    stdin = "A\nB\nC\n"
+    stdout = "A\nB\nC\n"
+    exit_code = 0
+
+[testcase_02a]
+    arguments = ["-c"]
+    stdin = "A\nB\nC\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02c]
+    arguments = ["-c", "-k1,1"]
+    stdin = "a\na b\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02d]
+    arguments = ["-C"]
+    stdin = "A\nB\nC\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02n]
+    arguments = ["-cu"]
+    stdin = "A\nB\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02q]
+    arguments = ["-c", "-k", "1,1fR"]
+    stdin = "ABC\nABc\nAbC\nAbc\naBC\naBc\nabC\nabc\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02r]
+    arguments = ["-c", "-k", "1,1fV"]
+    stdin = "ABC\nABc\nAbC\nAbc\naBC\naBc\nabC\nabc\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_02s]
+    arguments = ["-c", "-k", "1,1dfR"]
+    stdin = ".ABC\n.ABc.\nA.bC\nA.bc.\naB.C\naB.c.\nabC.\nabc..\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_03a]
+    arguments = ["-k1"]
+    stdin = "B\nA\n"
+    stdout = "A\nB\n"
+    exit_code = 0
+
+[testcase_03b]
+    arguments = ["-k1,1"]
+    stdin = "B\nA\n"
+    stdout = "A\nB\n"
+    exit_code = 0
+
+[testcase_03c]
+    arguments = ["-k1", "-k2"]
+    stdin = "A b\nA a\n"
+    stdout = "A a\nA b\n"
+    exit_code = 0
+
+[testcase_03g]
+    arguments = ["-k1.1,1.0"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_03h]
+    arguments = ["-k1.1,1"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_03i]
+    arguments = ["-k1,1"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_04a]
+    arguments = ["-nc"]
+    stdin = "2\n11\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_04b]
+    arguments = ["-n"]
+    stdin = "11\n2\n"
+    stdout = "2\n11\n"
+    exit_code = 0
+
+[testcase_04c]
+    arguments = ["-k1n"]
+    stdin = "11\n2\n"
+    stdout = "2\n11\n"
+    exit_code = 0
+
+[testcase_04d]
+    arguments = ["-k1"]
+    stdin = "11\n2\n"
+    stdout = "11\n2\n"
+    exit_code = 0
+
+[testcase_04e]
+    arguments = ["-k2"]
+    stdin = "ignored B\nz-ig A\n"
+    stdout = "z-ig A\nignored B\n"
+    exit_code = 0
+
+[testcase_05a]
+    arguments = ["-k1,2"]
+    stdin = "A B\nA A\n"
+    stdout = "A A\nA B\n"
+    exit_code = 0
+
+[testcase_05b]
+    arguments = ["-k1,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_05c]
+    arguments = ["-k1", "-k2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_05d]
+    arguments = ["-k2,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_05e]
+    arguments = ["-k2,2"]
+    stdin = "A B Z\nA A A\n"
+    stdout = "A A A\nA B Z\n"
+    exit_code = 0
+
+[testcase_05f]
+    arguments = ["-k2,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_06a]
+    arguments = ["-k", "1,2"]
+    stdin = "A B\nA A\n"
+    stdout = "A A\nA B\n"
+    exit_code = 0
+
+[testcase_06b]
+    arguments = ["-k", "1,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_06c]
+    arguments = ["-k", "1", "-k", "2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_06d]
+    arguments = ["-k", "2,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_06e]
+    arguments = ["-k", "2,2"]
+    stdin = "A B Z\nA A A\n"
+    stdout = "A A A\nA B Z\n"
+    exit_code = 0
+
+[testcase_06f]
+    arguments = ["-k", "2,2"]
+    stdin = "A B A\nA A Z\n"
+    stdout = "A A Z\nA B A\n"
+    exit_code = 0
+
+[testcase_07a]
+    arguments = ["-k", "2,3"]
+    stdin = "9 a b\n7 a a\n"
+    stdout = "7 a a\n9 a b\n"
+    exit_code = 0
+
+[testcase_07b]
+    arguments = ["-k", "2,3"]
+    stdin = "a a b\nz a a\n"
+    stdout = "z a a\na a b\n"
+    exit_code = 0
+
+[testcase_07c]
+    arguments = ["-k", "2,3"]
+    stdin = "y k b\nz k a\n"
+    stdout = "z k a\ny k b\n"
+    exit_code = 0
+
+[testcase_07e]
+    arguments = ["-k", "2,3.0"]
+    stdin = "a a b\nz a a\n"
+    stdout = "z a a\na a b\n"
+    exit_code = 0
+
+[testcase_07f]
+    arguments = ["-n", "-k1.3,1.1"]
+    stdin = "a 2\nb 1\n"
+    stdout = "a 2\nb 1\n"
+    exit_code = 0
+
+[testcase_07g]
+    arguments = ["-n", "-k2.2,1.2"]
+    stdin = "aa 2\nbb 1\n"
+    stdout = "aa 2\nbb 1\n"
+    exit_code = 0
+
+[testcase_07h]
+    arguments = ["-k1.3nb,1.3"]
+    stdin = "  a 2\n  b 1\n"
+    stdout = "  a 2\n  b 1\n"
+    exit_code = 0
+
+[testcase_09a]
+    arguments = ["-g"]
+    stdin = "1e2\n2e1\n"
+    stdout = "2e1\n1e2\n"
+    exit_code = 0
+
+[testcase_09b]
+    arguments = ["-n"]
+    stdin = "1e2\n2e1\n"
+    stdout = "1e2\n2e1\n"
+    exit_code = 0
+
+[testcase_09c]
+    arguments = ["-n"]
+    stdin = "2e1\n1e2\n"
+    stdout = "1e2\n2e1\n"
+    exit_code = 0
+
+[testcase_09d]
+    arguments = ["-k2g"]
+    stdin = "a 1e2\nb 2e1\n"
+    stdout = "b 2e1\na 1e2\n"
+    exit_code = 0
+
+[testcase_10a]
+    arguments = ["-t", ":", "-k", "2.2,2.2"]
+    stdin = ":ba\n:ab\n"
+    stdout = ":ba\n:ab\n"
+    exit_code = 0
+
+[testcase_10c]
+    arguments = ["-t", ":", "-k", "2.2,2.2"]
+    stdin = ":ab\n:ba\n"
+    stdout = ":ba\n:ab\n"
+    exit_code = 0
+
+[testcase_10a0]
+    arguments = ["-k", "2.3,2.3"]
+    stdin = "z ba\nz ab\n"
+    stdout = "z ba\nz ab\n"
+    exit_code = 0
+
+[testcase_10a1]
+    arguments = ["-k", "1.2,1.2"]
+    stdin = "ba\nab\n"
+    stdout = "ba\nab\n"
+    exit_code = 0
+
+[testcase_10a2]
+    arguments = ["-b", "-k", "2.2,2.2"]
+    stdin = "z ba\nz ab\n"
+    stdout = "z ba\nz ab\n"
+    exit_code = 0
+
+[testcase_10e]
+    arguments = ["-k", "1.2,1.2"]
+    stdin = "ab\nba\n"
+    stdout = "ba\nab\n"
+    exit_code = 0
+
+[testcase_10f]
+    arguments = ["-t", ":", "-k", "1.3,1.3"]
+    stdin = ":ab\n:ba\n"
+    stdout = ":ba\n:ab\n"
+    exit_code = 0
+
+[testcase_10g]
+    arguments = ["-k", "1.4,1.4"]
+    stdin = "a ab\nb ba\n"
+    stdout = "b ba\na ab\n"
+    exit_code = 0
+
+[testcase_11a]
+    arguments = ["-t:", "-k1,1b", "-k2,2"]
+    stdin = "a\t:a\na :b\n"
+    stdout = "a\t:a\na :b\n"
+    exit_code = 0
+
+[testcase_11b]
+    arguments = ["-t:", "-k1,1b", "-k2,2"]
+    stdin = "a :b\na\t:a\n"
+    stdout = "a\t:a\na :b\n"
+    exit_code = 0
+
+[testcase_11c]
+    arguments = ["-t:", "-k2,2b", "-k3,3"]
+    stdin = "z:a\t:a\na :b\n"
+    stdout = "z:a\t:a\na :b\n"
+    exit_code = 0
+
+[testcase_11d]
+    arguments = ["-t:", "-k2,2b", "-k3,3"]
+    stdin = "z:a :b\na\t:a\n"
+    stdout = "a\t:a\nz:a :b\n"
+    exit_code = 0
+
+[testcase_14a]
+    arguments = ["-d", "-u"]
+    stdin = "mal\nmal-\nmala\n"
+    stdout = "mal\nmala\n"
+    exit_code = 0
+
+[testcase_14b]
+    arguments = ["-f", "-d", "-u"]
+    stdin = "mal\nmal-\nmala\n"
+    stdout = "mal\nmala\n"
+    exit_code = 0
+
+[testcase_15a]
+    arguments = ["-i", "-u"]
+    stdin = "a\na\u0001\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_15b]
+    arguments = ["-i", "-u"]
+    stdin = "a\n\u0001a\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_15c]
+    arguments = ["-i", "-u"]
+    stdin = "a\u0001\na\n"
+    stdout = "a\u0001\n"
+    exit_code = 0
+
+[testcase_15d]
+    arguments = ["-i", "-u"]
+    stdin = "\u0001a\na\n"
+    stdout = "\u0001a\n"
+    exit_code = 0
+
+[testcase_15e]
+    arguments = ["-i", "-u"]
+    stdin = "a\n\u0001\u0001\u0001\u0001\u0001a\u0001\u0001\u0001\u0001\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_unique-1]
+    arguments = ["--p=1", "-S32b", "-u"]
+    stdin = "7\n7\n7\n7\n7\n7\n7\n7\n7\n7\n7\n1\n"
+    stdout = "1\n7\n"
+    exit_code = 0
+
+[testcase_unique-key-i686]
+    arguments = ["-u", "-k2,2", "--p=1", "-S32b"]
+    stdin = "a 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\nb 1\n"
+    stdout = "b 1\na 7\n"
+    exit_code = 0
+
+[testcase_unique-key-x86_64]
+    arguments = ["-u", "-k2,2", "--p=1", "-S32b"]
+    stdin = "a 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\na 7\nb 1\n"
+    stdout = "b 1\na 7\n"
+    exit_code = 0
+
+[testcase_unique-free-mem-read]
+    arguments = ["-u", "--p=1", "-S32b"]
+    stdin = "a\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n"
+    stdout = "a\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n"
+    exit_code = 0
+
+[testcase_16a]
+    arguments = ["-f"]
+    stdin = "éminence\nüberhaupt\n's-Gravenhage\naëroclub\nAag\naagtappels\n"
+    stdout = "'s-Gravenhage\nAag\naagtappels\naëroclub\néminence\nüberhaupt\n"
+    exit_code = 0
+
+[testcase_17]
+    arguments = ["-c"]
+    stdin = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_18a]
+    arguments = ["-k1.1,1.2n"]
+    stdin = " 901\n100\n"
+    stdout = " 901\n100\n"
+    exit_code = 0
+
+[testcase_18b]
+    arguments = ["-b", "-k1.1,1.2n"]
+    stdin = " 901\n100\n"
+    stdout = " 901\n100\n"
+    exit_code = 0
+
+[testcase_18c]
+    arguments = ["-k1.1,1.2nb"]
+    stdin = " 901\n100\n"
+    stdout = "100\n 901\n"
+    exit_code = 0
+
+[testcase_18d]
+    arguments = ["-k1.1b,1.2n"]
+    stdin = " 901\n100\n"
+    stdout = " 901\n100\n"
+    exit_code = 0
+
+[testcase_18e]
+    arguments = ["-nb", "-k1.1,1.2"]
+    stdin = " 901\n100\n"
+    stdout = "100\n 901\n"
+    exit_code = 0
+
+[testcase_18f]
+    arguments = ["-k1,1b"]
+    stdin = "a  y\na z\n"
+    stdout = "a  y\na z\n"
+    exit_code = 0
+
+[testcase_19b]
+    arguments = ["-k1,1", "-k2nr"]
+    stdin = "b 2\nb 1\nb 3\n"
+    stdout = "b 3\nb 2\nb 1\n"
+    exit_code = 0
+
+[testcase_20a]
+    arguments = []
+    stdin = "_________U__free\n_________U__malloc\n_________U__abort\n_________U__memcpy\n_________U__memset\n_________U_dyld_stub_binding_helper\n_________U__malloc\n_________U___iob\n_________U__abort\n_________U__fprintf\n"
+    stdout = "_________U___iob\n_________U__abort\n_________U__abort\n_________U__fprintf\n_________U__free\n_________U__malloc\n_________U__malloc\n_________U__memcpy\n_________U__memset\n_________U_dyld_stub_binding_helper\n"
+    exit_code = 0
+
+[testcase_21a]
+    arguments = []
+    stdin = "A\na\n_\n"
+    stdout = "A\n_\na\n"
+    exit_code = 0
+
+[testcase_21b]
+    arguments = ["-f"]
+    stdin = "A\na\n_\n"
+    stdout = "A\na\n_\n"
+    exit_code = 0
+
+[testcase_21c]
+    arguments = ["-f"]
+    stdin = "a\nA\n_\n"
+    stdout = "A\na\n_\n"
+    exit_code = 0
+
+[testcase_21d]
+    arguments = ["-f"]
+    stdin = "_\na\nA\n"
+    stdout = "A\na\n_\n"
+    exit_code = 0
+
+[testcase_21e]
+    arguments = ["-f"]
+    stdin = "a\n_\nA\n"
+    stdout = "A\na\n_\n"
+    exit_code = 0
+
+[testcase_21f]
+    arguments = ["-fs"]
+    stdin = "A\na\n_\n"
+    stdout = "A\na\n_\n"
+    exit_code = 0
+
+[testcase_21g]
+    arguments = ["-fu"]
+    stdin = "a\n_\n"
+    stdout = "a\n_\n"
+    exit_code = 0
+
+[testcase_22a]
+    arguments = ["-k", "2,2fd", "-k", "1,1r"]
+    stdin = "3 b\n4 B\n"
+    stdout = "4 B\n3 b\n"
+    exit_code = 0
+
+[testcase_22b]
+    arguments = ["-k", "2,2d", "-k", "1,1r"]
+    stdin = "3 b\n4 b\n"
+    stdout = "4 b\n3 b\n"
+    exit_code = 0
+
+[testcase_neg-nls]
+    arguments = ["-n"]
+    stdin = "-1\n-9\n"
+    stdout = "-9\n-1\n"
+    exit_code = 0
+
+[testcase_nul-nls]
+    arguments = []
+    stdin = "\u0000b\n\u0000a\n"
+    stdout = "\u0000a\n\u0000b\n"
+    exit_code = 0
+
+[testcase_use-nl]
+    arguments = []
+    stdin = "\n\t\n"
+    stdout = "\n\t\n"
+    exit_code = 0
+
+[testcase_o3]
+    arguments = ["-o", "x", "-o", "x"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_nul-tab]
+    arguments = ["-k2,2", "-t", "\0"]
+    stdin = "a\u0000z\u0001\nb\u0000y\u0002\n"
+    stdout = "b\u0000y\u0002\na\u0000z\u0001\n"
+    exit_code = 0
+
+[testcase_bigfield1]
+    arguments = ["-k"]
+    stdin = "2\n1\n"
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_bigfield2]
+    arguments = ["-k"]
+    stdin = "2\n1\n"
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_realloc-buf]
+    arguments = ["-S1"]
+    stdin = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"
+    stdout = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"
+    exit_code = 0
+
+[testcase_realloc-buf-2]
+    arguments = ["-S1"]
+    stdin = "aaaaa\n"
+    stdout = "aaaaa\n"
+    exit_code = 0
+
+[testcase_sort-numeric]
+    arguments = ["--sort=numeric"]
+    stdin = ".01\n0\n"
+    stdout = "0\n.01\n"
+    exit_code = 0
+
+[testcase_sort-gennum]
+    arguments = ["--sort=general-numeric"]
+    stdin = "1e2\n2e1\n"
+    stdout = "2e1\n1e2\n"
+    exit_code = 0
+
+[testcase_zero-1]
+    arguments = ["-z"]
+    stdin = "2\u00001\u0000"
+    stdout = "1\u00002\u0000"
+    exit_code = 0
+
+[testcase_zero-2]
+    arguments = ["-z", "-k2,2"]
+    stdin = "1\n2\u00002\n1\u0000"
+    stdout = "2\n1\u00001\n2\u0000"
+    exit_code = 0
+
+[testcase_zero-3]
+    arguments = ["-zb", "-k2,2"]
+    stdin = "1\n\n2\u00002\n1\u0000"
+    stdout = "2\n1\u00001\n\n2\u0000"
+    exit_code = 0
+
+[testcase_nonblank-sep-k1]
+    arguments = ["-k2"]
+    stdin = "a\f\nb\n"
+    stdout = "a\f\nb\n"
+    exit_code = 0
+
+[testcase_nonblank-leading-n1]
+    arguments = ["-n"]
+    stdin = "a\n\f1\n"
+    stdout = "\f1\na\n"
+    exit_code = 0
+
+[testcase_nonblank-leading-d1]
+    arguments = ["-d"]
+    stdin = "\fb\na\n"
+    stdout = "a\n\fb\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "sort (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Mike Haertel and Paul Eggert.\n"
+    exit_code = 0

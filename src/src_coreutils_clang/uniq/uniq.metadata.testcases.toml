@@ -1,0 +1,933 @@
+[testcase_1]
+    arguments = []
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_1-z]
+    arguments = ["-z"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_2]
+    arguments = []
+    stdin = "a\na\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_2-z]
+    arguments = ["-z"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_3]
+    arguments = []
+    stdin = "a\na"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_3-z]
+    arguments = ["-z"]
+    stdin = "a\u0000a"
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_4]
+    arguments = []
+    stdin = "a\nb"
+    stdout = "a\nb\n"
+    exit_code = 0
+
+[testcase_4-z]
+    arguments = ["-z"]
+    stdin = "a\u0000b"
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+
+[testcase_5]
+    arguments = []
+    stdin = "a\na\nb"
+    stdout = "a\nb\n"
+    exit_code = 0
+
+[testcase_5-z]
+    arguments = ["-z"]
+    stdin = "a\u0000a\u0000b"
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+
+[testcase_6]
+    arguments = []
+    stdin = "b\na\na\n"
+    stdout = "b\na\n"
+    exit_code = 0
+
+[testcase_6-z]
+    arguments = ["-z"]
+    stdin = "b\u0000a\u0000a\u0000"
+    stdout = "b\u0000a\u0000"
+    exit_code = 0
+
+[testcase_7]
+    arguments = []
+    stdin = "a\nb\nc\n"
+    stdout = "a\nb\nc\n"
+    exit_code = 0
+
+[testcase_7-z]
+    arguments = ["-z"]
+    stdin = "a\u0000b\u0000c\u0000"
+    stdout = "a\u0000b\u0000c\u0000"
+    exit_code = 0
+
+[testcase_2z]
+    arguments = ["-z"]
+    stdin = "a\na\n"
+    stdout = "a\na\n\u0000"
+    exit_code = 0
+
+[testcase_3z]
+    arguments = ["-z"]
+    stdin = "a\na"
+    stdout = "a\na\u0000"
+    exit_code = 0
+
+[testcase_4z]
+    arguments = ["-z"]
+    stdin = "a\nb"
+    stdout = "a\nb\u0000"
+    exit_code = 0
+
+[testcase_5z]
+    arguments = ["-z"]
+    stdin = "a\na\nb"
+    stdout = "a\na\nb\u0000"
+    exit_code = 0
+
+[testcase_10z]
+    arguments = ["-z", "-f1"]
+    stdin = "a\nb\n\u0000c\nb\n\u0000"
+    stdout = "a\nb\n\u0000"
+    exit_code = 0
+
+[testcase_20z]
+    arguments = ["-dz"]
+    stdin = "a\na\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_8]
+    arguments = []
+    stdin = "ö\nv\n"
+    stdout = "ö\nv\n"
+    exit_code = 0
+
+[testcase_8-z]
+    arguments = ["-z"]
+    stdin = "ö\u0000v\u0000"
+    stdout = "ö\u0000v\u0000"
+    exit_code = 0
+
+[testcase_9]
+    arguments = ["-u"]
+    stdin = "a\na\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_9-z]
+    arguments = ["-z", "-u"]
+    stdin = "a\u0000a\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_10]
+    arguments = ["-u"]
+    stdin = "a\nb\n"
+    stdout = "a\nb\n"
+    exit_code = 0
+
+[testcase_10-z]
+    arguments = ["-z", "-u"]
+    stdin = "a\u0000b\u0000"
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+
+[testcase_11]
+    arguments = ["-u"]
+    stdin = "a\nb\na\n"
+    stdout = "a\nb\na\n"
+    exit_code = 0
+
+[testcase_11-z]
+    arguments = ["-z", "-u"]
+    stdin = "a\u0000b\u0000a\u0000"
+    stdout = "a\u0000b\u0000a\u0000"
+    exit_code = 0
+
+[testcase_12]
+    arguments = ["-u"]
+    stdin = "a\na\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_12-z]
+    arguments = ["-z", "-u"]
+    stdin = "a\u0000a\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_13]
+    arguments = ["-u"]
+    stdin = "a\na\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_13-z]
+    arguments = ["-z", "-u"]
+    stdin = "a\u0000a\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_20]
+    arguments = ["-d"]
+    stdin = "a\na\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_20-z]
+    arguments = ["-z", "-d"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_21]
+    arguments = ["-d"]
+    stdin = "a\nb\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_21-z]
+    arguments = ["-z", "-d"]
+    stdin = "a\u0000b\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_22]
+    arguments = ["-d"]
+    stdin = "a\nb\na\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_22-z]
+    arguments = ["-z", "-d"]
+    stdin = "a\u0000b\u0000a\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_23]
+    arguments = ["-d"]
+    stdin = "a\na\nb\n"
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_23-z]
+    arguments = ["-z", "-d"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_obs30]
+    arguments = ["-1"]
+    stdin = "a a\nb a\n"
+    stdout = "a a\n"
+    exit_code = 0
+
+[testcase_obs30-z]
+    arguments = ["-z", "-1"]
+    stdin = "a a\u0000b a\u0000"
+    stdout = "a a\u0000"
+    exit_code = 0
+
+[testcase_31]
+    arguments = ["-f", "1"]
+    stdin = "a a\nb a\n"
+    stdout = "a a\n"
+    exit_code = 0
+
+[testcase_31-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "a a\u0000b a\u0000"
+    stdout = "a a\u0000"
+    exit_code = 0
+
+[testcase_32]
+    arguments = ["-f", "1"]
+    stdin = "a a\nb b\n"
+    stdout = "a a\nb b\n"
+    exit_code = 0
+
+[testcase_32-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "a a\u0000b b\u0000"
+    stdout = "a a\u0000b b\u0000"
+    exit_code = 0
+
+[testcase_33]
+    arguments = ["-f", "1"]
+    stdin = "a a a\nb a c\n"
+    stdout = "a a a\nb a c\n"
+    exit_code = 0
+
+[testcase_33-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "a a a\u0000b a c\u0000"
+    stdout = "a a a\u0000b a c\u0000"
+    exit_code = 0
+
+[testcase_34]
+    arguments = ["-f", "1"]
+    stdin = "b a\na a\n"
+    stdout = "b a\n"
+    exit_code = 0
+
+[testcase_34-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "b a\u0000a a\u0000"
+    stdout = "b a\u0000"
+    exit_code = 0
+
+[testcase_35]
+    arguments = ["-f", "2"]
+    stdin = "a a c\nb a c\n"
+    stdout = "a a c\n"
+    exit_code = 0
+
+[testcase_35-z]
+    arguments = ["-z", "-f", "2"]
+    stdin = "a a c\u0000b a c\u0000"
+    stdout = "a a c\u0000"
+    exit_code = 0
+
+[testcase_42]
+    arguments = ["-s", "1"]
+    stdin = "aaa\naaa\n"
+    stdout = "aaa\n"
+    exit_code = 0
+
+[testcase_42-z]
+    arguments = ["-z", "-s", "1"]
+    stdin = "aaa\u0000aaa\u0000"
+    stdout = "aaa\u0000"
+    exit_code = 0
+
+[testcase_43]
+    arguments = ["-s", "2"]
+    stdin = "baa\naaa\n"
+    stdout = "baa\n"
+    exit_code = 0
+
+[testcase_43-z]
+    arguments = ["-z", "-s", "2"]
+    stdin = "baa\u0000aaa\u0000"
+    stdout = "baa\u0000"
+    exit_code = 0
+
+[testcase_50]
+    arguments = ["-f", "1", "-s", "1"]
+    stdin = "a aaa\nb ab\n"
+    stdout = "a aaa\nb ab\n"
+    exit_code = 0
+
+[testcase_50-z]
+    arguments = ["-z", "-f", "1", "-s", "1"]
+    stdin = "a aaa\u0000b ab\u0000"
+    stdout = "a aaa\u0000b ab\u0000"
+    exit_code = 0
+
+[testcase_51]
+    arguments = ["-f", "1", "-s", "1"]
+    stdin = "a aaa\nb aaa\n"
+    stdout = "a aaa\n"
+    exit_code = 0
+
+[testcase_51-z]
+    arguments = ["-z", "-f", "1", "-s", "1"]
+    stdin = "a aaa\u0000b aaa\u0000"
+    stdout = "a aaa\u0000"
+    exit_code = 0
+
+[testcase_52]
+    arguments = ["-s", "1", "-f", "1"]
+    stdin = "a aaa\nb ab\n"
+    stdout = "a aaa\nb ab\n"
+    exit_code = 0
+
+[testcase_52-z]
+    arguments = ["-z", "-s", "1", "-f", "1"]
+    stdin = "a aaa\u0000b ab\u0000"
+    stdout = "a aaa\u0000b ab\u0000"
+    exit_code = 0
+
+[testcase_53]
+    arguments = ["-s", "1", "-f", "1"]
+    stdin = "a aaa\nb aaa\n"
+    stdout = "a aaa\n"
+    exit_code = 0
+
+[testcase_53-z]
+    arguments = ["-z", "-s", "1", "-f", "1"]
+    stdin = "a aaa\u0000b aaa\u0000"
+    stdout = "a aaa\u0000"
+    exit_code = 0
+
+[testcase_54]
+    arguments = ["-s", "4"]
+    stdin = "abc\nabcd\n"
+    stdout = "abc\n"
+    exit_code = 0
+
+[testcase_54-z]
+    arguments = ["-z", "-s", "4"]
+    stdin = "abc\u0000abcd\u0000"
+    stdout = "abc\u0000"
+    exit_code = 0
+
+[testcase_55]
+    arguments = ["-s", "0"]
+    stdin = "abc\nabcd\n"
+    stdout = "abc\nabcd\n"
+    exit_code = 0
+
+[testcase_55-z]
+    arguments = ["-z", "-s", "0"]
+    stdin = "abc\u0000abcd\u0000"
+    stdout = "abc\u0000abcd\u0000"
+    exit_code = 0
+
+[testcase_56]
+    arguments = ["-s", "0"]
+    stdin = "abc\n"
+    stdout = "abc\n"
+    exit_code = 0
+
+[testcase_56-z]
+    arguments = ["-z", "-s", "0"]
+    stdin = "abc\u0000"
+    stdout = "abc\u0000"
+    exit_code = 0
+
+[testcase_57]
+    arguments = ["-w", "0"]
+    stdin = "abc\nabcd\n"
+    stdout = "abc\n"
+    exit_code = 0
+
+[testcase_57-z]
+    arguments = ["-z", "-w", "0"]
+    stdin = "abc\u0000abcd\u0000"
+    stdout = "abc\u0000"
+    exit_code = 0
+
+[testcase_60]
+    arguments = ["-w", "1"]
+    stdin = "a a\nb a\n"
+    stdout = "a a\nb a\n"
+    exit_code = 0
+
+[testcase_60-z]
+    arguments = ["-z", "-w", "1"]
+    stdin = "a a\u0000b a\u0000"
+    stdout = "a a\u0000b a\u0000"
+    exit_code = 0
+
+[testcase_61]
+    arguments = ["-w", "3"]
+    stdin = "a a\nb a\n"
+    stdout = "a a\nb a\n"
+    exit_code = 0
+
+[testcase_61-z]
+    arguments = ["-z", "-w", "3"]
+    stdin = "a a\u0000b a\u0000"
+    stdout = "a a\u0000b a\u0000"
+    exit_code = 0
+
+[testcase_62]
+    arguments = ["-w", "1", "-f", "1"]
+    stdin = "a a a\nb a c\n"
+    stdout = "a a a\n"
+    exit_code = 0
+
+[testcase_62-z]
+    arguments = ["-z", "-w", "1", "-f", "1"]
+    stdin = "a a a\u0000b a c\u0000"
+    stdout = "a a a\u0000"
+    exit_code = 0
+
+[testcase_63]
+    arguments = ["-f", "1", "-w", "1"]
+    stdin = "a a a\nb a c\n"
+    stdout = "a a a\n"
+    exit_code = 0
+
+[testcase_63-z]
+    arguments = ["-z", "-f", "1", "-w", "1"]
+    stdin = "a a a\u0000b a c\u0000"
+    stdout = "a a a\u0000"
+    exit_code = 0
+
+[testcase_64]
+    arguments = ["-f", "1", "-w", "4"]
+    stdin = "a a a\nb a c\n"
+    stdout = "a a a\nb a c\n"
+    exit_code = 0
+
+[testcase_64-z]
+    arguments = ["-z", "-f", "1", "-w", "4"]
+    stdin = "a a a\u0000b a c\u0000"
+    stdout = "a a a\u0000b a c\u0000"
+    exit_code = 0
+
+[testcase_65]
+    arguments = ["-f", "1", "-w", "3"]
+    stdin = "a a a\nb a c\n"
+    stdout = "a a a\n"
+    exit_code = 0
+
+[testcase_65-z]
+    arguments = ["-z", "-f", "1", "-w", "3"]
+    stdin = "a a a\u0000b a c\u0000"
+    stdout = "a a a\u0000"
+    exit_code = 0
+
+[testcase_90]
+    arguments = []
+    stdin = "a\u0000a\na\n"
+    stdout = "a\u0000a\na\n"
+    exit_code = 0
+
+[testcase_91]
+    arguments = []
+    stdin = "a\ta\na a\n"
+    stdout = "a\ta\na a\n"
+    exit_code = 0
+
+[testcase_91-z]
+    arguments = ["-z"]
+    stdin = "a\ta\u0000a a\u0000"
+    stdout = "a\ta\u0000a a\u0000"
+    exit_code = 0
+
+[testcase_92]
+    arguments = ["-f", "1"]
+    stdin = "a\ta\na a\n"
+    stdout = "a\ta\na a\n"
+    exit_code = 0
+
+[testcase_92-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "a\ta\u0000a a\u0000"
+    stdout = "a\ta\u0000a a\u0000"
+    exit_code = 0
+
+[testcase_93]
+    arguments = ["-f", "2"]
+    stdin = "a\ta a\na a a\n"
+    stdout = "a\ta a\n"
+    exit_code = 0
+
+[testcase_93-z]
+    arguments = ["-z", "-f", "2"]
+    stdin = "a\ta a\u0000a a a\u0000"
+    stdout = "a\ta a\u0000"
+    exit_code = 0
+
+[testcase_94]
+    arguments = ["-f", "1"]
+    stdin = "a\ta\na\ta\n"
+    stdout = "a\ta\n"
+    exit_code = 0
+
+[testcase_94-z]
+    arguments = ["-z", "-f", "1"]
+    stdin = "a\ta\u0000a\ta\u0000"
+    stdout = "a\ta\u0000"
+    exit_code = 0
+
+[testcase_101]
+    arguments = ["-c"]
+    stdin = "a\nb\n"
+    stdout = "      1 a\n      1 b\n"
+    exit_code = 0
+
+[testcase_101-z]
+    arguments = ["-z", "-c"]
+    stdin = "a\u0000b\u0000"
+    stdout = "      1 a\u0000      1 b\u0000"
+    exit_code = 0
+
+[testcase_102]
+    arguments = ["-c"]
+    stdin = "a\na\n"
+    stdout = "      2 a\n"
+    exit_code = 0
+
+[testcase_102-z]
+    arguments = ["-z", "-c"]
+    stdin = "a\u0000a\u0000"
+    stdout = "      2 a\u0000"
+    exit_code = 0
+
+[testcase_110]
+    arguments = ["-D"]
+    stdin = "a\na\n"
+    stdout = "a\na\n"
+    exit_code = 0
+
+[testcase_110-z]
+    arguments = ["-z", "-D"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_111]
+    arguments = ["-D", "-w1"]
+    stdin = "a a\na b\n"
+    stdout = "a a\na b\n"
+    exit_code = 0
+
+[testcase_111-z]
+    arguments = ["-z", "-D", "-w1"]
+    stdin = "a a\u0000a b\u0000"
+    stdout = "a a\u0000a b\u0000"
+    exit_code = 0
+
+[testcase_113]
+    arguments = ["--all-repeated=separate"]
+    stdin = "a\na\n"
+    stdout = "a\na\n"
+    exit_code = 0
+
+[testcase_113-z]
+    arguments = ["-z", "--all-repeated=separate"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_114]
+    arguments = ["--all-repeated=separate"]
+    stdin = "a\na\nb\nc\nc\n"
+    stdout = "a\na\n\nc\nc\n"
+    exit_code = 0
+
+[testcase_114-z]
+    arguments = ["-z", "--all-repeated=separate"]
+    stdin = "a\u0000a\u0000b\u0000c\u0000c\u0000"
+    stdout = "a\u0000a\u0000\u0000c\u0000c\u0000"
+    exit_code = 0
+
+[testcase_115]
+    arguments = ["--all-repeated=separate"]
+    stdin = "a\na\nb\nb\nc\n"
+    stdout = "a\na\n\nb\nb\n"
+    exit_code = 0
+
+[testcase_115-z]
+    arguments = ["-z", "--all-repeated=separate"]
+    stdin = "a\u0000a\u0000b\u0000b\u0000c\u0000"
+    stdout = "a\u0000a\u0000\u0000b\u0000b\u0000"
+    exit_code = 0
+
+[testcase_116]
+    arguments = ["--all-repeated=prepend"]
+    stdin = "a\na\n"
+    stdout = "\na\na\n"
+    exit_code = 0
+
+[testcase_116-z]
+    arguments = ["-z", "--all-repeated=prepend"]
+    stdin = "a\u0000a\u0000"
+    stdout = "\u0000a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_117]
+    arguments = ["--all-repeated=prepend"]
+    stdin = "a\na\nb\nc\nc\n"
+    stdout = "\na\na\n\nc\nc\n"
+    exit_code = 0
+
+[testcase_117-z]
+    arguments = ["-z", "--all-repeated=prepend"]
+    stdin = "a\u0000a\u0000b\u0000c\u0000c\u0000"
+    stdout = "\u0000a\u0000a\u0000\u0000c\u0000c\u0000"
+    exit_code = 0
+
+[testcase_118]
+    arguments = ["--all-repeated=prepend"]
+    stdin = "a\nb\n"
+    stdout = ""
+    exit_code = 0
+
+[testcase_118-z]
+    arguments = ["-z", "--all-repeated=prepend"]
+    stdin = "a\u0000b\u0000"
+    stdout = ""
+    exit_code = 0
+
+[testcase_120]
+    arguments = ["-d", "-u"]
+    stdin = "a\na\n\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_120-z]
+    arguments = ["-z", "-d", "-u"]
+    stdin = "a\u0000a\u0000\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_121]
+    arguments = ["-d", "-u", "-w"]
+    stdin = "a\na\n\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_121-z]
+    arguments = ["-z", "-d", "-u", "-w"]
+    stdin = "a\u0000a\u0000\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_122]
+    arguments = ["-d", "-u", "-w"]
+    stdin = "a\na\n\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_122-z]
+    arguments = ["-z", "-d", "-u", "-w"]
+    stdin = "a\u0000a\u0000\b"
+    stdout = ""
+    exit_code = 0
+
+[testcase_123]
+    arguments = ["--zero-terminated"]
+    stdin = "a\na\nb"
+    stdout = "a\na\nb\u0000"
+    exit_code = 0
+
+[testcase_124]
+    arguments = ["--zero-terminated"]
+    stdin = "a\u0000a\u0000b"
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+
+[testcase_125]
+    arguments = []
+    stdin = "A\na\n"
+    stdout = "A\na\n"
+    exit_code = 0
+
+[testcase_125-z]
+    arguments = ["-z"]
+    stdin = "A\u0000a\u0000"
+    stdout = "A\u0000a\u0000"
+    exit_code = 0
+
+[testcase_126]
+    arguments = ["-i"]
+    stdin = "A\na\n"
+    stdout = "A\n"
+    exit_code = 0
+
+[testcase_126-z]
+    arguments = ["-z", "-i"]
+    stdin = "A\u0000a\u0000"
+    stdout = "A\u0000"
+    exit_code = 0
+
+[testcase_127]
+    arguments = ["--ignore-case"]
+    stdin = "A\na\n"
+    stdout = "A\n"
+    exit_code = 0
+
+[testcase_127-z]
+    arguments = ["-z", "--ignore-case"]
+    stdin = "A\u0000a\u0000"
+    stdout = "A\u0000"
+    exit_code = 0
+
+[testcase_128]
+    arguments = ["--group=prepend"]
+    stdin = "a\na\nb\n"
+    stdout = "\na\na\n\nb\n"
+    exit_code = 0
+
+[testcase_128-z]
+    arguments = ["-z", "--group=prepend"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "\u0000a\u0000a\u0000\u0000b\u0000"
+    exit_code = 0
+
+[testcase_129]
+    arguments = ["--group=append"]
+    stdin = "a\na\nb\n"
+    stdout = "a\na\n\nb\n\n"
+    exit_code = 0
+
+[testcase_129-z]
+    arguments = ["-z", "--group=append"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "a\u0000a\u0000\u0000b\u0000\u0000"
+    exit_code = 0
+
+[testcase_130]
+    arguments = ["--group=separate"]
+    stdin = "a\na\nb\n"
+    stdout = "a\na\n\nb\n"
+    exit_code = 0
+
+[testcase_130-z]
+    arguments = ["-z", "--group=separate"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "a\u0000a\u0000\u0000b\u0000"
+    exit_code = 0
+
+[testcase_131]
+    arguments = ["--group"]
+    stdin = "a\na\nb\n"
+    stdout = "a\na\n\nb\n"
+    exit_code = 0
+
+[testcase_131-z]
+    arguments = ["-z", "--group"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "a\u0000a\u0000\u0000b\u0000"
+    exit_code = 0
+
+[testcase_132]
+    arguments = ["--group=both"]
+    stdin = "a\na\nb\n"
+    stdout = "\na\na\n\nb\n\n"
+    exit_code = 0
+
+[testcase_132-z]
+    arguments = ["-z", "--group=both"]
+    stdin = "a\u0000a\u0000b\u0000"
+    stdout = "\u0000a\u0000a\u0000\u0000b\u0000\u0000"
+    exit_code = 0
+
+[testcase_133]
+    arguments = ["--group=prepend"]
+    stdin = "a\na\n"
+    stdout = "\na\na\n"
+    exit_code = 0
+
+[testcase_133-z]
+    arguments = ["-z", "--group=prepend"]
+    stdin = "a\u0000a\u0000"
+    stdout = "\u0000a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_134]
+    arguments = ["--group=append"]
+    stdin = "a\na\n"
+    stdout = "a\na\n\n"
+    exit_code = 0
+
+[testcase_134-z]
+    arguments = ["-z", "--group=append"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000a\u0000\u0000"
+    exit_code = 0
+
+[testcase_135]
+    arguments = ["--group=separate"]
+    stdin = "a\na\n"
+    stdout = "a\na\n"
+    exit_code = 0
+
+[testcase_135-z]
+    arguments = ["-z", "--group=separate"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_136]
+    arguments = ["--group"]
+    stdin = "a\na\n"
+    stdout = "a\na\n"
+    exit_code = 0
+
+[testcase_136-z]
+    arguments = ["-z", "--group"]
+    stdin = "a\u0000a\u0000"
+    stdout = "a\u0000a\u0000"
+    exit_code = 0
+
+[testcase_137]
+    arguments = ["--group=prepend"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_137-z]
+    arguments = ["-z", "--group=prepend"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_138]
+    arguments = ["--group=append"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_138-z]
+    arguments = ["-z", "--group=append"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_139]
+    arguments = ["--group=separate"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_139-z]
+    arguments = ["-z", "--group=separate"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_140]
+    arguments = ["--group=both"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_140-z]
+    arguments = ["-z", "--group=both"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_146]
+    arguments = ["-w256"]
+    stdin = "😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n"
+    stdout = "😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n"
+    exit_code = 0
+
+[testcase_146-z]
+    arguments = ["-z", "-w256"]
+    stdin = "😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0000😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0000"
+    stdout = "😀AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0000"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "uniq (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Richard M. Stallman and David MacKenzie.\n"
+    exit_code = 0

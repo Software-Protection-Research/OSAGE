@@ -1,0 +1,148 @@
+[testcase_a]
+    arguments = ["d/f"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_b]
+    arguments = ["/d/f"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_c]
+    arguments = ["d/f/"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_d]
+    arguments = ["d/f//"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_e]
+    arguments = ["f"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_f]
+    arguments = ["/"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_g]
+    arguments = ["//"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_h]
+    arguments = ["///"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_i]
+    arguments = ["///a///"]
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_j]
+    arguments = [""]
+    stdout = "\n"
+    exit_code = 0
+
+[testcase_k]
+    arguments = ["aa", "a"]
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_l]
+    arguments = ["-a", "a", "b"]
+    stdout = "a\nb\n"
+    exit_code = 0
+
+[testcase_m]
+    arguments = ["-s", "a", "aa", "ba", "ab"]
+    stdout = "a\nb\nab\n"
+    exit_code = 0
+
+[testcase_n]
+    arguments = ["a-a", "-a"]
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_1]
+    arguments = ["f.s", ".s"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_2]
+    arguments = ["fs", "s"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_3]
+    arguments = ["fs", "fs"]
+    stdout = "fs\n"
+    exit_code = 0
+
+[testcase_4]
+    arguments = ["fs/", "s"]
+    stdout = "f\n"
+    exit_code = 0
+
+[testcase_5]
+    arguments = ["dir/file.suf", ".suf"]
+    stdout = "file\n"
+    exit_code = 0
+
+[testcase_6]
+    arguments = ["//", "/"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_7]
+    arguments = ["//", "//"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_8]
+    arguments = ["fs", "x"]
+    stdout = "fs\n"
+    exit_code = 0
+
+[testcase_9]
+    arguments = ["fs", ""]
+    stdout = "fs\n"
+    exit_code = 0
+
+[testcase_10]
+    arguments = ["fs/", "s/"]
+    stdout = "fs\n"
+    exit_code = 0
+
+[testcase_z0]
+    arguments = ["-z", "a"]
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_z1]
+    arguments = ["--zero", "a"]
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_z2]
+    arguments = ["-za", "a", "b"]
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+
+[testcase_z3]
+    arguments = ["-z", "ba", "a"]
+    stdout = "b\u0000"
+    exit_code = 0
+
+[testcase_z4]
+    arguments = ["-z", "-s", "a", "ba"]
+    stdout = "b\u0000"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "basename (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie.\n"
+    exit_code = 0

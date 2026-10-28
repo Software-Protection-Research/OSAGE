@@ -1,0 +1,33 @@
+[testcase_posix-1]
+    arguments = []
+    stdin = "a b c c d e\ng g\nf g e f\nh h\n"
+    stdout = "a\nc\nd\nh\nb\ne\nf\ng\n"
+    exit_code = 0
+
+[testcase_posix-2]
+    arguments = []
+    stdin = "b a\nd c\nz h x h r h\n"
+    stdout = "b\nd\nr\nx\nz\na\nc\nh\n"
+    exit_code = 0
+
+[testcase_linear-1]
+    arguments = []
+    stdin = "a b b c c d d e e f f g\n"
+    stdout = "a\nb\nc\nd\ne\nf\ng\n"
+    exit_code = 0
+
+[testcase_tree-1]
+    arguments = []
+    stdin = "a b b c c d d e e f f g\nc x x y y z\n"
+    stdout = "a\nb\nc\nx\nd\ny\ne\nz\nf\ng\n"
+    exit_code = 0
+
+[testcase_tree-2]
+    arguments = []
+    stdin = "a b b c c d d e e f f g\nc x x y y z\nf r r s s t\n"
+    stdout = "a\nb\nc\nx\nd\ny\ne\nz\nf\nr\ng\ns\nt\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "tsort (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Mark Kettenis.\n"
+    exit_code = 0

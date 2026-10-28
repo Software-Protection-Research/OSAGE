@@ -1,0 +1,51 @@
+[testcase_0]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = ""
+    stdout = ""
+    exit_code = 0
+
+[testcase_1]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a\n  "
+    stdout = "a\n\n\n"
+    exit_code = 0
+
+[testcase_2]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a\n "
+    stdout = "a\n\n"
+    exit_code = 0
+
+[testcase_3]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a  "
+    stdout = "a\n"
+    exit_code = 0
+
+[testcase_4]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a \n "
+    stdout = "a \n\n\n"
+    exit_code = 0
+
+[testcase_5]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a \n"
+    stdout = "a \n\n"
+    exit_code = 0
+
+[testcase_6]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a   "
+    stdout = "a\n\n"
+    exit_code = 0
+
+[testcase_7]
+    arguments = ["cbs=3", "conv=unblock", "status=noxfer"]
+    stdin = "a  \n"
+    stdout = "a\n\n\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "dd (coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Paul Rubin, David MacKenzie, and Stuart Kemp.\n"
+    exit_code = 0

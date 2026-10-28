@@ -1,0 +1,233 @@
+[testcase_1]
+    arguments = ["9"]
+    stdout = "9: 3 3\n"
+    exit_code = 0
+
+[testcase_1a]
+    arguments = ["7"]
+    stdout = "7: 7\n"
+    exit_code = 0
+
+[testcase_1b]
+    arguments = ["+7"]
+    stdout = "7: 7\n"
+    exit_code = 0
+
+[testcase_2]
+    arguments = ["4294967291"]
+    stdout = "4294967291: 4294967291\n"
+    exit_code = 0
+
+[testcase_3]
+    arguments = ["4294967292"]
+    stdout = "4294967292: 2 2 3 3 7 11 31 151 331\n"
+    exit_code = 0
+
+[testcase_4]
+    arguments = ["4294967293"]
+    stdout = "4294967293: 9241 464773\n"
+    exit_code = 0
+
+[testcase_a]
+    arguments = ["4294966201"]
+    stdout = "4294966201: 12197 352133\n"
+    exit_code = 0
+
+[testcase_b]
+    arguments = ["4294966339"]
+    stdout = "4294966339: 13187 325697\n"
+    exit_code = 0
+
+[testcase_c]
+    arguments = ["4294966631"]
+    stdout = "4294966631: 13729 312839\n"
+    exit_code = 0
+
+[testcase_d]
+    arguments = ["4294966457"]
+    stdout = "4294966457: 14891 288427\n"
+    exit_code = 0
+
+[testcase_e]
+    arguments = ["4294966759"]
+    stdout = "4294966759: 21649 198391\n"
+    exit_code = 0
+
+[testcase_f]
+    arguments = ["4294966573"]
+    stdout = "4294966573: 23071 186163\n"
+    exit_code = 0
+
+[testcase_g]
+    arguments = ["4294967101"]
+    stdout = "4294967101: 23603 181967\n"
+    exit_code = 0
+
+[testcase_h]
+    arguments = ["4294966519"]
+    stdout = "4294966519: 34583 124193\n"
+    exit_code = 0
+
+[testcase_i]
+    arguments = ["4294966561"]
+    stdout = "4294966561: 36067 119083\n"
+    exit_code = 0
+
+[testcase_j]
+    arguments = ["4294966901"]
+    stdout = "4294966901: 37747 113783\n"
+    exit_code = 0
+
+[testcase_k]
+    arguments = ["4294966691"]
+    stdout = "4294966691: 39241 109451\n"
+    exit_code = 0
+
+[testcase_l]
+    arguments = ["4294966969"]
+    stdout = "4294966969: 44201 97169\n"
+    exit_code = 0
+
+[testcase_m]
+    arguments = ["4294967099"]
+    stdout = "4294967099: 44483 96553\n"
+    exit_code = 0
+
+[testcase_n]
+    arguments = ["4294966271"]
+    stdout = "4294966271: 44617 96263\n"
+    exit_code = 0
+
+[testcase_o]
+    arguments = ["4294966789"]
+    stdout = "4294966789: 50411 85199\n"
+    exit_code = 0
+
+[testcase_p]
+    arguments = ["4294966189"]
+    stdout = "4294966189: 53197 80737\n"
+    exit_code = 0
+
+[testcase_q]
+    arguments = ["4294967213"]
+    stdout = "4294967213: 57139 75167\n"
+    exit_code = 0
+
+[testcase_s]
+    arguments = ["4294967071"]
+    stdout = "4294967071: 65521 65551\n"
+    exit_code = 0
+
+[testcase_t]
+    arguments = ["4294966194"]
+    stdout = "4294966194: 2 3 3 3 3 3 3 3 53 97 191\n"
+    exit_code = 0
+
+[testcase_u]
+    arguments = ["4294966272"]
+    stdout = "4294966272: 2 2 2 2 2 2 2 2 2 2 3 23 89 683\n"
+    exit_code = 0
+
+[testcase_v]
+    arguments = ["4294966400"]
+    stdout = "4294966400: 2 2 2 2 2 2 2 5 5 1342177\n"
+    exit_code = 0
+
+[testcase_w]
+    arguments = ["4294966464"]
+    stdout = "4294966464: 2 2 2 2 2 2 3 3 3 2485513\n"
+    exit_code = 0
+
+[testcase_x]
+    arguments = ["4294966896"]
+    stdout = "4294966896: 2 2 2 2 3 3 3 11 607 1489\n"
+    exit_code = 0
+
+[testcase_y]
+    arguments = ["4294966998"]
+    stdout = "4294966998: 2 3 7 3917 26107\n"
+    exit_code = 0
+
+[testcase_bug-2012-a]
+    arguments = ["465658903"]
+    stdout = "465658903: 15259 30517\n"
+    exit_code = 0
+
+[testcase_bug-2012-b]
+    arguments = ["2242724851"]
+    stdout = "2242724851: 33487 66973\n"
+    exit_code = 0
+
+[testcase_bug-2012-c]
+    arguments = ["6635692801"]
+    stdout = "6635692801: 57601 115201\n"
+    exit_code = 0
+
+[testcase_bug-2012-d]
+    arguments = ["17709149503"]
+    stdout = "17709149503: 94099 188197\n"
+    exit_code = 0
+
+[testcase_bug-2012-e]
+    arguments = ["17754345703"]
+    stdout = "17754345703: 94219 188437\n"
+    exit_code = 0
+
+[testcase_bug-prime-table-end]
+    arguments = ["22486472939460651857"]
+    stdout = "22486472939460651857: 4993 4503599627370449\n"
+    exit_code = 0
+
+[testcase_bug-2016-a]
+    arguments = ["158909489063877810457"]
+    stdout = "158909489063877810457: 3401347 3861211 12099721\n"
+    exit_code = 0
+
+[testcase_bug-2016-b]
+    arguments = ["222087527029934481871"]
+    stdout = "222087527029934481871: 15601 26449 111427 4830277\n"
+    exit_code = 0
+
+[testcase_bug-2016-c]
+    arguments = ["12847291069740315094892340035"]
+    stdout = "12847291069740315094892340035: 5 4073 18899 522591721 63874247821\n"
+    exit_code = 0
+
+[testcase_bug-gmp-2_sup_128]
+    arguments = ["340282366920938463463374607431768211456"]
+    stdout = "340282366920938463463374607431768211456: 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n"
+    exit_code = 0
+
+[testcase_bug-gmp-2_sup_256]
+    arguments = ["115792089237316195423570985008687907853269984665640564039457584007913129639936"]
+    stdout = "115792089237316195423570985008687907853269984665640564039457584007913129639936: 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n"
+    exit_code = 0
+
+[testcase_bug-gmp-plus_2_sup_127_plus_1]
+    arguments = ["+170141183460469231731687303715884105729"]
+    stdout = "170141183460469231731687303715884105729: 3 56713727820156410577229101238628035243\n"
+    exit_code = 0
+
+[testcase_bug-with-128-bit-uintmax_t]
+    arguments = ["340282366920938463463374607431768211355"]
+    stdout = "340282366920938463463374607431768211355: 5 31 2195370109167344925570158757624311041\n"
+    exit_code = 0
+
+[testcase_lt-5000-times-128-bit]
+    arguments = ["1701071552237771378853409662551409288273703"]
+    stdout = "1701071552237771378853409662551409288273703: 4999 340282366920938463463374607431768211297\n"
+    exit_code = 0
+
+[testcase_h-1]
+    arguments = ["-h", "3000"]
+    stdout = "3000: 2^3 3 5^3\n"
+    exit_code = 0
+
+[testcase_h-2]
+    arguments = ["3000", "--exponents"]
+    stdout = "3000: 2^3 3 5^3\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "factor (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Paul Rubin, Torbjörn Granlund, and Niels Möller.\n"
+    exit_code = 0

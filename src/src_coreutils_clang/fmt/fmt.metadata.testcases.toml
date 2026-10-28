@@ -1,0 +1,31 @@
+# fmt: 8-bit-pfx
+[testcase_8-bit-pfx]
+    arguments = ["-p", "ç"]
+    stdin = "ça\nçb\n"
+    stdout = "ça b\n"
+    exit_code = 0
+
+# fmt: pfx-1
+[testcase_pfx-1]
+    arguments = ["-p", ">"]
+    stdin = " 1\n  2\n\t3\n\t\t4\n> quoted\n> text\n"
+    stdout = " 1\n  2\n\t3\n\t\t4\n> quoted text\n"
+    exit_code = 0
+
+# fmt: pfx-only
+[testcase_pfx-only]
+    arguments = ["-p", ">"]
+    stdin = ">\n"
+    stdout = ">\n"
+    exit_code = 0
+
+# fmt: pfx-of-pfx
+[testcase_pfx-of-pfx]
+    arguments = ["-p", "foo"]
+    stdin = "fo\n"
+    stdout = "fo\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "fmt (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Ross Paterson.\n"
+    exit_code = 0

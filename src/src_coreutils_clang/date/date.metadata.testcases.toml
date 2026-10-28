@@ -1,0 +1,1453 @@
+[testcase_1]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%% %a %A %b %B"]
+    stdout = "% Sun Sunday Jan January\n"
+    exit_code = 0
+
+[testcase_3]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%d_%D_%e_%h_%H"]
+    stdout = "19_01/19/97_19_Jan_08\n"
+    exit_code = 0
+
+[testcase_3T]
+    arguments = ["-d", "1997-01-19T08:17:48+0", "+%d_%D_%e_%h_%H"]
+    stdout = "19_01/19/97_19_Jan_08\n"
+    exit_code = 0
+
+[testcase_4]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%I_%j_%k_%l_%m"]
+    stdout = "08_019_ 8_ 8_01\n"
+    exit_code = 0
+
+[testcase_5]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%M_%n_%p_%r"]
+    stdout = "17_\n_AM_08:17:48 AM\n"
+    exit_code = 0
+
+[testcase_6]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%s_%S_%t_%T"]
+    stdout = "853661868_48_\t_08:17:48\n"
+    exit_code = 0
+
+[testcase_7]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%U_%V_%w_%W"]
+    stdout = "03_03_0_02\n"
+    exit_code = 0
+
+[testcase_8]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%x_%X_%y_%Y"]
+    stdout = "01/19/97_08:17:48_97_1997\n"
+    exit_code = 0
+
+[testcase_9]
+    arguments = ["-d", "1997-01-19 08:17:48 +0", "+%z"]
+    stdout = "+0000\n"
+    exit_code = 0
+
+[testcase_leap-1]
+    arguments = ["--date", "02/29/1996 1 year", "+%Y-%m-%d"]
+    stdout = "1997-03-01\n"
+    exit_code = 0
+
+[testcase_U95-1]
+    arguments = ["--date", "1995-1-1", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_U95-2]
+    arguments = ["--date", "1995-1-7", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_U95-3]
+    arguments = ["--date", "1995-1-8", "+%U"]
+    stdout = "02\n"
+    exit_code = 0
+
+[testcase_U92-1]
+    arguments = ["--date", "1992-1-1", "+%U"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_U92-2]
+    arguments = ["--date", "1992-1-4", "+%U"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_U92-3]
+    arguments = ["--date", "1992-1-5", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_V92-1]
+    arguments = ["--date", "1992-1-1", "+%V"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_V92-2]
+    arguments = ["--date", "1992-1-5", "+%V"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_V92-3]
+    arguments = ["--date", "1992-1-6", "+%V"]
+    stdout = "02\n"
+    exit_code = 0
+
+[testcase_W92-1]
+    arguments = ["--date", "1992-1-1", "+%W"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_W92-2]
+    arguments = ["--date", "1992-1-5", "+%W"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_W92-3]
+    arguments = ["--date", "1992-1-6", "+%W"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_q-1]
+    arguments = ["--date", "2016-1-1", "+%q"]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_q-2]
+    arguments = ["--date", "2016-4-1", "+%q"]
+    stdout = "2\n"
+    exit_code = 0
+
+[testcase_q-3]
+    arguments = ["--date", "2016-7-1", "+%q"]
+    stdout = "3\n"
+    exit_code = 0
+
+[testcase_q-4]
+    arguments = ["--date", "2016-10-1", "+%q"]
+    stdout = "4\n"
+    exit_code = 0
+
+[testcase_millen-1]
+    arguments = ["--date", "1998-1-1 3 years", "+%Y"]
+    stdout = "2001\n"
+    exit_code = 0
+
+[testcase_rel-0]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 now", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-1a]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 yesterday", "+%Y-%m-%d %T"]
+    stdout = "1997-01-18 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-1b]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 tomorrow", "+%Y-%m-%d %T"]
+    stdout = "1997-01-20 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2a]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 6 years ago", "+%Y-%m-%d %T"]
+    stdout = "1991-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2b]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 7 months ago", "+%Y-%m-%d %T"]
+    stdout = "1996-06-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2c]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 8 weeks ago", "+%Y-%m-%d %T"]
+    stdout = "1996-11-24 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2d]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 1 day ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-18 08:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2e]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 2 hours ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 06:17:48\n"
+    exit_code = 0
+
+[testcase_rel-2f]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 3 minutes ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:14:48\n"
+    exit_code = 0
+
+[testcase_rel-2g]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 4 seconds ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:44\n"
+    exit_code = 0
+
+[testcase_rel-3a]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 4 seconds ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:44\n"
+    exit_code = 0
+
+[testcase_rel-1day]
+    arguments = ["-d", "20050101  1 day", "+%F"]
+    stdout = "2005-01-02\n"
+    exit_code = 0
+
+[testcase_rel-plus1]
+    arguments = ["-d", "20050101 +1 day", "+%F"]
+    stdout = "2005-01-02\n"
+    exit_code = 0
+
+[testcase_next-s]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next second", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:49\n"
+    exit_code = 0
+
+[testcase_next-m]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next minute", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:18:48\n"
+    exit_code = 0
+
+[testcase_next-h]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next hour", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 09:17:48\n"
+    exit_code = 0
+
+[testcase_next-d]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next day", "+%Y-%m-%d %T"]
+    stdout = "1997-01-20 08:17:48\n"
+    exit_code = 0
+
+[testcase_next-w]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next week", "+%Y-%m-%d %T"]
+    stdout = "1997-01-26 08:17:48\n"
+    exit_code = 0
+
+[testcase_next-mo]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next month", "+%Y-%m-%d %T"]
+    stdout = "1997-02-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_next-y]
+    arguments = ["-d", "1997-01-19 08:17:48 +0 next year", "+%Y-%m-%d %T"]
+    stdout = "1998-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_utc-0a]
+    arguments = ["-u", "-d", "08/01/97 6:00 UTC +4 hours", "+%D,%H:%M"]
+    stdout = "08/01/97,10:00\n"
+    exit_code = 0
+
+[testcase_date2sec-0a]
+    arguments = ["-d", "1970-01-01 00:00:01 UTC +2 hours", "+%s"]
+    stdout = "7201\n"
+    exit_code = 0
+
+[testcase_date2sec-1]
+    arguments = ["-d", "2000-01-01", "+%s"]
+    stdout = "946684800\n"
+    exit_code = 0
+
+[testcase_sec2date-0]
+    arguments = ["-d", "1970-01-01 UTC 946684800 sec", "+%Y-%m-%d %T %z"]
+    stdout = "2000-01-01 00:00:00 +0000\n"
+    exit_code = 0
+
+[testcase_this-m]
+    arguments = ["-d", "1997-01-19 08:17:48 this minute", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_this-h]
+    arguments = ["-d", "1997-01-19 08:17:48 this hour", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_this-w]
+    arguments = ["-d", "1997-01-19 08:17:48 this week", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_this-mo]
+    arguments = ["-d", "1997-01-19 08:17:48 this month", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_this-y]
+    arguments = ["-d", "1997-01-19 08:17:48 this year", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_risks-1]
+    arguments = ["-d", "Nov 10 1996", "+%Y-%m-%d %T"]
+    stdout = "1996-11-10 00:00:00\n"
+    exit_code = 0
+
+[testcase_datevtime-1]
+    arguments = ["-d", "000909", "+%Y-%m-%d %T"]
+    stdout = "2000-09-09 00:00:00\n"
+    exit_code = 0
+
+[testcase_relative-1]
+    arguments = ["--utc", "-d", "1970-01-01 00:00:00 UTC +961062237 sec", "+%Y-%m-%d %T"]
+    stdout = "2000-06-15 09:43:57\n"
+    exit_code = 0
+
+[testcase_relative-4]
+    arguments = ["--utc", "-d", "-1 day", "+%Z"]
+    stdout = "UTC\n"
+    exit_code = 0
+
+[testcase_wide-fmt]
+    arguments = ["-d", "1999-06-01", "+%3004Y"]
+    stdout = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001999\n"
+    exit_code = 0
+
+[testcase_moname-d-y]
+    arguments = ["--iso", "-d", "May-23-2003"]
+    stdout = "2003-05-23\n"
+    exit_code = 0
+
+[testcase_moname-d-y-r]
+    arguments = ["--rfc-3339=date", "-d", "May-23-2003"]
+    stdout = "2003-05-23\n"
+    exit_code = 0
+
+[testcase_european-0]
+    arguments = ["-I", "-d", "24.01.2026"]
+    stdout = "2026-01-24\n"
+    exit_code = 0
+
+[testcase_european-1]
+    arguments = ["-I", "-d", "24.1.2026"]
+    stdout = "2026-01-24\n"
+    exit_code = 0
+
+[testcase_european-2]
+    arguments = ["-d", "24.01.", "+%m-%d"]
+    stdout = "01-24\n"
+    exit_code = 0
+
+[testcase_european-3]
+    arguments = ["-d", "1.2.", "+%m-%d"]
+    stdout = "02-01\n"
+    exit_code = 0
+
+[testcase_eu-combo-1]
+    arguments = ["-d", "1.2. 3:4:5.6", "+%m-%d-%T"]
+    stdout = "02-01-03:04:05\n"
+    exit_code = 0
+
+[testcase_eu-combo-2]
+    arguments = ["-d", "3:4:5.6 1.2.", "+%m-%d-%T"]
+    stdout = "02-01-03:04:05\n"
+    exit_code = 0
+
+[testcase_eu-combo-3]
+    arguments = ["-d", "1.2. 3", "+%m-%d-%H"]
+    stdout = "02-01-03\n"
+    exit_code = 0
+
+[testcase_eu-combo-4]
+    arguments = ["-d", "3 1.2.", "+%m-%d-%H"]
+    stdout = "02-01-03\n"
+    exit_code = 0
+
+[testcase_epoch]
+    arguments = ["--iso=sec", "-d", "@31536000"]
+    stdout = "1971-01-01T00:00:00+00:00\n"
+    exit_code = 0
+
+[testcase_epoch-r]
+    arguments = ["--rfc-3339=sec", "-d", "@31536000"]
+    stdout = "1971-01-01 00:00:00+00:00\n"
+    exit_code = 0
+
+[testcase_ns-10]
+    arguments = ["--iso=ns", "-d", "1969-12-31 13:00:00.00000001-1100"]
+    stdout = "1970-01-01T00:00:00,000000010+00:00\n"
+    exit_code = 0
+
+[testcase_ns-10-r]
+    arguments = ["--rfc-3339=ns", "-d", "1969-12-31 13:00:00.00000001-1100"]
+    stdout = "1970-01-01 00:00:00.000000010+00:00\n"
+    exit_code = 0
+
+[testcase_ns-max32]
+    arguments = ["--iso=ns", "-d", "2038-01-19 03:14:07.999999999"]
+    stdout = "2038-01-19T03:14:07,999999999+00:00\n"
+    exit_code = 0
+
+[testcase_ns-max32-r]
+    arguments = ["--rfc-3339=ns", "-d", "2038-01-19 03:14:07.999999999"]
+    stdout = "2038-01-19 03:14:07.999999999+00:00\n"
+    exit_code = 0
+
+[testcase_tz-underscore-1]
+    arguments = ["+%_z"]
+    stdout = "   +0\n"
+    exit_code = 0
+
+[testcase_tz-underscore-2]
+    arguments = ["+%_:z"]
+    stdout = " +0:00\n"
+    exit_code = 0
+
+[testcase_tz-underscore-3]
+    arguments = ["+%_::z"]
+    stdout = " +0:00:00\n"
+    exit_code = 0
+
+[testcase_tz-underscore-4]
+    arguments = ["+%_:::z"]
+    stdout = " +0\n"
+    exit_code = 0
+
+[testcase_tz-underscore-5]
+    arguments = ["+%_::::z"]
+    stdout = "%_::::z\n"
+    exit_code = 0
+
+[testcase_tz-6]
+    arguments = ["+%Z"]
+    stdout = "UTC\n"
+    exit_code = 0
+
+[testcase_arg-order]
+    arguments = ["+%Y-%m-%d", "-d", "2026-02-13"]
+    stdout = "2026-02-13\n"
+    exit_code = 0
+
+[testcase_ns-relative]
+    arguments = ["--iso=ns", "-d1970-01-01 00:00:00.1234567 UTC +961062237.987654321 sec"]
+    stdout = "2000-06-15T09:43:58,111111021+00:00\n"
+    exit_code = 0
+
+[testcase_ns-relativer]
+    arguments = ["--rfc-3339=ns", "-d1970-01-01 00:00:00.1234567 UTC +961062237.987654321 sec"]
+    stdout = "2000-06-15 09:43:58.111111021+00:00\n"
+    exit_code = 0
+
+[testcase_empty-fmt]
+    arguments = ["+"]
+    stdout = "\n"
+    exit_code = 0
+
+[testcase_neg-secs]
+    arguments = ["-d", "@-22", "+%05s"]
+    stdout = "-0022\n"
+    exit_code = 0
+
+[testcase_neg-secs2]
+    arguments = ["-d", "@-22", "+%_5s"]
+    stdout = "  -22\n"
+    exit_code = 0
+
+[testcase_fill-1]
+    arguments = ["-d", "1999-12-08", "+%_3d"]
+    stdout = "  8\n"
+    exit_code = 0
+
+[testcase_fill-2]
+    arguments = ["-d", "1999-12-08", "+%03d"]
+    stdout = "008\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-1]
+    arguments = ["-d", "1999-06-01", "+%_d"]
+    stdout = " 1\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-2]
+    arguments = ["-d", "1999-06-15", "+%_m"]
+    stdout = " 6\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-3]
+    arguments = ["-d", "1999-06-01 05:00:00", "+%_H"]
+    stdout = " 5\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-4]
+    arguments = ["-d", "1999-06-01", "+%_Y"]
+    stdout = "1999\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-5]
+    arguments = ["-d", "1999-06-01", "+%_C"]
+    stdout = "19\n"
+    exit_code = 0
+
+[testcase_underscore-no-width-6]
+    arguments = ["-d", "1999-01-01", "+%_j"]
+    stdout = "  1\n"
+    exit_code = 0
+
+[testcase_zero-override-space-1]
+    arguments = ["-d", "1999-06-05", "+%0e"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_zero-override-space-2]
+    arguments = ["-d", "1999-06-01 05:00:00", "+%0k"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_zero-override-space-3]
+    arguments = ["-d", "1999-06-01 05:00:00", "+%0l"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_composite-dash-D]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_composite-dash-F]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-F"]
+    stdout = "2004-06-15\n"
+    exit_code = 0
+
+[testcase_composite-dash-T]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-T"]
+    stdout = "07:08:09\n"
+    exit_code = 0
+
+[testcase_composite-dash-R]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-R"]
+    stdout = "07:08\n"
+    exit_code = 0
+
+[testcase_composite-dash-r]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-r"]
+    stdout = "07:08:09 AM\n"
+    exit_code = 0
+
+[testcase_composite-dash-x]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-x"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_composite-dash-X]
+    arguments = ["-d", "2004-06-15 07:08:09", "+%-X"]
+    stdout = "07:08:09\n"
+    exit_code = 0
+
+[testcase_composite-underscore-D]
+    arguments = ["-d", "2004-06-15", "+%_D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_composite-zero-D]
+    arguments = ["-d", "2004-06-15", "+%0D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_composite-width-D]
+    arguments = ["-d", "2004-06-15", "+%10D"]
+    stdout = "  06/15/04\n"
+    exit_code = 0
+
+[testcase_dash-simple-m]
+    arguments = ["-d", "2004-06-15", "+%-m"]
+    stdout = "6\n"
+    exit_code = 0
+
+[testcase_dash-simple-d]
+    arguments = ["-d", "2004-06-05", "+%-d"]
+    stdout = "5\n"
+    exit_code = 0
+
+[testcase_plus-no-width-1]
+    arguments = ["-d", "1999-06-01", "+%+Y"]
+    stdout = "1999\n"
+    exit_code = 0
+
+[testcase_plus-no-width-2]
+    arguments = ["-d", "1999-06-01", "+%+6Y"]
+    stdout = "+01999\n"
+    exit_code = 0
+
+[testcase_date-century-plus]
+    arguments = ["-d", "@0", "+.%+4C."]
+    stdout = ".+019.\n"
+    exit_code = 0
+
+[testcase_date-epoch-minus-1]
+    arguments = ["-u", "-d", "1970-12-31T23:59:59+00:00 - 1 year"]
+    stdout = "Wed Dec 31 23:59:59 UTC 1969\n"
+    exit_code = 0
+
+[testcase_mtz1]
+    arguments = ["-u", "-d", "09:00B", "+%T"]
+    stdout = "07:00:00\n"
+    exit_code = 0
+
+[testcase_mtz2]
+    arguments = ["-u", "-d", "09:00L", "+%T"]
+    stdout = "22:00:00\n"
+    exit_code = 0
+
+[testcase_mtz3]
+    arguments = ["-u", "-d", "09:00N", "+%T"]
+    stdout = "10:00:00\n"
+    exit_code = 0
+
+[testcase_mtz4]
+    arguments = ["-u", "-d", "09:00T", "+%T"]
+    stdout = "16:00:00\n"
+    exit_code = 0
+
+[testcase_mtz5]
+    arguments = ["-u", "-d", "09:00X", "+%T"]
+    stdout = "20:00:00\n"
+    exit_code = 0
+
+[testcase_mtz6]
+    arguments = ["-u", "-d", "09:00Z", "+%T"]
+    stdout = "09:00:00\n"
+    exit_code = 0
+
+[testcase_pct-pct]
+    arguments = ["+%%-N"]
+    stdout = "%-N\n"
+    exit_code = 0
+
+[testcase_paren-1]
+    arguments = ["-d", "(", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_paren-2]
+    arguments = ["-d", "1(ignore this comment", "+%H:%M:%S"]
+    stdout = "01:00:00\n"
+    exit_code = 0
+
+[testcase_paren-3]
+    arguments = ["-d", "2026-01-05(this is a comment", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_paren-4]
+    arguments = ["-d", "2026(this is a comment)-01-05", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_paren-5]
+    arguments = ["-d", "((nested))2026-01-05", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_paren-6]
+    arguments = ["-d", "((nested)2026-01-05)", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_tz-conversion-est]
+    arguments = ["-u", "-d", "10:30 UTC-05", "+%H:%M"]
+    stdout = "15:30\n"
+    exit_code = 0
+
+[testcase_multiple-iso1]
+    arguments = ["--iso-8601", "--iso-8601", "-d", "2026-05-11"]
+    stdout = "2026-05-11\n"
+    exit_code = 0
+
+[testcase_multiple-iso2]
+    arguments = ["--iso-8601=hours", "--iso-8601=minutes", "-d", "2026-05-11"]
+    stdout = "2026-05-11T00:00+00:00\n"
+    exit_code = 0
+
+[testcase_multiple-iso3]
+    arguments = ["--iso-8601=minutes", "--iso-8601=hours", "-d", "2026-05-11"]
+    stdout = "2026-05-11T00+00:00\n"
+    exit_code = 0
+
+[testcase_dow-prefix]
+    arguments = ["-d", "Mon, 2024-06-15 12:00:00", "+%Y-%m-%dT%T"]
+    stdout = "2024-06-15T12:00:00\n"
+    exit_code = 0
+
+[testcase_zone-min-99]
+    arguments = ["-d", "2024-06-15 12:00 +05:99", "+%Y-%m-%dT%T%z"]
+    stdout = "2024-06-15T05:21:00+0000\n"
+    exit_code = 0
+
+[testcase_bare-plus]
+    arguments = ["-d", "+", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_bare-minus]
+    arguments = ["-d", "-", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_plus-unit-noadd]
+    arguments = ["-d", "2024-06-15 12:00:00 +1 hour", "+%Y-%m-%dT%T%z"]
+    stdout = "2024-06-15T12:00:00+0000\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date1]
+    arguments = ["-u", "-d", "Mon, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date2]
+    arguments = ["-u", "-d", "Tues, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date3]
+    arguments = ["-u", "-d", "Wed, 2026-07-21", "+%Y-%m-%d"]
+    stdout = "2026-07-21\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date4]
+    arguments = ["-u", "-d", "Thurs, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date5]
+    arguments = ["-u", "-d", "Fri, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date6]
+    arguments = ["-u", "-d", "Sat, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_good-weekday-explict-date7]
+    arguments = ["-u", "-d", "Sun, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_1]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%% %a %A %b %B"]
+    stdout = "% Sun Sunday Jan January\n"
+    exit_code = 0
+
+[testcase_dbg_3]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%d_%D_%e_%h_%H"]
+    stdout = "19_01/19/97_19_Jan_08\n"
+    exit_code = 0
+
+[testcase_dbg_3T]
+    arguments = ["--debug", "-d", "1997-01-19T08:17:48+0", "+%d_%D_%e_%h_%H"]
+    stdout = "19_01/19/97_19_Jan_08\n"
+    exit_code = 0
+
+[testcase_dbg_4]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%I_%j_%k_%l_%m"]
+    stdout = "08_019_ 8_ 8_01\n"
+    exit_code = 0
+
+[testcase_dbg_5]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%M_%n_%p_%r"]
+    stdout = "17_\n_AM_08:17:48 AM\n"
+    exit_code = 0
+
+[testcase_dbg_6]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%s_%S_%t_%T"]
+    stdout = "853661868_48_\t_08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_7]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%U_%V_%w_%W"]
+    stdout = "03_03_0_02\n"
+    exit_code = 0
+
+[testcase_dbg_8]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%x_%X_%y_%Y"]
+    stdout = "01/19/97_08:17:48_97_1997\n"
+    exit_code = 0
+
+[testcase_dbg_9]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0", "+%z"]
+    stdout = "+0000\n"
+    exit_code = 0
+
+[testcase_dbg_leap-1]
+    arguments = ["--debug", "--date", "02/29/1996 1 year", "+%Y-%m-%d"]
+    stdout = "1997-03-01\n"
+    exit_code = 0
+
+[testcase_dbg_U95-1]
+    arguments = ["--debug", "--date", "1995-1-1", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_U95-2]
+    arguments = ["--debug", "--date", "1995-1-7", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_U95-3]
+    arguments = ["--debug", "--date", "1995-1-8", "+%U"]
+    stdout = "02\n"
+    exit_code = 0
+
+[testcase_dbg_U92-1]
+    arguments = ["--debug", "--date", "1992-1-1", "+%U"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_dbg_U92-2]
+    arguments = ["--debug", "--date", "1992-1-4", "+%U"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_dbg_U92-3]
+    arguments = ["--debug", "--date", "1992-1-5", "+%U"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_V92-1]
+    arguments = ["--debug", "--date", "1992-1-1", "+%V"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_V92-2]
+    arguments = ["--debug", "--date", "1992-1-5", "+%V"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_V92-3]
+    arguments = ["--debug", "--date", "1992-1-6", "+%V"]
+    stdout = "02\n"
+    exit_code = 0
+
+[testcase_dbg_W92-1]
+    arguments = ["--debug", "--date", "1992-1-1", "+%W"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_dbg_W92-2]
+    arguments = ["--debug", "--date", "1992-1-5", "+%W"]
+    stdout = "00\n"
+    exit_code = 0
+
+[testcase_dbg_W92-3]
+    arguments = ["--debug", "--date", "1992-1-6", "+%W"]
+    stdout = "01\n"
+    exit_code = 0
+
+[testcase_dbg_q-1]
+    arguments = ["--debug", "--date", "2016-1-1", "+%q"]
+    stdout = "1\n"
+    exit_code = 0
+
+[testcase_dbg_q-2]
+    arguments = ["--debug", "--date", "2016-4-1", "+%q"]
+    stdout = "2\n"
+    exit_code = 0
+
+[testcase_dbg_q-3]
+    arguments = ["--debug", "--date", "2016-7-1", "+%q"]
+    stdout = "3\n"
+    exit_code = 0
+
+[testcase_dbg_q-4]
+    arguments = ["--debug", "--date", "2016-10-1", "+%q"]
+    stdout = "4\n"
+    exit_code = 0
+
+[testcase_dbg_millen-1]
+    arguments = ["--debug", "--date", "1998-1-1 3 years", "+%Y"]
+    stdout = "2001\n"
+    exit_code = 0
+
+[testcase_dbg_rel-0]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 now", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-1a]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 yesterday", "+%Y-%m-%d %T"]
+    stdout = "1997-01-18 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-1b]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 tomorrow", "+%Y-%m-%d %T"]
+    stdout = "1997-01-20 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2a]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 6 years ago", "+%Y-%m-%d %T"]
+    stdout = "1991-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2b]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 7 months ago", "+%Y-%m-%d %T"]
+    stdout = "1996-06-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2c]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 8 weeks ago", "+%Y-%m-%d %T"]
+    stdout = "1996-11-24 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2d]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 1 day ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-18 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2e]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 2 hours ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 06:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2f]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 3 minutes ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:14:48\n"
+    exit_code = 0
+
+[testcase_dbg_rel-2g]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 4 seconds ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:44\n"
+    exit_code = 0
+
+[testcase_dbg_rel-3a]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 4 seconds ago", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:44\n"
+    exit_code = 0
+
+[testcase_dbg_rel-1day]
+    arguments = ["--debug", "-d", "20050101  1 day", "+%F"]
+    stdout = "2005-01-02\n"
+    exit_code = 0
+
+[testcase_dbg_rel-plus1]
+    arguments = ["--debug", "-d", "20050101 +1 day", "+%F"]
+    stdout = "2005-01-02\n"
+    exit_code = 0
+
+[testcase_dbg_next-s]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next second", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:49\n"
+    exit_code = 0
+
+[testcase_dbg_next-m]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next minute", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:18:48\n"
+    exit_code = 0
+
+[testcase_dbg_next-h]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next hour", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 09:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_next-d]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next day", "+%Y-%m-%d %T"]
+    stdout = "1997-01-20 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_next-w]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next week", "+%Y-%m-%d %T"]
+    stdout = "1997-01-26 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_next-mo]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next month", "+%Y-%m-%d %T"]
+    stdout = "1997-02-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_next-y]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 +0 next year", "+%Y-%m-%d %T"]
+    stdout = "1998-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_utc-0a]
+    arguments = ["--debug", "-u", "-d", "08/01/97 6:00 UTC +4 hours", "+%D,%H:%M"]
+    stdout = "08/01/97,10:00\n"
+    exit_code = 0
+
+[testcase_dbg_date2sec-0a]
+    arguments = ["--debug", "-d", "1970-01-01 00:00:01 UTC +2 hours", "+%s"]
+    stdout = "7201\n"
+    exit_code = 0
+
+[testcase_dbg_date2sec-1]
+    arguments = ["--debug", "-d", "2000-01-01", "+%s"]
+    stdout = "946684800\n"
+    exit_code = 0
+
+[testcase_dbg_sec2date-0]
+    arguments = ["--debug", "-d", "1970-01-01 UTC 946684800 sec", "+%Y-%m-%d %T %z"]
+    stdout = "2000-01-01 00:00:00 +0000\n"
+    exit_code = 0
+
+[testcase_dbg_this-m]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 this minute", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_this-h]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 this hour", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_this-w]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 this week", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_this-mo]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 this month", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_this-y]
+    arguments = ["--debug", "-d", "1997-01-19 08:17:48 this year", "+%Y-%m-%d %T"]
+    stdout = "1997-01-19 08:17:48\n"
+    exit_code = 0
+
+[testcase_dbg_risks-1]
+    arguments = ["--debug", "-d", "Nov 10 1996", "+%Y-%m-%d %T"]
+    stdout = "1996-11-10 00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_datevtime-1]
+    arguments = ["--debug", "-d", "000909", "+%Y-%m-%d %T"]
+    stdout = "2000-09-09 00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_relative-1]
+    arguments = ["--debug", "--utc", "-d", "1970-01-01 00:00:00 UTC +961062237 sec", "+%Y-%m-%d %T"]
+    stdout = "2000-06-15 09:43:57\n"
+    exit_code = 0
+
+[testcase_dbg_relative-4]
+    arguments = ["--debug", "--utc", "-d", "-1 day", "+%Z"]
+    stdout = "UTC\n"
+    exit_code = 0
+
+[testcase_dbg_wide-fmt]
+    arguments = ["--debug", "-d", "1999-06-01", "+%3004Y"]
+    stdout = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001999\n"
+    exit_code = 0
+
+[testcase_dbg_moname-d-y]
+    arguments = ["--debug", "--iso", "-d", "May-23-2003"]
+    stdout = "2003-05-23\n"
+    exit_code = 0
+
+[testcase_dbg_moname-d-y-r]
+    arguments = ["--debug", "--rfc-3339=date", "-d", "May-23-2003"]
+    stdout = "2003-05-23\n"
+    exit_code = 0
+
+[testcase_dbg_european-0]
+    arguments = ["--debug", "-I", "-d", "24.01.2026"]
+    stdout = "2026-01-24\n"
+    exit_code = 0
+
+[testcase_dbg_european-1]
+    arguments = ["--debug", "-I", "-d", "24.1.2026"]
+    stdout = "2026-01-24\n"
+    exit_code = 0
+
+[testcase_dbg_european-2]
+    arguments = ["--debug", "-d", "24.01.", "+%m-%d"]
+    stdout = "01-24\n"
+    exit_code = 0
+
+[testcase_dbg_european-3]
+    arguments = ["--debug", "-d", "1.2.", "+%m-%d"]
+    stdout = "02-01\n"
+    exit_code = 0
+
+[testcase_dbg_eu-combo-1]
+    arguments = ["--debug", "-d", "1.2. 3:4:5.6", "+%m-%d-%T"]
+    stdout = "02-01-03:04:05\n"
+    exit_code = 0
+
+[testcase_dbg_eu-combo-2]
+    arguments = ["--debug", "-d", "3:4:5.6 1.2.", "+%m-%d-%T"]
+    stdout = "02-01-03:04:05\n"
+    exit_code = 0
+
+[testcase_dbg_eu-combo-3]
+    arguments = ["--debug", "-d", "1.2. 3", "+%m-%d-%H"]
+    stdout = "02-01-03\n"
+    exit_code = 0
+
+[testcase_dbg_eu-combo-4]
+    arguments = ["--debug", "-d", "3 1.2.", "+%m-%d-%H"]
+    stdout = "02-01-03\n"
+    exit_code = 0
+
+[testcase_dbg_epoch]
+    arguments = ["--debug", "--iso=sec", "-d", "@31536000"]
+    stdout = "1971-01-01T00:00:00+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_epoch-r]
+    arguments = ["--debug", "--rfc-3339=sec", "-d", "@31536000"]
+    stdout = "1971-01-01 00:00:00+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_ns-10]
+    arguments = ["--debug", "--iso=ns", "-d", "1969-12-31 13:00:00.00000001-1100"]
+    stdout = "1970-01-01T00:00:00,000000010+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_ns-10-r]
+    arguments = ["--debug", "--rfc-3339=ns", "-d", "1969-12-31 13:00:00.00000001-1100"]
+    stdout = "1970-01-01 00:00:00.000000010+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_ns-max32]
+    arguments = ["--debug", "--iso=ns", "-d", "2038-01-19 03:14:07.999999999"]
+    stdout = "2038-01-19T03:14:07,999999999+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_ns-max32-r]
+    arguments = ["--debug", "--rfc-3339=ns", "-d", "2038-01-19 03:14:07.999999999"]
+    stdout = "2038-01-19 03:14:07.999999999+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_tz-underscore-1]
+    arguments = ["--debug", "+%_z"]
+    stdout = "   +0\n"
+    exit_code = 0
+
+[testcase_dbg_tz-underscore-2]
+    arguments = ["--debug", "+%_:z"]
+    stdout = " +0:00\n"
+    exit_code = 0
+
+[testcase_dbg_tz-underscore-3]
+    arguments = ["--debug", "+%_::z"]
+    stdout = " +0:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_tz-underscore-4]
+    arguments = ["--debug", "+%_:::z"]
+    stdout = " +0\n"
+    exit_code = 0
+
+[testcase_dbg_tz-underscore-5]
+    arguments = ["--debug", "+%_::::z"]
+    stdout = "%_::::z\n"
+    exit_code = 0
+
+[testcase_dbg_tz-6]
+    arguments = ["--debug", "+%Z"]
+    stdout = "UTC\n"
+    exit_code = 0
+
+[testcase_dbg_arg-order]
+    arguments = ["--debug", "+%Y-%m-%d", "-d", "2026-02-13"]
+    stdout = "2026-02-13\n"
+    exit_code = 0
+
+[testcase_dbg_ns-relative]
+    arguments = ["--debug", "--iso=ns", "-d1970-01-01 00:00:00.1234567 UTC +961062237.987654321 sec"]
+    stdout = "2000-06-15T09:43:58,111111021+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_ns-relativer]
+    arguments = ["--debug", "--rfc-3339=ns", "-d1970-01-01 00:00:00.1234567 UTC +961062237.987654321 sec"]
+    stdout = "2000-06-15 09:43:58.111111021+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_empty-fmt]
+    arguments = ["--debug", "+"]
+    stdout = "\n"
+    exit_code = 0
+
+[testcase_dbg_neg-secs]
+    arguments = ["--debug", "-d", "@-22", "+%05s"]
+    stdout = "-0022\n"
+    exit_code = 0
+
+[testcase_dbg_neg-secs2]
+    arguments = ["--debug", "-d", "@-22", "+%_5s"]
+    stdout = "  -22\n"
+    exit_code = 0
+
+[testcase_dbg_fill-1]
+    arguments = ["--debug", "-d", "1999-12-08", "+%_3d"]
+    stdout = "  8\n"
+    exit_code = 0
+
+[testcase_dbg_fill-2]
+    arguments = ["--debug", "-d", "1999-12-08", "+%03d"]
+    stdout = "008\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-1]
+    arguments = ["--debug", "-d", "1999-06-01", "+%_d"]
+    stdout = " 1\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-2]
+    arguments = ["--debug", "-d", "1999-06-15", "+%_m"]
+    stdout = " 6\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-3]
+    arguments = ["--debug", "-d", "1999-06-01 05:00:00", "+%_H"]
+    stdout = " 5\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-4]
+    arguments = ["--debug", "-d", "1999-06-01", "+%_Y"]
+    stdout = "1999\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-5]
+    arguments = ["--debug", "-d", "1999-06-01", "+%_C"]
+    stdout = "19\n"
+    exit_code = 0
+
+[testcase_dbg_underscore-no-width-6]
+    arguments = ["--debug", "-d", "1999-01-01", "+%_j"]
+    stdout = "  1\n"
+    exit_code = 0
+
+[testcase_dbg_zero-override-space-1]
+    arguments = ["--debug", "-d", "1999-06-05", "+%0e"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_dbg_zero-override-space-2]
+    arguments = ["--debug", "-d", "1999-06-01 05:00:00", "+%0k"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_dbg_zero-override-space-3]
+    arguments = ["--debug", "-d", "1999-06-01 05:00:00", "+%0l"]
+    stdout = "05\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-D]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-F]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-F"]
+    stdout = "2004-06-15\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-T]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-T"]
+    stdout = "07:08:09\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-R]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-R"]
+    stdout = "07:08\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-r]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-r"]
+    stdout = "07:08:09 AM\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-x]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-x"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_dbg_composite-dash-X]
+    arguments = ["--debug", "-d", "2004-06-15 07:08:09", "+%-X"]
+    stdout = "07:08:09\n"
+    exit_code = 0
+
+[testcase_dbg_composite-underscore-D]
+    arguments = ["--debug", "-d", "2004-06-15", "+%_D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_dbg_composite-zero-D]
+    arguments = ["--debug", "-d", "2004-06-15", "+%0D"]
+    stdout = "06/15/04\n"
+    exit_code = 0
+
+[testcase_dbg_composite-width-D]
+    arguments = ["--debug", "-d", "2004-06-15", "+%10D"]
+    stdout = "  06/15/04\n"
+    exit_code = 0
+
+[testcase_dbg_dash-simple-m]
+    arguments = ["--debug", "-d", "2004-06-15", "+%-m"]
+    stdout = "6\n"
+    exit_code = 0
+
+[testcase_dbg_dash-simple-d]
+    arguments = ["--debug", "-d", "2004-06-05", "+%-d"]
+    stdout = "5\n"
+    exit_code = 0
+
+[testcase_dbg_plus-no-width-1]
+    arguments = ["--debug", "-d", "1999-06-01", "+%+Y"]
+    stdout = "1999\n"
+    exit_code = 0
+
+[testcase_dbg_plus-no-width-2]
+    arguments = ["--debug", "-d", "1999-06-01", "+%+6Y"]
+    stdout = "+01999\n"
+    exit_code = 0
+
+[testcase_dbg_date-century-plus]
+    arguments = ["--debug", "-d", "@0", "+.%+4C."]
+    stdout = ".+019.\n"
+    exit_code = 0
+
+[testcase_dbg_date-epoch-minus-1]
+    arguments = ["--debug", "-u", "-d", "1970-12-31T23:59:59+00:00 - 1 year"]
+    stdout = "Wed Dec 31 23:59:59 UTC 1969\n"
+    exit_code = 0
+
+[testcase_dbg_mtz1]
+    arguments = ["--debug", "-u", "-d", "09:00B", "+%T"]
+    stdout = "07:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_mtz2]
+    arguments = ["--debug", "-u", "-d", "09:00L", "+%T"]
+    stdout = "22:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_mtz3]
+    arguments = ["--debug", "-u", "-d", "09:00N", "+%T"]
+    stdout = "10:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_mtz4]
+    arguments = ["--debug", "-u", "-d", "09:00T", "+%T"]
+    stdout = "16:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_mtz5]
+    arguments = ["--debug", "-u", "-d", "09:00X", "+%T"]
+    stdout = "20:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_mtz6]
+    arguments = ["--debug", "-u", "-d", "09:00Z", "+%T"]
+    stdout = "09:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_pct-pct]
+    arguments = ["--debug", "+%%-N"]
+    stdout = "%-N\n"
+    exit_code = 0
+
+[testcase_dbg_paren-1]
+    arguments = ["--debug", "-d", "(", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_paren-2]
+    arguments = ["--debug", "-d", "1(ignore this comment", "+%H:%M:%S"]
+    stdout = "01:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_paren-3]
+    arguments = ["--debug", "-d", "2026-01-05(this is a comment", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_dbg_paren-4]
+    arguments = ["--debug", "-d", "2026(this is a comment)-01-05", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_dbg_paren-5]
+    arguments = ["--debug", "-d", "((nested))2026-01-05", "-u", "+%Y-%m-%d"]
+    stdout = "2026-01-05\n"
+    exit_code = 0
+
+[testcase_dbg_paren-6]
+    arguments = ["--debug", "-d", "((nested)2026-01-05)", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_tz-conversion-est]
+    arguments = ["--debug", "-u", "-d", "10:30 UTC-05", "+%H:%M"]
+    stdout = "15:30\n"
+    exit_code = 0
+
+[testcase_dbg_multiple-iso1]
+    arguments = ["--debug", "--iso-8601", "--iso-8601", "-d", "2026-05-11"]
+    stdout = "2026-05-11\n"
+    exit_code = 0
+
+[testcase_dbg_multiple-iso2]
+    arguments = ["--debug", "--iso-8601=hours", "--iso-8601=minutes", "-d", "2026-05-11"]
+    stdout = "2026-05-11T00:00+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_multiple-iso3]
+    arguments = ["--debug", "--iso-8601=minutes", "--iso-8601=hours", "-d", "2026-05-11"]
+    stdout = "2026-05-11T00+00:00\n"
+    exit_code = 0
+
+[testcase_dbg_dow-prefix]
+    arguments = ["--debug", "-d", "Mon, 2024-06-15 12:00:00", "+%Y-%m-%dT%T"]
+    stdout = "2024-06-15T12:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_zone-min-99]
+    arguments = ["--debug", "-d", "2024-06-15 12:00 +05:99", "+%Y-%m-%dT%T%z"]
+    stdout = "2024-06-15T05:21:00+0000\n"
+    exit_code = 0
+
+[testcase_dbg_bare-plus]
+    arguments = ["--debug", "-d", "+", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_bare-minus]
+    arguments = ["--debug", "-d", "-", "+%H:%M:%S"]
+    stdout = "00:00:00\n"
+    exit_code = 0
+
+[testcase_dbg_plus-unit-noadd]
+    arguments = ["--debug", "-d", "2024-06-15 12:00:00 +1 hour", "+%Y-%m-%dT%T%z"]
+    stdout = "2024-06-15T12:00:00+0000\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date1]
+    arguments = ["--debug", "-u", "-d", "Mon, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date2]
+    arguments = ["--debug", "-u", "-d", "Tues, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date3]
+    arguments = ["--debug", "-u", "-d", "Wed, 2026-07-21", "+%Y-%m-%d"]
+    stdout = "2026-07-21\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date4]
+    arguments = ["--debug", "-u", "-d", "Thurs, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date5]
+    arguments = ["--debug", "-u", "-d", "Fri, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date6]
+    arguments = ["--debug", "-u", "-d", "Sat, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+
+[testcase_dbg_good-weekday-explict-date7]
+    arguments = ["--debug", "-u", "-d", "Sun, 2026-07-22", "+%Y-%m-%d"]
+    stdout = "2026-07-22\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "date (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie.\n"
+    exit_code = 0

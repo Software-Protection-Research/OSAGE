@@ -1,0 +1,273 @@
+[testcase_t1]
+    arguments = ["--tabs=3"]
+    stdin = "a\tb"
+    stdout = "a  b"
+    exit_code = 0
+
+[testcase_t2]
+    arguments = ["--tabs=3,6,9"]
+    stdin = "a\tb\tc\td\te"
+    stdout = "a  b  c  d e"
+    exit_code = 0
+
+[testcase_t3]
+    arguments = ["--tabs=3 6 9"]
+    stdin = "a\tb\tc\td\te"
+    stdout = "a  b  c  d e"
+    exit_code = 0
+
+[testcase_t4]
+    arguments = ["--tabs=, 3,6 9"]
+    stdin = "a\tb\tc\td\te"
+    stdout = "a  b  c  d e"
+    exit_code = 0
+
+[testcase_t4a]
+    arguments = ["--tabs=3\t6\t9"]
+    stdin = "a\tb\tc\td\te"
+    stdout = "a  b  c  d e"
+    exit_code = 0
+
+[testcase_t5]
+    arguments = ["--tabs="]
+    stdin = "a\tb\tc"
+    stdout = "a       b       c"
+    exit_code = 0
+
+[testcase_t6]
+    arguments = ["--tabs=,"]
+    stdin = "a\tb\tc"
+    stdout = "a       b       c"
+    exit_code = 0
+
+[testcase_t7]
+    arguments = ["--tabs= "]
+    stdin = "a\tb\tc"
+    stdout = "a       b       c"
+    exit_code = 0
+
+[testcase_t8]
+    arguments = ["--tabs=/"]
+    stdin = "a\tb\tc"
+    stdout = "a       b       c"
+    exit_code = 0
+
+[testcase_if]
+    arguments = ["--tabs=6,9"]
+    stdin = "a\tbbbbbbbbbbbbb\tc"
+    stdout = "a     bbbbbbbbbbbbb c"
+    exit_code = 0
+
+[testcase_i1]
+    arguments = ["--tabs=3", "-i"]
+    stdin = "\ta\tb"
+    stdout = "   a\tb"
+    exit_code = 0
+
+[testcase_i2]
+    arguments = ["--tabs=3", "-i"]
+    stdin = " \ta\tb"
+    stdout = "   a\tb"
+    exit_code = 0
+
+[testcase_u1]
+    arguments = ["-3"]
+    stdin = "a\tb\tc"
+    stdout = "a  b  c"
+    exit_code = 0
+
+[testcase_u2]
+    arguments = ["-4", "-9"]
+    stdin = "a\tb\tc"
+    stdout = "a   b    c"
+    exit_code = 0
+
+[testcase_u3]
+    arguments = ["-11"]
+    stdin = "a\tb\tc"
+    stdout = "a          b          c"
+    exit_code = 0
+
+[testcase_u4]
+    arguments = ["-2", "-6"]
+    stdin = "a\tb\tc"
+    stdout = "a b   c"
+    exit_code = 0
+
+[testcase_u5]
+    arguments = ["-7"]
+    stdin = "a\tb"
+    stdout = "a      b"
+    exit_code = 0
+
+[testcase_u6]
+    arguments = ["-8"]
+    stdin = "a\tb"
+    stdout = "a       b"
+    exit_code = 0
+
+[testcase_u7]
+    arguments = ["-3,9"]
+    stdin = "a\tb\tc"
+    stdout = "a  b     c"
+    exit_code = 0
+
+[testcase_b1]
+    arguments = []
+    stdin = "aaa\b\b\bc\td\n"
+    stdout = "aaa\b\b\bc       d\n"
+    exit_code = 0
+
+[testcase_b2]
+    arguments = []
+    stdin = "\bc\td"
+    stdout = "\bc       d"
+    exit_code = 0
+
+[testcase_b3]
+    arguments = ["--tabs", "2,4,6,10"]
+    stdin = "1\t2\t3\t4\t5\na\tb\tc\td\te\n"
+    stdout = "1 2 3 4   5\na b c d   e\n"
+    exit_code = 0
+
+[testcase_b4]
+    arguments = ["--tabs", "2,4,6,10"]
+    stdin = "1\t2\t3\t4\t5\na\tbHELLO\b\b\b\b\b\tc\td\te\n"
+    stdout = "1 2 3 4   5\na bHELLO\b\b\b\b\b c d   e\n"
+    exit_code = 0
+
+[testcase_b5]
+    arguments = ["--tabs", "2,4,6,10"]
+    stdin = "1\t2\t3\t4\t5\na\tbHELLO\b\b\b\tc\td\te\n"
+    stdout = "1 2 3 4   5\na bHELLO\b\b\b c   d e\n"
+    exit_code = 0
+
+[testcase_trail1]
+    arguments = ["--tabs=1,/5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a   b    c"
+    exit_code = 0
+
+[testcase_trail2]
+    arguments = ["--tabs=2,/5"]
+    stdin = "\ta\tb\tc"
+    stdout = "  a  b    c"
+    exit_code = 0
+
+[testcase_trail3]
+    arguments = ["--tabs=1,2,/5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a   b    c"
+    exit_code = 0
+
+[testcase_trail4]
+    arguments = ["--tabs=/5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_trail5]
+    arguments = ["--tabs=//5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_trail5a]
+    arguments = ["--tabs=+/5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_trail6]
+    arguments = ["--tabs=/,/5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_trail7]
+    arguments = ["--tabs=,/5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_trail8]
+    arguments = ["--tabs=1", "-t/5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a   b    c"
+    exit_code = 0
+
+[testcase_trail9]
+    arguments = ["--tab=1,2", "-t/5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a   b    c"
+    exit_code = 0
+
+[testcase_incre0]
+    arguments = ["--tab=1,+5"]
+    stdin = "+\t\ta\tb"
+    stdout = "+          a    b"
+    exit_code = 0
+
+[testcase_incre1]
+    arguments = ["--tabs=1,+5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a    b    c"
+    exit_code = 0
+
+[testcase_incre2]
+    arguments = ["--tabs=2,+5"]
+    stdin = "\ta\tb\tc"
+    stdout = "  a    b    c"
+    exit_code = 0
+
+[testcase_incre3]
+    arguments = ["--tabs=1,2,+5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a     b    c"
+    exit_code = 0
+
+[testcase_incre4]
+    arguments = ["--tabs=+5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_incre5]
+    arguments = ["--tabs=++5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_incre5a]
+    arguments = ["--tabs=/+5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_incre6]
+    arguments = ["--tabs=+,+5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_incre7]
+    arguments = ["--tabs=,+5"]
+    stdin = "\ta\tb"
+    stdout = "     a    b"
+    exit_code = 0
+
+[testcase_incre8]
+    arguments = ["--tabs=1", "-t+5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a    b    c"
+    exit_code = 0
+
+[testcase_incre9]
+    arguments = ["--tab=1,2", "-t+5"]
+    stdin = "\ta\tb\tc"
+    stdout = " a     b    c"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "expand (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie.\n"
+    exit_code = 0

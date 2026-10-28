@@ -1,0 +1,88 @@
+[testcase_a]
+    arguments = ["d/f"]
+    stdout = "d\n"
+    exit_code = 0
+
+[testcase_b]
+    arguments = ["/d/f"]
+    stdout = "/d\n"
+    exit_code = 0
+
+[testcase_c]
+    arguments = ["d/f/"]
+    stdout = "d\n"
+    exit_code = 0
+
+[testcase_d]
+    arguments = ["d/f//"]
+    stdout = "d\n"
+    exit_code = 0
+
+[testcase_e]
+    arguments = ["f"]
+    stdout = ".\n"
+    exit_code = 0
+
+[testcase_f]
+    arguments = ["/"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_g]
+    arguments = ["//"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_h]
+    arguments = ["///"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_i]
+    arguments = ["//a//"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_j]
+    arguments = ["///a///"]
+    stdout = "/\n"
+    exit_code = 0
+
+[testcase_k]
+    arguments = ["///a///b"]
+    stdout = "///a\n"
+    exit_code = 0
+
+[testcase_l]
+    arguments = ["///a//b/"]
+    stdout = "///a\n"
+    exit_code = 0
+
+[testcase_m]
+    arguments = [""]
+    stdout = ".\n"
+    exit_code = 0
+
+[testcase_n]
+    arguments = ["a/b", "c/d"]
+    stdout = "a\nc\n"
+    exit_code = 0
+
+[testcase_z0]
+    arguments = ["-z", "a/b"]
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_z1]
+    arguments = ["--zero", "a/b"]
+    stdout = "a\u0000"
+    exit_code = 0
+
+[testcase_z2]
+    arguments = ["-z", "a/b", "b/a"]
+    stdout = "a\u0000b\u0000"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "dirname (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David MacKenzie and Jim Meyering.\n"
+    exit_code = 0

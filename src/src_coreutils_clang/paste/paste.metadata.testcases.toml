@@ -1,0 +1,63 @@
+[testcase_delim-empty-1]
+    arguments = ["-s", "-d", "\0,"]
+    stdin = "1\n2\n3\n"
+    stdout = "12,3\n"
+    exit_code = 0
+
+[testcase_delim-esc-0]
+    arguments = ["-s", "-d", "\0"]
+    stdin = "1\n2\n"
+    stdout = "12\n"
+    exit_code = 0
+
+[testcase_delim-esc-n]
+    arguments = ["-s", "-d", "\n"]
+    stdin = "1\n2\n"
+    stdout = "1\n2\n"
+    exit_code = 0
+
+[testcase_delim-esc-t]
+    arguments = ["-s", "-d", "\t"]
+    stdin = "1\n2\n"
+    stdout = "1\t2\n"
+    exit_code = 0
+
+[testcase_delim-esc-s]
+    arguments = ["-s", "-d", "\\"]
+    stdin = "1\n2\n"
+    stdout = "1\\2\n"
+    exit_code = 0
+
+[testcase_delim-esc-b]
+    arguments = ["-s", "-d", "\b"]
+    stdin = "1\n2\n"
+    stdout = "1\b2\n"
+    exit_code = 0
+
+[testcase_delim-esc-f]
+    arguments = ["-s", "-d", "\f"]
+    stdin = "1\n2\n"
+    stdout = "1\f2\n"
+    exit_code = 0
+
+[testcase_delim-esc-r]
+    arguments = ["-s", "-d", "\r"]
+    stdin = "1\n2\n"
+    stdout = "1\r2\n"
+    exit_code = 0
+
+[testcase_delim-esc-v]
+    arguments = ["-s", "-d", "\v"]
+    stdin = "1\n2\n"
+    stdout = "1\u000B2\n"
+    exit_code = 0
+
+[testcase_delim-esc-foo]
+    arguments = ["-s", "-d", "\q"]
+    stdin = "1\n2\n"
+    stdout = "1q2\n"
+    exit_code = 0
+[testcase_version]
+    arguments = ['--version']
+    stdout = "paste (GNU coreutils) 9.12-modified\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by David M. Ihnat and David MacKenzie.\n"
+    exit_code = 0
